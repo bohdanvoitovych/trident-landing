@@ -1,0 +1,37 @@
+# Trident Software GmbH
+
+> Swiss AI-native software engineering company. Founded 2009 in Sion, Valais, Switzerland. Senior engineers only, fixed budgets, compliance included.
+
+## About
+
+Trident Software builds custom software, AI systems, and embedded solutions for European SMEs. 26 senior engineers across Switzerland, Ukraine, and Israel. 27+ projects delivered since 2009.
+
+## Services
+
+- AI Services — LLM integration, RAG pipelines, AI agents, computer vision
+- Custom Software Engineering — full-stack, web, mobile
+- Embedded & IoT — firmware, industrial automation
+- CTO as a Service — fractional CTO, technical leadership
+- Cloud Consulting — AWS, GCP, Azure architecture
+- DevOps & SRE — CI/CD, infrastructure, monitoring
+- UI/UX Design — product design, design systems
+- Team Extension — senior engineers on demand
+
+## Industries
+
+Healthcare, Automotive, Logistics, Fintech, Retail & E-commerce, SaaS, Manufacturing, PropTech, Energy, Insurance, Hospitality, LegalTech, Fashion & Lifestyle, Agriculture, Public Sector, Media & Entertainment.
+
+## Key Facts
+
+- Founded: 2009, Sion, Valais, Switzerland
+- Team: 26 senior engineers (no juniors on client projects)
+- Offices: Sion (HQ), Kyiv, Tel Aviv
+- Languages: English, German, French, Italian
+- Compliance: ISO 27000, nFADP, Swiss data residency
+- AI since: 2021 (18 months before ChatGPT)
+- Repeat clients: 73% of revenue
+
+## Contact
+
+Email: hello@trident-software.ch
+Website: https://trident-software.ch

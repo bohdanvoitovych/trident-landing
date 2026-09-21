@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "services": "Leistungen",
+    "industries": "Branchen",
+    "cases": "Projekte",
+    "about": "Über uns",
+    "team": "Team",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "getQuote": "Angebot anfragen"
+  },
+  "footer": {
+    "tagline": "Schweizer Qualität in der Softwareentwicklung für KMU und Startups.",
+    "company": "Unternehmen",
+    "services": "Leistungen",
+    "resources": "Ressourcen",
+    "legal": "Rechtliches",
+    "about": "Über uns",
+    "team": "Unser Team",
+    "careers": "Karriere",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "cases": "Fallstudien",
+    "privacyPolicy": "Datenschutz",
+    "terms": "AGB",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "imprint": "Impressum",
+    "copyright": "© {year} Trident Software Sàrl. Alle Rechte vorbehalten.",
+    "industries": "Branchen",
+    "products": "Unsere Produkte",
+    "newsletterTagline": "Einblicke zu Software, KI und Schweizer Technologie."
+  },
+  "home": {
+    "hero": {
+      "badge": "Schweizer Qualitäts-Engineering",
+      "title": "KI-natives Software-Engineering für echte Geschäftsprozesse",
+      "subtitle": "Wir entwickeln massgeschneiderte Plattformen, KI-Integrationen und eingebettete Systeme für KMU — mit Schweizer Compliance, Festpreisen und einem Team mit 27+ Projekten seit 2009.",
+      "cta": "30-min Gespräch buchen",
+      "ctaSecondary": "Fallstudien ansehen"
+    },
+    "services": {
+      "title": "Was wir entwickeln",
+      "subtitle": "Von KI-Agenten bis Embedded Firmware — wir decken den gesamten Engineering-Stack ab."
+    },
+    "cases": {
+      "title": "Ausgewählte Projekte",
+      "subtitle": "27+ Projekte in Automotive, Healthcare, Fashion, Logistik und mehr."
+    },
+    "stats": {
+      "projects": "Abgeschlossene Projekte",
+      "years": "Jahre Erfahrung",
+      "team": "Ingenieure",
+      "countries": "Kundenländer"
+    },
+    "cta": {
+      "title": "Bereit, Ihr Projekt zu starten?",
+      "subtitle": "Schildern Sie uns Ihre Herausforderung. Wir antworten innerhalb von 24 Stunden.",
+      "button": "Kostenlose Beratung anfragen"
+    }
+  },
+  "services": {
+    "title": "Unsere Leistungen",
+    "subtitle": "End-to-End Engineering in KI, Software, Embedded Systems und Cloud.",
+    "relatedCases": "Verwandte Projekte",
+    "techStack": "Technologie-Stack",
+    "features": "Im Leistungsumfang"
+  },
+  "cases": {
+    "title": "Fallstudien",
+    "subtitle": "Echte Projekte, echte Ergebnisse. Vom Konzept bis zur Produktion.",
+    "challenge": "Die Herausforderung",
+    "approach": "Unser Ansatz",
+    "solution": "Die Lösung",
+    "results": "Ergebnisse",
+    "techStack": "Technologie-Stack",
+    "relatedCases": "Verwandte Projekte",
+    "startSimilar": "Ähnliches Projekt starten"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Engineering-Einblicke, KI-Trends und Perspektiven des Schweizer Tech-Markts.",
+    "readMore": "Weiterlesen",
+    "relatedPosts": "Verwandte Beiträge"
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Haben Sie ein Projekt im Sinn? Sprechen wir darüber. Wir antworten innerhalb von 24 Stunden.",
+    "name": "Ihr Name",
+    "email": "E-Mail-Adresse",
+    "company": "Unternehmen",
+    "phone": "Telefon (optional)",
+    "subject": "Betreff",
+    "message": "Beschreiben Sie Ihr Projekt",
+    "submit": "Nachricht senden",
+    "success": "Nachricht gesendet! Wir melden uns bald.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht.",
+    "goHome": "Zur Startseite",
+    "viewServices": "Unsere Leistungen"
+  }
+}

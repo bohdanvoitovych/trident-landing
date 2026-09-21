@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "services": "Servizi",
+    "industries": "Settori",
+    "cases": "Progetti",
+    "about": "Chi siamo",
+    "team": "Team",
+    "blog": "Blog",
+    "contact": "Contatti",
+    "getQuote": "Richiedi un preventivo"
+  },
+  "footer": {
+    "tagline": "Ingegneria del software di qualità svizzera per PMI e startup.",
+    "company": "Azienda",
+    "services": "Servizi",
+    "resources": "Risorse",
+    "legal": "Note legali",
+    "about": "Chi siamo",
+    "team": "Il nostro team",
+    "careers": "Carriere",
+    "contact": "Contatti",
+    "blog": "Blog",
+    "cases": "Casi di studio",
+    "privacyPolicy": "Informativa sulla privacy",
+    "terms": "Termini e condizioni",
+    "cookiePolicy": "Cookie policy",
+    "imprint": "Note legali",
+    "copyright": "© {year} Trident Software Sàrl. Tutti i diritti riservati.",
+    "industries": "Settori",
+    "products": "I Nostri Prodotti",
+    "newsletterTagline": "Approfondimenti su software, AI e tech svizzera."
+  },
+  "home": {
+    "hero": {
+      "badge": "Ingegneria di qualità svizzera",
+      "title": "Sviluppo software AI-native per le imprese reali",
+      "subtitle": "Sviluppiamo piattaforme personalizzate, integrazioni AI e sistemi embedded per le PMI — con conformità svizzera, budget fissi e un team con 27+ progetti dal 2009.",
+      "cta": "Prenota una chiamata di 30 min",
+      "ctaSecondary": "Esplora i casi di studio"
+    },
+    "services": {
+      "title": "Cosa sviluppiamo",
+      "subtitle": "Dagli agenti AI al firmware embedded — copriamo l'intero stack ingegneristico."
+    },
+    "cases": {
+      "title": "Lavori selezionati",
+      "subtitle": "27+ progetti consegnati in automotive, healthcare, moda, logistica e altro."
+    },
+    "stats": {
+      "projects": "Progetti consegnati",
+      "years": "Anni di esperienza",
+      "team": "Ingegneri",
+      "countries": "Paesi clienti"
+    },
+    "cta": {
+      "title": "Pronto ad avviare il tuo progetto?",
+      "subtitle": "Raccontaci la tua sfida. Rispondiamo entro 24 ore.",
+      "button": "Consulenza gratuita"
+    }
+  },
+  "services": {
+    "title": "I nostri servizi",
+    "subtitle": "Servizi di ingegneria end-to-end in AI, software, sistemi embedded e cloud.",
+    "relatedCases": "Casi correlati",
+    "techStack": "Stack tecnologico",
+    "features": "Cosa è incluso"
+  },
+  "cases": {
+    "title": "Casi di studio",
+    "subtitle": "Progetti reali, risultati reali. Dal concetto alla produzione.",
+    "challenge": "La sfida",
+    "approach": "Il nostro approccio",
+    "solution": "La soluzione",
+    "results": "Risultati",
+    "techStack": "Stack tecnologico",
+    "relatedCases": "Casi correlati",
+    "startSimilar": "Avvia un progetto simile"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Approfondimenti sull'ingegneria, tendenze AI e prospettive del mercato tech svizzero.",
+    "readMore": "Leggi di più",
+    "relatedPosts": "Articoli correlati"
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Hai un progetto in mente? Parliamone. Rispondiamo entro 24 ore.",
+    "name": "Il tuo nome",
+    "email": "Indirizzo email",
+    "company": "Azienda",
+    "phone": "Telefono (opzionale)",
+    "subject": "Oggetto",
+    "message": "Descrivi il tuo progetto",
+    "submit": "Invia messaggio",
+    "success": "Messaggio inviato! Ti risponderemo presto.",
+    "error": "Qualcosa è andato storto. Riprova."
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "description": "La pagina che stai cercando non esiste.",
+    "goHome": "Vai alla homepage",
+    "viewServices": "I nostri servizi"
+  }
+}

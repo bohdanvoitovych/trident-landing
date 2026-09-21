@@ -1,0 +1,243 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   Trident Software — Design System v2
+   Pattern: Dark hero/navbar/footer + Light body (Variant A)
+   Primary: #2772E0 (Trident Blue — from brand SVG)
+   ============================================================ */
+
+@theme inline {
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+/* ─── Light base (body) ─────────────────────────────────── */
+:root {
+  --radius: 8px;
+
+  --background:    #FFFFFF;
+  --foreground:    #0F172A;
+  --card:          #FFFFFF;
+  --card-foreground: #0F172A;
+  --popover:       #FFFFFF;
+  --popover-foreground: #0F172A;
+  --primary:       #2772E0;
+  --primary-hover: #1D5FC7;
+  --primary-foreground: #FFFFFF;
+  --secondary:     #F4F4F5;
+  --secondary-foreground: #3F3F46;
+  --muted:         #F4F4F5;
+  --muted-foreground: #71717A;
+  --accent:        #F4F4F5;
+  --accent-foreground: #0F172A;
+  --border:        #E4E4E7;
+  --input:         #F4F4F5;
+  --ring:          #2772E0;
+  --destructive:   #EF4444;
+  --destructive-foreground: #FFFFFF;
+
+  /* Light surface scale */
+  --surface-0: #FFFFFF;
+  --surface-1: #FAFAFA;
+  --surface-2: #F4F4F5;
+  --border-light: #E4E4E7;
+  --border-strong: #A1A1AA;
+
+  /* Dark context tokens (used inside .dark-section) */
+  --dark-bg:       #09090B;
+  --dark-surface:  #111113;
+  --dark-surface-2:#18181B;
+  --dark-border:   rgba(255, 255, 255, 0.07);
+  --dark-border-strong: rgba(255, 255, 255, 0.13);
+  --dark-fg:       #FAFAFA;
+  --dark-muted:    #A1A1AA;
+}
+
+/* ─── Base ─────────────────────────────────────────────── */
+* { border-color: var(--border); }
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "rlig" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Dark section context ──────────────────────────────── */
+/* Wrap hero, footer, dark CTA bands in .dark-section */
+.dark-section {
+  background-color: var(--dark-bg);
+  color: var(--dark-fg);
+  /* Override all Tailwind semantic vars inside dark context */
+  --foreground: var(--dark-fg);
+  --background: var(--dark-bg);
+  --card: var(--dark-surface);
+  --card-foreground: var(--dark-fg);
+  --muted-foreground: var(--dark-muted);
+  --border: var(--dark-border);
+  --secondary: var(--dark-surface-2);
+  --secondary-foreground: var(--dark-muted);
+  --primary: #2772E0;
+}
+.dark-section * { border-color: var(--dark-border); }
+
+/* ─── Typography ────────────────────────────────────────── */
+.text-display {
+  font-size: clamp(44px, 6.5vw, 80px);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+.text-heading {
+  font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+.eyebrow {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+/* ─── Gradient text ─────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #2772E0 0%, #6366F1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Light cards ───────────────────────────────────────── */
+.light-card {
+  background-color: var(--surface-0);
+  border: 1px solid var(--border-light);
+  transition: border-color 200ms, box-shadow 200ms;
+}
+.light-card:hover {
+  border-color: #A1A1AA;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+}
+.light-card-interactive:hover {
+  border-color: rgba(39, 114, 224, 0.4);
+  box-shadow: 0 2px 12px rgba(39, 114, 224, 0.08);
+}
+
+/* ─── Dark cards (inside .dark-section) ─────────────────── */
+.dark-card {
+  background-color: var(--dark-surface);
+  border: 1px solid var(--dark-border);
+  transition: border-color 200ms;
+}
+.dark-card:hover {
+  border-color: var(--dark-border-strong);
+}
+.dark-card-interactive:hover {
+  border-color: rgba(39, 114, 224, 0.35);
+}
+
+/* glass-card — white in light context, dark inside .dark-section */
+.glass-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E4E4E7;
+  transition: border-color 200ms, box-shadow 200ms;
+}
+.glass-card:hover {
+  border-color: #A1A1AA;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.dark-section .glass-card,
+footer .glass-card {
+  background-color: var(--dark-surface);
+  border: 1px solid var(--dark-border);
+}
+.dark-section .glass-card:hover,
+footer .glass-card:hover {
+  border-color: var(--dark-border-strong);
+  box-shadow: none;
+}
+
+/* ─── Section alt (light body) ──────────────────────────── */
+.section-alt { background-color: var(--surface-1); }
+
+/* ─── Atmospheric glow (dark sections only) ─────────────── */
+.glow-hero {
+  background: radial-gradient(
+    ellipse 90% 55% at 50% 0%,
+    rgba(39, 114, 224, 0.14) 0%,
+    transparent 65%
+  );
+}
+.glow-blue {
+  box-shadow: 0 0 0 1px rgba(39,114,224,0.2), 0 0 40px rgba(39, 114, 224, 0.12);
+}
+
+/* ─── Code window ───────────────────────────────────────── */
+.code-window {
+  background-color: #0D0D10;
+  border: 1px solid var(--dark-border-strong);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.code-window-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+/* ─── Animations ────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-fade-in-up { animation: fadeInUp 0.45s ease-out forwards; }
+.animate-float      { animation: float 5s ease-in-out infinite; }
+.animate-marquee    { animation: marquee 40s linear infinite; }
+.animate-marquee-slow { animation: marquee 24s linear infinite; }
+
+.logo-marquee-track:hover .animate-marquee,
+.logo-marquee-track:hover .animate-marquee-slow { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up, .animate-float,
+  .animate-marquee, .animate-marquee-slow { animation: none; }
+}

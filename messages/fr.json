@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "services": "Services",
+    "industries": "Industries",
+    "cases": "Projets",
+    "about": "À propos",
+    "team": "Équipe",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getQuote": "Demander un devis"
+  },
+  "footer": {
+    "tagline": "Ingénierie logicielle de qualité suisse pour PME et startups.",
+    "company": "Entreprise",
+    "services": "Services",
+    "resources": "Ressources",
+    "legal": "Mentions légales",
+    "about": "À propos",
+    "team": "Notre équipe",
+    "careers": "Carrières",
+    "contact": "Contact",
+    "blog": "Blog",
+    "cases": "Études de cas",
+    "privacyPolicy": "Politique de confidentialité",
+    "terms": "Conditions générales",
+    "cookiePolicy": "Politique des cookies",
+    "imprint": "Mentions légales",
+    "copyright": "© {year} Trident Software Sàrl. Tous droits réservés.",
+    "industries": "Secteurs",
+    "products": "Nos Produits",
+    "newsletterTagline": "Insights sur le logiciel, l'IA et la tech suisse."
+  },
+  "home": {
+    "hero": {
+      "badge": "Ingénierie de qualité suisse",
+      "title": "Développement logiciel AI-native pour les vraies entreprises",
+      "subtitle": "Nous créons des plateformes sur mesure, des intégrations IA et des systèmes embarqués pour les PME — avec la conformité suisse, des budgets fixes et une équipe de 27+ projets depuis 2009.",
+      "cta": "Réserver un appel de 30 min",
+      "ctaSecondary": "Voir les études de cas"
+    },
+    "services": {
+      "title": "Ce que nous développons",
+      "subtitle": "Des agents IA aux firmwares embarqués — nous couvrons toute la pile d'ingénierie."
+    },
+    "cases": {
+      "title": "Projets sélectionnés",
+      "subtitle": "27+ projets livrés dans l'automobile, la santé, la mode, la logistique et plus."
+    },
+    "stats": {
+      "projects": "Projets livrés",
+      "years": "Années d'expérience",
+      "team": "Ingénieurs",
+      "countries": "Pays clients"
+    },
+    "cta": {
+      "title": "Prêt à lancer votre projet ?",
+      "subtitle": "Parlez-nous de votre défi. Nous répondons dans les 24 heures.",
+      "button": "Consultation gratuite"
+    }
+  },
+  "services": {
+    "title": "Nos services",
+    "subtitle": "Services d'ingénierie end-to-end en IA, logiciel, systèmes embarqués et cloud.",
+    "relatedCases": "Projets associés",
+    "techStack": "Stack technique",
+    "features": "Ce qui est inclus"
+  },
+  "cases": {
+    "title": "Études de cas",
+    "subtitle": "Vrais projets, vrais résultats. Du concept à la production.",
+    "challenge": "Le défi",
+    "approach": "Notre approche",
+    "solution": "La solution",
+    "results": "Résultats",
+    "techStack": "Stack technique",
+    "relatedCases": "Projets associés",
+    "startSimilar": "Démarrer un projet similaire"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Insights sur l'ingénierie, les tendances IA et le marché tech suisse.",
+    "readMore": "Lire la suite",
+    "relatedPosts": "Articles associés"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Un projet en tête ? Discutons-en. Nous répondons dans les 24 heures.",
+    "name": "Votre nom",
+    "email": "Adresse e-mail",
+    "company": "Entreprise",
+    "phone": "Téléphone (optionnel)",
+    "subject": "Sujet",
+    "message": "Décrivez votre projet",
+    "submit": "Envoyer le message",
+    "success": "Message envoyé ! Nous vous répondrons bientôt.",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "notFound": {
+    "title": "Page non trouvée",
+    "description": "La page que vous recherchez n'existe pas.",
+    "goHome": "Aller à l'accueil",
+    "viewServices": "Nos services"
+  }
+}

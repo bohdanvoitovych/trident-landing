@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "services": "Services",
+    "industries": "Industries",
+    "cases": "Cases",
+    "about": "About",
+    "team": "Team",
+    "blog": "Blog",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "footer": {
+    "tagline": "Swiss quality software engineering for SMEs and startups.",
+    "company": "Company",
+    "services": "Services",
+    "resources": "Resources",
+    "legal": "Legal",
+    "about": "About Us",
+    "team": "Our Team",
+    "careers": "Careers",
+    "contact": "Contact",
+    "blog": "Blog",
+    "cases": "Case Studies",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "cookiePolicy": "Cookie Policy",
+    "imprint": "Imprint",
+    "copyright": "© {year} Trident Software Sàrl. All rights reserved.",
+    "industries": "Industries",
+    "products": "Our Products",
+    "newsletterTagline": "Insights on software, AI, and Swiss tech."
+  },
+  "home": {
+    "hero": {
+      "badge": "Swiss Software Engineering Since 2009",
+      "title": "AI-Native Software Development for Growing Businesses",
+      "subtitle": "Custom platforms, AI integrations & embedded systems — built for Swiss and European SMEs. Fixed-price contracts, nFADP compliance, and 27+ projects delivered since 2009.",
+      "cta": "Get a Free Consultation",
+      "ctaSecondary": "View Case Studies"
+    },
+    "services": {
+      "title": "What We Build",
+      "subtitle": "From AI agents to embedded firmware — we cover the full engineering stack."
+    },
+    "cases": {
+      "title": "Selected Work",
+      "subtitle": "27+ projects delivered across automotive, healthcare, fashion, logistics, and more."
+    },
+    "stats": {
+      "projects": "Projects delivered",
+      "years": "Years of experience",
+      "team": "Engineers",
+      "countries": "Client countries"
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "subtitle": "Tell us about your challenge. We respond within 24 hours.",
+      "button": "Get a Free Consultation"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "End-to-end engineering services across AI, software, embedded systems, and cloud.",
+    "relatedCases": "Related Cases",
+    "techStack": "Tech Stack",
+    "features": "What's Included"
+  },
+  "cases": {
+    "title": "Case Studies",
+    "subtitle": "Real projects, real results. From concept to production.",
+    "challenge": "The Challenge",
+    "approach": "Our Approach",
+    "solution": "The Solution",
+    "results": "Results",
+    "techStack": "Tech Stack",
+    "relatedCases": "Related Cases",
+    "startSimilar": "Start a Similar Project"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Engineering insights, AI trends, and Swiss tech market perspectives.",
+    "readMore": "Read more",
+    "relatedPosts": "Related Posts"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have a project in mind? Let's talk. We respond within 24 hours.",
+    "name": "Your Name",
+    "email": "Email Address",
+    "company": "Company",
+    "phone": "Phone (optional)",
+    "subject": "Subject",
+    "message": "Tell us about your project",
+    "submit": "Send Message",
+    "success": "Message sent! We'll get back to you soon.",
+    "error": "Something went wrong. Please try again."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist.",
+    "goHome": "Go to Homepage",
+    "viewServices": "Our Services"
+  }
+}
