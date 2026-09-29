@@ -3,7 +3,11 @@
 import { useState } from 'react'
 import { useLocale } from 'next-intl'
 
-type Status = 'idle' | 'submitting' | 'success' | 'error' | 'duplicate' | 'rate_limit'
+type Status = 'idle' | 'submitting' | 'success' | 'error' | 'duplicate' | 'rate_limit' | 'demo'
+
+// The Cloudflare demo ships without Payload, so there is nowhere to store a
+// subscriber. Say so instead of faking a success.
+const IS_DEMO = process.env.NEXT_PUBLIC_DEMO_MODE === '1'
 
 const LABELS = {
   en: {
@@ -13,6 +17,7 @@ const LABELS = {
     error: 'Something went wrong. Try again.',
     duplicate: 'Already subscribed.',
     rate_limit: 'Too many requests. Try later.',
+    demo: 'Demo site — the form is switched off.',
   },
   de: {
     placeholder: 'Ihre E-Mail-Adresse',
@@ -21,6 +26,7 @@ const LABELS = {
     error: 'Fehler aufgetreten. Versuchen Sie es erneut.',
     duplicate: 'Bereits abonniert.',
     rate_limit: 'Zu viele Anfragen. Versuchen Sie es später.',
+    demo: 'Demo-Seite — das Formular ist deaktiviert.',
   },
   fr: {
     placeholder: 'Votre adresse e-mail',
@@ -29,6 +35,7 @@ const LABELS = {
     error: 'Une erreur est survenue. Réessayez.',
     duplicate: 'Déjà abonné.',
     rate_limit: 'Trop de requêtes. Réessayez plus tard.',
+    demo: 'Site de démonstration — le formulaire est désactivé.',
   },
   it: {
     placeholder: 'Il tuo indirizzo e-mail',
@@ -37,6 +44,7 @@ const LABELS = {
     error: 'Qualcosa è andato storto. Riprova.',
     duplicate: 'Già iscritto.',
     rate_limit: 'Troppe richieste. Riprova più tardi.',
+    demo: 'Sito dimostrativo — il modulo è disattivato.',
   },
 }
 
@@ -50,6 +58,10 @@ export default function NewsletterSignup() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (!email.trim()) return
+    if (IS_DEMO) {
+      setStatus('demo')
+      return
+    }
     setStatus('submitting')
     try {
       const res = await fetch('/api/newsletter/subscribe', {
@@ -73,7 +85,9 @@ export default function NewsletterSignup() {
   }
 
   const feedback =
-    status === 'duplicate'
+    status === 'demo'
+      ? l.demo
+      : status === 'duplicate'
       ? l.duplicate
       : status === 'rate_limit'
         ? l.rate_limit

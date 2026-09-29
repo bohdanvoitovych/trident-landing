@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "trident-landing",
+  "main": ".open-next/worker.js",
+  // Pinned to the installed workerd (1.20260926.1); a later date would not boot.
+  "compatibility_date": "2026-09-26",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

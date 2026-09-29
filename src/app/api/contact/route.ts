@@ -2,6 +2,11 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 export async function POST(request: NextRequest) {
+  // Cloudflare demo: Payload is not part of that build, so /api/leads is absent.
+  if (process.env.NEXT_PUBLIC_DEMO_MODE === '1') {
+    return NextResponse.json({ error: 'Demo mode', code: 'demo' }, { status: 503 })
+  }
+
   try {
     const body = await request.json()
     const { name, email, company, phone, subject, message } = body

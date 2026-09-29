@@ -13,7 +13,10 @@
     "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
-    "start": "cross-env NODE_OPTIONS=--no-deprecation next start"
+    "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
+    "cf:build": "node scripts/cf-build.mjs",
+    "cf:preview": "pnpm cf:build && opennextjs-cloudflare preview",
+    "cf:deploy": "pnpm cf:build && opennextjs-cloudflare deploy"
   },
   "dependencies": {
     "@payloadcms/db-postgres": "^3.79.1",
@@ -49,6 +52,7 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "1.18.1",
     "@types/node": "^22.19.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
@@ -56,7 +60,8 @@
     "eslint-config-next": "15.4.11",
     "prettier": "^3.4.2",
     "tsx": "^4.21.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "wrangler": "^4.143.0"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0",
@@ -66,7 +71,10 @@
     "onlyBuiltDependencies": [
       "sharp",
       "esbuild",
-      "unrs-resolver"
+      "unrs-resolver",
+      "workerd",
+      "@swc/core",
+      "@parcel/watcher"
     ]
   }
 }

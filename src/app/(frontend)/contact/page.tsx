@@ -31,6 +31,9 @@ const contactInfo = [
   },
 ]
 
+// The Cloudflare demo ships without Payload, so a submission has nowhere to go.
+const IS_DEMO = process.env.NEXT_PUBLIC_DEMO_MODE === '1'
+
 export default function ContactPage() {
   const [form, setForm] = useState({
     name: '',
@@ -40,7 +43,9 @@ export default function ContactPage() {
     subject: 'general',
     message: '',
   })
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error' | 'demo'>(
+    'idle',
+  )
 
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
@@ -50,6 +55,10 @@ export default function ContactPage() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    if (IS_DEMO) {
+      setStatus('demo')
+      return
+    }
     setStatus('loading')
     try {
       const res = await fetch('/api/contact', {
@@ -238,6 +247,13 @@ export default function ContactPage() {
                       className="w-full rounded-lg border border-[#E4E4E7] bg-white px-4 py-2.5 text-sm text-[#0F172A] placeholder:text-[#A1A1AA] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
                     />
                   </div>
+
+                  {status === 'demo' && (
+                    <div className="flex items-center gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-500">
+                      <AlertCircle size={14} />
+                      Demo site — the contact form is switched off.
+                    </div>
+                  )}
 
                   {status === 'error' && (
                     <div className="flex items-center gap-2 rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-400">
