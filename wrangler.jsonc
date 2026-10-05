@@ -5,6 +5,8 @@
   // Pinned to the installed workerd (1.20260926.1); a later date would not boot.
   "compatibility_date": "2026-09-26",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // Without this the worker deploys with no route at all and has no URL.
+  "workers_dev": true,
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
