@@ -1,11 +1,26 @@
 import type { Metadata, Viewport } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
+import { Instrument_Sans, IBM_Plex_Mono } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 import { Navbar } from '@/components/organisms/Navbar'
 import { Footer } from '@/components/organisms/Footer'
 import './styles.css'
+import './trident.css'
+
+const instrumentSans = Instrument_Sans({
+  subsets: ['latin'],
+  variable: '--font-instrument-sans',
+  display: 'swap',
+})
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-ibm-plex-mono',
+  display: 'swap',
+})
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -27,7 +42,10 @@ export default async function FrontendLayout({ children }: { children: React.Rea
   const messages = await getMessages()
 
   return (
-    <html lang={locale} className={`${GeistSans.variable} ${GeistMono.variable}`}>
+    <html
+      lang={locale}
+      className={`${GeistSans.variable} ${GeistMono.variable} ${instrumentSans.variable} ${ibmPlexMono.variable}`}
+    >
       <body className="antialiased bg-white text-[#0F172A]">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <a
