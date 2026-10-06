@@ -69,8 +69,11 @@ export function BlogPost({ post }: Props) {
       {/* Content */}
       <section className="pb-16 md:pb-24 bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          {/* prose-invert is for dark backgrounds; this section is white, which
+              left the body text washed out. Neutral prose, and a measure of
+              ~68 characters instead of the full 896px column. */}
           <div
-            className="prose prose-invert prose-headings:font-bold prose-headings:tracking-tight prose-h2:text-2xl prose-h2:text-[var(--primary)] prose-a:text-primary prose-code:text-primary prose-pre:bg-[#0D1117] max-w-none"
+            className="prose prose-neutral prose-lg mx-auto max-w-[68ch] prose-headings:font-semibold prose-headings:tracking-tight prose-h2:text-[26px] prose-h2:mt-12 prose-h2:mb-4 prose-p:leading-[1.75] prose-a:text-[#2772E0] prose-code:text-[#2772E0] prose-pre:bg-[#0F1216] prose-pre:text-white"
             dangerouslySetInnerHTML={{ __html: markdownToHtml(post.content) }}
           />
         </div>

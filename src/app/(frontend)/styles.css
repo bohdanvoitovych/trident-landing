@@ -241,3 +241,76 @@ footer .glass-card:hover {
   .animate-fade-in-up, .animate-float,
   .animate-marquee, .animate-marquee-slow { animation: none; }
 }
+
+/* ─────────────────────────────────────────────────────────────────────
+   Align the older Tailwind pages with the new Trident design system.
+
+   Those pages are built on a handful of shared classes, so re-pointing
+   them here carries the new look across every page without rewriting
+   their markup. Dark sections stay dark — 180 places hardcode white text
+   — but they move to the design system's deep navy and lose the glow and
+   gradients, which the new system does not use.
+   ───────────────────────────────────────────────────────────────────── */
+:root {
+  --dark-bg: #0f1216;
+  --dark-surface: #171b20;
+  --dark-surface-2: #1d2228;
+  --dark-border: rgba(255, 255, 255, 0.1);
+  --dark-border-strong: rgba(255, 255, 255, 0.2);
+  --border-light: #e3e5e8;
+  --border-strong: #c9cdd2;
+  --surface-1: #f6f7f8;
+  --surface-2: #f6f7f8;
+  --radius: 2px;
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 2px;
+  --radius-xl: 3px;
+  --radius-2xl: 3px;
+}
+
+/* Instrument Sans everywhere, so the pages read as one typeface. */
+body {
+  font-family: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.005em;
+}
+
+/* The new system has flat surfaces and hairline rules — no glow, no gradient
+   text, no drop shadows on cards. */
+.glow-hero { background: none; }
+
+.gradient-text {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: #2772e0;
+}
+
+.light-card {
+  border-radius: 2px;
+  border-color: #e3e5e8;
+}
+.light-card:hover {
+  border-color: #c9cdd2;
+  box-shadow: none;
+}
+.light-card-interactive:hover {
+  border-color: #2772e0;
+  box-shadow: none;
+}
+.dark-card,
+.dark-card-interactive,
+.glass-card {
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+/* Section eyebrows match the prototype's mono label. */
+.eyebrow {
+  font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+}
+
+/* Headings pick up the tighter tracking of the new system. */
+.text-display { letter-spacing: -0.04em; }
+.text-heading { letter-spacing: -0.028em; }
