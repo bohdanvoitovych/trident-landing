@@ -80,7 +80,7 @@ export default function IamTradePage() {
     <div className="flex flex-col">
       {/* Hero */}
       <section className="dark-section relative overflow-hidden py-24 md:py-32">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] via-[#09090B] to-[#09090B]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] via-[#0F1216] to-[#0F1216]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="eyebrow mb-5">Our Product</p>
           <h1 className="text-5xl font-bold tracking-tight md:text-6xl mb-6 leading-[1.1] max-w-4xl text-white">
@@ -141,13 +141,13 @@ export default function IamTradePage() {
             {features.map((feature) => {
               const Icon = feature.icon
               return (
-                <div key={feature.title} className="light-card rounded-xl p-6 flex flex-col gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                <div key={feature.title} className="light-card rounded-[3px] p-6 flex flex-col gap-4">
+                  <div className="w-10 h-10 rounded-[2px] bg-primary/10 flex items-center justify-center">
                     <Icon size={20} className="text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#0F172A] mb-2">{feature.title}</h3>
-                    <p className="text-sm text-[#71717A] leading-relaxed">{feature.description}</p>
+                    <h3 className="font-semibold text-[#111318] mb-2">{feature.title}</h3>
+                    <p className="text-sm text-[#4A4F57] leading-relaxed">{feature.description}</p>
                   </div>
                 </div>
               )
@@ -164,10 +164,10 @@ export default function IamTradePage() {
               <p className="eyebrow mb-4 text-primary text-sm font-semibold tracking-wider uppercase">
                 Capabilities
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111318] mb-4">
                 Built for scale and complexity
               </h2>
-              <p className="text-[#71717A] leading-relaxed mb-6">
+              <p className="text-[#4A4F57] leading-relaxed mb-6">
                 iAM-Trade is designed from the ground up for businesses with complex commerce
                 requirements — multiple buyer types, large catalogs, and sophisticated pricing rules
                 that off-the-shelf platforms can't handle.
@@ -180,9 +180,9 @@ export default function IamTradePage() {
             </div>
             <div className="grid grid-cols-1 gap-2.5">
               {capabilities.map((cap) => (
-                <div key={cap} className="flex items-start gap-3 bg-white rounded-lg px-4 py-3 border border-[#E2E8F0]">
+                <div key={cap} className="flex items-start gap-3 bg-white rounded-[2px] px-4 py-3 border border-[#E2E8F0]">
                   <Check size={16} className="text-primary mt-0.5 shrink-0" />
-                  <span className="text-sm text-[#0F172A]">{cap}</span>
+                  <span className="text-sm text-[#111318]">{cap}</span>
                 </div>
               ))}
             </div>
@@ -226,9 +226,9 @@ export default function IamTradePage() {
                 desc: 'Separate branded storefronts from one backend, channel-specific pricing, and partner portal management.',
               },
             ].map((useCase) => (
-              <div key={useCase.title} className="light-card rounded-xl p-6">
-                <h3 className="font-semibold text-[#0F172A] mb-2">{useCase.title}</h3>
-                <p className="text-sm text-[#71717A] leading-relaxed">{useCase.desc}</p>
+              <div key={useCase.title} className="light-card rounded-[3px] p-6">
+                <h3 className="font-semibold text-[#111318] mb-2">{useCase.title}</h3>
+                <p className="text-sm text-[#4A4F57] leading-relaxed">{useCase.desc}</p>
               </div>
             ))}
           </div>
@@ -248,7 +248,7 @@ export default function IamTradePage() {
             {techStack.map((tech) => (
               <span
                 key={tech}
-                className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary"
+                className="inline-flex items-center rounded-[2px] bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary"
               >
                 {tech}
               </span>

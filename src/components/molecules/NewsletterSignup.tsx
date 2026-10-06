@@ -113,12 +113,12 @@ export default function NewsletterSignup() {
         onChange={(e) => setEmail(e.target.value)}
         placeholder={l.placeholder}
         autoComplete="email"
-        className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2.5 text-[13px] text-white placeholder:text-white/30 outline-none transition-colors focus:border-white/25 min-h-[40px]"
+        className="w-full rounded-[2px] border border-white/10 bg-white/5 px-3 py-2.5 text-[13px] text-white placeholder:text-white/30 outline-none transition-colors focus:border-white/25 min-h-[40px]"
       />
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="w-full rounded-lg bg-[#2772E0] hover:bg-[#1d5fc4] disabled:opacity-50 px-3 py-2.5 text-[13px] font-medium text-white transition-colors min-h-[40px]"
+        className="w-full rounded-[2px] bg-[#2772E0] hover:bg-[#1d5fc4] disabled:opacity-50 px-3 py-2.5 text-[13px] font-medium text-white transition-colors min-h-[40px]"
       >
         {status === 'submitting' ? '...' : l.submit}
       </button>

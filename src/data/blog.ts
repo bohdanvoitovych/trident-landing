@@ -2595,7 +2595,7 @@ Avoid condition-heavy inline classes. Define a small set of variants per compone
 import { cva } from 'class-variance-authority'
 
 export const buttonVariants = cva(
-  'inline-flex items-center justify-center rounded-md font-medium transition-colors',
+  'inline-flex items-center justify-center rounded-[2px] font-medium transition-colors',
   {
     variants: {
       intent: {

@@ -39,7 +39,7 @@ export default function IndustriesPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#2772E0] hover:bg-[#2060C8] text-white font-semibold px-6 py-3 rounded-lg transition-colors text-[15px]"
+              className="inline-flex items-center gap-2 bg-[#2772E0] hover:bg-[#2060C8] text-white font-semibold px-6 py-3 rounded-[2px] transition-colors text-[15px]"
             >
               Discuss your project <ArrowRight size={16} />
             </Link>
@@ -55,7 +55,7 @@ export default function IndustriesPage() {
             ].map((s) => (
               <div
                 key={s.label}
-                className="bg-white/[0.04] border border-white/[0.08] rounded-lg px-5 py-3"
+                className="bg-white/[0.04] border border-white/[0.08] rounded-[2px] px-5 py-3"
               >
                 <p className="text-[18px] font-semibold text-white">{s.value}</p>
                 <p className="text-[11px] text-white/40 mt-0.5">{s.label}</p>
@@ -71,7 +71,7 @@ export default function IndustriesPage() {
           <Suspense fallback={
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {industries.map((i) => (
-                <div key={i.slug} className="rounded-xl bg-[#F4F4F5] h-48 animate-pulse" />
+                <div key={i.slug} className="rounded-[3px] bg-[#F4F4F5] h-48 animate-pulse" />
               ))}
             </div>
           }>
@@ -91,7 +91,7 @@ export default function IndustriesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-[#2772E0] hover:bg-[#2060C8] text-white font-semibold px-8 py-3.5 rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 bg-[#2772E0] hover:bg-[#2060C8] text-white font-semibold px-8 py-3.5 rounded-[2px] transition-colors"
           >
             Get a free consultation <ArrowRight size={16} />
           </Link>

@@ -322,3 +322,17 @@ body {
 .max-w-7xl.px-4,
 .max-w-4xl.px-4,
 .max-w-3xl.px-4 { padding-inline: clamp(20px, 5vw, 64px); }
+
+/* The Tailwind semantic tokens still pointed at the old palette, so anything
+   using text-foreground / border-border kept the previous colours. */
+:root {
+  --foreground: #111318;
+  --card-foreground: #111318;
+  --popover-foreground: #111318;
+  --accent-foreground: #111318;
+  --muted-foreground: #4a4f57;
+  --border: #e3e5e8;
+  --input: #f6f7f8;
+  --secondary: #f6f7f8;
+  --dark-muted: rgba(255, 255, 255, 0.62);
+}

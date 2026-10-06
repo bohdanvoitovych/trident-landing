@@ -48,7 +48,7 @@ export default function LocationsPage() {
               <Link
                 key={loc.slug}
                 href={`/locations/${loc.slug}`}
-                className="light-card light-card-interactive rounded-xl p-6 group transition-all flex flex-col gap-3"
+                className="light-card light-card-interactive rounded-[3px] p-6 group transition-all flex flex-col gap-3"
               >
                 <div className="flex items-center gap-2">
                   <MapPin size={14} className="text-primary shrink-0" />

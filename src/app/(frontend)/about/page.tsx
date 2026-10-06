@@ -117,13 +117,13 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <section className="section-alt border-b border-[#E4E4E7] py-10">
+      <section className="section-alt border-b border-[#E3E5E8] py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-4xl font-bold text-[#0F172A]">{stat.value}</p>
-                <p className="text-sm text-[#71717A] mt-1">{stat.label}</p>
+                <p className="text-4xl font-bold text-[#111318]">{stat.value}</p>
+                <p className="text-sm text-[#4A4F57] mt-1">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -164,7 +164,7 @@ export default function AboutPage() {
               {timeline.map((item, i) => (
                 <div key={i} className="flex gap-4">
                   <div className="flex flex-col items-center">
-                    <div className="flex h-9 w-16 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-xs font-bold text-primary">
+                    <div className="flex h-9 w-16 shrink-0 items-center justify-center rounded-[2px] bg-primary/10 text-xs font-bold text-primary">
                       {item.year}
                     </div>
                     {i < timeline.length - 1 && (
@@ -192,8 +192,8 @@ export default function AboutPage() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {values.map((v) => (
-              <div key={v.title} className="light-card rounded-xl p-6 flex flex-col gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+              <div key={v.title} className="light-card rounded-[3px] p-6 flex flex-col gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-[2px] bg-primary/10">
                   <v.icon size={18} className="text-primary" />
                 </div>
                 <h3 className="font-semibold">{v.title}</h3>
@@ -215,9 +215,9 @@ export default function AboutPage() {
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {locations.map((loc) => (
-              <div key={loc.city} className="light-card rounded-xl p-6">
+              <div key={loc.city} className="light-card rounded-[3px] p-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[2px] bg-primary/10">
                     <MapPin size={16} className="text-primary" />
                   </div>
                   <div>
@@ -259,7 +259,7 @@ export default function AboutPage() {
                 { label: 'DevOps / SRE', value: '2' },
                 { label: 'UI/UX designers', value: '1' },
               ].map((item) => (
-                <div key={item.label} className="light-card rounded-xl p-4 text-center">
+                <div key={item.label} className="light-card rounded-[3px] p-4 text-center">
                   <p className="text-3xl font-bold gradient-text">{item.value}</p>
                   <p className="text-xs text-muted-foreground mt-1">{item.label}</p>
                 </div>

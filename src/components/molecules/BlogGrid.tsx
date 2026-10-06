@@ -49,7 +49,7 @@ export function BlogGrid({ posts, readMore }: Props) {
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
-            className="group bg-white border border-[#E4E4E7] rounded-xl overflow-hidden flex flex-col hover:shadow-md hover:border-[#2772E0]/30 transition-all duration-200"
+            className="group bg-white border border-[#E3E5E8] rounded-[3px] overflow-hidden flex flex-col hover:shadow-md hover:border-[#2772E0]/30 transition-all duration-200"
           >
             {/* Image */}
             <div className="relative h-44 bg-[#F4F4F5] overflow-hidden shrink-0">
@@ -62,7 +62,7 @@ export function BlogGrid({ posts, readMore }: Props) {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               ) : (
-                <div className="absolute inset-0 bg-gradient-to-br from-[#2772E0]/20 to-[#6366F1]/20 flex items-center justify-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#2772E0]/20 to-[#2772E0]/20 flex items-center justify-center">
                   <span className="text-[#2772E0]/40 text-4xl font-bold">{post.title[0]}</span>
                 </div>
               )}
@@ -74,13 +74,13 @@ export function BlogGrid({ posts, readMore }: Props) {
 
             {/* Content */}
             <div className="flex flex-col gap-3 p-5 flex-1">
-              <h2 className="font-semibold text-[15px] text-[#0F172A] group-hover:text-[#2772E0] transition-colors leading-snug line-clamp-2">
+              <h2 className="font-semibold text-[15px] text-[#111318] group-hover:text-[#2772E0] transition-colors leading-snug line-clamp-2">
                 {post.title}
               </h2>
-              <p className="text-[13px] text-[#71717A] leading-relaxed line-clamp-2">
+              <p className="text-[13px] text-[#4A4F57] leading-relaxed line-clamp-2">
                 {post.excerpt}
               </p>
-              <div className="flex items-center gap-3 text-[11px] text-[#A1A1AA] mt-auto">
+              <div className="flex items-center gap-3 text-[11px] text-[#6B7078] mt-auto">
                 <div className="flex items-center gap-1">
                   <Calendar size={11} />
                   {formatDate(post.publishedAt)}

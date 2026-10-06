@@ -95,13 +95,13 @@ export default function TeamPage() {
       </section>
 
       {/* Stats */}
-      <section className="section-alt border-b border-[#E4E4E7] py-10">
+      <section className="section-alt border-b border-[#E3E5E8] py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-4xl font-bold text-[#0F172A]">{stat.value}</p>
-                <p className="text-sm text-[#71717A] mt-1">{stat.label}</p>
+                <p className="text-4xl font-bold text-[#111318]">{stat.value}</p>
+                <p className="text-sm text-[#4A4F57] mt-1">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -124,19 +124,19 @@ export default function TeamPage() {
               return (
                 <div key={dept}>
                   <div className="flex items-center gap-3 mb-6">
-                    <h3 className="text-xl font-semibold text-[#0F172A]">{dept}</h3>
-                    <span className="text-sm text-[#71717A]">
+                    <h3 className="text-xl font-semibold text-[#111318]">{dept}</h3>
+                    <span className="text-sm text-[#4A4F57]">
                       {members.length} {members.length === 1 ? 'person' : 'people'}
                     </span>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {members.map((member) => (
-                      <div key={member.slug} className="light-card rounded-xl p-5 flex flex-col gap-3">
+                      <div key={member.slug} className="light-card rounded-[3px] p-5 flex flex-col gap-3">
                         <div>
-                          <p className="font-semibold text-[#0F172A]">{member.name}</p>
-                          <p className="text-sm text-[#71717A]">{member.role}</p>
+                          <p className="font-semibold text-[#111318]">{member.name}</p>
+                          <p className="text-sm text-[#4A4F57]">{member.role}</p>
                         </div>
-                        <div className="flex items-center gap-1.5 text-xs text-[#71717A]">
+                        <div className="flex items-center gap-1.5 text-xs text-[#4A4F57]">
                           <MapPin size={12} className="text-primary" />
                           {member.location}
                         </div>
@@ -144,7 +144,7 @@ export default function TeamPage() {
                           {member.expertise.map((tag) => (
                             <span
                               key={tag}
-                              className="inline-flex items-center rounded-md bg-primary/10 px-2 py-0.5 text-[11px] font-medium text-primary"
+                              className="inline-flex items-center rounded-[2px] bg-primary/10 px-2 py-0.5 text-[11px] font-medium text-primary"
                             >
                               {tag}
                             </span>
@@ -171,15 +171,15 @@ export default function TeamPage() {
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {locations.map((loc) => (
-              <div key={loc.city} className="light-card rounded-xl p-6">
+              <div key={loc.city} className="light-card rounded-[3px] p-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[2px] bg-primary/10">
                     <MapPin size={16} className="text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold text-[#0F172A]">{loc.city}</p>
-                    <p className="text-sm text-[#71717A]">{loc.country}</p>
-                    <p className="text-xs text-[#71717A] mt-2 leading-relaxed">{loc.role}</p>
+                    <p className="font-semibold text-[#111318]">{loc.city}</p>
+                    <p className="text-sm text-[#4A4F57]">{loc.country}</p>
+                    <p className="text-xs text-[#4A4F57] mt-2 leading-relaxed">{loc.role}</p>
                   </div>
                 </div>
               </div>

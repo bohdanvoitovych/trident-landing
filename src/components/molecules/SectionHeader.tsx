@@ -12,9 +12,9 @@ export function SectionHeader({ eyebrow, title, subtitle, center, className }: P
   return (
     <div className={cn('flex flex-col gap-3', center && 'items-center text-center', className)}>
       {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-      <h2 className="text-heading text-[#0F172A] tracking-tight">{title}</h2>
+      <h2 className="text-heading text-[#111318] tracking-tight">{title}</h2>
       {subtitle && (
-        <p className="text-[16px] text-[#71717A] leading-relaxed max-w-2xl">{subtitle}</p>
+        <p className="text-[16px] text-[#4A4F57] leading-relaxed max-w-2xl">{subtitle}</p>
       )}
     </div>
   )

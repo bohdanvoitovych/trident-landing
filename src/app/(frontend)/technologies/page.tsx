@@ -64,7 +64,7 @@ export default function TechnologiesPage() {
               <Link
                 key={tech.slug}
                 href={`/technologies/${tech.slug}`}
-                className="light-card light-card-interactive rounded-xl p-6 group transition-all flex flex-col gap-3"
+                className="light-card light-card-interactive rounded-[3px] p-6 group transition-all flex flex-col gap-3"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">

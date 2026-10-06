@@ -84,7 +84,7 @@ export default function ProductsPage() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {features.map((f) => (
-              <div key={f.title} className="light-card rounded-xl p-6">
+              <div key={f.title} className="light-card rounded-[3px] p-6">
                 <h3 className="font-semibold mb-2">{f.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
               </div>

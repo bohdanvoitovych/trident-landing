@@ -39,7 +39,7 @@ export default async function WebsitePackagePage({ params }: Props) {
   return (
     <div className="flex flex-col">
       {/* Breadcrumb */}
-      <div className="bg-[#09090B] border-b border-white/[0.06]">
+      <div className="bg-[#0F1216] border-b border-white/[0.06]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
           <nav className="flex items-center gap-2 text-sm text-white/40">
             <Link href="/solutions" className="hover:text-white/70 transition-colors">
@@ -94,7 +94,7 @@ export default async function WebsitePackagePage({ params }: Props) {
             {/* Price card */}
             <div
               className={cn(
-                'rounded-2xl border p-8 min-w-[240px] shrink-0',
+                'rounded-[3px] border p-8 min-w-[240px] shrink-0',
                 pkg.highlighted
                   ? 'border-primary/50 bg-primary/10'
                   : 'border-white/[0.08] bg-white/[0.04]',
@@ -131,7 +131,7 @@ export default async function WebsitePackagePage({ params }: Props) {
                 <div className="shrink-0 mt-0.5 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
                   <Check size={12} className="text-primary" />
                 </div>
-                <span className="text-[#0F172A] font-medium">{feature}</span>
+                <span className="text-[#111318] font-medium">{feature}</span>
               </div>
             ))}
           </div>
@@ -151,7 +151,7 @@ export default async function WebsitePackagePage({ params }: Props) {
             {pkg.target.map((audience) => (
               <span
                 key={audience}
-                className="inline-flex items-center gap-2 rounded-full border border-[#E2E8F0] bg-white px-4 py-2 text-sm font-medium text-[#0F172A]"
+                className="inline-flex items-center gap-2 rounded-full border border-[#E2E8F0] bg-white px-4 py-2 text-sm font-medium text-[#111318]"
               >
                 <Users size={14} className="text-primary" />
                 {audience}
@@ -172,9 +172,9 @@ export default async function WebsitePackagePage({ params }: Props) {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {websitesSolution.features.map((feature) => (
-              <div key={feature.title} className="light-card rounded-xl p-6 flex flex-col gap-3">
-                <h3 className="font-semibold text-[#0F172A]">{feature.title}</h3>
-                <p className="text-sm text-[#71717A] leading-relaxed">{feature.description}</p>
+              <div key={feature.title} className="light-card rounded-[3px] p-6 flex flex-col gap-3">
+                <h3 className="font-semibold text-[#111318]">{feature.title}</h3>
+                <p className="text-sm text-[#4A4F57] leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -197,19 +197,19 @@ export default async function WebsitePackagePage({ params }: Props) {
                   key={other.slug}
                   href={`/solutions/websites/${other.slug}`}
                   className={cn(
-                    'light-card rounded-xl p-6 flex flex-col gap-4 hover:border-primary/40 transition-colors group',
+                    'light-card rounded-[3px] p-6 flex flex-col gap-4 hover:border-primary/40 transition-colors group',
                     other.highlighted && 'ring-1 ring-primary/30',
                   )}
                 >
                   <div>
-                    <p className="text-sm font-medium text-[#71717A]">{other.name}</p>
-                    <p className="text-2xl font-bold text-[#0F172A] mt-1">{other.price}</p>
-                    <div className="flex items-center gap-1.5 text-xs text-[#71717A] mt-1.5">
+                    <p className="text-sm font-medium text-[#4A4F57]">{other.name}</p>
+                    <p className="text-2xl font-bold text-[#111318] mt-1">{other.price}</p>
+                    <div className="flex items-center gap-1.5 text-xs text-[#4A4F57] mt-1.5">
                       <Clock size={11} className="text-primary" />
                       {other.timeline}
                     </div>
                   </div>
-                  <p className="text-sm text-[#71717A] leading-relaxed line-clamp-2">
+                  <p className="text-sm text-[#4A4F57] leading-relaxed line-clamp-2">
                     {other.description}
                   </p>
                   <span className="inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:gap-2 transition-all">

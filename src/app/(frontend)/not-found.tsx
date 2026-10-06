@@ -9,7 +9,7 @@ export default function NotFound() {
   const t = useTranslations('notFound')
 
   return (
-    <section className="relative min-h-[90vh] bg-[#0F172A] flex flex-col items-center justify-center px-6 text-center overflow-hidden">
+    <section className="relative min-h-[90vh] bg-[#111318] flex flex-col items-center justify-center px-6 text-center overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-blue-600/8 blur-[120px] pointer-events-none" />
       <div className="absolute inset-0 bg-[linear-gradient(rgba(39,114,224,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(39,114,224,0.04)_1px,transparent_1px)] bg-[size:64px_64px] pointer-events-none" />
 
@@ -20,7 +20,7 @@ export default function NotFound() {
 
         <h1
           aria-hidden="true"
-          className="font-bold select-none leading-none mb-0 bg-gradient-to-r from-[#2772E0] to-[#6366F1] bg-clip-text text-transparent"
+          className="font-bold select-none leading-none mb-0 bg-gradient-to-r from-[#2772E0] to-[#2772E0] bg-clip-text text-transparent"
           style={{ fontSize: 'clamp(7rem, 22vw, 14rem)' }}
         >
           404

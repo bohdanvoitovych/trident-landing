@@ -65,7 +65,7 @@ export default function PricingPage() {
               <div
                 key={pkg.name}
                 className={cn(
-                  'light-card rounded-xl p-6 flex flex-col gap-5 relative',
+                  'light-card rounded-[3px] p-6 flex flex-col gap-5 relative',
                   pkg.highlighted && 'ring-2 ring-primary border-primary',
                 )}
               >
@@ -75,21 +75,21 @@ export default function PricingPage() {
                   </span>
                 )}
                 <div>
-                  <p className="text-sm font-medium text-[#71717A]">{pkg.name}</p>
-                  <p className="text-3xl font-bold text-[#0F172A] mt-2">{pkg.price}</p>
-                  <div className="flex items-center gap-1.5 text-xs text-[#71717A] mt-2">
+                  <p className="text-sm font-medium text-[#4A4F57]">{pkg.name}</p>
+                  <p className="text-3xl font-bold text-[#111318] mt-2">{pkg.price}</p>
+                  <div className="flex items-center gap-1.5 text-xs text-[#4A4F57] mt-2">
                     <Clock size={12} className="text-primary" />
                     Delivered in {pkg.timeline}
                   </div>
                 </div>
 
                 <div>
-                  <p className="text-[11px] font-medium text-[#71717A] uppercase tracking-widest mb-2">
+                  <p className="text-[11px] font-medium text-[#4A4F57] uppercase tracking-widest mb-2">
                     For
                   </p>
                   <ul className="space-y-1">
                     {pkg.target.map((item) => (
-                      <li key={item} className="text-xs text-[#71717A]">
+                      <li key={item} className="text-xs text-[#4A4F57]">
                         {item}
                       </li>
                     ))}
@@ -97,12 +97,12 @@ export default function PricingPage() {
                 </div>
 
                 <div className="flex-1">
-                  <p className="text-[11px] font-medium text-[#71717A] uppercase tracking-widest mb-2">
+                  <p className="text-[11px] font-medium text-[#4A4F57] uppercase tracking-widest mb-2">
                     Includes
                   </p>
                   <ul className="space-y-2">
                     {pkg.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-2 text-sm text-[#0F172A]">
+                      <li key={feature} className="flex items-start gap-2 text-sm text-[#111318]">
                         <Check size={14} className="text-primary mt-0.5 shrink-0" />
                         <span>{feature}</span>
                       </li>
@@ -134,14 +134,14 @@ export default function PricingPage() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {addOns.map((addOn) => (
-              <div key={addOn.name} className="light-card rounded-xl p-6 flex flex-col gap-2">
+              <div key={addOn.name} className="light-card rounded-[3px] p-6 flex flex-col gap-2">
                 <div className="flex items-start justify-between gap-3">
-                  <p className="font-semibold text-[#0F172A]">{addOn.name}</p>
+                  <p className="font-semibold text-[#111318]">{addOn.name}</p>
                   <span className="text-sm font-semibold text-primary whitespace-nowrap">
                     {addOn.price}
                   </span>
                 </div>
-                <p className="text-sm text-[#71717A] leading-relaxed">{addOn.description}</p>
+                <p className="text-sm text-[#4A4F57] leading-relaxed">{addOn.description}</p>
               </div>
             ))}
           </div>

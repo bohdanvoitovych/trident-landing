@@ -86,8 +86,8 @@ export function BlogPost({ post }: Props) {
             <h2 className="text-2xl font-bold mb-8">Frequently Asked Questions</h2>
             <div className="space-y-4">
               {post.faq.map((item, i) => (
-                <details key={i} className="group border border-gray-200 rounded-xl">
-                  <summary className="flex items-center justify-between cursor-pointer p-5 font-medium text-[#0F172A] list-none">
+                <details key={i} className="group border border-gray-200 rounded-[3px]">
+                  <summary className="flex items-center justify-between cursor-pointer p-5 font-medium text-[#111318] list-none">
                     {item.question}
                     <span className="ml-4 text-primary group-open:rotate-45 transition-transform text-xl leading-none">+</span>
                   </summary>
@@ -109,7 +109,7 @@ export function BlogPost({ post }: Props) {
                 <Link
                   key={p.slug}
                   href={`/blog/${p.slug}`}
-                  className="light-card light-card-interactive rounded-xl p-6 transition-all duration-300 flex flex-col gap-3"
+                  className="light-card light-card-interactive rounded-[3px] p-6 transition-all duration-300 flex flex-col gap-3"
                 >
                   <div className="flex flex-wrap gap-1">
                     {p.tags.slice(0, 2).map((tag) => (

@@ -108,22 +108,22 @@ export function IndustriesGrid({ industries }: Props) {
             <Link
               key={industry.slug}
               href={`/industries/${industry.slug}`}
-              className="group light-card light-card-interactive rounded-xl p-6 flex flex-col gap-4 transition-all duration-200"
+              className="group light-card light-card-interactive rounded-[3px] p-6 flex flex-col gap-4 transition-all duration-200"
             >
               <div className="flex items-start justify-between">
-                <div className="w-10 h-10 rounded-lg bg-[#2772E0]/10 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-[2px] bg-[#2772E0]/10 flex items-center justify-center shrink-0">
                   <Icon size={18} className="text-[#2772E0]" />
                 </div>
-                <span className="text-[10px] font-medium text-[#A1A1AA] bg-[#F4F4F5] border border-[#E4E4E7] rounded-full px-2 py-0.5 uppercase tracking-wider">
+                <span className="text-[10px] font-medium text-[#6B7078] bg-[#F4F4F5] border border-[#E3E5E8] rounded-full px-2 py-0.5 uppercase tracking-wider">
                   {category}
                 </span>
               </div>
 
               <div className="flex-1">
-                <h2 className="font-semibold text-[#0F172A] group-hover:text-[#2772E0] transition-colors mb-1.5">
+                <h2 className="font-semibold text-[#111318] group-hover:text-[#2772E0] transition-colors mb-1.5">
                   {industry.title}
                 </h2>
-                <p className="text-[13px] text-[#71717A] leading-relaxed line-clamp-2">
+                <p className="text-[13px] text-[#4A4F57] leading-relaxed line-clamp-2">
                   {industry.tagline}
                 </p>
               </div>
@@ -132,13 +132,13 @@ export function IndustriesGrid({ industries }: Props) {
                 {industry.techStack.slice(0, 3).map((tech) => (
                   <span
                     key={tech}
-                    className="text-[10px] bg-white border border-[#E4E4E7] text-[#71717A] rounded px-1.5 py-0.5"
+                    className="text-[10px] bg-white border border-[#E3E5E8] text-[#4A4F57] rounded px-1.5 py-0.5"
                   >
                     {tech}
                   </span>
                 ))}
                 {industry.techStack.length > 3 && (
-                  <span className="text-[10px] text-[#A1A1AA]">+{industry.techStack.length - 3}</span>
+                  <span className="text-[10px] text-[#6B7078]">+{industry.techStack.length - 3}</span>
                 )}
               </div>
 

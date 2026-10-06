@@ -70,9 +70,9 @@ export default function CloudServicesSolutionPage() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {solution.features.map((feature) => (
-              <div key={feature.title} className="light-card rounded-xl p-6 flex flex-col gap-3">
-                <h3 className="font-semibold text-[#0F172A]">{feature.title}</h3>
-                <p className="text-sm text-[#71717A] leading-relaxed">{feature.description}</p>
+              <div key={feature.title} className="light-card rounded-[3px] p-6 flex flex-col gap-3">
+                <h3 className="font-semibold text-[#111318]">{feature.title}</h3>
+                <p className="text-sm text-[#4A4F57] leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -91,7 +91,7 @@ export default function CloudServicesSolutionPage() {
             {certifications.map((c) => (
               <span
                 key={c}
-                className="inline-flex items-center rounded-lg bg-white border border-[#E4E4E7] px-4 py-2 text-sm font-medium text-[#0F172A]"
+                className="inline-flex items-center rounded-[2px] bg-white border border-[#E3E5E8] px-4 py-2 text-sm font-medium text-[#111318]"
               >
                 {c}
               </span>
@@ -112,7 +112,7 @@ export default function CloudServicesSolutionPage() {
             {solution.techStack.map((tech) => (
               <span
                 key={tech}
-                className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary"
+                className="inline-flex items-center rounded-[2px] bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary"
               >
                 {tech}
               </span>

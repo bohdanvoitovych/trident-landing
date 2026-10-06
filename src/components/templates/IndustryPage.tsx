@@ -59,7 +59,7 @@ export function IndustryPage({ industry }: Props) {
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {industry.challenges.map((c) => (
-              <div key={c.title} className="light-card rounded-xl p-6">
+              <div key={c.title} className="light-card rounded-[3px] p-6">
                 <h3 className="font-semibold mb-2">{c.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{c.description}</p>
               </div>
@@ -79,7 +79,7 @@ export function IndustryPage({ industry }: Props) {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {industry.solutions.map((s) => (
-              <div key={s.title} className="light-card rounded-xl p-6 flex gap-4">
+              <div key={s.title} className="light-card rounded-[3px] p-6 flex gap-4">
                 <CheckCircle size={18} className="text-primary mt-0.5 shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-1">{s.title}</h3>
@@ -92,14 +92,14 @@ export function IndustryPage({ industry }: Props) {
       </section>
 
       {/* Tech stack */}
-      <section className="py-16 border-y border-[#E4E4E7]">
+      <section className="py-16 border-y border-[#E3E5E8]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-muted-foreground mb-4">Technology stack</p>
           <div className="flex flex-wrap gap-2">
             {industry.techStack.map((tech) => (
               <span
                 key={tech}
-                className="bg-[#F4F4F5] text-[#3F3F46] border border-[#E4E4E7] text-xs px-3 py-1 rounded-full"
+                className="bg-[#F4F4F5] text-[#3F3F46] border border-[#E3E5E8] text-xs px-3 py-1 rounded-full"
               >
                 {tech}
               </span>
@@ -123,7 +123,7 @@ export function IndustryPage({ industry }: Props) {
                 <Link
                   key={s.slug}
                   href={`/services/${s.slug}`}
-                  className="light-card light-card-interactive rounded-xl p-6 group transition-all"
+                  className="light-card light-card-interactive rounded-[3px] p-6 group transition-all"
                 >
                   <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">
                     {s.title}
@@ -156,7 +156,7 @@ export function IndustryPage({ industry }: Props) {
                 <Link
                   key={c.slug}
                   href={`/cases/${c.slug}`}
-                  className="light-card light-card-interactive rounded-xl p-6 group transition-all"
+                  className="light-card light-card-interactive rounded-[3px] p-6 group transition-all"
                 >
                   <Badge variant="blue" className="mb-3 text-xs">
                     {c.industry}

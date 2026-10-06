@@ -46,11 +46,11 @@ export default async function FrontendLayout({ children }: { children: React.Rea
       lang={locale}
       className={`${GeistSans.variable} ${GeistMono.variable} ${instrumentSans.variable} ${ibmPlexMono.variable}`}
     >
-      <body className="antialiased bg-white text-[#0F172A]">
+      <body className="antialiased bg-white text-[#111318]">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <a
             href="#main-content"
-            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-[2px]"
           >
             Skip to main content
           </a>

@@ -58,7 +58,7 @@ export function TechnologyPage({ technology }: Props) {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {technology.useCases.map((uc) => (
-              <div key={uc.title} className="light-card rounded-xl p-6 flex gap-4">
+              <div key={uc.title} className="light-card rounded-[3px] p-6 flex gap-4">
                 <CheckCircle size={18} className="text-primary mt-0.5 shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-1">{uc.title}</h3>
@@ -81,7 +81,7 @@ export function TechnologyPage({ technology }: Props) {
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             {technology.benefits.map((b) => (
-              <div key={b} className="light-card rounded-xl p-5 flex gap-3 items-start">
+              <div key={b} className="light-card rounded-[3px] p-5 flex gap-3 items-start">
                 <CheckCircle size={16} className="text-primary mt-0.5 shrink-0" />
                 <p className="text-sm leading-relaxed">{b}</p>
               </div>
@@ -91,7 +91,7 @@ export function TechnologyPage({ technology }: Props) {
       </section>
 
       {/* Stack */}
-      <section className="py-16 border-y border-[#E4E4E7]">
+      <section className="py-16 border-y border-[#E3E5E8]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-muted-foreground mb-4">
             We use {technology.name} alongside
@@ -100,7 +100,7 @@ export function TechnologyPage({ technology }: Props) {
             {technology.complementaryStack.map((t) => (
               <span
                 key={t}
-                className="inline-flex items-center rounded-full border border-[#E4E4E7] bg-white px-3 py-1 text-sm font-medium text-[#3F3F46]"
+                className="inline-flex items-center rounded-full border border-[#E3E5E8] bg-white px-3 py-1 text-sm font-medium text-[#3F3F46]"
               >
                 {t}
               </span>
@@ -124,7 +124,7 @@ export function TechnologyPage({ technology }: Props) {
                 <Link
                   key={s.slug}
                   href={`/services/${s.slug}`}
-                  className="light-card light-card-interactive rounded-xl p-6 group flex gap-4 transition-all"
+                  className="light-card light-card-interactive rounded-[3px] p-6 group flex gap-4 transition-all"
                 >
                   <div>
                     <h3 className="font-semibold mb-1 group-hover:text-primary transition-colors">
@@ -160,7 +160,7 @@ export function TechnologyPage({ technology }: Props) {
                 <Link
                   key={c.slug}
                   href={`/cases/${c.slug}`}
-                  className="light-card light-card-interactive rounded-xl p-6 group transition-all"
+                  className="light-card light-card-interactive rounded-[3px] p-6 group transition-all"
                 >
                   <Badge variant="blue" className="mb-3 text-xs">
                     {c.industry}

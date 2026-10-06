@@ -14,7 +14,7 @@ export function CaseCard({ case_, className }: Props) {
     <Link
       href={`/cases/${case_.slug}`}
       className={cn(
-        'group light-card light-card-interactive rounded-xl overflow-hidden flex flex-col',
+        'group light-card light-card-interactive rounded-[3px] overflow-hidden flex flex-col',
         className,
       )}
     >
@@ -32,10 +32,10 @@ export function CaseCard({ case_, className }: Props) {
       <div className="p-5 flex flex-col gap-3 flex-1">
       <div className="flex items-start justify-between gap-2">
         <div>
-          <p className="text-[11px] text-[#A1A1AA] font-medium uppercase tracking-wider mb-1">
+          <p className="text-[11px] text-[#6B7078] font-medium uppercase tracking-wider mb-1">
             {case_.client}
           </p>
-          <h3 className="font-semibold text-[14px] text-[#0F172A] group-hover:text-[#2772E0] transition-colors leading-snug">
+          <h3 className="font-semibold text-[14px] text-[#111318] group-hover:text-[#2772E0] transition-colors leading-snug">
             {case_.hero.title}
           </h3>
         </div>
@@ -44,14 +44,14 @@ export function CaseCard({ case_, className }: Props) {
         </span>
       </div>
 
-      <p className="text-[13px] text-[#71717A] leading-relaxed">{case_.hero.tagline}</p>
+      <p className="text-[13px] text-[#4A4F57] leading-relaxed">{case_.hero.tagline}</p>
 
       {case_.results.length > 0 && (
-        <div className="flex flex-wrap gap-4 pt-1 border-t border-[#E4E4E7]">
+        <div className="flex flex-wrap gap-4 pt-1 border-t border-[#E3E5E8]">
           {case_.results.slice(0, 2).map((r) => (
             <div key={r.metric}>
               <span className="text-[18px] font-semibold gradient-text">{r.value}</span>
-              <span className="text-[12px] text-[#A1A1AA] ml-1">{r.metric}</span>
+              <span className="text-[12px] text-[#6B7078] ml-1">{r.metric}</span>
             </div>
           ))}
         </div>

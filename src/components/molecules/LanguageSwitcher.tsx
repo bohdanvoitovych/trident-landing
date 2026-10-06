@@ -52,19 +52,33 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
         <DropdownMenu.Content
           align="end"
           sideOffset={6}
-          className="z-50 min-w-[110px] rounded-lg border border-white/10 bg-[#0F172A] py-1 shadow-xl shadow-black/30"
+          className={`z-50 min-w-[128px] rounded-[2px] py-1 ${
+            tone === 'light'
+              ? 'border border-[#E3E5E8] bg-white shadow-[0_6px_24px_rgba(17,19,24,0.10)]'
+              : 'border border-white/10 bg-[#0F1216] shadow-xl shadow-black/30'
+          }`}
         >
           {LOCALES.map((l) => (
             <DropdownMenu.Item
               key={l.code}
               onSelect={() => setLocale(l.code)}
-              className={`flex items-center gap-2 px-3 py-2 text-sm cursor-pointer outline-none transition-colors
-                ${l.code === currentLocale
-                  ? 'text-white font-medium'
-                  : 'text-white/50 hover:text-white hover:bg-white/5'
-                }`}
+              className={`flex items-center gap-2 px-3 py-2 text-sm cursor-pointer outline-none transition-colors ${
+                tone === 'light'
+                  ? l.code === currentLocale
+                    ? 'text-[#111318] font-medium bg-[#F6F7F8]'
+                    : 'text-[#4A4F57] hover:text-[#111318] hover:bg-[#F6F7F8]'
+                  : l.code === currentLocale
+                    ? 'text-white font-medium'
+                    : 'text-white/50 hover:text-white hover:bg-white/5'
+              }`}
             >
-              <span className="w-6 text-xs font-mono text-white/30">{l.short}</span>
+              <span
+                className={`w-6 text-[11px] font-mono ${
+                  tone === 'light' ? 'text-[#6B7078]' : 'text-white/30'
+                }`}
+              >
+                {l.short}
+              </span>
               {l.label}
             </DropdownMenu.Item>
           ))}

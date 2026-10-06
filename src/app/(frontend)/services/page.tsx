@@ -104,7 +104,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
             <p className="eyebrow mb-2">Services</p>
-            <h2 className="text-heading text-[#0F172A]">What we deliver</h2>
+            <h2 className="text-heading text-[#111318]">What we deliver</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((service) => (
@@ -115,28 +115,28 @@ export default function ServicesPage() {
       </section>
 
       {/* ── How we engage ────────────────────────────────── */}
-      <section className="section-alt py-16 md:py-24 border-t border-[#E4E4E7]">
+      <section className="section-alt py-16 md:py-24 border-t border-[#E3E5E8]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
             <p className="eyebrow mb-2">Process</p>
-            <h2 className="text-heading text-[#0F172A]">How we engage</h2>
-            <p className="text-[#71717A] mt-3 max-w-xl">
+            <h2 className="text-heading text-[#111318]">How we engage</h2>
+            <p className="text-[#4A4F57] mt-3 max-w-xl">
               Three steps from brief to shipped product. No black boxes, no scope surprises.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {STEPS.map(({ icon: Icon, title, description, number }) => (
-              <div key={number} className="light-card rounded-2xl p-7 flex flex-col gap-4">
+              <div key={number} className="light-card rounded-[3px] p-7 flex flex-col gap-4">
                 <div className="flex items-start justify-between">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#2772E0]/10">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-[3px] bg-[#2772E0]/10">
                     <Icon size={18} className="text-[#2772E0]" />
                   </div>
-                  <span className="text-[32px] font-bold text-[#E4E4E7] leading-none select-none">
+                  <span className="text-[32px] font-bold text-[#E3E5E8] leading-none select-none">
                     {number}
                   </span>
                 </div>
-                <h3 className="font-semibold text-[#0F172A] text-[15px]">{title}</h3>
-                <p className="text-[13px] text-[#71717A] leading-relaxed">{description}</p>
+                <h3 className="font-semibold text-[#111318] text-[15px]">{title}</h3>
+                <p className="text-[13px] text-[#4A4F57] leading-relaxed">{description}</p>
               </div>
             ))}
           </div>
@@ -144,12 +144,12 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Technologies we use ───────────────────────────── */}
-      <section className="py-16 md:py-20 border-t border-[#E4E4E7]">
+      <section className="py-16 md:py-20 border-t border-[#E3E5E8]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
               <p className="eyebrow mb-2">Stack</p>
-              <h2 className="text-heading text-[#0F172A]">Technologies we use</h2>
+              <h2 className="text-heading text-[#111318]">Technologies we use</h2>
             </div>
             <Link
               href="/technologies"
@@ -177,7 +177,7 @@ export default function ServicesPage() {
                   loading="lazy"
                   className="shrink-0 opacity-70 group-hover:opacity-100 transition-opacity"
                 />
-                <span className="text-[11px] text-center text-[#71717A] group-hover:text-[#2772E0] transition-colors leading-tight">
+                <span className="text-[11px] text-center text-[#4A4F57] group-hover:text-[#2772E0] transition-colors leading-tight">
                   {tech.name}
                 </span>
               </Link>
@@ -187,19 +187,19 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Why choose us ────────────────────────────────── */}
-      <section className="section-alt py-16 md:py-24 border-t border-[#E4E4E7]">
+      <section className="section-alt py-16 md:py-24 border-t border-[#E3E5E8]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
             <p className="eyebrow mb-2">Why us</p>
-            <h2 className="text-heading text-[#0F172A]">What you get with Trident</h2>
+            <h2 className="text-heading text-[#111318]">What you get with Trident</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {TRUST_POINTS.map(({ title, description }) => (
               <div key={title} className="flex gap-4">
                 <CheckCircle size={18} className="text-[#2772E0] shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-semibold text-[#0F172A] mb-1 text-[14px]">{title}</h3>
-                  <p className="text-[13px] text-[#71717A] leading-relaxed">{description}</p>
+                  <h3 className="font-semibold text-[#111318] mb-1 text-[14px]">{title}</h3>
+                  <p className="text-[13px] text-[#4A4F57] leading-relaxed">{description}</p>
                 </div>
               </div>
             ))}

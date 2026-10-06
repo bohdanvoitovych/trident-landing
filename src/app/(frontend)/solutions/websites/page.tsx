@@ -69,7 +69,7 @@ export default function WebsitesSolutionPage() {
               <div
                 key={pkg.name}
                 className={cn(
-                  'light-card rounded-xl p-6 flex flex-col gap-5 relative',
+                  'light-card rounded-[3px] p-6 flex flex-col gap-5 relative',
                   pkg.highlighted && 'ring-2 ring-primary border-primary',
                 )}
               >
@@ -79,21 +79,21 @@ export default function WebsitesSolutionPage() {
                   </span>
                 )}
                 <div>
-                  <p className="text-sm font-medium text-[#71717A]">{pkg.name}</p>
-                  <p className="text-3xl font-bold text-[#0F172A] mt-2">{pkg.price}</p>
-                  <div className="flex items-center gap-1.5 text-xs text-[#71717A] mt-2">
+                  <p className="text-sm font-medium text-[#4A4F57]">{pkg.name}</p>
+                  <p className="text-3xl font-bold text-[#111318] mt-2">{pkg.price}</p>
+                  <div className="flex items-center gap-1.5 text-xs text-[#4A4F57] mt-2">
                     <Clock size={12} className="text-primary" />
                     Delivered in {pkg.timeline}
                   </div>
                 </div>
 
                 <div className="flex-1">
-                  <p className="text-[11px] font-medium text-[#71717A] uppercase tracking-widest mb-2">
+                  <p className="text-[11px] font-medium text-[#4A4F57] uppercase tracking-widest mb-2">
                     Includes
                   </p>
                   <ul className="space-y-2">
                     {pkg.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-2 text-sm text-[#0F172A]">
+                      <li key={feature} className="flex items-start gap-2 text-sm text-[#111318]">
                         <Check size={14} className="text-primary mt-0.5 shrink-0" />
                         <span>{feature}</span>
                       </li>
@@ -125,9 +125,9 @@ export default function WebsitesSolutionPage() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {solution.features.map((feature) => (
-              <div key={feature.title} className="light-card rounded-xl p-6 flex flex-col gap-3">
-                <h3 className="font-semibold text-[#0F172A]">{feature.title}</h3>
-                <p className="text-sm text-[#71717A] leading-relaxed">{feature.description}</p>
+              <div key={feature.title} className="light-card rounded-[3px] p-6 flex flex-col gap-3">
+                <h3 className="font-semibold text-[#111318]">{feature.title}</h3>
+                <p className="text-sm text-[#4A4F57] leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -147,7 +147,7 @@ export default function WebsitesSolutionPage() {
             {solution.techStack.map((tech) => (
               <span
                 key={tech}
-                className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary"
+                className="inline-flex items-center rounded-[2px] bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary"
               >
                 {tech}
               </span>

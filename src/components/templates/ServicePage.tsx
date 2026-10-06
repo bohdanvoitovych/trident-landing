@@ -60,7 +60,7 @@ export function ServicePage({ service }: Props) {
             {service.features.slice(0, 3).map((f) => (
               <div
                 key={f.title}
-                className="flex items-center gap-2 bg-white/[0.04] border border-white/[0.07] rounded-lg px-4 py-2.5"
+                className="flex items-center gap-2 bg-white/[0.04] border border-white/[0.07] rounded-[2px] px-4 py-2.5"
               >
                 <Zap size={12} className="text-[#2772E0] shrink-0" />
                 <span className="text-[12px] text-white/70 font-medium">{f.title}</span>
@@ -83,17 +83,17 @@ export function ServicePage({ service }: Props) {
             {service.features.map((feature, i) => (
               <div
                 key={feature.title}
-                className="group relative rounded-2xl border border-[#E4E4E7] bg-[#FAFAFA] p-7 hover:border-[#2772E0]/30 hover:shadow-sm transition-all"
+                className="group relative rounded-[3px] border border-[#E3E5E8] bg-[#FAFAFA] p-7 hover:border-[#2772E0]/30 hover:shadow-sm transition-all"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#2772E0]/10 text-[#2772E0] font-bold text-[13px]">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[3px] bg-[#2772E0]/10 text-[#2772E0] font-bold text-[13px]">
                     {String(i + 1).padStart(2, '0')}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#0F172A] mb-2 group-hover:text-[#2772E0] transition-colors">
+                    <h3 className="font-semibold text-[#111318] mb-2 group-hover:text-[#2772E0] transition-colors">
                       {feature.title}
                     </h3>
-                    <p className="text-[14px] text-[#71717A] leading-relaxed">
+                    <p className="text-[14px] text-[#4A4F57] leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
@@ -105,7 +105,7 @@ export function ServicePage({ service }: Props) {
       </section>
 
       {/* ── Why us ───────────────────────────────────────── */}
-      <section className="py-16 md:py-20 bg-[#FAFAFA] border-t border-[#E4E4E7]">
+      <section className="py-16 md:py-20 bg-[#FAFAFA] border-t border-[#E3E5E8]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -116,8 +116,8 @@ export function ServicePage({ service }: Props) {
               <div key={item.title} className="flex gap-4">
                 <CheckCircle size={20} className="text-[#2772E0] shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-semibold text-[#0F172A] mb-1">{item.title}</h3>
-                  <p className="text-[13px] text-[#71717A] leading-relaxed">{item.desc}</p>
+                  <h3 className="font-semibold text-[#111318] mb-1">{item.title}</h3>
+                  <p className="text-[13px] text-[#4A4F57] leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -126,20 +126,20 @@ export function ServicePage({ service }: Props) {
       </section>
 
       {/* ── Tech Stack ───────────────────────────────────── */}
-      <section className="py-16 md:py-20 bg-white border-t border-[#E4E4E7]">
+      <section className="py-16 md:py-20 bg-white border-t border-[#E3E5E8]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-center gap-6">
             <div className="shrink-0">
-              <p className="text-[11px] font-medium text-[#A1A1AA] uppercase tracking-widest mb-1">
+              <p className="text-[11px] font-medium text-[#6B7078] uppercase tracking-widest mb-1">
                 {t('techStack')}
               </p>
-              <p className="text-[13px] text-[#71717A]">Technologies we use</p>
+              <p className="text-[13px] text-[#4A4F57]">Technologies we use</p>
             </div>
             <div className="flex flex-wrap gap-2">
               {service.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="bg-[#F4F4F5] text-[#3F3F46] border border-[#E4E4E7] text-sm px-3 py-1.5 rounded-full font-medium"
+                  className="bg-[#F4F4F5] text-[#3F3F46] border border-[#E3E5E8] text-sm px-3 py-1.5 rounded-full font-medium"
                 >
                   {tech}
                 </span>
@@ -151,7 +151,7 @@ export function ServicePage({ service }: Props) {
 
       {/* ── Related Cases ────────────────────────────────── */}
       {relatedCases.length > 0 && (
-        <section className="py-20 md:py-28 bg-[#FAFAFA] border-t border-[#E4E4E7]">
+        <section className="py-20 md:py-28 bg-[#FAFAFA] border-t border-[#E3E5E8]">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeader
               eyebrow="Portfolio"

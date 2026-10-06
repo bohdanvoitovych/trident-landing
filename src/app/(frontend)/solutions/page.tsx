@@ -62,16 +62,16 @@ export default function SolutionsPage() {
                 <Link
                   key={sol.slug}
                   href={`/solutions/${sol.slug}`}
-                  className="light-card light-card-interactive rounded-xl p-8 flex flex-col gap-4"
+                  className="light-card light-card-interactive rounded-[3px] p-8 flex flex-col gap-4"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-[2px] bg-primary/10">
                     <Icon size={20} className="text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-[#0F172A]">{sol.title}</h3>
+                    <h3 className="text-xl font-semibold text-[#111318]">{sol.title}</h3>
                     <p className="text-sm text-primary mt-1">{sol.tagline}</p>
                   </div>
-                  <p className="text-sm text-[#71717A] leading-relaxed">{sol.description}</p>
+                  <p className="text-sm text-[#4A4F57] leading-relaxed">{sol.description}</p>
                   <div className="flex items-center gap-2 text-sm font-medium text-primary mt-2">
                     Explore <ArrowRight size={14} />
                   </div>
@@ -96,10 +96,10 @@ export default function SolutionsPage() {
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="light-card light-card-interactive rounded-xl p-5 flex flex-col gap-2"
+                className="light-card light-card-interactive rounded-[3px] p-5 flex flex-col gap-2"
               >
-                <p className="font-semibold text-[#0F172A]">{service.title}</p>
-                <p className="text-sm text-[#71717A] leading-relaxed">{service.tagline}</p>
+                <p className="font-semibold text-[#111318]">{service.title}</p>
+                <p className="text-sm text-[#4A4F57] leading-relaxed">{service.tagline}</p>
                 <div className="flex items-center gap-1.5 text-sm font-medium text-primary mt-1">
                   Learn more <ArrowRight size={12} />
                 </div>

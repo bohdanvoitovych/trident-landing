@@ -107,8 +107,8 @@ export default function ContactPage() {
               />
               <div className="space-y-4">
                 {contactInfo.map((item) => (
-                  <div key={item.label} className="light-card rounded-xl p-5 flex items-start gap-4">
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                  <div key={item.label} className="light-card rounded-[3px] p-5 flex items-start gap-4">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[2px] bg-primary/10">
                       <item.icon size={16} className="text-primary" />
                     </div>
                     <div>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              <div className="light-card rounded-xl p-5">
+              <div className="light-card rounded-[3px] p-5">
                 <p className="text-sm font-semibold mb-2">Typical next steps</p>
                 <ol className="space-y-2 text-sm text-muted-foreground">
                   {[
@@ -142,7 +142,7 @@ export default function ContactPage() {
             {/* Right: form */}
             <div className="lg:col-span-2">
               {status === 'success' ? (
-                <div className="light-card rounded-2xl p-12 flex flex-col items-center gap-4 text-center">
+                <div className="light-card rounded-[3px] p-12 flex flex-col items-center gap-4 text-center">
                   <CheckCircle size={48} className="text-primary" />
                   <h2 className="text-2xl font-bold">Message received!</h2>
                   <p className="text-muted-foreground max-w-sm">
@@ -153,7 +153,7 @@ export default function ContactPage() {
                   </Button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="light-card rounded-2xl p-8 space-y-6">
+                <form onSubmit={handleSubmit} className="light-card rounded-[3px] p-8 space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label htmlFor="name" className="text-sm font-medium">
@@ -166,7 +166,7 @@ export default function ContactPage() {
                         value={form.name}
                         onChange={handleChange}
                         placeholder="John Smith"
-                        className="w-full rounded-lg border border-[#E4E4E7] bg-white px-4 py-2.5 text-sm text-[#0F172A] placeholder:text-[#A1A1AA] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                       />
                     </div>
                     <div className="space-y-1.5">
@@ -181,7 +181,7 @@ export default function ContactPage() {
                         value={form.email}
                         onChange={handleChange}
                         placeholder="john@company.com"
-                        className="w-full rounded-lg border border-[#E4E4E7] bg-white px-4 py-2.5 text-sm text-[#0F172A] placeholder:text-[#A1A1AA] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                       />
                     </div>
                     <div className="space-y-1.5">
@@ -194,7 +194,7 @@ export default function ContactPage() {
                         value={form.company}
                         onChange={handleChange}
                         placeholder="Acme AG"
-                        className="w-full rounded-lg border border-[#E4E4E7] bg-white px-4 py-2.5 text-sm text-[#0F172A] placeholder:text-[#A1A1AA] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                       />
                     </div>
                     <div className="space-y-1.5">
@@ -208,7 +208,7 @@ export default function ContactPage() {
                         value={form.phone}
                         onChange={handleChange}
                         placeholder="+41 79 123 45 67"
-                        className="w-full rounded-lg border border-[#E4E4E7] bg-white px-4 py-2.5 text-sm text-[#0F172A] placeholder:text-[#A1A1AA] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                       />
                     </div>
                   </div>
@@ -222,7 +222,7 @@ export default function ContactPage() {
                       name="subject"
                       value={form.subject}
                       onChange={handleChange}
-                      className="w-full rounded-lg border border-[#E4E4E7] bg-white px-4 py-2.5 text-sm text-[#0F172A] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
                     >
                       {SUBJECTS.map((s) => (
                         <option key={s.value} value={s.value}>
@@ -244,19 +244,19 @@ export default function ContactPage() {
                       value={form.message}
                       onChange={handleChange}
                       placeholder="Describe your project, timeline, and what you need help with..."
-                      className="w-full rounded-lg border border-[#E4E4E7] bg-white px-4 py-2.5 text-sm text-[#0F172A] placeholder:text-[#A1A1AA] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
+                      className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
                     />
                   </div>
 
                   {status === 'demo' && (
-                    <div className="flex items-center gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-500">
+                    <div className="flex items-center gap-2 rounded-[2px] border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-500">
                       <AlertCircle size={14} />
                       Demo site — the contact form is switched off.
                     </div>
                   )}
 
                   {status === 'error' && (
-                    <div className="flex items-center gap-2 rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-400">
+                    <div className="flex items-center gap-2 rounded-[2px] border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-400">
                       <AlertCircle size={14} />
                       Something went wrong. Please try again or email us directly.
                     </div>

@@ -46,13 +46,13 @@ export function CasePage({ caseStudy }: Props) {
 
       {/* Results bar */}
       {caseStudy.results.length > 0 && (
-        <section className="section-alt border-b border-[#E4E4E7] py-8">
+        <section className="section-alt border-b border-[#E3E5E8] py-8">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap gap-8 justify-center">
               {caseStudy.results.map((r) => (
                 <div key={r.metric} className="text-center">
-                  <p className="text-3xl font-bold text-[#0F172A]">{r.value}</p>
-                  <p className="text-sm text-[#71717A] mt-1">{r.metric}</p>
+                  <p className="text-3xl font-bold text-[#111318]">{r.value}</p>
+                  <p className="text-sm text-[#4A4F57] mt-1">{r.metric}</p>
                 </div>
               ))}
             </div>
@@ -66,30 +66,30 @@ export function CasePage({ caseStudy }: Props) {
           <div className="flex flex-col gap-12">
             {/* Challenge */}
             <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#0F172A]">{t('challenge')}</h2>
-              <p className="text-[#71717A] leading-relaxed text-lg">{caseStudy.challenge}</p>
+              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('challenge')}</h2>
+              <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.challenge}</p>
             </div>
 
             {/* Approach */}
             <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#0F172A]">{t('approach')}</h2>
-              <p className="text-[#71717A] leading-relaxed text-lg">{caseStudy.approach}</p>
+              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('approach')}</h2>
+              <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.approach}</p>
             </div>
 
             {/* Solution */}
             <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#0F172A]">{t('solution')}</h2>
-              <p className="text-[#71717A] leading-relaxed text-lg">{caseStudy.solution}</p>
+              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('solution')}</h2>
+              <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.solution}</p>
             </div>
 
             {/* Tech stack */}
             <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#0F172A]">{t('techStack')}</h2>
+              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('techStack')}</h2>
               <div className="flex flex-wrap gap-2">
                 {caseStudy.techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="bg-[#F4F4F5] text-[#3F3F46] border border-[#E4E4E7] text-sm px-3 py-1.5 rounded-full"
+                    className="bg-[#F4F4F5] text-[#3F3F46] border border-[#E3E5E8] text-sm px-3 py-1.5 rounded-full"
                   >
                     {tech}
                   </span>
@@ -99,7 +99,7 @@ export function CasePage({ caseStudy }: Props) {
 
             {/* Testimonial */}
             {caseStudy.testimonial && (
-              <blockquote className="light-card rounded-xl p-6 border-l-4 border-primary">
+              <blockquote className="light-card rounded-[3px] p-6 border-l-4 border-primary">
                 <p className="text-lg italic text-foreground leading-relaxed mb-4">
                   &ldquo;{caseStudy.testimonial.text}&rdquo;
                 </p>
@@ -134,7 +134,7 @@ export function CasePage({ caseStudy }: Props) {
       {related.length > 0 && (
         <section className="py-16 md:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold mb-8 text-[#0F172A]">{t('relatedCases')}</h2>
+            <h2 className="text-2xl font-bold mb-8 text-[#111318]">{t('relatedCases')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {related.map((c) => (
                 <CaseCard key={c.slug} case_={c} />

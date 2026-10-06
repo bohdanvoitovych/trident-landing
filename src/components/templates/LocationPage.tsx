@@ -68,7 +68,7 @@ export function LocationPage({ location }: Props) {
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {location.highlights.map((h) => (
-              <div key={h.title} className="light-card rounded-xl p-6">
+              <div key={h.title} className="light-card rounded-[3px] p-6">
                 <CheckCircle size={18} className="text-primary mb-3" />
                 <h3 className="font-semibold mb-2">{h.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{h.description}</p>
@@ -93,7 +93,7 @@ export function LocationPage({ location }: Props) {
                 <Link
                   key={s.slug}
                   href={`/services/${s.slug}`}
-                  className="light-card light-card-interactive rounded-xl p-6 group flex gap-4 transition-all"
+                  className="light-card light-card-interactive rounded-[3px] p-6 group flex gap-4 transition-all"
                 >
                   <div>
                     <h3 className="font-semibold mb-1 group-hover:text-primary transition-colors">
@@ -129,7 +129,7 @@ export function LocationPage({ location }: Props) {
                 <Link
                   key={c.slug}
                   href={`/cases/${c.slug}`}
-                  className="light-card light-card-interactive rounded-xl p-6 group transition-all"
+                  className="light-card light-card-interactive rounded-[3px] p-6 group transition-all"
                 >
                   <Badge variant="blue" className="mb-3 text-xs">
                     {c.industry}
