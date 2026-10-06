@@ -9,13 +9,13 @@ export function Cases() {
           <p className="lede">Each case is labelled: <b>measured</b> means counted in production; <b>modelled</b> means calculated from real volumes.</p>
         </div>
         <div className="cases-v2">
-          <article className="cs cs-lead rv"><div className="shot"><Image src="/images/stock/clinic.jpg" alt="Clinic admission desk" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
+          <article className="cs cs-lead rv"><div className="shot"><Image src="/images/stock/clinic.jpg" alt="Clinic corridor" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
             <div className="cs-top"><span className="cs-who">Post-acute clinic network · CH</span><span className="badge m">Measured</span></div>
             <h3 className="h3">From a bundle of paper to a coded SwissDRG invoice</h3>
             <p className="body-s">The assistant reads the admission file, drafts the discharge letter for the physician to sign, and prepares a validated invoice.</p>
             <div className="cs-nums"><div><div className="v">−92 %</div><div className="k">Admission time</div></div><div><div className="v">−78 %</div><div className="k">Discharge letter</div></div><div><div className="v">2 days</div><div className="k">Invoice ready, was 10–15</div></div></div>
           </div></article>
-          <div className="cases-pair"><article className="cs rv"><div className="shot"><Image src="/images/stock/medical.jpg" alt="Medical practice reception" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
+          <div className="cases-pair"><article className="cs rv"><div className="shot"><Image src="/images/stock/clinic-2.jpg" alt="Medical practice interior" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
             <div className="cs-top"><span className="cs-who">Multi-disciplinary practice · CH</span><span className="badge m">Measured</span></div>
             <h3 className="h3">Voice consultation to TARDOC invoice</h3>
             <p className="body-s">Physicians spent 35 % of their time documenting. Now the consultation becomes the report and the coded invoice.</p>

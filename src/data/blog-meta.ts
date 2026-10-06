@@ -1,19 +1,19 @@
-const WP = 'https://trident-software.ch/wp-content/uploads'
-
+// Images were pulled from the old WordPress site and now ship locally,
+// so the pages no longer depend on trident-software.ch being up.
 export const BLOG_IMAGES: Record<string, string> = {
-  'from-traditional-to-flexible-wms-mobile-app': `${WP}/2024/02/wms-flutter-mobile-app-vs-data-collection-terminal.png`,
-  'nft-in-game-trading-platforms': `${WP}/2024/11/trader-doing-nft-payment-on-metaverse-market-using-1024x688.jpg`,
-  'arenawave-digital-court-system': `${WP}/2024/10/sports-equipment-in-locker-room-2023-11-27-05-02-13-utc-1024x688.jpg`,
-  'iot-blockchain-can-it-truly-deliver': `${WP}/2024/12/iot-and-blockchain-1024x688.jpg`,
-  'secure-your-cloud-on-a-budget-a-guide-for-smbs': `${WP}/2024/03/secure-your-cloud-on-a-budget-a-guide-for-smbs-1-1024x688.png`,
-  'presenting-zenit-auto-our-new-b2b-auto-parts-platform': `${WP}/2024/05/ZenitAuto.png`,
-  'free-advertising-for-restaurants-through-customer-feedback': `${WP}/2024/03/free-advertising-for-restaurants-through-customer-feedback-1024x688.png`,
-  'simplifying-your-search-how-iam-trade-makes-finding-products-easy': `${WP}/2024/04/shopping-cart-with-magnifying-icon-block-and-laptop.png`,
-  'driving-growth-essential-tactics-for-your-ecommerce-business': `${WP}/2024/04/freelancer-ceo-making-mistake-error-being-fired-1.png`,
-  'the-power-of-outsourcing-unlocking-efficiency-and-innovation-in-short-term-projects': `${WP}/2024/03/the-power-of-outsourcing-unlocking-efficiency-and-innovation-in-short-term-projects.png`,
-  'trident-softwares-venture-evolution-it-package-empowers-startups-insights-from-foire-du-valais-2024': `${WP}/2024/10/Venture-Evolution-IT-Package-1024x688.jpg`,
-  'introducing-our-new-b2b-client-management-panel': `${WP}/2024/05/our-new-b2b-client-management-panel.png`,
-  'strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions': `${WP}/2024/03/secure-your-cloud-on-a-budget-a-guide-for-smbs-1-1024x688.png`,
+  'from-traditional-to-flexible-wms-mobile-app': '/images/blog/from-traditional-to-flexible-wms-mobile-app.png',
+  'nft-in-game-trading-platforms': '/images/blog/nft-in-game-trading-platforms.jpg',
+  'arenawave-digital-court-system': '/images/blog/arenawave-digital-court-system.jpg',
+  'iot-blockchain-can-it-truly-deliver': '/images/blog/iot-blockchain-can-it-truly-deliver.jpg',
+  'secure-your-cloud-on-a-budget-a-guide-for-smbs': '/images/blog/secure-your-cloud-on-a-budget-a-guide-for-smbs.png',
+  'presenting-zenit-auto-our-new-b2b-auto-parts-platform': '/images/blog/presenting-zenit-auto-our-new-b2b-auto-parts-platform.png',
+  'free-advertising-for-restaurants-through-customer-feedback': '/images/blog/free-advertising-for-restaurants-through-customer-feedback.png',
+  'simplifying-your-search-how-iam-trade-makes-finding-products-easy': '/images/blog/simplifying-your-search-how-iam-trade-makes-finding-products.png',
+  'driving-growth-essential-tactics-for-your-ecommerce-business': '/images/blog/driving-growth-essential-tactics-for-your-ecommerce-business.png',
+  'the-power-of-outsourcing-unlocking-efficiency-and-innovation-in-short-term-projects': '/images/blog/the-power-of-outsourcing-unlocking-efficiency-and-innovation.png',
+  'trident-softwares-venture-evolution-it-package-empowers-startups-insights-from-foire-du-valais-2024': '/images/blog/trident-softwares-venture-evolution-it-package-empowers-star.jpg',
+  'introducing-our-new-b2b-client-management-panel': '/images/blog/introducing-our-new-b2b-client-management-panel.png',
+  'strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions': '/images/blog/secure-your-cloud-on-a-budget-a-guide-for-smbs.png',
 }
 
 export type BlogCategory = 'All' | 'Industry' | 'Solution' | 'Company'

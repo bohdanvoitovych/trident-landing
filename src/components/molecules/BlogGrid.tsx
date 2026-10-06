@@ -8,7 +8,10 @@ import { formatDate } from '@/lib/utils'
 import { BLOG_IMAGES, getBlogCategory, type BlogCategory } from '@/data/blog-meta'
 import type { BlogPost } from '@/data/blog'
 
-type PostSlim = Pick<BlogPost, 'slug' | 'title' | 'excerpt' | 'publishedAt' | 'readingTime' | 'tags'>
+type PostSlim = Pick<
+  BlogPost,
+  'slug' | 'title' | 'excerpt' | 'publishedAt' | 'readingTime' | 'tags' | 'image'
+>
 
 type Props = {
   posts: PostSlim[]
@@ -38,7 +41,9 @@ export function BlogGrid({ posts, readMore }: Props) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {filtered.map((post) => {
-        const image = BLOG_IMAGES[post.slug]
+        // BLOG_IMAGES holds the originals carried over from the old site;
+        // post.image covers the rest, so no card falls back to a bare letter.
+        const image = BLOG_IMAGES[post.slug] ?? post.image
         const category = getBlogCategory(post.tags)
         return (
           <Link

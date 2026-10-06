@@ -10,10 +10,9 @@ import { LanguageSwitcher } from '@/components/molecules/LanguageSwitcher'
 const LINKS = [
   { href: '/services', label: 'Services' },
   { href: '/cases', label: 'Cases' },
-  { href: '/#usecases', label: 'Use cases' },
   { href: '/#pricing', label: 'Pricing' },
   { href: '/#products', label: 'Products' },
-  { href: '/#swiss', label: 'Swiss' },
+  { href: '/#swiss', label: 'Why Switzerland' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ]

@@ -29,6 +29,7 @@ export default function BlogPage() {
     publishedAt: p.publishedAt,
     readingTime: p.readingTime,
     tags: p.tags,
+    image: p.image,
   }))
 
   const counts: Record<BlogCategory, number> = { All: posts.length, Industry: 0, Solution: 0, Company: 0 }
