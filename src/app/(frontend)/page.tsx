@@ -20,6 +20,7 @@ import { Products } from '@/components/organisms/home/Products'
 import { Swiss } from '@/components/organisms/home/Swiss'
 import { WhyUs } from '@/components/organisms/home/WhyUs'
 import { Team } from '@/components/organisms/home/Team'
+import { Partners } from '@/components/organisms/home/Partners'
 import { Testimonials } from '@/components/organisms/home/Testimonials'
 import { References } from '@/components/organisms/home/References'
 import { Faq } from '@/components/organisms/home/Faq'
@@ -64,6 +65,7 @@ export default async function HomePage() {
       <Swiss />
       <WhyUs />
       <Team />
+      <Partners />
       <Testimonials />
       <References />
       <Faq />

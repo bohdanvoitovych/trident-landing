@@ -314,3 +314,11 @@ body {
 /* Headings pick up the tighter tracking of the new system. */
 .text-display { letter-spacing: -0.04em; }
 .text-heading { letter-spacing: -0.028em; }
+
+/* The design system's measure is 1240px with a 20–64px gutter; the older pages
+   used Tailwind's 1280px with a 16–32px one, so the header and the content
+   below it did not line up. Matching the pattern those pages actually use. */
+.max-w-7xl.px-4 { max-width: 1240px; }
+.max-w-7xl.px-4,
+.max-w-4xl.px-4,
+.max-w-3xl.px-4 { padding-inline: clamp(20px, 5vw, 64px); }

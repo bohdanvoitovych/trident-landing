@@ -132,3 +132,67 @@
   .tds .foot { grid-template-columns: 1fr; }
   .tds .foot-bottom { flex-direction: column; align-items: flex-start; }
 }
+
+
+/* ── Header alignment ──────────────────────────────────────────────────
+   Logo and the right-hand group are equal flexible tracks, so the links sit
+   on the page's centre line rather than the centre of what is left over. */
+.tds .nav-in {
+  grid-template-columns: 1fr auto 1fr;
+  gap: clamp(16px, 2vw, 32px);
+}
+.tds .nav-logo { grid-column: 1; justify-self: start; }
+.tds .nav-links { grid-column: 2; justify-self: center; }
+.tds .nav-right {
+  grid-column: 3;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1.4vw, 18px);
+}
+.tds .nav-toggle { grid-column: 3; justify-self: end; }
+@media (max-width: 1000px) {
+  .tds .nav-right .btn { display: none; }
+}
+
+/* Client logos were too small to read. */
+.tds .logos-track img { height: clamp(30px, 3.2vw, 44px); opacity: 0.62; }
+.tds .logos-lead { font-size: 15px; }
+
+/* ── Partners ──────────────────────────────────────────────────────── */
+.tds .partner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: clamp(28px, 3.4vw, 44px);
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.tds .partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(22px, 3vw, 34px);
+  background: var(--bg);
+  min-height: 108px;
+}
+.tds .partner img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 44px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition: opacity 0.2s, filter 0.2s;
+}
+.tds .partner:hover img { filter: none; opacity: 1; }
+@media (max-width: 860px) {
+  .tds .partner-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Newsletter and socials in the footer need room; they were sitting flush. */
+.tds .foot-news { margin-top: 26px; margin-bottom: 26px; max-width: 300px; }
+.tds .foot-news input { margin-bottom: 2px; }
+.tds .foot-socials { display: flex; gap: 10px; margin-top: 4px; }
+.tds .foot-social { margin-top: 0; }

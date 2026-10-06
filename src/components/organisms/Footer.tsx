@@ -1,9 +1,17 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useLocale } from 'next-intl'
-import { Linkedin } from 'lucide-react'
+import { Linkedin, Facebook, Instagram, MapPin } from 'lucide-react'
 import NewsletterSignup from '@/components/molecules/NewsletterSignup'
 import { LanguageSwitcher } from '@/components/molecules/LanguageSwitcher'
+
+// Same set the old site carried in its footer.
+const SOCIALS = [
+  { href: 'https://www.linkedin.com/company/tridentsoftware/', label: 'LinkedIn', Icon: Linkedin },
+  { href: 'https://www.facebook.com/profile.php?id=100092674509471', label: 'Facebook', Icon: Facebook },
+  { href: 'https://www.instagram.com/trident_software_official/', label: 'Instagram', Icon: Instagram },
+  { href: 'https://maps.app.goo.gl/aX4gfcf1taSKohnp7', label: 'Find us on Google Maps', Icon: MapPin },
+]
 
 const COLUMNS = [
   {
@@ -58,15 +66,20 @@ export function Footer() {
               <div className="foot-news">
                 <NewsletterSignup />
               </div>
-              <a
-                href="https://www.linkedin.com/company/trident-software-sarl/"
-                className="foot-social"
-                aria-label="Trident Software on LinkedIn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin size={16} />
-              </a>
+              <div className="foot-socials">
+                {SOCIALS.map((sn) => (
+                  <a
+                    key={sn.href}
+                    href={sn.href}
+                    className="foot-social"
+                    aria-label={sn.label}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <sn.Icon size={16} />
+                  </a>
+                ))}
+              </div>
             </div>
 
             {COLUMNS.map((col) => (

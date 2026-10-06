@@ -158,29 +158,25 @@ export default function ServicesPage() {
               Full stack details <ArrowRight size={13} />
             </Link>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3">
             {technologies.map((tech) => (
               <Link
                 key={tech.slug}
                 href={`/technologies/${tech.slug}`}
-                className="light-card light-card-interactive rounded-xl p-4 flex flex-col items-center gap-2.5 group"
+                className="light-card light-card-interactive rounded-[2px] px-4 py-6 flex flex-col items-center gap-3 group"
                 title={tech.name}
               >
-                {tech.iconSlug ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={`https://cdn.simpleicons.org/${tech.iconSlug}`}
-                    alt={`${tech.name} logo`}
-                    width={28}
-                    height={28}
-                    loading="lazy"
-                    className="shrink-0"
-                  />
-                ) : (
-                  <div className="w-7 h-7 rounded-md bg-[#2772E0]/10 flex items-center justify-center">
-                    <span className="text-[10px] font-bold text-[#2772E0]">AI</span>
-                  </div>
-                )}
+                {/* Icons ship locally: the CDN this used had no mark for
+                    "openai" any more, so that tile rendered empty. */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`/images/tech/${tech.iconSlug}.svg`}
+                  alt=""
+                  width={30}
+                  height={30}
+                  loading="lazy"
+                  className="shrink-0 opacity-70 group-hover:opacity-100 transition-opacity"
+                />
                 <span className="text-[11px] text-center text-[#71717A] group-hover:text-[#2772E0] transition-colors leading-tight">
                   {tech.name}
                 </span>

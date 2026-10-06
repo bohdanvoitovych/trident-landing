@@ -43,13 +43,12 @@ export function Navbar() {
           ))}
         </div>
 
-        <span className="nav-lang">
+        <div className="nav-right">
           <LanguageSwitcher currentLocale={locale} tone="light" />
-        </span>
-
-        <Link href="/contact" className="btn btn-primary btn-sm">
-          Free audit
-        </Link>
+          <Link href="/contact" className="btn btn-primary btn-sm">
+            Free audit
+          </Link>
+        </div>
 
         <button
           type="button"

@@ -44,7 +44,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'automechanika-dubai-2025-meet-us-at-booth-8-f18',
-    image: '/images/blog/automechanika-dubai-2025-meet-us-at-booth-8-f18.gif',
+    image: '/images/blog/automechanika-dubai-2025.jpg',
     title: 'Automechanika Dubai 2025: Meet Us in Hall 8, Booth F18',
     publishedAt: '2025-11-05',
     readingTime: 4,
