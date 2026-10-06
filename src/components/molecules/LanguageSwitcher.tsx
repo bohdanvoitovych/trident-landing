@@ -36,14 +36,14 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
       <DropdownMenu.Trigger asChild>
         <button
           aria-label="Change language"
-          className={`inline-flex items-center gap-1 font-mono text-[12px] uppercase tracking-[0.1em] transition-colors outline-none ${
+          className={`inline-flex items-center gap-1 font-mono text-[12.5px] uppercase leading-none transition-colors outline-none ${
             tone === 'light'
               ? 'text-[#6B7078] hover:text-[#111318]'
               : 'text-white/60 hover:text-white'
           }`}
         >
           {current.short}
-          <ChevronDown size={10} className="shrink-0 opacity-60" />
+          <ChevronDown size={11} className="shrink-0 opacity-50" />
         </button>
       </DropdownMenu.Trigger>
 

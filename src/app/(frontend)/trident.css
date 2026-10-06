@@ -277,3 +277,23 @@
 @media (max-width: 1000px) {
   .tds .nav-right .btn { display: none; }
 }
+
+/* Logo and links share one optical baseline: both boxes are the row height,
+   contents centred, so neither sits a pixel above the other. */
+.tds .nav-logo,
+.tds .nav-links,
+.tds .nav-right { height: 100%; }
+.tds .nav-logo img { height: 20px; width: auto; }
+.tds .nav-right { gap: 16px; }
+
+
+/* Client logos ship as dark artwork now (they were white, made for the old
+   site's dark background), so no brightness hack — and hover no longer wipes
+   them out by removing the filter. */
+.tds .logos-track img {
+  height: clamp(30px, 3.2vw, 42px);
+  filter: grayscale(1);
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+.tds .logos-track img:hover { filter: grayscale(1); opacity: 1; }

@@ -29,8 +29,8 @@ export function Navbar() {
           <Image
             src="/images/trident-logo-black.png"
             alt="Trident Software"
-            width={132}
-            height={28}
+            width={108}
+            height={23}
             priority
           />
         </Link>
