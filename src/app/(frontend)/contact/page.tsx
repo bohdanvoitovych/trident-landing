@@ -106,13 +106,13 @@ export default function ContactPage() {
       {/* Content */}
       <section className="py-16 md:py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
             {/* Left: contact info */}
-            <div className="space-y-8">
+            <div className="lg:col-span-5">
               <SectionHeader
                 eyebrow="Get in touch"
                 title="We respond fast"
-                subtitle="Senior engineers read every inquiry. No sales scripts."
+                subtitle="Senior engineers read every inquiry. No sales scripts, no account managers in between."
               />
               <div className="space-y-4">
                 {contactInfo.map((item) => (
@@ -139,7 +139,6 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              <OfficeMap className="h-[300px]" />
 
               <div className="light-card rounded-[3px] p-5">
                 <p className="text-sm font-semibold mb-2">Typical next steps</p>
@@ -162,7 +161,7 @@ export default function ContactPage() {
             </div>
 
             {/* Right: form */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-7">
               {status === 'success' ? (
                 <div className="light-card rounded-[3px] p-12 flex flex-col items-center gap-4 text-center">
                   <CheckCircle size={48} className="text-primary" />

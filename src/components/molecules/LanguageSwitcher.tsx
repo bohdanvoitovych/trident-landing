@@ -50,10 +50,10 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
       <DropdownMenu.Portal>
         <DropdownMenu.Content
           align="end"
-          sideOffset={6}
-          className={`z-50 min-w-[150px] rounded-[2px] py-1 ${
+          sideOffset={10}
+          className={`z-50 min-w-[132px] rounded-[2px] py-1.5 ${
             tone === 'light'
-              ? 'border border-[#E3E5E8] bg-white shadow-[0_6px_24px_rgba(17,19,24,0.10)]'
+              ? 'border border-[#E3E5E8] bg-white shadow-[0_2px_10px_rgba(17,19,24,0.07)]'
               : 'border border-white/10 bg-[#0F1216] shadow-xl shadow-black/30'
           }`}
         >
@@ -61,7 +61,7 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
             <DropdownMenu.Item
               key={l.code}
               onSelect={() => setLocale(l.code)}
-              className={`flex items-center justify-between gap-6 px-3.5 py-2 text-[14px] cursor-pointer outline-none transition-colors ${
+              className={`flex items-center justify-between gap-6 px-3.5 py-1.5 text-[14px] cursor-pointer outline-none transition-colors ${
                 tone === 'light'
                   ? l.code === currentLocale
                     ? 'text-[#111318] font-medium'
