@@ -42,7 +42,7 @@ export const cases: CaseData[] = [
     hero: {
       title: 'Kleap — AI Website Builder',
       tagline: 'From prompt to published website in under 60 seconds',
-      image: '/images/cases/kleap-home-website-screen.png',
+      image: '/images/cases/kleap-home-website-screen.jpg',
     },
     challenge:
       'Kleap needed to build an AI-powered website generator that could produce complete, design-quality websites from a single text prompt — competing with Wix ADI and Squarespace AI while offering higher customization and developer-friendly output.',
@@ -71,7 +71,7 @@ export const cases: CaseData[] = [
     hero: {
       title: 'Zenit Auto — B2B Auto Parts Platform',
       tagline: 'Tiered pricing, 500K SKUs, real-time stock',
-      image: '/images/cases/zenitavto-b2b-checkout-screen.png',
+      image: '/images/cases/zenitavto-b2b-checkout-screen.jpg',
     },
     challenge:
       'Zenit Auto needed to migrate from a legacy desktop ordering system to a modern B2B web platform. Key challenges: 500,000+ SKU catalog, complex tiered pricing (different prices per dealer level), real-time stock from multiple warehouses, and VIN-based parts search.',
@@ -101,7 +101,7 @@ export const cases: CaseData[] = [
     hero: {
       title: '8Move Driver App',
       tagline: 'Real-time delivery management for last-mile drivers',
-      image: '/images/cases/8move-driver-mobile.png',
+      image: '/images/cases/8move-driver-mobile.jpg',
     },
     challenge:
       '8Move needed a cross-platform mobile app for delivery drivers that handles real-time route assignment, delivery confirmation, proof-of-delivery capture, and live location sharing — with offline capability for areas with poor connectivity.',
@@ -130,7 +130,7 @@ export const cases: CaseData[] = [
     hero: {
       title: 'TDSbot — IoT Water Quality Monitor',
       tagline: 'Real-time water purity monitoring for industrial plants',
-      image: '/images/cases/watertds-website-home-mobile.png',
+      image: '/images/cases/watertds-website-home-mobile.jpg',
     },
     challenge:
       'Industrial water purification facilities needed continuous monitoring of TDS (total dissolved solids), pH, and flow rates across multiple measurement points — with alerting when parameters drift outside safe ranges and historical data for compliance reporting.',
@@ -160,7 +160,7 @@ export const cases: CaseData[] = [
     hero: {
       title: 'Aida — Healthcare Management Platform',
       tagline: 'Patient management and clinical workflow automation',
-      image: '/images/cases/aida-desktop-consultations.png',
+      image: '/images/cases/aida-desktop-consultations.jpg',
     },
     challenge:
       'A healthcare provider needed to replace paper-based patient management with a digital platform that handles appointments, patient records, clinical notes, and billing — while maintaining strict data privacy and compliance with healthcare regulations.',
@@ -189,7 +189,7 @@ export const cases: CaseData[] = [
     hero: {
       title: 'LaPochette — Luxury Bag Rental Platform',
       tagline: 'The Airbnb of designer handbags',
-      image: '/images/cases/mobile-lapochette-product-website-screen.png',
+      image: '/images/cases/mobile-lapochette-product-website-screen.jpg',
     },
     challenge:
       'LaPochette needed a marketplace platform for renting designer handbags (Chanel, Louis Vuitton, Gucci) between private owners and renters. Key challenges: trust & authenticity verification, damage deposit handling, rental period management, and a premium UX that matches the luxury segment.',
@@ -273,7 +273,7 @@ export const cases: CaseData[] = [
     hero: {
       title: 'GO-Valais — Expat Community Portal',
       tagline: 'Digital hub connecting expatriates in Valais, Switzerland',
-      image: '/images/cases/conference-go-valais-website-screen-1.png',
+      image: '/images/cases/conference-go-valais-website-screen-1.jpg',
     },
     challenge:
       'Expatriates relocating to Valais had no centralized platform to discover local events, access settlement resources, or connect with the international community. Event organizers lacked tools to reach the expat audience effectively.',

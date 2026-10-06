@@ -1,8 +1,10 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { getLocale } from 'next-intl/server'
 import { cases } from '@/data/cases'
+import { projects } from '@/data/projects'
 import { buildMetadata } from '@/lib/metadata'
 import { Badge } from '@/components/atoms/badge'
 
@@ -20,7 +22,7 @@ export async function generateMetadata() {
 
 export default function CasesPage() {
   const t = useTranslations('cases')
-  const [featured, ...rest] = cases
+  const rest = cases
 
   const industries = Array.from(new Set(cases.map((c) => c.industry)))
 
@@ -48,52 +50,7 @@ export default function CasesPage() {
       </section>
 
       {/* Featured case */}
-      <section className="py-12 bg-[#FAFAFA] border-t border-[#E3E5E8]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="text-[11px] font-medium text-[#6B7078] uppercase tracking-widest mb-4">
-            Featured project
-          </p>
-          <Link
-            href={`/cases/${featured.slug}`}
-            className="group block bg-white rounded-[3px] border border-[#E3E5E8] p-8 md:p-10 hover:shadow-md transition-all"
-          >
-            <div className="flex flex-col lg:flex-row gap-8 items-start">
-              <div className="flex-1">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="blue">{featured.industry}</Badge>
-                  {featured.services.slice(0, 2).map((s) => (
-                    <Badge key={s} variant="secondary">
-                      {s.replace(/-/g, ' ')}
-                    </Badge>
-                  ))}
-                </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-[#111318] mb-3 group-hover:text-[#2772E0] transition-colors">
-                  {featured.hero.title}
-                </h2>
-                <p className="text-[#4A4F57] text-lg leading-relaxed mb-4">
-                  {featured.hero.tagline}
-                </p>
-                <p className="text-[#4A4F57] text-sm leading-relaxed line-clamp-3">
-                  {featured.challenge}
-                </p>
-                <div className="flex items-center gap-1 text-sm text-[#2772E0] font-medium mt-6">
-                  View full case study <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-              {featured.results.length > 0 && (
-                <div className="flex flex-row lg:flex-col gap-6 lg:gap-8 shrink-0">
-                  {featured.results.slice(0, 3).map((r) => (
-                    <div key={r.metric} className="text-center lg:text-right">
-                      <p className="text-2xl md:text-3xl font-bold text-[#111318]">{r.value}</p>
-                      <p className="text-xs text-[#6B7078] mt-1 max-w-[120px]">{r.metric}</p>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          </Link>
-        </div>
-      </section>
+
 
       {/* Cases grid */}
       <section className="py-16 md:py-20 bg-white border-t border-[#E3E5E8]">
@@ -103,8 +60,20 @@ export default function CasesPage() {
               <Link
                 key={c.slug}
                 href={`/cases/${c.slug}`}
-                className="group bg-[#FAFAFA] border border-[#E3E5E8] rounded-[3px] p-6 flex flex-col gap-4 hover:shadow-sm hover:border-[#2772E0]/30 transition-all"
+                className="group bg-white border border-[#E3E5E8] rounded-[3px] overflow-hidden flex flex-col hover:border-[#2772E0]/40 transition-colors"
               >
+                {c.hero.image && (
+                  <div className="relative aspect-[16/10] w-full bg-[#F6F7F8] overflow-hidden">
+                    <Image
+                      src={c.hero.image}
+                      alt={c.hero.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+                <div className="p-6 flex flex-col gap-4 flex-1">
                 <div className="flex items-start justify-between gap-2">
                   <div>
                     <p className="text-[11px] text-[#6B7078] font-medium uppercase tracking-wider mb-1">
@@ -149,8 +118,61 @@ export default function CasesPage() {
                 <div className="flex items-center gap-1 text-[12px] text-[#2772E0] font-medium">
                   View case study <ArrowRight size={11} className="group-hover:translate-x-0.5 transition-transform" />
                 </div>
+                </div>
               </Link>
             ))}
+          </div>
+
+          {/* Everything else delivered, straight from the portfolio. */}
+          <div className="mt-20 pt-16 border-t border-[#E3E5E8]">
+            <p className="eyebrow mb-3">More work</p>
+            <h2 className="text-heading text-[#111318] mb-3">Selected projects</h2>
+            <p className="text-[#4A4F57] mb-10 max-w-2xl">
+              {projects.length} products and platforms delivered across logistics, retail,
+              healthcare, IoT and education.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {projects.map((pr) => {
+                const card = (
+                  <>
+                    <div className="relative aspect-[16/10] w-full bg-[#F6F7F8] overflow-hidden">
+                      <Image
+                        src={pr.image}
+                        alt={pr.title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-4 flex flex-col gap-1.5 flex-1">
+                      <p className="text-[11px] text-[#6B7078] font-medium uppercase tracking-wider">
+                        {pr.sector}
+                      </p>
+                      <h3 className="font-semibold text-[14px] text-[#111318] leading-snug">
+                        {pr.title}
+                      </h3>
+                      <p className="text-[13px] text-[#4A4F57] leading-relaxed">{pr.summary}</p>
+                    </div>
+                  </>
+                )
+                return pr.caseSlug ? (
+                  <Link
+                    key={pr.slug}
+                    href={`/cases/${pr.caseSlug}`}
+                    className="group bg-white border border-[#E3E5E8] rounded-[3px] overflow-hidden flex flex-col hover:border-[#2772E0]/40 transition-colors"
+                  >
+                    {card}
+                  </Link>
+                ) : (
+                  <div
+                    key={pr.slug}
+                    className="bg-white border border-[#E3E5E8] rounded-[3px] overflow-hidden flex flex-col"
+                  >
+                    {card}
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </div>
       </section>
