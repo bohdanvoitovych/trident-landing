@@ -121,7 +121,7 @@
 /* ── Images in the prototype's frames ───────────────────────────────── */
 .tds .shot { position: relative; }
 .tds .slot-img { object-fit: cover; }
-.tds .slot-img, .tds .team-shot img { filter: saturate(0.72) contrast(1.04); }
+.tds .slot-img, .tds .team-shot img { object-position: center top; filter: saturate(0.72) contrast(1.04); }
 
 /* Client logos are dark artwork now, so hover only lifts opacity. */
 .tds .logos-track img {
@@ -141,7 +141,9 @@
 }
 .tds .team-shot {
   position: relative;
-  aspect-ratio: 1 / 1;
+  /* Portraits are 3:4; a square frame cropped a quarter of the height off,
+     half of it from the top — where the head is. */
+  aspect-ratio: 3 / 4;
   overflow: hidden;
   border: 1px solid var(--line);
   background: var(--bg-alt);
@@ -199,3 +201,4 @@
   .tds .foot { grid-template-columns: 1fr; }
   .tds .foot-bottom { flex-direction: column; align-items: flex-start; }
 }
+.tds .team-portrait { object-fit: cover; object-position: center top; }

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, MapPin, Users, Code2 } from 'lucide-react'
 import { getLocale } from 'next-intl/server'
 import { Button } from '@/components/atoms/button'
@@ -131,7 +132,22 @@ export default function TeamPage() {
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {members.map((member) => (
-                      <div key={member.slug} className="light-card rounded-[3px] p-5 flex flex-col gap-3">
+                      <div
+                        key={member.slug}
+                        className="light-card rounded-[3px] overflow-hidden flex flex-col"
+                      >
+                        {member.image && (
+                          <div className="relative aspect-[3/4] w-full bg-[#F6F7F8]">
+                            <Image
+                              src={member.image}
+                              alt={member.name}
+                              fill
+                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                              className="object-cover object-top grayscale"
+                            />
+                          </div>
+                        )}
+                        <div className="p-5 flex flex-col gap-3">
                         <div>
                           <p className="font-semibold text-[#111318]">{member.name}</p>
                           <p className="text-sm text-[#4A4F57]">{member.role}</p>
@@ -149,6 +165,7 @@ export default function TeamPage() {
                               {tag}
                             </span>
                           ))}
+                        </div>
                         </div>
                       </div>
                     ))}

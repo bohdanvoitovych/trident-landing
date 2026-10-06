@@ -36,7 +36,7 @@ export function Team() {
                     alt={member.name}
                     fill
                     sizes="(max-width: 620px) 50vw, (max-width: 1000px) 33vw, 25vw"
-                    className="slot-img"
+                    className="slot-img team-portrait"
                   />
                 )}
               </div>
