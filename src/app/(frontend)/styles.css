@@ -373,3 +373,16 @@ body {
 
 /* The glow and grid overlays were built for a near-black backdrop. */
 .dark-section .glow-hero { background: none; }
+
+/* Remapping white text inside .dark-section also hit elements that sit on a
+   coloured fill — primary buttons carry text-white too, and they turned dark
+   blue-on-blue. Anything with a brand background keeps white text. */
+.dark-section .bg-primary,
+.dark-section .bg-primary .text-white,
+.dark-section [class*='bg-primary'].text-white,
+.dark-section a[class*='bg-primary'],
+.dark-section button[class*='bg-primary'],
+.dark-section [class*='bg-[#2772E0]'],
+.dark-section [class*='bg-[#2772E0]'] .text-white {
+  color: #ffffff;
+}

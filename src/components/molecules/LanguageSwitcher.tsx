@@ -2,7 +2,7 @@
 
 import { useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, Check } from 'lucide-react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 
 const LOCALES = [
@@ -36,14 +36,14 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
       <DropdownMenu.Trigger asChild>
         <button
           aria-label="Change language"
-          className={`inline-flex items-center gap-1 font-mono text-[12.5px] uppercase leading-none transition-colors outline-none ${
+          className={`inline-flex items-center gap-1 text-[14.5px] font-medium leading-none transition-colors outline-none ${
             tone === 'light'
-              ? 'text-[#6B7078] hover:text-[#111318]'
+              ? 'text-[#4A4F57] hover:text-[#111318]'
               : 'text-white/60 hover:text-white'
           }`}
         >
           {current.short}
-          <ChevronDown size={11} className="shrink-0 opacity-50" />
+          <ChevronDown size={13} className="shrink-0 opacity-55" />
         </button>
       </DropdownMenu.Trigger>
 
@@ -51,7 +51,7 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
         <DropdownMenu.Content
           align="end"
           sideOffset={6}
-          className={`z-50 min-w-[128px] rounded-[2px] py-1 ${
+          className={`z-50 min-w-[150px] rounded-[2px] py-1 ${
             tone === 'light'
               ? 'border border-[#E3E5E8] bg-white shadow-[0_6px_24px_rgba(17,19,24,0.10)]'
               : 'border border-white/10 bg-[#0F1216] shadow-xl shadow-black/30'
@@ -61,24 +61,18 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
             <DropdownMenu.Item
               key={l.code}
               onSelect={() => setLocale(l.code)}
-              className={`flex items-center gap-2 px-3 py-2 text-sm cursor-pointer outline-none transition-colors ${
+              className={`flex items-center justify-between gap-6 px-3.5 py-2 text-[14px] cursor-pointer outline-none transition-colors ${
                 tone === 'light'
                   ? l.code === currentLocale
-                    ? 'text-[#111318] font-medium bg-[#F6F7F8]'
+                    ? 'text-[#111318] font-medium'
                     : 'text-[#4A4F57] hover:text-[#111318] hover:bg-[#F6F7F8]'
                   : l.code === currentLocale
                     ? 'text-white font-medium'
-                    : 'text-white/50 hover:text-white hover:bg-white/5'
+                    : 'text-white/60 hover:text-white hover:bg-white/5'
               }`}
             >
-              <span
-                className={`w-6 text-[11px] font-mono ${
-                  tone === 'light' ? 'text-[#6B7078]' : 'text-white/30'
-                }`}
-              >
-                {l.short}
-              </span>
               {l.label}
+              {l.code === currentLocale && <Check size={13} className="shrink-0 text-[#2772E0]" />}
             </DropdownMenu.Item>
           ))}
         </DropdownMenu.Content>

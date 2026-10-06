@@ -6,13 +6,13 @@ import { useState } from 'react'
 import { useLocale } from 'next-intl'
 import { LanguageSwitcher } from '@/components/molecules/LanguageSwitcher'
 
-// Section anchors live on the home page; the rest are real routes.
+// Every item is a real page — anchors belonged to the prototype's one-pager.
 const LINKS = [
   { href: '/services', label: 'Services' },
+  { href: '/solutions', label: 'Solutions' },
+  { href: '/industries', label: 'Industries' },
   { href: '/cases', label: 'Cases' },
-  { href: '/#pricing', label: 'Pricing' },
-  { href: '/#products', label: 'Products' },
-  { href: '/#swiss', label: 'Why Switzerland' },
+  { href: '/about', label: 'About' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ]

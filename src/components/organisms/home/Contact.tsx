@@ -4,7 +4,7 @@ export function Contact() {
         <div><span className="label">Free audit</span><h2 className="h2" style={{ marginTop: '18px' }}>Bring your volumes. Leave with <em>your numbers.</em></h2>
           <p className="lede">45 minutes and a straight answer, whether or not we work together.</p>
           <div className="cta-details">
-            <div><span className="k">Email</span><span className="v">max@trident.software</span></div>
+            <div><span className="k">Email</span><span className="v">info@trident-software.ch</span></div>
             <div><span className="k">Phone</span><span className="v">+41 79 745 44 29</span></div>
             <div><span className="k">Address</span><span className="v">Rue de l'Industrie 23, 1950 Sion</span></div>
           </div></div>

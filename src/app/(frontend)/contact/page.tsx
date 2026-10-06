@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { MapPin, Mail, Clock, CheckCircle, AlertCircle } from 'lucide-react'
+import { MapPin, Mail, Phone, Clock, CheckCircle, AlertCircle } from 'lucide-react'
+import OfficeMap from '@/components/molecules/OfficeMap'
 import { Button } from '@/components/atoms/button'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 
@@ -16,13 +17,21 @@ const SUBJECTS = [
 const contactInfo = [
   {
     icon: MapPin,
-    label: 'Headquarters',
-    value: 'Sion, Valais, Switzerland',
+    label: 'Office',
+    value: "Rue de l'Industrie 23, 1950 Sion, Valais",
+    href: 'https://www.google.com/maps?cid=178522290307983294',
   },
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@trident-software.ch',
+    value: 'info@trident-software.ch',
+    href: 'mailto:info@trident-software.ch',
+  },
+  {
+    icon: Phone,
+    label: 'Phone',
+    value: '+41 79 745 44 29',
+    href: 'tel:+41797454429',
   },
   {
     icon: Clock,
@@ -113,11 +122,24 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-xs text-muted-foreground">{item.label}</p>
-                      <p className="font-medium text-sm mt-0.5">{item.value}</p>
+                      {item.href ? (
+                        <a
+                          href={item.href}
+                          target={item.href.startsWith('http') ? '_blank' : undefined}
+                          rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                          className="font-medium text-sm mt-0.5 block hover:text-primary transition-colors"
+                        >
+                          {item.value}
+                        </a>
+                      ) : (
+                        <p className="font-medium text-sm mt-0.5">{item.value}</p>
+                      )}
                     </div>
                   </div>
                 ))}
               </div>
+
+              <OfficeMap className="h-[300px]" />
 
               <div className="light-card rounded-[3px] p-5">
                 <p className="text-sm font-semibold mb-2">Typical next steps</p>

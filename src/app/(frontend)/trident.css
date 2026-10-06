@@ -202,3 +202,43 @@
   .tds .foot-bottom { flex-direction: column; align-items: flex-start; }
 }
 .tds .team-portrait { object-fit: cover; object-position: center top; }
+
+/* ── Sizing corrections ─────────────────────────────────────────────── */
+/* Client and partner marks were too small to recognise. */
+.tds .logos-track img { height: clamp(38px, 4vw, 54px); opacity: 0.6; }
+.tds .logos-track { gap: clamp(44px, 5.5vw, 88px); }
+.tds .partner img { max-height: 58px; }
+.tds .partner { min-height: 126px; padding: clamp(24px, 3vw, 38px); }
+
+/* Testimonials: an even grid that stays even however many there are. */
+.tds .quotes {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  align-items: stretch;
+}
+.tds .quote { height: 100%; }
+
+/* Newsletter field in the footer, in the site's own idiom: hairline border,
+   2px corners, no heavy fill. */
+.tds .foot-news input {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 2px;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  transition: border-color 0.16s;
+}
+.tds .foot-news input::placeholder { color: rgba(255, 255, 255, 0.4); }
+.tds .foot-news input:focus { outline: none; border-color: rgba(255, 255, 255, 0.55); }
+.tds .foot-news button {
+  width: 100%;
+  height: 42px;
+  border-radius: 2px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tds .foot-news button:hover { background: var(--blue-d); }

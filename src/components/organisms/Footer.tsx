@@ -99,7 +99,7 @@ export function Footer() {
               <h5>Contact</h5>
               <ul>
                 <li>
-                  <a href="mailto:max@trident.software">max@trident.software</a>
+                  <a href="mailto:info@trident-software.ch">info@trident-software.ch</a>
                 </li>
                 <li>
                   <a href="tel:+41797454429">+41 79 745 44 29</a>
