@@ -174,7 +174,7 @@ export default function ContactPage() {
                   </Button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="light-card rounded-[3px] p-8 space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label htmlFor="name" className="text-sm font-medium">
@@ -187,7 +187,7 @@ export default function ContactPage() {
                         value={form.name}
                         onChange={handleChange}
                         placeholder="John Smith"
-                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-3.5 h-11 text-[15px] text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:border-[#2772E0] transition-colors"
                       />
                     </div>
                     <div className="space-y-1.5">
@@ -202,7 +202,7 @@ export default function ContactPage() {
                         value={form.email}
                         onChange={handleChange}
                         placeholder="john@company.com"
-                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-3.5 h-11 text-[15px] text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:border-[#2772E0] transition-colors"
                       />
                     </div>
                     <div className="space-y-1.5">
@@ -215,7 +215,7 @@ export default function ContactPage() {
                         value={form.company}
                         onChange={handleChange}
                         placeholder="Acme AG"
-                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-3.5 h-11 text-[15px] text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:border-[#2772E0] transition-colors"
                       />
                     </div>
                     <div className="space-y-1.5">
@@ -229,7 +229,7 @@ export default function ContactPage() {
                         value={form.phone}
                         onChange={handleChange}
                         placeholder="+41 79 123 45 67"
-                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                        className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-3.5 h-11 text-[15px] text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:border-[#2772E0] transition-colors"
                       />
                     </div>
                   </div>
@@ -243,7 +243,7 @@ export default function ContactPage() {
                       name="subject"
                       value={form.subject}
                       onChange={handleChange}
-                      className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                      className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] focus:outline-none focus:border-[#2772E0] transition-colors"
                     >
                       {SUBJECTS.map((s) => (
                         <option key={s.value} value={s.value}>
@@ -265,7 +265,7 @@ export default function ContactPage() {
                       value={form.message}
                       onChange={handleChange}
                       placeholder="Describe your project, timeline, and what you need help with..."
-                      className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
+                      className="w-full rounded-[2px] border border-[#E3E5E8] bg-white px-4 py-2.5 text-sm text-[#111318] placeholder:text-[#6B7078] focus:outline-none focus:border-[#2772E0] transition-colors resize-none"
                     />
                   </div>
 

@@ -11,11 +11,12 @@ const PLACE_CID = '178522290307983294'
 const ZOOM = 16
 
 /**
- * Keyless Google Maps embed. Querying by name pins the business itself rather
+ * Keyless Google Maps embed; `t=h` is satellite with street labels.
+ * Querying by name pins the business itself rather
  * than a bare coordinate; the Embed API alternative would need a billing key.
  */
 const embedSrc = (locale: string) =>
-  `https://www.google.com/maps?q=${encodeURIComponent(PLACE_QUERY)}&z=${ZOOM}&hl=${locale}&output=embed`
+  `https://www.google.com/maps?q=${encodeURIComponent(PLACE_QUERY)}&t=h&z=${ZOOM}&hl=${locale}&output=embed`
 
 const FULL_MAP_HREF = `https://www.google.com/maps?cid=${PLACE_CID}`
 
