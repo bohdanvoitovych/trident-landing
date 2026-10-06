@@ -1,4 +1,5 @@
 import { getLocale } from 'next-intl/server'
+import { buildMetadata } from '@/lib/metadata'
 import JsonLd from '@/components/seo/JsonLd'
 import { homePageSchemas } from '@/lib/schema'
 import { Hero } from '@/components/organisms/home/Hero'
@@ -26,6 +27,17 @@ import { Contact } from '@/components/organisms/home/Contact'
 import { HomeInteractions } from '@/components/organisms/home/HomeInteractions'
 
 export const revalidate = 3600
+
+export async function generateMetadata() {
+  const locale = await getLocale()
+  return buildMetadata({
+    title: 'Trident Software — Operational software and AI agents, Switzerland',
+    description:
+      'We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers and processes documents in four national languages. Sion, Valais.',
+    path: '/',
+    locale,
+  })
+}
 
 export default async function HomePage() {
   const locale = await getLocale()

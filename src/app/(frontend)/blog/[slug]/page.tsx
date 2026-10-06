@@ -4,6 +4,7 @@ import { getLocale } from 'next-intl/server'
 import { BlogPost } from '@/components/templates/BlogPost'
 import { getPostBySlug, getPostSlugs } from '@/data/blog'
 import JsonLd from '@/components/seo/JsonLd'
+import { buildMetadata } from '@/lib/metadata'
 import { blogPostSchema } from '@/lib/schema'
 
 export const revalidate = 86400
@@ -22,10 +23,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {}
   const locale = await getLocale()
   const t = post.translations?.[locale as 'de' | 'fr' | 'it']
-  return {
+  // buildMetadata adds the canonical, hreflang and Open Graph tags the rest of
+  // the site has; this route previously returned only title and description.
+  return buildMetadata({
     title: t?.meta.title ?? post.meta.title,
     description: t?.meta.description ?? post.meta.description,
-  }
+    path: `/blog/${post.slug}`,
+    locale,
+    ogImage: post.image,
+  })
 }
 
 export default async function BlogPostPage({ params }: Props) {
