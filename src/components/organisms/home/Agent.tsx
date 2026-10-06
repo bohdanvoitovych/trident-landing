@@ -24,12 +24,12 @@ export function Agent() {
             <h3 className="h3">Recommends and closes the small stuff</h3>
             <p className="body" style={{ marginTop: '12px' }}>Works from your live catalogue, stock and price list. Handles standard objections with your approved wording.</p>
             <ul><li>Books appointments against a <b>real calendar</b></li><li>Issues <b>QR-bills</b> and payment links</li><li>Escalates to a person on <b>defined conditions</b></li></ul>
-          </div><div className="shot"><Image src="/images/cases/conference-go-valais-website-screen-1.png" alt="Booking flow" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div></div>
+          </div><div className="shot"><Image src="/images/stock/booking.jpg" alt="Appointment booked on a phone" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div></div>
           <div className="feat rv"><div className="feat-t">
             <h3 className="h3">Writes into your systems</h3>
             <p className="body" style={{ marginTop: '12px' }}>Contact, company, deal and full transcript go into your CRM, so the next person starts from a complete record.</p>
             <ul><li>CRM and ERP integration</li><li>Audit trail on every dialogue</li><li>Escalation path designed <b>before launch</b></li></ul>
-          </div><div className="shot"><Image src="/images/cases/aida-desktop-consultations.png" alt="Consultation records" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div></div>
+          </div><div className="shot"><Image src="/images/stock/crm-record.jpg" alt="Customer records being updated" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div></div>
         </div>
       </div></section>
   )

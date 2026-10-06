@@ -31,7 +31,7 @@ export default async function HomePage() {
   const locale = await getLocale()
 
   return (
-    <>
+    <div className="tds">
       <JsonLd data={homePageSchemas(locale)} />
       <Hero />
       <Logos />
@@ -56,6 +56,6 @@ export default async function HomePage() {
       <Blog />
       <Contact />
       <HomeInteractions />
-    </>
+    </div>
   )
 }

@@ -9,18 +9,18 @@ export function Cases() {
           <p className="lede">Each case is labelled: <b>measured</b> means counted in production; <b>modelled</b> means calculated from real volumes.</p>
         </div>
         <div className="cases-v2">
-          <article className="cs cs-lead rv"><div className="shot"><Image src="/images/cases/aida-desktop-consultations.png" alt="Clinic admission screen" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
+          <article className="cs cs-lead rv"><div className="shot"><Image src="/images/stock/clinic.jpg" alt="Clinic admission desk" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
             <div className="cs-top"><span className="cs-who">Post-acute clinic network · CH</span><span className="badge m">Measured</span></div>
             <h3 className="h3">From a bundle of paper to a coded SwissDRG invoice</h3>
             <p className="body-s">The assistant reads the admission file, drafts the discharge letter for the physician to sign, and prepares a validated invoice.</p>
             <div className="cs-nums"><div><div className="v">−92 %</div><div className="k">Admission time</div></div><div><div className="v">−78 %</div><div className="k">Discharge letter</div></div><div><div className="v">2 days</div><div className="k">Invoice ready, was 10–15</div></div></div>
           </div></article>
-          <div className="cases-pair"><article className="cs rv"><div className="shot"><Image src="/images/cases/mobile-lapochette-product-website-screen.png" alt="Practice booking on mobile" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
+          <div className="cases-pair"><article className="cs rv"><div className="shot"><Image src="/images/stock/medical.jpg" alt="Medical practice reception" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
             <div className="cs-top"><span className="cs-who">Multi-disciplinary practice · CH</span><span className="badge m">Measured</span></div>
             <h3 className="h3">Voice consultation to TARDOC invoice</h3>
             <p className="body-s">Physicians spent 35 % of their time documenting. Now the consultation becomes the report and the coded invoice.</p>
             <div className="cs-nums"><div><div className="v">+30.8 %</div><div className="k">Consultations, same salary</div></div><div><div className="v">−84 %</div><div className="k">Time per invoice</div></div><div><div className="v">3.5×</div><div className="k">Faster payment</div></div></div>
-          </div></article><article className="cs rv"><div className="shot"><Image src="/images/cases/watertds-website-home-mobile.png" alt="Water telemetry" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
+          </div></article><article className="cs rv"><div className="shot"><Image src="/images/stock/water-telemetry.jpg" alt="Water treatment infrastructure" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
             <div className="cs-top"><span className="cs-who">Component manufacturer · IT</span><span className="badge m">Measured</span></div>
             <h3 className="h3">Up to 85 % of failures came from water, not defects</h3>
             <p className="body-s">A device, telemetry and portals turned every warranty claim into a decision based on data.</p>

@@ -14,9 +14,11 @@ const LOCALES = [
 
 type Props = {
   currentLocale: string
+  /** 'light' for the white header, 'dark' for the deep-navy footer. */
+  tone?: 'light' | 'dark'
 }
 
-export function LanguageSwitcher({ currentLocale }: Props) {
+export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
   const router = useRouter()
   const [, startTransition] = useTransition()
 
@@ -32,7 +34,14 @@ export function LanguageSwitcher({ currentLocale }: Props) {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
-        <button className="flex items-center gap-1 text-[12px] font-medium text-white/60 hover:text-white transition-colors outline-none">
+        <button
+          aria-label="Change language"
+          className={`flex items-center gap-1 text-[12px] font-medium transition-colors outline-none ${
+            tone === 'light'
+              ? 'text-[#4A4F57] hover:text-[#111318]'
+              : 'text-white/60 hover:text-white'
+          }`}
+        >
           <Globe size={13} className="shrink-0" />
           <span>{current.short}</span>
           <ChevronDown size={11} className="shrink-0" />

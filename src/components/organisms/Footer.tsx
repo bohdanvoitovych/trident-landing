@@ -9,7 +9,8 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="site">
+    <div className="tds">
+      <footer className="site">
       <div className="wrap">
         <div className="foot">
           <div className="foot-brand">
@@ -87,6 +88,7 @@ export function Footer() {
           </span>
         </div>
       </div>
-    </footer>
+      </footer>
+    </div>
   )
 }

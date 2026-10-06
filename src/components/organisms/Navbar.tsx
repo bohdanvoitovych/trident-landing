@@ -23,7 +23,8 @@ export function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="site">
+    <div className="tds">
+      <nav className="site">
       <div className="wrap nav-in">
         <Link href="/" className="nav-logo" aria-label="Trident Software — home">
           <Image
@@ -43,7 +44,9 @@ export function Navbar() {
           ))}
         </div>
 
-        <LanguageSwitcher currentLocale={locale} />
+        <span className="nav-lang">
+          <LanguageSwitcher currentLocale={locale} tone="light" />
+        </span>
 
         <Link href="/contact" className="btn btn-primary btn-sm">
           Free audit
@@ -74,6 +77,7 @@ export function Navbar() {
           </ul>
         </div>
       </div>
-    </nav>
+      </nav>
+    </div>
   )
 }
