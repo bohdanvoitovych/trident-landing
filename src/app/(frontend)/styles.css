@@ -336,3 +336,40 @@ body {
   --secondary: #f6f7f8;
   --dark-muted: rgba(255, 255, 255, 0.62);
 }
+
+/* ─────────────────────────────────────────────────────────────────────
+   Dark page heroes do not belong to this design any more — the home page
+   is light throughout. Inverting .dark-section alone would leave the white
+   text invisible, so every white utility used inside it is remapped here.
+   A descendant selector (0,2,0) outranks Tailwind's single class (0,1,0),
+   so no !important is needed.
+   ───────────────────────────────────────────────────────────────────── */
+.dark-section {
+  background-color: var(--surface-1);
+  color: #111318;
+  --foreground: #111318;
+  --background: #f6f7f8;
+  --card: #ffffff;
+  --card-foreground: #111318;
+  --muted-foreground: #4a4f57;
+  --border: #e3e5e8;
+  --secondary: #ffffff;
+  --secondary-foreground: #4a4f57;
+  --primary: #2772e0;
+  border-bottom: 1px solid #e3e5e8;
+}
+.dark-section * { border-color: #e3e5e8; }
+
+.dark-section .text-white { color: #111318; }
+.dark-section [class*="text-white/"] { color: #4a4f57; }
+.dark-section [class*="text-white/4"],
+.dark-section [class*="text-white/3"],
+.dark-section [class*="text-white/2"] { color: #6b7078; }
+
+.dark-section .border-white,
+.dark-section [class*="border-white/"] { border-color: #e3e5e8; }
+
+.dark-section [class*="bg-white/"] { background-color: #ffffff; }
+
+/* The glow and grid overlays were built for a near-black backdrop. */
+.dark-section .glow-hero { background: none; }
