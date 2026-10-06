@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 import { Navbar } from '@/components/organisms/Navbar'
 import { Footer } from '@/components/organisms/Footer'
+import { CookieBanner } from '@/components/molecules/CookieBanner'
 import './styles.css'
 import './trident.css'
 
@@ -57,6 +58,7 @@ export default async function FrontendLayout({ children }: { children: React.Rea
           <Navbar />
           <main id="main-content">{children}</main>
           <Footer />
+          <CookieBanner />
         </NextIntlClientProvider>
       </body>
     </html>

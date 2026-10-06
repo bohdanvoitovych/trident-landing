@@ -5,7 +5,7 @@ export async function generateMetadata() {
   const locale = await getLocale()
   return buildMetadata({
     title: 'Imprint | Trident Software',
-    description: 'Legal information about Trident Software GmbH.',
+    description: 'Legal information about Trident Software Sàrl.',
     path: '/imprint',
     locale,
   })
@@ -20,13 +20,13 @@ export default function ImprintPage() {
         <section className="space-y-6 text-muted-foreground leading-relaxed">
           <div>
             <h2 className="text-lg font-semibold text-foreground mb-2">Company</h2>
-            <p>Trident Software GmbH</p>
+            <p>Trident Software Sàrl</p>
           </div>
 
           <div>
             <h2 className="text-lg font-semibold text-foreground mb-2">Registered address</h2>
             <p>
-              Rue de l&apos;Industrie 12<br />
+              Rue de l&apos;Industrie 23<br />
               1950 Sion<br />
               Valais, Switzerland
             </p>
@@ -51,7 +51,7 @@ export default function ImprintPage() {
 
           <div>
             <h2 className="text-lg font-semibold text-foreground mb-2">Responsible for content</h2>
-            <p>Trident Software GmbH, Sion</p>
+            <p>Trident Software Sàrl, Sion</p>
           </div>
 
           <div>

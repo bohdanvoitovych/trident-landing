@@ -35,10 +35,10 @@ export function BlogFilter({ counts }: Props) {
         <button
           key={cat}
           onClick={() => setCategory(cat)}
-          className={`rounded-full px-5 py-2 text-sm font-medium transition-colors ${
+          className={`rounded-[2px] border px-4 h-9 text-[14px] font-medium transition-colors ${
             active === cat
-              ? 'bg-[#2772E0] text-white'
-              : 'bg-[#2772E0]/10 text-[#2772E0] border border-[#2772E0]/20 hover:bg-[#2772E0]/20'
+              ? 'bg-[#111318] text-white border-[#111318]'
+              : 'bg-white text-[#4A4F57] border-[#E3E5E8] hover:border-[#111318] hover:text-[#111318]'
           }`}
         >
           {cat}

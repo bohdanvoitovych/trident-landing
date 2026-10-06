@@ -5,7 +5,7 @@ export async function generateMetadata() {
   const locale = await getLocale()
   return buildMetadata({
     title: 'Privacy Policy | Trident Software',
-    description: 'Privacy Policy for Trident Software GmbH — how we collect, use, and protect your data.',
+    description: 'Privacy Policy for Trident Software Sàrl — how we collect, use, and protect your data.',
     path: '/privacy',
     locale,
   })
@@ -22,7 +22,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-semibold text-foreground mb-3">1. Controller</h2>
             <p>
-              Trident Software GmbH, Rue de l&apos;Industrie 12, 1950 Sion, Switzerland
+              Trident Software Sàrl, Rue de l&apos;Industrie 23, 1950 Sion, Switzerland
               (&ldquo;Trident&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) is the controller for the
               personal data processed through this website and our services.
             </p>

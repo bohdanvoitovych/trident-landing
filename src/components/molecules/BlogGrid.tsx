@@ -67,7 +67,7 @@ export function BlogGrid({ posts, readMore }: Props) {
                 </div>
               )}
               {/* Category badge on image */}
-              <span className={`absolute top-3 left-3 text-[10px] font-semibold border rounded-full px-2.5 py-1 ${CATEGORY_COLORS[category]} bg-white/90 backdrop-blur-sm`}>
+              <span className={`absolute top-3 left-3 text-[10px] font-semibold border rounded-[2px] px-2.5 py-1 ${CATEGORY_COLORS[category]} bg-white/90 backdrop-blur-sm`}>
                 {category}
               </span>
             </div>

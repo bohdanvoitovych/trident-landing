@@ -30,7 +30,7 @@ export function BlogPost({ post }: Props) {
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="bg-[#2772E0]/10 text-[#2772E0] border border-[#2772E0]/20 rounded-full px-3 py-1 text-xs font-medium"
+                className="rounded-[2px] border border-[#E3E5E8] bg-white px-2.5 py-1 text-[12px] font-medium text-[#4A4F57]"
               >
                 {tag}
               </span>
@@ -115,7 +115,7 @@ export function BlogPost({ post }: Props) {
                     {p.tags.slice(0, 2).map((tag) => (
                       <span
                         key={tag}
-                        className="bg-[#2772E0]/10 text-[#2772E0] border border-[#2772E0]/20 rounded-full px-3 py-1 text-xs font-medium"
+                        className="rounded-[2px] border border-[#E3E5E8] bg-white px-2.5 py-1 text-[12px] font-medium text-[#4A4F57]"
                       >
                         {tag}
                       </span>

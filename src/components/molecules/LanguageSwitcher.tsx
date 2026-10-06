@@ -2,7 +2,7 @@
 
 import { useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { ChevronDown, Check } from 'lucide-react'
+import { ChevronDown, Check, Globe } from 'lucide-react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 
 const LOCALES = [
@@ -36,14 +36,17 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
       <DropdownMenu.Trigger asChild>
         <button
           aria-label="Change language"
-          className={`inline-flex items-center gap-1 text-[14.5px] font-medium leading-none transition-colors outline-none ${
+          // In the header it is a nav item: same class, so it inherits the
+          // menu's typeface, size and colour instead of restating them.
+          className={
             tone === 'light'
-              ? 'text-[#4A4F57] hover:text-[#111318]'
-              : 'text-white/60 hover:text-white'
-          }`}
+              ? 'nav-trigger'
+              : 'inline-flex items-center gap-1.5 text-[14.5px] font-medium leading-none text-white/60 hover:text-white transition-colors outline-none'
+          }
         >
+          <Globe size={14} className="shrink-0 opacity-70" aria-hidden="true" />
           {current.short}
-          <ChevronDown size={13} className="shrink-0 opacity-55" />
+          <ChevronDown size={12} className="chev shrink-0" aria-hidden="true" />
         </button>
       </DropdownMenu.Trigger>
 

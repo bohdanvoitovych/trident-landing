@@ -159,3 +159,34 @@
 @media (max-width: 1000px) {
   .tds nav.site .nav-right .btn { display: none; }
 }
+
+/* The system opens dropdowns on :hover, and adjacent panels overlap, so two
+   could be visible at once. Visibility is driven by state instead. */
+.tds nav.site .nav-group:hover .nav-menu,
+.tds nav.site .nav-group:focus-within .nav-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+.tds nav.site .nav-menu[data-open='true'] {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+/* Nav items carry a 2px transparent bottom border for the hover underline,
+   which made their box taller than the logo and threw the row off centre.
+   Draw it as a shadow instead so it costs no height. */
+.tds nav.site .nav-links a,
+.tds nav.site .nav-trigger {
+  border-bottom: 0;
+  padding-block: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1;
+}
+.tds nav.site .nav-links a:hover,
+.tds nav.site .nav-trigger:hover {
+  box-shadow: inset 0 -2px 0 0 currentColor;
+}
+.tds nav.site .nav-right .nav-trigger { color: var(--text-2); }

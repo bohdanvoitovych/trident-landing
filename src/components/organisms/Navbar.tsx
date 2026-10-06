@@ -56,6 +56,9 @@ const NAV: Entry[] = [
 export function Navbar() {
   const locale = useLocale()
   const [open, setOpen] = useState(false)
+  // Exactly one group open at a time: the system opens them on :hover, and the
+  // panels overlap, so two could show at once.
+  const [openMenu, setOpenMenu] = useState<string | null>(null)
   const close = () => setOpen(false)
 
   return (
@@ -75,17 +78,31 @@ export function Navbar() {
           <div className="nav-links">
             {NAV.map((entry) =>
               entry.children ? (
-                <div className="nav-group" key={entry.label}>
-                  <Link href={entry.href} className="nav-trigger">
+                <div
+                  className="nav-group"
+                  key={entry.label}
+                  onMouseEnter={() => setOpenMenu(entry.label)}
+                  onMouseLeave={() => setOpenMenu(null)}
+                >
+                  <Link
+                    href={entry.href}
+                    className="nav-trigger"
+                    aria-expanded={openMenu === entry.label}
+                    onFocus={() => setOpenMenu(entry.label)}
+                  >
                     {entry.label}
                     <span className="chev" aria-hidden="true">
                       ▾
                     </span>
                   </Link>
-                  <div className="nav-menu">
+                  <div className="nav-menu" data-open={openMenu === entry.label}>
                     <div className="nav-menu-in">
                       {entry.children.map((child) => (
-                        <Link href={child.href} key={child.href + child.label}>
+                        <Link
+                          href={child.href}
+                          key={child.href + child.label}
+                          onClick={() => setOpenMenu(null)}
+                        >
                           {child.label}
                         </Link>
                       ))}

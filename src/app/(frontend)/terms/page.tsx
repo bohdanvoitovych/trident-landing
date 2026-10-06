@@ -5,7 +5,7 @@ export async function generateMetadata() {
   const locale = await getLocale()
   return buildMetadata({
     title: 'Terms & Conditions | Trident Software',
-    description: 'General Terms and Conditions of Trident Software GmbH.',
+    description: 'General Terms and Conditions of Trident Software Sàrl.',
     path: '/terms',
     locale,
   })
@@ -23,7 +23,7 @@ export default function TermsPage() {
             <h2 className="text-xl font-semibold text-foreground mb-3">1. Scope</h2>
             <p>
               These General Terms and Conditions (&ldquo;GTC&rdquo;) govern the relationship between
-              Trident Software GmbH (&ldquo;Trident&rdquo;) and clients engaging our software
+              Trident Software Sàrl (&ldquo;Trident&rdquo;) and clients engaging our software
               engineering, AI integration, and consulting services. Individual project agreements
               (Statements of Work) take precedence over these GTC where they conflict.
             </p>
