@@ -46,10 +46,6 @@ export function Team() {
             </article>
           ))}
         </div>
-
-        <p className="team-note">
-          {team.length} engineers, project managers and QA across Switzerland and Ukraine.
-        </p>
       </div>
     </section>
   )

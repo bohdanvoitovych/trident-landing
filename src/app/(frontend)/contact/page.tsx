@@ -306,6 +306,23 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* Where we are — full width, so the map is actually legible. */}
+      <section className="section-alt border-t border-[#E3E5E8]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+          <div className="flex flex-wrap items-end justify-between gap-4 mb-8">
+            <div>
+              <p className="eyebrow mb-3">Where we are</p>
+              <h2 className="text-heading text-[#111318]">Sion, Valais</h2>
+            </div>
+            <p className="text-[#4A4F57] max-w-sm">
+              Rue de l&apos;Industrie 23, 1950 Sion — ten minutes from the station, in the
+              HES-SO Valais-Wallis district.
+            </p>
+          </div>
+          <OfficeMap className="h-[420px]" />
+        </div>
+      </section>
     </div>
   )
 }
