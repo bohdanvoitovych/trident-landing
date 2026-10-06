@@ -26,7 +26,7 @@ export type BlogPost = {
 export const posts: BlogPost[] = [
   {
     slug: 'smart-auto-parts-software-unifies-ecommerce-warehouse-delivery-ai',
-    image: '/images/blog/smart-auto-parts-software-unifies-ecommerce-warehouse-delive.jpg',
+    image: '/images/stock/ai-agent.jpg',
     title: 'Smart Auto Parts Software That Unifies eCommerce, Warehouse, Delivery, and AI',
     publishedAt: '2025-11-21',
     readingTime: 5,
@@ -44,7 +44,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'automechanika-dubai-2025-meet-us-at-booth-8-f18',
-    image: '/images/blog/automechanika-dubai-2025.jpg',
+    image: '/images/blog/automechanika-dubai-2025-meet-us-at-booth-8-f18.jpg',
     title: 'Automechanika Dubai 2025: Meet Us in Hall 8, Booth F18',
     publishedAt: '2025-11-05',
     readingTime: 4,
@@ -62,7 +62,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'practical-ai-for-smes-where-it-really-works',
-    image: '/images/blog/practical-ai-for-smes-where-it-really-works.png',
+    image: '/images/blog/practical-ai-for-smes-where-it-really-works.jpg',
     title: 'Practical AI for SMEs: Where It Really Works',
     publishedAt: '2025-10-15',
     readingTime: 5,
@@ -116,7 +116,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'automation-reshapes-business-resilience-in-the-age-of-global-instability',
-    image: '/images/blog/automation-reshapes-business-resilience-in-the-age-of-global.png',
+    image: '/images/blog/automation-reshapes-business-resilience-in-the-age-of-global.jpg',
     title: 'Automation Reshapes Business Resilience in the Age of Global Instability',
     publishedAt: '2025-07-17',
     readingTime: 5,
@@ -233,7 +233,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: 'on-premise-llm-swiss-companies',
-    image: '/images/stock/ai-agent.jpg',
+    image: '/images/stock/logistics.jpg',
     title: 'On-Premise LLMs for Swiss Companies: A Practical Guide',
     excerpt:
       'Why Swiss SMEs are choosing self-hosted language models over cloud APIs — and how to deploy Llama 3 or Mistral on your own infrastructure while meeting nFADP requirements.',
@@ -298,7 +298,7 @@ Contact us for a free infrastructure assessment. We'll evaluate your workload, r
   },
   {
     slug: 'ai-agent-b2b-automation',
-    image: '/images/stock/ai-agent.jpg',
+    image: '/images/stock/iot-device.jpg',
     title: 'AI Agents for B2B Process Automation: What Actually Works in 2026',
     excerpt:
       'Beyond the hype — a practical breakdown of where AI agents deliver ROI in B2B contexts, and where they still struggle. Based on our implementations across 8 Swiss and EU companies.',
@@ -358,7 +358,7 @@ Start narrow. A well-tuned agent for one specific workflow delivers more value t
   },
   {
     slug: 'presenting-zenit-auto-our-new-b2b-auto-parts-platform',
-    image: '/images/stock/logistics.jpg',
+    image: '/images/blog/presenting-zenit-auto-our-new-b2b-auto-parts-platform.jpg',
     title: 'Presenting Zenit Auto: Our New B2B Auto Parts Platform',
     excerpt:
       'Zenit Auto is our innovative B2B platform for wholesale auto parts, featuring advanced search, TecDoc integration, discount microservices, and multi-cart delivery management.',
@@ -414,7 +414,7 @@ Zenit Auto is a sophisticated B2B auto parts platform that streamlines the whole
   },
   {
     slug: 'arenawave-digital-court-system',
-    image: '/images/stock/workspace.jpg',
+    image: '/images/blog/arenawave-digital-court-system.jpg',
     title: 'ArenaWave: Digital Court System',
     excerpt:
       'ArenaWave transforms traditional sports courts into IoT-enabled digital spaces — with real-time facility control, online booking, access management, and a management dashboard for court operators.',
@@ -493,7 +493,7 @@ Proven experience in IoT, end-to-end development, and scalable architecture made
   },
   {
     slug: 'iot-blockchain-can-it-truly-deliver',
-    image: '/images/stock/ai-agent.jpg',
+    image: '/images/blog/iot-blockchain-can-it-truly-deliver.jpg',
     title: 'IoT & Blockchain: Can It Truly Deliver?',
     excerpt:
       'The combination of IoT and blockchain promises transparency, security, and tamper-proof data. Here\'s where it actually makes sense — and where the hype outpaces reality.',
@@ -552,7 +552,7 @@ The right model depends on the industry and the value of the data being collecte
   },
   {
     slug: 'secure-your-cloud-on-a-budget-a-guide-for-smbs',
-    image: '/images/stock/warehouse-2.jpg',
+    image: '/images/blog/secure-your-cloud-on-a-budget-a-guide-for-smbs.jpg',
     title: 'Secure Your Cloud on a Budget: A Guide for SMBs',
     excerpt:
       'Small businesses face the same cloud threats as enterprises but with a fraction of the security budget. Here\'s how to use AWS Lambda for continuous security monitoring for just cents per month.',
@@ -606,7 +606,7 @@ Contact Trident Software for a cloud security assessment and implementation plan
   },
   {
     slug: 'from-traditional-to-flexible-wms-mobile-app',
-    image: '/images/stock/office-2.jpg',
+    image: '/images/blog/from-traditional-to-flexible-wms-mobile-app.jpg',
     title: 'From Traditional to Flexible: WMS Mobile App',
     excerpt:
       'Traditional warehouse scanners are expensive, fragile, and hard to maintain. A Flutter-powered WMS mobile app running on a smartphone with a ring scanner changes the economics entirely.',
@@ -681,7 +681,7 @@ The result is a warehouse scanning solution that costs less, breaks less, and in
   },
   {
     slug: 'free-advertising-for-restaurants-through-customer-feedback',
-    image: '/images/stock/workspace-2.jpg',
+    image: '/images/blog/free-advertising-for-restaurants-through-customer-feedback.jpg',
     title: 'Free Advertising for Restaurants through Customer Feedback',
     excerpt:
       'QR codes and NFC tags placed at restaurant tables can turn every customer into a reviewer — and every review into free advertising. Here\'s how to implement it simply and effectively.',
@@ -733,7 +733,7 @@ QR code + NFC tag setup requires minimal investment (printed cards, NFC stickers
   },
   {
     slug: 'simplifying-your-search-how-iam-trade-makes-finding-products-easy',
-    image: '/images/stock/b2b-portal.jpg',
+    image: '/images/blog/simplifying-your-search-how-iam-trade-makes-finding-products.jpg',
     title: 'Simplifying Your Search: How iAM-Trade Makes Finding Products Easy',
     excerpt:
       'Error-tolerant search, TecDoc vehicle lookup, cross-brand part matching — how the iAM-Trade platform solves the core challenge of B2B product discovery at scale.',
@@ -787,7 +787,7 @@ The result is a search experience that reduces abandoned searches, decreases sup
   },
   {
     slug: 'driving-growth-essential-tactics-for-your-ecommerce-business',
-    image: '/images/stock/b2b-portal.jpg',
+    image: '/images/blog/driving-growth-essential-tactics-for-your-ecommerce-business.jpg',
     title: 'Driving Growth: Essential Tactics for Your eCommerce Business',
     excerpt:
       'You built the store. Now where are the sales? Six proven tactics for ecommerce growth — from SEO and UX to Google Merchant and data-driven decisions.',
@@ -845,7 +845,7 @@ All of these tactics work together. SEO brings discovery; UX converts; trust ret
   },
   {
     slug: 'the-power-of-outsourcing-unlocking-efficiency-and-innovation-in-short-term-projects',
-    image: '/images/stock/warehouse-2.jpg',
+    image: '/images/blog/the-power-of-outsourcing-unlocking-efficiency-and-innovation.jpg',
     title: 'The Power of Outsourcing: Unlocking Efficiency in Short-Term Projects',
     excerpt:
       'For projects under two years, outsourcing typically saves 30–40% over in-house execution. Here\'s the cost-benefit analysis — with a real example showing $72,000 in savings.',
@@ -914,7 +914,7 @@ Contact us to discuss your project scope and get a fixed-price proposal.
   },
   {
     slug: 'introducing-our-new-b2b-client-management-panel',
-    image: '/images/stock/b2b-portal.jpg',
+    image: '/images/blog/introducing-our-new-b2b-client-management-panel.jpg',
     title: 'Introducing Our New B2B Client Management Panel',
     excerpt:
       'Managing B2B clients across distributors, dealers, and end-users is complex. Our new hierarchical management panel introduces 5-level access control and real-time monitoring for B2B networks.',
@@ -998,7 +998,7 @@ This panel is available as a standalone product or as an integration layer for e
   },
   {
     slug: 'nft-in-game-trading-platforms',
-    image: '/images/stock/clinic-2.jpg',
+    image: '/images/blog/nft-in-game-trading-platforms.jpg',
     title: 'NFT: In-Game Trading Platforms',
     excerpt:
       'We expanded a gaming marketplace to support NFT investors (flippers) and players earning from their in-game skills — secured by smart contracts on Ethereum, Polygon, Solana, and BSC.',
@@ -1063,7 +1063,7 @@ Contracts developed and tested for 12 games. Tested on Rinkeby and Solana Devnet
   },
   {
     slug: 'strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions',
-    image: '/images/stock/warehouse-2.jpg',
+    image: '/images/blog/strengthening-small-and-medium-sized-businesses-through-adva.jpg',
     title: 'Strengthening SMBs through Advanced Security Solutions',
     excerpt:
       'Over 60% of cyberattacks target small businesses. Here\'s how to implement enterprise-grade AWS security — IAM, KMS, GuardDuty, and Security Hub — at an SMB budget.',
@@ -1127,7 +1127,7 @@ Contact Trident Software for a cloud security assessment. We'll map your current
   },
   {
     slug: 'trident-softwares-venture-evolution-it-package-empowers-startups-insights-from-foire-du-valais-2024',
-    image: '/images/stock/ai-agent.jpg',
+    image: '/images/blog/trident-softwares-venture-evolution-it-package-empowers-star.jpg',
     title: 'Venture Evolution IT Package Empowers Startups: Insights from Foire du Valais 2024',
     excerpt:
       'CTO Maksym Shytov presented the Venture Evolution IT Package at Foire du Valais 2024 — a 6-stage roadmap from promo website to scaled product. Here\'s the framework and the WaterTDS case study.',
@@ -1205,7 +1205,7 @@ The Venture Evolution IT Package takes a startup idea from a conversation to ent
   },
   {
     slug: 'nextjs-payload-cms-swiss-sme-websites',
-    image: '/images/stock/workspace.jpg',
+    image: '/images/stock/b2b-portal.jpg',
     title: 'Next.js + Payload CMS: The Swiss SME Website Stack That Actually Works',
     excerpt:
       'Why we standardized on Next.js 15 and Payload CMS 3 for Swiss SME projects — covering embedded CMS architecture, ISR caching, and editor experience that non-technical staff can use without training.',
@@ -1330,7 +1330,7 @@ For everything else — company sites, product marketing pages, blogs, portfolio
   },
   {
     slug: 'embedded-firmware-industrial-iot',
-    image: '/images/stock/iot-device.jpg',
+    image: '/images/stock/clinic.jpg',
     title: 'Embedded Firmware Development for Industrial IoT: Lessons from the Field',
     excerpt:
       'From sensor calibration to OTA update pipelines — practical patterns for industrial IoT firmware that runs reliably in harsh environments, based on projects across manufacturing and logistics.',
@@ -1454,7 +1454,7 @@ The EMC step catches problems that no amount of software testing finds.
   },
   {
     slug: 'fixed-price-software-contracts-pros-cons',
-    image: '/images/stock/office-2.jpg',
+    image: '/images/stock/dispatch.jpg',
     title: 'Fixed-Price Software Contracts: When They Work and When They Blow Up',
     excerpt:
       'Fixed-price contracts promise predictability but can destroy projects when scoped wrong. Here\'s the decision framework we use to decide when to offer fixed-price, and what contract terms protect both sides.',
@@ -1563,7 +1563,7 @@ Our current preferred model: **fixed-price per phase, not per project**. Each ph
   },
   {
     slug: 'fadp-nfadp-saas-compliance-switzerland',
-    image: '/images/stock/workspace-2.jpg',
+    image: '/images/stock/warehouse-2.jpg',
     title: 'FADP / nFADP Compliance for SaaS Products: A Developer\'s Checklist',
     excerpt:
       'Switzerland\'s revised Federal Act on Data Protection came into force in September 2023. If you\'re building or operating a SaaS product for Swiss customers, here\'s what your engineering team must implement.',
@@ -1698,7 +1698,7 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
   },
   {
     slug: 'postgresql-performance-tuning-mid-size-apps',
-    image: '/images/stock/b2b-portal.jpg',
+    image: '/images/stock/office-2.jpg',
     title: 'PostgreSQL Performance Tuning for Mid-Size Applications',
     excerpt:
       'Before you shard or migrate to a distributed database, there\'s significant performance headroom in a single well-tuned PostgreSQL instance. Here\'s where to look first.',
@@ -1849,7 +1849,7 @@ PostgreSQL connection overhead is non-trivial. Use **PgBouncer** in transaction 
   },
   {
     slug: 'react-native-vs-flutter-swiss-mobile',
-    image: '/images/stock/warehouse-2.jpg',
+    image: '/images/stock/workspace.jpg',
     title: 'React Native vs Flutter for Swiss Mobile Projects: A 2026 Decision Guide',
     excerpt:
       'Both frameworks are mature. The choice depends on your team, timeline, and integration requirements — not benchmarks. Here\'s how we decide which to recommend for Swiss clients.',
@@ -1967,7 +1967,7 @@ RTL (Arabic) support is better in Flutter's layout system than in React Native, 
   },
   {
     slug: 'gitlab-cicd-small-engineering-teams',
-    image: '/images/stock/clinic-2.jpg',
+    image: '/images/stock/workspace-2.jpg',
     title: 'GitLab CI/CD for Small Engineering Teams: A Practical Setup',
     excerpt:
       'You don\'t need a DevOps team to run good CI/CD. Here\'s the GitLab pipeline configuration we use for 2–8 person teams — covering testing, building, and deployment with minimal maintenance overhead.',
@@ -2138,7 +2138,7 @@ Rotate secrets quarterly. Audit which pipelines have access to production variab
   },
   {
     slug: 'custom-erp-vs-off-the-shelf',
-    image: '/images/stock/workspace.jpg',
+    image: '/images/stock/clinic-2.jpg',
     title: 'Custom ERP vs Off-the-Shelf: A Decision Framework for Swiss Companies',
     excerpt:
       'SAP, Abacus, and Bexio handle 80% of Swiss SME needs. The remaining 20% is where custom development earns its price. Here\'s how to identify which category your business is in.',
@@ -2256,7 +2256,7 @@ Question 4 is the one most clients skip. Custom software requires ongoing engine
   },
   {
     slug: 'ai-document-processing-invoices-contracts',
-    image: '/images/stock/ai-agent.jpg',
+    image: '/images/stock/dispatch-2.jpg',
     title: 'AI-Powered Document Processing for Invoices and Contracts',
     excerpt:
       'Extracting structured data from PDFs sounds simple until you face scanned faxes, multi-page contracts with tables, and invoices from 40 different suppliers with different formats. Here\'s what actually works.',
@@ -2409,7 +2409,7 @@ Cost comparison for 1,000 invoices/month: Claude API ~CHF 40, GPT-4V ~CHF 55, Te
   },
   {
     slug: 'microservices-vs-monolith-startup-mvp',
-    image: '/images/stock/office-2.jpg',
+    image: '/images/stock/water-telemetry.jpg',
     title: 'Microservices vs Monolith for Startup MVPs: Stop Defaulting to the Wrong One',
     excerpt:
       'Microservices are overengineered for most MVPs. But "just build a monolith" also fails teams that can\'t refactor later. Here\'s how to choose the right architecture for where you actually are.',
@@ -2540,7 +2540,7 @@ The Swiss engineering maxim applies: don't pay for infrastructure complexity you
   },
   {
     slug: 'tailwind-css-design-systems-product-companies',
-    image: '/images/stock/ai-agent.jpg',
+    image: '/images/stock/water-device.jpg',
     title: 'Tailwind CSS Design Systems for Product Companies: Beyond Utility Classes',
     excerpt:
       'Utility-first CSS scales surprisingly well when you build a proper design system on top of it. Here\'s how product teams use Tailwind tokens, component libraries, and constraints to ship consistent UI fast.',
@@ -2694,7 +2694,7 @@ Teams that follow this pattern consistently report: 40% faster component develop
   },
   {
     slug: 'api-gateway-patterns-b2b-integrations',
-    image: '/images/stock/b2b-portal.jpg',
+    image: '/images/stock/ai-agent.jpg',
     title: 'API Gateway Patterns for B2B Integrations: What to Standardize and What to Leave Alone',
     excerpt:
       'B2B integrations fail when teams treat every partner as a custom project. The right API gateway pattern gives you standard auth, rate limiting, and observability while staying flexible for partner-specific schemas.',
@@ -2843,7 +2843,7 @@ Use structured logging with a consistent schema from day one. Retrofitting obser
   },
   {
     slug: 'load-testing-k6-swiss-ecommerce',
-    image: '/images/stock/b2b-portal.jpg',
+    image: '/images/stock/logistics.jpg',
     title: 'Load Testing with k6 for Swiss E-Commerce: Preparing for Black Friday Traffic',
     excerpt:
       'k6 is the most developer-friendly load testing tool available in 2026. Here\'s how Swiss e-commerce teams use it to find capacity limits before peak sales events — and what fixes actually help.',
@@ -2960,7 +2960,7 @@ If your system fails these under test, you have weeks to fix it before the actua
   },
   {
     slug: 'typescript-migration-legacy-codebases',
-    image: '/images/stock/workspace-2.jpg',
+    image: '/images/stock/iot-device.jpg',
     title: 'TypeScript Migration Strategies for Legacy Codebases: The Incremental Path That Works',
     excerpt:
       'Rewriting everything at once fails. The incremental TypeScript migration — strict mode boundary by boundary — is how real teams ship the migration without stopping feature development.',
@@ -3248,7 +3248,7 @@ Start small. Add capacity when you have traffic data proving you need it.
   },
   {
     slug: 'websocket-realtime-nextjs',
-    image: '/images/stock/warehouse-2.jpg',
+    image: '/images/stock/clinic.jpg',
     title: 'WebSocket Real-Time Features in Next.js: A Practical Implementation Guide',
     excerpt:
       'Next.js API routes are stateless — they\'re the wrong abstraction for WebSockets. Here\'s the architecture that actually works: a standalone WebSocket server alongside your Next.js app, connected through a clean event bus.',
@@ -3428,7 +3428,7 @@ Server-Sent Events (SSE) are often the better choice for one-directional updates
   },
   {
     slug: 'docker-compose-local-dev',
-    image: '/images/stock/ai-agent.jpg',
+    image: '/images/stock/dispatch.jpg',
     title: 'Docker Compose for Local Development Environments: The Setup That Eliminates "Works on My Machine"',
     excerpt:
       'A well-configured Docker Compose setup makes onboarding a new developer a 10-minute process and eliminates environment-related bugs entirely. Here\'s the configuration patterns that work for full-stack JavaScript projects.',
@@ -3592,7 +3592,7 @@ The prod override removes volume mounts, sets NODE_ENV=production, and uses envi
   },
   {
     slug: 'wcag-accessibility-swiss-public-sector',
-    image: '/images/stock/clinic-2.jpg',
+    image: '/images/stock/warehouse-2.jpg',
     title: 'WCAG 2.1 Accessibility for Swiss Public Sector Apps: Compliance and Practical Implementation',
     excerpt:
       'Swiss federal and cantonal law requires digital accessibility for public sector applications. Here\'s what compliance actually means, which WCAG 2.1 criteria are most commonly failed, and how to audit and fix them efficiently.',
@@ -3756,7 +3756,7 @@ Budget 2–3 days for an initial accessibility audit of a medium-complexity web 
   },
   {
     slug: 'openai-vs-anthropic-api-cost-sme',
-    image: '/images/stock/ai-agent.jpg',
+    image: '/images/stock/office-2.jpg',
     title: 'OpenAI vs Anthropic API Cost Comparison for SMEs: What the Pricing Pages Don\'t Tell You',
     excerpt:
       'API pricing tables look simple until you factor in context window usage, caching, and your actual workload. Here\'s a realistic cost comparison for the most common SME use cases in 2026.',

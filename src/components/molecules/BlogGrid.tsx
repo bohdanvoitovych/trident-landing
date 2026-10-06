@@ -1,5 +1,7 @@
 'use client'
 
+import { useState, useEffect } from 'react'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { Clock, Calendar, ArrowRight } from 'lucide-react'
@@ -24,13 +26,25 @@ const CATEGORY_COLORS: Record<Exclude<BlogCategory, 'All'>, string> = {
   Company: 'bg-violet-500/10 text-violet-600 border-violet-500/20',
 }
 
+const PER_PAGE = 12
+
 export function BlogGrid({ posts, readMore }: Props) {
   const searchParams = useSearchParams()
   const activeCategory = (searchParams.get('cat') ?? 'All') as BlogCategory
+  const [page, setPage] = useState(1)
 
   const filtered = activeCategory === 'All'
     ? posts
     : posts.filter((p) => getBlogCategory(p.tags) === activeCategory)
+
+  // A category change should not leave you on a page that no longer exists.
+  useEffect(() => {
+    setPage(1)
+  }, [activeCategory])
+
+  const pageCount = Math.max(1, Math.ceil(filtered.length / PER_PAGE))
+  const current = Math.min(page, pageCount)
+  const shown = filtered.slice((current - 1) * PER_PAGE, current * PER_PAGE)
 
   if (filtered.length === 0) {
     return (
@@ -39,8 +53,9 @@ export function BlogGrid({ posts, readMore }: Props) {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {filtered.map((post) => {
+    <>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {shown.map((post) => {
         // BLOG_IMAGES holds the originals carried over from the old site;
         // post.image covers the rest, so no card falls back to a bare letter.
         const image = BLOG_IMAGES[post.slug] ?? post.image
@@ -97,6 +112,43 @@ export function BlogGrid({ posts, readMore }: Props) {
           </Link>
         )
       })}
-    </div>
+      </div>
+
+      {pageCount > 1 && (
+        <nav className="mt-12 flex items-center justify-center gap-2" aria-label="Pagination">
+          <button
+            type="button"
+            onClick={() => setPage(current - 1)}
+            disabled={current === 1}
+            className="h-9 rounded-[2px] border border-[#E3E5E8] px-3 text-[14px] text-[#4A4F57] transition-colors hover:border-[#111318] hover:text-[#111318] disabled:opacity-40 disabled:hover:border-[#E3E5E8] disabled:hover:text-[#4A4F57]"
+          >
+            Previous
+          </button>
+          {Array.from({ length: pageCount }, (_, i) => i + 1).map((n) => (
+            <button
+              key={n}
+              type="button"
+              onClick={() => setPage(n)}
+              aria-current={n === current ? 'page' : undefined}
+              className={`h-9 min-w-9 rounded-[2px] border px-3 text-[14px] transition-colors ${
+                n === current
+                  ? 'border-[#111318] bg-[#111318] text-white'
+                  : 'border-[#E3E5E8] text-[#4A4F57] hover:border-[#111318] hover:text-[#111318]'
+              }`}
+            >
+              {n}
+            </button>
+          ))}
+          <button
+            type="button"
+            onClick={() => setPage(current + 1)}
+            disabled={current === pageCount}
+            className="h-9 rounded-[2px] border border-[#E3E5E8] px-3 text-[14px] text-[#4A4F57] transition-colors hover:border-[#111318] hover:text-[#111318] disabled:opacity-40 disabled:hover:border-[#E3E5E8] disabled:hover:text-[#4A4F57]"
+          >
+            Next
+          </button>
+        </nav>
+      )}
+    </>
   )
 }

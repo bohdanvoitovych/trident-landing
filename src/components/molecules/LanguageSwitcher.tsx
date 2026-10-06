@@ -2,7 +2,7 @@
 
 import { useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { ChevronDown, Check, Globe } from 'lucide-react'
+import { Check, Globe } from 'lucide-react'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 
 const LOCALES = [
@@ -44,9 +44,11 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
               : 'inline-flex items-center gap-1.5 text-[14.5px] font-medium leading-none text-white/60 hover:text-white transition-colors outline-none'
           }
         >
-          <Globe size={14} className="shrink-0 opacity-70" aria-hidden="true" />
+          <Globe size={14} className="shrink-0" aria-hidden="true" />
           {current.short}
-          <ChevronDown size={12} className="chev shrink-0" aria-hidden="true" />
+          <span className="chev" aria-hidden="true">
+            ▾
+          </span>
         </button>
       </DropdownMenu.Trigger>
 
