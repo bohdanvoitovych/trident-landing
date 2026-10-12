@@ -167,7 +167,7 @@
   opacity: 0;
   visibility: hidden;
 }
-.tds nav.site .nav-menu[data-open='true'] {
+.tds nav.site .nav-menu.is-open {
   opacity: 1;
   visibility: visible;
   transform: none;

@@ -12,7 +12,7 @@ function TechIcon({ iconSlug, name }: { iconSlug?: string; name: string }) {
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={`https://cdn.simpleicons.org/${iconSlug}`}
+      src={`/images/tech/${iconSlug}.svg`}
       alt={`${name} logo`}
       width={20}
       height={20}

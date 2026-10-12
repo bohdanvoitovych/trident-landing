@@ -133,13 +133,15 @@ export default function AboutPage() {
       {/* Story */}
       <section className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr] gap-x-16 gap-y-0 items-start">
+            <div className="lg:col-start-1 lg:row-start-1">
               <SectionHeader
                 eyebrow="Our Story"
                 title="Built by engineers, for engineers"
                 subtitle="Trident was born from frustration with agencies that overpromise and underdeliver. We set out to build a company where senior engineers own the outcome end-to-end."
               />
+            </div>
+            <div className="lg:col-start-1 lg:row-start-2">
               <div className="mt-8 space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   We started in Sion, Switzerland in 2009 with two engineers and a conviction: great
@@ -160,7 +162,7 @@ export default function AboutPage() {
             </div>
 
             {/* Timeline */}
-            <div className="space-y-4">
+            <div className="lg:col-start-2 lg:row-start-2 mt-8 space-y-0">
               {timeline.map((item, i) => (
                 <div key={i} className="flex gap-4">
                   <div className="flex flex-col items-center">

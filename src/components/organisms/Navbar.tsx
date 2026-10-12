@@ -95,7 +95,7 @@ export function Navbar() {
                       ▾
                     </span>
                   </Link>
-                  <div className="nav-menu" data-open={openMenu === entry.label}>
+                  <div className={`nav-menu${openMenu === entry.label ? ' is-open' : ''}`}>
                     <div className="nav-menu-in">
                       {entry.children.map((child) => (
                         <Link
