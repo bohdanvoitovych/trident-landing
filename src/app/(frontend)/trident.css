@@ -207,3 +207,23 @@
 /* The prototype pinned the links to the right of their track; centring them
    puts the menu on the page's axis, between logo and the right-hand group. */
 .tds nav.site .nav-links { justify-content: center; }
+
+/* Horizontal overflow guard.
+   `hidden` here would make .tds a scroll container and kill the sticky header
+   — that is why it was removed. `clip` prevents the overflow without creating
+   one, so both work. */
+.tds { overflow-x: clip; }
+
+/* Mobile header: the burger is the only control that must stay. */
+@media (max-width: 1000px) {
+  .tds nav.site .nav-in {
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+  }
+  .tds nav.site .nav-logo { grid-column: 1; }
+  .tds nav.site .nav-right { grid-column: 2; justify-self: end; }
+  .tds nav.site .nav-toggle { grid-column: 3; }
+}
+@media (max-width: 420px) {
+  .tds nav.site .nav-logo img { height: 18px; }
+}

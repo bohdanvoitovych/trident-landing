@@ -386,3 +386,7 @@ body {
 .dark-section [class*='bg-[#2772E0]'] .text-white {
   color: #ffffff;
 }
+
+/* Same guard for the Tailwind pages, which sit outside .tds. */
+html { overflow-x: clip; }
+body { overflow-x: clip; }
