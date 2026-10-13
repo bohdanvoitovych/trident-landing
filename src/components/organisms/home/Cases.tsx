@@ -30,7 +30,7 @@ export function Cases() {
             <div className="cs-more-hd"><span className="label-n">More cases</span></div>
             <a className="cs-row rv" href="#"><span className="who">Fiduciary · CH</span><span className="t">Incoming mail and receipts without re-entry</span><span className="num"><b>−89 %</b> Receipt handling</span><span className="badge d">Modelled</span><span className="ar" aria-hidden="true">→</span></a>
             <a className="cs-row rv" href="#"><span className="who">Construction materials · scenario</span><span className="t">Order desk to delivered load, without seasonal hiring</span><span className="num"><b>65 %</b> Reorders without a person</span><span className="badge d">Modelled</span><span className="ar" aria-hidden="true">→</span></a>
-            <a className="cs-row rv" href="#"><span className="who">Letting agency, Romandie · scenario</span><span className="t">Portal enquiry to booked viewing</span><span className="num"><b>&lt;15 s</b> First reply, was &gt;15 h</span><span className="badge d">Modelled</span><span className="ar" aria-hidden="true">→</span></a>
+            <a className="cs-row rv" href="#"><span className="who">Letting agency, Romandie · scenario</span><span className="t">Portal enquiry to booked viewing</span><span className="num"><b>&lt;15 s</b> First reply, by design. Market median: &gt;15 h</span><span className="badge d">Modelled</span><span className="ar" aria-hidden="true">→</span></a>
           </div>
           <div className="cs-all"><a href="#" className="btn btn-outline">All case studies <span className="ar">→</span></a></div>
         </div>

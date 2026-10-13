@@ -8,21 +8,21 @@ import { buildMetadata } from '@/lib/metadata'
 export async function generateMetadata() {
   const locale = await getLocale()
   return buildMetadata({
-    title: '8move — Driver Management Platform | Trident Software',
+    title: '8Move — Logistics Platform | Trident Software',
     description:
-      '8move is a SaaS platform for last-mile delivery companies. Manage drivers, track deliveries, automate payroll. Built by Trident Software.',
+      '8Move is our own logistics platform: order intake, dispatch, driver apps, tracking and automated invoicing. In production with operators in Switzerland and the EU.',
     path: '/products',
     locale,
   })
 }
 
 const features = [
-  { title: 'Driver app', desc: 'iOS & Android app with route navigation, proof-of-delivery, and real-time status updates.' },
-  { title: 'Fleet dashboard', desc: 'Live map view of all drivers, delivery status, and exception alerts.' },
-  { title: 'Payroll automation', desc: 'Automated wage calculation based on deliveries, bonuses, and deductions.' },
-  { title: 'Client portal', desc: 'White-label portal for your clients to track their shipments.' },
-  { title: 'Route optimization', desc: 'AI-powered route sequencing reducing fuel costs by up to 23%.' },
-  { title: 'Analytics', desc: 'Delivery performance, driver efficiency, and cost-per-delivery reporting.' },
+  { title: 'Order intake', desc: 'Orders enter one system, from enquiry to execution to invoice.' },
+  { title: 'Dispatch and planning', desc: 'Assignment and planning of jobs across vehicles and drivers.' },
+  { title: 'Driver app', desc: 'Driver applications with photo proof and signature.' },
+  { title: 'Live tracking', desc: 'Live tracking of every delivery.' },
+  { title: 'Automated invoicing', desc: 'Invoices are issued automatically.' },
+  { title: 'Industry editions', desc: 'Passenger transport, construction-material haulage and last-mile delivery.' },
 ]
 
 export default function ProductsPage() {
@@ -33,16 +33,17 @@ export default function ProductsPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="eyebrow mb-5">Our Product</p>
           <h1 className="text-5xl font-bold tracking-tight md:text-6xl mb-6 leading-[1.1] max-w-4xl text-white">
-            <span className="gradient-text">8move</span> — Driver Management SaaS
+            <span className="gradient-text">8Move</span> — our own logistics platform
           </h1>
           <p className="text-xl text-white/60 leading-relaxed mb-8 max-w-2xl">
-            A production SaaS platform built by Trident Software for last-mile delivery companies.
-            Manage drivers, track deliveries, and automate payroll — all in one place.
+            Order intake, dispatch and planning, driver applications with photo proof and signature,
+            live tracking, automated invoicing. Shipped as configurable industry editions, not one
+            generic product.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="gradient" size="lg" asChild>
-              <a href="https://8move.app" target="_blank" rel="noopener noreferrer">
-                Visit 8move.app <ExternalLink size={16} />
+              <a href="https://8move.com" target="_blank" rel="noopener noreferrer">
+                Visit 8move.com <ExternalLink size={16} />
               </a>
             </Button>
             <Button
@@ -59,15 +60,15 @@ export default function ProductsPage() {
           <div className="flex flex-wrap items-center gap-6 mt-10 text-sm text-white/40">
             <div className="flex items-center gap-2">
               <Zap size={14} className="text-primary" />
-              Live since 2022
+              In production with paying customers
             </div>
             <div className="flex items-center gap-2">
               <Users size={14} className="text-primary" />
-              Active delivery companies
+              Operators in Switzerland and the EU
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={14} className="text-primary" />
-              Switzerland · Ukraine
+              Three industry editions
             </div>
           </div>
         </div>
@@ -78,8 +79,8 @@ export default function ProductsPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             eyebrow="Platform"
-            title="Everything for last-mile delivery"
-            subtitle="Built from real operational experience running delivery fleets."
+            title="What 8Move does"
+            subtitle="Configurable industry editions rather than one generic product."
             className="mb-14"
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -100,9 +101,9 @@ export default function ProductsPage() {
             Built by Trident Software
           </h2>
           <p className="text-white/60 mb-8 text-lg">
-            8move is our own product — not a client project. We built, deployed, and operate it
-            ourselves. This means we understand SaaS from the inside. If you need a similar
-            platform built for your business, we know exactly what it takes.
+            8Move is our own product, in production with paying customers. The same team builds it
+            and does our client work. We build what we are willing to maintain for five years,
+            because with 8Move we actually do.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button variant="gradient" size="lg" asChild>

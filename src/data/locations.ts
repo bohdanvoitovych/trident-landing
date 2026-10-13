@@ -287,9 +287,9 @@ export const locations: LocationData[] = [
     ],
     highlights: [
       {
-        title: 'Local. Not outsourced.',
+        title: 'Swiss accountability, based in Sion.',
         description:
-          "We're in Sion. You can visit. We attend the same industry events. Your project is not handed to a subcontractor on another continent.",
+          "We're in Sion, hosted at the HES-SO Valais-Wallis School of Engineering. Contracts, data residency and accountability sit in Switzerland. Engineering capacity is distributed.",
       },
       {
         title: 'Valais industry expertise',

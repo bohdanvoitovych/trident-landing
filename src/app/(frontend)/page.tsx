@@ -10,10 +10,6 @@ import { Agent } from '@/components/organisms/home/Agent'
 import { UseCases } from '@/components/organisms/home/UseCases'
 import { Cases } from '@/components/organisms/home/Cases'
 import { Industries } from '@/components/organisms/home/Industries'
-import { AgentVsHire } from '@/components/organisms/home/AgentVsHire'
-import { Pricing } from '@/components/organisms/home/Pricing'
-import { Calculator } from '@/components/organisms/home/Calculator'
-import { WhereWeSayNo } from '@/components/organisms/home/WhereWeSayNo'
 import { Process } from '@/components/organisms/home/Process'
 import { Integrations } from '@/components/organisms/home/Integrations'
 import { Products } from '@/components/organisms/home/Products'
@@ -55,10 +51,6 @@ export default async function HomePage() {
       <UseCases />
       <Cases />
       <Industries />
-      <AgentVsHire />
-      <Pricing />
-      <Calculator />
-      <WhereWeSayNo />
       <Process />
       <Integrations />
       <Products />

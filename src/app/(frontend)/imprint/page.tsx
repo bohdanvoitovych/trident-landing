@@ -35,7 +35,7 @@ export default function ImprintPage() {
           <div>
             <h2 className="text-lg font-semibold text-foreground mb-2">Contact</h2>
             <p>
-              Email: <a href="mailto:hello@trident-software.ch" className="text-primary hover:underline">hello@trident-software.ch</a>
+              Email: <a href="mailto:info@trident-software.ch" className="text-primary hover:underline">info@trident-software.ch</a>
             </p>
           </div>
 
@@ -46,7 +46,7 @@ export default function ImprintPage() {
 
           <div>
             <h2 className="text-lg font-semibold text-foreground mb-2">VAT number</h2>
-            <p>CHE-XXX.XXX.XXX MWST</p>
+            <p>CHE-185.076.733</p>
           </div>
 
           <div>
