@@ -160,17 +160,18 @@
   .tds nav.site .nav-right .btn { display: none; }
 }
 
-/* The system opens dropdowns on :hover, and adjacent panels overlap, so two
-   could be visible at once. Visibility is driven by state instead. */
+/* Hover opening is the system's own behaviour and works; the panels only
+   fought each other because a hidden panel still caught the pointer, which
+   kept a neighbour's :hover alive. A hidden panel now ignores the pointer.
+   .is-open covers keyboard focus and the React state. */
+.tds nav.site .nav-menu { pointer-events: none; }
 .tds nav.site .nav-group:hover .nav-menu,
-.tds nav.site .nav-group:focus-within .nav-menu {
-  opacity: 0;
-  visibility: hidden;
-}
+.tds nav.site .nav-group:focus-within .nav-menu,
 .tds nav.site .nav-menu.is-open {
   opacity: 1;
   visibility: visible;
   transform: none;
+  pointer-events: auto;
 }
 
 /* Nav items carry a 2px transparent bottom border for the hover underline,
