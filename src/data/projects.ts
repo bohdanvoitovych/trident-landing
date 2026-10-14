@@ -216,3 +216,65 @@ export const projects: Project[] = [
 ]
 
 export const projectSectors = Array.from(new Set(projects.map((p) => p.sector))).sort()
+
+/**
+ * The six case studies written up from the source-of-truth PDF. They are
+ * kept apart from `projects` so the sector filter of the older portfolio is
+ * not affected. Order matches the homepage.
+ */
+export const featuredProjects: Project[] = [
+  {
+    slug: 'post-acute-clinic-network',
+    title: 'From a bundle of paper to a coded SwissDRG invoice',
+    summary:
+      'Admission, discharge letter and invoice for a post-acute clinic network, without anyone retyping a document.',
+    sector: 'Healthcare · Switzerland',
+    image: '/images/stock/clinic.jpg',
+    caseSlug: 'post-acute-clinic-network',
+  },
+  {
+    slug: 'clinic-voice-documentation',
+    title: 'Voice consultation to TARDOC invoice',
+    summary:
+      'A recorded consultation becomes the report and the coded invoice. Documentation time from 35 % to 15 % of the working year.',
+    sector: 'Healthcare · Switzerland',
+    image: '/images/stock/clinic-2.jpg',
+    caseSlug: 'clinic-voice-documentation',
+  },
+  {
+    slug: 'warranty-control-component-maker',
+    title: 'Up to 85 % of failures came from water, not defects',
+    summary:
+      'A device, telemetry and portals turned every warranty claim into a decision based on data.',
+    sector: 'Manufacturing · Italy',
+    image: '/images/stock/water-telemetry.jpg',
+    caseSlug: 'warranty-control-component-maker',
+  },
+  {
+    slug: 'fiduciary-mail-and-receipts',
+    title: 'Incoming mail and receipts without re-entry',
+    summary:
+      'Two paper queues replaced by scan-and-route and photo-and-post. About 135 operator hours a month returned, modelled.',
+    sector: 'Professional services · Switzerland',
+    image: '/images/stock/office-2.jpg',
+    caseSlug: 'fiduciary-mail-and-receipts',
+  },
+  {
+    slug: 'building-materials-order-to-load',
+    title: 'Order desk to delivered load, without seasonal hiring',
+    summary:
+      'From a phone call to a planned load, an invoiced delivery and a cleared border. 65 % of reorders without a person.',
+    sector: 'Construction-materials logistics',
+    image: '/images/stock/dispatch.jpg',
+    caseSlug: 'building-materials-order-to-load',
+  },
+  {
+    slug: 'letting-agency-enquiry-to-viewing',
+    title: 'Portal enquiry to booked viewing',
+    summary:
+      'A letting agency in Romandie answers within seconds, in seven languages, and books the viewing in the same conversation.',
+    sector: 'Residential letting · Switzerland',
+    image: '/images/stock/workspace.jpg',
+    caseSlug: 'letting-agency-enquiry-to-viewing',
+  },
+]

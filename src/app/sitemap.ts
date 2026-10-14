@@ -9,14 +9,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const servicesSlugs = [
     'ai-services', 'software-engineering', 'embedded-and-iot',
     'cto-as-a-service', 'cloud-consulting', 'devops-and-sre',
-    'ui-ux-design', 'team-extension',
+    'ui-ux-design',
   ]
 
   const industrySlugs = [
+    'trade-and-building-materials', 'professional-services', 'startups-cto',
     'healthcare', 'automotive', 'logistics', 'fintech',
     'retail-ecommerce', 'saas', 'manufacturing', 'proptech',
-    'energy', 'insurance', 'hospitality', 'legaltech',
-    'fashion-lifestyle', 'agriculture', 'public-sector', 'media-entertainment',
+    'hospitality', 'fashion-lifestyle',
     'tourism', 'fmcg', 'diy-tools', 'catering', 'blockchain',
     'social-media', 'games', 'sport-activities', 'education',
   ]
@@ -25,6 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'kleap-ai-builder', 'zenit-auto-b2b', '8move-driver',
     'tdsbot-iot', 'aida-medicine', 'lapochette', 'iam-trade',
     'arenawave', 'go-valais',
+    'post-acute-clinic-network', 'clinic-voice-documentation',
+    'fiduciary-mail-and-receipts', 'warranty-control-component-maker',
+    'building-materials-order-to-load', 'letting-agency-enquiry-to-viewing',
   ]
 
   const blogSlugs = getPostSlugs()

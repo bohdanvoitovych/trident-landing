@@ -371,49 +371,6 @@ export const services: ServiceData[] = [
         'Product design, design systems, B2B dashboards, mobile UI. Figma-based workflow. Swiss design studio.',
     },
   },
-  {
-    slug: 'team-extension',
-    title: 'Team Extension',
-    tagline: 'Senior engineers, embedded in your team',
-    description:
-      'Augment your in-house team with senior engineers from our CH+IL+UA talent pool. Full-time or part-time, short-term or long-term — with Swiss accountability.',
-    icon: 'users',
-    features: [
-      {
-        title: 'Senior Engineer Placement',
-        description:
-          'Backend, frontend, mobile, DevOps, and ML engineers with 5+ years of commercial experience.',
-      },
-      {
-        title: 'Flexible Engagement',
-        description: 'Part-time (20h/week), full-time (40h/week), or project-based engagements.',
-      },
-      {
-        title: 'Swiss Contract & Accountability',
-        description:
-          'All engagements are under Swiss law with NDA, IP transfer, and performance metrics.',
-      },
-      {
-        title: 'Rapid Onboarding',
-        description: 'Engineers ready in 1–2 weeks. We handle vetting, onboarding, and performance management.',
-      },
-      {
-        title: 'Time Zone Coverage',
-        description: 'CH+IL+UA team spans CET+1 to CET+2, providing near-seamless overlap with European teams.',
-      },
-      {
-        title: 'Knowledge Transfer',
-        description: 'Documentation, code reviews, and handover processes built into every engagement.',
-      },
-    ],
-    techStack: ['TypeScript', 'Python', 'React', 'Flutter', 'DevOps', 'ML/AI'],
-    relatedCases: [],
-    meta: {
-      title: 'Team Extension Services — Trident Software Switzerland',
-      description:
-        'Senior software engineers for team augmentation. Swiss contract, CET timezone, 1–2 week start. Backend, frontend, DevOps, ML.',
-    },
-  },
 ]
 
 export function getServiceBySlug(slug: string): ServiceData | undefined {

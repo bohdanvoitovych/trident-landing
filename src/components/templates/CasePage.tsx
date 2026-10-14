@@ -41,6 +41,17 @@ export function CasePage({ caseStudy }: Props) {
           <p className="text-white/40 font-medium">
             Client: <span className="text-white/60">{caseStudy.client}</span>
           </p>
+          {caseStudy.evidence && (
+            <p className="mt-4 text-sm text-white/40">
+              Figures:{' '}
+              <span className="text-white/70 font-medium">
+                {caseStudy.evidence === 'measured' ? 'Measured' : 'Modelled'}
+              </span>
+              {caseStudy.evidence === 'measured'
+                ? ' — counted in production'
+                : ' — calculated, not counted in production'}
+            </p>
+          )}
         </div>
       </section>
 
@@ -64,38 +75,160 @@ export function CasePage({ caseStudy }: Props) {
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-12">
+            {/* Note: how the case is written up */}
+            {caseStudy.note && (
+              <p className="light-card rounded-[3px] p-5 text-[#4A4F57] leading-relaxed">
+                {caseStudy.note}
+              </p>
+            )}
+
             {/* Challenge */}
-            <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('challenge')}</h2>
-              <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.challenge}</p>
-            </div>
+            {caseStudy.challenge && (
+              <div>
+                <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('challenge')}</h2>
+                <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.challenge}</p>
+              </div>
+            )}
 
             {/* Approach */}
-            <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('approach')}</h2>
-              <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.approach}</p>
-            </div>
+            {caseStudy.approach && (
+              <div>
+                <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('approach')}</h2>
+                <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.approach}</p>
+              </div>
+            )}
 
             {/* Solution */}
-            <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('solution')}</h2>
-              <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.solution}</p>
-            </div>
+            {caseStudy.solution && (
+              <div>
+                <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('solution')}</h2>
+                <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.solution}</p>
+              </div>
+            )}
 
-            {/* Tech stack */}
-            <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('techStack')}</h2>
-              <div className="flex flex-wrap gap-2">
-                {caseStudy.techStack.map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-[#F4F4F5] text-[#3F3F46] border border-[#E3E5E8] text-sm px-3 py-1.5 rounded-full"
-                  >
-                    {tech}
-                  </span>
+            {/* Free-form sections (long case studies) */}
+            {caseStudy.sections?.map((section) => (
+              <div key={section.title}>
+                <h2 className="text-2xl font-bold mb-4 text-[#111318]">{section.title}</h2>
+                <div className="flex flex-col gap-4">
+                  {section.paragraphs?.map((p) => (
+                    <p key={p} className="text-[#4A4F57] leading-relaxed text-lg">
+                      {p}
+                    </p>
+                  ))}
+                  {section.items && (
+                    <ul className="flex flex-col gap-2 list-disc pl-6 text-[#4A4F57] leading-relaxed text-lg">
+                      {section.items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {section.closing?.map((p) => (
+                    <p key={p} className="text-[#4A4F57] leading-relaxed text-lg">
+                      {p}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            {/* Before / after table */}
+            {caseStudy.table && (
+              <div>
+                <h2 className="text-2xl font-bold mb-4 text-[#111318]">{caseStudy.table.title}</h2>
+                <div className="overflow-x-auto rounded-[3px] border border-[#E3E5E8]">
+                  <table className="w-full text-left text-[15px]">
+                    <thead className="bg-[#F6F7F8] text-[#4A4F57]">
+                      <tr>
+                        <th scope="col" className="px-4 py-3 font-medium" />
+                        <th scope="col" className="px-4 py-3 font-medium">
+                          {caseStudy.table.beforeLabel}
+                        </th>
+                        <th scope="col" className="px-4 py-3 font-medium">
+                          {caseStudy.table.afterLabel}
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {caseStudy.table.rows.map((row) => (
+                        <tr key={row.label} className="border-t border-[#E3E5E8] align-top">
+                          <th scope="row" className="px-4 py-3 font-medium text-[#111318]">
+                            {row.label}
+                          </th>
+                          <td className="px-4 py-3 text-[#4A4F57]">{row.before}</td>
+                          <td className="px-4 py-3 font-medium text-[#111318]">{row.after}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {/* Explanation of the table */}
+            {caseStudy.afterTable && caseStudy.afterTable.length > 0 && (
+              <div className="flex flex-col gap-4">
+                {caseStudy.afterTable.map((p) => (
+                  <p key={p} className="text-[#4A4F57] leading-relaxed text-lg">
+                    {p}
+                  </p>
                 ))}
               </div>
-            </div>
+            )}
+
+            {/* What happens next */}
+            {caseStudy.next && caseStudy.next.length > 0 && (
+              <div>
+                <h2 className="text-2xl font-bold mb-4 text-[#111318]">What happens next</h2>
+                {caseStudy.nextIntro && (
+                  <p className="mb-4 text-[#4A4F57] leading-relaxed text-lg">{caseStudy.nextIntro}</p>
+                )}
+                <ol className="flex flex-col gap-2 list-decimal pl-6 text-[#4A4F57] leading-relaxed text-lg">
+                  {caseStudy.next.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ol>
+              </div>
+            )}
+
+            {/* Where else this applies */}
+            {caseStudy.elsewhere && caseStudy.elsewhere.length > 0 && (
+              <div>
+                <h2 className="text-2xl font-bold mb-4 text-[#111318]">Where else this applies</h2>
+                {caseStudy.elsewhereIntro && (
+                  <p className="mb-4 text-[#4A4F57] leading-relaxed text-lg">
+                    {caseStudy.elsewhereIntro}
+                  </p>
+                )}
+                <ul className="flex flex-col gap-2 list-disc pl-6 text-[#4A4F57] leading-relaxed text-lg">
+                  {caseStudy.elsewhere.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+                {caseStudy.elsewhereOutro && (
+                  <p className="mt-4 text-[#4A4F57] leading-relaxed text-lg">
+                    {caseStudy.elsewhereOutro}
+                  </p>
+                )}
+              </div>
+            )}
+
+            {/* Tech stack */}
+            {caseStudy.techStack.length > 0 && (
+              <div>
+                <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('techStack')}</h2>
+                <div className="flex flex-wrap gap-2">
+                  {caseStudy.techStack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="bg-[#F4F4F5] text-[#3F3F46] border border-[#E3E5E8] text-sm px-3 py-1.5 rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Testimonial */}
             {caseStudy.testimonial && (

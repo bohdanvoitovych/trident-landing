@@ -11,9 +11,9 @@ export const revalidate = 3600
 export async function generateMetadata() {
   const locale = await getLocale()
   return buildMetadata({
-    title: 'Software Development by Industry | Healthcare, Automotive, Fintech & More | Trident Software',
+    title: 'Industries | Where the case is strongest in Switzerland | Trident Software',
     description:
-      'Custom software development for 25+ industries — healthcare, automotive, fintech, logistics, retail, SaaS, manufacturing. Swiss engineering team since 2009. Fixed budgets, nFADP compliance.',
+      'Where AI agents and operational software pay back: clinics, real estate, e-commerce, hospitality, education, trade and building materials, professional services, startups.',
     path: '/industries',
     locale,
   })
@@ -28,14 +28,13 @@ export default function IndustriesPage() {
           <div className="max-w-3xl">
             <p className="eyebrow mb-4">Industry expertise</p>
             <h1 className="text-display text-white mb-6">
-              Custom Software Development<br />
-              for <span className="gradient-text">25+ Industries</span>
+              Where the case is <span className="gradient-text">strongest in Switzerland</span>
             </h1>
             <p className="text-xl text-white/60 leading-relaxed mb-4">
-              From MedTech startups to automotive distributors and retail chains — our Swiss engineering team delivers domain-specific software that fits your industry regulations, workflows, and growth targets.
+              Ordered by how well the arithmetic tends to work, not by how interesting the technology is.
             </p>
             <p className="text-[15px] text-white/40 leading-relaxed mb-8">
-              Every project starts with your industry-specific constraints: regulatory requirements (nFADP, GDPR, MDR), operational complexity, and competitive landscape. No generic solutions.
+              Operational businesses where documents, orders and dispatch decide the margin: logistics and distribution, field services, healthcare administration, and professional services drowning in other people&apos;s paperwork.
             </p>
             <Link
               href="/contact"
@@ -48,10 +47,10 @@ export default function IndustriesPage() {
           {/* Stat chips */}
           <div className="flex flex-wrap gap-3 mt-12">
             {[
-              { value: '25+', label: 'Industries covered' },
-              { value: '27+', label: 'Projects delivered' },
-              { value: 'Since 2009', label: 'Swiss engineering' },
-              { value: 'Fixed price', label: 'Every engagement' },
+              { value: '45 min', label: 'Free audit' },
+              { value: '3–5 weeks', label: 'Signature to live' },
+              { value: 'CH / EU', label: 'Hosting' },
+              { value: 'revFADP · GDPR', label: 'Data protection' },
             ].map((s) => (
               <div
                 key={s.label}

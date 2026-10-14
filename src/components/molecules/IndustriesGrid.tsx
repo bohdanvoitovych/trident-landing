@@ -35,6 +35,9 @@ const ICON_MAP: Record<string, LucideIcon> = {
 type Category = 'All' | 'Technology' | 'Commerce' | 'Industry' | 'Services' | 'Society'
 
 const CATEGORY_MAP: Record<string, Category> = {
+  'trade-and-building-materials': 'Commerce',
+  'professional-services': 'Services',
+  'startups-cto': 'Services',
   healthcare: 'Services',
   automotive: 'Industry',
   logistics: 'Industry',
@@ -43,14 +46,8 @@ const CATEGORY_MAP: Record<string, Category> = {
   saas: 'Technology',
   manufacturing: 'Industry',
   proptech: 'Services',
-  energy: 'Industry',
-  insurance: 'Services',
   hospitality: 'Services',
-  legaltech: 'Services',
   'fashion-lifestyle': 'Commerce',
-  agriculture: 'Industry',
-  'public-sector': 'Society',
-  'media-entertainment': 'Society',
   tourism: 'Commerce',
   fmcg: 'Commerce',
   'diy-tools': 'Commerce',

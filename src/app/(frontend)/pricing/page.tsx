@@ -34,11 +34,11 @@ const inputs: Array<[string, string]> = [
 
 const effects: Array<[string, string]> = [
   ['Routine volume absorbed — 0.8 FTE redeployed, not dismissed', 'CHF 6,400'],
-  ['Out-of-hours enquiries now answered — 140 a month, at half the normal close rate', 'CHF 17,640 gross · CHF 5,300 margin'],
-  ['Faster first response on in-hours enquiries — 2 pp close-rate lift', 'CHF 1,570 margin'],
-  ['Total monthly benefit', '≈ CHF 13,270'],
+  ['Out-of-hours enquiries now answered — 140 a month, at half the normal close rate', 'CHF 17,640 gross · CHF 5,292 margin'],
+  ['Faster first response on in-hours enquiries — 2 pp close-rate lift', 'CHF 2,184 margin'],
+  ['Total monthly benefit', '≈ CHF 13,876'],
   ['Running cost of the agent', '−CHF 900'],
-  ['Net', '≈ CHF 12,370'],
+  ['Net', '≈ CHF 12,976'],
 ]
 
 export default function PricingPage() {

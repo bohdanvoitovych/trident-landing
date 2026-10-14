@@ -27,9 +27,11 @@ export function IndustryPage({ industry }: Props) {
           <p className="text-xl text-white/60 leading-relaxed mb-8 max-w-2xl">
             {industry.tagline}
           </p>
-          <p className="text-base text-white/60 leading-relaxed max-w-2xl mb-8">
-            {industry.description}
-          </p>
+          {industry.description && (
+            <p className="text-base text-white/60 leading-relaxed max-w-2xl mb-8">
+              {industry.description}
+            </p>
+          )}
           <div className="flex flex-wrap gap-4">
             <Button variant="gradient" size="lg" asChild>
               <Link href="/contact">
@@ -49,64 +51,76 @@ export function IndustryPage({ industry }: Props) {
       </section>
 
       {/* Challenges */}
-      <section className="py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            eyebrow="Industry Challenges"
-            title="What we solve"
-            subtitle={`Common technical and regulatory hurdles in ${industry.title} that we help clients overcome.`}
-            className="mb-12"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {industry.challenges.map((c) => (
-              <div key={c.title} className="light-card rounded-[3px] p-6">
-                <h3 className="font-semibold mb-2">{c.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{c.description}</p>
-              </div>
-            ))}
+      {industry.challenges.length > 0 && (
+        <section className="py-20 md:py-28">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <SectionHeader
+              eyebrow="Industry Challenges"
+              title="What we solve"
+              subtitle={
+                industry.challengesSubtitle ??
+                `Common technical and regulatory hurdles in ${industry.title} that we help clients overcome.`
+              }
+              className="mb-12"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {industry.challenges.map((c) => (
+                <div key={c.title} className="light-card rounded-[3px] p-6">
+                  <h3 className="font-semibold mb-2">{c.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{c.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Solutions */}
-      <section className="py-20 md:py-28 section-alt">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            eyebrow="What we build"
-            title="Solutions we deliver"
-            subtitle={`Production-ready software systems for ${industry.title} companies.`}
-            className="mb-12"
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {industry.solutions.map((s) => (
-              <div key={s.title} className="light-card rounded-[3px] p-6 flex gap-4">
-                <CheckCircle size={18} className="text-primary mt-0.5 shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-1">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
+      {industry.solutions.length > 0 && (
+        <section className="py-20 md:py-28 section-alt">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <SectionHeader
+              eyebrow="What we build"
+              title="Solutions we deliver"
+              subtitle={
+                industry.solutionsSubtitle ??
+                `Production-ready software systems for ${industry.title} companies.`
+              }
+              className="mb-12"
+            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {industry.solutions.map((s) => (
+                <div key={s.title} className="light-card rounded-[3px] p-6 flex gap-4">
+                  <CheckCircle size={18} className="text-primary mt-0.5 shrink-0" />
+                  <div>
+                    <h3 className="font-semibold mb-1">{s.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Tech stack */}
-      <section className="py-16 border-y border-[#E3E5E8]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-medium text-muted-foreground mb-4">Technology stack</p>
-          <div className="flex flex-wrap gap-2">
-            {industry.techStack.map((tech) => (
-              <span
-                key={tech}
-                className="bg-[#F4F4F5] text-[#3F3F46] border border-[#E3E5E8] text-xs px-3 py-1 rounded-full"
-              >
-                {tech}
-              </span>
-            ))}
+      {industry.techStack.length > 0 && (
+        <section className="py-16 border-y border-[#E3E5E8]">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <p className="text-sm font-medium text-muted-foreground mb-4">Technology stack</p>
+            <div className="flex flex-wrap gap-2">
+              {industry.techStack.map((tech) => (
+                <span
+                  key={tech}
+                  className="bg-[#F4F4F5] text-[#3F3F46] border border-[#E3E5E8] text-xs px-3 py-1 rounded-full"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Related services */}
       {relatedServices.length > 0 && (

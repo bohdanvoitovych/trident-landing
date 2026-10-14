@@ -97,8 +97,8 @@ export default function ContactPage() {
             <span className="gradient-text">your project</span>
           </h1>
           <p className="text-xl text-white/60 leading-relaxed max-w-2xl">
-            Tell us what you&apos;re building. We&apos;ll respond within 24 hours with honest
-            feedback and a rough scope estimate.
+            Bring your enquiry volume, response times and systems. In a free 45-minute audit you
+            leave with your own numbers and a straight answer, including &quot;not yet&quot;.
           </p>
         </div>
       </section>
@@ -111,8 +111,8 @@ export default function ContactPage() {
             <div className="lg:col-span-5">
               <SectionHeader
                 eyebrow="Get in touch"
-                title="We respond fast"
-                subtitle="Senior engineers read every inquiry. No sales scripts, no account managers in between."
+                title="A named engineer, not a ticket queue"
+                subtitle="The same person from audit to operation."
               />
               <div className="space-y-4">
                 {contactInfo.map((item) => (
@@ -141,13 +141,13 @@ export default function ContactPage() {
 
 
               <div className="light-card rounded-[3px] p-5">
-                <p className="text-sm font-semibold mb-2">Typical next steps</p>
+                <p className="text-sm font-semibold mb-2">What a first engagement looks like</p>
                 <ol className="space-y-2 text-sm text-muted-foreground">
                   {[
-                    'We review your inquiry',
-                    'Discovery call (30 min)',
-                    'Scope + SOW in 3–5 days',
-                    'Kickoff',
+                    'Free 45-minute audit on your volumes, response times and systems',
+                    'Your own ROI model and a straight answer, including "not yet"',
+                    'One channel, one scenario, one month',
+                    'Decision on evidence: extend, adjust or stop',
                   ].map((step, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs text-primary font-bold">
