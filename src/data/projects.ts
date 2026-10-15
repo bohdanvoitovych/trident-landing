@@ -26,14 +26,6 @@ export const projects: Project[] = [
     caseSlug: 'zenit-auto-b2b',
   },
   {
-    slug: 'aida-medicine',
-    title: 'Aida Medicine Platform',
-    summary: 'Medical management system for clinics and healthcare providers.',
-    sector: 'Healthcare',
-    image: '/images/cases/aida-medicine.jpg',
-    caseSlug: 'aida-medicine',
-  },
-  {
     slug: 'tires-online-shop',
     title: 'Tires Online Shop',
     summary: 'E-commerce platform for tire and rim sales in Canada.',

@@ -59,7 +59,7 @@ export const technologies: TechnologyData[] = [
       'Docker',
       'Vercel / Coolify',
     ],
-    relatedServices: ['software-engineering', 'ui-ux-design', 'cto-as-a-service'],
+    relatedServices: ['software-engineering', 'cto-as-a-service'],
     relatedCases: ['kleap-ai-builder', 'lapochette', 'iam-trade'],
     meta: {
       title: 'Next.js Development Switzerland | Trident Software',
@@ -165,7 +165,7 @@ export const technologies: TechnologyData[] = [
       'ESLint + strict tsconfig',
       'Vitest',
     ],
-    relatedServices: ['software-engineering', 'devops-and-sre', 'cto-as-a-service'],
+    relatedServices: ['software-engineering', 'cto-as-a-service'],
     relatedCases: ['kleap-ai-builder', 'iam-trade', 'lapochette'],
     meta: {
       title: 'TypeScript Development Switzerland | Trident Software',
@@ -218,8 +218,8 @@ export const technologies: TechnologyData[] = [
       'Celery',
       'PyTorch / HuggingFace',
     ],
-    relatedServices: ['ai-services', 'software-engineering', 'cloud-consulting'],
-    relatedCases: ['kleap-ai-builder', 'aida-medicine', 'tdsbot-iot'],
+    relatedServices: ['ai-services', 'software-engineering'],
+    relatedCases: ['kleap-ai-builder', 'post-acute-clinic-network', 'tdsbot-iot'],
     meta: {
       title: 'Python Development Switzerland | AI & ML Engineering | Trident Software',
       description:
@@ -271,7 +271,7 @@ export const technologies: TechnologyData[] = [
       'Zustand / Jotai',
       'Storybook',
     ],
-    relatedServices: ['software-engineering', 'ui-ux-design'],
+    relatedServices: ['software-engineering'],
     relatedCases: ['kleap-ai-builder', 'lapochette', 'iam-trade'],
     meta: {
       title: 'React Development Switzerland | UI Engineering | Trident Software',
@@ -317,7 +317,7 @@ export const technologies: TechnologyData[] = [
       'Low memory footprint vs. JVM alternatives',
     ],
     complementaryStack: ['TypeScript', 'Fastify / NestJS', 'PostgreSQL', 'Redis', 'BullMQ', 'Docker'],
-    relatedServices: ['software-engineering', 'devops-and-sre', 'cloud-consulting'],
+    relatedServices: ['software-engineering'],
     relatedCases: ['kleap-ai-builder', 'zenit-auto-b2b', '8move-driver'],
     meta: {
       title: 'Node.js Development Switzerland | API & Backend Engineering | Trident Software',
@@ -369,7 +369,7 @@ export const technologies: TechnologyData[] = [
       'PostGIS',
       'Node.js / Python / Payload CMS',
     ],
-    relatedServices: ['software-engineering', 'cloud-consulting', 'devops-and-sre'],
+    relatedServices: ['software-engineering'],
     relatedCases: ['kleap-ai-builder', 'zenit-auto-b2b', 'iam-trade'],
     meta: {
       title: 'PostgreSQL Development Switzerland | Database Engineering | Trident Software',
@@ -422,7 +422,7 @@ export const technologies: TechnologyData[] = [
       'Portainer',
       'Helm',
     ],
-    relatedServices: ['devops-and-sre', 'cloud-consulting', 'software-engineering'],
+    relatedServices: ['software-engineering'],
     relatedCases: ['kleap-ai-builder', '8move-driver', 'zenit-auto-b2b'],
     meta: {
       title: 'Docker & Kubernetes Switzerland | DevOps Engineering | Trident Software',
@@ -476,7 +476,7 @@ export const technologies: TechnologyData[] = [
       'Python',
     ],
     relatedServices: ['ai-services', 'software-engineering', 'cto-as-a-service'],
-    relatedCases: ['kleap-ai-builder', 'aida-medicine'],
+    relatedCases: ['kleap-ai-builder', 'post-acute-clinic-network'],
     meta: {
       title: 'AI & LLM Integration Switzerland | Trident Software',
       description:

@@ -19,6 +19,7 @@ export function Services() {
           <a className="card rv" href="#contact"><div className="shot"><Image src="/images/stock/workspace.jpg" alt="Engineering workspace" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div>
             <div className="card-b"><h3 className="h3">CTO as a Service</h3><p className="body-s">Fractional or interim technical leadership when you've outgrown your first developers.</p></div></a>
         </div>
+        <p className="body-s" style={{ marginTop: '28px' }}>Stack: Python and Django, PostgreSQL, React, Flutter, AWS. LLM work sits on top of that, not beside it.</p>
       </div></section>
   )
 }

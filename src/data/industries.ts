@@ -65,7 +65,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: ['letting-agency-enquiry-to-viewing'],
-    relatedServices: ['software-engineering', 'ai-services', 'ui-ux-design'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'Real estate and property management | Trident Software',
       description: 'Viewing requests arrive in the evening; a tenant reporting a broken boiler at 22:00 needs triage, not a voicemail box. Qualification and scheduling are almost entirely rule-based.',
@@ -192,7 +192,7 @@ export const industries: IndustryData[] = [
     solutionsSubtitle: '',
     techStack: [],
     relatedCases: ['lapochette'],
-    relatedServices: ['software-engineering', 'ui-ux-design', 'ai-services'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'E-commerce and D2C | Trident Software',
       description: 'Order status, sizing, returns, cross-sell at the moment of intent. Highest message volume, lowest value per message — automation economics at their cleanest.',
@@ -208,7 +208,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: [],
-    relatedServices: ['software-engineering', 'ui-ux-design', 'ai-services'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'Hospitality and restaurants | Trident Software',
       description: 'Reservations, group enquiries, allergen and menu questions in four languages during service, when nobody can answer the phone.',
@@ -241,7 +241,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: [],
-    relatedServices: ['software-engineering', 'ai-services', 'ui-ux-design'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'Education and training providers | Trident Software',
       description: 'Course enquiries, prerequisites, dates, enrolment — seasonal peaks that would otherwise need temporary staff.',
@@ -275,7 +275,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: ['zenit-auto-b2b'],
-    relatedServices: ['software-engineering', 'ai-services', 'cloud-consulting'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'Automotive | Trident Software',
       description: 'B2B e-commerce for automotive parts with bulk ordering. The first step is a free 45-minute audit.',
@@ -327,7 +327,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: [],
-    relatedServices: ['software-engineering', 'cloud-consulting', 'devops-and-sre'],
+    relatedServices: ['software-engineering'],
     meta: {
       title: 'Fintech | Trident Software',
       description: 'Enabling financial technology solutions for modern business needs.',
@@ -344,7 +344,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: ['kleap-ai-builder'],
-    relatedServices: ['software-engineering', 'ai-services', 'devops-and-sre'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'SaaS | Trident Software',
       description: '8Move is our own logistics platform, in production with paying customers. The first step is a free 45-minute audit.',
@@ -361,7 +361,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: ['warranty-control-component-maker'],
-    relatedServices: ['embedded-and-iot', 'ai-services', 'cloud-consulting'],
+    relatedServices: ['embedded-and-iot', 'ai-services'],
     meta: {
       title: 'Manufacturing | Trident Software',
       description: 'Wherever a manufacturer carries a warranty obligation for a product that fails because of how it is used, in conditions the manufacturer cannot see. The first step is a free 45-minute audit.',
@@ -378,7 +378,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: ['lapochette'],
-    relatedServices: ['software-engineering', 'ui-ux-design', 'ai-services'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'Fashion & Luxury | Trident Software',
       description: 'Transforming fashion businesses with technology-driven insights. The first step is a free 45-minute audit.',
@@ -395,7 +395,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: [],
-    relatedServices: ['software-engineering', 'ui-ux-design', 'ai-services'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'Tourism | Trident Software',
       description: 'Enhancing travel experiences with digital tools and strategies.',
@@ -430,7 +430,7 @@ export const industries: IndustryData[] = [
     ],
     techStack: ['React Native', 'Node.js', 'PostgreSQL', 'Redis', 'Python', 'Docker', 'AWS'],
     relatedCases: [],
-    relatedServices: ['software-engineering', 'ai-services', 'cloud-consulting'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'FMCG & Consumer Goods Software | Trident Software',
       description: 'FMCG software — distribution management, HoReCa platforms, retail execution, demand forecasting. Swiss engineering.',
@@ -447,7 +447,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: [],
-    relatedServices: ['software-engineering', 'ui-ux-design', 'cloud-consulting'],
+    relatedServices: ['software-engineering'],
     meta: {
       title: 'DIY | Trident Software',
       description: 'Empowering DIY brands to reach their audience through digital platforms.',
@@ -464,7 +464,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: [],
-    relatedServices: ['software-engineering', 'ui-ux-design', 'ai-services'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'Catering | Trident Software',
       description: 'Supporting the catering industry with digital ordering and management tools.',
@@ -481,7 +481,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: [],
-    relatedServices: ['software-engineering', 'ai-services', 'cloud-consulting'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'Blockchain | Trident Software',
       description: 'Offering blockchain solutions for secure and transparent transactions.',
@@ -498,7 +498,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: [],
-    relatedServices: ['software-engineering', 'ai-services', 'cloud-consulting', 'devops-and-sre'],
+    relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'Social Media | Trident Software',
       description: 'Solutions for social media engagement and reach for brands.',
@@ -515,7 +515,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: [],
-    relatedServices: ['software-engineering', 'cloud-consulting', 'devops-and-sre'],
+    relatedServices: ['software-engineering'],
     meta: {
       title: 'Games | Trident Software',
       description: 'Developing interactive gaming solutions for entertainment and engagement.',
@@ -532,7 +532,7 @@ export const industries: IndustryData[] = [
     solutions: [],
     techStack: [],
     relatedCases: [],
-    relatedServices: ['software-engineering', 'embedded-and-iot', 'ui-ux-design'],
+    relatedServices: ['software-engineering', 'embedded-and-iot'],
     meta: {
       title: 'Sport & Activities | Trident Software',
       description: 'Enhancing sports and activities industries with tech solutions in Switzerland.',

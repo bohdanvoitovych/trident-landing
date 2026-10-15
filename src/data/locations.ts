@@ -37,7 +37,7 @@ export const locations: LocationData[] = [
           'Smart contract integrations, Web3 dashboards, and blockchain-backed audit trails for Crypto Valley startups.',
       },
     ],
-    relatedServices: ['ai-services', 'software-engineering', 'cloud-consulting', 'devops-and-sre'],
+    relatedServices: ['ai-services', 'software-engineering'],
     relatedCases: ['kleap-ai-builder', '8move-driver'],
     meta: {
       title: 'Software Development Zurich | Trident Software Switzerland',
@@ -76,7 +76,7 @@ export const locations: LocationData[] = [
           'Document management, reporting dashboards, and workflow automation for NGOs and international institutions.',
       },
     ],
-    relatedServices: ['software-engineering', 'ai-services', 'ui-ux-design', 'cto-as-a-service'],
+    relatedServices: ['software-engineering', 'ai-services', 'cto-as-a-service'],
     relatedCases: ['iam-trade', 'kleap-ai-builder'],
     meta: {
       title: 'Software Development Geneva | Trident Software Switzerland',
@@ -109,13 +109,8 @@ export const locations: LocationData[] = [
           "HL7 FHIR interfaces, patient management systems, and eHealth platform integrations for Bern's hospital network.",
       },
     ],
-    relatedServices: [
-      'software-engineering',
-      'cloud-consulting',
-      'devops-and-sre',
-      'embedded-and-iot',
-    ],
-    relatedCases: ['aida-medicine', 'tdsbot-iot'],
+    relatedServices: ['software-engineering', 'embedded-and-iot'],
+    relatedCases: ['post-acute-clinic-network', 'tdsbot-iot'],
     meta: {
       title: 'Software Development Bern | Trident Software Switzerland',
       description:
@@ -147,13 +142,8 @@ export const locations: LocationData[] = [
           'eCTD submission tools, clinical trial data platforms, and audit trail systems meeting ICH E6(R3) and 21 CFR Part 11.',
       },
     ],
-    relatedServices: [
-      'software-engineering',
-      'embedded-and-iot',
-      'ai-services',
-      'cloud-consulting',
-    ],
-    relatedCases: ['aida-medicine', 'tdsbot-iot'],
+    relatedServices: ['software-engineering', 'embedded-and-iot', 'ai-services'],
+    relatedCases: ['post-acute-clinic-network', 'tdsbot-iot'],
     meta: {
       title: 'Software Development Basel | Pharma & Life Sciences IT | Trident Software',
       description:
@@ -185,7 +175,7 @@ export const locations: LocationData[] = [
           "Event management platforms, ticketing systems, and fan engagement apps for Lausanne's sports organizations and the Olympic ecosystem.",
       },
     ],
-    relatedServices: ['software-engineering', 'cto-as-a-service', 'ui-ux-design', 'ai-services'],
+    relatedServices: ['software-engineering', 'cto-as-a-service', 'ai-services'],
     relatedCases: ['kleap-ai-builder', 'lapochette', '8move-driver'],
     meta: {
       title: 'Software Development Lausanne | Startup Engineering | Trident Software',
@@ -224,7 +214,7 @@ export const locations: LocationData[] = [
           'Regulatory-compliant platforms for FINMA-licensed digital asset service providers, including AML/KYC integration and audit trails.',
       },
     ],
-    relatedServices: ['software-engineering', 'ai-services', 'cloud-consulting', 'devops-and-sre'],
+    relatedServices: ['software-engineering', 'ai-services'],
     relatedCases: ['zenit-auto-b2b', 'kleap-ai-builder'],
     meta: {
       title: 'Software Development Zug | Crypto Valley Engineering | Trident Software',
@@ -263,7 +253,7 @@ export const locations: LocationData[] = [
           "Practical ERP-lite systems, CRM integrations, and workflow automation for Central Switzerland's Mittelstand companies.",
       },
     ],
-    relatedServices: ['software-engineering', 'ui-ux-design', 'ai-services', 'cto-as-a-service'],
+    relatedServices: ['software-engineering', 'ai-services', 'cto-as-a-service'],
     relatedCases: ['lapochette', 'iam-trade'],
     meta: {
       title: 'Software Development Lucerne | Hospitality & SME Tech | Trident Software',
@@ -308,7 +298,7 @@ export const locations: LocationData[] = [
       'ai-services',
       'cto-as-a-service',
     ],
-    relatedCases: ['tdsbot-iot', '8move-driver', 'aida-medicine'],
+    relatedCases: ['tdsbot-iot', '8move-driver', 'post-acute-clinic-network'],
     meta: {
       title: 'Software Agency Sion Valais | Trident Software — Local Partner',
       description:
@@ -346,7 +336,7 @@ export const locations: LocationData[] = [
           "Multiplayer backends, leaderboard systems, and tournament management tools for Ticino's growing gaming industry.",
       },
     ],
-    relatedServices: ['software-engineering', 'ui-ux-design', 'cloud-consulting', 'ai-services'],
+    relatedServices: ['software-engineering', 'ai-services'],
     relatedCases: ['kleap-ai-builder', 'lapochette', 'zenit-auto-b2b'],
     meta: {
       title: 'Software Development Lugano Ticino | Trident Software Switzerland',
@@ -385,12 +375,7 @@ export const locations: LocationData[] = [
           "Wholesale order management, dealer portals, and EDI integrations for St. Gallen's manufacturing and textile exporters.",
       },
     ],
-    relatedServices: [
-      'software-engineering',
-      'ai-services',
-      'embedded-and-iot',
-      'devops-and-sre',
-    ],
+    relatedServices: ['software-engineering', 'ai-services', 'embedded-and-iot'],
     relatedCases: ['8move-driver', 'zenit-auto-b2b', 'iam-trade'],
     meta: {
       title: 'Software Development St. Gallen | Logistics & Supply Chain Tech | Trident Software',
@@ -429,7 +414,7 @@ export const locations: LocationData[] = [
           "Custom ERP extensions, project management integrations, and technical documentation platforms for Winterthur's engineering firms.",
       },
     ],
-    relatedServices: ['embedded-and-iot', 'software-engineering', 'ai-services', 'devops-and-sre'],
+    relatedServices: ['embedded-and-iot', 'software-engineering', 'ai-services'],
     relatedCases: ['tdsbot-iot', '8move-driver', 'zenit-auto-b2b'],
     meta: {
       title: 'Industrial Software Winterthur | IoT & Manufacturing Tech | Trident Software',
@@ -468,8 +453,8 @@ export const locations: LocationData[] = [
           "Learning management systems, research data platforms, and student portals for Fribourg's academic institutions.",
       },
     ],
-    relatedServices: ['software-engineering', 'ui-ux-design', 'ai-services', 'cto-as-a-service'],
-    relatedCases: ['kleap-ai-builder', 'lapochette', 'aida-medicine'],
+    relatedServices: ['software-engineering', 'ai-services', 'cto-as-a-service'],
+    relatedCases: ['kleap-ai-builder', 'lapochette', 'post-acute-clinic-network'],
     meta: {
       title: 'Software Development Fribourg | Bilingual Swiss Software | Trident Software',
       description:

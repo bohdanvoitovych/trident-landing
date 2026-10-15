@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, Brain, Code2, Cpu, ShieldCheck, Cloud, GitBranch, Palette, Users } from 'lucide-react'
+import { ArrowRight, Brain, Code2, Cpu, ShieldCheck, Cloud, GitBranch, Palette, Truck, Users } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import type { ServiceData } from '@/data/services'
 
@@ -12,6 +12,7 @@ const iconMap: Record<string, React.ElementType> = {
   'git-branch': GitBranch,
   palette: Palette,
   users: Users,
+  truck: Truck,
 }
 
 type Props = {

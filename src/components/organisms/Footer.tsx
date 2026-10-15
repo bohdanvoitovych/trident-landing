@@ -17,9 +17,11 @@ const COLUMNS = [
   {
     heading: 'Services',
     links: [
-      { href: '/#agent', label: 'AI agents' },
-      { href: '/#products', label: 'Logistics platforms' },
-      { href: '/solutions/iot', label: 'IoT & embedded' },
+      { href: '/services/ai-services', label: 'AI agents & LLM automation' },
+      { href: '/services/logistics-and-operations-platforms', label: 'Logistics & operations platforms' },
+      { href: '/services/embedded-and-iot', label: 'IoT & connected products' },
+      { href: '/services/software-engineering', label: 'Custom business systems' },
+      { href: '/services/cto-as-a-service', label: 'CTO as a Service' },
       { href: '/solutions/e-commerce', label: 'E-commerce' },
       { href: '/services', label: 'All services' },
     ],
@@ -38,6 +40,7 @@ const COLUMNS = [
     heading: 'Explore',
     links: [
       { href: '/industries', label: 'Industries' },
+      { href: '/use-cases', label: 'Use cases' },
       { href: '/locations', label: 'Locations' },
       { href: '/solutions', label: 'Solutions' },
       { href: '/products', label: 'Products' },

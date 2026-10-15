@@ -27,7 +27,12 @@ export default function CasesPage() {
           <p className="eyebrow mb-4">Portfolio</p>
           <h1 className="text-display mb-4">Delivered, then counted</h1>
           <p className="text-xl text-muted-foreground max-w-2xl">
-            Six cases, written up in full. Each figure is labelled measured or modelled.
+            Delivered projects, written up without client names.
+          </p>
+          <p className="mt-4 text-muted-foreground max-w-2xl">
+            Each page gives the client&apos;s situation, what the work replaced, and what changed — with the
+            measured figures separated from the modelled ones, because a buyer who cannot tell them apart cannot
+            trust either. Named references are given under NDA on request.
           </p>
         </div>
       </section>

@@ -35,13 +35,15 @@ export function ServicePage({ service }: Props) {
               {service.title}
             </h1>
             <p className="text-xl text-[#2772E0] font-medium mb-5">{service.tagline}</p>
-            <p className="text-[18px] text-white/60 leading-relaxed mb-8 max-w-2xl">
-              {service.description}
-            </p>
+            {service.description && (
+              <p className="text-[18px] text-white/60 leading-relaxed mb-8 max-w-2xl">
+                {service.description}
+              </p>
+            )}
             <div className="flex flex-wrap gap-4">
               <Button variant="gradient" size="lg" asChild>
                 <Link href="/contact">
-                  Get a free quote <ArrowRight size={18} />
+                  Book a free audit <ArrowRight size={18} />
                 </Link>
               </Button>
               <Button
@@ -56,6 +58,7 @@ export function ServicePage({ service }: Props) {
           </div>
 
           {/* Feature bullet preview */}
+          {service.features.length > 0 && (
           <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-2xl">
             {service.features.slice(0, 3).map((f) => (
               <div
@@ -67,10 +70,12 @@ export function ServicePage({ service }: Props) {
               </div>
             ))}
           </div>
+          )}
         </div>
       </section>
 
       {/* ── What's included ──────────────────────────────── */}
+      {service.features.length > 0 && (
       <section className="py-20 md:py-28 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
@@ -103,29 +108,10 @@ export function ServicePage({ service }: Props) {
           </div>
         </div>
       </section>
-
-      {/* ── Why us ───────────────────────────────────────── */}
-      <section className="py-16 md:py-20 bg-[#FAFAFA] border-t border-[#E3E5E8]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { title: 'Fixed-price engagements', desc: 'Statement of Work before we start. No scope creep surprises. You know the cost upfront.' },
-              { title: 'Swiss data compliance', desc: 'nFADP and GDPR-ready by default. Data residency in Switzerland available for all projects.' },
-              { title: '24h response guaranteed', desc: 'Send us a brief. We respond with a concrete proposal within one business day.' },
-            ].map((item) => (
-              <div key={item.title} className="flex gap-4">
-                <CheckCircle size={20} className="text-[#2772E0] shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="font-semibold text-[#111318] mb-1">{item.title}</h3>
-                  <p className="text-[13px] text-[#4A4F57] leading-relaxed">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      )}
 
       {/* ── Tech Stack ───────────────────────────────────── */}
+      {service.techStack.length > 0 && (
       <section className="py-16 md:py-20 bg-white border-t border-[#E3E5E8]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-center gap-6">
@@ -148,6 +134,7 @@ export function ServicePage({ service }: Props) {
           </div>
         </div>
       </section>
+      )}
 
       {/* ── Related Cases ────────────────────────────────── */}
       {relatedCases.length > 0 && (

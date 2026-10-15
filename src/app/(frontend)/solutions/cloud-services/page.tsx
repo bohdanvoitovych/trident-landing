@@ -54,7 +54,7 @@ export default function CloudServicesSolutionPage() {
               className="border-white/[0.12] text-white hover:bg-white/[0.06] bg-transparent"
               asChild
             >
-              <Link href="/services/cloud-consulting">Cloud consulting service</Link>
+              <Link href="/services">Our services</Link>
             </Button>
           </div>
         </div>

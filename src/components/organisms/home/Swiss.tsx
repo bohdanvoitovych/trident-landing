@@ -16,12 +16,8 @@ export function Swiss() {
             </div>
           </div>
         </div>
-        <div className="langs">
-          <div className="lg-card rv"><span className="code">DE</span><p>«Ja, 8 Tonnen sind an Lager. Montag 7.30 Uhr?»</p><small>Own approved wording, not a translation</small></div>
-          <div className="lg-card rv"><span className="code">FR</span><p>«Oui, 8 tonnes en stock. Lundi 7h30&nbsp;?»</p><small>Romandie</small></div>
-          <div className="lg-card rv"><span className="code">IT</span><p>«Sì, 8 tonnellate disponibili. Lunedì alle 7.30?»</p><small>Ticino</small></div>
-          <div className="lg-card rv"><span className="code">EN</span><p>“Yes, 8 tonnes in stock. Monday 7:30?”</p><small>International clients</small></div>
-        </div>
+        <p className="body-s" style={{ marginTop: '28px' }}>DE, FR, IT, EN from day one. Not a translation layer — separate approved wording per language, because a French-speaking Swiss buyer and a German-speaking Swiss buyer do not respond to the same sentence.</p>
+        <p className="body-s" style={{ marginTop: '12px' }}>Working languages: English, French, German across client work. Our products ship in seven languages including right-to-left Arabic.</p>
       </div></section>
   )
 }

@@ -7,9 +7,8 @@ const BASE_URL = 'https://trident-software.ch'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const servicesSlugs = [
-    'ai-services', 'software-engineering', 'embedded-and-iot',
-    'cto-as-a-service', 'cloud-consulting', 'devops-and-sre',
-    'ui-ux-design',
+    'ai-services', 'logistics-and-operations-platforms', 'software-engineering',
+    'embedded-and-iot', 'cto-as-a-service',
   ]
 
   const industrySlugs = [
@@ -23,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const caseSlugs = [
     'kleap-ai-builder', 'zenit-auto-b2b', '8move-driver',
-    'tdsbot-iot', 'aida-medicine', 'lapochette', 'iam-trade',
+    'tdsbot-iot', 'lapochette', 'iam-trade',
     'arenawave', 'go-valais',
     'post-acute-clinic-network', 'clinic-voice-documentation',
     'fiduciary-mail-and-receipts', 'warranty-control-component-maker',
@@ -47,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/imprint`, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${BASE_URL}/team`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/pricing`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/solutions`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/use-cases`, changeFrequency: 'monthly', priority: 0.8 },    { url: `${BASE_URL}/solutions`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/solutions/websites`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/solutions/websites/web-brochure`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/solutions/websites/sme-website`, changeFrequency: 'monthly', priority: 0.7 },

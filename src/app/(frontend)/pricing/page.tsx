@@ -147,6 +147,18 @@ export default function PricingPage() {
 
       <AgentVsHire />
       <WhereWeSayNo />
+      <section className="sec">
+        <div className="wrap">
+          <div className="sec-head" style={{ marginBottom: 0 }}>
+            <span className="label">On references</span>
+            <p className="body" style={{ marginTop: '14px' }}>
+              We do not publish other companies&apos; results as our own, and we do not name clients without written
+              permission. The figures on this page are labelled as models, because that is what they are. In the audit
+              you get the same model filled with your data, and the file is yours to keep.
+            </p>
+          </div>
+        </div>
+      </section>
       <Contact />
       <HomeInteractions />
     </div>

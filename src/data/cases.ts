@@ -941,7 +941,7 @@ export const cases: CaseData[] = [
       { metric: 'User satisfaction (NPS)', value: '72' },
       { metric: 'Websites generated at launch', value: '2,000+' },
     ],
-    relatedCases: ['aida-medicine', 'go-valais'],
+    relatedCases: ['post-acute-clinic-network', 'go-valais'],
     meta: {
       title: 'Kleap AI Website Builder — Trident Software Case Study',
       description:
@@ -982,7 +982,7 @@ export const cases: CaseData[] = [
     slug: '8move-driver',
     client: '8Move',
     industry: 'Logistics / Last-mile Delivery',
-    services: ['software-engineering', 'ui-ux-design'],
+    services: ['software-engineering'],
     techStack: ['Flutter', 'Dart', 'Google Maps API', 'WebSocket', 'Firebase'],
     hero: {
       title: '8Move Driver App',
@@ -1030,7 +1030,7 @@ export const cases: CaseData[] = [
       { metric: 'Sensor uptime', value: '99.7%' },
       { metric: 'Manual checks eliminated', value: '85%' },
     ],
-    relatedCases: ['aida-medicine'],
+    relatedCases: ['post-acute-clinic-network'],
     meta: {
       title: 'TDSbot IoT Water Monitor — Trident Software Case Study',
       description:
@@ -1038,39 +1038,10 @@ export const cases: CaseData[] = [
     },
   },
   {
-    slug: 'aida-medicine',
-    client: 'Aida Medicine',
-    industry: 'Healthcare',
-    services: ['software-engineering', 'ai-services', 'ui-ux-design'],
-    techStack: ['React', 'Node.js', 'Python', 'PostgreSQL', 'AWS', 'HIPAA-compliant infrastructure'],
-    hero: {
-      title: 'Aida — Healthcare Management Platform',
-      tagline: 'Patient management and clinical workflow automation',
-      image: '/images/cases/aida-desktop-consultations.jpg',
-    },
-    challenge:
-      'A healthcare provider needed to replace paper-based patient management with a digital platform that handles appointments, patient records, clinical notes, and billing — while maintaining strict data privacy and compliance with healthcare regulations.',
-    approach:
-      'We implemented a role-based access system (doctor, nurse, receptionist, admin) with field-level encryption for sensitive patient data. The clinical notes module uses structured templates with free-text AI assistance for faster documentation. Billing integrates with Swiss health insurance codes.',
-    solution:
-      'A comprehensive healthcare platform covering patient lifecycle management: registration, appointment scheduling, clinical notes, prescription management, lab results tracking, and insurance billing. Mobile-responsive for tablet use in clinical settings.',
-    results: [
-      { metric: 'Documentation time per patient', value: '-40%' },
-      { metric: 'Appointment no-shows', value: '-25%' },
-      { metric: 'Billing processing time', value: '-60%' },
-    ],
-    relatedCases: ['dentyval', 'catapult-crown'],
-    meta: {
-      title: 'Aida Healthcare Platform — Trident Software Case Study',
-      description:
-        'Healthcare management platform with patient records, appointment scheduling, clinical notes, and billing. Swiss data residency.',
-    },
-  },
-  {
     slug: 'lapochette',
     client: 'LaPochette',
     industry: 'Fashion & Luxury',
-    services: ['software-engineering', 'ui-ux-design'],
+    services: ['software-engineering'],
     techStack: ['React', 'Next.js', 'Node.js', 'Stripe', 'PostgreSQL', 'Cloudinary'],
     hero: {
       title: 'LaPochette — Luxury Bag Rental Platform',
@@ -1099,7 +1070,7 @@ export const cases: CaseData[] = [
     slug: 'iam-trade',
     client: 'IAM Trade',
     industry: 'B2B E-commerce',
-    services: ['software-engineering', 'cloud-consulting'],
+    services: ['software-engineering'],
     techStack: ['Python', 'React', 'PostgreSQL', 'AWS', 'Docker', 'Redis'],
     hero: {
       title: 'IAM Trade — B2B E-commerce Platform',
@@ -1154,7 +1125,7 @@ export const cases: CaseData[] = [
     slug: 'go-valais',
     client: 'GO-Valais Expat Club',
     industry: 'Community / NGO',
-    services: ['software-engineering', 'ui-ux-design'],
+    services: ['software-engineering'],
     techStack: ['WordPress', 'PHP', 'MySQL', 'Elementor', 'WooCommerce'],
     hero: {
       title: 'GO-Valais — Expat Community Portal',
