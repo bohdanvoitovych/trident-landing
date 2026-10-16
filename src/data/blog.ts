@@ -236,11 +236,11 @@ export const posts: BlogPost[] = [
     image: '/images/stock/logistics.jpg',
     title: 'On-Premise LLMs for Swiss Companies: A Practical Guide',
     excerpt:
-      'Why Swiss SMEs are choosing self-hosted language models over cloud APIs — and how to deploy Llama 3 or Mistral on your own infrastructure while meeting nFADP requirements.',
+      'Why Swiss SMEs are choosing self-hosted language models over cloud APIs — and how to deploy Llama 3 or Mistral on your own infrastructure while meeting revFADP requirements.',
     content: `
 ## Why On-Premise LLMs Make Sense for Swiss Businesses
 
-Switzerland's Federal Act on Data Protection (nFADP) places strict requirements on how businesses handle personal data. When you send queries to OpenAI, Anthropic, or Google, that data leaves Swiss soil — which creates compliance complexity for healthcare, finance, and legal firms.
+Switzerland's Federal Act on Data Protection (revFADP) places strict requirements on how businesses handle personal data. When you send queries to OpenAI, Anthropic, or Google, that data leaves Swiss soil — which creates compliance complexity for healthcare, finance, and legal firms.
 
 On-premise LLMs solve this by keeping every token on infrastructure you control.
 
@@ -282,18 +282,18 @@ For a team of 50 making 500 API calls/day, the math changes significantly at sca
 
 ## Getting Started
 
-Contact us for a free infrastructure assessment. We'll evaluate your workload, recommend the right model and hardware, and handle the deployment — including nFADP compliance documentation.
+Contact us for a free infrastructure assessment. We'll evaluate your workload, recommend the right model and hardware, and handle the deployment — including revFADP compliance documentation.
     `.trim(),
     author: 'Bohdan Voitovych',
     authorRole: 'Project Manager, Trident Software',
     publishedAt: '2026-04-15',
     readingTime: 7,
-    tags: ['AI', 'LLM', 'Data Privacy', 'Switzerland', 'nFADP'],
+    tags: ['AI', 'LLM', 'Data Privacy', 'Switzerland', 'revFADP'],
     relatedPosts: ['ai-agent-b2b-automation', 'strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions'],
     meta: {
       title: 'On-Premise LLMs for Swiss Companies — Trident Software Blog',
       description:
-        'Deploy Llama 3 or Mistral on your own infrastructure. Practical guide for Swiss businesses on self-hosted LLMs and nFADP compliance.',
+        'Deploy Llama 3 or Mistral on your own infrastructure. Practical guide for Swiss businesses on self-hosted LLMs and revFADP compliance.',
     },
   },
   {
@@ -1091,7 +1091,7 @@ Amazon Web Services provides comprehensive cloud security accessible on a pay-as
 Fine-grained control over who can access which resources. Enforce least-privilege access — nobody has more permissions than they need.
 
 **AWS KMS (Key Management Service)**
-Create and control encryption keys for data at rest and in transit. Meet GDPR and nFADP requirements for data encryption.
+Create and control encryption keys for data at rest and in transit. Meet GDPR and revFADP requirements for data encryption.
 
 **Amazon GuardDuty**
 ML-based intelligent threat detection with real-time alerts. Detects anomalous activity patterns that rule-based systems miss.
@@ -1564,13 +1564,13 @@ Our current preferred model: **fixed-price per phase, not per project**. Each ph
   {
     slug: 'fadp-nfadp-saas-compliance-switzerland',
     image: '/images/stock/warehouse-2.jpg',
-    title: 'FADP / nFADP Compliance for SaaS Products: A Developer\'s Checklist',
+    title: 'FADP / revFADP Compliance for SaaS Products: A Developer\'s Checklist',
     excerpt:
       'Switzerland\'s revised Federal Act on Data Protection came into force in September 2023. If you\'re building or operating a SaaS product for Swiss customers, here\'s what your engineering team must implement.',
     content: `
-## What Changed with nFADP
+## What Changed with revFADP
 
-The revised Federal Act on Data Protection (nFADP, in force since September 2023) brought Swiss data protection law closer to GDPR while keeping Swiss-specific characteristics. For SaaS products with Swiss customers, the key engineering implications are:
+The revised Federal Act on Data Protection (revFADP, in force since September 2023) brought Swiss data protection law closer to GDPR while keeping Swiss-specific characteristics. For SaaS products with Swiss customers, the key engineering implications are:
 
 - **Privacy by design and by default** is now a legal requirement, not a recommendation
 - **Data breach notification** to the FDPIC within 72 hours for high-risk breaches
@@ -1645,24 +1645,24 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
     authorRole: 'Project Manager, Trident Software',
     publishedAt: '2025-11-19',
     readingTime: 9,
-    tags: ['nFADP', 'GDPR', 'Data Privacy', 'Switzerland', 'SaaS', 'Compliance'],
+    tags: ['revFADP', 'GDPR', 'Data Privacy', 'Switzerland', 'SaaS', 'Compliance'],
     relatedPosts: ['on-premise-llm-swiss-companies', 'strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions', 'swiss-startup-tech-stack-2026'],
     faq: [
       {
-        question: 'Does nFADP apply to foreign SaaS companies with Swiss customers?',
-        answer: 'Yes. nFADP applies when processing personal data of persons in Switzerland, regardless of where the processor is located — similar to GDPR\'s extraterritorial scope.',
+        question: 'Does revFADP apply to foreign SaaS companies with Swiss customers?',
+        answer: 'Yes. revFADP applies when processing personal data of persons in Switzerland, regardless of where the processor is located — similar to GDPR\'s extraterritorial scope.',
       },
       {
-        question: 'Is nFADP compliance the same as GDPR compliance?',
-        answer: 'Largely aligned but not identical. Key differences: nFADP\'s breach notification window is 72 hours (same as GDPR), but the definition of "high risk" and profiling rules differ. GDPR compliance provides a strong foundation but requires Swiss-specific gaps to be filled.',
+        question: 'Is revFADP compliance the same as GDPR compliance?',
+        answer: 'Largely aligned but not identical. Key differences: revFADP\'s breach notification window is 72 hours (same as GDPR), but the definition of "high risk" and profiling rules differ. GDPR compliance provides a strong foundation but requires Swiss-specific gaps to be filled.',
       },
       {
-        question: 'What is the penalty for nFADP violations?',
+        question: 'What is the penalty for revFADP violations?',
         answer: 'Fines up to CHF 250,000 for individuals (not companies — this is a Swiss peculiarity). Criminal sanctions target responsible persons within the organization, not the legal entity.',
       },
       {
         question: 'Do startups with fewer than 250 employees need a processing register?',
-        answer: 'The 250-employee threshold applies to mandatory processing records under nFADP, but the FDPIC recommends all organizations maintain them. More importantly, if you process sensitive data or carry out high-risk processing, the register is required regardless of size.',
+        answer: 'The 250-employee threshold applies to mandatory processing records under revFADP, but the FDPIC recommends all organizations maintain them. More importantly, if you process sensitive data or carry out high-risk processing, the register is required regardless of size.',
       },
     ],
     translations: {
@@ -1671,7 +1671,7 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
         excerpt: 'Das revidierte Datenschutzgesetz gilt seit September 2023. Was Ihr Engineering-Team für SaaS-Produkte mit Schweizer Kunden implementieren muss.',
         meta: {
           title: 'nDSG Compliance für SaaS-Produkte — Trident Software Blog',
-          description: 'Entwickler-Checkliste für nDSG/nFADP: Datensparsamkeit, Einwilligung, Auskunftsrecht, Löschpflichten und Verarbeitungsverzeichnis für Schweizer SaaS-Produkte.',
+          description: 'Entwickler-Checkliste für nDSG/revFADP: Datensparsamkeit, Einwilligung, Auskunftsrecht, Löschpflichten und Verarbeitungsverzeichnis für Schweizer SaaS-Produkte.',
         },
       },
       fr: {
@@ -1692,8 +1692,8 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
       },
     },
     meta: {
-      title: 'FADP / nFADP SaaS Compliance Checklist for Developers — Trident',
-      description: 'Engineering checklist for Swiss nFADP compliance: data minimization, consent management, right to erasure, processing records, and sub-processor DPAs.',
+      title: 'FADP / revFADP SaaS Compliance Checklist for Developers — Trident',
+      description: 'Engineering checklist for Swiss revFADP compliance: data minimization, consent management, right to erasure, processing records, and sub-processor DPAs.',
     },
   },
   {
@@ -2372,7 +2372,7 @@ Cost comparison for 1,000 invoices/month: Claude API ~CHF 40, GPT-4V ~CHF 55, Te
         answer: 'For high-volume recurring suppliers, use a template-matching approach first (pattern matching on known fields positions) and fall back to LLM extraction only for new or unusual formats.',
       },
       {
-        question: 'What about GDPR/nFADP compliance for invoice data?',
+        question: 'What about GDPR/revFADP compliance for invoice data?',
         answer: 'Invoice PDFs often contain personal data (employee names, individual vendor details). Sending them to external APIs requires DPAs with the providers. Consider on-premise processing for sensitive documents.',
       },
     ],
@@ -3171,7 +3171,7 @@ Every new product should have an AI integration plan. Our default recommendation
 API calls → Anthropic Claude 3.5 Sonnet (primary)
 Embeddings → OpenAI text-embedding-3-small
 Vector DB → pgvector (in existing PostgreSQL) or Qdrant
-On-premise → Ollama + Llama 3.3 for nFADP-sensitive data
+On-premise → Ollama + Llama 3.3 for revFADP-sensitive data
 \`\`\`
 
 ## What We\'ve Stopped Recommending

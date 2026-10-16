@@ -68,7 +68,7 @@ export const locations: LocationData[] = [
       {
         title: 'Compliance-first development',
         description:
-          'GDPR, nFADP, and financial compliance baked into architecture, not bolted on later.',
+          'GDPR, revFADP, and financial compliance baked into architecture, not bolted on later.',
       },
       {
         title: 'International org expertise',

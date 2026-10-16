@@ -23,7 +23,7 @@ const values = [
   {
     icon: Shield,
     title: 'Swiss Compliance First',
-    desc: 'ISO 27000, nFADP, and data residency in Switzerland. We make compliance a deliverable, not an afterthought.',
+    desc: 'ISO 27000, revFADP, and data residency in Switzerland. We make compliance a deliverable, not an afterthought.',
   },
   {
     icon: Code2,
@@ -106,7 +106,7 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center gap-2">
               <Shield size={14} className="text-primary" />
-              ISO 27000 · nFADP
+              ISO 27000 · revFADP
             </div>
             <div className="flex items-center gap-2">
               <Users size={14} className="text-primary" />

@@ -53,7 +53,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-semibold text-foreground mb-3">3. Legal basis and purpose</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Contact forms — processing based on your consent (Art. 6(1)(a) GDPR / Art. 31 nFADP) to respond to your inquiry.</li>
+              <li>Contact forms — processing based on your consent (Art. 6(1)(a) GDPR / Art. 31 revFADP) to respond to your inquiry.</li>
               <li>Newsletter — processing based on your consent; you may withdraw at any time.</li>
               <li>Server logs — legitimate interest in operating and securing our website (Art. 6(1)(f) GDPR).</li>
             </ul>
@@ -78,7 +78,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-xl font-semibold text-foreground mb-3">6. Your rights</h2>
-            <p>Under nFADP and GDPR you have the right to:</p>
+            <p>Under revFADP and GDPR you have the right to:</p>
             <ul className="list-disc pl-6 mt-3 space-y-1">
               <li>Access your personal data</li>
               <li>Correct inaccurate data</li>

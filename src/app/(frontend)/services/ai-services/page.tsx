@@ -22,6 +22,19 @@ const wrap = 'mx-auto max-w-4xl px-4 sm:px-6 lg:px-8'
 const th = 'px-4 py-3 font-medium text-left'
 const td = 'px-4 py-3 align-top'
 
+// Turns "[label](href)" in the content strings into links.
+function rich(text: string) {
+  return text.split(/(\[[^\]]+\]\([^)]+\))/g).map((part, i) => {
+    const m = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+    if (!m) return part
+    return (
+      <Link key={i} href={m[2]} className="text-[#2772E0] underline">
+        {m[1]}
+      </Link>
+    )
+  })
+}
+
 export default function AiServicesPage() {
   const [nextText] = c.next.split('the economics')
 
@@ -128,7 +141,7 @@ export default function AiServicesPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 section-alt border-t border-[#E3E5E8]">
+      <section id="limits" className="py-16 md:py-20 section-alt border-t border-[#E3E5E8] scroll-mt-20">
         <div className={wrap}>
           <h2 className={h2}>{c.noTitle}</h2>
           <p className={`${body} mb-6`}>{c.noIntro}</p>
@@ -149,7 +162,7 @@ export default function AiServicesPage() {
           <ol className="flex flex-col gap-4">
             {c.stages.map((s) => (
               <li key={s.lead} className={body}>
-                <span className={lead}>{s.lead}</span> {s.text}
+                <span className={lead}>{s.lead}</span> {rich(s.text)}
               </li>
             ))}
           </ol>
@@ -163,7 +176,7 @@ export default function AiServicesPage() {
           <div className="flex flex-col gap-4">
             {c.languages.map((p) => (
               <p key={p} className={body}>
-                {p}
+                {rich(p)}
               </p>
             ))}
           </div>
@@ -189,7 +202,7 @@ export default function AiServicesPage() {
           <ul className="flex flex-col gap-4 list-disc pl-6">
             {c.guarantee.map((g) => (
               <li key={g.lead} className={body}>
-                <span className={lead}>{g.lead}</span> {g.text}
+                <span className={lead}>{g.lead}</span> {rich(g.text)}
               </li>
             ))}
           </ul>

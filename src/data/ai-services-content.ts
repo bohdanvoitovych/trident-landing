@@ -75,7 +75,7 @@ export const limits: Array<{ lead: string; text: string }> = [
 export const deliveryTitle = 'Deployment in six stages'
 export const deliveryIntro = 'Typical elapsed time from signature to live: three to five weeks. The gating item is almost never the technology — it is how fast your side can answer questions about its own process.'
 export const stages: Array<{ lead: string; text: string }> = [
-  { lead: '1 · Audit and scenario selection — days 1–3.', text: 'We read your last 200 enquiries. Which ones repeat, which ones convert, where the process breaks. Output: the ranked list of conversations worth automating and the business case from page 2 filled with your figures.' },
+  { lead: '1 · Audit and scenario selection — days 1–3.', text: 'We read your last 200 enquiries. Which ones repeat, which ones convert, where the process breaks. Output: the ranked list of conversations worth automating and the business case from [the economics](/pricing) filled with your figures.' },
   { lead: '2 · Knowledge base — days 3–10.', text: 'Catalogue, prices, delivery terms, opening hours, FAQ, approved wording for the awkward questions. We assemble it from what you already have and interview whoever holds the rest in their head. This is the stage that decides quality, and it is the stage clients underestimate.' },
   { lead: '3 · Channels and systems — days 8–15.', text: 'WhatsApp Business verification, widget, CRM and ERP connections, calendar, payment. WhatsApp verification is Meta\'s timeline, not ours — start it on day one.' },
   { lead: '4 · Testing — days 15–20.', text: 'Your team tries to break the agent, in all four languages. Escalation rules, tone, edge cases, the deliberately hostile customer. Nothing goes live until your sales lead signs off on the transcripts.' },
@@ -89,7 +89,7 @@ export const languagesTitle = 'Languages'
 export const languages: string[] = [
   'DE, FR, IT, EN from day one. Not a translation layer — separate approved wording per language, because a French-speaking Swiss buyer and a German-speaking Swiss buyer do not respond to the same sentence.',
   'Where the platform side is 8Move, the full set is seven languages: EN, FR, DE, IT, ES, PT and AR with right-to-left layout, which matters for hospitality, logistics and any business with a non-Swiss workforce reading the same interface.',
-  'Standard German text output is high quality. Written Swiss German dialect is handled. Spoken dialect recognition is the honest weak spot — see page 1.',
+  'Standard German text output is high quality. Written Swiss German dialect is handled. Spoken dialect recognition is the honest weak spot — see [Where we say no](#limits) above.',
 ]
 
 export const dataTitle = 'Data protection'
@@ -107,7 +107,7 @@ export const guarantee: Array<{ lead: string; text: string }> = [
   { lead: 'Your systems stay yours.', text: 'No proprietary lock-in on the CRM or ERP side. If you terminate, the knowledge base, the transcripts and the scenario definitions are exported to you.' },
   { lead: 'Model-independent.', text: 'The agent is built so the underlying model can be swapped. That protects you from a single vendor\'s pricing and from a single vendor\'s outage.' },
   { lead: 'A named engineer, not a ticket queue.', text: 'Same person from audit to operation.' },
-  { lead: 'We tell you when not to buy.', text: 'The disqualifiers on page 1 are applied at the audit, before anyone signs anything.' },
+  { lead: 'We tell you when not to buy.', text: 'The disqualifiers under [Where we say no](#limits) are applied at the audit, before anyone signs anything.' },
 ]
 
 export const faqTitle = 'Frequently asked'

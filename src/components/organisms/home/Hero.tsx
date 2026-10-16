@@ -10,7 +10,7 @@ export function Hero() {
           <a href="#cases" className="btn btn-outline">See results <span className="ar">→</span></a>
         </div>
         <div className="hero-facts">
-          <div><div className="v">−92 %</div><div className="k">Clinic admission time, measured</div></div>
+          <div><div className="v">1 h → ~5 min</div><div className="k">Clinic admission time, operating target</div></div>
           <div><div className="v">−63 %</div><div className="k">Warranty cost, component maker</div></div>
           <div><div className="v">Month 2</div><div className="k">Typical payback on a sales agent</div></div>
           <div><div className="v">CH / EU</div><div className="k">Hosting, under revFADP and GDPR</div></div>

@@ -315,9 +315,9 @@ export const solutions: SolutionData[] = [
           'AI-assisted moderation pipelines, reporting workflows, and admin dashboards to keep communities safe and compliant.',
       },
       {
-        title: 'Privacy & GDPR / nFADP',
+        title: 'Privacy & GDPR / revFADP',
         description:
-          'Data minimisation, consent management, right-to-erasure workflows, and full compliance with Swiss nFADP and EU GDPR.',
+          'Data minimisation, consent management, right-to-erasure workflows, and full compliance with Swiss revFADP and EU GDPR.',
       },
       {
         title: 'Notifications & engagement',
