@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 import { notFound } from 'next/navigation'
 import { ArrowRight, ArrowLeft, Check, Clock, Users } from 'lucide-react'
 import { getLocale } from 'next-intl/server'
@@ -38,6 +39,7 @@ export default async function WebsitePackagePage({ params }: Props) {
 
   return (
     <div className="flex flex-col">
+      <PageJsonLd path={`/solutions/websites/${packageSlug}`} />
       {/* Breadcrumb */}
       <div className="bg-[#0F1216] border-b border-white/[0.06]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">

@@ -252,3 +252,71 @@ export function technologyPageSchemas(
     ]),
   ]
 }
+
+const ORG_REF = { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Trident Software Sàrl', url: SITE_URL }
+
+/** WebPage-family schema plus a breadcrumb for a page described in src/data/page-schema.ts. */
+export function webPageSchemas(
+  page: { type: string; name: string; description: string; path: string },
+  trail: { name: string; path: string }[],
+  locale: string,
+): Record<string, unknown>[] {
+  const url = `${SITE_URL}${page.path}`
+  const main: Record<string, unknown> =
+    page.type === 'ProfessionalService'
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'ProfessionalService',
+          name: page.name,
+          description: page.description,
+          url,
+          provider: { '@type': 'Organization', '@id': `${SITE_URL}/#organization` },
+          areaServed: { '@type': 'Place', name: 'Switzerland' },
+          inLanguage: bcp47(locale),
+        }
+      : {
+          '@context': 'https://schema.org',
+          '@type': page.type,
+          name: page.name,
+          description: page.description,
+          url,
+          isPartOf: { '@id': `${SITE_URL}/#website` },
+          publisher: ORG_REF,
+          inLanguage: bcp47(locale),
+        }
+  return [
+    main,
+    breadcrumbSchema([
+      { name: 'Home', url: SITE_URL },
+      ...trail.map((t) => ({ name: t.name, url: `${SITE_URL}${t.path}` })),
+      { name: page.name, url },
+    ]),
+  ]
+}
+
+/** Case study page: an Article about the project, published by Trident. */
+export function caseStudySchemas(
+  c: { slug: string; title: string; description: string; image?: string },
+  locale: string,
+): Record<string, unknown>[] {
+  const url = `${SITE_URL}/cases/${c.slug}`
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: c.title,
+      description: c.description,
+      url,
+      mainEntityOfPage: url,
+      ...(c.image ? { image: c.image.startsWith('http') ? c.image : `${SITE_URL}${c.image}` } : {}),
+      author: ORG_REF,
+      publisher: ORG_REF,
+      inLanguage: bcp47(locale),
+    },
+    breadcrumbSchema([
+      { name: 'Home', url: SITE_URL },
+      { name: 'Cases', url: `${SITE_URL}/cases` },
+      { name: c.title, url },
+    ]),
+  ]
+}

@@ -1,5 +1,6 @@
 import { getLocale } from 'next-intl/server'
 import { buildMetadata } from '@/lib/metadata'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 import {
   firstEngagement,
   firstEngagementClosing,
@@ -29,6 +30,7 @@ const body = 'text-[#4A4F57] leading-relaxed text-lg'
 export default function UseCasesPage() {
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/use-cases" />
       <section className="dark-section py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="eyebrow mb-4">Use cases</p>

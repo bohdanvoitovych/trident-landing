@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { getLocale } from 'next-intl/server'
 import { buildMetadata } from '@/lib/metadata'
 import * as c from '@/data/ai-services-content'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -40,6 +41,7 @@ export default function AiServicesPage() {
 
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/services/ai-services" />
       <section className="dark-section py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="eyebrow mb-4">{c.kicker}</p>

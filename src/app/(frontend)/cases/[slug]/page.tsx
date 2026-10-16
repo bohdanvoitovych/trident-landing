@@ -3,6 +3,8 @@ import { getLocale } from 'next-intl/server'
 import { CasePage } from '@/components/templates/CasePage'
 import { getCaseBySlug, getCaseSlugs } from '@/data/cases'
 import { buildMetadata } from '@/lib/metadata'
+import { caseStudySchemas } from '@/lib/schema'
+import JsonLd from '@/components/seo/JsonLd'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -30,5 +32,21 @@ export default async function CaseSlugPage({ params }: Props) {
   const caseStudy = getCaseBySlug(slug)
   if (!caseStudy) notFound()
 
-  return <CasePage caseStudy={caseStudy} />
+  const locale = await getLocale()
+  return (
+    <>
+      <JsonLd
+        data={caseStudySchemas(
+          {
+            slug,
+            title: caseStudy.meta.title,
+            description: caseStudy.meta.description,
+            image: caseStudy.hero.image,
+          },
+          locale,
+        )}
+      />
+      <CasePage caseStudy={caseStudy} />
+    </>
+  )
 }

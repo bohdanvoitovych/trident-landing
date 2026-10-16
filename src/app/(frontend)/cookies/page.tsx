@@ -1,5 +1,6 @@
 import { getLocale } from 'next-intl/server'
 import { buildMetadata } from '@/lib/metadata'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export async function generateMetadata() {
   const locale = await getLocale()
@@ -14,6 +15,7 @@ export async function generateMetadata() {
 export default function CookiesPage() {
   return (
     <div className="py-20 md:py-28">
+      <PageJsonLd path="/cookies" />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold mb-2">Cookie Policy</h1>
         <p className="text-muted-foreground mb-10">Last updated: January 2025</p>

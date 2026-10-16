@@ -1,5 +1,6 @@
 import { getLocale } from 'next-intl/server'
 import { buildMetadata } from '@/lib/metadata'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 // The page itself is a client component (the form holds state), so it cannot
 // export metadata. This server layout supplies the canonical, hreflang and
@@ -16,5 +17,10 @@ export async function generateMetadata() {
 }
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {
-  return children
+  return (
+    <>
+      <PageJsonLd path="/contact" />
+      {children}
+    </>
+  )
 }

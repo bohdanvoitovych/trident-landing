@@ -5,6 +5,7 @@ import { ServiceCard } from '@/components/molecules/ServiceCard'
 import { services } from '@/data/services'
 import { buildMetadata } from '@/lib/metadata'
 import { Button } from '@/components/atoms/button'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -40,6 +41,7 @@ const WHY_US = [
 export default function ServicesPage() {
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/services" />
       {/* ── Hero ──────────────────────────────────────────── */}
       <section className="dark-section py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

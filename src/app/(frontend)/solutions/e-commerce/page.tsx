@@ -6,6 +6,7 @@ import { Button } from '@/components/atoms/button'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { getSolutionBySlug } from '@/data/solutions'
 import { buildMetadata } from '@/lib/metadata'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 const solution = getSolutionBySlug('e-commerce')
 
@@ -35,6 +36,7 @@ export default function EcommerceSolutionPage() {
 
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/solutions/e-commerce" />
       {/* Hero */}
       <section className="dark-section relative overflow-hidden py-20 md:py-28">
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

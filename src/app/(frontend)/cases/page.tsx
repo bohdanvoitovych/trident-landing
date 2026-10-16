@@ -5,6 +5,7 @@ import { getLocale } from 'next-intl/server'
 import { featuredProjects, projects, projectSectors } from '@/data/projects'
 import { buildMetadata } from '@/lib/metadata'
 import { ProjectGrid } from '@/components/molecules/ProjectGrid'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -22,6 +23,7 @@ export async function generateMetadata() {
 export default function CasesPage() {
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/cases" />
       <section className="dark-section py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="eyebrow mb-4">Portfolio</p>

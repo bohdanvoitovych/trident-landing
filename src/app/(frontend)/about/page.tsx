@@ -5,6 +5,7 @@ import { Button } from '@/components/atoms/button'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { team, stats } from '@/data/team'
 import { buildMetadata } from '@/lib/metadata'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -86,6 +87,7 @@ const locations = [
 export default function AboutPage() {
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/about" />
       {/* Hero */}
       <section className="dark-section relative overflow-hidden py-24 md:py-32">
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

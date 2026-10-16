@@ -87,7 +87,7 @@ export function Footer() {
 
             {COLUMNS.map((col) => (
               <div className="foot-col" key={col.heading}>
-                <h5>{col.heading}</h5>
+                <h2>{col.heading}</h2>
                 <ul>
                   {col.links.map((l) => (
                     <li key={l.href + l.label}>
@@ -99,7 +99,7 @@ export function Footer() {
             ))}
 
             <div className="foot-col">
-              <h5>Contact</h5>
+              <h2>Contact</h2>
               <ul>
                 <li>
                   <a href="mailto:info@trident-software.ch">info@trident-software.ch</a>

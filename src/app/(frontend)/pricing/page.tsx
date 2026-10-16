@@ -6,6 +6,7 @@ import { AgentVsHire } from '@/components/organisms/home/AgentVsHire'
 import { WhereWeSayNo } from '@/components/organisms/home/WhereWeSayNo'
 import { Contact } from '@/components/organisms/home/Contact'
 import { HomeInteractions } from '@/components/organisms/home/HomeInteractions'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -44,6 +45,7 @@ const effects: Array<[string, string]> = [
 export default function PricingPage() {
   return (
     <div className="tds">
+      <PageJsonLd path="/pricing" />
       <section className="sec">
         <div className="wrap">
           <div className="sec-head" style={{ marginBottom: 0 }}>

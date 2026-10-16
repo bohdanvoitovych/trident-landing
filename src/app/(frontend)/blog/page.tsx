@@ -6,6 +6,7 @@ import { buildMetadata } from '@/lib/metadata'
 import { getBlogCategory, type BlogCategory } from '@/data/blog-meta'
 import { BlogFilter } from '@/components/molecules/BlogFilter'
 import { BlogGrid } from '@/components/molecules/BlogGrid'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -39,6 +40,7 @@ export default function BlogPage() {
 
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/blog" />
       {/* Hero */}
       <section className="dark-section py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

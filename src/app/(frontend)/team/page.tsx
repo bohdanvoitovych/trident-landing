@@ -6,6 +6,7 @@ import { Button } from '@/components/atoms/button'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { team, stats, type TeamMember } from '@/data/team'
 import { buildMetadata } from '@/lib/metadata'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -67,6 +68,7 @@ export default function TeamPage() {
 
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/team" />
       {/* Hero */}
       <section className="dark-section relative overflow-hidden py-20 md:py-28">
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -152,6 +154,32 @@ export default function TeamPage() {
                           <p className="font-semibold text-[#111318]">{member.name}</p>
                           <p className="text-sm text-[#4A4F57]">{member.role}</p>
                         </div>
+                        {(member.linkedin || member.facebook) && (
+                          <div className="flex items-center gap-3 text-xs">
+                            {member.linkedin && (
+                              <a
+                                href={member.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={`${member.name} on LinkedIn`}
+                                className="text-[#2772E0] hover:underline"
+                              >
+                                LinkedIn
+                              </a>
+                            )}
+                            {member.facebook && (
+                              <a
+                                href={member.facebook}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={`${member.name} on Facebook`}
+                                className="text-[#2772E0] hover:underline"
+                              >
+                                Facebook
+                              </a>
+                            )}
+                          </div>
+                        )}
                         <div className="flex items-center gap-1.5 text-xs text-[#4A4F57]">
                           <MapPin size={12} className="text-primary" />
                           {member.location}

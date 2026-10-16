@@ -6,6 +6,7 @@ import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { solutions } from '@/data/solutions'
 import { services } from '@/data/services'
 import { buildMetadata } from '@/lib/metadata'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -32,6 +33,7 @@ const solutionIcons: Record<string, typeof Globe> = {
 export default function SolutionsPage() {
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/solutions" />
       {/* Hero */}
       <section className="dark-section relative overflow-hidden py-20 md:py-28">
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

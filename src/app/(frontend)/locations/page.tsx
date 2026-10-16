@@ -5,6 +5,7 @@ import { locations } from '@/data/locations'
 import { buildMetadata } from '@/lib/metadata'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { Button } from '@/components/atoms/button'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 86400
 
@@ -22,6 +23,7 @@ export async function generateMetadata() {
 export default function LocationsPage() {
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/locations" />
       <section className="dark-section relative overflow-hidden py-24 md:py-32">
         <div className="absolute inset-0 glow-hero pointer-events-none" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">

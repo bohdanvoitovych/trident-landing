@@ -4,6 +4,7 @@ import { getLocale } from 'next-intl/server'
 import { Button } from '@/components/atoms/button'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { buildMetadata } from '@/lib/metadata'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export async function generateMetadata() {
   const locale = await getLocale()
@@ -78,6 +79,7 @@ const techStack = [
 export default function IamTradePage() {
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/products/iam-trade" />
       {/* Hero */}
       <section className="dark-section relative overflow-hidden py-24 md:py-32">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] via-[#0F1216] to-[#0F1216]" />

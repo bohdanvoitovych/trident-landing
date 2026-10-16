@@ -6,6 +6,7 @@ import { buildMetadata } from '@/lib/metadata'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { Button } from '@/components/atoms/button'
 import { Badge } from '@/components/atoms/badge'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 function TechIcon({ iconSlug, name }: { iconSlug?: string; name: string }) {
   if (!iconSlug) return <Code2 size={18} className="text-primary shrink-0" />
@@ -38,6 +39,7 @@ export async function generateMetadata() {
 export default function TechnologiesPage() {
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/technologies" />
       <section className="dark-section relative overflow-hidden py-24 md:py-32">
         <div className="absolute inset-0 glow-hero pointer-events-none" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">

@@ -5,6 +5,7 @@ import { Suspense } from 'react'
 import { industries } from '@/data/industries'
 import { buildMetadata } from '@/lib/metadata'
 import { IndustriesGrid } from '@/components/molecules/IndustriesGrid'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -22,6 +23,7 @@ export async function generateMetadata() {
 export default function IndustriesPage() {
   return (
     <div className="flex flex-col">
+      <PageJsonLd path="/industries" />
       {/* Hero */}
       <section className="dark-section py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
