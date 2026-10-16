@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { formatDate } from '@/lib/utils'
 import { markdownToHtml } from '@/lib/markdown'
 import { getRelatedPosts } from '@/data/blog'
+import { tagSlug } from '@/data/blog-meta'
 import type { BlogPost as BlogPostType } from '@/data/blog'
 
 type Props = {
@@ -28,12 +29,13 @@ export function BlogPost({ post }: Props) {
 
           <div className="flex flex-wrap gap-2 mb-6">
             {post.tags.map((tag) => (
-              <span
+              <Link
                 key={tag}
-                className="rounded-[2px] border border-[#E3E5E8] bg-white px-2.5 py-1 text-[12px] font-medium text-[#4A4F57]"
+                href={`/topics/${tagSlug(tag)}`}
+                className="rounded-[2px] border border-[#E3E5E8] bg-white px-2.5 py-1 text-[12px] font-medium text-[#4A4F57] transition-colors hover:border-[#2772E0] hover:text-[#2772E0]"
               >
                 {tag}
-              </span>
+              </Link>
             ))}
           </div>
 

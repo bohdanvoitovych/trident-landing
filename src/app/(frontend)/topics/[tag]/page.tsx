@@ -4,14 +4,12 @@ import { permanentRedirect } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { getLocale } from 'next-intl/server'
 import { posts } from '@/data/blog'
-import { TOPIC_MIN_POSTS } from '@/data/blog-meta'
+import { TOPIC_MIN_POSTS, tagSlug as slugify } from '@/data/blog-meta'
 import { buildMetadata } from '@/lib/metadata'
 import { BlogGrid } from '@/components/molecules/BlogGrid'
 
 export const revalidate = 3600
 
-// "Auto Parts" and "Auto parts" are one tag: the old site's tag URLs were lower-cased slugs.
-const slugify = (tag: string) => tag.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 
 function postsForTag(slug: string) {
   const matching = posts.filter((p) => p.tags.some((t) => slugify(t) === slug))

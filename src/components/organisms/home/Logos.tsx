@@ -55,6 +55,8 @@ export function Logos() {
                   <img
                     key={`${pass}-${file}`}
                     src={`/images/clients/${file}`}
+                    width={600}
+                    height={360}
                     alt={pass === 0 ? name(file) : ''}
                     aria-hidden={pass === 1 || undefined}
                     loading="lazy"

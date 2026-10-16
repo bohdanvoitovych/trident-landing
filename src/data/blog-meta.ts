@@ -61,3 +61,6 @@ export function getBlogCategory(tags: string[]): Exclude<BlogCategory, 'All'> {
 
 // A tag with fewer posts than this is a thin page: /topics/<tag> works, but stays out of search and the sitemap.
 export const TOPIC_MIN_POSTS = 3
+
+// URL slug of a tag: "Auto Parts" and "Auto parts" are one page, /topics/auto-parts (as on the old site).
+export const tagSlug = (tag: string) => tag.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { getPostSlugs, posts as blogPosts } from '@/data/blog'
-import { TOPIC_MIN_POSTS } from '@/data/blog-meta'
+import { TOPIC_MIN_POSTS, tagSlug } from '@/data/blog-meta'
 import { getLocationSlugs } from '@/data/locations'
 import { getTechnologySlugs } from '@/data/technologies'
 
@@ -88,7 +88,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const tagCount = new Map<string, number>()
   for (const p of blogPosts) {
     const slugs = new Set(
-      p.tags.map((tag) => tag.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')),
+      p.tags.map(tagSlug),
     )
     for (const s of slugs) tagCount.set(s, (tagCount.get(s) ?? 0) + 1)
   }
