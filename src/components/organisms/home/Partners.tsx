@@ -1,14 +1,14 @@
 import Image from 'next/image'
 
 // Carried over from the old site, where these sat as a partner strip.
-const PARTNERS = [
+const PARTNERS: { file: string; name: string; href?: string }[] = [
   { file: 'aws', name: 'Amazon Web Services' },
-  { file: 'azure', name: 'Microsoft Azure' },
-  { file: 'google-cloud', name: 'Google Cloud' },
-  { file: 'hostpoint', name: 'Hostpoint' },
-  { file: 'cimark', name: 'Cimark' },
+  { file: 'azure', href: 'https://azure.microsoft.com/', name: 'Microsoft Azure' },
+  { file: 'google-cloud', href: 'https://cloud.google.com/', name: 'Google Cloud' },
+  { file: 'hostpoint', href: 'https://www.hostpoint.ch/', name: 'Hostpoint' },
+  { file: 'cimark', href: 'https://www.cimark.ch/', name: 'Cimark' },
   { file: 'go-valais', name: 'GO-Valais' },
-  { file: 'holidu', name: 'Holidu' },
+  { file: 'holidu', href: 'https://www.holidu.com/', name: 'Holidu' },
   { file: 'valais-chamber', name: 'Valais Chamber of Commerce and Industry' },
 ]
 
@@ -27,13 +27,24 @@ export function Partners() {
         <div className="partner-grid">
           {PARTNERS.map((p) => (
             <div className="partner" key={p.file}>
-              <Image
-                src={`/images/partners/${p.file}.png`}
-                alt={p.name}
-                width={160}
-                height={56}
-                sizes="160px"
-              />
+              {(() => {
+                const logo = (
+                  <Image
+                    src={`/images/partners/${p.file}.png`}
+                    alt={p.name}
+                    width={160}
+                    height={56}
+                    sizes="160px"
+                  />
+                )
+                return p.href ? (
+                  <a href={p.href} target="_blank" rel="noopener noreferrer" aria-label={p.name}>
+                    {logo}
+                  </a>
+                ) : (
+                  logo
+                )
+              })()}
             </div>
           ))}
         </div>

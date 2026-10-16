@@ -6,22 +6,23 @@ export type TeamMember = {
   location: string
   expertise: string[]
   linkedin?: string
+  facebook?: string
   image?: string
 }
 
 export const team: TeamMember[] = [
   // Leadership
-  { slug: 'maksym-shytov', name: 'Maksym Shytov', role: 'CTO', department: 'Leadership', location: 'Ukraine', expertise: ['Architecture', 'AI/ML', 'System Design'] , image: '/images/team/maksym-shytov.png' },
-  { slug: 'natalia-shytova', name: 'Natalia Shytova', role: 'COO', department: 'Leadership', location: 'Switzerland', expertise: ['Operations', 'Client Relations', 'Swiss Market'] , image: '/images/team/natalia-shytova.png' },
-  { slug: 'dmitriy-shevelev', name: 'Dmitriy Shevelev', role: 'Team Lead', department: 'Leadership', location: 'Ukraine', expertise: ['Team Management', 'Backend', 'Architecture'] , image: '/images/team/dmitriy-shevelev.png' },
+  { slug: 'maksym-shytov', name: 'Maksym Shytov', role: 'CTO', department: 'Leadership', location: 'Ukraine', expertise: ['Architecture', 'AI/ML', 'System Design'] , image: '/images/team/maksym-shytov.png', linkedin: 'https://www.linkedin.com/in/maksym-shytov/', facebook: 'https://www.facebook.com/shitov.maxim' },
+  { slug: 'natalia-shytova', name: 'Natalia Shytova', role: 'COO', department: 'Leadership', location: 'Switzerland', expertise: ['Operations', 'Client Relations', 'Swiss Market'] , image: '/images/team/natalia-shytova.png', linkedin: 'https://www.linkedin.com/in/natalya-shytova/', facebook: 'https://www.facebook.com/profile.php?id=100024075006577' },
+  { slug: 'dmitriy-shevelev', name: 'Dmitriy Shevelev', role: 'Team Lead', department: 'Leadership', location: 'Ukraine', expertise: ['Team Management', 'Backend', 'Architecture'] , image: '/images/team/dmitriy-shevelev.png', linkedin: 'https://www.linkedin.com/in/dmitriy-shevelev-ab3072151/', facebook: 'https://www.facebook.com/profile.php?id=100017180442716' },
   // Project Managers
-  { slug: 'nina-alimova', name: 'Nina Alimova', role: 'Project Manager', department: 'Management', location: 'Ukraine', expertise: ['Project Delivery', 'Agile', 'Client Communication'] , image: '/images/team/nina-alimova.png' },
-  { slug: 'bohdan-voitovych', name: 'Bohdan Voitovych', role: 'Project Manager', department: 'Management', location: 'Ukraine', expertise: ['Product Management', 'Frontend', 'AI Projects'] , image: '/images/team/bohdan-voitovych.png' },
-  { slug: 'marina-gordienko', name: 'Marina Gordienko', role: 'Project Manager', department: 'Management', location: 'Ukraine', expertise: ['Agile', 'QA Oversight', 'Documentation'] , image: '/images/team/marina-gordienko.png' },
-  { slug: 'denys-shytov', name: 'Denys Shytov', role: 'Project Manager', department: 'Management', location: 'Ukraine', expertise: ['Business Analysis', 'Requirements', 'Client Relations'] , image: '/images/team/denys-shytov.png' },
+  { slug: 'nina-alimova', name: 'Nina Alimova', role: 'Project Manager', department: 'Management', location: 'Ukraine', expertise: ['Project Delivery', 'Agile', 'Client Communication'] , image: '/images/team/nina-alimova.png', linkedin: 'https://www.linkedin.com/in/%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B0%D0%BB%D0%B8%D0%BC%D0%BE%D0%B2%D0%B0' },
+  { slug: 'bohdan-voitovych', name: 'Bohdan Voitovych', role: 'Project Manager', department: 'Management', location: 'Ukraine', expertise: ['Product Management', 'Frontend', 'AI Projects'] , image: '/images/team/bohdan-voitovych.png', linkedin: 'https://www.linkedin.com/in/bohdan-voitovych/', facebook: 'https://www.facebook.com/bohdan.voitovych' },
+  { slug: 'marina-gordienko', name: 'Marina Gordienko', role: 'Project Manager', department: 'Management', location: 'Ukraine', expertise: ['Agile', 'QA Oversight', 'Documentation'] , image: '/images/team/marina-gordienko.png', linkedin: 'https://www.linkedin.com/in/marina-gordienko-6b387a204/' },
+  { slug: 'denys-shytov', name: 'Denys Shytov', role: 'Project Manager', department: 'Management', location: 'Ukraine', expertise: ['Business Analysis', 'Requirements', 'Client Relations'] , image: '/images/team/denys-shytov.png', linkedin: 'https://www.linkedin.com/in/shytov-denys-37965a194/' },
   // Frontend
-  { slug: 'nikolai-kazmirchuk', name: 'Nikolai Kazmirchuk', role: 'Frontend Developer', department: 'Frontend', location: 'Ukraine', expertise: ['React', 'Next.js', 'TypeScript'] , image: '/images/team/nikolai-kazmirchuk.png' },
-  { slug: 'maksym-osadchyi', name: 'Maksym Osadchyi', role: 'Frontend Developer', department: 'Frontend', location: 'Ukraine', expertise: ['Vue.js', 'React', 'UI Engineering'] , image: '/images/team/maksym-osadchyi.png' },
+  { slug: 'nikolai-kazmirchuk', name: 'Nikolai Kazmirchuk', role: 'Frontend Developer', department: 'Frontend', location: 'Ukraine', expertise: ['React', 'Next.js', 'TypeScript'] , image: '/images/team/nikolai-kazmirchuk.png', linkedin: 'https://www.linkedin.com/in/nikolay-kazmirchuk-b50176185/' },
+  { slug: 'maksym-osadchyi', name: 'Maksym Osadchyi', role: 'Frontend Developer', department: 'Frontend', location: 'Ukraine', expertise: ['Vue.js', 'React', 'UI Engineering'] , image: '/images/team/maksym-osadchyi.png', linkedin: 'https://www.linkedin.com/in/maxim-osadchiy-90a939198/' },
   { slug: 'aleksandr-kunitsyn', name: 'Aleksandr Kunitsyn', role: 'Frontend Developer', department: 'Frontend', location: 'Ukraine', expertise: ['React Native', 'Flutter', 'Mobile UI'] , image: '/images/team/aleksandr-kunitsyn.png' },
   { slug: 'oleg-bilyk', name: 'Oleg Bilyk', role: 'Frontend Developer', department: 'Frontend', location: 'Ukraine', expertise: ['Angular', 'TypeScript', 'Enterprise UI'] , image: '/images/team/oleg-bilyk.png' },
   // Backend
@@ -31,10 +32,10 @@ export const team: TeamMember[] = [
   // Mobile
   { slug: 'alena-odynets', name: 'Alena Odynets', role: 'Mobile Developer', department: 'Mobile', location: 'Ukraine', expertise: ['iOS', 'Android', 'Flutter'] , image: '/images/team/alena-odynets.png' },
   // QA
-  { slug: 'dmytro-panasiuk', name: 'Dmytro Panasiuk', role: 'QA Engineer', department: 'QA', location: 'Ukraine', expertise: ['Test Automation', 'Selenium', 'Postman'] , image: '/images/team/dmytro-panasiuk.png' },
-  { slug: 'kateryna-kochereshchenko', name: 'Kateryna Kochereshchenko', role: 'QA Engineer', department: 'QA', location: 'Ukraine', expertise: ['Manual Testing', 'Test Cases', 'API Testing'] , image: '/images/team/kateryna-kochereshchenko.png' },
+  { slug: 'dmytro-panasiuk', name: 'Dmytro Panasiuk', role: 'QA Engineer', department: 'QA', location: 'Ukraine', expertise: ['Test Automation', 'Selenium', 'Postman'] , image: '/images/team/dmytro-panasiuk.png', linkedin: 'https://www.linkedin.com/in/dmytro-panasiuk-915762228/' },
+  { slug: 'kateryna-kochereshchenko', name: 'Kateryna Kochereshchenko', role: 'QA Engineer', department: 'QA', location: 'Ukraine', expertise: ['Manual Testing', 'Test Cases', 'API Testing'] , image: '/images/team/kateryna-kochereshchenko.png', linkedin: 'https://www.linkedin.com/in/kateryna-kochereshchenko-89812b206/' },
   // DevOps
-  { slug: 'anton-savchuk', name: 'Anton Savchuk', role: 'DevOps Engineer', department: 'DevOps', location: 'Ukraine', expertise: ['Docker', 'Kubernetes', 'CI/CD', 'AWS'] , image: '/images/team/anton-savchuk.png' },
+  { slug: 'anton-savchuk', name: 'Anton Savchuk', role: 'DevOps Engineer', department: 'DevOps', location: 'Ukraine', expertise: ['Docker', 'Kubernetes', 'CI/CD', 'AWS'] , image: '/images/team/anton-savchuk.png', linkedin: 'https://www.linkedin.com/in/anton-savchuk-883900267/' },
 ]
 
 export const stats = [

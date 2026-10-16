@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
-import { getPostSlugs } from '@/data/blog'
+import { getPostSlugs, posts as blogPosts } from '@/data/blog'
+import { TOPIC_MIN_POSTS } from '@/data/blog-meta'
 import { getLocationSlugs } from '@/data/locations'
 import { getTechnologySlugs } from '@/data/technologies'
 
@@ -82,6 +83,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
+  // Tag pages: lower-cased slug of each tag, as /topics/[tag] builds them.
+  // Tags with fewer than 3 posts are noindex (see topics/[tag]/page.tsx), so they stay out.
+  const tagCount = new Map<string, number>()
+  for (const p of blogPosts) {
+    const slugs = new Set(
+      p.tags.map((tag) => tag.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')),
+    )
+    for (const s of slugs) tagCount.set(s, (tagCount.get(s) ?? 0) + 1)
+  }
+  const topicSlugs = [...tagCount].filter(([, n]) => n >= TOPIC_MIN_POSTS).map(([s]) => s)
+  const topicRoutes: MetadataRoute.Sitemap = topicSlugs.map((tag) => ({
+    url: `${BASE_URL}/topics/${tag}`,
+    changeFrequency: 'weekly',
+    priority: 0.4,
+  }))
+
   const locationRoutes: MetadataRoute.Sitemap = getLocationSlugs().map((slug) => ({
     url: `${BASE_URL}/locations/${slug}`,
     changeFrequency: 'monthly',
@@ -100,6 +117,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...industryRoutes,
     ...caseRoutes,
     ...blogRoutes,
+    ...topicRoutes,
     ...locationRoutes,
     ...technologyRoutes,
   ]

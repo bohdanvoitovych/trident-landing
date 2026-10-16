@@ -21,6 +21,13 @@ const CLIENTS = [
   'vbauto.png',
 ]
 
+// Sites the old homepage linked from its client quotes.
+const LINKS: Record<string, string> = {
+  'kleap.png': 'https://kleap.co/',
+  'daniparts.png': 'https://daniparts.com/',
+  'xelsat.png': 'http://xelsat.com/',
+}
+
 function name(file: string) {
   return file
     .replace(/\.[^.]+$/, '')
@@ -42,16 +49,33 @@ export function Logos() {
           <div className="logos-fade r" />
           <div className="logos-track" id="mq">
             {[0, 1].map((pass) =>
-              CLIENTS.map((file) => (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  key={`${pass}-${file}`}
-                  src={`/images/clients/${file}`}
-                  alt={pass === 0 ? name(file) : ''}
-                  aria-hidden={pass === 1 || undefined}
-                  loading="lazy"
-                />
-              )),
+              CLIENTS.map((file) => {
+                const img = (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    key={`${pass}-${file}`}
+                    src={`/images/clients/${file}`}
+                    alt={pass === 0 ? name(file) : ''}
+                    aria-hidden={pass === 1 || undefined}
+                    loading="lazy"
+                  />
+                )
+                const href = LINKS[file]
+                return href ? (
+                  <a
+                    key={`${pass}-${file}`}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabIndex={pass === 1 ? -1 : undefined}
+                    aria-hidden={pass === 1 || undefined}
+                  >
+                    {img}
+                  </a>
+                ) : (
+                  img
+                )
+              }),
             )}
           </div>
         </div>

@@ -58,3 +58,6 @@ export function getBlogCategory(tags: string[]): Exclude<BlogCategory, 'All'> {
   }
   return 'Solution'
 }
+
+// A tag with fewer posts than this is a thin page: /topics/<tag> works, but stays out of search and the sitemap.
+export const TOPIC_MIN_POSTS = 3
