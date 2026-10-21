@@ -157,7 +157,7 @@ export function ServicePage({ service }: Props) {
 
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="dark-section py-20 md:py-28">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
             <div>
               <h2 className="text-3xl font-bold mb-3 text-white">

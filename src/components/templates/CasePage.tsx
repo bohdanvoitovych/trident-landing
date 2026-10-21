@@ -26,7 +26,7 @@ export function CasePage({ caseStudy }: Props) {
           >
             <ArrowLeft size={14} /> All cases
           </Link>
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap items-center gap-2 mb-6">
             <p className="eyebrow mb-0">{caseStudy.industry}</p>
             {caseStudy.services.slice(0, 2).map((s) => (
               <Badge key={s} variant="secondary">
@@ -59,7 +59,7 @@ export function CasePage({ caseStudy }: Props) {
       {caseStudy.results.length > 0 && (
         <section className="section-alt border-b border-[#E3E5E8] py-8">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap gap-8 justify-center">
+            <div className="flex flex-wrap gap-8">
               {caseStudy.results.map((r) => (
                 <div key={r.metric} className="text-center">
                   <p className="text-3xl font-bold text-[#111318]">{r.value}</p>
@@ -73,8 +73,8 @@ export function CasePage({ caseStudy }: Props) {
 
       {/* Content */}
       <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col gap-12 max-w-3xl">
             {/* Note: how the case is written up */}
             {caseStudy.note && (
               <p className="light-card rounded-[3px] p-5 text-[#4A4F57] leading-relaxed">

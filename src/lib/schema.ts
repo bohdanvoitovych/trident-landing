@@ -105,6 +105,9 @@ export function blogPostSchema(
       description: post.excerpt,
       url: `${SITE_URL}/blog/${post.slug}`,
       datePublished: post.publishedAt,
+      // No separate last-edited tracking exists yet, so dateModified mirrors
+      // the publish date rather than being left out of the schema entirely.
+      dateModified: post.publishedAt,
       author: {
         '@type': 'Person',
         name: post.author,
@@ -128,6 +131,39 @@ export function blogPostSchema(
   }
 
   return schemas
+}
+
+/** Topic/tag archive page: a CollectionPage listing the tagged posts. */
+export function topicPageSchema(
+  tag: { name: string; slug: string; posts: { slug: string; title: string }[] },
+  locale: string,
+): Record<string, unknown>[] {
+  const url = `${SITE_URL}/topics/${tag.slug}`
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: `${tag.name} | Blog | Trident Software`,
+      description: `Articles from the Trident Software blog tagged ${tag.name}.`,
+      url,
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+      inLanguage: bcp47(locale),
+      mainEntity: {
+        '@type': 'ItemList',
+        itemListElement: tag.posts.map((p, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          url: `${SITE_URL}/blog/${p.slug}`,
+          name: p.title,
+        })),
+      },
+    },
+    breadcrumbSchema([
+      { name: 'Home', url: SITE_URL },
+      { name: 'Blog', url: `${SITE_URL}/blog` },
+      { name: tag.name, url },
+    ]),
+  ]
 }
 
 export function servicePageSchema(
@@ -296,7 +332,7 @@ export function webPageSchemas(
 
 /** Case study page: an Article about the project, published by Trident. */
 export function caseStudySchemas(
-  c: { slug: string; title: string; description: string; image?: string },
+  c: { slug: string; title: string; description: string; image?: string; publishedAt: string },
   locale: string,
 ): Record<string, unknown>[] {
   const url = `${SITE_URL}/cases/${c.slug}`
@@ -308,6 +344,9 @@ export function caseStudySchemas(
       description: c.description,
       url,
       mainEntityOfPage: url,
+      // Date the case study was written (from git history), not the project's launch date.
+      datePublished: c.publishedAt,
+      dateModified: c.publishedAt,
       ...(c.image ? { image: c.image.startsWith('http') ? c.image : `${SITE_URL}${c.image}` } : {}),
       author: ORG_REF,
       publisher: ORG_REF,

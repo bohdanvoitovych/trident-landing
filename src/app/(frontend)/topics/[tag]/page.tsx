@@ -7,6 +7,8 @@ import { posts } from '@/data/blog'
 import { TOPIC_MIN_POSTS, tagSlug as slugify } from '@/data/blog-meta'
 import { buildMetadata } from '@/lib/metadata'
 import { BlogGrid } from '@/components/molecules/BlogGrid'
+import JsonLd from '@/components/seo/JsonLd'
+import { topicPageSchema } from '@/lib/schema'
 
 export const revalidate = 3600
 
@@ -42,7 +44,18 @@ export default async function TopicPage({ params }: { params: Promise<{ tag: str
   const { matching, name } = postsForTag(tag)
   // An old tag with no post on the new site goes to the blog list.
   if (!matching.length) permanentRedirect('/blog')
-  return <TopicView name={name} matching={matching} />
+  const locale = await getLocale()
+  return (
+    <>
+      <JsonLd
+        data={topicPageSchema(
+          { name, slug: tag, posts: matching.map((p) => ({ slug: p.slug, title: p.title })) },
+          locale,
+        )}
+      />
+      <TopicView name={name} matching={matching} />
+    </>
+  )
 }
 
 function TopicView({ name, matching }: { name: string; matching: typeof posts }) {

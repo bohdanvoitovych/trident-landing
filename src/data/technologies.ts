@@ -480,7 +480,7 @@ export const technologies: TechnologyData[] = [
     meta: {
       title: 'AI & LLM Integration Switzerland | Trident Software',
       description:
-        'Production AI integration for Swiss businesses. Document intelligence, RAG assistants, on-premise LLMs (revFADP compliant). We build AI that works in production.',
+        'Production AI integration for Swiss businesses. Document intelligence, RAG assistants, on-premise LLMs (revFADP compliant). We build AI that works.',
     },
   },
 ]

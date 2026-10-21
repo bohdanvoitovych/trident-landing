@@ -42,6 +42,7 @@ export default async function CaseSlugPage({ params }: Props) {
             title: caseStudy.meta.title,
             description: caseStudy.meta.description,
             image: caseStudy.hero.image,
+            publishedAt: caseStudy.publishedAt,
           },
           locale,
         )}

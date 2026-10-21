@@ -38,7 +38,7 @@ export const posts: BlogPost[] = [
     relatedPosts: [],
     content: `## The Fragmentation Problem in Auto Parts Distribution\n\nAutomotive parts distributors manage thousands of SKUs with constant price fluctuations, tight delivery windows, and demanding customers. When eCommerce, warehouse operations, and delivery systems run independently, bottlenecks appear everywhere: misaligned data, unnecessary manual work, lost orders, and fragmented customer experience. The cost is not theoretical — it shows up in pricing errors, outdated inventory, misplaced items, and untracked shipments.\n\n## What 8Move Unifies\n\n8Move consolidates four operational layers into a single ecosystem. The eCommerce module provides 24/7 ordering with personalized pricing and multi-currency support. The warehouse management system delivers 99.5% inventory accuracy with optimized picking routes. Delivery automation achieves 95%+ on-time performance through route optimization and real-time tracking. And an AI agent handles price list imports, catalog enrichment, and demand forecasting automatically.\n\n## Measurable Impact\n\nThe platform transforms disconnected operations into a streamlined command center. Distributors using 8Move report operating costs down 35%, order automation at 57%, and inventory accuracy at 93%. By closing the gaps between ordering, warehouse operations, pricing, and customer service, the entire supply chain from order placement to final delivery becomes visible and controllable.\n\n## Getting Started\n\nIf your team is still managing auto parts distribution across disconnected tools, the integration gap is likely costing you more than you realize. Contact Trident Software for a platform walkthrough tailored to your distribution setup.`,
     meta: {
-      title: 'Smart Auto Parts Software: Unified eCommerce, Warehouse & Delivery — Trident Software',
+      title: 'Smart Auto Parts Software: Unified eCommerce, Warehouse & Delivery | Trident Software',
       description: 'How 8Move unifies eCommerce, warehouse management, delivery automation, and AI for auto parts distributors. 35% lower costs, 57% more automated orders.',
     },
   },
@@ -74,7 +74,7 @@ export const posts: BlogPost[] = [
     relatedPosts: [],
     content: `## AI Is Not Just for Big Companies\n\nThe common assumption that AI requires large budgets and dedicated data science teams is outdated. Modern AI tools — from ChatGPT and Claude to workflow platforms like n8n — are accessible to small and medium-sized businesses at a fraction of historical costs. The question is no longer whether SMEs can afford AI, but which applications actually move the needle.\n\n## Faster Product Development\n\nContemporary AI capabilities have fundamentally transformed development timelines. Where teams previously needed months of coordination and planning, individual developers can now use AI assistance to generate code frameworks, create test cases, and build landing pages within weeks. Trident Software's own team demonstrated this by developing an edtech pilot application using AI assistance, delivering results significantly faster than conventional approaches would allow.\n\n## Automating Business Operations\n\nBeyond product development, the most impactful AI applications for SMEs tend to be in back-office automation. An accounting firm case study shows how AI-powered workflows using n8n and GPT can automatically classify emails, process invoices, and manage client files — transforming hours of manual administrative work into streamlined processes.\n\n## Where Human Expertise Still Matters\n\nAI handles repetitive tasks well, but architectural decisions, system integrations, and business process analysis still require expert guidance. SMEs that pair AI tools with experienced partners get the best of both.`,
     meta: {
-      title: 'Practical AI for SMEs: Real Use Cases That Deliver ROI — Trident Software',
+      title: 'Practical AI for SMEs: Real Use Cases That Deliver ROI | Trident Software',
       description: 'Where AI actually works for small and medium businesses — from compressing development timelines to automating invoices, emails, and client file management.',
     },
   },
@@ -92,7 +92,7 @@ export const posts: BlogPost[] = [
     relatedPosts: [],
     content: `## The Hidden Cost of Manual Invoice Processing\n\nFor a small Swiss business handling around 50 invoices per month, the quarterly paperwork load reaches roughly 150 documents. With an accountant billing CHF 150 per hour and approximately 16 hours consumed each quarter on scanning, logging, organizing, and tracking payments, routine bookkeeping alone was costing CHF 1,500 per quarter.\n\n## Where the Time Goes\n\nThe process was repetitive and fragile. Every invoice and receipt had to be manually scanned, details logged by hand, documents sorted into quarterly folders, and payments tracked individually. Any missed detail meant extra work fixing errors, delayed payments, and compliance complications.\n\n## What Digital Invoice Scanning Changes\n\nAdvanced invoice management software with mobile scanning automates the entire workflow. The system captures documents instantly via smartphone camera, uses OCR to extract amounts, dates, and vendor information automatically, organizes everything into searchable quarterly folders, and sends payment reminders without manual intervention.\n\n## The Numbers\n\nThe results were concrete: accounting costs dropped 81% from CHF 1,500 to CHF 150 per quarter, processing time fell tenfold, and cash flow improved 65% through automated payment reminders.`,
     meta: {
-      title: 'Digital Invoice Scanner: 81% Cost Reduction for Swiss SMEs — Trident Software',
+      title: 'Digital Invoice Scanner: 81% Cost Reduction for Swiss SMEs | Trident Software',
       description: 'How a small Swiss business cut invoice processing costs by 81% using digital scanning with OCR and automated payment workflows.',
     },
   },
@@ -110,7 +110,7 @@ export const posts: BlogPost[] = [
     relatedPosts: [],
     content: `## Growth Without a Platform Is a Breaking Point\n\nThe client had built a successful auto parts distribution business on strong relationships and reliable service. But rapid expansion exposed infrastructure that couldn't scale. Managers were overloaded with phone orders and manual data entry, inventory tracking was inconsistent, and international expansion was technically impossible without a new foundation.\n\n## The Custom B2B Platform\n\nTriident Software developed a platform integrated with the client's existing 1C ERP system. The solution featured a self-service customer portal that eliminated phone-order dependency, automated invoicing, multi-warehouse and multi-currency support for international operations, and a mobile-first design.\n\n## Results That Compounded\n\nOrder processing time dropped from 30+ minutes to 5 minutes. Repeat orders increased 39%, average order value rose 29%, and operational errors fell 65%. The platform reached full return on investment in under nine months.\n\n## The Right Integration Strategy\n\nThe key decision was integrating with the existing 1C ERP rather than replacing it. This preserved institutional knowledge embedded in the system, reduced transition risk, and shortened the path to ROI.`,
     meta: {
-      title: 'Custom Auto Parts B2B eCommerce: 39% More Repeat Orders — Trident Software',
+      title: 'Custom Auto Parts B2B eCommerce: 39% More Repeat Orders | Trident Software',
       description: 'How a custom B2B platform cut auto parts order processing from 30 minutes to 5, increased repeat orders 39%, and paid for itself in under 9 months.',
     },
   },
@@ -128,7 +128,7 @@ export const posts: BlogPost[] = [
     relatedPosts: [],
     content: `## Instability Is the New Normal\n\nSMEs today operate in an environment shaped by geopolitical uncertainty, supply chain volatility, regulatory changes, and workforce challenges. The organizations most exposed to these forces are those still running on manual processes — where a single point of failure can cascade into operational breakdown.\n\n## Modular Automation as a Strategy\n\nModular, lightweight automation solutions function like building blocks — components that can be swapped or reconfigured without disrupting entire operations. This architecture allows businesses to adapt rapidly: updating workflows for new legislation, scaling into new markets, or reorganizing supply chains with minimal downtime.\n\n## Eliminating Operational Vulnerabilities\n\nManual processes create compounding risks through errors, delays, and staffing dependencies. Automation addresses these systematically by streamlining logistics, order management, reporting, and customer support. The additional benefit is real-time data delivery — when things change, automated systems surface the signal faster than any manual monitoring process.\n\n## Demonstrating Reliability to Stakeholders\n\nAutomation is increasingly part of how organizations demonstrate reliability to partners, clients, investors, and employees. Trident Software helps organizations identify the specific automation opportunities that build genuine competitive resilience.`,
     meta: {
-      title: 'Automation and Business Resilience in an Unstable World — Trident Software',
+      title: 'Automation and Business Resilience in an Unstable World | Trident Software',
       description: 'How modular automation helps SMEs build operational resilience against geopolitical shifts, supply chain disruptions, and regulatory changes.',
     },
   },
@@ -200,7 +200,7 @@ export const posts: BlogPost[] = [
     relatedPosts: [],
     content: `## Beyond Chatbots: Agents That Act\n\nMost businesses have encountered AI as a tool that responds to prompts — a sophisticated autocomplete. Autonomous AI agents are categorically different. They analyze data, make decisions based on that analysis, and take actions without requiring constant human direction.\n\n## The Three-Part Architecture\n\nAutonomous agents combine three components. Large language models provide the cognitive layer — pattern recognition, reasoning, and language understanding. Tools enable real-time information gathering from external systems, APIs, and data sources. Memory systems allow agents to learn from past actions, recognizing patterns and avoiding repeated mistakes.\n\n## Where Agents Are Already Working\n\nThe applications span industries. In healthcare, autonomous agents process medical data to detect early-stage conditions and support treatment decisions. Financial institutions use them for algorithmic trading. Supply chain companies optimize routes and forecast demand autonomously. Manufacturers implement predictive maintenance systems that detect potential equipment failures before breakdowns occur.\n\n## Implementation That Fits Your Business\n\nGeneric implementations rarely capture industry-specific requirements. Trident Software focuses on customized agent solutions tailored to specific operational contexts — where the real competitive advantage lies.`,
     meta: {
-      title: 'Autonomous AI Agents for Business: From Data to Decisions — Trident Software',
+      title: 'Autonomous AI Agents for Business: From Data to Decisions | Trident Software',
       description: 'How autonomous AI agents — combining LLMs, real-time tools, and memory — are transforming healthcare, finance, supply chain, and manufacturing operations.',
     },
   },
@@ -707,7 +707,7 @@ export const posts: BlogPost[] = [
         title: 'Boutique en ligne de La Pochette : Découvrez des accessoires raffinés',
         excerpt: 'Trident Software présente le lancement de la nouvelle boutique en ligne de La Pochette, une plateforme e-commerce conçue pour rendre les produits personnalisés accessibles aux petites entreprises et services de restauration.',
         meta: {
-          title: 'Boutique en ligne La Pochette — Trident Software',
+          title: 'Boutique en ligne La Pochette | Trident Software',
           description: 'Découvrez comment Trident Software a lancé la boutique en ligne de La Pochette avec WooCommerce pour les restaurateurs et traiteurs suisses.',
         },
       },
@@ -731,7 +731,7 @@ export const posts: BlogPost[] = [
     relatedPosts: [],
     content: `## The Stakes in HoReCa Distribution\n\nHotels, restaurants, and catering operations run on tight timelines with zero tolerance for distribution failures. A late delivery, a misrouted shipment, or a stock shortage doesn't just inconvenience — it disrupts kitchen operations, leads to menu changes, and damages the trust that repeat business depends on.\n\n## What a TMS Actually Does\n\nA Transportation Management System addresses these challenges systematically. Advanced algorithms plan the shortest, most efficient delivery routes, reducing fuel consumption and labor costs simultaneously. Real-time tracking gives distributors accurate ETAs to share with clients. And automation digitally matches orders with available vehicles and assigns routes based on priority and location.\n\n## TMS as an Analytics Engine\n\nBeyond logistics execution, a TMS is a data platform. It tracks on-time delivery rates, cost-per-route metrics, driver performance, and fuel efficiency trends over time — surfacing opportunities to optimize further.\n\n## 8Move for HoReCa Distribution\n\n8Move, Trident Software's TMS solution, includes delivery management automation, mobile driver interfaces with geolocation tracking and electronic signatures, and simplified payment processing. The platform extends beyond fleet management to cover B2B eCommerce, CRM functionality, and omnichannel payments.`,
     meta: {
-      title: 'HoReCa Distribution Optimization with TMS — Trident Software',
+      title: 'HoReCa Distribution Optimization with TMS | Trident Software',
       description: 'How Transportation Management Systems optimize route planning, real-time tracking, and order automation for hotels, restaurants, and catering distributors.',
     },
   },
@@ -795,7 +795,7 @@ Contact us for a free infrastructure assessment. We'll evaluate your workload, r
     tags: ['AI', 'LLM', 'Data Privacy', 'Switzerland', 'revFADP'],
     relatedPosts: ['ai-agent-b2b-automation', 'strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions'],
     meta: {
-      title: 'On-Premise LLMs for Swiss Companies — Trident Software Blog',
+      title: 'On-Premise LLMs for Swiss Companies | Trident Software',
       description:
         'Deploy Llama 3 or Mistral on your own infrastructure. Practical guide for Swiss businesses on self-hosted LLMs and revFADP compliance.',
     },
@@ -855,7 +855,7 @@ Start narrow. A well-tuned agent for one specific workflow delivers more value t
     tags: ['AI', 'Automation', 'B2B', 'LLM', 'Production'],
     relatedPosts: ['on-premise-llm-swiss-companies', 'presenting-zenit-auto-our-new-b2b-auto-parts-platform'],
     meta: {
-      title: 'AI Agents for B2B Automation — Trident Software Blog',
+      title: 'AI Agents for B2B Automation | Trident Software',
       description:
         'Practical breakdown of where AI agents deliver ROI in B2B contexts. Based on 8 real implementations in Swiss and EU companies.',
     },
@@ -912,7 +912,7 @@ Zenit Auto is a sophisticated B2B auto parts platform that streamlines the whole
     tags: ['B2B', 'Auto Parts', 'E-commerce', 'Search Features', 'Admin Panel'],
     relatedPosts: ['simplifying-your-search-how-iam-trade-makes-finding-products-easy', 'introducing-our-new-b2b-client-management-panel'],
     meta: {
-      title: 'Zenit Auto B2B Auto Parts Platform — Trident Software Blog',
+      title: 'Zenit Auto B2B Auto Parts Platform | Trident Software',
       description: 'Introducing Zenit Auto: B2B platform for wholesale auto parts with TecDoc integration, advanced search, and multi-cart delivery management.',
     },
   },
@@ -982,16 +982,16 @@ Proven experience in IoT, end-to-end development, and scalable architecture made
       de: {
         title: 'ArenaWave: Sportmanagement-Software',
         excerpt: 'ArenaWave verwandelt traditionelle Sportanlagen in IoT-gestützte digitale Räume mit Spieler-App, Admin-Panel und IoT-Geräten vor Ort.',
-        meta: { title: 'ArenaWave: Sportmanagement-Software — Trident Software', description: 'Wie ArenaWave Sportanlagen mit IoT und automatisiertem Betrieb in digitale Spaces verwandelt.' },
+        meta: { title: 'ArenaWave: Sportmanagement-Software | Trident Software', description: 'Wie ArenaWave Sportanlagen mit IoT und automatisiertem Betrieb in digitale Spaces verwandelt.' },
       },
       it: {
         title: 'ArenaWave: Software di Gestione Sportiva',
         excerpt: "ArenaWave è una piattaforma IoT che trasforma i campi sportivi tradizionali in spazi controllati digitalmente con app mobile e pannello di gestione.",
-        meta: { title: 'ArenaWave: Software di Gestione Sportiva IoT — Trident Software', description: 'Come ArenaWave trasforma i campi sportivi in spazi intelligenti con IoT e gestione automatizzata.' },
+        meta: { title: 'ArenaWave: Software di Gestione Sportiva IoT | Trident Software', description: 'Come ArenaWave trasforma i campi sportivi in spazi intelligenti con IoT e gestione automatizzata.' },
       },
     },
     meta: {
-      title: 'ArenaWave Digital Court System — Trident Software Blog',
+      title: 'ArenaWave Digital Court System | Trident Software',
       description: 'How ArenaWave uses IoT to transform sports courts with real-time facility control, online booking, and a full management panel for court operators.',
     },
   },
@@ -1050,7 +1050,7 @@ The right model depends on the industry and the value of the data being collecte
     tags: ['IoT', 'Blockchain', 'Smart Contracts', 'Security', 'Data', 'Data-to-Earn model'],
     relatedPosts: ['arenawave-digital-court-system', 'strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions'],
     meta: {
-      title: 'IoT & Blockchain: Can It Truly Deliver? — Trident Software Blog',
+      title: 'IoT & Blockchain: Can It Truly Deliver? | Trident Software',
       description: 'Practical analysis of IoT and blockchain integration. Where smart contracts and tamper-proof data add real value — and where the hype falls short.',
     },
   },
@@ -1104,7 +1104,7 @@ Contact Trident Software for a cloud security assessment and implementation plan
     tags: ['Cloud', 'Security', 'AWS', 'SMB', 'AWS Lambda'],
     relatedPosts: ['strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions', 'iot-blockchain-can-it-truly-deliver'],
     meta: {
-      title: 'Cloud Security on a Budget for SMBs — Trident Software Blog',
+      title: 'Cloud Security on a Budget for SMBs | Trident Software',
       description: 'How small businesses can implement enterprise-grade cloud security using AWS Lambda for just cents per month. Practical guide with AWS IAM, GuardDuty, and Security Hub.',
     },
   },
@@ -1165,21 +1165,21 @@ The result is a warehouse scanning solution that costs less, breaks less, and in
       fr: {
         title: 'De Traditionnel à Flexible : Application Mobile de Gestion de Stockage',
         excerpt: "Trident Software compare les systèmes de gestion d'entrepôt traditionnels avec les solutions mobiles modernes basées sur Flutter, présentant une approche innovante utilisant des smartphones et scanners anulaires pour améliorer l'efficacité des entrepôts.",
-        meta: { title: 'WMS Mobile App : De Traditionnel à Flexible — Trident Software', description: "Comment les solutions mobiles WMS modernes remplacent les terminaux obsolètes pour améliorer l'efficacité des entrepôts." },
+        meta: { title: 'WMS Mobile App : De Traditionnel à Flexible | Trident Software', description: "Comment les solutions mobiles WMS modernes remplacent les terminaux obsolètes pour améliorer l'efficacité des entrepôts." },
       },
       de: {
         title: 'Von traditionell zu flexibel: WMS Mobile App',
         excerpt: 'Trident Software stellt eine moderne Lagerverwaltungslösung vor, die Smartphone-Technologie mit Ringscannern kombiniert, um veraltete Terminals zu ersetzen.',
-        meta: { title: 'WMS Mobile App: Von traditionell zu flexibel — Trident Software', description: 'Wie moderne mobile WMS-Lösungen veraltete Lagerterminals ersetzen und Effizienz verbessern.' },
+        meta: { title: 'WMS Mobile App: Von traditionell zu flexibel | Trident Software', description: 'Wie moderne mobile WMS-Lösungen veraltete Lagerterminals ersetzen und Effizienz verbessern.' },
       },
       it: {
         title: 'Da Tradizionale a Flessibile: App Mobile WMS',
         excerpt: "L'innovativa applicazione WMS su smartphone e scanner anulari offre maggiore ergonomia, ridotti costi di manutenzione e migliore integrazione tecnologica per i magazzini.",
-        meta: { title: 'App Mobile WMS: Da Tradizionale a Flessibile — Trident Software', description: 'Come le soluzioni WMS mobili moderne sostituiscono i terminali obsoleti migliorando efficienza e sicurezza.' },
+        meta: { title: 'App Mobile WMS: Da Tradizionale a Flessibile | Trident Software', description: 'Come le soluzioni WMS mobili moderne sostituiscono i terminali obsoleti migliorando efficienza e sicurezza.' },
       },
     },
     meta: {
-      title: 'Flutter WMS Mobile App for Warehouse Management — Trident Software Blog',
+      title: 'Flutter WMS Mobile App for Warehouse Management | Trident Software',
       description: 'Replace expensive traditional warehouse scanners with a Flutter-powered smartphone + ring scanner solution. Lower cost, better integration, fewer breakdowns.',
     },
   },
@@ -1231,7 +1231,7 @@ QR code + NFC tag setup requires minimal investment (printed cards, NFC stickers
     tags: ['Restaurants', 'NFC', 'QR Code', 'Advertising', 'HORECA'],
     relatedPosts: ['driving-growth-essential-tactics-for-your-ecommerce-business', 'the-power-of-outsourcing-unlocking-efficiency-and-innovation-in-short-term-projects'],
     meta: {
-      title: 'Free Restaurant Advertising via Customer Reviews — Trident Software Blog',
+      title: 'Free Restaurant Advertising via Customer Reviews | Trident Software',
       description: 'Use QR codes and NFC tags to generate restaurant reviews at scale. Turn every customer into an advertiser with a simple scan-to-review flow.',
     },
   },
@@ -1285,7 +1285,7 @@ The result is a search experience that reduces abandoned searches, decreases sup
     tags: ['E-commerce', 'Search Features', 'B2B', 'Online Shop'],
     relatedPosts: ['presenting-zenit-auto-our-new-b2b-auto-parts-platform', 'driving-growth-essential-tactics-for-your-ecommerce-business'],
     meta: {
-      title: 'iAM-Trade B2B Product Search System — Trident Software Blog',
+      title: 'iAM-Trade B2B Product Search System | Trident Software',
       description: 'How iAM-Trade\'s search engine handles error tolerance, TecDoc vehicle lookup, and cross-brand matching for large B2B product catalogs.',
     },
   },
@@ -1343,7 +1343,7 @@ All of these tactics work together. SEO brings discovery; UX converts; trust ret
     tags: ['E-commerce', 'SEO', 'Online Shop', 'Growth'],
     relatedPosts: ['simplifying-your-search-how-iam-trade-makes-finding-products-easy', 'free-advertising-for-restaurants-through-customer-feedback'],
     meta: {
-      title: 'eCommerce Growth Tactics That Actually Work — Trident Software Blog',
+      title: 'eCommerce Growth Tactics That Actually Work | Trident Software',
       description: 'Six proven tactics for ecommerce growth: SEO, UX, trust signals, Google Merchant, email, and analytics. No fluff — just what moves the needle.',
     },
   },
@@ -1412,7 +1412,7 @@ Contact us to discuss your project scope and get a fixed-price proposal.
     tags: ['Outsourcing', 'Short-term Project', 'Cost', 'Strategy'],
     relatedPosts: ['trident-softwares-venture-evolution-it-package-empowers-startups-insights-from-foire-du-valais-2024', 'introducing-our-new-b2b-client-management-panel'],
     meta: {
-      title: 'Outsourcing for Short-Term Projects: Cost-Benefit Analysis — Trident Software Blog',
+      title: 'Outsourcing for Short-Term Projects: Cost-Benefit Analysis | Trident Software',
       description: 'Outsourcing a 6-month development project saves $72,000 vs in-house execution. Detailed cost comparison and six strategic benefits of outsourcing.',
     },
   },
@@ -1487,16 +1487,16 @@ This panel is available as a standalone product or as an integration layer for e
       de: {
         title: 'Vorstellung unseres neuen B2B-Admin-Panel',
         excerpt: 'Trident Software stellt ein umfassendes B2B-Verwaltungstool mit hierarchischer Steuerung, Echtzeit-Überwachung und standardisiertem Onboarding für mehrstufige Vertriebsnetzwerke vor.',
-        meta: { title: 'Unser Neues B2B-Admin-Panel — Trident Software', description: 'Das neue B2B-Verwaltungspanel bietet hierarchische Kontrolle und Echtzeit-Überwachung für komplexe Kundennetzwerke.' },
+        meta: { title: 'Unser Neues B2B-Admin-Panel | Trident Software', description: 'Das neue B2B-Verwaltungspanel bietet hierarchische Kontrolle und Echtzeit-Überwachung für komplexe Kundennetzwerke.' },
       },
       it: {
         title: 'Presentazione del Nostro Nuovo Pannello di Amministrazione B2B Clienti',
         excerpt: "Trident Software ha sviluppato un pannello di amministrazione B2B con controllo gerarchico, onboarding standardizzato e monitoraggio in tempo reale per reti di distribuzione multi-livello.",
-        meta: { title: 'Nuovo Pannello di Amministrazione B2B — Trident Software', description: 'Il nostro nuovo pannello B2B offre controllo gerarchico e monitoraggio in tempo reale per reti di distribuzione complesse.' },
+        meta: { title: 'Nuovo Pannello di Amministrazione B2B | Trident Software', description: 'Il nostro nuovo pannello B2B offre controllo gerarchico e monitoraggio in tempo reale per reti di distribuzione complesse.' },
       },
     },
     meta: {
-      title: 'B2B Client Management Panel with 5-Level Access Control — Trident Software Blog',
+      title: 'B2B Client Management Panel with 5-Level Access Control | Trident Software',
       description: 'New B2B management panel with hierarchical access control across distributors, dealers, customers, and consumers. Real-time monitoring and customizable subscriptions.',
     },
   },
@@ -1561,7 +1561,7 @@ Contracts developed and tested for 12 games. Tested on Rinkeby and Solana Devnet
     tags: ['Blockchain', 'NFT', 'Gaming', 'Smart Contracts', 'Trading'],
     relatedPosts: ['iot-blockchain-can-it-truly-deliver', 'introducing-our-new-b2b-client-management-panel'],
     meta: {
-      title: 'NFT In-Game Trading Platform — Trident Software Blog',
+      title: 'NFT In-Game Trading Platform | Trident Software',
       description: 'Building an NFT marketplace for in-game assets with smart contracts on Ethereum, Polygon, Solana, and BSC. How flippers and players both earn.',
     },
   },
@@ -1625,7 +1625,7 @@ Contact Trident Software for a cloud security assessment. We'll map your current
     tags: ['Security', 'AWS', 'Cloud', 'SMB', 'Access Control'],
     relatedPosts: ['secure-your-cloud-on-a-budget-a-guide-for-smbs', 'iot-blockchain-can-it-truly-deliver'],
     meta: {
-      title: 'AWS Cloud Security for SMBs — Trident Software Blog',
+      title: 'AWS Cloud Security for SMBs | Trident Software',
       description: 'How to implement enterprise-grade security (AWS IAM, GuardDuty, KMS, Security Hub) at an SMB budget. 60% of cyberattacks target small businesses — here\'s how to defend.',
     },
   },
@@ -1703,7 +1703,7 @@ The Venture Evolution IT Package takes a startup idea from a conversation to ent
     tags: ['Startups', 'IT Package', 'B2B', 'Venture Evolution'],
     relatedPosts: ['the-power-of-outsourcing-unlocking-efficiency-and-innovation-in-short-term-projects', 'arenawave-digital-court-system'],
     meta: {
-      title: 'Venture Evolution IT Package for Startups — Trident Software Blog',
+      title: 'Venture Evolution IT Package for Startups | Trident Software',
       description: 'A 6-stage startup framework from promo website to scaled product. How WaterTDS went from idea to Google Campus with Trident\'s Venture Evolution IT Package.',
     },
   },
@@ -1806,7 +1806,7 @@ For everything else — company sites, product marketing pages, blogs, portfolio
         title: 'Next.js + Payload CMS: Der Schweizer KMU-Website-Stack',
         excerpt: 'Warum wir Next.js 15 und Payload CMS 3 für Schweizer KMU-Projekte standardisiert haben — eingebettete CMS-Architektur, ISR-Caching und Redakteurserfahrung.',
         meta: {
-          title: 'Next.js + Payload CMS für Schweizer KMU — Trident Software Blog',
+          title: 'Next.js + Payload CMS für Schweizer KMU | Trident Software',
           description: 'Eingebettete CMS-Architektur mit Next.js 15 und Payload CMS 3. Warum dieser Stack für Schweizer KMU-Websites die beste Wahl ist.',
         },
       },
@@ -1814,7 +1814,7 @@ For everything else — company sites, product marketing pages, blogs, portfolio
         title: 'Next.js + Payload CMS : La stack idéale pour les PME suisses',
         excerpt: 'Pourquoi nous avons standardisé Next.js 15 et Payload CMS 3 pour les projets PME suisses — architecture CMS embarquée, cache ISR et expérience rédacteur.',
         meta: {
-          title: 'Next.js + Payload CMS pour PME suisses — Trident Software Blog',
+          title: 'Next.js + Payload CMS pour PME suisses | Trident Software',
           description: 'Architecture CMS embarquée avec Next.js 15 et Payload CMS 3. Pourquoi cette stack est le meilleur choix pour les sites web des PME suisses.',
         },
       },
@@ -1822,13 +1822,13 @@ For everything else — company sites, product marketing pages, blogs, portfolio
         title: 'Next.js + Payload CMS: Lo stack ideale per le PMI svizzere',
         excerpt: 'Perché abbiamo standardizzato Next.js 15 e Payload CMS 3 per i progetti PMI svizzeri — architettura CMS incorporata, caching ISR ed esperienza redattore.',
         meta: {
-          title: 'Next.js + Payload CMS per PMI svizzere — Trident Software Blog',
+          title: 'Next.js + Payload CMS per PMI svizzere | Trident Software',
           description: 'Architettura CMS incorporata con Next.js 15 e Payload CMS 3. Perché questo stack è la scelta migliore per i siti web delle PMI svizzere.',
         },
       },
     },
     meta: {
-      title: 'Next.js + Payload CMS for Swiss SME Websites — Trident Software',
+      title: 'Next.js + Payload CMS for Swiss SME Websites | Trident Software',
       description: 'Why Next.js 15 and Payload CMS 3 is the right stack for Swiss SME websites. Embedded CMS, ISR caching, and editor UX that replaces WordPress without the pain.',
     },
   },
@@ -1930,7 +1930,7 @@ The EMC step catches problems that no amount of software testing finds.
         title: 'Embedded-Firmware-Entwicklung für industrielles IoT',
         excerpt: 'Von der Sensorkalibrierung bis zu OTA-Update-Pipelines — praktische Muster für industrielle IoT-Firmware, die in rauen Umgebungen zuverlässig läuft.',
         meta: {
-          title: 'Embedded Firmware für industrielles IoT — Trident Software Blog',
+          title: 'Embedded Firmware für industrielles IoT | Trident Software',
           description: 'Praktische Muster für industrielle IoT-Firmware: Sensorkalibrierung, OTA-Updates, Energiemanagement und HIL-Tests aus realen Projekten.',
         },
       },
@@ -1938,7 +1938,7 @@ The EMC step catches problems that no amount of software testing finds.
         title: 'Développement de firmware embarqué pour l\'IoT industriel',
         excerpt: 'De la calibration des capteurs aux pipelines de mise à jour OTA — des modèles pratiques pour les firmwares IoT industriels fiables dans des environnements difficiles.',
         meta: {
-          title: 'Firmware embarqué pour IoT industriel — Trident Software Blog',
+          title: 'Firmware embarqué pour IoT industriel | Trident Software',
           description: 'Modèles pratiques pour le firmware IoT industriel : calibration des capteurs, mises à jour OTA, gestion de l\'énergie et tests HIL.',
         },
       },
@@ -1946,13 +1946,13 @@ The EMC step catches problems that no amount of software testing finds.
         title: 'Sviluppo firmware embedded per IoT industriale',
         excerpt: 'Dalla calibrazione dei sensori alle pipeline di aggiornamento OTA — schemi pratici per firmware IoT industriale affidabile in ambienti difficili.',
         meta: {
-          title: 'Firmware embedded per IoT industriale — Trident Software Blog',
+          title: 'Firmware embedded per IoT industriale | Trident Software',
           description: 'Schemi pratici per firmware IoT industriale: calibrazione sensori, aggiornamenti OTA, gestione energetica e test HIL.',
         },
       },
     },
     meta: {
-      title: 'Embedded Firmware for Industrial IoT — Trident Software Blog',
+      title: 'Embedded Firmware for Industrial IoT | Trident Software',
       description: 'Practical patterns for industrial IoT firmware development: sensor calibration, OTA updates, power management, and HIL testing from 12 real-world projects.',
     },
   },
@@ -2039,7 +2039,7 @@ Our current preferred model: **fixed-price per phase, not per project**. Each ph
         title: 'Festpreisverträge für Software: Wann sie funktionieren und wann nicht',
         excerpt: 'Festpreisverträge versprechen Planungssicherheit, können aber Projekte zerstören, wenn der Umfang falsch definiert ist. Unser Entscheidungsrahmen für beide Vertragsmodelle.',
         meta: {
-          title: 'Festpreisverträge für Software — Trident Software Blog',
+          title: 'Festpreisverträge für Software | Trident Software',
           description: 'Wann Festpreisverträge funktionieren und wann sie scheitern. Entscheidungsrahmen und Vertragsklauseln, die beide Seiten schützen.',
         },
       },
@@ -2047,7 +2047,7 @@ Our current preferred model: **fixed-price per phase, not per project**. Each ph
         title: 'Contrats à prix fixe : quand ça marche et quand ça explose',
         excerpt: 'Les contrats à prix fixe promettent la prévisibilité mais peuvent ruiner des projets mal cadrés. Notre cadre décisionnel pour choisir entre prix fixe et régie.',
         meta: {
-          title: 'Contrats logiciels à prix fixe — Trident Software Blog',
+          title: 'Contrats logiciels à prix fixe | Trident Software',
           description: 'Quand les contrats à prix fixe fonctionnent et quand ils échouent. Cadre décisionnel et clauses contractuelles qui protègent les deux parties.',
         },
       },
@@ -2055,7 +2055,7 @@ Our current preferred model: **fixed-price per phase, not per project**. Each ph
         title: 'Contratti a prezzo fisso: quando funzionano e quando falliscono',
         excerpt: 'I contratti a prezzo fisso promettono prevedibilità ma possono distruggere i progetti se mal definiti. Il nostro framework decisionale per scegliere il modello contrattuale giusto.',
         meta: {
-          title: 'Contratti software a prezzo fisso — Trident Software Blog',
+          title: 'Contratti software a prezzo fisso | Trident Software',
           description: 'Quando i contratti a prezzo fisso funzionano e quando falliscono. Framework decisionale e clausole contrattuali che proteggono entrambe le parti.',
         },
       },
@@ -2174,7 +2174,7 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
         title: 'DSG / nDSG Compliance für SaaS-Produkte: Eine Entwickler-Checkliste',
         excerpt: 'Das revidierte Datenschutzgesetz gilt seit September 2023. Was Ihr Engineering-Team für SaaS-Produkte mit Schweizer Kunden implementieren muss.',
         meta: {
-          title: 'nDSG Compliance für SaaS-Produkte — Trident Software Blog',
+          title: 'nDSG Compliance für SaaS-Produkte | Trident Software',
           description: 'Entwickler-Checkliste für nDSG/revFADP: Datensparsamkeit, Einwilligung, Auskunftsrecht, Löschpflichten und Verarbeitungsverzeichnis für Schweizer SaaS-Produkte.',
         },
       },
@@ -2182,7 +2182,7 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
         title: 'Conformité LPD / nLPD pour les produits SaaS : checklist développeur',
         excerpt: 'La loi révisée sur la protection des données est en vigueur depuis septembre 2023. Ce que votre équipe engineering doit implémenter pour les clients suisses.',
         meta: {
-          title: 'Conformité nLPD pour SaaS — Trident Software Blog',
+          title: 'Conformité nLPD pour SaaS | Trident Software',
           description: 'Checklist développeur pour la conformité nLPD : minimisation des données, consentement, droit d\'accès, effacement et registre des traitements.',
         },
       },
@@ -2190,7 +2190,7 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
         title: 'Conformità LPD / nLPD per prodotti SaaS: checklist per sviluppatori',
         excerpt: 'La legge federale sulla protezione dei dati rivista è in vigore dal settembre 2023. Cosa deve implementare il vostro team di ingegneria per i clienti svizzeri.',
         meta: {
-          title: 'Conformità nLPD per SaaS — Trident Software Blog',
+          title: 'Conformità nLPD per SaaS | Trident Software',
           description: 'Checklist per sviluppatori sulla conformità nLPD: minimizzazione dei dati, consenso, diritto di accesso, cancellazione e registro dei trattamenti.',
         },
       },
@@ -2325,7 +2325,7 @@ PostgreSQL connection overhead is non-trivial. Use **PgBouncer** in transaction 
         title: 'PostgreSQL Performance-Tuning für mittelgroße Anwendungen',
         excerpt: 'Bevor Sie auf eine verteilte Datenbank migrieren, gibt es erhebliches Potenzial in einer gut konfigurierten PostgreSQL-Instanz. Hier erfahren Sie, wo Sie zuerst suchen sollten.',
         meta: {
-          title: 'PostgreSQL Performance-Tuning — Trident Software Blog',
+          title: 'PostgreSQL Performance-Tuning | Trident Software',
           description: 'Praktische Anleitung zur PostgreSQL-Optimierung: fehlende Indizes, N+1-Abfragen, Speicherkonfiguration, VACUUM und Connection Pooling.',
         },
       },
@@ -2333,7 +2333,7 @@ PostgreSQL connection overhead is non-trivial. Use **PgBouncer** in transaction 
         title: 'Optimisation des performances PostgreSQL pour les applications mid-size',
         excerpt: 'Avant de migrer vers une base distribuée, il y a une marge de performance significative dans une instance PostgreSQL bien configurée. Par où commencer.',
         meta: {
-          title: 'Optimisation PostgreSQL — Trident Software Blog',
+          title: 'Optimisation PostgreSQL | Trident Software',
           description: 'Guide pratique d\'optimisation PostgreSQL : index manquants, requêtes N+1, configuration mémoire, VACUUM et connection pooling.',
         },
       },
@@ -2341,13 +2341,13 @@ PostgreSQL connection overhead is non-trivial. Use **PgBouncer** in transaction 
         title: 'Ottimizzazione delle performance di PostgreSQL per applicazioni di medie dimensioni',
         excerpt: 'Prima di migrare a un database distribuito, c\'è un margine di miglioramento significativo in una singola istanza PostgreSQL ben configurata.',
         meta: {
-          title: 'Performance Tuning PostgreSQL — Trident Software Blog',
+          title: 'Performance Tuning PostgreSQL | Trident Software',
           description: 'Guida pratica all\'ottimizzazione PostgreSQL: indici mancanti, query N+1, configurazione memoria, VACUUM e connection pooling.',
         },
       },
     },
     meta: {
-      title: 'PostgreSQL Performance Tuning for Mid-Size Apps — Trident Software',
+      title: 'PostgreSQL Performance Tuning for Mid-Size Apps | Trident Software',
       description: 'Practical PostgreSQL optimization guide: finding slow queries with pg_stat_statements, index audit, memory configuration, autovacuum tuning, and PgBouncer.',
     },
   },
@@ -2443,7 +2443,7 @@ RTL (Arabic) support is better in Flutter's layout system than in React Native, 
         title: 'React Native vs Flutter für Schweizer Mobile-Projekte 2026',
         excerpt: 'Beide Frameworks sind ausgereift. Die Wahl hängt von Ihrem Team, Zeitplan und Integrationsanforderungen ab — nicht von Benchmarks.',
         meta: {
-          title: 'React Native vs Flutter 2026 — Trident Software Blog',
+          title: 'React Native vs Flutter 2026 | Trident Software',
           description: 'Entscheidungsleitfaden für React Native vs Flutter in Schweizer Mobile-Projekten: Teamkompetenz, Performance, UI-Anpassung und mehrsprachige Unterstützung.',
         },
       },
@@ -2451,7 +2451,7 @@ RTL (Arabic) support is better in Flutter's layout system than in React Native, 
         title: 'React Native vs Flutter pour les projets mobiles suisses en 2026',
         excerpt: 'Les deux frameworks sont matures. Le choix dépend de votre équipe, de votre calendrier et de vos besoins d\'intégration — pas des benchmarks.',
         meta: {
-          title: 'React Native vs Flutter 2026 — Trident Software Blog',
+          title: 'React Native vs Flutter 2026 | Trident Software',
           description: 'Guide de décision React Native vs Flutter pour projets mobiles suisses : compétences de l\'équipe, performance, personnalisation UI et support multilingue.',
         },
       },
@@ -2459,7 +2459,7 @@ RTL (Arabic) support is better in Flutter's layout system than in React Native, 
         title: 'React Native vs Flutter per progetti mobile svizzeri nel 2026',
         excerpt: 'Entrambi i framework sono maturi. La scelta dipende dal tuo team, dalla timeline e dai requisiti di integrazione — non dai benchmark.',
         meta: {
-          title: 'React Native vs Flutter 2026 — Trident Software Blog',
+          title: 'React Native vs Flutter 2026 | Trident Software',
           description: 'Guida decisionale React Native vs Flutter per progetti mobile svizzeri: competenze del team, performance, personalizzazione UI e supporto multilingue.',
         },
       },
@@ -2614,7 +2614,7 @@ Rotate secrets quarterly. Audit which pipelines have access to production variab
         title: 'GitLab CI/CD für kleine Entwicklungsteams: Ein praktisches Setup',
         excerpt: 'Sie brauchen kein DevOps-Team für gutes CI/CD. Unsere GitLab-Pipeline-Konfiguration für 2–8-Personen-Teams — Tests, Builds und Deployments mit minimalem Wartungsaufwand.',
         meta: {
-          title: 'GitLab CI/CD für kleine Teams — Trident Software Blog',
+          title: 'GitLab CI/CD für kleine Teams | Trident Software',
           description: 'Praktische GitLab CI/CD-Konfiguration für kleine Entwicklungsteams: Pipeline-Struktur, Caching-Strategien, Secrets-Management und Environment-Deployments.',
         },
       },
@@ -2622,7 +2622,7 @@ Rotate secrets quarterly. Audit which pipelines have access to production variab
         title: 'GitLab CI/CD pour les petites équipes : une configuration pratique',
         excerpt: 'Vous n\'avez pas besoin d\'une équipe DevOps dédiée pour un bon CI/CD. Notre configuration GitLab pour des équipes de 2 à 8 personnes.',
         meta: {
-          title: 'GitLab CI/CD pour petites équipes — Trident Software Blog',
+          title: 'GitLab CI/CD pour petites équipes | Trident Software',
           description: 'Configuration pratique GitLab CI/CD pour petites équipes : structure de pipeline, stratégies de cache, gestion des secrets et déploiements par environnement.',
         },
       },
@@ -2630,13 +2630,13 @@ Rotate secrets quarterly. Audit which pipelines have access to production variab
         title: 'GitLab CI/CD per piccoli team di sviluppo: una configurazione pratica',
         excerpt: 'Non hai bisogno di un team DevOps dedicato per un buon CI/CD. La nostra configurazione GitLab per team da 2 a 8 persone.',
         meta: {
-          title: 'GitLab CI/CD per piccoli team — Trident Software Blog',
+          title: 'GitLab CI/CD per piccoli team | Trident Software',
           description: 'Configurazione pratica GitLab CI/CD per piccoli team: struttura pipeline, strategie di caching, gestione dei segreti e deployment per ambiente.',
         },
       },
     },
     meta: {
-      title: 'GitLab CI/CD for Small Engineering Teams — Trident Software Blog',
+      title: 'GitLab CI/CD for Small Engineering Teams | Trident Software',
       description: 'Practical GitLab CI/CD setup for 2–8 person teams. Pipeline structure, Node.js caching, Docker builds, environment deployments, and secrets management.',
     },
   },
@@ -2732,7 +2732,7 @@ Question 4 is the one most clients skip. Custom software requires ongoing engine
         title: 'Custom ERP vs. Standardsoftware: Ein Entscheidungsrahmen für Schweizer Unternehmen',
         excerpt: 'SAP, Abacus und Bexio decken 80% der Schweizer KMU-Bedürfnisse ab. Die restlichen 20% sind der Bereich, wo individuelle Entwicklung ihren Preis rechtfertigt.',
         meta: {
-          title: 'Custom ERP vs Standardsoftware Schweiz — Trident Software Blog',
+          title: 'Custom ERP vs Standardsoftware Schweiz | Trident Software',
           description: 'Entscheidungsrahmen für Custom ERP vs. Standardsoftware: Wann Bexio, Abacus und SAP reichen und wann individuelle Entwicklung sinnvoll ist.',
         },
       },
@@ -2740,7 +2740,7 @@ Question 4 is the one most clients skip. Custom software requires ongoing engine
         title: 'ERP sur mesure vs logiciel standard : cadre décisionnel pour entreprises suisses',
         excerpt: 'SAP, Abacus et Bexio couvrent 80% des besoins des PME suisses. Les 20% restants justifient le développement sur mesure. Voici comment identifier votre cas.',
         meta: {
-          title: 'ERP sur mesure vs standard en Suisse — Trident Software Blog',
+          title: 'ERP sur mesure vs standard en Suisse | Trident Software',
           description: 'Cadre décisionnel ERP sur mesure vs logiciel standard : quand Bexio, Abacus et SAP suffisent et quand le développement personnalisé est justifié.',
         },
       },
@@ -2748,13 +2748,13 @@ Question 4 is the one most clients skip. Custom software requires ongoing engine
         title: 'ERP personalizzato vs software standard: un framework decisionale per aziende svizzere',
         excerpt: 'SAP, Abacus e Bexio coprono l\'80% delle esigenze delle PMI svizzere. Il restante 20% è dove lo sviluppo personalizzato giustifica il suo costo.',
         meta: {
-          title: 'ERP personalizzato vs standard in Svizzera — Trident Software Blog',
+          title: 'ERP personalizzato vs standard in Svizzera | Trident Software',
           description: 'Framework decisionale ERP personalizzato vs software standard: quando Bexio, Abacus e SAP bastano e quando lo sviluppo su misura è giustificato.',
         },
       },
     },
     meta: {
-      title: 'Custom ERP vs Off-the-Shelf for Swiss Companies — Trident Software',
+      title: 'Custom ERP vs Off-the-Shelf for Swiss Companies | Trident Software',
       description: 'Decision framework for Swiss companies choosing between custom ERP and platforms like SAP, Abacus, or Odoo. Cost comparison, hybrid approach, and when custom wins.',
     },
   },
@@ -2885,7 +2885,7 @@ Cost comparison for 1,000 invoices/month: Claude API ~CHF 40, GPT-4V ~CHF 55, Te
         title: 'KI-gestützte Dokumentenverarbeitung für Rechnungen und Verträge',
         excerpt: 'Strukturierte Daten aus PDFs zu extrahieren klingt einfach, bis man es mit gescannten Faxen, mehrseitigen Verträgen und 40 verschiedenen Lieferantenformaten zu tun hat.',
         meta: {
-          title: 'KI-Dokumentenverarbeitung für Rechnungen — Trident Software Blog',
+          title: 'KI-Dokumentenverarbeitung für Rechnungen | Trident Software',
           description: 'Architektur für KI-gestützte Rechnungs- und Vertragsverarbeitung: OCR, LLM-Extraktion, Validierung und Modellvergleich für Schweizer Dokumente.',
         },
       },
@@ -2893,7 +2893,7 @@ Cost comparison for 1,000 invoices/month: Claude API ~CHF 40, GPT-4V ~CHF 55, Te
         title: 'Traitement de documents par IA pour factures et contrats',
         excerpt: 'Extraire des données structurées de PDF semble simple jusqu\'à ce qu\'on soit confronté à des fax scannés, des contrats multi-pages et 40 formats fournisseurs différents.',
         meta: {
-          title: 'Traitement IA de factures et contrats — Trident Software Blog',
+          title: 'Traitement IA de factures et contrats | Trident Software',
           description: 'Architecture pour le traitement de documents par IA : OCR, extraction LLM, validation et comparaison de modèles pour documents suisses.',
         },
       },
@@ -2901,13 +2901,13 @@ Cost comparison for 1,000 invoices/month: Claude API ~CHF 40, GPT-4V ~CHF 55, Te
         title: 'Elaborazione documenti con AI per fatture e contratti',
         excerpt: 'Estrarre dati strutturati dai PDF sembra semplice finché non si affrontano fax scansionati, contratti multipagina e 40 formati fornitore diversi.',
         meta: {
-          title: 'Elaborazione AI di fatture e contratti — Trident Software Blog',
+          title: 'Elaborazione AI di fatture e contratti | Trident Software',
           description: 'Architettura per l\'elaborazione AI di documenti: OCR, estrazione LLM, validazione e confronto modelli per documenti svizzeri.',
         },
       },
     },
     meta: {
-      title: 'AI Document Processing for Invoices and Contracts — Trident Software',
+      title: 'AI Document Processing for Invoices and Contracts | Trident Software',
       description: 'Real-world architecture for AI invoice and contract processing: document classification, OCR pipeline, LLM extraction prompts, validation layer, and model cost comparison.',
     },
   },
@@ -3016,7 +3016,7 @@ The Swiss engineering maxim applies: don't pay for infrastructure complexity you
         title: 'Microservices vs. Monolith für Startup-MVPs: Hören Sie auf, standardmäßig die falsche Wahl zu treffen',
         excerpt: 'Microservices sind für die meisten MVPs überentwickelt. Aber auch "einfach ein Monolith bauen" scheitert. So treffen Sie die richtige Architekturentscheidung.',
         meta: {
-          title: 'Microservices vs Monolith für Startup MVPs — Trident Software Blog',
+          title: 'Microservices vs Monolith für Startup MVPs | Trident Software',
           description: 'Architekturentscheidung Microservices vs. modularer Monolith für Startup-MVPs: welche Probleme jede Architektur löst und der Extraktionspfad für später.',
         },
       },
@@ -3024,7 +3024,7 @@ The Swiss engineering maxim applies: don't pay for infrastructure complexity you
         title: 'Microservices vs monolithe pour les MVPs de startups : arrêtez de choisir par défaut',
         excerpt: 'Les microservices sont sur-ingéniés pour la plupart des MVPs. Mais "construire un monolithe" échoue aussi. Voici comment choisir la bonne architecture.',
         meta: {
-          title: 'Microservices vs monolithe pour MVP — Trident Software Blog',
+          title: 'Microservices vs monolithe pour MVP | Trident Software',
           description: 'Décision d\'architecture microservices vs monolithe modulaire pour MVP : quels problèmes chaque architecture résout et le chemin d\'extraction pour plus tard.',
         },
       },
@@ -3032,13 +3032,13 @@ The Swiss engineering maxim applies: don't pay for infrastructure complexity you
         title: 'Microservizi vs monolite per MVP di startup: smettila di scegliere quello sbagliato',
         excerpt: 'I microservizi sono sovra-ingegnerizzati per la maggior parte degli MVP. Ma anche "costruisci un monolite" fallisce. Ecco come scegliere l\'architettura giusta.',
         meta: {
-          title: 'Microservizi vs monolite per MVP — Trident Software Blog',
+          title: 'Microservizi vs monolite per MVP | Trident Software',
           description: 'Decisione architetturale microservizi vs monolite modulare per MVP: quali problemi risolve ciascuna architettura e il percorso di estrazione per dopo.',
         },
       },
     },
     meta: {
-      title: 'Microservices vs Monolith for Startup MVPs — Trident Software Blog',
+      title: 'Microservices vs Monolith for Startup MVPs | Trident Software',
       description: 'Why microservices are wrong for most MVPs, what problems they actually solve, the modular monolith middle path, and when services are genuinely justified from day one.',
     },
   },
@@ -3170,7 +3170,7 @@ Teams that follow this pattern consistently report: 40% faster component develop
         title: 'Tailwind CSS Design-Systeme für Produktunternehmen: Mehr als Utility-Klassen',
         excerpt: 'Utility-first CSS skaliert gut, wenn man ein echtes Design-System darüber aufbaut. Wie Produktteams Tailwind-Tokens und Komponentenbibliotheken für konsistente UI nutzen.',
         meta: {
-          title: 'Tailwind CSS Design-System für Produkte — Trident Software Blog',
+          title: 'Tailwind CSS Design-System für Produkte | Trident Software',
           description: 'Schritt-für-Schritt-Anleitung zum Aufbau eines Tailwind CSS Design-Systems: Tokens, CVA-Varianten, Storybook-Dokumentation und Komponenten-Audit.',
         },
       },
@@ -3178,7 +3178,7 @@ Teams that follow this pattern consistently report: 40% faster component develop
         title: 'Systèmes de design Tailwind CSS pour les entreprises produit : au-delà des classes utilitaires',
         excerpt: 'Le CSS utility-first évolue bien avec un vrai système de design. Voici comment les équipes produit utilisent les tokens Tailwind pour une UI cohérente.',
         meta: {
-          title: 'Système de design Tailwind CSS — Trident Software Blog',
+          title: 'Système de design Tailwind CSS | Trident Software',
           description: 'Guide pour construire un système de design Tailwind CSS : tokens, variantes CVA, documentation Storybook et audit de composants.',
         },
       },
@@ -3186,13 +3186,13 @@ Teams that follow this pattern consistently report: 40% faster component develop
         title: 'Sistemi di design Tailwind CSS per le aziende prodotto: oltre le classi utility',
         excerpt: 'Il CSS utility-first scala bene con un sistema di design appropriato. Come i team di prodotto usano i token Tailwind per UI coerente.',
         meta: {
-          title: 'Sistema di design Tailwind CSS — Trident Software Blog',
+          title: 'Sistema di design Tailwind CSS | Trident Software',
           description: 'Guida per costruire un sistema di design Tailwind CSS: token, varianti CVA, documentazione Storybook e audit componenti.',
         },
       },
     },
     meta: {
-      title: 'Tailwind CSS Design Systems for Product Companies — Trident Software Blog',
+      title: 'Tailwind CSS Design Systems for Product Companies | Trident Software',
       description: 'How to build a real design system on top of Tailwind CSS: design tokens in config, CVA component variants, Storybook documentation, and component audit workflow.',
     },
   },
@@ -3319,7 +3319,7 @@ Use structured logging with a consistent schema from day one. Retrofitting obser
         title: 'API-Gateway-Muster für B2B-Integrationen: Was zu standardisieren ist',
         excerpt: 'B2B-Integrationen scheitern, wenn jeder Partner als eigenes Projekt behandelt wird. Das richtige API-Gateway-Muster bietet Standard-Auth, Rate-Limiting und Flexibilität.',
         meta: {
-          title: 'API-Gateway für B2B-Integrationen — Trident Software Blog',
+          title: 'API-Gateway für B2B-Integrationen | Trident Software',
           description: 'API-Gateway-Muster für B2B-Integrationen: Auth-Schichten, Rate Limiting, Adapter-Pattern für Schema-Normalisierung und Observability.',
         },
       },
@@ -3327,7 +3327,7 @@ Use structured logging with a consistent schema from day one. Retrofitting obser
         title: 'Patterns de gateway API pour intégrations B2B : ce qu\'il faut standardiser',
         excerpt: 'Les intégrations B2B échouent quand chaque partenaire est traité comme un projet custom. Le bon pattern de gateway API donne auth, rate limiting et flexibilité.',
         meta: {
-          title: 'Gateway API pour intégrations B2B — Trident Software Blog',
+          title: 'Gateway API pour intégrations B2B | Trident Software',
           description: 'Patterns de gateway API pour B2B : couches d\'authentification, rate limiting, pattern adaptateur pour normalisation de schéma et observabilité.',
         },
       },
@@ -3335,13 +3335,13 @@ Use structured logging with a consistent schema from day one. Retrofitting obser
         title: 'Pattern API gateway per integrazioni B2B: cosa standardizzare',
         excerpt: 'Le integrazioni B2B falliscono quando ogni partner viene trattato come un progetto personalizzato. Il giusto pattern gateway API offre auth, rate limiting e flessibilità.',
         meta: {
-          title: 'API gateway per integrazioni B2B — Trident Software Blog',
+          title: 'API gateway per integrazioni B2B | Trident Software',
           description: 'Pattern API gateway per B2B: layer di autenticazione, rate limiting, pattern adapter per normalizzazione schemi e osservabilità.',
         },
       },
     },
     meta: {
-      title: 'API Gateway Patterns for B2B Integrations — Trident Software Blog',
+      title: 'API Gateway Patterns for B2B Integrations | Trident Software',
       description: 'Standardize B2B integrations with the right API gateway pattern: auth layers by partner type, rate limiting feedback, adapter pattern for schema normalization, and observability requirements.',
     },
   },
@@ -3458,7 +3458,7 @@ If your system fails these under test, you have weeks to fix it before the actua
       },
     ],
     meta: {
-      title: 'Load Testing with k6 for Swiss E-Commerce — Trident Software Blog',
+      title: 'Load Testing with k6 for Swiss E-Commerce | Trident Software',
       description: 'How Swiss e-commerce teams use k6 for load testing: test scenarios for checkout flows, common performance bottlenecks, Swiss hosting considerations, and pass/fail thresholds.',
     },
   },
@@ -3596,7 +3596,7 @@ The teams that succeed treat it as ongoing hygiene, not a project with a deadlin
         title: 'TypeScript-Migrationsstrategie für Legacy-Codebasen: Der inkrementelle Weg',
         excerpt: 'Alles auf einmal umzuschreiben scheitert. Die inkrementelle TypeScript-Migration — Strict-Mode Grenze für Grenze — ermöglicht die Migration ohne Feature-Stopp.',
         meta: {
-          title: 'TypeScript-Migration Legacy-Codebasis — Trident Software Blog',
+          title: 'TypeScript-Migration Legacy-Codebasis | Trident Software',
           description: 'Inkrementelle TypeScript-Migrationsstrategie: permissive Konfiguration, Datei-Priorisierung, any-Budget und schrittweise Strict-Mode-Aktivierung.',
         },
       },
@@ -3604,7 +3604,7 @@ The teams that succeed treat it as ongoing hygiene, not a project with a deadlin
         title: 'Stratégies de migration TypeScript pour bases de code legacy : la voie incrémentale',
         excerpt: 'Tout réécrire d\'un coup échoue. La migration TypeScript incrémentale — boundary par boundary en mode strict — permet de migrer sans arrêter le développement.',
         meta: {
-          title: 'Migration TypeScript legacy — Trident Software Blog',
+          title: 'Migration TypeScript legacy | Trident Software',
           description: 'Stratégie de migration TypeScript incrémentale : configuration permissive, priorisation des fichiers, budget any et activation progressive du mode strict.',
         },
       },
@@ -3612,13 +3612,13 @@ The teams that succeed treat it as ongoing hygiene, not a project with a deadlin
         title: 'Strategie di migrazione TypeScript per codebase legacy: il percorso incrementale',
         excerpt: 'Riscrivere tutto in una volta fallisce. La migrazione TypeScript incrementale — boundary per boundary in strict mode — permette la migrazione senza fermare le feature.',
         meta: {
-          title: 'Migrazione TypeScript legacy — Trident Software Blog',
+          title: 'Migrazione TypeScript legacy | Trident Software',
           description: 'Strategia di migrazione TypeScript incrementale: configurazione permissiva, priorità dei file, budget any e attivazione progressiva dello strict mode.',
         },
       },
     },
     meta: {
-      title: 'TypeScript Migration for Legacy Codebases — Trident Software Blog',
+      title: 'TypeScript Migration for Legacy Codebases | Trident Software',
       description: 'Incremental TypeScript migration strategy that works: permissive Phase 1 setup, file prioritization by value, any budget tracking, and strict mode activation in stages.',
     },
   },
@@ -3724,7 +3724,7 @@ Start small. Add capacity when you have traffic data proving you need it.
         title: 'Tech-Stack-Empfehlungen für Schweizer Startups 2026: Was wir heute wählen würden',
         excerpt: 'Nach 30+ Projekten für Schweizer Startups: der Technologie-Stack, den wir 2026 für neue Projekte empfehlen — mit Begründungen für jede Wahl.',
         meta: {
-          title: 'Tech-Stack für Schweizer Startups 2026 — Trident Software Blog',
+          title: 'Tech-Stack für Schweizer Startups 2026 | Trident Software',
           description: 'Tech-Stack-Empfehlungen für Schweizer Startups 2026: Next.js, Drizzle, PostgreSQL, Tailwind, Auth.js — und warum wir bestimmte Alternativen vermeiden.',
         },
       },
@@ -3732,7 +3732,7 @@ Start small. Add capacity when you have traffic data proving you need it.
         title: 'Recommandations de stack technique pour startups suisses 2026 : notre choix aujourd\'hui',
         excerpt: 'Après 30+ projets pour des startups et PME suisses : la stack technologique recommandée pour 2026 — avec les raisons derrière chaque choix.',
         meta: {
-          title: 'Stack technique startups suisses 2026 — Trident Software Blog',
+          title: 'Stack technique startups suisses 2026 | Trident Software',
           description: 'Recommandations stack tech pour startups suisses 2026 : Next.js, Drizzle, PostgreSQL, Tailwind, Auth.js — et pourquoi éviter certaines alternatives.',
         },
       },
@@ -3740,13 +3740,13 @@ Start small. Add capacity when you have traffic data proving you need it.
         title: 'Raccomandazioni tech stack per startup svizzere 2026: cosa sceglieremmo oggi',
         excerpt: 'Dopo 30+ progetti per startup e PMI svizzere: lo stack tecnologico consigliato per il 2026 — con le motivazioni per ogni scelta.',
         meta: {
-          title: 'Tech stack startup svizzere 2026 — Trident Software Blog',
+          title: 'Tech stack startup svizzere 2026 | Trident Software',
           description: 'Raccomandazioni tech stack per startup svizzere 2026: Next.js, Drizzle, PostgreSQL, Tailwind, Auth.js — e perché evitare certe alternative.',
         },
       },
     },
     meta: {
-      title: 'Swiss Startup Tech Stack Recommendations 2026 — Trident Software Blog',
+      title: 'Swiss Startup Tech Stack Recommendations 2026 | Trident Software',
       description: 'Tech stack recommendations for Swiss startups in 2026: frontend, backend, database, auth, infrastructure, AI integration, and what we\'ve stopped recommending.',
     },
   },
@@ -3904,7 +3904,7 @@ Server-Sent Events (SSE) are often the better choice for one-directional updates
         title: 'WebSocket Real-Time-Features in Next.js: Ein praktischer Implementierungsleitfaden',
         excerpt: 'Next.js API-Routen sind zustandslos — falsche Abstraktion für WebSockets. Die funktionierende Architektur: ein eigenständiger WebSocket-Server neben der Next.js-App.',
         meta: {
-          title: 'WebSocket Real-Time in Next.js — Trident Software Blog',
+          title: 'WebSocket Real-Time in Next.js | Trident Software',
           description: 'Praktische Implementierung von WebSocket-Features in Next.js: eigenständiger WebSocket-Server, Redis Pub/Sub, React Hook und SSE-Vergleich.',
         },
       },
@@ -3912,7 +3912,7 @@ Server-Sent Events (SSE) are often the better choice for one-directional updates
         title: 'Fonctionnalités temps réel WebSocket dans Next.js : guide d\'implémentation pratique',
         excerpt: 'Les routes API Next.js sont sans état — mauvaise abstraction pour WebSockets. L\'architecture qui fonctionne : un serveur WebSocket standalone aux côtés de l\'app Next.js.',
         meta: {
-          title: 'WebSocket temps réel dans Next.js — Trident Software Blog',
+          title: 'WebSocket temps réel dans Next.js | Trident Software',
           description: 'Implémentation pratique de WebSocket dans Next.js : serveur WebSocket standalone, Redis pub/sub, hook React et comparaison avec SSE.',
         },
       },
@@ -3920,13 +3920,13 @@ Server-Sent Events (SSE) are often the better choice for one-directional updates
         title: 'Funzionalità real-time WebSocket in Next.js: guida pratica all\'implementazione',
         excerpt: 'Le API route di Next.js sono stateless — astrazione sbagliata per WebSocket. L\'architettura che funziona: un server WebSocket standalone accanto all\'app Next.js.',
         meta: {
-          title: 'WebSocket real-time in Next.js — Trident Software Blog',
+          title: 'WebSocket real-time in Next.js | Trident Software',
           description: 'Implementazione pratica WebSocket in Next.js: server WebSocket standalone, Redis pub/sub, React hook e confronto con SSE.',
         },
       },
     },
     meta: {
-      title: 'WebSocket Real-Time Features in Next.js — Trident Software Blog',
+      title: 'WebSocket Real-Time Features in Next.js | Trident Software',
       description: 'How to implement WebSocket real-time features alongside Next.js: standalone WebSocket server, Redis pub/sub event bus, React hooks, and when to use Server-Sent Events instead.',
     },
   },
@@ -4090,7 +4090,7 @@ The prod override removes volume mounts, sets NODE_ENV=production, and uses envi
       },
     ],
     meta: {
-      title: 'Docker Compose for Local Dev Environments — Trident Software Blog',
+      title: 'Docker Compose for Local Dev Environments | Trident Software',
       description: 'Docker Compose configuration for full-stack JavaScript projects: complete setup with PostgreSQL, Redis, mail server, hot reload, one-command onboarding, and common pitfalls.',
     },
   },
@@ -4232,7 +4232,7 @@ Budget 2–3 days for an initial accessibility audit of a medium-complexity web 
         title: 'WCAG 2.1 Barrierefreiheit für Schweizer Behördenanwendungen: Compliance und Umsetzung',
         excerpt: 'Schweizer Bundes- und Kantonsrecht schreibt digitale Barrierefreiheit für Behördenanwendungen vor. Was Compliance bedeutet und wie man effizient auditiert und umsetzt.',
         meta: {
-          title: 'WCAG 2.1 Barrierefreiheit Schweiz Behörden — Trident Software Blog',
+          title: 'WCAG 2.1 Barrierefreiheit Schweiz Behörden | Trident Software',
           description: 'WCAG 2.1 AA für Schweizer Behördenanwendungen: rechtliche Grundlagen, häufige Fehler, praktische Korrekturen und automatisierte Testintegration.',
         },
       },
@@ -4240,7 +4240,7 @@ Budget 2–3 days for an initial accessibility audit of a medium-complexity web 
         title: 'Accessibilité WCAG 2.1 pour les applications du secteur public suisse',
         excerpt: 'La loi fédérale et cantonale suisse exige l\'accessibilité numérique pour les applications du secteur public. Ce que la conformité signifie et comment auditer efficacement.',
         meta: {
-          title: 'WCAG 2.1 accessibilité secteur public suisse — Trident Software Blog',
+          title: 'WCAG 2.1 accessibilité secteur public suisse | Trident Software',
           description: 'WCAG 2.1 AA pour les applications publiques suisses : bases légales, erreurs fréquentes, correctifs pratiques et tests automatisés.',
         },
       },
@@ -4248,13 +4248,13 @@ Budget 2–3 days for an initial accessibility audit of a medium-complexity web 
         title: 'Accessibilità WCAG 2.1 per applicazioni del settore pubblico svizzero',
         excerpt: 'La legge federale e cantonale svizzera richiede l\'accessibilità digitale per le applicazioni del settore pubblico. Cosa significa la conformità e come effettuare audit.',
         meta: {
-          title: 'WCAG 2.1 accessibilità settore pubblico svizzero — Trident Software Blog',
+          title: 'WCAG 2.1 accessibilità settore pubblico svizzero | Trident Software',
           description: 'WCAG 2.1 AA per applicazioni pubbliche svizzere: basi legali, errori frequenti, correzioni pratiche e testing automatizzato.',
         },
       },
     },
     meta: {
-      title: 'WCAG 2.1 Accessibility for Swiss Public Sector Apps — Trident Software Blog',
+      title: 'WCAG 2.1 Accessibility for Swiss Public Sector Apps | Trident Software',
       description: 'Swiss BehiG/BehiV accessibility compliance guide: most commonly failed WCAG 2.1 AA criteria, practical code fixes, automated testing with axe, and screen reader testing.',
     },
   },
@@ -4378,7 +4378,7 @@ Start with Claude 3.5 Haiku for most SME workloads — balanced quality, 200K co
       },
     ],
     meta: {
-      title: 'OpenAI vs Anthropic API Cost Comparison for SMEs — Trident Software Blog',
+      title: 'OpenAI vs Anthropic API Cost Comparison for SMEs | Trident Software',
       description: 'Realistic API cost comparison for SME workloads: document processing, chatbots, code generation. Includes prompt caching impact and decision framework for model selection.',
     },
   },
@@ -4546,7 +4546,7 @@ Target: total CI test time under 8 minutes. Beyond that, developers start skippi
         title: 'Die automatisierte Testpyramide für kleine Teams: Was testen und was überspringen',
         excerpt: 'Kleine Entwicklungsteams können keine vollständige Testabdeckung leisten. Die Testpyramide pragmatisch anwenden: maximale Fehlererkennung bei minimalem Wartungsaufwand.',
         meta: {
-          title: 'Testpyramide für kleine Teams — Trident Software Blog',
+          title: 'Testpyramide für kleine Teams | Trident Software',
           description: 'Praktische automatisierte Testpyramide für 2–8 Entwickler: Unit-Tests für Geschäftslogik, Integrationstests mit höchstem ROI, 5–10 E2E-Flows und schnelle CI-Konfiguration.',
         },
       },
@@ -4554,7 +4554,7 @@ Target: total CI test time under 8 minutes. Beyond that, developers start skippi
         title: 'La pyramide de tests automatisés pour petites équipes : quoi tester et quoi ignorer',
         excerpt: 'Les petites équipes ne peuvent pas se permettre une couverture de tests complète. Appliquer la pyramide de tests pragmatiquement : détection max de bugs, maintenance minimale.',
         meta: {
-          title: 'Pyramide de tests pour petites équipes — Trident Software Blog',
+          title: 'Pyramide de tests pour petites équipes | Trident Software',
           description: 'Pyramide de tests automatisés pour équipes de 2–8 développeurs : tests unitaires pour logique métier, intégration à ROI élevé, 5–10 flows E2E et CI rapide.',
         },
       },
@@ -4562,13 +4562,13 @@ Target: total CI test time under 8 minutes. Beyond that, developers start skippi
         title: 'La piramide di test automatizzati per piccoli team: cosa testare e cosa saltare',
         excerpt: 'I piccoli team non possono permettersi una copertura completa dei test. Applicare la piramide di test pragmaticamente: massimo rilevamento bug, minimo overhead di manutenzione.',
         meta: {
-          title: 'Piramide di test per piccoli team — Trident Software Blog',
+          title: 'Piramide di test per piccoli team | Trident Software',
           description: 'Piramide di test automatizzati per team di 2–8 sviluppatori: unit test per logica di business, integration test ad alto ROI, 5–10 flow E2E e CI veloce.',
         },
       },
     },
     meta: {
-      title: 'Automated Testing Pyramid for Small Teams — Trident Software Blog',
+      title: 'Automated Testing Pyramid for Small Teams | Trident Software',
       description: 'Pragmatic testing strategy for 2–8 engineer teams: what to unit test (business logic only), high-ROI integration tests, 5–10 E2E flows, and CI under 8 minutes.',
     },
   },
@@ -4604,7 +4604,7 @@ Target: total CI test time under 8 minutes. Beyond that, developers start skippi
     relatedPosts: [],
     content: `## Video Content\n\nIn the fast-paced world of ecommerce, captivating video content is the key to attracting and retaining customers. This holds especially true for product categories like fashion, watches and jewelry, sports equipment, and tools. In this post, we will explore the key aspects to consider while crafting videos for products of your digital storefront.\n\n## Key Principles of Video Production\n\n**1. Understanding Your Target Audience** **:** Before you start to create video for ecommerce, it’s crucial to understand your target audience. Thus, you could tailor content that resonates with their preferences, fostering a more profound connection.\n\n**2. Quality Content** **:** Invest in professional shooting equipment to ensure high-quality visuals and audio. In fact, crisp and clear content reflects positively on your products and brand.\n\n**3. Clear Visual Message** **:** Clearly convey the core benefits of your products, highlighting their features and applications. Undoubtedly, a well-crafted visual message enhances customer understanding and engagement.\n\n## Industry-Specific Guidelines\n\n**Fashion:**\n\n- *Style and Atmosphere:* Craft videos that convey the style and mood of your brand.\n- *Detail Showcase:* Highlight clothing details and stitching quality.\n- *Dynamic Presentation:* Demonstrate how the clothing looks in motion.\n\n**Watches and Jewelry:**\n\n- *Shooting Quality and Lighting:* Use macro shots and proper lighting to highlight details and material quality.\n- *Context:* Showcase how the product looks when worn.\n\n**Sports Equipment:**\n\n- *Active Usage Display:* Demonstrate products in action.\n- *Emphasize Convenience:* Highlight how the product enhances sporting performance.\n- *Feature and Technology:* Explain any technological innovations.\n\n**Tools:**\n\n- *Efficiency Demonstration:* Show how the tool performs in real-world conditions.\n- *Durability and Reliability:* Emphasize the quality of materials used.\n- *Usage Instructions:* Provide clear instructions on how to use the tools effectively.\n\n## Steps After Video Creation\n\nOnce your video for ecommerce is created, it’s crucial to use it effectively to maximize its impact:\n\n- ******Upload to YouTube****** Upload the video to your YouTube channel and add links to the product page on your website. This helps increase website traffic and enhances SEO. Also, strategic SEO YouTube techniques boosts video visibility and engagement.\n- **Utilize Video Converter** Use the Convertor Video Trident Software Sarl to optimize and adapt your video for various formats and devices. This MP4 converter streamlines your video content, making it user-friendly and impactful.\n- **Social Media Publication** Publish the video on social media platforms to grab attention and boost audience engagement. Don’t forget to include links to your product pages in your posts.\n\n## SEO Optimization for Videos\n\nTo ensure your video reaches the widest audience, follow these SEO recommendations:\n\n- **Title and Description Optimization:** Use keywords related to your product and brand in video titles and descriptions on YouTube, social media, and your website pages.\n- **Tags and Categories:** Choose relevant tags and categories to improve video search and visibility.\n- **Transcription and Subtitles:** Add transcriptions and subtitles to enhance accessibility and increase the video’s SEO value.\n- **Integration on Your Website:** Embedding videos on your website improves your site’s SEO and product promotion.\n- **Video Backlinks:** Encourage backlinks to your video by sharing it on various platforms and blogs.\n\nLeverage the capabilities of the Trident Software Convertor Video tool to control video SEO attributes, tapping into the potential of our AI for optimizing information.\n\nUltimately, creating compelling videos for your online store requires careful attention to detail, from understanding your target audience to technical implementation and SEO strategies. Beyond merely showcasing products, your videos become powerful instruments for narrating your brand story, establishing an emotional bond with potential customers. By following these recommendations, you can craft effective and memorable video content that enhances interaction with your customers and boosts sales.`,
     meta: {
-      title: 'Pro Video Content for Your Online Store — Trident Software',
+      title: 'Pro Video Content for Your Online Store | Trident Software',
       description: 'Video content tips and tools to engage your audience - Industry-specific guidelines - SEO optimization for videos',
     },
   },
@@ -4622,7 +4622,7 @@ Target: total CI test time under 8 minutes. Beyond that, developers start skippi
     relatedPosts: [],
     content: `## Cloud Technologies\n\nOur longstanding relationship with [Amazon Web Services (AWS)](https://aws.amazon.com/) has now evolved into a full-fledged partnership, broadening our service capabilities.\n\nTo showcase our dedication to excellence, we’re pleased to announce our successful completion of a rigorous AWS expertise evaluation. Specifically, this evaluation ensures that we meet the highest standards of service excellence and technical proficiency.\n\nIn fact, Amazon Web Services is a leading global cloud platform, and we’re proud to be among their [partners](https://partners.amazonaws.com/partners/0018W00002HCP7fQAH/Trident%20Software%20S%C3%A0rl). Also, this partnership opens up boundless possibilities for us to enhance and improve our services for you, our valued customers.\n\nAWS is known for its reliability, scalability, and security. Furthermore, their solutions are used by large corporations and innovative startups worldwide. After using AWS services for some time, we’re proud to formalize this partnership, greatly enriching our service offerings.\n\n## How Will This Impact You?\n\nOur collaboration with AWS will revolutionize your experience with our services. In particular, you can expect:\n\n**1. AWS Programs and Benefits**: First, we gain access to wide range of [AWS Partner Programs](https://aws.amazon.com/partners/programs/), which provides credits, training, technical support, a lot of opportunities for both startups and our customers’ businesses.\n\n**2. Advanced Technical Support:** Second, AWS provides us with advanced technical support access. As a result, you can expect faster issue resolution and a seamless experience.\n\n**3. Enhanced Efficiency**: Another key point, our services will continue to benefit from AWS’s high-performance infrastructure, ensuring faster response times and uninterrupted service.\n\n**4. Elevated Security**: Also, we are doubling down on security measures to uphold the confidentiality and protection of your data, now backed by AWS’s robust security protocols.\n\n**5. Expanded Capabilities**: We’re expanding our services, providing you with an even broader spectrum of options to meet your unique needs.\n\n**6. Greater Flexibility**: With our enhanced capabilities, you’ll have more flexibility than ever before, allowing you to tailor solutions to your exact needs.\n\n**7. Financial Resources:** Additionally, we’ve secured funding to invest in cutting-edge technologies, which means we can deliver even greater value to you.\n\n## Our Shared Goal: Your Success\n\nOur partnership with AWS demonstrates our dedication to providing an unmatched experience for our clients. Together with AWS, we are confident that we can provide you with even more opportunities and robust support to help you excel.\n\nUltimately, we’re thrilled about this milestone and sincerely thank you, our valued clients, for your unwavering support. Together, we’ll reach new heights, enhancing your experiences with us.\n\nThank you for choosing us as your trusted partner. Stay tuned for the numerous opportunities and innovations that this partnership will bring. The best is yet to come!`,
     meta: {
-      title: 'Our Partnership with Amazon Web Services — Trident Software',
+      title: 'Our Partnership with Amazon Web Services | Trident Software',
       description: 'Explore the advantages of our newly formed partnership with Amazon Web Services (AWS). - Benefits, opportunities and Partner Programs.',
     },
   },
@@ -4640,7 +4640,7 @@ Target: total CI test time under 8 minutes. Beyond that, developers start skippi
     relatedPosts: [],
     content: `## Inventory Management\n\nIn the fast-paced world of warehousing and trading, efficient inventory management is a cornerstone of success. Certainly, with the advent of cutting-edge technologies like object recognition and autonomous drones, traditional inventory processes are undergoing a transformation. This article discusses a revolutionary system that aims to streamline warehouse inventory and dramatically change outstack control in trading halls.\n\n## Modules\n\nSystem includes core modules:\n\n- **Model Builder:** This module constructs highly accurate object recognition models from video footage, enabling the system to identify various items with precision.\n- **Object Tracker:** By leveraging sophisticated algorithms, this module searches for and tracks objects within a live video stream, enabling real-time inventory monitoring.\n- **Drone Controller:** The drone controller module manages the operational aspects of the autonomous drone, ensuring smooth execution of inventory tasks.\n\n## Workflow\n\nGiven these points, the workflow is meticulously designed to maximize efficiency and accuracy:\n\n- **Video Capture:** First, warehouse personnel record and upload videos of items to the system.\n- **Model Construction:** After, the system creates object recognition models using the uploaded videos.\n- **Integration:** Then, seamless integration with the existing warehouse system takes place.\n- **Inventory Task:** Further, an automated inventory task is generated based on the video analysis.\n- **Drone Tasking:** Shortly, an autonomous drone takes on the execution of the assigned inventory task.\n- **Drone Execution:** Then, the drone independently locates the required shelf, initiates object recognition, and records results.\n- **Data Transfer:** Finally, the system synchronizes the collected data back to the central warehouse system for comprehensive tracking.\n\n## Key Points\n\nTechnology key points of inventory management with robot:\n\n- A holistic solution encompassing both software and hardware components.\n- Notably, the system identifies a wide range of items, including soft-packaged goods like chip packets.\n- Video-based recognition allows accurate identification of objects, regardless of their orientation toward the camera.\n- The autonomous drone operates with onboard software, enabling independent execution.\n- When drones are not practical, you can use static cameras for consistent shelf monitoring.\n\n## Future Plans\n\nThe system’s development roadmap includes the following advancements:\n\n- **Enhanced Autonomy:** Striving for complete independence, the goal is to enable drones to execute inventory tasks without server connectivity. Thus, once reconnected, they’ll sync with the accounting system, minimizing integration costs.\n- **Optimized Positioning:** The current QR marker-based positioning will evolve into a state-of-the-art optical recognition system, leveraging advanced object recognition technology for more precise positioning.\n\nTo summarize, the synergy between cutting-edge technology and efficient inventory management marks a significant leap forward in the warehousing industry. Ultimately, the system simplifies inventory process while also laying the foundation for a future where automation and accuracy are closely intertwined.`,
     meta: {
-      title: 'Revolutionizing Inventory Management — Trident Software',
+      title: 'Revolutionizing Inventory Management | Trident Software',
       description: 'Inventory management is facilitated by the assistance of object recognition and autonomous drones. - Outstack control in trading halls.',
     },
   },
@@ -4658,7 +4658,7 @@ Target: total CI test time under 8 minutes. Beyond that, developers start skippi
     relatedPosts: [],
     content: `## Ardevaz Language School\n\nWe are delighted to announce the culmination of a remarkable collaboration – the new [Ardevaz Language School](https://ardevazsls.com/) website launch. As project creators, we’re thrilled to share the journey of crafting an innovative online platform for a prestigious language school.\n\nBecause the project integrated the [SME Website](/solutions/websites) concept, it was a perfect fit for the school’s needs.\n\nThe Ardevaz Language School in Sion, Valais, is a distinguished hub of language education, specializing in French and FIDE test preparation, where certified teachers and customizable schedules ensure an unparalleled learning experience.\n\n## Comprehensive Website Development\n\nIn fact, the school provides affordable [language courses](https://ardevazsls.com/courses-prices/) in French, English, German, Italian, and Spanish. Our partnership resulted in a comprehensive language school website launch embodying Ardevaz’s educational philosophy.\n\nEmpowering the school, we have furnished the platform with a robust content management system (CMS) for seamless content curation and structure. Crafted for a global audience, the website provides content localization in six languages, thus ensuring accessibility for learners worldwide.\n\n## French Proficiency Test Integration\n\nA website highlight is the integrated French proficiency test, helping students assess their language skills and determine their starting point. This feature seamlessly aligns perfectly with Ardevaz’s commitment to personalized education and skill development.\n\n## Visual Identity and SEO\n\nThe new language school website launch not only captivates visually but also mirrors the institution’s revamped logo and branding. Not to mention, we also implemented cutting-edge SEO practices to ensure the platform’s visibility across search engines.\n\nMoreover, the website features an engaging blog section that underscores Ardevaz’s commitment to comprehensive learning. Thus, by actively sharing language insights, tips, and cultural updates, the institution reinforces its dedication to a dynamic learning community.\n\nHere you can get more detailed information about the project, the client’s requirements and our solutions.`,
     meta: {
-      title: 'Ardevaz Language School Website Launch — Trident Software',
+      title: 'Ardevaz Language School Website Launch | Trident Software',
       description: 'The new Ardevaz Language School website launch - Content management system. - Localization in six languages. - French proficiency test.',
     },
   },

@@ -19,7 +19,7 @@ export async function generateMetadata() {
 const body = 'text-[#4A4F57] leading-relaxed text-lg'
 const lead = 'font-semibold text-[#111318]'
 const h2 = 'text-3xl font-bold mb-6 text-[#111318]'
-const wrap = 'mx-auto max-w-4xl px-4 sm:px-6 lg:px-8'
+const wrap = 'mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 [&>*]:max-w-3xl'
 const th = 'px-4 py-3 font-medium text-left'
 const td = 'px-4 py-3 align-top'
 

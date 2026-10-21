@@ -30,8 +30,8 @@ export function CaseCard({ case_, className }: Props) {
         </div>
       )}
       <div className="p-5 flex flex-col gap-3 flex-1">
-      <div className="flex items-start justify-between gap-2">
-        <div>
+      <div className="flex flex-wrap items-start justify-between gap-2">
+        <div className="min-w-0">
           <p className="text-[11px] text-[#6B7078] font-medium uppercase tracking-wider mb-1">
             {case_.client}
           </p>
@@ -39,7 +39,7 @@ export function CaseCard({ case_, className }: Props) {
             {case_.hero.title}
           </h3>
         </div>
-        <span className="shrink-0 text-[11px] font-medium bg-[#2772E0]/10 text-[#2772E0] border border-[#2772E0]/20 rounded-full px-2 py-0.5 whitespace-nowrap">
+        <span className="text-[11px] font-medium bg-[#2772E0]/10 text-[#2772E0] border border-[#2772E0]/20 rounded-full px-2 py-0.5">
           {case_.industry}
         </span>
       </div>

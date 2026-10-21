@@ -65,11 +65,14 @@ export type CaseData = {
     title: string
     description: string
   }
+  /** ISO date the case study was written/added to the site (from git history), not the project's launch date. */
+  publishedAt: string
 }
 
 export const cases: CaseData[] = [
   {
     slug: 'post-acute-clinic-network',
+    publishedAt: '2026-10-14',
     client: 'Post-acute clinic network, Switzerland',
     industry: 'Healthcare · Switzerland',
     services: ['ai-services', 'software-engineering'],
@@ -216,13 +219,14 @@ export const cases: CaseData[] = [
     ],
     relatedCases: ['clinic-voice-documentation'],
     meta: {
-      title: 'Post-acute clinic network: admission, documentation and billing — Trident Software Case Study',
+      title: 'Post-acute clinic: admission to billing | Trident Software',
       description:
-        'From however the patient arrives to a signed discharge letter and a coded invoice, without anyone retyping a document. Admission from over an hour to about five minutes.',
+        'From however the patient arrives to a signed discharge letter and a coded invoice, with no retyping. Admission from over an hour to about five minutes.',
     },
   },
   {
     slug: 'clinic-voice-documentation',
+    publishedAt: '2026-10-14',
     client: 'Multi-disciplinary practice, Switzerland',
     industry: 'Healthcare · Switzerland',
     services: ['ai-services', 'software-engineering'],
@@ -343,13 +347,14 @@ export const cases: CaseData[] = [
     ],
     relatedCases: ['post-acute-clinic-network'],
     meta: {
-      title: 'Voice documentation for a multi-disciplinary clinic — Trident Software Case Study',
+      title: 'Clinic voice documentation | Trident Software',
       description:
         'From a recorded consultation to a coded TARDOC invoice, without the doctor typing it. Physician documentation time from 35 % to 15 % of the working year.',
     },
   },
   {
     slug: 'fiduciary-mail-and-receipts',
+    publishedAt: '2026-10-14',
     client: 'Fiduciary, Switzerland',
     industry: 'Professional services · Switzerland',
     services: ['ai-services', 'software-engineering'],
@@ -486,13 +491,14 @@ export const cases: CaseData[] = [
     ],
     relatedCases: [],
     meta: {
-      title: 'Fiduciary — incoming mail and expense receipts, read by machine — Trident Software Case Study',
+      title: 'Fiduciary mail & receipts, machine-read | Trident Software',
       description:
         'Two paper queues replaced by scan-and-route and photo-and-post. About 135 operator hours a month returned, modelled from the firm’s volumes.',
     },
   },
   {
     slug: 'warranty-control-component-maker',
+    publishedAt: '2026-10-14',
     client: 'Component manufacturer, Italy',
     industry: 'Manufacturing, connected equipment · Italy',
     services: ['embedded-and-iot', 'software-engineering'],
@@ -623,13 +629,14 @@ export const cases: CaseData[] = [
       'The pattern underneath is the same in each: measure the operating condition, and the argument about who pays stops being an argument.',
     relatedCases: [],
     meta: {
-      title: 'Warranty control for a coffee-equipment component manufacturer — Trident Software Case Study',
+      title: 'Coffee-equipment warranty control | Trident Software',
       description:
         'From paying for every claim to measuring the cause. Warranty service cost from 1.37 % to 0.51 % of revenue, and a cost centre turned into a product line.',
     },
   },
   {
     slug: 'building-materials-order-to-load',
+    publishedAt: '2026-10-14',
     client: 'Construction-materials logistics · Switzerland, cross-border with France',
     industry: 'Construction-materials logistics',
     services: ['ai-services', 'software-engineering'],
@@ -773,13 +780,14 @@ export const cases: CaseData[] = [
       'The delivery side of this scenario runs on the 8Move platform — Fleet Planner for planning and dispatch, Driver Pro for the driver and proof of delivery. Start where the ceiling is. In this business it is the order desk in May, not the invoice run in November.',
     relatedCases: [],
     meta: {
-      title: 'Building materials — order desk to delivered load — Trident Software Case Study',
+      title: 'Building materials: desk to delivery | Trident Software',
       description:
-        'From a phone call to a planned load, an invoiced delivery and a cleared border. 65 % of reorder volume taken without a person, the peak absorbed without seasonal hiring.',
+        'From a phone call to a planned load, an invoiced delivery and a cleared border. 65% of reorder volume automated, the peak absorbed without seasonal hiring.',
     },
   },
   {
     slug: 'letting-agency-enquiry-to-viewing',
+    publishedAt: '2026-10-14',
     client: 'Residential letting agency, Romandie, Switzerland',
     industry: 'Residential letting agency · Switzerland',
     services: ['ai-services', 'software-engineering'],
@@ -787,7 +795,7 @@ export const cases: CaseData[] = [
     hero: {
       title: 'Real Estate — From Portal Enquiry to Booked Viewing',
       tagline:
-        'Answering within minutes of the enquiry lands, in the language it was written in, and turning it into a qualified viewing slot',
+        'A reply within minutes, in the language the enquiry was written in, turned into a qualified viewing slot.',
     },
     evidence: 'modelled',
     note: 'Industry scenario. Built on published Swiss market data and on our own project work, not on a single named client. The figures in Results are the effect the design is engineered to produce; each one names the mechanism behind it.',
@@ -914,13 +922,14 @@ export const cases: CaseData[] = [
     ],
     relatedCases: [],
     meta: {
-      title: 'Real estate — from portal enquiry to booked viewing — Trident Software Case Study',
+      title: 'Real estate: enquiry to booked viewing | Trident Software',
       description:
-        'Answering within minutes of the enquiry lands, in the language it was written in, and turning it into a qualified viewing slot. First reply in under 15 seconds, in seven languages.',
+        'A reply within minutes, in the language the enquiry was written in, turned into a qualified viewing slot. First reply in under 15 seconds, in seven languages.',
     },
   },
   {
     slug: 'kleap-ai-builder',
+    publishedAt: '2026-09-22',
     client: 'Kleap',
     industry: 'SaaS / AI',
     services: ['ai-services', 'software-engineering'],
@@ -943,13 +952,14 @@ export const cases: CaseData[] = [
     ],
     relatedCases: ['post-acute-clinic-network', 'go-valais'],
     meta: {
-      title: 'Kleap AI Website Builder — Trident Software Case Study',
+      title: 'Kleap AI Website Builder | Trident Software',
       description:
         'How we built an AI-powered website generator that creates complete sites from a single text prompt in under 60 seconds.',
     },
   },
   {
     slug: 'zenit-auto-b2b',
+    publishedAt: '2026-09-22',
     client: 'Zenit Auto',
     industry: 'Automotive Parts / B2B E-commerce',
     services: ['software-engineering'],
@@ -973,13 +983,14 @@ export const cases: CaseData[] = [
     ],
     relatedCases: ['vesna-auto-b2b', 'tires-online-shop'],
     meta: {
-      title: 'Zenit Auto B2B Platform — Trident Software Case Study',
+      title: 'Zenit Auto B2B Platform | Trident Software',
       description:
         'B2B auto parts e-commerce platform with 500K SKUs, tiered dealer pricing, VIN search, and real-time multi-warehouse stock.',
     },
   },
   {
     slug: '8move-driver',
+    publishedAt: '2026-09-22',
     client: '8Move',
     industry: 'Logistics / Last-mile Delivery',
     services: ['software-engineering'],
@@ -1002,13 +1013,14 @@ export const cases: CaseData[] = [
     ],
     relatedCases: ['8move-admin', '8move-client'],
     meta: {
-      title: '8Move Driver App — Trident Software Case Study',
+      title: '8Move Driver App | Trident Software',
       description:
         'Cross-platform Flutter app for last-mile delivery drivers with offline capability, real-time routing, and proof-of-delivery.',
     },
   },
   {
     slug: 'tdsbot-iot',
+    publishedAt: '2026-09-22',
     client: 'TDSbot',
     industry: 'Water Treatment / IoT',
     services: ['embedded-and-iot', 'software-engineering'],
@@ -1032,13 +1044,14 @@ export const cases: CaseData[] = [
     ],
     relatedCases: ['post-acute-clinic-network'],
     meta: {
-      title: 'TDSbot IoT Water Monitor — Trident Software Case Study',
+      title: 'TDSbot IoT Water Monitor | Trident Software',
       description:
         'IoT water quality monitoring system for industrial plants. ESP32 sensors, MQTT, InfluxDB, Grafana. Real-time alerting.',
     },
   },
   {
     slug: 'lapochette',
+    publishedAt: '2026-09-22',
     client: 'LaPochette',
     industry: 'Fashion & Luxury',
     services: ['software-engineering'],
@@ -1061,13 +1074,14 @@ export const cases: CaseData[] = [
     ],
     relatedCases: ['samange-fashion', 'flashhub'],
     meta: {
-      title: 'LaPochette Luxury Bag Rental — Trident Software Case Study',
+      title: 'LaPochette Luxury Bag Rental | Trident Software',
       description:
         'Two-sided marketplace for luxury designer handbag rentals. Stripe escrow, authenticity verification, premium UX.',
     },
   },
   {
     slug: 'iam-trade',
+    publishedAt: '2026-09-22',
     client: 'IAM Trade',
     industry: 'B2B E-commerce',
     services: ['software-engineering'],
@@ -1096,6 +1110,7 @@ export const cases: CaseData[] = [
   },
   {
     slug: 'arenawave',
+    publishedAt: '2026-09-22',
     client: 'ArenaWave',
     industry: 'Sports Tech / IoT',
     services: ['software-engineering', 'embedded-and-iot'],
@@ -1117,12 +1132,13 @@ export const cases: CaseData[] = [
     ],
     relatedCases: ['tdsbot-iot', '8move-driver'],
     meta: {
-      title: 'ArenaWave Smart Court System — Trident Software Case Study',
+      title: 'ArenaWave Smart Court System | Trident Software',
       description: 'IoT-powered sports court management system with automated booking, smart access control, and facility analytics.',
     },
   },
   {
     slug: 'go-valais',
+    publishedAt: '2026-09-22',
     client: 'GO-Valais Expat Club',
     industry: 'Community / NGO',
     services: ['software-engineering'],
@@ -1150,7 +1166,7 @@ export const cases: CaseData[] = [
     },
     relatedCases: ['kleap-ai-builder', 'lapochette'],
     meta: {
-      title: 'GO-Valais Expat Community Portal — Trident Software Case Study',
+      title: 'GO-Valais Expat Community Portal | Trident Software',
       description: 'Community web portal for expatriates in Valais, Switzerland — event calendar, multilingual resources, and self-managed CMS.',
     },
   },

@@ -32,7 +32,7 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
   const current = LOCALES.find((l) => l.code === currentLocale) ?? LOCALES[0]
 
   return (
-    <DropdownMenu.Root>
+    <DropdownMenu.Root modal={false}>
       <DropdownMenu.Trigger asChild>
         <button
           aria-label="Change language"
@@ -45,7 +45,7 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
           }
         >
           <Globe size={14} className="shrink-0" aria-hidden="true" />
-          {current.short}
+          {current.label}
           <span className="chev" aria-hidden="true">
             ▾
           </span>
@@ -56,7 +56,7 @@ export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
         <DropdownMenu.Content
           align="end"
           sideOffset={10}
-          className={`z-50 min-w-[132px] rounded-[2px] py-1.5 ${
+          className={`z-[70] min-w-[132px] rounded-[2px] py-1.5 ${
             tone === 'light'
               ? 'border border-[#E3E5E8] bg-white shadow-[0_2px_10px_rgba(17,19,24,0.07)]'
               : 'border border-white/10 bg-[#0F1216] shadow-xl shadow-black/30'

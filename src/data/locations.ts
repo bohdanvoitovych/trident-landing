@@ -42,7 +42,7 @@ export const locations: LocationData[] = [
     meta: {
       title: 'Software Development Zurich | Trident Software Switzerland',
       description:
-        'Custom software development in Zurich. We build AI-powered tools, fintech platforms, and enterprise web apps for Zurich companies. Swiss quality, Valais pricing.',
+        'Custom software development in Zurich. We build AI-powered tools, fintech platforms, and enterprise web apps for Zurich firms. Swiss quality, Valais pricing.',
     },
   },
   {

@@ -34,7 +34,7 @@ export const industries: IndustryData[] = [
     relatedServices: ['ai-services', 'software-engineering'],
     meta: {
       title: 'Trade, wholesale and building materials | Trident Software',
-      description: 'High enquiry volume, repetitive product and availability questions, orders that must become deliveries. The natural hand-off into Fleet Planner and Driver Pro is the reason this sits first.',
+      description: 'High enquiry volume, repetitive product and availability questions, orders that must become deliveries — the natural hand-off into Fleet Planner and Driver Pro.',
     },
   },
   {
@@ -68,7 +68,7 @@ export const industries: IndustryData[] = [
     relatedServices: ['software-engineering', 'ai-services'],
     meta: {
       title: 'Real estate and property management | Trident Software',
-      description: 'Viewing requests arrive in the evening; a tenant reporting a broken boiler at 22:00 needs triage, not a voicemail box. Qualification and scheduling are almost entirely rule-based.',
+      description: 'Viewing requests arrive in the evening; a tenant reporting a broken boiler at 22:00 needs triage, not voicemail. Qualification and scheduling are rule-based.',
     },
   },
   {
@@ -228,7 +228,7 @@ export const industries: IndustryData[] = [
     relatedServices: ['ai-services', 'software-engineering'],
     meta: {
       title: 'Professional services and trades | Trident Software',
-      description: 'Craftsmen, installers, consultancies — small teams, no reception, every missed call is a lost mandate. Lowest volume, but the highest value per conversation saved.',
+      description: 'Craftsmen, installers, consultancies — small teams, no reception, every missed call is a lost mandate. Low volume, high value per conversation.',
     },
   },
   {
@@ -261,7 +261,7 @@ export const industries: IndustryData[] = [
     relatedServices: ['cto-as-a-service', 'ai-services'],
     meta: {
       title: 'Startups and scale-ups — CTO as a Service | Trident Software',
-      description: 'The one entry on this list that is not an agent. A founding team with no technical leader, or one that has outgrown its first developers, buys days per month of ours instead of a hire: what to automate and what to leave alone, build versus buy, which model provider and where the data sits, what the architecture has to survive at ten times the volume, and who to hire first.',
+      description: 'Fractional CTO for founders without a technical leader: build versus buy, architecture, and who to hire first — billed in days per month, not a hire.',
     },
   },
   {
@@ -364,7 +364,7 @@ export const industries: IndustryData[] = [
     relatedServices: ['embedded-and-iot', 'ai-services'],
     meta: {
       title: 'Manufacturing | Trident Software',
-      description: 'Wherever a manufacturer carries a warranty obligation for a product that fails because of how it is used, in conditions the manufacturer cannot see. The first step is a free 45-minute audit.',
+      description: "Wherever a manufacturer carries a warranty obligation for misuse in conditions they can't see. Starts with a free 45-minute audit.",
     },
   },
   {
