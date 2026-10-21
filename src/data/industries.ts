@@ -27,8 +27,30 @@ export const industries: IndustryData[] = [
     description:
       'The natural hand-off into Fleet Planner and Driver Pro is the reason this sits first.',
     icon: 'truck',
-    challenges: [],
-    solutions: [],
+    challenges: [
+      {
+        title: 'Growth capped by how many people can answer the phone',
+        description:
+          'Orders arrive by telephone and messenger, and each one occupies a person for several minutes. Demand follows the building season, so the desk that needs six people in May needs three in February — and hiring for the peak means dismissing four months later, with notice periods and training paid twice a year.',
+      },
+      {
+        title: 'Confirming a load means four calendars agreeing',
+        description:
+          'The customer\'s time window, the plant\'s loading slots and weighbridge queue, the carrier\'s driving-time rules, and — for removals and cross-border loads — a disposal facility and the customs and waste paperwork in place before the truck leaves.',
+      },
+    ],
+    solutions: [
+      {
+        title: 'What the agent does',
+        description:
+          'Takes reorders from known customers end to end: recognises the account, prices on their agreed terms, checks stock, and books a slot the dispatch model has confirmed is deliverable. Pushes ETAs before the site asks for them and recalculates when reality moves.',
+      },
+      {
+        title: 'Result',
+        description:
+          'Sixty-five per cent of reorder volume taken without a person. Dispatch planning fell from four to six hours a day to thirty minutes of approval, and transport cost is down six per cent.',
+      },
+    ],
     techStack: [],
     relatedCases: ['building-materials-order-to-load'],
     relatedServices: ['ai-services', 'software-engineering'],
@@ -221,8 +243,35 @@ export const industries: IndustryData[] = [
     description:
       'Lowest volume, but the highest value per conversation saved.',
     icon: 'wrench',
-    challenges: [],
-    solutions: [],
+    challenges: [
+      {
+        title: 'The bottleneck is reading, not accounting',
+        description:
+          'A Swiss fiduciary keeps its clients\' books, so its raw material is other people\'s paper — and many client companies use the firm\'s address as their official correspondence address, so the morning post is the mail of dozens of separate legal entities in one pile. An operator opened every letter, scanned it, read it to work out which client it belonged to and which manager was responsible, judged urgency and routed it — slow, and forgettable in a profession where deadlines are statutory.',
+      },
+      {
+        title: 'Foreign-script receipts are a verification risk',
+        description:
+          'Clients send till receipts as phone photos or by post. A meaningful share arrive in Cyrillic, Chinese or Arabic, where an operator who cannot read the script cannot verify what they are keying.',
+      },
+      {
+        title: 'Precondition',
+        description:
+          'Swiss rules permit destroying most operational documents after scanning only where the scanning procedure is documented and internally controlled and the archive meets the GeBüV requirements for the ten-year retention period — with contracts, securities and notarial deeds excluded from replacement scanning entirely.',
+      },
+    ],
+    solutions: [
+      {
+        title: 'Scan-and-route for incoming mail',
+        description:
+          'OCR reads the scan, the system identifies the client from the content and looks up the assigned manager, an AI produces a short summary and priority, and the system creates a task with the manager notified immediately — or, where the letter needs the client to act, e-mails the client directly with the scan and the instruction.',
+      },
+      {
+        title: 'Photo-and-post for expense receipts',
+        description:
+          'A mobile app the client uses at the moment of purchase: OCR for merchant, date, total and VAT, a domain model proposing the accounting category and payment method, and the result posted into the accounting system without re-entry.',
+      },
+    ],
     techStack: [],
     relatedCases: ['fiduciary-mail-and-receipts'],
     relatedServices: ['ai-services', 'software-engineering'],
@@ -254,8 +303,23 @@ export const industries: IndustryData[] = [
     description:
       'A founding team with no technical leader, or one that has outgrown its first developers, buys days per month of ours instead of a hire: what to automate and what to leave alone, build versus buy, which model provider and where the data sits, what the architecture has to survive at ten times the volume, and who to hire first. Also used the other way round — technical due diligence on a software asset before an investment, and interim leadership after it. Bought in days, not in headcount, and the deliverable is a decision you can defend to a board.',
     icon: 'users',
-    challenges: [],
-    solutions: [],
+    challenges: [
+      {
+        title: 'What a technical co-founder would normally decide',
+        description:
+          'What to automate and what to leave alone, build versus buy, which model provider and where the data sits, what the architecture has to survive at ten times the volume, and who to hire first.',
+      },
+    ],
+    solutions: [
+      {
+        title: 'Bought in days, not headcount',
+        description: 'Days per month of ours instead of a hire, and the deliverable is a decision you can defend to a board.',
+      },
+      {
+        title: 'Works the other way round too',
+        description: 'Technical due diligence on a software asset before an investment, and interim leadership after it.',
+      },
+    ],
     techStack: [],
     relatedCases: [],
     relatedServices: ['cto-as-a-service', 'ai-services'],
@@ -308,7 +372,7 @@ export const industries: IndustryData[] = [
       { title: 'Supply chain visibility', description: 'Multi-carrier tracking and exception management dashboards.' },
       { title: 'Route optimization', description: 'AI-based route planning reducing fuel costs and delivery windows.' },
     ],
-    techStack: ['Python', 'Django', 'React Native', 'PostgreSQL', 'Redis', 'RabbitMQ', 'GCP'],
+    techStack: ['Python', 'Django', 'React Native', 'PostgreSQL', 'Redis', 'RabbitMQ', 'AWS'],
     relatedCases: ['8move-driver'],
     relatedServices: ['software-engineering', 'ai-services', 'mobile-development'],
     meta: {
@@ -357,8 +421,30 @@ export const industries: IndustryData[] = [
     description:
       'Wherever a manufacturer carries a warranty obligation for a product that fails because of how it is used, in conditions the manufacturer cannot see. The first step is a free 45-minute audit.',
     icon: 'factory',
-    challenges: [],
-    solutions: [],
+    challenges: [
+      {
+        title: 'Warranty cost was structural, not accidental',
+        description:
+          'Warranty service was costing 1.37 % of revenue — above the average published for appliance and HVAC manufacturers. Field analysis put as much as 85 % of failures down to water rather than manufacturing defects, but the contract requires water within specification and nothing measured it, so every claim got paid because there were no grounds to refuse a bad-water repair.',
+      },
+      {
+        title: 'Precondition',
+        description:
+          'A component set that can be measured in a circuit, OEM customers willing to have the device fitted, and a service network that will work in the portal. This only becomes a revenue line if the machine manufacturers see the warranty evidence as their instrument too.',
+      },
+    ],
+    solutions: [
+      {
+        title: 'Measure the cause, not just the symptom',
+        description:
+          'A device in the water line measures TDS before and after the filter, plus flow and temperature. Telemetry streams to a platform that raises alerts carrying the cause rather than the symptom, with an equipment portal for the manufacturer and a predictive model that schedules service by litres passed.',
+      },
+      {
+        title: 'Result',
+        description:
+          'Warranty service cost fell from 1.37 % to 0.51 % of revenue. Service scheduling moved from the calendar to litres passed, and the cost centre became a product line: the device sells once per installation, the subscription runs every month the machine runs.',
+      },
+    ],
     techStack: [],
     relatedCases: ['warranty-control-component-maker'],
     relatedServices: ['embedded-and-iot', 'ai-services'],

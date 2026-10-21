@@ -57,7 +57,7 @@ export const posts: BlogPost[] = [
     content: `## Automechanika Dubai 2025\n\nAutomechanika Dubai is the premier international trade fair for the automotive aftermarket industry, convening global suppliers, distributors, and innovators to showcase cutting-edge technologies and establish strategic partnerships. The 2025 edition runs December 9–11 at the Dubai World Trade Centre.\n\n## What We're Showcasing\n\nAt Hall 8, Booth F18, Trident Software will demonstrate a full suite of digital solutions spanning the automotive spare parts value chain. Our B2B web portal for spare parts sales features real-time catalog management, streamlined order processing, and ERP system integration. The 8Move logistics app provides route optimization, real-time delivery tracking, and performance analytics for distribution teams.\n\nWe'll also demonstrate our mobile warehouse application for inventory management with barcode scanning, ERP integration services for unified business visibility, and AI-powered assistants that automate routine tasks including price list uploads and product data generation to optimize stock levels based on purchase analytics.\n\n## Come Meet Us\n\nIf you're attending Automechanika Dubai 2025, find us at Hall 8, Booth F18. We look forward to discussing how our digital ecosystem can address operational challenges specific to your automotive aftermarket business.`,
     meta: {
       title: 'Automechanika Dubai 2025 — Trident Software at Hall 8, Booth F18',
-      description: 'Meet Trident Software at Automechanika Dubai 2025, December 9–11. See our B2B spare parts portal, 8Move logistics app, and AI automation tools at Hall 8, Booth F18.',
+      description: 'Meet Trident Software at Automechanika Dubai 2025. See our B2B spare parts portal, 8Move logistics app, and AI automation tools at Hall 8, Booth F18.',
     },
   },
   {
@@ -714,7 +714,7 @@ export const posts: BlogPost[] = [
     },
     meta: {
       title: 'La Pochette Online Shop — WooCommerce Redesign by Trident Software',
-      description: 'How Trident Software launched a WooCommerce-powered online shop for La Pochette, replacing a limited site with a full eCommerce experience for restaurant supply.',
+      description: 'How Trident Software launched a WooCommerce shop for La Pochette, replacing a limited site with a full eCommerce experience for restaurant supply.',
     },
   },
   {
@@ -1105,7 +1105,7 @@ Contact Trident Software for a cloud security assessment and implementation plan
     relatedPosts: ['strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions', 'iot-blockchain-can-it-truly-deliver'],
     meta: {
       title: 'Cloud Security on a Budget for SMBs | Trident Software',
-      description: 'How small businesses can implement enterprise-grade cloud security using AWS Lambda for just cents per month. Practical guide with AWS IAM, GuardDuty, and Security Hub.',
+      description: 'How small businesses can implement enterprise-grade cloud security using AWS Lambda for cents per month. Guide covers AWS IAM, GuardDuty, and Security Hub.',
     },
   },
   {
@@ -1497,7 +1497,7 @@ This panel is available as a standalone product or as an integration layer for e
     },
     meta: {
       title: 'B2B Client Management Panel with 5-Level Access Control | Trident Software',
-      description: 'New B2B management panel with hierarchical access control across distributors, dealers, customers, and consumers. Real-time monitoring and customizable subscriptions.',
+      description: 'New B2B management panel with hierarchical access control across distributors, dealers, and customers. Real-time monitoring and custom subscriptions.',
     },
   },
   {
@@ -1626,7 +1626,7 @@ Contact Trident Software for a cloud security assessment. We'll map your current
     relatedPosts: ['secure-your-cloud-on-a-budget-a-guide-for-smbs', 'iot-blockchain-can-it-truly-deliver'],
     meta: {
       title: 'AWS Cloud Security for SMBs | Trident Software',
-      description: 'How to implement enterprise-grade security (AWS IAM, GuardDuty, KMS, Security Hub) at an SMB budget. 60% of cyberattacks target small businesses — here\'s how to defend.',
+      description: 'How to implement enterprise-grade security (AWS IAM, GuardDuty, KMS, Security Hub) at SMB budget — and why 60% of cyberattacks target small businesses.',
     },
   },
   {
@@ -2062,7 +2062,7 @@ Our current preferred model: **fixed-price per phase, not per project**. Each ph
     },
     meta: {
       title: 'Fixed-Price Software Contracts: Pros, Cons & When to Use Them',
-      description: 'Decision framework for fixed-price vs T&M software contracts. What terms protect both sides, when fixed-price fails, and the hybrid phase-based model that works.',
+      description: 'Decision framework for fixed-price vs T&M contracts: what terms protect both sides, when fixed-price fails, and the hybrid phase-based model that works.',
     },
   },
   {
@@ -2466,7 +2466,7 @@ RTL (Arabic) support is better in Flutter's layout system than in React Native, 
     },
     meta: {
       title: 'React Native vs Flutter for Swiss Mobile Projects 2026 — Trident',
-      description: 'Practical decision guide for React Native vs Flutter in Swiss mobile projects. Team skills, performance, UI customization, multilingual support, and hiring pool compared.',
+      description: 'Decision guide for React Native vs Flutter in Swiss mobile projects: team skills, performance, UI customization, multilingual support, and hiring pool.',
     },
   },
   {
@@ -2755,7 +2755,7 @@ Question 4 is the one most clients skip. Custom software requires ongoing engine
     },
     meta: {
       title: 'Custom ERP vs Off-the-Shelf for Swiss Companies | Trident Software',
-      description: 'Decision framework for Swiss companies choosing between custom ERP and platforms like SAP, Abacus, or Odoo. Cost comparison, hybrid approach, and when custom wins.',
+      description: 'Decision framework for Swiss companies choosing between custom ERP and platforms like SAP, Abacus, or Odoo — cost comparison and when custom wins.',
     },
   },
   {
@@ -2908,7 +2908,7 @@ Cost comparison for 1,000 invoices/month: Claude API ~CHF 40, GPT-4V ~CHF 55, Te
     },
     meta: {
       title: 'AI Document Processing for Invoices and Contracts | Trident Software',
-      description: 'Real-world architecture for AI invoice and contract processing: document classification, OCR pipeline, LLM extraction prompts, validation layer, and model cost comparison.',
+      description: 'Architecture for AI invoice and contract processing: document classification, OCR pipeline, LLM extraction, validation layer, and model cost comparison.',
     },
   },
   {
@@ -3039,7 +3039,7 @@ The Swiss engineering maxim applies: don't pay for infrastructure complexity you
     },
     meta: {
       title: 'Microservices vs Monolith for Startup MVPs | Trident Software',
-      description: 'Why microservices are wrong for most MVPs, what problems they actually solve, the modular monolith middle path, and when services are genuinely justified from day one.',
+      description: 'Why microservices are wrong for most MVPs, what problems they actually solve, the modular monolith middle path, and when services are truly justified.',
     },
   },
   {
@@ -3193,7 +3193,7 @@ Teams that follow this pattern consistently report: 40% faster component develop
     },
     meta: {
       title: 'Tailwind CSS Design Systems for Product Companies | Trident Software',
-      description: 'How to build a real design system on top of Tailwind CSS: design tokens in config, CVA component variants, Storybook documentation, and component audit workflow.',
+      description: 'How to build a real design system on Tailwind CSS: design tokens, CVA component variants, Storybook documentation, and component audit workflow.',
     },
   },
   {
@@ -3342,7 +3342,7 @@ Use structured logging with a consistent schema from day one. Retrofitting obser
     },
     meta: {
       title: 'API Gateway Patterns for B2B Integrations | Trident Software',
-      description: 'Standardize B2B integrations with the right API gateway pattern: auth layers by partner type, rate limiting feedback, adapter pattern for schema normalization, and observability requirements.',
+      description: 'Standardize B2B integrations with the right API gateway pattern: auth layers by partner type, rate limiting, schema normalization, and observability.',
     },
   },
   {
@@ -3459,7 +3459,7 @@ If your system fails these under test, you have weeks to fix it before the actua
     ],
     meta: {
       title: 'Load Testing with k6 for Swiss E-Commerce | Trident Software',
-      description: 'How Swiss e-commerce teams use k6 for load testing: test scenarios for checkout flows, common performance bottlenecks, Swiss hosting considerations, and pass/fail thresholds.',
+      description: 'How Swiss e-commerce teams use k6 for load testing: checkout-flow scenarios, common bottlenecks, hosting considerations, and pass/fail thresholds.',
     },
   },
   {
@@ -3619,7 +3619,7 @@ The teams that succeed treat it as ongoing hygiene, not a project with a deadlin
     },
     meta: {
       title: 'TypeScript Migration for Legacy Codebases | Trident Software',
-      description: 'Incremental TypeScript migration strategy that works: permissive Phase 1 setup, file prioritization by value, any budget tracking, and strict mode activation in stages.',
+      description: 'Incremental TypeScript migration strategy: permissive Phase 1 setup, file prioritization by value, any-budget tracking, and staged strict mode activation.',
     },
   },
   {
@@ -3927,7 +3927,7 @@ Server-Sent Events (SSE) are often the better choice for one-directional updates
     },
     meta: {
       title: 'WebSocket Real-Time Features in Next.js | Trident Software',
-      description: 'How to implement WebSocket real-time features alongside Next.js: standalone WebSocket server, Redis pub/sub event bus, React hooks, and when to use Server-Sent Events instead.',
+      description: 'How to implement WebSocket real-time features alongside Next.js: standalone server, Redis pub/sub event bus, React hooks, and when to use SSE instead.',
     },
   },
   {
@@ -4091,7 +4091,7 @@ The prod override removes volume mounts, sets NODE_ENV=production, and uses envi
     ],
     meta: {
       title: 'Docker Compose for Local Dev Environments | Trident Software',
-      description: 'Docker Compose configuration for full-stack JavaScript projects: complete setup with PostgreSQL, Redis, mail server, hot reload, one-command onboarding, and common pitfalls.',
+      description: 'Docker Compose setup for full-stack JavaScript projects: PostgreSQL, Redis, mail server, hot reload, one-command onboarding, and common pitfalls.',
     },
   },
   {
@@ -4255,7 +4255,7 @@ Budget 2–3 days for an initial accessibility audit of a medium-complexity web 
     },
     meta: {
       title: 'WCAG 2.1 Accessibility for Swiss Public Sector Apps | Trident Software',
-      description: 'Swiss BehiG/BehiV accessibility compliance guide: most commonly failed WCAG 2.1 AA criteria, practical code fixes, automated testing with axe, and screen reader testing.',
+      description: 'Swiss BehiG/BehiV accessibility guide: most commonly failed WCAG 2.1 AA criteria, practical code fixes, automated testing with axe, and screen reader testing.',
     },
   },
   {
@@ -4379,7 +4379,7 @@ Start with Claude 3.5 Haiku for most SME workloads — balanced quality, 200K co
     ],
     meta: {
       title: 'OpenAI vs Anthropic API Cost Comparison for SMEs | Trident Software',
-      description: 'Realistic API cost comparison for SME workloads: document processing, chatbots, code generation. Includes prompt caching impact and decision framework for model selection.',
+      description: 'Realistic API cost comparison for SME workloads: document processing, chatbots, code generation, prompt caching impact, and a model-selection framework.',
     },
   },
   {
@@ -4547,7 +4547,7 @@ Target: total CI test time under 8 minutes. Beyond that, developers start skippi
         excerpt: 'Kleine Entwicklungsteams können keine vollständige Testabdeckung leisten. Die Testpyramide pragmatisch anwenden: maximale Fehlererkennung bei minimalem Wartungsaufwand.',
         meta: {
           title: 'Testpyramide für kleine Teams | Trident Software',
-          description: 'Praktische automatisierte Testpyramide für 2–8 Entwickler: Unit-Tests für Geschäftslogik, Integrationstests mit höchstem ROI, 5–10 E2E-Flows und schnelle CI-Konfiguration.',
+          description: 'Praktische Testpyramide für 2–8 Entwickler: Unit-Tests für Geschäftslogik, Integrationstests mit höchstem ROI, 5–10 E2E-Flows und schnelle CI-Konfiguration.',
         },
       },
       fr: {
