@@ -54,7 +54,7 @@ try {
   setAside()
   const { status } = spawnSync(
     'pnpm',
-    ['exec', 'opennextjs-cloudflare', 'build'],
+    ['exec', 'opennextjs-cloudflare', 'build', '--dangerouslyUseUnsupportedNextVersion'],
     {
       cwd: root,
       stdio: 'inherit',
