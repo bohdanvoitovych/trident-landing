@@ -9,9 +9,10 @@ import { Reveal } from '@/components/molecules/Reveal'
 import './styles.css'
 import './trident.css'
 
+// Variable font: one file per subset covers exactly the 400–700 range we use,
+// instead of four static files per subset.
 const instrumentSans = Instrument_Sans({
   subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500', '600', '700'],
   variable: '--font-instrument-sans',
   display: 'swap',
 })
@@ -21,6 +22,9 @@ const ibmPlexMono = IBM_Plex_Mono({
   weight: ['400', '500', '600'],
   variable: '--font-ibm-plex-mono',
   display: 'swap',
+  // Mono is only used for small labels; don't let it compete with the
+  // headline font for early bandwidth.
+  preload: false,
 })
 
 export const viewport: Viewport = {

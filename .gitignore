@@ -33,3 +33,4 @@ next-env.d.ts
 .open-next/
 .wrangler/
 .cf-build/
+design/redesign-2026/qa/*.png

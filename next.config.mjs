@@ -11,6 +11,9 @@ const isCloudflare = process.env.CF_BUILD === '1'
 const nextConfig = {
   output: isCloudflare ? undefined : 'standalone',
   poweredByHeader: false,
+  // Render <meta>/<title> in <head> for every client instead of streaming
+  // them into <body> (Lighthouse and some crawlers only read <head>).
+  htmlLimitedBots: /.*/,
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'trident-software.ch', pathname: '/wp-content/uploads/**' },

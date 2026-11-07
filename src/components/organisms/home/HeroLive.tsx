@@ -56,7 +56,7 @@ export function HeroTagline() {
   }, [active])
 
   return (
-    <div ref={ref} className="tagline rise" style={{ animationDelay: '.7s' }}>
+    <div ref={ref} className="tagline rise" style={{ animationDelay: '.7s' }} data-loop>
       <span className="tagline-code" aria-hidden="true">
         {ROT[i].c}
       </span>
@@ -132,7 +132,7 @@ export function HeroLog({ lines, title, note, chipLabel, chipNote }: LogProps) {
         </div>
         <ol className="hero-log-body" aria-label={title}>
           {rows.map((r) => (
-            <li key={r.key} className={r.isNew ? 'log-row is-new' : 'log-row'} style={{ opacity: r.op }}>
+            <li key={r.key} className={r.isNew ? 'log-row is-new' : r.op < 1 ? 'log-row old' : 'log-row'}>
               <span className="t">{r.time}</span>
               <span className="ch">
                 {r.ch} {r.lang}
@@ -146,7 +146,9 @@ export function HeroLog({ lines, title, note, chipLabel, chipNote }: LogProps) {
       <div className="hero-chip floaty floaty--d2" data-loop>
         <span className="k">{chipLabel}</span>
         <span className="v">{(1284 + n).toLocaleString('en-US').replace(/,/g, ' ')}</span>
-        <span className="ok">● {chipNote}</span>
+        <span className="ok">
+          <i aria-hidden="true">●</i> {chipNote}
+        </span>
       </div>
     </>
   )

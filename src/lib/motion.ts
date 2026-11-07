@@ -15,6 +15,25 @@ export function useActive(ref: RefObject<Element | null>, rootMargin = '0px'): b
   const [inView, setInView] = useState(false)
   const [visible, setVisible] = useState(true)
   const [reduced, setReduced] = useState(true)
+  const [ready, setReady] = useState(false)
+
+  // Timers start only once the page has loaded and the main thread is idle,
+  // so they never compete with first paint and hydration.
+  useEffect(() => {
+    let idle = 0
+    const go = () => {
+      const ric = (window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback
+      idle = ric ? ric(() => setReady(true), { timeout: 2500 }) : window.setTimeout(() => setReady(true), 1200)
+    }
+    if (document.readyState === 'complete') go()
+    else window.addEventListener('load', go, { once: true })
+    return () => {
+      window.removeEventListener('load', go)
+      const cic = (window as Window & { cancelIdleCallback?: (id: number) => void }).cancelIdleCallback
+      if (cic) cic(idle)
+      else window.clearTimeout(idle)
+    }
+  }, [])
 
   useEffect(() => {
     setReduced(prefersReducedMotion())
@@ -31,5 +50,5 @@ export function useActive(ref: RefObject<Element | null>, rootMargin = '0px'): b
     }
   }, [ref, rootMargin])
 
-  return inView && visible && !reduced
+  return ready && inView && visible && !reduced
 }
