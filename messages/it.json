@@ -100,5 +100,182 @@
     "description": "La pagina che stai cercando non esiste.",
     "goHome": "Vai alla homepage",
     "viewServices": "I nostri servizi"
+  },
+  "ui": {
+    "skip": "Skip to main content",
+    "home": "Trident Software, home",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "mainNav": "Main",
+    "siteLanguage": "Site language",
+    "breadcrumb": "Breadcrumb",
+    "nav": {
+      "services": "Services",
+      "useCases": "Use cases",
+      "projects": "Projects",
+      "about": "About",
+      "blog": "Blog",
+      "contact": "Contact",
+      "freeAudit": "Free audit"
+    },
+    "actions": {
+      "allServices": "All services",
+      "allUseCases": "All use cases",
+      "allCases": "All case studies",
+      "meetTeam": "Meet the team",
+      "allQuestions": "All questions",
+      "allArticles": "All articles",
+      "askDirectly": "Ask us directly",
+      "learnMore": "Learn more",
+      "read": "Read",
+      "bookAudit": "Book the audit",
+      "seeResults": "See results",
+      "backHome": "Back to home"
+    },
+    "hero": {
+      "logTitle": "Agent · Valais Materials · live",
+      "logNote": "Sat evening · illustrative",
+      "conversationsToday": "conversations today",
+      "medianReply": "median first reply 4 s",
+      "log": {
+        "1": "Enquiry: 8 t Kies 0/16 nach Siders → answered",
+        "2": "Stock checked · slots Mo 07:30 / 13:00 offered",
+        "3": "Order confirmed → QR-bill sent",
+        "4": "Contact, deal and transcript → HubSpot",
+        "5": "Delivery note matched to order, no mismatch",
+        "6": "Delivery to Zermatt? → coverage and surcharge",
+        "7": "Price negotiation → handed to sales, Mon 08:00",
+        "8": "« Où est ma livraison ? » → live tracking sent"
+      },
+      "statSrc": {
+        "clinic": "Clinic network · CH",
+        "maker": "Component maker · IT · measured",
+        "agent": "Sales agent",
+        "residency": "Data residency"
+      },
+      "photoAlt": "Server room where the agents run"
+    },
+    "problem": {
+      "gap": "That's the gap."
+    },
+    "agent": {
+      "conversationLanguage": "Conversation language",
+      "crm": "→ CRM · structured fields",
+      "product": "product",
+      "qty": "qty",
+      "slot": "slot",
+      "language": "language"
+    },
+    "race": {
+      "label": "Response race",
+      "title": "A portal enquiry at 21:47 on Saturday. Who answers first?",
+      "start": "Send the enquiry →",
+      "running": "Running…",
+      "again": "Run it again ↻",
+      "agent": "Trident agent",
+      "agentDone": "✓ Replied · viewing offered",
+      "market": "Market median, letting agencies in Romandie",
+      "marketDone": "Sun 12:59",
+      "note": "First reply <15 s by design vs market median >15 h. Modelled scenario."
+    },
+    "cases": {
+      "before": "before",
+      "after": "after",
+      "measured": "MEASURED",
+      "modelled": "MODELLED",
+      "moreCases": "More cases"
+    },
+    "process": {
+      "drag": "Drag through the project",
+      "day": "Day {day}",
+      "play": "Play ▶",
+      "pause": "Pause ❙❙"
+    },
+    "calc": {
+      "minutes": "Minutes a person spends per enquiry",
+      "minutesValue": "{n} min",
+      "hoursFreed": "routine work freed per month",
+      "fte": "full-time positions of queue work",
+      "worth": "Worth a 45-minute audit.",
+      "notYet": "Not yet.",
+      "notYetText": "The numbers don't clear the build cost. We'd rather tell you now."
+    },
+    "clients": {
+      "label": "Clients",
+      "title": "Trusted by companies in Switzerland and Europe",
+      "namedReferences": "Named references, available on request"
+    },
+    "testimonials": {
+      "prev": "Previous testimonial",
+      "next": "Next testimonial",
+      "group": "Testimonials",
+      "item": "Testimonial {n}"
+    },
+    "partners": {
+      "lookingLabel": "Partners and portfolio work",
+      "lookingIntro": "Engagements where software is core to the business case rather than a support function."
+    },
+    "faq": {
+      "questions": "Questions",
+      "didntFind": "Didn't find your question?",
+      "search": "Search questions…",
+      "searchLabel": "Search the FAQ",
+      "noResults": "No question matches “{q}”.",
+      "results": "{count, plural, one {# question} other {# questions}}"
+    },
+    "blog": {
+      "pagination": "Articles {from}–{to} of {total} · page {page} of {pages}",
+      "prev": "← Prev",
+      "next": "Next →",
+      "pages": "Pages",
+      "page": "Page {n}",
+      "filter": "Filter by category",
+      "all": "All",
+      "minRead": "{n} min read",
+      "writtenBy": "Written by"
+    },
+    "team": {
+      "filter": "Filter by discipline",
+      "all": "All"
+    },
+    "audit": {
+      "label": "Free audit",
+      "whatHappensNext": "What happens next",
+      "steps": {
+        "1": "Free 45-minute audit on your volumes, response times and systems",
+        "2": "Your own ROI model and a straight answer, including \"not yet\"",
+        "3": "One channel, one scenario, one month",
+        "4": "Decision on evidence: extend, adjust or stop"
+      },
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "topic": "What it's about",
+      "optional": "(optional)",
+      "message": "Message",
+      "messagePlaceholder": "Enquiry volumes, channels, systems…",
+      "other": "Other / not sure yet",
+      "required": "Required",
+      "invalidEmail": "Enter a valid email address",
+      "consentRequired": "Please confirm consent",
+      "sending": "Sending…",
+      "error": "Something went wrong. Please try again or write to info@trident-software.ch.",
+      "sendAnother": "Send another",
+      "done": "Thank you. A named engineer replies within 24 business hours."
+    },
+    "footer": {
+      "brand": "Operational software and AI agents, built in Switzerland. Senior engineers, fixed budgets, compliance included.",
+      "hosting": "CH / EU hosting",
+      "services": "Services",
+      "company": "Company",
+      "explore": "Explore",
+      "contact": "Contact",
+      "legal": "Legal",
+      "faq": "FAQ"
+    },
+    "cookie": {
+      "label": "Cookie notice"
+    }
   }
 }
