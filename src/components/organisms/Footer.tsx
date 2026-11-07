@@ -40,7 +40,7 @@ const COLUMNS = [
       { href: '/industries', label: 'Industries' },
       { href: '/solutions', label: 'Solutions' },
       { href: '/products', label: 'Products' },
-      { href: '/site-price', label: 'Pricing' },
+      { href: '/pricing', label: 'Pricing' },
       { href: '/technologies', label: 'Technologies' },
       { href: '/locations', label: 'Locations' },
       { href: '/faq', label: 'FAQ' },

@@ -434,6 +434,10 @@ const nextConfig = {
         { source: '/:locale(en|de|fr|it)/:path*', destination: '/:path*' },
         { source: '/:locale(en|de|fr|it)', destination: '/' },
       ],
+      // /site-price 301s to /pricing (old WordPress URL map), but the page
+      // lives in the site-price folder. Serve it at /pricing so the redirect
+      // target resolves instead of 404ing.
+      afterFiles: [{ source: '/pricing', destination: '/site-price' }],
     }
   },
 
