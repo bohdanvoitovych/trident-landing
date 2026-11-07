@@ -1,6 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import { team } from '@/data/team'
+import { SectionHeader } from '@/components/molecules/SectionHeader'
+import { TeamCard } from '@/components/molecules/TeamCard'
 
 // Leadership and management first — the people a prospect actually meets.
 const ORDER = ['Leadership', 'Management']
@@ -13,37 +14,19 @@ const FEATURED = [...team]
   .slice(0, 8)
 
 export function Team() {
+  const t = useTranslations('ui.actions')
   return (
-    <section className="sec" id="team" data-screen-label="Team">
-      <div className="wrap">
-        <div className="sec-head-row">
-          <div className="t">
-            <span className="label">Who you work with</span>
-            <h2 className="h2">The same people from audit to handover</h2>
-          </div>
-          <Link href="/team" className="btn btn-outline">
-            Meet the team <span className="ar">→</span>
-          </Link>
-        </div>
-
-        <div className="team-grid">
-          {FEATURED.map((member) => (
-            <article key={member.slug} className="team-card rv">
-              <div className="team-shot">
-                {member.image && (
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    sizes="(max-width: 620px) 50vw, (max-width: 1000px) 33vw, 25vw"
-                    className="slot-img team-portrait"
-                  />
-                )}
-              </div>
-              <h3 className="team-name">{member.name}</h3>
-              <p className="team-role">{member.role}</p>
-              <p className="team-loc">{member.location}</p>
-            </article>
+    <section className="section" id="team" aria-labelledby="team-h">
+      <div className="container">
+        <SectionHeader
+          id="team-h"
+          label="Who you work with"
+          title="The same people from audit to handover"
+          action={{ href: '/team', label: t('meetTeam') }}
+        />
+        <div className="grid-4 keep-2 team-grid stagger">
+          {FEATURED.map((m) => (
+            <TeamCard key={m.slug} member={m} />
           ))}
         </div>
       </div>

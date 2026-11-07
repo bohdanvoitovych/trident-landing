@@ -1,31 +1,75 @@
 import Image from 'next/image'
+import { SectionHeader } from '@/components/molecules/SectionHeader'
+import { Tag } from '@/components/atoms/controls'
 
-export function Products() {
+const PRODUCTS = [
+  {
+    tag: 'In production',
+    title: '8Move: logistics platform',
+    text: 'Order intake, dispatch, driver app with photo proof and signature, live tracking, automated invoicing. In use with Swiss and European operators.',
+    points: ['Passenger transport edition', 'Construction-material haulage edition', 'Last-mile delivery edition'],
+    link: { href: 'https://8move.com', label: '8move.com' },
+    img: '/images/stock/dispatch.jpg',
+    alt: 'Delivery fleet',
+  },
+  {
+    tag: 'Delivered',
+    title: 'WaterTDS: connected water device',
+    text: 'Firmware, cloud, rules engine, dealer portal and consumer app, from kick-off to first installations in 9 months.',
+    points: ['Peak team of 6, steady state 3', 'Maintenance by litres, not by calendar'],
+    link: { href: 'https://watertds.com', label: 'watertds.com' },
+    img: '/images/stock/water-device.jpg',
+    alt: 'Water infrastructure',
+  },
+  {
+    tag: 'Delivered 2025',
+    title: 'Document recognition and recommendation engine',
+    text: 'The two AI patterns that pay back fastest: reading documents nobody wants to read, and deciding what to offer next from live data.',
+    points: ['Document pipeline delivered in 4 months, ~2,500 documents a month', 'Recommendation engine delivered in 3 months'],
+    img: '/images/stock/warehouse-2.jpg',
+    alt: 'Stock the documents describe',
+  },
+]
+
+/** Moved from the home page to /products. */
+export function Products({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2' }) {
   return (
-      <section className="sec alt" id="products" data-screen-label="Products"><div className="wrap">
-        <div className="sec-head"><span className="label">Our products</span><h2 className="h2">We build what we maintain ourselves</h2><p className="lede">A product company that consults, not an agency that sells hours.</p></div>
-        <div className="feats">
-          <div className="feat rv"><div className="feat-t">
-            <span className="badge m">In production</span>
-            <h3 className="h3" style={{ marginTop: '14px' }}>8Move: logistics platform</h3>
-            <p className="body" style={{ marginTop: '12px' }}>Order intake, dispatch, driver app with photo proof and signature, live tracking, automated invoicing. In use with Swiss and European operators.</p>
-            <ul><li>Passenger transport edition</li><li>Construction-material haulage edition</li><li>Last-mile delivery edition</li></ul>
-            <a href="#" className="link" style={{ marginTop: '18px' }}>8move.com <span className="ar">→</span></a>
-          </div><div className="shot"><Image src="/images/stock/dispatch.jpg" alt="Delivery fleet" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div></div>
-          <div className="feat rv"><div className="feat-t">
-            <span className="badge m">Delivered</span>
-            <h3 className="h3" style={{ marginTop: '14px' }}>WaterTDS: connected water device</h3>
-            <p className="body" style={{ marginTop: '12px' }}>Firmware, cloud, rules engine, dealer portal and consumer app, from kick-off to first installations in 9 months.</p>
-            <ul><li>Peak team of 6, steady state 3</li><li>Maintenance by litres, not by calendar</li></ul>
-            <a href="#" className="link" style={{ marginTop: '18px' }}>watertds.com <span className="ar">→</span></a>
-          </div><div className="shot"><Image src="/images/stock/water-device.jpg" alt="Water infrastructure" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div></div>
-          <div className="feat rv"><div className="feat-t">
-            <span className="badge m">Delivered 2025</span>
-            <h3 className="h3" style={{ marginTop: '14px' }}>Document recognition and recommendation engine</h3>
-            <p className="body" style={{ marginTop: '12px' }}>The two AI patterns that pay back fastest: reading documents nobody wants to read, and deciding what to offer next from live data.</p>
-            <ul><li>Document pipeline delivered in <b>4 months</b>, ~2,500 documents a month</li><li>Recommendation engine delivered in <b>3 months</b></li></ul>
-          </div><div className="shot"><Image src="/images/stock/warehouse-2.jpg" alt="Stock the documents describe" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div></div>
+    <section className="section section--alt" id="products" aria-labelledby="products-h">
+      <div className="container">
+        <SectionHeader
+          id="products-h"
+          as={headingLevel}
+          label="Our products"
+          title="We build what we maintain ourselves"
+          lead="A product company that consults, not an agency that sells hours."
+        />
+        <div className="grid-3 stagger wipe">
+          {PRODUCTS.map((p) => (
+            <article key={p.title} className="card svc-card card--flat">
+              <div className="media">
+                <Image src={p.img} alt={p.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px" />
+              </div>
+              <div className="card-body">
+                <Tag tone="blue" className="self-start">
+                  {p.tag}
+                </Tag>
+                <h3 className="card-title">{p.title}</h3>
+                <p className="body">{p.text}</p>
+                <ul className="ticks">
+                  {p.points.map((pt) => (
+                    <li key={pt}>{pt}</li>
+                  ))}
+                </ul>
+                {p.link && (
+                  <a href={p.link.href} className="text-link" style={{ marginTop: 'auto', paddingTop: 8 }} target="_blank" rel="noopener noreferrer">
+                    {p.link.label} <span className="go" aria-hidden="true">→</span>
+                  </a>
+                )}
+              </div>
+            </article>
+          ))}
         </div>
-      </div></section>
+      </div>
+    </section>
   )
 }

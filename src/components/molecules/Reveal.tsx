@@ -55,6 +55,7 @@ export function Reveal() {
       pending.forEach((el) => {
         el.classList.add('in')
         countUp(el)
+        if (el.classList.contains('stagger')) window.setTimeout(() => el.classList.add('done'), 1500)
       })
       pending.clear()
     }
@@ -82,7 +83,7 @@ export function Reveal() {
       document.querySelectorAll(`${REVEAL}`).forEach((el) => {
         if (el.classList.contains('in')) return
         if (reduced) {
-          el.classList.add('in')
+          el.classList.add('in', 'done')
           return
         }
         io.observe(el)

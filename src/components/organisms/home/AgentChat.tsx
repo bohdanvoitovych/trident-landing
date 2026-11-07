@@ -1,20 +1,16 @@
-import Image from 'next/image'
-import { getLocale } from 'next-intl/server'
+'use client'
+
+import { useId, useRef, useState, type KeyboardEvent } from 'react'
 
 type Line =
   | { kind: 'in'; text: string; meta: string }
   | { kind: 'out'; text: string; meta: string }
   | { kind: 'card'; title: string; badge: string; detail: string }
 
-type Script = {
-  title: string
-  channel: string
-  status: string
-  lines: Line[]
-}
+type Script = { title: string; channel: string; status: string; lines: Line[] }
 
-// The agent answers in the customer's language, so the demo shows the
-// conversation in whichever language the visitor is reading the site in.
+// A demo of the four conversation languages. The tabs are independent of the
+// site locale; they only start on it.
 const SCRIPTS: Record<string, Script> = {
   en: {
     title: 'Agent · Valais Materials',
@@ -65,38 +61,98 @@ const SCRIPTS: Record<string, Script> = {
     ],
   },
 }
+const LANGS = ['en', 'de', 'fr', 'it'] as const
 
-export async function AgentChat() {
-  const locale = await getLocale()
-  const script = SCRIPTS[locale] ?? SCRIPTS.en
+type Labels = { group: string; crm: string; product: string; qty: string; slot: string; language: string }
+
+export function AgentChat({ initial, labels }: { initial: string; labels: Labels }) {
+  const [lang, setLang] = useState<string>(SCRIPTS[initial] ? initial : 'en')
+  const id = useId()
+  const tabs = useRef<(HTMLButtonElement | null)[]>([])
+  const s = SCRIPTS[lang]
+
+  const onKey = (e: KeyboardEvent, i: number) => {
+    const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0
+    if (!d) return
+    e.preventDefault()
+    const n = (i + d + LANGS.length) % LANGS.length
+    setLang(LANGS[n])
+    tabs.current[n]?.focus()
+  }
 
   return (
-    <div className="chat" id="chat" aria-label="Example conversation">
-      <div className="chat-hd">
-        <span className="av">
-          <Image src="/images/trident-symbol.png" alt="" width={32} height={32} />
-        </span>
-        <div>
-          <b>{script.title}</b>
-          <small>{script.channel}</small>
+    <div className="chat">
+      <div className="chat-head">
+        <div className="chat-id">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/trident-icon-white.svg" alt="" width={30} height={14} />
+          <div>
+            <b>{s.title}</b>
+            <small>{s.status}</small>
+          </div>
         </div>
-        <span className="live">{script.status}</span>
+        <div role="tablist" aria-label={labels.group} className="chat-tabs">
+          {LANGS.map((l, i) => (
+            <button
+              key={l}
+              ref={(el) => {
+                tabs.current[i] = el
+              }}
+              type="button"
+              role="tab"
+              id={`${id}-t-${l}`}
+              aria-selected={lang === l}
+              aria-controls={`${id}-p-${l}`}
+              tabIndex={lang === l ? 0 : -1}
+              className="seg"
+              onClick={() => setLang(l)}
+              onKeyDown={(e) => onKey(e, i)}
+            >
+              {l.toUpperCase()}
+            </button>
+          ))}
+        </div>
       </div>
-
-      {script.lines.map((line, i) =>
-        line.kind === 'card' ? (
-          <div className="slotcard" key={i}>
-            <b>{line.title}</b>
-            <span className="ok">{line.badge}</span>
-            <span>{line.detail}</span>
-          </div>
-        ) : (
-          <div className={`bub ${line.kind}`} key={i}>
-            {line.text}
-            <span className="meta">{line.meta}</span>
-          </div>
-        ),
-      )}
+      {LANGS.map((l) => (
+        <div
+          key={l}
+          role="tabpanel"
+          id={`${id}-p-${l}`}
+          aria-labelledby={`${id}-t-${l}`}
+          className="chat-body"
+          lang={l}
+          hidden={lang !== l}
+        >
+          {SCRIPTS[l].lines.map((line, i) =>
+            line.kind === 'card' ? (
+              <div className="bub--c" key={i}>
+                <b>✓ {line.title}</b>
+                <span>
+                  {line.badge} · {line.detail}
+                </span>
+              </div>
+            ) : (
+              <div className={line.kind === 'in' ? 'bub bub--u' : 'bub bub--a'} key={i}>
+                <p>{line.text}</p>
+                <small>{line.meta}</small>
+              </div>
+            ),
+          )}
+        </div>
+      ))}
+      <div className="crm">
+        <p className="h">{labels.crm}</p>
+        <dl>
+        <dt>{labels.product}</dt>
+        <dd>0/16 gravel</dd>
+        <dt>{labels.qty}</dt>
+        <dd>8 t</dd>
+        <dt>{labels.slot}</dt>
+        <dd>Mon 07:30</dd>
+        <dt>{labels.language}</dt>
+        <dd className="blue">{lang.toUpperCase()}</dd>
+        </dl>
+      </div>
     </div>
   )
 }

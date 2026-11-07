@@ -1,20 +1,116 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { StatCard } from '@/components/molecules/StatCard'
+import { SwissFlag } from '@/components/atoms/controls'
+import { HeroLog, HeroTagline } from './HeroLive'
+
+const H1 = 'Operational software and AI agents, built in Switzerland'
+const BLUE = new Set(['AI', 'agents,'])
+
 export function Hero() {
+  const t = useTranslations('ui')
+  const log = (['1', '2', '3', '4', '5', '6', '7', '8'] as const).map((k) => t(`hero.log.${k}`))
+
   return (
-      <header className="hero-ch" data-screen-label="Hero"><div className="wrap">
-        <span className="hero-tag">Sion, Valais · HES-SO Valais-Wallis</span>
-        <h1>Operational software and AI agents, built in <span className="ch">Switzerland</span></h1>
-        <div className="hero-say" aria-live="polite"><span className="lang" id="sayLang">DE</span><span className="txt" id="sayTxt">Antwortet in Sekunden. Rund um die Uhr.</span></div>
-        <p className="hero-lede" style={{ marginTop: '22px' }}>We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers, qualifies and processes documents in four national languages.</p>
-        <div className="hero-cta">
-          <a href="#contact" className="btn btn-primary">Book a free 45-min audit <span className="ar">→</span></a>
-          <a href="#cases" className="btn btn-outline">See results <span className="ar">→</span></a>
+    <section className="hero" aria-labelledby="hero-h">
+      <div className="hero-blob hero-blob--a" aria-hidden="true" data-loop />
+      <div className="hero-blob hero-blob--b" aria-hidden="true" data-loop />
+      <div className="container hero-grid">
+        <div className="hero-copy">
+          <p className="hero-tag fadein" style={{ margin: 0 }}>
+            <span className="pulse pulse--ok" data-loop />
+            Sion, Valais · HES-SO Valais-Wallis
+          </p>
+          <h1 id="hero-h" className="h1">
+            {H1.split(' ').map((w, i) => (
+              <span key={i}>
+                <span className="wm">
+                  <span className={BLUE.has(w) ? 'wd wd--blue' : 'wd'} style={{ animationDelay: `${120 + i * 70}ms` }}>
+                    {w}
+                  </span>
+                </span>{' '}
+              </span>
+            ))}
+          </h1>
+          <HeroTagline />
+          <p className="lead rise" style={{ animationDelay: '.85s', maxWidth: 600 }}>
+            We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI
+            layer that answers, qualifies and processes documents in four national languages.
+          </p>
+          <div className="hero-ctas rise" style={{ animationDelay: '1s' }}>
+            <Link href="/contact" className="btn btn--primary">
+              <span>
+                Book a free 45-min audit
+                <i className="arr" aria-hidden="true">
+                  →
+                </i>
+              </span>
+            </Link>
+            <Link href="#results" className="btn btn--outline">
+              <span>
+                {t('actions.seeResults')}
+                <i className="arr" aria-hidden="true">
+                  →
+                </i>
+              </span>
+            </Link>
+          </div>
         </div>
-        <div className="hero-facts">
-          <div><div className="v">−92 %</div><div className="k">Clinic admission time, measured</div></div>
-          <div><div className="v">−63 %</div><div className="k">Warranty cost, component maker</div></div>
-          <div><div className="v">Month 2</div><div className="k">Typical payback on a sales agent</div></div>
-          <div><div className="v">CH / EU</div><div className="k">Hosting, under revFADP and GDPR</div></div>
+
+        <div className="hero-visual rise" style={{ animationDelay: '.4s' }}>
+          <div className="hero-photo media">
+            <Image
+              src="/images/stock/ai-agent.jpg"
+              alt={t('hero.photoAlt')}
+              fill
+              priority
+              fetchPriority="high"
+              sizes="(max-width: 640px) 92vw, (max-width: 1100px) 720px, 600px"
+            />
+          </div>
+          <HeroLog
+            lines={log}
+            title={t('hero.logTitle')}
+            note={t('hero.logNote')}
+            chipLabel={t('hero.conversationsToday')}
+            chipNote={t('hero.medianReply')}
+          />
         </div>
-      </div></header>
+      </div>
+
+      <div className="container hero-stats">
+        <div className="grid-4 keep-2 gap-tight stagger">
+          <StatCard
+            source={t('hero.statSrc.clinic')}
+            value="−92 %"
+            description="Clinic admission time, measured"
+            visual={{ kind: 'bar', before: 1, after: 0.08 }}
+          />
+          <StatCard
+            source={t('hero.statSrc.maker')}
+            value="−63 %"
+            description="Warranty cost, component maker"
+            visual={{ kind: 'beforeAfter', after: 0.37 }}
+          />
+          <StatCard
+            source={t('hero.statSrc.agent')}
+            value="Month 2"
+            description="Typical payback on a sales agent"
+            visual={{ kind: 'months', month: 2 }}
+          />
+          <StatCard
+            source={t('hero.statSrc.residency')}
+            value={
+              <>
+                CH / EU <SwissFlag />
+              </>
+            }
+            description="Hosting, under revFADP and GDPR"
+            visual={{ kind: 'tags', tags: ['revFADP', 'GDPR'] }}
+          />
+        </div>
+      </div>
+    </section>
   )
 }

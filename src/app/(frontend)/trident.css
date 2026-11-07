@@ -217,8 +217,8 @@ html.js-rv .stagger.in > * { opacity: 1; transform: none; }
 .stagger > *:nth-child(5){transition-delay:.32s}.stagger > *:nth-child(6){transition-delay:.40s}.stagger > *:nth-child(7){transition-delay:.48s}.stagger > *:nth-child(n+8){transition-delay:.56s}
 html.js-rv .wipe .media { clip-path: inset(0 0 100% 0); transition: clip-path 1.2s var(--ease); }
 html.js-rv .wipe.in .media { clip-path: inset(0 0 0 0); }
-/* card hover lift must not wait for the stagger delay */
-.stagger.in > .card { transition-delay: 0s; }
+/* once revealed, hover transitions must not wait for the stagger delay */
+.stagger.done > * { transition-delay: 0s !important; }
 
 /* Loops: paused off-screen (.is-off on the element), in a hidden tab and during scroll */
 .marquee { display: flex; gap: 14px; width: max-content; animation: marquee 60s linear infinite; }
@@ -313,7 +313,7 @@ body.menu-open { overflow: hidden; }
 .hero-log-head > span { display: flex; align-items: center; gap: 8px; min-width: 0; }
 .hero-log-head .muted { color: var(--on-dark-3); white-space: nowrap; }
 .hero-log-body { height: 216px; overflow: hidden; list-style: none; margin: 0; padding: 0; }
-.log-row { display: grid; grid-template-columns: 38px 76px minmax(0,1fr) 30px; gap: 8px; align-items: center; padding: 11px 16px; border-bottom: 1px solid rgba(255,255,255,.06); font-size: 12.5px; position: relative; }
+.log-row { display: grid; grid-template-columns: 38px 86px minmax(0,1fr) 30px; gap: 8px; align-items: center; padding: 11px 16px; border-bottom: 1px solid rgba(255,255,255,.06); font-size: 12.5px; position: relative; }
 .log-row > * { min-width: 0; }
 .log-row .t { font: 400 11px var(--font-mono); color: var(--on-dark-3); }
 .log-row .ch { font: 400 10.5px var(--font-mono); border: 1px solid rgba(255,255,255,.2); border-radius: var(--radius); padding: 2px 4px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -431,7 +431,8 @@ html.js-rv .reveal:not(.in) .dot.on::after { opacity: 0; transform: scale(.4); }
 .bub--c b { font-size: 14px; font-weight: 600; color: #86EFAC; }
 .bub--c span { font: 400 12px var(--font-mono); color: rgba(255,255,255,.75); }
 .crm { border-top: 1px solid rgba(255,255,255,.1); padding: 14px 18px; background: #0B0E11; font: 400 12px/1.9 var(--font-mono); display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; column-gap: 14px; margin: 0; }
-.crm .h { grid-column: 1 / -1; color: rgba(255,255,255,.55); }
+.crm .h { grid-column: 1 / -1; color: rgba(255,255,255,.55); margin: 0; }
+.crm dl { display: contents; }
 .crm dt { color: rgba(255,255,255,.55); }
 .crm dd { margin: 0; }
 
@@ -766,7 +767,8 @@ a.uc-card:hover::after, a.uc-card:focus-visible::after { transform: scaleX(1); }
   .hero-log { width: 100%; max-width: 400px; }
   .hero-chip { right: 10px; top: 12px; min-width: 0; padding: 10px 12px; }
   .hero-chip .v { font-size: 20px; }
-  .log-row { grid-template-columns: 36px 64px minmax(0,1fr) 26px; gap: 6px; padding: 10px 12px; font-size: 12px; }
+  .log-row { grid-template-columns: 34px 76px minmax(0,1fr) 26px; gap: 6px; padding: 10px 12px; font-size: 12px; }
+  .log-row .ch { font-size: 10px; padding: 2px 3px; }
   .gap-panel { grid-template-columns: minmax(0,1fr); }
   .gap-panel .dots { max-width: 260px; }
   .uc-card { grid-template-columns: 56px minmax(0,1fr); }
@@ -802,4 +804,16 @@ a.uc-card:hover::after, a.uc-card:focus-visible::after { transform: scaleX(1); }
   html.js-rv .reveal:not(.in) .dot.on::after { opacity: 1; transform: none; }
   html.js-rv .reveal:not(.in) .ring-arc, html.js-rv .stagger:not(.in) .ring-arc { stroke-dashoffset: var(--off) !important; }
   .caret { display: none; }
+}
+
+/* ---- Late fixes (mobile QA) ---------------------------------------------- */
+.site-header .btn { white-space: nowrap; }
+.chat .blue { color: var(--blue-l); }
+@media (max-width: 640px) {
+  .hero-log-head { flex-wrap: wrap; row-gap: 4px; }
+  .hero-log-head .muted { white-space: normal; }
+}
+@media (max-width: 380px) {
+  .site-header .btn--sm { padding: 10px 12px; font-size: 13px; }
+  .site-header .btn .arr { display: none; }
 }

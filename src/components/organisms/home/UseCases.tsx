@@ -1,8 +1,59 @@
+import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { SectionHeader } from '@/components/molecules/SectionHeader'
+import { useCases } from '@/data/use-cases'
+
+export function UseCaseCard({ n, glyph, title, text, needs, href }: { n: number; glyph: string; title: string; text: string; needs: string; href?: string }) {
+  const inner = (
+    <>
+      <div className="uc-num" aria-hidden="true">
+        <b>{String(n).padStart(2, '0')}</b>
+        <span>{glyph}</span>
+      </div>
+      <div className="uc-body">
+        <h3 className="uc-title">
+          {title}
+          {href && (
+            <span className="go" aria-hidden="true">
+              →
+            </span>
+          )}
+        </h3>
+        <p className="body">{text}</p>
+        <p className="needs">
+          <b>NEEDS</b>
+          {needs}
+        </p>
+      </div>
+    </>
+  )
+  return href ? (
+    <Link href={href} className="card uc-card">
+      {inner}
+    </Link>
+  ) : (
+    <div className="card uc-card card--flat">{inner}</div>
+  )
+}
+
 export function UseCases() {
+  const t = useTranslations('ui.actions')
   return (
-      <section className="sec" id="usecases" data-screen-label="Use cases"><div className="wrap">
-        <div className="sec-head"><span className="label">Use cases</span><h2 className="h2">Eight patterns where an agent pays for itself</h2><p className="lede">Each comes with a precondition. Most failed AI projects fail there, not in the model.</p></div>
-        <div className="ucs"><div className="uc rv"><span className="n">01</span><h3 className="h4">Inbound enquiry handling</h3><p className="body-s">Answers in seconds on every channel, qualifies, books, writes into the CRM. Replaces the queue, not a person.</p><p className="pre"><b>Needs:</b> Answers exist in writing: price list, catalogue, terms.</p></div><div className="uc rv"><span className="n">02</span><h3 className="h4">Document processing</h3><p className="body-s">Reads invoices, delivery notes and forms, matches them to records, flags mismatches, writes structured data.</p><p className="pre"><b>Needs:</b> A clear definition of which field goes where.</p></div><div className="uc rv"><span className="n">03</span><h3 className="h4">Order intake from messages</h3><p className="body-s">Turns "the usual pallet" on WhatsApp into a draft order the customer confirms in one message.</p><p className="pre"><b>Needs:</b> Customer order history in a system.</p></div><div className="uc rv"><span className="n">04</span><h3 className="h4">Dispatcher assistant</h3><p className="body-s">Proposes assignment and sequence, explains why, recalculates on change. The dispatcher decides.</p><p className="pre"><b>Needs:</b> Built as advice, never silent overrule.</p></div><div className="uc rv"><span className="n">05</span><h3 className="h4">Search over company knowledge</h3><p className="body-s">Answers from contracts, manuals and policies with citations. Says "not found" instead of inventing.</p><p className="pre"><b>Needs:</b> Document hygiene: no three contradictory versions.</p></div><div className="uc rv"><span className="n">06</span><h3 className="h4">Recommendation</h3><p className="body-s">Proposes the next offer from live stock, margin and history, with the reason attached.</p><p className="pre"><b>Needs:</b> Transaction history and live stock data.</p></div><div className="uc rv"><span className="n">07</span><h3 className="h4">Status and self-service</h3><p className="body-s">"Where is my delivery?" answered from live data. Resends invoices, reschedules.</p><p className="pre"><b>Needs:</b> Operational system with readable status.</p></div><div className="uc rv"><span className="n">08</span><h3 className="h4">Back-office triage</h3><p className="body-s">Sorts, summarises and routes incoming work to the right person or system.</p><p className="pre"><b>Needs:</b> Agreed routing rules.</p></div></div>
-      </div></section>
+    <section className="section" id="usecases" aria-labelledby="uc-h">
+      <div className="container">
+        <SectionHeader
+          id="uc-h"
+          label="Use cases"
+          title="Eight patterns where an agent pays for itself"
+          lead="Each comes with a precondition. Most failed AI projects fail there, not in the model."
+          action={{ href: '/use-cases', label: t('allUseCases') }}
+        />
+        <div className="grid-2 stagger" style={{ gap: 16 }}>
+          {useCases.map((u, i) => (
+            <UseCaseCard key={u.title} n={i + 1} {...u} href={`/use-cases#uc-${i + 1}`} />
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }

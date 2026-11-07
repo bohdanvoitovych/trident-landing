@@ -1,39 +1,93 @@
-import Image from 'next/image'
+import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { SectionHeader } from '@/components/molecules/SectionHeader'
+import { CaseCard } from '@/components/molecules/CaseCard'
 
 export function Cases() {
+  const t = useTranslations('ui')
   return (
-      <section className="sec alt" id="cases" data-screen-label="Cases"><div className="wrap">
-        <div className="sec-head">
-          <span className="label">Results</span>
-          <h2 className="h2">Delivered, then counted</h2>
-          <p className="lede">Each case is labelled: <b>measured</b> means counted in production; <b>modelled</b> means calculated from real volumes.</p>
+    <section className="section section--alt" id="results" aria-labelledby="results-h">
+      <div className="container">
+        <SectionHeader
+          id="results-h"
+          label="Results"
+          title="Delivered, then counted"
+          lead={
+            <>
+              Each case is labelled: <b style={{ color: 'var(--ink)' }}>measured</b> means counted in production;{' '}
+              <b style={{ color: 'var(--ink)' }}>modelled</b> means calculated from real volumes.
+            </>
+          }
+          action={{ href: '/cases', label: t('actions.allCases') }}
+        />
+        <div className="grid-3 stagger wipe">
+          <CaseCard
+            href="/cases"
+            image="/images/stock/clinic.jpg"
+            imageAlt="Clinic corridor"
+            sector="Post-acute clinic network · CH"
+            title="From a bundle of paper to a coded SwissDRG invoice"
+            description="The assistant reads the admission file, drafts the discharge letter for the physician to sign, and prepares a validated invoice."
+            metric={{ value: '−92 %', label: 'Admission time' }}
+            label="measured"
+            bars={[
+              { label: 'Discharge letter', value: '−78 %', before: 100, after: 22 },
+              { label: 'Invoice ready, was 10–15', value: '2 days', before: 100, after: 16 },
+            ]}
+          />
+          <CaseCard
+            href="/cases"
+            image="/images/stock/clinic-2.jpg"
+            imageAlt="Medical practice interior"
+            sector="Multi-disciplinary practice · CH"
+            title="Voice consultation to TARDOC invoice"
+            description="Physicians spent 35 % of their time documenting. Now the consultation becomes the report and the coded invoice."
+            metric={{ value: '+30.8 %', label: 'Consultations, same salary' }}
+            label="measured"
+            bars={[
+              { label: 'Time per invoice', value: '−84 %', before: 100, after: 16 },
+              { label: 'Faster payment', value: '3.5×', before: 100, after: 29 },
+            ]}
+          />
+          <CaseCard
+            href="/cases"
+            image="/images/stock/water-telemetry.jpg"
+            imageAlt="Water treatment infrastructure"
+            sector="Component manufacturer · IT"
+            title="Up to 85 % of failures came from water, not defects"
+            description="A device, telemetry and portals turned every warranty claim into a decision based on data."
+            metric={{ value: '−63 %', label: 'Warranty cost' }}
+            label="measured"
+            bars={[
+              { label: 'Of revenue, was 1.37 %', value: '0.51 %', before: 100, after: 37 },
+              { label: 'New revenue lines', value: '+2', before: 0, after: 100 },
+            ]}
+          />
         </div>
-        <div className="cases-v2">
-          <article className="cs cs-lead rv"><div className="shot"><Image src="/images/stock/clinic.jpg" alt="Clinic corridor" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
-            <div className="cs-top"><span className="cs-who">Post-acute clinic network · CH</span><span className="badge m">Measured</span></div>
-            <h3 className="h3">From a bundle of paper to a coded SwissDRG invoice</h3>
-            <p className="body-s">The assistant reads the admission file, drafts the discharge letter for the physician to sign, and prepares a validated invoice.</p>
-            <div className="cs-nums"><div><div className="v">−92 %</div><div className="k">Admission time</div></div><div><div className="v">−78 %</div><div className="k">Discharge letter</div></div><div><div className="v">2 days</div><div className="k">Invoice ready, was 10–15</div></div></div>
-          </div></article>
-          <div className="cases-pair"><article className="cs rv"><div className="shot"><Image src="/images/stock/clinic-2.jpg" alt="Medical practice interior" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
-            <div className="cs-top"><span className="cs-who">Multi-disciplinary practice · CH</span><span className="badge m">Measured</span></div>
-            <h3 className="h3">Voice consultation to TARDOC invoice</h3>
-            <p className="body-s">Physicians spent 35 % of their time documenting. Now the consultation becomes the report and the coded invoice.</p>
-            <div className="cs-nums"><div><div className="v">+30.8 %</div><div className="k">Consultations, same salary</div></div><div><div className="v">−84 %</div><div className="k">Time per invoice</div></div><div><div className="v">3.5×</div><div className="k">Faster payment</div></div></div>
-          </div></article><article className="cs rv"><div className="shot"><Image src="/images/stock/water-telemetry.jpg" alt="Water treatment infrastructure" fill sizes="(max-width: 860px) 100vw, 50vw" className="slot-img" /></div><div className="cs-b">
-            <div className="cs-top"><span className="cs-who">Component manufacturer · IT</span><span className="badge m">Measured</span></div>
-            <h3 className="h3">Up to 85 % of failures came from water, not defects</h3>
-            <p className="body-s">A device, telemetry and portals turned every warranty claim into a decision based on data.</p>
-            <div className="cs-nums"><div><div className="v">−63 %</div><div className="k">Warranty cost</div></div><div><div className="v">0.51 %</div><div className="k">Of revenue, was 1.37 %</div></div><div><div className="v">+2</div><div className="k">New revenue lines</div></div></div>
-          </div></article></div>
-          <div className="cs-more">
-            <div className="cs-more-hd"><span className="label-n">More cases</span></div>
-            <a className="cs-row rv" href="#"><span className="who">Fiduciary · CH</span><span className="t">Incoming mail and receipts without re-entry</span><span className="num"><b>−89 %</b> Receipt handling</span><span className="badge d">Modelled</span><span className="ar" aria-hidden="true">→</span></a>
-            <a className="cs-row rv" href="#"><span className="who">Construction materials · scenario</span><span className="t">Order desk to delivered load, without seasonal hiring</span><span className="num"><b>65 %</b> Reorders without a person</span><span className="badge d">Modelled</span><span className="ar" aria-hidden="true">→</span></a>
-            <a className="cs-row rv" href="#"><span className="who">Letting agency, Romandie · scenario</span><span className="t">Portal enquiry to booked viewing</span><span className="num"><b>&lt;15 s</b> First reply, was &gt;15 h</span><span className="badge d">Modelled</span><span className="ar" aria-hidden="true">→</span></a>
-          </div>
-          <div className="cs-all"><a href="#" className="btn btn-outline">All case studies <span className="ar">→</span></a></div>
+        <h3 className="sr-only">{t('cases.moreCases')}</h3>
+        <div className="grid-3 stagger" style={{ marginTop: 20 }}>
+          {[
+            { s: 'Fiduciary · CH', t: 'Incoming mail and receipts without re-entry', v: '−89 %', l: 'Receipt handling' },
+            { s: 'Construction materials · scenario', t: 'Order desk to delivered load, without seasonal hiring', v: '65 %', l: 'Reorders without a person' },
+            { s: 'Letting agency, Romandie · scenario', t: 'Portal enquiry to booked viewing', v: '<15 s', l: 'First reply, was >15 h' },
+          ].map((c) => (
+            <Link key={c.t} href="/cases" className="card more-card">
+              <span className="top">
+                <span>{c.s}</span>
+                <span className="tag tag--wash">{t('cases.modelled')}</span>
+              </span>
+              <span className="t">{c.t}</span>
+              <span className="bottom">
+                <b>{c.v}</b>
+                <span>{c.l}</span>
+                <span className="go" aria-hidden="true">
+                  →
+                </span>
+              </span>
+            </Link>
+          ))}
         </div>
-      </div></section>
+      </div>
+    </section>
   )
 }

@@ -1,32 +1,26 @@
 import { getLocale } from 'next-intl/server'
 import { buildMetadata } from '@/lib/metadata'
 import JsonLd from '@/components/seo/JsonLd'
-import { homePageSchemas } from '@/lib/schema'
+import { faqPageSchema, homePageSchemas } from '@/lib/schema'
+import { homeFaq } from '@/data/faq'
 import { Hero } from '@/components/organisms/home/Hero'
-import { Logos } from '@/components/organisms/home/Logos'
 import { Problem } from '@/components/organisms/home/Problem'
 import { Services } from '@/components/organisms/home/Services'
 import { Agent } from '@/components/organisms/home/Agent'
+import { Race } from '@/components/organisms/home/Race'
 import { UseCases } from '@/components/organisms/home/UseCases'
 import { Cases } from '@/components/organisms/home/Cases'
 import { Industries } from '@/components/organisms/home/Industries'
-import { AgentVsHire } from '@/components/organisms/home/AgentVsHire'
-import { Pricing } from '@/components/organisms/home/Pricing'
-import { Calculator } from '@/components/organisms/home/Calculator'
-import { WhereWeSayNo } from '@/components/organisms/home/WhereWeSayNo'
 import { Process } from '@/components/organisms/home/Process'
-import { Integrations } from '@/components/organisms/home/Integrations'
-import { Products } from '@/components/organisms/home/Products'
-import { Swiss } from '@/components/organisms/home/Swiss'
+import { Calculator } from '@/components/organisms/home/Calculator'
 import { WhyUs } from '@/components/organisms/home/WhyUs'
+import { Swiss } from '@/components/organisms/home/Swiss'
 import { Team } from '@/components/organisms/home/Team'
-import { Partners } from '@/components/organisms/home/Partners'
+import { Logos } from '@/components/organisms/home/Logos'
 import { Testimonials } from '@/components/organisms/home/Testimonials'
-import { References } from '@/components/organisms/home/References'
+import { Partners } from '@/components/organisms/home/Partners'
 import { Faq } from '@/components/organisms/home/Faq'
 import { Blog } from '@/components/organisms/home/Blog'
-import { Contact } from '@/components/organisms/home/Contact'
-import { HomeInteractions } from '@/components/organisms/home/HomeInteractions'
 
 export const revalidate = 3600
 
@@ -41,37 +35,36 @@ export async function generateMetadata() {
   })
 }
 
+// Section order follows design/redesign-2026/README.md (19 sections; the
+// footer with the free-audit block is #19, rendered by the layout).
 export default async function HomePage() {
   const locale = await getLocale()
+  const faqSchema = faqPageSchema(
+    homeFaq.map((f) => ({ question: f.question, answer: f.answer })),
+    locale,
+  )
 
   return (
-    <div className="tds">
-      <JsonLd data={homePageSchemas(locale)} />
+    <>
+      <JsonLd data={[...homePageSchemas(locale), ...(faqSchema ? [faqSchema] : [])]} />
       <Hero />
-      <Logos />
       <Problem />
       <Services />
       <Agent />
+      <Race />
       <UseCases />
       <Cases />
       <Industries />
-      <AgentVsHire />
-      <Pricing />
-      <Calculator />
-      <WhereWeSayNo />
       <Process />
-      <Integrations />
-      <Products />
-      <Swiss />
+      <Calculator />
       <WhyUs />
+      <Swiss />
       <Team />
-      <Partners />
+      <Logos />
       <Testimonials />
-      <References />
+      <Partners />
       <Faq />
       <Blog />
-      <Contact />
-      <HomeInteractions />
-    </div>
+    </>
   )
 }
