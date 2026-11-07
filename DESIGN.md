@@ -1,3 +1,5 @@
+> **Obsolete.** The current design system is [design/redesign-2026/DESIGN-SYSTEM.md](design/redesign-2026/DESIGN-SYSTEM.md).
+
 # Trident Software — Design System
 
 Swiss AI-native software engineering company. Dark-first, technical, trustworthy. No gradients for decoration — only for emphasis. No rounded pill shapes — rectangular with subtle radius. Clean, dense, data-forward like Linear or Vercel.
