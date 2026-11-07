@@ -1,9 +1,13 @@
-import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
-import { getLocale } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { projects, projectSectors } from '@/data/projects'
+import { cases } from '@/data/cases'
 import { buildMetadata } from '@/lib/metadata'
 import { ProjectGrid } from '@/components/molecules/ProjectGrid'
+import { PageHero } from '@/components/molecules/PageHero'
+import { SectionHeader } from '@/components/molecules/SectionHeader'
+import { CaseCard } from '@/components/molecules/CaseCard'
+import { ButtonLink, Label } from '@/components/atoms/controls'
+import { caseImage } from '@/components/templates/CasePage'
 
 export const revalidate = 3600
 
@@ -18,50 +22,73 @@ export async function generateMetadata() {
   })
 }
 
-export default function CasesPage() {
+export default async function CasesPage() {
+  const t = await getTranslations('ui')
+  const tc = await getTranslations('cases')
   const withCase = projects.filter((p) => p.caseSlug).length
 
   return (
-    <div className="flex flex-col">
-      <section className="dark-section py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="eyebrow mb-4">Portfolio</p>
-          <h1 className="text-display mb-4">Delivered, then counted</h1>
-          <p className="text-xl text-muted-foreground max-w-2xl">
+    <>
+      <PageHero
+        crumbs={[{ name: t('nav.projects'), href: '/cases' }]}
+        label="Portfolio"
+        title="Delivered, then counted"
+        lead={
+          <>
             {projects.length} products and platforms built for clients across Switzerland and
             Europe — {withCase} of them written up in full, with the numbers behind them.
-          </p>
+          </>
+        }
+      />
+
+      <section className="section section--alt" aria-labelledby="case-studies-h">
+        <div className="container">
+          <SectionHeader id="case-studies-h" label={tc('results')} title={tc('title')} lead={tc('subtitle')} />
+          <div className="grid-3 stagger wipe">
+            {cases.map((c) => {
+              const [first, ...rest] = c.results
+              return (
+                <CaseCard
+                  key={c.slug}
+                  href={`/cases/${c.slug}`}
+                  image={caseImage(c)}
+                  sector={c.industry}
+                  title={c.hero.title}
+                  description={c.hero.tagline}
+                  metric={first ? { value: first.value, label: first.metric } : undefined}
+                  results={rest}
+                />
+              )
+            })}
+          </div>
         </div>
       </section>
 
       {/* One list, filtered by sector. Entries with a full write-up link to it. */}
-      <section className="py-16 md:py-20 border-t border-[#E3E5E8]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="section" aria-labelledby="projects-h">
+        <div className="container">
+          <SectionHeader id="projects-h" label={t('nav.projects')} title={t('portfolio.projectsTitle')} />
           <ProjectGrid projects={projects} sectors={projectSectors} />
         </div>
       </section>
 
-      <section className="section-alt border-t border-[#E3E5E8] py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-wrap items-end justify-between gap-6">
-          <div>
-            <p className="eyebrow mb-3">Start here</p>
-            <h2 className="text-heading text-[#111318] mb-2">
+      <section className="section section--alt" aria-labelledby="cases-cta-h">
+        <div className="container cta-band reveal">
+          <div className="stack">
+            <Label>Start here</Label>
+            <h2 id="cases-cta-h" className="h2">
               Tell us what you are trying to fix
             </h2>
-            <p className="text-[#4A4F57] max-w-xl">
+            <p className="lead" style={{ maxWidth: 640 }}>
               We read every enquiry ourselves and come back within 24 business hours with an
               honest read on scope.
             </p>
           </div>
-          <Link
-            href="/contact"
-            className="inline-flex h-11 items-center gap-2 rounded-[2px] bg-[#2772E0] px-6 text-[15px] font-medium text-white transition-colors hover:bg-[#1B57B8]"
-          >
+          <ButtonLink href="/contact" arrow>
             Book a free audit
-            <ArrowRight size={15} />
-          </Link>
+          </ButtonLink>
         </div>
       </section>
-    </div>
+    </>
   )
 }

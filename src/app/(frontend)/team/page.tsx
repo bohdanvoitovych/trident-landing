@@ -1,11 +1,10 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { ArrowRight, MapPin, Users, Code2 } from 'lucide-react'
 import { getLocale } from 'next-intl/server'
-import { Button } from '@/components/atoms/button'
+import { ButtonLink, Tag } from '@/components/atoms/controls'
+import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
-import { team, stats, type TeamMember } from '@/data/team'
+import { team, stats } from '@/data/team'
 import { buildMetadata } from '@/lib/metadata'
+import { TeamFilter } from './TeamFilter'
 
 export const revalidate = 3600
 
@@ -20,217 +19,99 @@ export async function generateMetadata() {
   })
 }
 
-const departmentOrder = [
-  'Leadership',
-  'Management',
-  'Frontend',
-  'Backend',
-  'Mobile',
-  'QA',
-  'DevOps',
-] as const
+const departmentOrder = ['Leadership', 'Management', 'Frontend', 'Backend', 'Mobile', 'QA', 'DevOps'] as const
 
 const locations = [
-  {
-    city: 'Sion, Valais',
-    country: 'Switzerland',
-    role: 'HQ · Business Development · Client Relations',
-    flag: 'CH',
-  },
-  {
-    city: 'Kyiv',
-    country: 'Ukraine',
-    role: 'Engineering · Development · QA',
-    flag: 'UA',
-  },
-  {
-    city: 'Tel Aviv',
-    country: 'Israel',
-    role: 'AI Research · Computer Vision · R&D',
-    flag: 'IL',
-  },
+  { city: 'Sion, Valais', country: 'Switzerland', role: 'HQ · Business Development · Client Relations' },
+  { city: 'Kyiv', country: 'Ukraine', role: 'Engineering · Development · QA' },
+  { city: 'Tel Aviv', country: 'Israel', role: 'AI Research · Computer Vision · R&D' },
 ]
 
-function groupByDepartment(members: TeamMember[]) {
-  const grouped: Record<string, TeamMember[]> = {}
-  for (const member of members) {
-    if (!grouped[member.department]) {
-      grouped[member.department] = []
-    }
-    grouped[member.department].push(member)
-  }
-  return grouped
-}
-
 export default function TeamPage() {
-  const grouped = groupByDepartment(team)
-
   return (
-    <div className="flex flex-col">
-      {/* Hero */}
-      <section className="dark-section relative overflow-hidden py-20 md:py-28">
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="eyebrow mb-5">Our Team</p>
-          <h1 className="text-5xl font-bold tracking-tight md:text-6xl mb-6 leading-[1.1] max-w-4xl text-white">
-            26 <span className="gradient-text">senior engineers</span> across 3 countries
-          </h1>
-          <p className="text-xl text-white/60 leading-relaxed mb-8 max-w-2xl">
-            No juniors on client projects. Every engineer has 5+ years of production experience.
-            You get the same people from kickoff to handoff.
-          </p>
-          <div className="flex flex-wrap items-center gap-6 text-sm text-white/40">
-            <div className="flex items-center gap-2">
-              <Users size={14} className="text-primary" />
-              26 engineers
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPin size={14} className="text-primary" />
-              CH · UA · IL
-            </div>
-            <div className="flex items-center gap-2">
-              <Code2 size={14} className="text-primary" />
-              Senior-only
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="section-alt border-b border-[#E3E5E8] py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center">
-                <p className="text-4xl font-bold text-[#111318]">{stat.value}</p>
-                <p className="text-sm text-[#4A4F57] mt-1">{stat.label}</p>
+    <>
+      <PageHero
+        crumbs={[{ name: 'Our Team', href: '/team' }]}
+        label="Our Team"
+        title={
+          <>
+            26 <span className="blue">senior engineers</span> across 3 countries
+          </>
+        }
+        lead="No juniors on client projects. Every engineer has 5+ years of production experience. You get the same people from kickoff to handoff."
+        actions={
+          <ul className="chips" style={{ listStyle: 'none', margin: 0, padding: 0, gap: 6 }}>
+            {['26 engineers', 'CH · UA · IL', 'Senior-only'].map((f) => (
+              <li key={f}>
+                <Tag tone="line">{f}</Tag>
+              </li>
+            ))}
+          </ul>
+        }
+        aside={
+          <dl className="facts stagger" style={{ gridTemplateColumns: 'repeat(2, minmax(0,1fr))', margin: 0 }}>
+            {stats.map((s) => (
+              <div key={s.label} className="card card--flat fact" style={{ flexDirection: 'column-reverse', justifyContent: 'flex-end' }}>
+                <dt className="fact-k">{s.label}</dt>
+                <dd className="fact-v" style={{ margin: 0, fontSize: 'clamp(32px,3.4vw,48px)' }}>
+                  {s.value}
+                </dd>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
+          </dl>
+        }
+      />
 
-      {/* Team by Department */}
-      <section className="bg-white py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="section section--alt" aria-labelledby="people-h">
+        <div className="container">
           <SectionHeader
-            eyebrow="People"
+            id="people-h"
+            label="People"
             title="Meet the team"
-            subtitle="Organized by discipline. Each engineer has 5+ years of commercial experience and stays on the project from kickoff to delivery."
-            className="mb-14"
+            lead="Organized by discipline. Each engineer has 5+ years of commercial experience and stays on the project from kickoff to delivery."
           />
-          <div className="flex flex-col gap-14">
-            {departmentOrder.map((dept) => {
-              const members = grouped[dept]
-              if (!members || members.length === 0) return null
-              return (
-                <div key={dept}>
-                  <div className="flex items-center gap-3 mb-6">
-                    <h3 className="text-xl font-semibold text-[#111318]">{dept}</h3>
-                    <span className="text-sm text-[#4A4F57]">
-                      {members.length} {members.length === 1 ? 'person' : 'people'}
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {members.map((member) => (
-                      <div
-                        key={member.slug}
-                        className="light-card rounded-[3px] overflow-hidden flex flex-col"
-                      >
-                        {member.image && (
-                          <div className="relative aspect-[3/4] w-full bg-[#F6F7F8]">
-                            <Image
-                              src={member.image}
-                              alt={member.name}
-                              fill
-                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                              className="object-cover object-top grayscale"
-                            />
-                          </div>
-                        )}
-                        <div className="p-5 flex flex-col gap-3">
-                        <div>
-                          <p className="font-semibold text-[#111318]">{member.name}</p>
-                          <p className="text-sm text-[#4A4F57]">{member.role}</p>
-                        </div>
-                        <div className="flex items-center gap-1.5 text-xs text-[#4A4F57]">
-                          <MapPin size={12} className="text-primary" />
-                          {member.location}
-                        </div>
-                        <div className="flex flex-wrap gap-1.5 mt-1">
-                          {member.expertise.map((tag) => (
-                            <span
-                              key={tag}
-                              className="inline-flex items-center rounded-[2px] bg-primary/10 px-2 py-0.5 text-[11px] font-medium text-primary"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )
-            })}
-          </div>
+          <TeamFilter members={team} departments={departmentOrder} />
         </div>
       </section>
 
-      {/* Locations */}
-      <section className="py-20 md:py-28 section-alt">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="section" aria-labelledby="where-h">
+        <div className="container">
           <SectionHeader
-            eyebrow="Where we are"
+            id="where-h"
+            label="Where we are"
             title="Three locations, one team"
-            subtitle="CET coverage, multilingual communication, and senior engineers at every location."
-            className="mb-14"
+            lead="CET coverage, multilingual communication, and senior engineers at every location."
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <ul className="grid-3 stagger" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {locations.map((loc) => (
-              <div key={loc.city} className="light-card rounded-[3px] p-6">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[2px] bg-primary/10">
-                    <MapPin size={16} className="text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[#111318]">{loc.city}</p>
-                    <p className="text-sm text-[#4A4F57]">{loc.country}</p>
-                    <p className="text-xs text-[#4A4F57] mt-2 leading-relaxed">{loc.role}</p>
-                  </div>
-                </div>
-              </div>
+              <li key={loc.city} className="card card--flat feature-card">
+                <h3>{loc.city}</h3>
+                <span className="meta">{loc.country}</span>
+                <p>{loc.role}</p>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="dark-section py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Work with our team
-          </h2>
-          <p className="text-white/60 mb-8 text-lg">
-            Tell us about your project. The same engineers you meet at kickoff will deliver it.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button variant="gradient" size="lg" asChild>
-              <Link href="/contact">
-                Start a conversation <ArrowRight size={18} />
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white/[0.12] text-white hover:bg-white/[0.06] bg-transparent"
-              asChild
-            >
-              <Link href="/cases">View our work</Link>
-            </Button>
+      <section className="section section--alt" aria-labelledby="team-cta-h">
+        <div className="container cta-band reveal">
+          <div className="stack">
+            <h2 id="team-cta-h" className="h2">
+              Work with our team
+            </h2>
+            <p className="lead">Tell us about your project. The same engineers you meet at kickoff will deliver it.</p>
+          </div>
+          <div className="hero-ctas">
+            <ButtonLink href="/contact" arrow>
+              Start a conversation
+            </ButtonLink>
+            <ButtonLink href="/cases" variant="outline">
+              View our work
+            </ButtonLink>
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }

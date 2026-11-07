@@ -1,7 +1,7 @@
 'use client'
 
 import { useLocale } from 'next-intl'
-import { MapPin } from 'lucide-react'
+import { cn } from '@/lib/utils'
 
 const PLACE_QUERY = "Trident Software Sarl, Rue de l'Industrie 23, 1950 Sion, Switzerland"
 
@@ -24,9 +24,7 @@ export default function OfficeMap({ className = '' }: { className?: string }) {
   const locale = useLocale()
 
   return (
-    <div
-      className={`overflow-hidden rounded-[2px] border border-[#E3E5E8] flex flex-col ${className}`}
-    >
+    <div className={cn('card card--flat flex flex-col overflow-hidden', className)}>
       <iframe
         src={embedSrc(locale)}
         loading="lazy"
@@ -34,16 +32,18 @@ export default function OfficeMap({ className = '' }: { className?: string }) {
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"
         sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-        className="block w-full flex-1 min-h-[280px]"
+        className="block min-h-[280px] w-full flex-1 border-0 bg-alt"
       />
       <a
         href={FULL_MAP_HREF}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center gap-1.5 border-t border-[#E3E5E8] bg-[#F6F7F8] px-3 py-2.5 text-sm font-medium text-[#2772E0] transition-colors hover:bg-[#EEF3FD]"
+        className="text-link justify-center border-t border-line bg-alt px-3 py-3 text-[14px] transition-colors hover:bg-wash"
       >
-        <MapPin className="h-4 w-4" aria-hidden="true" />
         Open in Google Maps
+        <span className="go" aria-hidden="true">
+          ↗
+        </span>
       </a>
     </div>
   )

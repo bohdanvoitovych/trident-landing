@@ -1,8 +1,9 @@
-import Link from 'next/link'
-import { ArrowRight, Check, Clock } from 'lucide-react'
 import { getLocale } from 'next-intl/server'
-import { Button } from '@/components/atoms/button'
+import { ButtonLink, Tag } from '@/components/atoms/controls'
+import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
+import { Pricing } from '@/components/organisms/home/Pricing'
+import { AgentVsHire } from '@/components/organisms/home/AgentVsHire'
 import { cn } from '@/lib/utils'
 import { getSolutionBySlug } from '@/data/solutions'
 import { buildMetadata } from '@/lib/metadata'
@@ -37,144 +38,109 @@ export default function PricingPage() {
   const packages = websites?.packages ?? []
 
   return (
-    <div className="flex flex-col">
-      {/* Hero */}
-      <section className="dark-section relative overflow-hidden py-20 md:py-28">
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="eyebrow mb-5">Pricing</p>
-          <h1 className="text-5xl font-bold tracking-tight md:text-6xl mb-6 leading-[1.1] max-w-4xl text-white">
-            Transparent, <span className="gradient-text">fixed-price</span> packages
-          </h1>
-          <p className="text-xl text-white/60 leading-relaxed mb-8 max-w-2xl">
-            No hourly billing. No scope creep. Price agreed before work begins.
-          </p>
-        </div>
-      </section>
+    <>
+      <PageHero
+        crumbs={[{ name: 'Pricing', href: '/site-price' }]}
+        label="Pricing"
+        title={
+          <>
+            Transparent, <span className="blue">fixed-price</span> packages
+          </>
+        }
+        lead="No hourly billing. No scope creep. Price agreed before work begins."
+      />
 
-      {/* Pricing cards */}
-      <section className="bg-white py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="section section--alt" aria-labelledby="packages-h">
+        <div className="container">
           <SectionHeader
-            eyebrow="Website packages"
+            id="packages-h"
+            label="Website packages"
             title="Pick the package that fits"
-            subtitle="From a simple brochure site to a full online store. Each package has a fixed price and a defined delivery date."
-            className="mb-14"
+            lead="From a simple brochure site to a full online store. Each package has a fixed price and a defined delivery date."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid-4 stagger">
             {packages.map((pkg) => (
-              <div
+              <article
                 key={pkg.name}
-                className={cn(
-                  'light-card rounded-[3px] p-6 flex flex-col gap-5 relative',
-                  pkg.highlighted && 'ring-2 ring-primary border-primary',
-                )}
+                className={cn('card price-card card--flat', pkg.highlighted && 'price-card--hi')}
+                style={{ padding: 24 }}
               >
-                {pkg.highlighted && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-primary px-3 py-1 text-[11px] font-semibold text-white">
-                    Most Popular
-                  </span>
-                )}
-                <div>
-                  <p className="text-sm font-medium text-[#4A4F57]">{pkg.name}</p>
-                  <p className="text-3xl font-bold text-[#111318] mt-2">{pkg.price}</p>
-                  <div className="flex items-center gap-1.5 text-xs text-[#4A4F57] mt-2">
-                    <Clock size={12} className="text-primary" />
-                    Delivered in {pkg.timeline}
+                <div className="stack" style={{ gap: 10 }}>
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <h3 className="h4">{pkg.name}</h3>
+                    {pkg.highlighted && <Tag tone="blue">Most Popular</Tag>}
                   </div>
+                  <span className="amt">{pkg.price}</span>
+                  <span className="meta">Delivered in {pkg.timeline}</span>
                 </div>
-
-                <div>
-                  <p className="text-[11px] font-medium text-[#4A4F57] uppercase tracking-widest mb-2">
-                    For
-                  </p>
-                  <ul className="space-y-1">
-                    {pkg.target.map((item) => (
-                      <li key={item} className="text-xs text-[#4A4F57]">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                <div className="stack border-t border-line pt-4" style={{ gap: 8 }}>
+                  <span className="meta">For</span>
+                  <p className="small">{pkg.target.join(' · ')}</p>
                 </div>
-
-                <div className="flex-1">
-                  <p className="text-[11px] font-medium text-[#4A4F57] uppercase tracking-widest mb-2">
-                    Includes
-                  </p>
-                  <ul className="space-y-2">
+                <div className="stack flex-1" style={{ gap: 10 }}>
+                  <span className="meta">Includes</span>
+                  <ul className="ticks">
                     {pkg.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-2 text-sm text-[#111318]">
-                        <Check size={14} className="text-primary mt-0.5 shrink-0" />
-                        <span>{feature}</span>
-                      </li>
+                      <li key={feature}>{feature}</li>
                     ))}
                   </ul>
                 </div>
-
-                <Button
-                  variant={pkg.highlighted ? 'gradient' : 'outline'}
-                  className="w-full"
-                  asChild
-                >
-                  <Link href="/contact">Get started</Link>
-                </Button>
-              </div>
+                <ButtonLink href="/contact" variant={pkg.highlighted ? 'primary' : 'outline'} className="w-full">
+                  Get started
+                </ButtonLink>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Add-ons */}
-      <section className="py-20 md:py-28 section-alt">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="section" aria-labelledby="addons-h">
+        <div className="container">
           <SectionHeader
-            eyebrow="Add-ons"
+            id="addons-h"
+            label="Add-ons"
             title="Optional extras"
-            subtitle="Add only what you need. Every add-on is priced separately and can be turned on at any time."
-            className="mb-14"
+            lead="Add only what you need. Every add-on is priced separately and can be turned on at any time."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <ul className="grid-3 stagger" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {addOns.map((addOn) => (
-              <div key={addOn.name} className="light-card rounded-[3px] p-6 flex flex-col gap-2">
-                <div className="flex items-start justify-between gap-3">
-                  <p className="font-semibold text-[#111318]">{addOn.name}</p>
-                  <span className="text-sm font-semibold text-primary whitespace-nowrap">
-                    {addOn.price}
-                  </span>
+              <li key={addOn.name} className="card card--flat feature-card">
+                <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+                  <h3>{addOn.name}</h3>
+                  <span className="mono text-[13px] font-semibold whitespace-nowrap text-blue-d">{addOn.price}</span>
                 </div>
-                <p className="text-sm text-[#4A4F57] leading-relaxed">{addOn.description}</p>
-              </div>
+                <p>{addOn.description}</p>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="dark-section py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Start with a free consultation
-          </h2>
-          <p className="text-white/60 mb-8 text-lg">
-            Tell us about your project. We&apos;ll recommend the right package and send a fixed
-            quote within 24 hours.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button variant="gradient" size="lg" asChild>
-              <Link href="/contact">
-                Book a consultation <ArrowRight size={18} />
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white/[0.12] text-white hover:bg-white/[0.06] bg-transparent"
-              asChild
-            >
-              <Link href="/solutions/websites">Explore websites</Link>
-            </Button>
+      <div className="section--line">
+        <Pricing headingLevel="h2" />
+      </div>
+      <AgentVsHire />
+
+      <section className="section section--line" aria-labelledby="price-cta-h">
+        <div className="container cta-band reveal">
+          <div className="stack" style={{ maxWidth: 760 }}>
+            <h2 id="price-cta-h" className="h2">
+              Start with a free consultation
+            </h2>
+            <p className="lead">
+              Tell us about your project. We&apos;ll recommend the right package and send a fixed quote within 24 hours.
+            </p>
+          </div>
+          <div className="hero-ctas">
+            <ButtonLink href="/contact" arrow>
+              Book a consultation
+            </ButtonLink>
+            <ButtonLink href="/solutions/websites" variant="outline">
+              Explore websites
+            </ButtonLink>
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }

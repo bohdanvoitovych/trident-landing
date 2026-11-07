@@ -1,9 +1,9 @@
+import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, ArrowLeft } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { Button } from '@/components/atoms/button'
-import { Badge } from '@/components/atoms/badge'
+import { ButtonLink, Tag } from '@/components/atoms/controls'
 import { CaseCard } from '@/components/molecules/CaseCard'
+import { PageHero } from '@/components/molecules/PageHero'
 import { getRelatedCases } from '@/data/cases'
 import type { CaseData } from '@/data/cases'
 
@@ -11,138 +11,170 @@ type Props = {
   caseStudy: CaseData
 }
 
+/** Two cases have no screenshot; their cards get a secondary stock photo. */
+const FALLBACK_IMAGE: Record<string, string> = {
+  'iam-trade': '/images/stock/b2b-portal.jpg',
+  arenawave: '/images/stock/iot-device.jpg',
+}
+
+export function caseImage(c: CaseData) {
+  return c.hero.image ?? FALLBACK_IMAGE[c.slug]
+}
+
 export function CasePage({ caseStudy }: Props) {
   const t = useTranslations('cases')
+  const tu = useTranslations('ui')
   const related = getRelatedCases(caseStudy.relatedCases)
 
-  return (
-    <div className="flex flex-col">
-      {/* Hero */}
-      <section className="dark-section relative overflow-hidden py-20 md:py-28">
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/cases"
-            className="inline-flex items-center gap-1 text-sm text-white/40 hover:text-white mb-8 transition-colors"
-          >
-            <ArrowLeft size={14} /> All cases
-          </Link>
-          <div className="flex flex-wrap gap-2 mb-6">
-            <p className="eyebrow mb-0">{caseStudy.industry}</p>
-            {caseStudy.services.slice(0, 2).map((s) => (
-              <Badge key={s} variant="secondary">
-                {s.replace(/-/g, ' ')}
-              </Badge>
-            ))}
-          </div>
-          <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl mb-4 text-white">
-            {caseStudy.hero.title}
-          </h1>
-          <p className="text-xl text-[var(--primary)] font-medium mb-6 text-white/60">{caseStudy.hero.tagline}</p>
-          <p className="text-white/40 font-medium">
-            Client: <span className="text-white/60">{caseStudy.client}</span>
-          </p>
-        </div>
-      </section>
+  const blocks = [
+    { id: 'challenge', title: t('challenge'), text: caseStudy.challenge },
+    { id: 'approach', title: t('approach'), text: caseStudy.approach },
+    { id: 'solution', title: t('solution'), text: caseStudy.solution },
+  ]
 
-      {/* Results bar */}
+  return (
+    <>
+      <PageHero
+        crumbs={[
+          { name: tu('nav.projects'), href: '/cases' },
+          { name: caseStudy.client, href: `/cases/${caseStudy.slug}` },
+        ]}
+        label={caseStudy.industry}
+        title={caseStudy.hero.title}
+        lead={caseStudy.hero.tagline}
+        actions={
+          <div className="stack" style={{ gap: 14 }}>
+            <p className="meta" style={{ margin: 0 }}>
+              Client: <span className="text-ink">{caseStudy.client}</span>
+            </p>
+            <div className="chips" style={{ gap: 6 }}>
+              {caseStudy.services.slice(0, 2).map((s) => (
+                <Tag key={s} tone="wash">
+                  {s.replace(/-/g, ' ')}
+                </Tag>
+              ))}
+            </div>
+            <Link href="/cases" className="text-link">
+              <span aria-hidden="true">←</span>
+              All cases
+            </Link>
+          </div>
+        }
+        aside={
+          caseStudy.hero.image ? (
+            <div className="media rounded-md border border-line" style={{ aspectRatio: '32 / 25' }}>
+              <Image
+                src={caseStudy.hero.image}
+                alt={caseStudy.hero.title}
+                fill
+                priority
+                sizes="(max-width: 1100px) 100vw, 640px"
+              />
+            </div>
+          ) : undefined
+        }
+      />
+
       {caseStudy.results.length > 0 && (
-        <section className="section-alt border-b border-[#E3E5E8] py-8">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap gap-8 justify-center">
+        <section className="section section--band section--alt" aria-labelledby="results-h">
+          <div className="container">
+            <h2 id="results-h" className="sr-only">
+              {t('results')}
+            </h2>
+            <dl className={`${caseStudy.results.length > 3 ? 'grid-4' : 'grid-3'} keep-2 stagger`} style={{ margin: 0 }}>
               {caseStudy.results.map((r) => (
-                <div key={r.metric} className="text-center">
-                  <p className="text-3xl font-bold text-[#111318]">{r.value}</p>
-                  <p className="text-sm text-[#4A4F57] mt-1">{r.metric}</p>
+                <div key={r.metric} className="card card--flat fact" style={{ flexDirection: 'column-reverse', justifyContent: 'flex-end' }}>
+                  <dt className="fact-k">{r.metric}</dt>
+                  <dd className="fact-v" style={{ margin: 0 }}>
+                    {r.value}
+                  </dd>
                 </div>
               ))}
-            </div>
+            </dl>
           </div>
         </section>
       )}
 
-      {/* Content */}
-      <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-12">
-            {/* Challenge */}
-            <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('challenge')}</h2>
-              <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.challenge}</p>
-            </div>
+      <section className="section">
+        <div className="container stack stack--lg">
+          {blocks.map((b) => (
+            <section key={b.id} className="split split--top reveal border-t border-line pt-8" aria-labelledby={`${b.id}-h`}>
+              <h2 id={`${b.id}-h`} className="h3">
+                {b.title}
+              </h2>
+              <p className="lead">{b.text}</p>
+            </section>
+          ))}
 
-            {/* Approach */}
-            <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('approach')}</h2>
-              <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.approach}</p>
-            </div>
-
-            {/* Solution */}
-            <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('solution')}</h2>
-              <p className="text-[#4A4F57] leading-relaxed text-lg">{caseStudy.solution}</p>
-            </div>
-
-            {/* Tech stack */}
-            <div>
-              <h2 className="text-2xl font-bold mb-4 text-[#111318]">{t('techStack')}</h2>
-              <div className="flex flex-wrap gap-2">
-                {caseStudy.techStack.map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-[#F4F4F5] text-[#3F3F46] border border-[#E3E5E8] text-sm px-3 py-1.5 rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Testimonial */}
-            {caseStudy.testimonial && (
-              <blockquote className="light-card rounded-[3px] p-6 border-l-4 border-primary">
-                <p className="text-lg italic text-foreground leading-relaxed mb-4">
-                  &ldquo;{caseStudy.testimonial.text}&rdquo;
-                </p>
-                <footer className="text-sm text-muted-foreground">
-                  <span className="font-semibold text-foreground">
-                    {caseStudy.testimonial.author}
-                  </span>{' '}
-                  — {caseStudy.testimonial.role}
-                </footer>
-              </blockquote>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="dark-section py-16">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-white">{t('startSimilar')}</h2>
-          <p className="text-white/60 mb-8 text-lg">
-            Let&apos;s discuss your project. We respond within 24 hours.
-          </p>
-          <Button variant="gradient" size="lg" asChild>
-            <Link href="/contact">
-              Get a Quote <ArrowRight size={18} />
-            </Link>
-          </Button>
-        </div>
-      </section>
-
-      {/* Related cases */}
-      {related.length > 0 && (
-        <section className="py-16 md:py-24">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold mb-8 text-[#111318]">{t('relatedCases')}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {related.map((c) => (
-                <CaseCard key={c.slug} case_={c} />
+          <section className="split split--top reveal border-t border-line pt-8" aria-labelledby="stack-h">
+            <h2 id="stack-h" className="h3">
+              {t('techStack')}
+            </h2>
+            <ul className="chips" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+              {caseStudy.techStack.map((tech) => (
+                <li key={tech} className="tag tag--line" style={{ fontSize: 12, padding: '6px 10px' }}>
+                  {tech}
+                </li>
               ))}
+            </ul>
+          </section>
+
+          {caseStudy.testimonial && (
+            <figure className="reveal m-0 rounded-md bg-wash border-l-2 border-blue" style={{ padding: 'clamp(24px,3vw,40px)' }}>
+              <blockquote className="m-0 text-ink" style={{ fontSize: 'clamp(20px,2vw,26px)', lineHeight: 1.35, letterSpacing: '-.015em', fontWeight: 500 }}>
+                &ldquo;{caseStudy.testimonial.text}&rdquo;
+              </blockquote>
+              <figcaption className="small" style={{ marginTop: 18 }}>
+                <span className="text-ink" style={{ fontWeight: 600 }}>
+                  {caseStudy.testimonial.author}
+                </span>{' '}
+                — {caseStudy.testimonial.role}
+              </figcaption>
+            </figure>
+          )}
+        </div>
+      </section>
+
+      <section className="section section--ink" aria-labelledby="case-cta-h">
+        <div className="container cta-band reveal">
+          <div className="stack">
+            <h2 id="case-cta-h" className="h2">
+              {t('startSimilar')}
+            </h2>
+            <p className="lead">Let&apos;s discuss your project. We respond within 24 hours.</p>
+          </div>
+          <ButtonLink href="/contact" arrow>
+            Get a Quote
+          </ButtonLink>
+        </div>
+      </section>
+
+      {related.length > 0 && (
+        <section className="section section--alt" aria-labelledby="related-h">
+          <div className="container">
+            <h2 id="related-h" className="h2 reveal" style={{ marginBottom: 'var(--head-gap)' }}>
+              {t('relatedCases')}
+            </h2>
+            <div className="grid-3 stagger wipe">
+              {related.map((c) => {
+                const [first, ...rest] = c.results
+                return (
+                  <CaseCard
+                    key={c.slug}
+                    href={`/cases/${c.slug}`}
+                    image={caseImage(c)}
+                    sector={c.industry}
+                    title={c.hero.title}
+                    description={c.hero.tagline}
+                    metric={first ? { value: first.value, label: first.metric } : undefined}
+                    results={rest}
+                  />
+                )
+              })}
             </div>
           </div>
         </section>
       )}
-    </div>
+    </>
   )
 }

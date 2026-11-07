@@ -279,6 +279,14 @@
     },
     "legal": {
       "label": "Legal"
+    },
+    "portfolio": {
+      "filter": "Filter by sector",
+      "projectsTitle": "Platforms, shops and apps we built and maintain"
+    },
+    "about": {
+      "timelineLabel": "Timeline",
+      "timelineTitle": "2009 → today"
     }
   }
 }
