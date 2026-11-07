@@ -93,17 +93,21 @@ export function blogPostSchema(
     excerpt: string
     author: string
     publishedAt: string
+    image?: string
     faq?: { question: string; answer: string }[]
   },
   locale: string,
 ): Record<string, unknown>[] {
+  const url = `${SITE_URL}/blog/${post.slug}`
   const schemas: Record<string, unknown>[] = [
     {
       '@context': 'https://schema.org',
-      '@type': 'Article',
+      '@type': 'BlogPosting',
       headline: post.title,
       description: post.excerpt,
-      url: `${SITE_URL}/blog/${post.slug}`,
+      url,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      ...(post.image && { image: post.image.startsWith('http') ? post.image : `${SITE_URL}${post.image}` }),
       datePublished: post.publishedAt,
       author: {
         '@type': 'Person',

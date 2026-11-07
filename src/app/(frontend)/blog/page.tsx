@@ -1,11 +1,10 @@
-import { Suspense } from 'react'
 import { useTranslations } from 'next-intl'
 import { getLocale } from 'next-intl/server'
 import { posts } from '@/data/blog'
 import { buildMetadata } from '@/lib/metadata'
-import { getBlogCategory, type BlogCategory } from '@/data/blog-meta'
-import { BlogFilter } from '@/components/molecules/BlogFilter'
-import { BlogGrid } from '@/components/molecules/BlogGrid'
+import { BLOG_IMAGES, getBlogCategory, type BlogCategory } from '@/data/blog-meta'
+import { PageHero } from '@/components/molecules/PageHero'
+import { BlogGrid, type BlogGridPost } from '@/components/molecules/BlogGrid'
 
 export const revalidate = 3600
 
@@ -22,43 +21,30 @@ export async function generateMetadata() {
 export default function BlogPage() {
   const t = useTranslations('blog')
 
-  const postData = posts.map((p) => ({
+  // Only what a card needs goes to the client island (no article bodies).
+  const postData: BlogGridPost[] = posts.map((p) => ({
     slug: p.slug,
     title: p.title,
     excerpt: p.excerpt,
     publishedAt: p.publishedAt,
-    readingTime: p.readingTime,
-    tags: p.tags,
-    image: p.image,
+    // BLOG_IMAGES holds the originals carried over from the old site; post.image covers the rest.
+    image: BLOG_IMAGES[p.slug] ?? p.image,
+    category: getBlogCategory(p.tags),
+    author: p.author,
+    authorRole: p.authorRole,
   }))
 
   const counts: Record<BlogCategory, number> = { All: posts.length, Industry: 0, Solution: 0, Company: 0 }
-  for (const post of posts) {
-    counts[getBlogCategory(post.tags)]++
-  }
+  for (const post of postData) counts[post.category]++
 
   return (
-    <div className="flex flex-col">
-      {/* Hero */}
-      <section className="dark-section py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="eyebrow mb-4">Insights</p>
-          <h1 className="text-display text-white mb-4">{t('title')}</h1>
-          <p className="text-xl text-white/60 max-w-2xl">{t('subtitle')}</p>
+    <>
+      <PageHero label="Insights" title={t('title')} lead={t('subtitle')} crumbs={[{ name: t('title'), href: '/blog' }]} />
+      <section className="section section--alt" aria-label={t('title')} style={{ paddingTop: 'clamp(40px,5vw,64px)' }}>
+        <div className="container">
+          <BlogGrid posts={postData} counts={counts} />
         </div>
       </section>
-
-      {/* Filter + Grid */}
-      <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Suspense>
-            <div className="mb-8">
-              <BlogFilter counts={counts} />
-            </div>
-            <BlogGrid posts={postData} readMore={t('readMore')} />
-          </Suspense>
-        </div>
-      </section>
-    </div>
+    </>
   )
 }

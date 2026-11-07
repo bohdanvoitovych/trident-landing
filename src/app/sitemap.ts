@@ -54,6 +54,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/solutions/e-commerce`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE_URL}/locations`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/technologies`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/faq`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE_URL}/use-cases`, changeFrequency: 'monthly', priority: 0.8 },
   ]
 
   const serviceRoutes: MetadataRoute.Sitemap = servicesSlugs.map((slug) => ({

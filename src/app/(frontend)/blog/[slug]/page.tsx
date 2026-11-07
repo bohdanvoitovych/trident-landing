@@ -6,6 +6,7 @@ import { getPostBySlug, getPostSlugs } from '@/data/blog'
 import JsonLd from '@/components/seo/JsonLd'
 import { buildMetadata } from '@/lib/metadata'
 import { blogPostSchema } from '@/lib/schema'
+import { BLOG_IMAGES } from '@/data/blog-meta'
 
 export const revalidate = 86400
 
@@ -42,7 +43,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <>
-      <JsonLd data={blogPostSchema(post, locale)} />
+      <JsonLd data={blogPostSchema({ ...post, image: BLOG_IMAGES[post.slug] ?? post.image }, locale)} />
       <BlogPost post={post} />
     </>
   )

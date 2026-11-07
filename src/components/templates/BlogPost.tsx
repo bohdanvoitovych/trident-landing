@@ -1,10 +1,17 @@
 import Link from 'next/link'
-import { ArrowLeft, Clock, Calendar } from 'lucide-react'
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { formatDate } from '@/lib/utils'
 import { markdownToHtml } from '@/lib/markdown'
 import { getRelatedPosts } from '@/data/blog'
 import type { BlogPost as BlogPostType } from '@/data/blog'
+import { BLOG_IMAGES, getBlogCategory } from '@/data/blog-meta'
+import { Breadcrumbs } from '@/components/molecules/PageHero'
+import { SectionHeader } from '@/components/molecules/SectionHeader'
+import { BlogCard } from '@/components/molecules/BlogCard'
+import { Author } from '@/components/molecules/Author'
+import { Accordion } from '@/components/molecules/Accordion'
+import { Tag } from '@/components/atoms/controls'
 
 type Props = {
   post: BlogPostType
@@ -12,126 +19,104 @@ type Props = {
 
 export function BlogPost({ post }: Props) {
   const t = useTranslations('blog')
+  const ui = useTranslations('ui')
   const related = getRelatedPosts(post.relatedPosts)
+  const cover = BLOG_IMAGES[post.slug] ?? post.image
 
   return (
-    <div className="flex flex-col">
-      {/* Hero */}
-      <section className="dark-section py-16 md:py-24">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-1 text-sm text-white/40 hover:text-white mb-8 transition-colors"
-          >
-            <ArrowLeft size={14} /> All posts
-          </Link>
-
-          <div className="flex flex-wrap gap-2 mb-6">
-            {post.tags.map((tag) => (
-              <span
-                key={tag}
-                className="rounded-[2px] border border-[#E3E5E8] bg-white px-2.5 py-1 text-[12px] font-medium text-[#4A4F57]"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-
-          <h1 className="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl mb-6 text-white">
-            {post.title}
-          </h1>
-
-          <div className="flex flex-wrap items-center gap-4 text-sm text-white/40 mb-8">
-            <div className="flex items-center gap-1.5">
-              <div className="h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center text-xs font-bold text-primary">
-                {post.author.charAt(0)}
-              </div>
-              <span>{post.author}</span>
-              <span className="text-white/20">·</span>
-              <span>{post.authorRole}</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <Calendar size={13} />
-              <span>{formatDate(post.publishedAt)}</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <Clock size={13} />
-              <span>{post.readingTime} min read</span>
-            </div>
-          </div>
-
-          <p className="text-xl text-white/60 leading-relaxed border-l-4 border-primary pl-4">
-            {post.excerpt}
-          </p>
-        </div>
-      </section>
-
-      {/* Content */}
-      <section className="pb-16 md:pb-24 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          {/* prose-invert is for dark backgrounds; this section is white, which
-              left the body text washed out. Neutral prose, and a measure of
-              ~68 characters instead of the full 896px column. */}
-          <div
-            className="prose prose-neutral prose-lg mx-auto max-w-[68ch] prose-headings:font-semibold prose-headings:tracking-tight prose-h2:text-[26px] prose-h2:mt-12 prose-h2:mb-4 prose-p:leading-[1.75] prose-a:text-[#2772E0] prose-code:text-[#2772E0] prose-pre:bg-[#0F1216] prose-pre:text-white"
-            dangerouslySetInnerHTML={{ __html: markdownToHtml(post.content) }}
-          />
-        </div>
-      </section>
-
-      {/* FAQ */}
-      {post.faq && post.faq.length > 0 && (
-        <section className="py-16 bg-gray-50">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold mb-8">Frequently Asked Questions</h2>
-            <div className="space-y-4">
-              {post.faq.map((item, i) => (
-                <details key={i} className="group border border-gray-200 rounded-[3px]">
-                  <summary className="flex items-center justify-between cursor-pointer p-5 font-medium text-[#111318] list-none">
-                    {item.question}
-                    <span className="ml-4 text-primary group-open:rotate-45 transition-transform text-xl leading-none">+</span>
-                  </summary>
-                  <p className="px-5 pb-5 text-muted-foreground leading-relaxed">{item.answer}</p>
-                </details>
+    <>
+    <article>
+      <section className="page-hero" aria-labelledby="post-h">
+        <div className="container flex flex-col gap-7">
+          <div className="article-head flex flex-col gap-[22px]">
+            <Breadcrumbs
+              items={[
+                { name: t('title'), href: '/blog' },
+                { name: post.title, href: `/blog/${post.slug}` },
+              ]}
+            />
+            <div className="flex flex-wrap gap-2">
+              {post.tags.map((tag) => (
+                <Tag key={tag}>{tag}</Tag>
               ))}
+            </div>
+            <h1 id="post-h" className="h1" style={{ fontSize: 'clamp(34px,4.4vw,60px)', overflowWrap: 'anywhere', hyphens: 'auto' }}>
+              {post.title}
+            </h1>
+            <p className="lead">{post.excerpt}</p>
+            <p className="meta flex flex-wrap gap-x-3 gap-y-1">
+              <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+              <span aria-hidden="true">·</span>
+              <span>{ui('blog.minRead', { n: post.readingTime })}</span>
+            </p>
+          </div>
+          {cover && (
+            <div className="media article-cover">
+              <Image src={cover} alt="" fill priority sizes="(max-width: 1280px) 100vw, 1280px" />
+            </div>
+          )}
+        </div>
+      </section>
+
+      <section className="section" aria-label={post.title} style={{ paddingTop: 0 }}>
+        <div className="container article-grid">
+          <div className="prose prose-lg min-w-0" dangerouslySetInnerHTML={{ __html: markdownToHtml(post.content) }} />
+          <aside className="article-aside">
+            <div className="author-box">
+              <span className="meta">{ui('blog.writtenBy')}</span>
+              <Author name={post.author} role={post.authorRole} large />
+            </div>
+            <Link href="/blog" className="text-link">
+              <span aria-hidden="true">←</span> All posts
+            </Link>
+          </aside>
+        </div>
+      </section>
+
+      {post.faq && post.faq.length > 0 && (
+        <section className="section section--alt" aria-labelledby="post-faq-h">
+          <div className="container">
+            <div className="section-head reveal">
+              <div>
+                <h2 id="post-faq-h" className="h2">
+                  Frequently Asked Questions
+                </h2>
+              </div>
+            </div>
+            <div className="reveal" style={{ maxWidth: 880 }}>
+              <Accordion items={post.faq} idPrefix="post-faq" />
             </div>
           </div>
         </section>
       )}
+    </article>
 
-      {/* Related posts */}
       {related.length > 0 && (
-        <section className="py-16 section-alt">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold mb-8">{t('relatedPosts')}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section className={post.faq?.length ? 'section' : 'section section--alt'} aria-labelledby="related-h">
+          <div className="container">
+            <SectionHeader
+              id="related-h"
+              label={t('title')}
+              title={t('relatedPosts')}
+              action={{ href: '/blog', label: ui('actions.allArticles') }}
+            />
+            <div className="grid-3 stagger wipe">
               {related.map((p) => (
-                <Link
+                <BlogCard
                   key={p.slug}
                   href={`/blog/${p.slug}`}
-                  className="light-card light-card-interactive rounded-[3px] p-6 transition-all duration-300 flex flex-col gap-3"
-                >
-                  <div className="flex flex-wrap gap-1">
-                    {p.tags.slice(0, 2).map((tag) => (
-                      <span
-                        key={tag}
-                        className="rounded-[2px] border border-[#E3E5E8] bg-white px-2.5 py-1 text-[12px] font-medium text-[#4A4F57]"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <h3 className="font-semibold leading-snug hover:text-primary transition-colors">
-                    {p.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground line-clamp-2">{p.excerpt}</p>
-                </Link>
+                  image={BLOG_IMAGES[p.slug] ?? p.image}
+                  date={p.publishedAt}
+                  title={p.title}
+                  excerpt={p.excerpt}
+                  category={getBlogCategory(p.tags)}
+                  author={{ name: p.author, role: p.authorRole }}
+                />
               ))}
             </div>
           </div>
         </section>
       )}
-    </div>
+    </>
   )
 }
-
