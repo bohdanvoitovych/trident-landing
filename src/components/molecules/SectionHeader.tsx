@@ -1,20 +1,35 @@
+import type { ReactNode } from 'react'
+import { ButtonLink, Label } from '@/components/atoms/controls'
 import { cn } from '@/lib/utils'
 
 type Props = {
-  eyebrow?: string
-  title: string
-  subtitle?: string
-  center?: boolean
+  label: ReactNode
+  title: ReactNode
+  lead?: ReactNode
+  /** At most one action, rendered as an ink button, bottom-aligned on the right. */
+  action?: { href: string; label: string }
+  id?: string
   className?: string
+  /** h1 on inner-page heroes, h2 everywhere else. */
+  as?: 'h1' | 'h2'
+  flag?: boolean
 }
 
-export function SectionHeader({ eyebrow, title, subtitle, center, className }: Props) {
+export function SectionHeader({ label, title, lead, action, id, className, as = 'h2', flag }: Props) {
+  const H = as
   return (
-    <div className={cn('flex flex-col gap-3', center && 'items-center text-center', className)}>
-      {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-      <h2 className="text-heading text-[#111318] tracking-tight">{title}</h2>
-      {subtitle && (
-        <p className="text-[16px] text-[#4A4F57] leading-relaxed max-w-2xl">{subtitle}</p>
+    <div className={cn('section-head reveal', className)}>
+      <div>
+        <Label flag={flag}>{label}</Label>
+        <H id={id} className={as === 'h1' ? 'h1' : 'h2'}>
+          {title}
+        </H>
+        {lead && <p className="lead">{lead}</p>}
+      </div>
+      {action && (
+        <ButtonLink href={action.href} variant="ink" arrow>
+          {action.label}
+        </ButtonLink>
       )}
     </div>
   )

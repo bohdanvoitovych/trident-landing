@@ -1,65 +1,102 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight } from 'lucide-react'
-import { cn } from '@/lib/utils'
-import type { CaseData } from '@/data/cases'
+import type { CSSProperties, ReactNode } from 'react'
+import { useTranslations } from 'next-intl'
+import { Tag } from '@/components/atoms/controls'
+
+export type BeforeAfter = { label: string; value: string; before: number; after: number }
 
 type Props = {
-  case_: Pick<CaseData, 'slug' | 'client' | 'industry' | 'hero' | 'results'>
-  className?: string
+  href: string
+  image?: string
+  imageAlt?: string
+  sector: ReactNode
+  title: ReactNode
+  description?: ReactNode
+  /** Big number in the white plate over the photo. */
+  metric?: { value: string; label: string }
+  /** MEASURED / MODELLED, exactly as the source states it. */
+  label?: 'measured' | 'modelled'
+  bars?: BeforeAfter[]
+  /** Fallback when there are no bars: simple result figures. */
+  results?: { value: string; metric: string }[]
+  headingLevel?: 'h2' | 'h3'
 }
 
-export function CaseCard({ case_, className }: Props) {
+/** Photo with wipe + overlay metric + tag, title, description, before/after bars. */
+export function CaseCard({
+  href,
+  image,
+  imageAlt = '',
+  sector,
+  title,
+  description,
+  metric,
+  label,
+  bars,
+  results,
+  headingLevel = 'h3',
+}: Props) {
+  const t = useTranslations('ui.cases')
+  const H = headingLevel
   return (
-    <Link
-      href={`/cases/${case_.slug}`}
-      className={cn(
-        'group light-card light-card-interactive rounded-[3px] overflow-hidden flex flex-col',
-        className,
-      )}
-    >
-      {case_.hero.image && (
-        <div className="relative w-full h-44 bg-[#F4F4F5] overflow-hidden">
-          <Image
-            src={case_.hero.image}
-            alt={case_.hero.title}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
-      )}
-      <div className="p-5 flex flex-col gap-3 flex-1">
-      <div className="flex items-start justify-between gap-2">
-        <div>
-          <p className="text-[11px] text-[#6B7078] font-medium uppercase tracking-wider mb-1">
-            {case_.client}
-          </p>
-          <h3 className="font-semibold text-[14px] text-[#111318] group-hover:text-[#2772E0] transition-colors leading-snug">
-            {case_.hero.title}
-          </h3>
-        </div>
-        <span className="shrink-0 text-[11px] font-medium bg-[#2772E0]/10 text-[#2772E0] border border-[#2772E0]/20 rounded-full px-2 py-0.5 whitespace-nowrap">
-          {case_.industry}
-        </span>
+    <Link href={href} className="card case-card">
+      <div className="media">
+        {image && <Image src={image} alt={imageAlt} fill sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 400px" />}
+        {(metric || label) && (
+          <div className="case-overlay">
+            {metric ? (
+              <span className="case-metric">
+                <b>{metric.value}</b>
+                <span>{metric.label}</span>
+              </span>
+            ) : (
+              <span />
+            )}
+            {label && <Tag tone={label === 'measured' ? 'blue' : 'wash'}>{t(label)}</Tag>}
+          </div>
+        )}
       </div>
-
-      <p className="text-[13px] text-[#4A4F57] leading-relaxed">{case_.hero.tagline}</p>
-
-      {case_.results.length > 0 && (
-        <div className="flex flex-wrap gap-4 pt-1 border-t border-[#E3E5E8]">
-          {case_.results.slice(0, 2).map((r) => (
-            <div key={r.metric}>
-              <span className="text-[18px] font-semibold gradient-text">{r.value}</span>
-              <span className="text-[12px] text-[#6B7078] ml-1">{r.metric}</span>
-            </div>
-          ))}
-        </div>
-      )}
-
-      <div className="flex items-center gap-1 text-[12px] text-[#2772E0] font-medium mt-auto">
-        View case study <ArrowRight size={11} className="group-hover:translate-x-0.5 transition-transform" />
-      </div>
+      <div className="card-body">
+        <span className="meta">{sector}</span>
+        <H className="card-title card-title--sm" style={{ fontSize: 19 }}>
+          {title}
+        </H>
+        {description && <p className="small" style={{ fontSize: 14, lineHeight: 1.55 }}>{description}</p>}
+        {bars && bars.length > 0 && (
+          <div className="case-bars">
+            {bars.map((b) => (
+              <div className="ba" key={b.label}>
+                <div className="ba-head">
+                  <span>{b.label}</span>
+                  <b>{b.value}</b>
+                </div>
+                <div className="ba-tracks" aria-hidden="true">
+                  <div className="track">
+                    <span className="fill fill--muted" style={{ '--v': b.before / 100 } as CSSProperties} />
+                  </div>
+                  <div className="track">
+                    <span className="fill" style={{ '--v': b.after / 100 } as CSSProperties} />
+                  </div>
+                </div>
+              </div>
+            ))}
+            <span className="legend" aria-hidden="true">
+              <span>▬ {t('before')}</span>
+              <span className="a">▬ {t('after')}</span>
+            </span>
+          </div>
+        )}
+        {!bars?.length && results && results.length > 0 && (
+          <dl className="case-bars" style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 20, margin: 0 }}>
+            {results.slice(0, 2).map((r) => (
+              <div key={r.metric} style={{ display: 'flex', flexDirection: 'column-reverse', gap: 2 }}>
+                <dt style={{ fontSize: 12, color: 'var(--ink-2)' }}>{r.metric}</dt>
+                <dd style={{ margin: 0, fontSize: 22, fontWeight: 600, letterSpacing: '-.03em', color: 'var(--blue)' }}>{r.value}</dd>
+              </div>
+            ))}
+          </dl>
+        )}
       </div>
     </Link>
   )

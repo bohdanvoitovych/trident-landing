@@ -2,86 +2,40 @@
 
 import { useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { Check, Globe } from 'lucide-react'
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
+import { useLocale, useTranslations } from 'next-intl'
+import { routing } from '@/i18n/routing'
+import { cn } from '@/lib/utils'
 
-const LOCALES = [
-  { code: 'en', label: 'English', short: 'EN' },
-  { code: 'de', label: 'Deutsch', short: 'DE' },
-  { code: 'fr', label: 'Français', short: 'FR' },
-  { code: 'it', label: 'Italiano', short: 'IT' },
-]
-
-type Props = {
-  currentLocale: string
-  /** 'light' for the white header, 'dark' for the deep-navy footer. */
-  tone?: 'light' | 'dark'
-}
-
-export function LanguageSwitcher({ currentLocale, tone = 'dark' }: Props) {
+/**
+ * Segmented EN·DE·FR·IT. Writes the next-intl locale cookie and re-renders
+ * (localePrefix is 'never', so the URL does not change). Never rotates by itself.
+ */
+export function LanguageSwitcher({ className }: { className?: string }) {
+  const locale = useLocale()
+  const t = useTranslations('ui')
   const router = useRouter()
-  const [, startTransition] = useTransition()
+  const [pending, startTransition] = useTransition()
 
-  function setLocale(locale: string) {
-    document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000; SameSite=Lax`
-    startTransition(() => {
-      router.refresh()
-    })
+  const setLocale = (next: string) => {
+    if (next === locale) return
+    document.cookie = `NEXT_LOCALE=${next}; path=/; max-age=31536000; SameSite=Lax`
+    startTransition(() => router.refresh())
   }
 
-  const current = LOCALES.find((l) => l.code === currentLocale) ?? LOCALES[0]
-
   return (
-    <DropdownMenu.Root>
-      <DropdownMenu.Trigger asChild>
+    <div role="group" aria-label={t('siteLanguage')} aria-busy={pending || undefined} className={cn('seg-group lang-switch', className)}>
+      {routing.locales.map((code) => (
         <button
-          aria-label="Change language"
-          // In the header it is a nav item: same class, so it inherits the
-          // menu's typeface, size and colour instead of restating them.
-          className={
-            tone === 'light'
-              ? 'nav-trigger'
-              : 'inline-flex items-center gap-1.5 text-[14.5px] font-medium leading-none text-white/60 hover:text-white transition-colors outline-none'
-          }
+          key={code}
+          type="button"
+          lang={code}
+          className="seg"
+          aria-pressed={code === locale}
+          onClick={() => setLocale(code)}
         >
-          <Globe size={14} className="shrink-0" aria-hidden="true" />
-          {current.short}
-          <span className="chev" aria-hidden="true">
-            ▾
-          </span>
+          {code.toUpperCase()}
         </button>
-      </DropdownMenu.Trigger>
-
-      <DropdownMenu.Portal>
-        <DropdownMenu.Content
-          align="end"
-          sideOffset={10}
-          className={`z-50 min-w-[132px] rounded-[2px] py-1.5 ${
-            tone === 'light'
-              ? 'border border-[#E3E5E8] bg-white shadow-[0_2px_10px_rgba(17,19,24,0.07)]'
-              : 'border border-white/10 bg-[#0F1216] shadow-xl shadow-black/30'
-          }`}
-        >
-          {LOCALES.map((l) => (
-            <DropdownMenu.Item
-              key={l.code}
-              onSelect={() => setLocale(l.code)}
-              className={`flex items-center justify-between gap-6 px-3.5 py-1.5 text-[14px] cursor-pointer outline-none transition-colors ${
-                tone === 'light'
-                  ? l.code === currentLocale
-                    ? 'text-[#111318] font-medium'
-                    : 'text-[#4A4F57] hover:text-[#111318] hover:bg-[#F6F7F8]'
-                  : l.code === currentLocale
-                    ? 'text-white font-medium'
-                    : 'text-white/60 hover:text-white hover:bg-white/5'
-              }`}
-            >
-              {l.label}
-              {l.code === currentLocale && <Check size={13} className="shrink-0 text-[#2772E0]" />}
-            </DropdownMenu.Item>
-          ))}
-        </DropdownMenu.Content>
-      </DropdownMenu.Portal>
-    </DropdownMenu.Root>
+      ))}
+    </div>
   )
 }
