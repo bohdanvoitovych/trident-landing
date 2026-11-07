@@ -1,8 +1,7 @@
-import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ArrowRight, Check, Clock } from 'lucide-react'
 import { getLocale } from 'next-intl/server'
-import { Button } from '@/components/atoms/button'
+import { ButtonLink, Tag } from '@/components/atoms/controls'
+import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { cn } from '@/lib/utils'
 import { getSolutionBySlug } from '@/data/solutions'
@@ -26,88 +25,56 @@ export default function WebsitesSolutionPage() {
   const packages = solution.packages ?? []
 
   return (
-    <div className="flex flex-col">
-      {/* Hero */}
-      <section className="dark-section relative overflow-hidden py-20 md:py-28">
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="eyebrow mb-5">Websites</p>
-          <h1 className="text-5xl font-bold tracking-tight md:text-6xl mb-6 leading-[1.1] max-w-4xl text-white">
-            {solution.title}
-          </h1>
-          <p className="text-xl text-white/60 leading-relaxed mb-8 max-w-2xl">
-            {solution.description}
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Button variant="gradient" size="lg" asChild>
-              <Link href="/contact">
-                Start your project <ArrowRight size={18} />
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white/[0.12] text-white hover:bg-white/[0.06] bg-transparent"
-              asChild
-            >
-              <Link href="/pricing">See all pricing</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+    <>
+      <PageHero
+        crumbs={[
+          { name: 'Solutions', href: '/solutions' },
+          { name: 'Websites', href: '/solutions/websites' },
+        ]}
+        label="Websites"
+        title={solution.title}
+        lead={solution.description}
+        actions={
+          <>
+            <ButtonLink href="/contact" arrow>
+              Start your project
+            </ButtonLink>
+            <ButtonLink href="/pricing" variant="outline">
+              See all pricing
+            </ButtonLink>
+          </>
+        }
+      />
 
       {/* Pricing packages */}
-      <section className="bg-white py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="section section--alt" aria-labelledby="pkg-h">
+        <div className="container">
           <SectionHeader
-            eyebrow="Packages"
+            id="pkg-h"
+            label="Packages"
             title="Four website packages"
-            subtitle="Fixed price, fixed timeline. Each package can be combined with optional add-ons."
-            className="mb-14"
+            lead="Fixed price, fixed timeline. Each package can be combined with optional add-ons."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid-4 stagger">
             {packages.map((pkg) => (
-              <div
-                key={pkg.name}
-                className={cn(
-                  'light-card rounded-[3px] p-6 flex flex-col gap-5 relative',
-                  pkg.highlighted && 'ring-2 ring-primary border-primary',
-                )}
-              >
-                {pkg.highlighted && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-primary px-3 py-1 text-[11px] font-semibold text-white">
-                    Most Popular
-                  </span>
-                )}
-                <div>
-                  <p className="text-sm font-medium text-[#4A4F57]">{pkg.name}</p>
-                  <p className="text-3xl font-bold text-[#111318] mt-2">{pkg.price}</p>
-                  <div className="flex items-center gap-1.5 text-xs text-[#4A4F57] mt-2">
-                    <Clock size={12} className="text-primary" />
-                    Delivered in {pkg.timeline}
-                  </div>
+              <div key={pkg.name} className={cn('card card--flat price-card', pkg.highlighted && 'price-card--hi')}>
+                <h3 className="h4">{pkg.name}</h3>
+                <span className="amt">{pkg.price}</span>
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="meta">Delivered in {pkg.timeline}</span>
+                  {pkg.highlighted && <Tag tone="blue">Most Popular</Tag>}
                 </div>
-
-                <div className="flex-1">
-                  <p className="text-[11px] font-medium text-[#4A4F57] uppercase tracking-widest mb-2">
-                    Includes
-                  </p>
-                  <ul className="space-y-2">
+                <div className="flex flex-1 flex-col gap-2.5 border-t border-line pt-4">
+                  <span className="meta">Includes</span>
+                  <ul className="ticks">
                     {pkg.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-2 text-sm text-[#111318]">
-                        <Check size={14} className="text-primary mt-0.5 shrink-0" />
-                        <span>{feature}</span>
-                      </li>
+                      <li key={feature}>{feature}</li>
                     ))}
                   </ul>
                 </div>
-
-                <Button
-                  variant={pkg.highlighted ? 'gradient' : 'outline'}
-                  className="w-full"
-                  asChild
-                >
-                  <Link href="/contact">Get started</Link>
-                </Button>
+                <ButtonLink href="/contact" variant={pkg.highlighted ? 'primary' : 'outline'} className="w-full">
+                  Get started
+                </ButtonLink>
               </div>
             ))}
           </div>
@@ -115,19 +82,19 @@ export default function WebsitesSolutionPage() {
       </section>
 
       {/* Features */}
-      <section className="py-20 md:py-28 section-alt">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="section" aria-labelledby="feat-h">
+        <div className="container">
           <SectionHeader
-            eyebrow="Why us"
+            id="feat-h"
+            label="Why us"
             title="Built for Swiss SMEs"
-            subtitle="Every website we deliver is mobile-first, multilingual-ready, and SEO-optimized — at a fixed price."
-            className="mb-14"
+            lead="Every website we deliver is mobile-first, multilingual-ready, and SEO-optimized — at a fixed price."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid-2 stagger">
             {solution.features.map((feature) => (
-              <div key={feature.title} className="light-card rounded-[3px] p-6 flex flex-col gap-3">
-                <h3 className="font-semibold text-[#111318]">{feature.title}</h3>
-                <p className="text-sm text-[#4A4F57] leading-relaxed">{feature.description}</p>
+              <div key={feature.title} className="card card--flat feature-card">
+                <h3>{feature.title}</h3>
+                <p>{feature.description}</p>
               </div>
             ))}
           </div>
@@ -135,54 +102,47 @@ export default function WebsitesSolutionPage() {
       </section>
 
       {/* Tech stack */}
-      <section className="bg-white py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="section section--alt" aria-labelledby="web-stack-h">
+        <div className="container">
           <SectionHeader
-            eyebrow="Tech stack"
+            id="web-stack-h"
+            label="Tech stack"
             title="Modern, maintainable tooling"
-            subtitle="We build on the same stack we use for our own products — battle-tested in production."
-            className="mb-10"
+            lead="We build on the same stack we use for our own products — battle-tested in production."
           />
-          <div className="flex flex-wrap gap-2">
+          <ul className="reveal flex flex-wrap gap-2" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {solution.techStack.map((tech) => (
-              <span
-                key={tech}
-                className="inline-flex items-center rounded-[2px] bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary"
-              >
+              <li key={tech} className="rounded-sm border border-line bg-white px-3 py-1.5 text-[14px] font-medium text-ink">
                 {tech}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="dark-section py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Ready to launch your website?
-          </h2>
-          <p className="text-white/60 mb-8 text-lg">
-            Pick a package or tell us about your project. We&apos;ll send a fixed quote within 24
-            hours.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button variant="gradient" size="lg" asChild>
-              <Link href="/contact">
-                Get a quote <ArrowRight size={18} />
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white/[0.12] text-white hover:bg-white/[0.06] bg-transparent"
-              asChild
-            >
-              <Link href="/pricing">See pricing details</Link>
-            </Button>
+      <section className="section section--line" aria-labelledby="web-cta-h">
+        <div className="container">
+          <div className="cta-band reveal">
+            <div className="stack">
+              <h2 id="web-cta-h" className="h2">
+                Ready to launch your website?
+              </h2>
+              <p className="lead" style={{ maxWidth: 640 }}>
+                Pick a package or tell us about your project. We&apos;ll send a fixed quote within 24 hours.
+              </p>
+            </div>
+            <div className="hero-ctas">
+              <ButtonLink href="/contact" arrow>
+                Get a quote
+              </ButtonLink>
+              <ButtonLink href="/pricing" variant="outline">
+                See pricing details
+              </ButtonLink>
+            </div>
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }

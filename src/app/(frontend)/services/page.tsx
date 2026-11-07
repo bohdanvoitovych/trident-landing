@@ -1,11 +1,14 @@
+import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, CheckCircle, Clock, FileText, Rocket } from 'lucide-react'
 import { getLocale } from 'next-intl/server'
 import { ServiceCard } from '@/components/molecules/ServiceCard'
+import { PageHero } from '@/components/molecules/PageHero'
+import { SectionHeader } from '@/components/molecules/SectionHeader'
+import { ButtonLink } from '@/components/atoms/controls'
+import { Integrations } from '@/components/organisms/home/Integrations'
 import { services } from '@/data/services'
 import { technologies } from '@/data/technologies'
 import { buildMetadata } from '@/lib/metadata'
-import { Button } from '@/components/atoms/button'
 
 export const revalidate = 3600
 
@@ -21,19 +24,16 @@ export async function generateMetadata() {
 
 const STEPS = [
   {
-    icon: FileText,
     title: 'Scope & quote',
     description: 'Send us a brief. We reply within 24 hours with a concrete proposal — scope, timeline, and fixed price. No surprises.',
     number: '01',
   },
   {
-    icon: Rocket,
     title: 'Build & ship',
     description: 'Our senior engineers start within 1–2 weeks. Weekly demos, async updates, and staging environment from day one.',
     number: '02',
   },
   {
-    icon: Clock,
     title: 'Maintain & grow',
     description: 'Post-launch SLA, performance monitoring, and feature iterations. We stay with you after go-live.',
     number: '03',
@@ -69,44 +69,29 @@ const TRUST_POINTS = [
 
 export default function ServicesPage() {
   return (
-    <div className="flex flex-col">
-      {/* ── Hero ──────────────────────────────────────────── */}
-      <section className="dark-section py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="eyebrow mb-4">What we build</p>
-          <h1 className="text-display text-white mb-5">
-            Software Development Services<br />
-            <span className="gradient-text">for Swiss & European Businesses</span>
-          </h1>
-          <p className="text-xl text-white/60 max-w-2xl leading-relaxed mb-10">
-            From AI integration and custom web platforms to embedded systems and cloud infrastructure — end-to-end engineering with fixed budgets and Swiss compliance built in.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Button variant="gradient" size="lg" asChild>
-              <Link href="/contact">
-                Get a free quote <ArrowRight size={18} />
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white/[0.12] text-white hover:bg-white/[0.06] bg-transparent"
-              asChild
-            >
-              <Link href="/cases">See our projects</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+    <>
+      <PageHero
+        crumbs={[{ name: 'Services', href: '/services' }]}
+        label="What we build"
+        title="Software Development Services for Swiss & European Businesses"
+        lead="From AI integration and custom web platforms to embedded systems and cloud infrastructure — end-to-end engineering with fixed budgets and Swiss compliance built in."
+        actions={
+          <>
+            <ButtonLink href="/contact" arrow>
+              Get a free quote
+            </ButtonLink>
+            <ButtonLink href="/cases" variant="outline">
+              See our projects
+            </ButtonLink>
+          </>
+        }
+      />
 
-      {/* ── Service cards grid ────────────────────────────── */}
-      <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-10">
-            <p className="eyebrow mb-2">Services</p>
-            <h2 className="text-heading text-[#111318]">What we deliver</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {/* Service cards */}
+      <section className="section section--alt" aria-labelledby="svc-h">
+        <div className="container">
+          <SectionHeader id="svc-h" label="Services" title="What we deliver" />
+          <div className="grid-4 stagger">
             {services.map((service) => (
               <ServiceCard key={service.slug} service={service} />
             ))}
@@ -114,127 +99,103 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ── How we engage ────────────────────────────────── */}
-      <section className="section-alt py-16 md:py-24 border-t border-[#E3E5E8]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <p className="eyebrow mb-2">Process</p>
-            <h2 className="text-heading text-[#111318]">How we engage</h2>
-            <p className="text-[#4A4F57] mt-3 max-w-xl">
-              Three steps from brief to shipped product. No black boxes, no scope surprises.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {STEPS.map(({ icon: Icon, title, description, number }) => (
-              <div key={number} className="light-card rounded-[3px] p-7 flex flex-col gap-4">
-                <div className="flex items-start justify-between">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-[3px] bg-[#2772E0]/10">
-                    <Icon size={18} className="text-[#2772E0]" />
-                  </div>
-                  <span className="text-[32px] font-bold text-[#E3E5E8] leading-none select-none">
-                    {number}
-                  </span>
-                </div>
-                <h3 className="font-semibold text-[#111318] text-[15px]">{title}</h3>
-                <p className="text-[13px] text-[#4A4F57] leading-relaxed">{description}</p>
-              </div>
+      {/* How we engage */}
+      <section className="section section--ink" aria-labelledby="engage-h">
+        <div className="container">
+          <SectionHeader
+            id="engage-h"
+            label="Process"
+            title="How we engage"
+            lead="Three steps from brief to shipped product. No black boxes, no scope surprises."
+          />
+          <ol className="grid-3 stagger" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+            {STEPS.map(({ title, description, number }) => (
+              <li key={number} className="flex flex-col gap-3 border-t border-white/15 pt-6">
+                <span className="mono text-[13px] text-blue-l">{number}</span>
+                <h3 className="h4">{title}</h3>
+                <p className="body">{description}</p>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
-      {/* ── Technologies we use ───────────────────────────── */}
-      <section className="py-16 md:py-20 border-t border-[#E3E5E8]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
-            <div>
-              <p className="eyebrow mb-2">Stack</p>
-              <h2 className="text-heading text-[#111318]">Technologies we use</h2>
-            </div>
-            <Link
-              href="/technologies"
-              className="text-[13px] font-medium text-[#2772E0] hover:underline inline-flex items-center gap-1 shrink-0"
-            >
-              Full stack details <ArrowRight size={13} />
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3">
+      {/* Technologies */}
+      <section className="section" aria-labelledby="tech-h">
+        <div className="container">
+          <SectionHeader
+            id="tech-h"
+            label="Stack"
+            title="Technologies we use"
+            action={{ href: '/technologies', label: 'Full stack details' }}
+          />
+          <ul className="grid-4 keep-2 stagger lg:!grid-cols-5" style={{ listStyle: 'none', margin: 0, padding: 0, gap: 14 }}>
             {technologies.map((tech) => (
-              <Link
-                key={tech.slug}
-                href={`/technologies/${tech.slug}`}
-                className="light-card light-card-interactive rounded-[2px] px-4 py-6 flex flex-col items-center gap-3 group"
-                title={tech.name}
-              >
-                {/* Icons ship locally: the CDN this used had no mark for
-                    "openai" any more, so that tile rendered empty. */}
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={`/images/tech/${tech.iconSlug}.svg`}
-                  alt=""
-                  width={30}
-                  height={30}
-                  loading="lazy"
-                  className="shrink-0 opacity-70 group-hover:opacity-100 transition-opacity"
-                />
-                <span className="text-[11px] text-center text-[#4A4F57] group-hover:text-[#2772E0] transition-colors leading-tight">
-                  {tech.name}
-                </span>
-              </Link>
+              <li key={tech.slug} className="grid">
+                <Link
+                  href={`/technologies/${tech.slug}`}
+                  className="card flex flex-col items-center gap-3 px-4 py-6 text-center"
+                >
+                  <Image
+                    src={`/images/tech/${tech.iconSlug}.svg`}
+                    alt=""
+                    width={30}
+                    height={30}
+                    unoptimized
+                    className="shrink-0"
+                    style={{ width: 30, height: 30 }}
+                  />
+                  <span className="small text-ink">{tech.name}</span>
+                </Link>
+              </li>
             ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Why choose us */}
+      <section className="section section--alt" aria-labelledby="why-h">
+        <div className="container">
+          <div className="split split--top">
+            <SectionHeader id="why-h" label="Why us" title="What you get with Trident" className="!mb-0" />
+            <ul className="reveal border-t-2 border-ink" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+              {TRUST_POINTS.map(({ title, description }) => (
+                <li key={title} className="flex flex-col gap-2 border-b border-line py-6">
+                  <h3 className="h4">{title}</h3>
+                  <p className="body">{description}</p>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
-      {/* ── Why choose us ────────────────────────────────── */}
-      <section className="section-alt py-16 md:py-24 border-t border-[#E3E5E8]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <p className="eyebrow mb-2">Why us</p>
-            <h2 className="text-heading text-[#111318]">What you get with Trident</h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {TRUST_POINTS.map(({ title, description }) => (
-              <div key={title} className="flex gap-4">
-                <CheckCircle size={18} className="text-[#2772E0] shrink-0 mt-0.5" />
-                <div>
-                  <h3 className="font-semibold text-[#111318] mb-1 text-[14px]">{title}</h3>
-                  <p className="text-[13px] text-[#4A4F57] leading-relaxed">{description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Integrations />
 
-      {/* ── CTA ──────────────────────────────────────────── */}
-      <section className="dark-section py-20 md:py-28">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <p className="eyebrow mb-4">Ready to start?</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Describe your project in{' '}
-            <span className="gradient-text">2 sentences</span>
-          </h2>
-          <p className="text-white/60 mb-8 text-lg max-w-xl mx-auto">
-            We send back a concrete proposal within 24 hours — scope, timeline, and fixed price.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button variant="gradient" size="lg" asChild>
-              <Link href="/contact">
-                Request a Proposal <ArrowRight size={18} />
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white/[0.12] text-white hover:bg-white/[0.06] bg-transparent"
-              asChild
-            >
-              <Link href="/cases">View case studies</Link>
-            </Button>
+      {/* CTA */}
+      <section className="section section--alt" aria-labelledby="svc-cta-h">
+        <div className="container">
+          <div className="cta-band reveal">
+            <div className="stack">
+              <span className="label">Ready to start?</span>
+              <h2 id="svc-cta-h" className="h2">
+                Describe your project in 2 sentences
+              </h2>
+              <p className="lead" style={{ maxWidth: 640 }}>
+                We send back a concrete proposal within 24 hours — scope, timeline, and fixed price.
+              </p>
+            </div>
+            <div className="hero-ctas">
+              <ButtonLink href="/contact" arrow>
+                Request a Proposal
+              </ButtonLink>
+              <ButtonLink href="/cases" variant="outline">
+                View case studies
+              </ButtonLink>
+            </div>
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }

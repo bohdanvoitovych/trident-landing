@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ArrowRight, ArrowLeft, Check, Clock, Users } from 'lucide-react'
 import { getLocale } from 'next-intl/server'
-import { Button } from '@/components/atoms/button'
+import { ButtonLink, Tag } from '@/components/atoms/controls'
+import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { cn } from '@/lib/utils'
 import { getSolutionBySlug } from '@/data/solutions'
@@ -37,144 +37,95 @@ export default async function WebsitePackagePage({ params }: Props) {
   const otherPackages = websitesSolution.packages?.filter((p) => p.slug !== packageSlug) ?? []
 
   return (
-    <div className="flex flex-col">
-      {/* Breadcrumb */}
-      <div className="bg-[#0F1216] border-b border-white/[0.06]">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
-          <nav className="flex items-center gap-2 text-sm text-white/40">
-            <Link href="/solutions" className="hover:text-white/70 transition-colors">
-              Solutions
-            </Link>
-            <span>/</span>
-            <Link href="/solutions/websites" className="hover:text-white/70 transition-colors">
-              Websites
-            </Link>
-            <span>/</span>
-            <span className="text-white/70">{pkg.name}</span>
-          </nav>
-        </div>
-      </div>
-
-      {/* Hero */}
-      <section className="dark-section relative overflow-hidden py-20 md:py-28">
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/solutions/websites"
-            className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-white/80 transition-colors mb-8"
-          >
-            <ArrowLeft size={14} />
-            Back to Website Packages
-          </Link>
-          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
-            <div className="max-w-2xl">
-              <p className="eyebrow mb-5">Website Package</p>
-              <h1 className="text-5xl font-bold tracking-tight md:text-6xl mb-6 leading-[1.1] text-white">
-                <span className="gradient-text">{pkg.name}</span>
-              </h1>
-              <p className="text-xl text-white/60 leading-relaxed mb-8">
-                {pkg.description}
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button variant="gradient" size="lg" asChild>
-                  <Link href="/contact">
-                    Get a quote <ArrowRight size={18} />
-                  </Link>
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-white/[0.12] text-white hover:bg-white/[0.06] bg-transparent"
-                  asChild
-                >
-                  <Link href="/pricing">See all pricing</Link>
-                </Button>
-              </div>
-            </div>
-
-            {/* Price card */}
-            <div
-              className={cn(
-                'rounded-[3px] border p-8 min-w-[240px] shrink-0',
-                pkg.highlighted
-                  ? 'border-primary/50 bg-primary/10'
-                  : 'border-white/[0.08] bg-white/[0.04]',
-              )}
-            >
-              {pkg.highlighted && (
-                <span className="inline-flex items-center rounded-full bg-primary px-3 py-1 text-[11px] font-semibold text-white mb-4">
-                  Most Popular
-                </span>
-              )}
-              <p className="text-white/50 text-sm mb-2">Fixed price</p>
-              <p className="text-4xl font-bold text-white mb-1">{pkg.price}</p>
-              <div className="flex items-center gap-1.5 text-sm text-white/50 mt-3">
-                <Clock size={14} className="text-primary" />
-                Delivered in {pkg.timeline}
-              </div>
-            </div>
+    <>
+      <PageHero
+        crumbs={[
+          { name: 'Solutions', href: '/solutions' },
+          { name: 'Websites', href: '/solutions/websites' },
+          { name: pkg.name, href: `/solutions/websites/${pkg.slug}` },
+        ]}
+        label="Website Package"
+        title={pkg.name}
+        lead={pkg.description}
+        actions={
+          <>
+            <ButtonLink href="/contact" arrow>
+              Get a quote
+            </ButtonLink>
+            <ButtonLink href="/pricing" variant="outline">
+              See all pricing
+            </ButtonLink>
+          </>
+        }
+        aside={
+          <div className={cn('card card--flat price-card', pkg.highlighted && 'price-card--hi')} style={{ maxWidth: 420 }}>
+            {pkg.highlighted && (
+              <span>
+                <Tag tone="blue">Most Popular</Tag>
+              </span>
+            )}
+            <span className="meta">Fixed price</span>
+            <span className="amt">{pkg.price}</span>
+            <span className="meta">Delivered in {pkg.timeline}</span>
           </div>
-        </div>
-      </section>
+        }
+      />
 
       {/* Features */}
-      <section className="bg-white py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            eyebrow="Includes"
-            title="What you get"
-            subtitle="Everything in this package is delivered at the fixed price. No hidden extras."
-            className="mb-12"
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
-            {pkg.features.map((feature) => (
-              <div key={feature} className="flex items-start gap-3">
-                <div className="shrink-0 mt-0.5 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Check size={12} className="text-primary" />
-                </div>
-                <span className="text-[#111318] font-medium">{feature}</span>
-              </div>
-            ))}
+      <section className="section section--alt" aria-labelledby="inc-h">
+        <div className="container">
+          <div className="split split--top">
+            <SectionHeader
+              id="inc-h"
+              label="Includes"
+              title="What you get"
+              lead="Everything in this package is delivered at the fixed price. No hidden extras."
+              className="!mb-0"
+            />
+            <ul className="ticks reveal" style={{ fontSize: 17, color: 'var(--ink)', gap: 0, borderTop: '1px solid var(--line)' }}>
+              {pkg.features.map((feature) => (
+                <li key={feature} className="border-b border-line py-4">
+                  {feature}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
       {/* Target audience */}
-      <section className="py-20 md:py-28 section-alt">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="section" aria-labelledby="best-h">
+        <div className="container">
           <SectionHeader
-            eyebrow="Best for"
+            id="best-h"
+            label="Best for"
             title="Who this package is built for"
-            subtitle="Each package is designed with specific customer types in mind."
-            className="mb-12"
+            lead="Each package is designed with specific customer types in mind."
           />
-          <div className="flex flex-wrap gap-3">
+          <ul className="reveal flex flex-wrap gap-2" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {pkg.target.map((audience) => (
-              <span
-                key={audience}
-                className="inline-flex items-center gap-2 rounded-full border border-[#E2E8F0] bg-white px-4 py-2 text-sm font-medium text-[#111318]"
-              >
-                <Users size={14} className="text-primary" />
+              <li key={audience} className="rounded-sm border border-line bg-alt px-3.5 py-2 text-[15px] font-medium text-ink">
                 {audience}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
-      {/* Why us */}
-      <section className="bg-white py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      {/* Guarantees */}
+      <section className="section section--alt" aria-labelledby="promise-h">
+        <div className="container">
           <SectionHeader
-            eyebrow="Guarantees"
+            id="promise-h"
+            label="Guarantees"
             title="What we promise"
-            subtitle="Every project comes with the same core commitments."
-            className="mb-12"
+            lead="Every project comes with the same core commitments."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid-2 stagger">
             {websitesSolution.features.map((feature) => (
-              <div key={feature.title} className="light-card rounded-[3px] p-6 flex flex-col gap-3">
-                <h3 className="font-semibold text-[#111318]">{feature.title}</h3>
-                <p className="text-sm text-[#4A4F57] leading-relaxed">{feature.description}</p>
+              <div key={feature.title} className="card card--flat feature-card">
+                <h3>{feature.title}</h3>
+                <p>{feature.description}</p>
               </div>
             ))}
           </div>
@@ -183,37 +134,29 @@ export default async function WebsitePackagePage({ params }: Props) {
 
       {/* Other packages */}
       {otherPackages.length > 0 && (
-        <section className="py-20 md:py-28 section-alt">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section className="section" aria-labelledby="other-h">
+          <div className="container">
             <SectionHeader
-              eyebrow="Other options"
+              id="other-h"
+              label="Other options"
               title="Compare packages"
-              subtitle="Not sure this is the right fit? See what else we offer."
-              className="mb-12"
+              lead="Not sure this is the right fit? See what else we offer."
             />
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <div className="grid-3 stagger">
               {otherPackages.map((other) => (
                 <Link
                   key={other.slug}
                   href={`/solutions/websites/${other.slug}`}
-                  className={cn(
-                    'light-card rounded-[3px] p-6 flex flex-col gap-4 hover:border-primary/40 transition-colors group',
-                    other.highlighted && 'ring-1 ring-primary/30',
-                  )}
+                  className={cn('card price-card', other.highlighted && 'price-card--hi')}
                 >
-                  <div>
-                    <p className="text-sm font-medium text-[#4A4F57]">{other.name}</p>
-                    <p className="text-2xl font-bold text-[#111318] mt-1">{other.price}</p>
-                    <div className="flex items-center gap-1.5 text-xs text-[#4A4F57] mt-1.5">
-                      <Clock size={11} className="text-primary" />
-                      {other.timeline}
-                    </div>
-                  </div>
-                  <p className="text-sm text-[#4A4F57] leading-relaxed line-clamp-2">
+                  <h3 className="h4">{other.name}</h3>
+                  <span className="amt">{other.price}</span>
+                  <span className="meta">{other.timeline}</span>
+                  <p className="body line-clamp-2" style={{ flex: 1 }}>
                     {other.description}
                   </p>
-                  <span className="inline-flex items-center gap-1 text-sm font-medium text-primary group-hover:gap-2 transition-all">
-                    View package <ArrowRight size={14} />
+                  <span className="card-more">
+                    View package <span className="go" aria-hidden="true">→</span>
                   </span>
                 </Link>
               ))}
@@ -223,31 +166,28 @@ export default async function WebsitePackagePage({ params }: Props) {
       )}
 
       {/* CTA */}
-      <section className="dark-section py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Ready to get started with {pkg.name}?
-          </h2>
-          <p className="text-white/60 mb-8 text-lg">
-            Fixed price, fixed timeline. We&apos;ll send a quote within 24 hours.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button variant="gradient" size="lg" asChild>
-              <Link href="/contact">
-                Request a quote <ArrowRight size={18} />
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white/[0.12] text-white hover:bg-white/[0.06] bg-transparent"
-              asChild
-            >
-              <Link href="/solutions/websites">All packages</Link>
-            </Button>
+      <section className="section section--alt" aria-labelledby="pkg-cta-h">
+        <div className="container">
+          <div className="cta-band reveal">
+            <div className="stack">
+              <h2 id="pkg-cta-h" className="h2">
+                Ready to get started with {pkg.name}?
+              </h2>
+              <p className="lead" style={{ maxWidth: 640 }}>
+                Fixed price, fixed timeline. We&apos;ll send a quote within 24 hours.
+              </p>
+            </div>
+            <div className="hero-ctas">
+              <ButtonLink href="/contact" arrow>
+                Request a quote
+              </ButtonLink>
+              <ButtonLink href="/solutions/websites" variant="outline">
+                All packages
+              </ButtonLink>
+            </div>
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 }
