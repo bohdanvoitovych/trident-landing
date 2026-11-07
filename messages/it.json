@@ -276,6 +276,9 @@
     },
     "cookie": {
       "label": "Cookie notice"
+    },
+    "legal": {
+      "label": "Legal"
     }
   }
 }
