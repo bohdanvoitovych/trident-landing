@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trident — Use cases</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><style>
+body{margin:0;background:#fff;color:#111318;font-family:'Instrument Sans',-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:1240px;margin:0 auto;padding-left:clamp(20px,5vw,64px);padding-right:clamp(20px,5vw,64px)}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
+.kick{font:500 12px 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:#1B57B8}.dark .kick{color:#8FB6F4}
+.btn{position:relative;display:inline-flex;align-items:center;overflow:hidden;border:0;cursor:pointer;font:600 15px 'Instrument Sans',sans-serif;padding:14px 20px;border-radius:2px;white-space:nowrap}
+.btn>span{position:relative}.btn .arr{display:inline-block;margin-left:6px;font-style:normal;transition:transform .25s cubic-bezier(.2,0,0,1)}.btn:hover .arr{transform:translateX(5px)}
+.btn-blue{background:#2772E0;color:#fff}.btn-blue::before{content:"";position:absolute;inset:0;background:#1B57B8;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,0,0,1)}.btn-blue:hover::before{transform:scaleX(1)}
+.btn-line{background:transparent;color:inherit;box-shadow:inset 0 0 0 1px #C9CDD2;transition:box-shadow .25s}.btn-line:hover{box-shadow:inset 0 0 0 1px #111318}
+a:focus-visible,button:focus-visible{outline:2px solid #2772E0;outline-offset:2px}
+a.ul{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;padding-bottom:3px;transition:background-size .3s cubic-bezier(.2,0,0,1)}a.ul:hover{background-size:100% 1px}
+.uc{width:100%;border:0;cursor:pointer;font-family:inherit;text-align:left;transition:background .2s}
+.uc:hover{background:#F6F7F8}
+.fade{animation:fade .45s cubic-bezier(.2,0,0,1) both}.fade2{animation:fade2 .45s cubic-bezier(.2,0,0,1) both}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@keyframes fade2{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+html.js-rv .rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,0,0,1),transform .8s cubic-bezier(.2,0,0,1)}html.js-rv .rv.in{opacity:1;transform:none}
+@media (max-width:900px){.stack{grid-template-columns:minmax(0,1fr)!important}.hide-m{display:none!important}.h1{font-size:42px!important}.h2{font-size:32px!important}.span-all{grid-column:1/-1!important}.nav-links{display:none!important}}
+@media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}html.js-rv .rv{opacity:1;transform:none}}
+
+/* shared system */
+
+:root{--ink:#111318;--ink2:#4A4F57;--ink3:#6B7078;--line:#E3E5E8;--line2:#C9CDD2;--alt:#F6F7F8;--blue:#2772E0;--blued:#1B57B8;--bluel:#8FB6F4;--wash:#EEF3FD;--deep:#0F1216;--ease:cubic-bezier(.2,0,0,1)}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Instrument Sans',-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.w{max-width:1280px;margin:0 auto;padding-left:clamp(20px,4.5vw,64px);padding-right:clamp(20px,4.5vw,64px)}
+.sec{padding:clamp(72px,9vw,128px) 0}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
+.lbl{display:inline-flex;align-items:center;gap:10px;font:500 13px 'IBM Plex Mono',monospace;color:var(--blued)}
+.lbl::before{content:"";width:18px;height:2px;background:var(--blue)}
+.dark .lbl{color:var(--bluel)}.dark .lbl::before{background:var(--bluel)}
+.h1{margin:0;font-size:clamp(40px,5.4vw,76px);line-height:1;letter-spacing:-.045em;font-weight:600}
+.h2{margin:0;font-size:clamp(32px,3.9vw,54px);line-height:1.03;letter-spacing:-.04em;font-weight:600;text-wrap:balance}
+.lead{margin:0;font-size:clamp(16px,1.35vw,19px);line-height:1.6;color:var(--ink2);text-wrap:pretty}
+.dark .lead{color:rgba(255,255,255,.74)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:clamp(36px,4vw,56px)}
+.head>div{display:flex;flex-direction:column;gap:16px;max-width:760px}
+.btn{position:relative;display:inline-flex;align-items:center;overflow:hidden;border:0;cursor:pointer;font:600 15px 'Instrument Sans',sans-serif;padding:14px 20px;border-radius:2px;white-space:nowrap}
+.btn>span{position:relative}.btn .arr{display:inline-block;margin-left:6px;font-style:normal;transition:transform .25s var(--ease)}.btn:hover .arr{transform:translateX(5px)}
+.btn-blue{background:var(--blue);color:#fff}.btn-ink{background:var(--ink);color:#fff}
+.btn-blue::before,.btn-ink::before{content:"";position:absolute;inset:0;transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.btn-blue::before{background:var(--blued)}.btn-ink::before{background:var(--blue)}.btn-blue:hover::before,.btn-ink:hover::before{transform:scaleX(1)}
+.btn-line{background:transparent;color:inherit;box-shadow:inset 0 0 0 1px var(--line2);transition:box-shadow .25s}.btn-line:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.dark .btn-line{box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}.dark .btn-line:hover{box-shadow:inset 0 0 0 1px #fff}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+a.ul{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;padding-bottom:3px;transition:background-size .3s var(--ease)}a.ul:hover{background-size:100% 1px}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.hero-g{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(32px,4vw,64px);align-items:center}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:center}
+.card{background:#fff;border:1px solid var(--line);border-radius:3px;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -18px rgba(17,19,24,.18);border-color:var(--line2)}
+.ph{position:relative;overflow:hidden;background:var(--alt)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.card:hover .ph img,.tm:hover .ph img{transform:scale(1.06)}
+.go{transition:transform .25s var(--ease)}.card:hover .go,.row:hover .go{transform:translateX(6px);color:var(--blue)}
+.tag{font:600 11px 'IBM Plex Mono',monospace;padding:3px 8px;border-radius:2px;white-space:nowrap}
+/* reveal + stagger + image wipe */
+html.js-rv .rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js-rv .rv.in{opacity:1;transform:none}
+html.js-rv .stg>*{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+html.js-rv .stg.in>*{opacity:1;transform:none}
+.stg>*:nth-child(2){transition-delay:.08s}.stg>*:nth-child(3){transition-delay:.16s}.stg>*:nth-child(4){transition-delay:.24s}.stg>*:nth-child(5){transition-delay:.32s}.stg>*:nth-child(6){transition-delay:.4s}.stg>*:nth-child(7){transition-delay:.48s}.stg>*:nth-child(8){transition-delay:.56s}
+html.js-rv .wipe .ph{clip-path:inset(0 0 100% 0);transition:clip-path 1.2s var(--ease)}html.js-rv .wipe.in .ph{clip-path:inset(0 0 0 0)}
+/* hero */
+.wm{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.wd{display:inline-block;margin-right:.22em;animation:wd 1s var(--ease) both}@keyframes wd{from{transform:translateY(105%)}to{transform:none}}
+.fadein{animation:fadein 1s var(--ease) both}@keyframes fadein{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;opacity:.55}
+.blob.a{width:520px;height:520px;right:-120px;top:-160px;background:radial-gradient(circle,#BFD5F8,transparent 70%);animation:drift 18s ease-in-out infinite alternate}
+.blob.b{width:420px;height:420px;right:28%;top:200px;background:radial-gradient(circle,#EEF3FD,transparent 70%);animation:drift 22s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translate(-60px,50px) scale(1.12)}}
+.float{animation:float 6s ease-in-out infinite}.float.d2{animation-delay:-3s}@keyframes float{50%{transform:translateY(-10px)}}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 0 rgba(39,114,224,.6);animation:pulse 1.8s ease-out infinite;flex:none}@keyframes pulse{to{box-shadow:0 0 0 10px rgba(39,114,224,0)}}
+.pulse.g{background:#1F9D55;box-shadow:0 0 0 0 rgba(31,157,85,.6);animation-name:pulseg}@keyframes pulseg{to{box-shadow:0 0 0 10px rgba(31,157,85,0)}}
+.caret{display:inline-block;width:2px;height:18px;background:var(--blue);margin-left:2px;vertical-align:-3px;animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+.seg{border:0;cursor:pointer;font:600 12px 'IBM Plex Mono',monospace;padding:7px 11px;border-radius:2px;transition:background .25s,color .25s}
+.in-a{animation:inA .55s var(--ease) both}.in-b{animation:inB .55s var(--ease) both}
+@keyframes inA{from{opacity:0;transform:translateY(-10px);background:rgba(39,114,224,.25)}to{opacity:1;transform:none;background:rgba(39,114,224,0)}}
+@keyframes inB{from{opacity:0;transform:translateY(-10px);background:rgba(39,114,224,.25)}to{opacity:1;transform:none;background:rgba(39,114,224,0)}}
+/* logos */
+.marq{display:flex;align-items:center;gap:64px;width:max-content;animation:marq 50s linear infinite}.mq:hover .marq{animation-play-state:paused}@keyframes marq{to{transform:translateX(-50%)}}
+.logo{height:30px;width:auto;max-width:150px;object-fit:contain;filter:grayscale(1);opacity:.55;transition:filter .3s,opacity .3s}.logo:hover{filter:none;opacity:1}
+/* infographics */
+.dots{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
+.dot{aspect-ratio:1;border-radius:50%;background:var(--line);transition:background .35s var(--ease),transform .35s var(--ease)}
+html:not(.js-rv) .dot.on,.rv.in .dot.on{background:var(--ink)}html:not(.js-rv) .dot.on.b,.rv.in .dot.on.b{background:var(--blue);transform:scale(1.15)}
+.ring{fill:none;stroke-width:9;stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%;transition:stroke-dashoffset 1.8s var(--ease) .3s}
+html.js-rv .rv:not(.in) .ring{stroke-dashoffset:226!important}
+.hbar{height:100%;border-radius:2px;transition:width 1.6s var(--ease) .3s}
+html.js-rv .rv:not(.in) .hbar{width:0!important}
+/* process */
+.stage-bar{transition:width .2s linear,background .25s}
+.range{width:100%;accent-color:var(--blue);cursor:pointer}
+/* testimonials */
+.qfade{animation:qf .7s var(--ease) both}.qfade2{animation:qf2 .7s var(--ease) both}
+@keyframes qf{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}@keyframes qf2{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.qdot{width:28px;height:3px;border:0;padding:0;cursor:pointer;border-radius:2px;transition:background .3s,width .3s}
+.faq-q{width:100%;border:0;background:transparent;cursor:pointer;font:500 clamp(16px,1.4vw,19px) 'Instrument Sans',sans-serif;color:var(--ink);text-align:left;display:flex;justify-content:space-between;gap:24px;padding:22px 0}
+.faq-q .pm{transition:transform .3s var(--ease)}
+.row{transition:background .3s,padding .35s var(--ease)}.row:hover{background:var(--alt);padding-left:14px;padding-right:14px}
+.dark .row:hover{background:#171B20}
+.uc{position:relative;overflow:hidden}
+.uc .more{max-height:0;opacity:0;transition:max-height .5s var(--ease),opacity .4s}
+.uc:hover .more,.uc:focus-within .more{max-height:200px;opacity:1}
+.uc::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--blue);transition:width .5s var(--ease)}.uc:hover::after{width:100%}
+.team-n{transition:transform .4s var(--ease)}
+.g6{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-bottom:0}
+.lcell{background:#fff;height:110px;display:flex;align-items:center;justify-content:center;padding:18px;transition:background .3s}.lcell:hover{background:var(--wash)}
+.lcell .logo{height:40px;max-width:140px;opacity:.75}.lcell:hover .logo{filter:none;opacity:1;transform:scale(1.06)}.lcell .logo{transition:filter .3s,opacity .3s,transform .4s var(--ease)}
+.fgrid{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(4,minmax(0,1fr));gap:40px}
+.fcol{display:flex;flex-direction:column;gap:11px;align-items:flex-start}
+.fh{font:600 11px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:4px}
+@media (max-width:1100px){.g6{grid-template-columns:repeat(4,minmax(0,1fr))}.fgrid{grid-template-columns:repeat(4,minmax(0,1fr))}.fgrid>.fbrand{grid-column:1/-1}}
+@media (max-width:640px){.g6{grid-template-columns:repeat(2,minmax(0,1fr))}.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fl{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:500;color:rgba(255,255,255,.8)}
+.fi{font:400 15px 'Instrument Sans',sans-serif;color:#fff;background:var(--deep);border:1px solid rgba(255,255,255,.14);border-radius:2px;padding:12px 13px;width:100%;box-sizing:border-box;transition:border-color .2s,box-shadow .2s}
+.fi::placeholder{color:rgba(255,255,255,.45)}.fi:hover{border-color:rgba(255,255,255,.3)}.fi:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(39,114,224,.25)}
+.chipd{border:0;cursor:pointer;font:500 13px 'Instrument Sans',sans-serif;padding:8px 12px;border-radius:2px;transition:background .2s,color .2s}
+.ind{background:#fff;transition:background .45s var(--ease),color .45s var(--ease)}.ind .ind-n{color:var(--blued);transition:color .45s}.ind .ind-d{color:var(--ink2);transition:color .45s}.ind .ind-bar{background:var(--blue)}
+.ind:hover{background:var(--ink);color:#fff}.ind:hover .ind-n{color:var(--bluel)}.ind:hover .ind-d{color:rgba(255,255,255,.78)}.ind:hover .ind-bar{background:var(--bluel)}
+@media (max-width:1100px){.hero-g,.split{grid-template-columns:minmax(0,1fr)}.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.hide-t{display:none!important}.nav-links{gap:18px!important}}
+@media (max-width:860px){.nav-links{display:none!important}.g2{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){.g3,.g4{grid-template-columns:minmax(0,1fr)}.hide-m{display:none!important}.g4.keep2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html.js-rv .rv,html.js-rv .stg>*{opacity:1;transform:none}html.js-rv .wipe .ph{clip-path:none}}
+
+.kick{display:inline-flex;align-items:center;gap:10px;font:500 13px 'IBM Plex Mono',monospace;letter-spacing:0;text-transform:none;color:var(--blued)}.kick::before{content:"";width:18px;height:2px;background:var(--blue)}
+.dark .kick{color:var(--bluel)}.dark .kick::before{background:var(--bluel)}
+.card-h{transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .3s}.card-h:hover{transform:translateY(-4px);box-shadow:0 22px 44px -18px rgba(17,19,24,.18)}
+.card-h:hover .ph img{transform:scale(1.06)}
+@media (max-width:1100px){.stack{grid-template-columns:minmax(0,1fr)!important}.span-all{grid-column:1/-1!important}.h1{font-size:clamp(40px,6vw,64px)!important}.h2{font-size:clamp(30px,4.4vw,44px)!important}}
+@media (max-width:860px){.hide-m{display:none!important}}
+
+/* logo hover: stay dark, never wash out */
+.lcell:hover .clogo{filter:brightness(0)!important;opacity:1;transform:scale(1.08)}
+.lcell:hover{background:#fff!important;border-color:var(--blue)!important;box-shadow:0 10px 24px -14px rgba(39,114,224,.45)}
+.logo:hover{filter:brightness(0)!important;opacity:1}
+/* design system normalisation */
+.head{align-items:flex-end!important}
+.head .btn{flex:none}
+.h2{margin:0}
+section .head + *{margin-top:0}
+</style></helmet>
+
+<header style="position:sticky;top:0;z-index:40;background:rgba(255,255,255,.86);backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);border-bottom:1px solid var(--line)">
+<div class="w" style="display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px">
+<a href="Home.dc.html" aria-label="Trident Software, home"><img src="trident-logo.svg" alt="Trident Software" style="height:20px"></a>
+<nav class="nav-links" aria-label="Main" style="display:flex;gap:28px;font-size:14px;color:var(--ink2)"><a class="ul" href="Services.dc.html">Services</a><a class="ul" href="UseCases.dc.html" aria-current="page" style="color:#111318;font-weight:600">Use cases</a><a class="ul" href="Projects.dc.html">Projects</a><a class="ul" href="About.dc.html">About</a><a class="ul" href="Blog.dc.html">Blog</a><a class="ul" href="Contact.dc.html">Contact</a></nav>
+<div style="display:flex;align-items:center;gap:14px"><div role="group" aria-label="Site language" class="hide-m" style="display:inline-flex;gap:2px;padding:3px;border:1px solid var(--line);border-radius:3px"><sc-for list="{{ langs }}" as="l" hint-placeholder-count="4"><button type="button" class="seg" aria-pressed="{{ l.on }}" onClick="{{ l.pick }}" style="background:{{ l.bg }};color:{{ l.fg }};padding:5px 8px;font-size:11px">{{ l.c }}</button></sc-for></div><a class="btn btn-blue" href="Contact.dc.html" style="padding:10px 16px;font-size:14px"><span>Free audit<i class="arr">→</i></span></a></div>
+</div>
+</header>
+
+<main>
+<section style="border-bottom:1px solid #E3E5E8">
+<div class="w stack" style="padding-top:96px;padding-bottom:80px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:56px;align-items:end">
+<div style="display:flex;flex-direction:column;gap:24px"><span class="kick">Use cases</span><h1 class="h1" style="text-wrap:balance">Where an AI agent pays for itself — with the mechanics, not the promise</h1><p style="margin:0;font-size:18px;line-height:1.55;color:#4A4F57">Eight process patterns and a growing set of industry scenarios: what each replaces, and what has to be true before it works.</p></div>
+<div style="border-left:3px solid #2772E0;padding-left:20px;display:flex;flex-direction:column;gap:10px"><span class="mono" style="font-size:12px;font-weight:600;color:#1B57B8">How to read this</span><p style="margin:0;font-size:15px;line-height:1.55;color:#4A4F57">Each case follows the same structure: the situation, what the agent does, what it replaces, and the precondition — the thing that must already be true, or the case does not work.</p><p style="margin:0;font-size:15px;line-height:1.55;font-weight:600">The preconditions matter more than the capabilities. Most failed AI projects fail there, not in the model.</p></div>
+</div>
+</section>
+
+<section style="padding:clamp(72px,9vw,128px) 0;background:#F6F7F8">
+<div class="w stack" style="display:grid;grid-template-columns:360px minmax(0,1fr);gap:24px;align-items:start">
+<div style="position:sticky;top:88px;background:#fff;border:1px solid #E3E5E8;border-radius:3px;overflow:hidden" role="tablist" aria-label="Use cases">
+<sc-for list="{{ tabs }}" as="u" hint-placeholder-count="8"><button type="button" role="tab" class="uc" aria-selected="{{ u.on }}" onClick="{{ u.pick }}" style="display:grid;grid-template-columns:32px minmax(0,1fr) 16px;gap:10px;padding:16px 18px;border-bottom:1px solid #E3E5E8;background:{{ u.bg }};color:#111318;font-size:15px;font-weight:{{ u.w }};box-shadow:inset 3px 0 0 {{ u.bar }}"><span class="mono" style="font-size:12px;color:{{ u.nc }}">{{ u.n }}</span><span>{{ u.t }}</span><span style="color:{{ u.nc }}">→</span></button></sc-for>
+</div>
+<div role="tabpanel" class="{{ anim }}" style="background:#fff;border:1px solid #E3E5E8;border-radius:3px;overflow:hidden">
+<div style="background:#111318;color:#fff;padding:40px;display:flex;flex-direction:column;gap:12px"><span class="mono" style="font-size:13px;color:#8FB6F4">{{ cur.n }} / 08</span><h2 class="h2">{{ cur.t }}</h2></div>
+<div class="stack" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr))">
+<div style="padding:32px 40px;border-bottom:1px solid #E3E5E8;border-right:1px solid #E3E5E8;display:flex;flex-direction:column;gap:10px"><span class="kick">The situation</span><p style="margin:0;font-size:16px;line-height:1.6">{{ cur.sit }}</p></div>
+<div style="padding:32px 40px;border-bottom:1px solid #E3E5E8;display:flex;flex-direction:column;gap:10px"><span class="kick">What the agent does</span><p style="margin:0;font-size:16px;line-height:1.6">{{ cur.does }}</p></div>
+<div style="padding:32px 40px;border-right:1px solid #E3E5E8;display:flex;flex-direction:column;gap:10px"><span class="kick">What it replaces</span><p style="margin:0;font-size:16px;line-height:1.6">{{ cur.rep }}</p></div>
+<div style="padding:32px 40px;background:#EEF3FD;display:flex;flex-direction:column;gap:10px"><span class="kick">Precondition</span><p style="margin:0;font-size:16px;line-height:1.6;font-weight:500">{{ cur.pre }}</p></div>
+</div>
+<sc-if value="{{ cur.note }}" hint-placeholder-val="{{ false }}"><div class="mono" style="padding:16px 40px;border-top:1px solid #E3E5E8;font-size:13px;color:#1B57B8">✓ {{ cur.note }}</div></sc-if>
+<div style="padding:20px 40px;border-top:1px solid #E3E5E8;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><div style="display:flex;gap:8px"><button type="button" class="btn btn-line" onClick="{{ prev }}" style="padding:10px 14px;font-size:14px"><span>← Previous</span></button><button type="button" class="btn btn-line" onClick="{{ next }}" style="padding:10px 14px;font-size:14px"><span>Next →</span></button></div><a class="btn btn-blue" href="Contact.dc.html" style="padding:11px 16px;font-size:14px"><span>Check this in the audit<i class="arr">→</i></span></a></div>
+</div>
+</div>
+</section>
+
+<section class="dark" style="background:#111318;color:#fff;padding:clamp(72px,9vw,128px) 0">
+<div class="w rv" style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:40px">
+<div class="span-all" style="grid-column:1/5;display:flex;flex-direction:column;gap:14px"><span class="kick">Where we would not start</span><h2 class="h2">Being explicit about this saves everyone time.</h2></div>
+<div class="span-all stack" style="grid-column:6/13;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid rgba(255,255,255,.16)"><sc-for list="{{ nostart }}" as="x" hint-placeholder-count="4"><div style="padding:24px 24px 24px 0;border-bottom:1px solid rgba(255,255,255,.16);display:flex;flex-direction:column;gap:8px"><span style="font-size:19px;font-weight:600;display:flex;gap:10px"><span style="color:#8FB6F4">✕</span>{{ x.t }}</span><span style="font-size:15px;line-height:1.55;color:rgba(255,255,255,.72)">{{ x.d }}</span></div></sc-for></div>
+</div>
+</section>
+
+<section style="padding:clamp(72px,9vw,128px) 0">
+<div class="w rv" style="display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:14px"><span class="kick">What a first engagement looks like</span><h2 class="h2">One increment, measured, then the next.</h2></div>
+<div class="stack" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px">
+<div style="border-top:3px solid #2772E0;padding-top:20px;display:flex;flex-direction:column;gap:10px"><span class="mono" style="font-size:13px;font-weight:600;color:#1B57B8">Week 0 — audit</span><span style="font-size:16px;line-height:1.55">45 minutes on your actual numbers: volumes, response times, channel mix, systems. Output is your own ROI model and a recommendation, which may be "not yet".</span></div>
+<div style="border-top:3px solid #111318;padding-top:20px;display:flex;flex-direction:column;gap:10px"><span class="mono" style="font-size:13px;font-weight:600">Weeks 1–4 — one scenario, one channel</span><span style="font-size:16px;line-height:1.55">Narrow scope, real traffic, measured against the baseline you had before.</span></div>
+<div style="border-top:3px solid #111318;padding-top:20px;display:flex;flex-direction:column;gap:10px"><span class="mono" style="font-size:13px;font-weight:600">Week 5 — decision on evidence</span><span style="font-size:16px;line-height:1.55">Extend, adjust or stop. The data from the pilot decides, not the plan.</span></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="dark" style="background:#0F1216;color:#fff">
+<div class="w stack" style="padding-top:96px;padding-bottom:64px;display:grid;grid-template-columns:minmax(0,1.3fr) auto;gap:40px;align-items:end;">
+<h2 class="h1">Bring your volumes. Leave with <span style="color:#8FB6F4">your numbers.</span></h2>
+<a class="btn btn-blue" href="Contact.dc.html"><span>Book a free 45-min audit<i class="arr">→</i></span></a>
+</div>
+<div class="w">
+<div class="fgrid" style="padding:56px 0;border-top:1px solid rgba(255,255,255,.12);font-size:14px;color:rgba(255,255,255,.86)">
+<div class="fcol fbrand" style="gap:16px;max-width:340px"><img src="trident-logo-white.svg" alt="Trident Software" style="height:20px;width:auto"><span style="color:rgba(255,255,255,.66);line-height:1.55">Operational software and AI agents, built in Switzerland. Senior engineers, fixed budgets, compliance included.</span><span style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag" style="background:rgba(255,255,255,.08);color:#fff">CH / EU hosting</span><span class="tag" style="background:rgba(255,255,255,.08);color:#fff">revFADP</span><span class="tag" style="background:rgba(255,255,255,.08);color:#fff">GDPR</span></span></div>
+<div class="fcol"><span class="fh">Services</span><a class="ul" href="Services.dc.html">AI agents &amp; LLM automation</a><a class="ul" href="Services.dc.html">Logistics &amp; operations</a><a class="ul" href="Services.dc.html">Custom business systems</a><a class="ul" href="Services.dc.html">IoT &amp; connected products</a><a class="ul" href="Services.dc.html">CTO as a Service</a></div>
+<div class="fcol"><span class="fh">Company</span><a class="ul" href="About.dc.html">About</a><a class="ul" href="Team.dc.html">Our team</a><a class="ul" href="Projects.dc.html">Projects</a><a class="ul" href="Blog.dc.html">Blog</a><a class="ul" href="Contact.dc.html">Contact</a></div>
+<div class="fcol"><span class="fh">Explore</span><a class="ul" href="UseCases.dc.html">Use cases</a><a class="ul" href="#">Industries</a><a class="ul" href="#">Pricing</a><a class="ul" href="#">Technologies</a><a class="ul" href="#">Locations</a></div>
+<div class="fcol"><span class="fh">Contact</span><a class="ul" href="mailto:info@trident-software.ch">info@trident-software.ch</a><a class="ul" href="tel:+41797454429">+41 79 745 44 29</a><span style="color:rgba(255,255,255,.66);line-height:1.5">Rue de l'Industrie 23<br>1950 Sion, Valais</span></div>
+</div>
+<div style="padding:20px 0 28px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:12px;color:rgba(255,255,255,.62)"><span>Swiss made software · © 2026 Trident Software Sàrl · CHE-185.076.733</span><span style="display:flex;gap:20px"><a class="ul" href="#">Privacy</a><a class="ul" href="#">Terms</a><a class="ul" href="#">Imprint</a><a class="ul" href="#">Cookies</a></span></div>
+</div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+const UC = [
+  { t: 'Inbound enquiry handling', sit: 'Enquiries arrive by e-mail, web form, WhatsApp and phone. They are answered when someone gets to them — which on a busy day means hours, and on a weekend means Monday. The questions repeat: opening hours, delivery times, price ranges, availability, coverage area.', does: "Answers within seconds on every channel, in the enquirer's own language. Asks the qualifying questions a good rep asks, records the answers as structured fields, books the appointment or reserves the slot, writes contact, deal and transcript into the CRM. On low confidence or an angry tone, it stops and routes to a named person with the full context attached.", rep: 'Not a person — the queue. The team stops being interrupted by the same twelve questions and keeps the conversations that need judgement.', pre: "Answers must exist somewhere in writing — price list, service catalogue, terms. If the correct answer lives only in one colleague's head, that has to be extracted first. That extraction is usually the real project.", note: '' },
+  { t: 'Document processing', sit: 'Invoices, delivery notes, order confirmations, certificates and forms arrive as PDFs, scans and photographs. Someone retypes them into the system. The work is dull, error-prone, and scales linearly with volume.', does: 'Reads the document, extracts the fields that matter, matches them against existing records — supplier, order, contract — flags mismatches, and writes structured data into the target system. Ambiguous cases go to a person with the document and the extracted fields side by side, so the check takes seconds rather than minutes.', rep: 'Manual data entry, and the reconciliation that follows from typos in it.', pre: 'A definition of "correct". Someone must be able to state which field goes where and what makes a document invalid. Without that, the system automates an argument instead of a process.', note: 'We delivered a document recognition system on exactly this pattern in 2025.' },
+  { t: 'Order intake from unstructured messages', sit: 'Regular customers order the way they always have: a WhatsApp message, a phone call, a photograph of a handwritten list. Someone in the office turns that into an order in the system. In distribution, HoReCa supply and construction materials this is often the majority of intake.', does: 'Reads the message, identifies the customer, resolves what they mean by their own shorthand ("the usual pallet", "same as last Tuesday"), checks the catalogue and stock, builds a draft order, and sends back a confirmation the customer can correct in one message. Only confirmed orders enter the system.', rep: 'The transcription step, and the errors that come from it — wrong quantity, wrong article, wrong delivery date.', pre: 'Customer history. The agent resolves shorthand by looking at what this customer has actually ordered before. A business with no order history in a system cannot start here.', note: '' },
+  { t: 'Dispatcher assistant', sit: "A dispatcher plans the day: which vehicle takes which job, in what order, with which driver. When a job is added, a vehicle breaks down or a flight is delayed, the plan is rebuilt in the dispatcher's head under time pressure.", does: 'Proposes the assignment and the sequence, explains the reasoning, and recalculates when something changes. It never assigns silently: the dispatcher sees the suggestion, the alternatives and the cost of each, and decides.', rep: 'The mental arithmetic, not the dispatcher. Experienced dispatchers hold constraints no system knows — which driver handles which client well, whose vehicle is due for service. The assistant handles distance, time windows and capacity; the human keeps the rest.', pre: 'The advisory framing must be genuine. Dispatchers reject systems that overrule them, and they are usually right to. Build it as a proposal with a visible reason, or do not build it.', note: '' },
+  { t: 'Retrieval over corporate knowledge', sit: 'The answer exists — in a contract, a technical manual, a policy document, four years of project files. Finding it takes twenty minutes and knowing where to look, so people ask a colleague instead, and the colleague becomes the bottleneck.', does: 'Answers questions from the document corpus with citations to the source passage. Respects access rights: a person sees only what they are cleared to see. Says "not found in the available documents" instead of inventing an answer.', rep: 'The internal interruption economy — the constant tapping on the shoulder of whoever knows.', pre: 'Document hygiene. If three contradictory versions of the same policy sit in the corpus, the agent will cite one of them confidently. Retrieval amplifies whatever order already exists; it does not create it.', note: '' },
+  { t: 'Recommendation and next-best-offer', sit: 'A customer is in the catalogue or on the phone. What else should they be offered? The answer depends on stock, margin, what similar customers bought and what this customer has already refused. In practice it depends on which rep is working today.', does: "Draws on live catalogue, stock, price list and behavioural history to propose the next offer, with the reason attached. Works in the web shop, in the agent's own conversations, and as a suggestion in the rep's interface.", rep: 'Static cross-sell rules that nobody maintains, and inconsistency between reps.', pre: 'Enough transaction history to learn from, and live stock data. Recommending what is out of stock damages trust faster than not recommending at all.', note: 'We delivered a recommendation engine on this pattern in 2025.' },
+  { t: 'Customer status and self-service', sit: '"Where is my delivery?" "What is the status of my order?" "Can you resend the invoice?" These calls carry no commercial value and consume the same staff who could be selling.', does: 'Authenticates the customer, reads live status from the operational system, answers precisely — including the unpleasant answers, with the reason. Resends documents, updates delivery instructions, reschedules where the rules allow.', rep: 'The status-request call volume. In transport and distribution this is frequently the largest single category of inbound contact.', pre: 'Live status must exist in a system. If the true location of a shipment is known only to the driver, the agent has nothing to read.', note: '' },
+  { t: 'Back-office triage', sit: 'A shared mailbox receives everything: orders, complaints, invoices, job applications, supplier notices, spam. Someone sorts it every morning.', does: 'Classifies each message, routes it to the right queue or person, extracts the fields that matter, drafts a reply for the routine categories, and escalates anything unusual. Learns from corrections.', rep: 'The sorting hour, and the messages that slip through it.', pre: 'Agreed routing rules. The disagreement about who owns which category has to be settled by people first — the agent will implement whatever it is told, including the wrong thing.', note: '' }
+].map((u, i) => ({ ...u, n: '0' + (i + 1) }));
+const NOSTART = [
+  ['Where volume is low.', 'Below roughly twenty repetitive interactions a day, the payback period stretches past the point where the project is worth managing. Fix the process instead.'],
+  ['Where the answer is genuinely bespoke every time.', 'High-value consultative selling, complex technical design, negotiation. An agent can prepare the ground; it should not conduct the conversation.'],
+  ['Where the underlying data is broken.', 'Automating a process that runs on an out-of-date price list produces wrong answers faster. Data first, agent second.'],
+  ['Where nobody will own it after go-live.', 'An agent needs someone reviewing escalations and updating the knowledge base. Without a named owner it degrades within months. This is the most common cause of the "we tried a chatbot and it was a disaster" experience.']
+];
+class Component extends DCLogic {
+  __rv() {
+    try {
+      if (!('IntersectionObserver' in window)) return;
+      document.documentElement.classList.add('js-rv');
+      this.__io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); this.__io.unobserve(e.target); } }), { threshold: 0.12 });
+      setTimeout(() => document.querySelectorAll('.rv').forEach(el => this.__io.observe(el)), 80);
+      this.__chk = setInterval(() => document.querySelectorAll('.rv:not(.in)').forEach(el => { const r = el.getBoundingClientRect(); if (r.top < window.innerHeight * 0.95 && r.bottom > 0) el.classList.add('in'); }), 350);
+    } catch (e) { document.documentElement.classList.remove('js-rv'); }
+  }
+  __langs() { const s = this.state || {}; return ['EN', 'DE', 'FR', 'IT'].map(c => { const on = (s.siteLang || 'EN') === c; return { c, on, bg: on ? '#111318' : 'transparent', fg: on ? '#fff' : '#4A4F57', pick: () => this.setState({ siteLang: c }) }; }); }
+  state = { i: 0, k: 0 };
+  componentDidMount() { this.__rv(); }
+  componentWillUnmount() { clearInterval(this.__chk); if (this.__io) this.__io.disconnect(); if (this.io) this.io.disconnect(); }
+  go(i) { this.setState(s => ({ i: (i + 8) % 8, k: s.k + 1 })); }
+  renderVals() {
+    const s = this.state;
+    return {
+      langs: this.__langs(),
+      cur: UC[s.i], anim: s.k % 2 ? 'fade' : 'fade2',
+      prev: () => this.go(s.i - 1), next: () => this.go(s.i + 1),
+      tabs: UC.map((u, i) => { const on = s.i === i; return { n: u.n, t: u.t, on, bg: on ? '#EEF3FD' : '#fff', w: on ? 600 : 400, bar: on ? '#2772E0' : 'transparent', nc: on ? '#1B57B8' : '#6B7078', pick: () => this.go(i) }; }),
+      nostart: NOSTART.map(([t, d]) => ({ t, d }))
+    };
+  }
+}
+</script>
+</body>
+</html>

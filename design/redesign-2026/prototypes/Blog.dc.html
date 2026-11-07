@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trident — Blog</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><style>
+body{margin:0;background:#fff;color:#111318;font-family:'Instrument Sans',-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:1240px;margin:0 auto;padding-left:clamp(20px,5vw,64px);padding-right:clamp(20px,5vw,64px)}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
+.kick{font:500 12px 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:#1B57B8}.dark .kick{color:#8FB6F4}
+.btn{position:relative;display:inline-flex;align-items:center;overflow:hidden;border:0;cursor:pointer;font:600 15px 'Instrument Sans',sans-serif;padding:14px 20px;border-radius:2px;white-space:nowrap}
+.btn>span{position:relative}.btn .arr{display:inline-block;margin-left:6px;font-style:normal;transition:transform .25s cubic-bezier(.2,0,0,1)}.btn:hover .arr{transform:translateX(5px)}
+.btn-blue{background:#2772E0;color:#fff}.btn-ink{background:#111318;color:#fff}
+.btn-blue::before,.btn-ink::before{content:"";position:absolute;inset:0;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,0,0,1)}
+.btn-blue::before{background:#1B57B8}.btn-ink::before{background:#2772E0}.btn-blue:hover::before,.btn-ink:hover::before{transform:scaleX(1)}
+.btn-line{background:transparent;color:inherit;box-shadow:inset 0 0 0 1px #C9CDD2;transition:box-shadow .25s}.btn-line:hover{box-shadow:inset 0 0 0 1px #111318}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #2772E0;outline-offset:2px}
+a.ul{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;padding-bottom:3px;transition:background-size .3s cubic-bezier(.2,0,0,1)}a.ul:hover{background-size:100% 1px}
+.card-h{transition:transform .3s cubic-bezier(.2,0,0,1),box-shadow .3s,border-color .3s}.card-h:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(17,19,24,.09);border-color:#2772E0}
+.card-h .go{transition:transform .25s}.card-h:hover .go{transform:translateX(6px)}
+html.js-rv .rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,0,0,1),transform .8s cubic-bezier(.2,0,0,1)}html.js-rv .rv.in{opacity:1;transform:none}
+@media (max-width:900px){.stack{grid-template-columns:minmax(0,1fr)!important}.hide-m{display:none!important}.h1{font-size:42px!important}.h2{font-size:32px!important}.span-all{grid-column:1/-1!important}.nav-links{display:none!important}}
+@media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}html.js-rv .rv{opacity:1;transform:none}}
+
+/* shared system */
+
+:root{--ink:#111318;--ink2:#4A4F57;--ink3:#6B7078;--line:#E3E5E8;--line2:#C9CDD2;--alt:#F6F7F8;--blue:#2772E0;--blued:#1B57B8;--bluel:#8FB6F4;--wash:#EEF3FD;--deep:#0F1216;--ease:cubic-bezier(.2,0,0,1)}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Instrument Sans',-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.w{max-width:1280px;margin:0 auto;padding-left:clamp(20px,4.5vw,64px);padding-right:clamp(20px,4.5vw,64px)}
+.sec{padding:clamp(72px,9vw,128px) 0}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
+.lbl{display:inline-flex;align-items:center;gap:10px;font:500 13px 'IBM Plex Mono',monospace;color:var(--blued)}
+.lbl::before{content:"";width:18px;height:2px;background:var(--blue)}
+.dark .lbl{color:var(--bluel)}.dark .lbl::before{background:var(--bluel)}
+.h1{margin:0;font-size:clamp(40px,5.4vw,76px);line-height:1;letter-spacing:-.045em;font-weight:600}
+.h2{margin:0;font-size:clamp(32px,3.9vw,54px);line-height:1.03;letter-spacing:-.04em;font-weight:600;text-wrap:balance}
+.lead{margin:0;font-size:clamp(16px,1.35vw,19px);line-height:1.6;color:var(--ink2);text-wrap:pretty}
+.dark .lead{color:rgba(255,255,255,.74)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:clamp(36px,4vw,56px)}
+.head>div{display:flex;flex-direction:column;gap:16px;max-width:760px}
+.btn{position:relative;display:inline-flex;align-items:center;overflow:hidden;border:0;cursor:pointer;font:600 15px 'Instrument Sans',sans-serif;padding:14px 20px;border-radius:2px;white-space:nowrap}
+.btn>span{position:relative}.btn .arr{display:inline-block;margin-left:6px;font-style:normal;transition:transform .25s var(--ease)}.btn:hover .arr{transform:translateX(5px)}
+.btn-blue{background:var(--blue);color:#fff}.btn-ink{background:var(--ink);color:#fff}
+.btn-blue::before,.btn-ink::before{content:"";position:absolute;inset:0;transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.btn-blue::before{background:var(--blued)}.btn-ink::before{background:var(--blue)}.btn-blue:hover::before,.btn-ink:hover::before{transform:scaleX(1)}
+.btn-line{background:transparent;color:inherit;box-shadow:inset 0 0 0 1px var(--line2);transition:box-shadow .25s}.btn-line:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.dark .btn-line{box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}.dark .btn-line:hover{box-shadow:inset 0 0 0 1px #fff}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+a.ul{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;padding-bottom:3px;transition:background-size .3s var(--ease)}a.ul:hover{background-size:100% 1px}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.hero-g{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(32px,4vw,64px);align-items:center}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:center}
+.card{background:#fff;border:1px solid var(--line);border-radius:3px;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -18px rgba(17,19,24,.18);border-color:var(--line2)}
+.ph{position:relative;overflow:hidden;background:var(--alt)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.card:hover .ph img,.tm:hover .ph img{transform:scale(1.06)}
+.go{transition:transform .25s var(--ease)}.card:hover .go,.row:hover .go{transform:translateX(6px);color:var(--blue)}
+.tag{font:600 11px 'IBM Plex Mono',monospace;padding:3px 8px;border-radius:2px;white-space:nowrap}
+/* reveal + stagger + image wipe */
+html.js-rv .rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js-rv .rv.in{opacity:1;transform:none}
+html.js-rv .stg>*{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+html.js-rv .stg.in>*{opacity:1;transform:none}
+.stg>*:nth-child(2){transition-delay:.08s}.stg>*:nth-child(3){transition-delay:.16s}.stg>*:nth-child(4){transition-delay:.24s}.stg>*:nth-child(5){transition-delay:.32s}.stg>*:nth-child(6){transition-delay:.4s}.stg>*:nth-child(7){transition-delay:.48s}.stg>*:nth-child(8){transition-delay:.56s}
+html.js-rv .wipe .ph{clip-path:inset(0 0 100% 0);transition:clip-path 1.2s var(--ease)}html.js-rv .wipe.in .ph{clip-path:inset(0 0 0 0)}
+/* hero */
+.wm{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.wd{display:inline-block;margin-right:.22em;animation:wd 1s var(--ease) both}@keyframes wd{from{transform:translateY(105%)}to{transform:none}}
+.fadein{animation:fadein 1s var(--ease) both}@keyframes fadein{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;opacity:.55}
+.blob.a{width:520px;height:520px;right:-120px;top:-160px;background:radial-gradient(circle,#BFD5F8,transparent 70%);animation:drift 18s ease-in-out infinite alternate}
+.blob.b{width:420px;height:420px;right:28%;top:200px;background:radial-gradient(circle,#EEF3FD,transparent 70%);animation:drift 22s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translate(-60px,50px) scale(1.12)}}
+.float{animation:float 6s ease-in-out infinite}.float.d2{animation-delay:-3s}@keyframes float{50%{transform:translateY(-10px)}}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 0 rgba(39,114,224,.6);animation:pulse 1.8s ease-out infinite;flex:none}@keyframes pulse{to{box-shadow:0 0 0 10px rgba(39,114,224,0)}}
+.pulse.g{background:#1F9D55;box-shadow:0 0 0 0 rgba(31,157,85,.6);animation-name:pulseg}@keyframes pulseg{to{box-shadow:0 0 0 10px rgba(31,157,85,0)}}
+.caret{display:inline-block;width:2px;height:18px;background:var(--blue);margin-left:2px;vertical-align:-3px;animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+.seg{border:0;cursor:pointer;font:600 12px 'IBM Plex Mono',monospace;padding:7px 11px;border-radius:2px;transition:background .25s,color .25s}
+.in-a{animation:inA .55s var(--ease) both}.in-b{animation:inB .55s var(--ease) both}
+@keyframes inA{from{opacity:0;transform:translateY(-10px);background:rgba(39,114,224,.25)}to{opacity:1;transform:none;background:rgba(39,114,224,0)}}
+@keyframes inB{from{opacity:0;transform:translateY(-10px);background:rgba(39,114,224,.25)}to{opacity:1;transform:none;background:rgba(39,114,224,0)}}
+/* logos */
+.marq{display:flex;align-items:center;gap:64px;width:max-content;animation:marq 50s linear infinite}.mq:hover .marq{animation-play-state:paused}@keyframes marq{to{transform:translateX(-50%)}}
+.logo{height:30px;width:auto;max-width:150px;object-fit:contain;filter:grayscale(1);opacity:.55;transition:filter .3s,opacity .3s}.logo:hover{filter:none;opacity:1}
+/* infographics */
+.dots{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
+.dot{aspect-ratio:1;border-radius:50%;background:var(--line);transition:background .35s var(--ease),transform .35s var(--ease)}
+html:not(.js-rv) .dot.on,.rv.in .dot.on{background:var(--ink)}html:not(.js-rv) .dot.on.b,.rv.in .dot.on.b{background:var(--blue);transform:scale(1.15)}
+.ring{fill:none;stroke-width:9;stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%;transition:stroke-dashoffset 1.8s var(--ease) .3s}
+html.js-rv .rv:not(.in) .ring{stroke-dashoffset:226!important}
+.hbar{height:100%;border-radius:2px;transition:width 1.6s var(--ease) .3s}
+html.js-rv .rv:not(.in) .hbar{width:0!important}
+/* process */
+.stage-bar{transition:width .2s linear,background .25s}
+.range{width:100%;accent-color:var(--blue);cursor:pointer}
+/* testimonials */
+.qfade{animation:qf .7s var(--ease) both}.qfade2{animation:qf2 .7s var(--ease) both}
+@keyframes qf{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}@keyframes qf2{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.qdot{width:28px;height:3px;border:0;padding:0;cursor:pointer;border-radius:2px;transition:background .3s,width .3s}
+.faq-q{width:100%;border:0;background:transparent;cursor:pointer;font:500 clamp(16px,1.4vw,19px) 'Instrument Sans',sans-serif;color:var(--ink);text-align:left;display:flex;justify-content:space-between;gap:24px;padding:22px 0}
+.faq-q .pm{transition:transform .3s var(--ease)}
+.row{transition:background .3s,padding .35s var(--ease)}.row:hover{background:var(--alt);padding-left:14px;padding-right:14px}
+.dark .row:hover{background:#171B20}
+.uc{position:relative;overflow:hidden}
+.uc .more{max-height:0;opacity:0;transition:max-height .5s var(--ease),opacity .4s}
+.uc:hover .more,.uc:focus-within .more{max-height:200px;opacity:1}
+.uc::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--blue);transition:width .5s var(--ease)}.uc:hover::after{width:100%}
+.team-n{transition:transform .4s var(--ease)}
+.g6{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-bottom:0}
+.lcell{background:#fff;height:110px;display:flex;align-items:center;justify-content:center;padding:18px;transition:background .3s}.lcell:hover{background:var(--wash)}
+.lcell .logo{height:40px;max-width:140px;opacity:.75}.lcell:hover .logo{filter:none;opacity:1;transform:scale(1.06)}.lcell .logo{transition:filter .3s,opacity .3s,transform .4s var(--ease)}
+.fgrid{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(4,minmax(0,1fr));gap:40px}
+.fcol{display:flex;flex-direction:column;gap:11px;align-items:flex-start}
+.fh{font:600 11px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:4px}
+@media (max-width:1100px){.g6{grid-template-columns:repeat(4,minmax(0,1fr))}.fgrid{grid-template-columns:repeat(4,minmax(0,1fr))}.fgrid>.fbrand{grid-column:1/-1}}
+@media (max-width:640px){.g6{grid-template-columns:repeat(2,minmax(0,1fr))}.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fl{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:500;color:rgba(255,255,255,.8)}
+.fi{font:400 15px 'Instrument Sans',sans-serif;color:#fff;background:var(--deep);border:1px solid rgba(255,255,255,.14);border-radius:2px;padding:12px 13px;width:100%;box-sizing:border-box;transition:border-color .2s,box-shadow .2s}
+.fi::placeholder{color:rgba(255,255,255,.45)}.fi:hover{border-color:rgba(255,255,255,.3)}.fi:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(39,114,224,.25)}
+.chipd{border:0;cursor:pointer;font:500 13px 'Instrument Sans',sans-serif;padding:8px 12px;border-radius:2px;transition:background .2s,color .2s}
+.ind{background:#fff;transition:background .45s var(--ease),color .45s var(--ease)}.ind .ind-n{color:var(--blued);transition:color .45s}.ind .ind-d{color:var(--ink2);transition:color .45s}.ind .ind-bar{background:var(--blue)}
+.ind:hover{background:var(--ink);color:#fff}.ind:hover .ind-n{color:var(--bluel)}.ind:hover .ind-d{color:rgba(255,255,255,.78)}.ind:hover .ind-bar{background:var(--bluel)}
+@media (max-width:1100px){.hero-g,.split{grid-template-columns:minmax(0,1fr)}.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.hide-t{display:none!important}.nav-links{gap:18px!important}}
+@media (max-width:860px){.nav-links{display:none!important}.g2{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){.g3,.g4{grid-template-columns:minmax(0,1fr)}.hide-m{display:none!important}.g4.keep2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html.js-rv .rv,html.js-rv .stg>*{opacity:1;transform:none}html.js-rv .wipe .ph{clip-path:none}}
+
+.kick{display:inline-flex;align-items:center;gap:10px;font:500 13px 'IBM Plex Mono',monospace;letter-spacing:0;text-transform:none;color:var(--blued)}.kick::before{content:"";width:18px;height:2px;background:var(--blue)}
+.dark .kick{color:var(--bluel)}.dark .kick::before{background:var(--bluel)}
+.card-h{transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .3s}.card-h:hover{transform:translateY(-4px);box-shadow:0 22px 44px -18px rgba(17,19,24,.18)}
+.card-h:hover .ph img{transform:scale(1.06)}
+@media (max-width:1100px){.stack{grid-template-columns:minmax(0,1fr)!important}.span-all{grid-column:1/-1!important}.h1{font-size:clamp(40px,6vw,64px)!important}.h2{font-size:clamp(30px,4.4vw,44px)!important}}
+@media (max-width:860px){.hide-m{display:none!important}}
+
+/* logo hover: stay dark, never wash out */
+.lcell:hover .clogo{filter:brightness(0)!important;opacity:1;transform:scale(1.08)}
+.lcell:hover{background:#fff!important;border-color:var(--blue)!important;box-shadow:0 10px 24px -14px rgba(39,114,224,.45)}
+.logo:hover{filter:brightness(0)!important;opacity:1}
+/* design system normalisation */
+.head{align-items:flex-end!important}
+.head .btn{flex:none}
+.h2{margin:0}
+section .head + *{margin-top:0}
+</style></helmet>
+
+<header style="position:sticky;top:0;z-index:40;background:rgba(255,255,255,.86);backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);border-bottom:1px solid var(--line)">
+<div class="w" style="display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px">
+<a href="Home.dc.html" aria-label="Trident Software, home"><img src="trident-logo.svg" alt="Trident Software" style="height:20px"></a>
+<nav class="nav-links" aria-label="Main" style="display:flex;gap:28px;font-size:14px;color:var(--ink2)"><a class="ul" href="Services.dc.html">Services</a><a class="ul" href="UseCases.dc.html">Use cases</a><a class="ul" href="Projects.dc.html">Projects</a><a class="ul" href="About.dc.html">About</a><a class="ul" href="Blog.dc.html">Blog</a><a class="ul" href="Contact.dc.html">Contact</a></nav>
+<div style="display:flex;align-items:center;gap:14px"><div role="group" aria-label="Site language" class="hide-m" style="display:inline-flex;gap:2px;padding:3px;border:1px solid var(--line);border-radius:3px"><sc-for list="{{ langs }}" as="l" hint-placeholder-count="4"><button type="button" class="seg" aria-pressed="{{ l.on }}" onClick="{{ l.pick }}" style="background:{{ l.bg }};color:{{ l.fg }};padding:5px 8px;font-size:11px">{{ l.c }}</button></sc-for></div><a class="btn btn-blue" href="Contact.dc.html" style="padding:10px 16px;font-size:14px"><span>Free audit<i class="arr">→</i></span></a></div>
+</div>
+</header>
+
+<main>
+<section style="border-bottom:1px solid var(--line)">
+<div class="w" style="padding-top:clamp(64px,8vw,104px);padding-bottom:clamp(40px,5vw,64px);display:flex;flex-direction:column;gap:22px">
+<span class="lbl">Blog &amp; news</span>
+<h1 class="h1" style="max-width:900px">From the team</h1>
+<p class="lead" style="max-width:700px">Expert articles on AI integration, software architecture, cloud DevOps, embedded systems, and Swiss tech market trends. Written by the Trident Software engineering team.</p>
+<div role="group" aria-label="Filter by category" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px"><sc-for list="{{ cats }}" as="c" hint-placeholder-count="4"><button type="button" class="seg" aria-pressed="{{ c.on }}" onClick="{{ c.pick }}" style="background:{{ c.bg }};color:{{ c.fg }};box-shadow:inset 0 0 0 1px {{ c.bd }};font:500 14px 'Instrument Sans',sans-serif;padding:9px 15px">{{ c.l }} <span class="mono" style="opacity:.6;font-size:12px">{{ c.n }}</span></button></sc-for></div>
+</div>
+</section>
+<section class="sec" style="padding-top:clamp(40px,5vw,64px)">
+<div class="w" style="display:flex;flex-direction:column;gap:20px">
+<sc-if value="{{ hasFeat }}" hint-placeholder-val="{{ true }}"><a href="#" class="card {{ featAnim }}" style="overflow:hidden;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)" data-feat="1"><div class="ph" style="min-height:360px"><img src="{{ feat.img }}" alt="" style="position:absolute;inset:0"></div><div style="padding:clamp(24px,3vw,44px);display:flex;flex-direction:column;gap:16px;justify-content:center"><span style="display:flex;gap:10px;align-items:center"><span class="tag" style="background:var(--blue);color:#fff">{{ feat.c }}</span><span class="mono" style="font-size:12px;color:var(--ink3)">{{ feat.d }} · {{ feat.r }}</span></span><h2 style="margin:0;font-size:clamp(26px,2.8vw,38px);line-height:1.1;letter-spacing:-.03em;font-weight:600">{{ feat.t }}</h2><p style="margin:0;font-size:16px;line-height:1.6;color:var(--ink2)">{{ feat.x }}</p><span style="display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid var(--line);padding-top:16px;margin-top:4px"><span style="display:flex;align-items:center;gap:10px"><img src="{{ feat.av }}" alt="" style="width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:top;background:var(--wash)"><span style="display:flex;flex-direction:column;line-height:1.25"><span style="font-size:13.5px;font-weight:600">{{ feat.au }}</span><span style="font-size:12px;color:var(--ink3)">{{ feat.ar }}</span></span></span><span style="font-weight:600;font-size:15px;display:flex;gap:6px">Read article <span class="go">→</span></span></span></div></a></sc-if>
+<div class="g3 {{ gridAnim }}"><sc-for list="{{ rest }}" as="p" hint-placeholder-count="9"><a href="#" class="card" style="overflow:hidden;display:flex;flex-direction:column"><div class="ph" style="aspect-ratio:16/10"><img src="{{ p.img }}" alt=""></div><div style="padding:22px;display:flex;flex-direction:column;gap:10px;flex:1"><span style="display:flex;gap:10px;align-items:center"><span class="tag" style="background:var(--wash);color:var(--blued)">{{ p.c }}</span><span class="mono" style="font-size:11.5px;color:var(--ink3)">{{ p.d }} · {{ p.r }}</span></span><span style="font-size:19px;font-weight:600;line-height:1.25;letter-spacing:-.01em">{{ p.t }}</span><span style="font-size:14px;line-height:1.55;color:var(--ink2);flex:1;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden">{{ p.x }}</span><span style="display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:14px"><span style="display:flex;align-items:center;gap:10px"><img src="{{ p.av }}" alt="" style="width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:top;background:var(--wash)"><span style="display:flex;flex-direction:column;line-height:1.25"><span style="font-size:13.5px;font-weight:600">{{ p.au }}</span><span style="font-size:12px;color:var(--ink3)">{{ p.ar }}</span></span></span><span class="go" style="font-weight:600">→</span></span></div></a></sc-for></div>
+<sc-if value="{{ multi }}" hint-placeholder-val="{{ true }}"><nav aria-label="Pagination" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:20px;padding-top:24px;border-top:1px solid var(--line)"><span class="mono" style="font-size:12px;color:var(--ink3)">{{ range }}</span><div style="display:flex;gap:6px;align-items:center"><button type="button" class="btn btn-line" onClick="{{ prev }}" aria-label="Previous page" style="padding:10px 14px;font-size:14px;opacity:{{ prevOp }}"><span>← Prev</span></button><sc-for list="{{ pages }}" as="p" hint-placeholder-count="2"><button type="button" class="seg" aria-current="{{ p.cur }}" onClick="{{ p.go }}" style="width:40px;height:40px;padding:0;font:600 14px 'IBM Plex Mono',monospace;background:{{ p.bg }};color:{{ p.fg }};box-shadow:inset 0 0 0 1px {{ p.bd }}">{{ p.n }}</button></sc-for><button type="button" class="btn btn-line" onClick="{{ next }}" aria-label="Next page" style="padding:10px 14px;font-size:14px;opacity:{{ nextOp }}"><span>Next →</span></button></div></nav></sc-if>
+</div>
+</section>
+</main>
+
+<footer class="dark" style="background:#0F1216;color:#fff">
+<div class="w stack" style="padding-top:104px;padding-bottom:72px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:56px;align-items:end;">
+<div style="display:flex;flex-direction:column;gap:22px"><span class="kick">Next step</span><h2 class="h1">Have a process worth <span style="color:#8FB6F4">automating?</span></h2><p style="margin:0;font-size:18px;line-height:1.55;color:rgba(255,255,255,.72)">Bring your volumes, your response times and your systems. You leave with your own numbers and a straight answer — whether or not you work with us.</p><div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-blue" href="Contact.dc.html"><span>Book a free audit<i class="arr">→</i></span></a><a class="btn btn-line" href="Projects.dc.html" style="color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)"><span>View case studies<i class="arr">→</i></span></a></div></div>
+<div style="display:flex;flex-direction:column;font-size:15px"><div style="border-top:1px solid rgba(255,255,255,.18);padding:14px 0;display:flex;justify-content:space-between;gap:16px"><span style="color:rgba(255,255,255,.62)">Email</span><span>info@trident-software.ch</span></div><div style="border-top:1px solid rgba(255,255,255,.18);padding:14px 0;display:flex;justify-content:space-between;gap:16px"><span style="color:rgba(255,255,255,.62)">Phone</span><span>+41 79 745 44 29</span></div><div style="border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18);padding:14px 0;display:flex;justify-content:space-between;gap:16px"><span style="color:rgba(255,255,255,.62)">Address</span><span>Rue de l'Industrie 23, 1950 Sion</span></div></div>
+</div>
+<div class="w">
+<div class="fgrid" style="padding:56px 0;border-top:1px solid rgba(255,255,255,.12);font-size:14px;color:rgba(255,255,255,.86)">
+<div class="fcol fbrand" style="gap:16px;max-width:340px"><img src="trident-logo-white.svg" alt="Trident Software" style="height:20px;width:auto"><span style="color:rgba(255,255,255,.66);line-height:1.55">Operational software and AI agents, built in Switzerland. Senior engineers, fixed budgets, compliance included.</span><span style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag" style="background:rgba(255,255,255,.08);color:#fff">CH / EU hosting</span><span class="tag" style="background:rgba(255,255,255,.08);color:#fff">revFADP</span><span class="tag" style="background:rgba(255,255,255,.08);color:#fff">GDPR</span></span></div>
+<div class="fcol"><span class="fh">Services</span><a class="ul" href="Services.dc.html">AI agents &amp; LLM automation</a><a class="ul" href="Services.dc.html">Logistics &amp; operations</a><a class="ul" href="Services.dc.html">Custom business systems</a><a class="ul" href="Services.dc.html">IoT &amp; connected products</a><a class="ul" href="Services.dc.html">CTO as a Service</a></div>
+<div class="fcol"><span class="fh">Company</span><a class="ul" href="About.dc.html">About</a><a class="ul" href="Team.dc.html">Our team</a><a class="ul" href="Projects.dc.html">Projects</a><a class="ul" href="Blog.dc.html">Blog</a><a class="ul" href="Contact.dc.html">Contact</a></div>
+<div class="fcol"><span class="fh">Explore</span><a class="ul" href="UseCases.dc.html">Use cases</a><a class="ul" href="#">Industries</a><a class="ul" href="#">Pricing</a><a class="ul" href="#">Technologies</a><a class="ul" href="#">Locations</a></div>
+<div class="fcol"><span class="fh">Contact</span><a class="ul" href="mailto:info@trident-software.ch">info@trident-software.ch</a><a class="ul" href="tel:+41797454429">+41 79 745 44 29</a><span style="color:rgba(255,255,255,.66);line-height:1.5">Rue de l'Industrie 23<br>1950 Sion, Valais</span></div>
+</div>
+<div style="padding:20px 0 28px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:12px;color:rgba(255,255,255,.62)"><span>Swiss made software · © 2026 Trident Software Sàrl · CHE-185.076.733</span><span style="display:flex;gap:20px"><a class="ul" href="#">Privacy</a><a class="ul" href="#">Terms</a><a class="ul" href="#">Imprint</a><a class="ul" href="#">Cookies</a></span></div>
+</div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+const AUTHOR = { au: "Bohdan Voitovych", ar: "Project Manager", av: "img/team/bohdan-voitovych.png" };
+const PER = 6;
+const POSTS_RAW = [{"c": "Industry", "t": "Smart Auto Parts Software That Unifies eCommerce, Warehouse, Delivery, and AI", "x": "Fragmented systems cost automotive parts distributors real money — misaligned data, lost orders, and manual rework add up fast. Trident Software built 8Move to consolidate eCommerce, warehouse, delivery, and AI into one unified platform. The result: 35% lower operating costs, 57% more automated orders, and 93% inventory accuracy.", "d": "November 21, 2025", "r": "5 min", "img": "img/blog/auto-parts.jpg"}, {"c": "Company", "t": "Automechanika Dubai 2025: Meet Us in Hall 8, Booth F18", "x": "Trident Software will exhibit at Automechanika Dubai 2025 — the premier international trade fair for the automotive aftermarket — on December 9–11 at Dubai World Trade Centre. Visit Hall 8, Booth F18 to see our B2B spare parts portal, 8Move logistics app, mobile warehouse app, and AI-powered automation tools in action.", "d": "November 5, 2025", "r": "4 min", "img": "img/blog/automechanika.jpg"}, {"c": "Company", "t": "Practical AI for SMEs: Where It Really Works", "x": "AI is no longer exclusive to enterprise budgets — modern tools are accessible, practical, and surprisingly affordable for SMEs. From compressing months of product development into weeks, to automating invoice classification and client file management, the gains are concrete.", "d": "October 15, 2025", "r": "5 min", "img": "img/blog/practical-ai.jpg"}, {"c": "Company", "t": "Click, Scan, Done: How a Digital Invoice Scanner Cuts Costs", "x": "A small Swiss business was spending CHF 1,500 per quarter — 16 accountant hours — just on manual invoice processing. After implementing digital invoice scanning with OCR and automated workflows, that cost dropped 81% to CHF 150. Processing time fell tenfold, and cash flow improved 65%.", "d": "August 28, 2025", "r": "5 min", "img": "img/blog/invoice-scanner.jpg"}, {"c": "Industry", "t": "Digital Done Right: Custom Auto Parts eCommerce", "x": "A leading B2B auto parts supplier was drowning in phone orders, manual entry, and inventory tracking failures. A custom B2B platform integrated with their existing 1C ERP reduced order processing time from 30+ minutes to 5 minutes, increased repeat orders by 39%, and paid for itself in under nine months.", "d": "August 8, 2025", "r": "5 min", "img": "img/blog/auto-parts-ecommerce.jpg"}, {"c": "Solution", "t": "Automation Reshapes Business Resilience in the Age of Global Instability", "x": "Geopolitical shifts, supply chain disruptions, and regulatory changes have made instability the operating norm for SMEs. Businesses relying on manual processes are more exposed than ever. Modular automation is how organizations build operational resilience without locking into rigid enterprise systems.", "d": "July 17, 2025", "r": "5 min", "img": "img/blog/automation-resilience.jpg"}, {"c": "Company", "t": "Highlights from EPHJ 2025: Tech, Talk, and Transformation", "x": "Trident Software exhibited at EPHJ 2025 in Geneva — where precision watchmaking, medtech, and high-precision engineering converge. We showcased 8Move and custom software services, and found a consistent pattern: companies across precision industries are ready to digitize but lack a clear path forward.", "d": "June 11, 2025", "r": "4 min", "img": "img/blog/ephj-2025.jpg"}, {"c": "Company", "t": "Palexpo Geneva 2025: Visit Trident Software at Booth K127", "x": "Trident Software will exhibit at Palexpo Geneva from June 3–6, demonstrating how businesses can cut operational costs, automate key processes, and optimize logistics. Come see iAM-Trade, 8Move delivery automation, and our custom AI integration services at Booth K127.", "d": "May 26, 2025", "r": "4 min", "img": "img/blog/palexpo-2025.jpg"}, {"c": "Solution", "t": "Graph Databases: Connected Data for Business Success", "x": "Graph databases managing business data connections. AWS Neptune. Sophisticated analytics on live data streams.", "d": "May 1, 2025", "r": "5 min", "img": "img/stock/b2b-portal.jpg"}, {"c": "Solution", "t": "From Data to Decisions: How Autonomous AI Agents Drive Business Smarts", "x": "Autonomous AI agents don't just suggest actions — they analyze data, make decisions, and execute independently. Combining large language models, real-time information tools, and persistent memory, these systems are already operating in healthcare diagnostics, algorithmic trading, supply chain optimization, and predictive maintenance.", "d": "April 18, 2025", "r": "6 min", "img": "img/blog/ai-agents-decisions.jpg"}, {"c": "Solution", "t": "AI Recommender System in Travel: A Simple Start with Big Results", "x": "AI recommender system boosting engagement and sales quickly. Simple start with Amazon Personalize. Custom AI and LLM features.", "d": "April 3, 2025", "r": "4 min", "img": "img/stock/office-2.jpg"}, {"c": "Company", "t": "Palexpo Geneva 2025: A Fresh Look at Cost Cutting Strategies", "x": "Cost cutting strategies for e-commerce and delivery. Palexpo Geneva 2025. Order intake and delivery management solutions.", "d": "March 27, 2025", "r": "4 min", "img": "img/stock/logistics.jpg"}];
+const POSTS = POSTS_RAW.map(p => ({ ...p, ...AUTHOR }));
+class Component extends DCLogic {
+  state = { cat: 'All', k: 0 };
+  __rv() {
+    try {
+      if (!('IntersectionObserver' in window)) return;
+      document.documentElement.classList.add('js-rv');
+      this.__io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); this.__io.unobserve(e.target); } }), { threshold: 0.12 });
+      setTimeout(() => document.querySelectorAll('.rv').forEach(el => this.__io.observe(el)), 80);
+      this.__chk = setInterval(() => document.querySelectorAll('.rv:not(.in)').forEach(el => { const r = el.getBoundingClientRect(); if (r.top < window.innerHeight * 0.95 && r.bottom > 0) el.classList.add('in'); }), 350);
+    } catch (e) { document.documentElement.classList.remove('js-rv'); }
+  }
+  __langs() { const s = this.state || {}; return ['EN', 'DE', 'FR', 'IT'].map(c => { const on = (s.siteLang || 'EN') === c; return { c, on, bg: on ? '#111318' : 'transparent', fg: on ? '#fff' : '#4A4F57', pick: () => this.setState({ siteLang: c }) }; }); }
+  componentDidMount() { this.__rv(); }
+  componentWillUnmount() { clearInterval(this.__chk); if (this.__io) this.__io.disconnect(); }
+  renderVals() {
+    const s = this.state;
+    return {
+      langs: this.__langs(),
+      cats: ['All', 'Industry', 'Company', 'Solution'].map(l => { const on = (s.cat || 'All') === l; return { l, on, n: l === 'All' ? POSTS.length : POSTS.filter(p => p.c === l).length, bg: on ? '#111318' : '#fff', fg: on ? '#fff' : '#111318', bd: on ? '#111318' : '#C9CDD2', pick: () => this.setState(st => ({ cat: l, pg: 0, k: (st.k || 0) + 1 })) }; }),
+      ...(() => {
+        const list = POSTS.filter(p => (s.cat || 'All') === 'All' || p.c === s.cat);
+        const rest = list.slice(1), pages = Math.max(1, Math.ceil(rest.length / PER)), pg = Math.min(s.pg || 0, pages - 1);
+        const go = i => this.setState(st => ({ pg: Math.max(0, Math.min(pages - 1, i)), k: (st.k || 0) + 1 }));
+        const from = rest.length ? pg * PER + 1 : 0, to = Math.min(rest.length, (pg + 1) * PER);
+        return { hasFeat: list.length > 0, feat: list[0] || POSTS[0], rest: rest.slice(pg * PER, (pg + 1) * PER),
+          multi: pages > 1, range: 'Articles ' + from + '–' + to + ' of ' + rest.length + ' · page ' + (pg + 1) + ' of ' + pages,
+          prev: () => go(pg - 1), next: () => go(pg + 1), prevOp: pg === 0 ? .4 : 1, nextOp: pg === pages - 1 ? .4 : 1,
+          pages: Array.from({ length: pages }, (_, i) => ({ n: i + 1, cur: i === pg ? 'page' : 'false', bg: i === pg ? '#111318' : '#fff', fg: i === pg ? '#fff' : '#111318', bd: i === pg ? '#111318' : '#C9CDD2', go: () => go(i) })) };
+      })(),
+      featAnim: (s.k || 0) % 2 ? 'qfade' : 'qfade2', gridAnim: (s.k || 0) % 2 ? 'qfade' : 'qfade2',
+    };
+  }
+}
+</script>
+</body>
+</html>

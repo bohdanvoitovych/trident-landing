@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trident — Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><style>
+:root{--ink:#111318;--ink2:#4A4F57;--ink3:#6B7078;--line:#E3E5E8;--line2:#C9CDD2;--alt:#F6F7F8;--blue:#2772E0;--blued:#1B57B8;--bluel:#8FB6F4;--wash:#EEF3FD;--deep:#0F1216;--ease:cubic-bezier(.2,0,0,1)}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Instrument Sans',-apple-system,'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.w{max-width:1280px;margin:0 auto;padding-left:clamp(20px,4.5vw,64px);padding-right:clamp(20px,4.5vw,64px)}
+.sec{padding:clamp(72px,9vw,128px) 0}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
+.lbl{display:inline-flex;align-items:center;gap:10px;font:500 13px 'IBM Plex Mono',monospace;color:var(--blued)}
+.lbl::before{content:"";width:18px;height:2px;background:var(--blue)}
+.dark .lbl{color:var(--bluel)}.dark .lbl::before{background:var(--bluel)}
+.h1{margin:0;font-size:clamp(40px,5.4vw,76px);line-height:1;letter-spacing:-.045em;font-weight:600}
+.h2{margin:0;font-size:clamp(32px,3.9vw,54px);line-height:1.03;letter-spacing:-.04em;font-weight:600;text-wrap:balance}
+.lead{margin:0;font-size:clamp(16px,1.35vw,19px);line-height:1.6;color:var(--ink2);text-wrap:pretty}
+.dark .lead{color:rgba(255,255,255,.74)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:clamp(36px,4vw,56px)}
+.head>div{display:flex;flex-direction:column;gap:16px;max-width:760px}
+.btn{position:relative;display:inline-flex;align-items:center;overflow:hidden;border:0;cursor:pointer;font:600 15px 'Instrument Sans',sans-serif;padding:14px 20px;border-radius:2px;white-space:nowrap}
+.btn>span{position:relative}.btn .arr{display:inline-block;margin-left:6px;font-style:normal;transition:transform .25s var(--ease)}.btn:hover .arr{transform:translateX(5px)}
+.btn-blue{background:var(--blue);color:#fff}.btn-ink{background:var(--ink);color:#fff}
+.btn-blue::before,.btn-ink::before{content:"";position:absolute;inset:0;transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.btn-blue::before{background:var(--blued)}.btn-ink::before{background:var(--blue)}.btn-blue:hover::before,.btn-ink:hover::before{transform:scaleX(1)}
+.btn-line{background:transparent;color:inherit;box-shadow:inset 0 0 0 1px var(--line2);transition:box-shadow .25s}.btn-line:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.dark .btn-line{box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}.dark .btn-line:hover{box-shadow:inset 0 0 0 1px #fff}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+a.ul{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;padding-bottom:3px;transition:background-size .3s var(--ease)}a.ul:hover{background-size:100% 1px}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.hero-g{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(32px,4vw,64px);align-items:center}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:center}
+.card{background:#fff;border:1px solid var(--line);border-radius:3px;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -18px rgba(17,19,24,.18);border-color:var(--line2)}
+.ph{position:relative;overflow:hidden;background:var(--alt)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.card:hover .ph img,.tm:hover .ph img{transform:scale(1.06)}
+.go{transition:transform .25s var(--ease)}.card:hover .go,.row:hover .go{transform:translateX(6px);color:var(--blue)}
+.tag{font:600 11px 'IBM Plex Mono',monospace;padding:3px 8px;border-radius:2px;white-space:nowrap}
+/* reveal + stagger + image wipe */
+html.js-rv .rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js-rv .rv.in{opacity:1;transform:none}
+html.js-rv .stg>*{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+html.js-rv .stg.in>*{opacity:1;transform:none}
+.stg>*:nth-child(2){transition-delay:.08s}.stg>*:nth-child(3){transition-delay:.16s}.stg>*:nth-child(4){transition-delay:.24s}.stg>*:nth-child(5){transition-delay:.32s}.stg>*:nth-child(6){transition-delay:.4s}.stg>*:nth-child(7){transition-delay:.48s}.stg>*:nth-child(8){transition-delay:.56s}
+html.js-rv .wipe .ph{clip-path:inset(0 0 100% 0);transition:clip-path 1.2s var(--ease)}html.js-rv .wipe.in .ph{clip-path:inset(0 0 0 0)}
+/* hero */
+.wm{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.wd{display:inline-block;margin-right:.22em;animation:wd 1s var(--ease) both}@keyframes wd{from{transform:translateY(105%)}to{transform:none}}
+.fadein{animation:fadein 1s var(--ease) both}@keyframes fadein{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;opacity:.55}
+.blob.a{width:520px;height:520px;right:-120px;top:-160px;background:radial-gradient(circle,#BFD5F8,transparent 70%);animation:drift 18s ease-in-out infinite alternate}
+.blob.b{width:420px;height:420px;right:28%;top:200px;background:radial-gradient(circle,#EEF3FD,transparent 70%);animation:drift 22s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translate(-60px,50px) scale(1.12)}}
+.float{animation:float 6s ease-in-out infinite}.float.d2{animation-delay:-3s}@keyframes float{50%{transform:translateY(-10px)}}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 0 rgba(39,114,224,.6);animation:pulse 1.8s ease-out infinite;flex:none}@keyframes pulse{to{box-shadow:0 0 0 10px rgba(39,114,224,0)}}
+.pulse.g{background:#1F9D55;box-shadow:0 0 0 0 rgba(31,157,85,.6);animation-name:pulseg}@keyframes pulseg{to{box-shadow:0 0 0 10px rgba(31,157,85,0)}}
+.caret{display:inline-block;width:2px;height:18px;background:var(--blue);margin-left:2px;vertical-align:-3px;animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+.seg{border:0;cursor:pointer;font:600 12px 'IBM Plex Mono',monospace;padding:7px 11px;border-radius:2px;transition:background .25s,color .25s}
+.in-a{animation:inA .55s var(--ease) both}.in-b{animation:inB .55s var(--ease) both}
+@keyframes inA{from{opacity:0;transform:translateY(-10px);background:rgba(39,114,224,.25)}to{opacity:1;transform:none;background:rgba(39,114,224,0)}}
+@keyframes inB{from{opacity:0;transform:translateY(-10px);background:rgba(39,114,224,.25)}to{opacity:1;transform:none;background:rgba(39,114,224,0)}}
+/* logos */
+.marq{display:flex;align-items:center;gap:64px;width:max-content;animation:marq 50s linear infinite}.mq:hover .marq{animation-play-state:paused}@keyframes marq{to{transform:translateX(-50%)}}
+.logo{height:30px;width:auto;max-width:150px;object-fit:contain;filter:grayscale(1);opacity:.55;transition:filter .3s,opacity .3s}.logo:hover{filter:none;opacity:1}
+/* infographics */
+.dots{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
+.dot{aspect-ratio:1;border-radius:50%;background:var(--line);transition:background .35s var(--ease),transform .35s var(--ease)}
+html:not(.js-rv) .dot.on,.rv.in .dot.on{background:var(--ink)}html:not(.js-rv) .dot.on.b,.rv.in .dot.on.b{background:var(--blue);transform:scale(1.15)}
+.ring{fill:none;stroke-width:9;stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%;transition:stroke-dashoffset 1.8s var(--ease) .3s}
+html.js-rv .rv:not(.in) .ring{stroke-dashoffset:226!important}
+.hbar{height:100%;border-radius:2px;transition:width 1.6s var(--ease) .3s}
+html.js-rv .rv:not(.in) .hbar{width:0!important}
+/* process */
+.stage-bar{transition:width .2s linear,background .25s}
+.range{width:100%;accent-color:var(--blue);cursor:pointer}
+/* testimonials */
+.qfade{animation:qf .7s var(--ease) both}.qfade2{animation:qf2 .7s var(--ease) both}
+@keyframes qf{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}@keyframes qf2{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.qdot{width:28px;height:3px;border:0;padding:0;cursor:pointer;border-radius:2px;transition:background .3s,width .3s}
+.faq-q{width:100%;border:0;background:transparent;cursor:pointer;font:500 clamp(16px,1.4vw,19px) 'Instrument Sans',sans-serif;color:var(--ink);text-align:left;display:flex;justify-content:space-between;gap:24px;padding:22px 0}
+.faq-q .pm{transition:transform .3s var(--ease)}
+.row{transition:background .3s,padding .35s var(--ease)}.row:hover{background:var(--alt);padding-left:14px;padding-right:14px}
+.dark .row:hover{background:#171B20}
+.uc{position:relative;overflow:hidden}
+.uc .more{max-height:0;opacity:0;transition:max-height .5s var(--ease),opacity .4s}
+.uc:hover .more,.uc:focus-within .more{max-height:200px;opacity:1}
+.uc::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--blue);transition:width .5s var(--ease)}.uc:hover::after{width:100%}
+.team-n{transition:transform .4s var(--ease)}
+.refs-g{}@media (max-width:860px){.refs-g{grid-template-columns:minmax(0,1fr)!important}}
+.faq-g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:20px;align-items:stretch}
+.faq-t{width:100%;border:0;border-bottom:1px solid var(--line);cursor:pointer;font:400 16px/1.4 'Instrument Sans',sans-serif;color:var(--ink);text-align:left;display:grid;grid-template-columns:34px minmax(0,1fr) 16px;gap:10px;align-items:center;padding:18px 20px;transition:background .25s}
+.faq-t:last-child{border-bottom:0}.faq-t:hover{background:var(--alt)}
+@media (max-width:860px){.faq-g{grid-template-columns:minmax(0,1fr)}}
+.cl-mask{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.cl-track{gap:14px;animation-duration:60s}.cl-track.rev{animation-direction:reverse;animation-duration:70s}
+.lcell{flex:none;width:200px;height:104px;background:var(--alt);border:1px solid var(--line);border-radius:3px;display:flex;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;transition:background .3s,border-color .3s}
+.clogo{max-height:42px;max-width:150px;width:auto;height:auto;object-fit:contain;filter:brightness(0);opacity:.82;transition:filter .45s var(--ease),opacity .3s,transform .45s var(--ease)}
+.lcell:hover{background:#fff;border-color:var(--line2)}.lcell:hover .clogo{filter:none;opacity:1;transform:scale(1.07)}
+.fgrid{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(4,minmax(0,1fr));gap:40px}
+.fcol{display:flex;flex-direction:column;gap:11px;align-items:flex-start}
+.fh{font:600 11px 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:4px}
+@media (max-width:1100px){.fgrid{grid-template-columns:repeat(4,minmax(0,1fr))}.fgrid>.fbrand{grid-column:1/-1}}
+@media (max-width:640px){.lcell{width:150px;height:84px}.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fl{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:500;color:rgba(255,255,255,.8)}
+.fi{font:400 15px 'Instrument Sans',sans-serif;color:#fff;background:var(--deep);border:1px solid rgba(255,255,255,.14);border-radius:2px;padding:12px 13px;width:100%;box-sizing:border-box;transition:border-color .2s,box-shadow .2s}
+.fi::placeholder{color:rgba(255,255,255,.45)}.fi:hover{border-color:rgba(255,255,255,.3)}.fi:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(39,114,224,.25)}
+.chipd{border:0;cursor:pointer;font:500 13px 'Instrument Sans',sans-serif;padding:8px 12px;border-radius:2px;transition:background .2s,color .2s}
+.ind{background:#fff;transition:background .45s var(--ease),color .45s var(--ease)}.ind .ind-n{color:var(--blued);transition:color .45s}.ind .ind-d{color:var(--ink2);transition:color .45s}.ind .ind-bar{background:var(--blue)}
+.ind:hover{background:var(--ink);color:#fff}.ind:hover .ind-n{color:var(--bluel)}.ind:hover .ind-d{color:rgba(255,255,255,.78)}.ind:hover .ind-bar{background:var(--bluel)}
+@media (max-width:1100px){.hero-g,.split{grid-template-columns:minmax(0,1fr)}.g4{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.hide-t{display:none!important}.nav-links{gap:18px!important}}
+@media (max-width:860px){.nav-links{display:none!important}.g2{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){.g3,.g4{grid-template-columns:minmax(0,1fr)}.hide-m{display:none!important}.g4.keep2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html.js-rv .rv,html.js-rv .stg>*{opacity:1;transform:none}html.js-rv .wipe .ph{clip-path:none}}
+
+/* logo hover: stay dark, never wash out */
+.lcell .clogo{filter:brightness(0)!important;opacity:.85}
+.lcell:hover{background:var(--blue)!important;border-color:var(--blue)!important;box-shadow:0 12px 26px -12px rgba(39,114,224,.55)}
+.lcell:hover .clogo{filter:brightness(0) invert(1)!important;opacity:1;transform:scale(1.08)}
+.logo:hover{filter:brightness(0)!important;opacity:1}
+/* design system normalisation */
+.head{align-items:flex-end!important}
+.head .btn{flex:none}
+.h2{margin:0}
+section .head + *{margin-top:0}
+</style></helmet>
+
+<header style="position:sticky;top:0;z-index:40;background:rgba(255,255,255,.86);backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);border-bottom:1px solid var(--line)">
+<div class="w" style="display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px">
+<a href="Home.dc.html" aria-label="Trident Software, home"><img src="trident-logo.svg" alt="Trident Software" style="height:20px"></a>
+<nav class="nav-links" aria-label="Main" style="display:flex;gap:28px;font-size:14px;color:var(--ink2)"><a class="ul" href="Services.dc.html">Services</a><a class="ul" href="UseCases.dc.html">Use cases</a><a class="ul" href="Projects.dc.html">Projects</a><a class="ul" href="About.dc.html">About</a><a class="ul" href="Blog.dc.html">Blog</a><a class="ul" href="Contact.dc.html">Contact</a></nav>
+<div style="display:flex;align-items:center;gap:14px"><div role="group" aria-label="Site language" class="hide-m" style="display:inline-flex;gap:2px;padding:3px;border:1px solid var(--line);border-radius:3px"><sc-for list="{{ langs }}" as="l" hint-placeholder-count="4"><button type="button" class="seg" aria-pressed="{{ l.on }}" onClick="{{ l.pick }}" style="background:{{ l.bg }};color:{{ l.fg }};padding:5px 8px;font-size:11px">{{ l.c }}</button></sc-for></div><a class="btn btn-blue" href="Contact.dc.html" style="padding:10px 16px;font-size:14px"><span>Free audit<i class="arr">→</i></span></a></div>
+</div>
+</header>
+
+<main>
+<!-- HERO -->
+<section style="position:relative;overflow:hidden">
+<div class="blob a" aria-hidden="true"></div><div class="blob b" aria-hidden="true"></div>
+<div class="w hero-g" style="position:relative;padding-top:clamp(48px,7vw,96px);padding-bottom:clamp(40px,5vw,72px)">
+<div style="display:flex;flex-direction:column;gap:26px;min-width:0">
+<div class="mono fadein" style="display:flex;align-items:center;gap:10px;font-size:12px;color:var(--ink2)"><span class="pulse g"></span>Sion, Valais · HES-SO Valais-Wallis</div>
+<h1 class="h1" aria-label="Operational software and AI agents, built in Switzerland"><sc-for list="{{ h1w }}" as="w" hint-placeholder-count="8"><span class="wm" aria-hidden="true"><span class="wd" style="animation-delay:{{ w.dl }}ms;color:{{ w.c }}">{{ w.t }}</span></span></sc-for></h1>
+<div class="fadein" style="animation-delay:.7s;min-height:26px;display:flex;align-items:center;gap:12px"><span class="mono" style="font-size:12px;font-weight:600;padding:4px 7px;background:var(--wash);color:var(--blued);border-radius:2px">{{ scrC }}</span><span><span class="mono" style="font-size:clamp(15px,1.3vw,18px);font-weight:500;color:var(--blued)">{{ scrT }}</span><span class="caret"></span></span></div>
+<p class="lead fadein" style="animation-delay:.85s;max-width:600px">We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers, qualifies and processes documents in four national languages.</p>
+<div class="fadein" style="animation-delay:1s;display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-blue" href="Contact.dc.html"><span>Book a free 45-min audit<i class="arr">→</i></span></a><a class="btn btn-line" href="#results"><span>See results<i class="arr">→</i></span></a></div>
+</div>
+<div class="fadein" style="animation-delay:.4s;position:relative;min-height:clamp(420px,42vw,560px)">
+<div class="ph" style="position:absolute;inset:0 0 40px 48px;border-radius:3px"><img src="img/stock/ai-agent.jpg" alt="Server room where the agents run"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(39,114,224,.28),rgba(15,18,22,.15) 55%,rgba(15,18,22,.45))"></div></div>
+<div class="float" style="position:absolute;left:0;bottom:0;width:min(400px,86%);background:var(--deep);color:#fff;border-radius:3px;box-shadow:0 30px 60px -20px rgba(17,19,24,.45)">
+<div class="mono" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.1);font-size:11px"><span style="display:flex;align-items:center;gap:8px"><span class="pulse"></span>Agent · Valais Materials · live</span><span style="color:rgba(255,255,255,.6)">Sat evening · illustrative</span></div>
+<div style="height:216px;overflow:hidden"><sc-for list="{{ feed }}" as="r" hint-placeholder-count="5"><div class="{{ r.cls }}" style="display:grid;grid-template-columns:38px 70px minmax(0,1fr) 30px;gap:8px;align-items:center;padding:11px 16px;border-bottom:1px solid rgba(255,255,255,.06);font-size:12.5px;opacity:{{ r.op }}"><span class="mono" style="font-size:11px;color:rgba(255,255,255,.6)">{{ r.time }}</span><span class="mono" style="font-size:10.5px;border:1px solid rgba(255,255,255,.2);border-radius:2px;padding:2px 5px;text-align:center">{{ r.ch }} {{ r.lang }}</span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.ev }}</span><span class="mono" style="font-size:11px;text-align:right;color:var(--bluel)">{{ r.lat }}</span></div></sc-for></div>
+</div>
+<div class="float d2" style="position:absolute;right:16px;top:20px;background:#fff;border-radius:3px;padding:14px 16px;box-shadow:0 18px 40px -14px rgba(17,19,24,.3);display:flex;flex-direction:column;gap:4px;min-width:170px"><span class="mono" style="font-size:11px;color:var(--ink3)">conversations today</span><span class="mono" style="font-size:26px;font-weight:600;letter-spacing:-.03em">{{ handled }}</span><span style="font-size:12px;color:#1F9D55;font-weight:600">● median first reply 4 s</span></div>
+</div>
+</div>
+<div class="w" style="position:relative;padding-bottom:clamp(48px,5vw,80px)"><div class="g4 keep2 stg rv" style="gap:14px">
+<div class="card" style="padding:20px;display:flex;flex-direction:column;gap:12px;background:rgba(255,255,255,.9)"><span class="mono" style="font-size:11px;color:var(--ink3)">Clinic network · CH</span><span style="font-size:clamp(24px,2.3vw,30px);font-weight:600;letter-spacing:-.04em;color:var(--blue);line-height:1">1 h → ~5 min</span><div aria-hidden="true" style="display:flex;flex-direction:column;gap:4px"><div style="height:6px;background:var(--alt);border-radius:2px"><div class="hbar" style="width:100%;background:var(--line2)"></div></div><div style="height:6px;background:var(--alt);border-radius:2px"><div class="hbar" style="width:9%;background:var(--blue)"></div></div></div><span style="font-size:13px;line-height:1.4;color:var(--ink2)">Clinic admission time, operating target</span></div>
+<div class="card" style="padding:20px;display:flex;flex-direction:column;gap:12px;background:rgba(255,255,255,.9)"><span class="mono" style="font-size:11px;color:var(--ink3)">Component maker · IT · measured</span><span style="font-size:clamp(24px,2.3vw,30px);font-weight:600;letter-spacing:-.04em;color:var(--blue);line-height:1">−63 %</span><div aria-hidden="true" style="display:flex;align-items:flex-end;gap:6px;height:28px"><span style="flex:1;height:100%;background:var(--line2);border-radius:2px"></span><span style="flex:1;height:37%;background:var(--blue);border-radius:2px"></span><span class="mono" style="font-size:10px;color:var(--ink3);align-self:center">↓</span></div><span style="font-size:13px;line-height:1.4;color:var(--ink2)">Warranty cost, component maker</span></div>
+<div class="card" style="padding:20px;display:flex;flex-direction:column;gap:12px;background:rgba(255,255,255,.9)"><span class="mono" style="font-size:11px;color:var(--ink3)">Sales agent</span><span style="font-size:clamp(24px,2.3vw,30px);font-weight:600;letter-spacing:-.04em;color:var(--blue);line-height:1">Month 2</span><div aria-hidden="true" style="display:grid;grid-template-columns:repeat(12,1fr);gap:3px"><span style="height:12px;background:var(--line2);border-radius:2px"></span><span style="height:12px;background:var(--blue);border-radius:2px"></span><span style="height:12px;background:var(--wash);border-radius:2px"></span><span style="height:12px;background:var(--wash);border-radius:2px"></span><span style="height:12px;background:var(--wash);border-radius:2px"></span><span style="height:12px;background:var(--wash);border-radius:2px"></span><span style="height:12px;background:var(--wash);border-radius:2px"></span><span style="height:12px;background:var(--wash);border-radius:2px"></span><span style="height:12px;background:var(--wash);border-radius:2px"></span><span style="height:12px;background:var(--wash);border-radius:2px"></span><span style="height:12px;background:var(--wash);border-radius:2px"></span><span style="height:12px;background:var(--wash);border-radius:2px"></span></div><span style="font-size:13px;line-height:1.4;color:var(--ink2)">Typical payback on a sales agent</span></div>
+<div class="card" style="padding:20px;display:flex;flex-direction:column;gap:12px;background:rgba(255,255,255,.9)"><span class="mono" style="font-size:11px;color:var(--ink3)">Data residency</span><span style="font-size:clamp(24px,2.3vw,30px);font-weight:600;letter-spacing:-.04em;color:var(--blue);line-height:1;display:flex;align-items:center;gap:8px">CH / EU <svg width="18" height="18" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#DA291C"/><rect x="13" y="6" width="6" height="20" fill="#fff"/><rect x="6" y="13" width="20" height="6" fill="#fff"/></svg></span><div style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag" style="background:var(--wash);color:var(--blued)">revFADP</span><span class="tag" style="background:var(--wash);color:var(--blued)">GDPR</span></div><span style="font-size:13px;line-height:1.4;color:var(--ink2)">Hosting, under revFADP and GDPR</span></div>
+</div></div>
+</section>
+
+<!-- PROBLEM -->
+<section class="sec">
+<div class="w">
+<div class="head rv"><div><span class="lbl">The problem</span><h2 class="h2">Swiss SMEs don't lose deals to bad products. They lose them to silence.</h2><p class="lead">Buyers want answers now, on their channel, in their language. Most teams can't staff that.</p></div></div>
+<div class="g2 rv" style="gap:20px">
+<div style="background:var(--alt);border-radius:3px;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:12px"><span style="font-size:clamp(56px,6vw,88px);font-weight:600;letter-spacing:-.06em;line-height:.9"><span class="cu" data-to="77">77</span> %</span><span style="font-size:16px;line-height:1.45">of Swiss people want to find and book an SME service online</span></div>
+<div class="dots" aria-hidden="true"><sc-for list="{{ d77 }}" as="d" hint-placeholder-count="100"><span class="{{ d.c }}" style="transition-delay:{{ d.dl }}ms"></span></sc-for></div>
+</div>
+<div style="background:var(--wash);border-radius:3px;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:12px"><span style="font-size:clamp(56px,6vw,88px);font-weight:600;letter-spacing:-.06em;line-height:.9;color:var(--blue)"><span class="cu" data-to="3">3</span> %</span><span style="font-size:16px;line-height:1.45">of SMEs fully support it today. <b>That's the gap.</b></span></div>
+<div class="dots" aria-hidden="true"><sc-for list="{{ d3 }}" as="d" hint-placeholder-count="100"><span class="{{ d.c }}" style="transition-delay:{{ d.dl }}ms"></span></sc-for></div>
+</div>
+</div>
+<p class="mono" style="margin:14px 0 0;font-size:12px;color:var(--ink3)">localsearch × HSLU, KMU Digital Pulse 2025</p>
+<div class="g4 stg rv" style="margin-top:40px">
+<div class="card" style="padding:24px;display:flex;flex-direction:column;gap:14px"><span style="font-size:40px;font-weight:600;letter-spacing:-.05em;line-height:1;color:var(--blue)"><span class="cu" data-to="21">21</span>×</span><span style="font-size:14px;line-height:1.45">lower odds of qualifying a lead after 30 minutes vs 5 minutes</span><div style="display:flex;flex-direction:column;gap:6px;margin-top:auto" aria-hidden="true"><div style="display:grid;grid-template-columns:44px 1fr;gap:8px;align-items:center;font-size:11px" class="mono"><span>5 min</span><div style="height:10px;background:var(--alt)"><div class="hbar" style="width:100%;background:var(--blue)"></div></div></div><div style="display:grid;grid-template-columns:44px 1fr;gap:8px;align-items:center;font-size:11px" class="mono"><span>30 min</span><div style="height:10px;background:var(--alt)"><div class="hbar" style="width:5%;background:var(--ink)"></div></div></div></div><span class="mono" style="font-size:11px;color:var(--ink3)">US study, 2007</span></div>
+<div class="card" style="padding:24px;display:flex;flex-direction:column;gap:14px"><span style="font-size:40px;font-weight:600;letter-spacing:-.05em;line-height:1;color:var(--blue)">3 channels</span><span style="font-size:14px;line-height:1.45">used almost equally. No single one to staff</span><div style="display:flex;flex-direction:column;gap:6px;margin-top:auto" aria-hidden="true"><div class="mono" style="display:grid;grid-template-columns:44px 1fr 30px;gap:8px;align-items:center;font-size:11px"><span>E-mail</span><div style="height:10px;background:var(--alt)"><div class="hbar" style="width:100%;background:var(--blue)"></div></div><span>16 %</span></div><div class="mono" style="display:grid;grid-template-columns:44px 1fr 30px;gap:8px;align-items:center;font-size:11px"><span>Chat</span><div style="height:10px;background:var(--alt)"><div class="hbar" style="width:100%;background:var(--blue)"></div></div><span>16 %</span></div><div class="mono" style="display:grid;grid-template-columns:44px 1fr 30px;gap:8px;align-items:center;font-size:11px"><span>Phone</span><div style="height:10px;background:var(--alt)"><div class="hbar" style="width:88%;background:var(--blue)"></div></div><span>14 %</span></div></div><span class="mono" style="font-size:11px;color:var(--ink3)">ServiceNow, 2024</span></div>
+<div class="card" style="padding:24px;display:flex;flex-direction:column;gap:14px"><div style="display:flex;align-items:center;gap:16px"><svg viewBox="0 0 90 90" width="76" height="76" aria-hidden="true"><circle cx="45" cy="45" r="36" fill="none" stroke="#E3E5E8" stroke-width="9"/><circle class="ring" cx="45" cy="45" r="36" stroke="#2772E0" stroke-dasharray="226" style="stroke-dashoffset:34"/></svg><span style="font-size:40px;font-weight:600;letter-spacing:-.05em;color:var(--blue)"><span class="cu" data-to="85">85</span> %</span></div><span style="font-size:14px;line-height:1.45">of the population use WhatsApp. The channel exists; the staffing doesn't</span><span class="mono" style="font-size:11px;color:var(--ink3);margin-top:auto">Switzerland</span></div>
+<div class="card" style="padding:24px;display:flex;flex-direction:column;gap:14px"><div style="display:flex;align-items:center;gap:16px"><svg viewBox="0 0 90 90" width="76" height="76" aria-hidden="true"><circle cx="45" cy="45" r="36" fill="none" stroke="#E3E5E8" stroke-width="9"/><circle class="ring" cx="45" cy="45" r="36" stroke="#2772E0" stroke-dasharray="226" style="stroke-dashoffset:197"/></svg><span style="font-size:40px;font-weight:600;letter-spacing:-.05em;color:var(--blue)"><span class="cu" data-to="13">13</span> %</span></div><span style="font-size:14px;line-height:1.45">start looking for a service in an AI assistant, not a search engine</span><span class="mono" style="font-size:11px;color:var(--ink3);margin-top:auto">KMU Digital Pulse, 2025</span></div>
+</div>
+</div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="sec" style="background:var(--alt);border-top:1px solid var(--line)">
+<div class="w">
+<div class="head rv"><div><span class="lbl">What we do</span><h2 class="h2">Five lines of work, one accountable team</h2></div><a class="btn btn-ink" href="Services.dc.html"><span>All services<i class="arr">→</i></span></a></div>
+<div class="g3 stg rv">
+<sc-for list="{{ services }}" as="s" hint-placeholder-count="5"><a href="Services.dc.html" class="card" style="overflow:hidden;display:flex;flex-direction:column;grid-column:{{ s.span }}"><div class="ph" style="height:{{ s.h }}px"><img src="{{ s.img }}" alt=""></div><div style="padding:24px;display:flex;flex-direction:column;gap:10px;flex:1"><span style="font-size:22px;font-weight:600;letter-spacing:-.02em;line-height:1.15">{{ s.t }}</span><span style="font-size:15px;line-height:1.55;color:var(--ink2);flex:1">{{ s.d }}</span><span style="font-weight:600;font-size:14px;display:flex;gap:6px">Learn more <span class="go">→</span></span></div></a></sc-for>
+<div class="card" style="grid-column:1/-1;padding:24px 28px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;background:var(--ink);color:#fff;border-color:var(--ink)"><span class="mono" style="font-size:12px;color:var(--bluel)">Stack</span><span style="font-size:20px;line-height:1.35;font-weight:500">Python and Django, PostgreSQL, React, Flutter, AWS. LLM work sits on top of that, not beside it.</span></div>
+</div>
+</div>
+</section>
+
+<!-- AI AGENT -->
+<section class="sec">
+<div class="w split">
+<div class="rv" style="display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:16px"><span class="lbl">The AI agent</span><h2 class="h2">A working process with a language model inside it</h2></div>
+<div style="display:flex;flex-direction:column">
+<sc-for list="{{ caps }}" as="c" hint-placeholder-count="3"><button type="button" onClick="{{ c.pick }}" aria-pressed="{{ c.on }}" style="text-align:left;border:0;background:transparent;cursor:pointer;font-family:inherit;color:inherit;padding:20px 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px"><span style="display:flex;justify-content:space-between;gap:16px;font-size:21px;font-weight:600;letter-spacing:-.015em;color:{{ c.tc }}">{{ c.t }}<span class="mono" style="font-size:14px">{{ c.sign }}</span></span><sc-if value="{{ c.on }}" hint-placeholder-val="{{ false }}"><span class="qfade" style="display:flex;flex-direction:column;gap:10px"><span style="font-size:15px;line-height:1.55;color:var(--ink2)">{{ c.d }}</span><span style="display:flex;flex-wrap:wrap;gap:6px">{{ c.p1 }}</span></span></sc-if></button></sc-for>
+</div>
+</div>
+<div class="rv" style="position:relative">
+<div style="background:var(--deep);color:#fff;border-radius:3px;overflow:hidden;box-shadow:0 30px 60px -24px rgba(17,19,24,.4)">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.1)"><div style="display:flex;gap:10px;align-items:center"><img src="trident-icon.svg" alt="" style="width:30px;height:14px;object-fit:contain"><div style="display:flex;flex-direction:column"><span style="font-size:14px;font-weight:600">Agent · Valais Materials</span><span class="mono" style="font-size:11px;color:#4ADE80">Online · Sat 21:47</span></div></div><div role="group" aria-label="Conversation language" style="display:inline-flex;gap:2px;padding:3px;background:#171B20;border-radius:3px"><sc-for list="{{ chatLangs }}" as="l" hint-placeholder-count="4"><button type="button" class="seg" aria-pressed="{{ l.on }}" onClick="{{ l.pick }}" style="background:{{ l.bg }};color:{{ l.fg }}">{{ l.c }}</button></sc-for></div></div>
+<div class="{{ chatAnim }}" style="padding:22px 18px;display:flex;flex-direction:column;gap:12px;min-height:330px">
+<sc-for list="{{ chat }}" as="m" hint-placeholder-count="5">
+<sc-if value="{{ m.isU }}" hint-placeholder-val="{{ false }}"><div style="align-self:flex-end;max-width:80%;display:flex;flex-direction:column;align-items:flex-end;gap:4px"><div style="background:#26313B;padding:10px 13px;border-radius:12px 12px 2px 12px;font-size:14px;line-height:1.45">{{ m.text }}</div><span class="mono" style="font-size:10px;color:rgba(255,255,255,.55)">{{ m.meta }}</span></div></sc-if>
+<sc-if value="{{ m.isA }}" hint-placeholder-val="{{ true }}"><div style="align-self:flex-start;max-width:82%;display:flex;flex-direction:column;gap:4px"><div style="background:var(--blue);padding:10px 13px;border-radius:12px 12px 12px 2px;font-size:14px;line-height:1.45">{{ m.text }}</div><span class="mono" style="font-size:10px;color:rgba(255,255,255,.55)">{{ m.meta }}</span></div></sc-if>
+<sc-if value="{{ m.isC }}" hint-placeholder-val="{{ false }}"><div style="align-self:flex-start;border:1px solid rgba(74,222,128,.5);background:rgba(74,222,128,.08);border-radius:3px;padding:11px 14px;display:flex;flex-direction:column;gap:3px"><span style="font-size:14px;font-weight:600;color:#86EFAC">✓ {{ m.title }}</span><span class="mono" style="font-size:12px;color:rgba(255,255,255,.75)">{{ m.sub }} · {{ m.detail }}</span></div></sc-if>
+</sc-for>
+</div>
+<div class="mono" style="border-top:1px solid rgba(255,255,255,.1);padding:14px 18px;background:#0B0E11;font-size:12px;line-height:1.9;display:grid;grid-template-columns:repeat(4,auto);justify-content:space-between;column-gap:14px"><span style="grid-column:1/-1;color:rgba(255,255,255,.55)">→ CRM · structured fields</span><span style="color:rgba(255,255,255,.55)">product</span><span>0/16 gravel</span><span style="color:rgba(255,255,255,.55)">qty</span><span>8 t</span><span style="color:rgba(255,255,255,.55)">slot</span><span>Mon 07:30</span><span style="color:rgba(255,255,255,.55)">language</span><span style="color:var(--bluel)">{{ chatLang }}</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- RACE -->
+<section class="dark" style="background:var(--deep);color:#fff;padding:clamp(64px,7vw,104px) 0">
+<div class="w split rv">
+<div style="display:flex;flex-direction:column;gap:20px"><span class="lbl">Response race</span><h2 class="h2">A portal enquiry at 21:47 on Saturday. Who answers first?</h2><div><button type="button" class="btn btn-blue" onClick="{{ startRace }}"><span>{{ raceBtn }}</span></button></div></div>
+<div style="display:flex;flex-direction:column;gap:26px">
+<div style="display:flex;flex-direction:column;gap:10px"><div style="display:flex;justify-content:space-between;font-size:15px"><span style="font-weight:600">Trident agent</span><span class="mono" style="color:var(--bluel)">{{ agentTime }}</span></div><div style="height:44px;background:#171B20;border-radius:2px;overflow:hidden"><div style="height:100%;width:{{ agentW }}%;background:var(--blue);display:flex;align-items:center;justify-content:flex-end;padding-right:12px;box-sizing:border-box;font-size:13px;font-weight:600;white-space:nowrap"><sc-if value="{{ agentDone }}" hint-placeholder-val="{{ false }}"><span>✓ Replied · viewing offered</span></sc-if></div></div></div>
+<div style="display:flex;flex-direction:column;gap:10px"><div style="display:flex;justify-content:space-between;font-size:15px"><span style="font-weight:600">Market median, letting agencies in Romandie</span><span class="mono" style="color:rgba(255,255,255,.74)">{{ smeTime }}</span></div><div style="height:44px;background:#171B20;border-radius:2px;overflow:hidden"><div style="height:100%;width:{{ smeW }}%;background:#4A4F57;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;box-sizing:border-box;font-size:13px;font-weight:600;white-space:nowrap"><sc-if value="{{ smeDone }}" hint-placeholder-val="{{ false }}"><span>Sun 12:59</span></sc-if></div></div></div>
+<p style="margin:0;font-size:13px;color:rgba(255,255,255,.62)">First reply &lt;15 s by design vs market median &gt;15 h. Modelled scenario.</p>
+</div>
+</div>
+</section>
+
+<!-- USE CASES -->
+<section class="sec">
+<div class="w">
+<div class="head rv"><div><span class="lbl">Use cases</span><h2 class="h2">Eight patterns where an agent pays for itself</h2><p class="lead">Each comes with a precondition. Most failed AI projects fail there, not in the model.</p></div><a class="btn btn-ink" href="UseCases.dc.html"><span>All use cases<i class="arr">→</i></span></a></div>
+<div class="g2 rv" style="gap:16px">
+<sc-for list="{{ useCases }}" as="u" hint-placeholder-count="8"><a href="UseCases.dc.html" class="card uc" style="display:grid;grid-template-columns:76px minmax(0,1fr);overflow:hidden"><span style="background:var(--alt);border-right:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:10px;padding:24px 0"><span style="font-size:30px;font-weight:600;letter-spacing:-.04em;color:var(--blue);line-height:1">{{ u.n }}</span><span aria-hidden="true" style="font-size:18px;color:var(--blued)">{{ u.i }}</span></span><span style="padding:24px 26px;display:flex;flex-direction:column;gap:10px"><span style="display:flex;justify-content:space-between;gap:12px;font-size:20px;font-weight:600;line-height:1.25;letter-spacing:-.015em">{{ u.t }}<span class="go" style="font-weight:400">→</span></span><span style="font-size:15px;line-height:1.55;color:var(--ink2)">{{ u.d }}</span><span style="margin-top:6px;background:var(--wash);border-left:3px solid var(--blue);padding:10px 12px;font-size:13.5px;line-height:1.45;color:var(--ink)"><b class="mono" style="font-size:11px;letter-spacing:.06em;color:var(--blued)">NEEDS</b><br>{{ u.needs }}</span></span></a></sc-for>
+</div>
+</div>
+</section>
+
+<!-- RESULTS -->
+<section id="results" class="sec" style="background:var(--alt);border-top:1px solid var(--line)">
+<div class="w">
+<div class="head rv"><div><span class="lbl">Results</span><h2 class="h2">Delivered, then counted</h2><p class="lead">Where a case carries a label, <b style="color:var(--ink)">measured</b> means counted in production; <b style="color:var(--ink)">modelled</b> means calculated, not counted in production.</p></div><a class="btn btn-ink" href="Projects.dc.html"><span>All case studies<i class="arr">→</i></span></a></div>
+<div class="g3 stg rv wipe">
+<sc-for list="{{ cases }}" as="c" hint-placeholder-count="3"><a href="Projects.dc.html" class="card" style="overflow:hidden;display:flex;flex-direction:column"><div class="ph" style="height:220px"><img src="{{ c.img }}" alt=""><div style="position:absolute;left:14px;bottom:14px;right:14px;display:flex;justify-content:space-between;align-items:flex-end"><span style="background:#fff;border-radius:2px;padding:10px 14px;display:flex;flex-direction:column;gap:2px"><span style="font-size:28px;font-weight:600;letter-spacing:-.04em;line-height:1;color:var(--blue)">{{ c.m0v }}</span><span style="font-size:12px">{{ c.m0l }}</span></span><sc-if value="{{ c.label }}" hint-placeholder-val="{{ false }}"><span class="tag" style="background:var(--blue);color:#fff">{{ c.label }}</span></sc-if></div></div>
+<div style="padding:24px;display:flex;flex-direction:column;gap:12px;flex:1"><span class="mono" style="font-size:12px;color:var(--ink3)">{{ c.sector }}</span><span style="font-size:19px;font-weight:600;line-height:1.25">{{ c.title }}</span><span style="font-size:14px;line-height:1.55;color:var(--ink2)">{{ c.d }}</span>
+<div style="display:flex;flex-direction:column;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)"><sc-for list="{{ c.bars }}" as="b" hint-placeholder-count="2"><div style="display:flex;flex-direction:column;gap:5px"><div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:var(--ink2)">{{ b.l }}</span><span class="mono" style="font-weight:600">{{ b.v }}</span></div><div style="display:flex;flex-direction:column;gap:3px"><div style="height:6px;background:var(--line);border-radius:2px;width:100%"><div class="hbar" style="width:{{ b.before }}%;background:var(--line2)"></div></div><div style="height:6px;border-radius:2px;width:100%"><div class="hbar" style="width:{{ b.after }}%;background:var(--blue)"></div></div></div></div></sc-for><span class="mono" style="display:flex;gap:14px;font-size:10.5px;color:var(--ink3)"><span>▬ before</span><span style="color:var(--blued)">▬ after</span></span></div>
+</div></a></sc-for>
+</div>
+<div class="g3 stg rv" style="margin-top:20px"><sc-for list="{{ moreCases }}" as="c" hint-placeholder-count="3"><a href="Projects.dc.html" class="card" style="padding:20px;display:flex;flex-direction:column;gap:10px"><span style="display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--ink2)"><span>{{ c.s }}</span><span class="tag" style="background:var(--wash);color:var(--blued)">MODELLED</span></span><span style="font-size:16px;font-weight:600;line-height:1.3">{{ c.t }}</span><span style="display:flex;align-items:baseline;gap:10px;margin-top:auto"><b style="font-size:26px;letter-spacing:-.04em;color:var(--blue)">{{ c.v }}</b><span style="font-size:13px;color:var(--ink2)">{{ c.l }}</span><span class="go" style="margin-left:auto">→</span></span></a></sc-for></div>
+</div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="sec">
+<div class="w">
+<div class="head rv"><div><span class="lbl">Industries</span><h2 class="h2">Where the case is strongest in Switzerland</h2><p class="lead">Ordered by how well the numbers work, not by how interesting the technology is.</p></div></div>
+<div class="g4 stg rv" style="gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)"><sc-for list="{{ industries }}" as="x" hint-placeholder-count="8"><div class="ind" style="position:relative;padding:28px 24px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:12px;min-height:230px"><span style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono ind-n" style="font-size:12px;font-weight:600">#{{ x.n }}</span><span class="ind-bar" aria-hidden="true" style="height:4px;width:{{ x.w }}%;max-width:90px;border-radius:2px"></span></span><span style="font-size:19px;font-weight:600;line-height:1.25;letter-spacing:-.015em">{{ x.t }}</span><span class="ind-d" style="font-size:14.5px;line-height:1.55">{{ x.d }}</span></div></sc-for></div>
+</div>
+</section>
+
+<!-- HOW WE WORK -->
+<section class="sec" style="background:var(--alt);border-top:1px solid var(--line)">
+<div class="w">
+<div class="head rv"><div><span class="lbl">How we work</span><h2 class="h2">Live in three to five weeks</h2><p class="lead">The gating item is almost never the technology. It's how fast your side can answer questions about its own process.</p></div></div>
+<div class="rv" style="background:#fff;border:1px solid var(--line);border-radius:3px;padding:clamp(20px,3vw,36px);display:flex;flex-direction:column;gap:22px">
+<div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center"><div style="display:flex;flex-direction:column;gap:8px"><div style="display:flex;justify-content:space-between;font-size:14px"><label for="h-day">Drag through the project</label><span class="mono" style="font-weight:600;color:var(--blued)">Day {{ day }}</span></div><input id="h-day" class="range" type="range" min="1" max="30" step="1" value="{{ day }}" onChange="{{ setDay }}"></div><button type="button" class="btn btn-ink" onClick="{{ togglePlay }}" style="padding:11px 18px;font-size:14px"><span>{{ playLbl }}</span></button></div>
+<div style="display:flex;flex-direction:column">
+<sc-for list="{{ stages }}" as="p" hint-placeholder-count="6"><div style="display:grid;grid-template-columns:minmax(200px,.9fr) minmax(0,1.6fr);gap:24px;padding:16px 0;border-top:1px solid var(--line);align-items:center"><div style="display:flex;flex-direction:column;gap:4px"><span style="display:flex;align-items:baseline;gap:10px"><span style="font-size:17px;font-weight:600;color:{{ p.tc }};transition:color .25s">{{ p.t }}</span></span><span class="hide-m" style="font-size:13.5px;line-height:1.45;color:var(--ink2)">{{ p.d }}</span></div><div style="display:flex;flex-direction:column;gap:6px"><span class="mono" style="font-size:13px;font-weight:600;color:{{ p.dc }}">{{ p.days }}</span><div style="display:grid;grid-template-columns:repeat(30,minmax(0,1fr));height:14px;background:var(--alt);border-radius:2px"><div style="grid-column:{{ p.col }};background:var(--line);border-radius:2px;overflow:hidden"><div class="stage-bar" style="height:100%;width:{{ p.fill }}%;background:{{ p.bg }}"></div></div></div></div></div></sc-for>
+</div>
+<p style="margin:0;font-size:14px;color:var(--ink2)">First measurable effects after two to four weeks live. Anyone promising results in week one is quoting a demo.</p>
+</div>
+</div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="dark" style="background:var(--ink);color:#fff;padding:clamp(72px,8vw,112px) 0">
+<div class="w split rv">
+<div style="display:flex;flex-direction:column;gap:20px"><span class="lbl">Before the audit</span><h2 class="h2">Does it pay back? Sometimes the answer is "not yet".</h2><p class="lead">Under roughly 150 enquiries a month, the numbers don't clear the build cost. Without a documented knowledge base, there's nothing for the agent to answer from.</p></div>
+<div style="display:flex;flex-direction:column;gap:22px;background:#171B20;border:1px solid rgba(255,255,255,.1);border-radius:3px;padding:clamp(20px,3vw,32px)">
+<div style="display:flex;flex-direction:column;gap:8px"><div style="display:flex;justify-content:space-between;font-size:14px"><label for="h-enq">Enquiries per month</label><span class="mono" style="font-weight:600">{{ enq }}</span></div><input id="h-enq" class="range" type="range" min="50" max="2000" step="10" value="{{ enq }}" onChange="{{ setEnq }}"></div>
+<div style="display:flex;flex-direction:column;gap:8px"><div style="display:flex;justify-content:space-between;font-size:14px"><label for="h-min">Minutes a person spends per enquiry</label><span class="mono" style="font-weight:600">{{ mins }} min</span></div><input id="h-min" class="range" type="range" min="2" max="25" step="1" value="{{ mins }}" onChange="{{ setMins }}"></div>
+<div class="g2" style="gap:12px"><div style="background:var(--deep);border-radius:2px;padding:16px;display:flex;flex-direction:column;gap:4px"><span class="mono" style="font-size:32px;font-weight:600;color:var(--bluel)">{{ hrs }} h</span><span style="font-size:13px;color:rgba(255,255,255,.66)">routine work freed per month</span></div><div style="background:var(--deep);border-radius:2px;padding:16px;display:flex;flex-direction:column;gap:4px"><span class="mono" style="font-size:32px;font-weight:600">{{ fte }}</span><span style="font-size:13px;color:rgba(255,255,255,.66)">full-time positions of queue work</span></div></div>
+<sc-if value="{{ verdictOk }}" hint-placeholder-val="{{ true }}"><div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><span style="font-size:15px"><b>Worth a 45-minute audit.</b></span><a class="btn btn-blue" href="Contact.dc.html" style="padding:11px 16px;font-size:14px"><span>Book the audit<i class="arr">→</i></span></a></div></sc-if>
+<sc-if value="{{ verdictNo }}" hint-placeholder-val="{{ false }}"><div style="font-size:15px;line-height:1.5"><b>Not yet.</b> The numbers don't clear the build cost. We'd rather tell you now.</div></sc-if>
+<span style="font-size:12px;color:rgba(255,255,255,.62)">Modelled, not measured. Indicative only.</span>
+</div>
+</div>
+</section>
+
+<!-- WHY US -->
+<section class="sec">
+<div class="w">
+<div class="head rv"><div><span class="lbl">Why us</span><h2 class="h2">We've shipped the boring parts</h2><p class="lead">Anyone can demo a language model answering a question. Few have wired one into a dispatch system a driver depends on at six in the morning.</p></div></div>
+<div class="g3 stg rv"><sc-for list="{{ why }}" as="w" hint-placeholder-count="6"><div class="card" style="padding:28px;display:flex;flex-direction:column;gap:12px"><span style="width:36px;height:36px;border-radius:2px;background:var(--wash);color:var(--blued);display:flex;align-items:center;justify-content:center;font-weight:700" aria-hidden="true">{{ w.i }}</span><span style="font-size:21px;font-weight:600;letter-spacing:-.02em">{{ w.t }}</span><span style="font-size:15px;line-height:1.55;color:var(--ink2)">{{ w.d }}</span></div></sc-for></div>
+</div>
+</section>
+
+<!-- SWISS -->
+<section class="sec" style="background:var(--alt);border-top:1px solid var(--line)">
+<div class="w split" style="align-items:start">
+<div class="rv" style="display:flex;flex-direction:column;gap:18px"><span class="lbl"><svg width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#DA291C"/><rect x="13" y="6" width="6" height="20" fill="#fff"/><rect x="6" y="13" width="20" height="6" fill="#fff"/></svg>Swiss by jurisdiction</span><h2 class="h2">Swiss contracts, Swiss accountability, your data stays yours</h2><p class="lead">Contracts and data residency sit in Switzerland. Engineering is distributed, which is how our rates work against Swiss agency pricing without cutting seniority.</p></div>
+<div class="g2 stg rv" style="gap:0;border-top:1px solid var(--line2)"><sc-for list="{{ swiss }}" as="s" hint-placeholder-count="6"><div style="padding:20px 20px 20px 0;border-bottom:1px solid var(--line2);display:flex;flex-direction:column;gap:6px"><span style="display:flex;gap:10px;align-items:baseline;font-size:17px;font-weight:600"><span style="color:var(--blue)">✓</span>{{ s.t }}</span><span style="font-size:14px;line-height:1.5;color:var(--ink2)">{{ s.d }}</span></div></sc-for></div>
+</div>
+</section>
+
+<!-- TEAM -->
+<section class="sec">
+<div class="w">
+<div class="head rv"><div><span class="lbl">Who you work with</span><h2 class="h2">The same people from audit to handover</h2></div><a class="btn btn-ink" href="Team.dc.html"><span>Meet the team<i class="arr">→</i></span></a></div>
+<div class="g4 keep2 stg rv" style="row-gap:36px"><sc-for list="{{ team }}" as="p" hint-placeholder-count="8"><div class="tm" style="display:flex;flex-direction:column;gap:14px"><div class="ph" style="aspect-ratio:4/5;border-radius:3px;background:linear-gradient(180deg,#EEF3FD,#E3E5E8)"><img src="{{ p.img }}" alt="{{ p.name }}" style="object-fit:cover;object-position:top center"></div><div style="display:flex;flex-direction:column;gap:4px;border-left:2px solid var(--blue);padding-left:12px"><span style="font-size:17px;font-weight:600;letter-spacing:-.01em">{{ p.name }}</span><span style="font-size:14px;color:var(--ink2)">{{ p.role }}</span></div></div></sc-for></div>
+</div>
+</section>
+
+<!-- CLIENTS WALL -->
+<section class="sec" style="background:#fff;border-top:1px solid var(--line)">
+<div class="w">
+<div class="head rv"><div><span class="lbl">Clients</span><h2 class="h2">Trusted by companies in Switzerland and Europe</h2></div></div>
+<div class="rv" style="display:flex;flex-direction:column;gap:12px;margin:-16px 0 28px"><span class="mono" style="font-size:12px;font-weight:600;color:var(--ink2)">Named references, available on request</span><div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ refs }}" as="r" hint-placeholder-count="5"><span style="display:inline-flex;align-items:center;gap:8px;padding:7px 12px 7px 7px;border:1px solid var(--line);border-radius:3px;font-size:14px;background:#fff"><span class="tag" style="background:var(--ink);color:#fff">{{ r.c }}</span><b style="font-weight:600">{{ r.n }}</b><span style="color:var(--ink2);font-size:13px">{{ r.d }}</span></span></sc-for></div></div>
+<div class="rv cl-rows" style="display:flex;flex-direction:column;gap:14px">
+<div class="mq cl-mask"><div class="marq cl-track"><sc-for list="{{ clientsA }}" as="c" hint-placeholder-count="20"><div class="lcell"><img class="clogo" src="{{ c.src }}" alt="{{ c.alt }}"></div></sc-for></div></div>
+<div class="mq cl-mask"><div class="marq cl-track rev"><sc-for list="{{ clientsB }}" as="c" hint-placeholder-count="20"><div class="lcell"><img class="clogo" src="{{ c.src }}" alt="{{ c.alt }}"></div></sc-for></div></div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS -->
+<section class="dark" style="background:var(--deep);color:#fff;padding:clamp(72px,8vw,112px) 0;position:relative;overflow:hidden">
+<div class="w split" style="align-items:center">
+<div class="rv" style="display:flex;flex-direction:column;gap:16px"><span class="lbl">Clients</span><h2 class="h2">What clients say</h2><div style="display:flex;gap:8px;margin-top:12px"><button type="button" class="btn btn-line" onClick="{{ qPrev }}" aria-label="Previous testimonial" style="padding:12px 16px"><span>←</span></button><button type="button" class="btn btn-line" onClick="{{ qNext }}" aria-label="Next testimonial" style="padding:12px 16px"><span>→</span></button></div></div>
+<div class="rv" style="display:flex;flex-direction:column;gap:28px;min-height:260px">
+<div class="{{ qAnim }}" style="display:flex;flex-direction:column;gap:24px"><span aria-hidden="true" style="font-size:72px;line-height:.5;color:var(--blue);font-weight:700">“</span><blockquote style="margin:0;font-size:clamp(22px,2.4vw,34px);line-height:1.25;letter-spacing:-.02em;font-weight:500">{{ quote.q }}</blockquote><div style="display:flex;align-items:center;gap:14px"><span style="width:44px;height:44px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:600">{{ quote.ini }}</span><span style="display:flex;flex-direction:column"><span style="font-weight:600">{{ quote.n }}</span><span style="font-size:13px;color:rgba(255,255,255,.66)">{{ quote.c }}</span></span></div></div>
+<div style="display:flex;gap:6px" role="group" aria-label="Testimonials"><sc-for list="{{ qDots }}" as="d" hint-placeholder-count="5"><button type="button" class="qdot" aria-label="{{ d.lbl }}" aria-pressed="{{ d.on }}" onClick="{{ d.pick }}" style="background:{{ d.bg }};width:{{ d.w }}px"></button></sc-for></div>
+</div>
+</div>
+</section>
+
+<!-- PARTNERS -->
+<section style="padding:clamp(56px,6vw,88px) 0;border-top:1px solid var(--line)">
+<div class="w">
+<div class="split" style="align-items:center;gap:40px">
+<div class="rv" style="display:flex;flex-direction:column;gap:12px"><span class="lbl">Partners and platforms</span><h2 class="h2">Who we build and host with</h2><p class="lead" style="font-size:15px">Cloud platforms we deploy on, and the Valais institutions we work alongside.</p></div>
+<div class="g4 keep2 stg rv" style="gap:10px"><sc-for list="{{ partners }}" as="p" hint-placeholder-count="8"><div class="lcell" style="width:auto;height:76px;padding:14px"><img class="clogo" src="{{ p.src }}" alt="{{ p.alt }}" style="max-height:32px;max-width:120px"></div></sc-for></div>
+</div>
+<div class="rv" style="margin-top:clamp(40px,5vw,64px);background:var(--wash);border-radius:3px;padding:clamp(22px,3vw,36px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:32px">
+<div style="display:flex;flex-direction:column;gap:10px"><span class="lbl">Partners and portfolio work</span><h3 style="margin:0;font-size:26px;letter-spacing:-.025em;font-weight:600">What we are looking for</h3><p style="margin:0;font-size:14px;line-height:1.55;color:var(--ink2)">Engagements where software is core to the business case rather than a support function.</p></div>
+<div style="display:flex;flex-direction:column;gap:14px"><div class="g2" style="gap:12px 24px"><sc-for list="{{ looking }}" as="l" hint-placeholder-count="4"><div style="display:grid;grid-template-columns:18px minmax(0,1fr);gap:10px;font-size:14.5px;line-height:1.5"><span style="color:var(--blue);font-weight:700">→</span><span>{{ l }}</span></div></sc-for></div><p style="margin:0;font-size:14.5px;line-height:1.5;font-weight:600;border-top:1px solid rgba(39,114,224,.2);padding-top:12px">We are not looking for staff augmentation by the hour. We are looking for problems where owning the outcome is the point.</p></div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" style="background:var(--alt);border-top:1px solid var(--line)">
+<div class="w">
+<div class="head rv"><div><span class="lbl">FAQ</span><h2 class="h2">Questions before the audit</h2></div><a class="btn btn-ink" href="FAQ.dc.html"><span>All questions<i class="arr">→</i></span></a></div>
+<div class="faq-g rv">
+<div role="tablist" aria-label="Questions" style="display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:3px;overflow:hidden"><sc-for list="{{ faq }}" as="f" hint-placeholder-count="6"><button type="button" role="tab" class="faq-t" aria-selected="{{ f.open }}" onClick="{{ f.pick }}" style="background:{{ f.bg }};box-shadow:inset 3px 0 0 {{ f.bar }}"><span class="mono" style="font-size:12px;font-weight:600;color:{{ f.nc }}">{{ f.n }}</span><span style="font-weight:{{ f.w }}">{{ f.q }}</span><span class="go" style="color:{{ f.nc }}">→</span></button></sc-for></div>
+<div role="tabpanel" class="{{ faqAnim }}" style="background:var(--ink);color:#fff;border-radius:3px;padding:clamp(28px,3.5vw,48px);display:flex;flex-direction:column;gap:20px;min-height:100%;box-sizing:border-box">
+<span class="mono" style="font-size:12px;color:var(--bluel)">{{ faqCur.n }} / {{ faqTotal }}</span>
+<h3 style="margin:0;font-size:clamp(24px,2.4vw,34px);line-height:1.15;letter-spacing:-.025em;font-weight:600">{{ faqCur.q }}</h3>
+<p style="margin:0;font-size:clamp(16px,1.3vw,19px);line-height:1.6;color:rgba(255,255,255,.8)">{{ faqCur.a }}</p>
+<div style="margin-top:auto;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><span style="font-size:14px;color:rgba(255,255,255,.66)">Didn't find your question?</span><a class="btn btn-blue" href="Contact.dc.html" style="padding:11px 16px;font-size:14px"><span>Ask us directly<i class="arr">→</i></span></a></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="sec">
+<div class="w">
+<div class="head rv"><div><span class="lbl">Blog &amp; news</span><h2 class="h2">From the team</h2></div><a class="btn btn-ink" href="Blog.dc.html"><span>All articles<i class="arr">→</i></span></a></div>
+<div class="g4 stg rv wipe"><sc-for list="{{ blog }}" as="b" hint-placeholder-count="4"><a href="Blog.dc.html" class="card" style="overflow:hidden;display:flex;flex-direction:column"><div class="ph" style="aspect-ratio:16/10"><img src="{{ b.img }}" alt=""></div><div style="padding:20px;display:flex;flex-direction:column;gap:10px;flex:1"><span class="mono" style="font-size:12px;color:var(--ink3)">{{ b.d }}</span><span style="font-size:17px;font-weight:600;line-height:1.3;flex:1">{{ b.t }}</span><span style="font-weight:600;font-size:14px;display:flex;gap:6px">Read <span class="go">→</span></span></div></a></sc-for></div>
+</div>
+</section>
+</main>
+
+<footer class="dark" style="background:var(--deep);color:#fff">
+<div class="w" style="padding-top:clamp(72px,8vw,112px)"><span class="lbl rv">Free audit</span></div>
+<div class="w split" style="padding-top:24px;padding-bottom:72px;align-items:stretch">
+<div class="rv" style="display:flex;flex-direction:column;justify-content:space-between;gap:36px"><div style="display:flex;flex-direction:column;gap:22px"><h2 style="margin:0;font-size:clamp(40px,5vw,72px);line-height:.98;letter-spacing:-.045em;font-weight:600">Bring your volumes. Leave with <span style="color:var(--bluel)">your numbers.</span></h2><p class="lead">45 minutes and a straight answer, whether or not we work together.</p></div>
+<div style="display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,.18)"><span class="mono" style="font-size:12px;color:rgba(255,255,255,.6);padding:16px 0 4px">What happens next</span><sc-for list="{{ nextSteps }}" as="n" hint-placeholder-count="4"><div style="display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12)"><span class="mono" style="width:28px;height:28px;border-radius:2px;background:{{ n.bg }};display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600">{{ n.n }}</span><span style="font-size:15px;line-height:1.4;color:rgba(255,255,255,.86)">{{ n.t }}</span></div></sc-for></div></div>
+<div class="rv" style="background:#171B20;border:1px solid rgba(255,255,255,.1);border-radius:3px;padding:clamp(22px,3vw,36px)">
+<sc-if value="{{ formOpen }}" hint-placeholder-val="{{ true }}"><div style="display:flex;flex-direction:column;gap:16px">
+<div class="g2" style="gap:12px"><label class="fl">Name<input class="fi" type="text" autocomplete="name"></label><label class="fl">Company<input class="fi" type="text" autocomplete="organization"></label><label class="fl">Email<input class="fi" type="email" autocomplete="email"></label><label class="fl">Phone<input class="fi" type="tel" autocomplete="tel"></label></div>
+<div class="fl"><span id="svc-l">What it's about <span style="font-weight:400;color:rgba(255,255,255,.55)">(optional)</span></span><div role="group" aria-labelledby="svc-l" style="display:flex;flex-wrap:wrap;gap:6px"><sc-for list="{{ svcChips }}" as="c" hint-placeholder-count="5"><button type="button" class="chipd" aria-pressed="{{ c.on }}" onClick="{{ c.pick }}" style="background:{{ c.bg }};color:{{ c.fg }};box-shadow:inset 0 0 0 1px {{ c.bd }}">{{ c.l }}</button></sc-for></div></div>
+<label class="fl">Message<textarea class="fi" rows="3" placeholder="Enquiry volumes, channels, systems…" style="resize:vertical"></textarea></label>
+<label style="display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.45;color:rgba(255,255,255,.74);cursor:pointer"><input type="checkbox" style="margin-top:2px;accent-color:#2772E0">I agree that Trident Software may process this enquiry under revFADP and GDPR.</label>
+<div><button type="button" class="btn btn-blue" onClick="{{ sendForm }}"><span>Request the audit<i class="arr">→</i></span></button></div>
+</div></sc-if>
+<sc-if value="{{ formSent }}" hint-placeholder-val="{{ false }}"><div class="qfade" style="display:flex;flex-direction:column;gap:14px;padding:24px 0"><span aria-hidden="true" style="width:44px;height:44px;border-radius:2px;background:var(--blue);display:flex;align-items:center;justify-content:center;font-size:22px">✓</span><span style="font-size:24px;font-weight:600;letter-spacing:-.02em">Thank you. A named engineer replies within 24 business hours.</span><button type="button" class="btn btn-line" onClick="{{ resetForm }}" style="align-self:flex-start"><span>Send another</span></button></div></sc-if>
+</div>
+</div>
+<div class="w">
+<div class="fgrid" style="padding:56px 0;border-top:1px solid rgba(255,255,255,.12);font-size:14px;color:rgba(255,255,255,.86)">
+<div class="fcol fbrand" style="gap:16px;max-width:340px"><img src="trident-logo-white.svg" alt="Trident Software" style="height:20px;width:auto"><span style="color:rgba(255,255,255,.66);line-height:1.55">Operational software and AI agents, built in Switzerland. Senior engineers, fixed budgets, compliance included.</span><span style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag" style="background:rgba(255,255,255,.08);color:#fff">CH / EU hosting</span><span class="tag" style="background:rgba(255,255,255,.08);color:#fff">revFADP</span><span class="tag" style="background:rgba(255,255,255,.08);color:#fff">GDPR</span></span></div>
+<div class="fcol"><span class="fh">Services</span><a class="ul" href="Services.dc.html">AI agents &amp; LLM automation</a><a class="ul" href="Services.dc.html">Logistics &amp; operations</a><a class="ul" href="Services.dc.html">Custom business systems</a><a class="ul" href="Services.dc.html">IoT &amp; connected products</a><a class="ul" href="Services.dc.html">CTO as a Service</a></div>
+<div class="fcol"><span class="fh">Company</span><a class="ul" href="About.dc.html">About</a><a class="ul" href="Team.dc.html">Our team</a><a class="ul" href="Projects.dc.html">Projects</a><a class="ul" href="Blog.dc.html">Blog</a><a class="ul" href="Contact.dc.html">Contact</a></div>
+<div class="fcol"><span class="fh">Explore</span><a class="ul" href="UseCases.dc.html">Use cases</a><a class="ul" href="#">Industries</a><a class="ul" href="#">Pricing</a><a class="ul" href="#">Technologies</a><a class="ul" href="#">Locations</a></div>
+<div class="fcol"><span class="fh">Contact</span><a class="ul" href="mailto:info@trident-software.ch">info@trident-software.ch</a><a class="ul" href="tel:+41797454429">+41 79 745 44 29</a><span style="color:rgba(255,255,255,.66);line-height:1.5">Rue de l'Industrie 23<br>1950 Sion, Valais</span></div>
+</div>
+<div style="padding:20px 0 28px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:12px;color:rgba(255,255,255,.62)"><span>Swiss made software · © 2026 Trident Software Sàrl · CHE-185.076.733</span><span style="display:flex;gap:20px"><a class="ul" href="#">Privacy</a><a class="ul" href="#">Terms</a><a class="ul" href="#">Imprint</a><a class="ul" href="#">Cookies</a></span></div>
+</div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+const ROT = [
+  { c: 'DE', t: 'Antwortet in Sekunden. Rund um die Uhr.' },
+  { c: 'FR', t: 'Répond en quelques secondes. Jour et nuit.' },
+  { c: 'IT', t: 'Risponde in pochi secondi. Giorno e notte.' },
+  { c: 'EN', t: 'Answers in seconds. Around the clock.' }
+];
+const SCR = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/·';
+const H1 = 'Operational software and AI agents, built in Switzerland';
+const FEED = [
+  ['WhatsApp', 'DE', 'Enquiry: 8 t Kies 0/16 nach Siders → answered', '4 s'],
+  ['WhatsApp', 'DE', 'Stock checked · slots Mo 07:30 / 13:00 offered', '2 s'],
+  ['WhatsApp', 'DE', 'Order confirmed → QR-bill sent', '3 s'],
+  ['CRM', '—', 'Contact, deal and transcript → HubSpot', '1 s'],
+  ['E-mail', 'FR', 'Delivery note matched to order, no mismatch', '9 s'],
+  ['Web chat', 'EN', 'Delivery to Zermatt? → coverage and surcharge', '5 s'],
+  ['Phone', 'IT', 'Price negotiation → handed to sales, Mon 08:00', 'esc'],
+  ['WhatsApp', 'FR', '« Où est ma livraison ? » → live tracking sent', '3 s']
+];
+const CHAT = {
+  EN: [['u', 'Evening — can you deliver 0/16 gravel to Sierre on Monday? 8 tonnes.', 'EN · 21:47'], ['a', 'Evening! Yes, 8 t of 0/16 gravel is in stock. Monday I can offer 07:30 or 13:00 in Sierre.', 'Agent · 4 s'], ['u', '07:30 works.', 'EN · 21:48'], ['c', 'Delivery confirmed', 'QR-bill sent', 'Mon 07:30 · Sierre · 8 t'], ['a', "That's booked. The QR invoice and truck tracking are on their way by e-mail.", 'Agent · 3 s · CRM updated']],
+  DE: [['u', 'Guten Abend — können Sie am Montag 8 Tonnen Kies 0/16 nach Siders liefern?', 'DE · 21:47'], ['a', 'Guten Abend! Ja, 8 t Kies 0/16 sind an Lager. Am Montag kann ich 07:30 oder 13:00 in Siders anbieten.', 'Agent · 4 s'], ['u', '07:30 passt.', 'DE · 21:48'], ['c', 'Lieferung bestätigt', 'QR-Rechnung gesendet', 'Mo 07:30 · Siders · 8 t'], ['a', 'Gebucht. QR-Rechnung und LKW-Tracking kommen per E-Mail.', 'Agent · 3 s · CRM updated']],
+  FR: [['u', 'Bonsoir — pouvez-vous livrer 8 tonnes de gravier 0/16 à Sierre lundi ?', 'FR · 21:47'], ['a', 'Bonsoir ! Oui, 8 t de gravier 0/16 sont en stock. Lundi, je peux proposer 07h30 ou 13h00 à Sierre.', 'Agent · 4 s'], ['u', '07h30, c’est parfait.', 'FR · 21:48'], ['c', 'Livraison confirmée', 'Facture QR envoyée', 'Lun 07:30 · Sierre · 8 t'], ['a', 'C’est réservé. La facture QR et le suivi du camion arrivent par e-mail.', 'Agent · 3 s · CRM updated']],
+  IT: [['u', 'Buonasera — potete consegnare 8 tonnellate di ghiaia 0/16 a Sierre lunedì?', 'IT · 21:47'], ['a', 'Buonasera! Sì, 8 t di ghiaia 0/16 sono disponibili. Lunedì posso proporre le 07:30 o le 13:00 a Sierre.', 'Agent · 4 s'], ['u', 'Le 07:30 vanno bene.', 'IT · 21:48'], ['c', 'Consegna confermata', 'Fattura QR inviata', 'Lun 07:30 · Sierre · 8 t'], ['a', 'Prenotato. La fattura QR e il tracking del camion arrivano via e-mail.', 'Agent · 3 s · CRM updated']]
+};
+const STATS = [{ v: '1 h → ~5 min', l: 'Clinic admission time, operating target' }, { v: '−63 %', l: 'Warranty cost, component maker' }, { v: 'Month 2', l: 'Typical payback on a sales agent' }, { v: 'CH / EU', l: 'Hosting, under revFADP and GDPR' }];
+const CLIENTS = ['gategroup.png', 'proxinea.svg', 'tdsbot.png', 'qmasters.svg', 'catapult-crown.svg', 'executive-travel-exchange.png', 'xtrodes.svg', 'kleap.png', 'treedis.svg', 'la-pochette.svg', 'xelsat.png', 'ardevaz-sls.png', 'mtechno.svg', 'mastertool.svg', 'daniparts.png', 'atc.svg', 'samange.svg', 'vbauto.svg', 'le-glacon-suisse.jpg', 'ruralidays.png'];
+const SERVICES = [
+  { t: 'AI agents & LLM automation', d: 'Enquiry handling, document processing, recommendations, search over company knowledge. Agents wired into your real systems, not chat widgets.', img: 'img/stock/workspace-2.jpg', span: 'span 2', h: 260 },
+  { t: 'Logistics & operations platforms', d: 'Order intake, dispatch, driver apps, tracking, automated billing.', img: 'img/stock/dispatch-2.jpg', span: 'span 1', h: 260 },
+  { t: 'IoT & connected products', d: 'Firmware, cloud platform, rules engines, dealer and consumer apps.', img: 'img/stock/iot-device.jpg', span: 'span 1', h: 180 },
+  { t: 'Custom business systems', d: 'B2B portals, ERP and accounting integrations, legacy migrations.', img: 'img/stock/workspace.jpg', span: 'span 1', h: 180 },
+  { t: 'CTO as a Service', d: "Fractional or interim technical leadership when you've outgrown your first developers.", img: 'img/stock/office-2.jpg', span: 'span 1', h: 180 }
+];
+const CAPS = [
+  { t: 'Answers and qualifies, at any hour', d: "Every channel, weekends and cantonal holidays included. Asks the questions your best rep asks, in the buyer's language.", p: ['Seconds to first response', 'Four language regions from day one', 'Answers recorded as structured fields'] },
+  { t: 'Recommends and closes the small stuff', d: 'Works from your live catalogue, stock and price list. Handles standard objections with your approved wording.', p: ['Books against a real calendar', 'Issues QR-bills and payment links', 'Escalates on defined conditions'] },
+  { t: 'Writes into your systems', d: 'Contact, company, deal and full transcript go into your CRM, so the next person starts from a complete record.', p: ['CRM and ERP integration', 'Audit trail on every dialogue', 'Escalation path designed before launch'] }
+];
+const USE_CASES = [
+  ['↘', 'Inbound enquiry handling', 'Answers in seconds on every channel, qualifies, books, writes into the CRM.', 'Answers exist in writing: price list, catalogue, terms.'],
+  ['▤', 'Document processing', 'Reads invoices, delivery notes and forms, matches them to records, flags mismatches.', 'A clear definition of which field goes where.'],
+  ['⊕', 'Order intake from messages', 'Turns "the usual pallet" on WhatsApp into a draft order the customer confirms.', 'Customer order history in a system.'],
+  ['⇄', 'Dispatcher assistant', 'Proposes assignment and sequence, explains why. The dispatcher decides.', 'Built as advice, never silent overrule.'],
+  ['⌕', 'Search over company knowledge', 'Answers from contracts, manuals and policies with citations.', 'Document hygiene: no three contradictory versions.'],
+  ['✦', 'Recommendation', 'Proposes the next offer from live stock, margin and history.', 'Transaction history and live stock data.'],
+  ['◎', 'Status and self-service', '"Where is my delivery?" answered from live data.', 'Operational system with readable status.'],
+  ['≡', 'Back-office triage', 'Sorts, summarises and routes incoming work to the right person.', 'Agreed routing rules.']
+];
+const CASES = [
+  { sector: 'Post-acute clinic network · CH', label: '', title: 'From a bundle of paper to a coded SwissDRG invoice', d: 'The assistant reads the admission file, drafts the discharge letter for the physician to sign, and prepares a validated invoice.', img: 'img/stock/clinic.jpg', m0v: '1 h → ~5 min', m0l: 'Admission time', bars: [{ l: 'Discharge letter', v: '−78 %', before: 100, after: 22 }, { l: 'Invoice ready, was 10–15 days', v: '2 days', before: 100, after: 16 }] },
+  { sector: 'Multi-disciplinary practice · CH', label: '', title: 'Voice consultation to TARDOC invoice', d: 'Physicians spent 35 % of their time documenting. Now the consultation becomes the report and the coded invoice.', img: 'img/stock/clinic-2.jpg', m0v: '+30.8 %', m0l: 'Consultations, same salary', bars: [{ l: 'Time per invoice', v: '−84 %', before: 100, after: 16 }, { l: 'Faster payment', v: '3.5×', before: 100, after: 29 }] },
+  { sector: 'Component manufacturer · IT', label: 'MEASURED', title: 'Up to 85 % of failures came from water, not defects', d: 'A device, telemetry and portals turned every warranty claim into a decision based on data.', img: 'img/stock/water-telemetry.jpg', m0v: '−63 %', m0l: 'Warranty cost', bars: [{ l: 'Warranty, % of revenue (was 1.37)', v: '0.51 %', before: 100, after: 37 }, { l: 'New revenue lines', v: '+2', before: 0, after: 100 }] }
+];
+const MORE_CASES = [
+  { s: 'Fiduciary · CH', t: 'Incoming mail and receipts without re-entry', v: '−89 %', l: 'Receipt handling' },
+  { s: 'Construction materials · scenario', t: 'Order desk to delivered load, without seasonal hiring', v: '65 %', l: 'Reorders without a person' },
+  { s: 'Letting agency, Romandie · scenario', t: 'Portal enquiry to booked viewing', v: '<15 s', l: 'First reply. Median >15 h' }
+];
+const INDUSTRIES = [
+  ['Trade, wholesale, building materials', 'High volume, repeat questions, orders that must become deliveries, with a direct handoff into 8Move.'],
+  ['Real estate & property management', 'Evening viewing requests; a broken boiler at 22:00 needs triage, not voicemail.'],
+  ['Clinics, dental, veterinary', 'Front desk booking and reminders, and voice documentation for doctors, where the real money is.'],
+  ['E-commerce & D2C', 'Order status, sizing, returns, cross-sell. The cleanest automation economics.'],
+  ['Hospitality & restaurants', 'Reservations, groups, allergen questions in four languages during service.'],
+  ['Professional services & trades', 'No reception; every missed call is a lost mandate.'],
+  ['Education & training', 'Course enquiries and enrolment peaks without temporary staff.'],
+  ['Startups — CTO as a Service', 'Days per month instead of a hire: build vs buy, architecture, data, first hires. Also due diligence before an investment.']
+];
+const PROCESS = [
+  { t: 'Audit and scenarios', d: 'We read your last 200 enquiries: what repeats, what converts, where it breaks.', days: 'Days 1–3', a: 1, b: 4 },
+  { t: 'Knowledge base', d: 'Catalogue, prices, terms, FAQ, approved wording. The stage that decides quality.', days: 'Days 3–10', a: 3, b: 11 },
+  { t: 'Channels and systems', d: 'WhatsApp verification, widget, CRM, ERP, calendar, payment.', days: 'Days 8–15', a: 8, b: 16 },
+  { t: 'Testing', d: 'Your team tries to break it, in four languages. Nothing goes live without sign-off.', days: 'Days 15–20', a: 15, b: 21 },
+  { t: 'Supervised launch', d: 'Live traffic, every conversation reviewed daily.', days: 'Days 20–25', a: 20, b: 26 },
+  { t: 'Operation and tuning', d: 'Monthly review. Same named engineer from audit to operation.', days: 'Ongoing', a: 26, b: 31 }
+];
+const WHY = [['✕', 'We say no', "Our own material tells you when automation isn't worth it yet."], ['≈', 'Measured vs modelled', 'Every figure we publish says which it is.'], ['◆', 'Senior at rates that work', 'Swiss accountability, distributed delivery, no juniors sold as seniors.'], ['▲', 'Product company', "We build what we'd maintain for five years, because with 8Move we do."], ['●', 'A named engineer', 'Not a ticket queue. Same person from audit to operation.'], ['↗', 'No lock-in', 'Knowledge base, transcripts and scenarios are exported to you.']];
+const SWISS = [
+  { t: 'Hosting in CH or EU', d: 'Your choice of region. Documented sub-processors in the contract.' },
+  { t: 'revFADP and GDPR', d: 'Processing agreement and privacy wording drafted for you.' },
+  { t: 'No training on your data', d: 'Contractually excluded, vendor terms attached as an annex.' },
+  { t: 'You own it', d: 'Data, knowledge base and scenarios exported on termination.' },
+  { t: 'Model-independent', d: 'The underlying model can be swapped. No single-vendor risk.' },
+  { t: 'Registered in Valais', d: 'Trident Software Sàrl · CHE-185.076.733 · HES-SO Valais-Wallis · Campus Biotech, Geneva' }
+];
+const TEAM = [['Maksym Shytov', 'CTO', 'Ukraine', 'maksym-shytov'], ['Natalia Shytova', 'COO', 'Switzerland', 'natalia-shytova'], ['Dmitriy Shevelev', 'Team Lead', 'Ukraine', 'dmitriy-shevelev'], ['Nina Alimova', 'Project Manager', 'Ukraine', 'nina-alimova'], ['Bohdan Voitovych', 'Project Manager', 'Ukraine', 'bohdan-voitovych'], ['Marina Gordienko', 'Project Manager', 'Ukraine', 'maryna-gordienko'], ['Denys Shytov', 'Project Manager', 'Ukraine', 'denys-shytov'], ['Nikolai Kazmirchuk', 'Frontend Developer', 'Ukraine', 'nikolai-kazmirchuk']];
+const QUOTES = [
+  { q: 'Excellente compagnie. Nous sommes très satisfaits du site internet que cette société a créé.', n: 'Guillaume Moulin', c: 'Ardevaz SLS' },
+  { q: 'This has greatly fostered development, unity and solidarity among our members.', n: 'David Ouedec', c: 'Head of GO-Valais Expat Club, GO-Valais' },
+  { q: "Ce qui aurait pu être un obstacle majeur s'est transformé en un minuscule inconvénient.", n: 'Adrien Thétaz', c: 'Kleap.co' },
+  { q: 'Flexibility and readiness to cooperate are about them.', n: 'Ivan Boboretsky', c: 'DaniParts' },
+  { q: 'They are well versed in latest Agile tools to keep track of deadlines.', n: 'Naren Bansal', c: 'Xelsat' }
+];
+const PARTNERS = [['aws.png', 'AWS'], ['azure.png', 'Microsoft Azure'], ['google-cloud.png', 'Google Cloud'], ['hostpoint.png', 'Hostpoint'], ['cimark.png', 'CimArk'], ['go-valais.png', 'GO-Valais'], ['holidu.png', 'Holidu'], ['valais-chamber.png', 'Valais Chamber of Commerce and Industry']];
+const REFS = [['CH', 'Interhome Group', '(Swiss vacation rental)'], ['ES', 'Ruralidays', '(Spanish travel platform — including a Holidu channel integration)'], ['CH', 'Le Glaçon Suisse', '(Swiss ice production and nationwide distribution)'], ['CH', 'Aida Medical', '(digital health, where our CTO is co-founder)'], ['UK', 'a London waste-management operator', '']];
+const LOOKING = ['Portfolio companies needing an engineering team — either to build a product or to take over one that has outgrown its founding developers.', 'AI automation programmes in operational businesses — logistics, field services, distribution, healthcare administration.', 'Technical due diligence on software assets before an investment decision, and interim CTO work after it.', 'Co-development partnerships where our platform gives a head start on a vertical we have not entered.'];
+const FAQ = [
+  ['What happens in the 45-minute audit?', 'We go through your enquiry volumes, response times, channels, languages and systems. You leave with your own numbers and a straight answer on whether automation pays back. Free, no obligation.'],
+  ['When is the answer "not yet"?', "Under roughly 150 enquiries a month, the numbers don't clear the build cost. Without a documented knowledge base, there's nothing for the agent to answer from. That's a content project first."],
+  ['How is this different from a chatbot?', 'A chatbot answers. An agent reads your live catalogue, books against a real calendar, issues a QR-bill, writes into your CRM, and hands over to a person on defined conditions.'],
+  ['Where does our data live?', "Hosting in Switzerland or the EU, under revFADP and GDPR. You own your data, knowledge base and scenarios. That's written into the contract."],
+  ['Will it replace our sales team?', 'No. It handles the routine 70–80 % of conversations. Complex deals stay with your people, and the handover point is designed in.'],
+  ["How long until it's live?", 'Three to five weeks from signature. First measurable effects after two to four weeks of live running.']
+];
+const BLOG = [
+  { d: '21 Nov 2025', t: 'Smart auto parts software that unifies e-commerce, warehouse, delivery and AI', img: 'img/blog/auto-parts.jpg' },
+  { d: '5 Nov 2025', t: 'Automechanika Dubai 2025: meet us in Hall 8, Booth F18', img: 'img/blog/automechanika.jpg' },
+  { d: '15 Oct 2025', t: 'Practical AI for SMEs: where it really works', img: 'img/blog/practical-ai.jpg' },
+  { d: '28 Aug 2025', t: 'Click, scan, done: how a digital invoice scanner cuts costs', img: 'img/blog/invoice-scanner.jpg' }
+];
+const pad2 = n => String(n).padStart(2, '0');
+const dotsFor = (n, blue) => Array.from({ length: 100 }, (_, i) => ({ c: 'dot' + (i < n ? ' on' + (blue ? ' b' : '') : ''), dl: i * 12 }));
+const D77 = dotsFor(77, false), D3 = dotsFor(3, true);
+
+class Component extends DCLogic {
+  state = { feedN: 0, lang: 0, langLock: false, scrT: ROT[0].t, chatL: 'EN', chatK: 0, cap: 0, race: 0, racing: false, enq: 400, mins: 8, day: 1, playing: false, q: 0, qk: 0, faq: 0 };
+  componentDidMount() {
+    this.feedTimer = setInterval(() => this.setState(s => ({ feedN: s.feedN + 1 })), 2000);
+    this.langTimer = setInterval(() => { if (!this.state.langLock) this.setLang((this.state.lang + 1) % 4, false); }, 3600);
+    this.qTimer = setInterval(() => this.setState(s => ({ q: (s.q + 1) % QUOTES.length, qk: s.qk + 1 })), 7000);
+    this.reveal();
+  }
+  componentWillUnmount() { [this.feedTimer, this.langTimer, this.scrTimer, this.raceTimer, this.playTimer, this.qTimer, this.chk].forEach(t => clearInterval(t)); if (this.io) this.io.disconnect(); }
+  reveal() {
+    try {
+      if (!('IntersectionObserver' in window)) return;
+      document.documentElement.classList.add('js-rv');
+      const countUp = root => root.querySelectorAll('.cu').forEach(el => {
+        const to = +el.getAttribute('data-to'); const t0 = performance.now(); const D = 1400;
+        const step = t => { const p = Math.min(1, (t - t0) / D); el.textContent = String(Math.round(to * (1 - Math.pow(1 - p, 3)))); if (p < 1) requestAnimationFrame(step); };
+        requestAnimationFrame(step);
+      });
+      this.io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); countUp(e.target); this.io.unobserve(e.target); } }), { threshold: 0.15 });
+      setTimeout(() => document.querySelectorAll('.rv').forEach(el => this.io.observe(el)), 80);
+      this.chk = setInterval(() => document.querySelectorAll('.rv:not(.in)').forEach(el => { const r = el.getBoundingClientRect(); if (r.top < window.innerHeight * 0.95 && r.bottom > 0) { el.classList.add('in'); countUp(el); } }), 350);
+    } catch (e) { document.documentElement.classList.remove('js-rv'); }
+  }
+  setLang(i, lock) {
+    const r = ROT[i];
+    this.setState({ lang: i, langLock: lock || this.state.langLock });
+    clearInterval(this.scrTimer);
+    let f = 0; const N = 16;
+    this.scrTimer = setInterval(() => {
+      f++; let out = '';
+      for (let k = 0; k < r.t.length; k++) { const ch = r.t[k]; out += (ch === ' ' || k < (f / N) * r.t.length) ? ch : SCR[(Math.random() * SCR.length) | 0]; }
+      this.setState({ scrT: out });
+      if (f >= N) { clearInterval(this.scrTimer); this.setState({ scrT: r.t }); }
+    }, 40);
+  }
+  startRace = () => {
+    clearInterval(this.raceTimer);
+    this.setState({ race: 0, racing: true });
+    this.raceTimer = setInterval(() => this.setState(s => { const r = Math.min(100, s.race + 1); if (r >= 100) { clearInterval(this.raceTimer); return { race: 100, racing: false }; } return { race: r }; }), 55);
+  };
+  setEnq = e => this.setState({ enq: +e.target.value });
+  setMins = e => this.setState({ mins: +e.target.value });
+  setDay = e => { clearInterval(this.playTimer); this.setState({ day: +e.target.value, playing: false }); };
+  togglePlay = () => {
+    clearInterval(this.playTimer);
+    if (this.state.playing) { this.setState({ playing: false }); return; }
+    this.setState(s => ({ playing: true, day: s.day >= 30 ? 1 : s.day }));
+    this.playTimer = setInterval(() => this.setState(s => { if (s.day >= 30) { clearInterval(this.playTimer); return { playing: false }; } return { day: s.day + 1 }; }), 170);
+  };
+  goQ(i) { clearInterval(this.qTimer); this.setState(s => ({ q: (i + QUOTES.length) % QUOTES.length, qk: s.qk + 1 })); }
+  renderVals() {
+    const s = this.state;
+    const feed = [];
+    for (let i = 0; i < 5; i++) { const n = s.feedN - i; if (n < 0) break; const [ch, lang, ev, lat] = FEED[n % FEED.length]; const t = 21 * 60 + 41 + n; feed.push({ ch, lang, ev, lat, time: pad2(Math.floor(t / 60) % 24) + ':' + pad2(t % 60), op: (1 - i * 0.15).toFixed(2), cls: i === 0 ? (s.feedN % 2 ? 'in-a' : 'in-b') : '' }); }
+    const agentP = Math.min(1, s.race / 12), smeMin = Math.round(s.race / 100 * (15 * 60 + 12)), hrs = Math.round(s.enq * s.mins * 0.75 / 60);
+    const qd = QUOTES[s.q];
+    return {
+      h1w: H1.split(' ').map((t, i) => ({ t, dl: 120 + i * 70, c: (t === 'AI' || t === 'agents,') ? '#2772E0' : '#111318' })),
+      langs: ['EN', 'DE', 'FR', 'IT'].map(c => { const on = (s.siteLang || 'EN') === c; return { c, on, bg: on ? '#111318' : 'transparent', fg: on ? '#fff' : '#4A4F57', pick: () => this.setState({ siteLang: c }) }; }),
+      scrT: s.scrT, scrC: ROT[s.lang].c, feed, handled: String(1284 + s.feedN).replace(/\B(?=(\d{3})+(?!\d))/g, ' '),
+      clientsA: (() => { const a = CLIENTS.filter((_, i) => i % 2 === 0).map(f => ({ src: 'img/clients/' + f, alt: f.split('.')[0].replace(/-/g, ' ') })); return a.concat(a); })(),
+      clientsB: (() => { const a = CLIENTS.filter((_, i) => i % 2 === 1).map(f => ({ src: 'img/clients/' + f, alt: f.split('.')[0].replace(/-/g, ' ') })); return a.concat(a); })(),
+      stats: STATS, clients: CLIENTS.concat(CLIENTS).map(f => ({ src: 'img/clients/' + f, alt: f.split('.')[0].replace(/-/g, ' ') })),
+      d77: D77, d3: D3, services: SERVICES,
+      caps: CAPS.map((c, i) => ({ ...c, on: s.cap === i, sign: s.cap === i ? '−' : '+', tc: s.cap === i ? '#111318' : '#4A4F57', p1: c.p.join('  ·  '), pick: () => this.setState({ cap: i }) })),
+      chatLangs: ['EN', 'DE', 'FR', 'IT'].map(l => ({ c: l, on: s.chatL === l, bg: s.chatL === l ? '#2772E0' : 'transparent', fg: s.chatL === l ? '#fff' : 'rgba(255,255,255,.7)', pick: () => this.setState(st => ({ chatL: l, chatK: st.chatK + 1 })) })),
+      chat: CHAT[s.chatL].map(m => m[0] === 'c' ? { isC: true, title: m[1], sub: m[2], detail: m[3] } : { isU: m[0] === 'u', isA: m[0] === 'a', text: m[1], meta: m[2] }),
+      chatLang: s.chatL, chatAnim: s.chatK % 2 ? 'qfade' : 'qfade2',
+      raceBtn: s.racing ? 'Running…' : (s.race > 0 ? 'Run it again ↻' : 'Send the enquiry →'),
+      agentW: (agentP * 100).toFixed(1), agentTime: (agentP * 4).toFixed(1) + ' s', agentDone: s.race >= 12,
+      smeW: s.race, smeTime: Math.floor(smeMin / 60) + ' h ' + pad2(smeMin % 60) + ' min', smeDone: s.race >= 100,
+      useCases: USE_CASES.map(([i, t, d, needs], k) => ({ i, t, d, needs, n: '0' + (k + 1) })),
+      cases: CASES, moreCases: MORE_CASES, industries: INDUSTRIES.map(([t, d], k) => ({ t, d, n: k + 1, w: 100 - k * 11 })),
+      day: s.day, playLbl: s.playing ? 'Pause ❙❙' : 'Play ▶',
+      stages: PROCESS.map(p => { const fill = Math.max(0, Math.min(1, (s.day - p.a + 1) / (p.b - p.a))); const on = s.day >= p.a && s.day < p.b; return { ...p, col: p.a + ' / ' + p.b, fill: (fill * 100).toFixed(1), bg: on ? '#2772E0' : '#111318', tc: on ? '#1B57B8' : (fill > 0 ? '#111318' : '#4A4F57'), dc: on ? '#1B57B8' : '#4A4F57' }; }),
+      enq: s.enq, mins: s.mins, hrs, fte: (hrs / 160).toFixed(1), verdictOk: s.enq >= 150, verdictNo: s.enq < 150,
+      why: WHY.map(([i, t, d]) => ({ i, t, d })), swiss: SWISS,
+      team: TEAM.map(([name, role, loc, f]) => ({ name, role, loc, img: 'img/team/' + f + '.png' })),
+      quote: { ...qd, ini: qd.n.split(' ').map(x => x[0]).join('') }, qAnim: s.qk % 2 ? 'qfade' : 'qfade2',
+      qPrev: () => this.goQ(s.q - 1), qNext: () => this.goQ(s.q + 1),
+      qDots: QUOTES.map((_, i) => ({ on: s.q === i, lbl: 'Testimonial ' + (i + 1), bg: s.q === i ? '#2772E0' : 'rgba(255,255,255,.25)', w: s.q === i ? 44 : 28, pick: () => this.goQ(i) })),
+      partners: PARTNERS.map(([f, alt]) => ({ src: 'img/partners/' + f, alt })),
+      refs: REFS.map(([c, n, d]) => ({ c, n, d })), looking: LOOKING,
+      faq: FAQ.map(([q, a], i) => { const on = (s.faq < 0 ? 0 : s.faq) === i; return { q, a, n: pad2(i + 1), open: on, bg: on ? '#EEF3FD' : '#fff', bar: on ? '#2772E0' : 'transparent', nc: on ? '#1B57B8' : '#6B7078', w: on ? 600 : 400, pick: () => this.setState(st => ({ faq: i, faqK: (st.faqK || 0) + 1 })) }; }),
+      faqCur: (() => { const i = s.faq < 0 ? 0 : s.faq; return { q: FAQ[i][0], a: FAQ[i][1], n: pad2(i + 1) }; })(), faqTotal: pad2(FAQ.length), faqAnim: (s.faqK || 0) % 2 ? 'qfade' : 'qfade2',
+      blog: BLOG,
+      nextSteps: ['Free 45-minute audit on your volumes, response times and systems', 'Your own ROI model and a straight answer, including "not yet"', 'One channel, one scenario, one month', 'Decision on evidence: extend, adjust or stop'].map((tt, i) => ({ t: tt, n: i + 1, bg: i === 0 ? '#2772E0' : 'rgba(255,255,255,.1)' })),
+      formOpen: !s.sent, formSent: !!s.sent, sendForm: () => this.setState({ sent: true }), resetForm: () => this.setState({ sent: false }),
+      svcChips: ['AI agents & automation', 'Logistics platform', 'IoT & connected products', 'Custom business system', 'CTO as a Service', 'Other / not sure yet'].map((l, i) => { const on = s.svc === i; return { l, on, bg: on ? '#2772E0' : 'transparent', fg: '#fff', bd: on ? '#2772E0' : 'rgba(255,255,255,.22)', pick: () => this.setState({ svc: i }) }; })
+    };
+  }
+}
+</script>
+</body>
+</html>
