@@ -1,172 +1,169 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
-import { useState } from 'react'
-import { useLocale } from 'next-intl'
+import { usePathname } from 'next/navigation'
+import { useEffect, useRef, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { LanguageSwitcher } from '@/components/molecules/LanguageSwitcher'
 
-type Item = { href: string; label: string }
-type Entry = Item & { children?: Item[] }
+const NAV = [
+  { href: '/services', key: 'services' },
+  { href: '/use-cases', key: 'useCases' },
+  { href: '/cases', key: 'projects' },
+  { href: '/about', key: 'about' },
+  { href: '/blog', key: 'blog' },
+  { href: '/contact', key: 'contact' },
+] as const
 
-// Order follows the old site: About, Services, Industries, Projects, Blog,
-// Contact. Groups use the design system's own nav-group / nav-menu pattern
-// rather than styles written here.
-const NAV: Entry[] = [
-  {
-    href: '/about',
-    label: 'About',
-    children: [
-      { href: '/about', label: 'About us' },
-      { href: '/team', label: 'Our team' },
-      { href: '/locations', label: 'Locations' },
-      { href: '/technologies', label: 'Technologies' },
-    ],
-  },
-  {
-    href: '/services',
-    label: 'Services',
-    children: [
-      { href: '/services/ai-services', label: 'AI services' },
-      { href: '/services/software-engineering', label: 'Software engineering' },
-      { href: '/services/embedded-and-iot', label: 'Embedded & IoT' },
-      { href: '/services/cto-as-a-service', label: 'CTO as a Service' },
-      { href: '/services/cloud-consulting', label: 'Cloud consulting' },
-      { href: '/services', label: 'All services' },
-    ],
-  },
-  {
-    href: '/solutions',
-    label: 'Solutions',
-    children: [
-      { href: '/solutions/websites', label: 'Websites' },
-      { href: '/solutions/e-commerce', label: 'E-commerce' },
-      { href: '/solutions/mobile-apps', label: 'Mobile apps' },
-      { href: '/solutions/iot', label: 'IoT platforms' },
-      { href: '/solutions/cloud-services', label: 'Cloud services' },
-      { href: '/solutions', label: 'All solutions' },
-    ],
-  },
-  { href: '/industries', label: 'Industries' },
-  { href: '/cases', label: 'Projects' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/contact', label: 'Contact' },
-]
+const isActive = (pathname: string, href: string) => pathname === href || pathname.startsWith(href + '/')
 
 export function Navbar() {
-  const locale = useLocale()
+  const t = useTranslations('ui')
+  const pathname = usePathname()
   const [open, setOpen] = useState(false)
-  // Exactly one group open at a time: the system opens them on :hover, and the
-  // panels overlap, so two could show at once.
-  const [openMenu, setOpenMenu] = useState<string | null>(null)
-  const close = () => setOpen(false)
+  const dialog = useRef<HTMLDivElement>(null)
+  const burger = useRef<HTMLButtonElement>(null)
 
+  // Close on navigation.
+  useEffect(() => setOpen(false), [pathname])
+
+  // Focus trap, Esc to close, scroll lock.
+  useEffect(() => {
+    if (!open) return
+    const el = dialog.current
+    if (!el) return
+    document.body.classList.add('menu-open')
+    const focusables = () =>
+      Array.from(el.querySelectorAll<HTMLElement>('a[href], button:not([disabled])')).filter((n) => n.offsetParent !== null)
+    focusables()[0]?.focus()
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setOpen(false)
+        return
+      }
+      if (e.key !== 'Tab') return
+      const f = focusables()
+      if (!f.length) return
+      const first = f[0]
+      const last = f[f.length - 1]
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault()
+        last.focus()
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault()
+        first.focus()
+      }
+    }
+    document.addEventListener('keydown', onKey)
+    const btn = burger.current
+    return () => {
+      document.body.classList.remove('menu-open')
+      document.removeEventListener('keydown', onKey)
+      btn?.focus()
+    }
+  }, [open])
+
+  // Close the dialog if the viewport grows past the burger breakpoint.
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 861px)')
+    const onChange = () => mq.matches && setOpen(false)
+    mq.addEventListener('change', onChange)
+    return () => mq.removeEventListener('change', onChange)
+  }, [])
+
+  const logo = (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src="/images/trident-logo.svg" alt="Trident Software" width={173} height={20} />
+  )
+
+  // The dialog sits outside <header>: the header's backdrop-filter would
+  // otherwise become the containing block of the fixed-position menu.
   return (
-    <div className="tds">
-      <nav className="site">
-        <div className="wrap nav-in">
-          <Link href="/" className="nav-logo" aria-label="Trident Software — home">
-            <Image
-              src="/images/trident-logo-black.png"
-              alt="Trident Software"
-              width={173}
-              height={20}
-              priority
-            />
-          </Link>
-
-          <div className="nav-links">
-            {NAV.map((entry) =>
-              entry.children ? (
-                <div
-                  className="nav-group"
-                  key={entry.label}
-                  onMouseEnter={() => setOpenMenu(entry.label)}
-                  onMouseLeave={() => setOpenMenu(null)}
-                >
-                  <Link
-                    href={entry.href}
-                    className="nav-trigger"
-                    aria-expanded={openMenu === entry.label}
-                    onFocus={() => setOpenMenu(entry.label)}
-                  >
-                    {entry.label}
-                    <span className="chev" aria-hidden="true">
-                      ▾
-                    </span>
-                  </Link>
-                  <div className={`nav-menu${openMenu === entry.label ? ' is-open' : ''}`}>
-                    <div className="nav-menu-in">
-                      {entry.children.map((child) => (
-                        <Link
-                          href={child.href}
-                          key={child.href + child.label}
-                          onClick={() => setOpenMenu(null)}
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                <Link href={entry.href} key={entry.href}>
-                  {entry.label}
-                </Link>
-              ),
-            )}
-          </div>
-
-          <div className="nav-right">
-            <LanguageSwitcher currentLocale={locale} tone="light" />
-            <Link href="/contact" className="btn btn-primary btn-sm">
-              Free audit
+    <>
+    <header className="site-header">
+      <div className="container">
+        <Link href="/" className="brand" aria-label={t('home')}>
+          {logo}
+        </Link>
+        <nav className="nav-links" aria-label={t('mainNav')}>
+          {NAV.map((n) => (
+            <Link key={n.href} href={n.href} aria-current={isActive(pathname, n.href) ? 'page' : undefined}>
+              <span>{t(`nav.${n.key}`)}</span>
             </Link>
-          </div>
-
+          ))}
+        </nav>
+        <div className="nav-right">
+          <LanguageSwitcher />
+          <Link href="/contact" className="btn btn--primary btn--sm">
+            <span>
+              {t('nav.freeAudit')}
+              <i className="arr" aria-hidden="true">
+                →
+              </i>
+            </span>
+          </Link>
           <button
+            ref={burger}
             type="button"
-            className="nav-toggle"
+            className="burger"
             aria-expanded={open}
-            aria-controls="navPanel"
-            aria-label={open ? 'Close menu' : 'Open menu'}
-            onClick={() => setOpen((v) => !v)}
+            aria-controls="site-menu"
+            aria-label={t('menuOpen')}
+            onClick={() => setOpen(true)}
           >
-            <i />
+            <span aria-hidden="true" />
           </button>
         </div>
+      </div>
+    </header>
 
-        <div className="nav-panel" id="navPanel" data-open={String(open)}>
-          <div className="wrap">
-            <ul>
-              {NAV.map((entry) => (
-                <li key={entry.label}>
-                  <Link href={entry.href} onClick={close}>
-                    {entry.label}
+      <div
+        ref={dialog}
+        id="site-menu"
+        className="menu-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-label={t('mainNav')}
+        hidden={!open}
+      >
+        <div className="container">
+          <div className="menu-top">
+            <Link href="/" className="brand" aria-label={t('home')} onClick={() => setOpen(false)}>
+              {logo}
+            </Link>
+            <button type="button" className="menu-close" aria-label={t('menuClose')} onClick={() => setOpen(false)}>
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <nav aria-label={t('mainNav')}>
+            <ul className="menu-list">
+              {NAV.map((n) => (
+                <li key={n.href}>
+                  <Link
+                    href={n.href}
+                    aria-current={isActive(pathname, n.href) ? 'page' : undefined}
+                    onClick={() => setOpen(false)}
+                  >
+                    {t(`nav.${n.key}`)}
+                    <span aria-hidden="true">→</span>
                   </Link>
-                  {entry.children && (
-                    <ul className="sub">
-                      {entry.children.map((child) => (
-                        <li key={child.href + child.label}>
-                          <Link href={child.href} onClick={close}>
-                            {child.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
                 </li>
               ))}
             </ul>
-            <div className="foot">
-              <Link href="/contact" onClick={close}>
-                Book a free audit
-              </Link>
-              <a href="mailto:info@trident-software.ch">info@trident-software.ch</a>
-            </div>
+          </nav>
+          <div className="menu-foot">
+            <LanguageSwitcher className="menu-langs" />
+            <Link href="/contact" className="btn btn--primary" onClick={() => setOpen(false)}>
+              <span>
+                {t('nav.freeAudit')}
+                <i className="arr" aria-hidden="true">
+                  →
+                </i>
+              </span>
+            </Link>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </>
   )
 }
