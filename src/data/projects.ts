@@ -1,3 +1,5 @@
+import { pick, type Localized } from '@/lib/localized'
+
 /**
  * Projects carried over from the old site's portfolio.
  *
@@ -6,213 +8,338 @@
  * entries in cases.ts keep their full write-ups; nothing here invents
  * challenges, approaches or result metrics for a client's project.
  */
-export type Project = {
-  slug: string
+export type ProjectText = {
   title: string
   summary: string
   sector: string
+}
+
+type ProjectRecord = {
+  slug: string
   image: string
   /** Set when a full case study exists for the same work. */
   caseSlug?: string
+  content: Localized<ProjectText>
 }
 
-export const projects: Project[] = [
+export type Project = Omit<ProjectRecord, 'content'> & ProjectText
+
+const records: ProjectRecord[] = [
   {
     slug: 'zenit-auto-b2b',
-    title: 'Zenit Auto B2B Platform',
-    summary: 'B2B e-commerce for automotive parts with bulk ordering.',
-    sector: 'Automotive',
     image: '/images/cases/zenit-auto-b2b.jpg',
     caseSlug: 'zenit-auto-b2b',
+    content: {
+      en: {
+        title: 'Zenit Auto B2B Platform',
+        summary: 'B2B e-commerce for automotive parts with bulk ordering.',
+        sector: 'Automotive',
+      },
+    },
   },
   {
     slug: 'aida-medicine',
-    title: 'Aida Medicine Platform',
-    summary: 'Medical management system for clinics and healthcare providers.',
-    sector: 'Healthcare',
     image: '/images/cases/aida-medicine.jpg',
     caseSlug: 'aida-medicine',
+    content: {
+      en: {
+        title: 'Aida Medicine Platform',
+        summary: 'Medical management system for clinics and healthcare providers.',
+        sector: 'Healthcare',
+      },
+    },
   },
   {
     slug: 'tires-online-shop',
-    title: 'Tires Online Shop',
-    summary: 'E-commerce platform for tire and rim sales in Canada.',
-    sector: 'E-commerce',
     image: '/images/cases/tires-online-shop.jpg',
+    content: {
+      en: {
+        title: 'Tires Online Shop',
+        summary: 'E-commerce platform for tire and rim sales in Canada.',
+        sector: 'E-commerce',
+      },
+    },
   },
   {
     slug: 'affiliation-platform',
-    title: 'Affiliation Platform',
-    summary: 'Web and mobile system for managing affiliation programmes.',
-    sector: 'MarTech',
     image: '/images/cases/affiliation-platform.jpg',
+    content: {
+      en: {
+        title: 'Affiliation Platform',
+        summary: 'Web and mobile system for managing affiliation programmes.',
+        sector: 'MarTech',
+      },
+    },
   },
   {
     slug: 'vesna-auto-b2b',
-    title: 'Vesna Auto B2B Shop',
-    summary: 'Scalable B2B portal for wholesale automotive parts.',
-    sector: 'Automotive',
     image: '/images/cases/vesna-auto-b2b.jpg',
+    content: {
+      en: {
+        title: 'Vesna Auto B2B Shop',
+        summary: 'Scalable B2B portal for wholesale automotive parts.',
+        sector: 'Automotive',
+      },
+    },
   },
   {
     slug: 'status-m-wms',
-    title: 'Status-M WMS App',
-    summary: 'Mobile warehouse management app with scanner integration.',
-    sector: 'Logistics',
     image: '/images/cases/status-m-wms.jpg',
+    content: {
+      en: {
+        title: 'Status-M WMS App',
+        summary: 'Mobile warehouse management app with scanner integration.',
+        sector: 'Logistics',
+      },
+    },
   },
   {
     slug: '8move-driver',
-    title: '8Move Driver App',
-    summary: 'Application supporting delivery operations and route management.',
-    sector: 'Logistics',
     image: '/images/cases/8move-driver.jpg',
     caseSlug: '8move-driver',
+    content: {
+      en: {
+        title: '8Move Driver App',
+        summary: 'Application supporting delivery operations and route management.',
+        sector: 'Logistics',
+      },
+    },
   },
   {
     slug: '8move-admin',
-    title: '8Move Admin Platform',
-    summary: 'Centralised control for products, orders and fleet operations.',
-    sector: 'Logistics',
     image: '/images/cases/8move-admin.jpg',
+    content: {
+      en: {
+        title: '8Move Admin Platform',
+        summary: 'Centralised control for products, orders and fleet operations.',
+        sector: 'Logistics',
+      },
+    },
   },
   {
     slug: '8move-client',
-    title: '8Move Client App',
-    summary: 'Mobile app for B2B and B2C ordering and delivery management.',
-    sector: 'Logistics',
     image: '/images/cases/8move-client.jpg',
+    content: {
+      en: {
+        title: '8Move Client App',
+        summary: 'Mobile app for B2B and B2C ordering and delivery management.',
+        sector: 'Logistics',
+      },
+    },
   },
   {
     slug: 'samange-ecommerce',
-    title: 'Samange E-commerce',
-    summary: 'B2B and B2C fashion store for boutique apparel and accessories.',
-    sector: 'Retail',
     image: '/images/cases/samange-ecommerce.jpg',
+    content: {
+      en: {
+        title: 'Samange E-commerce',
+        summary: 'B2B and B2C fashion store for boutique apparel and accessories.',
+        sector: 'Retail',
+      },
+    },
   },
   {
     slug: 'dentyval',
-    title: 'Dentyval Web App',
-    summary: 'Web questionnaire for dental business evaluation.',
-    sector: 'Healthcare',
     image: '/images/cases/dentyval.jpg',
+    content: {
+      en: {
+        title: 'Dentyval Web App',
+        summary: 'Web questionnaire for dental business evaluation.',
+        sector: 'Healthcare',
+      },
+    },
   },
   {
     slug: 'lapochette',
-    title: 'Lapochette Online Shop',
-    summary: 'Online store for hotel and restaurant accessories in Switzerland.',
-    sector: 'HoReCa',
     image: '/images/cases/lapochette.jpg',
     caseSlug: 'lapochette',
+    content: {
+      en: {
+        title: 'Lapochette Online Shop',
+        summary: 'Online store for hotel and restaurant accessories in Switzerland.',
+        sector: 'HoReCa',
+      },
+    },
   },
   {
     slug: 'kleap-ai-builder',
-    title: 'Kleap Website Builder',
-    summary: 'AI-enhanced tool for creating websites and landing pages.',
-    sector: 'SaaS',
     image: '/images/cases/kleap-ai-builder.jpg',
     caseSlug: 'kleap-ai-builder',
+    content: {
+      en: {
+        title: 'Kleap Website Builder',
+        summary: 'AI-enhanced tool for creating websites and landing pages.',
+        sector: 'SaaS',
+      },
+    },
   },
   {
     slug: 'flashhub',
-    title: 'Flashhub Online Store',
-    summary: 'B2B and B2C platform for luxury watches and jewellery.',
-    sector: 'Retail',
     image: '/images/cases/flashhub.jpg',
+    content: {
+      en: {
+        title: 'Flashhub Online Store',
+        summary: 'B2B and B2C platform for luxury watches and jewellery.',
+        sector: 'Retail',
+      },
+    },
   },
   {
     slug: 'loundoun-decks',
-    title: 'Loundoun Decks Website',
-    summary: 'Promotional site for a construction company specialising in decks.',
-    sector: 'Construction',
     image: '/images/cases/loundoun-decks.jpg',
+    content: {
+      en: {
+        title: 'Loundoun Decks Website',
+        summary: 'Promotional site for a construction company specialising in decks.',
+        sector: 'Construction',
+      },
+    },
   },
   {
     slug: 'mastertool',
-    title: 'Mastertool E-commerce',
-    summary: 'Professional online store for tools and equipment.',
-    sector: 'E-commerce',
     image: '/images/cases/mastertool.jpg',
+    content: {
+      en: {
+        title: 'Mastertool E-commerce',
+        summary: 'Professional online store for tools and equipment.',
+        sector: 'E-commerce',
+      },
+    },
   },
   {
     slug: 'ardevaz-sls',
-    title: 'Ardevaz SLS Website',
-    summary: 'Online presence for a language school, with courses and enrolment.',
-    sector: 'Education',
     image: '/images/cases/ardevaz-sls.jpg',
+    content: {
+      en: {
+        title: 'Ardevaz SLS Website',
+        summary: 'Online presence for a language school, with courses and enrolment.',
+        sector: 'Education',
+      },
+    },
   },
   {
     slug: 'didi-app',
-    title: 'Didi Mobile App',
-    summary: 'Interactive quiz and game mobile application.',
-    sector: 'Consumer',
     image: '/images/cases/didi-app.jpg',
+    content: {
+      en: {
+        title: 'Didi Mobile App',
+        summary: 'Interactive quiz and game mobile application.',
+        sector: 'Consumer',
+      },
+    },
   },
   {
     slug: 'go-valais',
-    title: 'GO-Valais Website',
-    summary: 'Digital community hub for expats and professionals in Valais.',
-    sector: 'Community',
     image: '/images/cases/go-valais.jpg',
     caseSlug: 'go-valais',
+    content: {
+      en: {
+        title: 'GO-Valais Website',
+        summary: 'Digital community hub for expats and professionals in Valais.',
+        sector: 'Community',
+      },
+    },
   },
   {
     slug: 'travel-executive',
-    title: 'Travel Executive Website',
-    summary: 'Premium portal for curated trips and travel planning.',
-    sector: 'Travel',
     image: '/images/cases/travel-executive.jpg',
+    content: {
+      en: {
+        title: 'Travel Executive Website',
+        summary: 'Premium portal for curated trips and travel planning.',
+        sector: 'Travel',
+      },
+    },
   },
   {
     slug: 'catapult-crown',
-    title: 'Catapult Crown Portal',
-    summary: 'Web platform for dental business investment management.',
-    sector: 'Healthcare',
     image: '/images/cases/catapult-crown.jpg',
+    content: {
+      en: {
+        title: 'Catapult Crown Portal',
+        summary: 'Web platform for dental business investment management.',
+        sector: 'Healthcare',
+      },
+    },
   },
   {
     slug: 'tdsbot-iot',
-    title: 'TDSbot Web & Mobile App',
-    summary: 'B2B and B2C portal for water purification device monitoring.',
-    sector: 'IoT',
     image: '/images/cases/tdsbot-iot.jpg',
     caseSlug: 'tdsbot-iot',
+    content: {
+      en: {
+        title: 'TDSbot Web & Mobile App',
+        summary: 'B2B and B2C portal for water purification device monitoring.',
+        sector: 'IoT',
+      },
+    },
   },
   {
     slug: 'tpoint',
-    title: 'Tpoint Web & Mobile App',
-    summary: 'Management solution for sports and fitness facilities.',
-    sector: 'Sports',
     image: '/images/cases/tpoint.jpg',
+    content: {
+      en: {
+        title: 'Tpoint Web & Mobile App',
+        summary: 'Management solution for sports and fitness facilities.',
+        sector: 'Sports',
+      },
+    },
   },
   {
     slug: 'myastro',
-    title: 'MyAstro Web Portal',
-    summary: 'Content platform blending astrology with personalised insights.',
-    sector: 'Consumer',
     image: '/images/cases/myastro.jpg',
+    content: {
+      en: {
+        title: 'MyAstro Web Portal',
+        summary: 'Content platform blending astrology with personalised insights.',
+        sector: 'Consumer',
+      },
+    },
   },
   {
     slug: 'alio-shop',
-    title: 'Alio Online Shop',
-    summary: 'B2C marketplace for lifestyle accessories.',
-    sector: 'Retail',
     image: '/images/cases/alio-shop.jpg',
+    content: {
+      en: {
+        title: 'Alio Online Shop',
+        summary: 'B2C marketplace for lifestyle accessories.',
+        sector: 'Retail',
+      },
+    },
   },
   {
     slug: 'fishing-roi',
-    title: 'Fishing Roi Online Shop',
-    summary: 'Marketplace for fishing gear with educational content.',
-    sector: 'Retail',
     image: '/images/cases/fishing-roi.jpg',
+    content: {
+      en: {
+        title: 'Fishing Roi Online Shop',
+        summary: 'Marketplace for fishing gear with educational content.',
+        sector: 'Retail',
+      },
+    },
   },
   {
     slug: 'vbavto',
-    title: 'Vbavto E-commerce',
-    summary: 'Automotive parts marketplace serving B2B and B2C segments.',
-    sector: 'Automotive',
     image: '/images/cases/vbavto.jpg',
+    content: {
+      en: {
+        title: 'Vbavto E-commerce',
+        summary: 'Automotive parts marketplace serving B2B and B2C segments.',
+        sector: 'Automotive',
+      },
+    },
   },
 ]
 
-export const projectSectors = Array.from(new Set(projects.map((p) => p.sector))).sort()
+const localize = (r: ProjectRecord, locale: string): Project => {
+  const { content, ...rest } = r
+  return { ...rest, ...pick(content, locale) }
+}
+
+export function getProjects(locale: string): Project[] {
+  return records.map((r) => localize(r, locale))
+}
+
+export function getProjectSectors(locale: string): string[] {
+  return Array.from(new Set(getProjects(locale).map((p) => p.sector))).sort((a, b) => a.localeCompare(b, locale))
+}

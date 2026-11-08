@@ -1,6 +1,7 @@
+import { useLocale } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { getLocale } from 'next-intl/server'
-import { locations } from '@/data/locations'
+import { getLocations } from '@/data/locations'
 import { buildMetadata } from '@/lib/metadata'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
@@ -20,6 +21,8 @@ export async function generateMetadata() {
 }
 
 export default function LocationsPage() {
+  const locale = useLocale()
+  const locations = getLocations(locale)
   return (
     <>
       <PageHero

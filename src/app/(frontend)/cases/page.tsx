@@ -1,6 +1,6 @@
 import { getLocale, getTranslations } from 'next-intl/server'
-import { projects, projectSectors } from '@/data/projects'
-import { cases } from '@/data/cases'
+import { getProjects, getProjectSectors } from '@/data/projects'
+import { getCases } from '@/data/cases'
 import { buildMetadata } from '@/lib/metadata'
 import { ProjectGrid } from '@/components/molecules/ProjectGrid'
 import { PageHero } from '@/components/molecules/PageHero'
@@ -23,6 +23,10 @@ export async function generateMetadata() {
 }
 
 export default async function CasesPage() {
+  const locale = await getLocale()
+  const projects = getProjects(locale)
+  const projectSectors = getProjectSectors(locale)
+  const cases = getCases(locale)
   const t = await getTranslations('ui')
   const tc = await getTranslations('cases')
   const withCase = projects.filter((p) => p.caseSlug).length

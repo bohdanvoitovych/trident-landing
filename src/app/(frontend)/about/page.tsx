@@ -3,7 +3,7 @@ import { getLocale, getTranslations } from 'next-intl/server'
 import { ButtonLink, Label, Tag } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
-import { stats } from '@/data/team'
+import { getStats } from '@/data/team'
 import { buildMetadata } from '@/lib/metadata'
 import { Timeline } from './Timeline'
 
@@ -74,6 +74,8 @@ const composition = [
 const maxComp = Math.max(...composition.map((c) => c.value))
 
 export default async function AboutPage() {
+  const locale = await getLocale()
+  const stats = getStats(locale)
   const t = await getTranslations('ui')
 
   return (

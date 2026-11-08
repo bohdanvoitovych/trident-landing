@@ -1,7 +1,7 @@
 import { useLocale } from 'next-intl'
 import type { IndustryData } from '@/data/industries'
 import { getServices } from '@/data/services'
-import { cases } from '@/data/cases'
+import { getCases } from '@/data/cases'
 import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
@@ -19,6 +19,8 @@ type Props = {
 }
 
 export function IndustryPage({ industry }: Props) {
+  const locale = useLocale()
+  const cases = getCases(locale)
   const services = getServices(useLocale())
   const relatedServices = services.filter((s) => industry.relatedServices.includes(s.slug))
   const relatedCases = cases.filter((c) => industry.relatedCases.includes(c.slug))

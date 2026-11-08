@@ -1,5 +1,6 @@
+import { useLocale } from 'next-intl'
 import { getLocale } from 'next-intl/server'
-import { industries } from '@/data/industries'
+import { getIndustries } from '@/data/industries'
 import { buildMetadata } from '@/lib/metadata'
 import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
@@ -27,6 +28,8 @@ const FACTS = [
 ]
 
 export default function IndustriesPage() {
+  const locale = useLocale()
+  const industries = getIndustries(locale)
   return (
     <>
       <PageHero

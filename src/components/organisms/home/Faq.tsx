@@ -1,10 +1,12 @@
 import { Link } from '@/i18n/navigation'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { ListDetail } from '@/components/molecules/ListDetail'
-import { homeFaq } from '@/data/faq'
+import { getHomeFaq } from '@/data/faq'
 
 export function Faq() {
+  const locale = useLocale()
+  const homeFaq = getHomeFaq(locale)
   const t = useTranslations('ui')
   return (
     <section className="section section--alt" id="faq" aria-labelledby="faq-h">

@@ -8,7 +8,7 @@ import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { ButtonLink } from '@/components/atoms/controls'
 import { Integrations } from '@/components/organisms/home/Integrations'
 import { getServices } from '@/data/services'
-import { technologies } from '@/data/technologies'
+import { getTechnologies } from '@/data/technologies'
 import { buildMetadata } from '@/lib/metadata'
 
 export const revalidate = 3600
@@ -69,6 +69,8 @@ const TRUST_POINTS = [
 ]
 
 export default function ServicesPage() {
+  const locale = useLocale()
+  const technologies = getTechnologies(locale)
   const services = getServices(useLocale())
   return (
     <>

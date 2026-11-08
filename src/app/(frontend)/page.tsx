@@ -2,7 +2,7 @@ import { getLocale } from 'next-intl/server'
 import { buildMetadata } from '@/lib/metadata'
 import JsonLd from '@/components/seo/JsonLd'
 import { faqPageSchema, homePageSchemas } from '@/lib/schema'
-import { homeFaq } from '@/data/faq'
+import { getHomeFaq } from '@/data/faq'
 import { Hero } from '@/components/organisms/home/Hero'
 import { Problem } from '@/components/organisms/home/Problem'
 import { Services } from '@/components/organisms/home/Services'
@@ -39,6 +39,7 @@ export async function generateMetadata() {
 // footer with the free-audit block is #19, rendered by the layout).
 export default async function HomePage() {
   const locale = await getLocale()
+  const homeFaq = getHomeFaq(locale)
   const faqSchema = faqPageSchema(
     homeFaq.map((f) => ({ question: f.question, answer: f.answer })),
     locale,

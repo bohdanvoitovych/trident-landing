@@ -1,14 +1,14 @@
+import { useLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { SolutionDetail } from '@/components/templates/SolutionDetail'
 import { getSolutionBySlug } from '@/data/solutions'
 import { buildMetadata } from '@/lib/metadata'
 
-const solution = getSolutionBySlug('cloud-services')
-
 export async function generateMetadata() {
-  if (!solution) return {}
   const locale = await getLocale()
+  const solution = getSolutionBySlug('cloud-services', locale)
+  if (!solution) return {}
   return buildMetadata({
     title: solution.meta.title,
     description: solution.meta.description,
@@ -26,6 +26,7 @@ const certifications = [
 ]
 
 export default function CloudServicesSolutionPage() {
+  const solution = getSolutionBySlug('cloud-services', useLocale())
   if (!solution) notFound()
 
   return (

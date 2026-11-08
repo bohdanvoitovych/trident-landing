@@ -10,17 +10,15 @@ import { buildMetadata } from '@/lib/metadata'
 
 type Props = { params: Promise<{ package: string }> }
 
-const websitesSolution = getSolutionBySlug('websites')
-
 export async function generateStaticParams() {
-  return (websitesSolution?.packages ?? []).map((pkg) => ({ package: pkg.slug }))
+  return (getSolutionBySlug('websites', 'en')?.packages ?? []).map((pkg) => ({ package: pkg.slug }))
 }
 
 export async function generateMetadata({ params }: Props) {
   const { package: packageSlug } = await params
-  const pkg = websitesSolution?.packages?.find((p) => p.slug === packageSlug)
-  if (!pkg) return {}
   const locale = await getLocale()
+  const pkg = getSolutionBySlug('websites', locale)?.packages?.find((p) => p.slug === packageSlug)
+  if (!pkg) return {}
   return buildMetadata({
     title: `${pkg.name} — Website Package | Trident Software`,
     description: pkg.description,
@@ -31,6 +29,7 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function WebsitePackagePage({ params }: Props) {
   const { package: packageSlug } = await params
+  const websitesSolution = getSolutionBySlug('websites', await getLocale())
   const pkg = websitesSolution?.packages?.find((p) => p.slug === packageSlug)
   if (!pkg || !websitesSolution) notFound()
 

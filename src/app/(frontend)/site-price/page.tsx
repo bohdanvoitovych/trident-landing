@@ -1,3 +1,4 @@
+import { useLocale } from 'next-intl'
 import { getLocale } from 'next-intl/server'
 import { ButtonLink, Tag } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
@@ -34,7 +35,7 @@ const addOns = [
 ]
 
 export default function PricingPage() {
-  const websites = getSolutionBySlug('websites')
+  const websites = getSolutionBySlug('websites', useLocale())
   const packages = websites?.packages ?? []
 
   return (

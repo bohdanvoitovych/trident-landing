@@ -1,14 +1,14 @@
+import { useLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { SolutionDetail } from '@/components/templates/SolutionDetail'
 import { getSolutionBySlug } from '@/data/solutions'
 import { buildMetadata } from '@/lib/metadata'
 
-const solution = getSolutionBySlug('iot')
-
 export async function generateMetadata() {
-  if (!solution) return {}
   const locale = await getLocale()
+  const solution = getSolutionBySlug('iot', locale)
+  if (!solution) return {}
   return buildMetadata({
     title: solution.meta.title,
     description: solution.meta.description,
@@ -27,6 +27,7 @@ const industries = [
 ]
 
 export default function IotSolutionPage() {
+  const solution = getSolutionBySlug('iot', useLocale())
   if (!solution) notFound()
 
   return (

@@ -1,8 +1,9 @@
+import { useLocale } from 'next-intl'
 import { getLocale } from 'next-intl/server'
 import { ButtonLink, Tag } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
-import { team, stats } from '@/data/team'
+import { getTeam, getStats } from '@/data/team'
 import { buildMetadata } from '@/lib/metadata'
 import { TeamFilter } from './TeamFilter'
 
@@ -28,6 +29,9 @@ const locations = [
 ]
 
 export default function TeamPage() {
+  const locale = useLocale()
+  const team = getTeam(locale)
+  const stats = getStats(locale)
   return (
     <>
       <PageHero

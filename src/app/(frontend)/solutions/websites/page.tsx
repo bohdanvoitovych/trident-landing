@@ -1,3 +1,4 @@
+import { useLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { ButtonLink, Tag } from '@/components/atoms/controls'
@@ -7,11 +8,10 @@ import { cn } from '@/lib/utils'
 import { getSolutionBySlug } from '@/data/solutions'
 import { buildMetadata } from '@/lib/metadata'
 
-const solution = getSolutionBySlug('websites')
-
 export async function generateMetadata() {
-  if (!solution) return {}
   const locale = await getLocale()
+  const solution = getSolutionBySlug('websites', locale)
+  if (!solution) return {}
   return buildMetadata({
     title: solution.meta.title,
     description: solution.meta.description,
@@ -21,6 +21,7 @@ export async function generateMetadata() {
 }
 
 export default function WebsitesSolutionPage() {
+  const solution = getSolutionBySlug('websites', useLocale())
   if (!solution) notFound()
   const packages = solution.packages ?? []
 

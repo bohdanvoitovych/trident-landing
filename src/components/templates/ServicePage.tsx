@@ -1,9 +1,9 @@
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { CaseCard } from '@/components/molecules/CaseCard'
-import { cases } from '@/data/cases'
+import { getCases } from '@/data/cases'
 import type { ServiceData } from '@/data/services'
 
 type Props = {
@@ -13,6 +13,8 @@ type Props = {
 const WHY = ['fixedPrice', 'compliance', 'response'] as const
 
 export function ServicePage({ service }: Props) {
+  const locale = useLocale()
+  const cases = getCases(locale)
   const t = useTranslations('services')
   const tp = useTranslations('templates.service')
   const ta = useTranslations('ui.actions')

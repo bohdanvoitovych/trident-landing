@@ -5,7 +5,7 @@ import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { ServiceCard } from '@/components/molecules/ServiceCard'
-import { solutions } from '@/data/solutions'
+import { getSolutions } from '@/data/solutions'
 import { getServices } from '@/data/services'
 import { buildMetadata } from '@/lib/metadata'
 
@@ -23,6 +23,8 @@ export async function generateMetadata() {
 }
 
 export default function SolutionsPage() {
+  const locale = useLocale()
+  const solutions = getSolutions(locale)
   const services = getServices(useLocale())
   return (
     <>

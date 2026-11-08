@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { ButtonLink, Tag } from '@/components/atoms/controls'
 import { CaseCard } from '@/components/molecules/CaseCard'
 import { PageHero } from '@/components/molecules/PageHero'
@@ -24,7 +24,7 @@ export function caseImage(c: CaseData) {
 export function CasePage({ caseStudy }: Props) {
   const t = useTranslations('cases')
   const tu = useTranslations('ui')
-  const related = getRelatedCases(caseStudy.relatedCases)
+  const related = getRelatedCases(caseStudy.relatedCases, useLocale())
 
   const blocks = [
     { id: 'challenge', title: t('challenge'), text: caseStudy.challenge },

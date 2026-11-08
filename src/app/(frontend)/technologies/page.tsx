@@ -1,7 +1,8 @@
+import { useLocale } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { getLocale } from 'next-intl/server'
-import { technologies } from '@/data/technologies'
+import { getTechnologies } from '@/data/technologies'
 import { buildMetadata } from '@/lib/metadata'
 import { Tag } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
@@ -22,6 +23,8 @@ export async function generateMetadata() {
 }
 
 export default function TechnologiesPage() {
+  const locale = useLocale()
+  const technologies = getTechnologies(locale)
   return (
     <>
       <PageHero

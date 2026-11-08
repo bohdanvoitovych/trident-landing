@@ -4,12 +4,12 @@ import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { TextLink } from '@/components/atoms/controls'
 import { Accordion } from '@/components/molecules/Accordion'
-import { FAQ_GROUPS, faq, type FaqItem } from '@/data/faq'
+import type { FaqItem } from '@/data/faq'
 
-const GROUP_KEYS = Object.keys(FAQ_GROUPS) as FaqItem['group'][]
+type Props = { faq: FaqItem[]; groups: Record<FaqItem['group'], string> }
 
 /** Full FAQ: search box + grouped accordions. Server renders the unfiltered list. */
-export function FaqSearch() {
+export function FaqSearch({ faq, groups }: Props) {
   const t = useTranslations('ui')
   const [query, setQuery] = useState('')
   const q = query.trim().toLowerCase()
@@ -48,13 +48,13 @@ export function FaqSearch() {
         </div>
       ) : (
         <div className="faq-groups">
-          {GROUP_KEYS.map((key) => {
+          {(Object.keys(groups) as FaqItem['group'][]).map((key) => {
             const items = matches.filter((f) => f.group === key)
             if (items.length === 0) return null
             return (
               <div key={key} className="faq-group">
                 <h2 id={`faq-${key}`} className="h4" style={{ overflowWrap: 'anywhere' }}>
-                  {FAQ_GROUPS[key]}
+                  {groups[key]}
                 </h2>
                 <Accordion items={items} idPrefix={`faq-${key}`} />
               </div>

@@ -1,35 +1,72 @@
-export type Testimonial = {
+import { pick, type Localized } from '@/lib/localized'
+
+type TestimonialText = {
   quote: string
-  author: string
   role?: string
-  company: string
 }
 
-export const testimonials: Testimonial[] = [
+type TestimonialRecord = {
+  author: string
+  company: string
+  content: Localized<TestimonialText>
+}
+
+export type Testimonial = Omit<TestimonialRecord, 'content'> & TestimonialText
+
+const records: TestimonialRecord[] = [
   {
-    quote: 'Excellente compagnie. Nous sommes très satisfaits du site internet que cette société a créé.',
     author: 'Guillaume Moulin',
     company: 'Ardevaz SLS',
+    content: {
+      en: {
+        quote: 'Excellente compagnie. Nous sommes très satisfaits du site internet que cette société a créé.',
+      },
+    },
   },
   {
-    quote: 'This has greatly fostered development, unity and solidarity among our members.',
     author: 'David Ouedec',
-    role: 'Head of GO-Valais Expat Club',
     company: 'GO-Valais',
+    content: {
+      en: {
+        quote: 'This has greatly fostered development, unity and solidarity among our members.',
+        role: 'Head of GO-Valais Expat Club',
+      },
+    },
   },
   {
-    quote: "Ce qui aurait pu être un obstacle majeur s'est transformé en un minuscule inconvénient.",
     author: 'Adrien Thétaz',
     company: 'Kleap.co',
+    content: {
+      en: {
+        quote: "Ce qui aurait pu être un obstacle majeur s'est transformé en un minuscule inconvénient.",
+      },
+    },
   },
   {
-    quote: 'Flexibility and readiness to cooperate are about them.',
     author: 'Ivan Boboretsky',
     company: 'DaniParts',
+    content: {
+      en: {
+        quote: 'Flexibility and readiness to cooperate are about them.',
+      },
+    },
   },
   {
-    quote: 'They are well versed in latest Agile tools to keep track of deadlines.',
     author: 'Naren Bansal',
     company: 'Xelsat',
+    content: {
+      en: {
+        quote: 'They are well versed in latest Agile tools to keep track of deadlines.',
+      },
+    },
   },
 ]
+
+const localize = (r: TestimonialRecord, locale: string): Testimonial => {
+  const { content, ...rest } = r
+  return { ...rest, ...pick(content, locale) }
+}
+
+export function getTestimonials(locale: string): Testimonial[] {
+  return records.map((r) => localize(r, locale))
+}

@@ -1,7 +1,7 @@
 import { Link } from '@/i18n/navigation'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
-import { useCases } from '@/data/use-cases'
+import { getUseCases } from '@/data/use-cases'
 
 export function UseCaseCard({ n, glyph, title, text, needs, href }: { n: number; glyph: string; title: string; text: string; needs: string; href?: string }) {
   const inner = (
@@ -37,6 +37,8 @@ export function UseCaseCard({ n, glyph, title, text, needs, href }: { n: number;
 }
 
 export function UseCases() {
+  const locale = useLocale()
+  const useCases = getUseCases(locale)
   const t = useTranslations('ui.actions')
   return (
     <section className="section" id="usecases" aria-labelledby="uc-h">

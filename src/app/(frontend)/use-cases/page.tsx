@@ -1,8 +1,9 @@
+import { useLocale } from 'next-intl'
 import { getLocale } from 'next-intl/server'
 import { PageHero } from '@/components/molecules/PageHero'
 import { UseCaseCard } from '@/components/organisms/home/UseCases'
 import { WhereWeSayNo } from '@/components/organisms/home/WhereWeSayNo'
-import { useCases } from '@/data/use-cases'
+import { getUseCases } from '@/data/use-cases'
 import { buildMetadata } from '@/lib/metadata'
 
 export const revalidate = 3600
@@ -12,6 +13,7 @@ const LEAD = 'Each comes with a precondition. Most failed AI projects fail there
 
 export async function generateMetadata() {
   const locale = await getLocale()
+  const useCases = getUseCases(locale)
   return buildMetadata({
     title: `Use cases — ${TITLE} | Trident Software`,
     description: `${useCases.map((u) => u.title).join(', ')}. ${LEAD}`,
@@ -21,6 +23,8 @@ export async function generateMetadata() {
 }
 
 export default function UseCasesPage() {
+  const locale = useLocale()
+  const useCases = getUseCases(locale)
   return (
     <>
       <PageHero alt crumbs={[{ name: 'Use cases', href: '/use-cases' }]} label="Use cases" title={TITLE} lead={LEAD} />

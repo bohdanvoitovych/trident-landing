@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { TechnologyPage } from '@/components/templates/TechnologyPage'
-import { getTechnologySlugs, getTechnologyBySlug } from '@/data/technologies'
+import { getTechnologySlugs, getTechnologyBySlug, getTechnologyLocales } from '@/data/technologies'
 import { buildMetadata } from '@/lib/metadata'
 import JsonLd from '@/components/seo/JsonLd'
 import { technologyPageSchemas } from '@/lib/schema'
@@ -16,7 +16,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params
-  const technology = getTechnologyBySlug(slug)
+  const technology = getTechnologyBySlug(slug, await getLocale())
   if (!technology) return {}
   const locale = await getLocale()
   return buildMetadata({
@@ -24,12 +24,13 @@ export async function generateMetadata({ params }: Props) {
     description: technology.meta.description,
     path: `/technologies/${slug}`,
     locale,
+    availableLocales: getTechnologyLocales(slug),
   })
 }
 
 export default async function TechnologyDetailPage({ params }: Props) {
   const { slug } = await params
-  const technology = getTechnologyBySlug(slug)
+  const technology = getTechnologyBySlug(slug, await getLocale())
   if (!technology) notFound()
   const locale = await getLocale()
   return (

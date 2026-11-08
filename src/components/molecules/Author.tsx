@@ -1,9 +1,12 @@
+import { useLocale } from 'next-intl'
 import Image from 'next/image'
-import { team } from '@/data/team'
+import { getTeam } from '@/data/team'
 import { cn } from '@/lib/utils'
 
 /** 34px round photo, name (600), role (ink-3). Photo comes from the team list when the name matches. */
 export function Author({ name, role, large }: { name: string; role?: string; large?: boolean }) {
+  const locale = useLocale()
+  const team = getTeam(locale)
   const member = team.find((m) => m.name === name)
   const size = large ? 56 : 34
   return (
