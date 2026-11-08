@@ -1,8 +1,9 @@
 /**
  * Minimal markdown-to-HTML converter.
  * Handles: headings, paragraphs, bold, italic, links, tables, lists, hr, inline code.
+ * Internal links (`/path`) get the locale prefix, so a German article links to German pages.
  */
-export function markdownToHtml(md: string): string {
+export function markdownToHtml(md: string, locale: string = 'en'): string {
   const lines = md.trim().split('\n')
   const html: string[] = []
   let inTable = false
@@ -101,7 +102,8 @@ export function markdownToHtml(md: string): string {
   if (inList) html.push(listType === 'ul' ? '</ul>' : '</ol>')
   if (inTable) { if (inTableBody) html.push('</tbody>'); html.push('</table>') }
 
-  return html.join('\n')
+  const out = html.join('\n')
+  return locale === 'en' ? out : out.replace(/href="\/(?!\/)/g, `href="/${locale}/`)
 }
 
 /** Format inline markdown: links, bold, italic, inline code */

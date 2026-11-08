@@ -1,6 +1,6 @@
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { getLocale } from 'next-intl/server'
-import { posts } from '@/data/blog'
+import { getPosts } from '@/data/blog'
 import { buildMetadata } from '@/lib/metadata'
 import { BLOG_IMAGES, getBlogCategory, type BlogCategory } from '@/data/blog-meta'
 import { PageHero } from '@/components/molecules/PageHero'
@@ -20,6 +20,7 @@ export async function generateMetadata() {
 
 export default function BlogPage() {
   const t = useTranslations('blog')
+  const posts = getPosts(useLocale())
 
   // Only what a card needs goes to the client island (no article bodies).
   const postData: BlogGridPost[] = posts.map((p) => ({

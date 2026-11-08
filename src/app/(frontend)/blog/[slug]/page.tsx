@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { getLocale } from 'next-intl/server'
 import { BlogPost } from '@/components/templates/BlogPost'
-import { getPostBySlug, getPostSlugs } from '@/data/blog'
+import { getPostBySlug, getPostLocales, getPostSlugs } from '@/data/blog'
 import JsonLd from '@/components/seo/JsonLd'
 import { buildMetadata } from '@/lib/metadata'
 import { blogPostSchema } from '@/lib/schema'
@@ -20,26 +20,26 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const post = getPostBySlug(slug)
-  if (!post) return {}
   const locale = await getLocale()
-  const t = post.translations?.[locale as 'de' | 'fr' | 'it']
+  const post = getPostBySlug(slug, locale)
+  if (!post) return {}
   // buildMetadata adds the canonical, hreflang and Open Graph tags the rest of
   // the site has; this route previously returned only title and description.
   return buildMetadata({
-    title: t?.meta.title ?? post.meta.title,
-    description: t?.meta.description ?? post.meta.description,
+    title: post.meta.title,
+    description: post.meta.description,
     path: `/blog/${post.slug}`,
     locale,
+    availableLocales: getPostLocales(slug),
     ogImage: post.image,
   })
 }
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params
-  const post = getPostBySlug(slug)
-  if (!post) notFound()
   const locale = await getLocale()
+  const post = getPostBySlug(slug, locale)
+  if (!post) notFound()
 
   return (
     <>

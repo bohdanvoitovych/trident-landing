@@ -1,6 +1,6 @@
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { formatDate } from '@/lib/utils'
 import { markdownToHtml } from '@/lib/markdown'
 import { getRelatedPosts } from '@/data/blog'
@@ -20,7 +20,8 @@ type Props = {
 export function BlogPost({ post }: Props) {
   const t = useTranslations('blog')
   const ui = useTranslations('ui')
-  const related = getRelatedPosts(post.relatedPosts)
+  const locale = useLocale()
+  const related = getRelatedPosts(post.relatedPosts, locale)
   const cover = BLOG_IMAGES[post.slug] ?? post.image
 
   return (
@@ -60,7 +61,7 @@ export function BlogPost({ post }: Props) {
 
       <section className="section" aria-label={post.title} style={{ paddingTop: 0 }}>
         <div className="container article-grid">
-          <div className="prose prose-lg min-w-0" dangerouslySetInnerHTML={{ __html: markdownToHtml(post.content) }} />
+          <div className="prose prose-lg min-w-0" dangerouslySetInnerHTML={{ __html: markdownToHtml(post.content, locale) }} />
           <aside className="article-aside">
             <div className="author-box">
               <span className="meta">{ui('blog.writtenBy')}</span>
