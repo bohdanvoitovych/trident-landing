@@ -13,6 +13,15 @@ function bcp47(locale: string): string {
   return LOCALE_TO_BCP47[locale] || locale
 }
 
+// Breadcrumb and place names in structured data, per locale.
+const LABELS = {
+  en: { home: 'Home', services: 'Services', industries: 'Industries', locations: 'Locations', technologies: 'Technologies', switzerland: 'Switzerland', techService: (n: string) => `${n} Development Switzerland` },
+  de: { home: 'Startseite', services: 'Dienstleistungen', industries: 'Branchen', locations: 'Standorte', technologies: 'Technologien', switzerland: 'Schweiz', techService: (n: string) => `${n}-Entwicklung Schweiz` },
+  fr: { home: 'Accueil', services: 'Services', industries: 'Secteurs', locations: 'Régions', technologies: 'Technologies', switzerland: 'Suisse', techService: (n: string) => `Développement ${n} en Suisse` },
+  it: { home: 'Home', services: 'Servizi', industries: 'Settori', locations: 'Località', technologies: 'Tecnologie', switzerland: 'Svizzera', techService: (n: string) => `Sviluppo ${n} in Svizzera` },
+}
+const labels = (locale: string) => LABELS[locale as keyof typeof LABELS] ?? LABELS.en
+
 export function organizationSchema(locale: string): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
@@ -154,12 +163,12 @@ export function servicePageSchema(
       inLanguage: bcp47(locale),
       areaServed: {
         '@type': 'Place',
-        name: 'Switzerland',
+        name: labels(locale).switzerland,
       },
     },
     breadcrumbSchema([
-      { name: 'Home', url: localizedUrl('/', locale) },
-      { name: 'Services', url: localizedUrl('/services', locale) },
+      { name: labels(locale).home, url: localizedUrl('/', locale) },
+      { name: labels(locale).services, url: localizedUrl('/services', locale) },
       { name: service.title, url: `${SITE_URL}/services/${service.slug}` },
     ]),
   ]
@@ -169,7 +178,7 @@ export function industryPageSchemas(
   industry: { slug: string; title: string; tagline: string; description: string },
   locale: string,
 ): Record<string, unknown>[] {
-  const url = `${SITE_URL}/industries/${industry.slug}`
+  const url = localizedUrl(`/industries/${industry.slug}`, locale)
   return [
     {
       '@context': 'https://schema.org',
@@ -183,12 +192,12 @@ export function industryPageSchemas(
         name: 'Trident Software Sàrl',
         url: SITE_URL,
       },
-      areaServed: { '@type': 'Place', name: 'Switzerland' },
+      areaServed: { '@type': 'Place', name: labels(locale).switzerland },
       inLanguage: bcp47(locale),
     },
     breadcrumbSchema([
-      { name: 'Home', url: SITE_URL },
-      { name: 'Industries', url: `${SITE_URL}/industries` },
+      { name: labels(locale).home, url: localizedUrl('/', locale) },
+      { name: labels(locale).industries, url: localizedUrl('/industries', locale) },
       { name: industry.title, url },
     ]),
   ]
@@ -198,7 +207,7 @@ export function locationPageSchemas(
   location: { slug: string; name: string; tagline: string; description: string },
   locale: string,
 ): Record<string, unknown>[] {
-  const url = `${SITE_URL}/locations/${location.slug}`
+  const url = localizedUrl(`/locations/${location.slug}`, locale)
   return [
     {
       '@context': 'https://schema.org',
@@ -223,8 +232,8 @@ export function locationPageSchemas(
       inLanguage: bcp47(locale),
     },
     breadcrumbSchema([
-      { name: 'Home', url: SITE_URL },
-      { name: 'Locations', url: `${SITE_URL}/locations` },
+      { name: labels(locale).home, url: localizedUrl('/', locale) },
+      { name: labels(locale).locations, url: localizedUrl('/locations', locale) },
       { name: location.name, url },
     ]),
   ]
@@ -234,12 +243,12 @@ export function technologyPageSchemas(
   tech: { slug: string; name: string; tagline: string; description: string },
   locale: string,
 ): Record<string, unknown>[] {
-  const url = `${SITE_URL}/technologies/${tech.slug}`
+  const url = localizedUrl(`/technologies/${tech.slug}`, locale)
   return [
     {
       '@context': 'https://schema.org',
       '@type': 'Service',
-      name: `${tech.name} Development Switzerland`,
+      name: labels(locale).techService(tech.name),
       description: tech.description,
       url,
       provider: {
@@ -248,12 +257,12 @@ export function technologyPageSchemas(
         name: 'Trident Software Sàrl',
         url: SITE_URL,
       },
-      areaServed: { '@type': 'Place', name: 'Switzerland' },
+      areaServed: { '@type': 'Place', name: labels(locale).switzerland },
       inLanguage: bcp47(locale),
     },
     breadcrumbSchema([
-      { name: 'Home', url: SITE_URL },
-      { name: 'Technologies', url: `${SITE_URL}/technologies` },
+      { name: labels(locale).home, url: localizedUrl('/', locale) },
+      { name: labels(locale).technologies, url: localizedUrl('/technologies', locale) },
       { name: tech.name, url },
     ]),
   ]

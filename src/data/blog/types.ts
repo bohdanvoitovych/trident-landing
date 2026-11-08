@@ -2,7 +2,7 @@
 export type BlogPostTranslation = {
   title: string
   excerpt: string
-  content?: string
+  content: string
   authorRole?: string
   faq?: { question: string; answer: string }[]
   meta: { title: string; description: string }

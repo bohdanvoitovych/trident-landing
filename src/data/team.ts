@@ -30,6 +30,18 @@ const records: TeamRecord[] = [
         role: 'CTO',
         location: 'Ukraine',
       },
+      de: {
+        role: 'CTO',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'CTO',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'CTO',
+        location: 'Ucraina',
+      },
     },
   },
   {
@@ -42,6 +54,18 @@ const records: TeamRecord[] = [
       en: {
         role: 'COO',
         location: 'Switzerland',
+      },
+      de: {
+        role: 'COO',
+        location: 'Schweiz',
+      },
+      fr: {
+        role: 'COO',
+        location: 'Suisse',
+      },
+      it: {
+        role: 'COO',
+        location: 'Svizzera',
       },
     },
   },
@@ -56,6 +80,18 @@ const records: TeamRecord[] = [
         role: 'Team Lead',
         location: 'Ukraine',
       },
+      de: {
+        role: 'Teamleiter',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: "Chef d'équipe",
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Team Leader',
+        location: 'Ucraina',
+      },
     },
   },
   {
@@ -68,6 +104,18 @@ const records: TeamRecord[] = [
       en: {
         role: 'Project Manager',
         location: 'Ukraine',
+      },
+      de: {
+        role: 'Projektleiterin',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Cheffe de projet',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Project Manager',
+        location: 'Ucraina',
       },
     },
   },
@@ -82,6 +130,18 @@ const records: TeamRecord[] = [
         role: 'Project Manager',
         location: 'Ukraine',
       },
+      de: {
+        role: 'Projektleiter',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Chef de projet',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Project Manager',
+        location: 'Ucraina',
+      },
     },
   },
   {
@@ -94,6 +154,18 @@ const records: TeamRecord[] = [
       en: {
         role: 'Project Manager',
         location: 'Ukraine',
+      },
+      de: {
+        role: 'Projektleiterin',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Cheffe de projet',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Project Manager',
+        location: 'Ucraina',
       },
     },
   },
@@ -108,6 +180,18 @@ const records: TeamRecord[] = [
         role: 'Project Manager',
         location: 'Ukraine',
       },
+      de: {
+        role: 'Projektleiter',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Chef de projet',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Project Manager',
+        location: 'Ucraina',
+      },
     },
   },
   {
@@ -120,6 +204,18 @@ const records: TeamRecord[] = [
       en: {
         role: 'Frontend Developer',
         location: 'Ukraine',
+      },
+      de: {
+        role: 'Frontend-Entwickler',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Développeur frontend',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Sviluppatore Frontend',
+        location: 'Ucraina',
       },
     },
   },
@@ -134,6 +230,18 @@ const records: TeamRecord[] = [
         role: 'Frontend Developer',
         location: 'Ukraine',
       },
+      de: {
+        role: 'Frontend-Entwickler',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Développeur frontend',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Sviluppatore Frontend',
+        location: 'Ucraina',
+      },
     },
   },
   {
@@ -146,6 +254,18 @@ const records: TeamRecord[] = [
       en: {
         role: 'Frontend Developer',
         location: 'Ukraine',
+      },
+      de: {
+        role: 'Frontend-Entwickler',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Développeur frontend',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Sviluppatore Frontend',
+        location: 'Ucraina',
       },
     },
   },
@@ -160,6 +280,18 @@ const records: TeamRecord[] = [
         role: 'Frontend Developer',
         location: 'Ukraine',
       },
+      de: {
+        role: 'Frontend-Entwickler',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Développeur frontend',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Sviluppatore Frontend',
+        location: 'Ucraina',
+      },
     },
   },
   {
@@ -172,6 +304,18 @@ const records: TeamRecord[] = [
       en: {
         role: 'Backend Developer',
         location: 'Ukraine',
+      },
+      de: {
+        role: 'Backend-Entwickler',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Développeur backend',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Sviluppatore Backend',
+        location: 'Ucraina',
       },
     },
   },
@@ -186,6 +330,18 @@ const records: TeamRecord[] = [
         role: 'Backend Developer',
         location: 'Ukraine',
       },
+      de: {
+        role: 'Backend-Entwickler',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Développeur backend',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Sviluppatore Backend',
+        location: 'Ucraina',
+      },
     },
   },
   {
@@ -198,6 +354,18 @@ const records: TeamRecord[] = [
       en: {
         role: 'Backend Developer',
         location: 'Ukraine',
+      },
+      de: {
+        role: 'Backend-Entwickler',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Développeur backend',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Sviluppatore Backend',
+        location: 'Ucraina',
       },
     },
   },
@@ -212,6 +380,18 @@ const records: TeamRecord[] = [
         role: 'Mobile Developer',
         location: 'Ukraine',
       },
+      de: {
+        role: 'Mobile-Entwicklerin',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Développeuse mobile',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Sviluppatrice Mobile',
+        location: 'Ucraina',
+      },
     },
   },
   {
@@ -224,6 +404,18 @@ const records: TeamRecord[] = [
       en: {
         role: 'QA Engineer',
         location: 'Ukraine',
+      },
+      de: {
+        role: 'QA Engineer',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Ingénieur QA',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'QA Engineer',
+        location: 'Ucraina',
       },
     },
   },
@@ -238,6 +430,18 @@ const records: TeamRecord[] = [
         role: 'QA Engineer',
         location: 'Ukraine',
       },
+      de: {
+        role: 'QA Engineer',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Ingénieure QA',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'QA Engineer',
+        location: 'Ucraina',
+      },
     },
   },
   {
@@ -250,6 +454,18 @@ const records: TeamRecord[] = [
       en: {
         role: 'DevOps Engineer',
         location: 'Ukraine',
+      },
+      de: {
+        role: 'DevOps Engineer',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Ingénieur DevOps',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'DevOps Engineer',
+        location: 'Ucraina',
       },
     },
   },
@@ -281,6 +497,60 @@ const statsByLocale: Localized<{ value: string; label: string }[]> = {
     {
       value: '8',
       label: 'Client countries',
+    },
+  ],
+  de: [
+    {
+      value: '27+',
+      label: 'Abgeschlossene Projekte',
+    },
+    {
+      value: '15',
+      label: 'Jahre seit der Gründung',
+    },
+    {
+      value: '26',
+      label: 'Senior-Entwickler',
+    },
+    {
+      value: '8',
+      label: 'Länder mit Kunden',
+    },
+  ],
+  fr: [
+    {
+      value: '27+',
+      label: 'Projets livrés',
+    },
+    {
+      value: '15',
+      label: 'Années depuis la fondation',
+    },
+    {
+      value: '26',
+      label: 'Ingénieurs seniors',
+    },
+    {
+      value: '8',
+      label: 'Pays clients',
+    },
+  ],
+  it: [
+    {
+      value: '27+',
+      label: 'Progetti realizzati',
+    },
+    {
+      value: '15',
+      label: 'Anni dalla fondazione',
+    },
+    {
+      value: '26',
+      label: 'Ingegneri senior',
+    },
+    {
+      value: '8',
+      label: 'Paesi dei clienti',
     },
   ],
 }

@@ -102,194 +102,194 @@
     "viewServices": "Nos services"
   },
   "ui": {
-    "skip": "Skip to main content",
-    "home": "Trident Software, home",
+    "skip": "Aller au contenu principal",
+    "home": "Trident Software, page d'accueil",
     "crumbHome": "Accueil",
-    "menuOpen": "Open menu",
-    "menuClose": "Close menu",
-    "mainNav": "Main",
-    "siteLanguage": "Site language",
-    "breadcrumb": "Breadcrumb",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu",
+    "mainNav": "Navigation principale",
+    "siteLanguage": "Langue du site",
+    "breadcrumb": "Fil d'Ariane",
     "nav": {
       "services": "Services",
-      "useCases": "Use cases",
-      "projects": "Projects",
-      "about": "About",
+      "useCases": "Cas d'usage",
+      "projects": "Projets",
+      "about": "À propos",
       "blog": "Blog",
       "contact": "Contact",
-      "freeAudit": "Free audit"
+      "freeAudit": "Audit gratuit"
     },
     "actions": {
-      "allServices": "All services",
-      "allUseCases": "All use cases",
-      "allCases": "All case studies",
-      "meetTeam": "Meet the team",
-      "allQuestions": "All questions",
-      "allArticles": "All articles",
-      "askDirectly": "Ask us directly",
-      "learnMore": "Learn more",
-      "read": "Read",
-      "bookAudit": "Book the audit",
-      "seeResults": "See results",
-      "backHome": "Back to home",
+      "allServices": "Tous les services",
+      "allUseCases": "Tous les cas d'usage",
+      "allCases": "Toutes les études de cas",
+      "meetTeam": "Découvrir l'équipe",
+      "allQuestions": "Toutes les questions",
+      "allArticles": "Tous les articles",
+      "askDirectly": "Posez-nous la question",
+      "learnMore": "En savoir plus",
+      "read": "Lire",
+      "bookAudit": "Réserver l'audit",
+      "seeResults": "Voir les résultats",
+      "backHome": "Retour à l'accueil",
       "freeQuote": "Demander un devis gratuit",
       "seeProjects": "Voir nos projets"
     },
     "hero": {
-      "logTitle": "Agent · Valais Materials · live",
-      "logNote": "Sat evening · illustrative",
-      "conversationsToday": "conversations today",
-      "medianReply": "median first reply 4 s",
+      "logTitle": "Agent · Valais Materials · en direct",
+      "logNote": "Samedi soir · exemple",
+      "conversationsToday": "conversations aujourd'hui",
+      "medianReply": "première réponse médiane 4 s",
       "log": {
-        "1": "Enquiry: 8 t Kies 0/16 nach Siders → answered",
-        "2": "Stock checked · slots Mo 07:30 / 13:00 offered",
-        "3": "Order confirmed → QR-bill sent",
-        "4": "Contact, deal and transcript → HubSpot",
-        "5": "Delivery note matched to order, no mismatch",
-        "6": "Delivery to Zermatt? → coverage and surcharge",
-        "7": "Price negotiation → handed to sales, Mon 08:00",
-        "8": "« Où est ma livraison ? » → live tracking sent"
+        "1": "Demande : 8 t gravier 0/16 pour Sierre → répondu",
+        "2": "Stock vérifié · créneaux lu 07:30 / 13:00 proposés",
+        "3": "Commande confirmée → QR-facture envoyée",
+        "4": "Contact, affaire et transcription → HubSpot",
+        "5": "Bon de livraison rapproché de la commande, aucun écart",
+        "6": "Livraison à Zermatt ? → zone et supplément",
+        "7": "Négociation de prix → transmise aux ventes, lu 08:00",
+        "8": "« Où est ma livraison ? » → suivi en direct envoyé"
       },
       "statSrc": {
-        "clinic": "Clinic network · CH",
-        "maker": "Component maker · IT · measured",
-        "agent": "Sales agent",
-        "residency": "Data residency"
+        "clinic": "Réseau de cliniques · CH",
+        "maker": "Fabricant de composants · IT · mesuré",
+        "agent": "Agent commercial",
+        "residency": "Hébergement des données"
       },
-      "photoAlt": "Server room where the agents run"
+      "photoAlt": "Salle serveurs où tournent les agents"
     },
     "problem": {
-      "gap": "That's the gap."
+      "gap": "C'est là que ça coince."
     },
     "agent": {
-      "conversationLanguage": "Conversation language",
-      "crm": "→ CRM · structured fields",
-      "product": "product",
-      "qty": "qty",
-      "slot": "slot",
-      "language": "language"
+      "conversationLanguage": "Langue de la conversation",
+      "crm": "→ CRM · champs structurés",
+      "product": "produit",
+      "qty": "qté",
+      "slot": "créneau",
+      "language": "langue"
     },
     "race": {
-      "label": "Response race",
-      "title": "A portal enquiry at 21:47 on Saturday. Who answers first?",
-      "start": "Send the enquiry →",
-      "running": "Running…",
-      "again": "Run it again ↻",
-      "agent": "Trident agent",
-      "agentDone": "✓ Replied · viewing offered",
-      "market": "Market median, letting agencies in Romandie",
-      "marketDone": "Sun 12:59",
-      "note": "First reply <15 s by design vs market median >15 h. Modelled scenario."
+      "label": "Course à la réponse",
+      "title": "Une demande via un portail, samedi à 21h47. Qui répond en premier ?",
+      "start": "Envoyer la demande →",
+      "running": "En cours…",
+      "again": "Relancer ↻",
+      "agent": "Agent Trident",
+      "agentDone": "✓ Répondu · visite proposée",
+      "market": "Médiane du marché, régies en Suisse romande",
+      "marketDone": "dim. 12h59",
+      "note": "Première réponse <15 s par conception, contre une médiane du marché >15 h. Scénario modélisé."
     },
     "cases": {
-      "before": "before",
-      "after": "after",
-      "measured": "MEASURED",
-      "modelled": "MODELLED",
-      "moreCases": "More cases"
+      "before": "avant",
+      "after": "après",
+      "measured": "MESURÉ",
+      "modelled": "MODÉLISÉ",
+      "moreCases": "Autres cas"
     },
     "process": {
-      "drag": "Drag through the project",
-      "day": "Day {day}",
-      "play": "Play ▶",
+      "drag": "Faites glisser à travers le projet",
+      "day": "Jour {day}",
+      "play": "Lecture ▶",
       "pause": "Pause ❙❙"
     },
     "calc": {
-      "minutes": "Minutes a person spends per enquiry",
+      "minutes": "Minutes qu'une personne consacre à chaque demande",
       "minutesValue": "{n} min",
-      "hoursFreed": "routine work freed per month",
-      "fte": "full-time positions of queue work",
-      "worth": "Worth a 45-minute audit.",
-      "notYet": "Not yet.",
-      "notYetText": "The numbers don't clear the build cost. We'd rather tell you now."
+      "hoursFreed": "de travail routinier libéré par mois",
+      "fte": "postes à plein temps de traitement de file",
+      "worth": "Cela vaut un audit de 45 minutes.",
+      "notYet": "Pas encore.",
+      "notYetText": "Les chiffres ne couvrent pas le coût de développement. Nous préférons vous le dire maintenant."
     },
     "clients": {
       "label": "Clients",
-      "title": "Trusted by companies in Switzerland and Europe",
-      "namedReferences": "Named references, available on request"
+      "title": "Des entreprises en Suisse et en Europe nous font confiance",
+      "namedReferences": "Références nominatives sur demande"
     },
     "testimonials": {
-      "prev": "Previous testimonial",
-      "next": "Next testimonial",
-      "group": "Testimonials",
-      "item": "Testimonial {n}"
+      "prev": "Témoignage précédent",
+      "next": "Témoignage suivant",
+      "group": "Témoignages",
+      "item": "Témoignage {n}"
     },
     "partners": {
-      "lookingLabel": "Partners and portfolio work",
-      "lookingIntro": "Engagements where software is core to the business case rather than a support function."
+      "lookingLabel": "Partenaires et portfolio",
+      "lookingIntro": "Des mandats où le logiciel est au cœur du modèle d'affaires, pas une fonction de support."
     },
     "faq": {
       "questions": "Questions",
-      "didntFind": "Didn't find your question?",
-      "search": "Search questions…",
-      "searchLabel": "Search the FAQ",
-      "noResults": "No question matches “{q}”.",
+      "didntFind": "Vous n'avez pas trouvé votre question ?",
+      "search": "Rechercher une question…",
+      "searchLabel": "Rechercher dans la FAQ",
+      "noResults": "Aucune question ne correspond à « {q} ».",
       "results": "{count, plural, one {# question} other {# questions}}"
     },
     "blog": {
-      "pagination": "Articles {from}–{to} of {total} · page {page} of {pages}",
-      "prev": "← Prev",
-      "next": "Next →",
+      "pagination": "Articles {from}–{to} sur {total} · page {page} sur {pages}",
+      "prev": "← Précédent",
+      "next": "Suivant →",
       "pages": "Pages",
       "page": "Page {n}",
-      "filter": "Filter by category",
-      "all": "All",
-      "minRead": "{n} min read",
-      "writtenBy": "Written by"
+      "filter": "Filtrer par catégorie",
+      "all": "Tous",
+      "minRead": "{n} min de lecture",
+      "writtenBy": "Rédigé par"
     },
     "team": {
-      "filter": "Filter by discipline",
-      "all": "All"
+      "filter": "Filtrer par discipline",
+      "all": "Tous"
     },
     "audit": {
-      "label": "Free audit",
-      "whatHappensNext": "What happens next",
+      "label": "Audit gratuit",
+      "whatHappensNext": "Et ensuite ?",
       "steps": {
-        "1": "Free 45-minute audit on your volumes, response times and systems",
-        "2": "Your own ROI model and a straight answer, including \"not yet\"",
-        "3": "One channel, one scenario, one month",
-        "4": "Decision on evidence: extend, adjust or stop"
+        "1": "Audit gratuit de 45 minutes sur vos volumes, vos délais de réponse et vos systèmes",
+        "2": "Votre propre modèle de ROI et une réponse franche, y compris « pas encore »",
+        "3": "Un canal, un scénario, un mois",
+        "4": "Décision sur preuves : étendre, ajuster ou arrêter"
       },
-      "name": "Name",
-      "company": "Company",
-      "email": "Email",
-      "phone": "Phone",
-      "topic": "What it's about",
-      "optional": "(optional)",
+      "name": "Nom",
+      "company": "Entreprise",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "topic": "De quoi s'agit-il",
+      "optional": "(facultatif)",
       "message": "Message",
-      "messagePlaceholder": "Enquiry volumes, channels, systems…",
-      "other": "Other / not sure yet",
-      "required": "Required",
-      "invalidEmail": "Enter a valid email address",
-      "consentRequired": "Please confirm consent",
-      "sending": "Sending…",
-      "error": "Something went wrong. Please try again or write to info@trident-software.ch.",
-      "sendAnother": "Send another",
-      "done": "Thank you. A named engineer replies within 24 business hours."
+      "messagePlaceholder": "Volumes de demandes, canaux, systèmes…",
+      "other": "Autre / pas encore sûr",
+      "required": "Obligatoire",
+      "invalidEmail": "Saisissez une adresse e-mail valide",
+      "consentRequired": "Veuillez confirmer votre consentement",
+      "sending": "Envoi…",
+      "error": "Une erreur s'est produite. Réessayez ou écrivez à info@trident-software.ch.",
+      "sendAnother": "Envoyer une autre demande",
+      "done": "Merci. Un ingénieur nommé vous répond dans les 24 heures ouvrables."
     },
     "footer": {
-      "brand": "Operational software and AI agents, built in Switzerland. Senior engineers, fixed budgets, compliance included.",
-      "hosting": "CH / EU hosting",
+      "brand": "Logiciels métier et agents IA, développés en Suisse. Ingénieurs seniors, budgets fixes, conformité incluse.",
+      "hosting": "Hébergement CH / UE",
       "services": "Services",
-      "company": "Company",
-      "explore": "Explore",
+      "company": "Entreprise",
+      "explore": "Explorer",
       "contact": "Contact",
-      "legal": "Legal",
+      "legal": "Mentions légales",
       "faq": "FAQ"
     },
     "cookie": {
-      "label": "Cookie notice"
+      "label": "Avis sur les cookies"
     },
     "legal": {
-      "label": "Legal"
+      "label": "Juridique"
     },
     "portfolio": {
-      "filter": "Filter by sector",
-      "projectsTitle": "Platforms, shops and apps we built and maintain"
+      "filter": "Filtrer par secteur",
+      "projectsTitle": "Plateformes, boutiques et applications que nous avons créées et maintenons"
     },
     "about": {
-      "timelineLabel": "Timeline",
-      "timelineTitle": "2009 → today"
+      "timelineLabel": "Historique",
+      "timelineTitle": "2009 → aujourd'hui"
     }
   },
   "templates": {
