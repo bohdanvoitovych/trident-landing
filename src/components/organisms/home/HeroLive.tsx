@@ -1,6 +1,8 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { useLocale, useTranslations } from 'next-intl'
+import { intlLocale } from '@/lib/utils'
 import { useActive } from '@/lib/motion'
 
 /* ── Tagline: a demo of the four languages, not a language switch ───────── */
@@ -19,6 +21,9 @@ export function HeroTagline() {
   const idx = useRef(0)
   const [i, setI] = useState(0)
   const [text, setText] = useState(ROT[0].t)
+  const locale = useLocale()
+  // Screen readers get the line in the page language.
+  const own = ROT.find((r) => r.c === locale.toUpperCase()) ?? ROT[3]
 
   useEffect(() => {
     if (!active) {
@@ -64,21 +69,22 @@ export function HeroTagline() {
         <span className="tagline-text">{text}</span>
         <span className="caret" />
       </span>
-      <span className="sr-only">{ROT[3].t}</span>
+      <span className="sr-only">{own.t}</span>
     </div>
   )
 }
 
 /* ── Live agent log: one story, one Saturday evening, one client ───────── */
 
+// Channel, language, latency. `{ k }` channels and a `null` latency ("escalated") come from messages.
 const CH = [
   ['WhatsApp', 'DE', '4 s'],
   ['WhatsApp', 'DE', '2 s'],
   ['WhatsApp', 'DE', '3 s'],
   ['CRM', '—', '1 s'],
-  ['E-mail', 'FR', '9 s'],
-  ['Web chat', 'EN', '5 s'],
-  ['Phone', 'IT', 'esc'],
+  [{ k: 'email' }, 'FR', '9 s'],
+  [{ k: 'webChat' }, 'EN', '5 s'],
+  [{ k: 'phone' }, 'IT', null],
   ['WhatsApp', 'FR', '3 s'],
 ] as const
 
@@ -87,6 +93,8 @@ const pad2 = (n: number) => String(n).padStart(2, '0')
 type LogProps = { lines: string[]; title: string; note: string; chipLabel: string; chipNote: string }
 
 export function HeroLog({ lines, title, note, chipLabel, chipNote }: LogProps) {
+  const t = useTranslations('sections.heroLive')
+  const locale = useLocale()
   const ref = useRef<HTMLDivElement>(null)
   const active = useActive(ref)
   // Start with five rows so the card is full on first paint (server and client agree).
@@ -110,9 +118,9 @@ export function HeroLog({ lines, title, note, chipLabel, chipNote }: LogProps) {
     const minutes = 21 * 60 + 41 + idx
     rows.push({
       key: idx,
-      ch,
+      ch: typeof ch === 'string' ? ch : t(`channels.${ch.k}`),
       lang,
-      lat,
+      lat: lat ?? t('escalated'),
       ev: lines[idx % lines.length],
       time: `${pad2(Math.floor(minutes / 60) % 24)}:${pad2(minutes % 60)}`,
       op: 1 - k * 0.15,
@@ -145,7 +153,7 @@ export function HeroLog({ lines, title, note, chipLabel, chipNote }: LogProps) {
       </div>
       <div className="hero-chip floaty floaty--d2" data-loop>
         <span className="k">{chipLabel}</span>
-        <span className="v">{(1284 + n).toLocaleString('en-US').replace(/,/g, ' ')}</span>
+        <span className="v">{(1284 + n).toLocaleString(intlLocale(locale))}</span>
         <span className="ok">
           <i aria-hidden="true">●</i> {chipNote}
         </span>

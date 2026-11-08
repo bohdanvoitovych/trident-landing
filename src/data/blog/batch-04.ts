@@ -619,7 +619,7 @@ Die Contracts wurden für 12 Spiele entwickelt und getestet. Tests liefen auf Ri
 **Investoren (Flipper):** NFTs mit bestimmten Eigenschaften in Auftrag geben, Kontrolle über Smart Contracts, lukrative Möglichkeit zum Weiterverkauf.
 
 **Spieler:** Zusatzverdienst dank hohem spielerischem Können und ein Anreiz, vorhandene Erfahrung zu Geld zu machen.`,
-        authorRole: "Backend Developer, Trident Software",
+        authorRole: "Backend-Entwickler, Trident Software",
         meta: {
           title: "NFT-Handelsplattform für In-Game-Assets | Trident Software",
           description: "Ein NFT-Marktplatz für In-Game-Assets mit Smart Contracts auf Ethereum, Polygon, Solana und BSC. So verdienen Flipper und Spieler gleichermassen.",

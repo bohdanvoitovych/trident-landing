@@ -9,47 +9,48 @@ const SOCIALS = [
   { href: 'https://www.linkedin.com/company/tridentsoftware/', label: 'LinkedIn', Icon: Linkedin },
   { href: 'https://www.facebook.com/profile.php?id=100092674509471', label: 'Facebook', Icon: Facebook },
   { href: 'https://www.instagram.com/trident_software_official/', label: 'Instagram', Icon: Instagram },
-  { href: 'https://maps.app.goo.gl/aX4gfcf1taSKohnp7', label: 'Find us on Google Maps', Icon: MapPin },
+  { href: 'https://maps.app.goo.gl/aX4gfcf1taSKohnp7', label: null, Icon: MapPin },
 ]
 
 const COLUMNS = [
   {
     key: 'services',
     links: [
-      { href: '/services/ai-services', label: 'AI agents & LLM automation' },
-      { href: '/products', label: 'Logistics & operations' },
-      { href: '/services/software-engineering', label: 'Custom business systems' },
-      { href: '/services/embedded-and-iot', label: 'IoT & connected products' },
-      { href: '/services/cto-as-a-service', label: 'CTO as a Service' },
+      { href: '/services/ai-services', key: 'aiAgents' },
+      { href: '/products', key: 'logistics' },
+      { href: '/services/software-engineering', key: 'businessSystems' },
+      { href: '/services/embedded-and-iot', key: 'iot' },
+      { href: '/services/cto-as-a-service', key: 'cto' },
     ],
   },
   {
     key: 'company',
     links: [
-      { href: '/about', label: 'About' },
-      { href: '/team', label: 'Our team' },
-      { href: '/cases', label: 'Projects' },
-      { href: '/blog', label: 'Blog' },
-      { href: '/contact', label: 'Contact' },
+      { href: '/about', key: 'about' },
+      { href: '/team', key: 'team' },
+      { href: '/cases', key: 'projects' },
+      { href: '/blog', key: 'blog' },
+      { href: '/contact', key: 'contact' },
     ],
   },
   {
     key: 'explore',
     links: [
-      { href: '/use-cases', label: 'Use cases' },
-      { href: '/industries', label: 'Industries' },
-      { href: '/solutions', label: 'Solutions' },
-      { href: '/products', label: 'Products' },
-      { href: '/pricing', label: 'Pricing' },
-      { href: '/technologies', label: 'Technologies' },
-      { href: '/locations', label: 'Locations' },
-      { href: '/faq', label: 'FAQ' },
+      { href: '/use-cases', key: 'useCases' },
+      { href: '/industries', key: 'industries' },
+      { href: '/solutions', key: 'solutions' },
+      { href: '/products', key: 'products' },
+      { href: '/pricing', key: 'pricing' },
+      { href: '/technologies', key: 'technologies' },
+      { href: '/locations', key: 'locations' },
+      { href: '/faq', key: 'faq' },
     ],
   },
 ] as const
 
 export function Footer() {
   const t = useTranslations('ui')
+  const tc = useTranslations('chrome.footer')
   const year = new Date().getFullYear()
   const steps = ['1', '2', '3', '4'] as const
 
@@ -61,10 +62,8 @@ export function Footer() {
       <div className="container split split--stretch audit">
         <div className="audit-left reveal">
           <div className="stack" style={{ gap: 22 }}>
-            <h2 className="audit-h">
-              Bring your volumes. Leave with <em>your numbers.</em>
-            </h2>
-            <p className="lead">45 minutes and a straight answer, whether or not we work together.</p>
+            <h2 className="audit-h">{tc.rich('auditTitle', { em: (c) => <em>{c}</em> })}</h2>
+            <p className="lead">{tc('auditLead')}</p>
           </div>
           <div className="next-steps">
             <p className="k">{t('audit.whatHappensNext')}</p>
@@ -91,15 +90,15 @@ export function Footer() {
             <p>{t('footer.brand')}</p>
             <span className="chips" style={{ gap: 6 }}>
               <span className="tag tag--dark">{t('footer.hosting')}</span>
-              <span className="tag tag--dark">revFADP</span>
-              <span className="tag tag--dark">GDPR</span>
+              <span className="tag tag--dark">{tc('tagSwissLaw')}</span>
+              <span className="tag tag--dark">{tc('tagGdpr')}</span>
             </span>
             <div className="foot-news">
               <NewsletterSignup />
             </div>
             <div className="socials">
               {SOCIALS.map(({ href, label, Icon }) => (
-                <a key={href} href={href} aria-label={label} target="_blank" rel="noopener noreferrer">
+                <a key={href} href={href} aria-label={label ?? tc('mapsLabel')} target="_blank" rel="noopener noreferrer">
                   <Icon size={16} aria-hidden="true" />
                 </a>
               ))}
@@ -113,9 +112,9 @@ export function Footer() {
               </h2>
               <ul>
                 {col.links.map((l) => (
-                  <li key={l.href + l.label}>
+                  <li key={l.href + l.key}>
                     <Link className="link" href={l.href}>
-                      {l.label}
+                      {tc(`links.${l.key}`)}
                     </Link>
                   </li>
                 ))}
@@ -140,19 +139,19 @@ export function Footer() {
         </div>
 
         <div className="fbottom">
-          <span>Swiss made software · © {year} Trident Software Sàrl · CHE-185.076.733</span>
+          <span>{tc('bottomLine', { year })}</span>
           <nav aria-label={t('footer.legal')}>
             <Link className="link" href="/privacy">
-              Privacy
+              {tc('legal.privacy')}
             </Link>
             <Link className="link" href="/terms">
-              Terms
+              {tc('legal.terms')}
             </Link>
             <Link className="link" href="/imprint">
-              Imprint
+              {tc('legal.imprint')}
             </Link>
             <Link className="link" href="/cookies">
-              Cookies
+              {tc('legal.cookies')}
             </Link>
           </nav>
         </div>

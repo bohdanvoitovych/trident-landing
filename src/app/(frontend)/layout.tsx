@@ -33,14 +33,17 @@ export const viewport: Viewport = {
   themeColor: '#ffffff',
 }
 
-export const metadata: Metadata = {
-  title: {
-    template: '%s | Trident Software',
-    default: 'Trident Software — Swiss Quality Software Engineering',
-  },
-  description:
-    'Custom software development, AI integration, and embedded systems for SMEs. Swiss compliance, fixed budgets, 27+ projects delivered.',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://trident-software.ch'),
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'chrome.meta' })
+  return {
+    title: {
+      template: '%s | Trident Software',
+      default: t('defaultTitle'),
+    },
+    description: t('description'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://trident-software.ch'),
+  }
 }
 
 export default async function FrontendLayout({ children }: { children: React.ReactNode }) {

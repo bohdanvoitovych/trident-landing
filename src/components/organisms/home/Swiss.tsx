@@ -1,33 +1,27 @@
+import { useTranslations } from 'next-intl'
 import { Label } from '@/components/atoms/controls'
 
-const FACTS = [
-  ['Hosting in CH or EU', 'Your choice of region. Documented sub-processors in the contract.'],
-  ['revFADP and GDPR', 'Processing agreement and privacy wording drafted for you.'],
-  ['No training on your data', 'Contractually excluded, vendor terms attached as an annex.'],
-  ['You own it', 'Data, knowledge base and scenarios exported on termination.'],
-  ['Model-independent', 'The underlying model can be swapped. No single-vendor risk.'],
-  ['Registered in Valais', 'Trident Software Sàrl · CHE-185.076.733 · HES-SO Valais-Wallis · Campus Biotech, Geneva'],
-]
+const FACTS = ['hosting', 'privacy', 'noTraining', 'ownership', 'modelIndependent', 'registered'] as const
 
 export function Swiss() {
+  const t = useTranslations('sections.swiss')
   return (
     <section className="section section--alt" id="swiss" aria-labelledby="swiss-h">
       <div className="container split split--top">
         <div className="stack reveal" style={{ gap: 18 }}>
-          <Label flag>Swiss by jurisdiction</Label>
+          <Label flag>{t('label')}</Label>
           <h2 id="swiss-h" className="h2">
-            Swiss contracts, Swiss accountability, your data stays yours
+            {t('title')}
           </h2>
           <p className="lead">
-            Contracts and data residency sit in Switzerland. Engineering is distributed, which is how our rates work
-            against Swiss agency pricing without cutting seniority.
+            {t('lead')}
           </p>
         </div>
         <ul className="checks stagger">
-          {FACTS.map(([title, text]) => (
-            <li key={title}>
-              <h3>{title}</h3>
-              <p>{text}</p>
+          {FACTS.map((k) => (
+            <li key={k}>
+              <h3>{t(`facts.${k}.title`)}</h3>
+              <p>{t(`facts.${k}.text`)}</p>
             </li>
           ))}
         </ul>

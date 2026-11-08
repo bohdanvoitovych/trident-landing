@@ -1,4 +1,4 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { SolutionDetail } from '@/components/templates/SolutionDetail'
@@ -17,43 +17,30 @@ export async function generateMetadata() {
   })
 }
 
-const platformTypes = [
-  'Professional networks',
-  'B2B communities',
-  'Consumer social apps',
-  'Marketplace networks',
-  'Fan & loyalty platforms',
-  'Internal corporate networks',
-]
-
 export default function SocialNetworksSolutionPage() {
+  const t = useTranslations('pages.solutions.socialNetworks')
   const solution = getSolutionBySlug('social-networks', useLocale())
   if (!solution) notFound()
 
   return (
     <SolutionDetail
       solution={solution}
-      label="Social Networks"
-      primary="Discuss your platform"
-      secondary={{ href: '/cases', label: 'See case studies' }}
-      features={{
-        lead: 'Scalable, privacy-first social platforms — built for engagement, moderation, and long-term growth.',
-      }}
+      label={t('label')}
+      primary={t('primary')}
+      secondary={{ href: '/cases', label: t('secondary') }}
+      features={{ lead: t('featuresLead') }}
       list={{
-        label: 'Platform types',
-        title: 'Networks we build',
-        lead: 'From B2B professional communities to consumer social apps — we have the architecture and experience.',
-        items: platformTypes,
+        label: t('listLabel'),
+        title: t('listTitle'),
+        lead: t('listLead'),
+        items: t.raw('listItems') as string[],
       }}
-      stack={{
-        title: 'Built for scale and real-time',
-        lead: 'The stack we use to deliver performant, real-time community platforms.',
-      }}
+      stack={{ title: t('stackTitle'), lead: t('stackLead') }}
       cta={{
-        title: 'Build your community platform',
-        text: "Tell us about your community vision — we'll architect and build a platform that grows with your users.",
-        primary: 'Start the conversation',
-        secondary: { href: '/cases', label: 'View case studies' },
+        title: t('ctaTitle'),
+        text: t('ctaText'),
+        primary: t('ctaPrimary'),
+        secondary: { href: '/cases', label: t('ctaSecondary') },
       }}
     />
   )

@@ -11,6 +11,7 @@ const ALL = 'All'
 /** Discipline filter over the team grid. The first render (All) is server-rendered. */
 export function TeamFilter({ members, departments }: { members: TeamMember[]; departments: readonly string[] }) {
   const t = useTranslations('ui.team')
+  const tp = useTranslations('pages.team.departments')
   const [dept, setDept] = useState<string>(ALL)
   const groups = departments.filter((d) => members.some((m) => m.department === d))
   const shown = dept === ALL ? members : members.filter((m) => m.department === dept)
@@ -20,7 +21,7 @@ export function TeamFilter({ members, departments }: { members: TeamMember[]; de
       <div className="chips reveal" role="group" aria-label={t('filter')}>
         {[ALL, ...groups].map((d) => (
           <Chip key={d} aria-pressed={dept === d} onClick={() => setDept(d)}>
-            {d === ALL ? t('all') : d}
+            {d === ALL ? t('all') : tp(d)}
             <span className="count">{d === ALL ? members.length : members.filter((m) => m.department === d).length}</span>
           </Chip>
         ))}

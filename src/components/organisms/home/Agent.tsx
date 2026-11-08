@@ -1,68 +1,32 @@
-import { Fragment } from 'react'
 import { getLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
 import { Label } from '@/components/atoms/controls'
 import { AgentCaps, type Cap } from './AgentCaps'
 import { AgentChat } from './AgentChat'
 
-const CAPS: Cap[] = [
-  {
-    title: 'Answers and qualifies, at any hour',
-    text: "Every channel, weekends and cantonal holidays included. Asks the questions your best rep asks, in the buyer's language.",
-    points: [
-      <Fragment key="1">
-        <b>Seconds</b> to first response, on e-mail, chat, phone and WhatsApp
-      </Fragment>,
-      <Fragment key="2">
-        <b>Four language regions</b> from day one
-      </Fragment>,
-      <Fragment key="3">
-        Answers recorded as <b>structured fields</b>
-      </Fragment>,
-    ],
-  },
-  {
-    title: 'Recommends and closes the small stuff',
-    text: 'Works from your live catalogue, stock and price list. Handles standard objections with your approved wording.',
-    points: [
-      <Fragment key="1">
-        Books appointments against a <b>real calendar</b>
-      </Fragment>,
-      <Fragment key="2">
-        Issues <b>QR-bills</b> and payment links
-      </Fragment>,
-      <Fragment key="3">
-        Escalates to a person on <b>defined conditions</b>
-      </Fragment>,
-    ],
-  },
-  {
-    title: 'Writes into your systems',
-    text: 'Contact, company, deal and full transcript go into your CRM, so the next person starts from a complete record.',
-    points: [
-      <Fragment key="1">CRM and ERP integration</Fragment>,
-      <Fragment key="2">Audit trail on every dialogue</Fragment>,
-      <Fragment key="3">
-        Escalation path designed <b>before launch</b>
-      </Fragment>,
-    ],
-  },
-]
+const CAPS = ['answers', 'recommends', 'writes'] as const
+const POINTS = ['p1', 'p2', 'p3'] as const
 
 export async function Agent() {
   const locale = await getLocale()
   const t = await getTranslations('ui.agent')
+  const ta = await getTranslations('sections.agent')
+  const caps: Cap[] = CAPS.map((c) => ({
+    title: ta(`caps.${c}.title`),
+    text: ta(`caps.${c}.text`),
+    points: POINTS.map((p) => ta.rich(`caps.${c}.${p}`, { b: (chunks) => <b>{chunks}</b> })),
+  }))
   return (
     <section className="section" id="agent" aria-labelledby="agent-h">
       <div className="container split">
         <div className="stack stack--lg reveal">
           <div className="stack">
-            <Label>The AI agent</Label>
+            <Label>{ta('label')}</Label>
             <h2 id="agent-h" className="h2">
-              A working process with a language model inside it
+              {ta('title')}
             </h2>
           </div>
-          <AgentCaps caps={CAPS} />
+          <AgentCaps caps={caps} />
         </div>
         <div className="reveal">
           <AgentChat

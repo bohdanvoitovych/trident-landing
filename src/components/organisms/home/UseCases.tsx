@@ -4,6 +4,7 @@ import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { getUseCases } from '@/data/use-cases'
 
 export function UseCaseCard({ n, glyph, title, text, needs, href }: { n: number; glyph: string; title: string; text: string; needs: string; href?: string }) {
+  const t = useTranslations('sections.useCases')
   const inner = (
     <>
       <div className="uc-num" aria-hidden="true">
@@ -21,7 +22,7 @@ export function UseCaseCard({ n, glyph, title, text, needs, href }: { n: number;
         </h3>
         <p className="body">{text}</p>
         <p className="needs">
-          <b>NEEDS</b>
+          <b>{t('needs')}</b>
           {needs}
         </p>
       </div>
@@ -40,14 +41,15 @@ export function UseCases() {
   const locale = useLocale()
   const useCases = getUseCases(locale)
   const t = useTranslations('ui.actions')
+  const tu = useTranslations('sections.useCases')
   return (
     <section className="section" id="usecases" aria-labelledby="uc-h">
       <div className="container">
         <SectionHeader
           id="uc-h"
-          label="Use cases"
-          title="Eight patterns where an agent pays for itself"
-          lead="Each comes with a precondition. Most failed AI projects fail there, not in the model."
+          label={tu('label')}
+          title={tu('title')}
+          lead={tu('lead')}
           action={{ href: '/use-cases', label: t('allUseCases') }}
         />
         <div className="grid-2 stagger" style={{ gap: 16 }}>

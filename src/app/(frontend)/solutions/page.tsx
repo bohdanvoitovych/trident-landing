@@ -1,6 +1,6 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
-import { getLocale } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
@@ -13,26 +13,27 @@ export const revalidate = 3600
 
 export async function generateMetadata() {
   const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'pages.solutions' })
   return buildMetadata({
-    title: 'Solutions | Trident Software',
-    description:
-      'Software solutions built for Swiss SMEs — websites, e-commerce platforms, and custom B2B systems with fixed budgets and Swiss compliance.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     path: '/solutions',
     locale,
   })
 }
 
 export default function SolutionsPage() {
+  const t = useTranslations('pages.solutions')
   const locale = useLocale()
   const solutions = getSolutions(locale)
   const services = getServices(useLocale())
   return (
     <>
       <PageHero
-        crumbs={[{ name: 'Solutions', href: '/solutions' }]}
-        label="Solutions"
-        title="Software solutions built for Swiss SMEs"
-        lead="Packaged offerings with predictable timelines and fixed prices. From a simple brochure site to a custom B2B e-commerce platform handling 1M+ products."
+        crumbs={[{ name: t('crumb'), href: '/solutions' }]}
+        label={t('label')}
+        title={t('heroTitle')}
+        lead={t('heroLead')}
       />
 
       {/* Solutions grid */}
@@ -40,9 +41,9 @@ export default function SolutionsPage() {
         <div className="container">
           <SectionHeader
             id="sol-h"
-            label="Packaged solutions"
-            title="Two ways to start"
-            lead="Choose between fixed-price website packages or a custom e-commerce build tailored to your business."
+            label={t('packagedLabel')}
+            title={t('packagedTitle')}
+            lead={t('packagedLead')}
           />
           <div className="grid-3 stagger">
             {solutions.map((sol) => (
@@ -51,7 +52,7 @@ export default function SolutionsPage() {
                 <span className="meta text-blue-d">{sol.tagline}</span>
                 <p style={{ flex: 1 }}>{sol.description}</p>
                 <span className="card-more">
-                  Explore <span className="go" aria-hidden="true">→</span>
+                  {t('explore')} <span className="go" aria-hidden="true">→</span>
                 </span>
               </Link>
             ))}
@@ -64,9 +65,9 @@ export default function SolutionsPage() {
         <div className="container">
           <SectionHeader
             id="eng-h"
-            label="Engineering services"
-            title="Full-stack engineering capabilities"
-            lead="Beyond packaged solutions, our team delivers end-to-end engineering services across AI, software, embedded, and cloud."
+            label={t('servicesLabel')}
+            title={t('servicesTitle')}
+            lead={t('servicesLead')}
           />
           <div className="grid-4 stagger">
             {services.map((service) => (
@@ -82,18 +83,18 @@ export default function SolutionsPage() {
           <div className="cta-band reveal">
             <div className="stack">
               <h2 id="sol-cta-h" className="h2">
-                Not sure which fits?
+                {t('ctaTitle')}
               </h2>
               <p className="lead" style={{ maxWidth: 640 }}>
-                Tell us about your project. We&apos;ll recommend the right solution and a fixed price within 24 hours.
+                {t('ctaLead')}
               </p>
             </div>
             <div className="hero-ctas">
               <ButtonLink href="/contact" arrow>
-                Get a recommendation
+                {t('ctaPrimary')}
               </ButtonLink>
               <ButtonLink href="/pricing" variant="outline">
-                View pricing
+                {t('ctaSecondary')}
               </ButtonLink>
             </div>
           </div>

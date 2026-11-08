@@ -1,5 +1,5 @@
-import { useLocale } from 'next-intl'
-import { getLocale } from 'next-intl/server'
+import { useLocale, useTranslations } from 'next-intl'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { getIndustries } from '@/data/industries'
 import { buildMetadata } from '@/lib/metadata'
 import { ButtonLink } from '@/components/atoms/controls'
@@ -11,63 +11,54 @@ export const revalidate = 3600
 
 export async function generateMetadata() {
   const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'pages.industries' })
   return buildMetadata({
-    title: 'Software Development by Industry | Healthcare, Automotive, Fintech & More | Trident Software',
-    description:
-      'Custom software development for 25+ industries — healthcare, automotive, fintech, logistics, retail, SaaS, manufacturing. Swiss engineering team since 2009. Fixed budgets, nFADP compliance.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     path: '/industries',
     locale,
   })
 }
 
-const FACTS = [
-  { value: '25+', label: 'Industries covered' },
-  { value: '27+', label: 'Projects delivered' },
-  { value: 'Since 2009', label: 'Swiss engineering' },
-  { value: 'Fixed price', label: 'Every engagement' },
-]
+const FACTS = ['industries', 'projects', 'since', 'pricing'] as const
 
 export default function IndustriesPage() {
   const locale = useLocale()
   const industries = getIndustries(locale)
+  const t = useTranslations('pages.industries')
   return (
     <>
       <PageHero
-        crumbs={[{ name: 'Industries', href: '/industries' }]}
-        label="Industry expertise"
-        title={
-          <>
-            Custom Software Development<br />
-            for 25+ Industries
-          </>
-        }
+        crumbs={[{ name: t('crumb'), href: '/industries' }]}
+        label={t('label')}
+        title={t.rich('title', { br: () => <br /> })}
         lead={
           <>
-            From MedTech startups to automotive distributors and retail chains — our Swiss engineering team delivers domain-specific software that fits your industry regulations, workflows, and growth targets.
+            {t('lead')}
             <span className="mt-4 block text-[15px] leading-[1.55]">
-              Every project starts with your industry-specific constraints: regulatory requirements (nFADP, GDPR, MDR), operational complexity, and competitive landscape. No generic solutions.
+              {t('leadNote')}
             </span>
           </>
         }
         actions={
           <ButtonLink href="/contact" arrow>
-            Discuss your project
+            {t('discuss')}
           </ButtonLink>
         }
       />
 
       <div className="container -mt-2 pb-[clamp(40px,5vw,72px)]">
         <dl className="facts stagger m-0">
-          {FACTS.map((s) => (
-            <div key={s.label} className="card card--flat fact" style={{ flexDirection: 'column-reverse', justifyContent: 'flex-end' }}>
-              <dt className="fact-k">{s.label}</dt>
-              <dd className="fact-v m-0">{s.value}</dd>
+          {FACTS.map((k) => (
+            <div key={k} className="card card--flat fact" style={{ flexDirection: 'column-reverse', justifyContent: 'flex-end' }}>
+              <dt className="fact-k">{t(`facts.${k}.label`)}</dt>
+              <dd className="fact-v m-0">{t(`facts.${k}.value`)}</dd>
             </div>
           ))}
         </dl>
       </div>
 
-      <section className="section section--alt" aria-label="Industries">
+      <section className="section section--alt" aria-label={t('crumb')}>
         <div className="container">
           <IndustriesGrid industries={industries} />
         </div>
@@ -75,9 +66,9 @@ export default function IndustriesPage() {
 
       <CtaBand
         id="industries-cta-h"
-        title="Need a software partner who knows your industry?"
-        text="Tell us about your challenge. We respond within 24 hours with a concrete proposal."
-        button="Get a free consultation"
+        title={t('ctaTitle')}
+        text={t('ctaText')}
+        button={t('ctaButton')}
       />
     </>
   )

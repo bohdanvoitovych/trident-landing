@@ -1,6 +1,6 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
-import { getLocale } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { getLocations } from '@/data/locations'
 import { buildMetadata } from '@/lib/metadata'
 import { PageHero } from '@/components/molecules/PageHero'
@@ -11,10 +11,10 @@ export const revalidate = 86400
 
 export async function generateMetadata() {
   const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'pages.locations' })
   return buildMetadata({
-    title: 'Software Development Across Switzerland | Trident Software',
-    description:
-      'Custom software development for companies in Zurich, Geneva, Bern, Lausanne, Zug, Basel, and beyond. Swiss-based team, all cantons served.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     path: '/locations',
     locale,
   })
@@ -23,22 +23,23 @@ export async function generateMetadata() {
 export default function LocationsPage() {
   const locale = useLocale()
   const locations = getLocations(locale)
+  const t = useTranslations('pages.locations')
   return (
     <>
       <PageHero
-        crumbs={[{ name: 'Locations', href: '/locations' }]}
-        label="Switzerland-wide"
-        title="Software development across Switzerland"
-        lead="Based in Sion, Valais. Serving every Swiss canton. Remote-first by design."
+        crumbs={[{ name: t('crumb'), href: '/locations' }]}
+        label={t('label')}
+        title={t('title')}
+        lead={t('lead')}
       />
 
       <section className="section section--alt" aria-labelledby="loc-list-h">
         <div className="container">
           <SectionHeader
             id="loc-list-h"
-            label="Locations"
-            title="Cities we serve"
-            lead="Local market expertise. National reach."
+            label={t('crumb')}
+            title={t('listTitle')}
+            lead={t('listLead')}
           />
           <div className="grid-3 stagger">
             {locations.map((loc) => (
@@ -64,9 +65,9 @@ export default function LocationsPage() {
 
       <CtaBand
         id="loc-cta-h"
-        title="Your city not listed?"
-        text="We serve all of Switzerland and neighbouring countries. Get in touch."
-        button="Contact us"
+        title={t('ctaTitle')}
+        text={t('ctaText')}
+        button={t('ctaButton')}
       />
     </>
   )

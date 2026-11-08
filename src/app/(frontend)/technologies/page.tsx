@@ -1,7 +1,7 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
-import { getLocale } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { getTechnologies } from '@/data/technologies'
 import { buildMetadata } from '@/lib/metadata'
 import { Tag } from '@/components/atoms/controls'
@@ -13,10 +13,10 @@ export const revalidate = 86400
 
 export async function generateMetadata() {
   const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'pages.technologies' })
   return buildMetadata({
-    title: 'Technologies We Use | Swiss Software Development | Trident Software',
-    description:
-      'Next.js, Flutter, TypeScript, Python, React, Node.js, PostgreSQL, Docker — our technology stack for Swiss software development.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     path: '/technologies',
     locale,
   })
@@ -25,22 +25,23 @@ export async function generateMetadata() {
 export default function TechnologiesPage() {
   const locale = useLocale()
   const technologies = getTechnologies(locale)
+  const t = useTranslations('pages.technologies')
   return (
     <>
       <PageHero
-        crumbs={[{ name: 'Technologies', href: '/technologies' }]}
-        label="Our stack"
-        title="Technologies we build with"
-        lead="Battle-tested tools. Modern stack. Production-grade defaults across every project."
+        crumbs={[{ name: t('crumb'), href: '/technologies' }]}
+        label={t('label')}
+        title={t('title')}
+        lead={t('lead')}
       />
 
       <section className="section section--alt" aria-labelledby="tech-list-h">
         <div className="container">
           <SectionHeader
             id="tech-list-h"
-            label="Stack"
-            title="What we use, and why"
-            lead="Each technology earns its place by shipping reliably in production."
+            label={t('listLabel')}
+            title={t('listTitle')}
+            lead={t('listLead')}
           />
           <div className="grid-3 stagger">
             {technologies.map((tech) => (
@@ -48,7 +49,7 @@ export default function TechnologiesPage() {
                 <div className="card-body">
                   <div className="flex items-center gap-2.5">
                     {tech.iconSlug && (
-                      <Image src={`/images/tech/${tech.iconSlug}.svg`} alt={`${tech.name} logo`} width={20} height={20} className="shrink-0" />
+                      <Image src={`/images/tech/${tech.iconSlug}.svg`} alt={t('logoAlt', { tech: tech.name })} width={20} height={20} className="shrink-0" />
                     )}
                     <Tag tone="wash">{tech.category}</Tag>
                   </div>
@@ -71,9 +72,9 @@ export default function TechnologiesPage() {
 
       <CtaBand
         id="tech-cta-h"
-        title="Building with a different stack?"
-        text="We adapt to your existing codebase. Talk to us about your project."
-        button="Start a conversation"
+        title={t('ctaTitle')}
+        text={t('ctaText')}
+        button={t('ctaButton')}
       />
     </>
   )

@@ -13,10 +13,10 @@ export const revalidate = 3600
 
 export async function generateMetadata() {
   const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'pages.cases' })
   return buildMetadata({
-    title: 'Software Development Projects & Case Studies | Trident Software Switzerland',
-    description:
-      '27+ software development projects delivered — automotive B2B platforms, AI healthcare systems, e-commerce, IoT, SaaS. Swiss engineering team since 2009.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     path: '/cases',
     locale,
   })
@@ -29,20 +29,16 @@ export default async function CasesPage() {
   const cases = getCases(locale)
   const t = await getTranslations('ui')
   const tc = await getTranslations('cases')
+  const tp = await getTranslations('pages.cases')
   const withCase = projects.filter((p) => p.caseSlug).length
 
   return (
     <>
       <PageHero
         crumbs={[{ name: t('nav.projects'), href: '/cases' }]}
-        label="Portfolio"
-        title="Delivered, then counted"
-        lead={
-          <>
-            {projects.length} products and platforms built for clients across Switzerland and
-            Europe — {withCase} of them written up in full, with the numbers behind them.
-          </>
-        }
+        label={tp('label')}
+        title={tp('title')}
+        lead={tp('lead', { total: projects.length, withCase })}
       />
 
       <section className="section section--alt" aria-labelledby="case-studies-h">
@@ -79,17 +75,16 @@ export default async function CasesPage() {
       <section className="section section--alt" aria-labelledby="cases-cta-h">
         <div className="container cta-band reveal">
           <div className="stack">
-            <Label>Start here</Label>
+            <Label>{tp('ctaLabel')}</Label>
             <h2 id="cases-cta-h" className="h2">
-              Tell us what you are trying to fix
+              {tp('ctaTitle')}
             </h2>
             <p className="lead" style={{ maxWidth: 640 }}>
-              We read every enquiry ourselves and come back within 24 business hours with an
-              honest read on scope.
+              {tp('ctaLead')}
             </p>
           </div>
           <ButtonLink href="/contact" arrow>
-            Book a free audit
+            {tp('ctaButton')}
           </ButtonLink>
         </div>
       </section>

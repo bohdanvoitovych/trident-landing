@@ -6,13 +6,7 @@ import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 
 // Topic options carried over from the previous enquiry form.
-const TOPICS = [
-  'AI agents & automation',
-  'Logistics platform',
-  'IoT & connected products',
-  'Custom business system',
-  'CTO as a Service',
-]
+const TOPICS = ['aiAgents', 'logistics', 'iot', 'businessSystem', 'cto'] as const
 
 type Values = {
   name: string
@@ -34,8 +28,9 @@ type Props = {
  * the lead in Payload (and notifies via Resend there). Topic chips are optional
  * and always include "Other / not sure yet".
  */
-export function AuditForm({ tone = 'dark', submitLabel = 'Request the audit' }: Props) {
+export function AuditForm({ tone = 'dark', submitLabel }: Props) {
   const t = useTranslations('ui.audit')
+  const tf = useTranslations('molecules.auditForm')
   const [topic, setTopic] = useState<number | null>(null)
   const [state, setState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
   const {
@@ -45,7 +40,7 @@ export function AuditForm({ tone = 'dark', submitLabel = 'Request the audit' }: 
     formState: { errors },
   } = useForm<Values>({ defaultValues: { consent: false } })
 
-  const topics = [...TOPICS, t('other')]
+  const topics = [...TOPICS.map((k) => tf(`topics.${k}`)), t('other')]
 
   const onSubmit = async (v: Values) => {
     setState('sending')
@@ -152,7 +147,7 @@ export function AuditForm({ tone = 'dark', submitLabel = 'Request the audit' }: 
       </label>
       <label className="consent">
         <input type="checkbox" aria-invalid={!!errors.consent} aria-describedby={err('consent')} {...register('consent', { required: true })} />
-        <span>I agree that Trident Software may process this enquiry under revFADP and GDPR.</span>
+        <span>{tf('consent')}</span>
       </label>
       {errors.consent && <span id="consent-err" className="field-error">{t('consentRequired')}</span>}
       {state === 'error' && (
@@ -163,7 +158,7 @@ export function AuditForm({ tone = 'dark', submitLabel = 'Request the audit' }: 
       <div>
         <button type="submit" className={cn('btn btn--primary')} disabled={state === 'sending'}>
           <span>
-            {state === 'sending' ? t('sending') : submitLabel}
+            {state === 'sending' ? t('sending') : (submitLabel ?? tf('submit'))}
             <i className="arr" aria-hidden="true">
               →
             </i>

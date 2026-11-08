@@ -1,4 +1,4 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { SolutionDetail } from '@/components/templates/SolutionDetail'
@@ -17,42 +17,30 @@ export async function generateMetadata() {
   })
 }
 
-const platforms = [
-  'iOS',
-  'Android',
-  'React Native',
-  'Flutter',
-  'Expo',
-]
-
 export default function MobileAppsSolutionPage() {
+  const t = useTranslations('pages.solutions.mobileApps')
   const solution = getSolutionBySlug('mobile-apps', useLocale())
   if (!solution) notFound()
 
   return (
     <SolutionDetail
       solution={solution}
-      label="Mobile Apps"
-      primary="Discuss your app"
-      secondary={{ href: '/cases', label: 'See case studies' }}
-      features={{
-        lead: 'Full-cycle mobile development — from discovery and design to App Store delivery and ongoing maintenance.',
-      }}
+      label={t('label')}
+      primary={t('primary')}
+      secondary={{ href: '/cases', label: t('secondary') }}
+      features={{ lead: t('featuresLead') }}
       list={{
-        label: 'Platforms & frameworks',
-        title: 'One build, two stores',
-        lead: 'We use React Native and Flutter to ship to iOS and Android from a single codebase — with native-grade performance.',
-        items: platforms,
+        label: t('listLabel'),
+        title: t('listTitle'),
+        lead: t('listLead'),
+        items: t.raw('listItems') as string[],
       }}
-      stack={{
-        title: 'Production-grade tooling',
-        lead: 'The same stack we use for our own products — battle-tested and maintainable.',
-      }}
+      stack={{ title: t('stackTitle'), lead: t('stackLead') }}
       cta={{
-        title: 'Ready to build your mobile app?',
-        text: "Tell us about your idea. We'll scope it, design it, and ship it to both stores.",
-        primary: 'Get a quote',
-        secondary: { href: '/cases', label: 'View case studies' },
+        title: t('ctaTitle'),
+        text: t('ctaText'),
+        primary: t('ctaPrimary'),
+        secondary: { href: '/cases', label: t('ctaSecondary') },
       }}
     />
   )

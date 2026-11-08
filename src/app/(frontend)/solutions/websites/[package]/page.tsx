@@ -1,6 +1,6 @@
 import { Link } from '@/i18n/navigation'
 import { notFound } from 'next/navigation'
-import { getLocale } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { ButtonLink, Tag } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
@@ -19,8 +19,9 @@ export async function generateMetadata({ params }: Props) {
   const locale = await getLocale()
   const pkg = getSolutionBySlug('websites', locale)?.packages?.find((p) => p.slug === packageSlug)
   if (!pkg) return {}
+  const t = await getTranslations({ locale, namespace: 'pages.solutions.websitePackage' })
   return buildMetadata({
-    title: `${pkg.name} — Website Package | Trident Software`,
+    title: t('metaTitle', { name: pkg.name }),
     description: pkg.description,
     path: `/solutions/websites/${packageSlug}`,
     locale,
@@ -29,7 +30,10 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function WebsitePackagePage({ params }: Props) {
   const { package: packageSlug } = await params
-  const websitesSolution = getSolutionBySlug('websites', await getLocale())
+  const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'pages.solutions.websitePackage' })
+  const ts = await getTranslations({ locale, namespace: 'pages.solutions' })
+  const websitesSolution = getSolutionBySlug('websites', locale)
   const pkg = websitesSolution?.packages?.find((p) => p.slug === packageSlug)
   if (!pkg || !websitesSolution) notFound()
 
@@ -39,20 +43,20 @@ export default async function WebsitePackagePage({ params }: Props) {
     <>
       <PageHero
         crumbs={[
-          { name: 'Solutions', href: '/solutions' },
-          { name: 'Websites', href: '/solutions/websites' },
+          { name: ts('crumb'), href: '/solutions' },
+          { name: ts('websites.label'), href: '/solutions/websites' },
           { name: pkg.name, href: `/solutions/websites/${pkg.slug}` },
         ]}
-        label="Website Package"
+        label={t('label')}
         title={pkg.name}
         lead={pkg.description}
         actions={
           <>
             <ButtonLink href="/contact" arrow>
-              Get a quote
+              {t('heroPrimary')}
             </ButtonLink>
             <ButtonLink href="/pricing" variant="outline">
-              See all pricing
+              {t('heroSecondary')}
             </ButtonLink>
           </>
         }
@@ -60,12 +64,12 @@ export default async function WebsitePackagePage({ params }: Props) {
           <div className={cn('card card--flat price-card', pkg.highlighted && 'price-card--hi')} style={{ maxWidth: 420 }}>
             {pkg.highlighted && (
               <span>
-                <Tag tone="blue">Most Popular</Tag>
+                <Tag tone="blue">{t('mostPopular')}</Tag>
               </span>
             )}
-            <span className="meta">Fixed price</span>
+            <span className="meta">{t('fixedPrice')}</span>
             <span className="amt">{pkg.price}</span>
-            <span className="meta">Delivered in {pkg.timeline}</span>
+            <span className="meta">{t('deliveredIn', { timeline: pkg.timeline })}</span>
           </div>
         }
       />
@@ -76,9 +80,9 @@ export default async function WebsitePackagePage({ params }: Props) {
           <div className="split split--top">
             <SectionHeader
               id="inc-h"
-              label="Includes"
-              title="What you get"
-              lead="Everything in this package is delivered at the fixed price. No hidden extras."
+              label={t('includesLabel')}
+              title={t('includesTitle')}
+              lead={t('includesLead')}
               className="!mb-0"
             />
             <ul className="ticks reveal" style={{ fontSize: 17, color: 'var(--ink)', gap: 0, borderTop: '1px solid var(--line)' }}>
@@ -97,9 +101,9 @@ export default async function WebsitePackagePage({ params }: Props) {
         <div className="container">
           <SectionHeader
             id="best-h"
-            label="Best for"
-            title="Who this package is built for"
-            lead="Each package is designed with specific customer types in mind."
+            label={t('bestForLabel')}
+            title={t('bestForTitle')}
+            lead={t('bestForLead')}
           />
           <ul className="reveal flex flex-wrap gap-2" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {pkg.target.map((audience) => (
@@ -116,9 +120,9 @@ export default async function WebsitePackagePage({ params }: Props) {
         <div className="container">
           <SectionHeader
             id="promise-h"
-            label="Guarantees"
-            title="What we promise"
-            lead="Every project comes with the same core commitments."
+            label={t('guaranteesLabel')}
+            title={t('guaranteesTitle')}
+            lead={t('guaranteesLead')}
           />
           <div className="grid-2 stagger">
             {websitesSolution.features.map((feature) => (
@@ -137,9 +141,9 @@ export default async function WebsitePackagePage({ params }: Props) {
           <div className="container">
             <SectionHeader
               id="other-h"
-              label="Other options"
-              title="Compare packages"
-              lead="Not sure this is the right fit? See what else we offer."
+              label={t('otherLabel')}
+              title={t('otherTitle')}
+              lead={t('otherLead')}
             />
             <div className="grid-3 stagger">
               {otherPackages.map((other) => (
@@ -155,7 +159,7 @@ export default async function WebsitePackagePage({ params }: Props) {
                     {other.description}
                   </p>
                   <span className="card-more">
-                    View package <span className="go" aria-hidden="true">→</span>
+                    {t('viewPackage')} <span className="go" aria-hidden="true">→</span>
                   </span>
                 </Link>
               ))}
@@ -170,18 +174,18 @@ export default async function WebsitePackagePage({ params }: Props) {
           <div className="cta-band reveal">
             <div className="stack">
               <h2 id="pkg-cta-h" className="h2">
-                Ready to get started with {pkg.name}?
+                {t('ctaTitle', { name: pkg.name })}
               </h2>
               <p className="lead" style={{ maxWidth: 640 }}>
-                Fixed price, fixed timeline. We&apos;ll send a quote within 24 hours.
+                {t('ctaLead')}
               </p>
             </div>
             <div className="hero-ctas">
               <ButtonLink href="/contact" arrow>
-                Request a quote
+                {t('ctaPrimary')}
               </ButtonLink>
               <ButtonLink href="/solutions/websites" variant="outline">
-                All packages
+                {t('ctaSecondary')}
               </ButtonLink>
             </div>
           </div>

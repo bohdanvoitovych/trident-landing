@@ -1,4 +1,5 @@
 import { Link } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 import type { ServiceData } from '@/data/services'
 
@@ -8,12 +9,13 @@ type Props = {
 }
 
 export function ServiceCard({ service, className }: Props) {
+  const t = useTranslations('ui.actions')
   return (
     <Link href={`/services/${service.slug}`} className={cn('card feature-card', className)}>
       <h3>{service.title}</h3>
       <p style={{ flex: 1 }}>{service.tagline}</p>
       <span className="card-more">
-        Learn more <span className="go" aria-hidden="true">→</span>
+        {t('learnMore')} <span className="go" aria-hidden="true">→</span>
       </span>
     </Link>
   )

@@ -2,6 +2,7 @@
 
 import { Link } from '@/i18n/navigation'
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 import type { IndustryData } from '@/data/industries'
 import { Chip, Tag } from '@/components/atoms/controls'
 
@@ -42,6 +43,7 @@ type Props = {
 }
 
 export function IndustriesGrid({ industries }: Props) {
+  const t = useTranslations('molecules.industriesGrid')
   const [active, setActive] = useState<Category>('All')
 
   const filtered = active === 'All'
@@ -53,7 +55,7 @@ export function IndustriesGrid({ industries }: Props) {
       <div className="chips reveal mb-10">
         {CATEGORIES.map((cat) => (
           <Chip key={cat} aria-pressed={active === cat} onClick={() => setActive(cat)}>
-            {cat}
+            {t(`categories.${cat}`)}
             {cat !== 'All' && (
               <span className="count">{industries.filter((i) => CATEGORY_MAP[i.slug] === cat).length}</span>
             )}
@@ -65,7 +67,7 @@ export function IndustriesGrid({ industries }: Props) {
         {filtered.map((industry) => (
           <Link key={industry.slug} href={`/industries/${industry.slug}`} className="card flex">
             <div className="card-body">
-              <span className="meta">{CATEGORY_MAP[industry.slug]}</span>
+              <span className="meta">{CATEGORY_MAP[industry.slug] && t(`categories.${CATEGORY_MAP[industry.slug]}`)}</span>
               <h2 className="card-title card-title--sm">{industry.title}</h2>
               <p className="small line-clamp-2">{industry.tagline}</p>
               <ul className="flex flex-wrap gap-1.5" role="list">
@@ -79,7 +81,7 @@ export function IndustriesGrid({ industries }: Props) {
                 )}
               </ul>
               <span className="card-more">
-                Explore <span className="go" aria-hidden="true">→</span>
+                {t('explore')} <span className="go" aria-hidden="true">→</span>
               </span>
             </div>
           </Link>

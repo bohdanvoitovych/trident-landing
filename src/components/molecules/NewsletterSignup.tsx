@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 type Status = 'idle' | 'submitting' | 'success' | 'error' | 'duplicate' | 'rate_limit' | 'demo'
 
@@ -9,48 +9,9 @@ type Status = 'idle' | 'submitting' | 'success' | 'error' | 'duplicate' | 'rate_
 // subscriber. Say so instead of faking a success.
 const IS_DEMO = process.env.NEXT_PUBLIC_DEMO_MODE === '1'
 
-const LABELS = {
-  en: {
-    placeholder: 'Your email address',
-    submit: 'Subscribe',
-    success: "You're subscribed!",
-    error: 'Something went wrong. Try again.',
-    duplicate: 'Already subscribed.',
-    rate_limit: 'Too many requests. Try later.',
-    demo: 'Demo site — the form is switched off.',
-  },
-  de: {
-    placeholder: 'Ihre E-Mail-Adresse',
-    submit: 'Abonnieren',
-    success: 'Erfolgreich abonniert!',
-    error: 'Fehler aufgetreten. Versuchen Sie es erneut.',
-    duplicate: 'Bereits abonniert.',
-    rate_limit: 'Zu viele Anfragen. Versuchen Sie es später.',
-    demo: 'Demo-Seite — das Formular ist deaktiviert.',
-  },
-  fr: {
-    placeholder: 'Votre adresse e-mail',
-    submit: "S'abonner",
-    success: 'Abonnement confirmé !',
-    error: 'Une erreur est survenue. Réessayez.',
-    duplicate: 'Déjà abonné.',
-    rate_limit: 'Trop de requêtes. Réessayez plus tard.',
-    demo: 'Site de démonstration — le formulaire est désactivé.',
-  },
-  it: {
-    placeholder: 'Il tuo indirizzo e-mail',
-    submit: 'Iscriviti',
-    success: 'Iscritto con successo!',
-    error: 'Qualcosa è andato storto. Riprova.',
-    duplicate: 'Già iscritto.',
-    rate_limit: 'Troppe richieste. Riprova più tardi.',
-    demo: 'Sito dimostrativo — il modulo è disattivato.',
-  },
-}
-
 export default function NewsletterSignup() {
-  const locale = useLocale() as keyof typeof LABELS
-  const l = LABELS[locale] ?? LABELS.en
+  const locale = useLocale()
+  const t = useTranslations('molecules.newsletterSignup')
   const [email, setEmail] = useState('')
   const [website, setWebsite] = useState('')
   const [status, setStatus] = useState<Status>('idle')
@@ -81,18 +42,18 @@ export default function NewsletterSignup() {
   }
 
   if (status === 'success') {
-    return <p className="text-sm text-emerald-400 font-medium py-2">{l.success}</p>
+    return <p className="text-sm text-emerald-400 font-medium py-2">{t('success')}</p>
   }
 
   const feedback =
     status === 'demo'
-      ? l.demo
+      ? t('demo')
       : status === 'duplicate'
-      ? l.duplicate
+      ? t('duplicate')
       : status === 'rate_limit'
-        ? l.rate_limit
+        ? t('rateLimit')
         : status === 'error'
-          ? l.error
+          ? t('error')
           : null
 
   return (
@@ -111,7 +72,7 @@ export default function NewsletterSignup() {
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder={l.placeholder}
+        placeholder={t('placeholder')}
         autoComplete="email"
         className="w-full rounded-[2px] border border-white/10 bg-white/5 px-3 py-2.5 text-[13px] text-white placeholder:text-white/30 outline-none transition-colors focus:border-white/25 min-h-[40px]"
       />
@@ -120,7 +81,7 @@ export default function NewsletterSignup() {
         disabled={status === 'submitting'}
         className="w-full rounded-[2px] bg-[#2772E0] hover:bg-[#1d5fc4] disabled:opacity-50 px-3 py-2.5 text-[13px] font-medium text-white transition-colors min-h-[40px]"
       >
-        {status === 'submitting' ? '...' : l.submit}
+        {status === 'submitting' ? '...' : t('submit')}
       </button>
       {feedback && <p className="text-xs text-white/50 mt-1">{feedback}</p>}
     </form>

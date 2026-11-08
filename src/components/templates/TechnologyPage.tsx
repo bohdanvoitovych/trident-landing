@@ -1,4 +1,4 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import type { TechnologyData } from '@/data/technologies'
 import { getServices } from '@/data/services'
 import { getCases } from '@/data/cases'
@@ -23,12 +23,14 @@ export function TechnologyPage({ technology }: Props) {
   const relatedServices = services.filter((s) => technology.relatedServices.includes(s.slug))
   const relatedCases = cases.filter((c) => technology.relatedCases.includes(c.slug))
   const bg = sectionRhythm()
+  const t = useTranslations('templates.technology')
+  const tech = technology.name
 
   return (
     <>
       <PageHero
         crumbs={[
-          { name: 'Technologies', href: '/technologies' },
+          { name: t('crumb'), href: '/technologies' },
           { name: technology.name, href: `/technologies/${technology.slug}` },
         ]}
         label={technology.category}
@@ -37,10 +39,10 @@ export function TechnologyPage({ technology }: Props) {
         actions={
           <>
             <ButtonLink href="/contact" arrow>
-              Start a project
+              {t('startProject')}
             </ButtonLink>
             <ButtonLink href="/services" variant="outline">
-              See all services
+              {t('allServices')}
             </ButtonLink>
           </>
         }
@@ -50,9 +52,9 @@ export function TechnologyPage({ technology }: Props) {
         <div className="container">
           <SectionHeader
             id="tech-uses-h"
-            label="Use cases"
-            title={`What we build with ${technology.name}`}
-            lead="Production use cases we've shipped for Swiss companies."
+            label={t('usesLabel')}
+            title={t('usesTitle', { tech })}
+            lead={t('usesLead')}
           />
           <FeatureGrid items={technology.useCases} cols={2} />
         </div>
@@ -62,9 +64,9 @@ export function TechnologyPage({ technology }: Props) {
         <div className="container">
           <SectionHeader
             id="tech-why-h"
-            label="Why"
-            title={`Why we use ${technology.name}`}
-            lead="Concrete advantages for Swiss business software."
+            label={t('whyLabel')}
+            title={t('whyTitle', { tech })}
+            lead={t('whyLead')}
           />
           <ul className="grid-3 gap-tight stagger" role="list" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {technology.benefits.map((b) => (
@@ -79,7 +81,7 @@ export function TechnologyPage({ technology }: Props) {
       <StackBand
         id="tech-stack-h"
         className={bg()}
-        title={`We use ${technology.name} alongside`}
+        title={t('stackTitle', { tech })}
         items={technology.complementaryStack}
       />
 
@@ -87,9 +89,9 @@ export function TechnologyPage({ technology }: Props) {
         <RelatedServices
           id="tech-services-h"
           className={bg()}
-          label="Services"
-          title={`Services using ${technology.name}`}
-          lead="Our service packages that include this technology."
+          label={t('servicesLabel')}
+          title={t('servicesTitle', { tech })}
+          lead={t('servicesLead')}
           services={relatedServices}
           cols={2}
         />
@@ -99,18 +101,18 @@ export function TechnologyPage({ technology }: Props) {
         <RelatedCases
           id="tech-cases-h"
           className={bg()}
-          label="Portfolio"
-          title={`${technology.name} in production`}
-          lead="Real projects we shipped using this technology."
+          label={t('portfolioLabel')}
+          title={t('portfolioTitle', { tech })}
+          lead={t('portfolioLead')}
           cases={relatedCases}
         />
       )}
 
       <CtaBand
         id="tech-cta-h"
-        title={`Need ${technology.name} expertise?`}
-        text="Tell us what you're building. We respond within 24 hours."
-        button="Start a conversation"
+        title={t('ctaTitle', { tech })}
+        text={t('ctaText')}
+        button={t('ctaButton')}
       />
     </>
   )

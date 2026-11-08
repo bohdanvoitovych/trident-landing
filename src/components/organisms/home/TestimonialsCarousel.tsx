@@ -14,6 +14,7 @@ const initials = (n: string) =>
 /** One big quote, prev/next, dots. Auto-advances every 7 s until the user interacts; pauses off-screen. */
 export function TestimonialsCarousel({ items }: { items: Testimonial[] }) {
   const t = useTranslations('ui.testimonials')
+  const tc = useTranslations('sections.testimonialsCarousel')
   const ref = useRef<HTMLDivElement>(null)
   const active = useActive(ref)
   const [i, setI] = useState(0)
@@ -33,9 +34,9 @@ export function TestimonialsCarousel({ items }: { items: Testimonial[] }) {
   return (
     <div ref={ref} className="container split">
       <div className="stack reveal">
-        <span className="label">Clients</span>
+        <span className="label">{tc('label')}</span>
         <h2 id="quotes-h" className="h2">
-          What clients say
+          {tc('title')}
         </h2>
         <div className="q-nav">
           <button type="button" className="btn btn--outline" aria-label={t('prev')} onClick={() => go(i - 1)}>

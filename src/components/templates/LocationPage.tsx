@@ -1,4 +1,4 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import type { LocationData } from '@/data/locations'
 import { getServices } from '@/data/services'
 import { getCases } from '@/data/cases'
@@ -23,15 +23,17 @@ export function LocationPage({ location }: Props) {
   const relatedServices = services.filter((s) => location.relatedServices.includes(s.slug))
   const relatedCases = cases.filter((c) => location.relatedCases.includes(c.slug))
   const bg = sectionRhythm()
+  const t = useTranslations('templates.location')
+  const city = location.name
 
   return (
     <>
       <PageHero
         crumbs={[
-          { name: 'Locations', href: '/locations' },
+          { name: t('crumb'), href: '/locations' },
           { name: location.name, href: `/locations/${location.slug}` },
         ]}
-        label={`${location.region}, Switzerland`}
+        label={t('regionLabel', { region: location.region })}
         title={location.tagline}
         lead={location.description}
         actions={
@@ -40,10 +42,10 @@ export function LocationPage({ location }: Props) {
               <TagList items={location.keyIndustries} />
             </div>
             <ButtonLink href="/contact" arrow>
-              Start a project
+              {t('startProject')}
             </ButtonLink>
             <ButtonLink href="/services" variant="outline">
-              Our services
+              {t('ourServices')}
             </ButtonLink>
           </>
         }
@@ -53,9 +55,9 @@ export function LocationPage({ location }: Props) {
         <div className="container">
           <SectionHeader
             id="loc-highlights-h"
-            label={`${location.name} expertise`}
-            title="What we bring to the table"
-            lead={`Specific capabilities we've developed for ${location.name}'s market.`}
+            label={t('highlightsLabel', { city })}
+            title={t('highlightsTitle')}
+            lead={t('highlightsLead', { city })}
           />
           <FeatureGrid items={location.highlights} />
         </div>
@@ -65,9 +67,9 @@ export function LocationPage({ location }: Props) {
         <RelatedServices
           id="loc-services-h"
           className={bg()}
-          label="Services"
-          title={`What we build for ${location.name} companies`}
-          lead="Our core capabilities, tuned for your market."
+          label={t('servicesLabel')}
+          title={t('servicesTitle', { city })}
+          lead={t('servicesLead')}
           services={relatedServices}
           cols={2}
         />
@@ -77,18 +79,18 @@ export function LocationPage({ location }: Props) {
         <RelatedCases
           id="loc-cases-h"
           className={bg()}
-          label="Portfolio"
-          title="Projects we've delivered"
-          lead={`A selection of our work relevant to ${location.name}'s industries.`}
+          label={t('portfolioLabel')}
+          title={t('portfolioTitle')}
+          lead={t('portfolioLead', { city })}
           cases={relatedCases}
         />
       )}
 
       <CtaBand
         id="loc-cta-h"
-        title={`Based in ${location.name}? Let's build something.`}
-        text={`Remote-friendly, Swiss-based. We work with ${location.name} companies regularly.`}
-        button="Start a conversation"
+        title={t('ctaTitle', { city })}
+        text={t('ctaText', { city })}
+        button={t('ctaButton')}
       />
     </>
   )

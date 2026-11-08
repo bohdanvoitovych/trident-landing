@@ -18,14 +18,15 @@ function Dots({ on, blue }: { on: number; blue?: boolean }) {
 
 export function Problem() {
   const t = useTranslations('ui.problem')
+  const tp = useTranslations('sections.problem')
   return (
     <section className="section" aria-labelledby="problem-h">
       <div className="container">
         <SectionHeader
           id="problem-h"
-          label="The problem"
-          title="Swiss SMEs don't lose deals to bad products. They lose them to silence."
-          lead="Buyers want answers now, on their channel, in their language. Most teams can't staff that."
+          label={tp('label')}
+          title={tp('title')}
+          lead={tp('lead')}
         />
         <div className="grid-2 reveal">
           <div className="gap-panel">
@@ -33,7 +34,7 @@ export function Problem() {
               <span className="gap-num">
                 <span data-count="77">77</span> %
               </span>
-              <span className="gap-text">of Swiss people want to find and book an SME service online</span>
+              <span className="gap-text">{tp('wantOnline')}</span>
             </div>
             <Dots on={77} />
           </div>
@@ -43,7 +44,7 @@ export function Problem() {
                 <span data-count="3">3</span> %
               </span>
               <span className="gap-text">
-                of SMEs fully support it today. <b>{t('gap')}</b>
+                {tp('supportToday')} <b>{t('gap')}</b>
               </span>
             </div>
             <Dots on={3} blue />
@@ -60,7 +61,7 @@ export function Problem() {
                 <span data-count="21">21</span>×
               </span>
             </span>
-            <span className="stat-d">lower odds of qualifying a lead after 30 minutes vs 5 minutes</span>
+            <span className="stat-d">{tp('oddsDesc')}</span>
             <MiniVisual
               visual={{
                 kind: 'rows',
@@ -70,18 +71,18 @@ export function Problem() {
                 ],
               }}
             />
-            <span className="stat-src">US study, 2007</span>
+            <span className="stat-src">{tp('oddsSource')}</span>
           </div>
           <div className="card stat-card stat-card--lg">
-            <span className="stat-v stat-v--xl">3 channels</span>
-            <span className="stat-d">used almost equally. No single one to staff</span>
+            <span className="stat-v stat-v--xl">{tp('channelsValue')}</span>
+            <span className="stat-d">{tp('channelsDesc')}</span>
             <MiniVisual
               visual={{
                 kind: 'rows',
                 rows: [
-                  { label: 'E-mail', value: 1, text: '16 %' },
-                  { label: 'Chat', value: 1, text: '16 %' },
-                  { label: 'Phone', value: 0.875, text: '14 %' },
+                  { label: tp('channelEmail'), value: 1, text: '16 %' },
+                  { label: tp('channelChat'), value: 1, text: '16 %' },
+                  { label: tp('channelPhone'), value: 0.875, text: '14 %' },
                 ],
               }}
             />
@@ -96,9 +97,9 @@ export function Problem() {
                 </span>
               </span>
             </div>
-            <span className="stat-d">of the population use WhatsApp. The channel exists; the staffing doesn&apos;t</span>
+            <span className="stat-d">{tp('whatsappDesc')}</span>
             <span className="stat-src" style={{ marginTop: 'auto' }}>
-              Switzerland
+              {tp('whatsappSource')}
             </span>
           </div>
           <div className="card stat-card stat-card--lg">
@@ -110,7 +111,7 @@ export function Problem() {
                 </span>
               </span>
             </div>
-            <span className="stat-d">start looking for a service in an AI assistant, not a search engine</span>
+            <span className="stat-d">{tp('aiDesc')}</span>
             <span className="stat-src" style={{ marginTop: 'auto' }}>
               KMU Digital Pulse, 2025
             </span>

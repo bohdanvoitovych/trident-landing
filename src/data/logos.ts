@@ -37,5 +37,5 @@ export const PARTNER_LOGOS: Logo[] = [
   { src: '/images/partners/cimark.png', alt: 'Cimark' },
   { src: '/images/partners/go-valais.png', alt: 'GO-Valais' },
   { src: '/images/partners/holidu.png', alt: 'Holidu' },
-  { src: '/images/partners/valais-chamber.png', alt: 'Valais Chamber of Commerce and Industry' },
+  { src: '/images/partners/valais-chamber.png', alt: 'CCI Valais' },
 ]

@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
@@ -20,11 +21,12 @@ type Props = {
 
 /** Shared layout of the /solutions/{slug} detail pages. Copy comes from each page. */
 export function SolutionDetail({ solution, label, primary, secondary, features, list, stack, cta }: Props) {
+  const t = useTranslations('templates.solution')
   return (
     <>
       <PageHero
         crumbs={[
-          { name: 'Solutions', href: '/solutions' },
+          { name: t('crumb'), href: '/solutions' },
           { name: label, href: `/solutions/${solution.slug}` },
         ]}
         label={label}
@@ -44,7 +46,7 @@ export function SolutionDetail({ solution, label, primary, secondary, features, 
 
       <section className="section section--alt" aria-labelledby="sol-features-h">
         <div className="container">
-          <SectionHeader id="sol-features-h" label="Capabilities" title="What we deliver" lead={features.lead} />
+          <SectionHeader id="sol-features-h" label={t('featuresLabel')} title={t('featuresTitle')} lead={features.lead} />
           <div className="grid-3 stagger">
             {solution.features.map((feature) => (
               <div key={feature.title} className="card card--flat feature-card">
@@ -76,7 +78,7 @@ export function SolutionDetail({ solution, label, primary, secondary, features, 
 
       <section className="section section--alt" aria-labelledby="sol-stack-h">
         <div className="container">
-          <SectionHeader id="sol-stack-h" label="Tech stack" title={stack.title} lead={stack.lead} />
+          <SectionHeader id="sol-stack-h" label={t('stackLabel')} title={stack.title} lead={stack.lead} />
           <ul className="reveal flex flex-wrap gap-2" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {solution.techStack.map((tech) => (
               <li key={tech} className="rounded-sm border border-line bg-white px-3 py-1.5 text-[14px] font-medium text-ink">

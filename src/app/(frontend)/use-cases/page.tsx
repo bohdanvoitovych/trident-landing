@@ -1,5 +1,5 @@
-import { useLocale } from 'next-intl'
-import { getLocale } from 'next-intl/server'
+import { useLocale, useTranslations } from 'next-intl'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { PageHero } from '@/components/molecules/PageHero'
 import { UseCaseCard } from '@/components/organisms/home/UseCases'
 import { WhereWeSayNo } from '@/components/organisms/home/WhereWeSayNo'
@@ -8,15 +8,13 @@ import { buildMetadata } from '@/lib/metadata'
 
 export const revalidate = 3600
 
-const TITLE = 'Eight patterns where an agent pays for itself'
-const LEAD = 'Each comes with a precondition. Most failed AI projects fail there, not in the model.'
-
 export async function generateMetadata() {
   const locale = await getLocale()
   const useCases = getUseCases(locale)
+  const t = await getTranslations({ locale, namespace: 'pages.useCases' })
   return buildMetadata({
-    title: `Use cases — ${TITLE} | Trident Software`,
-    description: `${useCases.map((u) => u.title).join(', ')}. ${LEAD}`,
+    title: t('metaTitle', { title: t('title') }),
+    description: `${useCases.map((u) => u.title).join(', ')}. ${t('lead')}`,
     path: '/use-cases',
     locale,
   })
@@ -25,14 +23,15 @@ export async function generateMetadata() {
 export default function UseCasesPage() {
   const locale = useLocale()
   const useCases = getUseCases(locale)
+  const t = useTranslations('pages.useCases')
   return (
     <>
-      <PageHero alt crumbs={[{ name: 'Use cases', href: '/use-cases' }]} label="Use cases" title={TITLE} lead={LEAD} />
+      <PageHero alt crumbs={[{ name: t('crumb'), href: '/use-cases' }]} label={t('crumb')} title={t('title')} lead={t('lead')} />
 
       <section className="section" aria-labelledby="uc-list-h">
         <div className="container">
           <h2 id="uc-list-h" className="sr-only">
-            Use cases
+            {t('crumb')}
           </h2>
           <div className="grid-2 stagger" style={{ gap: 16 }}>
             {useCases.map((u, i) => (

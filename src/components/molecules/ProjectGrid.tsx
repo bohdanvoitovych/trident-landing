@@ -15,6 +15,7 @@ type Props = {
 const ALL = 'All'
 
 function ProjectCardBody({ p }: { p: Project }) {
+  const t = useTranslations('molecules.projectGrid')
   return (
     <>
       <div className="media">
@@ -28,7 +29,7 @@ function ProjectCardBody({ p }: { p: Project }) {
         </p>
         {p.caseSlug && (
           <span className="card-more text-blue-d">
-            Read the case
+            {t('readCase')}
             <span className="go" aria-hidden="true">
               →
             </span>

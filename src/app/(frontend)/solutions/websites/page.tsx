@@ -1,4 +1,4 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { ButtonLink, Tag } from '@/components/atoms/controls'
@@ -21,6 +21,8 @@ export async function generateMetadata() {
 }
 
 export default function WebsitesSolutionPage() {
+  const t = useTranslations('pages.solutions.websites')
+  const ts = useTranslations('pages.solutions')
   const solution = getSolutionBySlug('websites', useLocale())
   if (!solution) notFound()
   const packages = solution.packages ?? []
@@ -29,19 +31,19 @@ export default function WebsitesSolutionPage() {
     <>
       <PageHero
         crumbs={[
-          { name: 'Solutions', href: '/solutions' },
-          { name: 'Websites', href: '/solutions/websites' },
+          { name: ts('crumb'), href: '/solutions' },
+          { name: t('label'), href: '/solutions/websites' },
         ]}
-        label="Websites"
+        label={t('label')}
         title={solution.title}
         lead={solution.description}
         actions={
           <>
             <ButtonLink href="/contact" arrow>
-              Start your project
+              {t('heroPrimary')}
             </ButtonLink>
             <ButtonLink href="/pricing" variant="outline">
-              See all pricing
+              {t('heroSecondary')}
             </ButtonLink>
           </>
         }
@@ -52,9 +54,9 @@ export default function WebsitesSolutionPage() {
         <div className="container">
           <SectionHeader
             id="pkg-h"
-            label="Packages"
-            title="Four website packages"
-            lead="Fixed price, fixed timeline. Each package can be combined with optional add-ons."
+            label={t('packagesLabel')}
+            title={t('packagesTitle')}
+            lead={t('packagesLead')}
           />
           <div className="grid-4 stagger">
             {packages.map((pkg) => (
@@ -62,11 +64,11 @@ export default function WebsitesSolutionPage() {
                 <h3 className="h4">{pkg.name}</h3>
                 <span className="amt">{pkg.price}</span>
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <span className="meta">Delivered in {pkg.timeline}</span>
-                  {pkg.highlighted && <Tag tone="blue">Most Popular</Tag>}
+                  <span className="meta">{t('deliveredIn', { timeline: pkg.timeline })}</span>
+                  {pkg.highlighted && <Tag tone="blue">{t('mostPopular')}</Tag>}
                 </div>
                 <div className="flex flex-1 flex-col gap-2.5 border-t border-line pt-4">
-                  <span className="meta">Includes</span>
+                  <span className="meta">{t('includes')}</span>
                   <ul className="ticks">
                     {pkg.features.map((feature) => (
                       <li key={feature}>{feature}</li>
@@ -74,7 +76,7 @@ export default function WebsitesSolutionPage() {
                   </ul>
                 </div>
                 <ButtonLink href="/contact" variant={pkg.highlighted ? 'primary' : 'outline'} className="w-full">
-                  Get started
+                  {t('getStarted')}
                 </ButtonLink>
               </div>
             ))}
@@ -87,9 +89,9 @@ export default function WebsitesSolutionPage() {
         <div className="container">
           <SectionHeader
             id="feat-h"
-            label="Why us"
-            title="Built for Swiss SMEs"
-            lead="Every website we deliver is mobile-first, multilingual-ready, and SEO-optimized — at a fixed price."
+            label={t('whyLabel')}
+            title={t('whyTitle')}
+            lead={t('whyLead')}
           />
           <div className="grid-2 stagger">
             {solution.features.map((feature) => (
@@ -107,9 +109,9 @@ export default function WebsitesSolutionPage() {
         <div className="container">
           <SectionHeader
             id="web-stack-h"
-            label="Tech stack"
-            title="Modern, maintainable tooling"
-            lead="We build on the same stack we use for our own products — battle-tested in production."
+            label={t('stackLabel')}
+            title={t('stackTitle')}
+            lead={t('stackLead')}
           />
           <ul className="reveal flex flex-wrap gap-2" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {solution.techStack.map((tech) => (
@@ -127,18 +129,18 @@ export default function WebsitesSolutionPage() {
           <div className="cta-band reveal">
             <div className="stack">
               <h2 id="web-cta-h" className="h2">
-                Ready to launch your website?
+                {t('ctaTitle')}
               </h2>
               <p className="lead" style={{ maxWidth: 640 }}>
-                Pick a package or tell us about your project. We&apos;ll send a fixed quote within 24 hours.
+                {t('ctaLead')}
               </p>
             </div>
             <div className="hero-ctas">
               <ButtonLink href="/contact" arrow>
-                Get a quote
+                {t('ctaPrimary')}
               </ButtonLink>
               <ButtonLink href="/pricing" variant="outline">
-                See pricing details
+                {t('ctaSecondary')}
               </ButtonLink>
             </div>
           </div>

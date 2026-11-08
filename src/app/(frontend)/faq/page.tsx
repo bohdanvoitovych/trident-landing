@@ -9,10 +9,10 @@ import { ButtonLink } from '@/components/atoms/controls'
 
 export async function generateMetadata() {
   const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'pages.faq' })
   return buildMetadata({
-    title: 'Questions before the audit | FAQ | Trident Software',
-    description:
-      "Straight answers, including the ones that cost us deals. If yours isn't here, ask: a named engineer replies within 24 business hours.",
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     path: '/faq',
     locale,
   })
@@ -22,6 +22,7 @@ export default async function FaqPage() {
   const locale = await getLocale()
   const faq = getFaq(locale)
   const t = await getTranslations('ui')
+  const tp = await getTranslations('pages.faq')
   const schema = faqPageSchema(
     faq.map((f) => ({ question: f.question, answer: f.answer })),
     locale,
@@ -30,7 +31,7 @@ export default async function FaqPage() {
   return (
     <>
       {schema && <JsonLd data={[schema]} />}
-      <PageHero label="FAQ" title="Questions before the audit" crumbs={[{ name: 'FAQ', href: '/faq' }]} />
+      <PageHero label={tp('label')} title={tp('title')} crumbs={[{ name: tp('label'), href: '/faq' }]} />
       <section className="section section--alt" aria-label={t('faq.questions')} style={{ paddingTop: 'clamp(40px,5vw,64px)' }}>
         <div className="container">
           <FaqSearch faq={faq} groups={getFaqGroups(locale)} />

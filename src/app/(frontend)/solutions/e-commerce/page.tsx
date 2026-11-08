@@ -1,4 +1,4 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { SolutionDetail } from '@/components/templates/SolutionDetail'
@@ -17,44 +17,30 @@ export async function generateMetadata() {
   })
 }
 
-const industries = [
-  'Automotive',
-  'Fashion',
-  'Luxury',
-  'DIY & Tools',
-  'Building',
-  'Sport',
-  'Household',
-]
-
 export default function EcommerceSolutionPage() {
+  const t = useTranslations('pages.solutions.ecommerce')
   const solution = getSolutionBySlug('e-commerce', useLocale())
   if (!solution) notFound()
 
   return (
     <SolutionDetail
       solution={solution}
-      label="E-commerce"
-      primary="Discuss your platform"
-      secondary={{ href: '/cases/iam-trade', label: 'See case study' }}
-      features={{
-        lead: 'From MVP to platforms handling 1M+ products, custom pricing, and 200+ integrations.',
-      }}
+      label={t('label')}
+      primary={t('primary')}
+      secondary={{ href: '/cases/iam-trade', label: t('secondary') }}
+      features={{ lead: t('featuresLead') }}
       list={{
-        label: 'Industries',
-        title: 'Verticals we serve',
-        lead: "We've built e-commerce platforms across automotive, fashion, luxury, and more — each with industry-specific requirements.",
-        items: industries,
+        label: t('listLabel'),
+        title: t('listTitle'),
+        lead: t('listLead'),
+        items: t.raw('listItems') as string[],
       }}
-      stack={{
-        title: 'Production-grade tooling',
-        lead: 'The stack we use to deliver scalable, maintainable platforms.',
-      }}
+      stack={{ title: t('stackTitle'), lead: t('stackLead') }}
       cta={{
-        title: 'Build your e-commerce platform',
-        text: 'From custom B2B platforms to marketplaces — we scope, build, and maintain.',
-        primary: 'Start the conversation',
-        secondary: { href: '/cases', label: 'View case studies' },
+        title: t('ctaTitle'),
+        text: t('ctaText'),
+        primary: t('ctaPrimary'),
+        secondary: { href: '/cases', label: t('ctaSecondary') },
       }}
     />
   )

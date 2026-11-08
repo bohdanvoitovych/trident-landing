@@ -1,61 +1,53 @@
-import { getLocale } from 'next-intl/server'
+import { useTranslations } from 'next-intl'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { buildMetadata } from '@/lib/metadata'
 import { LegalPage } from '@/components/templates/LegalPage'
 
 export async function generateMetadata() {
   const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'legal.cookies' })
   return buildMetadata({
-    title: 'Cookie Policy | Trident Software',
-    description: 'Cookie Policy for trident-software.ch — what cookies we use and why.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     path: '/cookies',
     locale,
   })
 }
 
+const COOKIES = [
+  { name: 'payload-token', key: 'payload' },
+  { name: '__next_locale', key: 'locale' },
+] as const
+
 export default function CookiesPage() {
+  const t = useTranslations('legal.cookies')
   return (
-    <LegalPage title="Cookie Policy" path="/cookies" updated="Last updated: January 2025">
+    <LegalPage title={t('title')} path="/cookies" updated={t('updated')}>
       <section>
-        <h2>What are cookies?</h2>
-        <p>
-          Cookies are small text files stored on your device by your browser when you visit a
-          website. They help the site remember your preferences and understand how you use it.
-        </p>
+        <h2>{t('what.title')}</h2>
+        <p>{t('what.body')}</p>
       </section>
 
       <section>
-        <h2>Cookies we use</h2>
+        <h2>{t('used.title')}</h2>
 
         <div className="not-prose table-wrap mt-6">
           <table className="table">
             <thead>
               <tr>
-                <th>Cookie</th>
-                <th>Type</th>
-                <th>Purpose</th>
-                <th>Duration</th>
+                <th>{t('used.cols.cookie')}</th>
+                <th>{t('used.cols.type')}</th>
+                <th>{t('used.cols.purpose')}</th>
+                <th>{t('used.cols.duration')}</th>
               </tr>
             </thead>
             <tbody>
-              {[
-                {
-                  name: 'payload-token',
-                  type: 'Essential',
-                  purpose: 'Authentication token for Payload CMS admin users',
-                  duration: 'Session',
-                },
-                {
-                  name: '__next_locale',
-                  type: 'Functional',
-                  purpose: 'Remembers your preferred language',
-                  duration: '1 year',
-                },
-              ].map((row) => (
+              {COOKIES.map((row) => (
                 <tr key={row.name}>
                   <td className="font-mono text-[13px] text-blue-d">{row.name}</td>
-                  <td>{row.type}</td>
-                  <td>{row.purpose}</td>
-                  <td>{row.duration}</td>
+                  <td>{t(`used.rows.${row.key}.type`)}</td>
+                  <td>{t(`used.rows.${row.key}.purpose`)}</td>
+                  <td>{t(`used.rows.${row.key}.duration`)}</td>
                 </tr>
               ))}
             </tbody>
@@ -64,35 +56,29 @@ export default function CookiesPage() {
       </section>
 
       <section>
-        <h2>Analytics</h2>
+        <h2>{t('analytics.title')}</h2>
+        <p>{t('analytics.body')}</p>
+      </section>
+
+      <section>
+        <h2>{t('managing.title')}</h2>
         <p>
-          This website does not use third-party analytics services (Google Analytics, etc.).
-          We use server-side access logs for basic traffic analysis. No cookies are set for
-          analytics purposes.
+          {t.rich('managing.body', {
+            link: (c) => (
+              <a href="https://www.aboutcookies.org" target="_blank" rel="noopener noreferrer">
+                {c}
+              </a>
+            ),
+          })}
         </p>
       </section>
 
       <section>
-        <h2>Managing cookies</h2>
+        <h2>{t('contact.title')}</h2>
         <p>
-          You can control and delete cookies through your browser settings. Disabling essential
-          cookies may affect the functionality of the site. For more information on managing
-          cookies, visit{' '}
-          <a href="https://www.aboutcookies.org" target="_blank" rel="noopener noreferrer">
-            aboutcookies.org
-          </a>
-          .
-        </p>
-      </section>
-
-      <section>
-        <h2>Contact</h2>
-        <p>
-          Questions about our cookie use? Email{' '}
-          <a href="mailto:privacy@trident-software.ch">
-            privacy@trident-software.ch
-          </a>
-          .
+          {t.rich('contact.body', {
+            mail: (c) => <a href="mailto:privacy@trident-software.ch">{c}</a>,
+          })}
         </p>
       </section>
     </LegalPage>

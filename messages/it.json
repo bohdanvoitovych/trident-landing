@@ -319,6 +319,1654 @@
       "ctaTitle": "Pronto a iniziare con {service}?",
       "ctaLead": "Descrivi il tuo progetto in due frasi. Entro 24 ore ricevi una proposta concreta con ambito, tempi e prezzo fisso.",
       "ctaButton": "Richiedi una proposta"
+    },
+    "blogPost": {
+      "allPosts": "Tutti gli articoli",
+      "faqTitle": "Domande frequenti"
+    },
+    "case": {
+      "client": "Cliente: <name>{client}</name>",
+      "allCases": "Tutti i casi di studio",
+      "ctaLead": "Parliamo del tuo progetto. Ti rispondiamo entro 24 ore.",
+      "ctaButton": "Richiedi un preventivo"
+    },
+    "industry": {
+      "crumb": "Settori",
+      "startProject": "Avvia un progetto",
+      "viewCases": "Vedi i casi di studio",
+      "challengesLabel": "Sfide del settore",
+      "challengesTitle": "Cosa risolviamo",
+      "challengesLead": "Gli ostacoli tecnici e normativi più comuni nel settore {industry}, che aiutiamo i clienti a superare.",
+      "solutionsLabel": "Cosa sviluppiamo",
+      "solutionsTitle": "Le soluzioni che consegniamo",
+      "solutionsLead": "Sistemi software pronti per la produzione per le aziende del settore {industry}.",
+      "stackTitle": "Stack tecnologico",
+      "servicesLabel": "Servizi",
+      "servicesTitle": "Competenze pertinenti",
+      "servicesLead": "Le nostre aree di servizio che di solito si applicano a questo settore.",
+      "portfolioLabel": "Portfolio",
+      "portfolioTitle": "Progetti nel settore {industry}",
+      "portfolioLead": "Progetti reali che abbiamo realizzato in questo settore.",
+      "ctaTitle": "Hai un progetto nel settore {industry}?",
+      "ctaText": "Raccontaci il tuo progetto. Ti rispondiamo entro 24 ore.",
+      "ctaButton": "Inizia una conversazione"
+    },
+    "location": {
+      "crumb": "Sedi",
+      "regionLabel": "{region}, Svizzera",
+      "startProject": "Avvia un progetto",
+      "ourServices": "I nostri servizi",
+      "highlightsLabel": "Competenze per {city}",
+      "highlightsTitle": "Cosa portiamo al tavolo",
+      "highlightsLead": "Competenze specifiche che abbiamo sviluppato per il mercato di {city}.",
+      "servicesLabel": "Servizi",
+      "servicesTitle": "Cosa sviluppiamo per le aziende di {city}",
+      "servicesLead": "Le nostre competenze chiave, calibrate sul tuo mercato.",
+      "portfolioLabel": "Portfolio",
+      "portfolioTitle": "Progetti che abbiamo consegnato",
+      "portfolioLead": "Una selezione dei nostri lavori legati ai settori di {city}.",
+      "ctaTitle": "Sei a {city}? Costruiamo qualcosa insieme.",
+      "ctaText": "Lavoriamo bene anche da remoto, con base in Svizzera. Collaboriamo spesso con aziende di {city}.",
+      "ctaButton": "Inizia una conversazione"
+    },
+    "technology": {
+      "crumb": "Tecnologie",
+      "startProject": "Avvia un progetto",
+      "allServices": "Vedi tutti i servizi",
+      "usesLabel": "Casi d'uso",
+      "usesTitle": "Cosa sviluppiamo con {tech}",
+      "usesLead": "Casi d'uso che abbiamo portato in produzione per aziende svizzere.",
+      "whyLabel": "Perché",
+      "whyTitle": "Perché usiamo {tech}",
+      "whyLead": "Vantaggi concreti per il software aziendale svizzero.",
+      "stackTitle": "Usiamo {tech} insieme a",
+      "servicesLabel": "Servizi",
+      "servicesTitle": "Servizi che usano {tech}",
+      "servicesLead": "I nostri pacchetti di servizi che includono questa tecnologia.",
+      "portfolioLabel": "Portfolio",
+      "portfolioTitle": "{tech} in produzione",
+      "portfolioLead": "Progetti reali che abbiamo consegnato con questa tecnologia.",
+      "ctaTitle": "Ti serve esperienza con {tech}?",
+      "ctaText": "Raccontaci cosa stai costruendo. Ti rispondiamo entro 24 ore.",
+      "ctaButton": "Inizia una conversazione"
+    },
+    "solution": {
+      "crumb": "Soluzioni",
+      "featuresLabel": "Competenze",
+      "featuresTitle": "Cosa realizziamo",
+      "stackLabel": "Stack tecnologico"
+    }
+  },
+  "pages": {
+    "home": {
+      "metaTitle": "Trident Software: software gestionale e agenti AI, Svizzera",
+      "metaDescription": "Costruiamo i sistemi con cui le aziende lavorano ogni giorno (ordini, dispatch, app sul campo, fatturazione) e un'AI che risponde in quattro lingue nazionali. Sion, Vallese."
+    },
+    "notFound": {
+      "label": "Errore 404"
+    },
+    "contact": {
+      "meta": {
+        "title": "Contatti | Trident Software",
+        "description": "Parla con Trident Software a Sion, in Vallese. Prenota un audit gratuito di 45 minuti sui tuoi processi e sui sistemi che li gestiscono."
+      },
+      "heroLabel": "Contatti",
+      "crumb": "Contatti",
+      "heroTitle": "Parliamo del tuo progetto",
+      "heroLead": "Raccontaci cosa stai costruendo. Entro 24 ore ricevi un parere sincero e una stima di massima del lavoro.",
+      "touchLabel": "Scrivici",
+      "touchTitle": "Rispondiamo in fretta",
+      "touchLead": "Ogni richiesta la leggono ingegneri senior. Niente copioni di vendita, nessun account manager in mezzo.",
+      "info": {
+        "office": "Ufficio",
+        "email": "E-mail",
+        "phone": "Telefono",
+        "responseTime": "Tempo di risposta"
+      },
+      "responseTimeValue": "Entro 24 ore lavorative",
+      "stepsTitle": "I passi successivi",
+      "steps": {
+        "review": "Analizziamo la tua richiesta",
+        "discovery": "Call conoscitiva (30 min)",
+        "scope": "Perimetro + SOW in 3–5 giorni",
+        "kickoff": "Kick-off"
+      },
+      "whereLabel": "Dove siamo",
+      "whereTitle": "Sion, Vallese",
+      "whereText": "Rue de l'Industrie 23, 1950 Sion, a dieci minuti dalla stazione, nel quartiere della HES-SO Valais-Wallis."
+    },
+    "blog": {
+      "metaTitle": "Blog sullo sviluppo software | IA, cloud e tech svizzera | Trident Software",
+      "metaDescription": "Articoli su integrazione dell'IA, architettura software, cloud e DevOps, sistemi embedded e mercato tech svizzero. Scritti dal team di ingegneri di Trident Software.",
+      "label": "Approfondimenti"
+    },
+    "cases": {
+      "metaTitle": "Progetti di sviluppo software e casi di studio | Trident Software Svizzera",
+      "metaDescription": "Oltre 27 progetti software consegnati: piattaforme B2B per l'automotive, IA in sanità, e-commerce, IoT, SaaS. Team di ingegneri svizzero dal 2009.",
+      "label": "Portfolio",
+      "title": "Consegnati, poi contati",
+      "lead": "{total} prodotti e piattaforme realizzati per clienti in Svizzera e in Europa. {withCase} sono descritti nel dettaglio, con i numeri che li sostengono.",
+      "ctaLabel": "Parti da qui",
+      "ctaTitle": "Dicci cosa stai cercando di sistemare",
+      "ctaLead": "Leggiamo ogni richiesta di persona e ti rispondiamo entro 24 ore lavorative con una valutazione onesta dell'ambito.",
+      "ctaButton": "Prenota un audit gratuito"
+    },
+    "industries": {
+      "metaTitle": "Sviluppo software per settore | Sanità, auto, fintech | Trident Software",
+      "metaDescription": "Sviluppo software su misura per oltre 25 settori: sanità, automotive, fintech, logistica, retail, SaaS, manifattura. Team svizzero dal 2009. Budget fissi, conforme alla nLPD.",
+      "crumb": "Settori",
+      "label": "Competenza di settore",
+      "title": "Sviluppo software su misura<br></br>per oltre 25 settori",
+      "lead": "Dalle startup MedTech ai distributori automotive e alle catene retail, il nostro team di ingegneri svizzero sviluppa software specifico che si adatta alle norme, ai processi e agli obiettivi di crescita del tuo settore.",
+      "leadNote": "Ogni progetto parte dai vincoli del tuo settore: requisiti normativi (nLPD, GDPR, MDR), complessità operativa e contesto competitivo. Nessuna soluzione generica.",
+      "discuss": "Parliamo del tuo progetto",
+      "facts": {
+        "industries": {
+          "value": "25+",
+          "label": "Settori coperti"
+        },
+        "projects": {
+          "value": "27+",
+          "label": "Progetti consegnati"
+        },
+        "since": {
+          "value": "Dal 2009",
+          "label": "Ingegneria svizzera"
+        },
+        "pricing": {
+          "value": "Prezzo fisso",
+          "label": "Per ogni incarico"
+        }
+      },
+      "ctaTitle": "Cerchi un partner software che conosca il tuo settore?",
+      "ctaText": "Raccontaci la tua sfida. Ti rispondiamo entro 24 ore con una proposta concreta.",
+      "ctaButton": "Richiedi una consulenza gratuita"
+    },
+    "locations": {
+      "metaTitle": "Sviluppo software in tutta la Svizzera | Trident Software",
+      "metaDescription": "Sviluppo software su misura per aziende a Zurigo, Ginevra, Berna, Losanna, Zugo, Basilea e oltre. Team con base in Svizzera, attivo in tutti i cantoni.",
+      "crumb": "Sedi",
+      "label": "In tutta la Svizzera",
+      "title": "Sviluppo software in tutta la Svizzera",
+      "lead": "Con sede a Sion, in Vallese. Al servizio di tutti i cantoni svizzeri. Pensati per il lavoro da remoto.",
+      "listTitle": "Le città in cui lavoriamo",
+      "listLead": "Conoscenza del mercato locale. Copertura nazionale.",
+      "ctaTitle": "La tua città non c'è?",
+      "ctaText": "Lavoriamo in tutta la Svizzera e nei paesi vicini. Scrivici.",
+      "ctaButton": "Contattaci"
+    },
+    "technologies": {
+      "metaTitle": "Le nostre tecnologie | Sviluppo software in Svizzera | Trident Software",
+      "metaDescription": "Next.js, Flutter, TypeScript, Python, React, Node.js, PostgreSQL, Docker: il nostro stack tecnologico per lo sviluppo software in Svizzera.",
+      "crumb": "Tecnologie",
+      "label": "Il nostro stack",
+      "title": "Le tecnologie con cui sviluppiamo",
+      "lead": "Strumenti collaudati. Stack moderno. Impostazioni pronte per la produzione in ogni progetto.",
+      "listLabel": "Stack",
+      "listTitle": "Cosa usiamo, e perché",
+      "listLead": "Ogni tecnologia si guadagna il suo posto funzionando in modo affidabile in produzione.",
+      "logoAlt": "Logo {tech}",
+      "ctaTitle": "Lavori con uno stack diverso?",
+      "ctaText": "Ci adattiamo al tuo codice esistente. Parlaci del tuo progetto.",
+      "ctaButton": "Inizia una conversazione"
+    },
+    "faq": {
+      "metaTitle": "Domande prima dell'audit | FAQ | Trident Software",
+      "metaDescription": "Risposte dirette, anche quelle che ci sono costate dei contratti. Se la tua domanda manca, chiedi pure: un ingegnere ti risponde entro 24 ore lavorative.",
+      "label": "FAQ",
+      "title": "Domande prima dell'audit"
+    },
+    "useCases": {
+      "metaTitle": "Casi d'uso: {title} | Trident Software",
+      "crumb": "Casi d'uso",
+      "title": "Otto schemi in cui un agente si ripaga da solo",
+      "lead": "Ognuno ha una condizione preliminare. La maggior parte dei progetti di IA falliti si arena lì, non nel modello."
+    },
+    "team": {
+      "metaTitle": "Il nostro team | Trident Software",
+      "metaDescription": "26 ingegneri senior tra Svizzera, Ucraina e Israele. Backend, frontend, mobile, QA e DevOps. Nessun junior sui progetti dei clienti.",
+      "crumb": "Il nostro team",
+      "title": "26 <blue>ingegneri senior</blue> in 3 paesi",
+      "lead": "Nessun junior sui progetti dei clienti. Ogni ingegnere ha più di 5 anni di esperienza in produzione. Lavori con le stesse persone dal kickoff alla consegna.",
+      "chips": {
+        "engineers": "26 ingegneri",
+        "countries": "CH · UA · IL",
+        "seniorOnly": "Solo senior"
+      },
+      "peopleLabel": "Persone",
+      "peopleTitle": "Conosci il team",
+      "peopleLead": "Organizzati per disciplina. Ogni ingegnere ha più di 5 anni di esperienza commerciale e resta sul progetto dal kickoff alla consegna.",
+      "departments": {
+        "Leadership": "Direzione",
+        "Management": "Management",
+        "Frontend": "Frontend",
+        "Backend": "Backend",
+        "Mobile": "Mobile",
+        "QA": "QA",
+        "DevOps": "DevOps"
+      },
+      "whereLabel": "Dove siamo",
+      "whereTitle": "Tre sedi, un solo team",
+      "whereLead": "Copertura sul fuso CET, comunicazione multilingue e ingegneri senior in ogni sede.",
+      "locations": {
+        "sion": {
+          "city": "Sion, Vallese",
+          "country": "Svizzera",
+          "role": "Sede centrale · Sviluppo commerciale · Relazioni con i clienti"
+        },
+        "kyiv": {
+          "city": "Kiev",
+          "country": "Ucraina",
+          "role": "Ingegneria · Sviluppo · QA"
+        },
+        "telAviv": {
+          "city": "Tel Aviv",
+          "country": "Israele",
+          "role": "Ricerca IA · Computer Vision · R&S"
+        }
+      },
+      "ctaTitle": "Lavora con il nostro team",
+      "ctaLead": "Raccontaci il tuo progetto. Gli ingegneri che incontri al kickoff sono quelli che lo realizzeranno.",
+      "ctaButton": "Inizia una conversazione",
+      "viewWork": "Guarda i nostri lavori"
+    },
+    "services": {
+      "metaTitle": "Sviluppo software in Svizzera | IA, cloud, DevOps e altro | Trident Software",
+      "metaDescription": "Sviluppo software su misura in Svizzera: integrazione IA, app web e mobile, sistemi embedded, cloud, DevOps, CTO-as-a-Service. Budget fissi, oltre 27 progetti dal 2009.",
+      "crumb": "Servizi",
+      "label": "Cosa sviluppiamo",
+      "title": "Servizi di sviluppo software per aziende svizzere ed europee",
+      "lead": "Dall'integrazione dell'IA e dalle piattaforme web su misura fino ai sistemi embedded e all'infrastruttura cloud: ingegneria end-to-end con budget fissi e conformità svizzera già inclusa.",
+      "servicesTitle": "Cosa consegniamo",
+      "processLabel": "Processo",
+      "processTitle": "Come lavoriamo con te",
+      "processLead": "Tre passi dal brief al prodotto consegnato. Niente scatole nere, nessuna sorpresa sull'ambito.",
+      "steps": {
+        "scope": {
+          "title": "Ambito e preventivo",
+          "desc": "Inviaci un brief. Entro 24 ore ti mandiamo una proposta concreta con ambito, tempistiche e prezzo fisso. Nessuna sorpresa."
+        },
+        "build": {
+          "title": "Sviluppo e rilascio",
+          "desc": "I nostri ingegneri senior partono entro 1–2 settimane. Demo settimanali, aggiornamenti asincroni e ambiente di staging dal primo giorno."
+        },
+        "maintain": {
+          "title": "Manutenzione e crescita",
+          "desc": "SLA dopo il lancio, monitoraggio delle prestazioni e nuove funzionalità. Restiamo al tuo fianco anche dopo il go-live."
+        }
+      },
+      "stackLabel": "Stack",
+      "stackTitle": "Le tecnologie che usiamo",
+      "stackAction": "Tutti i dettagli dello stack",
+      "whyLabel": "Perché noi",
+      "whyTitle": "Cosa ottieni con Trident",
+      "trust": {
+        "fixedPrice": {
+          "title": "Contratti a prezzo fisso",
+          "desc": "Lo Statement of Work si firma prima di iniziare. Il prezzo che vedi è il prezzo che paghi."
+        },
+        "compliance": {
+          "title": "Conformità svizzera dei dati",
+          "desc": "Conforme a nLPD e GDPR di default. Per tutti i progetti è possibile conservare i dati in Svizzera."
+        },
+        "response": {
+          "title": "Risposta garantita entro 24 ore",
+          "desc": "Inviaci un brief. Ti rispondiamo con una proposta concreta entro un giorno lavorativo."
+        },
+        "experience": {
+          "title": "Oltre 15 anni in produzione",
+          "desc": "Fondata nel 2009. Oltre 27 clienti svizzeri ed europei. Sappiamo cosa si rompe in produzione."
+        },
+        "noLockIn": {
+          "title": "Nessun vendor lock-in",
+          "desc": "Il codice, il repository e l'infrastruttura sono tuoi. Ti consegniamo tutto."
+        },
+        "talent": {
+          "title": "Talenti in CH, IL e UA",
+          "desc": "Ingegneri senior su fusi orari vicini al CET. Sovrapposizione quasi totale con i team europei."
+        }
+      },
+      "ctaLabel": "Pronto a partire?",
+      "ctaTitle": "Descrivi il tuo progetto in 2 frasi",
+      "ctaLead": "Ti mandiamo una proposta concreta entro 24 ore con ambito, tempistiche e prezzo fisso.",
+      "ctaButton": "Richiedi una proposta",
+      "viewCases": "Vedi i casi di studio"
+    },
+    "solutions": {
+      "metaTitle": "Soluzioni per PMI svizzere | Trident Software",
+      "metaDescription": "Soluzioni software per PMI svizzere: siti web, piattaforme e-commerce e sistemi B2B su misura, a budget fisso e conformi alle norme svizzere.",
+      "crumb": "Soluzioni",
+      "label": "Soluzioni",
+      "heroTitle": "Soluzioni software pensate per le PMI svizzere",
+      "heroLead": "Offerte a pacchetto con tempi prevedibili e prezzi fissi. Dal semplice sito vetrina alla piattaforma e-commerce B2B su misura che gestisce oltre 1 milione di prodotti.",
+      "packagedLabel": "Soluzioni a pacchetto",
+      "packagedTitle": "Due modi per iniziare",
+      "packagedLead": "Scegli tra pacchetti per siti web a prezzo fisso e una soluzione e-commerce sviluppata su misura per la tua attività.",
+      "explore": "Scopri",
+      "servicesLabel": "Servizi di ingegneria",
+      "servicesTitle": "Ingegneria su tutto lo stack",
+      "servicesLead": "Oltre alle soluzioni a pacchetto, il nostro team offre servizi di ingegneria completi: IA, software, embedded e cloud.",
+      "ctaTitle": "Non sai quale scegliere?",
+      "ctaLead": "Raccontaci il tuo progetto. Entro 24 ore ti consigliamo la soluzione giusta con un prezzo fisso.",
+      "ctaPrimary": "Ricevi un consiglio",
+      "ctaSecondary": "Vedi i prezzi",
+      "mobileApps": {
+        "label": "App mobili",
+        "primary": "Parliamo della tua app",
+        "secondary": "Vedi i casi studio",
+        "featuresLead": "Sviluppo mobile a ciclo completo: dall'analisi iniziale e dal design fino alla pubblicazione sull'App Store e alla manutenzione continua.",
+        "listLabel": "Piattaforme e framework",
+        "listTitle": "Un solo sviluppo, due store",
+        "listLead": "Con React Native e Flutter pubblichiamo su iOS e Android da un'unica codebase, con prestazioni da app nativa.",
+        "listItems": [
+          "iOS",
+          "Android",
+          "React Native",
+          "Flutter",
+          "Expo"
+        ],
+        "stackTitle": "Strumenti pronti per la produzione",
+        "stackLead": "Lo stesso stack che usiamo per i nostri prodotti: collaudato e facile da mantenere.",
+        "ctaTitle": "Pronto a creare la tua app?",
+        "ctaText": "Raccontaci la tua idea. Definiamo il perimetro, progettiamo l'app e la pubblichiamo su entrambi gli store.",
+        "ctaPrimary": "Richiedi un preventivo",
+        "ctaSecondary": "Vedi i casi studio"
+      },
+      "iot": {
+        "label": "IoT ed embedded",
+        "primary": "Parliamo del tuo progetto",
+        "secondary": "Servizio embedded e IoT",
+        "featuresLead": "Soluzioni IoT ed embedded complete: dal firmware alle dashboard nel cloud, con la conformità dove serve davvero.",
+        "listLabel": "Settori",
+        "listTitle": "I settori in cui operiamo",
+        "listLead": "Abbiamo realizzato soluzioni embedded e IoT in settori regolamentati e con requisiti di sicurezza critici.",
+        "listItems": [
+          "Automotive",
+          "Sanità",
+          "Gestione idrica",
+          "Automazione industriale",
+          "Edifici intelligenti",
+          "Agricoltura"
+        ],
+        "stackTitle": "Dal chip al cloud",
+        "stackLead": "Strumenti vicini all'hardware uniti a un'infrastruttura cloud moderna per sistemi IoT completi.",
+        "ctaTitle": "Collega i tuoi dispositivi al cloud",
+        "ctaText": "Dal firmware alle dashboard: costruiamo l'intero stack perché il tuo sistema IoT funzioni in modo affidabile in produzione.",
+        "ctaPrimary": "Richiedi un preventivo",
+        "ctaSecondary": "Vedi i casi studio"
+      },
+      "ecommerce": {
+        "label": "E-commerce",
+        "primary": "Parliamo della tua piattaforma",
+        "secondary": "Vedi il caso studio",
+        "featuresLead": "Dall'MVP a piattaforme con oltre 1 milione di prodotti, prezzi personalizzati e più di 200 integrazioni.",
+        "listLabel": "Settori",
+        "listTitle": "I mercati verticali che seguiamo",
+        "listLead": "Abbiamo creato piattaforme e-commerce per automotive, moda, lusso e altri settori, ognuno con requisiti propri.",
+        "listItems": [
+          "Automotive",
+          "Moda",
+          "Lusso",
+          "Fai da te e utensili",
+          "Edilizia",
+          "Sport",
+          "Casa"
+        ],
+        "stackTitle": "Strumenti collaudati per il commercio",
+        "stackLead": "Lo stack con cui realizziamo piattaforme scalabili e facili da mantenere.",
+        "ctaTitle": "Crea la tua piattaforma e-commerce",
+        "ctaText": "Da piattaforme B2B su misura a marketplace: definiamo, sviluppiamo e manteniamo.",
+        "ctaPrimary": "Inizia la conversazione",
+        "ctaSecondary": "Vedi i casi studio"
+      },
+      "cloudServices": {
+        "label": "Servizi cloud",
+        "primary": "Parliamo della tua infrastruttura",
+        "secondary": "Servizio di consulenza cloud",
+        "featuresLead": "Servizi cloud completi: dalla valutazione iniziale e dalla migrazione fino alla gestione operativa continuativa.",
+        "listLabel": "Standard e piattaforme",
+        "listTitle": "Multi-cloud e pronto per la conformità",
+        "listLead": "Lavoriamo con tutti i principali provider cloud e, se serve, progettiamo per la residenza dei dati in Svizzera.",
+        "listItems": [
+          "Certificazione AWS",
+          "Partner Azure",
+          "Google Cloud",
+          "Compatibile ISO 27001",
+          "Dati residenti in Svizzera"
+        ],
+        "stackTitle": "Strumenti per l'infrastruttura",
+        "stackLead": "Strumenti standard del settore per operazioni cloud automatizzate, osservabili e sicure.",
+        "ctaTitle": "Passa al cloud con fiducia",
+        "ctaText": "Dalla strategia alla gestione operativa 24/7: ci occupiamo noi dell'infrastruttura, tu pensi al tuo prodotto.",
+        "ctaPrimary": "Inizia la conversazione",
+        "ctaSecondary": "Vedi i casi studio"
+      },
+      "socialNetworks": {
+        "label": "Social network",
+        "primary": "Parliamo della tua piattaforma",
+        "secondary": "Vedi i casi studio",
+        "featuresLead": "Piattaforme social scalabili, con la privacy al primo posto, pensate per coinvolgimento, moderazione e crescita nel lungo periodo.",
+        "listLabel": "Tipi di piattaforma",
+        "listTitle": "Le reti che costruiamo",
+        "listLead": "Dalle community professionali B2B alle app social per il grande pubblico: abbiamo l'architettura e l'esperienza.",
+        "listItems": [
+          "Reti professionali",
+          "Community B2B",
+          "App social per il grande pubblico",
+          "Reti di tipo marketplace",
+          "Piattaforme per fan e fidelizzazione",
+          "Reti aziendali interne"
+        ],
+        "stackTitle": "Pensato per scalare e per il tempo reale",
+        "stackLead": "Lo stack con cui realizziamo piattaforme per community performanti e in tempo reale.",
+        "ctaTitle": "Crea la tua piattaforma per community",
+        "ctaText": "Raccontaci la tua idea di community: progettiamo e sviluppiamo una piattaforma che cresce insieme ai tuoi utenti.",
+        "ctaPrimary": "Inizia la conversazione",
+        "ctaSecondary": "Vedi i casi studio"
+      },
+      "websites": {
+        "label": "Siti web",
+        "heroPrimary": "Avvia il tuo progetto",
+        "heroSecondary": "Vedi tutti i prezzi",
+        "packagesLabel": "Pacchetti",
+        "packagesTitle": "Quattro pacchetti per siti web",
+        "packagesLead": "Prezzo fisso, tempi fissi. Ogni pacchetto si può combinare con servizi aggiuntivi opzionali.",
+        "deliveredIn": "Consegna in {timeline}",
+        "mostPopular": "Il più scelto",
+        "includes": "Include",
+        "getStarted": "Inizia",
+        "whyLabel": "Perché noi",
+        "whyTitle": "Pensato per le PMI svizzere",
+        "whyLead": "Ogni sito che consegniamo è mobile-first, pronto per il multilingue e ottimizzato SEO, a prezzo fisso.",
+        "stackLabel": "Stack tecnologico",
+        "stackTitle": "Strumenti moderni e manutenibili",
+        "stackLead": "Usiamo lo stesso stack dei nostri prodotti, collaudato in produzione.",
+        "ctaTitle": "Pronto a lanciare il tuo sito?",
+        "ctaLead": "Scegli un pacchetto o raccontaci il tuo progetto. Entro 24 ore ricevi un preventivo a prezzo fisso.",
+        "ctaPrimary": "Richiedi un preventivo",
+        "ctaSecondary": "Vedi i dettagli dei prezzi"
+      },
+      "websitePackage": {
+        "metaTitle": "{name}: pacchetto sito web | Trident Software",
+        "label": "Pacchetto sito web",
+        "heroPrimary": "Richiedi un preventivo",
+        "heroSecondary": "Vedi tutti i prezzi",
+        "mostPopular": "Il più scelto",
+        "fixedPrice": "Prezzo fisso",
+        "deliveredIn": "Consegna in {timeline}",
+        "includesLabel": "Include",
+        "includesTitle": "Cosa ricevi",
+        "includesLead": "Tutto ciò che è incluso in questo pacchetto viene consegnato al prezzo fisso. Nessun costo nascosto.",
+        "bestForLabel": "Ideale per",
+        "bestForTitle": "A chi è rivolto questo pacchetto",
+        "bestForLead": "Ogni pacchetto è pensato per tipi di clienti ben precisi.",
+        "guaranteesLabel": "Garanzie",
+        "guaranteesTitle": "Cosa ti promettiamo",
+        "guaranteesLead": "Ogni progetto include gli stessi impegni di base.",
+        "otherLabel": "Altre opzioni",
+        "otherTitle": "Confronta i pacchetti",
+        "otherLead": "Non sei sicuro che sia quello giusto? Guarda le altre offerte.",
+        "viewPackage": "Vedi il pacchetto",
+        "ctaTitle": "Pronto a partire con {name}?",
+        "ctaLead": "Prezzo fisso, tempi fissi. Entro 24 ore ricevi un preventivo.",
+        "ctaPrimary": "Richiedi un preventivo",
+        "ctaSecondary": "Tutti i pacchetti"
+      }
+    },
+    "pricing": {
+      "metaTitle": "Prezzi: siti web a prezzo fisso | Trident Software",
+      "metaDescription": "Pacchetti trasparenti a prezzo fisso per PMI svizzere. Sito vetrina da CHF 599, sito PMI CHF 1,299, portale utenti CHF 2,499, negozio online CHF 6,999.",
+      "crumb": "Prezzi",
+      "label": "Prezzi",
+      "heroTitle": "Pacchetti trasparenti a <blue>prezzo fisso</blue>",
+      "heroLead": "Niente fatturazione a ore. Niente progetti che si allargano senza fine. Il prezzo è concordato prima di iniziare.",
+      "packagesLabel": "Pacchetti per siti web",
+      "packagesTitle": "Scegli il pacchetto giusto per te",
+      "packagesLead": "Dal semplice sito vetrina al negozio online completo. Ogni pacchetto ha un prezzo fisso e una data di consegna definita.",
+      "mostPopular": "Il più scelto",
+      "deliveredIn": "Consegna in {timeline}",
+      "for": "Per",
+      "includes": "Include",
+      "getStarted": "Inizia",
+      "addOnsLabel": "Servizi aggiuntivi",
+      "addOnsTitle": "Extra opzionali",
+      "addOnsLead": "Aggiungi solo ciò che ti serve. Ogni servizio aggiuntivo ha un prezzo a parte e si può attivare in qualsiasi momento.",
+      "addOns": {
+        "hosting": {
+          "name": "Hosting e dominio",
+          "price": "CHF 50 / anno",
+          "desc": "Hosting gestito, SSL, backup, rinnovo del dominio."
+        },
+        "language": {
+          "name": "Lingua aggiuntiva",
+          "price": "CHF 250",
+          "desc": "Per lingua: traduzione e SEO localizzata."
+        },
+        "content": {
+          "name": "Creazione di contenuti",
+          "price": "CHF 150 / pagina",
+          "desc": "Testi scritti su misura per il tuo brand e il tuo pubblico."
+        },
+        "brandbook": {
+          "name": "Brandbook",
+          "price": "CHF 2,500",
+          "desc": "Logo, palette colori, tipografia, token UI."
+        },
+        "seo": {
+          "name": "Supporto SEO",
+          "price": "CHF 500 / anno",
+          "desc": "Audit mensili, monitoraggio delle parole chiave, consigli sui contenuti."
+        },
+        "legal": {
+          "name": "Testi legali",
+          "price": "CHF 125",
+          "desc": "Privacy, termini, cookie: modelli conformi al diritto svizzero e UE."
+        },
+        "media": {
+          "name": "Contenuti visivi",
+          "price": "CHF 150 / pagina",
+          "desc": "Foto stock, illustrazioni o immagini IA selezionate per il tuo sito."
+        },
+        "blog": {
+          "name": "Supporto blog",
+          "price": "CHF 150 / mese",
+          "desc": "Pubblicazione continua, revisione editoriale, formattazione SEO."
+        },
+        "design": {
+          "name": "Design personalizzato",
+          "price": "CHF 500 / pagina",
+          "desc": "Layout su misura, oltre i modelli inclusi nel pacchetto."
+        }
+      },
+      "ctaTitle": "Inizia con una consulenza gratuita",
+      "ctaLead": "Raccontaci il tuo progetto. Ti consigliamo il pacchetto giusto e ti inviamo un preventivo a prezzo fisso entro 24 ore.",
+      "ctaPrimary": "Prenota una consulenza",
+      "ctaSecondary": "Scopri i siti web"
+    },
+    "products": {
+      "metaTitle": "8move: piattaforma di gestione autisti | Trident Software",
+      "metaDescription": "8move è una piattaforma SaaS per aziende di consegna dell'ultimo miglio. Gestisci gli autisti, traccia le consegne, automatizza le paghe. Di Trident Software.",
+      "crumb": "Il nostro prodotto",
+      "label": "Il nostro prodotto",
+      "heroTitle": "<blue>8move</blue>: SaaS per la gestione degli autisti",
+      "heroLead": "Una piattaforma SaaS in produzione, sviluppata da Trident Software per le aziende di consegna dell'ultimo miglio. Gestisci gli autisti, traccia le consegne e automatizza le paghe, tutto in un unico posto.",
+      "visit": "Visita 8move.app",
+      "readCase": "Leggi il caso studio",
+      "chips": [
+        "Attivo dal 2022",
+        "Aziende di consegna attive",
+        "Svizzera · Ucraina"
+      ],
+      "platformLabel": "Piattaforma",
+      "platformTitle": "Tutto per l'ultimo miglio",
+      "platformLead": "Nata dall'esperienza concreta nella gestione di flotte di consegna.",
+      "features": {
+        "driverApp": {
+          "title": "App per autisti",
+          "desc": "App iOS e Android con navigazione, prova di consegna e aggiornamenti di stato in tempo reale."
+        },
+        "fleet": {
+          "title": "Dashboard della flotta",
+          "desc": "Mappa in tempo reale di tutti gli autisti, stato delle consegne e avvisi sulle anomalie."
+        },
+        "payroll": {
+          "title": "Paghe automatizzate",
+          "desc": "Calcolo automatico degli stipendi in base a consegne, bonus e trattenute."
+        },
+        "portal": {
+          "title": "Portale clienti",
+          "desc": "Portale white-label con cui i tuoi clienti seguono le loro spedizioni."
+        },
+        "routes": {
+          "title": "Ottimizzazione dei percorsi",
+          "desc": "Sequenza dei percorsi basata sull'IA che riduce i costi di carburante fino al 23%."
+        },
+        "analytics": {
+          "title": "Analisi",
+          "desc": "Report su performance delle consegne, efficienza degli autisti e costo per consegna."
+        }
+      },
+      "ctaTitle": "Sviluppato da Trident Software",
+      "ctaLead": "8move è un nostro prodotto, non un progetto per un cliente. L'abbiamo sviluppato, messo online e lo gestiamo noi. Per questo conosciamo il SaaS dall'interno. Se ti serve una piattaforma simile per la tua azienda, sappiamo esattamente cosa richiede.",
+      "ctaPrimary": "Crea la tua piattaforma",
+      "ctaSecondary": "I nostri servizi"
+    },
+    "iamTrade": {
+      "metaTitle": "iAM-Trade: piattaforma e-commerce B2B/B2C/B2X | Trident Software",
+      "metaDescription": "iAM-Trade è una piattaforma e-commerce svizzera per B2B, B2C e B2X. 200+ integrazioni, oltre 1 milione di prodotti, prezzi dinamici e account multi-entità.",
+      "heroTitle": "<blue>iAM-Trade</blue>: piattaforma e-commerce B2B/B2C/B2X",
+      "heroLead": "Una potente piattaforma e-commerce svizzera pensata per il commercio complesso. Gestisci transazioni B2B, B2C e B2X da un unico sistema, con oltre 200 integrazioni e il supporto per più di 1 milione di prodotti.",
+      "heroBody": "Sviluppata da Trident Software, è già in uso presso distributori di ricambi auto, fornitori di accessori per orologi e rivenditori di attrezzature industriali in Svizzera e in Europa.",
+      "requestDemo": "Richiedi una demo",
+      "seeCase": "Vedi il caso studio",
+      "stats": {
+        "integrations": "Integrazioni",
+        "products": "Prodotti supportati",
+        "models": "Modelli di commercio",
+        "languages": "Lingue"
+      },
+      "platformLabel": "Piattaforma",
+      "platformTitle": "Tutto ciò che serve alla tua attività commerciale",
+      "platformLead": "iAM-Trade copre l'intero ciclo dell'e-commerce: dalla gestione del catalogo all'evasione degli ordini fino alle analisi.",
+      "features": {
+        "accounts": {
+          "title": "Gestione degli account",
+          "desc": "Account utente personalizzati con più entità aziendali e contratti per utente. Gerarchie di acquirenti B2B, controllo degli accessi basato sui ruoli e gestione di account condivisi."
+        },
+        "products": {
+          "title": "Gestione dei prodotti",
+          "desc": "Cataloghi con modelli 3D, descrizioni multilingue e scambio automatico delle informazioni di prodotto. Scala oltre 1 milione di articoli con ricerca e filtri intelligenti."
+        },
+        "pricing": {
+          "title": "Prezzi dinamici",
+          "desc": "Motore prezzi flessibile con sconti, cashback e campagne promozionali configurabili. Prezzi specifici per contratto per i clienti B2B, con gestione automatica dei listini."
+        },
+        "orders": {
+          "title": "Gestione degli ordini",
+          "desc": "Gestione dell'intero ciclo: prenotazioni, fatturazione, reclami e resi. I flussi automatizzati riducono gli interventi manuali lungo tutto il processo d'ordine."
+        },
+        "delivery": {
+          "title": "Coordinamento delle consegne",
+          "desc": "Integrazione con i partner logistici e tracciamento in tempo reale. Ottimizzazione dei percorsi, prova di consegna e notifiche ai clienti su tutti i canali."
+        },
+        "integrations": {
+          "title": "200+ integrazioni di sistema",
+          "desc": "Connessione a SAP, Odoo, Salesforce, Bexio e a oltre 200 sistemi ERP, CRM, WMS e di pagamento tramite il nostro livello di integrazione. API aperta per connettori personalizzati."
+        }
+      },
+      "capabilitiesLabel": "Funzionalità",
+      "capabilitiesTitle": "Pensata per volumi e complessità",
+      "capabilitiesLead": "iAM-Trade è progettata da zero per aziende con esigenze commerciali complesse: diversi tipi di acquirenti, cataloghi molto ampi e regole di prezzo articolate che le piattaforme standard non riescono a gestire.",
+      "bookDemo": "Prenota una demo",
+      "capabilities": [
+        "B2B, B2C e B2X da un'unica piattaforma",
+        "Scala oltre 1 milione di prodotti",
+        "Descrizioni dei prodotti multilingue (EN, FR, DE, IT)",
+        "Prezzi dinamici con regole di sconto e cashback",
+        "Supporto multivaluta e multimagazzino",
+        "Livello di integrazione completo ERP / CRM / WMS",
+        "Supporto per la visualizzazione 3D dei prodotti",
+        "Fatturazione e gestione dei resi automatizzate",
+        "Sincronizzazione delle giacenze in tempo reale",
+        "Programmi fedeltà e campagne",
+        "Dashboard avanzata di analisi e reporting",
+        "Opzione di residenza dei dati in Svizzera"
+      ],
+      "useCasesLabel": "Casi d'uso",
+      "useCasesTitle": "Chi usa iAM-Trade",
+      "useCasesLead": "Pensata per le aziende che hanno raggiunto i limiti di Shopify o WooCommerce.",
+      "useCases": {
+        "autoParts": {
+          "title": "Distributori di ricambi auto",
+          "desc": "Cataloghi ampi con ricerca per numero di telaio, filtri di compatibilità per veicolo, scorte su più magazzini e prezzi dinamici per livello di rivenditore."
+        },
+        "industrial": {
+          "title": "Attrezzature industriali",
+          "desc": "Configurazioni di prodotto complesse, preventivi personalizzati, cataloghi molto estesi con specifiche tecniche dettagliate e modelli 3D."
+        },
+        "luxury": {
+          "title": "Orologi e beni di lusso",
+          "desc": "Esperienze di prodotto curate, gestione delle edizioni limitate, supporto multivaluta e segmentazione degli acquirenti VIP."
+        },
+        "food": {
+          "title": "Alimentare e largo consumo",
+          "desc": "Pianificazione delle consegne periodiche, ordini in abbonamento, controllo delle date di scadenza e listini dedicati al canale Horeca."
+        },
+        "wholesale": {
+          "title": "Grossisti B2B",
+          "desc": "Gerarchie di acquirenti, account multi-entità, prezzi specifici per contratto e flussi di approvazione degli acquisti."
+        },
+        "multiBrand": {
+          "title": "Produttori multimarca",
+          "desc": "Negozi online distinti per marchio da un unico back-end, prezzi per canale e gestione dei portali partner."
+        }
+      },
+      "techLabel": "Tecnologia",
+      "techTitle": "Costruita su tecnologie collaudate",
+      "techLead": "Un'architettura cloud-native che cresce dalla startup alla grande impresa senza cambiare piattaforma.",
+      "ctaTitle": "Vuoi vedere iAM-Trade in azione?",
+      "ctaLead": "Fissa una demo dal vivo con il nostro team. Ti mostriamo esattamente come iAM-Trade si adatta ai tuoi processi commerciali.",
+      "seeProjects": "Vedi i nostri progetti"
+    },
+    "about": {
+      "metaTitle": "Chi siamo | Trident Software",
+      "metaDescription": "Trident Software: azienda svizzera di ingegneria del software nativa IA. Fondata nel 2009 a Sion, in Vallese. 26 ingegneri, 27+ progetti, 8 Paesi.",
+      "label": "Chi è Trident",
+      "heroTitle": "Qualità svizzera. Ingegneria <blue>nativa IA</blue>.",
+      "heroLead": "Fondata nel 2009 a Sion, in Vallese, Trident Software sviluppa software su misura, sistemi di IA e soluzioni embedded per le PMI europee. Solo ingegneri senior. Budget fissi. Conformità inclusa.",
+      "chips": [
+        "Sion, Vallese, Svizzera",
+        "ISO 27000 · nLPD",
+        "26 ingegneri · 3 Paesi"
+      ],
+      "storyLabel": "La nostra storia",
+      "storyTitle": "Fatta da ingegneri, per ingegneri",
+      "storyIntro": "Trident è nata dalla frustrazione verso le agenzie che promettono molto e consegnano poco. Volevamo un'azienda in cui ingegneri senior rispondono del risultato dall'inizio alla fine.",
+      "storyP1": "Abbiamo iniziato a Sion nel 2009 con due ingegneri e una convinzione: un buon software richiede buoni ingegneri che restano sul progetto dal kickoff al deployment. Nessun passaggio di consegne, nessuna sostituzione con junior, nessuna fabbrica di funzionalità.",
+      "storyP2": "In oltre 15 anni abbiamo consegnato più di 27 progetti in automotive, sanità, logistica, moda e SaaS. Dal 2021 integriamo l'IA in sistemi in produzione, ben prima dell'ondata attuale.",
+      "storyP3": "Oggi lavoriamo su tre sedi, in Svizzera, Ucraina e Israele, con 26 ingegneri che condividono gli stessi standard: architettura pulita, sistemi osservabili e tempi onesti.",
+      "timeline": {
+        "y2009": "Fondazione a Sion, in Vallese (Svizzera)",
+        "y2012": "Primo progetto di sistemi embedded: IoT industriale per la produzione",
+        "y2015": "Apertura della sede in Ucraina per i talenti dell'ingegneria",
+        "y2018": "Nasce il polo di R&S in Israele: IA e visione artificiale",
+        "y2021": "Prima integrazione di un LLM in produzione, 18 mesi prima del lancio di ChatGPT",
+        "y2023": "Nasce la divisione Servizi IA; 12 progetti IA consegnati in 12 mesi",
+        "y2024": "27° progetto consegnato; il team cresce a 26 ingegneri su 3 sedi"
+      },
+      "valuesLabel": "I nostri valori",
+      "valuesTitle": "Come lavoriamo",
+      "valuesLead": "I principi che guidano ogni progetto che accettiamo.",
+      "values": {
+        "compliance": {
+          "title": "Prima la conformità svizzera",
+          "desc": "ISO 27000, nLPD e dati residenti in Svizzera. Per noi la conformità è un risultato da consegnare, non un ripensamento."
+        },
+        "engineering": {
+          "title": "Eccellenza tecnica",
+          "desc": "Solo team senior. Nessun junior sui progetti dei clienti. Qualità del codice e architettura contano quanto la velocità di consegna."
+        },
+        "budgets": {
+          "title": "Budget fissi",
+          "desc": "Capitolato prima di iniziare. Nessuna sorpresa, nessuna discussione sulle ore fatturate. Consegne prevedibili."
+        },
+        "multilingual": {
+          "title": "Multilingue",
+          "desc": "Inglese, tedesco, francese, italiano. Comunichiamo nella tua lingua, come si fa in Svizzera."
+        },
+        "partnership": {
+          "title": "Partnership a lungo termine",
+          "desc": "Il 73% del fatturato arriva da clienti che tornano. Costruiamo relazioni, non incarichi isolati."
+        },
+        "aiNative": {
+          "title": "Nativi IA dal 2021",
+          "desc": "Abbiamo integrato l'IA prima che diventasse mainstream. LLM, RAG, agenti: in produzione, non demo."
+        }
+      },
+      "whereLabel": "Dove siamo",
+      "whereTitle": "Tre sedi, un solo team",
+      "whereLead": "Copertura sul fuso CET, comunicazione multilingue e ingegneri senior in ogni sede.",
+      "locations": {
+        "sion": {
+          "city": "Sion, Vallese",
+          "country": "Svizzera",
+          "role": "Sede centrale · Sviluppo commerciale · Conformità"
+        },
+        "kyiv": {
+          "city": "Kyiv",
+          "country": "Ucraina",
+          "role": "Ingegneria · Sviluppo · QA"
+        },
+        "telAviv": {
+          "city": "Tel Aviv",
+          "country": "Israele",
+          "role": "Ricerca IA · Visione artificiale · R&S"
+        }
+      },
+      "teamLabel": "Il team",
+      "teamTitle": "26 ingegneri senior",
+      "teamLead": "Nessun junior sui progetti dei clienti. Ogni ingegnere ha più di 5 anni di esperienza in produzione. Lavori con le stesse persone dal kickoff alla consegna.",
+      "composition": {
+        "backend": "Ingegneri backend",
+        "frontend": "Ingegneri frontend",
+        "ai": "Specialisti IA/ML",
+        "embedded": "Embedded / IoT",
+        "devops": "DevOps / SRE",
+        "design": "Designer UI/UX"
+      },
+      "ctaTitle": "Pronto a lavorare con noi?",
+      "ctaLead": "Raccontaci il tuo progetto. Rispondiamo entro 24 ore.",
+      "ctaPrimary": "Inizia una conversazione",
+      "ctaSecondary": "Vedi i nostri lavori"
+    }
+  },
+  "sections": {
+    "hero": {
+      "title": "Software operativo e <b>agenti AI,</b> sviluppati in Svizzera",
+      "lead": "Costruiamo i sistemi con cui le aziende lavorano ogni giorno: acquisizione ordini, dispatch, app sul campo, fatturazione. E lo strato di AI che risponde, qualifica ed elabora documenti nelle quattro lingue nazionali.",
+      "ctaAudit": "Prenota un audit gratuito di 45 min",
+      "stats": {
+        "clinic": "Tempo di ammissione in clinica, misurato",
+        "maker": "Costi di garanzia, produttore di componenti",
+        "agentValue": "Mese 2",
+        "agent": "Rientro tipico dell'investimento in un agente di vendita",
+        "residency": "Hosting conforme a nLPD e GDPR",
+        "residencyTags": [
+          "nLPD",
+          "GDPR"
+        ]
+      }
+    },
+    "heroLive": {
+      "channels": {
+        "webChat": "Chat web",
+        "phone": "Telefono",
+        "email": "E-mail"
+      },
+      "escalated": "esc."
+    },
+    "problem": {
+      "label": "Il problema",
+      "title": "Le PMI svizzere non perdono clienti per prodotti scadenti. Li perdono perché nessuno risponde.",
+      "lead": "I clienti vogliono risposte subito, sul loro canale, nella loro lingua. La maggior parte dei team non ha il personale per farlo.",
+      "wantOnline": "degli svizzeri vuole trovare e prenotare online il servizio di una PMI",
+      "supportToday": "delle PMI oggi lo consente davvero.",
+      "oddsDesc": "probabilità in meno di qualificare un contatto dopo 30 minuti invece che dopo 5",
+      "oddsSource": "Studio USA, 2007",
+      "channelsValue": "3 canali",
+      "channelsDesc": "usati quasi allo stesso modo. Non ce n'è uno solo da presidiare",
+      "channelEmail": "E-mail",
+      "channelChat": "Chat",
+      "channelPhone": "Telefono",
+      "whatsappDesc": "della popolazione usa WhatsApp. Il canale c'è, il personale per gestirlo no",
+      "whatsappSource": "Svizzera",
+      "aiDesc": "iniziano a cercare un servizio in un assistente AI, non in un motore di ricerca"
+    },
+    "services": {
+      "label": "Cosa facciamo",
+      "title": "Cinque ambiti di lavoro, un unico team responsabile",
+      "items": {
+        "ai": {
+          "title": "Agenti AI & automazione LLM",
+          "text": "Gestione delle richieste, elaborazione documenti, raccomandazioni, ricerca nel sapere aziendale. Agenti collegati ai tuoi sistemi reali, non widget di chat.",
+          "alt": "Infrastruttura server su cui girano gli agenti"
+        },
+        "logistics": {
+          "title": "Piattaforme logistiche e operative",
+          "text": "Acquisizione ordini, dispatch, app per autisti, tracciamento, fatturazione automatica.",
+          "alt": "Scaffalature di magazzino"
+        },
+        "iot": {
+          "title": "IoT & prodotti connessi",
+          "text": "Firmware, piattaforma cloud, motori di regole, app per rivenditori e consumatori.",
+          "alt": "Scheda elettronica di un dispositivo connesso"
+        },
+        "custom": {
+          "title": "Sistemi gestionali su misura",
+          "text": "Portali B2B, integrazioni ERP e contabili, migrazione di sistemi esistenti.",
+          "alt": "Ufficio in cui si usa il portale"
+        },
+        "cto": {
+          "title": "CTO as a Service",
+          "text": "Guida tecnica part-time o ad interim, quando i tuoi primi sviluppatori non bastano più.",
+          "alt": "Postazione di lavoro di un team di sviluppo"
+        }
+      },
+      "stackLabel": "Stack",
+      "stackText": "Python e Django, PostgreSQL, React, Flutter, AWS. Il lavoro con gli LLM poggia su questa base, non le sta accanto."
+    },
+    "agent": {
+      "label": "L'agente AI",
+      "title": "Un processo che funziona, con un modello linguistico al suo interno",
+      "caps": {
+        "answers": {
+          "title": "Risponde e qualifica, a qualsiasi ora",
+          "text": "Su ogni canale, weekend e festivi cantonali compresi. Fa le domande che farebbe il tuo miglior venditore, nella lingua del cliente.",
+          "p1": "Prima risposta in <b>pochi secondi</b>, via e-mail, chat, telefono e WhatsApp",
+          "p2": "<b>Quattro regioni linguistiche</b> dal primo giorno",
+          "p3": "Risposte registrate come <b>campi strutturati</b>"
+        },
+        "recommends": {
+          "title": "Consiglia e chiude le pratiche semplici",
+          "text": "Lavora sul tuo catalogo, sulle giacenze e sul listino aggiornati. Gestisce le obiezioni comuni con le formulazioni che hai approvato.",
+          "p1": "Fissa appuntamenti su un <b>calendario reale</b>",
+          "p2": "Emette <b>fatture QR</b> e link di pagamento",
+          "p3": "Passa la conversazione a una persona secondo <b>condizioni definite</b>"
+        },
+        "writes": {
+          "title": "Scrive nei tuoi sistemi",
+          "text": "Contatto, azienda, trattativa e trascrizione completa finiscono nel tuo CRM. Chi subentra parte da una scheda completa.",
+          "p1": "Integrazione CRM ed ERP",
+          "p2": "Tracciabilità di ogni dialogo",
+          "p3": "Percorso di escalation definito <b>prima del lancio</b>"
+        }
+      }
+    },
+    "agentChat": {
+      "crmProduct": "Ghiaia 0/16",
+      "crmSlot": "Lun. 7:30"
+    },
+    "agentVsHire": {
+      "label": "La scelta",
+      "title": "Un agente o un'assunzione in più?",
+      "agentLabel": "Agente AI",
+      "agentTitle": "Nei tuoi sistemi",
+      "hireLabel": "Un FTE in più",
+      "hireTitle": "Un'assunzione da CHF 8'000 al mese",
+      "rows": {
+        "firstResponse": {
+          "label": "Prima risposta",
+          "agent": "Pochi secondi",
+          "hire": "15–30 min, il giorno dopo fuori orario"
+        },
+        "runningCost": {
+          "label": "Costo di esercizio",
+          "agent": "Da CHF 450/mese",
+          "hire": "CHF 90–120k/anno"
+        },
+        "rampUp": {
+          "label": "Avviamento",
+          "agent": "Pochi giorni",
+          "hire": "3–6 mesi"
+        },
+        "parallel": {
+          "label": "Conversazioni in parallelo",
+          "agent": "Illimitate",
+          "hire": "10–15"
+        },
+        "languages": {
+          "label": "Lingue",
+          "agent": "4 regioni",
+          "hire": "1–2"
+        }
+      },
+      "note": "L'agente gestisce il 70–80 % di conversazioni di routine. Le trattative complesse restano alle tue persone."
+    },
+    "blog": {
+      "label": "Blog & notizie",
+      "title": "Dal nostro team",
+      "posts": {
+        "autoParts": "Un software per ricambi auto che unisce e-commerce, magazzino, consegne e AI",
+        "automechanika": "Automechanika Dubai 2025: ti aspettiamo nel padiglione 8, stand F18",
+        "practicalAi": "AI pratica per le PMI: dove funziona davvero",
+        "invoiceScanner": "Clic, scansione, fatto: come uno scanner digitale di fatture riduce i costi"
+      }
+    },
+    "calculator": {
+      "label": "Calcolatore",
+      "title": "Per te conviene?",
+      "lead": "Lo stesso modello che usiamo nell'audit. Può anche rispondere «non ancora».",
+      "enquiries": "Richieste al mese",
+      "note": "Modellato, non misurato."
+    },
+    "cases": {
+      "label": "Risultati",
+      "title": "Prima consegnato, poi contato",
+      "lead": "Ogni caso è etichettato: <b>misurato</b> significa contato in produzione, <b>modellato</b> significa calcolato su volumi reali.",
+      "clinic": {
+        "imageAlt": "Corridoio di una clinica",
+        "sector": "Rete di cliniche di riabilitazione · CH",
+        "title": "Da un fascio di carte a una fattura SwissDRG codificata",
+        "description": "L'assistente legge la cartella di ammissione, prepara la lettera di dimissione da far firmare al medico e predispone una fattura validata.",
+        "metric": "Tempo di ammissione",
+        "bar1": "Lettera di dimissione",
+        "bar2": "Fattura pronta, prima 10–15",
+        "bar2Value": "2 giorni"
+      },
+      "practice": {
+        "imageAlt": "Interno di uno studio medico",
+        "sector": "Studio medico multidisciplinare · CH",
+        "title": "Dalla visita dettata alla fattura TARDOC",
+        "description": "I medici passavano il 35 % del tempo a documentare. Ora la visita diventa direttamente referto e fattura codificata.",
+        "metric": "Visite in più, stesso stipendio",
+        "bar1": "Tempo per fattura",
+        "bar2": "Pagamento più rapido"
+      },
+      "water": {
+        "imageAlt": "Impianto di trattamento delle acque",
+        "sector": "Produttore di componenti · IT",
+        "title": "Fino all'85 % dei guasti dipendeva dall'acqua, non da difetti",
+        "description": "Un dispositivo, la telemetria e alcuni portali hanno trasformato ogni richiesta di garanzia in una decisione basata sui dati.",
+        "metric": "Costi di garanzia",
+        "bar1": "Del fatturato, prima 1.37 %",
+        "bar2": "Nuove fonti di ricavo"
+      },
+      "more": {
+        "fiduciary": {
+          "sector": "Fiduciaria · CH",
+          "title": "Posta in entrata e giustificativi senza doverli ridigitare",
+          "metric": "Gestione dei giustificativi"
+        },
+        "materials": {
+          "sector": "Materiali edili · scenario",
+          "title": "Dall'ufficio ordini al carico consegnato, senza assunzioni stagionali",
+          "metric": "Riordini senza intervento umano"
+        },
+        "letting": {
+          "sector": "Agenzia immobiliare, Romandia · scenario",
+          "title": "Dalla richiesta sul portale alla visita prenotata",
+          "metric": "Prima risposta, prima >15 h"
+        }
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Le domande prima dell'audit"
+    },
+    "industries": {
+      "label": "Settori",
+      "title": "Dove conviene di più in Svizzera",
+      "lead": "In ordine di quanto tornano i conti, non di quanto è interessante la tecnologia.",
+      "items": {
+        "trade": {
+          "title": "Commercio, ingrosso, materiali edili",
+          "text": "Volumi alti, domande ricorrenti, ordini che devono diventare consegne, con passaggio diretto a 8Move."
+        },
+        "realEstate": {
+          "title": "Immobiliare & gestione stabili",
+          "text": "Richieste di visita la sera. Una caldaia guasta alle 22:00 va smistata, non lasciata in segreteria."
+        },
+        "clinics": {
+          "title": "Cliniche, studi dentistici e veterinari",
+          "text": "Prenotazioni e promemoria alla reception, più la documentazione vocale per i medici, dove si trova il vero guadagno."
+        },
+        "ecommerce": {
+          "title": "E-commerce & D2C",
+          "text": "Stato dell'ordine, taglie, resi, vendite aggiuntive. L'automazione con i conti più chiari."
+        },
+        "hospitality": {
+          "title": "Alberghi & ristorazione",
+          "text": "Prenotazioni, gruppi, domande sugli allergeni in quattro lingue durante il servizio."
+        },
+        "professional": {
+          "title": "Studi professionali & artigiani",
+          "text": "Niente reception. Ogni chiamata persa è un mandato perso."
+        },
+        "education": {
+          "title": "Formazione & istruzione",
+          "text": "Richieste sui corsi e picchi di iscrizioni senza personale temporaneo."
+        },
+        "startups": {
+          "title": "Startup: CTO as a Service",
+          "text": "Qualche giorno al mese invece di un'assunzione: sviluppare o comprare, architettura, dati, prime assunzioni. Anche due diligence prima di un investimento."
+        }
+      }
+    },
+    "integrations": {
+      "label": "Integrazioni",
+      "title": "Funziona con quello che usi già",
+      "lead": "Tutto ciò che ha un'API, più una soluzione documentata per i sistemi che esportano solo un CSV di notte.",
+      "groups": {
+        "channels": {
+          "title": "Canali",
+          "items": [
+            "WhatsApp Business",
+            "Widget per il sito",
+            "E-mail",
+            "Telegram",
+            "Instagram / Facebook",
+            "SMS",
+            "Microsoft Teams",
+            "Telefonia"
+          ]
+        },
+        "crm": {
+          "title": "CRM",
+          "items": [
+            "HubSpot",
+            "Salesforce",
+            "Pipedrive",
+            "MS Dynamics",
+            "Zoho"
+          ]
+        },
+        "erp": {
+          "title": "ERP & contabilità",
+          "items": [
+            "bexio",
+            "Abacus",
+            "SAP Business One",
+            "Odoo",
+            "Sage"
+          ]
+        },
+        "payment": {
+          "title": "Pagamenti",
+          "items": [
+            "QR-fattura svizzera",
+            "TWINT",
+            "Stripe",
+            "PostFinance",
+            "Datatrans"
+          ]
+        },
+        "healthcare": {
+          "title": "Sanità",
+          "items": [
+            "vitomed",
+            "amétiq siMed",
+            "KISIM",
+            "Epic",
+            "HL7 / FHIR",
+            "HIN Mail"
+          ]
+        },
+        "calendar": {
+          "title": "Calendario & logistica",
+          "items": [
+            "Outlook",
+            "Google Calendar",
+            "8Move Fleet Planner",
+            "Driver Pro"
+          ]
+        }
+      }
+    },
+    "logos": {
+      "refs": {
+        "interhome": "case vacanza",
+        "ruralidays": "piattaforma di viaggi, con integrazione Holidu",
+        "glacon": "produzione di ghiaccio & distribuzione nazionale",
+        "aida": "sanità digitale (il nostro CTO è cofondatore)",
+        "londonName": "Azienda di gestione rifiuti di Londra",
+        "london": "(sotto NDA)"
+      }
+    },
+    "partners": {
+      "label": "Partner e piattaforme",
+      "title": "Con chi sviluppiamo e ospitiamo",
+      "lead": "Le piattaforme cloud su cui facciamo deploy e le istituzioni vallesane con cui collaboriamo.",
+      "lookingTitle": "Cosa cerchiamo",
+      "looking": {
+        "portfolio": "Aziende in portafoglio che hanno bisogno di un team di ingegneria, per costruire un prodotto o prenderne in carico uno",
+        "automation": "Automazione AI in logistica, servizi sul campo, distribuzione, amministrazione sanitaria",
+        "diligence": "Due diligence tecnica prima di un investimento, CTO ad interim dopo",
+        "codev": "Co-sviluppo dove la nostra piattaforma dà un vantaggio di partenza"
+      },
+      "note": "Non forniamo personale a ore."
+    },
+    "pricing": {
+      "label": "Prezzi",
+      "title": "Pubblicati, non nascosti",
+      "lead": "L'integrazione è una voce a parte, perché è lì che i progetti sforano.",
+      "plans": {
+        "integration": {
+          "k": "Integrazione · una tantum",
+          "items": [
+            "Analisi e progettazione degli scenari",
+            "Creazione della base di conoscenza",
+            "Integrazione ERP / CRM",
+            "Formazione del team, 2 settimane di avvio supervisionato",
+            "Primo mese di messa a punto"
+          ]
+        },
+        "run": {
+          "k": "Esercizio · mensile",
+          "amt": "da CHF 450 <small>/ mese</small>",
+          "items": [
+            "Tipico: CHF 900 / mese",
+            "Automazione completa: CHF 1'800 / mese",
+            "Piattaforma, hosting, monitoraggio, supporto",
+            "Uso del modello a prezzo di costo, nessun margine sui token"
+          ]
+        },
+        "outcome": {
+          "k": "Quota sul risultato · opzionale",
+          "items": [
+            "70 % a compenso fisso",
+            "30 % legato a un KPI concordato per iscritto",
+            "Lead, prenotazioni o tempo di risposta",
+            "Solo dove la misurazione è onesta"
+          ]
+        }
+      },
+      "waysTitle": "Partiamo dai tuoi numeri",
+      "ways": {
+        "labour": {
+          "title": "1. Lavoro diretto",
+          "text": "Ore spese su richieste ripetitive × costo pieno. Un FTE di vendita interna ci dedica 4–6 ore al giorno."
+        },
+        "revenue": {
+          "title": "2. Ricavi persi",
+          "text": "Richieste fuori orario × tasso di chiusura × valore medio. Di solito la voce più grande, e mai misurata."
+        },
+        "errors": {
+          "title": "3. Costo degli errori",
+          "text": "Offerte sbagliate, prenotazioni mancate, appuntamenti mai confermati e saltati, valutati al margine perso."
+        }
+      }
+    },
+    "process": {
+      "label": "Come lavoriamo",
+      "title": "Operativi in tre-cinque settimane",
+      "lead": "Il collo di bottiglia non è quasi mai la tecnologia. È la rapidità con cui il tuo team risponde alle domande sui propri processi.",
+      "note": "Primi effetti misurabili dopo due-quattro settimane di esercizio. Chi promette risultati nella prima settimana sta parlando di una demo.",
+      "stages": {
+        "audit": {
+          "title": "Audit e scenari",
+          "text": "Leggiamo le tue ultime 200 richieste: cosa si ripete, cosa porta a una vendita, dove si inceppa.",
+          "days": "Giorni 1–3"
+        },
+        "knowledge": {
+          "title": "Base di conoscenza",
+          "text": "Catalogo, prezzi, condizioni, FAQ, formulazioni approvate. La fase che decide la qualità.",
+          "days": "Giorni 3–10"
+        },
+        "channels": {
+          "title": "Canali e sistemi",
+          "text": "Verifica WhatsApp, widget, CRM, ERP, calendario, pagamenti.",
+          "days": "Giorni 8–15"
+        },
+        "testing": {
+          "title": "Test",
+          "text": "Il tuo team cerca di metterlo in difficoltà, in quattro lingue. Niente va online senza approvazione.",
+          "days": "Giorni 15–20"
+        },
+        "launch": {
+          "title": "Avvio supervisionato",
+          "text": "Traffico reale, ogni conversazione rivista ogni giorno.",
+          "days": "Giorni 20–25"
+        },
+        "operation": {
+          "title": "Esercizio e messa a punto",
+          "text": "Revisione mensile. Lo stesso ingegnere dall'audit all'esercizio.",
+          "days": "Continuo"
+        }
+      }
+    },
+    "products": {
+      "label": "I nostri prodotti",
+      "title": "Costruiamo ciò che manteniamo noi stessi",
+      "lead": "Un'azienda di prodotto che fa consulenza, non un'agenzia che vende ore.",
+      "items": {
+        "eightMove": {
+          "tag": "In produzione",
+          "title": "8Move: piattaforma logistica",
+          "text": "Acquisizione ordini, dispatch, app per autisti con prova fotografica e firma, tracciamento in tempo reale, fatturazione automatica. In uso presso operatori svizzeri ed europei.",
+          "points": [
+            "Edizione trasporto persone",
+            "Edizione trasporto materiali edili",
+            "Edizione consegne dell'ultimo miglio"
+          ],
+          "alt": "Flotta di consegna"
+        },
+        "waterTds": {
+          "tag": "Consegnato",
+          "title": "WaterTDS: dispositivo connesso per l'acqua",
+          "text": "Firmware, cloud, motore di regole, portale rivenditori e app per i consumatori, dal kick-off alle prime installazioni in 9 mesi.",
+          "points": [
+            "Team di 6 persone al picco, 3 a regime",
+            "Manutenzione in base ai litri, non al calendario"
+          ],
+          "alt": "Infrastruttura idrica"
+        },
+        "docs": {
+          "tag": "Consegnato 2025",
+          "title": "Riconoscimento documenti e motore di raccomandazione",
+          "text": "I due usi dell'AI che si ripagano più in fretta: leggere i documenti che nessuno vuole leggere e decidere cosa proporre dopo partendo da dati in tempo reale.",
+          "points": [
+            "Pipeline documentale consegnata in 4 mesi, ~2'500 documenti al mese",
+            "Motore di raccomandazione consegnato in 3 mesi"
+          ],
+          "alt": "Merce descritta nei documenti"
+        }
+      }
+    },
+    "swiss": {
+      "label": "Svizzera per giurisdizione",
+      "title": "Contratti svizzeri, responsabilità svizzera, i tuoi dati restano tuoi",
+      "lead": "Contratti e residenza dei dati sono in Svizzera. Lo sviluppo è distribuito: così le nostre tariffe restano sotto quelle delle agenzie svizzere senza rinunciare all'esperienza.",
+      "facts": {
+        "hosting": {
+          "title": "Hosting in Svizzera o nell'UE",
+          "text": "Scegli tu la regione. I subresponsabili sono documentati nel contratto."
+        },
+        "privacy": {
+          "title": "nLPD e GDPR",
+          "text": "Accordo sul trattamento dei dati e testi sulla privacy redatti per te."
+        },
+        "noTraining": {
+          "title": "Nessun addestramento sui tuoi dati",
+          "text": "Escluso per contratto, le condizioni dei fornitori sono allegate."
+        },
+        "ownership": {
+          "title": "Tutto resta tuo",
+          "text": "Dati, base di conoscenza e scenari esportati alla fine del contratto."
+        },
+        "modelIndependent": {
+          "title": "Indipendente dal modello",
+          "text": "Il modello sottostante si può sostituire. Nessun rischio legato a un solo fornitore."
+        },
+        "registered": {
+          "title": "Registrata in Vallese",
+          "text": "Trident Software Sàrl · CHE-185.076.733 · HES-SO Valais-Wallis · Campus Biotech, Ginevra"
+        }
+      }
+    },
+    "team": {
+      "label": "Con chi lavorerai",
+      "title": "Le stesse persone dall'audit alla consegna"
+    },
+    "testimonialsCarousel": {
+      "label": "Clienti",
+      "title": "Cosa dicono i clienti"
+    },
+    "useCases": {
+      "label": "Casi d'uso",
+      "title": "Otto schemi in cui un agente si ripaga da solo",
+      "lead": "Ognuno ha un prerequisito. È lì che falliscono quasi tutti i progetti di AI, non nel modello.",
+      "needs": "SERVE"
+    },
+    "whereWeSayNo": {
+      "label": "Limiti onesti",
+      "title": "Dove diciamo di no",
+      "lead": "Il modo più rapido per capire se qui c'è davvero un progetto.",
+      "items": {
+        "volume": {
+          "title": "Meno di ~150 richieste al mese",
+          "text": "I conti non tornano. Sistema prima il processo di risposta, chiamaci quando i volumi ci sono."
+        },
+        "knowledgeBase": {
+          "title": "Nessuna base di conoscenza scritta",
+          "text": "L'agente eredita la tua qualità. Se non c'è niente da ereditare, non c'è niente da mettere in produzione."
+        },
+        "regulated": {
+          "title": "Consulenza regolamentata",
+          "text": "Diagnosi, investimenti, pareri legali. L'agente prenota, smista e prepara, ma non consiglia."
+        },
+        "voice": {
+          "title": "Svizzero tedesco parlato",
+          "text": "Il dialetto scritto funziona bene. Quello parlato è il punto debole di tutti i fornitori, anche il nostro. Inizia dal testo."
+        },
+        "headcount": {
+          "title": "Solo tagli al personale",
+          "text": "«Togliere la routine al team» funziona. «Sostituire il team» rende meno del previsto. Lo diciamo già al primo incontro."
+        }
+      }
+    },
+    "whyUs": {
+      "label": "Perché noi",
+      "title": "Abbiamo già consegnato le parti noiose",
+      "lead": "Chiunque sa mostrare un modello linguistico che risponde a una domanda. Pochi l'hanno collegato a un sistema di dispatch da cui un autista dipende alle sei del mattino.",
+      "items": {
+        "sayNo": {
+          "title": "Sappiamo dire di no",
+          "text": "Il nostro stesso materiale ti dice quando l'automazione non conviene ancora."
+        },
+        "measured": {
+          "title": "Misurato o modellato",
+          "text": "Ogni cifra che pubblichiamo dice di quale dei due si tratta."
+        },
+        "senior": {
+          "title": "Senior a tariffe sostenibili",
+          "text": "Responsabilità svizzera, sviluppo distribuito, nessun junior venduto come senior."
+        },
+        "product": {
+          "title": "Un'azienda di prodotto",
+          "text": "Costruiamo ciò che manterremmo per cinque anni, perché con 8Move lo facciamo davvero."
+        },
+        "engineer": {
+          "title": "Un ingegnere di riferimento",
+          "text": "Non una coda di ticket. La stessa persona dall'audit all'esercizio."
+        },
+        "lockIn": {
+          "title": "Nessun lock-in",
+          "text": "Base di conoscenza, trascrizioni e scenari vengono esportati a te."
+        }
+      }
+    }
+  },
+  "chrome": {
+    "meta": {
+      "defaultTitle": "Trident Software — Sviluppo software di qualità svizzera",
+      "description": "Sviluppo software su misura, integrazione AI e sistemi embedded per PMI. Conformità svizzera, budget fissi, 27+ progetti realizzati."
+    },
+    "footer": {
+      "auditTitle": "Porta i tuoi volumi. Riparti con <em>i tuoi numeri.</em>",
+      "auditLead": "45 minuti e una risposta chiara, che si lavori insieme o no.",
+      "tagSwissLaw": "nLPD",
+      "tagGdpr": "GDPR",
+      "mapsLabel": "Trovaci su Google Maps",
+      "links": {
+        "aiAgents": "Agenti AI e automazione LLM",
+        "logistics": "Logistica e operazioni",
+        "businessSystems": "Sistemi gestionali su misura",
+        "iot": "IoT e prodotti connessi",
+        "cto": "CTO as a Service",
+        "about": "Chi siamo",
+        "team": "Il nostro team",
+        "projects": "Progetti",
+        "blog": "Blog",
+        "contact": "Contatti",
+        "useCases": "Casi d'uso",
+        "industries": "Settori",
+        "solutions": "Soluzioni",
+        "products": "Prodotti",
+        "pricing": "Prezzi",
+        "technologies": "Tecnologie",
+        "locations": "Località",
+        "faq": "FAQ"
+      },
+      "legal": {
+        "privacy": "Privacy",
+        "terms": "Termini",
+        "imprint": "Note legali",
+        "cookies": "Cookie"
+      },
+      "bottomLine": "Software svizzero · © {year} Trident Software Sàrl · CHE-185.076.733"
+    }
+  },
+  "molecules": {
+    "auditForm": {
+      "topics": {
+        "aiAgents": "Agenti AI e automazione",
+        "logistics": "Piattaforma logistica",
+        "iot": "IoT e prodotti connessi",
+        "businessSystem": "Sistema gestionale su misura",
+        "cto": "CTO as a Service"
+      },
+      "consent": "Accetto che Trident Software tratti questa richiesta secondo la nLPD e il GDPR.",
+      "submit": "Richiedi l'audit"
+    },
+    "blogFilter": {
+      "categories": {
+        "Industry": "Settore",
+        "Solution": "Soluzione",
+        "Company": "Azienda"
+      }
+    },
+    "cookieBanner": {
+      "text": "Usiamo cookie essenziali per far funzionare il sito e cookie analitici per capire quali pagine vengono lette.",
+      "policy": "Cookie policy",
+      "decline": "Rifiuta",
+      "accept": "Accetta"
+    },
+    "industriesGrid": {
+      "categories": {
+        "All": "Tutti",
+        "Technology": "Tecnologia",
+        "Commerce": "Commercio",
+        "Industry": "Industria",
+        "Services": "Servizi",
+        "Society": "Società"
+      },
+      "explore": "Scopri"
+    },
+    "newsletterSignup": {
+      "placeholder": "Il tuo indirizzo e-mail",
+      "submit": "Iscriviti",
+      "success": "Iscrizione completata!",
+      "error": "Qualcosa è andato storto. Riprova.",
+      "duplicate": "Già iscritto.",
+      "rateLimit": "Troppe richieste. Riprova più tardi.",
+      "demo": "Sito dimostrativo — il modulo è disattivato."
+    },
+    "officeMap": {
+      "iframeTitle": "Ufficio di Trident Software a Sion",
+      "openInMaps": "Apri in Google Maps"
+    },
+    "projectGrid": {
+      "readCase": "Leggi il caso"
+    }
+  },
+  "legal": {
+    "privacy": {
+      "metaTitle": "Informativa sulla privacy | Trident Software",
+      "metaDescription": "Informativa sulla privacy di Trident Software Sàrl: come raccogliamo, usiamo e proteggiamo i tuoi dati.",
+      "title": "Informativa sulla privacy",
+      "updated": "Ultimo aggiornamento: gennaio 2025",
+      "controller": {
+        "title": "1. Titolare del trattamento",
+        "body": "Trident Software Sàrl, Rue de l'Industrie 23, 1950 Sion, Svizzera («Trident», «noi») è titolare del trattamento dei dati personali trattati tramite questo sito web e i nostri servizi.",
+        "contact": "Contatto: <mail>privacy@trident-software.ch</mail>"
+      },
+      "data": {
+        "title": "2. Dati che raccogliamo",
+        "intro": "Raccogliamo le seguenti categorie di dati personali:",
+        "items": {
+          "contact": "<strong>Dati di contatto</strong>: nome, indirizzo e-mail, numero di telefono e nome dell'azienda quando invii un modulo di contatto o di richiesta preventivo.",
+          "newsletter": "<strong>Iscrizioni alla newsletter</strong>: indirizzo e-mail e lingua al momento dell'iscrizione.",
+          "usage": "<strong>Dati di utilizzo</strong>: indirizzo IP, tipo di browser, pagine visitate e URL di provenienza, raccolti tramite i log del server.",
+          "cookies": "<strong>Cookie</strong>: per i dettagli consulta la nostra informativa sui cookie."
+        }
+      },
+      "basis": {
+        "title": "3. Base giuridica e finalità",
+        "items": [
+          "Moduli di contatto: trattamento basato sul tuo consenso (art. 6 par. 1 lett. a GDPR / art. 31 nLPD) per rispondere alla tua richiesta.",
+          "Newsletter: trattamento basato sul tuo consenso; puoi revocarlo in qualsiasi momento.",
+          "Log del server: legittimo interesse a gestire e proteggere il nostro sito web (art. 6 par. 1 lett. f GDPR)."
+        ]
+      },
+      "storage": {
+        "title": "4. Conservazione dei dati",
+        "body": "Tutti i dati personali sono conservati su server situati in Svizzera o nello Spazio economico europeo. Non trasferiamo dati personali verso Paesi al di fuori del SEE o della Svizzera senza garanzie adeguate."
+      },
+      "retention": {
+        "title": "5. Periodo di conservazione",
+        "body": "Le richieste inviate tramite il modulo di contatto sono conservate per 3 anni a fini di documentazione aziendale. Le iscrizioni alla newsletter sono conservate fino alla disiscrizione. I log del server sono conservati per 90 giorni."
+      },
+      "rights": {
+        "title": "6. I tuoi diritti",
+        "intro": "Ai sensi della nLPD e del GDPR hai il diritto di:",
+        "items": [
+          "accedere ai tuoi dati personali",
+          "rettificare i dati inesatti",
+          "chiedere la cancellazione dei tuoi dati",
+          "limitare il trattamento",
+          "ottenere la portabilità dei dati",
+          "revocare il consenso in qualsiasi momento"
+        ],
+        "outro": "Per esercitare questi diritti, scrivi a <mail>privacy@trident-software.ch</mail>."
+      },
+      "processors": {
+        "title": "7. Responsabili del trattamento terzi",
+        "intro": "Ci avvaliamo dei seguenti responsabili del trattamento, che possono accedere ai tuoi dati solo per le finalità descritte in questa informativa:",
+        "items": [
+          "Fornitore di hosting: infrastruttura con sede in UE o in Svizzera per il sito web e il database",
+          "Servizio e-mail: e-mail transazionali di conferma dei moduli"
+        ]
+      },
+      "security": {
+        "title": "8. Sicurezza",
+        "body": "Adottiamo misure tecniche e organizzative adeguate per proteggere i dati personali, tra cui la crittografia TLS, controlli di accesso e verifiche di sicurezza periodiche. Operiamo secondo i principi della norma ISO 27000."
+      },
+      "complaints": {
+        "title": "9. Reclami",
+        "body": "Se ritieni che trattiamo i tuoi dati in modo illecito, hai il diritto di presentare un reclamo all'Incaricato federale della protezione dei dati e della trasparenza (IFPDT) su <link>www.edoeb.admin.ch</link>."
+      },
+      "changes": {
+        "title": "10. Modifiche",
+        "body": "Possiamo aggiornare questa informativa di tanto in tanto. La data di «Ultimo aggiornamento» in cima a questa pagina indica la revisione più recente."
+      }
+    },
+    "terms": {
+      "metaTitle": "Condizioni generali | Trident Software",
+      "metaDescription": "Condizioni generali di contratto di Trident Software Sàrl.",
+      "title": "Condizioni generali",
+      "updated": "Ultimo aggiornamento: gennaio 2025",
+      "scope": {
+        "title": "1. Ambito di applicazione",
+        "body": "Le presenti Condizioni generali («CG») disciplinano il rapporto tra Trident Software Sàrl («Trident») e i clienti che si avvalgono dei nostri servizi di ingegneria del software, integrazione dell'IA e consulenza. In caso di contrasto, i singoli accordi di progetto (capitolati, Statements of Work) prevalgono sulle presenti CG."
+      },
+      "services": {
+        "title": "2. Servizi",
+        "body": "Trident fornisce sviluppo di software su misura, integrazione dell'IA, ingegneria di sistemi embedded e relativi servizi di consulenza, come definiti in un capitolato (Statement of Work, SOW) concordato tra le parti. Ogni SOW costituisce un contratto separato disciplinato dalle presenti CG."
+      },
+      "payment": {
+        "title": "3. Prezzi e pagamento",
+        "body": "Il prezzo del progetto è fisso e definito nel SOW. Salvo diverso accordo, le fatture sono pagabili entro 30 giorni dall'emissione. I pagamenti tardivi maturano interessi del 5% annuo. Salvo diversa indicazione, i prezzi sono in CHF e IVA esclusa."
+      },
+      "ip": {
+        "title": "4. Proprietà intellettuale",
+        "body": "A pagamento avvenuto per intero, il cliente diventa proprietario di tutto il codice e dei risultati realizzati appositamente per il progetto. Componenti, librerie e strumenti preesistenti restano di proprietà di Trident o dei rispettivi titolari. I componenti open source sono disciplinati dalle rispettive licenze."
+      },
+      "confidentiality": {
+        "title": "5. Riservatezza",
+        "body": "Entrambe le parti si impegnano a mantenere riservate le informazioni proprietarie dell'altra parte. Gli obblighi di riservatezza restano in vigore per 5 anni dopo la conclusione del progetto. Se necessario, può essere stipulato un accordo di riservatezza (NDA) separato."
+      },
+      "warranties": {
+        "title": "6. Garanzia",
+        "body": "Trident garantisce che i risultati saranno conformi alle specifiche del SOW per 90 giorni dall'accettazione. La garanzia non copre problemi derivanti da modifiche del cliente, integrazioni di terzi o infrastrutture al di fuori del controllo di Trident."
+      },
+      "liability": {
+        "title": "7. Limitazione di responsabilità",
+        "body": "La responsabilità complessiva di Trident in relazione a un SOW è limitata all'importo totale dei compensi pagati dal cliente per quel progetto. Trident non risponde di danni indiretti, consequenziali o incidentali."
+      },
+      "law": {
+        "title": "8. Diritto applicabile",
+        "body": "Le presenti CG e tutti gli accordi di progetto sono disciplinati dal diritto svizzero. Tutte le controversie sono di competenza esclusiva dei tribunali del Cantone del Vallese, Svizzera."
+      },
+      "changes": {
+        "title": "9. Modifiche",
+        "body": "Trident può aggiornare le presenti CG. La versione in vigore è sempre disponibile a questo URL. I progetti in corso sono disciplinati dalla versione delle CG in vigore alla firma del SOW."
+      }
+    },
+    "cookies": {
+      "metaTitle": "Informativa sui cookie | Trident Software",
+      "metaDescription": "Informativa sui cookie di trident-software.ch: quali cookie usiamo e perché.",
+      "title": "Informativa sui cookie",
+      "updated": "Ultimo aggiornamento: gennaio 2025",
+      "what": {
+        "title": "Cosa sono i cookie?",
+        "body": "I cookie sono piccoli file di testo che il browser salva sul tuo dispositivo quando visiti un sito web. Aiutano il sito a ricordare le tue preferenze e a capire come lo utilizzi."
+      },
+      "used": {
+        "title": "I cookie che usiamo",
+        "cols": {
+          "cookie": "Cookie",
+          "type": "Tipo",
+          "purpose": "Finalità",
+          "duration": "Durata"
+        },
+        "rows": {
+          "payload": {
+            "type": "Essenziale",
+            "purpose": "Token di autenticazione per gli amministratori di Payload CMS",
+            "duration": "Sessione"
+          },
+          "locale": {
+            "type": "Funzionale",
+            "purpose": "Ricorda la lingua che preferisci",
+            "duration": "1 anno"
+          }
+        }
+      },
+      "analytics": {
+        "title": "Statistiche",
+        "body": "Questo sito non usa servizi di analisi di terzi (Google Analytics ecc.). Per un'analisi di base del traffico usiamo i log di accesso lato server. Non vengono impostati cookie a fini statistici."
+      },
+      "managing": {
+        "title": "Gestire i cookie",
+        "body": "Puoi controllare ed eliminare i cookie dalle impostazioni del browser. Disattivare i cookie essenziali può compromettere il funzionamento del sito. Per saperne di più sulla gestione dei cookie, visita <link>aboutcookies.org</link>."
+      },
+      "contact": {
+        "title": "Contatto",
+        "body": "Domande sul nostro uso dei cookie? Scrivi a <mail>privacy@trident-software.ch</mail>."
+      }
+    },
+    "imprint": {
+      "metaTitle": "Note legali | Trident Software",
+      "metaDescription": "Informazioni legali su Trident Software Sàrl.",
+      "title": "Note legali",
+      "company": "Società",
+      "address": "Sede legale",
+      "region": "Vallese, Svizzera",
+      "contact": "Contatto",
+      "email": "E-mail: <mail>hello@trident-software.ch</mail>",
+      "register": "Registro di commercio",
+      "registerValue": "Cantone del Vallese, Svizzera",
+      "vat": "Numero IVA",
+      "vatValue": "CHE-XXX.XXX.XXX IVA",
+      "responsible": "Responsabile dei contenuti",
+      "disclaimer": {
+        "title": "Esclusione di responsabilità",
+        "body": "Le informazioni presenti su questo sito sono fornite solo a scopo informativo generale. Pur impegnandoci a mantenerle corrette e aggiornate, non forniamo alcuna garanzia, espressa o implicita, sulla completezza, l'accuratezza, l'affidabilità o la disponibilità del sito o delle informazioni in esso contenute."
+      },
+      "external": {
+        "title": "Link esterni",
+        "body": "Questo sito può contenere link a siti esterni. Non siamo responsabili dei loro contenuti e non li approviamo."
+      }
     }
   }
 }

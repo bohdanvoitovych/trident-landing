@@ -2,11 +2,14 @@
 
 import { Link } from '@/i18n/navigation'
 import { useState } from 'react'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
+import { intlLocale } from '@/lib/utils'
 
 /** Freed hours = enquiries × minutes × 0.75 / 60; FTE = hours / 160. Under 150 enquiries: "not yet". */
 export function Calculator() {
   const t = useTranslations('ui')
+  const locale = useLocale()
+  const tc = useTranslations('sections.calculator')
   const [enq, setEnq] = useState(400)
   const [mins, setMins] = useState(8)
   const hrs = Math.round((enq * mins * 0.75) / 60)
@@ -16,18 +19,18 @@ export function Calculator() {
     <section className="section--ink section" id="calc" aria-labelledby="calc-h">
       <div className="container split reveal">
         <div className="stack" style={{ gap: 20 }}>
-          <span className="label">Calculator</span>
+          <span className="label">{tc('label')}</span>
           <h2 id="calc-h" className="h2">
-            Does it pay back for you?
+            {tc('title')}
           </h2>
-          <p className="lead">The same model we use in the audit. It can say &quot;not yet&quot;.</p>
+          <p className="lead">{tc('lead')}</p>
         </div>
         <div className="calc">
           <div className="calc-field">
             <div className="row">
-              <label htmlFor="calc-enq">Enquiries per month</label>
+              <label htmlFor="calc-enq">{tc('enquiries')}</label>
               <span className="mono" aria-hidden="true">
-                {enq.toLocaleString('en-US')}
+                {enq.toLocaleString(intlLocale(locale))}
               </span>
             </div>
             <input id="calc-enq" className="range" type="range" min={50} max={2000} step={10} value={enq} onChange={(e) => setEnq(Number(e.target.value))} />
@@ -80,7 +83,7 @@ export function Calculator() {
               </span>
             </p>
           )}
-          <p className="calc-note">Modelled, not measured.</p>
+          <p className="calc-note">{tc('note')}</p>
         </div>
       </div>
     </section>

@@ -1128,7 +1128,7 @@ Filter nach Grösse, Farbe, Stil und Marke, kombiniert mit Synonymerkennung («S
 **Durchdachte Sortierung** — Die Ergebnisse werden nach Relevanz, Verfügbarkeit und laufenden Aktionen sortiert, abgestimmt auf Branche und Kundenkonto.
 
 Das Ergebnis ist eine Suche, bei der weniger Anfragen ohne Treffer abgebrochen werden, weniger Support-Tickets mit «Ich finde Produkt X nicht» eingehen und mehr Suchen zu Bestellungen führen.`,
-        authorRole: "Backend Developer, Trident Software",
+        authorRole: "Backend-Entwickler, Trident Software",
         meta: {
           title: "iAM-Trade: Produktsuche für B2B-Kataloge | Trident Software",
           description: "Wie die Suche von iAM-Trade mit Tippfehlern, Fahrzeugsuche nach TecDoc und markenübergreifenden Treffern in grossen B2B-Katalogen umgeht.",

@@ -319,6 +319,1654 @@
       "ctaTitle": "Ready to get started with {service}?",
       "ctaLead": "Describe your project in 2 sentences. We send back a concrete proposal within 24 hours — scope, timeline, and fixed price.",
       "ctaButton": "Request a Proposal"
+    },
+    "blogPost": {
+      "allPosts": "All posts",
+      "faqTitle": "Frequently Asked Questions"
+    },
+    "case": {
+      "client": "Client: <name>{client}</name>",
+      "allCases": "All cases",
+      "ctaLead": "Let's discuss your project. We respond within 24 hours.",
+      "ctaButton": "Get a Quote"
+    },
+    "industry": {
+      "crumb": "Industries",
+      "startProject": "Start a project",
+      "viewCases": "View case studies",
+      "challengesLabel": "Industry Challenges",
+      "challengesTitle": "What we solve",
+      "challengesLead": "Common technical and regulatory hurdles in {industry} that we help clients overcome.",
+      "solutionsLabel": "What we build",
+      "solutionsTitle": "Solutions we deliver",
+      "solutionsLead": "Production-ready software systems for {industry} companies.",
+      "stackTitle": "Technology stack",
+      "servicesLabel": "Services",
+      "servicesTitle": "Relevant capabilities",
+      "servicesLead": "Our service practices that typically apply to this industry.",
+      "portfolioLabel": "Portfolio",
+      "portfolioTitle": "{industry} projects",
+      "portfolioLead": "Real projects we delivered in this industry.",
+      "ctaTitle": "Building something in {industry}?",
+      "ctaText": "Tell us about your project. We respond within 24 hours.",
+      "ctaButton": "Start a conversation"
+    },
+    "location": {
+      "crumb": "Locations",
+      "regionLabel": "{region}, Switzerland",
+      "startProject": "Start a project",
+      "ourServices": "Our services",
+      "highlightsLabel": "{city} expertise",
+      "highlightsTitle": "What we bring to the table",
+      "highlightsLead": "Specific capabilities we've developed for {city}'s market.",
+      "servicesLabel": "Services",
+      "servicesTitle": "What we build for {city} companies",
+      "servicesLead": "Our core capabilities, tuned for your market.",
+      "portfolioLabel": "Portfolio",
+      "portfolioTitle": "Projects we've delivered",
+      "portfolioLead": "A selection of our work relevant to {city}'s industries.",
+      "ctaTitle": "Based in {city}? Let's build something.",
+      "ctaText": "Remote-friendly, Swiss-based. We work with {city} companies regularly.",
+      "ctaButton": "Start a conversation"
+    },
+    "technology": {
+      "crumb": "Technologies",
+      "startProject": "Start a project",
+      "allServices": "See all services",
+      "usesLabel": "Use cases",
+      "usesTitle": "What we build with {tech}",
+      "usesLead": "Production use cases we've shipped for Swiss companies.",
+      "whyLabel": "Why",
+      "whyTitle": "Why we use {tech}",
+      "whyLead": "Concrete advantages for Swiss business software.",
+      "stackTitle": "We use {tech} alongside",
+      "servicesLabel": "Services",
+      "servicesTitle": "Services using {tech}",
+      "servicesLead": "Our service packages that include this technology.",
+      "portfolioLabel": "Portfolio",
+      "portfolioTitle": "{tech} in production",
+      "portfolioLead": "Real projects we shipped using this technology.",
+      "ctaTitle": "Need {tech} expertise?",
+      "ctaText": "Tell us what you're building. We respond within 24 hours.",
+      "ctaButton": "Start a conversation"
+    },
+    "solution": {
+      "crumb": "Solutions",
+      "featuresLabel": "Capabilities",
+      "featuresTitle": "What we deliver",
+      "stackLabel": "Tech stack"
+    }
+  },
+  "pages": {
+    "home": {
+      "metaTitle": "Trident Software — Operational software and AI agents, Switzerland",
+      "metaDescription": "We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers and processes documents in four national languages. Sion, Valais."
+    },
+    "notFound": {
+      "label": "Error 404"
+    },
+    "contact": {
+      "meta": {
+        "title": "Contact | Trident Software",
+        "description": "Talk to Trident Software in Sion, Valais. Book a free 45-minute audit of your operations and the systems behind them."
+      },
+      "heroLabel": "Contact",
+      "crumb": "Contact",
+      "heroTitle": "Let's talk about your project",
+      "heroLead": "Tell us what you're building. We'll respond within 24 hours with honest feedback and a rough scope estimate.",
+      "touchLabel": "Get in touch",
+      "touchTitle": "We respond fast",
+      "touchLead": "Senior engineers read every inquiry. No sales scripts, no account managers in between.",
+      "info": {
+        "office": "Office",
+        "email": "Email",
+        "phone": "Phone",
+        "responseTime": "Response time"
+      },
+      "responseTimeValue": "Within 24 business hours",
+      "stepsTitle": "Typical next steps",
+      "steps": {
+        "review": "We review your inquiry",
+        "discovery": "Discovery call (30 min)",
+        "scope": "Scope + SOW in 3–5 days",
+        "kickoff": "Kickoff"
+      },
+      "whereLabel": "Where we are",
+      "whereTitle": "Sion, Valais",
+      "whereText": "Rue de l'Industrie 23, 1950 Sion — ten minutes from the station, in the HES-SO Valais-Wallis district."
+    },
+    "blog": {
+      "metaTitle": "Software Engineering Blog | AI, Cloud & Swiss Tech Insights | Trident Software",
+      "metaDescription": "Expert articles on AI integration, software architecture, cloud DevOps, embedded systems, and Swiss tech market trends. Written by the Trident Software engineering team.",
+      "label": "Insights"
+    },
+    "cases": {
+      "metaTitle": "Software Development Projects & Case Studies | Trident Software Switzerland",
+      "metaDescription": "27+ software development projects delivered — automotive B2B platforms, AI healthcare systems, e-commerce, IoT, SaaS. Swiss engineering team since 2009.",
+      "label": "Portfolio",
+      "title": "Delivered, then counted",
+      "lead": "{total} products and platforms built for clients across Switzerland and Europe — {withCase} of them written up in full, with the numbers behind them.",
+      "ctaLabel": "Start here",
+      "ctaTitle": "Tell us what you are trying to fix",
+      "ctaLead": "We read every enquiry ourselves and come back within 24 business hours with an honest read on scope.",
+      "ctaButton": "Book a free audit"
+    },
+    "industries": {
+      "metaTitle": "Software Development by Industry | Healthcare, Automotive, Fintech & More | Trident Software",
+      "metaDescription": "Custom software development for 25+ industries — healthcare, automotive, fintech, logistics, retail, SaaS, manufacturing. Swiss engineering team since 2009. Fixed budgets, nFADP compliance.",
+      "crumb": "Industries",
+      "label": "Industry expertise",
+      "title": "Custom Software Development<br></br>for 25+ Industries",
+      "lead": "From MedTech startups to automotive distributors and retail chains — our Swiss engineering team delivers domain-specific software that fits your industry regulations, workflows, and growth targets.",
+      "leadNote": "Every project starts with your industry-specific constraints: regulatory requirements (nFADP, GDPR, MDR), operational complexity, and competitive landscape. No generic solutions.",
+      "discuss": "Discuss your project",
+      "facts": {
+        "industries": {
+          "value": "25+",
+          "label": "Industries covered"
+        },
+        "projects": {
+          "value": "27+",
+          "label": "Projects delivered"
+        },
+        "since": {
+          "value": "Since 2009",
+          "label": "Swiss engineering"
+        },
+        "pricing": {
+          "value": "Fixed price",
+          "label": "Every engagement"
+        }
+      },
+      "ctaTitle": "Need a software partner who knows your industry?",
+      "ctaText": "Tell us about your challenge. We respond within 24 hours with a concrete proposal.",
+      "ctaButton": "Get a free consultation"
+    },
+    "locations": {
+      "metaTitle": "Software Development Across Switzerland | Trident Software",
+      "metaDescription": "Custom software development for companies in Zurich, Geneva, Bern, Lausanne, Zug, Basel, and beyond. Swiss-based team, all cantons served.",
+      "crumb": "Locations",
+      "label": "Switzerland-wide",
+      "title": "Software development across Switzerland",
+      "lead": "Based in Sion, Valais. Serving every Swiss canton. Remote-first by design.",
+      "listTitle": "Cities we serve",
+      "listLead": "Local market expertise. National reach.",
+      "ctaTitle": "Your city not listed?",
+      "ctaText": "We serve all of Switzerland and neighbouring countries. Get in touch.",
+      "ctaButton": "Contact us"
+    },
+    "technologies": {
+      "metaTitle": "Technologies We Use | Swiss Software Development | Trident Software",
+      "metaDescription": "Next.js, Flutter, TypeScript, Python, React, Node.js, PostgreSQL, Docker — our technology stack for Swiss software development.",
+      "crumb": "Technologies",
+      "label": "Our stack",
+      "title": "Technologies we build with",
+      "lead": "Battle-tested tools. Modern stack. Production-grade defaults across every project.",
+      "listLabel": "Stack",
+      "listTitle": "What we use, and why",
+      "listLead": "Each technology earns its place by shipping reliably in production.",
+      "logoAlt": "{tech} logo",
+      "ctaTitle": "Building with a different stack?",
+      "ctaText": "We adapt to your existing codebase. Talk to us about your project.",
+      "ctaButton": "Start a conversation"
+    },
+    "faq": {
+      "metaTitle": "Questions before the audit | FAQ | Trident Software",
+      "metaDescription": "Straight answers, including the ones that cost us deals. If yours isn't here, ask: a named engineer replies within 24 business hours.",
+      "label": "FAQ",
+      "title": "Questions before the audit"
+    },
+    "useCases": {
+      "metaTitle": "Use cases — {title} | Trident Software",
+      "crumb": "Use cases",
+      "title": "Eight patterns where an agent pays for itself",
+      "lead": "Each comes with a precondition. Most failed AI projects fail there, not in the model."
+    },
+    "team": {
+      "metaTitle": "Our Team | Trident Software",
+      "metaDescription": "26 senior engineers across Switzerland, Ukraine, and Israel. Backend, frontend, mobile, QA, and DevOps — no juniors on client projects.",
+      "crumb": "Our Team",
+      "title": "26 <blue>senior engineers</blue> across 3 countries",
+      "lead": "No juniors on client projects. Every engineer has 5+ years of production experience. You get the same people from kickoff to handoff.",
+      "chips": {
+        "engineers": "26 engineers",
+        "countries": "CH · UA · IL",
+        "seniorOnly": "Senior-only"
+      },
+      "peopleLabel": "People",
+      "peopleTitle": "Meet the team",
+      "peopleLead": "Organized by discipline. Each engineer has 5+ years of commercial experience and stays on the project from kickoff to delivery.",
+      "departments": {
+        "Leadership": "Leadership",
+        "Management": "Management",
+        "Frontend": "Frontend",
+        "Backend": "Backend",
+        "Mobile": "Mobile",
+        "QA": "QA",
+        "DevOps": "DevOps"
+      },
+      "whereLabel": "Where we are",
+      "whereTitle": "Three locations, one team",
+      "whereLead": "CET coverage, multilingual communication, and senior engineers at every location.",
+      "locations": {
+        "sion": {
+          "city": "Sion, Valais",
+          "country": "Switzerland",
+          "role": "HQ · Business Development · Client Relations"
+        },
+        "kyiv": {
+          "city": "Kyiv",
+          "country": "Ukraine",
+          "role": "Engineering · Development · QA"
+        },
+        "telAviv": {
+          "city": "Tel Aviv",
+          "country": "Israel",
+          "role": "AI Research · Computer Vision · R&D"
+        }
+      },
+      "ctaTitle": "Work with our team",
+      "ctaLead": "Tell us about your project. The same engineers you meet at kickoff will deliver it.",
+      "ctaButton": "Start a conversation",
+      "viewWork": "View our work"
+    },
+    "services": {
+      "metaTitle": "Software Development Services Switzerland | AI, Cloud, DevOps & More | Trident Software",
+      "metaDescription": "Custom software development services in Switzerland — AI integration, web & mobile apps, embedded systems, cloud consulting, DevOps, CTO-as-a-Service. Fixed budgets, Swiss compliance, 27+ projects delivered since 2009.",
+      "crumb": "Services",
+      "label": "What we build",
+      "title": "Software Development Services for Swiss & European Businesses",
+      "lead": "From AI integration and custom web platforms to embedded systems and cloud infrastructure — end-to-end engineering with fixed budgets and Swiss compliance built in.",
+      "servicesTitle": "What we deliver",
+      "processLabel": "Process",
+      "processTitle": "How we engage",
+      "processLead": "Three steps from brief to shipped product. No black boxes, no scope surprises.",
+      "steps": {
+        "scope": {
+          "title": "Scope & quote",
+          "desc": "Send us a brief. We reply within 24 hours with a concrete proposal — scope, timeline, and fixed price. No surprises."
+        },
+        "build": {
+          "title": "Build & ship",
+          "desc": "Our senior engineers start within 1–2 weeks. Weekly demos, async updates, and staging environment from day one."
+        },
+        "maintain": {
+          "title": "Maintain & grow",
+          "desc": "Post-launch SLA, performance monitoring, and feature iterations. We stay with you after go-live."
+        }
+      },
+      "stackLabel": "Stack",
+      "stackTitle": "Technologies we use",
+      "stackAction": "Full stack details",
+      "whyLabel": "Why us",
+      "whyTitle": "What you get with Trident",
+      "trust": {
+        "fixedPrice": {
+          "title": "Fixed-price contracts",
+          "desc": "Statement of Work signed before we start. The price you see is the price you pay."
+        },
+        "compliance": {
+          "title": "Swiss data compliance",
+          "desc": "nFADP and GDPR-ready by default. Data residency in Switzerland available for all projects."
+        },
+        "response": {
+          "title": "24h response guaranteed",
+          "desc": "Send us a brief. We respond with a concrete proposal within one business day."
+        },
+        "experience": {
+          "title": "15+ years in production",
+          "desc": "Founded in 2009. 27+ Swiss and European clients. We have seen what breaks in production."
+        },
+        "noLockIn": {
+          "title": "No vendor lock-in",
+          "desc": "You own the code, the repository, and the infrastructure. We hand over everything."
+        },
+        "talent": {
+          "title": "CH + IL + UA talent pool",
+          "desc": "Senior engineers across CET timezones. Near-seamless overlap with European teams."
+        }
+      },
+      "ctaLabel": "Ready to start?",
+      "ctaTitle": "Describe your project in 2 sentences",
+      "ctaLead": "We send back a concrete proposal within 24 hours — scope, timeline, and fixed price.",
+      "ctaButton": "Request a Proposal",
+      "viewCases": "View case studies"
+    },
+    "solutions": {
+      "metaTitle": "Solutions | Trident Software",
+      "metaDescription": "Software solutions built for Swiss SMEs — websites, e-commerce platforms, and custom B2B systems with fixed budgets and Swiss compliance.",
+      "crumb": "Solutions",
+      "label": "Solutions",
+      "heroTitle": "Software solutions built for Swiss SMEs",
+      "heroLead": "Packaged offerings with predictable timelines and fixed prices. From a simple brochure site to a custom B2B e-commerce platform handling 1M+ products.",
+      "packagedLabel": "Packaged solutions",
+      "packagedTitle": "Two ways to start",
+      "packagedLead": "Choose between fixed-price website packages or a custom e-commerce build tailored to your business.",
+      "explore": "Explore",
+      "servicesLabel": "Engineering services",
+      "servicesTitle": "Full-stack engineering capabilities",
+      "servicesLead": "Beyond packaged solutions, our team delivers end-to-end engineering services across AI, software, embedded, and cloud.",
+      "ctaTitle": "Not sure which fits?",
+      "ctaLead": "Tell us about your project. We'll recommend the right solution and a fixed price within 24 hours.",
+      "ctaPrimary": "Get a recommendation",
+      "ctaSecondary": "View pricing",
+      "mobileApps": {
+        "label": "Mobile Apps",
+        "primary": "Discuss your app",
+        "secondary": "See case studies",
+        "featuresLead": "Full-cycle mobile development — from discovery and design to App Store delivery and ongoing maintenance.",
+        "listLabel": "Platforms & frameworks",
+        "listTitle": "One build, two stores",
+        "listLead": "We use React Native and Flutter to ship to iOS and Android from a single codebase — with native-grade performance.",
+        "listItems": [
+          "iOS",
+          "Android",
+          "React Native",
+          "Flutter",
+          "Expo"
+        ],
+        "stackTitle": "Production-grade tooling",
+        "stackLead": "The same stack we use for our own products — battle-tested and maintainable.",
+        "ctaTitle": "Ready to build your mobile app?",
+        "ctaText": "Tell us about your idea. We'll scope it, design it, and ship it to both stores.",
+        "ctaPrimary": "Get a quote",
+        "ctaSecondary": "View case studies"
+      },
+      "iot": {
+        "label": "IoT & Embedded",
+        "primary": "Discuss your project",
+        "secondary": "Embedded & IoT service",
+        "featuresLead": "End-to-end IoT and embedded solutions — from firmware to cloud dashboards, with compliance where it matters.",
+        "listLabel": "Industries",
+        "listTitle": "Sectors we serve",
+        "listLead": "We have delivered embedded and IoT solutions across regulated and safety-critical industries.",
+        "listItems": [
+          "Automotive",
+          "Healthcare",
+          "Water management",
+          "Industrial automation",
+          "Smart buildings",
+          "Agriculture"
+        ],
+        "stackTitle": "From silicon to cloud",
+        "stackLead": "Hardware-adjacent tooling combined with modern cloud infrastructure for end-to-end IoT systems.",
+        "ctaTitle": "Connect your devices to the cloud",
+        "ctaText": "From firmware to dashboards — we build the full stack so your IoT system works reliably in production.",
+        "ctaPrimary": "Get a quote",
+        "ctaSecondary": "View case studies"
+      },
+      "ecommerce": {
+        "label": "E-commerce",
+        "primary": "Discuss your platform",
+        "secondary": "See case study",
+        "featuresLead": "From MVP to platforms handling 1M+ products, custom pricing, and 200+ integrations.",
+        "listLabel": "Industries",
+        "listTitle": "Verticals we serve",
+        "listLead": "We've built e-commerce platforms across automotive, fashion, luxury, and more — each with industry-specific requirements.",
+        "listItems": [
+          "Automotive",
+          "Fashion",
+          "Luxury",
+          "DIY & Tools",
+          "Building",
+          "Sport",
+          "Household"
+        ],
+        "stackTitle": "Production-grade tooling",
+        "stackLead": "The stack we use to deliver scalable, maintainable platforms.",
+        "ctaTitle": "Build your e-commerce platform",
+        "ctaText": "From custom B2B platforms to marketplaces — we scope, build, and maintain.",
+        "ctaPrimary": "Start the conversation",
+        "ctaSecondary": "View case studies"
+      },
+      "cloudServices": {
+        "label": "Cloud Services",
+        "primary": "Discuss your infrastructure",
+        "secondary": "Cloud consulting service",
+        "featuresLead": "End-to-end cloud services — from initial assessment and migration to ongoing managed operations.",
+        "listLabel": "Standards & platforms",
+        "listTitle": "Multi-cloud, compliance-ready",
+        "listLead": "We work across all major cloud providers and design for Swiss data residency requirements where needed.",
+        "listItems": [
+          "AWS Certified",
+          "Azure Partner",
+          "Google Cloud",
+          "ISO 27001-compatible",
+          "Swiss data residency"
+        ],
+        "stackTitle": "Infrastructure tooling",
+        "stackLead": "Industry-standard tools for automated, observable, and secure cloud operations.",
+        "ctaTitle": "Move to the cloud with confidence",
+        "ctaText": "From strategy to 24/7 managed operations — we handle the infrastructure so you focus on your product.",
+        "ctaPrimary": "Start the conversation",
+        "ctaSecondary": "View case studies"
+      },
+      "socialNetworks": {
+        "label": "Social Networks",
+        "primary": "Discuss your platform",
+        "secondary": "See case studies",
+        "featuresLead": "Scalable, privacy-first social platforms — built for engagement, moderation, and long-term growth.",
+        "listLabel": "Platform types",
+        "listTitle": "Networks we build",
+        "listLead": "From B2B professional communities to consumer social apps — we have the architecture and experience.",
+        "listItems": [
+          "Professional networks",
+          "B2B communities",
+          "Consumer social apps",
+          "Marketplace networks",
+          "Fan & loyalty platforms",
+          "Internal corporate networks"
+        ],
+        "stackTitle": "Built for scale and real-time",
+        "stackLead": "The stack we use to deliver performant, real-time community platforms.",
+        "ctaTitle": "Build your community platform",
+        "ctaText": "Tell us about your community vision — we'll architect and build a platform that grows with your users.",
+        "ctaPrimary": "Start the conversation",
+        "ctaSecondary": "View case studies"
+      },
+      "websites": {
+        "label": "Websites",
+        "heroPrimary": "Start your project",
+        "heroSecondary": "See all pricing",
+        "packagesLabel": "Packages",
+        "packagesTitle": "Four website packages",
+        "packagesLead": "Fixed price, fixed timeline. Each package can be combined with optional add-ons.",
+        "deliveredIn": "Delivered in {timeline}",
+        "mostPopular": "Most Popular",
+        "includes": "Includes",
+        "getStarted": "Get started",
+        "whyLabel": "Why us",
+        "whyTitle": "Built for Swiss SMEs",
+        "whyLead": "Every website we deliver is mobile-first, multilingual-ready, and SEO-optimized — at a fixed price.",
+        "stackLabel": "Tech stack",
+        "stackTitle": "Modern, maintainable tooling",
+        "stackLead": "We build on the same stack we use for our own products — battle-tested in production.",
+        "ctaTitle": "Ready to launch your website?",
+        "ctaLead": "Pick a package or tell us about your project. We'll send a fixed quote within 24 hours.",
+        "ctaPrimary": "Get a quote",
+        "ctaSecondary": "See pricing details"
+      },
+      "websitePackage": {
+        "metaTitle": "{name} — Website Package | Trident Software",
+        "label": "Website Package",
+        "heroPrimary": "Get a quote",
+        "heroSecondary": "See all pricing",
+        "mostPopular": "Most Popular",
+        "fixedPrice": "Fixed price",
+        "deliveredIn": "Delivered in {timeline}",
+        "includesLabel": "Includes",
+        "includesTitle": "What you get",
+        "includesLead": "Everything in this package is delivered at the fixed price. No hidden extras.",
+        "bestForLabel": "Best for",
+        "bestForTitle": "Who this package is built for",
+        "bestForLead": "Each package is designed with specific customer types in mind.",
+        "guaranteesLabel": "Guarantees",
+        "guaranteesTitle": "What we promise",
+        "guaranteesLead": "Every project comes with the same core commitments.",
+        "otherLabel": "Other options",
+        "otherTitle": "Compare packages",
+        "otherLead": "Not sure this is the right fit? See what else we offer.",
+        "viewPackage": "View package",
+        "ctaTitle": "Ready to get started with {name}?",
+        "ctaLead": "Fixed price, fixed timeline. We'll send a quote within 24 hours.",
+        "ctaPrimary": "Request a quote",
+        "ctaSecondary": "All packages"
+      }
+    },
+    "pricing": {
+      "metaTitle": "Pricing | Trident Software",
+      "metaDescription": "Transparent, fixed-price packages for Swiss SMEs. Web brochure from CHF 599. SME website CHF 1,299. User portal CHF 2,499. Online store CHF 6,999.",
+      "crumb": "Pricing",
+      "label": "Pricing",
+      "heroTitle": "Transparent, <blue>fixed-price</blue> packages",
+      "heroLead": "No hourly billing. No scope creep. Price agreed before work begins.",
+      "packagesLabel": "Website packages",
+      "packagesTitle": "Pick the package that fits",
+      "packagesLead": "From a simple brochure site to a full online store. Each package has a fixed price and a defined delivery date.",
+      "mostPopular": "Most Popular",
+      "deliveredIn": "Delivered in {timeline}",
+      "for": "For",
+      "includes": "Includes",
+      "getStarted": "Get started",
+      "addOnsLabel": "Add-ons",
+      "addOnsTitle": "Optional extras",
+      "addOnsLead": "Add only what you need. Every add-on is priced separately and can be turned on at any time.",
+      "addOns": {
+        "hosting": {
+          "name": "Hosting & domain",
+          "price": "CHF 50 / yr",
+          "desc": "Managed hosting, SSL, backups, domain renewal."
+        },
+        "language": {
+          "name": "Additional language",
+          "price": "CHF 250",
+          "desc": "Per locale — translation + localized SEO."
+        },
+        "content": {
+          "name": "Content creation",
+          "price": "CHF 150 / page",
+          "desc": "Copywriting tailored to your brand and audience."
+        },
+        "brandbook": {
+          "name": "Brandbook",
+          "price": "CHF 2,500",
+          "desc": "Logo, color palette, typography, UI tokens."
+        },
+        "seo": {
+          "name": "SEO support",
+          "price": "CHF 500 / yr",
+          "desc": "Monthly audits, keyword tracking, content recommendations."
+        },
+        "legal": {
+          "name": "Legal policies",
+          "price": "CHF 125",
+          "desc": "Privacy, Terms, Cookies — Swiss + EU compliant templates."
+        },
+        "media": {
+          "name": "Media content",
+          "price": "CHF 150 / page",
+          "desc": "Stock photos, illustrations, or AI imagery curated for your site."
+        },
+        "blog": {
+          "name": "Blog support",
+          "price": "CHF 150 / mo",
+          "desc": "Ongoing publishing, editorial QA, SEO formatting."
+        },
+        "design": {
+          "name": "Custom design",
+          "price": "CHF 500 / page",
+          "desc": "Bespoke layouts beyond the package templates."
+        }
+      },
+      "ctaTitle": "Start with a free consultation",
+      "ctaLead": "Tell us about your project. We'll recommend the right package and send a fixed quote within 24 hours.",
+      "ctaPrimary": "Book a consultation",
+      "ctaSecondary": "Explore websites"
+    },
+    "products": {
+      "metaTitle": "8move — Driver Management Platform | Trident Software",
+      "metaDescription": "8move is a SaaS platform for last-mile delivery companies. Manage drivers, track deliveries, automate payroll. Built by Trident Software.",
+      "crumb": "Our Product",
+      "label": "Our Product",
+      "heroTitle": "<blue>8move</blue> — Driver Management SaaS",
+      "heroLead": "A production SaaS platform built by Trident Software for last-mile delivery companies. Manage drivers, track deliveries, and automate payroll — all in one place.",
+      "visit": "Visit 8move.app",
+      "readCase": "Read the case study",
+      "chips": [
+        "Live since 2022",
+        "Active delivery companies",
+        "Switzerland · Ukraine"
+      ],
+      "platformLabel": "Platform",
+      "platformTitle": "Everything for last-mile delivery",
+      "platformLead": "Built from real operational experience running delivery fleets.",
+      "features": {
+        "driverApp": {
+          "title": "Driver app",
+          "desc": "iOS & Android app with route navigation, proof-of-delivery, and real-time status updates."
+        },
+        "fleet": {
+          "title": "Fleet dashboard",
+          "desc": "Live map view of all drivers, delivery status, and exception alerts."
+        },
+        "payroll": {
+          "title": "Payroll automation",
+          "desc": "Automated wage calculation based on deliveries, bonuses, and deductions."
+        },
+        "portal": {
+          "title": "Client portal",
+          "desc": "White-label portal for your clients to track their shipments."
+        },
+        "routes": {
+          "title": "Route optimization",
+          "desc": "AI-powered route sequencing reducing fuel costs by up to 23%."
+        },
+        "analytics": {
+          "title": "Analytics",
+          "desc": "Delivery performance, driver efficiency, and cost-per-delivery reporting."
+        }
+      },
+      "ctaTitle": "Built by Trident Software",
+      "ctaLead": "8move is our own product — not a client project. We built, deployed, and operate it ourselves. This means we understand SaaS from the inside. If you need a similar platform built for your business, we know exactly what it takes.",
+      "ctaPrimary": "Build your platform",
+      "ctaSecondary": "Our services"
+    },
+    "iamTrade": {
+      "metaTitle": "iAM-Trade — B2B/B2C/B2X E-commerce Platform | Trident Software",
+      "metaDescription": "iAM-Trade is a powerful Swiss e-commerce platform for B2B, B2C, and B2X commerce. 200+ integrations, 1M+ product support, dynamic pricing, and multi-entity account management.",
+      "heroTitle": "<blue>iAM-Trade</blue> — B2B/B2C/B2X E-commerce Platform",
+      "heroLead": "A powerful Swiss e-commerce platform built for complex commerce. Handle B2B, B2C, and B2X transactions from a single system — with 200+ integrations and support for 1 million+ products.",
+      "heroBody": "Built by Trident Software and already powering automotive parts distributors, watch accessory suppliers, and industrial equipment dealers across Switzerland and Europe.",
+      "requestDemo": "Request a demo",
+      "seeCase": "See case study",
+      "stats": {
+        "integrations": "Integrations",
+        "products": "Products supported",
+        "models": "Commerce models",
+        "languages": "Languages"
+      },
+      "platformLabel": "Platform",
+      "platformTitle": "Everything your commerce operation needs",
+      "platformLead": "iAM-Trade covers the full e-commerce lifecycle — from catalog management to order fulfillment and analytics.",
+      "features": {
+        "accounts": {
+          "title": "Account Management",
+          "desc": "Personalized user accounts with support for multiple business entities and contracts per user. B2B buyer hierarchies, role-based access control, and shared account management."
+        },
+        "products": {
+          "title": "Product Management",
+          "desc": "Product catalogs with 3D model support, multilingual descriptions, and automated product information exchange. Scale to 1 million+ SKUs with intelligent search and filtering."
+        },
+        "pricing": {
+          "title": "Dynamic Pricing",
+          "desc": "Flexible pricing engine with customizable discounts, cashbacks, and promotional campaigns. Contract-specific pricing for B2B clients with automated price list management."
+        },
+        "orders": {
+          "title": "Order Processing",
+          "desc": "Full lifecycle management including reservations, invoicing, complaints, and returns. Automated workflows reduce manual intervention across the entire order flow."
+        },
+        "delivery": {
+          "title": "Delivery Coordination",
+          "desc": "Integration with logistics partners and real-time tracking capabilities. Route optimization, proof of delivery, and customer notification across all channels."
+        },
+        "integrations": {
+          "title": "200+ System Integrations",
+          "desc": "Connect to SAP, Odoo, Salesforce, Bexio, and 200+ ERP, CRM, WMS, and payment systems via our integration layer. Open API for custom connectors."
+        }
+      },
+      "capabilitiesLabel": "Capabilities",
+      "capabilitiesTitle": "Built for scale and complexity",
+      "capabilitiesLead": "iAM-Trade is designed from the ground up for businesses with complex commerce requirements — multiple buyer types, large catalogs, and sophisticated pricing rules that off-the-shelf platforms can't handle.",
+      "bookDemo": "Book a demo",
+      "capabilities": [
+        "B2B, B2C, and B2X commerce from a single platform",
+        "Scale to 1 million+ products",
+        "Multilingual product descriptions (EN, FR, DE, IT)",
+        "Dynamic pricing with discount rules and cashbacks",
+        "Multi-currency and multi-warehouse support",
+        "Full ERP / CRM / WMS integration layer",
+        "3D product visualization support",
+        "Automated invoicing and returns management",
+        "Real-time inventory synchronization",
+        "Customer loyalty programs and campaigns",
+        "Advanced analytics and reporting dashboard",
+        "Swiss data residency option"
+      ],
+      "useCasesLabel": "Use cases",
+      "useCasesTitle": "Who uses iAM-Trade",
+      "useCasesLead": "Built for businesses where standard Shopify or WooCommerce setups hit their limits.",
+      "useCases": {
+        "autoParts": {
+          "title": "Auto Parts Distributors",
+          "desc": "Large catalogs with VIN lookup, vehicle compatibility filtering, multi-warehouse inventory, and dynamic pricing for dealer tiers."
+        },
+        "industrial": {
+          "title": "Industrial Equipment",
+          "desc": "Complex product configurations, custom quotes, long-tail catalogs with detailed technical specifications and 3D models."
+        },
+        "luxury": {
+          "title": "Watch & Luxury Goods",
+          "desc": "Curated product experiences, limited editions management, multi-currency support, and VIP buyer segmentation."
+        },
+        "food": {
+          "title": "Food & FMCG",
+          "desc": "Regular delivery scheduling, subscription orders, expiry date tracking, and HoReCa-specific pricing structures."
+        },
+        "wholesale": {
+          "title": "B2B Wholesalers",
+          "desc": "Buyer hierarchies, multi-entity accounts, contract-specific pricing, and purchase approval workflows."
+        },
+        "multiBrand": {
+          "title": "Multi-brand Manufacturers",
+          "desc": "Separate branded storefronts from one backend, channel-specific pricing, and partner portal management."
+        }
+      },
+      "techLabel": "Technology",
+      "techTitle": "Built on proven technology",
+      "techLead": "Cloud-native architecture that scales from startup to enterprise without re-platforming.",
+      "ctaTitle": "Ready to see iAM-Trade in action?",
+      "ctaLead": "Schedule a live demo with our team. We'll show you exactly how iAM-Trade fits your commerce workflow.",
+      "seeProjects": "See our projects"
+    },
+    "about": {
+      "metaTitle": "About | Trident Software",
+      "metaDescription": "Trident Software — Swiss AI-native software engineering company. Founded 2009 in Sion, Valais. 26 engineers, 27+ projects, 8 countries.",
+      "label": "About Trident",
+      "heroTitle": "Swiss quality. <blue>AI-native</blue> engineering.",
+      "heroLead": "Founded in 2009 in Sion, Valais, Trident Software builds custom software, AI systems, and embedded solutions for European SMEs. Senior engineers only. Fixed budgets. Compliance included.",
+      "chips": [
+        "Sion, Valais, Switzerland",
+        "ISO 27000 · nFADP",
+        "26 engineers · 3 countries"
+      ],
+      "storyLabel": "Our Story",
+      "storyTitle": "Built by engineers, for engineers",
+      "storyIntro": "Trident was born from frustration with agencies that overpromise and underdeliver. We set out to build a company where senior engineers own the outcome end-to-end.",
+      "storyP1": "We started in Sion, Switzerland in 2009 with two engineers and a conviction: great software requires great engineers who stay on the project from kickoff to deployment. No handoffs, no junior substitutions, no feature factories.",
+      "storyP2": "Over 15 years we've delivered 27+ projects across automotive, healthcare, logistics, fashion, and SaaS — and integrated AI into production systems since 2021, well before the current wave.",
+      "storyP3": "Today we operate across three locations — Switzerland, Ukraine, and Israel — with 26 engineers who share the same standards: clean architecture, observable systems, and honest timelines.",
+      "timeline": {
+        "y2009": "Founded in Sion, Valais, Switzerland",
+        "y2012": "First embedded systems project — industrial IoT for manufacturing",
+        "y2015": "Opened Ukraine office for engineering talent",
+        "y2018": "Israel R&D hub established — AI and computer vision",
+        "y2021": "First production LLM integration — 18 months before ChatGPT launch",
+        "y2023": "AI Services practice launched; 12 AI projects delivered in 12 months",
+        "y2024": "27th project delivered; team grows to 26 engineers across 3 locations"
+      },
+      "valuesLabel": "Our Values",
+      "valuesTitle": "How we work",
+      "valuesLead": "The principles that guide every project we take on.",
+      "values": {
+        "compliance": {
+          "title": "Swiss Compliance First",
+          "desc": "ISO 27000, nFADP, and data residency in Switzerland. We make compliance a deliverable, not an afterthought."
+        },
+        "engineering": {
+          "title": "Engineering Excellence",
+          "desc": "Senior-only teams. No juniors on client projects. Code quality and architecture matter as much as delivery speed."
+        },
+        "budgets": {
+          "title": "Fixed Budgets",
+          "desc": "Statement of Work before work begins. No surprises, no hourly billing debates. Predictable delivery."
+        },
+        "multilingual": {
+          "title": "Multilingual",
+          "desc": "English, German, French, Italian. We communicate in your language — as required in Switzerland."
+        },
+        "partnership": {
+          "title": "Long-Term Partnership",
+          "desc": "73% of revenue from repeat clients. We build relationships, not one-off engagements."
+        },
+        "aiNative": {
+          "title": "AI-Native Since 2021",
+          "desc": "We integrated AI before it became mainstream. LLMs, RAG, agents — production-deployed, not demos."
+        }
+      },
+      "whereLabel": "Where we are",
+      "whereTitle": "Three locations, one team",
+      "whereLead": "CET coverage, multilingual communication, and senior engineers at every location.",
+      "locations": {
+        "sion": {
+          "city": "Sion, Valais",
+          "country": "Switzerland",
+          "role": "HQ · Business Development · Compliance"
+        },
+        "kyiv": {
+          "city": "Kyiv",
+          "country": "Ukraine",
+          "role": "Engineering · Development · QA"
+        },
+        "telAviv": {
+          "city": "Tel Aviv",
+          "country": "Israel",
+          "role": "AI Research · Computer Vision · R&D"
+        }
+      },
+      "teamLabel": "The Team",
+      "teamTitle": "26 senior engineers",
+      "teamLead": "No juniors on client projects. Every engineer has 5+ years of production experience. You get the same people from kickoff to handoff.",
+      "composition": {
+        "backend": "Backend engineers",
+        "frontend": "Frontend engineers",
+        "ai": "AI/ML specialists",
+        "embedded": "Embedded / IoT",
+        "devops": "DevOps / SRE",
+        "design": "UI/UX designers"
+      },
+      "ctaTitle": "Ready to work with us?",
+      "ctaLead": "Tell us about your project. We respond within 24 hours.",
+      "ctaPrimary": "Start a conversation",
+      "ctaSecondary": "View our work"
+    }
+  },
+  "sections": {
+    "hero": {
+      "title": "Operational software and <b>AI agents,</b> built in Switzerland",
+      "lead": "We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers, qualifies and processes documents in four national languages.",
+      "ctaAudit": "Book a free 45-min audit",
+      "stats": {
+        "clinic": "Clinic admission time, measured",
+        "maker": "Warranty cost, component maker",
+        "agentValue": "Month 2",
+        "agent": "Typical payback on a sales agent",
+        "residency": "Hosting, under revFADP and GDPR",
+        "residencyTags": [
+          "revFADP",
+          "GDPR"
+        ]
+      }
+    },
+    "heroLive": {
+      "channels": {
+        "webChat": "Web chat",
+        "phone": "Phone",
+        "email": "E-mail"
+      },
+      "escalated": "esc"
+    },
+    "problem": {
+      "label": "The problem",
+      "title": "Swiss SMEs don't lose deals to bad products. They lose them to silence.",
+      "lead": "Buyers want answers now, on their channel, in their language. Most teams can't staff that.",
+      "wantOnline": "of Swiss people want to find and book an SME service online",
+      "supportToday": "of SMEs fully support it today.",
+      "oddsDesc": "lower odds of qualifying a lead after 30 minutes vs 5 minutes",
+      "oddsSource": "US study, 2007",
+      "channelsValue": "3 channels",
+      "channelsDesc": "used almost equally. No single one to staff",
+      "channelEmail": "E-mail",
+      "channelChat": "Chat",
+      "channelPhone": "Phone",
+      "whatsappDesc": "of the population use WhatsApp. The channel exists; the staffing doesn't",
+      "whatsappSource": "Switzerland",
+      "aiDesc": "start looking for a service in an AI assistant, not a search engine"
+    },
+    "services": {
+      "label": "What we do",
+      "title": "Five lines of work, one accountable team",
+      "items": {
+        "ai": {
+          "title": "AI agents & LLM automation",
+          "text": "Enquiry handling, document processing, recommendations, search over company knowledge. Agents wired into your real systems, not chat widgets.",
+          "alt": "Server infrastructure the agents run on"
+        },
+        "logistics": {
+          "title": "Logistics & operations platforms",
+          "text": "Order intake, dispatch, driver apps, tracking, automated billing.",
+          "alt": "Warehouse racking"
+        },
+        "iot": {
+          "title": "IoT & connected products",
+          "text": "Firmware, cloud platform, rules engines, dealer and consumer apps.",
+          "alt": "Circuit board of a connected device"
+        },
+        "custom": {
+          "title": "Custom business systems",
+          "text": "B2B portals, ERP and accounting integrations, legacy migrations.",
+          "alt": "Office where the portal is used"
+        },
+        "cto": {
+          "title": "CTO as a Service",
+          "text": "Fractional or interim technical leadership when you've outgrown your first developers.",
+          "alt": "Engineering workspace"
+        }
+      },
+      "stackLabel": "Stack",
+      "stackText": "Python and Django, PostgreSQL, React, Flutter, AWS. LLM work sits on top of that, not beside it."
+    },
+    "agent": {
+      "label": "The AI agent",
+      "title": "A working process with a language model inside it",
+      "caps": {
+        "answers": {
+          "title": "Answers and qualifies, at any hour",
+          "text": "Every channel, weekends and cantonal holidays included. Asks the questions your best rep asks, in the buyer's language.",
+          "p1": "<b>Seconds</b> to first response, on e-mail, chat, phone and WhatsApp",
+          "p2": "<b>Four language regions</b> from day one",
+          "p3": "Answers recorded as <b>structured fields</b>"
+        },
+        "recommends": {
+          "title": "Recommends and closes the small stuff",
+          "text": "Works from your live catalogue, stock and price list. Handles standard objections with your approved wording.",
+          "p1": "Books appointments against a <b>real calendar</b>",
+          "p2": "Issues <b>QR-bills</b> and payment links",
+          "p3": "Escalates to a person on <b>defined conditions</b>"
+        },
+        "writes": {
+          "title": "Writes into your systems",
+          "text": "Contact, company, deal and full transcript go into your CRM, so the next person starts from a complete record.",
+          "p1": "CRM and ERP integration",
+          "p2": "Audit trail on every dialogue",
+          "p3": "Escalation path designed <b>before launch</b>"
+        }
+      }
+    },
+    "agentChat": {
+      "crmProduct": "0/16 gravel",
+      "crmSlot": "Mon 07:30"
+    },
+    "agentVsHire": {
+      "label": "The decision",
+      "title": "An agent, or one more hire?",
+      "agentLabel": "AI agent",
+      "agentTitle": "In your stack",
+      "hireLabel": "Additional FTE",
+      "hireTitle": "A CHF 8,000-a-month hire",
+      "rows": {
+        "firstResponse": {
+          "label": "First response",
+          "agent": "Seconds",
+          "hire": "15–30 min, next day after hours"
+        },
+        "runningCost": {
+          "label": "Running cost",
+          "agent": "From CHF 450/mo",
+          "hire": "CHF 90–120k/yr"
+        },
+        "rampUp": {
+          "label": "Ramp-up",
+          "agent": "Days",
+          "hire": "3–6 months"
+        },
+        "parallel": {
+          "label": "Parallel conversations",
+          "agent": "Unlimited",
+          "hire": "10–15"
+        },
+        "languages": {
+          "label": "Languages",
+          "agent": "4 regions",
+          "hire": "1–2"
+        }
+      },
+      "note": "The agent handles the routine 70–80 % of conversations. Complex deals stay with your people."
+    },
+    "blog": {
+      "label": "Blog & news",
+      "title": "From the team",
+      "posts": {
+        "autoParts": "Smart auto parts software that unifies e-commerce, warehouse, delivery and AI",
+        "automechanika": "Automechanika Dubai 2025: meet us in Hall 8, Booth F18",
+        "practicalAi": "Practical AI for SMEs: where it really works",
+        "invoiceScanner": "Click, scan, done: how a digital invoice scanner cuts costs"
+      }
+    },
+    "calculator": {
+      "label": "Calculator",
+      "title": "Does it pay back for you?",
+      "lead": "The same model we use in the audit. It can say \"not yet\".",
+      "enquiries": "Enquiries per month",
+      "note": "Modelled, not measured."
+    },
+    "cases": {
+      "label": "Results",
+      "title": "Delivered, then counted",
+      "lead": "Each case is labelled: <b>measured</b> means counted in production; <b>modelled</b> means calculated from real volumes.",
+      "clinic": {
+        "imageAlt": "Clinic corridor",
+        "sector": "Post-acute clinic network · CH",
+        "title": "From a bundle of paper to a coded SwissDRG invoice",
+        "description": "The assistant reads the admission file, drafts the discharge letter for the physician to sign, and prepares a validated invoice.",
+        "metric": "Admission time",
+        "bar1": "Discharge letter",
+        "bar2": "Invoice ready, was 10–15",
+        "bar2Value": "2 days"
+      },
+      "practice": {
+        "imageAlt": "Medical practice interior",
+        "sector": "Multi-disciplinary practice · CH",
+        "title": "Voice consultation to TARDOC invoice",
+        "description": "Physicians spent 35 % of their time documenting. Now the consultation becomes the report and the coded invoice.",
+        "metric": "Consultations, same salary",
+        "bar1": "Time per invoice",
+        "bar2": "Faster payment"
+      },
+      "water": {
+        "imageAlt": "Water treatment infrastructure",
+        "sector": "Component manufacturer · IT",
+        "title": "Up to 85 % of failures came from water, not defects",
+        "description": "A device, telemetry and portals turned every warranty claim into a decision based on data.",
+        "metric": "Warranty cost",
+        "bar1": "Of revenue, was 1.37 %",
+        "bar2": "New revenue lines"
+      },
+      "more": {
+        "fiduciary": {
+          "sector": "Fiduciary · CH",
+          "title": "Incoming mail and receipts without re-entry",
+          "metric": "Receipt handling"
+        },
+        "materials": {
+          "sector": "Construction materials · scenario",
+          "title": "Order desk to delivered load, without seasonal hiring",
+          "metric": "Reorders without a person"
+        },
+        "letting": {
+          "sector": "Letting agency, Romandie · scenario",
+          "title": "Portal enquiry to booked viewing",
+          "metric": "First reply, was >15 h"
+        }
+      }
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Questions before the audit"
+    },
+    "industries": {
+      "label": "Industries",
+      "title": "Where the case is strongest in Switzerland",
+      "lead": "Ordered by how well the numbers work, not by how interesting the technology is.",
+      "items": {
+        "trade": {
+          "title": "Trade, wholesale, building materials",
+          "text": "High volume, repeat questions, orders that must become deliveries, with a direct handoff into 8Move."
+        },
+        "realEstate": {
+          "title": "Real estate & property management",
+          "text": "Evening viewing requests; a broken boiler at 22:00 needs triage, not voicemail."
+        },
+        "clinics": {
+          "title": "Clinics, dental, veterinary",
+          "text": "Front desk booking and reminders, and voice documentation for doctors, where the real money is."
+        },
+        "ecommerce": {
+          "title": "E-commerce & D2C",
+          "text": "Order status, sizing, returns, cross-sell. The cleanest automation economics."
+        },
+        "hospitality": {
+          "title": "Hospitality & restaurants",
+          "text": "Reservations, groups, allergen questions in four languages during service."
+        },
+        "professional": {
+          "title": "Professional services & trades",
+          "text": "No reception; every missed call is a lost mandate."
+        },
+        "education": {
+          "title": "Education & training",
+          "text": "Course enquiries and enrolment peaks without temporary staff."
+        },
+        "startups": {
+          "title": "Startups — CTO as a Service",
+          "text": "Days per month instead of a hire: build vs buy, architecture, data, first hires. Also due diligence before an investment."
+        }
+      }
+    },
+    "integrations": {
+      "label": "Integrations",
+      "title": "Works with what you already run",
+      "lead": "Anything with an API, plus a documented fallback for systems that only export CSV at night.",
+      "groups": {
+        "channels": {
+          "title": "Channels",
+          "items": [
+            "WhatsApp Business",
+            "Website widget",
+            "E-mail",
+            "Telegram",
+            "Instagram / Facebook",
+            "SMS",
+            "Microsoft Teams",
+            "Voice"
+          ]
+        },
+        "crm": {
+          "title": "CRM",
+          "items": [
+            "HubSpot",
+            "Salesforce",
+            "Pipedrive",
+            "MS Dynamics",
+            "Zoho"
+          ]
+        },
+        "erp": {
+          "title": "ERP & accounting",
+          "items": [
+            "bexio",
+            "Abacus",
+            "SAP Business One",
+            "Odoo",
+            "Sage"
+          ]
+        },
+        "payment": {
+          "title": "Payment",
+          "items": [
+            "Swiss QR-bill",
+            "TWINT",
+            "Stripe",
+            "PostFinance",
+            "Datatrans"
+          ]
+        },
+        "healthcare": {
+          "title": "Healthcare",
+          "items": [
+            "vitomed",
+            "amétiq siMed",
+            "KISIM",
+            "Epic",
+            "HL7 / FHIR",
+            "HIN mail"
+          ]
+        },
+        "calendar": {
+          "title": "Calendar & logistics",
+          "items": [
+            "Outlook",
+            "Google Calendar",
+            "8Move Fleet Planner",
+            "Driver Pro"
+          ]
+        }
+      }
+    },
+    "logos": {
+      "refs": {
+        "interhome": "vacation rental",
+        "ruralidays": "travel platform, incl. Holidu integration",
+        "glacon": "ice production & nationwide distribution",
+        "aida": "digital health (our CTO is co-founder)",
+        "londonName": "London waste-management operator",
+        "london": "(under NDA)"
+      }
+    },
+    "partners": {
+      "label": "Partners and platforms",
+      "title": "Who we build and host with",
+      "lead": "Cloud platforms we deploy on, and the Valais institutions we work alongside.",
+      "lookingTitle": "What we're looking for",
+      "looking": {
+        "portfolio": "Portfolio companies that need an engineering team, to build a product or take one over",
+        "automation": "AI automation in logistics, field services, distribution, healthcare admin",
+        "diligence": "Technical due diligence before an investment, interim CTO after it",
+        "codev": "Co-development where our platform gives a head start"
+      },
+      "note": "Not staff augmentation by the hour."
+    },
+    "pricing": {
+      "label": "Pricing",
+      "title": "Published, not hidden",
+      "lead": "Integration is its own line, because that's where projects overrun.",
+      "plans": {
+        "integration": {
+          "k": "Integration · one-off",
+          "items": [
+            "Discovery and scenario design",
+            "Knowledge base build",
+            "ERP / CRM integration",
+            "Staff training, 2 weeks supervised live",
+            "First month of tuning"
+          ]
+        },
+        "run": {
+          "k": "Run · monthly",
+          "amt": "from CHF 450 <small>/ mo</small>",
+          "items": [
+            "Typical: CHF 900 / mo",
+            "Full automation: CHF 1,800 / mo",
+            "Platform, hosting, monitoring, support",
+            "Model usage at cost, no margin on tokens"
+          ]
+        },
+        "outcome": {
+          "k": "Outcome share · optional",
+          "items": [
+            "70 % fixed fee",
+            "30 % tied to a KPI agreed in writing",
+            "Leads, bookings, or response time",
+            "Only where measurement is honest"
+          ]
+        }
+      },
+      "waysTitle": "We price from your number",
+      "ways": {
+        "labour": {
+          "title": "1. Direct labour",
+          "text": "Hours on repetitive enquiries × loaded cost. One inside-sales FTE spends 4–6 hours a day on them."
+        },
+        "revenue": {
+          "title": "2. Lost revenue",
+          "text": "After-hours enquiries × close rate × deal value. Usually the largest, and never measured."
+        },
+        "errors": {
+          "title": "3. Cost of errors",
+          "text": "Wrong quotes, missed bookings, no-shows nobody confirmed, priced at lost margin."
+        }
+      }
+    },
+    "process": {
+      "label": "How we work",
+      "title": "Live in three to five weeks",
+      "lead": "The gating item is almost never the technology. It's how fast your side can answer questions about its own process.",
+      "note": "First measurable effects after two to four weeks live. Anyone promising results in week one is quoting a demo.",
+      "stages": {
+        "audit": {
+          "title": "Audit and scenarios",
+          "text": "We read your last 200 enquiries: what repeats, what converts, where it breaks.",
+          "days": "Days 1–3"
+        },
+        "knowledge": {
+          "title": "Knowledge base",
+          "text": "Catalogue, prices, terms, FAQ, approved wording. The stage that decides quality.",
+          "days": "Days 3–10"
+        },
+        "channels": {
+          "title": "Channels and systems",
+          "text": "WhatsApp verification, widget, CRM, ERP, calendar, payment.",
+          "days": "Days 8–15"
+        },
+        "testing": {
+          "title": "Testing",
+          "text": "Your team tries to break it, in four languages. Nothing goes live without sign-off.",
+          "days": "Days 15–20"
+        },
+        "launch": {
+          "title": "Supervised launch",
+          "text": "Live traffic, every conversation reviewed daily.",
+          "days": "Days 20–25"
+        },
+        "operation": {
+          "title": "Operation and tuning",
+          "text": "Monthly review. Same named engineer from audit to operation.",
+          "days": "Ongoing"
+        }
+      }
+    },
+    "products": {
+      "label": "Our products",
+      "title": "We build what we maintain ourselves",
+      "lead": "A product company that consults, not an agency that sells hours.",
+      "items": {
+        "eightMove": {
+          "tag": "In production",
+          "title": "8Move: logistics platform",
+          "text": "Order intake, dispatch, driver app with photo proof and signature, live tracking, automated invoicing. In use with Swiss and European operators.",
+          "points": [
+            "Passenger transport edition",
+            "Construction-material haulage edition",
+            "Last-mile delivery edition"
+          ],
+          "alt": "Delivery fleet"
+        },
+        "waterTds": {
+          "tag": "Delivered",
+          "title": "WaterTDS: connected water device",
+          "text": "Firmware, cloud, rules engine, dealer portal and consumer app, from kick-off to first installations in 9 months.",
+          "points": [
+            "Peak team of 6, steady state 3",
+            "Maintenance by litres, not by calendar"
+          ],
+          "alt": "Water infrastructure"
+        },
+        "docs": {
+          "tag": "Delivered 2025",
+          "title": "Document recognition and recommendation engine",
+          "text": "The two AI patterns that pay back fastest: reading documents nobody wants to read, and deciding what to offer next from live data.",
+          "points": [
+            "Document pipeline delivered in 4 months, ~2,500 documents a month",
+            "Recommendation engine delivered in 3 months"
+          ],
+          "alt": "Stock the documents describe"
+        }
+      }
+    },
+    "swiss": {
+      "label": "Swiss by jurisdiction",
+      "title": "Swiss contracts, Swiss accountability, your data stays yours",
+      "lead": "Contracts and data residency sit in Switzerland. Engineering is distributed, which is how our rates work against Swiss agency pricing without cutting seniority.",
+      "facts": {
+        "hosting": {
+          "title": "Hosting in CH or EU",
+          "text": "Your choice of region. Documented sub-processors in the contract."
+        },
+        "privacy": {
+          "title": "revFADP and GDPR",
+          "text": "Processing agreement and privacy wording drafted for you."
+        },
+        "noTraining": {
+          "title": "No training on your data",
+          "text": "Contractually excluded, vendor terms attached as an annex."
+        },
+        "ownership": {
+          "title": "You own it",
+          "text": "Data, knowledge base and scenarios exported on termination."
+        },
+        "modelIndependent": {
+          "title": "Model-independent",
+          "text": "The underlying model can be swapped. No single-vendor risk."
+        },
+        "registered": {
+          "title": "Registered in Valais",
+          "text": "Trident Software Sàrl · CHE-185.076.733 · HES-SO Valais-Wallis · Campus Biotech, Geneva"
+        }
+      }
+    },
+    "team": {
+      "label": "Who you work with",
+      "title": "The same people from audit to handover"
+    },
+    "testimonialsCarousel": {
+      "label": "Clients",
+      "title": "What clients say"
+    },
+    "useCases": {
+      "label": "Use cases",
+      "title": "Eight patterns where an agent pays for itself",
+      "lead": "Each comes with a precondition. Most failed AI projects fail there, not in the model.",
+      "needs": "NEEDS"
+    },
+    "whereWeSayNo": {
+      "label": "Honest limits",
+      "title": "Where we say no",
+      "lead": "The fastest way to find out whether there is a project here at all.",
+      "items": {
+        "volume": {
+          "title": "Under ~150 enquiries a month",
+          "text": "The numbers don't work. Fix the response process first; call us at volume."
+        },
+        "knowledgeBase": {
+          "title": "No written knowledge base",
+          "text": "The agent inherits your quality. Nothing to inherit means nothing to deploy."
+        },
+        "regulated": {
+          "title": "Regulated advice",
+          "text": "Diagnosis, investment, legal opinion. The agent books, triages and prepares; it does not advise."
+        },
+        "voice": {
+          "title": "Swiss German voice",
+          "text": "Dialect text works well. Spoken dialect is every vendor's weak point, ours too. Start with text."
+        },
+        "headcount": {
+          "title": "Pure headcount cuts",
+          "text": "\"Take the routine off the team\" works. \"Replace the team\" underperforms. We say so at the first meeting."
+        }
+      }
+    },
+    "whyUs": {
+      "label": "Why us",
+      "title": "We've shipped the boring parts",
+      "lead": "Anyone can demo a language model answering a question. Few have wired one into a dispatch system a driver depends on at six in the morning.",
+      "items": {
+        "sayNo": {
+          "title": "We say no",
+          "text": "Our own material tells you when automation isn't worth it yet."
+        },
+        "measured": {
+          "title": "Measured vs modelled",
+          "text": "Every figure we publish says which it is."
+        },
+        "senior": {
+          "title": "Senior at rates that work",
+          "text": "Swiss accountability, distributed delivery, no juniors sold as seniors."
+        },
+        "product": {
+          "title": "Product company",
+          "text": "We build what we'd maintain for five years, because with 8Move we do."
+        },
+        "engineer": {
+          "title": "A named engineer",
+          "text": "Not a ticket queue. Same person from audit to operation."
+        },
+        "lockIn": {
+          "title": "No lock-in",
+          "text": "Knowledge base, transcripts and scenarios are exported to you."
+        }
+      }
+    }
+  },
+  "chrome": {
+    "meta": {
+      "defaultTitle": "Trident Software — Swiss Quality Software Engineering",
+      "description": "Custom software development, AI integration, and embedded systems for SMEs. Swiss compliance, fixed budgets, 27+ projects delivered."
+    },
+    "footer": {
+      "auditTitle": "Bring your volumes. Leave with <em>your numbers.</em>",
+      "auditLead": "45 minutes and a straight answer, whether or not we work together.",
+      "tagSwissLaw": "revFADP",
+      "tagGdpr": "GDPR",
+      "mapsLabel": "Find us on Google Maps",
+      "links": {
+        "aiAgents": "AI agents & LLM automation",
+        "logistics": "Logistics & operations",
+        "businessSystems": "Custom business systems",
+        "iot": "IoT & connected products",
+        "cto": "CTO as a Service",
+        "about": "About",
+        "team": "Our team",
+        "projects": "Projects",
+        "blog": "Blog",
+        "contact": "Contact",
+        "useCases": "Use cases",
+        "industries": "Industries",
+        "solutions": "Solutions",
+        "products": "Products",
+        "pricing": "Pricing",
+        "technologies": "Technologies",
+        "locations": "Locations",
+        "faq": "FAQ"
+      },
+      "legal": {
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "imprint": "Imprint",
+        "cookies": "Cookies"
+      },
+      "bottomLine": "Swiss made software · © {year} Trident Software Sàrl · CHE-185.076.733"
+    }
+  },
+  "molecules": {
+    "auditForm": {
+      "topics": {
+        "aiAgents": "AI agents & automation",
+        "logistics": "Logistics platform",
+        "iot": "IoT & connected products",
+        "businessSystem": "Custom business system",
+        "cto": "CTO as a Service"
+      },
+      "consent": "I agree that Trident Software may process this enquiry under revFADP and GDPR.",
+      "submit": "Request the audit"
+    },
+    "blogFilter": {
+      "categories": {
+        "Industry": "Industry",
+        "Solution": "Solution",
+        "Company": "Company"
+      }
+    },
+    "cookieBanner": {
+      "text": "We use essential cookies to run this site, and analytics cookies to see which pages are read.",
+      "policy": "Cookie Policy",
+      "decline": "Decline",
+      "accept": "Accept"
+    },
+    "industriesGrid": {
+      "categories": {
+        "All": "All",
+        "Technology": "Technology",
+        "Commerce": "Commerce",
+        "Industry": "Industry",
+        "Services": "Services",
+        "Society": "Society"
+      },
+      "explore": "Explore"
+    },
+    "newsletterSignup": {
+      "placeholder": "Your email address",
+      "submit": "Subscribe",
+      "success": "You're subscribed!",
+      "error": "Something went wrong. Try again.",
+      "duplicate": "Already subscribed.",
+      "rateLimit": "Too many requests. Try later.",
+      "demo": "Demo site — the form is switched off."
+    },
+    "officeMap": {
+      "iframeTitle": "Trident Software office in Sion",
+      "openInMaps": "Open in Google Maps"
+    },
+    "projectGrid": {
+      "readCase": "Read the case"
+    }
+  },
+  "legal": {
+    "privacy": {
+      "metaTitle": "Privacy Policy | Trident Software",
+      "metaDescription": "Privacy Policy for Trident Software Sàrl — how we collect, use, and protect your data.",
+      "title": "Privacy Policy",
+      "updated": "Last updated: January 2025",
+      "controller": {
+        "title": "1. Controller",
+        "body": "Trident Software Sàrl, Rue de l'Industrie 23, 1950 Sion, Switzerland (“Trident”, “we”, “us”) is the controller for the personal data processed through this website and our services.",
+        "contact": "Contact: <mail>privacy@trident-software.ch</mail>"
+      },
+      "data": {
+        "title": "2. Data we collect",
+        "intro": "We collect the following categories of personal data:",
+        "items": {
+          "contact": "<strong>Contact data</strong> — name, email address, phone number, company name when you submit a contact or quote form.",
+          "newsletter": "<strong>Newsletter subscriptions</strong> — email address and locale when you subscribe.",
+          "usage": "<strong>Usage data</strong> — IP address, browser type, pages visited, and referrer URL collected via server logs.",
+          "cookies": "<strong>Cookies</strong> — see our Cookie Policy for details."
+        }
+      },
+      "basis": {
+        "title": "3. Legal basis and purpose",
+        "items": [
+          "Contact forms — processing based on your consent (Art. 6(1)(a) GDPR / Art. 31 nFADP) to respond to your inquiry.",
+          "Newsletter — processing based on your consent; you may withdraw at any time.",
+          "Server logs — legitimate interest in operating and securing our website (Art. 6(1)(f) GDPR)."
+        ]
+      },
+      "storage": {
+        "title": "4. Data storage",
+        "body": "All personal data is stored on servers located in Switzerland or the European Economic Area. We do not transfer personal data to countries outside the EEA or Switzerland without appropriate safeguards."
+      },
+      "retention": {
+        "title": "5. Retention",
+        "body": "Contact form submissions are retained for 3 years for business records. Newsletter subscriptions are retained until you unsubscribe. Server logs are retained for 90 days."
+      },
+      "rights": {
+        "title": "6. Your rights",
+        "intro": "Under nFADP and GDPR you have the right to:",
+        "items": [
+          "Access your personal data",
+          "Correct inaccurate data",
+          "Request deletion of your data",
+          "Restrict processing",
+          "Data portability",
+          "Withdraw consent at any time"
+        ],
+        "outro": "To exercise these rights, email <mail>privacy@trident-software.ch</mail>."
+      },
+      "processors": {
+        "title": "7. Third-party processors",
+        "intro": "We use the following processors who may access your data only for the purposes described in this policy:",
+        "items": [
+          "Hosting provider — EU/CH-based infrastructure for website and database",
+          "Email service — transactional emails for form confirmations"
+        ]
+      },
+      "security": {
+        "title": "8. Security",
+        "body": "We implement appropriate technical and organizational measures to protect personal data including TLS encryption, access controls, and regular security assessments. We operate under ISO 27000 principles."
+      },
+      "complaints": {
+        "title": "9. Complaints",
+        "body": "If you believe we are processing your data unlawfully, you have the right to lodge a complaint with the Swiss Federal Data Protection and Information Commissioner (FDPIC) at <link>www.edoeb.admin.ch</link>."
+      },
+      "changes": {
+        "title": "10. Changes",
+        "body": "We may update this policy from time to time. The “Last updated” date at the top of this page reflects the most recent revision."
+      }
+    },
+    "terms": {
+      "metaTitle": "Terms & Conditions | Trident Software",
+      "metaDescription": "General Terms and Conditions of Trident Software Sàrl.",
+      "title": "Terms & Conditions",
+      "updated": "Last updated: January 2025",
+      "scope": {
+        "title": "1. Scope",
+        "body": "These General Terms and Conditions (“GTC”) govern the relationship between Trident Software Sàrl (“Trident”) and clients engaging our software engineering, AI integration, and consulting services. Individual project agreements (Statements of Work) take precedence over these GTC where they conflict."
+      },
+      "services": {
+        "title": "2. Services",
+        "body": "Trident provides custom software development, AI integration, embedded systems engineering, and related consulting services as defined in a Statement of Work (SOW) agreed between the parties. Each SOW constitutes a separate agreement governed by these GTC."
+      },
+      "payment": {
+        "title": "3. Pricing and payment",
+        "body": "Project pricing is fixed as defined in the SOW. Invoices are payable within 30 days of issue unless otherwise agreed. Late payments accrue interest at 5% per annum. Prices are in CHF and exclusive of VAT unless stated otherwise."
+      },
+      "ip": {
+        "title": "4. Intellectual property",
+        "body": "Upon full payment, the client owns all custom code and deliverables created specifically for the project. Pre-existing components, libraries, and tools remain the property of Trident or their respective owners. Open-source components are governed by their respective licenses."
+      },
+      "confidentiality": {
+        "title": "5. Confidentiality",
+        "body": "Both parties agree to maintain confidentiality of the other party's proprietary information. Confidentiality obligations survive project completion for 5 years. A separate NDA may be executed where required."
+      },
+      "warranties": {
+        "title": "6. Warranties",
+        "body": "Trident warrants that deliverables will conform to the specifications in the SOW for 90 days following acceptance. This warranty does not cover issues arising from client modifications, third-party integrations, or infrastructure outside Trident's control."
+      },
+      "liability": {
+        "title": "7. Limitation of liability",
+        "body": "Trident's total liability under any SOW is limited to the total fees paid by the client for that project. Trident is not liable for indirect, consequential, or incidental damages."
+      },
+      "law": {
+        "title": "8. Governing law",
+        "body": "These GTC and all project agreements are governed by Swiss law. Any disputes shall be subject to the exclusive jurisdiction of the courts of the Canton of Valais, Switzerland."
+      },
+      "changes": {
+        "title": "9. Changes",
+        "body": "Trident may update these GTC. The current version is always available at this URL. Ongoing projects are governed by the GTC version in effect at SOW signing."
+      }
+    },
+    "cookies": {
+      "metaTitle": "Cookie Policy | Trident Software",
+      "metaDescription": "Cookie Policy for trident-software.ch — what cookies we use and why.",
+      "title": "Cookie Policy",
+      "updated": "Last updated: January 2025",
+      "what": {
+        "title": "What are cookies?",
+        "body": "Cookies are small text files stored on your device by your browser when you visit a website. They help the site remember your preferences and understand how you use it."
+      },
+      "used": {
+        "title": "Cookies we use",
+        "cols": {
+          "cookie": "Cookie",
+          "type": "Type",
+          "purpose": "Purpose",
+          "duration": "Duration"
+        },
+        "rows": {
+          "payload": {
+            "type": "Essential",
+            "purpose": "Authentication token for Payload CMS admin users",
+            "duration": "Session"
+          },
+          "locale": {
+            "type": "Functional",
+            "purpose": "Remembers your preferred language",
+            "duration": "1 year"
+          }
+        }
+      },
+      "analytics": {
+        "title": "Analytics",
+        "body": "This website does not use third-party analytics services (Google Analytics, etc.). We use server-side access logs for basic traffic analysis. No cookies are set for analytics purposes."
+      },
+      "managing": {
+        "title": "Managing cookies",
+        "body": "You can control and delete cookies through your browser settings. Disabling essential cookies may affect the functionality of the site. For more information on managing cookies, visit <link>aboutcookies.org</link>."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "Questions about our cookie use? Email <mail>privacy@trident-software.ch</mail>."
+      }
+    },
+    "imprint": {
+      "metaTitle": "Imprint | Trident Software",
+      "metaDescription": "Legal information about Trident Software Sàrl.",
+      "title": "Imprint",
+      "company": "Company",
+      "address": "Registered address",
+      "region": "Valais, Switzerland",
+      "contact": "Contact",
+      "email": "Email: <mail>hello@trident-software.ch</mail>",
+      "register": "Commercial register",
+      "registerValue": "Canton of Valais, Switzerland",
+      "vat": "VAT number",
+      "vatValue": "CHE-XXX.XXX.XXX MWST",
+      "responsible": "Responsible for content",
+      "disclaimer": {
+        "title": "Disclaimer",
+        "body": "The information on this website is provided for general informational purposes only. While we strive to keep information accurate and up to date, we make no warranties of any kind, express or implied, about the completeness, accuracy, reliability, or availability of the website or the information contained on it."
+      },
+      "external": {
+        "title": "External links",
+        "body": "This website may contain links to external sites. We are not responsible for the content of those sites and do not endorse them."
+      }
     }
   }
 }

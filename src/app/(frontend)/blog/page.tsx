@@ -1,5 +1,5 @@
 import { useLocale, useTranslations } from 'next-intl'
-import { getLocale } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { getPosts } from '@/data/blog'
 import { buildMetadata } from '@/lib/metadata'
 import { BLOG_IMAGES, getBlogCategory, type BlogCategory } from '@/data/blog-meta'
@@ -10,9 +10,10 @@ export const revalidate = 3600
 
 export async function generateMetadata() {
   const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'pages.blog' })
   return buildMetadata({
-    title: 'Software Engineering Blog | AI, Cloud & Swiss Tech Insights | Trident Software',
-    description: 'Expert articles on AI integration, software architecture, cloud DevOps, embedded systems, and Swiss tech market trends. Written by the Trident Software engineering team.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     path: '/blog',
     locale,
   })
@@ -20,6 +21,7 @@ export async function generateMetadata() {
 
 export default function BlogPage() {
   const t = useTranslations('blog')
+  const tp = useTranslations('pages.blog')
   const posts = getPosts(useLocale())
 
   // Only what a card needs goes to the client island (no article bodies).
@@ -40,7 +42,7 @@ export default function BlogPage() {
 
   return (
     <>
-      <PageHero label="Insights" title={t('title')} lead={t('subtitle')} crumbs={[{ name: t('title'), href: '/blog' }]} />
+      <PageHero label={tp('label')} title={t('title')} lead={t('subtitle')} crumbs={[{ name: t('title'), href: '/blog' }]} />
       <section className="section section--alt" aria-label={t('title')} style={{ paddingTop: 'clamp(40px,5vw,64px)' }}>
         <div className="container">
           <BlogGrid posts={postData} counts={counts} />

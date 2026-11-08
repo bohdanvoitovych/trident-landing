@@ -8,13 +8,14 @@ export function Faq() {
   const locale = useLocale()
   const homeFaq = getHomeFaq(locale)
   const t = useTranslations('ui')
+  const tf = useTranslations('sections.faq')
   return (
     <section className="section section--alt" id="faq" aria-labelledby="faq-h">
       <div className="container">
         <SectionHeader
           id="faq-h"
-          label="FAQ"
-          title="Questions before the audit"
+          label={tf('label')}
+          title={tf('title')}
           action={{ href: '/faq', label: t('actions.allQuestions') }}
         />
         <ListDetail

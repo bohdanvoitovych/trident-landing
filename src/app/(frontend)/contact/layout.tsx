@@ -1,4 +1,4 @@
-import { getLocale } from 'next-intl/server'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { buildMetadata } from '@/lib/metadata'
 
 // The page itself is a client component (the form holds state), so it cannot
@@ -6,10 +6,10 @@ import { buildMetadata } from '@/lib/metadata'
 // Open Graph tags the rest of the site already has.
 export async function generateMetadata() {
   const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'pages.contact.meta' })
   return buildMetadata({
-    title: 'Contact | Trident Software',
-    description:
-      'Talk to Trident Software in Sion, Valais. Book a free 45-minute audit of your operations and the systems behind them.',
+    title: t('title'),
+    description: t('description'),
     path: '/contact',
     locale,
   })

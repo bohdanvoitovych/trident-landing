@@ -1047,8 +1047,8 @@ const records: TechnologyRecord[] = [
     iconSlug: 'postgresql',
     complementaryStack: [
       'Prisma / Drizzle ORM',
-      'pgvector for AI embeddings',
-      'pgBackRest for backups',
+      'pgvector (AI embeddings)',
+      'pgBackRest (backups)',
       'PostGIS',
       'Node.js / Python / Payload CMS',
     ],

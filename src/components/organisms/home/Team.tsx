@@ -16,14 +16,15 @@ const featured = (team: TeamMember[]) =>
 
 export function Team() {
   const t = useTranslations('ui.actions')
+  const tt = useTranslations('sections.team')
   const FEATURED = featured(getTeam(useLocale()))
   return (
     <section className="section" id="team" aria-labelledby="team-h">
       <div className="container">
         <SectionHeader
           id="team-h"
-          label="Who you work with"
-          title="The same people from audit to handover"
+          label={tt('label')}
+          title={tt('title')}
           action={{ href: '/team', label: t('meetTeam') }}
         />
         <div className="grid-4 keep-2 team-grid stagger">

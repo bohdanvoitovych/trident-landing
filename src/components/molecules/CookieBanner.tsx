@@ -15,6 +15,7 @@ const STORAGE_KEY = 'trident-cookie-consent'
  */
 export function CookieBanner() {
   const t = useTranslations('ui.cookie')
+  const tb = useTranslations('molecules.cookieBanner')
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -39,15 +40,14 @@ export function CookieBanner() {
   return (
     <div role="region" aria-label={t('label')} className="cookie">
       <p>
-        We use essential cookies to run this site, and analytics cookies to see which pages are read.{' '}
-        <Link href="/cookies">Cookie Policy</Link>
+        {tb('text')} <Link href="/cookies">{tb('policy')}</Link>
       </p>
       <div className="row">
         <button type="button" className="btn btn--outline btn--sm" onClick={() => decide('declined')}>
-          <span>Decline</span>
+          <span>{tb('decline')}</span>
         </button>
         <button type="button" className="btn btn--primary btn--sm" onClick={() => decide('accepted')}>
-          <span>Accept</span>
+          <span>{tb('accept')}</span>
         </button>
       </div>
     </div>

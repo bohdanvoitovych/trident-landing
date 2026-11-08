@@ -1,4 +1,4 @@
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { SolutionDetail } from '@/components/templates/SolutionDetail'
@@ -17,43 +17,30 @@ export async function generateMetadata() {
   })
 }
 
-const industries = [
-  'Automotive',
-  'Healthcare',
-  'Water management',
-  'Industrial automation',
-  'Smart buildings',
-  'Agriculture',
-]
-
 export default function IotSolutionPage() {
+  const t = useTranslations('pages.solutions.iot')
   const solution = getSolutionBySlug('iot', useLocale())
   if (!solution) notFound()
 
   return (
     <SolutionDetail
       solution={solution}
-      label="IoT & Embedded"
-      primary="Discuss your project"
-      secondary={{ href: '/services/embedded-and-iot', label: 'Embedded & IoT service' }}
-      features={{
-        lead: 'End-to-end IoT and embedded solutions — from firmware to cloud dashboards, with compliance where it matters.',
-      }}
+      label={t('label')}
+      primary={t('primary')}
+      secondary={{ href: '/services/embedded-and-iot', label: t('secondary') }}
+      features={{ lead: t('featuresLead') }}
       list={{
-        label: 'Industries',
-        title: 'Sectors we serve',
-        lead: 'We have delivered embedded and IoT solutions across regulated and safety-critical industries.',
-        items: industries,
+        label: t('listLabel'),
+        title: t('listTitle'),
+        lead: t('listLead'),
+        items: t.raw('listItems') as string[],
       }}
-      stack={{
-        title: 'From silicon to cloud',
-        lead: 'Hardware-adjacent tooling combined with modern cloud infrastructure for end-to-end IoT systems.',
-      }}
+      stack={{ title: t('stackTitle'), lead: t('stackLead') }}
       cta={{
-        title: 'Connect your devices to the cloud',
-        text: 'From firmware to dashboards — we build the full stack so your IoT system works reliably in production.',
-        primary: 'Get a quote',
-        secondary: { href: '/cases', label: 'View case studies' },
+        title: t('ctaTitle'),
+        text: t('ctaText'),
+        primary: t('ctaPrimary'),
+        secondary: { href: '/cases', label: t('ctaSecondary') },
       }}
     />
   )

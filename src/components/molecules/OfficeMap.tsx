@@ -1,6 +1,6 @@
 'use client'
 
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 
 const PLACE_QUERY = "Trident Software Sarl, Rue de l'Industrie 23, 1950 Sion, Switzerland"
@@ -22,13 +22,14 @@ const FULL_MAP_HREF = `https://www.google.com/maps?cid=${PLACE_CID}`
 
 export default function OfficeMap({ className = '' }: { className?: string }) {
   const locale = useLocale()
+  const t = useTranslations('molecules.officeMap')
 
   return (
     <div className={cn('card card--flat flex flex-col overflow-hidden', className)}>
       <iframe
         src={embedSrc(locale)}
         loading="lazy"
-        title="Trident Software office in Sion"
+        title={t('iframeTitle')}
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"
         sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
@@ -40,7 +41,7 @@ export default function OfficeMap({ className = '' }: { className?: string }) {
         rel="noopener noreferrer"
         className="text-link justify-center border-t border-line bg-alt px-3 py-3 text-[14px] transition-colors hover:bg-wash"
       >
-        Open in Google Maps
+        {t('openInMaps')}
         <span className="go" aria-hidden="true">
           ↗
         </span>

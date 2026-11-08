@@ -3,17 +3,19 @@ import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { LogoMarquee } from '@/components/molecules/Logos'
 import { CLIENT_LOGOS } from '@/data/logos'
 
+// Country, company name (null: unnamed, described in messages), message key.
 const REFERENCES = [
-  ['CH', 'Interhome Group', 'vacation rental'],
-  ['ES', 'Ruralidays', 'travel platform, incl. Holidu integration'],
-  ['CH', 'Le Glaçon Suisse', 'ice production & nationwide distribution'],
-  ['CH', 'Aida Medical', 'digital health (our CTO is co-founder)'],
-  ['UK', 'London waste-management operator', '(under NDA)'],
-]
+  ['CH', 'Interhome Group', 'interhome'],
+  ['ES', 'Ruralidays', 'ruralidays'],
+  ['CH', 'Le Glaçon Suisse', 'glacon'],
+  ['CH', 'Aida Medical', 'aida'],
+  ['UK', null, 'london'],
+] as const
 
 /** Clients: named references on request, then the two-row logo marquee. */
 export function Logos() {
   const t = useTranslations('ui.clients')
+  const tl = useTranslations('sections.logos')
   return (
     <section className="section section--line" aria-labelledby="clients-h">
       <div className="container">
@@ -23,11 +25,11 @@ export function Logos() {
             {t('namedReferences')}
           </h3>
           <ul>
-            {REFERENCES.map(([c, n, d]) => (
-              <li key={n} className="ref-chip">
+            {REFERENCES.map(([c, n, k]) => (
+              <li key={k} className="ref-chip">
                 <span className="tag tag--ink">{c}</span>
-                <b>{n}</b>
-                <span>{d}</span>
+                <b>{n ?? tl(`refs.${k}Name`)}</b>
+                <span>{tl(`refs.${k}`)}</span>
               </li>
             ))}
           </ul>

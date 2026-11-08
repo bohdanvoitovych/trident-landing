@@ -1,4 +1,5 @@
-import { getLocale } from 'next-intl/server'
+import { useTranslations } from 'next-intl'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { ButtonLink, Tag } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
@@ -7,48 +8,38 @@ import { buildMetadata } from '@/lib/metadata'
 
 export async function generateMetadata() {
   const locale = await getLocale()
+  const t = await getTranslations({ locale, namespace: 'pages.products' })
   return buildMetadata({
-    title: '8move — Driver Management Platform | Trident Software',
-    description:
-      '8move is a SaaS platform for last-mile delivery companies. Manage drivers, track deliveries, automate payroll. Built by Trident Software.',
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     path: '/products',
     locale,
   })
 }
 
-const features = [
-  { title: 'Driver app', desc: 'iOS & Android app with route navigation, proof-of-delivery, and real-time status updates.' },
-  { title: 'Fleet dashboard', desc: 'Live map view of all drivers, delivery status, and exception alerts.' },
-  { title: 'Payroll automation', desc: 'Automated wage calculation based on deliveries, bonuses, and deductions.' },
-  { title: 'Client portal', desc: 'White-label portal for your clients to track their shipments.' },
-  { title: 'Route optimization', desc: 'AI-powered route sequencing reducing fuel costs by up to 23%.' },
-  { title: 'Analytics', desc: 'Delivery performance, driver efficiency, and cost-per-delivery reporting.' },
-]
+const FEATURES = ['driverApp', 'fleet', 'payroll', 'portal', 'routes', 'analytics'] as const
 
 export default function ProductsPage() {
+  const t = useTranslations('pages.products')
   return (
     <>
       <PageHero
-        crumbs={[{ name: 'Our Product', href: '/products' }]}
-        label="Our Product"
-        title={
-          <>
-            <span className="blue">8move</span> — Driver Management SaaS
-          </>
-        }
-        lead="A production SaaS platform built by Trident Software for last-mile delivery companies. Manage drivers, track deliveries, and automate payroll — all in one place."
+        crumbs={[{ name: t('crumb'), href: '/products' }]}
+        label={t('label')}
+        title={t.rich('heroTitle', { blue: (c) => <span className="blue">{c}</span> })}
+        lead={t('heroLead')}
         actions={
           <div className="stack" style={{ gap: 20 }}>
             <div className="hero-ctas">
               <ButtonLink href="https://8move.app" target="_blank" rel="noopener noreferrer" arrow>
-                Visit 8move.app
+                {t('visit')}
               </ButtonLink>
               <ButtonLink href="/cases/8move-driver" variant="outline" arrow>
-                Read the case study
+                {t('readCase')}
               </ButtonLink>
             </div>
             <ul className="chips" style={{ listStyle: 'none', margin: 0, padding: 0, gap: 6 }}>
-              {['Live since 2022', 'Active delivery companies', 'Switzerland · Ukraine'].map((f) => (
+              {(t.raw('chips') as string[]).map((f) => (
                 <li key={f}>
                   <Tag tone="line">{f}</Tag>
                 </li>
@@ -64,15 +55,15 @@ export default function ProductsPage() {
         <div className="container">
           <SectionHeader
             id="platform-h"
-            label="Platform"
-            title="Everything for last-mile delivery"
-            lead="Built from real operational experience running delivery fleets."
+            label={t('platformLabel')}
+            title={t('platformTitle')}
+            lead={t('platformLead')}
           />
           <ul className="grid-3 stagger" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-            {features.map((f) => (
-              <li key={f.title} className="card card--flat feature-card">
-                <h3>{f.title}</h3>
-                <p>{f.desc}</p>
+            {FEATURES.map((key) => (
+              <li key={key} className="card card--flat feature-card">
+                <h3>{t(`features.${key}.title`)}</h3>
+                <p>{t(`features.${key}.desc`)}</p>
               </li>
             ))}
           </ul>
@@ -83,20 +74,16 @@ export default function ProductsPage() {
         <div className="container cta-band reveal">
           <div className="stack" style={{ maxWidth: 760 }}>
             <h2 id="products-cta-h" className="h2">
-              Built by Trident Software
+              {t('ctaTitle')}
             </h2>
-            <p className="lead">
-              8move is our own product — not a client project. We built, deployed, and operate it ourselves. This means we
-              understand SaaS from the inside. If you need a similar platform built for your business, we know exactly
-              what it takes.
-            </p>
+            <p className="lead">{t('ctaLead')}</p>
           </div>
           <div className="hero-ctas">
             <ButtonLink href="/contact" arrow>
-              Build your platform
+              {t('ctaPrimary')}
             </ButtonLink>
             <ButtonLink href="/services/software-engineering" variant="outline">
-              Our services
+              {t('ctaSecondary')}
             </ButtonLink>
           </div>
         </div>

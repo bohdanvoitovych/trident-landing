@@ -5,6 +5,7 @@ import { ButtonLink, Tag } from '@/components/atoms/controls'
 import { CaseCard } from '@/components/molecules/CaseCard'
 import { PageHero } from '@/components/molecules/PageHero'
 import { getRelatedCases } from '@/data/cases'
+import { getServiceBySlug } from '@/data/services'
 import type { CaseData } from '@/data/cases'
 
 type Props = {
@@ -24,7 +25,9 @@ export function caseImage(c: CaseData) {
 export function CasePage({ caseStudy }: Props) {
   const t = useTranslations('cases')
   const tu = useTranslations('ui')
-  const related = getRelatedCases(caseStudy.relatedCases, useLocale())
+  const tp = useTranslations('templates.case')
+  const locale = useLocale()
+  const related = getRelatedCases(caseStudy.relatedCases, locale)
 
   const blocks = [
     { id: 'challenge', title: t('challenge'), text: caseStudy.challenge },
@@ -45,18 +48,21 @@ export function CasePage({ caseStudy }: Props) {
         actions={
           <div className="stack" style={{ gap: 14 }}>
             <p className="meta" style={{ margin: 0 }}>
-              Client: <span className="text-ink">{caseStudy.client}</span>
+              {tp.rich('client', {
+                client: caseStudy.client,
+                name: (c) => <span className="text-ink">{c}</span>,
+              })}
             </p>
             <div className="chips" style={{ gap: 6 }}>
               {caseStudy.services.slice(0, 2).map((s) => (
                 <Tag key={s} tone="wash">
-                  {s.replace(/-/g, ' ')}
+                  {getServiceBySlug(s, locale)?.title ?? s.replace(/-/g, ' ')}
                 </Tag>
               ))}
             </div>
             <Link href="/cases" className="text-link">
               <span aria-hidden="true">←</span>
-              All cases
+              {tp('allCases')}
             </Link>
           </div>
         }
@@ -141,10 +147,10 @@ export function CasePage({ caseStudy }: Props) {
             <h2 id="case-cta-h" className="h2">
               {t('startSimilar')}
             </h2>
-            <p className="lead">Let&apos;s discuss your project. We respond within 24 hours.</p>
+            <p className="lead">{tp('ctaLead')}</p>
           </div>
           <ButtonLink href="/contact" arrow>
-            Get a Quote
+            {tp('ctaButton')}
           </ButtonLink>
         </div>
       </section>

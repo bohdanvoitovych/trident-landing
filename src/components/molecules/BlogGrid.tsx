@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { BlogCard } from '@/components/molecules/BlogCard'
 import { Pagination } from '@/components/molecules/Pagination'
 import { BLOG_CATEGORIES, BlogFilter } from '@/components/molecules/BlogFilter'
@@ -29,6 +30,7 @@ type Props = {
  * kept in sync with history.replaceState (no navigation, no re-render of the page).
  */
 export function BlogGrid({ posts, counts, pageSize = 6 }: Props) {
+  const tc = useTranslations('molecules.blogFilter')
   const [category, setCategory] = useState<BlogCategory>('All')
   const [page, setPage] = useState(1)
   const top = useRef<HTMLDivElement>(null)
@@ -80,7 +82,7 @@ export function BlogGrid({ posts, counts, pageSize = 6 }: Props) {
             date={p.publishedAt}
             title={p.title}
             excerpt={p.excerpt}
-            category={p.category}
+            category={tc(`categories.${p.category}`)}
             author={{ name: p.author, role: p.authorRole }}
             headingLevel="h2"
           />

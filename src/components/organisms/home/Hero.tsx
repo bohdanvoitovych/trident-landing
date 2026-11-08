@@ -5,11 +5,22 @@ import { StatCard } from '@/components/molecules/StatCard'
 import { SwissFlag } from '@/components/atoms/controls'
 import { HeroLog, HeroTagline } from './HeroLive'
 
-const H1 = 'Operational software and AI agents, built in Switzerland'
-const BLUE = new Set(['AI', 'agents,'])
+/** Words of the H1; the part inside <b>…</b> in the message is highlighted blue. */
+const h1Words = (src: string) =>
+  src
+    .split(/(<b>.*?<\/b>)/)
+    .flatMap((part) => {
+      const blue = part.startsWith('<b>')
+      return part
+        .replace(/<\/?b>/g, '')
+        .split(' ')
+        .filter(Boolean)
+        .map((w) => ({ w, blue }))
+    })
 
 export function Hero() {
   const t = useTranslations('ui')
+  const th = useTranslations('sections.hero')
   const log = (['1', '2', '3', '4', '5', '6', '7', '8'] as const).map((k) => t(`hero.log.${k}`))
 
   return (
@@ -23,10 +34,10 @@ export function Hero() {
             Sion, Valais · HES-SO Valais-Wallis
           </p>
           <h1 id="hero-h" className="h1">
-            {H1.split(' ').map((w, i) => (
+            {h1Words(th.raw('title') as string).map(({ w, blue }, i) => (
               <span key={i}>
                 <span className="wm">
-                  <span className={BLUE.has(w) ? 'wd wd--blue' : 'wd'} style={{ animationDelay: `${120 + i * 70}ms` }}>
+                  <span className={blue ? 'wd wd--blue' : 'wd'} style={{ animationDelay: `${120 + i * 70}ms` }}>
                     {w}
                   </span>
                 </span>{' '}
@@ -35,13 +46,12 @@ export function Hero() {
           </h1>
           <HeroTagline />
           <p className="lead rise" style={{ animationDelay: '.85s', maxWidth: 600 }}>
-            We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI
-            layer that answers, qualifies and processes documents in four national languages.
+            {th('lead')}
           </p>
           <div className="hero-ctas rise" style={{ animationDelay: '1s' }}>
             <Link href="/contact" className="btn btn--primary">
               <span>
-                Book a free 45-min audit
+                {th('ctaAudit')}
                 <i className="arr" aria-hidden="true">
                   →
                 </i>
@@ -84,19 +94,19 @@ export function Hero() {
           <StatCard
             source={t('hero.statSrc.clinic')}
             value="−92 %"
-            description="Clinic admission time, measured"
+            description={th('stats.clinic')}
             visual={{ kind: 'bar', before: 1, after: 0.08 }}
           />
           <StatCard
             source={t('hero.statSrc.maker')}
             value="−63 %"
-            description="Warranty cost, component maker"
+            description={th('stats.maker')}
             visual={{ kind: 'beforeAfter', after: 0.37 }}
           />
           <StatCard
             source={t('hero.statSrc.agent')}
-            value="Month 2"
-            description="Typical payback on a sales agent"
+            value={th('stats.agentValue')}
+            description={th('stats.agent')}
             visual={{ kind: 'months', month: 2 }}
           />
           <StatCard
@@ -106,8 +116,8 @@ export function Hero() {
                 CH / EU <SwissFlag />
               </>
             }
-            description="Hosting, under revFADP and GDPR"
-            visual={{ kind: 'tags', tags: ['revFADP', 'GDPR'] }}
+            description={th('stats.residency')}
+            visual={{ kind: 'tags', tags: th.raw('stats.residencyTags') as string[] }}
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { Author } from './Author'
 
 type Props = {
@@ -17,6 +17,7 @@ type Props = {
 /** Image wipe, date, title, author. */
 export function BlogCard({ href, image, date, title, excerpt, category, author, headingLevel = 'h3' }: Props) {
   const t = useTranslations('ui.actions')
+  const locale = useLocale()
   const H = headingLevel
   return (
     <Link href={href} className="card post-card">
@@ -26,7 +27,7 @@ export function BlogCard({ href, image, date, title, excerpt, category, author, 
       <div className="card-body">
         <span className="meta" style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'center' }}>
           {category && <span className="tag tag--wash">{category}</span>}
-          <time dateTime={date}>{formatShort(date)}</time>
+          <time dateTime={date}>{formatShort(date, locale)}</time>
         </span>
         <H className="t">{title}</H>
         {excerpt && <p className="ex">{excerpt}</p>}
@@ -47,6 +48,6 @@ export function BlogCard({ href, image, date, title, excerpt, category, author, 
   )
 }
 
-export function formatShort(iso: string) {
-  return new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(iso))
+export function formatShort(iso: string, locale = 'en') {
+  return new Intl.DateTimeFormat(locale === 'en' ? 'en-GB' : `${locale}-CH`, { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(iso))
 }

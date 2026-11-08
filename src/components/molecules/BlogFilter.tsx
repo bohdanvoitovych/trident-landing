@@ -15,11 +15,12 @@ type Props = {
 /** Category chips with aria-pressed. State lives in BlogGrid. */
 export function BlogFilter({ active, counts, onChange }: Props) {
   const t = useTranslations('ui.blog')
+  const tc = useTranslations('molecules.blogFilter')
   return (
     <div role="group" aria-label={t('filter')} className="chips">
       {BLOG_CATEGORIES.map((cat) => (
         <Chip key={cat} aria-pressed={active === cat} onClick={() => onChange(cat)}>
-          {cat === 'All' ? t('all') : cat}
+          {cat === 'All' ? t('all') : tc(`categories.${cat}`)}
           <span className="count">{counts[cat]}</span>
         </Chip>
       ))}

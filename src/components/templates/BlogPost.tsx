@@ -20,6 +20,7 @@ type Props = {
 export function BlogPost({ post }: Props) {
   const t = useTranslations('blog')
   const ui = useTranslations('ui')
+  const tp = useTranslations('templates.blogPost')
   const locale = useLocale()
   const related = getRelatedPosts(post.relatedPosts, locale)
   const cover = BLOG_IMAGES[post.slug] ?? post.image
@@ -46,7 +47,7 @@ export function BlogPost({ post }: Props) {
             </h1>
             <p className="lead">{post.excerpt}</p>
             <p className="meta flex flex-wrap gap-x-3 gap-y-1">
-              <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+              <time dateTime={post.publishedAt}>{formatDate(post.publishedAt, locale)}</time>
               <span aria-hidden="true">·</span>
               <span>{ui('blog.minRead', { n: post.readingTime })}</span>
             </p>
@@ -68,7 +69,7 @@ export function BlogPost({ post }: Props) {
               <Author name={post.author} role={post.authorRole} large />
             </div>
             <Link href="/blog" className="text-link">
-              <span aria-hidden="true">←</span> All posts
+              <span aria-hidden="true">←</span> {tp('allPosts')}
             </Link>
           </aside>
         </div>
@@ -80,7 +81,7 @@ export function BlogPost({ post }: Props) {
             <div className="section-head reveal">
               <div>
                 <h2 id="post-faq-h" className="h2">
-                  Frequently Asked Questions
+                  {tp('faqTitle')}
                 </h2>
               </div>
             </div>

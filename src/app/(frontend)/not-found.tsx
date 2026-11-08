@@ -3,12 +3,13 @@ import { ButtonLink, Label } from '@/components/atoms/controls'
 
 export default function NotFound() {
   const t = useTranslations('notFound')
+  const tp = useTranslations('pages.notFound')
 
   return (
     <section className="section" aria-labelledby="nf-h">
       <div className="container">
         <div className="stack reveal" style={{ gap: 22, maxWidth: 720 }}>
-          <Label>Error 404</Label>
+          <Label>{tp('label')}</Label>
           <span
             aria-hidden="true"
             className="block select-none font-semibold text-blue"

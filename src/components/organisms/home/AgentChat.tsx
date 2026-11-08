@@ -1,6 +1,7 @@
 'use client'
 
 import { useId, useRef, useState, type KeyboardEvent } from 'react'
+import { useTranslations } from 'next-intl'
 
 type Line =
   | { kind: 'in'; text: string; meta: string }
@@ -66,6 +67,7 @@ const LANGS = ['en', 'de', 'fr', 'it'] as const
 type Labels = { group: string; crm: string; product: string; qty: string; slot: string; language: string }
 
 export function AgentChat({ initial, labels }: { initial: string; labels: Labels }) {
+  const t = useTranslations('sections.agentChat')
   const [lang, setLang] = useState<string>(SCRIPTS[initial] ? initial : 'en')
   const id = useId()
   const tabs = useRef<(HTMLButtonElement | null)[]>([])
@@ -144,11 +146,11 @@ export function AgentChat({ initial, labels }: { initial: string; labels: Labels
         <p className="h">{labels.crm}</p>
         <dl>
         <dt>{labels.product}</dt>
-        <dd>0/16 gravel</dd>
+        <dd>{t('crmProduct')}</dd>
         <dt>{labels.qty}</dt>
         <dd>8 t</dd>
         <dt>{labels.slot}</dt>
-        <dd>Mon 07:30</dd>
+        <dd>{t('crmSlot')}</dd>
         <dt>{labels.language}</dt>
         <dd className="blue">{lang.toUpperCase()}</dd>
         </dl>
