@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { ServicePage } from '@/components/templates/ServicePage'
-import { getServiceBySlug, getServiceSlugs } from '@/data/services'
+import { getServiceBySlug, getServiceLocales, getServiceSlugs } from '@/data/services'
 import { buildMetadata } from '@/lib/metadata'
 
 type Props = {
@@ -14,20 +14,21 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params
-  const service = getServiceBySlug(slug)
-  if (!service) return {}
   const locale = await getLocale()
+  const service = getServiceBySlug(slug, locale)
+  if (!service) return {}
   return buildMetadata({
     title: service.meta.title,
     description: service.meta.description,
     path: `/services/${slug}`,
     locale,
+    availableLocales: getServiceLocales(slug),
   })
 }
 
 export default async function ServiceSlugPage({ params }: Props) {
   const { slug } = await params
-  const service = getServiceBySlug(slug)
+  const service = getServiceBySlug(slug, await getLocale())
   if (!service) notFound()
 
   return <ServicePage service={service} />

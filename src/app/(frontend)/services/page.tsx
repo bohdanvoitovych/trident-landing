@@ -1,12 +1,13 @@
+import { useLocale } from 'next-intl'
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { getLocale } from 'next-intl/server'
 import { ServiceCard } from '@/components/molecules/ServiceCard'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { ButtonLink } from '@/components/atoms/controls'
 import { Integrations } from '@/components/organisms/home/Integrations'
-import { services } from '@/data/services'
+import { getServices } from '@/data/services'
 import { technologies } from '@/data/technologies'
 import { buildMetadata } from '@/lib/metadata'
 
@@ -68,6 +69,7 @@ const TRUST_POINTS = [
 ]
 
 export default function ServicesPage() {
+  const services = getServices(useLocale())
   return (
     <>
       <PageHero

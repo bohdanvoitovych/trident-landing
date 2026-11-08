@@ -104,6 +104,7 @@
   "ui": {
     "skip": "Skip to main content",
     "home": "Trident Software, home",
+    "crumbHome": "Startseite",
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
     "mainNav": "Main",
@@ -130,7 +131,9 @@
       "read": "Read",
       "bookAudit": "Book the audit",
       "seeResults": "See results",
-      "backHome": "Back to home"
+      "backHome": "Back to home",
+      "freeQuote": "Kostenlose Offerte anfordern",
+      "seeProjects": "Unsere Projekte ansehen"
     },
     "hero": {
       "logTitle": "Agent · Valais Materials · live",
@@ -287,6 +290,35 @@
     "about": {
       "timelineLabel": "Timeline",
       "timelineTitle": "2009 → today"
+    }
+  },
+  "templates": {
+    "service": {
+      "crumb": "Dienstleistungen",
+      "label": "Dienstleistung",
+      "scopeLabel": "Leistungsumfang",
+      "scopeLead": "Alles, was in unseren {service}-Mandaten enthalten ist, ohne versteckte Zusatzkosten.",
+      "whyTitle": "Warum wir",
+      "why": {
+        "fixedPrice": {
+          "title": "Festpreis-Mandate",
+          "desc": "Vor dem Start gibt es ein Statement of Work. Keine Überraschungen beim Umfang. Sie kennen die Kosten im Voraus."
+        },
+        "compliance": {
+          "title": "Schweizer Datenschutz",
+          "desc": "Standardmässig nDSG- und DSGVO-konform. Datenhaltung in der Schweiz ist für alle Projekte möglich."
+        },
+        "response": {
+          "title": "Antwort innert 24 Stunden",
+          "desc": "Senden Sie uns ein Briefing. Innert eines Arbeitstags erhalten Sie ein konkretes Angebot."
+        }
+      },
+      "stackTitle": "Technologien, die wir einsetzen",
+      "portfolioLabel": "Portfolio",
+      "portfolioLead": "Reale Projekte, die wir mit {service} umgesetzt haben.",
+      "ctaTitle": "Bereit für den Start mit {service}?",
+      "ctaLead": "Beschreiben Sie Ihr Projekt in zwei Sätzen. Innert 24 Stunden erhalten Sie ein konkretes Angebot mit Umfang, Zeitplan und Festpreis.",
+      "ctaButton": "Angebot anfordern"
     }
   }
 }

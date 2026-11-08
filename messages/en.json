@@ -104,6 +104,7 @@
   "ui": {
     "skip": "Skip to main content",
     "home": "Trident Software, home",
+    "crumbHome": "Home",
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
     "mainNav": "Main",
@@ -130,7 +131,9 @@
       "read": "Read",
       "bookAudit": "Book the audit",
       "seeResults": "See results",
-      "backHome": "Back to home"
+      "backHome": "Back to home",
+      "freeQuote": "Get a free quote",
+      "seeProjects": "See our projects"
     },
     "hero": {
       "logTitle": "Agent · Valais Materials · live",
@@ -287,6 +290,35 @@
     "about": {
       "timelineLabel": "Timeline",
       "timelineTitle": "2009 → today"
+    }
+  },
+  "templates": {
+    "service": {
+      "crumb": "Services",
+      "label": "Service",
+      "scopeLabel": "Scope of work",
+      "scopeLead": "Everything included in our {service} engagements — no hidden extras.",
+      "whyTitle": "Why us",
+      "why": {
+        "fixedPrice": {
+          "title": "Fixed-price engagements",
+          "desc": "Statement of Work before we start. No scope creep surprises. You know the cost upfront."
+        },
+        "compliance": {
+          "title": "Swiss data compliance",
+          "desc": "nFADP and GDPR-ready by default. Data residency in Switzerland available for all projects."
+        },
+        "response": {
+          "title": "24h response guaranteed",
+          "desc": "Send us a brief. We respond with a concrete proposal within one business day."
+        }
+      },
+      "stackTitle": "Technologies we use",
+      "portfolioLabel": "Portfolio",
+      "portfolioLead": "Real projects we delivered using {service}.",
+      "ctaTitle": "Ready to get started with {service}?",
+      "ctaLead": "Describe your project in 2 sentences. We send back a concrete proposal within 24 hours — scope, timeline, and fixed price.",
+      "ctaButton": "Request a Proposal"
     }
   }
 }

@@ -1,21 +1,21 @@
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import type { ReactNode } from 'react'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import JsonLd from '@/components/seo/JsonLd'
 import { breadcrumbSchema } from '@/lib/schema'
+import { localizedUrl } from '@/lib/metadata'
 import { Label } from '@/components/atoms/controls'
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://trident-software.ch'
 
 export type Crumb = { name: string; href: string }
 
 /** Visible breadcrumb trail + BreadcrumbList JSON-LD. Last crumb is the current page. */
 export function Breadcrumbs({ items }: { items: Crumb[] }) {
   const t = useTranslations('ui')
-  const all = [{ name: 'Home', href: '/' }, ...items]
+  const locale = useLocale()
+  const all = [{ name: t('crumbHome'), href: '/' }, ...items]
   return (
     <>
-      <JsonLd data={[breadcrumbSchema(all.map((c) => ({ name: c.name, url: `${SITE_URL}${c.href === '/' ? '' : c.href}` })))]} />
+      <JsonLd data={[breadcrumbSchema(all.map((c) => ({ name: c.name, url: localizedUrl(c.href, locale) })))]} />
       <nav aria-label={t('breadcrumb')}>
         <ol className="crumbs">
           {all.map((c, i) =>

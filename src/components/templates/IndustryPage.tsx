@@ -1,5 +1,6 @@
+import { useLocale } from 'next-intl'
 import type { IndustryData } from '@/data/industries'
-import { services } from '@/data/services'
+import { getServices } from '@/data/services'
 import { cases } from '@/data/cases'
 import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
@@ -18,6 +19,7 @@ type Props = {
 }
 
 export function IndustryPage({ industry }: Props) {
+  const services = getServices(useLocale())
   const relatedServices = services.filter((s) => industry.relatedServices.includes(s.slug))
   const relatedCases = cases.filter((c) => industry.relatedCases.includes(c.slug))
   const bg = sectionRhythm()

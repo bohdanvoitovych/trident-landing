@@ -1,3 +1,5 @@
+import { localizedUrl } from './metadata'
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://trident-software.ch'
 
 const LOCALE_TO_BCP47: Record<string, string> = {
@@ -98,7 +100,7 @@ export function blogPostSchema(
   },
   locale: string,
 ): Record<string, unknown>[] {
-  const url = `${SITE_URL}/blog/${post.slug}`
+  const url = localizedUrl(`/blog/${post.slug}`, locale)
   const schemas: Record<string, unknown>[] = [
     {
       '@context': 'https://schema.org',
@@ -144,7 +146,7 @@ export function servicePageSchema(
       '@type': 'ProfessionalService',
       name: service.title,
       description: service.description,
-      url: `${SITE_URL}/services/${service.slug}`,
+      url: localizedUrl(`/services/${service.slug}`, locale),
       provider: {
         '@type': 'Organization',
         '@id': `${SITE_URL}/#organization`,
@@ -156,8 +158,8 @@ export function servicePageSchema(
       },
     },
     breadcrumbSchema([
-      { name: 'Home', url: SITE_URL },
-      { name: 'Services', url: `${SITE_URL}/services` },
+      { name: 'Home', url: localizedUrl('/', locale) },
+      { name: 'Services', url: localizedUrl('/services', locale) },
       { name: service.title, url: `${SITE_URL}/services/${service.slug}` },
     ]),
   ]

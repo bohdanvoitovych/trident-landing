@@ -1,11 +1,12 @@
-import Link from 'next/link'
+import { useLocale } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import { getLocale } from 'next-intl/server'
 import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { ServiceCard } from '@/components/molecules/ServiceCard'
 import { solutions } from '@/data/solutions'
-import { services } from '@/data/services'
+import { getServices } from '@/data/services'
 import { buildMetadata } from '@/lib/metadata'
 
 export const revalidate = 3600
@@ -22,6 +23,7 @@ export async function generateMetadata() {
 }
 
 export default function SolutionsPage() {
+  const services = getServices(useLocale())
   return (
     <>
       <PageHero

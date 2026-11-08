@@ -1,5 +1,6 @@
+import { useLocale } from 'next-intl'
 import type { TechnologyData } from '@/data/technologies'
-import { services } from '@/data/services'
+import { getServices } from '@/data/services'
 import { cases } from '@/data/cases'
 import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
@@ -16,6 +17,7 @@ import {
 type Props = { technology: TechnologyData }
 
 export function TechnologyPage({ technology }: Props) {
+  const services = getServices(useLocale())
   const relatedServices = services.filter((s) => technology.relatedServices.includes(s.slug))
   const relatedCases = cases.filter((c) => technology.relatedCases.includes(c.slug))
   const bg = sectionRhythm()

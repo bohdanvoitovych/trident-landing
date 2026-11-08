@@ -2,6 +2,10 @@ import type { MetadataRoute } from 'next'
 import { getPostSlugs } from '@/data/blog'
 import { getLocationSlugs } from '@/data/locations'
 import { getTechnologySlugs } from '@/data/technologies'
+import { routing } from '@/i18n/routing'
+import { localizedUrl } from '@/lib/metadata'
+
+const HREFLANG: Record<string, string> = { en: 'en', de: 'de-CH', fr: 'fr-CH', it: 'it-CH' }
 
 const BASE_URL = 'https://trident-software.ch'
 
@@ -94,7 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [
+  const routes = [
     ...staticRoutes,
     ...serviceRoutes,
     ...industryRoutes,
@@ -103,4 +107,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...locationRoutes,
     ...technologyRoutes,
   ]
+
+  // One entry per locale, each listing every language version as an alternate.
+  return routes.flatMap((route) => {
+    const path = route.url.slice(BASE_URL.length) || '/'
+    const languages = Object.fromEntries([
+      ...routing.locales.map((l) => [HREFLANG[l], localizedUrl(path, l)]),
+      ['x-default', localizedUrl(path, 'en')],
+    ])
+    return routing.locales.map((l) => ({
+      ...route,
+      url: localizedUrl(path, l),
+      alternates: { languages },
+    }))
+  })
 }

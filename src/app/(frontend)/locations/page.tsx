@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { getLocale } from 'next-intl/server'
 import { locations } from '@/data/locations'
 import { buildMetadata } from '@/lib/metadata'

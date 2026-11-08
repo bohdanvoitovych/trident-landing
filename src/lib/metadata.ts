@@ -7,6 +7,13 @@ const FALLBACK_OG_IMAGE = `${SITE_URL}/og-default.png`
 const LOCALES = ['en', 'de', 'fr', 'it'] as const
 type Locale = (typeof LOCALES)[number]
 
+/** Absolute URL of `path` in `locale`. English has no prefix (localePrefix: 'as-needed'). */
+export function localizedUrl(path: string, locale: string = 'en'): string {
+  const clean = path === '/' ? '' : path
+  const prefix = locale === 'en' ? '' : `/${locale}`
+  return `${SITE_URL}${prefix}${clean}` || SITE_URL
+}
+
 // BCP 47 tags for hreflang
 const HREFLANG_MAP: Record<Locale, string> = {
   en: 'en',
@@ -30,6 +37,12 @@ interface PageMetadataOptions {
   locale?: string
   ogImage?: string
   noIndex?: boolean
+  /**
+   * Locales that have their own text for this page. Defaults to all. A locale
+   * left out is dropped from hreflang, and the page in that locale is noindexed
+   * instead of passing English off as a translation.
+   */
+  availableLocales?: readonly string[]
 }
 
 export function buildMetadata({
@@ -39,21 +52,23 @@ export function buildMetadata({
   locale = 'en',
   ogImage,
   noIndex,
+  availableLocales = LOCALES,
 }: PageMetadataOptions): Metadata {
-  // trident-landing uses localePrefix:'never' — all locales share the same URL
-  const canonicalUrl = `${SITE_URL}${path === '/' ? '' : path}`
+  const published = LOCALES.filter((l) => l === 'en' || availableLocales.includes(l))
+  const isTranslated = published.includes(locale as Locale)
+  const canonicalUrl = localizedUrl(path, isTranslated ? locale : 'en')
 
-  // hreflang: all locales point to same URL (content negotiation pattern)
   const languages: Record<string, string> = {}
-  for (const loc of LOCALES) {
-    languages[HREFLANG_MAP[loc]] = canonicalUrl
+  for (const loc of published) {
+    languages[HREFLANG_MAP[loc]] = localizedUrl(path, loc)
   }
-  languages['x-default'] = canonicalUrl
+  languages['x-default'] = localizedUrl(path, 'en')
 
   const ogLocale = OG_LOCALE_MAP[locale as Locale] || 'en_US'
-  const alternateLocales = LOCALES.filter((l) => l !== locale).map(
+  const alternateLocales = published.filter((l) => l !== locale).map(
     (l) => OG_LOCALE_MAP[l],
   )
+  if (!isTranslated) noIndex = true
   const image = ogImage || FALLBACK_OG_IMAGE
 
   return {

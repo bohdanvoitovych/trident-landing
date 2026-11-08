@@ -10,33 +10,31 @@ type Props = {
   service: ServiceData
 }
 
-const WHY = [
-  { title: 'Fixed-price engagements', desc: 'Statement of Work before we start. No scope creep surprises. You know the cost upfront.' },
-  { title: 'Swiss data compliance', desc: 'nFADP and GDPR-ready by default. Data residency in Switzerland available for all projects.' },
-  { title: '24h response guaranteed', desc: 'Send us a brief. We respond with a concrete proposal within one business day.' },
-]
+const WHY = ['fixedPrice', 'compliance', 'response'] as const
 
 export function ServicePage({ service }: Props) {
   const t = useTranslations('services')
+  const tp = useTranslations('templates.service')
+  const ta = useTranslations('ui.actions')
   const relatedCases = cases.filter((c) => service.relatedCases.includes(c.slug))
 
   return (
     <>
       <PageHero
         crumbs={[
-          { name: 'Services', href: '/services' },
+          { name: tp('crumb'), href: '/services' },
           { name: service.title, href: `/services/${service.slug}` },
         ]}
-        label="Service"
+        label={tp('label')}
         title={service.title}
         lead={service.description}
         actions={
           <>
             <ButtonLink href="/contact" arrow>
-              Get a free quote
+              {ta('freeQuote')}
             </ButtonLink>
             <ButtonLink href="/cases" variant="outline">
-              See our projects
+              {ta('seeProjects')}
             </ButtonLink>
           </>
         }
@@ -57,9 +55,9 @@ export function ServicePage({ service }: Props) {
         <div className="container">
           <SectionHeader
             id="scope-h"
-            label="Scope of work"
+            label={tp('scopeLabel')}
             title={t('features')}
-            lead={`Everything included in our ${service.title} engagements — no hidden extras.`}
+            lead={tp('scopeLead', { service: service.title })}
           />
           <div className="grid-2 stagger">
             {service.features.map((feature, i) => (
@@ -79,13 +77,13 @@ export function ServicePage({ service }: Props) {
       <section className="section section--band" aria-labelledby="why-h">
         <div className="container">
           <h2 id="why-h" className="sr-only">
-            Why us
+            {tp('whyTitle')}
           </h2>
           <ul className="grid-3 stagger" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-            {WHY.map((item) => (
-              <li key={item.title} className="flex flex-col gap-2 border-t-2 border-blue pt-5">
-                <h3 className="h4">{item.title}</h3>
-                <p className="body">{item.desc}</p>
+            {WHY.map((key) => (
+              <li key={key} className="flex flex-col gap-2 border-t-2 border-blue pt-5">
+                <h3 className="h4">{tp(`why.${key}.title`)}</h3>
+                <p className="body">{tp(`why.${key}.desc`)}</p>
               </li>
             ))}
           </ul>
@@ -95,7 +93,7 @@ export function ServicePage({ service }: Props) {
       {/* Tech stack */}
       <section className="section section--alt" aria-labelledby="stack-h">
         <div className="container">
-          <SectionHeader id="stack-h" label={t('techStack')} title="Technologies we use" />
+          <SectionHeader id="stack-h" label={t('techStack')} title={tp('stackTitle')} />
           <ul className="reveal flex flex-wrap gap-2" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {service.techStack.map((tech) => (
               <li key={tech} className="rounded-sm border border-line bg-white px-3 py-1.5 text-[14px] font-medium text-ink">
@@ -112,9 +110,9 @@ export function ServicePage({ service }: Props) {
           <div className="container">
             <SectionHeader
               id="related-h"
-              label="Portfolio"
+              label={tp('portfolioLabel')}
               title={t('relatedCases')}
-              lead={`Real projects we delivered using ${service.title}.`}
+              lead={tp('portfolioLead', { service: service.title })}
             />
             <div className="grid-3 stagger wipe">
               {relatedCases.map((c) => (
@@ -140,14 +138,14 @@ export function ServicePage({ service }: Props) {
           <div className="cta-band reveal">
             <div className="stack">
               <h2 id="svc-cta-h" className="h2">
-                Ready to get started with {service.title}?
+                {tp('ctaTitle', { service: service.title })}
               </h2>
               <p className="lead" style={{ maxWidth: 640 }}>
-                Describe your project in 2 sentences. We send back a concrete proposal within 24 hours — scope, timeline, and fixed price.
+                {tp('ctaLead')}
               </p>
             </div>
             <ButtonLink href="/contact" arrow>
-              Request a Proposal
+              {tp('ctaButton')}
             </ButtonLink>
           </div>
         </div>

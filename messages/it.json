@@ -104,6 +104,7 @@
   "ui": {
     "skip": "Skip to main content",
     "home": "Trident Software, home",
+    "crumbHome": "Home",
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
     "mainNav": "Main",
@@ -130,7 +131,9 @@
       "read": "Read",
       "bookAudit": "Book the audit",
       "seeResults": "See results",
-      "backHome": "Back to home"
+      "backHome": "Back to home",
+      "freeQuote": "Richiedi un preventivo gratuito",
+      "seeProjects": "Guarda i nostri progetti"
     },
     "hero": {
       "logTitle": "Agent · Valais Materials · live",
@@ -287,6 +290,35 @@
     "about": {
       "timelineLabel": "Timeline",
       "timelineTitle": "2009 → today"
+    }
+  },
+  "templates": {
+    "service": {
+      "crumb": "Servizi",
+      "label": "Servizio",
+      "scopeLabel": "Ambito del lavoro",
+      "scopeLead": "Tutto ciò che è incluso nei nostri incarichi {service}, senza costi nascosti.",
+      "whyTitle": "Perché noi",
+      "why": {
+        "fixedPrice": {
+          "title": "Incarichi a prezzo fisso",
+          "desc": "Prima di iniziare firmiamo uno Statement of Work. Nessuna sorpresa sull'ambito. Conosci il costo in anticipo."
+        },
+        "compliance": {
+          "title": "Conformità svizzera dei dati",
+          "desc": "Conforme a nLPD e GDPR di default. Per tutti i progetti è possibile conservare i dati in Svizzera."
+        },
+        "response": {
+          "title": "Risposta garantita entro 24 ore",
+          "desc": "Inviaci un brief. Ti rispondiamo con una proposta concreta entro un giorno lavorativo."
+        }
+      },
+      "stackTitle": "Le tecnologie che usiamo",
+      "portfolioLabel": "Portfolio",
+      "portfolioLead": "Progetti reali che abbiamo realizzato con {service}.",
+      "ctaTitle": "Pronto a iniziare con {service}?",
+      "ctaLead": "Descrivi il tuo progetto in due frasi. Entro 24 ore ricevi una proposta concreta con ambito, tempi e prezzo fisso.",
+      "ctaButton": "Richiedi una proposta"
     }
   }
 }

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import type { ComponentProps, ReactNode } from 'react'
 import { cn } from '@/lib/utils'
 
@@ -30,7 +30,7 @@ function Inner({ arrow, children }: { arrow?: boolean; children: ReactNode }) {
   )
 }
 
-/** Link styled as a button. Internal links use next/link. */
+/** Link styled as a button. Internal links keep the current locale prefix. */
 export function ButtonLink({
   href,
   variant = 'primary',

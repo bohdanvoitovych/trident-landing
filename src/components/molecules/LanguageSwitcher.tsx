@@ -1,25 +1,28 @@
 'use client'
 
 import { useTransition } from 'react'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from '@/i18n/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 import { routing } from '@/i18n/routing'
 import { cn } from '@/lib/utils'
 
 /**
- * Segmented EN·DE·FR·IT. Writes the next-intl locale cookie and re-renders
- * (localePrefix is 'never', so the URL does not change). Never rotates by itself.
+ * Segmented EN·DE·FR·IT. Navigates to the same page under the other locale's
+ * prefix (/de/…, English unprefixed). next-intl stores the choice in its cookie.
  */
 export function LanguageSwitcher({ className }: { className?: string }) {
   const locale = useLocale()
   const t = useTranslations('ui')
   const router = useRouter()
+  const pathname = usePathname()
   const [pending, startTransition] = useTransition()
 
   const setLocale = (next: string) => {
     if (next === locale) return
-    document.cookie = `NEXT_LOCALE=${next}; path=/; max-age=31536000; SameSite=Lax`
-    startTransition(() => router.refresh())
+    startTransition(() => {
+      // Pathnames are not localized, so the unprefixed pathname is the route itself.
+      router.replace(`${pathname}${window.location.search}`, { locale: next })
+    })
   }
 
   return (

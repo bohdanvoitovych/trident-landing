@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import { ButtonLink, Tag } from '@/components/atoms/controls'
 import { CaseCard } from '@/components/molecules/CaseCard'

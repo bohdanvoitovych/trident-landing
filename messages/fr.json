@@ -104,6 +104,7 @@
   "ui": {
     "skip": "Skip to main content",
     "home": "Trident Software, home",
+    "crumbHome": "Accueil",
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
     "mainNav": "Main",
@@ -130,7 +131,9 @@
       "read": "Read",
       "bookAudit": "Book the audit",
       "seeResults": "See results",
-      "backHome": "Back to home"
+      "backHome": "Back to home",
+      "freeQuote": "Demander un devis gratuit",
+      "seeProjects": "Voir nos projets"
     },
     "hero": {
       "logTitle": "Agent · Valais Materials · live",
@@ -287,6 +290,35 @@
     "about": {
       "timelineLabel": "Timeline",
       "timelineTitle": "2009 → today"
+    }
+  },
+  "templates": {
+    "service": {
+      "crumb": "Services",
+      "label": "Service",
+      "scopeLabel": "Périmètre",
+      "scopeLead": "Tout ce que comprennent nos missions {service}, sans frais cachés.",
+      "whyTitle": "Pourquoi nous",
+      "why": {
+        "fixedPrice": {
+          "title": "Missions au forfait",
+          "desc": "Un cahier des charges signé avant de commencer. Pas de dérive de périmètre. Vous connaissez le coût dès le départ."
+        },
+        "compliance": {
+          "title": "Conformité suisse des données",
+          "desc": "Conforme à la nLPD et au RGPD par défaut. Hébergement des données en Suisse possible pour tous les projets."
+        },
+        "response": {
+          "title": "Réponse garantie sous 24 h",
+          "desc": "Envoyez-nous un brief. Nous répondons avec une proposition concrète en un jour ouvré."
+        }
+      },
+      "stackTitle": "Les technologies que nous utilisons",
+      "portfolioLabel": "Portfolio",
+      "portfolioLead": "Des projets réels que nous avons livrés en {service}.",
+      "ctaTitle": "Prêt à démarrer avec {service} ?",
+      "ctaLead": "Décrivez votre projet en deux phrases. Vous recevez sous 24 heures une proposition concrète : périmètre, calendrier et prix fixe.",
+      "ctaButton": "Demander une proposition"
     }
   }
 }

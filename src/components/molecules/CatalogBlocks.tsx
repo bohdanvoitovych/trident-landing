@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import type { ReactNode } from 'react'
 import { ButtonLink, Tag } from '@/components/atoms/controls'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
