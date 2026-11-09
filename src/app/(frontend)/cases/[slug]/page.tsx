@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { CasePage } from '@/components/templates/CasePage'
-import { getCaseBySlug, getCaseLocales, getCaseSlugs } from '@/data/cases'
+import { caseImage, getCaseBySlug, getCaseLocales, getCaseSlugs } from '@/data/cases'
 import JsonLd from '@/components/seo/JsonLd'
 import { buildMetadata } from '@/lib/metadata'
 import { caseStudySchemas } from '@/lib/schema'
@@ -43,7 +43,7 @@ export default async function CaseSlugPage({ params }: Props) {
             slug,
             title: caseStudy.hero.title,
             description: caseStudy.meta.description,
-            image: caseStudy.hero.image,
+            image: caseImage(caseStudy),
             publishedAt: caseStudy.publishedAt,
           },
           locale,

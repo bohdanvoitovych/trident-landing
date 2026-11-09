@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { getCaseBySlug, getCaseSlugs, getCases } from '@/data/cases'
+import { caseImage, getCaseBySlug, getCaseSlugs, getCases } from '@/data/cases'
 import { getIndustries } from '@/data/industries'
 import { getLocations } from '@/data/locations'
 import { getServiceBySlug, getServiceSlugs } from '@/data/services'
@@ -66,7 +66,7 @@ describe('caseStudySchemas', () => {
       const slug = 'post-acute-clinic-network'
       const c = getCaseBySlug(slug, locale)!
       const [article, crumbs] = caseStudySchemas(
-        { slug, title: c.hero.title, description: c.meta.description, image: c.hero.image, publishedAt: c.publishedAt },
+        { slug, title: c.hero.title, description: c.meta.description, image: caseImage(c), publishedAt: c.publishedAt },
         locale,
       ) as Schema[]
       expectBase(article, 'Article', locale)
@@ -92,12 +92,23 @@ describe('caseStudySchemas', () => {
     expect(b.image).toBe(`${SITE}/images/a.jpg`)
   })
 
+  it('every case gets an absolute Article image, even without a hero image', () => {
+    for (const slug of getCaseSlugs()) {
+      for (const locale of LOCALES) {
+        const c = getCaseBySlug(slug, locale)
+        if (!c) continue
+        const [a] = caseStudySchemas({ slug, title: c.hero.title, description: c.meta.description, image: caseImage(c), publishedAt: c.publishedAt }, locale) as Schema[]
+        expect(a.image, `${slug}/${locale}`).toMatch(/^https?:\/\//)
+      }
+    }
+  })
+
   it('every case builds a valid Article in every locale it has', () => {
     for (const slug of getCaseSlugs()) {
       for (const locale of LOCALES) {
         const c = getCaseBySlug(slug, locale)
         if (!c) continue
-        const [a, b] = caseStudySchemas({ slug, title: c.hero.title, description: c.meta.description, image: c.hero.image, publishedAt: c.publishedAt }, locale) as Schema[]
+        const [a, b] = caseStudySchemas({ slug, title: c.hero.title, description: c.meta.description, image: caseImage(c), publishedAt: c.publishedAt }, locale) as Schema[]
         expect(a.headline, `${slug}/${locale}`).toBeTruthy()
         expect(a.url).toContain(`${prefix(locale)}/cases/${slug}`)
         expect(b.itemListElement).toHaveLength(3)
