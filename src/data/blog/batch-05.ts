@@ -502,7 +502,7 @@ Für jeden braucht es einen Auftragsbearbeitungsvertrag (AVV). Die meisten gross
         authorRole: "Projektleiter, Trident Software",
         meta: {
           title: "nDSG Compliance für SaaS-Produkte — Trident Software Blog",
-          description: "Entwickler-Checkliste für nDSG/revFADP: Datensparsamkeit, Einwilligung, Auskunftsrecht, Löschpflichten und Bearbeitungsverzeichnis für Schweizer SaaS-Produkte.",
+          description: "Entwickler-Checkliste für nDSG: Datensparsamkeit, Einwilligung, Auskunftsrecht, Löschpflichten und Bearbeitungsverzeichnis für Schweizer SaaS-Produkte.",
         },
         faq: [
           {

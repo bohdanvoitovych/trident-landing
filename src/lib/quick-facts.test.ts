@@ -17,6 +17,11 @@ describe('quick fact fixes', () => {
     expect(offenders).toEqual([])
   })
 
+  it('keeps nDSG/nLPD in DE/FR/IT messages (revFADP is EN only)', () => {
+    const offenders = ['de', 'fr', 'it'].filter((l) => read(`messages/${l}.json`).includes('revFADP'))
+    expect(offenders).toEqual([])
+  })
+
   it('has no CHE-XXX placeholder in any locale', () => {
     const offenders = readdirSync(path.join(root, 'messages'))
       .filter((f) => f.endsWith('.json'))
