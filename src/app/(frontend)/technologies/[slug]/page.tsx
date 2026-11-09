@@ -35,7 +35,8 @@ export default async function TechnologyDetailPage({ params }: Props) {
   const locale = await getLocale()
   return (
     <>
-      <JsonLd data={technologyPageSchemas(technology, locale)} />
+      {/* The template's PageHero already emits the BreadcrumbList. */}
+      <JsonLd data={technologyPageSchemas(technology, locale).slice(0, 1)} />
       <TechnologyPage technology={technology} />
     </>
   )

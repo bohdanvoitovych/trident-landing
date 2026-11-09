@@ -35,7 +35,8 @@ export default async function LocationDetailPage({ params }: Props) {
   const locale = await getLocale()
   return (
     <>
-      <JsonLd data={locationPageSchemas(location, locale)} />
+      {/* The template's PageHero already emits the BreadcrumbList. */}
+      <JsonLd data={locationPageSchemas(location, locale).slice(0, 1)} />
       <LocationPage location={location} />
     </>
   )

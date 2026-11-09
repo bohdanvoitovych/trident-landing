@@ -178,3 +178,41 @@ describe('EN meta descriptions fit in 160 characters', () => {
     expect(over).toEqual([])
   })
 })
+
+describe('no page emits two BreadcrumbLists', () => {
+  // PageHero / Breadcrumbs (every inner page and the blog post template) always emits one BreadcrumbList.
+  // So a page may render a schema builder that also returns a breadcrumb only if it keeps just the first
+  // (main) schema: the call must be followed by `.slice(0, 1)`.
+  const root = path.resolve(__dirname, '../../app/(frontend)')
+  const withBreadcrumb = ['servicePageSchema', 'caseStudySchemas', 'industryPageSchemas', 'locationPageSchemas', 'technologyPageSchemas', 'webPageSchemas']
+  const pages = ['cases/[slug]', 'services/[slug]', 'industries/[slug]', 'locations/[slug]', 'technologies/[slug]']
+
+  const afterCall = (src: string, fn: string) => {
+    const start = src.indexOf(`${fn}(`)
+    let depth = 0
+    for (let i = start + fn.length; i < src.length; i++) {
+      if (src[i] === '(') depth++
+      if (src[i] === ')' && --depth === 0) return src.slice(i + 1, i + 13)
+    }
+    return ''
+  }
+
+  for (const page of pages) {
+    it(`${page} keeps only the main schema`, () => {
+      const src = readFileSync(path.join(root, page, 'page.tsx'), 'utf8')
+      const used = withBreadcrumb.filter((fn) => src.includes(`${fn}(`) && !src.includes(`function ${fn}`))
+      expect(used.length).toBeGreaterThan(0)
+      for (const fn of used) expect(afterCall(src, fn), fn).toMatch(/^\.slice\(0, 1\)/)
+    })
+  }
+
+  it('blog post and faq schemas carry no BreadcrumbList', () => {
+    const blog = blogPostSchema({ slug: 's', title: 'T', excerpt: 'E', author: 'A', publishedAt: '2026-01-02', faq: [{ question: 'q', answer: 'a' }] }, 'en') as Schema[]
+    expect(blog.map((x) => x['@type'])).toEqual(['BlogPosting', 'FAQPage'])
+  })
+
+  it('PageJsonLd renders only the page schema', () => {
+    const src = readFileSync(path.resolve(__dirname, '../../components/seo/PageJsonLd.tsx'), 'utf8')
+    expect(src).toMatch(/webPageSchemas\([^)]*\)\.slice\(0, 1\)/)
+  })
+})
