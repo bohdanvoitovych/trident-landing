@@ -2,6 +2,8 @@ import { defineConfig } from 'vitest/config'
 import path from 'path'
 
 export default defineConfig({
+  // Tests import .tsx modules (e.g. CookieBanner); tsconfig keeps jsx: preserve for Next.
+  oxc: { jsx: { runtime: 'automatic' } },
   test: {
     include: ['src/**/*.test.ts'],
     passWithNoTests: true,

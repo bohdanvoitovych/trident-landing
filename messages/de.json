@@ -1920,11 +1920,6 @@
           "duration": "Dauer"
         },
         "rows": {
-          "payload": {
-            "type": "Notwendig",
-            "purpose": "Anmeldetoken für Admin-Benutzer von Payload CMS",
-            "duration": "Sitzung"
-          },
           "locale": {
             "type": "Funktional",
             "purpose": "Speichert Ihre bevorzugte Sprache",
@@ -1934,7 +1929,7 @@
       },
       "analytics": {
         "title": "Analyse",
-        "body": "Diese Website verwendet keine Analysedienste von Drittanbietern (Google Analytics usw.). Für eine einfache Auswertung des Datenverkehrs nutzen wir serverseitige Zugriffsprotokolle. Für Analysezwecke werden keine Cookies gesetzt."
+        "body": "Wir messen die Nutzung der Website mit Umami, einem datenschutzorientierten Analysetool. Es wird erst geladen, nachdem Sie im Cookie-Banner der Analyse zugestimmt haben, und setzt keine Cookies. Wenn Sie ablehnen, wird es nicht geladen. Google Analytics oder ähnliche Drittanbieterdienste setzen wir nicht ein."
       },
       "managing": {
         "title": "Cookies verwalten",

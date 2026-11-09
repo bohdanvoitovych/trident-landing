@@ -4,6 +4,7 @@ import { Link } from '@/i18n/navigation'
 import { usePathname } from '@/i18n/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { useTranslations } from 'next-intl'
+import { trackUmami } from '@/lib/analytics/umami'
 import { LanguageSwitcher } from '@/components/molecules/LanguageSwitcher'
 
 const NAV = [
@@ -87,14 +88,23 @@ export function Navbar() {
         </Link>
         <nav className="nav-links" aria-label={t('mainNav')}>
           {NAV.map((n) => (
-            <Link key={n.href} href={n.href} aria-current={isActive(pathname, n.href) ? 'page' : undefined}>
+            <Link
+              key={n.href}
+              href={n.href}
+              aria-current={isActive(pathname, n.href) ? 'page' : undefined}
+              onClick={n.key === 'contact' ? () => trackUmami('contact_click', { location: 'header' }) : undefined}
+            >
               <span>{t(`nav.${n.key}`)}</span>
             </Link>
           ))}
         </nav>
         <div className="nav-right">
           <LanguageSwitcher />
-          <Link href="/contact" className="btn btn--primary btn--sm">
+          <Link
+            href="/contact"
+            className="btn btn--primary btn--sm"
+            onClick={() => trackUmami('demo_click', { location: 'header' })}
+          >
             <span>
               {t('nav.freeAudit')}
               <i className="arr" aria-hidden="true">
@@ -142,7 +152,10 @@ export function Navbar() {
                   <Link
                     href={n.href}
                     aria-current={isActive(pathname, n.href) ? 'page' : undefined}
-                    onClick={() => setOpen(false)}
+                    onClick={() => {
+                      if (n.key === 'contact') trackUmami('contact_click', { location: 'header' })
+                      setOpen(false)
+                    }}
                   >
                     {t(`nav.${n.key}`)}
                     <span aria-hidden="true">→</span>
@@ -153,7 +166,14 @@ export function Navbar() {
           </nav>
           <div className="menu-foot">
             <LanguageSwitcher className="menu-langs" />
-            <Link href="/contact" className="btn btn--primary" onClick={() => setOpen(false)}>
+            <Link
+              href="/contact"
+              className="btn btn--primary"
+              onClick={() => {
+                trackUmami('demo_click', { location: 'header' })
+                setOpen(false)
+              }}
+            >
               <span>
                 {t('nav.freeAudit')}
                 <i className="arr" aria-hidden="true">

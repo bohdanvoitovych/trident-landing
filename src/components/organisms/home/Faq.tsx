@@ -24,7 +24,12 @@ export function Faq() {
           footer={
             <>
               <span>{t('faq.didntFind')}</span>
-              <Link href="/contact" className="btn btn--primary btn--sm">
+              <Link
+                href="/contact"
+                className="btn btn--primary btn--sm"
+                data-umami-event="contact_click"
+                data-umami-event-location="faq"
+              >
                 <span>
                   {t('actions.askDirectly')}
                   <i className="arr" aria-hidden="true">

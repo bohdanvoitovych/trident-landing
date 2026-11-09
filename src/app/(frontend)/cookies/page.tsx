@@ -15,7 +15,6 @@ export async function generateMetadata() {
 }
 
 const COOKIES = [
-  { name: 'payload-token', key: 'payload' },
   { name: '__next_locale', key: 'locale' },
 ] as const
 

@@ -1,6 +1,7 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
+import { trackUmami } from '@/lib/analytics/umami'
 import { useState } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { intlLocale } from '@/lib/utils'
@@ -67,7 +68,11 @@ export function Calculator() {
           {enq >= 150 ? (
             <div className="verdict">
               <b>{t('calc.worth')}</b>
-              <Link href="/contact" className="btn btn--primary btn--sm">
+              <Link
+                href="/contact"
+                className="btn btn--primary btn--sm"
+                onClick={() => trackUmami('demo_click', { location: 'calculator' })}
+              >
                 <span>
                   {t('actions.bookAudit')}
                   <i className="arr" aria-hidden="true">

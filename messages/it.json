@@ -1920,11 +1920,6 @@
           "duration": "Durata"
         },
         "rows": {
-          "payload": {
-            "type": "Essenziale",
-            "purpose": "Token di autenticazione per gli amministratori di Payload CMS",
-            "duration": "Sessione"
-          },
           "locale": {
             "type": "Funzionale",
             "purpose": "Ricorda la lingua che preferisci",
@@ -1934,7 +1929,7 @@
       },
       "analytics": {
         "title": "Statistiche",
-        "body": "Questo sito non usa servizi di analisi di terzi (Google Analytics ecc.). Per un'analisi di base del traffico usiamo i log di accesso lato server. Non vengono impostati cookie a fini statistici."
+        "body": "Misuriamo l'uso del sito con Umami, uno strumento di analisi attento alla privacy. Si carica solo dopo il vostro consenso nel banner dei cookie e non imposta cookie. Se rifiutate, non viene caricato. Non usiamo Google Analytics né servizi di terzi simili."
       },
       "managing": {
         "title": "Gestire i cookie",

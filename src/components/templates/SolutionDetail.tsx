@@ -34,7 +34,13 @@ export function SolutionDetail({ solution, label, primary, secondary, features, 
         lead={solution.description}
         actions={
           <>
-            <ButtonLink href="/contact" arrow>
+            <ButtonLink
+              href="/contact"
+              arrow
+              data-umami-event="solution_cta_click"
+              data-umami-event-solution={solution.slug}
+              data-umami-event-location="hero"
+            >
               {primary}
             </ButtonLink>
             <ButtonLink href={secondary.href} variant="outline">
@@ -101,7 +107,13 @@ export function SolutionDetail({ solution, label, primary, secondary, features, 
               </p>
             </div>
             <div className="hero-ctas">
-              <ButtonLink href="/contact" arrow>
+              <ButtonLink
+                href="/contact"
+                arrow
+                data-umami-event="solution_cta_click"
+                data-umami-event-solution={solution.slug}
+                data-umami-event-location="cta"
+              >
                 {cta.primary}
               </ButtonLink>
               <ButtonLink href={cta.secondary.href} variant="outline">

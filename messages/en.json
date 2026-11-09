@@ -1920,11 +1920,6 @@
           "duration": "Duration"
         },
         "rows": {
-          "payload": {
-            "type": "Essential",
-            "purpose": "Authentication token for Payload CMS admin users",
-            "duration": "Session"
-          },
           "locale": {
             "type": "Functional",
             "purpose": "Remembers your preferred language",
@@ -1934,7 +1929,7 @@
       },
       "analytics": {
         "title": "Analytics",
-        "body": "This website does not use third-party analytics services (Google Analytics, etc.). We use server-side access logs for basic traffic analysis. No cookies are set for analytics purposes."
+        "body": "We measure how the site is used with Umami, a privacy-focused analytics tool. It loads only after you accept analytics in the cookie banner, and it sets no cookies. If you decline, it does not load. We do not use Google Analytics or similar third-party services."
       },
       "managing": {
         "title": "Managing cookies",

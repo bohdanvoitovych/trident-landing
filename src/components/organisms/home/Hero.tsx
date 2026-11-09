@@ -49,7 +49,7 @@ export function Hero() {
             {th('lead')}
           </p>
           <div className="hero-ctas rise" style={{ animationDelay: '1s' }}>
-            <Link href="/contact" className="btn btn--primary">
+            <Link href="/contact" className="btn btn--primary" data-umami-event="demo_click" data-umami-event-location="hero">
               <span>
                 {th('ctaAudit')}
                 <i className="arr" aria-hidden="true">

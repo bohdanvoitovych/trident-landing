@@ -1920,11 +1920,6 @@
           "duration": "Durée"
         },
         "rows": {
-          "payload": {
-            "type": "Essentiel",
-            "purpose": "Jeton d'authentification des administrateurs de Payload CMS",
-            "duration": "Session"
-          },
           "locale": {
             "type": "Fonctionnel",
             "purpose": "Mémorise votre langue préférée",
@@ -1934,7 +1929,7 @@
       },
       "analytics": {
         "title": "Mesure d'audience",
-        "body": "Ce site n'utilise aucun service d'analyse tiers (Google Analytics, etc.). Nous utilisons les journaux d'accès côté serveur pour une analyse simple du trafic. Aucun cookie n'est déposé à des fins de mesure d'audience."
+        "body": "Nous mesurons l'usage du site avec Umami, un outil d'analyse respectueux de la vie privée. Il ne se charge qu'après votre accord dans la bannière de cookies et ne dépose aucun cookie. Si vous refusez, il ne se charge pas. Nous n'utilisons ni Google Analytics ni service tiers similaire."
       },
       "managing": {
         "title": "Gérer les cookies",
