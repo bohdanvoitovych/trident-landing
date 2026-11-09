@@ -37,6 +37,7 @@ deploy:
     - ssh "$SSH_USER@$SSH_HOST" "
         docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY &&
         docker pull ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHORT_SHA} &&
+        cd ~/trident-landing-page &&
         sed -i '0,/^    image:/s|image:.*|image: ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHORT_SHA}|' docker-compose.server.yml &&
         docker compose -f docker-compose.server.yml --env-file .env.production up -d --force-recreate app
       "

@@ -4,6 +4,6 @@ services:
     image: trident-website:latest
     restart: always
     ports:
-      - "3002:3000"
+      - "127.0.0.1:3002:3000"
     env_file:
       - .env.production
