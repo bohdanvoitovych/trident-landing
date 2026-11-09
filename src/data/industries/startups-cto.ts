@@ -34,7 +34,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Startups and scale-ups: CTO as a Service | Trident Software',
         description:
-          'Fractional CTO for founders without a technical leader: build versus buy, architecture, and who to hire first, billed in days per month instead of a hire.',
+          'Fractional CTO for founders without a technical leader: build versus buy, architecture, and who to hire first, billed in days per month, not a hire.',
       },
     },
     de: {

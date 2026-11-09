@@ -2,6 +2,7 @@ import type { CaseRecord } from '../cases'
 
 const record: CaseRecord = {
   slug: 'letting-agency-enquiry-to-viewing',
+  publishedAt: '2026-10-14',
   client: 'Residential letting agency, Romandie, Switzerland',
   services: ['ai-services', 'software-engineering'],
   techStack: [],
@@ -137,7 +138,7 @@ const record: CaseRecord = {
         'holiday lettings and serviced apartments, where the enquiry volume is higher and the value per booking lower',
       ],
       meta: {
-        title: 'Letting-agency scenario: first reply in under 15 seconds | Trident Software',
+        title: 'Real estate: enquiry to booked viewing | Trident Software',
         description:
           'Modelled scenario for a Romandie letting agency: portal enquiries answered in under 15 seconds, in seven languages, viewing booked in the same chat.',
       },

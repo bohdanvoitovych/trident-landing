@@ -2,6 +2,7 @@ import type { CaseRecord } from '../cases'
 
 const record: CaseRecord = {
   slug: 'fiduciary-mail-and-receipts',
+  publishedAt: '2026-10-14',
   client: 'Fiduciary, Switzerland',
   services: ['ai-services', 'software-engineering'],
   techStack: [],
@@ -140,9 +141,9 @@ const record: CaseRecord = {
         'any back office where an operator sorts documents to find the responsible colleague',
       ],
       meta: {
-        title: 'Fiduciary post and receipts processed without re-entry | Trident Software',
+        title: 'Fiduciary mail & receipts, machine-read | Trident Software',
         description:
-          'Scan-and-route for the morning post, photo-and-post for receipts, both in production. About 135 operator hours a month returned, modelled on the firm’s volumes.',
+          'Two paper queues replaced by scan-and-route and photo-and-post. About 135 operator hours a month returned, modelled from the firm’s volumes.',
       },
     },
     de: {

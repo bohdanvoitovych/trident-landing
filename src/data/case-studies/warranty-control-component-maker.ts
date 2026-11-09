@@ -2,6 +2,7 @@ import type { CaseRecord } from '../cases'
 
 const record: CaseRecord = {
   slug: 'warranty-control-component-maker',
+  publishedAt: '2026-10-14',
   client: 'Component manufacturer, Italy',
   services: ['embedded-and-iot', 'software-engineering'],
   techStack: [],
@@ -135,7 +136,7 @@ const record: CaseRecord = {
       elsewhereOutro:
         'The pattern underneath is the same in each: measure the operating condition, and the argument about who pays stops being an argument.',
       meta: {
-        title: 'Warranty cost cut from 1.37 % to 0.51 % of revenue | Trident Software',
+        title: 'Coffee-equipment warranty control | Trident Software',
         description:
           'Water telemetry for a coffee-equipment component maker: warranty cost from 1.37 % to 0.51 % of revenue, and two new revenue lines from the measurement.',
       },

@@ -2,6 +2,7 @@ import type { CaseRecord } from '../cases'
 
 const record: CaseRecord = {
   slug: 'building-materials-order-to-load',
+  publishedAt: '2026-10-14',
   client: 'Construction-materials logistics · Switzerland, cross-border with France',
   services: ['ai-services', 'software-engineering'],
   techStack: [],
@@ -146,7 +147,7 @@ const record: CaseRecord = {
       elsewhereOutro:
         'The delivery side of this scenario runs on the 8Move platform: Fleet Planner for planning and dispatch, Driver Pro for the driver and proof of delivery. Start where the ceiling is. In this business it is the order desk in May, not the invoice run in November.',
       meta: {
-        title: 'Building-materials scenario: 65 % of reorders automated | Trident Software',
+        title: 'Building materials: desk to delivery | Trident Software',
         description:
           'Modelled scenario: order desk, dispatch, invoicing and customs for a building-materials hauler. 65 % of reorders taken without a person, transport cost −6 %.',
       },

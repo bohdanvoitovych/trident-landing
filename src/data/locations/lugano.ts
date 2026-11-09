@@ -38,7 +38,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Software Development Lugano Ticino | Trident Software Switzerland',
         description:
-          "Software development for Lugano's private banks, cross-border businesses, and startups. Italian-market ready, Swiss quality. Trident Software — your Ticino tech partner.",
+          "Software development for Lugano's private banks, cross-border businesses, and startups. Italian-market ready, Swiss quality. Your Ticino tech partner.",
       },
     },
     de: {

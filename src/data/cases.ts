@@ -70,6 +70,8 @@ export type CaseText = {
 
 export type CaseRecord = {
   slug: string
+  /** ISO date the case study was written, not the project's launch date. */
+  publishedAt?: string
   client: string
   services: string[]
   techStack: string[]
@@ -119,7 +121,7 @@ const records: CaseRecord[] = [
           },
         ],
         meta: {
-          title: 'Kleap AI Website Builder — Trident Software Case Study',
+          title: 'Kleap AI Website Builder | Trident Software',
           description:
             'How we built an AI-powered website generator that creates complete sites from a single text prompt in under 60 seconds.',
         },
@@ -264,7 +266,7 @@ const records: CaseRecord[] = [
           },
         ],
         meta: {
-          title: 'Zenit Auto B2B Platform — Trident Software Case Study',
+          title: 'Zenit Auto B2B Platform | Trident Software',
           description:
             'B2B auto parts e-commerce platform with 500K SKUs, tiered dealer pricing, VIN search, and real-time multi-warehouse stock.',
         },
@@ -417,7 +419,7 @@ const records: CaseRecord[] = [
           },
         ],
         meta: {
-          title: '8Move Driver App — Trident Software Case Study',
+          title: '8Move Driver App | Trident Software',
           description:
             'Cross-platform Flutter app for last-mile delivery drivers with offline capability, real-time routing, and proof-of-delivery.',
         },
@@ -562,7 +564,7 @@ const records: CaseRecord[] = [
           },
         ],
         meta: {
-          title: 'TDSbot IoT Water Monitor — Trident Software Case Study',
+          title: 'TDSbot IoT Water Monitor | Trident Software',
           description:
             'IoT water quality monitoring system for industrial plants. ESP32 sensors, MQTT, InfluxDB, Grafana. Real-time alerting.',
         },
@@ -715,7 +717,7 @@ const records: CaseRecord[] = [
           },
         ],
         meta: {
-          title: 'LaPochette Luxury Bag Rental — Trident Software Case Study',
+          title: 'LaPochette Luxury Bag Rental | Trident Software',
           description:
             'Two-sided marketplace for luxury designer handbag rentals. Stripe escrow, authenticity verification, premium UX.',
         },
@@ -1008,7 +1010,7 @@ const records: CaseRecord[] = [
           },
         ],
         meta: {
-          title: 'ArenaWave Smart Court System — Trident Software Case Study',
+          title: 'ArenaWave Smart Court System | Trident Software',
           description:
             'IoT-powered sports court management system with automated booking, smart access control, and facility analytics.',
         },
@@ -1152,7 +1154,7 @@ const records: CaseRecord[] = [
           role: 'Head of GO-Valais Expat Club',
         },
         meta: {
-          title: 'GO-Valais Expat Community Portal — Trident Software Case Study',
+          title: 'GO-Valais Expat Community Portal | Trident Software',
           description:
             'Community web portal for expatriates in Valais, Switzerland — event calendar, multilingual resources, and self-managed CMS.',
         },

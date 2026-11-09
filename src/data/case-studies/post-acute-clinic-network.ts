@@ -2,6 +2,7 @@ import type { CaseRecord } from '../cases'
 
 const record: CaseRecord = {
   slug: 'post-acute-clinic-network',
+  publishedAt: '2026-10-14',
   client: 'Post-acute clinic network, Switzerland',
   services: ['ai-services', 'software-engineering'],
   techStack: [],
@@ -151,7 +152,7 @@ const record: CaseRecord = {
         'any provider whose record system has no API and whose billing is outsourced',
       ],
       meta: {
-        title: 'Post-acute clinic: patient found in 8 of 8 files | Trident Software',
+        title: 'Post-acute clinic: admission to billing | Trident Software',
         description:
           'Admission, discharge letter and coded SwissDRG invoice from one record, with no retyping. Patient identified in 8 of 8 real files, invoice ready in ~2 days.',
       },

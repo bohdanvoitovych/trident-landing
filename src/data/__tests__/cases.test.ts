@@ -63,7 +63,7 @@ function numbers(text: string): string[] {
 
 /** The text a reader sees in the body of a case, without ids and links. Meta is checked separately. */
 const bodyStrings = (c: CaseData) =>
-  strings(c, new Set(['slug', 'services', 'techStack', 'relatedCases', 'evidence', 'meta', 'image']))
+  strings(c, new Set(['slug', 'services', 'techStack', 'relatedCases', 'evidence', 'meta', 'image', 'publishedAt']))
 
 const stable = (v: unknown): string =>
   Array.isArray(v)

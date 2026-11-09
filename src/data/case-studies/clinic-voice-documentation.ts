@@ -2,6 +2,7 @@ import type { CaseRecord } from '../cases'
 
 const record: CaseRecord = {
   slug: 'clinic-voice-documentation',
+  publishedAt: '2026-10-14',
   client: 'Multi-disciplinary practice, Switzerland',
   services: ['ai-services', 'software-engineering'],
   techStack: [],
@@ -125,7 +126,7 @@ const record: CaseRecord = {
         'home care organisations, where documentation happens between visits, in the car',
       ],
       meta: {
-        title: 'Clinic documentation time cut from 35 % to 15 % | Trident Software',
+        title: 'Clinic voice documentation | Trident Software',
         description:
           'A recorded consultation becomes the report and a coded TARDOC invoice. Documentation time from 35 % to 15 %, invoice handling from 75 to 12 minutes.',
       },

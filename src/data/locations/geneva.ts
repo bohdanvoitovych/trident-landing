@@ -37,7 +37,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Software Development Geneva | Trident Software Switzerland',
         description:
-          "Custom software for Geneva's international organizations, banks, and luxury brands. Multilingual platforms, compliance-first architecture. Swiss-based development team.",
+          "Custom software for Geneva's international organizations, banks, and luxury brands. Multilingual platforms, compliance-first architecture. Swiss-based team.",
       },
     },
     de: {
