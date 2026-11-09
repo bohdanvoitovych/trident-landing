@@ -1,11 +1,12 @@
 import { cn } from '@/lib/utils'
 
-export type Logo = { src: string; alt: string }
+export type Logo = { src: string; alt: string; href?: string }
 
 /** Logo forced black on --alt; hover = blue tile with a white logo. Always visible. */
 export function LogoTile({ logo, small, decorative }: { logo: Logo; small?: boolean; decorative?: boolean }) {
-  return (
-    <div className={cn('logo-tile', small && 'logo-tile--sm')}>
+  const className = cn('logo-tile', small && 'logo-tile--sm')
+  const img = (
+    <>
       {/* SVG/PNG logos are tiny; next/image would only add a wrapper round-trip. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
@@ -16,7 +17,20 @@ export function LogoTile({ logo, small, decorative }: { logo: Logo; small?: bool
         width={150}
         height={42}
       />
-    </div>
+    </>
+  )
+  if (!logo.href) return <div className={className}>{img}</div>
+  return (
+    <a
+      className={className}
+      href={logo.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={decorative ? undefined : logo.alt}
+      tabIndex={decorative ? -1 : undefined}
+    >
+      {img}
+    </a>
   )
 }
 

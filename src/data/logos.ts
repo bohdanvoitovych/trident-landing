@@ -27,15 +27,26 @@ const CLIENTS = [
   'vbauto.png',
 ]
 
-export const CLIENT_LOGOS: Logo[] = CLIENTS.map((f) => ({ src: `/images/clients/${f}`, alt: name(f) }))
+// Sites the old homepage linked from its client quotes.
+const CLIENT_LINKS: Record<string, string> = {
+  'kleap.png': 'https://kleap.co/',
+  'daniparts.png': 'https://daniparts.com/',
+  'xelsat.png': 'http://xelsat.com/',
+}
+
+export const CLIENT_LOGOS: Logo[] = CLIENTS.map((f) => ({
+  src: `/images/clients/${f}`,
+  alt: name(f),
+  ...(CLIENT_LINKS[f] && { href: CLIENT_LINKS[f] }),
+}))
 
 export const PARTNER_LOGOS: Logo[] = [
   { src: '/images/partners/aws.png', alt: 'Amazon Web Services' },
-  { src: '/images/partners/azure.png', alt: 'Microsoft Azure' },
-  { src: '/images/partners/google-cloud.png', alt: 'Google Cloud' },
-  { src: '/images/partners/hostpoint.png', alt: 'Hostpoint' },
-  { src: '/images/partners/cimark.png', alt: 'Cimark' },
+  { src: '/images/partners/azure.png', alt: 'Microsoft Azure', href: 'https://azure.microsoft.com/' },
+  { src: '/images/partners/google-cloud.png', alt: 'Google Cloud', href: 'https://cloud.google.com/' },
+  { src: '/images/partners/hostpoint.png', alt: 'Hostpoint', href: 'https://www.hostpoint.ch/' },
+  { src: '/images/partners/cimark.png', alt: 'Cimark', href: 'https://www.cimark.ch/' },
   { src: '/images/partners/go-valais.png', alt: 'GO-Valais' },
-  { src: '/images/partners/holidu.png', alt: 'Holidu' },
+  { src: '/images/partners/holidu.png', alt: 'Holidu', href: 'https://www.holidu.com/' },
   { src: '/images/partners/valais-chamber.png', alt: 'CCI Valais' },
 ]

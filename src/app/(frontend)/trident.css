@@ -562,6 +562,10 @@ a.uc-card:hover::after, a.uc-card:focus-visible::after { transform: scaleX(1); }
 .team-meta { display: flex; flex-direction: column; gap: 4px; border-left: 2px solid var(--blue); padding-left: 12px; }
 .team-meta b { font-size: 17px; font-weight: 600; letter-spacing: -.01em; }
 .team-meta span { font-size: 14px; color: var(--ink-2); }
+.team-meta .team-links { display: flex; gap: 0; margin-top: 4px; }
+.team-links a { width: 44px; height: 44px; margin-left: -12px; display: flex; align-items: center; justify-content: center; color: var(--ink-2); }
+.team-links a + a { margin-left: 0; }
+.team-links a:hover { color: var(--blue); }
 
 /* ---- Clients ------------------------------------------------------------- */
 .refs { display: flex; flex-direction: column; gap: 12px; margin: -16px 0 28px; }

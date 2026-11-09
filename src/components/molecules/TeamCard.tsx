@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Linkedin, Facebook } from 'lucide-react'
 import type { TeamMember } from '@/data/team'
 
 /** 4:5 cut-out on a wash→line gradient, name and role under a blue rule. No country. */
@@ -21,6 +22,20 @@ export function TeamCard({ member, headingLevel = 3 }: { member: TeamMember; hea
           <b>{member.name}</b>
         </H>
         <span>{member.role}</span>
+        {(member.linkedin || member.facebook) && (
+          <span className="team-links">
+            {member.linkedin && (
+              <a href={member.linkedin} aria-label={`${member.name} on LinkedIn`} target="_blank" rel="noopener noreferrer">
+                <Linkedin size={16} aria-hidden="true" />
+              </a>
+            )}
+            {member.facebook && (
+              <a href={member.facebook} aria-label={`${member.name} on Facebook`} target="_blank" rel="noopener noreferrer">
+                <Facebook size={16} aria-hidden="true" />
+              </a>
+            )}
+          </span>
+        )}
       </figcaption>
     </figure>
   )
