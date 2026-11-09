@@ -44,3 +44,8 @@ export function getPostLocales(slug: string) {
   if (!r) return []
   return routing.locales.filter((l) => l === 'en' || !!r.translations?.[l]?.content)
 }
+
+/** The posts that have text in `locale`: every post in English, only translated ones elsewhere. */
+export function getPublishedPosts(locale: string): BlogPost[] {
+  return getPosts(locale).filter((p) => (getPostLocales(p.slug) as string[]).includes(locale))
+}

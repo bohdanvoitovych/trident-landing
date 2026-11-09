@@ -1,7 +1,7 @@
 import { existsSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { getPosts, getPostSlugs, getPostLocales } from '.'
+import { getPosts, getPostSlugs, getPostLocales, getPublishedPosts } from '.'
 
 const posts = getPosts('en')
 const publicDir = path.resolve(__dirname, '../../../public')
@@ -31,5 +31,16 @@ describe('blog data', () => {
 
   it('a post with no translations is published in English only', () => {
     expect(getPostLocales('graph-databases-connected-data-for-business-success')).toEqual(['en'])
+  })
+
+  it('lists EN-only posts in English only; other locales list translated posts', () => {
+    const enOnly = 'graph-databases-connected-data-for-business-success'
+    expect(getPublishedPosts('en')).toHaveLength(82)
+    for (const l of ['de', 'fr', 'it']) {
+      const slugs = getPublishedPosts(l).map((p) => p.slug)
+      expect(slugs).not.toContain(enOnly)
+      expect(slugs.length).toBeLessThan(82)
+      for (const s of slugs) expect(getPostLocales(s)).toContain(l)
+    }
   })
 })
