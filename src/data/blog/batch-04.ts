@@ -496,7 +496,7 @@ Il pannello è disponibile come prodotto a sé stante o come livello di integraz
     },
     meta: {
       title: "B2B Client Management Panel with 5-Level Access Control — Trident Software Blog",
-      description: "New B2B management panel with hierarchical access control across distributors, dealers, customers, and consumers. Real-time monitoring and customizable subscriptions.",
+      description: "New B2B management panel with hierarchical access control across distributors, dealers, and customers. Real-time monitoring and custom subscriptions.",
     },
   },
   {
@@ -804,7 +804,7 @@ Contact Trident Software for a cloud security assessment. We'll map your current
     ],
     meta: {
       title: "AWS Cloud Security for SMBs — Trident Software Blog",
-      description: "How to implement enterprise-grade security (AWS IAM, GuardDuty, KMS, Security Hub) at an SMB budget. 60% of cyberattacks target small businesses — here's how to defend.",
+      description: "How to implement enterprise-grade security (AWS IAM, GuardDuty, KMS, Security Hub) at SMB budget — and why 60% of cyberattacks target small businesses.",
     },
     translations: {
       de: {

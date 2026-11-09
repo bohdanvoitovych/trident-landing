@@ -6,7 +6,7 @@ import { describe, expect, it } from 'vitest'
 import { routing } from '@/i18n/routing'
 import nextConfig from '../../../next.config.mjs'
 import { OLD_POST_SLUGS, RENAMED_POST_SLUGS, TOPIC_REDIRECTS, buildOldPostRedirects } from './old-post-slugs.mjs'
-import { FINAL_BLOG_SLUGS } from './final-blog-slugs.fixture'
+import { getPostSlugs } from '@/data/blog'
 
 type Redirect = { source: string; destination: string; permanent: boolean }
 
@@ -40,8 +40,8 @@ describe('old post redirects', () => {
     }
   })
 
-  it('every target post exists in the final old-site blog', () => {
-    const known = new Set(FINAL_BLOG_SLUGS)
+  it('every target post exists in the blog data', () => {
+    const known = new Set(getPostSlugs())
     for (const r of old) {
       expect(r.destination.startsWith('/blog/')).toBe(true)
       expect(known.has(r.destination.slice('/blog/'.length)), r.destination).toBe(true)

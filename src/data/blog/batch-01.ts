@@ -146,7 +146,7 @@ We'll also demonstrate our mobile warehouse application for inventory management
 If you're attending Automechanika Dubai 2025, find us at Hall 8, Booth F18. We look forward to discussing how our digital ecosystem can address operational challenges specific to your automotive aftermarket business.`,
     meta: {
       title: "Automechanika Dubai 2025 — Trident Software at Hall 8, Booth F18",
-      description: "Meet Trident Software at Automechanika Dubai 2025, December 9–11. See our B2B spare parts portal, 8Move logistics app, and AI automation tools at Hall 8, Booth F18.",
+      description: "Meet Trident Software at Automechanika Dubai 2025. See our B2B spare parts portal, 8Move logistics app, and AI automation tools at Hall 8, Booth F18.",
     },
     translations: {
       de: {

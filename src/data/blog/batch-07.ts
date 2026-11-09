@@ -169,7 +169,7 @@ The prod override removes volume mounts, sets NODE_ENV=production, and uses envi
     ],
     meta: {
       title: "Docker Compose for Local Dev Environments — Trident Software Blog",
-      description: "Docker Compose configuration for full-stack JavaScript projects: complete setup with PostgreSQL, Redis, mail server, hot reload, one-command onboarding, and common pitfalls.",
+      description: "Docker Compose setup for full-stack JavaScript projects: PostgreSQL, Redis, mail server, hot reload, one-command onboarding, and common pitfalls.",
     },
     translations: {
       de: {
@@ -1164,7 +1164,7 @@ Per un primo audit di accessibilità di un'applicazione web di media complessit�
     },
     meta: {
       title: "WCAG 2.1 Accessibility for Swiss Public Sector Apps — Trident Software Blog",
-      description: "Swiss BehiG/BehiV accessibility compliance guide: most commonly failed WCAG 2.1 AA criteria, practical code fixes, automated testing with axe, and screen reader testing.",
+      description: "Swiss BehiG/BehiV accessibility guide: most commonly failed WCAG 2.1 AA criteria, practical code fixes, automated testing with axe, and screen reader testing.",
     },
   },
   {
@@ -1295,7 +1295,7 @@ Start with Claude 3.5 Haiku for most SME workloads — balanced quality, 200K co
     ],
     meta: {
       title: "OpenAI vs Anthropic API Cost Comparison for SMEs — Trident Software Blog",
-      description: "Realistic API cost comparison for SME workloads: document processing, chatbots, code generation. Includes prompt caching impact and decision framework for model selection.",
+      description: "Realistic API cost comparison for SME workloads: document processing, chatbots, code generation, prompt caching impact, and a model-selection framework.",
     },
     translations: {
       de: {

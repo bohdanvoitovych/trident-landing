@@ -126,6 +126,7 @@ Oltre alle nostre piattaforme, Trident sviluppa app web e mobile su misura che s
       "Automation",
       "Machine Learning",
       "Business Intelligence",
+      "AutoGPT",
     ],
     category: "Insights",
     author: "Bohdan Voitovych",
@@ -244,7 +245,7 @@ Le soluzioni generiche raramente colgono le esigenze specifiche di un settore. T
     relatedPosts: [],
     content: `## The Challenge: Limited Reach, Cumbersome Process
 
-La Pochette offers custom-made products — cutlery pouches, promotional items — for small businesses, restaurateurs, and catering services. Their previous website created friction at every stage: limited audience reach, sparse product information, an expensive dependency on traditional marketing channels, and a cumbersome ordering process.
+[La Pochette](https://lapochette.ch/) offers custom-made products — cutlery pouches, promotional items — for small businesses, restaurateurs, and catering services. Their previous website created friction at every stage: limited audience reach, sparse product information, an expensive dependency on traditional marketing channels, and a cumbersome ordering process.
 
 ## What the Redesign Delivered
 
@@ -333,7 +334,7 @@ La trasformazione di La Pochette mostra una situazione che vediamo spesso tra i 
     },
     meta: {
       title: "La Pochette Online Shop — WooCommerce Redesign by Trident Software",
-      description: "How Trident Software launched a WooCommerce-powered online shop for La Pochette, replacing a limited site with a full eCommerce experience for restaurant supply.",
+      description: "How Trident Software launched a WooCommerce shop for La Pochette, replacing a limited site with a full eCommerce experience for restaurant supply.",
     },
   },
   {
@@ -903,7 +904,7 @@ Parti in piccolo. Un agente ben calibrato per un processo specifico rende più d
     excerpt: "Zenit Auto is our innovative B2B platform for wholesale auto parts, featuring advanced search, TecDoc integration, discount microservices, and multi-cart delivery management.",
     content: `## Wholesale Auto Parts Made Easy
 
-Trident Software introduces Zenit Auto — an innovative B2B website for auto parts sales designed for wholesale buyers and partners, offering convenient and efficient online ordering capabilities.
+Trident Software introduces [Zenit Auto](https://www.zenit-auto.com/) — an innovative B2B website for auto parts sales designed for wholesale buyers and partners, offering convenient and efficient online ordering capabilities.
 
 ## Advanced Search System
 

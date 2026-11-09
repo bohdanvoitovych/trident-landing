@@ -308,7 +308,7 @@ Il modello che oggi preferiamo: **prezzo fisso per fase, non per progetto**. Ogn
     },
     meta: {
       title: "Fixed-Price Software Contracts: Pros, Cons & When to Use Them",
-      description: "Decision framework for fixed-price vs T&M software contracts. What terms protect both sides, when fixed-price fails, and the hybrid phase-based model that works.",
+      description: "Decision framework for fixed-price vs T&M contracts: what terms protect both sides, when fixed-price fails, and the hybrid phase-based model that works.",
     },
   },
   {
@@ -1550,7 +1550,7 @@ Il supporto RTL (arabo) è migliore nel sistema di layout di Flutter che in Reac
     },
     meta: {
       title: "React Native vs Flutter for Swiss Mobile Projects 2026 — Trident",
-      description: "Practical decision guide for React Native vs Flutter in Swiss mobile projects. Team skills, performance, UI customization, multilingual support, and hiring pool compared.",
+      description: "Decision guide for React Native vs Flutter in Swiss mobile projects: team skills, performance, UI customization, multilingual support, and hiring pool.",
     },
   },
   {
@@ -2456,7 +2456,7 @@ La domanda 4 è quella che la maggior parte dei clienti salta. Il software su mi
     },
     meta: {
       title: "Custom ERP vs Off-the-Shelf for Swiss Companies — Trident Software",
-      description: "Decision framework for Swiss companies choosing between custom ERP and platforms like SAP, Abacus, or Odoo. Cost comparison, hybrid approach, and when custom wins.",
+      description: "Decision framework for Swiss companies choosing between custom ERP and platforms like SAP, Abacus, or Odoo — cost comparison and when custom wins.",
     },
   },
   {
@@ -2943,7 +2943,7 @@ Confronto dei costi per 1,000 fatture al mese: Claude API ~CHF 40, GPT-4V ~CHF 5
     },
     meta: {
       title: "AI Document Processing for Invoices and Contracts — Trident Software",
-      description: "Real-world architecture for AI invoice and contract processing: document classification, OCR pipeline, LLM extraction prompts, validation layer, and model cost comparison.",
+      description: "Architecture for AI invoice and contract processing: document classification, OCR pipeline, LLM extraction, validation layer, and model cost comparison.",
     },
   },
 ]

@@ -397,7 +397,7 @@ Vale la massima dell'ingegneria svizzera: non pagare per una complessità infras
     },
     meta: {
       title: "Microservices vs Monolith for Startup MVPs — Trident Software Blog",
-      description: "Why microservices are wrong for most MVPs, what problems they actually solve, the modular monolith middle path, and when services are genuinely justified from day one.",
+      description: "Why microservices are wrong for most MVPs, what problems they actually solve, the modular monolith middle path, and when services are truly justified.",
     },
   },
   {
@@ -888,7 +888,7 @@ I team che seguono questo pattern con costanza riportano uno sviluppo dei compon
     },
     meta: {
       title: "Tailwind CSS Design Systems for Product Companies — Trident Software Blog",
-      description: "How to build a real design system on top of Tailwind CSS: design tokens in config, CVA component variants, Storybook documentation, and component audit workflow.",
+      description: "How to build a real design system on Tailwind CSS: design tokens, CVA component variants, Storybook documentation, and component audit workflow.",
     },
   },
   {
@@ -1359,7 +1359,7 @@ Usa un logging strutturato con uno schema coerente fin dal primo giorno. Aggiung
     },
     meta: {
       title: "API Gateway Patterns for B2B Integrations — Trident Software Blog",
-      description: "Standardize B2B integrations with the right API gateway pattern: auth layers by partner type, rate limiting feedback, adapter pattern for schema normalization, and observability requirements.",
+      description: "Standardize B2B integrations with the right API gateway pattern: auth layers by partner type, rate limiting, schema normalization, and observability.",
     },
   },
   {
@@ -1483,7 +1483,7 @@ If your system fails these under test, you have weeks to fix it before the actua
     ],
     meta: {
       title: "Load Testing with k6 for Swiss E-Commerce — Trident Software Blog",
-      description: "How Swiss e-commerce teams use k6 for load testing: test scenarios for checkout flows, common performance bottlenecks, Swiss hosting considerations, and pass/fail thresholds.",
+      description: "How Swiss e-commerce teams use k6 for load testing: checkout-flow scenarios, common bottlenecks, hosting considerations, and pass/fail thresholds.",
     },
     translations: {
       de: {
@@ -2321,7 +2321,7 @@ I team che ci riescono trattano la migrazione come igiene continua, non come un 
     },
     meta: {
       title: "TypeScript Migration for Legacy Codebases — Trident Software Blog",
-      description: "Incremental TypeScript migration strategy that works: permissive Phase 1 setup, file prioritization by value, any budget tracking, and strict mode activation in stages.",
+      description: "Incremental TypeScript migration strategy: permissive Phase 1 setup, file prioritization by value, any-budget tracking, and staged strict mode activation.",
     },
   },
   {
@@ -3303,7 +3303,7 @@ Per aggiornamenti in una sola direzione, i Server-Sent Events (SSE) sono spesso 
     },
     meta: {
       title: "WebSocket Real-Time Features in Next.js — Trident Software Blog",
-      description: "How to implement WebSocket real-time features alongside Next.js: standalone WebSocket server, Redis pub/sub event bus, React hooks, and when to use Server-Sent Events instead.",
+      description: "How to implement WebSocket real-time features alongside Next.js: standalone server, Redis pub/sub event bus, React hooks, and when to use SSE instead.",
     },
   },
 ]

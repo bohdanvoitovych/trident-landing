@@ -7,10 +7,12 @@ import { posts as batch_04 } from './batch-04'
 import { posts as batch_05 } from './batch-05'
 import { posts as batch_06 } from './batch-06'
 import { posts as batch_07 } from './batch-07'
+import { posts as batch_08 } from './batch-08'
+import { posts as batch_09 } from './batch-09'
 
 export type * from './types'
 
-const records: BlogPostRecord[] = [...batch_01, ...batch_02, ...batch_03, ...batch_04, ...batch_05, ...batch_06, ...batch_07]
+const records: BlogPostRecord[] = [...batch_01, ...batch_02, ...batch_03, ...batch_04, ...batch_05, ...batch_06, ...batch_07, ...batch_08, ...batch_09]
 
 /** The post in `locale`. Fields not translated yet fall back to English. */
 const localize = (r: BlogPostRecord, locale: string): BlogPost => {
