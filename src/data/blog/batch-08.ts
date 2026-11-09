@@ -1028,7 +1028,7 @@ Am Palexpo Genf treffen sich **zahlreiche vielversprechende Start-ups**, die an 
 
 Während der Veranstaltung analysieren **Gastredner** den Markt und technische Fortschritte. Sie gehen auch auf die Herausforderungen der Branchen **Mikrotechnik**, **Medtech**, **Uhrmacherei**, **Schmuck** und **Start-ups** ein.
 
-Mit mehr als 23 000 Fachbesuchern aus aller Welt bietet das Palexpo Genf **viele Möglichkeiten zum Netzwerken** und ist ein guter Ort, um zu verfolgen, wohin sich die Präzisionsindustrie entwickelt.
+Mit mehr als 23'000 Fachbesuchern aus aller Welt bietet das Palexpo Genf **viele Möglichkeiten zum Netzwerken** und ist ein guter Ort, um zu verfolgen, wohin sich die Präzisionsindustrie entwickelt.
 
 ## Was Sie für Ihr Geschäft mitnehmen
 
@@ -1126,7 +1126,7 @@ Palexpo Genève réunit **un ensemble de start-up prometteuses** qui travaillent
 
 Pendant l’événement, des **intervenants invités** analysent le marché et les avancées technologiques. Ils abordent aussi les défis de la **microtechnique**, de la **medtech**, de l’**horlogerie**, de la **bijouterie** et des **start-up**.
 
-Avec plus de 23 000 visiteurs professionnels du monde entier, Palexpo Genève offre **de nombreuses occasions de réseautage** et permet de suivre l’évolution des industries de précision.
+Avec plus de 23'000 visiteurs professionnels du monde entier, Palexpo Genève offre **de nombreuses occasions de réseautage** et permet de suivre l’évolution des industries de précision.
 
 ## Ce que vous pouvez en retirer pour votre activité
 
@@ -1224,7 +1224,7 @@ Il Palexpo Ginevra riunisce **molte start-up promettenti** che lavorano sulla te
 
 Durante l’evento, **relatori ospiti** analizzano il mercato e le novità tecnologiche. Affrontano anche le sfide di **microtecnica**, **medtech**, **orologeria**, **gioielleria** e **start-up**.
 
-Con più di 23 000 visitatori professionali da tutto il mondo, il Palexpo Ginevra offre **molte occasioni di networking** ed è un buon posto per capire dove vanno le industrie di precisione.
+Con più di 23'000 visitatori professionali da tutto il mondo, il Palexpo Ginevra offre **molte occasioni di networking** ed è un buon posto per capire dove vanno le industrie di precisione.
 
 ## Cosa puoi portare a casa per la tua attività
 
@@ -1884,7 +1884,7 @@ The same system can be applied to:
 ### The Results: Cost Savings & Efficiency
 
 - No manual errors and a lower administrative workload
-- A saving on the total annual operator salary (CHF 7,000 per month)
+- A saving on the total annual operator salary
 - Higher sales and more convenience for customers
 
 The QR-based ordering solution is one example of how automation and smart logistics can improve HoReCa operations: lower costs, higher sales, and better efficiency.
@@ -1973,7 +1973,7 @@ Dasselbe System lässt sich einsetzen für:
 ### Das Ergebnis: Kosteneinsparung und Effizienz
 
 - Keine manuellen Fehler und weniger administrativer Aufwand
-- Eine Einsparung bei den gesamten jährlichen Personalkosten der Auftragserfasser (7000 CHF pro Monat)
+- Eine Einsparung bei den gesamten jährlichen Personalkosten der Auftragserfasser
 - Höhere Umsätze und mehr Komfort für die Kunden
 
 Die QR-Bestellung ist ein Beispiel dafür, wie Automatisierung und intelligente Logistik den Betrieb im Gastgewerbe verbessern: tiefere Kosten, höhere Umsätze und mehr Effizienz.
@@ -2063,7 +2063,7 @@ Le même système s’applique à :
 ### Le résultat : économies et efficacité
 
 - Aucune erreur manuelle et une charge administrative réduite
-- Une économie sur le coût annuel total des opérateurs (7 000 CHF par mois)
+- Une économie sur le coût annuel total des opérateurs
 - Des ventes en hausse et plus de confort pour les clients
 
 La commande par QR code est un exemple de la façon dont l’automatisation et une logistique intelligente améliorent l’exploitation dans le HoReCa : coûts réduits, ventes en hausse et meilleure efficacité.
@@ -2153,7 +2153,7 @@ Lo stesso sistema si applica a:
 ### Il risultato: risparmio ed efficienza
 
 - Nessun errore manuale e meno lavoro amministrativo
-- Un risparmio sul costo annuo complessivo degli operatori (7000 CHF al mese)
+- Un risparmio sul costo annuo complessivo degli operatori
 - Più vendite e più comodità per i clienti
 
 L’ordine via QR code è un esempio di come automazione e logistica intelligente migliorino le operazioni nell’HoReCa: costi più bassi, più vendite e maggiore efficienza.
@@ -2193,7 +2193,7 @@ Dedichiamo attenzione personale a ogni cliente. **Il nostro team parte dalla com
 
 The HoReCa industry (an abbreviation for **Hotels, Restaurants, and Catering**) includes the businesses that provide food, beverages, and accommodation to locals and travelers.
 
-Innova Market Insights research suggests that **37% of Millennials try a new restaurant weekly** or more frequently. A key factor driving this trend is their preference for social dining, whether with friends, family, or coworkers. As a result, modern restaurants are focusing not just on food quality but also on creating memorable dining experiences.
+Innova Market Insights research suggests that **37% of Millennials try a new restaurant weekly** or more frequently. A key factor driving this trend is their preference for social dining, whether with friends, family, or coworkers. As a result, modern restaurants are focusing on food quality and on creating memorable dining experiences.
 
 In this highly competitive environment, HoReCa solutions help businesses tackle the challenge of **meeting ever-growing customer expectations** while maintaining efficiency and **reducing costs**.
 
@@ -2284,7 +2284,7 @@ Customers expect more while costs and staff shortages grow. Smart HoReCa solutio
 
 Die HoReCa-Branche (Abkürzung für **Hotels, Restaurants und Catering**) umfasst die Betriebe, die Einheimischen und Reisenden Speisen, Getränke und Unterkunft bieten.
 
-Laut einer Studie von Innova Market Insights probieren **37 % der Millennials mindestens einmal pro Woche ein neues Restaurant aus**. Ein wichtiger Grund ist die Vorliebe für gemeinsames Essen, ob mit Freunden, Familie oder Kollegen. Moderne Restaurants setzen deshalb nicht nur auf die Qualität des Essens, sondern auch auf bleibende Erlebnisse.
+Laut einer Studie von Innova Market Insights probieren **37 % der Millennials mindestens einmal pro Woche ein neues Restaurant aus**. Ein wichtiger Grund ist die Vorliebe für gemeinsames Essen, ob mit Freunden, Familie oder Kollegen. Moderne Restaurants setzen deshalb auf die Qualität des Essens und auf bleibende Erlebnisse.
 
 In diesem hart umkämpften Umfeld helfen HoReCa-Lösungen den Betrieben, **wachsende Kundenerwartungen** zu erfüllen, effizient zu bleiben und **Kosten zu senken**.
 
@@ -2318,7 +2318,7 @@ Lebensmittelsicherheit und -qualität sind entscheidend für das Vertrauen der G
 - Sie senden sofort Warnungen, wenn Werte ausserhalb der Grenzwerte liegen.
 - Sie sichern die Einhaltung der Vorschriften mit automatischen Berichten und Nachverfolgung.
 
-**Im Einsatz:** McDonald’s nutzt IoT-Sensoren in seinen weltweit 43 000 Restaurants. Diese **Sensoren überwachen Küchengeräte in Echtzeit** und erfassen Temperatur, Garzeiten und Leistung.
+**Im Einsatz:** McDonald’s nutzt IoT-Sensoren in seinen weltweit 43'000 Restaurants. Diese **Sensoren überwachen Küchengeräte in Echtzeit** und erfassen Temperatur, Garzeiten und Leistung.
 
 Das System **sagt Geräteausfälle voraus**, bevor sie eintreten, sodass McDonald’s früh handeln und teure Stillstände vermeiden kann.
 
@@ -2332,7 +2332,7 @@ Gäste erwarten heute reibungslosen Service. Betriebe verbessern den Komfort mit
 
 **Im Einsatz:** Einer unserer Kunden, ein Lieferant von Getränkeeis, hatte Probleme mit einem veralteten Bestellsystem: Kunden mussten anrufen, was zu langen Wartezeiten und häufigen Fehlern führte.
 
-Wir ersetzten es durch eine einfache Lösung: Die Kunden [**scannen einen QR-Code**](/blog/less-staff-more-service-reducing-labor-costs-in-horeca), wählen die benötigte Eismenge und tippen auf «Absenden». Das sparte Zeit, verringerte Fehler und **senkte die Personalkosten um 7000 CHF pro Monat**.
+Wir ersetzten es durch eine einfache Lösung: Die Kunden [**scannen einen QR-Code**](/blog/less-staff-more-service-reducing-labor-costs-in-horeca), wählen die benötigte Eismenge und tippen auf «Absenden». Das sparte Zeit, verringerte Fehler und **senkte die Personalkosten um CHF 7'000 pro Monat**.
 
 ### Transportmanagementsystem
 
@@ -2376,7 +2376,7 @@ Die Gäste erwarten mehr, während Kosten und Personalmangel wachsen. Smarte HoR
 
 Le secteur HoReCa (abréviation de **hôtels, restaurants et cafés/traiteurs**) regroupe les entreprises qui offrent repas, boissons et hébergement aux habitants comme aux voyageurs.
 
-Selon une étude d’Innova Market Insights, **37 % des milléniaux testent un nouveau restaurant au moins une fois par semaine**. L’un des facteurs : leur goût pour les repas partagés, entre amis, en famille ou entre collègues. Les restaurants modernes misent donc non seulement sur la qualité de la cuisine, mais aussi sur des expériences marquantes.
+Selon une étude d’Innova Market Insights, **37 % des milléniaux testent un nouveau restaurant au moins une fois par semaine**. L’un des facteurs : leur goût pour les repas partagés, entre amis, en famille ou entre collègues. Les restaurants modernes misent donc sur la qualité de la cuisine et sur des expériences marquantes.
 
 Dans ce contexte très concurrentiel, les solutions HoReCa aident les entreprises à **répondre à des attentes toujours plus élevées**, à rester efficaces et à **réduire leurs coûts**.
 
@@ -2410,7 +2410,7 @@ La sécurité et la qualité des aliments sont décisives pour la confiance des 
 - elles envoient des alertes immédiates quand les conditions sortent des seuils de sécurité ;
 - elles garantissent la conformité grâce à des rapports et un suivi automatisés.
 
-**En pratique :** McDonald’s utilise des capteurs IoT dans ses 43 000 restaurants dans le monde. Ces **capteurs surveillent les équipements de cuisine en temps réel** : température, temps de cuisson, performance.
+**En pratique :** McDonald’s utilise des capteurs IoT dans ses 43'000 restaurants dans le monde. Ces **capteurs surveillent les équipements de cuisine en temps réel** : température, temps de cuisson, performance.
 
 Le système **prévoit les pannes** avant qu’elles surviennent, ce qui permet à McDonald’s d’agir tôt et d’éviter des arrêts coûteux.
 
@@ -2424,7 +2424,7 @@ Les clients attendent aujourd’hui un service fluide. Les établissements gagne
 
 **En pratique :** l’un de nos clients, fournisseur de glace pour boissons, avait un système de commande dépassé : les clients devaient téléphoner, ce qui causait de longues attentes et des erreurs fréquentes.
 
-Nous l’avons remplacé par une solution simple : les clients [**scannent un QR code**](/blog/less-staff-more-service-reducing-labor-costs-in-horeca), choisissent la quantité de glace voulue et valident. Cela a fait gagner du temps, réduit les erreurs et **économisé 7 000 CHF par mois de frais de personnel**.
+Nous l’avons remplacé par une solution simple : les clients [**scannent un QR code**](/blog/less-staff-more-service-reducing-labor-costs-in-horeca), choisissent la quantité de glace voulue et valident. Cela a fait gagner du temps, réduit les erreurs et **économisé CHF 7'000 par mois de frais de personnel**.
 
 ### Système de gestion des transports
 
@@ -2468,7 +2468,7 @@ Les clients en attendent toujours plus, alors que les coûts et la pénurie de p
 
 Il settore HoReCa (acronimo di **hotel, ristoranti e catering**) comprende le aziende che offrono cibo, bevande e alloggio a residenti e viaggiatori.
 
-Secondo una ricerca di Innova Market Insights, **il 37 % dei millennial prova un nuovo ristorante almeno una volta a settimana**. Un fattore è la preferenza per mangiare in compagnia, con amici, famiglia o colleghi. I ristoranti moderni puntano quindi non solo sulla qualità del cibo, ma anche su esperienze memorabili.
+Secondo una ricerca di Innova Market Insights, **il 37 % dei millennial prova un nuovo ristorante almeno una volta a settimana**. Un fattore è la preferenza per mangiare in compagnia, con amici, famiglia o colleghi. I ristoranti moderni puntano quindi sulla qualità del cibo e su esperienze memorabili.
 
 In questo contesto molto competitivo, le soluzioni HoReCa aiutano le aziende a **soddisfare aspettative sempre più alte**, a restare efficienti e a **ridurre i costi**.
 
@@ -2502,7 +2502,7 @@ Sicurezza e qualità degli alimenti sono decisive per la fiducia dei clienti. Le
 - inviano avvisi immediati quando le condizioni escono dalle soglie di sicurezza;
 - garantiscono la conformità con report e tracciamento automatici.
 
-**In pratica:** McDonald’s usa sensori IoT nei suoi 43 000 ristoranti nel mondo. Questi **sensori monitorano le attrezzature di cucina in tempo reale**: temperatura, tempi di cottura e prestazioni.
+**In pratica:** McDonald’s usa sensori IoT nei suoi 43'000 ristoranti nel mondo. Questi **sensori monitorano le attrezzature di cucina in tempo reale**: temperatura, tempi di cottura e prestazioni.
 
 Il sistema **prevede i guasti** prima che avvengano, così McDonald’s può intervenire per tempo ed evitare fermi costosi.
 
@@ -2516,7 +2516,7 @@ I clienti di oggi si aspettano un servizio fluido. Le attività possono migliora
 
 **In pratica:** un nostro cliente, fornitore di ghiaccio per bevande, aveva un sistema d’ordine superato: i clienti dovevano telefonare, con lunghe attese e frequenti errori.
 
-Lo abbiamo sostituito con una soluzione semplice: i clienti [**scansionano un QR code**](/blog/less-staff-more-service-reducing-labor-costs-in-horeca), scelgono la quantità di ghiaccio e inviano. Si è risparmiato tempo, ridotto gli errori e **tagliato 7000 CHF al mese di costi del personale**.
+Lo abbiamo sostituito con una soluzione semplice: i clienti [**scansionano un QR code**](/blog/less-staff-more-service-reducing-labor-costs-in-horeca), scelgono la quantità di ghiaccio e inviano. Si è risparmiato tempo, ridotto gli errori e **tagliato CHF 7'000 al mese di costi del personale**.
 
 ### Sistema di gestione dei trasporti
 
@@ -3065,7 +3065,7 @@ One of the most effective ways to reduce cloud expenses is through rightsizing: 
 - **Comparing Instance Performance:** AWS recommends evaluating current usage against two benchmarks: the existing instance type and the next smaller instance.
 - **Downsizing Based on Utilization:** If an instance consistently operates below 40% of its capacity or is within 80% of a smaller instance’s capability, switching to a smaller, more cost-effective instance can lead to savings.
 
-One of our clients was running multiple EC2 instances to support its growing workload, but after a deep dive into usage patterns using **AWS Compute Optimizer**, we discovered that they were over-provisioned.
+One of our clients was running multiple EC2 instances to support its growing workload, but after analyzing usage patterns with **AWS Compute Optimizer**, we found that they were over-provisioned.
 
 The analysis revealed that their **t3.large** instances were more powerful than needed for their actual demands. By right-sizing to **t3.medium** instances, they were able to reduce unnecessary capacity while maintaining performance.
 
@@ -3093,7 +3093,7 @@ As an [AWS Certified Partner](/blog/partnership-with-amazon-web-services), Tride
 
 [Contact us](/contact) today **for a free consultation** to learn how we can help you implement FinOps best practices and optimize your cloud costs effectively.`,
     meta: {
-      title: "AWS cost optimization reducing expenses by 65% - Trident Software",
+      title: "AWS cost optimization: one client cut costs 65% - Trident Software",
       description: "FinOps tips for AWS cost optimization: cost visibility, commitments, rightsizing and Well-Architected reviews. One client cut cloud costs by 65%.",
     },
     translations: {
@@ -3126,7 +3126,7 @@ Mit FinOps-Methoden haben wir Folgendes optimiert:
 - Datentransferkosten optimiert
 - Überdimensionierte Ressourcen auf die richtige Grösse gebracht
 
-Der Kunde senkte seine Cloud-Kosten um 65 % und sparte **322 USD pro Monat**, also **3864 USD pro Jahr** und **19 320 USD** über fünf Jahre.
+Der Kunde senkte seine Cloud-Kosten um 65 % und sparte **322 USD pro Monat**, also **3'864 USD pro Jahr** und **19'320 USD** über fünf Jahre.
 
 Diese Probleme hätten sich von Anfang an vermeiden lassen. Die folgenden Grundsätze helfen jedem Unternehmen, dieselbe Kontrolle zu erreichen.
 
@@ -3199,7 +3199,7 @@ Als [AWS Certified Partner](/blog/partnership-with-amazon-web-services) hilft Tr
 [Kontaktieren Sie uns](/contact) **für eine kostenlose Beratung** und erfahren Sie, wie wir Sie bei der Umsetzung von FinOps-Best-Practices und der Optimierung Ihrer Cloud-Kosten unterstützen.`,
         authorRole: "QA-Ingenieurin, Trident Software",
         meta: {
-          title: "AWS-Kostenoptimierung mit FinOps: 65 % sparen",
+          title: "FinOps auf AWS: wie ein Kunde 65 % Kosten sparte",
           description: "FinOps-Tipps für AWS: Kostentransparenz, Commitments, Rightsizing und Well-Architected-Reviews. Ein Kunde senkte seine Cloud-Kosten um 65 %.",
         },
       },
@@ -3232,7 +3232,7 @@ Grâce aux pratiques FinOps, nous avons optimisé :
 - les coûts de transfert de données
 - le dimensionnement des ressources surprovisionnées
 
-Le client a réduit ses coûts cloud de 65 % et économisé **322 USD par mois**, soit **3 864 USD par an** et **19 320 USD** sur cinq ans.
+Le client a réduit ses coûts cloud de 65 % et économisé **322 USD par mois**, soit **3'864 USD par an** et **19'320 USD** sur cinq ans.
 
 Ces problèmes auraient pu être évités dès le départ. Les principes ci-dessous aident toute organisation à atteindre le même niveau de maîtrise.
 
@@ -3280,7 +3280,7 @@ L’un de nos clients faisait tourner plusieurs instances EC2 pour sa charge cro
 
 Ses instances **t3.large** étaient plus puissantes que nécessaire. En passant à des **t3.medium**, il a supprimé la capacité inutile tout en gardant les mêmes performances.
 
-Cette optimisation des coûts AWS a fait économiser **3 000 USD** sur la facture cloud en un an, et l’entreprise a réaffecté ces ressources sans nuire à la productivité.
+Cette optimisation des coûts AWS a fait économiser **3'000 USD** sur la facture cloud en un an, et l’entreprise a réaffecté ces ressources sans nuire à la productivité.
 
 ### Gérer les environnements hors production
 
@@ -3305,7 +3305,7 @@ En tant que [partenaire certifié AWS](/blog/partnership-with-amazon-web-service
 [Contactez-nous](/contact) **pour une consultation gratuite** et découvrir comment nous pouvons vous aider à appliquer les bonnes pratiques FinOps et à optimiser vos coûts cloud.`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "Optimisation des coûts AWS avec FinOps : -65 %",
+          title: "FinOps sur AWS : un client réduit ses coûts de 65 %",
           description: "Conseils FinOps pour AWS : visibilité des coûts, engagements, rightsizing et revues Well-Architected. Un client a réduit ses coûts cloud de 65 %.",
         },
       },
@@ -3338,7 +3338,7 @@ Con le pratiche FinOps abbiamo ottimizzato:
 - i costi di trasferimento dati
 - il dimensionamento delle risorse sovradimensionate
 
-Il cliente ha ridotto i costi cloud del 65 % e risparmiato **322 USD al mese**, cioè **3864 USD l’anno** e **19 320 USD** in cinque anni.
+Il cliente ha ridotto i costi cloud del 65 % e risparmiato **322 USD al mese**, cioè **3'864 USD l’anno** e **19'320 USD** in cinque anni.
 
 Questi problemi si sarebbero potuti evitare fin dall’inizio. I principi qui sotto aiutano qualsiasi organizzazione a raggiungere lo stesso livello di controllo.
 
@@ -3386,7 +3386,7 @@ Un nostro cliente usava diverse istanze EC2 per un carico in crescita. Un’anal
 
 Le istanze **t3.large** erano più potenti del necessario. Passando a **t3.medium**, il cliente ha eliminato la capacità inutile mantenendo le prestazioni.
 
-Questa ottimizzazione dei costi AWS ha fatto risparmiare **3000 USD** sulla fattura cloud in un anno, e l’azienda ha riallocato quelle risorse senza danneggiare la produttività.
+Questa ottimizzazione dei costi AWS ha fatto risparmiare **3'000 USD** sulla fattura cloud in un anno, e l’azienda ha riallocato quelle risorse senza danneggiare la produttività.
 
 ### Gestire gli ambienti non di produzione
 
@@ -3411,7 +3411,7 @@ Come [partner certificato AWS](/blog/partnership-with-amazon-web-services), Trid
 [Contattaci](/contact) **per una consulenza gratuita** e scoprire come possiamo aiutarti ad applicare le best practice FinOps e a ottimizzare i costi del cloud.`,
         authorRole: "Ingegnera QA, Trident Software",
         meta: {
-          title: "Ottimizzazione dei costi AWS con FinOps: -65 %",
+          title: "FinOps su AWS: un cliente taglia i costi del 65 %",
           description: "Consigli FinOps per AWS: visibilità dei costi, impegni, rightsizing e revisioni Well-Architected. Un cliente ha ridotto i costi cloud del 65 %.",
         },
       },
