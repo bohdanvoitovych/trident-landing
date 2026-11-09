@@ -3,6 +3,7 @@ import path from 'node:path'
 import { describe, expect, it, vi } from 'vitest'
 import { getPosts, getPostSlugs, getPostLocales, getPublishedPosts } from '.'
 import { posts as batch08 } from './batch-08'
+import { posts as batch09All } from './batch-09'
 
 const EN_ONLY_SLUG = 'synthetic-en-only-post'
 
@@ -12,6 +13,7 @@ vi.mock('./batch-09', async (importOriginal) => {
   return { posts: [...real.posts, { ...real.posts[0], translations: undefined, slug: 'synthetic-en-only-post', relatedPosts: [] }] }
 })
 
+const batch09 = batch09All.filter((p) => p.slug !== EN_ONLY_SLUG)
 const allPosts = getPosts('en')
 const posts = allPosts.filter((p) => p.slug !== EN_ONLY_SLUG)
 const publicDir = path.resolve(__dirname, '../../../public')
@@ -54,9 +56,12 @@ describe('blog data', () => {
     }
   })
 
-  it('every batch-08 post has de, fr and it text, each different from English', () => {
-    expect(batch08).toHaveLength(18)
-    for (const p of batch08) {
+  it.each([
+    ['batch-08', batch08, 18],
+    ['batch-09', batch09, 18],
+  ])('every %s post has de, fr and it text, each different from English', (_name, batch, count) => {
+    expect(batch).toHaveLength(count)
+    for (const p of batch) {
       expect(getPostLocales(p.slug), p.slug).toEqual(['en', 'de', 'fr', 'it'])
       for (const l of ['de', 'fr', 'it'] as const) {
         const t = p.translations?.[l]
