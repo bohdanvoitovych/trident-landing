@@ -10,6 +10,8 @@ import { Integrations } from '@/components/organisms/home/Integrations'
 import { getServices } from '@/data/services'
 import { getTechnologies } from '@/data/technologies'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -36,6 +38,7 @@ export default function ServicesPage() {
   const ta = useTranslations('ui.actions')
   return (
     <>
+      <PageJsonLd type="CollectionPage" path="/services" name={pageName(t('metaTitle'))} description={t('metaDescription')} />
       <PageHero
         crumbs={[{ name: t('crumb'), href: '/services' }]}
         label={t('label')}

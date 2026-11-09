@@ -2,6 +2,8 @@ import { useLocale, useTranslations } from 'next-intl'
 import { getLocale, getTranslations } from 'next-intl/server'
 import { getIndustries } from '@/data/industries'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { IndustriesGrid } from '@/components/molecules/IndustriesGrid'
@@ -28,6 +30,7 @@ export default function IndustriesPage() {
   const t = useTranslations('pages.industries')
   return (
     <>
+      <PageJsonLd type="CollectionPage" path="/industries" name={pageName(t('metaTitle'))} description={t('metaDescription')} />
       <PageHero
         crumbs={[{ name: t('crumb'), href: '/industries' }]}
         label={t('label')}

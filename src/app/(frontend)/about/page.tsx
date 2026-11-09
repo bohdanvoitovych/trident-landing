@@ -5,6 +5,8 @@ import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { getStats } from '@/data/team'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 import { Timeline } from './Timeline'
 
 export const revalidate = 3600
@@ -45,6 +47,7 @@ export default async function AboutPage() {
 
   return (
     <>
+      <PageJsonLd type="AboutPage" path="/about" name={pageName(ta('metaTitle'))} description={ta('metaDescription')} />
       <PageHero
         crumbs={[{ name: t('nav.about'), href: '/about' }]}
         label={ta('label')}

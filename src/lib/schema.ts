@@ -15,10 +15,10 @@ function bcp47(locale: string): string {
 
 // Breadcrumb and place names in structured data, per locale.
 const LABELS = {
-  en: { home: 'Home', services: 'Services', industries: 'Industries', locations: 'Locations', technologies: 'Technologies', switzerland: 'Switzerland', techService: (n: string) => `${n} Development Switzerland` },
-  de: { home: 'Startseite', services: 'Dienstleistungen', industries: 'Branchen', locations: 'Standorte', technologies: 'Technologien', switzerland: 'Schweiz', techService: (n: string) => `${n}-Entwicklung Schweiz` },
-  fr: { home: 'Accueil', services: 'Services', industries: 'Secteurs', locations: 'Régions', technologies: 'Technologies', switzerland: 'Suisse', techService: (n: string) => `Développement ${n} en Suisse` },
-  it: { home: 'Home', services: 'Servizi', industries: 'Settori', locations: 'Località', technologies: 'Tecnologie', switzerland: 'Svizzera', techService: (n: string) => `Sviluppo ${n} in Svizzera` },
+  en: { home: 'Home', cases: 'Projects', services: 'Services', industries: 'Industries', locations: 'Locations', technologies: 'Technologies', switzerland: 'Switzerland', techService: (n: string) => `${n} Development Switzerland` },
+  de: { home: 'Startseite', cases: 'Projekte', services: 'Dienstleistungen', industries: 'Branchen', locations: 'Standorte', technologies: 'Technologien', switzerland: 'Schweiz', techService: (n: string) => `${n}-Entwicklung Schweiz` },
+  fr: { home: 'Accueil', cases: 'Projets', services: 'Services', industries: 'Secteurs', locations: 'Régions', technologies: 'Technologies', switzerland: 'Suisse', techService: (n: string) => `Développement ${n} en Suisse` },
+  it: { home: 'Home', cases: 'Progetti', services: 'Servizi', industries: 'Settori', locations: 'Località', technologies: 'Tecnologie', switzerland: 'Svizzera', techService: (n: string) => `Sviluppo ${n} in Svizzera` },
 }
 const labels = (locale: string) => LABELS[locale as keyof typeof LABELS] ?? LABELS.en
 
@@ -120,6 +120,8 @@ export function blogPostSchema(
       mainEntityOfPage: { '@type': 'WebPage', '@id': url },
       ...(post.image && { image: post.image.startsWith('http') ? post.image : `${SITE_URL}${post.image}` }),
       datePublished: post.publishedAt,
+      // No separate last-edited date is tracked, so it mirrors publishedAt.
+      dateModified: post.publishedAt,
       author: {
         '@type': 'Person',
         name: post.author,
@@ -169,7 +171,7 @@ export function servicePageSchema(
     breadcrumbSchema([
       { name: labels(locale).home, url: localizedUrl('/', locale) },
       { name: labels(locale).services, url: localizedUrl('/services', locale) },
-      { name: service.title, url: `${SITE_URL}/services/${service.slug}` },
+      { name: service.title, url: localizedUrl(`/services/${service.slug}`, locale) },
     ]),
   ]
 }
@@ -264,6 +266,73 @@ export function technologyPageSchemas(
       { name: labels(locale).home, url: localizedUrl('/', locale) },
       { name: labels(locale).technologies, url: localizedUrl('/technologies', locale) },
       { name: tech.name, url },
+    ]),
+  ]
+}
+
+const ORG_REF = {
+  '@type': 'Organization',
+  '@id': `${SITE_URL}/#organization`,
+  name: 'Trident Software Sàrl',
+  url: SITE_URL,
+}
+
+/** Short page name for structured data: the metadata title without its "| Trident Software" tail. */
+export function pageName(title: string): string {
+  return title.split(' | ')[0].trim()
+}
+
+export type PageSchemaType = 'WebPage' | 'AboutPage' | 'ContactPage' | 'CollectionPage'
+
+/** A page with no data module of its own: its type schema plus a Home > page breadcrumb. */
+export function webPageSchemas(
+  page: { type: PageSchemaType; path: string; name: string; description: string },
+  locale: string,
+): Record<string, unknown>[] {
+  const url = localizedUrl(page.path, locale)
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': page.type,
+      name: page.name,
+      description: page.description,
+      url,
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+      publisher: ORG_REF,
+      inLanguage: bcp47(locale),
+    },
+    breadcrumbSchema([
+      { name: labels(locale).home, url: localizedUrl('/', locale) },
+      { name: page.name, url },
+    ]),
+  ]
+}
+
+/** Case study page: an Article about the project, published by Trident. */
+export function caseStudySchemas(
+  c: { slug: string; title: string; description: string; image?: string; publishedAt?: string },
+  locale: string,
+): Record<string, unknown>[] {
+  const url = localizedUrl(`/cases/${c.slug}`, locale)
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: c.title,
+      description: c.description,
+      url,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      // The date the case study was written, not the project's launch date.
+      ...(c.publishedAt && { datePublished: c.publishedAt, dateModified: c.publishedAt }),
+      ...(c.image && { image: c.image.startsWith('http') ? c.image : `${SITE_URL}${c.image}` }),
+      author: ORG_REF,
+      publisher: ORG_REF,
+      inLanguage: bcp47(locale),
+    },
+    breadcrumbSchema([
+      { name: labels(locale).home, url: localizedUrl('/', locale) },
+      { name: labels(locale).cases, url: localizedUrl('/cases', locale) },
+      { name: c.title, url },
     ]),
   ]
 }

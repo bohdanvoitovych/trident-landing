@@ -1,6 +1,8 @@
 import { getLocale, getTranslations } from 'next-intl/server'
 import JsonLd from '@/components/seo/JsonLd'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 import { faqPageSchema } from '@/lib/schema'
 import { getFaq, getFaqGroups } from '@/data/faq'
 import { PageHero } from '@/components/molecules/PageHero'
@@ -30,6 +32,7 @@ export default async function FaqPage() {
 
   return (
     <>
+      <PageJsonLd type="WebPage" path="/faq" name={pageName(tp('metaTitle'))} description={tp('metaDescription')} />
       {schema && <JsonLd data={[schema]} />}
       <PageHero label={tp('label')} title={tp('title')} crumbs={[{ name: tp('label'), href: '/faq' }]} />
       <section className="section section--alt" aria-label={t('faq.questions')} style={{ paddingTop: 'clamp(40px,5vw,64px)' }}>

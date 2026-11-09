@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { getLocale, getTranslations } from 'next-intl/server'
 import { getTechnologies } from '@/data/technologies'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 import { Tag } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
@@ -28,6 +30,7 @@ export default function TechnologiesPage() {
   const t = useTranslations('pages.technologies')
   return (
     <>
+      <PageJsonLd type="CollectionPage" path="/technologies" name={pageName(t('metaTitle'))} description={t('metaDescription')} />
       <PageHero
         crumbs={[{ name: t('crumb'), href: '/technologies' }]}
         label={t('label')}

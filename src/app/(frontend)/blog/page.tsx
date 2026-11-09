@@ -2,6 +2,8 @@ import { useLocale, useTranslations } from 'next-intl'
 import { getLocale, getTranslations } from 'next-intl/server'
 import { getPublishedPosts } from '@/data/blog'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 import { BLOG_IMAGES, getBlogCategory, type BlogCategory } from '@/data/blog-meta'
 import { PageHero } from '@/components/molecules/PageHero'
 import { BlogGrid, type BlogGridPost } from '@/components/molecules/BlogGrid'
@@ -43,6 +45,7 @@ export default function BlogPage() {
 
   return (
     <>
+      <PageJsonLd type="CollectionPage" path="/blog" name={pageName(tp('metaTitle'))} description={tp('metaDescription')} />
       <PageHero label={tp('label')} title={t('title')} lead={t('subtitle')} crumbs={[{ name: t('title'), href: '/blog' }]} />
       <section className="section section--alt" aria-label={t('title')} style={{ paddingTop: 'clamp(40px,5vw,64px)' }}>
         <div className="container">

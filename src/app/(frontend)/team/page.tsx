@@ -5,6 +5,8 @@ import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { getTeam, getStats } from '@/data/team'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 import { TeamFilter } from './TeamFilter'
 
 export const revalidate = 3600
@@ -32,6 +34,7 @@ export default function TeamPage() {
   const t = useTranslations('pages.team')
   return (
     <>
+      <PageJsonLd type="WebPage" path="/team" name={pageName(t('metaTitle'))} description={t('metaDescription')} />
       <PageHero
         crumbs={[{ name: t('crumb'), href: '/team' }]}
         label={t('crumb')}

@@ -5,6 +5,7 @@ import { UseCaseCard } from '@/components/organisms/home/UseCases'
 import { WhereWeSayNo } from '@/components/organisms/home/WhereWeSayNo'
 import { getUseCases } from '@/data/use-cases'
 import { buildMetadata } from '@/lib/metadata'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -26,6 +27,7 @@ export default function UseCasesPage() {
   const t = useTranslations('pages.useCases')
   return (
     <>
+      <PageJsonLd type="CollectionPage" path="/use-cases" name={t('crumb')} description={t('lead')} />
       <PageHero alt crumbs={[{ name: t('crumb'), href: '/use-cases' }]} label={t('crumb')} title={t('title')} lead={t('lead')} />
 
       <section className="section" aria-labelledby="uc-list-h">

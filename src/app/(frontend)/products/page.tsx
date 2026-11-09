@@ -5,6 +5,8 @@ import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { Products } from '@/components/organisms/home/Products'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export async function generateMetadata() {
   const locale = await getLocale()
@@ -23,6 +25,7 @@ export default function ProductsPage() {
   const t = useTranslations('pages.products')
   return (
     <>
+      <PageJsonLd type="WebPage" path="/products" name={pageName(t('metaTitle'))} description={t('metaDescription')} />
       <PageHero
         crumbs={[{ name: t('crumb'), href: '/products' }]}
         label={t('label')}

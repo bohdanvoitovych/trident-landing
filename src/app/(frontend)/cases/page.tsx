@@ -2,6 +2,8 @@ import { getLocale, getTranslations } from 'next-intl/server'
 import { getProjects, getProjectSectors } from '@/data/projects'
 import { caseImage, getCases } from '@/data/cases'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 import { ProjectGrid } from '@/components/molecules/ProjectGrid'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
@@ -33,6 +35,7 @@ export default async function CasesPage() {
 
   return (
     <>
+      <PageJsonLd type="CollectionPage" path="/cases" name={pageName(tp('metaTitle'))} description={tp('metaDescription')} />
       <PageHero
         crumbs={[{ name: t('nav.projects'), href: '/cases' }]}
         label={tp('label')}

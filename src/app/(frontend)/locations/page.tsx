@@ -3,6 +3,8 @@ import { Link } from '@/i18n/navigation'
 import { getLocale, getTranslations } from 'next-intl/server'
 import { getLocations } from '@/data/locations'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { CtaBand, TagList } from '@/components/molecules/CatalogBlocks'
@@ -26,6 +28,7 @@ export default function LocationsPage() {
   const t = useTranslations('pages.locations')
   return (
     <>
+      <PageJsonLd type="CollectionPage" path="/locations" name={pageName(t('metaTitle'))} description={t('metaDescription')} />
       <PageHero
         crumbs={[{ name: t('crumb'), href: '/locations' }]}
         label={t('label')}

@@ -7,6 +7,8 @@ import { Calculator } from '@/components/organisms/home/Calculator'
 import { AgentVsHire } from '@/components/organisms/home/AgentVsHire'
 import { WhereWeSayNo } from '@/components/organisms/home/WhereWeSayNo'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -61,6 +63,7 @@ export default function PricingPage() {
 
   return (
     <>
+      <PageJsonLd type="WebPage" path="/pricing" name={pageName(t('metaTitle'))} description={t('metaDescription')} />
       <PageHero crumbs={[{ name: t('crumb'), href: '/pricing' }]} label={t('label')} title={t('heroTitle')} lead={t('heroLead')} />
 
       <div className="section--line">

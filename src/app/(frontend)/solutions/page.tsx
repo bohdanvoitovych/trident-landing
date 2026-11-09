@@ -8,6 +8,8 @@ import { ServiceCard } from '@/components/molecules/ServiceCard'
 import { getSolutions } from '@/data/solutions'
 import { getServices } from '@/data/services'
 import { buildMetadata } from '@/lib/metadata'
+import { pageName } from '@/lib/schema'
+import PageJsonLd from '@/components/seo/PageJsonLd'
 
 export const revalidate = 3600
 
@@ -29,6 +31,7 @@ export default function SolutionsPage() {
   const services = getServices(useLocale())
   return (
     <>
+      <PageJsonLd type="CollectionPage" path="/solutions" name={pageName(t('metaTitle'))} description={t('metaDescription')} />
       <PageHero
         crumbs={[{ name: t('crumb'), href: '/solutions' }]}
         label={t('label')}
