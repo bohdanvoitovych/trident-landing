@@ -93,7 +93,7 @@ export function Hero() {
         <div className="grid-4 keep-2 gap-tight stagger">
           <StatCard
             source={t('hero.statSrc.clinic')}
-            value="−92 %"
+            value="1 h → ~5 min"
             description={th('stats.clinic')}
             visual={{ kind: 'bar', before: 1, after: 0.08 }}
           />

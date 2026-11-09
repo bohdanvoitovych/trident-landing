@@ -765,7 +765,7 @@ Amazon Web Services provides comprehensive cloud security accessible on a pay-as
 Fine-grained control over who can access which resources. Enforce least-privilege access — nobody has more permissions than they need.
 
 **AWS KMS (Key Management Service)**
-Create and control encryption keys for data at rest and in transit. Meet GDPR and nFADP requirements for data encryption.
+Create and control encryption keys for data at rest and in transit. Meet GDPR and revFADP requirements for data encryption.
 
 **Amazon GuardDuty**
 ML-based intelligent threat detection with real-time alerts. Detects anomalous activity patterns that rule-based systems miss.

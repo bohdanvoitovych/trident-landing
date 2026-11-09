@@ -36,7 +36,7 @@ export default function ImprintPage() {
         <h2>{t('contact')}</h2>
         <p>
           {t.rich('email', {
-            mail: (c) => <a href="mailto:hello@trident-software.ch">{c}</a>,
+            mail: (c) => <a href="mailto:info@trident-software.ch">{c}</a>,
           })}
         </p>
       </div>

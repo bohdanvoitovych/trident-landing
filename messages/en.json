@@ -34,7 +34,7 @@
     "hero": {
       "badge": "Swiss Software Engineering Since 2009",
       "title": "AI-Native Software Development for Growing Businesses",
-      "subtitle": "Custom platforms, AI integrations & embedded systems — built for Swiss and European SMEs. Fixed-price contracts, nFADP compliance, and 27+ projects delivered since 2009.",
+      "subtitle": "Custom platforms, AI integrations & embedded systems — built for Swiss and European SMEs. Fixed-price contracts, revFADP compliance, and 27+ projects delivered since 2009.",
       "cta": "Get a Free Consultation",
       "ctaSecondary": "View Case Studies"
     },
@@ -306,7 +306,7 @@
         },
         "compliance": {
           "title": "Swiss data compliance",
-          "desc": "nFADP and GDPR-ready by default. Data residency in Switzerland available for all projects."
+          "desc": "revFADP and GDPR-ready by default. Data residency in Switzerland available for all projects."
         },
         "response": {
           "title": "24h response guaranteed",
@@ -453,12 +453,12 @@
     },
     "industries": {
       "metaTitle": "Software Development by Industry | Healthcare, Automotive, Fintech & More | Trident Software",
-      "metaDescription": "Custom software development for 25+ industries — healthcare, automotive, fintech, logistics, retail, SaaS, manufacturing. Swiss engineering team since 2009. Fixed budgets, nFADP compliance.",
+      "metaDescription": "Custom software development for 25+ industries — healthcare, automotive, fintech, logistics, retail, SaaS, manufacturing. Swiss engineering team since 2009. Fixed budgets, revFADP compliance.",
       "crumb": "Industries",
       "label": "Industry expertise",
       "title": "Custom Software Development<br></br>for 25+ Industries",
       "lead": "From MedTech startups to automotive distributors and retail chains — our Swiss engineering team delivers domain-specific software that fits your industry regulations, workflows, and growth targets.",
-      "leadNote": "Every project starts with your industry-specific constraints: regulatory requirements (nFADP, GDPR, MDR), operational complexity, and competitive landscape. No generic solutions.",
+      "leadNote": "Every project starts with your industry-specific constraints: regulatory requirements (revFADP, GDPR, MDR), operational complexity, and competitive landscape. No generic solutions.",
       "discuss": "Discuss your project",
       "facts": {
         "industries": {
@@ -607,7 +607,7 @@
         },
         "compliance": {
           "title": "Swiss data compliance",
-          "desc": "nFADP and GDPR-ready by default. Data residency in Switzerland available for all projects."
+          "desc": "revFADP and GDPR-ready by default. Data residency in Switzerland available for all projects."
         },
         "response": {
           "title": "24h response guaranteed",
@@ -1036,7 +1036,7 @@
       "heroLead": "Founded in 2009 in Sion, Valais, Trident Software builds custom software, AI systems, and embedded solutions for European SMEs. Senior engineers only. Fixed budgets. Compliance included.",
       "chips": [
         "Sion, Valais, Switzerland",
-        "ISO 27000 · nFADP",
+        "ISO 27000 · revFADP",
         "26 engineers · 3 countries"
       ],
       "storyLabel": "Our Story",
@@ -1060,7 +1060,7 @@
       "values": {
         "compliance": {
           "title": "Swiss Compliance First",
-          "desc": "ISO 27000, nFADP, and data residency in Switzerland. We make compliance a deliverable, not an afterthought."
+          "desc": "ISO 27000, revFADP, and data residency in Switzerland. We make compliance a deliverable, not an afterthought."
         },
         "engineering": {
           "title": "Engineering Excellence",
@@ -1126,7 +1126,7 @@
       "lead": "We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers, qualifies and processes documents in four national languages.",
       "ctaAudit": "Book a free 45-min audit",
       "stats": {
-        "clinic": "Clinic admission time, measured",
+        "clinic": "Clinic admission time, operating target",
         "maker": "Warranty cost, component maker",
         "agentValue": "Month 2",
         "agent": "Typical payback on a sales agent",
@@ -1813,7 +1813,7 @@
       "basis": {
         "title": "3. Legal basis and purpose",
         "items": [
-          "Contact forms — processing based on your consent (Art. 6(1)(a) GDPR / Art. 31 nFADP) to respond to your inquiry.",
+          "Contact forms — processing based on your consent (Art. 6(1)(a) GDPR / Art. 31 revFADP) to respond to your inquiry.",
           "Newsletter — processing based on your consent; you may withdraw at any time.",
           "Server logs — legitimate interest in operating and securing our website (Art. 6(1)(f) GDPR)."
         ]
@@ -1828,7 +1828,7 @@
       },
       "rights": {
         "title": "6. Your rights",
-        "intro": "Under nFADP and GDPR you have the right to:",
+        "intro": "Under revFADP and GDPR you have the right to:",
         "items": [
           "Access your personal data",
           "Correct inaccurate data",
@@ -1948,11 +1948,11 @@
       "address": "Registered address",
       "region": "Valais, Switzerland",
       "contact": "Contact",
-      "email": "Email: <mail>hello@trident-software.ch</mail>",
+      "email": "Email: <mail>info@trident-software.ch</mail>",
       "register": "Commercial register",
       "registerValue": "Canton of Valais, Switzerland",
       "vat": "VAT number",
-      "vatValue": "CHE-XXX.XXX.XXX MWST",
+      "vatValue": "CHE-185.076.733",
       "responsible": "Responsible for content",
       "disclaimer": {
         "title": "Disclaimer",

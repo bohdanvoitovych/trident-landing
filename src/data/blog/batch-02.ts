@@ -452,10 +452,10 @@ Oltre alla logistica, un TMS è una piattaforma di dati. Monitora nel tempo il t
     slug: "on-premise-llm-swiss-companies",
     image: "/images/stock/logistics.jpg",
     title: "On-Premise LLMs for Swiss Companies: A Practical Guide",
-    excerpt: "Why Swiss SMEs are choosing self-hosted language models over cloud APIs — and how to deploy Llama 3 or Mistral on your own infrastructure while meeting nFADP requirements.",
+    excerpt: "Why Swiss SMEs are choosing self-hosted language models over cloud APIs — and how to deploy Llama 3 or Mistral on your own infrastructure while meeting revFADP requirements.",
     content: `## Why On-Premise LLMs Make Sense for Swiss Businesses
 
-Switzerland's Federal Act on Data Protection (nFADP) places strict requirements on how businesses handle personal data. When you send queries to OpenAI, Anthropic, or Google, that data leaves Swiss soil — which creates compliance complexity for healthcare, finance, and legal firms.
+Switzerland's Federal Act on Data Protection (revFADP) places strict requirements on how businesses handle personal data. When you send queries to OpenAI, Anthropic, or Google, that data leaves Swiss soil — which creates compliance complexity for healthcare, finance, and legal firms.
 
 On-premise LLMs solve this by keeping every token on infrastructure you control.
 
@@ -497,7 +497,7 @@ For a team of 50 making 500 API calls/day, the math changes significantly at sca
 
 ## Getting Started
 
-Contact us for a free infrastructure assessment. We'll evaluate your workload, recommend the right model and hardware, and handle the deployment — including nFADP compliance documentation.`,
+Contact us for a free infrastructure assessment. We'll evaluate your workload, recommend the right model and hardware, and handle the deployment — including revFADP compliance documentation.`,
     author: "Bohdan Voitovych",
     authorRole: "Project Manager, Trident Software",
     publishedAt: "2026-04-15",
@@ -507,7 +507,7 @@ Contact us for a free infrastructure assessment. We'll evaluate your workload, r
       "LLM",
       "Data Privacy",
       "Switzerland",
-      "nFADP",
+      "revFADP",
     ],
     relatedPosts: [
       "ai-agent-b2b-automation",
@@ -515,7 +515,7 @@ Contact us for a free infrastructure assessment. We'll evaluate your workload, r
     ],
     meta: {
       title: "On-Premise LLMs for Swiss Companies — Trident Software Blog",
-      description: "Deploy Llama 3 or Mistral on your own infrastructure. Practical guide for Swiss businesses on self-hosted LLMs and nFADP compliance.",
+      description: "Deploy Llama 3 or Mistral on your own infrastructure. Practical guide for Swiss businesses on self-hosted LLMs and revFADP compliance.",
     },
     translations: {
       de: {

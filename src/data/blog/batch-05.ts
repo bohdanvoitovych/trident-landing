@@ -314,11 +314,11 @@ Il modello che oggi preferiamo: **prezzo fisso per fase, non per progetto**. Ogn
   {
     slug: "fadp-nfadp-saas-compliance-switzerland",
     image: "/images/stock/warehouse-2.jpg",
-    title: "FADP / nFADP Compliance for SaaS Products: A Developer's Checklist",
+    title: "FADP / revFADP Compliance for SaaS Products: A Developer's Checklist",
     excerpt: "Switzerland's revised Federal Act on Data Protection came into force in September 2023. If you're building or operating a SaaS product for Swiss customers, here's what your engineering team must implement.",
-    content: `## What Changed with nFADP
+    content: `## What Changed with revFADP
 
-The revised Federal Act on Data Protection (nFADP, in force since September 2023) brought Swiss data protection law closer to GDPR while keeping Swiss-specific characteristics. For SaaS products with Swiss customers, the key engineering implications are:
+The revised Federal Act on Data Protection (revFADP, in force since September 2023) brought Swiss data protection law closer to GDPR while keeping Swiss-specific characteristics. For SaaS products with Swiss customers, the key engineering implications are:
 
 - **Privacy by design and by default** is now a legal requirement, not a recommendation
 - **Data breach notification** to the FDPIC within 72 hours for high-risk breaches
@@ -393,7 +393,7 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
     publishedAt: "2025-11-19",
     readingTime: 9,
     tags: [
-      "nFADP",
+      "revFADP",
       "GDPR",
       "Data Privacy",
       "Switzerland",
@@ -407,20 +407,20 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
     ],
     faq: [
       {
-        question: "Does nFADP apply to foreign SaaS companies with Swiss customers?",
-        answer: "Yes. nFADP applies when processing personal data of persons in Switzerland, regardless of where the processor is located — similar to GDPR's extraterritorial scope.",
+        question: "Does revFADP apply to foreign SaaS companies with Swiss customers?",
+        answer: "Yes. revFADP applies when processing personal data of persons in Switzerland, regardless of where the processor is located — similar to GDPR's extraterritorial scope.",
       },
       {
-        question: "Is nFADP compliance the same as GDPR compliance?",
-        answer: "Largely aligned but not identical. Key differences: nFADP's breach notification window is 72 hours (same as GDPR), but the definition of \"high risk\" and profiling rules differ. GDPR compliance provides a strong foundation but requires Swiss-specific gaps to be filled.",
+        question: "Is revFADP compliance the same as GDPR compliance?",
+        answer: "Largely aligned but not identical. Key differences: revFADP's breach notification window is 72 hours (same as GDPR), but the definition of \"high risk\" and profiling rules differ. GDPR compliance provides a strong foundation but requires Swiss-specific gaps to be filled.",
       },
       {
-        question: "What is the penalty for nFADP violations?",
+        question: "What is the penalty for revFADP violations?",
         answer: "Fines up to CHF 250,000 for individuals (not companies — this is a Swiss peculiarity). Criminal sanctions target responsible persons within the organization, not the legal entity.",
       },
       {
         question: "Do startups with fewer than 250 employees need a processing register?",
-        answer: "The 250-employee threshold applies to mandatory processing records under nFADP, but the FDPIC recommends all organizations maintain them. More importantly, if you process sensitive data or carry out high-risk processing, the register is required regardless of size.",
+        answer: "The 250-employee threshold applies to mandatory processing records under revFADP, but the FDPIC recommends all organizations maintain them. More importantly, if you process sensitive data or carry out high-risk processing, the register is required regardless of size.",
       },
     ],
     translations: {
@@ -502,7 +502,7 @@ Für jeden braucht es einen Auftragsbearbeitungsvertrag (AVV). Die meisten gross
         authorRole: "Projektleiter, Trident Software",
         meta: {
           title: "nDSG Compliance für SaaS-Produkte — Trident Software Blog",
-          description: "Entwickler-Checkliste für nDSG/nFADP: Datensparsamkeit, Einwilligung, Auskunftsrecht, Löschpflichten und Bearbeitungsverzeichnis für Schweizer SaaS-Produkte.",
+          description: "Entwickler-Checkliste für nDSG/revFADP: Datensparsamkeit, Einwilligung, Auskunftsrecht, Löschpflichten und Bearbeitungsverzeichnis für Schweizer SaaS-Produkte.",
         },
         faq: [
           {
@@ -723,8 +723,8 @@ Per ognuno serve un accordo sul trattamento dei dati (DPA). La maggior parte dei
       },
     },
     meta: {
-      title: "FADP / nFADP SaaS Compliance Checklist for Developers — Trident",
-      description: "Engineering checklist for Swiss nFADP compliance: data minimization, consent management, right to erasure, processing records, and sub-processor DPAs.",
+      title: "FADP / revFADP SaaS Compliance Checklist for Developers — Trident",
+      description: "Engineering checklist for Swiss revFADP compliance: data minimization, consent management, right to erasure, processing records, and sub-processor DPAs.",
     },
   },
   {
@@ -2584,7 +2584,7 @@ Cost comparison for 1,000 invoices/month: Claude API ~CHF 40, GPT-4V ~CHF 55, Te
         answer: "For high-volume recurring suppliers, use a template-matching approach first (pattern matching on known fields positions) and fall back to LLM extraction only for new or unusual formats.",
       },
       {
-        question: "What about GDPR/nFADP compliance for invoice data?",
+        question: "What about GDPR/revFADP compliance for invoice data?",
         answer: "Invoice PDFs often contain personal data (employee names, individual vendor details). Sending them to external APIs requires DPAs with the providers. Consider on-premise processing for sensitive documents.",
       },
     ],

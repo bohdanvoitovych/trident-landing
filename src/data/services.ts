@@ -573,7 +573,7 @@ const records: ServiceRecord[] = [
           },
           {
             title: 'Security & Compliance Review',
-            description: 'Technical security audits, GDPR/nFADP compliance, and ISO 27001 readiness assessment.',
+            description: 'Technical security audits, GDPR/revFADP compliance, and ISO 27001 readiness assessment.',
           },
           {
             title: 'Investor & Board Reporting',
@@ -748,7 +748,7 @@ const records: ServiceRecord[] = [
           },
           {
             title: 'Swiss Data Residency',
-            description: 'Architecture that keeps data within Swiss borders for nFADP and compliance requirements.',
+            description: 'Architecture that keeps data within Swiss borders for revFADP and compliance requirements.',
           },
         ],
         meta: {

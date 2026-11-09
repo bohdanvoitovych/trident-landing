@@ -1126,7 +1126,7 @@
       "lead": "Wir bauen die Systeme, mit denen Unternehmen jeden Tag arbeiten: Auftragserfassung, Disposition, Field-Apps, Fakturierung. Dazu die KI-Schicht, die Anfragen beantwortet, qualifiziert und Dokumente in vier Landessprachen verarbeitet.",
       "ctaAudit": "Kostenloses 45-Min-Audit buchen",
       "stats": {
-        "clinic": "Aufnahmezeit in der Klinik, gemessen",
+        "clinic": "Aufnahmezeit in der Klinik, Zielwert im Betrieb",
         "maker": "Garantiekosten, Komponentenhersteller",
         "agentValue": "Monat 2",
         "agent": "Typische Amortisation eines Verkaufsagenten",
@@ -1948,11 +1948,11 @@
       "address": "Sitz",
       "region": "Wallis, Schweiz",
       "contact": "Kontakt",
-      "email": "E-Mail: <mail>hello@trident-software.ch</mail>",
+      "email": "E-Mail: <mail>info@trident-software.ch</mail>",
       "register": "Handelsregister",
       "registerValue": "Kanton Wallis, Schweiz",
       "vat": "MWST-Nummer",
-      "vatValue": "CHE-XXX.XXX.XXX MWST",
+      "vatValue": "CHE-185.076.733",
       "responsible": "Verantwortlich für den Inhalt",
       "disclaimer": {
         "title": "Haftungsausschluss",

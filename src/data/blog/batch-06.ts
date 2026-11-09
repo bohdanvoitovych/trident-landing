@@ -2375,7 +2375,7 @@ Every new product should have an AI integration plan. Our default recommendation
 API calls → Anthropic Claude 3.5 Sonnet (primary)
 Embeddings → OpenAI text-embedding-3-small
 Vector DB → pgvector (in existing PostgreSQL) or Qdrant
-On-premise → Ollama + Llama 3.3 for nFADP-sensitive data
+On-premise → Ollama + Llama 3.3 for revFADP-sensitive data
 \`\`\`
 
 ## What We've Stopped Recommending
@@ -2478,7 +2478,7 @@ Jedes neue Produkt braucht einen Plan für die KI-Integration. Unsere Standardem
 API calls → Anthropic Claude 3.5 Sonnet (primary)
 Embeddings → OpenAI text-embedding-3-small
 Vector DB → pgvector (in existing PostgreSQL) or Qdrant
-On-premise → Ollama + Llama 3.3 for nFADP-sensitive data
+On-premise → Ollama + Llama 3.3 for revFADP-sensitive data
 \`\`\`
 
 ## Was wir nicht mehr empfehlen
@@ -2570,7 +2570,7 @@ Chaque nouveau produit devrait avoir un plan d'intégration de l'IA. Notre recom
 API calls → Anthropic Claude 3.5 Sonnet (primary)
 Embeddings → OpenAI text-embedding-3-small
 Vector DB → pgvector (in existing PostgreSQL) or Qdrant
-On-premise → Ollama + Llama 3.3 for nFADP-sensitive data
+On-premise → Ollama + Llama 3.3 for revFADP-sensitive data
 \`\`\`
 
 ## Ce que nous ne recommandons plus
@@ -2662,7 +2662,7 @@ Ogni nuovo prodotto dovrebbe avere un piano di integrazione dell'IA. La nostra r
 API calls → Anthropic Claude 3.5 Sonnet (primary)
 Embeddings → OpenAI text-embedding-3-small
 Vector DB → pgvector (in existing PostgreSQL) or Qdrant
-On-premise → Ollama + Llama 3.3 for nFADP-sensitive data
+On-premise → Ollama + Llama 3.3 for revFADP-sensitive data
 \`\`\`
 
 ## Cosa non consigliamo più

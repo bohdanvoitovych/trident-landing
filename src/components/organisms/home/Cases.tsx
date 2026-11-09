@@ -30,8 +30,8 @@ export function Cases() {
             sector={tc('clinic.sector')}
             title={tc('clinic.title')}
             description={tc('clinic.description')}
-            metric={{ value: '−92 %', label: tc('clinic.metric') }}
-            label="measured"
+            metric={{ value: '1 h → ~5 min', label: tc('clinic.metric') }}
+            label="modelled"
             bars={[
               { label: tc('clinic.bar1'), value: '−78 %', before: 100, after: 22 },
               { label: tc('clinic.bar2'), value: tc('clinic.bar2Value'), before: 100, after: 16 },

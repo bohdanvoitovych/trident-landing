@@ -1126,7 +1126,7 @@
       "lead": "Nous construisons les systèmes dont les entreprises se servent chaque jour : prise de commande, dispatch, apps terrain, facturation. Et la couche d'IA qui répond, qualifie et traite les documents dans les quatre langues nationales.",
       "ctaAudit": "Réserver un audit gratuit de 45 min",
       "stats": {
-        "clinic": "Temps d'admission en clinique, mesuré",
+        "clinic": "Temps d'admission en clinique, objectif d'exploitation",
         "maker": "Coûts de garantie, fabricant de composants",
         "agentValue": "2e mois",
         "agent": "Retour sur investissement typique d'un agent commercial",
@@ -1948,11 +1948,11 @@
       "address": "Siège",
       "region": "Valais, Suisse",
       "contact": "Contact",
-      "email": "E-mail : <mail>hello@trident-software.ch</mail>",
+      "email": "E-mail : <mail>info@trident-software.ch</mail>",
       "register": "Registre du commerce",
       "registerValue": "Canton du Valais, Suisse",
       "vat": "Numéro de TVA",
-      "vatValue": "CHE-XXX.XXX.XXX TVA",
+      "vatValue": "CHE-185.076.733",
       "responsible": "Responsable du contenu",
       "disclaimer": {
         "title": "Clause de non-responsabilité",

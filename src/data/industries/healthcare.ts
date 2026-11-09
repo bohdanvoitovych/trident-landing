@@ -19,7 +19,7 @@ const record: IndustryRecord = {
         },
         {
           title: 'Data privacy',
-          description: 'Patient data under nFADP and GDPR with audit trails and role-based access.',
+          description: 'Patient data under revFADP and GDPR with audit trails and role-based access.',
         },
         {
           title: 'System integration',
@@ -47,7 +47,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Healthcare & Medtech Software Development | Trident Software',
         description:
-          'Compliant medical software development — clinical systems, AI diagnostics, patient portals. IEC 62304, MDR, nFADP. Swiss team.',
+          'Compliant medical software development — clinical systems, AI diagnostics, patient portals. IEC 62304, MDR, revFADP. Swiss team.',
       },
     },
     de: {

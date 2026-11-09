@@ -3,7 +3,7 @@ import type { IndustryRecord } from './types'
 const record: IndustryRecord = {
   slug: 'logistics',
   icon: 'truck',
-  techStack: ['Python', 'Django', 'React Native', 'PostgreSQL', 'Redis', 'RabbitMQ', 'GCP'],
+  techStack: ['Python', 'Django', 'React Native', 'PostgreSQL', 'Redis', 'RabbitMQ', 'AWS'],
   relatedCases: ['8move-driver'],
   relatedServices: ['software-engineering', 'ai-services', 'mobile-development'],
   content: {

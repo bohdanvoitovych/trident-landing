@@ -1257,7 +1257,7 @@ const records: TechnologyRecord[] = [
           'Container restart policy = automatic recovery from crashes',
           'Resource limits prevent noisy-neighbour incidents',
           'GitOps workflow — infrastructure as code',
-          'nFADP compliance via Swiss-region deployment',
+          'revFADP compliance via Swiss-region deployment',
         ],
         meta: {
           title: 'Docker & Kubernetes Switzerland | DevOps Engineering | Trident Software',
@@ -1426,7 +1426,7 @@ const records: TechnologyRecord[] = [
           {
             title: 'On-premise LLM deployment',
             description:
-              'Llama 3, Mistral, or Qwen2 running on your own GPU server — no data leaves Switzerland, full nFADP compliance.',
+              'Llama 3, Mistral, or Qwen2 running on your own GPU server — no data leaves Switzerland, full revFADP compliance.',
           },
         ],
         benefits: [
@@ -1439,7 +1439,7 @@ const records: TechnologyRecord[] = [
         meta: {
           title: 'AI & LLM Integration Switzerland | Trident Software',
           description:
-            'Production AI integration for Swiss businesses. Document intelligence, RAG assistants, on-premise LLMs (nFADP compliant). We build AI that works in production.',
+            'Production AI integration for Swiss businesses. Document intelligence, RAG assistants, on-premise LLMs (revFADP compliant). We build AI that works in production.',
         },
       },
       de: {

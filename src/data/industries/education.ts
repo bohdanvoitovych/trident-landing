@@ -23,7 +23,7 @@ const record: IndustryRecord = {
         },
         {
           title: 'Privacy and compliance',
-          description: 'FERPA, GDPR, and Swiss nFADP compliance for student data including minors.',
+          description: 'FERPA, GDPR, and Swiss revFADP compliance for student data including minors.',
         },
       ],
       solutions: [

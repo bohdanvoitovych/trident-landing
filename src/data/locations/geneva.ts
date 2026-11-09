@@ -26,7 +26,7 @@ const record: LocationRecord = {
         },
         {
           title: 'Compliance-first development',
-          description: 'GDPR, nFADP, and financial compliance baked into architecture, not bolted on later.',
+          description: 'GDPR, revFADP, and financial compliance baked into architecture, not bolted on later.',
         },
         {
           title: 'International org expertise',

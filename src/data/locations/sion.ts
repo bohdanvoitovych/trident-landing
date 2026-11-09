@@ -20,9 +20,9 @@ const record: LocationRecord = {
       ],
       highlights: [
         {
-          title: 'Local. Not outsourced.',
+          title: 'Swiss accountability, based in Sion.',
           description:
-            "We're in Sion. You can visit. We attend the same industry events. Your project is not handed to a subcontractor on another continent.",
+            "We're in Sion, hosted at the HES-SO Valais-Wallis School of Engineering. Contracts, data residency and accountability sit in Switzerland. Engineering capacity is distributed.",
         },
         {
           title: 'Valais industry expertise',
@@ -56,9 +56,9 @@ const record: LocationRecord = {
       ],
       highlights: [
         {
-          title: 'Vor Ort. Nicht ausgelagert.',
+          title: 'Schweizer Verantwortung, ansässig in Sitten.',
           description:
-            'Wir sind in Sitten. Sie können uns besuchen. Wir sind an denselben Branchenanlässen. Ihr Projekt landet nicht bei einem Subunternehmer auf einem anderen Kontinent.',
+            'Wir sind in Sitten, zu Gast an der Hochschule für Ingenieurwissenschaften der HES-SO Valais-Wallis. Verträge, Datenhaltung und Verantwortung liegen in der Schweiz. Die Engineering-Kapazität ist verteilt.',
         },
         {
           title: 'Know-how in den Walliser Branchen',
@@ -92,9 +92,9 @@ const record: LocationRecord = {
       ],
       highlights: [
         {
-          title: 'Local. Pas délocalisé.',
+          title: 'Responsabilité suisse, basée à Sion.',
           description:
-            "Nous sommes à Sion. Vous pouvez passer nous voir. Nous fréquentons les mêmes événements professionnels. Votre projet n'est pas confié à un sous-traitant sur un autre continent.",
+            "Nous sommes à Sion, hébergés par la Haute école d'ingénierie de la HES-SO Valais-Wallis. Les contrats, la résidence des données et la responsabilité restent en Suisse. Les capacités d'ingénierie sont réparties.",
         },
         {
           title: 'Expertise des secteurs valaisans',
@@ -128,9 +128,9 @@ const record: LocationRecord = {
       ],
       highlights: [
         {
-          title: 'Locali. Non in outsourcing.',
+          title: 'Responsabilità svizzera, con sede a Sion.',
           description:
-            'Siamo a Sion. Puoi venirci a trovare. Partecipiamo agli stessi eventi di settore. Il tuo progetto non finisce a un subappaltatore in un altro continente.',
+            'Siamo a Sion, ospitati presso la Scuola di ingegneria della HES-SO Valais-Wallis. Contratti, residenza dei dati e responsabilità restano in Svizzera. La capacità ingegneristica è distribuita.',
         },
         {
           title: 'Competenza nei settori vallesani',
