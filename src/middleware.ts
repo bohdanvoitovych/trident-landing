@@ -5,24 +5,6 @@ import { routing } from './i18n/routing'
 
 const intlMiddleware = createIntlMiddleware(routing)
 
-// On Workers, OpenNext applies next-intl's `/:locale/:path*` → `/:path*` rewrite
-// but drops the bare `/:locale` → `/` one, so the home page 404s while every
-// other page resolves. Collapse that rewrite ourselves. Node builds are
-// untouched — there the rewrite resolves on its own.
-const IS_WORKERS = process.env.NEXT_PUBLIC_CF_WORKERS === '1'
-const BARE_LOCALE = new RegExp(`^/(${routing.locales.join('|')})/?$`)
-
-function collapseBareLocaleRewrite(request: NextRequest, response: NextResponse): NextResponse {
-  if (!IS_WORKERS) return response
-  const rewrite = response.headers.get('x-middleware-rewrite')
-  if (!rewrite) return response
-  const target = new URL(rewrite, request.url)
-  if (!BARE_LOCALE.test(target.pathname)) return response
-  target.pathname = '/'
-  response.headers.set('x-middleware-rewrite', target.toString())
-  return response
-}
-
 function checkBasicAuth(request: NextRequest): NextResponse | null {
   const credentials = process.env.BASIC_AUTH_CREDENTIALS
   if (!credentials) return null
@@ -113,9 +95,9 @@ export function middleware(request: NextRequest) {
   if (redirect) {
     return NextResponse.redirect(new URL(redirect, request.url), 301)
   }
-  return collapseBareLocaleRewrite(request, intlMiddleware(request))
+  return intlMiddleware(request)
 }
 
 export const config = {
-  matcher: ['/((?!api|_next|_vercel|.*\\..*|admin).*)'],
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
 }

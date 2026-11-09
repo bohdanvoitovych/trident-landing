@@ -1,7 +1,7 @@
 {
   "name": "trident-website",
   "version": "0.1.0",
-  "description": "Trident Software — corporate website built with Next.js 15 + Payload CMS",
+  "description": "Trident Software — corporate website built with Next.js 15",
   "license": "UNLICENSED",
   "private": true,
   "type": "module",
@@ -9,29 +9,18 @@
     "build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build",
     "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
     "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
-    "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
-    "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
-    "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
-    "cf:build": "node scripts/cf-build.mjs",
-    "cf:preview": "pnpm cf:build && opennextjs-cloudflare preview",
-    "cf:deploy": "pnpm cf:build && opennextjs-cloudflare deploy"
+    "test": "vitest run"
   },
   "dependencies": {
-    "@payloadcms/db-postgres": "^3.79.1",
-    "@payloadcms/next": "^3.79.1",
-    "@payloadcms/richtext-lexical": "^3.79.1",
-    "@payloadcms/ui": "^3.79.1",
     "@tailwindcss/postcss": "^4.2.1",
     "@tailwindcss/typography": "^0.5.19",
     "clsx": "^2.1.1",
     "cross-env": "^7.0.3",
-    "graphql": "^16.8.1",
     "lucide-react": "^0.477.0",
     "next": "15.4.11",
     "next-intl": "^4.8.3",
-    "payload": "^3.79.1",
     "postcss": "^8.5.8",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -44,7 +33,6 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
-    "@opennextjs/cloudflare": "1.18.1",
     "@types/node": "^22.19.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
@@ -53,7 +41,7 @@
     "prettier": "^3.4.2",
     "tsx": "^4.21.0",
     "typescript": "^5.7.3",
-    "wrangler": "^4.143.0"
+    "vitest": "^4.0.0"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0",
@@ -64,7 +52,6 @@
       "sharp",
       "esbuild",
       "unrs-resolver",
-      "workerd",
       "@swc/core",
       "@parcel/watcher"
     ]

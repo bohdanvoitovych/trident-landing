@@ -1,15 +1,10 @@
-import { withPayload } from '@payloadcms/next/withPayload'
 import createNextIntlPlugin from 'next-intl/plugin'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
-// Workers build: Payload is excluded (see scripts/cf-prebuild.mjs) and `standalone`
-// is a Node-server output the adapter has no use for. Docker path is unaffected.
-const isCloudflare = process.env.CF_BUILD === '1'
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: isCloudflare ? undefined : 'standalone',
+  output: 'standalone',
   poweredByHeader: false,
   // Render <meta>/<title> in <head> for every client instead of streaming
   // them into <body> (Lighthouse and some crawlers only read <head>).
@@ -464,16 +459,6 @@ const nextConfig = {
     ]
   },
 
-  webpack: (webpackConfig) => {
-    webpackConfig.resolve.extensionAlias = {
-      '.cjs': ['.cts', '.cjs'],
-      '.js': ['.ts', '.tsx', '.js', '.jsx'],
-      '.mjs': ['.mts', '.mjs'],
-    }
-    return webpackConfig
-  },
 }
 
-export default isCloudflare
-  ? withNextIntl(nextConfig)
-  : withPayload(withNextIntl(nextConfig), { devBundleServerPackages: false })
+export default withNextIntl(nextConfig)
