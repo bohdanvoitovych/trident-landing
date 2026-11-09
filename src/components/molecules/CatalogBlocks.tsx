@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 import { ButtonLink, Tag } from '@/components/atoms/controls'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { CaseCard } from '@/components/molecules/CaseCard'
-import type { CaseData } from '@/data/cases'
+import { caseImage, type CaseData } from '@/data/cases'
 import type { ServiceData } from '@/data/services'
 
 /** Blocks shared by the industry, technology and location detail pages. */
@@ -137,7 +137,7 @@ export function RelatedCases({
             <CaseCard
               key={c.slug}
               href={`/cases/${c.slug}`}
-              image={c.hero.image}
+              image={caseImage(c)}
               sector={c.industry}
               title={c.hero.title}
               description={c.hero.tagline}

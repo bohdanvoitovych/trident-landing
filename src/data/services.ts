@@ -42,7 +42,7 @@ const records: ServiceRecord[] = [
       'FastAPI',
       'PostgreSQL + pgvector',
     ],
-    relatedCases: ['kleap-ai-builder', 'aida-medicine'],
+    relatedCases: ['post-acute-clinic-network', 'clinic-voice-documentation', 'fiduciary-mail-and-receipts'],
     content: {
       en: {
         title: 'AI agents & LLM automation',
@@ -217,7 +217,7 @@ const records: ServiceRecord[] = [
     slug: 'logistics-and-operations-platforms',
     icon: 'truck',
     techStack: ['Python', 'Django', 'PostgreSQL', 'React', 'Flutter', 'AWS'],
-    relatedCases: ['8move-driver'],
+    relatedCases: ['building-materials-order-to-load', '8move-driver'],
     content: {
       en: {
         title: 'Logistics & operations platforms',
@@ -487,7 +487,7 @@ const records: ServiceRecord[] = [
     slug: 'embedded-and-iot',
     icon: 'cpu',
     techStack: ['C', 'C++', 'Python', 'STM32', 'ESP32', 'MQTT', 'InfluxDB', 'Grafana', 'AWS IoT'],
-    relatedCases: ['tdsbot-iot'],
+    relatedCases: ['warranty-control-component-maker', 'tdsbot-iot'],
     content: {
       en: {
         title: 'IoT & connected products',

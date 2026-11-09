@@ -53,33 +53,6 @@ const records: ProjectRecord[] = [
     },
   },
   {
-    slug: 'aida-medicine',
-    image: '/images/cases/aida-medicine.jpg',
-    caseSlug: 'aida-medicine',
-    content: {
-      en: {
-        title: 'Aida Medicine Platform',
-        summary: 'Medical management system for clinics and healthcare providers.',
-        sector: 'Healthcare',
-      },
-      de: {
-        title: 'Aida Medizinplattform',
-        summary: 'Verwaltungssystem für Kliniken und Gesundheitsdienstleister.',
-        sector: 'Gesundheitswesen',
-      },
-      fr: {
-        title: 'Plateforme médicale Aida',
-        summary: 'Système de gestion pour cliniques et prestataires de soins.',
-        sector: 'Santé',
-      },
-      it: {
-        title: 'Piattaforma medica Aida',
-        summary: 'Sistema gestionale per cliniche e strutture sanitarie.',
-        sector: 'Sanità',
-      },
-    },
-  },
-  {
     slug: 'tires-online-shop',
     image: '/images/cases/tires-online-shop.jpg',
     content: {

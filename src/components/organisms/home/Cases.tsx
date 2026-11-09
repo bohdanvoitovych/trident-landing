@@ -3,10 +3,16 @@ import { useTranslations } from 'next-intl'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { CaseCard } from '@/components/molecules/CaseCard'
 
+const FEATURED = {
+  clinic: { slug: 'post-acute-clinic-network' },
+  practice: { slug: 'clinic-voice-documentation' },
+  water: { slug: 'warranty-control-component-maker' },
+} as const
+
 const MORE = [
-  { k: 'fiduciary', v: '−89 %' },
-  { k: 'materials', v: '65 %' },
-  { k: 'letting', v: '<15 s' },
+  { k: 'fiduciary', v: '−89 %', slug: 'fiduciary-mail-and-receipts' },
+  { k: 'materials', v: '65 %', slug: 'building-materials-order-to-load' },
+  { k: 'letting', v: '<15 s', slug: 'letting-agency-enquiry-to-viewing' },
 ] as const
 
 export function Cases() {
@@ -24,7 +30,7 @@ export function Cases() {
         />
         <div className="grid-3 stagger wipe">
           <CaseCard
-            href="/cases"
+            href={`/cases/${FEATURED.clinic.slug}`}
             image="/images/stock/clinic.jpg"
             imageAlt={tc('clinic.imageAlt')}
             sector={tc('clinic.sector')}
@@ -38,7 +44,7 @@ export function Cases() {
             ]}
           />
           <CaseCard
-            href="/cases"
+            href={`/cases/${FEATURED.practice.slug}`}
             image="/images/stock/clinic-2.jpg"
             imageAlt={tc('practice.imageAlt')}
             sector={tc('practice.sector')}
@@ -52,7 +58,7 @@ export function Cases() {
             ]}
           />
           <CaseCard
-            href="/cases"
+            href={`/cases/${FEATURED.water.slug}`}
             image="/images/stock/water-telemetry.jpg"
             imageAlt={tc('water.imageAlt')}
             sector={tc('water.sector')}
@@ -68,8 +74,8 @@ export function Cases() {
         </div>
         <h3 className="sr-only">{t('cases.moreCases')}</h3>
         <div className="grid-3 stagger" style={{ marginTop: 20 }}>
-          {MORE.map(({ k, v }) => (
-            <Link key={k} href="/cases" className="card more-card">
+          {MORE.map(({ k, v, slug }) => (
+            <Link key={k} href={`/cases/${slug}`} className="card more-card">
               <span className="top">
                 <span>{tc(`more.${k}.sector`)}</span>
                 <span className="tag tag--wash">{t('cases.modelled')}</span>

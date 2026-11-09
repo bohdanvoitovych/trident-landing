@@ -4,7 +4,7 @@ const record: IndustryRecord = {
   slug: 'trade-and-building-materials',
   icon: 'truck',
   techStack: [],
-  relatedCases: [],
+  relatedCases: ['building-materials-order-to-load'],
   relatedServices: ['ai-services', 'logistics-and-operations-platforms', 'software-engineering'],
   content: {
     en: {

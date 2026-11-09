@@ -537,7 +537,7 @@ const records: TechnologyRecord[] = [
     iconSlug: 'python',
     complementaryStack: ['FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'Celery', 'PyTorch / HuggingFace'],
     relatedServices: ['ai-services', 'software-engineering'],
-    relatedCases: ['kleap-ai-builder', 'aida-medicine', 'tdsbot-iot'],
+    relatedCases: ['kleap-ai-builder', 'post-acute-clinic-network', 'tdsbot-iot'],
     content: {
       en: {
         category: 'AI, ML & Backend',
@@ -1400,7 +1400,7 @@ const records: TechnologyRecord[] = [
       'Python',
     ],
     relatedServices: ['ai-services', 'software-engineering', 'cto-as-a-service'],
-    relatedCases: ['kleap-ai-builder', 'aida-medicine'],
+    relatedCases: ['kleap-ai-builder', 'post-acute-clinic-network'],
     content: {
       en: {
         category: 'Artificial Intelligence',

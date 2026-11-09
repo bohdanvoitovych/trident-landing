@@ -1,4 +1,5 @@
 import { pick, localesOf, type Localized } from '@/lib/localized'
+import { PDF_CASES } from './case-studies'
 
 export type CaseResult = {
   metric: string
@@ -11,18 +12,55 @@ export type CaseTestimonial = {
   role: string
 }
 
-/** Text fields of a case study, written once per locale. `hero.image` is the same in every locale. */
+/** A free-form block of a long case study: a heading, paragraphs and/or a bullet list. */
+export type CaseSection = {
+  title: string
+  paragraphs?: string[]
+  items?: string[]
+  /** Paragraphs that follow the bullet list. */
+  closing?: string[]
+}
+
+/** A before/after comparison, one row per measured or modelled figure. */
+export type CaseTable = {
+  title: string
+  beforeLabel: string
+  afterLabel: string
+  rows: Array<{ label: string; before: string; after: string }>
+}
+
+/**
+ * Text fields of a case study, written once per locale. `hero.image` is the same in every locale.
+ * Short cases fill challenge/approach/solution. Long cases (the PDF write-ups) leave them out
+ * and use `sections`, `table` and the "next" / "elsewhere" lists instead.
+ */
 export type CaseText = {
+  /** Anonymised client description, when it needs translating. Overrides the record's `client`. */
+  client?: string
   industry: string
   hero: {
     title: string
     tagline: string
     image?: string
   }
-  challenge: string
-  approach: string
-  solution: string
+  challenge?: string
+  approach?: string
+  solution?: string
   results: CaseResult[]
+  /** One-line note under the hero: how the case is written up and where the figures come from. */
+  note?: string
+  sections?: CaseSection[]
+  table?: CaseTable
+  /** Paragraphs that explain the table, shown right below it. */
+  afterTable?: string[]
+  /** "What happens next": an optional lead-in sentence, then a numbered list. */
+  nextIntro?: string
+  next?: string[]
+  /** "Where else this applies": a lead-in sentence, then a bullet list. */
+  elsewhereIntro?: string
+  elsewhere?: string[]
+  /** A closing sentence after the "Where else this applies" list. */
+  elsewhereOutro?: string
   testimonial?: CaseTestimonial
   meta: {
     title: string
@@ -30,25 +68,28 @@ export type CaseText = {
   }
 }
 
-type CaseRecord = {
+export type CaseRecord = {
   slug: string
   client: string
   services: string[]
   techStack: string[]
+  /** Whether the figures were counted in production or calculated from real volumes. */
+  evidence?: 'measured' | 'modelled'
   relatedCases: string[]
   content: Localized<CaseText>
 }
 
 /** A case study with its text resolved to one locale. */
-export type CaseData = Omit<CaseRecord, 'content'> & CaseText
+export type CaseData = Omit<CaseRecord, 'content'> & Omit<CaseText, 'client'>
 
 const records: CaseRecord[] = [
+  ...PDF_CASES,
   {
     slug: 'kleap-ai-builder',
     client: 'Kleap',
     services: ['ai-services', 'software-engineering'],
     techStack: ['Python', 'OpenAI API', 'React', 'Next.js', 'PostgreSQL', 'AWS'],
-    relatedCases: ['aida-medicine', 'go-valais'],
+    relatedCases: ['post-acute-clinic-network', 'go-valais'],
     content: {
       en: {
         industry: 'SaaS / AI',
@@ -189,7 +230,7 @@ const records: CaseRecord[] = [
     client: 'Zenit Auto',
     services: ['software-engineering'],
     techStack: ['React', 'Node.js', 'PostgreSQL', 'Redis', 'Elasticsearch', 'AWS'],
-    relatedCases: ['vesna-auto-b2b', 'tires-online-shop'],
+    relatedCases: [],
     content: {
       en: {
         industry: 'Automotive Parts / B2B E-commerce',
@@ -346,7 +387,7 @@ const records: CaseRecord[] = [
     client: '8Move',
     services: ['logistics-and-operations-platforms', 'software-engineering'],
     techStack: ['Flutter', 'Dart', 'Google Maps API', 'WebSocket', 'Firebase'],
-    relatedCases: ['8move-admin', '8move-client'],
+    relatedCases: [],
     content: {
       en: {
         industry: 'Logistics / Last-mile Delivery',
@@ -487,7 +528,7 @@ const records: CaseRecord[] = [
     client: 'TDSbot',
     services: ['embedded-and-iot', 'software-engineering'],
     techStack: ['C++', 'ESP32', 'MQTT', 'InfluxDB', 'Grafana', 'Python', 'AWS IoT'],
-    relatedCases: ['aida-medicine'],
+    relatedCases: ['post-acute-clinic-network'],
     content: {
       en: {
         industry: 'Water Treatment / IoT',
@@ -640,152 +681,11 @@ const records: CaseRecord[] = [
     },
   },
   {
-    slug: 'aida-medicine',
-    client: 'Aida Medicine',
-    services: ['software-engineering', 'ai-services'],
-    techStack: ['React', 'Node.js', 'Python', 'PostgreSQL', 'AWS', 'HIPAA-compliant infrastructure'],
-    relatedCases: ['dentyval', 'catapult-crown'],
-    content: {
-      en: {
-        industry: 'Healthcare',
-        hero: {
-          title: 'Aida — Healthcare Management Platform',
-          tagline: 'Patient management and clinical workflow automation',
-          image: '/images/cases/aida-desktop-consultations.jpg',
-        },
-        challenge:
-          'A healthcare provider needed to replace paper-based patient management with a digital platform that handles appointments, patient records, clinical notes, and billing — while maintaining strict data privacy and compliance with healthcare regulations.',
-        approach:
-          'We implemented a role-based access system (doctor, nurse, receptionist, admin) with field-level encryption for sensitive patient data. The clinical notes module uses structured templates with free-text AI assistance for faster documentation. Billing integrates with Swiss health insurance codes.',
-        solution:
-          'A comprehensive healthcare platform covering patient lifecycle management: registration, appointment scheduling, clinical notes, prescription management, lab results tracking, and insurance billing. Mobile-responsive for tablet use in clinical settings.',
-        results: [
-          {
-            metric: 'Documentation time per patient',
-            value: '-40%',
-          },
-          {
-            metric: 'Appointment no-shows',
-            value: '-25%',
-          },
-          {
-            metric: 'Billing processing time',
-            value: '-60%',
-          },
-        ],
-        meta: {
-          title: 'Aida Healthcare Platform — Trident Software Case Study',
-          description:
-            'Healthcare management platform with patient records, appointment scheduling, clinical notes, and billing. Swiss data residency.',
-        },
-      },
-      de: {
-        industry: 'Gesundheitswesen',
-        hero: {
-          title: 'Aida — Plattform für das Praxismanagement',
-          tagline: 'Patientenverwaltung und automatisierte klinische Abläufe',
-          image: '/images/cases/aida-desktop-consultations.jpg',
-        },
-        challenge:
-          'Ein Gesundheitsdienstleister wollte die Patientenverwaltung auf Papier durch eine digitale Plattform ersetzen: Termine, Patientenakten, klinische Notizen und Abrechnung. Dabei galt es, strengen Datenschutz und die Vorschriften im Gesundheitswesen einzuhalten.',
-        approach:
-          'Wir haben ein rollenbasiertes Zugriffssystem (Arzt, Pflege, Empfang, Admin) mit Verschlüsselung auf Feldebene für sensible Patientendaten umgesetzt. Das Modul für klinische Notizen arbeitet mit strukturierten Vorlagen und KI-Unterstützung beim Freitext, damit die Dokumentation schneller geht. Die Abrechnung nutzt die Tarifcodes der Schweizer Krankenversicherer.',
-        solution:
-          'Eine umfassende Plattform, die den ganzen Weg des Patienten abdeckt: Anmeldung, Terminplanung, klinische Notizen, Rezeptverwaltung, Laborbefunde und Abrechnung mit der Versicherung. Responsive gestaltet, damit sie in der Praxis auch auf dem Tablet läuft.',
-        results: [
-          {
-            metric: 'Dokumentationszeit pro Patient',
-            value: '-40%',
-          },
-          {
-            metric: 'Verpasste Termine',
-            value: '-25%',
-          },
-          {
-            metric: 'Bearbeitungszeit der Abrechnung',
-            value: '-60%',
-          },
-        ],
-        meta: {
-          title: 'Aida Gesundheitsplattform — Fallstudie Trident Software',
-          description:
-            'Plattform für das Praxismanagement mit Patientenakten, Terminplanung, klinischen Notizen und Abrechnung. Daten bleiben in der Schweiz.',
-        },
-      },
-      fr: {
-        industry: 'Santé',
-        hero: {
-          title: 'Aida — Plateforme de gestion médicale',
-          tagline: 'Gestion des patients et automatisation des flux cliniques',
-          image: '/images/cases/aida-desktop-consultations.jpg',
-        },
-        challenge:
-          'Un prestataire de soins voulait remplacer la gestion des patients sur papier par une plateforme numérique : rendez-vous, dossiers patients, notes cliniques et facturation. Le tout en respectant une protection stricte des données et la réglementation du secteur de la santé.',
-        approach:
-          "Nous avons mis en place un contrôle d'accès par rôle (médecin, infirmier, réception, administration) avec chiffrement au niveau des champs pour les données sensibles. Le module de notes cliniques s'appuie sur des modèles structurés et une aide de l'IA pour le texte libre, afin d'accélérer la documentation. La facturation intègre les codes tarifaires des assureurs maladie suisses.",
-        solution:
-          "Une plateforme complète qui couvre tout le parcours du patient : inscription, prise de rendez-vous, notes cliniques, gestion des ordonnances, suivi des résultats de laboratoire et facturation aux assurances. Responsive, elle s'utilise aussi sur tablette au cabinet.",
-        results: [
-          {
-            metric: 'Temps de documentation par patient',
-            value: '-40%',
-          },
-          {
-            metric: 'Rendez-vous non honorés',
-            value: '-25%',
-          },
-          {
-            metric: 'Temps de traitement de la facturation',
-            value: '-60%',
-          },
-        ],
-        meta: {
-          title: 'Aida, plateforme santé — Étude de cas Trident Software',
-          description:
-            'Plateforme de gestion médicale : dossiers patients, prise de rendez-vous, notes cliniques et facturation. Données hébergées en Suisse.',
-        },
-      },
-      it: {
-        industry: 'Sanità',
-        hero: {
-          title: 'Aida — Piattaforma di gestione sanitaria',
-          tagline: 'Gestione dei pazienti e automazione dei flussi clinici',
-          image: '/images/cases/aida-desktop-consultations.jpg',
-        },
-        challenge:
-          'Una struttura sanitaria voleva sostituire la gestione cartacea dei pazienti con una piattaforma digitale per appuntamenti, cartelle cliniche, note cliniche e fatturazione. Il tutto rispettando una rigorosa tutela dei dati e le norme del settore sanitario.',
-        approach:
-          "Abbiamo realizzato un sistema di accesso basato sui ruoli (medico, infermiere, reception, amministrazione) con cifratura a livello di campo per i dati sensibili dei pazienti. Il modulo delle note cliniche usa modelli strutturati e un aiuto dell'IA per il testo libero, così la documentazione richiede meno tempo. La fatturazione integra i codici tariffari delle casse malati svizzere.",
-        solution:
-          'Una piattaforma completa che segue tutto il percorso del paziente: registrazione, prenotazione degli appuntamenti, note cliniche, gestione delle prescrizioni, esiti di laboratorio e fatturazione alle assicurazioni. Responsive, si usa anche su tablet in ambulatorio.',
-        results: [
-          {
-            metric: 'Tempo di documentazione per paziente',
-            value: '-40%',
-          },
-          {
-            metric: 'Appuntamenti mancati',
-            value: '-25%',
-          },
-          {
-            metric: 'Tempo di elaborazione della fatturazione',
-            value: '-60%',
-          },
-        ],
-        meta: {
-          title: 'Aida, piattaforma sanitaria — Case study Trident Software',
-          description:
-            'Piattaforma di gestione sanitaria con cartelle cliniche, prenotazione appuntamenti, note cliniche e fatturazione. Dati ospitati in Svizzera.',
-        },
-      },
-    },
-  },
-  {
     slug: 'lapochette',
     client: 'LaPochette',
     services: ['software-engineering'],
     techStack: ['React', 'Next.js', 'Node.js', 'Stripe', 'PostgreSQL', 'Cloudinary'],
-    relatedCases: ['samange-fashion', 'flashhub'],
+    relatedCases: [],
     content: {
       en: {
         industry: 'Fashion & Luxury',
@@ -1377,7 +1277,25 @@ const records: CaseRecord[] = [
 
 const localize = (r: CaseRecord, locale: string): CaseData => {
   const { content, ...rest } = r
-  return { ...rest, ...pick(content, locale) }
+  const { client, ...text } = pick(content, locale)
+  return { ...rest, ...text, client: client ?? r.client }
+}
+
+/** Cases without a screenshot; their cards get a stock photo (the PDF cases use the homepage photos). */
+const FALLBACK_IMAGE: Record<string, string> = {
+  'iam-trade': '/images/stock/b2b-portal.jpg',
+  arenawave: '/images/stock/iot-device.jpg',
+  'post-acute-clinic-network': '/images/stock/clinic.jpg',
+  'clinic-voice-documentation': '/images/stock/clinic-2.jpg',
+  'warranty-control-component-maker': '/images/stock/water-telemetry.jpg',
+  'fiduciary-mail-and-receipts': '/images/stock/office-2.jpg',
+  'building-materials-order-to-load': '/images/stock/dispatch.jpg',
+  'letting-agency-enquiry-to-viewing': '/images/stock/workspace.jpg',
+}
+
+/** The card photo of a case: its screenshot, else a stock photo. */
+export function caseImage(c: CaseData) {
+  return c.hero.image ?? FALLBACK_IMAGE[c.slug]
 }
 
 export function getCases(locale: string): CaseData[] {

@@ -1,7 +1,7 @@
 import { buildCsp } from './src/lib/csp.mjs'
 import createNextIntlPlugin from 'next-intl/plugin'
 import { buildOldPostRedirects, TOPIC_REDIRECTS } from './src/data/redirects/old-post-slugs.mjs'
-import { buildRemovedSlugRedirects } from './src/data/redirects/removed-slugs.mjs'
+import { buildMergedCaseRedirects, buildRemovedSlugRedirects } from './src/data/redirects/removed-slugs.mjs'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
@@ -427,6 +427,9 @@ const nextConfig = {
 
       // ─── Industries and services removed with the PDF structure → their listing ───
       ...buildRemovedSlugRedirects(),
+
+      // ─── Case studies merged into another (Aida → post-acute clinic network) ───
+      ...buildMergedCaseRedirects(),
     ]
   },
 

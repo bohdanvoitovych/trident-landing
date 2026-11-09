@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { getPostLocales, getPostSlugs } from '@/data/blog'
-import { getCaseLocales } from '@/data/cases'
+import { getCaseLocales, getCaseSlugs } from '@/data/cases'
 import { getIndustryLocales, getIndustrySlugs } from '@/data/industries'
 import { getServiceLocales, getServiceSlugs } from '@/data/services'
 import { getLocationLocales, getLocationSlugs } from '@/data/locations'
@@ -21,11 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const industrySlugs = getIndustrySlugs()
 
-  const caseSlugs = [
-    'kleap-ai-builder', 'zenit-auto-b2b', '8move-driver',
-    'tdsbot-iot', 'aida-medicine', 'lapochette', 'iam-trade',
-    'arenawave', 'go-valais',
-  ]
+  const caseSlugs = getCaseSlugs()
 
   const blogSlugs = getPostSlugs()
 

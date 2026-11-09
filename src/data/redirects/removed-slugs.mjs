@@ -28,3 +28,16 @@ export function buildRemovedSlugRedirects() {
     ),
   )
 }
+
+// Case studies merged into another (owner decision D3): old slug → the case that now tells the story.
+export const MERGED_CASES = { 'aida-medicine': 'post-acute-clinic-network' }
+
+/** Permanent redirects for next.config.mjs: each merged case goes to its successor, in the same locale. */
+export function buildMergedCaseRedirects() {
+  return Object.entries(MERGED_CASES).flatMap(([from, to]) =>
+    LOCALE_PREFIXES.flatMap((prefix) => [
+      { source: `${prefix}/cases/${from}`, destination: `${prefix}/cases/${to}`, permanent: true },
+      { source: `${prefix}/cases/${from}/`, destination: `${prefix}/cases/${to}`, permanent: true },
+    ]),
+  )
+}

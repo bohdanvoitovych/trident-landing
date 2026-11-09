@@ -1,13 +1,12 @@
 import { getLocale, getTranslations } from 'next-intl/server'
 import { getProjects, getProjectSectors } from '@/data/projects'
-import { getCases } from '@/data/cases'
+import { caseImage, getCases } from '@/data/cases'
 import { buildMetadata } from '@/lib/metadata'
 import { ProjectGrid } from '@/components/molecules/ProjectGrid'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { CaseCard } from '@/components/molecules/CaseCard'
 import { ButtonLink, Label } from '@/components/atoms/controls'
-import { caseImage } from '@/components/templates/CasePage'
 
 export const revalidate = 3600
 

@@ -4,7 +4,7 @@ const record: IndustryRecord = {
   slug: 'proptech',
   icon: 'building-2',
   techStack: [],
-  relatedCases: [],
+  relatedCases: ['letting-agency-enquiry-to-viewing'],
   relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {

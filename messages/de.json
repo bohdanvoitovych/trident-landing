@@ -74,7 +74,9 @@
     "results": "Ergebnisse",
     "techStack": "Technologie-Stack",
     "relatedCases": "Verwandte Projekte",
-    "startSimilar": "Ähnliches Projekt starten"
+    "startSimilar": "Ähnliches Projekt starten",
+    "next": "Wie es weitergeht",
+    "elsewhere": "Wo das ebenfalls passt"
   },
   "blog": {
     "title": "Blog",
@@ -328,7 +330,11 @@
       "client": "Kunde: <name>{client}</name>",
       "allCases": "Alle Fallstudien",
       "ctaLead": "Sprechen wir über Ihr Projekt. Sie hören innert 24 Stunden von uns.",
-      "ctaButton": "Offerte anfragen"
+      "ctaButton": "Offerte anfragen",
+      "evidence": {
+        "measured": "Zahlen im Betrieb gezählt.",
+        "modelled": "Zahlen aus echten Volumen berechnet, nicht im Betrieb gezählt."
+      }
     },
     "industry": {
       "crumb": "Branchen",

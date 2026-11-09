@@ -4,7 +4,7 @@ const record: IndustryRecord = {
   slug: 'healthcare',
   icon: 'heart-pulse',
   techStack: [],
-  relatedCases: ['aida-medicine'],
+  relatedCases: ['post-acute-clinic-network', 'clinic-voice-documentation'],
   relatedServices: ['ai-services', 'software-engineering', 'embedded-and-iot'],
   content: {
     en: {

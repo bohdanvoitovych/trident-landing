@@ -74,7 +74,9 @@
     "results": "Risultati",
     "techStack": "Stack tecnologico",
     "relatedCases": "Casi correlati",
-    "startSimilar": "Avvia un progetto simile"
+    "startSimilar": "Avvia un progetto simile",
+    "next": "I prossimi passi",
+    "elsewhere": "Dove altro si applica"
   },
   "blog": {
     "title": "Blog",
@@ -328,7 +330,11 @@
       "client": "Cliente: <name>{client}</name>",
       "allCases": "Tutti i casi di studio",
       "ctaLead": "Parliamo del tuo progetto. Ti rispondiamo entro 24 ore.",
-      "ctaButton": "Richiedi un preventivo"
+      "ctaButton": "Richiedi un preventivo",
+      "evidence": {
+        "measured": "Cifre contate in produzione.",
+        "modelled": "Cifre calcolate su volumi reali, non contate in produzione."
+      }
     },
     "industry": {
       "crumb": "Settori",

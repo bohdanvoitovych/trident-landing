@@ -74,7 +74,9 @@
     "results": "Results",
     "techStack": "Tech Stack",
     "relatedCases": "Related Cases",
-    "startSimilar": "Start a Similar Project"
+    "startSimilar": "Start a Similar Project",
+    "next": "What happens next",
+    "elsewhere": "Where else this applies"
   },
   "blog": {
     "title": "Blog",
@@ -328,7 +330,11 @@
       "client": "Client: <name>{client}</name>",
       "allCases": "All cases",
       "ctaLead": "Let's discuss your project. We respond within 24 hours.",
-      "ctaButton": "Get a Quote"
+      "ctaButton": "Get a Quote",
+      "evidence": {
+        "measured": "Figures counted in production.",
+        "modelled": "Figures calculated from real volumes, not counted in production."
+      }
     },
     "industry": {
       "crumb": "Industries",

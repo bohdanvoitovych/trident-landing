@@ -3,7 +3,7 @@ import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { CaseCard } from '@/components/molecules/CaseCard'
-import { getCases } from '@/data/cases'
+import { caseImage, getCases } from '@/data/cases'
 import type { ServiceData } from '@/data/services'
 
 type Props = {
@@ -121,7 +121,7 @@ export function ServicePage({ service }: Props) {
                 <CaseCard
                   key={c.slug}
                   href={`/cases/${c.slug}`}
-                  image={c.hero.image}
+                  image={caseImage(c)}
                   imageAlt={c.hero.title}
                   sector={c.industry}
                   title={c.hero.title}

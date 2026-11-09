@@ -4,7 +4,7 @@ const record: IndustryRecord = {
   slug: 'professional-services',
   icon: 'wrench',
   techStack: [],
-  relatedCases: [],
+  relatedCases: ['fiduciary-mail-and-receipts'],
   relatedServices: ['ai-services', 'software-engineering'],
   content: {
     en: {
