@@ -344,7 +344,7 @@ const records: CaseRecord[] = [
   {
     slug: '8move-driver',
     client: '8Move',
-    services: ['software-engineering', 'ui-ux-design'],
+    services: ['logistics-and-operations-platforms', 'software-engineering'],
     techStack: ['Flutter', 'Dart', 'Google Maps API', 'WebSocket', 'Firebase'],
     relatedCases: ['8move-admin', '8move-client'],
     content: {
@@ -642,7 +642,7 @@ const records: CaseRecord[] = [
   {
     slug: 'aida-medicine',
     client: 'Aida Medicine',
-    services: ['software-engineering', 'ai-services', 'ui-ux-design'],
+    services: ['software-engineering', 'ai-services'],
     techStack: ['React', 'Node.js', 'Python', 'PostgreSQL', 'AWS', 'HIPAA-compliant infrastructure'],
     relatedCases: ['dentyval', 'catapult-crown'],
     content: {
@@ -783,7 +783,7 @@ const records: CaseRecord[] = [
   {
     slug: 'lapochette',
     client: 'LaPochette',
-    services: ['software-engineering', 'ui-ux-design'],
+    services: ['software-engineering'],
     techStack: ['React', 'Next.js', 'Node.js', 'Stripe', 'PostgreSQL', 'Cloudinary'],
     relatedCases: ['samange-fashion', 'flashhub'],
     content: {
@@ -924,7 +924,7 @@ const records: CaseRecord[] = [
   {
     slug: 'iam-trade',
     client: 'IAM Trade',
-    services: ['software-engineering', 'cloud-consulting'],
+    services: ['software-engineering'],
     techStack: ['Python', 'React', 'PostgreSQL', 'AWS', 'Docker', 'Redis'],
     relatedCases: ['zenit-auto-b2b', 'kleap-ai-builder'],
     content: {
@@ -1215,7 +1215,7 @@ const records: CaseRecord[] = [
   {
     slug: 'go-valais',
     client: 'GO-Valais Expat Club',
-    services: ['software-engineering', 'ui-ux-design'],
+    services: ['software-engineering'],
     techStack: ['WordPress', 'PHP', 'MySQL', 'Elementor', 'WooCommerce'],
     relatedCases: ['kleap-ai-builder', 'lapochette'],
     content: {

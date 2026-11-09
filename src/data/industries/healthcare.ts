@@ -3,185 +3,317 @@ import type { IndustryRecord } from './types'
 const record: IndustryRecord = {
   slug: 'healthcare',
   icon: 'heart-pulse',
-  techStack: ['Python', 'FastAPI', 'React', 'PostgreSQL', 'HL7 FHIR', 'Docker', 'Azure HIPAA'],
+  techStack: [],
   relatedCases: ['aida-medicine'],
   relatedServices: ['ai-services', 'software-engineering', 'embedded-and-iot'],
   content: {
     en: {
-      title: 'Healthcare & Medtech',
-      tagline: 'Compliant software for the most regulated industry',
-      description:
-        'We build clinical decision support systems, patient portals, medical device software, and AI-powered diagnostics for hospitals, clinics, and medtech companies. All solutions comply with Swiss and EU medical device regulations.',
+      title: 'Clinics, dental and veterinary practices',
+      tagline:
+        'Two different places to automate, the front desk and documentation, and the money is in the second one.',
+      description: 'The expensive minutes in a Swiss practice go into documentation, not into the phone.',
+      challengesLead: '',
       challenges: [
         {
-          title: 'Regulatory compliance',
-          description: 'IEC 62304, MDR 2017/745, and Swiss Medtech Act requirements for software as a medical device.',
+          title: 'Front desk',
+          description:
+            'Booking, rescheduling and reminders: the no-show rate alone usually pays for the deployment. Enquiries in four languages, evenings and weekends, without an answering machine. Triage yes; diagnosis never.',
         },
         {
-          title: 'Data privacy',
-          description: 'Patient data under revFADP and GDPR with audit trails and role-based access.',
+          title: 'Documentation: voice assistants for doctors and nursing staff',
+          description:
+            'A voice assistant sits between the clinician and the record. The tasks it takes on, and the systems it connects to, are listed below.',
         },
         {
-          title: 'System integration',
-          description: 'HL7/FHIR integration with hospital information systems and laboratory equipment.',
+          title: 'The limits, stated before the demo',
+          description:
+            'Patient data is sensitive personal data under the revFADP and is covered by professional secrecy under Art. 321 of the Criminal Code. Deployments run on Swiss-hosted infrastructure over HIN-secured channels, with no training on your data and a documented processing agreement. Spoken Swiss German dialect remains the weakest link in every speech stack on the market: standard German, French, Italian and English dictation is production-grade today, dialect is not, and we scope around that rather than promise through it. Every clinical output is a draft for a clinician to correct and sign. The assistant writes, the professional decides.',
         },
       ],
+      solutionsLead: '',
       solutions: [
         {
-          title: 'Clinical decision support',
-          description: 'AI-assisted diagnosis and treatment recommendation systems.',
+          title: 'Dictation into the record during and after consultation',
+          description:
+            'History, findings and procedures written back into structured fields, instead of typed up at 19:00.',
         },
         {
-          title: 'Patient portals',
-          description: 'Secure portals for appointment booking, results, and communication.',
+          title: 'Ward rounds and Spitex home visits, hands-free',
+          description:
+            'Vitals, wound status and medication changes captured while gloved, then filed to the right patient.',
         },
         {
-          title: 'Medical device software',
-          description: 'IEC 62304-compliant embedded software for diagnostic devices.',
+          title: 'Report and referral drafting',
+          description:
+            'Discharge letter, referral and insurance justification drafted from the consultation and put in front of the clinician to correct and sign. Drafting only; the signature stays human.',
         },
         {
-          title: 'AI diagnostics',
-          description: 'Computer vision for radiology, pathology, and dermatology.',
+          title: 'Spoken queries against the record and internal guidelines',
+          description:
+            'Last lab value, allergy, current dosage, house protocol, without clicking through screens mid-consultation.',
+        },
+        {
+          title: 'Coding support for invoicing',
+          description:
+            'Proposes tariff positions from what was documented and flags the gaps a rejected invoice would come back on.',
+        },
+        {
+          title: 'Practice management (ambulatory)',
+          description: 'vitomed (Vitodata), amétiq siMed, AESKULAP, WinMed, Axenita, Curamed, Tomedo, E-PAT',
+        },
+        {
+          title: 'Hospital information systems',
+          description: 'KISIM (Cistec), Epic, Meierhofer M-KIS / M-PDMS, Nexus',
+        },
+        {
+          title: 'Standards and exchange',
+          description:
+            'HL7 v2 and FHIR, DICOM for imaging, the Forum Datenaustausch formats for tariff invoicing, EPR/EPD connectors',
+        },
+        {
+          title: 'Secure communication',
+          description: 'HIN identity and encrypted mail, the channel Swiss healthcare actually runs on',
+        },
+        {
+          title: 'Scheduling and reminders',
+          description: 'The practice calendar, SMS and WhatsApp reminders, patient portals',
         },
       ],
       meta: {
-        title: 'Healthcare & Medtech Software Development | Trident Software',
+        title: 'Clinics, dental and veterinary practices | Trident Software',
         description:
-          'Compliant medical software development — clinical systems, AI diagnostics, patient portals. IEC 62304, MDR, revFADP. Swiss team.',
+          'Two places to automate in a practice, the front desk and documentation, and the money is in the second one. Swiss hosting, HIN, revFADP.',
       },
     },
     de: {
-      title: 'Gesundheitswesen & Medtech',
-      tagline: 'Konforme Software für die am stärksten regulierte Branche',
-      description:
-        'Wir entwickeln klinische Entscheidungsunterstützung, Patientenportale, Medizinprodukte-Software und KI-gestützte Diagnostik für Spitäler, Kliniken und Medtech-Unternehmen. Alle Lösungen erfüllen die Schweizer und europäischen Vorschriften für Medizinprodukte.',
+      title: 'Kliniken, Zahnarzt- und Tierarztpraxen',
+      tagline: 'Zwei Bereiche zum Automatisieren, Empfang und Dokumentation, und das Geld liegt im zweiten.',
+      description: 'Die teuren Minuten in einer Schweizer Praxis gehen in die Dokumentation, nicht ans Telefon.',
+      challengesLead: '',
       challenges: [
         {
-          title: 'Regulatorische Vorgaben',
+          title: 'Empfang',
           description:
-            'Anforderungen aus IEC 62304, MDR 2017/745 und dem Schweizer Medizinprodukterecht an Software als Medizinprodukt.',
+            'Terminbuchung, Verschiebungen und Erinnerungen: Meist bezahlt allein die Quote der verpassten Termine den Einsatz. Anfragen in vier Sprachen, abends und am Wochenende, ohne Anrufbeantworter. Triage ja, Diagnose nie.',
         },
         {
-          title: 'Datenschutz',
-          description: 'Patientendaten gemäss nDSG und DSGVO, mit Audit-Trails und rollenbasierten Zugriffsrechten.',
+          title: 'Dokumentation: Sprachassistenten für Ärzteschaft und Pflege',
+          description:
+            'Ein Sprachassistent sitzt zwischen der Fachperson und der Patientenakte. Welche Aufgaben er übernimmt und an welche Systeme er angebunden wird, steht weiter unten.',
         },
         {
-          title: 'Anbindung an Klinik-Systeme',
-          description: 'HL7/FHIR-Schnittstellen zu Klinikinformationssystemen und Laborgeräten.',
+          title: 'Die Grenzen, genannt vor der Demo',
+          description:
+            'Patientendaten sind besonders schützenswerte Personendaten nach nDSG und unterstehen dem Berufsgeheimnis nach Art. 321 StGB. Wir betreiben die Lösungen auf Infrastruktur in der Schweiz über HIN-gesicherte Kanäle, ohne Training mit Ihren Daten und mit einem dokumentierten Auftragsverarbeitungsvertrag. Gesprochener Schweizerdeutsch-Dialekt bleibt das schwächste Glied jeder Spracherkennung auf dem Markt: Diktate auf Hochdeutsch, Französisch, Italienisch und Englisch sind heute produktionsreif, Dialekt ist es nicht. Wir planen den Umfang entsprechend, statt etwas anderes zu versprechen. Jede klinische Ausgabe ist ein Entwurf, den eine Fachperson korrigiert und unterschreibt. Der Assistent schreibt, die Fachperson entscheidet.',
         },
       ],
+      solutionsLead: '',
       solutions: [
         {
-          title: 'Klinische Entscheidungsunterstützung',
-          description: 'KI-gestützte Systeme für Diagnose und Therapieempfehlungen.',
+          title: 'Diktat in die Akte während und nach der Konsultation',
+          description:
+            'Anamnese, Befunde und Eingriffe landen in strukturierten Feldern, statt um 19:00 abgetippt zu werden.',
         },
         {
-          title: 'Patientenportale',
-          description: 'Sichere Portale für Terminbuchung, Befunde und Kommunikation.',
+          title: 'Visite und Spitex-Hausbesuche freihändig',
+          description:
+            'Vitalwerte, Wundstatus und Änderungen der Medikation mit Handschuhen erfassen und dem richtigen Patienten zuordnen.',
         },
         {
-          title: 'Software für Medizinprodukte',
-          description: 'Embedded-Software nach IEC 62304 für Diagnosegeräte.',
+          title: 'Berichte und Überweisungen entwerfen',
+          description:
+            'Austrittsbericht, Überweisung und Begründung für die Versicherung entstehen aus der Konsultation und gehen der Fachperson zur Korrektur und Unterschrift. Nur Entwürfe: Die Unterschrift bleibt menschlich.',
         },
         {
-          title: 'KI-Diagnostik',
-          description: 'Computer Vision für Radiologie, Pathologie und Dermatologie.',
+          title: 'Gesprochene Abfragen in Akte und internen Richtlinien',
+          description:
+            'Letzter Laborwert, Allergie, aktuelle Dosierung, Hausprotokoll, ohne sich mitten in der Konsultation durch Masken zu klicken.',
+        },
+        {
+          title: 'Unterstützung bei der Kodierung für die Abrechnung',
+          description:
+            'Schlägt Tarifpositionen aus der Dokumentation vor und markiert die Lücken, an denen eine Rechnung zurückgewiesen würde.',
+        },
+        {
+          title: 'Praxissoftware (ambulant)',
+          description: 'vitomed (Vitodata), amétiq siMed, AESKULAP, WinMed, Axenita, Curamed, Tomedo, E-PAT',
+        },
+        {
+          title: 'Klinikinformationssysteme',
+          description: 'KISIM (Cistec), Epic, Meierhofer M-KIS / M-PDMS, Nexus',
+        },
+        {
+          title: 'Standards und Datenaustausch',
+          description:
+            'HL7 v2 und FHIR, DICOM für die Bildgebung, die Formate des Forum Datenaustausch für die Tarifabrechnung, EPD-Anbindungen',
+        },
+        {
+          title: 'Sichere Kommunikation',
+          description: 'HIN-Identität und verschlüsselte E-Mail, der Kanal, über den das Schweizer Gesundheitswesen tatsächlich läuft',
+        },
+        {
+          title: 'Termine und Erinnerungen',
+          description: 'Praxiskalender, Erinnerungen per SMS und WhatsApp, Patientenportale',
         },
       ],
       meta: {
-        title: 'Software für Gesundheitswesen & Medtech | Trident Software',
+        title: 'Kliniken, Zahnarzt- und Tierarztpraxen | Trident Software',
         description:
-          'Konforme Medizinsoftware-Entwicklung: klinische Systeme, KI-Diagnostik, Patientenportale. IEC 62304, MDR, nDSG. Team in der Schweiz.',
+          'Zwei Bereiche zum Automatisieren in der Praxis, Empfang und Dokumentation, und das Geld liegt im zweiten. Hosting in der Schweiz, HIN, nDSG.',
       },
     },
     fr: {
-      title: 'Santé & Medtech',
-      tagline: 'Des logiciels conformes pour le secteur le plus réglementé',
-      description:
-        "Nous développons des systèmes d'aide à la décision clinique, des portails patients, des logiciels pour dispositifs médicaux et des outils de diagnostic assistés par IA pour les hôpitaux, les cliniques et les entreprises medtech. Toutes nos solutions respectent les réglementations suisses et européennes sur les dispositifs médicaux.",
+      title: 'Cliniques, cabinets dentaires et vétérinaires',
+      tagline: "Deux endroits à automatiser, l'accueil et la documentation, et c'est le second qui rapporte.",
+      description: 'Dans un cabinet suisse, les minutes coûteuses partent dans la documentation, pas au téléphone.',
+      challengesLead: '',
       challenges: [
         {
-          title: 'Conformité réglementaire',
+          title: 'Accueil',
           description:
-            "Exigences de l'IEC 62304, du MDR 2017/745 et du droit suisse des dispositifs médicaux pour les logiciels considérés comme dispositifs médicaux.",
+            'Prise de rendez-vous, reports et rappels : le taux de rendez-vous manqués suffit souvent à financer le projet. Des demandes en quatre langues, le soir et le week-end, sans répondeur. Le tri oui, le diagnostic jamais.',
         },
         {
-          title: 'Protection des données',
-          description: "Données patients traitées selon la nLPD et le RGPD, avec pistes d'audit et accès par rôle.",
+          title: 'Documentation : assistants vocaux pour les médecins et le personnel soignant',
+          description:
+            "Un assistant vocal se place entre le soignant et le dossier. Les tâches qu'il prend en charge et les systèmes auxquels il se connecte sont listés plus bas.",
         },
         {
-          title: 'Interfaçage avec le SIH',
+          title: 'Les limites, annoncées avant la démo',
           description:
-            "Intégration HL7/FHIR avec les systèmes d'information hospitaliers et les équipements de laboratoire.",
+            "Les données des patients sont des données sensibles au sens de la nLPD et relèvent du secret professionnel (art. 321 CP). Nos déploiements tournent sur une infrastructure hébergée en Suisse, via des canaux sécurisés HIN, sans entraînement sur vos données et avec un contrat de sous-traitance documenté. Le suisse alémanique parlé reste le maillon faible de toutes les solutions vocales du marché : la dictée en allemand standard, en français, en italien et en anglais est aujourd'hui prête pour la production, le dialecte ne l'est pas, et nous en tenons compte dans le périmètre au lieu de promettre le contraire. Chaque sortie clinique est un brouillon que le soignant corrige et signe. L'assistant rédige, le professionnel décide.",
         },
       ],
+      solutionsLead: '',
       solutions: [
         {
-          title: 'Aide à la décision clinique',
-          description: 'Systèmes de diagnostic et de recommandation thérapeutique assistés par IA.',
+          title: 'Dictée dans le dossier pendant et après la consultation',
+          description:
+            "Anamnèse, constats et actes enregistrés dans des champs structurés, au lieu d'être tapés à 19h00.",
         },
         {
-          title: 'Portails patients',
-          description: 'Portails sécurisés pour la prise de rendez-vous, les résultats et les échanges.',
+          title: 'Visites en service et soins à domicile (Spitex) mains libres',
+          description:
+            'Signes vitaux, état des plaies et changements de médication saisis avec des gants, puis classés dans le bon dossier patient.',
         },
         {
-          title: 'Logiciels pour dispositifs médicaux',
-          description: "Logiciels embarqués conformes à l'IEC 62304 pour les appareils de diagnostic.",
+          title: 'Rédaction de rapports et de lettres de transfert',
+          description:
+            "Lettre de sortie, lettre d'adressage et justificatif pour l'assurance rédigés à partir de la consultation et soumis au soignant pour correction et signature. Uniquement des brouillons : la signature reste humaine.",
         },
         {
-          title: 'Diagnostic par IA',
-          description: 'Vision par ordinateur pour la radiologie, la pathologie et la dermatologie.',
+          title: 'Questions orales sur le dossier et les directives internes',
+          description:
+            "Dernière valeur de laboratoire, allergie, posologie actuelle, protocole interne, sans cliquer d'écran en écran en pleine consultation.",
+        },
+        {
+          title: 'Aide au codage pour la facturation',
+          description:
+            'Propose des positions tarifaires à partir de ce qui a été documenté et signale les lacunes qui feraient rejeter une facture.',
+        },
+        {
+          title: 'Logiciels de cabinet (ambulatoire)',
+          description: 'vitomed (Vitodata), amétiq siMed, AESKULAP, WinMed, Axenita, Curamed, Tomedo, E-PAT',
+        },
+        {
+          title: "Systèmes d'information hospitaliers",
+          description: 'KISIM (Cistec), Epic, Meierhofer M-KIS / M-PDMS, Nexus',
+        },
+        {
+          title: 'Standards et échanges',
+          description:
+            "HL7 v2 et FHIR, DICOM pour l'imagerie, les formats du Forum Datenaustausch pour la facturation tarifaire, connecteurs DEP",
+        },
+        {
+          title: 'Communication sécurisée',
+          description: 'Identité HIN et e-mail chiffré, le canal sur lequel la santé suisse fonctionne réellement',
+        },
+        {
+          title: 'Rendez-vous et rappels',
+          description: 'Agenda du cabinet, rappels par SMS et WhatsApp, portails patients',
         },
       ],
       meta: {
-        title: 'Développement logiciel santé & medtech | Trident Software',
+        title: 'Cliniques, cabinets dentaires et vétérinaires | Trident Software',
         description:
-          'Logiciels médicaux conformes : systèmes cliniques, diagnostic par IA, portails patients. IEC 62304, MDR, nLPD. Équipe en Suisse.',
+          "Deux endroits à automatiser au cabinet, l'accueil et la documentation, et c'est le second qui rapporte. Hébergement en Suisse, HIN, nLPD.",
       },
     },
     it: {
-      title: 'Sanità & Medtech',
-      tagline: 'Software conforme per il settore più regolamentato',
-      description:
-        "Sviluppiamo sistemi di supporto alle decisioni cliniche, portali per i pazienti, software per dispositivi medici e diagnostica basata sull'IA per ospedali, cliniche e aziende medtech. Tutte le soluzioni rispettano le normative svizzere ed europee sui dispositivi medici.",
+      title: 'Cliniche, studi dentistici e veterinari',
+      tagline: 'Due punti da automatizzare, la reception e la documentazione, e il guadagno sta nel secondo.',
+      description: 'In uno studio svizzero i minuti costosi se ne vanno nella documentazione, non al telefono.',
+      challengesLead: '',
       challenges: [
         {
-          title: 'Conformità normativa',
+          title: 'Reception',
           description:
-            'Requisiti di IEC 62304, MDR 2017/745 e del diritto svizzero sui dispositivi medici per il software come dispositivo medico.',
+            'Prenotazioni, spostamenti e promemoria: di solito il solo tasso di appuntamenti mancati ripaga il progetto. Richieste in quattro lingue, la sera e nel fine settimana, senza segreteria telefonica. Smistamento sì, diagnosi mai.',
         },
         {
-          title: 'Protezione dei dati',
-          description: 'Dati dei pazienti gestiti secondo nLPD e GDPR, con audit trail e accessi basati sui ruoli.',
+          title: 'Documentazione: assistenti vocali per medici e personale infermieristico',
+          description:
+            'Un assistente vocale si colloca tra il professionista e la cartella clinica. I compiti che svolge e i sistemi a cui si collega sono elencati più sotto.',
         },
         {
-          title: 'Integrazione con i sistemi ospedalieri',
+          title: 'I limiti, dichiarati prima della demo',
           description:
-            'Integrazione HL7/FHIR con i sistemi informativi ospedalieri e le apparecchiature di laboratorio.',
+            "I dati dei pazienti sono dati personali degni di particolare protezione secondo la nLPD e sono coperti dal segreto professionale (art. 321 CP). Le installazioni girano su infrastruttura ospitata in Svizzera, tramite canali protetti HIN, senza addestramento sui tuoi dati e con un contratto di trattamento documentato. Lo svizzero tedesco parlato resta l'anello debole di ogni sistema vocale sul mercato: la dettatura in tedesco standard, francese, italiano e inglese è oggi pronta per la produzione, il dialetto no, e definiamo il progetto di conseguenza invece di promettere il contrario. Ogni output clinico è una bozza che il professionista corregge e firma. L'assistente scrive, il professionista decide.",
         },
       ],
+      solutionsLead: '',
       solutions: [
         {
-          title: 'Supporto alle decisioni cliniche',
-          description: "Sistemi di diagnosi e di raccomandazione terapeutica assistiti dall'IA.",
+          title: 'Dettatura nella cartella durante e dopo la visita',
+          description:
+            'Anamnesi, reperti e interventi riportati in campi strutturati, invece di essere digitati alle 19:00.',
         },
         {
-          title: 'Portali per i pazienti',
-          description: 'Portali sicuri per prenotare appuntamenti, consultare referti e comunicare.',
+          title: 'Giri visita e visite a domicilio Spitex a mani libere',
+          description:
+            'Parametri vitali, stato delle ferite e cambi di terapia registrati con i guanti e archiviati sul paziente giusto.',
         },
         {
-          title: 'Software per dispositivi medici',
-          description: 'Software embedded conforme a IEC 62304 per dispositivi diagnostici.',
+          title: 'Bozze di rapporti e lettere di invio',
+          description:
+            "Lettera di dimissione, lettera di invio e giustificazione per l'assicurazione redatte a partire dalla visita e sottoposte al professionista per correzione e firma. Solo bozze: la firma resta umana.",
         },
         {
-          title: 'Diagnostica con IA',
-          description: 'Computer vision per radiologia, patologia e dermatologia.',
+          title: 'Domande a voce su cartella e direttive interne',
+          description:
+            'Ultimo valore di laboratorio, allergia, dosaggio attuale, protocollo interno, senza cliccare tra le schermate durante la visita.',
+        },
+        {
+          title: 'Supporto alla codifica per la fatturazione',
+          description:
+            'Propone posizioni tariffali a partire da quanto documentato e segnala le lacune per cui una fattura verrebbe respinta.',
+        },
+        {
+          title: 'Gestionali per studi (ambulatoriale)',
+          description: 'vitomed (Vitodata), amétiq siMed, AESKULAP, WinMed, Axenita, Curamed, Tomedo, E-PAT',
+        },
+        {
+          title: 'Sistemi informativi ospedalieri',
+          description: 'KISIM (Cistec), Epic, Meierhofer M-KIS / M-PDMS, Nexus',
+        },
+        {
+          title: 'Standard e scambio dati',
+          description:
+            "HL7 v2 e FHIR, DICOM per l'imaging, i formati del Forum Datenaustausch per la fatturazione tariffale, connettori CIP",
+        },
+        {
+          title: 'Comunicazione sicura',
+          description: 'Identità HIN ed e-mail cifrata, il canale su cui funziona davvero la sanità svizzera',
+        },
+        {
+          title: 'Appuntamenti e promemoria',
+          description: 'Agenda dello studio, promemoria via SMS e WhatsApp, portali per i pazienti',
         },
       ],
       meta: {
-        title: 'Sviluppo software sanità & medtech | Trident Software',
+        title: 'Cliniche, studi dentistici e veterinari | Trident Software',
         description:
-          'Software medicale conforme: sistemi clinici, diagnostica con IA, portali pazienti. IEC 62304, MDR, nLPD. Team in Svizzera.',
+          'Due punti da automatizzare nello studio, reception e documentazione, e il guadagno sta nel secondo. Hosting in Svizzera, HIN, nLPD.',
       },
     },
   },

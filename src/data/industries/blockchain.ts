@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'link',
   techStack: ['Solidity', 'Rust', 'Ethereum', 'Polygon', 'IPFS', 'TypeScript', 'Hardhat', 'The Graph'],
   relatedCases: [],
-  relatedServices: ['software-engineering', 'ai-services', 'cloud-consulting'],
+  relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
       title: 'Blockchain & Web3',

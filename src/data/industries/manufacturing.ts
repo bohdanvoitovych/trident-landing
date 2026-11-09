@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'factory',
   techStack: ['C/C++', 'Python', 'MQTT', 'OPC-UA', 'InfluxDB', 'Grafana', 'Azure IoT'],
   relatedCases: ['tdsbot-iot'],
-  relatedServices: ['embedded-and-iot', 'ai-services', 'cloud-consulting'],
+  relatedServices: ['embedded-and-iot', 'ai-services'],
   content: {
     en: {
       title: 'Manufacturing & Industry 4.0',

@@ -1,21 +1,19 @@
 import { pick, localesOf } from '@/lib/localized'
 import type { IndustryRecord, IndustryData } from './types'
+import trade_and_building_materials from './trade-and-building-materials'
+import proptech from './proptech'
 import healthcare from './healthcare'
+import retail_ecommerce from './retail-ecommerce'
+import hospitality from './hospitality'
+import professional_services from './professional-services'
+import education from './education'
+import startups_cto from './startups-cto'
 import automotive from './automotive'
 import logistics from './logistics'
 import fintech from './fintech'
-import retail_ecommerce from './retail-ecommerce'
 import saas from './saas'
 import manufacturing from './manufacturing'
-import proptech from './proptech'
-import energy from './energy'
-import insurance from './insurance'
-import hospitality from './hospitality'
-import legaltech from './legaltech'
 import fashion_lifestyle from './fashion-lifestyle'
-import agriculture from './agriculture'
-import public_sector from './public-sector'
-import media_entertainment from './media-entertainment'
 import tourism from './tourism'
 import fmcg from './fmcg'
 import diy_tools from './diy-tools'
@@ -24,27 +22,25 @@ import blockchain from './blockchain'
 import social_media from './social-media'
 import games from './games'
 import sport_activities from './sport-activities'
-import education from './education'
 
 export type * from './types'
 
+// The first eight follow the PDF ranking ("where the case is strongest").
 const records: IndustryRecord[] = [
+  trade_and_building_materials,
+  proptech,
   healthcare,
+  retail_ecommerce,
+  hospitality,
+  professional_services,
+  education,
+  startups_cto,
   automotive,
   logistics,
   fintech,
-  retail_ecommerce,
   saas,
   manufacturing,
-  proptech,
-  energy,
-  insurance,
-  hospitality,
-  legaltech,
   fashion_lifestyle,
-  agriculture,
-  public_sector,
-  media_entertainment,
   tourism,
   fmcg,
   diy_tools,
@@ -53,7 +49,6 @@ const records: IndustryRecord[] = [
   social_media,
   games,
   sport_activities,
-  education,
 ]
 
 const localize = (r: IndustryRecord, locale: string): IndustryData => {

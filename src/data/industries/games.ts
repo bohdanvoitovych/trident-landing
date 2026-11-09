@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'gamepad-2',
   techStack: ['Go', 'Node.js', 'Redis', 'PostgreSQL', 'WebSockets', 'Kubernetes', 'AWS'],
   relatedCases: [],
-  relatedServices: ['software-engineering', 'cloud-consulting', 'devops-and-sre'],
+  relatedServices: ['software-engineering'],
   content: {
     en: {
       title: 'Gaming & Interactive',

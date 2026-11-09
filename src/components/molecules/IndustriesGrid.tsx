@@ -9,22 +9,20 @@ import { Chip, Tag } from '@/components/atoms/controls'
 type Category = 'All' | 'Technology' | 'Commerce' | 'Industry' | 'Services' | 'Society'
 
 const CATEGORY_MAP: Record<string, Category> = {
+  'trade-and-building-materials': 'Commerce',
+  proptech: 'Services',
   healthcare: 'Services',
+  'retail-ecommerce': 'Commerce',
+  hospitality: 'Services',
+  'professional-services': 'Services',
+  education: 'Society',
+  'startups-cto': 'Technology',
   automotive: 'Industry',
   logistics: 'Industry',
   fintech: 'Technology',
-  'retail-ecommerce': 'Commerce',
   saas: 'Technology',
   manufacturing: 'Industry',
-  proptech: 'Services',
-  energy: 'Industry',
-  insurance: 'Services',
-  hospitality: 'Services',
-  legaltech: 'Services',
   'fashion-lifestyle': 'Commerce',
-  agriculture: 'Industry',
-  'public-sector': 'Society',
-  'media-entertainment': 'Society',
   tourism: 'Commerce',
   fmcg: 'Commerce',
   'diy-tools': 'Commerce',
@@ -33,7 +31,6 @@ const CATEGORY_MAP: Record<string, Category> = {
   'social-media': 'Technology',
   games: 'Technology',
   'sport-activities': 'Society',
-  education: 'Society',
 }
 
 const CATEGORIES: Category[] = ['All', 'Technology', 'Commerce', 'Industry', 'Services', 'Society']

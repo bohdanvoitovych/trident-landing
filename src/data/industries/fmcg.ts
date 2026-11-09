@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'shopping-bag',
   techStack: ['React Native', 'Node.js', 'PostgreSQL', 'Redis', 'Python', 'Docker', 'AWS'],
   relatedCases: [],
-  relatedServices: ['software-engineering', 'ai-services', 'cloud-consulting'],
+  relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
       title: 'FMCG & Consumer Goods',

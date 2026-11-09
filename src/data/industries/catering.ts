@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'utensils',
   techStack: ['React', 'Node.js', 'PostgreSQL', 'React Native', 'Docker'],
   relatedCases: [],
-  relatedServices: ['software-engineering', 'ui-ux-design', 'ai-services'],
+  relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
       title: 'Catering & Food Service',

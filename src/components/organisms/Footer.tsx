@@ -17,7 +17,7 @@ const COLUMNS = [
     key: 'services',
     links: [
       { href: '/services/ai-services', key: 'aiAgents' },
-      { href: '/products', key: 'logistics' },
+      { href: '/services/logistics-and-operations-platforms', key: 'logistics' },
       { href: '/services/software-engineering', key: 'businessSystems' },
       { href: '/services/embedded-and-iot', key: 'iot' },
       { href: '/services/cto-as-a-service', key: 'cto' },

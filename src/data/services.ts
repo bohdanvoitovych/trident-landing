@@ -45,10 +45,10 @@ const records: ServiceRecord[] = [
     relatedCases: ['kleap-ai-builder', 'aida-medicine'],
     content: {
       en: {
-        title: 'AI Services for Business',
-        tagline: 'Practical AI that ships to production',
+        title: 'AI agents & LLM automation',
+        tagline: 'Enquiry handling, document processing, recommendation, retrieval over corporate knowledge.',
         description:
-          'We integrate LLMs, RAG systems, OCR, STT, and AI agents into your existing business processes. No hype — only production-ready implementations that solve real problems.',
+          'Agents wired into your real systems, not chat widgets. We connect LLMs, RAG, OCR and speech-to-text to the processes you already run, with on-premise options for Swiss data residency.',
         features: [
           {
             title: 'LLM Integration & RAG',
@@ -80,16 +80,16 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'AI Services for Business — Trident Software Switzerland',
+          title: 'AI agents & LLM automation | Trident Software',
           description:
-            'Production-ready AI integrations: LLM, RAG, OCR, AI agents. Swiss data residency. On-premise deployment available.',
+            'Enquiry handling, document processing, recommendation, retrieval over corporate knowledge. Agents wired into real systems, not chat widgets.',
         },
       },
       de: {
-        title: 'KI-Services für Unternehmen',
-        tagline: 'Praxistaugliche KI, die in Produktion geht',
+        title: 'KI-Agenten & LLM-Automatisierung',
+        tagline: 'Anfragenbearbeitung, Dokumentenverarbeitung, Empfehlungen, Suche im Firmenwissen.',
         description:
-          'Wir integrieren LLMs, RAG-Systeme, OCR, STT und KI-Agenten in Ihre bestehenden Geschäftsprozesse. Kein Hype, sondern produktionsreife Lösungen für echte Probleme.',
+          'Agenten, die an Ihre echten Systeme angebunden sind, keine Chat-Widgets. Wir verbinden LLMs, RAG, OCR und Spracherkennung mit den Abläufen, die Sie heute schon haben, auf Wunsch on-premise, damit Ihre Daten in der Schweiz bleiben.',
         features: [
           {
             title: 'LLM-Integration & RAG',
@@ -122,16 +122,16 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'KI-Services für Unternehmen Schweiz | Trident Software',
+          title: 'KI-Agenten & LLM-Automatisierung | Trident Software',
           description:
-            'Produktionsreife KI-Integrationen: LLM, RAG, OCR, KI-Agenten. Datenhaltung in der Schweiz, Betrieb on-premise möglich.',
+            'Anfragenbearbeitung, Dokumentenverarbeitung, Empfehlungen, Suche im Firmenwissen. Agenten, die an Ihre echten Systeme angebunden sind, keine Chat-Widgets.',
         },
       },
       fr: {
-        title: "Services d'IA pour les entreprises",
-        tagline: "Une IA concrète, qui arrive jusqu'en production",
+        title: 'Agents IA & automatisation LLM',
+        tagline: "Traitement des demandes et des documents, recommandations, recherche dans le savoir de l'entreprise.",
         description:
-          "Nous intégrons LLM, systèmes RAG, OCR, STT et agents IA dans vos processus métier existants. Pas d'effet de mode : des mises en œuvre prêtes pour la production, qui résolvent de vrais problèmes.",
+          'Des agents branchés sur vos vrais systèmes, pas des widgets de chat. Nous relions LLM, RAG, OCR et reconnaissance vocale aux processus que vous utilisez déjà, avec des options on-premise pour garder vos données en Suisse.',
         features: [
           {
             title: 'Intégration LLM et RAG',
@@ -164,16 +164,16 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: "Services d'IA pour entreprises en Suisse | Trident Software",
+          title: 'Agents IA & automatisation LLM | Trident Software',
           description:
-            "Intégrations d'IA prêtes pour la production : LLM, RAG, OCR, agents IA. Données hébergées en Suisse. Déploiement on-premise possible.",
+            "Traitement des demandes et des documents, recommandations, recherche dans le savoir de l'entreprise. Des agents branchés sur vos vrais systèmes.",
         },
       },
       it: {
-        title: 'Servizi di IA per le aziende',
-        tagline: 'IA concreta, che arriva fino in produzione',
+        title: 'Agenti AI & automazione LLM',
+        tagline: 'Gestione delle richieste, elaborazione documenti, raccomandazioni, ricerca nel sapere aziendale.',
         description:
-          'Integriamo LLM, sistemi RAG, OCR, STT e agenti IA nei tuoi processi aziendali esistenti. Niente hype: solo implementazioni pronte per la produzione che risolvono problemi reali.',
+          'Agenti collegati ai tuoi sistemi reali, non widget di chat. Colleghiamo LLM, RAG, OCR e riconoscimento vocale ai processi che usi già, con opzioni on-premise per tenere i dati in Svizzera.',
         features: [
           {
             title: 'Integrazione LLM e RAG',
@@ -206,9 +206,117 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Servizi di IA per aziende in Svizzera | Trident Software',
+          title: 'Agenti AI & automazione LLM | Trident Software',
           description:
-            'Integrazioni IA pronte per la produzione: LLM, RAG, OCR, agenti IA. Dati ospitati in Svizzera. Installazione on-premise disponibile.',
+            'Gestione delle richieste, elaborazione documenti, raccomandazioni, ricerca nel sapere aziendale. Agenti collegati ai tuoi sistemi reali.',
+        },
+      },
+    },
+  },
+  {
+    slug: 'logistics-and-operations-platforms',
+    icon: 'truck',
+    techStack: ['Python', 'Django', 'PostgreSQL', 'React', 'Flutter', 'AWS'],
+    relatedCases: ['8move-driver'],
+    content: {
+      en: {
+        title: 'Logistics & operations platforms',
+        tagline: 'Order intake, dispatch and planning, driver applications, tracking, automated billing.',
+        description:
+          '8Move, our own logistics platform, is in production with paying customers. Its product line (Fleet Planner, Driver Pro, Transfer, Back Office) is where an enquiry becomes a job, a route or a delivery.',
+        features: [
+          {
+            title: 'Fleet Planner',
+            description: 'Planning and dispatch, where confirmed orders become routes.',
+          },
+          {
+            title: 'Driver Pro',
+            description: 'The driver application, with proof of delivery.',
+          },
+          {
+            title: 'Arrival times that update themselves',
+            description: 'Customers get the ETA before they ask for it, recalculated when the day changes.',
+          },
+        ],
+        meta: {
+          title: 'Logistics & operations platforms | Trident Software',
+          description:
+            'Order intake, dispatch and planning, driver apps, tracking, automated billing, from the team behind 8Move, our own logistics platform.',
+        },
+      },
+      de: {
+        title: 'Logistik- & Betriebsplattformen',
+        tagline: 'Auftragserfassung, Disposition und Planung, Fahrer-Apps, Tracking, automatisierte Fakturierung.',
+        description:
+          '8Move, unsere eigene Logistikplattform, ist mit zahlenden Kunden in Produktion. In ihrer Produktlinie (Fleet Planner, Driver Pro, Transfer, Back Office) wird aus einer Anfrage ein Auftrag, eine Route oder eine Lieferung.',
+        features: [
+          {
+            title: 'Fleet Planner',
+            description: 'Planung und Disposition: Hier werden bestätigte Aufträge zu Routen.',
+          },
+          {
+            title: 'Driver Pro',
+            description: 'Die App für Fahrerinnen und Fahrer, mit Liefernachweis.',
+          },
+          {
+            title: 'Ankunftszeiten, die sich selbst aktualisieren',
+            description: 'Kunden erhalten die Ankunftszeit, bevor sie danach fragen, und sie wird neu berechnet, wenn sich der Tag ändert.',
+          },
+        ],
+        meta: {
+          title: 'Logistik- & Betriebsplattformen | Trident Software',
+          description:
+            'Auftragserfassung, Disposition, Fahrer-Apps, Tracking, automatisierte Fakturierung, vom Team hinter 8Move, unserer eigenen Logistikplattform.',
+        },
+      },
+      fr: {
+        title: 'Plateformes logistiques & opérationnelles',
+        tagline: 'Prise de commande, dispatch et planification, applications chauffeurs, suivi, facturation automatisée.',
+        description:
+          '8Move, notre propre plateforme logistique, est en production chez des clients payants. Sa gamme (Fleet Planner, Driver Pro, Transfer, Back Office) transforme une demande en mission, en tournée ou en livraison.',
+        features: [
+          {
+            title: 'Fleet Planner',
+            description: 'Planification et dispatch : les commandes confirmées deviennent des tournées.',
+          },
+          {
+            title: 'Driver Pro',
+            description: "L'application des chauffeurs, avec preuve de livraison.",
+          },
+          {
+            title: "Des heures d'arrivée qui se mettent à jour",
+            description: "Les clients reçoivent l'heure d'arrivée avant de la demander, recalculée quand la journée change.",
+          },
+        ],
+        meta: {
+          title: 'Plateformes logistiques & opérationnelles | Trident Software',
+          description:
+            "Prise de commande, dispatch, apps chauffeurs, suivi, facturation automatisée, par l'équipe derrière 8Move, notre propre plateforme logistique.",
+        },
+      },
+      it: {
+        title: 'Piattaforme logistiche e operative',
+        tagline: 'Acquisizione ordini, dispatch e pianificazione, app per autisti, tracciamento, fatturazione automatica.',
+        description:
+          '8Move, la nostra piattaforma logistica, è in produzione con clienti paganti. La sua linea di prodotti (Fleet Planner, Driver Pro, Transfer, Back Office) trasforma una richiesta in un incarico, un percorso o una consegna.',
+        features: [
+          {
+            title: 'Fleet Planner',
+            description: 'Pianificazione e dispatch: gli ordini confermati diventano percorsi.',
+          },
+          {
+            title: 'Driver Pro',
+            description: "L'app per gli autisti, con prova di consegna.",
+          },
+          {
+            title: 'Orari di arrivo che si aggiornano da soli',
+            description: "I clienti ricevono l'orario di arrivo prima di chiederlo, ricalcolato quando la giornata cambia.",
+          },
+        ],
+        meta: {
+          title: 'Piattaforme logistiche e operative | Trident Software',
+          description:
+            'Acquisizione ordini, dispatch, app per autisti, tracciamento, fatturazione automatica, dal team che ha creato 8Move, la nostra piattaforma logistica.',
         },
       },
     },
@@ -217,11 +325,11 @@ const records: ServiceRecord[] = [
     slug: 'software-engineering',
     icon: 'code-2',
     techStack: ['TypeScript', 'React', 'Next.js', 'Node.js', 'Python', 'Flutter', 'PostgreSQL', 'Redis', 'Docker'],
-    relatedCases: ['zenit-auto-b2b', 'status-m-wms', 'affiliation-platform'],
+    relatedCases: ['zenit-auto-b2b'],
     content: {
       en: {
-        title: 'Software Engineering',
-        tagline: 'Full-stack custom software, delivered',
+        title: 'Custom business systems',
+        tagline: 'B2B portals, integrations with ERP and accounting, migrations off legacy stacks.',
         description:
           'From B2B e-commerce platforms to enterprise internal tools — we design, build, and maintain custom software with a focus on reliability and scalability.',
         features: [
@@ -251,14 +359,14 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Custom Software Engineering — Trident Software Switzerland',
+          title: 'Custom business systems | Trident Software',
           description:
-            'Full-stack custom software development: web apps, B2B platforms, APIs, mobile. Fixed budgets, Swiss quality.',
+            'B2B portals, integrations with ERP and accounting, migrations off legacy stacks.',
         },
       },
       de: {
-        title: 'Software Engineering',
-        tagline: 'Individualsoftware aus einer Hand, fertig geliefert',
+        title: 'Individuelle Geschäftssysteme',
+        tagline: 'B2B-Portale, ERP- und Buchhaltungsintegrationen, Ablösung von Altsystemen.',
         description:
           'Von B2B-E-Commerce-Plattformen bis zu internen Unternehmenstools: Wir konzipieren, entwickeln und warten Individualsoftware, bei der Zuverlässigkeit und Skalierbarkeit im Vordergrund stehen.',
         features: [
@@ -289,14 +397,14 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Softwareentwicklung Schweiz | Trident Software',
+          title: 'Individuelle Geschäftssysteme | Trident Software',
           description:
-            'Individuelle Softwareentwicklung: Web-Apps, B2B-Plattformen, APIs, Mobile. Feste Budgets, Schweizer Qualität.',
+            'B2B-Portale, ERP- und Buchhaltungsintegrationen, Ablösung von Altsystemen.',
         },
       },
       fr: {
-        title: 'Ingénierie logicielle',
-        tagline: 'Des logiciels sur mesure, du front au back, livrés',
+        title: 'Systèmes de gestion sur mesure',
+        tagline: 'Portails B2B, intégrations ERP et comptables, migration de systèmes existants.',
         description:
           "Des plateformes e-commerce B2B aux outils internes d'entreprise : nous concevons, développons et maintenons des logiciels sur mesure, avec la fiabilité et la scalabilité comme priorités.",
         features: [
@@ -329,14 +437,14 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Développement logiciel sur mesure Suisse | Trident Software',
+          title: 'Systèmes de gestion sur mesure | Trident Software',
           description:
-            'Développement de logiciels sur mesure : applications web, plateformes B2B, API, mobile. Budgets fixes, qualité suisse.',
+            'Portails B2B, intégrations ERP et comptables, migration de systèmes existants.',
         },
       },
       it: {
-        title: 'Ingegneria del software',
-        tagline: 'Software su misura completo, consegnato',
+        title: 'Sistemi gestionali su misura',
+        tagline: 'Portali B2B, integrazioni ERP e contabili, migrazione di sistemi esistenti.',
         description:
           'Dalle piattaforme e-commerce B2B agli strumenti interni aziendali: progettiamo, sviluppiamo e manteniamo software su misura puntando su affidabilità e scalabilità.',
         features: [
@@ -368,9 +476,9 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Sviluppo software su misura Svizzera | Trident Software',
+          title: 'Sistemi gestionali su misura | Trident Software',
           description:
-            'Sviluppo di software su misura: web app, piattaforme B2B, API, mobile. Budget fissi, qualità svizzera.',
+            'Portali B2B, integrazioni ERP e contabili, migrazione di sistemi esistenti.',
         },
       },
     },
@@ -382,8 +490,8 @@ const records: ServiceRecord[] = [
     relatedCases: ['tdsbot-iot'],
     content: {
       en: {
-        title: 'Embedded & IoT',
-        tagline: 'Software for the physical world',
+        title: 'IoT & connected products',
+        tagline: 'Firmware, cloud platform, rules engines, dealer and consumer applications for physical devices.',
         description:
           'Firmware development, IoT sensor integration, and industrial monitoring systems. We work with automotive, medical, and industrial clients on mission-critical embedded software.',
         features: [
@@ -413,14 +521,14 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Embedded Software & IoT Development — Trident Software Switzerland',
+          title: 'IoT & connected products | Trident Software',
           description:
-            'Firmware, IoT, and industrial monitoring systems. Automotive, medical, and industrial clients. Swiss engineering.',
+            'Firmware, cloud platform, rules engines, dealer and consumer applications for physical devices.',
         },
       },
       de: {
-        title: 'Embedded & IoT',
-        tagline: 'Software für die physische Welt',
+        title: 'IoT & vernetzte Produkte',
+        tagline: 'Firmware, Cloud-Plattform, Regel-Engines, Apps für Händler und Endkunden rund um physische Geräte.',
         description:
           'Firmware-Entwicklung, Anbindung von IoT-Sensoren und industrielle Überwachungssysteme. Für Kunden aus Automobilbranche, Medizintechnik und Industrie entwickeln wir Embedded-Software, bei der Ausfälle keine Option sind.',
         features: [
@@ -452,14 +560,14 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Embedded-Software & IoT-Entwicklung | Trident Software',
+          title: 'IoT & vernetzte Produkte | Trident Software',
           description:
-            'Firmware, IoT und industrielle Überwachungssysteme für Kunden aus Automobilbranche, Medizintechnik und Industrie. Schweizer Engineering.',
+            'Firmware, Cloud-Plattform, Regel-Engines, Apps für Händler und Endkunden rund um physische Geräte.',
         },
       },
       fr: {
-        title: 'Embarqué et IoT',
-        tagline: 'Du logiciel pour le monde physique',
+        title: 'IoT & produits connectés',
+        tagline: 'Firmware, plateforme cloud, moteurs de règles, applications pour revendeurs et clients finaux autour de vos appareils.',
         description:
           "Développement de firmware, intégration de capteurs IoT et systèmes de surveillance industrielle. Nous travaillons avec des clients de l'automobile, du médical et de l'industrie sur des logiciels embarqués critiques.",
         features: [
@@ -494,14 +602,14 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Logiciel embarqué et IoT en Suisse | Trident Software',
+          title: 'IoT & produits connectés | Trident Software',
           description:
-            "Firmware, IoT et surveillance industrielle pour clients de l'automobile, du médical et de l'industrie. Ingénierie suisse.",
+            'Firmware, plateforme cloud, moteurs de règles, applications pour revendeurs et clients finaux autour de vos appareils.',
         },
       },
       it: {
-        title: 'Embedded e IoT',
-        tagline: 'Software per il mondo fisico',
+        title: 'IoT & prodotti connessi',
+        tagline: 'Firmware, piattaforma cloud, motori di regole, app per rivenditori e consumatori attorno ai dispositivi fisici.',
         description:
           'Sviluppo firmware, integrazione di sensori IoT e sistemi di monitoraggio industriale. Lavoriamo con clienti del settore automobilistico, medicale e industriale su software embedded critico.',
         features: [
@@ -535,9 +643,9 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Sviluppo software embedded e IoT | Trident Software',
+          title: 'IoT & prodotti connessi | Trident Software',
           description:
-            'Firmware, IoT e sistemi di monitoraggio industriale per clienti automotive, medicali e industriali. Ingegneria svizzera.',
+            'Firmware, piattaforma cloud, motori di regole, app per rivenditori e consumatori attorno ai dispositivi fisici.',
         },
       },
     },
@@ -549,8 +657,8 @@ const records: ServiceRecord[] = [
     relatedCases: ['kleap-ai-builder', 'go-valais'],
     content: {
       en: {
-        title: 'CTO-as-a-Service',
-        tagline: 'Technical leadership without the full-time cost',
+        title: 'CTO as a Service',
+        tagline: 'Fractional and interim technical leadership for companies without an in-house CTO.',
         description:
           'For startups and scale-ups that need senior technical leadership: architecture decisions, team building, technology strategy, and hands-on delivery oversight.',
         features: [
@@ -581,14 +689,14 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'CTO-as-a-Service — Trident Software Switzerland',
+          title: 'CTO as a Service | Trident Software',
           description:
-            'Fractional CTO services for startups and SMEs. Architecture, team building, tech strategy. Swiss-based.',
+            'Fractional and interim technical leadership for companies without an in-house CTO.',
         },
       },
       de: {
-        title: 'CTO-as-a-Service',
-        tagline: 'Technische Führung ohne die Kosten einer Vollzeitstelle',
+        title: 'CTO as a Service',
+        tagline: 'Technische Führung in Teilzeit oder interimistisch für Unternehmen ohne eigenen CTO.',
         description:
           'Für Startups und Scale-ups, die erfahrene technische Führung brauchen: Architekturentscheide, Teamaufbau, Technologiestrategie und Begleitung der Umsetzung direkt im Projekt.',
         features: [
@@ -622,14 +730,14 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'CTO-as-a-Service Schweiz | Trident Software',
+          title: 'CTO as a Service | Trident Software',
           description:
-            'Fractional CTO für Startups und KMU: Architektur, Teamaufbau, Technologiestrategie. Mit Sitz in der Schweiz.',
+            'Technische Führung in Teilzeit oder interimistisch für Unternehmen ohne eigenen CTO.',
         },
       },
       fr: {
-        title: 'CTO-as-a-Service',
-        tagline: "Une direction technique sans le coût d'un poste à plein temps",
+        title: 'CTO as a Service',
+        tagline: 'Direction technique à temps partiel ou par intérim pour les entreprises sans CTO interne.',
         description:
           "Pour les startups et scale-ups qui ont besoin d'une direction technique expérimentée : choix d'architecture, constitution d'équipe, stratégie technologique et suivi concret de la réalisation.",
         features: [
@@ -665,14 +773,14 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'CTO-as-a-Service en Suisse | Trident Software',
+          title: 'CTO as a Service | Trident Software',
           description:
-            "CTO à temps partiel pour startups et PME. Architecture, constitution d'équipe, stratégie technologique. Basé en Suisse.",
+            'Direction technique à temps partiel ou par intérim pour les entreprises sans CTO interne.',
         },
       },
       it: {
-        title: 'CTO-as-a-Service',
-        tagline: 'Leadership tecnica senza il costo di un tempo pieno',
+        title: 'CTO as a Service',
+        tagline: 'Guida tecnica part-time o ad interim per aziende senza un CTO interno.',
         description:
           'Per startup e scale-up che hanno bisogno di una guida tecnica esperta: scelte di architettura, costruzione del team, strategia tecnologica e supervisione diretta della realizzazione.',
         features: [
@@ -706,680 +814,9 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'CTO-as-a-Service in Svizzera | Trident Software',
+          title: 'CTO as a Service | Trident Software',
           description:
-            'CTO part-time per startup e PMI. Architettura, costruzione del team, strategia tecnologica. Con sede in Svizzera.',
-        },
-      },
-    },
-  },
-  {
-    slug: 'cloud-consulting',
-    icon: 'cloud',
-    techStack: ['AWS', 'GCP', 'Azure', 'Terraform', 'Kubernetes', 'Docker', 'Helm', 'Datadog', 'Prometheus'],
-    relatedCases: ['8move-admin'],
-    content: {
-      en: {
-        title: 'Cloud Consulting',
-        tagline: 'Cloud infrastructure that scales with your business',
-        description:
-          'Cloud architecture, migration, and optimization on AWS, GCP, and Azure. Infrastructure as code, cost optimization, and multi-region deployments.',
-        features: [
-          {
-            title: 'Cloud Migration',
-            description: 'Move from on-premise or legacy cloud to modern, cost-efficient infrastructure.',
-          },
-          {
-            title: 'Infrastructure as Code',
-            description: 'Terraform, Pulumi, and CloudFormation for repeatable, version-controlled infra.',
-          },
-          {
-            title: 'Kubernetes & Container Orchestration',
-            description: 'Production-grade Kubernetes clusters with monitoring, autoscaling, and GitOps.',
-          },
-          {
-            title: 'Cost Optimization',
-            description:
-              'Analyze and reduce cloud spend through right-sizing, reserved capacity, and architecture review.',
-          },
-          {
-            title: 'Multi-region & HA',
-            description: 'High-availability designs with failover, data replication, and disaster recovery.',
-          },
-          {
-            title: 'Swiss Data Residency',
-            description: 'Architecture that keeps data within Swiss borders for revFADP and compliance requirements.',
-          },
-        ],
-        meta: {
-          title: 'Cloud Consulting & Infrastructure — Trident Software Switzerland',
-          description:
-            'AWS, GCP, Azure cloud architecture, migration, and optimization. Terraform, Kubernetes, Swiss data residency.',
-        },
-      },
-      de: {
-        title: 'Cloud-Beratung',
-        tagline: 'Cloud-Infrastruktur, die mit Ihrem Unternehmen wächst',
-        description:
-          'Cloud-Architektur, Migration und Optimierung auf AWS, GCP und Azure. Infrastructure as Code, Kostenoptimierung und Deployments über mehrere Regionen.',
-        features: [
-          {
-            title: 'Cloud-Migration',
-            description:
-              'Der Wechsel von On-Premise oder einer veralteten Cloud auf moderne, kosteneffiziente Infrastruktur.',
-          },
-          {
-            title: 'Infrastructure as Code',
-            description: 'Terraform, Pulumi und CloudFormation für reproduzierbare, versionierte Infrastruktur.',
-          },
-          {
-            title: 'Kubernetes & Container-Orchestrierung',
-            description: 'Produktionsreife Kubernetes-Cluster mit Monitoring, Autoscaling und GitOps.',
-          },
-          {
-            title: 'Kostenoptimierung',
-            description:
-              'Cloud-Ausgaben analysieren und senken: passende Dimensionierung, reservierte Kapazitäten und Architektur-Review.',
-          },
-          {
-            title: 'Multi-Region & Hochverfügbarkeit',
-            description: 'Hochverfügbare Architekturen mit Failover, Datenreplikation und Disaster Recovery.',
-          },
-          {
-            title: 'Datenhaltung in der Schweiz',
-            description:
-              'Eine Architektur, die Ihre Daten innerhalb der Schweiz hält, für das nDSG und weitere Compliance-Vorgaben.',
-          },
-        ],
-        meta: {
-          title: 'Cloud-Beratung & Infrastruktur Schweiz | Trident Software',
-          description:
-            'Cloud-Architektur, Migration und Optimierung auf AWS, GCP und Azure. Terraform, Kubernetes, Datenhaltung in der Schweiz.',
-        },
-      },
-      fr: {
-        title: 'Conseil cloud',
-        tagline: 'Une infrastructure cloud qui grandit avec votre entreprise',
-        description:
-          'Architecture, migration et optimisation cloud sur AWS, GCP et Azure. Infrastructure as Code, optimisation des coûts et déploiements multi-régions.',
-        features: [
-          {
-            title: 'Migration vers le cloud',
-            description:
-              "Passez de l'on-premise ou d'un cloud vieillissant à une infrastructure moderne et économique.",
-          },
-          {
-            title: 'Infrastructure as Code',
-            description: 'Terraform, Pulumi et CloudFormation pour une infrastructure reproductible et versionnée.',
-          },
-          {
-            title: 'Kubernetes et orchestration de conteneurs',
-            description: 'Clusters Kubernetes prêts pour la production, avec monitoring, autoscaling et GitOps.',
-          },
-          {
-            title: 'Optimisation des coûts',
-            description:
-              "Analysez et réduisez vos dépenses cloud : dimensionnement adapté, capacité réservée et revue d'architecture.",
-          },
-          {
-            title: 'Multi-régions et haute disponibilité',
-            description:
-              'Architectures haute disponibilité avec basculement, réplication des données et reprise après sinistre.',
-          },
-          {
-            title: 'Données hébergées en Suisse',
-            description:
-              'Une architecture qui garde les données sur le territoire suisse, pour répondre à la nLPD et aux autres exigences de conformité.',
-          },
-        ],
-        meta: {
-          title: 'Conseil cloud et infrastructure en Suisse | Trident Software',
-          description:
-            'Architecture, migration et optimisation cloud sur AWS, GCP et Azure. Terraform, Kubernetes, données hébergées en Suisse.',
-        },
-      },
-      it: {
-        title: 'Consulenza cloud',
-        tagline: "Un'infrastruttura cloud che cresce con la tua azienda",
-        description:
-          'Architettura, migrazione e ottimizzazione cloud su AWS, GCP e Azure. Infrastructure as Code, riduzione dei costi e deployment su più regioni.',
-        features: [
-          {
-            title: 'Migrazione al cloud',
-            description:
-              "Passa dall'on-premise o da un cloud datato a un'infrastruttura moderna ed efficiente nei costi.",
-          },
-          {
-            title: 'Infrastructure as Code',
-            description:
-              "Terraform, Pulumi e CloudFormation per un'infrastruttura riproducibile e sotto controllo di versione.",
-          },
-          {
-            title: 'Kubernetes e orchestrazione di container',
-            description: 'Cluster Kubernetes pronti per la produzione, con monitoraggio, autoscaling e GitOps.',
-          },
-          {
-            title: 'Ottimizzazione dei costi',
-            description:
-              "Analizziamo e riduciamo la spesa cloud con il giusto dimensionamento, capacità riservata e revisione dell'architettura.",
-          },
-          {
-            title: 'Multi-region e alta disponibilità',
-            description: 'Architetture ad alta disponibilità con failover, replica dei dati e disaster recovery.',
-          },
-          {
-            title: 'Dati ospitati in Svizzera',
-            description:
-              "Un'architettura che mantiene i dati entro i confini svizzeri, per la nLPD e gli altri requisiti di conformità.",
-          },
-        ],
-        meta: {
-          title: 'Consulenza cloud e infrastruttura | Trident Software',
-          description:
-            'Architettura, migrazione e ottimizzazione cloud su AWS, GCP e Azure. Terraform, Kubernetes, dati ospitati in Svizzera.',
-        },
-      },
-    },
-  },
-  {
-    slug: 'devops-and-sre',
-    icon: 'git-branch',
-    techStack: [
-      'GitHub Actions',
-      'GitLab CI',
-      'Docker',
-      'Kubernetes',
-      'Terraform',
-      'Datadog',
-      'Prometheus',
-      'Grafana',
-      'Vault',
-    ],
-    relatedCases: ['8move-admin'],
-    content: {
-      en: {
-        title: 'DevOps & SRE',
-        tagline: 'Ship faster, fail less',
-        description:
-          'CI/CD pipelines, monitoring, incident response, and reliability engineering. We embed DevOps practices into your development workflow from day one.',
-        features: [
-          {
-            title: 'CI/CD Pipeline Design',
-            description: 'GitHub Actions, GitLab CI, Jenkins — automated build, test, and deployment pipelines.',
-          },
-          {
-            title: 'Monitoring & Alerting',
-            description: 'Datadog, Prometheus, Grafana, and Loki for full observability across your stack.',
-          },
-          {
-            title: 'Incident Management',
-            description: 'On-call processes, runbooks, post-mortems, and SLA/SLO definition.',
-          },
-          {
-            title: 'Security Hardening',
-            description: 'Secrets management, vulnerability scanning, and SAST/DAST integration.',
-          },
-          {
-            title: 'Database Operations',
-            description: 'Backup strategies, replication, migrations, and performance tuning.',
-          },
-          {
-            title: 'Platform Engineering',
-            description: 'Internal developer platforms that improve engineering velocity and standardization.',
-          },
-        ],
-        meta: {
-          title: 'DevOps & SRE Services — Trident Software Switzerland',
-          description:
-            'CI/CD, monitoring, incident management, and platform engineering. Swiss-based DevOps consultancy.',
-        },
-      },
-      de: {
-        title: 'DevOps & SRE',
-        tagline: 'Schneller ausliefern, seltener ausfallen',
-        description:
-          'CI/CD-Pipelines, Monitoring, Incident Response und Reliability Engineering. Wir verankern DevOps-Praktiken vom ersten Tag an in Ihrem Entwicklungsprozess.',
-        features: [
-          {
-            title: 'Aufbau von CI/CD-Pipelines',
-            description: 'GitHub Actions, GitLab CI, Jenkins: automatisierte Pipelines für Build, Test und Deployment.',
-          },
-          {
-            title: 'Monitoring & Alarmierung',
-            description: 'Datadog, Prometheus, Grafana und Loki für volle Transparenz über Ihren gesamten Stack.',
-          },
-          {
-            title: 'Incident Management',
-            description: 'Pikett-Prozesse, Runbooks, Post-Mortems und die Definition von SLAs und SLOs.',
-          },
-          {
-            title: 'Security Hardening',
-            description: 'Verwaltung von Secrets, Schwachstellen-Scans und Integration von SAST/DAST.',
-          },
-          {
-            title: 'Datenbankbetrieb',
-            description: 'Backup-Strategien, Replikation, Migrationen und Performance-Tuning.',
-          },
-          {
-            title: 'Platform Engineering',
-            description: 'Interne Entwicklerplattformen, die Ihr Engineering schneller und einheitlicher machen.',
-          },
-        ],
-        meta: {
-          title: 'DevOps & SRE Services Schweiz | Trident Software',
-          description:
-            'CI/CD, Monitoring, Incident Management und Platform Engineering. DevOps-Beratung mit Sitz in der Schweiz.',
-        },
-      },
-      fr: {
-        title: 'DevOps et SRE',
-        tagline: 'Livrer plus vite, tomber moins souvent',
-        description:
-          'Pipelines CI/CD, monitoring, gestion des incidents et ingénierie de la fiabilité. Nous intégrons les pratiques DevOps à votre processus de développement dès le premier jour.',
-        features: [
-          {
-            title: 'Conception de pipelines CI/CD',
-            description:
-              'GitHub Actions, GitLab CI, Jenkins : pipelines automatisés de build, de test et de déploiement.',
-          },
-          {
-            title: 'Monitoring et alertes',
-            description: 'Datadog, Prometheus, Grafana et Loki pour une observabilité complète de toute votre stack.',
-          },
-          {
-            title: 'Gestion des incidents',
-            description: 'Organisation des astreintes, runbooks, post-mortems et définition des SLA et SLO.',
-          },
-          {
-            title: 'Durcissement de la sécurité',
-            description: 'Gestion des secrets, analyse des vulnérabilités et intégration SAST/DAST.',
-          },
-          {
-            title: 'Exploitation des bases de données',
-            description: 'Stratégies de sauvegarde, réplication, migrations et optimisation des performances.',
-          },
-          {
-            title: 'Platform Engineering',
-            description:
-              'Des plateformes internes pour développeurs qui accélèrent et standardisent le travail de vos équipes.',
-          },
-        ],
-        meta: {
-          title: 'Services DevOps et SRE en Suisse | Trident Software',
-          description:
-            'CI/CD, monitoring, gestion des incidents et platform engineering. Conseil DevOps basé en Suisse.',
-        },
-      },
-      it: {
-        title: 'DevOps e SRE',
-        tagline: 'Rilasci più rapidi, meno guasti',
-        description:
-          "Pipeline CI/CD, monitoraggio, gestione degli incidenti e ingegneria dell'affidabilità. Inseriamo le pratiche DevOps nel tuo flusso di sviluppo fin dal primo giorno.",
-        features: [
-          {
-            title: 'Progettazione di pipeline CI/CD',
-            description: 'GitHub Actions, GitLab CI, Jenkins: pipeline automatizzate di build, test e deployment.',
-          },
-          {
-            title: 'Monitoraggio e allarmi',
-            description: "Datadog, Prometheus, Grafana e Loki per un'osservabilità completa di tutto il tuo stack.",
-          },
-          {
-            title: 'Gestione degli incidenti',
-            description: 'Turni di reperibilità, runbook, post-mortem e definizione di SLA e SLO.',
-          },
-          {
-            title: 'Rafforzamento della sicurezza',
-            description: 'Gestione dei secret, scansione delle vulnerabilità e integrazione SAST/DAST.',
-          },
-          {
-            title: 'Gestione dei database',
-            description: 'Strategie di backup, replica, migrazioni e ottimizzazione delle prestazioni.',
-          },
-          {
-            title: 'Platform Engineering',
-            description: 'Piattaforme interne per sviluppatori che rendono il lavoro dei team più veloce e uniforme.',
-          },
-        ],
-        meta: {
-          title: 'Servizi DevOps e SRE in Svizzera | Trident Software',
-          description:
-            'CI/CD, monitoraggio, gestione degli incidenti e platform engineering. Consulenza DevOps con sede in Svizzera.',
-        },
-      },
-    },
-  },
-  {
-    slug: 'ui-ux-design',
-    icon: 'palette',
-    techStack: ['Figma', 'Framer', 'Storybook', 'React', 'Tailwind CSS', 'shadcn/ui'],
-    relatedCases: ['8move-driver', 'samange-fashion', 'lapochette'],
-    content: {
-      en: {
-        title: 'UI/UX Design',
-        tagline: 'Interfaces that convert and delight',
-        description:
-          'Product design from wireframes to production-ready UI systems. We design for B2B enterprise dashboards, e-commerce, and consumer mobile apps.',
-        features: [
-          {
-            title: 'UX Research & Audit',
-            description: 'User interviews, usability testing, and heuristic evaluation of existing products.',
-          },
-          {
-            title: 'Information Architecture',
-            description: 'Site maps, user flows, and navigation design that reduce cognitive load.',
-          },
-          {
-            title: 'Wireframing & Prototyping',
-            description: 'Low and high-fidelity prototypes in Figma for validation before development.',
-          },
-          {
-            title: 'Design System Creation',
-            description: 'Scalable component libraries with tokens, variants, and documentation for engineering teams.',
-          },
-          {
-            title: 'B2B Dashboard Design',
-            description: 'Data-dense admin interfaces, analytics dashboards, and enterprise management tools.',
-          },
-          {
-            title: 'Mobile UI Design',
-            description: 'iOS and Android design following platform guidelines and accessibility standards.',
-          },
-        ],
-        meta: {
-          title: 'UI/UX Design Services — Trident Software Switzerland',
-          description:
-            'Product design, design systems, B2B dashboards, mobile UI. Figma-based workflow. Swiss design studio.',
-        },
-      },
-      de: {
-        title: 'UI/UX-Design',
-        tagline: 'Oberflächen, die überzeugen und Freude machen',
-        description:
-          'Produktdesign von Wireframes bis zu produktionsreifen UI-Systemen. Wir gestalten B2B-Dashboards für Unternehmen, E-Commerce und mobile Apps für Endkunden.',
-        features: [
-          {
-            title: 'UX-Research & Audit',
-            description: 'Nutzerinterviews, Usability-Tests und heuristische Bewertung bestehender Produkte.',
-          },
-          {
-            title: 'Informationsarchitektur',
-            description: 'Sitemaps, User Flows und eine Navigation, die Nutzer gedanklich entlastet.',
-          },
-          {
-            title: 'Wireframes & Prototypen',
-            description: 'Low- und High-Fidelity-Prototypen in Figma, um Ideen vor der Entwicklung zu validieren.',
-          },
-          {
-            title: 'Aufbau von Designsystemen',
-            description:
-              'Skalierbare Komponentenbibliotheken mit Tokens, Varianten und Dokumentation für Entwicklungsteams.',
-          },
-          {
-            title: 'Design von B2B-Dashboards',
-            description: 'Datenreiche Admin-Oberflächen, Analyse-Dashboards und Verwaltungstools für Unternehmen.',
-          },
-          {
-            title: 'Mobile UI-Design',
-            description:
-              'Design für iOS und Android nach den Plattform-Richtlinien und Standards der Barrierefreiheit.',
-          },
-        ],
-        meta: {
-          title: 'UI/UX-Design Agentur Schweiz | Trident Software',
-          description:
-            'Produktdesign, Designsysteme, B2B-Dashboards, mobile UI. Arbeitsweise in Figma. Designstudio aus der Schweiz.',
-        },
-      },
-      fr: {
-        title: 'Design UI/UX',
-        tagline: "Des interfaces qui convertissent et qu'on aime utiliser",
-        description:
-          "Design produit, des wireframes jusqu'aux systèmes d'interface prêts pour la production. Nous concevons des tableaux de bord B2B pour les entreprises, des sites e-commerce et des applications mobiles grand public.",
-        features: [
-          {
-            title: 'Recherche et audit UX',
-            description:
-              "Entretiens utilisateurs, tests d'utilisabilité et évaluation heuristique de produits existants.",
-          },
-          {
-            title: "Architecture de l'information",
-            description: "Plans de site, parcours utilisateurs et navigation pensés pour réduire l'effort mental.",
-          },
-          {
-            title: 'Wireframes et prototypes',
-            description:
-              'Prototypes basse et haute fidélité dans Figma, pour valider les choix avant le développement.',
-          },
-          {
-            title: 'Création de design systems',
-            description:
-              'Bibliothèques de composants évolutives, avec tokens, variantes et documentation pour les équipes de développement.',
-          },
-          {
-            title: 'Design de tableaux de bord B2B',
-            description:
-              "Interfaces d'administration riches en données, tableaux de bord analytiques et outils de gestion pour les entreprises.",
-          },
-          {
-            title: "Design d'interfaces mobiles",
-            description:
-              "Design iOS et Android conforme aux recommandations de chaque plateforme et aux normes d'accessibilité.",
-          },
-        ],
-        meta: {
-          title: 'Agence de design UI/UX en Suisse | Trident Software',
-          description:
-            'Design produit, design systems, tableaux de bord B2B, UI mobile. Méthode de travail basée sur Figma. Studio de design suisse.',
-        },
-      },
-      it: {
-        title: 'Design UI/UX',
-        tagline: 'Interfacce che convertono e piacciono',
-        description:
-          'Product design dai wireframe ai sistemi UI pronti per la produzione. Progettiamo dashboard B2B per le aziende, e-commerce e app mobili per il grande pubblico.',
-        features: [
-          {
-            title: 'Ricerca e audit UX',
-            description: 'Interviste agli utenti, test di usabilità e valutazione euristica di prodotti esistenti.',
-          },
-          {
-            title: "Architettura dell'informazione",
-            description: 'Mappe del sito, flussi utente e una navigazione che riduce lo sforzo mentale.',
-          },
-          {
-            title: 'Wireframe e prototipi',
-            description: 'Prototipi a bassa e alta fedeltà in Figma, per validare le scelte prima dello sviluppo.',
-          },
-          {
-            title: 'Creazione di design system',
-            description:
-              'Librerie di componenti scalabili con token, varianti e documentazione per i team di sviluppo.',
-          },
-          {
-            title: 'Design di dashboard B2B',
-            description:
-              'Interfacce di amministrazione ricche di dati, dashboard analitiche e strumenti gestionali per le aziende.',
-          },
-          {
-            title: 'Design di interfacce mobili',
-            description:
-              'Design per iOS e Android secondo le linee guida delle piattaforme e gli standard di accessibilità.',
-          },
-        ],
-        meta: {
-          title: 'Agenzia di design UI/UX in Svizzera | Trident Software',
-          description:
-            'Product design, design system, dashboard B2B, UI mobile. Flusso di lavoro basato su Figma. Studio di design svizzero.',
-        },
-      },
-    },
-  },
-  {
-    slug: 'team-extension',
-    icon: 'users',
-    techStack: ['TypeScript', 'Python', 'React', 'Flutter', 'DevOps', 'ML/AI'],
-    relatedCases: [],
-    content: {
-      en: {
-        title: 'Team Extension',
-        tagline: 'Senior engineers, embedded in your team',
-        description:
-          'Augment your in-house team with senior engineers from our CH+IL+UA talent pool. Full-time or part-time, short-term or long-term — with Swiss accountability.',
-        features: [
-          {
-            title: 'Senior Engineer Placement',
-            description: 'Backend, frontend, mobile, DevOps, and ML engineers with 5+ years of commercial experience.',
-          },
-          {
-            title: 'Flexible Engagement',
-            description: 'Part-time (20h/week), full-time (40h/week), or project-based engagements.',
-          },
-          {
-            title: 'Swiss Contract & Accountability',
-            description: 'All engagements are under Swiss law with NDA, IP transfer, and performance metrics.',
-          },
-          {
-            title: 'Rapid Onboarding',
-            description: 'Engineers ready in 1–2 weeks. We handle vetting, onboarding, and performance management.',
-          },
-          {
-            title: 'Time Zone Coverage',
-            description: 'CH+IL+UA team spans CET+1 to CET+2, providing near-seamless overlap with European teams.',
-          },
-          {
-            title: 'Knowledge Transfer',
-            description: 'Documentation, code reviews, and handover processes built into every engagement.',
-          },
-        ],
-        meta: {
-          title: 'Team Extension Services — Trident Software Switzerland',
-          description:
-            'Senior software engineers for team augmentation. Swiss contract, CET timezone, 1–2 week start. Backend, frontend, DevOps, ML.',
-        },
-      },
-      de: {
-        title: 'Team-Erweiterung',
-        tagline: 'Erfahrene Entwickler, direkt in Ihrem Team',
-        description:
-          'Verstärken Sie Ihr internes Team mit Senior-Entwicklern aus unserem Talentpool in CH, IL und UA. Vollzeit oder Teilzeit, kurz- oder langfristig, mit Verantwortung nach Schweizer Massstab.',
-        features: [
-          {
-            title: 'Vermittlung von Senior-Entwicklern',
-            description:
-              'Backend-, Frontend-, Mobile-, DevOps- und ML-Entwickler mit mehr als 5 Jahren Berufserfahrung.',
-          },
-          {
-            title: 'Flexible Einsatzmodelle',
-            description: 'Teilzeit (20 Std./Woche), Vollzeit (40 Std./Woche) oder projektbasiert.',
-          },
-          {
-            title: 'Schweizer Vertrag & klare Verantwortung',
-            description:
-              'Alle Einsätze unterstehen Schweizer Recht, mit NDA, Übertragung der Rechte am geistigen Eigentum und Leistungskennzahlen.',
-          },
-          {
-            title: 'Schneller Einstieg',
-            description:
-              'Entwickler sind innert 1–2 Wochen einsatzbereit. Auswahl, Einarbeitung und Leistungssteuerung übernehmen wir.',
-          },
-          {
-            title: 'Abdeckung der Zeitzonen',
-            description:
-              'Das Team in CH, IL und UA deckt MEZ+1 bis MEZ+2 ab und überschneidet sich damit fast vollständig mit europäischen Teams.',
-          },
-          {
-            title: 'Wissenstransfer',
-            description: 'Dokumentation, Code-Reviews und geregelte Übergaben gehören zu jedem Einsatz.',
-          },
-        ],
-        meta: {
-          title: 'Team-Erweiterung mit Senior-Entwicklern | Trident Software',
-          description:
-            'Senior-Softwareentwickler zur Verstärkung Ihres Teams. Schweizer Vertrag, MEZ-Zeitzone, Start innert 1–2 Wochen. Backend, Frontend, DevOps, ML.',
-        },
-      },
-      fr: {
-        title: "Renfort d'équipe",
-        tagline: 'Des ingénieurs seniors intégrés à votre équipe',
-        description:
-          'Renforcez votre équipe interne avec des ingénieurs seniors issus de notre vivier de talents en Suisse, en Israël et en Ukraine. À plein temps ou à temps partiel, à court ou à long terme, avec un engagement de responsabilité suisse.',
-        features: [
-          {
-            title: "Mise à disposition d'ingénieurs seniors",
-            description:
-              "Ingénieurs backend, frontend, mobile, DevOps et ML avec plus de 5 ans d'expérience professionnelle.",
-          },
-          {
-            title: 'Formules flexibles',
-            description: 'Temps partiel (20 h/semaine), temps plein (40 h/semaine) ou mission au projet.',
-          },
-          {
-            title: 'Contrat suisse et responsabilité claire',
-            description:
-              'Toutes les missions relèvent du droit suisse, avec accord de confidentialité, cession de la propriété intellectuelle et indicateurs de performance.',
-          },
-          {
-            title: 'Démarrage rapide',
-            description:
-              "Ingénieurs opérationnels en 1 à 2 semaines. Nous gérons la sélection, l'intégration et le suivi des performances.",
-          },
-          {
-            title: 'Couverture des fuseaux horaires',
-            description:
-              "L'équipe CH+IL+UA couvre CET+1 à CET+2 et travaille ainsi presque aux mêmes heures que les équipes européennes.",
-          },
-          {
-            title: 'Transfert de connaissances',
-            description: 'Documentation, revues de code et processus de passation font partie de chaque mission.',
-          },
-        ],
-        meta: {
-          title: "Renfort d'équipe avec ingénieurs seniors | Trident Software",
-          description:
-            'Ingénieurs logiciels seniors pour renforcer votre équipe. Contrat suisse, fuseau CET, démarrage en 1 à 2 semaines. Backend, frontend, DevOps, ML.',
-        },
-      },
-      it: {
-        title: 'Estensione del team',
-        tagline: 'Ingegneri senior, inseriti nel tuo team',
-        description:
-          'Rafforza il tuo team interno con ingegneri senior dal nostro bacino di talenti in Svizzera, Israele e Ucraina. A tempo pieno o parziale, per periodi brevi o lunghi, con responsabilità svizzera.',
-        features: [
-          {
-            title: 'Inserimento di ingegneri senior',
-            description:
-              'Ingegneri backend, frontend, mobile, DevOps e ML con oltre 5 anni di esperienza professionale.',
-          },
-          {
-            title: 'Collaborazione flessibile',
-            description: 'Part-time (20 h/settimana), tempo pieno (40 h/settimana) o a progetto.',
-          },
-          {
-            title: 'Contratto svizzero e responsabilità chiare',
-            description:
-              'Tutti gli incarichi sono regolati dal diritto svizzero, con NDA, cessione della proprietà intellettuale e indicatori di performance.',
-          },
-          {
-            title: 'Inserimento rapido',
-            description:
-              'Ingegneri operativi in 1–2 settimane. Selezione, inserimento e gestione delle performance sono a carico nostro.',
-          },
-          {
-            title: 'Copertura dei fusi orari',
-            description:
-              'Il team CH+IL+UA copre da CET+1 a CET+2 e lavora quindi quasi in contemporanea con i team europei.',
-          },
-          {
-            title: 'Trasferimento di know-how',
-            description:
-              'Documentazione, code review e processi di passaggio di consegne fanno parte di ogni incarico.',
-          },
-        ],
-        meta: {
-          title: 'Estensione del team con ingegneri senior | Trident Software',
-          description:
-            'Ingegneri software senior per rafforzare il tuo team. Contratto svizzero, fuso CET, avvio in 1–2 settimane. Backend, frontend, DevOps, ML.',
+            'Guida tecnica part-time o ad interim per aziende senza un CTO interno.',
         },
       },
     },

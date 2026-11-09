@@ -27,7 +27,7 @@ export default function CloudServicesSolutionPage() {
       solution={solution}
       label={t('label')}
       primary={t('primary')}
-      secondary={{ href: '/services/cloud-consulting', label: t('secondary') }}
+      secondary={{ href: '/services', label: t('secondary') }}
       features={{ lead: t('featuresLead') }}
       list={{
         label: t('listLabel'),

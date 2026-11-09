@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'users',
   techStack: ['React', 'React Native', 'Node.js', 'PostgreSQL', 'Redis', 'Kafka', 'Elasticsearch', 'AWS'],
   relatedCases: [],
-  relatedServices: ['software-engineering', 'ai-services', 'cloud-consulting', 'devops-and-sre'],
+  relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
       title: 'Social Media & Community',

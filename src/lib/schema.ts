@@ -184,7 +184,7 @@ export function industryPageSchemas(
       '@context': 'https://schema.org',
       '@type': 'Service',
       name: industry.title,
-      description: industry.description,
+      description: industry.description || industry.tagline,
       url,
       provider: {
         '@type': 'Organization',

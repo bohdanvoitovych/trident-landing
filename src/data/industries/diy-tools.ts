@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'wrench',
   techStack: ['React', 'Node.js', 'PostgreSQL', 'Elasticsearch', 'Docker', 'AWS'],
   relatedCases: [],
-  relatedServices: ['software-engineering', 'ui-ux-design', 'cloud-consulting'],
+  relatedServices: ['software-engineering'],
   content: {
     en: {
       title: 'DIY & Tools',

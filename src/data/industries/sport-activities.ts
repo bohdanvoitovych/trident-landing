@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'dumbbell',
   techStack: ['React Native', 'React', 'Node.js', 'PostgreSQL', 'TimescaleDB', 'AWS', 'BLE/GPS SDKs'],
   relatedCases: [],
-  relatedServices: ['software-engineering', 'embedded-and-iot', 'ui-ux-design'],
+  relatedServices: ['software-engineering', 'embedded-and-iot'],
   content: {
     en: {
       title: 'Sport & Fitness',

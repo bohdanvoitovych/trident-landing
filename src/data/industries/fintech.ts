@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'landmark',
   techStack: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Kafka', 'HSM', 'Azure'],
   relatedCases: [],
-  relatedServices: ['software-engineering', 'cloud-consulting', 'devops-and-sre'],
+  relatedServices: ['software-engineering'],
   content: {
     en: {
       title: 'Fintech & Finance',

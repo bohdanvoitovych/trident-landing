@@ -5,7 +5,7 @@ import { SectionHeader } from '@/components/molecules/SectionHeader'
 
 const SERVICES = [
   { key: 'ai', href: '/services/ai-services', img: '/images/stock/ai-agent.jpg', wide: true },
-  { key: 'logistics', href: '/products', img: '/images/stock/logistics.jpg', tall: true },
+  { key: 'logistics', href: '/services/logistics-and-operations-platforms', img: '/images/stock/logistics.jpg', tall: true },
   { key: 'iot', href: '/services/embedded-and-iot', img: '/images/stock/iot-device.jpg' },
   { key: 'custom', href: '/services/software-engineering', img: '/images/stock/b2b-portal.jpg' },
   { key: 'cto', href: '/services/cto-as-a-service', img: '/images/stock/workspace.jpg' },

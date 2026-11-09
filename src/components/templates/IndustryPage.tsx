@@ -41,7 +41,9 @@ export function IndustryPage({ industry }: Props) {
         lead={
           <>
             {industry.tagline}
-            <span className="mt-4 block text-[15px] leading-[1.55]">{industry.description}</span>
+            {industry.description && (
+              <span className="mt-4 block text-[15px] leading-[1.55]">{industry.description}</span>
+            )}
           </>
         }
         actions={
@@ -56,31 +58,37 @@ export function IndustryPage({ industry }: Props) {
         }
       />
 
-      <section className={bg()} aria-labelledby="ind-challenges-h">
-        <div className="container">
-          <SectionHeader
-            id="ind-challenges-h"
-            label={t('challengesLabel')}
-            title={t('challengesTitle')}
-            lead={t('challengesLead', { industry: name })}
-          />
-          <FeatureGrid items={industry.challenges} />
-        </div>
-      </section>
+      {industry.challenges.length > 0 && (
+        <section className={bg()} aria-labelledby="ind-challenges-h">
+          <div className="container">
+            <SectionHeader
+              id="ind-challenges-h"
+              label={t('challengesLabel')}
+              title={t('challengesTitle')}
+              lead={industry.challengesLead ?? t('challengesLead', { industry: name })}
+            />
+            <FeatureGrid items={industry.challenges} />
+          </div>
+        </section>
+      )}
 
-      <section className={bg()} aria-labelledby="ind-solutions-h">
-        <div className="container">
-          <SectionHeader
-            id="ind-solutions-h"
-            label={t('solutionsLabel')}
-            title={t('solutionsTitle')}
-            lead={t('solutionsLead', { industry: name })}
-          />
-          <FeatureGrid items={industry.solutions} cols={2} />
-        </div>
-      </section>
+      {industry.solutions.length > 0 && (
+        <section className={bg()} aria-labelledby="ind-solutions-h">
+          <div className="container">
+            <SectionHeader
+              id="ind-solutions-h"
+              label={t('solutionsLabel')}
+              title={t('solutionsTitle')}
+              lead={industry.solutionsLead ?? t('solutionsLead', { industry: name })}
+            />
+            <FeatureGrid items={industry.solutions} cols={2} />
+          </div>
+        </section>
+      )}
 
-      <StackBand id="ind-stack-h" className={bg()} title={t('stackTitle')} items={industry.techStack} />
+      {industry.techStack.length > 0 && (
+        <StackBand id="ind-stack-h" className={bg()} title={t('stackTitle')} items={industry.techStack} />
+      )}
 
       {relatedServices.length > 0 && (
         <RelatedServices

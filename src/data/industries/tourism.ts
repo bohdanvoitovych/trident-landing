@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'map',
   techStack: ['React', 'React Native', 'Node.js', 'PostgreSQL', 'Redis', 'Stripe', 'AWS'],
   relatedCases: [],
-  relatedServices: ['software-engineering', 'ui-ux-design', 'ai-services'],
+  relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
       title: 'Tourism & Travel',

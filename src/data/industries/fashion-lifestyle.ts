@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'shirt',
   techStack: ['Next.js', 'Shopify', 'Sanity', 'PostgreSQL', 'Cloudinary', 'Vercel', 'OpenAI'],
   relatedCases: ['lapochette'],
-  relatedServices: ['software-engineering', 'ui-ux-design', 'ai-services'],
+  relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
       title: 'Fashion & Lifestyle',

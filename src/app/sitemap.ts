@@ -1,5 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { getPostSlugs } from '@/data/blog'
+import { getIndustrySlugs } from '@/data/industries'
+import { getServiceSlugs } from '@/data/services'
 import { getLocationSlugs } from '@/data/locations'
 import { getTechnologySlugs } from '@/data/technologies'
 import { routing } from '@/i18n/routing'
@@ -12,20 +14,9 @@ const BASE_URL = 'https://trident-software.ch'
 export default function sitemap(): MetadataRoute.Sitemap {
   if (isNoIndexSite()) return []
 
-  const servicesSlugs = [
-    'ai-services', 'software-engineering', 'embedded-and-iot',
-    'cto-as-a-service', 'cloud-consulting', 'devops-and-sre',
-    'ui-ux-design', 'team-extension',
-  ]
+  const servicesSlugs = getServiceSlugs()
 
-  const industrySlugs = [
-    'healthcare', 'automotive', 'logistics', 'fintech',
-    'retail-ecommerce', 'saas', 'manufacturing', 'proptech',
-    'energy', 'insurance', 'hospitality', 'legaltech',
-    'fashion-lifestyle', 'agriculture', 'public-sector', 'media-entertainment',
-    'tourism', 'fmcg', 'diy-tools', 'catering', 'blockchain',
-    'social-media', 'games', 'sport-activities', 'education',
-  ]
+  const industrySlugs = getIndustrySlugs()
 
   const caseSlugs = [
     'kleap-ai-builder', 'zenit-auto-b2b', '8move-driver',

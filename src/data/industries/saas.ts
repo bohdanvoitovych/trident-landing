@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'cloud',
   techStack: ['Node.js', 'React', 'PostgreSQL', 'Redis', 'Stripe', 'PostHog', 'AWS'],
   relatedCases: ['kleap-ai-builder'],
-  relatedServices: ['software-engineering', 'ai-services', 'devops-and-sre'],
+  relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
       title: 'SaaS & Software Products',

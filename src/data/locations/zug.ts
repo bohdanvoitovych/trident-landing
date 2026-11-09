@@ -2,7 +2,7 @@ import type { LocationRecord } from './types'
 
 const record: LocationRecord = {
   slug: 'zug',
-  relatedServices: ['software-engineering', 'ai-services', 'cloud-consulting', 'devops-and-sre'],
+  relatedServices: ['software-engineering', 'ai-services'],
   relatedCases: ['zenit-auto-b2b', 'kleap-ai-builder'],
   content: {
     en: {

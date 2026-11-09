@@ -5,7 +5,7 @@ const record: IndustryRecord = {
   icon: 'car',
   techStack: ['Node.js', 'React', 'PostgreSQL', 'Redis', 'MQTT', 'Kubernetes', 'AWS'],
   relatedCases: ['zenit-auto-b2b'],
-  relatedServices: ['software-engineering', 'ai-services', 'cloud-consulting'],
+  relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
       title: 'Automotive',

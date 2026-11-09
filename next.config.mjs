@@ -1,6 +1,7 @@
 import { buildCsp } from './src/lib/csp.mjs'
 import createNextIntlPlugin from 'next-intl/plugin'
 import { buildOldPostRedirects, TOPIC_REDIRECTS } from './src/data/redirects/old-post-slugs.mjs'
+import { buildRemovedSlugRedirects } from './src/data/redirects/removed-slugs.mjs'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
@@ -88,8 +89,8 @@ const nextConfig = {
       { source: '/fr/contacts/', destination: '/fr/contact', permanent: true },
       { source: '/fr/nos-services', destination: '/fr/services', permanent: true },
       { source: '/fr/nos-services/', destination: '/fr/services', permanent: true },
-      { source: '/fr/nos-services/conseil-en-cloud', destination: '/fr/services/cloud-consulting', permanent: true },
-      { source: '/fr/nos-services/conseil-en-cloud/', destination: '/fr/services/cloud-consulting', permanent: true },
+      { source: '/fr/nos-services/conseil-en-cloud', destination: '/fr/services', permanent: true },
+      { source: '/fr/nos-services/conseil-en-cloud/', destination: '/fr/services', permanent: true },
       { source: '/fr/nos-services/embarque-et-iot', destination: '/fr/services/embedded-and-iot', permanent: true },
       { source: '/fr/nos-services/embarque-et-iot/', destination: '/fr/services/embedded-and-iot', permanent: true },
       { source: '/fr/nos-services/startups-cto-as-a-service', destination: '/fr/services/cto-as-a-service', permanent: true },
@@ -132,8 +133,8 @@ const nextConfig = {
       { source: '/de/kontakte/', destination: '/de/contact', permanent: true },
       { source: '/de/unsere-dienstleistungen', destination: '/de/services', permanent: true },
       { source: '/de/unsere-dienstleistungen/', destination: '/de/services', permanent: true },
-      { source: '/de/unsere-dienstleistungen/cloud-beratung', destination: '/de/services/cloud-consulting', permanent: true },
-      { source: '/de/unsere-dienstleistungen/cloud-beratung/', destination: '/de/services/cloud-consulting', permanent: true },
+      { source: '/de/unsere-dienstleistungen/cloud-beratung', destination: '/de/services', permanent: true },
+      { source: '/de/unsere-dienstleistungen/cloud-beratung/', destination: '/de/services', permanent: true },
       { source: '/de/unsere-dienstleistungen/embedded-und-iot', destination: '/de/services/embedded-and-iot', permanent: true },
       { source: '/de/unsere-dienstleistungen/embedded-und-iot/', destination: '/de/services/embedded-and-iot', permanent: true },
       { source: '/de/unsere-dienstleistungen/startups-cto-as-a-service', destination: '/de/services/cto-as-a-service', permanent: true },
@@ -172,8 +173,8 @@ const nextConfig = {
       { source: '/it/chi-siamo/', destination: '/it/about', permanent: true },
       { source: '/it/i-nostri-servizi', destination: '/it/services', permanent: true },
       { source: '/it/i-nostri-servizi/', destination: '/it/services', permanent: true },
-      { source: '/it/i-nostri-servizi/consulenza-cloud', destination: '/it/services/cloud-consulting', permanent: true },
-      { source: '/it/i-nostri-servizi/consulenza-cloud/', destination: '/it/services/cloud-consulting', permanent: true },
+      { source: '/it/i-nostri-servizi/consulenza-cloud', destination: '/it/services', permanent: true },
+      { source: '/it/i-nostri-servizi/consulenza-cloud/', destination: '/it/services', permanent: true },
       { source: '/it/i-nostri-servizi/embedded-e-iot', destination: '/it/services/embedded-and-iot', permanent: true },
       { source: '/it/i-nostri-servizi/embedded-e-iot/', destination: '/it/services/embedded-and-iot', permanent: true },
       { source: '/it/i-nostri-servizi/startup-cto-as-a-service', destination: '/it/services/cto-as-a-service', permanent: true },
@@ -423,6 +424,9 @@ const nextConfig = {
       // ─── Old WordPress blog posts (root slug → /blog/<slug>) and tag archives ───
       ...buildOldPostRedirects(),
       ...TOPIC_REDIRECTS,
+
+      // ─── Industries and services removed with the PDF structure → their listing ───
+      ...buildRemovedSlugRedirects(),
     ]
   },
 

@@ -453,16 +453,16 @@
     },
     "industries": {
       "metaTitle": "Sviluppo software per settore | Sanità, auto, fintech | Trident Software",
-      "metaDescription": "Sviluppo software su misura per oltre 25 settori: sanità, automotive, fintech, logistica, retail, SaaS, manifattura. Team svizzero dal 2009. Budget fissi, conforme alla nLPD.",
+      "metaDescription": "Sviluppo software su misura per oltre 20 settori: sanità, automotive, fintech, logistica, retail, SaaS, manifattura. Team svizzero dal 2009. Budget fissi, conforme alla nLPD.",
       "crumb": "Settori",
       "label": "Competenza di settore",
-      "title": "Sviluppo software su misura<br></br>per oltre 25 settori",
+      "title": "Sviluppo software su misura<br></br>per oltre 20 settori",
       "lead": "Dalle startup MedTech ai distributori automotive e alle catene retail, il nostro team di ingegneri svizzero sviluppa software specifico che si adatta alle norme, ai processi e agli obiettivi di crescita del tuo settore.",
       "leadNote": "Ogni progetto parte dai vincoli del tuo settore: requisiti normativi (nLPD, GDPR, MDR), complessità operativa e contesto competitivo. Nessuna soluzione generica.",
       "discuss": "Parliamo del tuo progetto",
       "facts": {
         "industries": {
-          "value": "25+",
+          "value": "20+",
           "label": "Settori coperti"
         },
         "projects": {
@@ -571,12 +571,12 @@
       "viewWork": "Guarda i nostri lavori"
     },
     "services": {
-      "metaTitle": "Sviluppo software in Svizzera | IA, cloud, DevOps e altro | Trident Software",
-      "metaDescription": "Sviluppo software su misura in Svizzera: integrazione IA, app web e mobile, sistemi embedded, cloud, DevOps, CTO-as-a-Service. Budget fissi, oltre 27 progetti dal 2009.",
+      "metaTitle": "Sviluppo software in Svizzera | Agenti AI, logistica, IoT | Trident Software",
+      "metaDescription": "Agenti AI & automazione LLM, piattaforme logistiche, sistemi gestionali su misura, IoT e CTO as a Service. Budget fissi, oltre 27 progetti dal 2009.",
       "crumb": "Servizi",
       "label": "Cosa sviluppiamo",
       "title": "Servizi di sviluppo software per aziende svizzere ed europee",
-      "lead": "Dall'integrazione dell'IA e dalle piattaforme web su misura fino ai sistemi embedded e all'infrastruttura cloud: ingegneria end-to-end con budget fissi e conformità svizzera già inclusa.",
+      "lead": "Dagli agenti AI e dalle piattaforme logistiche ai sistemi gestionali su misura e ai dispositivi connessi: ingegneria end-to-end con budget fissi e conformità svizzera già inclusa.",
       "servicesTitle": "Cosa consegniamo",
       "processLabel": "Processo",
       "processTitle": "Come lavoriamo con te",
@@ -675,7 +675,7 @@
       "iot": {
         "label": "IoT ed embedded",
         "primary": "Parliamo del tuo progetto",
-        "secondary": "Servizio embedded e IoT",
+        "secondary": "IoT & prodotti connessi",
         "featuresLead": "Soluzioni IoT ed embedded complete: dal firmware alle dashboard nel cloud, con la conformità dove serve davvero.",
         "listLabel": "Settori",
         "listTitle": "I settori in cui operiamo",
@@ -722,7 +722,7 @@
       "cloudServices": {
         "label": "Servizi cloud",
         "primary": "Parliamo della tua infrastruttura",
-        "secondary": "Servizio di consulenza cloud",
+        "secondary": "I nostri servizi",
         "featuresLead": "Servizi cloud completi: dalla valutazione iniziale e dalla migrazione fino alla gestione operativa continuativa.",
         "listLabel": "Standard e piattaforme",
         "listTitle": "Multi-cloud e pronto per la conformità",

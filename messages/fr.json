@@ -453,16 +453,16 @@
     },
     "industries": {
       "metaTitle": "Développement logiciel par secteur | Santé, auto, fintech | Trident Software",
-      "metaDescription": "Développement logiciel sur mesure pour plus de 25 secteurs : santé, automobile, fintech, logistique, commerce, SaaS, industrie. Équipe suisse depuis 2009. Budgets fixes, conforme nLPD.",
+      "metaDescription": "Développement logiciel sur mesure pour plus de 20 secteurs : santé, automobile, fintech, logistique, commerce, SaaS, industrie. Équipe suisse depuis 2009. Budgets fixes, conforme nLPD.",
       "crumb": "Secteurs",
       "label": "Expertise sectorielle",
-      "title": "Développement logiciel sur mesure<br></br>pour plus de 25 secteurs",
+      "title": "Développement logiciel sur mesure<br></br>pour plus de 20 secteurs",
       "lead": "Des startups MedTech aux distributeurs automobiles en passant par les chaînes de magasins, notre équipe d'ingénieurs suisse livre des logiciels métier adaptés à la réglementation, aux processus et aux objectifs de croissance de votre secteur.",
       "leadNote": "Chaque projet part des contraintes propres à votre secteur : exigences réglementaires (nLPD, RGPD, MDR), complexité opérationnelle et environnement concurrentiel. Pas de solutions génériques.",
       "discuss": "Parler de votre projet",
       "facts": {
         "industries": {
-          "value": "25+",
+          "value": "20+",
           "label": "Secteurs couverts"
         },
         "projects": {
@@ -571,12 +571,12 @@
       "viewWork": "Voir nos réalisations"
     },
     "services": {
-      "metaTitle": "Développement logiciel en Suisse | IA, cloud, DevOps | Trident Software",
-      "metaDescription": "Développement logiciel sur mesure en Suisse : intégration IA, applications web et mobiles, embarqué, cloud, DevOps, CTO-as-a-Service. Budgets fixes, plus de 27 projets depuis 2009.",
+      "metaTitle": "Développement logiciel en Suisse | Agents IA, logistique, IoT | Trident Software",
+      "metaDescription": "Agents IA & automatisation LLM, plateformes logistiques, systèmes de gestion sur mesure, IoT et CTO as a Service. Budgets fixes, plus de 27 projets depuis 2009.",
       "crumb": "Services",
       "label": "Ce que nous construisons",
       "title": "Services de développement logiciel pour les entreprises suisses et européennes",
-      "lead": "De l'intégration de l'IA et des plateformes web sur mesure aux systèmes embarqués et à l'infrastructure cloud : une ingénierie de bout en bout, avec des budgets fixes et la conformité suisse intégrée.",
+      "lead": "Des agents IA et des plateformes logistiques aux systèmes de gestion sur mesure et aux appareils connectés : une ingénierie de bout en bout, avec des budgets fixes et la conformité suisse intégrée.",
       "servicesTitle": "Ce que nous livrons",
       "processLabel": "Méthode",
       "processTitle": "Comment nous travaillons",
@@ -675,7 +675,7 @@
       "iot": {
         "label": "IoT et embarqué",
         "primary": "Parler de votre projet",
-        "secondary": "Service embarqué et IoT",
+        "secondary": "IoT & produits connectés",
         "featuresLead": "Des solutions IoT et embarquées de bout en bout : du firmware aux tableaux de bord cloud, avec la conformité là où elle compte.",
         "listLabel": "Secteurs",
         "listTitle": "Les secteurs que nous servons",
@@ -722,7 +722,7 @@
       "cloudServices": {
         "label": "Services cloud",
         "primary": "Parler de votre infrastructure",
-        "secondary": "Service de conseil cloud",
+        "secondary": "Nos services",
         "featuresLead": "Des services cloud de bout en bout : de l'audit initial et de la migration jusqu'à l'exploitation managée au quotidien.",
         "listLabel": "Normes et plateformes",
         "listTitle": "Multi-cloud et prêt pour la conformité",

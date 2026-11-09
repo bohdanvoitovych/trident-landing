@@ -453,16 +453,16 @@
     },
     "industries": {
       "metaTitle": "Software Development by Industry | Healthcare, Automotive, Fintech & More | Trident Software",
-      "metaDescription": "Custom software development for 25+ industries — healthcare, automotive, fintech, logistics, retail, SaaS, manufacturing. Swiss engineering team since 2009. Fixed budgets, revFADP compliance.",
+      "metaDescription": "Custom software development for 20+ industries: healthcare, automotive, fintech, logistics, retail, SaaS, manufacturing. Swiss engineering team since 2009. Fixed budgets, revFADP compliance.",
       "crumb": "Industries",
       "label": "Industry expertise",
-      "title": "Custom Software Development<br></br>for 25+ Industries",
+      "title": "Custom Software Development<br></br>for 20+ Industries",
       "lead": "From MedTech startups to automotive distributors and retail chains — our Swiss engineering team delivers domain-specific software that fits your industry regulations, workflows, and growth targets.",
       "leadNote": "Every project starts with your industry-specific constraints: regulatory requirements (revFADP, GDPR, MDR), operational complexity, and competitive landscape. No generic solutions.",
       "discuss": "Discuss your project",
       "facts": {
         "industries": {
-          "value": "25+",
+          "value": "20+",
           "label": "Industries covered"
         },
         "projects": {
@@ -571,12 +571,12 @@
       "viewWork": "View our work"
     },
     "services": {
-      "metaTitle": "Software Development Services Switzerland | AI, Cloud, DevOps & More | Trident Software",
-      "metaDescription": "Custom software development services in Switzerland — AI integration, web & mobile apps, embedded systems, cloud consulting, DevOps, CTO-as-a-Service. Fixed budgets, Swiss compliance, 27+ projects delivered since 2009.",
+      "metaTitle": "Software Services Switzerland | AI Agents, Logistics, IoT | Trident Software",
+      "metaDescription": "AI agents & LLM automation, logistics & operations platforms, custom business systems, IoT and CTO as a Service. Fixed budgets, 27+ projects since 2009.",
       "crumb": "Services",
       "label": "What we build",
       "title": "Software Development Services for Swiss & European Businesses",
-      "lead": "From AI integration and custom web platforms to embedded systems and cloud infrastructure — end-to-end engineering with fixed budgets and Swiss compliance built in.",
+      "lead": "From AI agents and logistics platforms to custom business systems and connected devices: end-to-end engineering with fixed budgets and Swiss compliance built in.",
       "servicesTitle": "What we deliver",
       "processLabel": "Process",
       "processTitle": "How we engage",
@@ -675,7 +675,7 @@
       "iot": {
         "label": "IoT & Embedded",
         "primary": "Discuss your project",
-        "secondary": "Embedded & IoT service",
+        "secondary": "IoT & connected products",
         "featuresLead": "End-to-end IoT and embedded solutions — from firmware to cloud dashboards, with compliance where it matters.",
         "listLabel": "Industries",
         "listTitle": "Sectors we serve",
@@ -722,7 +722,7 @@
       "cloudServices": {
         "label": "Cloud Services",
         "primary": "Discuss your infrastructure",
-        "secondary": "Cloud consulting service",
+        "secondary": "Our services",
         "featuresLead": "End-to-end cloud services — from initial assessment and migration to ongoing managed operations.",
         "listLabel": "Standards & platforms",
         "listTitle": "Multi-cloud, compliance-ready",
