@@ -13,7 +13,7 @@ export function GET() {
   const scriptUrl = process.env.UMAMI_SCRIPT_URL
 
   if (!websiteId || !scriptUrl) {
-    return NextResponse.json(null, { status: 204 })
+    return NextResponse.json(null, { headers: { 'Cache-Control': 'no-store' } })
   }
 
   return NextResponse.json(
