@@ -7,6 +7,11 @@ const FALLBACK_OG_IMAGE = `${SITE_URL}/og-default.png`
 const LOCALES = ['en', 'de', 'fr', 'it'] as const
 type Locale = (typeof LOCALES)[number]
 
+/** True while the site runs on the temporary domain (build arg NEXT_PUBLIC_NOINDEX=1). */
+export function isNoIndexSite(): boolean {
+  return process.env.NEXT_PUBLIC_NOINDEX === '1'
+}
+
 /** Absolute URL of `path` in `locale`. English has no prefix (localePrefix: 'as-needed'). */
 export function localizedUrl(path: string, locale: string = 'en'): string {
   const clean = path === '/' ? '' : path
@@ -68,7 +73,7 @@ export function buildMetadata({
   const alternateLocales = published.filter((l) => l !== locale).map(
     (l) => OG_LOCALE_MAP[l],
   )
-  if (!isTranslated) noIndex = true
+  if (!isTranslated || isNoIndexSite()) noIndex = true
   const image = ogImage || FALLBACK_OG_IMAGE
 
   return {

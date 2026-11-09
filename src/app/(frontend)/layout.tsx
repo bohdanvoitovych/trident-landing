@@ -8,6 +8,7 @@ import { CookieBanner } from '@/components/molecules/CookieBanner'
 import AttributionTracker from '@/components/atoms/AttributionTracker'
 import UmamiScript from '@/components/atoms/UmamiScript'
 import { Reveal } from '@/components/molecules/Reveal'
+import { isNoIndexSite } from '@/lib/metadata'
 import './styles.css'
 import './trident.css'
 
@@ -45,6 +46,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     description: t('description'),
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://trident-software.ch'),
+    ...(isNoIndexSite() && { robots: { index: false, follow: false } }),
   }
 }
 

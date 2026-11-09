@@ -3,13 +3,15 @@ import { getPostSlugs } from '@/data/blog'
 import { getLocationSlugs } from '@/data/locations'
 import { getTechnologySlugs } from '@/data/technologies'
 import { routing } from '@/i18n/routing'
-import { localizedUrl } from '@/lib/metadata'
+import { isNoIndexSite, localizedUrl } from '@/lib/metadata'
 
 const HREFLANG: Record<string, string> = { en: 'en', de: 'de-CH', fr: 'fr-CH', it: 'it-CH' }
 
 const BASE_URL = 'https://trident-software.ch'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  if (isNoIndexSite()) return []
+
   const servicesSlugs = [
     'ai-services', 'software-engineering', 'embedded-and-iot',
     'cto-as-a-service', 'cloud-consulting', 'devops-and-sre',
