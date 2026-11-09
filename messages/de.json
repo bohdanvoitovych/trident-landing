@@ -655,7 +655,7 @@
       "ctaTitle": "Unsicher, was passt?",
       "ctaLead": "Erzählen Sie uns von Ihrem Projekt. Innert 24 Stunden empfehlen wir Ihnen die passende Lösung samt Festpreis.",
       "ctaPrimary": "Empfehlung erhalten",
-      "ctaSecondary": "Preise ansehen",
+      "ctaSecondary": "Website-Pakete ansehen",
       "mobileApps": {
         "label": "Mobile Apps",
         "primary": "Ihre App besprechen",
@@ -773,7 +773,7 @@
       "websites": {
         "label": "Websites",
         "heroPrimary": "Projekt starten",
-        "heroSecondary": "Alle Preise ansehen",
+        "heroSecondary": "Zusatzoptionen ansehen",
         "packagesLabel": "Pakete",
         "packagesTitle": "Vier Website-Pakete",
         "packagesLead": "Fester Preis, fester Termin. Jedes Paket lässt sich mit optionalen Zusatzleistungen kombinieren.",
@@ -840,13 +840,13 @@
         "ctaTitle": "Bereit für Ihre neue Website?",
         "ctaLead": "Wählen Sie ein Paket oder erzählen Sie uns von Ihrem Projekt. Innert 24 Stunden erhalten Sie eine verbindliche Offerte.",
         "ctaPrimary": "Offerte anfordern",
-        "ctaSecondary": "Preisdetails ansehen"
+        "ctaSecondary": "Zusatzoptionen ansehen"
       },
       "websitePackage": {
         "metaTitle": "{name}: Website-Paket | Trident Software",
         "label": "Website-Paket",
         "heroPrimary": "Offerte anfordern",
-        "heroSecondary": "Alle Preise ansehen",
+        "heroSecondary": "Alle Website-Pakete ansehen",
         "mostPopular": "Am beliebtesten",
         "fixedPrice": "Festpreis",
         "deliveredIn": "Lieferung in {timeline}",

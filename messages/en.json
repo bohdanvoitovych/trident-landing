@@ -655,7 +655,7 @@
       "ctaTitle": "Not sure which fits?",
       "ctaLead": "Tell us about your project. We'll recommend the right solution and a fixed price within 24 hours.",
       "ctaPrimary": "Get a recommendation",
-      "ctaSecondary": "View pricing",
+      "ctaSecondary": "See website packages",
       "mobileApps": {
         "label": "Mobile Apps",
         "primary": "Discuss your app",
@@ -773,7 +773,7 @@
       "websites": {
         "label": "Websites",
         "heroPrimary": "Start your project",
-        "heroSecondary": "See all pricing",
+        "heroSecondary": "See add-ons",
         "packagesLabel": "Packages",
         "packagesTitle": "Four website packages",
         "packagesLead": "Fixed price, fixed timeline. Each package can be combined with optional add-ons.",
@@ -840,13 +840,13 @@
         "ctaTitle": "Ready to launch your website?",
         "ctaLead": "Pick a package or tell us about your project. We'll send a fixed quote within 24 hours.",
         "ctaPrimary": "Get a quote",
-        "ctaSecondary": "See pricing details"
+        "ctaSecondary": "See add-ons"
       },
       "websitePackage": {
         "metaTitle": "{name} — Website Package | Trident Software",
         "label": "Website Package",
         "heroPrimary": "Get a quote",
-        "heroSecondary": "See all pricing",
+        "heroSecondary": "See all website packages",
         "mostPopular": "Most Popular",
         "fixedPrice": "Fixed price",
         "deliveredIn": "Delivered in {timeline}",

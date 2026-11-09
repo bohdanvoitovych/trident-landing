@@ -655,7 +655,7 @@
       "ctaTitle": "Non sai quale scegliere?",
       "ctaLead": "Raccontaci il tuo progetto. Entro 24 ore ti consigliamo la soluzione giusta con un prezzo fisso.",
       "ctaPrimary": "Ricevi un consiglio",
-      "ctaSecondary": "Vedi i prezzi",
+      "ctaSecondary": "Vedi i pacchetti per siti web",
       "mobileApps": {
         "label": "App mobili",
         "primary": "Parliamo della tua app",
@@ -773,7 +773,7 @@
       "websites": {
         "label": "Siti web",
         "heroPrimary": "Avvia il tuo progetto",
-        "heroSecondary": "Vedi tutti i prezzi",
+        "heroSecondary": "Vedi i servizi aggiuntivi",
         "packagesLabel": "Pacchetti",
         "packagesTitle": "Quattro pacchetti per siti web",
         "packagesLead": "Prezzo fisso, tempi fissi. Ogni pacchetto si può combinare con servizi aggiuntivi opzionali.",
@@ -840,13 +840,13 @@
         "ctaTitle": "Pronto a lanciare il tuo sito?",
         "ctaLead": "Scegli un pacchetto o raccontaci il tuo progetto. Entro 24 ore ricevi un preventivo a prezzo fisso.",
         "ctaPrimary": "Richiedi un preventivo",
-        "ctaSecondary": "Vedi i dettagli dei prezzi"
+        "ctaSecondary": "Vedi i servizi aggiuntivi"
       },
       "websitePackage": {
         "metaTitle": "{name}: pacchetto sito web | Trident Software",
         "label": "Pacchetto sito web",
         "heroPrimary": "Richiedi un preventivo",
-        "heroSecondary": "Vedi tutti i prezzi",
+        "heroSecondary": "Vedi tutti i pacchetti per siti web",
         "mostPopular": "Il più scelto",
         "fixedPrice": "Prezzo fisso",
         "deliveredIn": "Consegna in {timeline}",

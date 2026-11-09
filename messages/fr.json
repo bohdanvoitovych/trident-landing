@@ -655,7 +655,7 @@
       "ctaTitle": "Vous hésitez entre plusieurs options ?",
       "ctaLead": "Parlez-nous de votre projet. Sous 24 heures, nous vous recommandons la bonne solution avec un prix fixe.",
       "ctaPrimary": "Obtenir une recommandation",
-      "ctaSecondary": "Voir les tarifs",
+      "ctaSecondary": "Voir les forfaits de sites web",
       "mobileApps": {
         "label": "Applications mobiles",
         "primary": "Parler de votre app",
@@ -773,7 +773,7 @@
       "websites": {
         "label": "Sites web",
         "heroPrimary": "Lancer votre projet",
-        "heroSecondary": "Voir tous les tarifs",
+        "heroSecondary": "Voir les options complémentaires",
         "packagesLabel": "Forfaits",
         "packagesTitle": "Quatre forfaits de site web",
         "packagesLead": "Prix fixe, délai fixe. Chaque forfait peut être complété par des options.",
@@ -840,13 +840,13 @@
         "ctaTitle": "Prêt à lancer votre site ?",
         "ctaLead": "Choisissez un forfait ou parlez-nous de votre projet. Vous recevez un devis à prix fixe sous 24 heures.",
         "ctaPrimary": "Demander un devis",
-        "ctaSecondary": "Voir le détail des tarifs"
+        "ctaSecondary": "Voir les options complémentaires"
       },
       "websitePackage": {
         "metaTitle": "{name} : forfait site web | Trident Software",
         "label": "Forfait site web",
         "heroPrimary": "Demander un devis",
-        "heroSecondary": "Voir tous les tarifs",
+        "heroSecondary": "Tous les forfaits de sites web",
         "mostPopular": "Le plus choisi",
         "fixedPrice": "Prix fixe",
         "deliveredIn": "Livré en {timeline}",
