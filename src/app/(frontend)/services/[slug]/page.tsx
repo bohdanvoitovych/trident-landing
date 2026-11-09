@@ -38,7 +38,8 @@ export default async function ServiceSlugPage({ params }: Props) {
   const { detail } = service
   return (
     <>
-      <JsonLd data={servicePageSchema({ slug, title: service.title, description: service.description }, locale)} />
+      {/* The page hero already emits the BreadcrumbList, so only the service schema goes here. */}
+      <JsonLd data={servicePageSchema({ slug, title: service.title, description: service.description }, locale).slice(0, 1)} />
       {detail ? <ServiceDetailPage service={{ ...service, detail }} /> : <ServicePage service={service} />}
     </>
   )

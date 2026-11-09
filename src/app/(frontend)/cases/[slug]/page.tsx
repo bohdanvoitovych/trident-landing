@@ -37,6 +37,7 @@ export default async function CaseSlugPage({ params }: Props) {
   return (
     <>
       <JsonLd
+        // CasePage's hero already emits the BreadcrumbList, so only the Article goes here.
         data={caseStudySchemas(
           {
             slug,
@@ -46,7 +47,7 @@ export default async function CaseSlugPage({ params }: Props) {
             publishedAt: caseStudy.publishedAt,
           },
           locale,
-        )}
+        ).slice(0, 1)}
       />
       <CasePage caseStudy={caseStudy} />
     </>
