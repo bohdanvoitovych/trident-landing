@@ -3174,7 +3174,7 @@ Einer unserer Kunden betrieb mehrere EC2-Instanzen für seine wachsende Last. Ei
 
 Die **t3.large**-Instanzen waren leistungsfähiger, als der tatsächliche Bedarf verlangte. Mit dem Wechsel auf **t3.medium** reduzierte der Kunde unnötige Kapazität bei gleicher Leistung.
 
-Diese AWS-Kostenoptimierung brachte **3000 USD Einsparung** auf der Cloud-Rechnung innerhalb eines Jahres, und das Unternehmen setzte diese Mittel ein, ohne die Produktivität zu beeinträchtigen.
+Diese AWS-Kostenoptimierung brachte **3'000 USD Einsparung** auf der Cloud-Rechnung innerhalb eines Jahres, und das Unternehmen setzte diese Mittel ein, ohne die Produktivität zu beeinträchtigen.
 
 ### Nicht-Produktivumgebungen verwalten
 
