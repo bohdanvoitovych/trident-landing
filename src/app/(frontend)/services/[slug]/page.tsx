@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { ServicePage } from '@/components/templates/ServicePage'
+import { ServiceDetailPage } from '@/components/templates/ServiceDetailPage'
 import { getServiceBySlug, getServiceLocales, getServiceSlugs } from '@/data/services'
 import { buildMetadata } from '@/lib/metadata'
 
@@ -31,5 +32,6 @@ export default async function ServiceSlugPage({ params }: Props) {
   const service = getServiceBySlug(slug, await getLocale())
   if (!service) notFound()
 
-  return <ServicePage service={service} />
+  const { detail } = service
+  return detail ? <ServiceDetailPage service={{ ...service, detail }} /> : <ServicePage service={service} />
 }

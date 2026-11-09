@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import { useTranslations } from 'next-intl'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { ProcessGantt } from './ProcessGantt'
@@ -11,12 +12,22 @@ const STAGES = [
   { k: 'operation', a: 26, b: 31 },
 ] as const
 
-export function Process() {
+export type ProcessStage = { title: string; days: string; text: ReactNode }
+
+type Props = {
+  /** Full PDF wording for a page that needs it (e.g. /services/ai-services); six stages in STAGES order. */
+  title?: string
+  lead?: string
+  note?: string
+  stages?: ProcessStage[]
+}
+
+export function Process({ title, lead, note, stages: texts }: Props = {}) {
   const t = useTranslations('sections.process')
-  const stages = STAGES.map(({ k, a, b }) => ({
-    t: t(`stages.${k}.title`),
-    d: t(`stages.${k}.text`),
-    days: t(`stages.${k}.days`),
+  const stages = STAGES.map(({ k, a, b }, i) => ({
+    t: texts?.[i]?.title ?? t(`stages.${k}.title`),
+    d: texts?.[i]?.text ?? t(`stages.${k}.text`),
+    days: texts?.[i]?.days ?? t(`stages.${k}.days`),
     a,
     b,
   }))
@@ -26,13 +37,13 @@ export function Process() {
         <SectionHeader
           id="proc-h"
           label={t('label')}
-          title={t('title')}
-          lead={t('lead')}
+          title={title ?? t('title')}
+          lead={lead ?? t('lead')}
         />
         <div className="panel reveal">
           <ProcessGantt stages={stages} />
           <p className="small" style={{ marginTop: 22 }}>
-            {t('note')}
+            {note ?? t('note')}
           </p>
         </div>
       </div>

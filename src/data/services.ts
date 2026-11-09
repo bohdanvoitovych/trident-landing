@@ -1,4 +1,5 @@
 import { pick, localesOf, type Localized } from '@/lib/localized'
+import { AI_SERVICES_DETAIL, type ServiceDetail } from './ai-services'
 
 export type ServiceFeature = {
   title: string
@@ -15,6 +16,8 @@ export type ServiceText = {
     title: string
     description: string
   }
+  /** Long-form page; when present, /services/<slug> renders ServiceDetailPage instead of ServicePage. */
+  detail?: ServiceDetail
 }
 
 type ServiceRecord = {
@@ -84,6 +87,7 @@ const records: ServiceRecord[] = [
           description:
             'Enquiry handling, document processing, recommendation, retrieval over corporate knowledge. Agents wired into real systems, not chat widgets.',
         },
+        detail: AI_SERVICES_DETAIL.en,
       },
       de: {
         title: 'KI-Agenten & LLM-Automatisierung',
@@ -126,6 +130,7 @@ const records: ServiceRecord[] = [
           description:
             'Anfragenbearbeitung, Dokumentenverarbeitung, Empfehlungen, Suche im Firmenwissen. Agenten, die an Ihre echten Systeme angebunden sind, keine Chat-Widgets.',
         },
+        detail: AI_SERVICES_DETAIL.de,
       },
       fr: {
         title: 'Agents IA & automatisation LLM',
@@ -168,6 +173,7 @@ const records: ServiceRecord[] = [
           description:
             "Traitement des demandes et des documents, recommandations, recherche dans le savoir de l'entreprise. Des agents branchés sur vos vrais systèmes.",
         },
+        detail: AI_SERVICES_DETAIL.fr,
       },
       it: {
         title: 'Agenti AI & automazione LLM',
@@ -210,6 +216,7 @@ const records: ServiceRecord[] = [
           description:
             'Gestione delle richieste, elaborazione documenti, raccomandazioni, ricerca nel sapere aziendale. Agenti collegati ai tuoi sistemi reali.',
         },
+        detail: AI_SERVICES_DETAIL.it,
       },
     },
   },

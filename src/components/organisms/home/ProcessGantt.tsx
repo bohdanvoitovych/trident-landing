@@ -1,10 +1,10 @@
 'use client'
 
-import { useEffect, useRef, useState, type CSSProperties } from 'react'
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import { useTranslations } from 'next-intl'
 import { useActive } from '@/lib/motion'
 
-type Stage = { t: string; d: string; days: string; a: number; b: number }
+type Stage = { t: string; d: ReactNode; days: string; a: number; b: number }
 
 /** Gantt with a day scrubber. Play advances one day every 170 ms and stops off-screen. */
 export function ProcessGantt({ stages }: { stages: Stage[] }) {
