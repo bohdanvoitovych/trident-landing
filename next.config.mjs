@@ -1,5 +1,6 @@
 import { buildCsp } from './src/lib/csp.mjs'
 import createNextIntlPlugin from 'next-intl/plugin'
+import { buildOldPostRedirects, TOPIC_REDIRECTS } from './src/data/redirects/old-post-slugs.mjs'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
@@ -418,6 +419,10 @@ const nextConfig = {
       { source: '/it/vendita-di-gomme-usate-online-consigli-essenziali/', destination: '/it/blog', permanent: true },
       { source: '/it/lancio-del-sito-web-mastertool-negozio-di-utensili-online-in-slovacchia', destination: '/it/blog', permanent: true },
       { source: '/it/lancio-del-sito-web-mastertool-negozio-di-utensili-online-in-slovacchia/', destination: '/it/blog', permanent: true },
+
+      // ─── Old WordPress blog posts (root slug → /blog/<slug>) and tag archives ───
+      ...buildOldPostRedirects(),
+      ...TOPIC_REDIRECTS,
     ]
   },
 
