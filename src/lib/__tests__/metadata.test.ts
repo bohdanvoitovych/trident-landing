@@ -16,6 +16,18 @@ describe('buildMetadata robots', () => {
     expect(buildMetadata(base).robots).toEqual({ index: true, follow: true })
   })
 
+  it('forces noindex on a new. host even when the flag is off', () => {
+    vi.stubEnv('NEXT_PUBLIC_NOINDEX', '')
+    vi.stubEnv('NEXT_PUBLIC_SITE_URL', 'https://new.trident-software.ch')
+    expect(buildMetadata(base).robots).toEqual({ index: false, follow: false })
+  })
+
+  it('does not force noindex on the production host', () => {
+    vi.stubEnv('NEXT_PUBLIC_NOINDEX', '')
+    vi.stubEnv('NEXT_PUBLIC_SITE_URL', 'https://trident-software.ch')
+    expect(buildMetadata(base).robots).toEqual({ index: true, follow: true })
+  })
+
   it('keeps per-locale noindex when the flag is off', () => {
     vi.stubEnv('NEXT_PUBLIC_NOINDEX', '')
     const m = buildMetadata({ ...base, locale: 'de', availableLocales: ['en'] })

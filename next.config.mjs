@@ -1,3 +1,4 @@
+import { buildCsp } from './src/lib/csp.mjs'
 import createNextIntlPlugin from 'next-intl/plugin'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
@@ -434,15 +435,7 @@ const nextConfig = {
   },
 
   async headers() {
-    const csp = [
-      "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com",
-      "style-src 'self' 'unsafe-inline'",
-      "font-src 'self' data:",
-      "img-src 'self' data: blob: https: https://www.google-analytics.com",
-      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://*.linkedin.com https://px.ads.linkedin.com",
-      "frame-src 'self' https://www.youtube.com https://www.google.com",
-    ].join('; ')
+    const csp = buildCsp()
 
     return [
       {

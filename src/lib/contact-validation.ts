@@ -29,6 +29,8 @@ function extractAttribution(body: Record<string, unknown>): Attribution {
   return attribution
 }
 
+export const MAX_LEN = { name: 200, company: 200, phone: 50, email: 254, message: 5000 } as const
+
 const str = (v: unknown) => (typeof v === 'string' ? v.trim() : '')
 
 export function validateContactBody(body: Record<string, unknown>): {
@@ -48,6 +50,19 @@ export function validateContactBody(body: Record<string, unknown>): {
   else if (!EMAIL_RE.test(email)) errors.email = 'Invalid email address'
   if (!phone) errors.phone = 'Phone is required'
   if (!message) errors.message = 'Message is required'
+
+  const limits: Array<[keyof typeof MAX_LEN, string | undefined]> = [
+    ['name', name],
+    ['email', email],
+    ['phone', phone],
+    ['company', company],
+    ['message', message],
+  ]
+  for (const [field, value] of limits) {
+    if (!errors[field] && value && value.length > MAX_LEN[field]) {
+      errors[field] = `Must be at most ${MAX_LEN[field]} characters`
+    }
+  }
 
   if (Object.keys(errors).length > 0) return { errors }
 

@@ -17,6 +17,7 @@ build:
       --destination "${CI_REGISTRY_IMAGE}:latest"
       --build-arg NEXT_PUBLIC_SITE_URL="${NEXT_PUBLIC_SITE_URL}"
       --build-arg NEXT_PUBLIC_NOINDEX="${NEXT_PUBLIC_NOINDEX}"
+      --build-arg NEXT_PUBLIC_UMAMI_ORIGIN="${NEXT_PUBLIC_UMAMI_ORIGIN}"
       --cache=true
       --compressed-caching=false
   only:

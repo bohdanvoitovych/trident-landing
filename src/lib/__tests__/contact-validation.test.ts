@@ -23,4 +23,19 @@ describe('validateContactBody', () => {
   it('rejects invalid email', () => {
     expect(validateContactBody({ ...base, email: 'nope' }).errors?.email).toBeTruthy()
   })
+  it.each([
+    ['name', 200],
+    ['company', 200],
+    ['phone', 50],
+    ['message', 5000],
+  ])('rejects %s over %i chars and accepts exactly the limit', (field, max) => {
+    const over = validateContactBody({ ...base, [field]: 'x'.repeat(max + 1) })
+    expect(over.errors?.[field]).toBeTruthy()
+    expect(over.data).toBeUndefined()
+    expect(validateContactBody({ ...base, [field]: 'x'.repeat(max) }).errors).toBeUndefined()
+  })
+  it('rejects email over 254 chars', () => {
+    const email = `${'a'.repeat(250)}@b.ch`
+    expect(validateContactBody({ ...base, email }).errors?.email).toBeTruthy()
+  })
 })

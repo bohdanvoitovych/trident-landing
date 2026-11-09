@@ -28,6 +28,13 @@ beforeEach(() => {
 })
 
 describe('POST /api/newsletter/subscribe', () => {
+  it('over-long email: 400 with a field error, no ingest', async () => {
+    const res = await POST(req({ email: `${'a'.repeat(250)}@b.ch` }))
+    expect(res.status).toBe(400)
+    expect((await res.json()).fields.email).toBeTruthy()
+    expect(mockAdmin).not.toHaveBeenCalled()
+  })
+
   it('ingest failure: 503 unavailable, no email', async () => {
     mockAdmin.mockResolvedValue({ ok: false, status: 0, json: null })
     const res = await POST(req({ email: 'a@b.ch', locale: 'de' }))

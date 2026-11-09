@@ -7,9 +7,18 @@ const FALLBACK_OG_IMAGE = `${SITE_URL}/og-default.png`
 const LOCALES = ['en', 'de', 'fr', 'it'] as const
 type Locale = (typeof LOCALES)[number]
 
-/** True while the site runs on the temporary domain (build arg NEXT_PUBLIC_NOINDEX=1). */
+/**
+ * True while the site runs on the temporary domain (build arg NEXT_PUBLIC_NOINDEX=1).
+ * Also true when NEXT_PUBLIC_SITE_URL points at a `new.` host, so a forgotten
+ * flag cannot get the temporary domain indexed.
+ */
 export function isNoIndexSite(): boolean {
-  return process.env.NEXT_PUBLIC_NOINDEX === '1'
+  if (process.env.NEXT_PUBLIC_NOINDEX === '1') return true
+  try {
+    return new URL(process.env.NEXT_PUBLIC_SITE_URL ?? '').hostname.startsWith('new.')
+  } catch {
+    return false
+  }
 }
 
 /** Absolute URL of `path` in `locale`. English has no prefix (localePrefix: 'as-needed'). */

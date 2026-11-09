@@ -40,6 +40,12 @@ export async function POST(request: Request) {
     const email = typeof body.email === 'string' ? body.email.trim().toLowerCase() : ''
     const locale = typeof body.locale === 'string' ? body.locale.trim() : 'en'
 
+    if (email.length > 254) {
+      return NextResponse.json(
+        { error: 'Invalid email', code: 'validation', fields: { email: 'Must be at most 254 characters' } },
+        { status: 400 },
+      )
+    }
     if (!email || !EMAIL_RE.test(email)) {
       return NextResponse.json({ error: 'Invalid email', code: 'validation' }, { status: 400 })
     }
