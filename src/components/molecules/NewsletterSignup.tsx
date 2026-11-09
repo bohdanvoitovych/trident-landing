@@ -3,11 +3,7 @@
 import { useState } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 
-type Status = 'idle' | 'submitting' | 'success' | 'error' | 'duplicate' | 'rate_limit' | 'demo'
-
-// The Cloudflare demo ships without Payload, so there is nowhere to store a
-// subscriber. Say so instead of faking a success.
-const IS_DEMO = process.env.NEXT_PUBLIC_DEMO_MODE === '1'
+type Status = 'idle' | 'submitting' | 'success' | 'error' | 'duplicate' | 'rate_limit'
 
 export default function NewsletterSignup() {
   const locale = useLocale()
@@ -19,10 +15,6 @@ export default function NewsletterSignup() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (!email.trim()) return
-    if (IS_DEMO) {
-      setStatus('demo')
-      return
-    }
     setStatus('submitting')
     try {
       const res = await fetch('/api/newsletter/subscribe', {
@@ -46,9 +38,7 @@ export default function NewsletterSignup() {
   }
 
   const feedback =
-    status === 'demo'
-      ? t('demo')
-      : status === 'duplicate'
+    status === 'duplicate'
       ? t('duplicate')
       : status === 'rate_limit'
         ? t('rateLimit')

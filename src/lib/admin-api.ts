@@ -24,10 +24,16 @@ export async function postToAdmin(
   }
 
   try {
-    const res = await fetch(`${base}${path}`, {
+    // DELETE carries the email as a query string: the ingest route reads `?email=`.
+    let url = `${base}${path}`
+    if (method === 'DELETE') {
+      const email = (body as { email?: unknown } | null)?.email
+      if (typeof email === 'string') url += `?email=${encodeURIComponent(email)}`
+    }
+    const res = await fetch(url, {
       method,
       headers: { 'Content-Type': 'application/json', 'x-api-token': token },
-      body: JSON.stringify(body),
+      body: method === 'DELETE' ? undefined : JSON.stringify(body),
       signal: AbortSignal.timeout(8000),
     })
     const json: unknown = await res.json().catch(() => null)
