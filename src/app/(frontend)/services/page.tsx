@@ -57,7 +57,7 @@ export default function ServicesPage() {
       <section className="section section--alt" aria-labelledby="svc-h">
         <div className="container">
           <SectionHeader id="svc-h" label={t('crumb')} title={t('servicesTitle')} />
-          <div className="grid-4 stagger">
+          <div className="grid-4 stagger lg:!grid-cols-5">
             {services.map((service) => (
               <ServiceCard key={service.slug} service={service} />
             ))}
