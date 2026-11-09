@@ -1,15 +1,25 @@
 import { existsSync } from 'node:fs'
 import path from 'node:path'
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { getPosts, getPostSlugs, getPostLocales, getPublishedPosts } from '.'
+import { posts as batch08 } from './batch-08'
 
-const posts = getPosts('en')
+const EN_ONLY_SLUG = 'synthetic-en-only-post'
+
+// Once every real post is translated no English-only post is left, so the tests add one.
+vi.mock('./batch-09', async (importOriginal) => {
+  const real = await importOriginal<typeof import('./batch-09')>()
+  return { posts: [...real.posts, { ...real.posts[0], translations: undefined, slug: 'synthetic-en-only-post', relatedPosts: [] }] }
+})
+
+const allPosts = getPosts('en')
+const posts = allPosts.filter((p) => p.slug !== EN_ONLY_SLUG)
 const publicDir = path.resolve(__dirname, '../../../public')
 
 describe('blog data', () => {
   it('has 82 posts with unique slugs', () => {
     expect(posts).toHaveLength(82)
-    expect(new Set(getPostSlugs()).size).toBe(82)
+    expect(new Set(getPostSlugs().filter((s) => s !== EN_ONLY_SLUG)).size).toBe(82)
   })
 
   it('every post image is a local file that exists', () => {
@@ -30,17 +40,34 @@ describe('blog data', () => {
   })
 
   it('a post with no translations is published in English only', () => {
-    expect(getPostLocales('graph-databases-connected-data-for-business-success')).toEqual(['en'])
+    expect(getPostLocales(EN_ONLY_SLUG)).toEqual(['en'])
   })
 
   it('lists EN-only posts in English only; other locales list translated posts', () => {
-    const enOnly = 'graph-databases-connected-data-for-business-success'
-    expect(getPublishedPosts('en')).toHaveLength(82)
+    const enOnly = EN_ONLY_SLUG
+    expect(getPublishedPosts('en')).toHaveLength(allPosts.length)
     for (const l of ['de', 'fr', 'it']) {
       const slugs = getPublishedPosts(l).map((p) => p.slug)
       expect(slugs).not.toContain(enOnly)
-      expect(slugs.length).toBeLessThan(82)
+      expect(slugs.length).toBeLessThan(allPosts.length)
       for (const s of slugs) expect(getPostLocales(s)).toContain(l)
+    }
+  })
+
+  it('every batch-08 post has de, fr and it text, each different from English', () => {
+    expect(batch08).toHaveLength(18)
+    for (const p of batch08) {
+      expect(getPostLocales(p.slug), p.slug).toEqual(['en', 'de', 'fr', 'it'])
+      for (const l of ['de', 'fr', 'it'] as const) {
+        const t = p.translations?.[l]
+        expect(t, `${p.slug}/${l}`).toBeTruthy()
+        for (const field of [t!.title, t!.excerpt, t!.content, t!.meta.title, t!.meta.description]) {
+          expect(field.trim().length, `${p.slug}/${l}`).toBeGreaterThan(0)
+        }
+        expect(t!.meta.description.length, `${p.slug}/${l} meta`).toBeLessThanOrEqual(160)
+        expect(t!.title, `${p.slug}/${l} title`).not.toBe(p.title)
+        expect(t!.content, `${p.slug}/${l} content`).not.toBe(p.content)
+      }
     }
   })
 })

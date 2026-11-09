@@ -1,13 +1,21 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { getPostLocales, getPostSlugs } from '@/data/blog'
 import sitemap from './sitemap'
+
+const EN_ONLY_SLUG = 'synthetic-en-only-post'
+
+// Once every real post is translated no English-only post is left, so the test adds one.
+vi.mock('./../data/blog/batch-09', async (importOriginal) => {
+  const real = await importOriginal<typeof import('../data/blog/batch-09')>()
+  return { posts: [...real.posts, { ...real.posts[0], translations: undefined, slug: 'synthetic-en-only-post', relatedPosts: [] }] }
+})
 
 const entries = sitemap()
 const forPost = (slug: string) => entries.filter((e) => e.url.endsWith(`/blog/${slug}`))
 
 describe('sitemap locales', () => {
   it('an EN-only post has one entry and no de/fr/it alternates', () => {
-    const slug = 'graph-databases-connected-data-for-business-success'
+    const slug = EN_ONLY_SLUG
     expect(getPostLocales(slug)).toEqual(['en'])
     const e = forPost(slug)
     expect(e).toHaveLength(1)
