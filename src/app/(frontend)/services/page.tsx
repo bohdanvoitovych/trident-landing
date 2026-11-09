@@ -60,7 +60,7 @@ export default function ServicesPage() {
       <section className="section section--alt" aria-labelledby="svc-h">
         <div className="container">
           <SectionHeader id="svc-h" label={t('crumb')} title={t('servicesTitle')} />
-          <div className="grid-4 stagger lg:!grid-cols-5">
+          <div className="grid-4 stagger grid-5-wide">
             {services.map((service) => (
               <ServiceCard key={service.slug} service={service} />
             ))}
@@ -98,7 +98,7 @@ export default function ServicesPage() {
             title={t('stackTitle')}
             action={{ href: '/technologies', label: t('stackAction') }}
           />
-          <ul className="grid-4 keep-2 stagger lg:!grid-cols-5" style={{ listStyle: 'none', margin: 0, padding: 0, gap: 14 }}>
+          <ul className="grid-4 keep-2 stagger grid-5-wide" style={{ listStyle: 'none', margin: 0, padding: 0, gap: 14 }}>
             {technologies.map((tech) => (
               <li key={tech.slug} className="grid">
                 <Link

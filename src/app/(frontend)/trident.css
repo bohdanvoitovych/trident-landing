@@ -204,6 +204,7 @@ textarea.input { resize: vertical; min-height: 110px; }
 .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
 .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
 .grid-4 { grid-template-columns: repeat(4, minmax(0,1fr)); }
+@media (min-width: 1101px) { .grid-4.grid-5-wide { grid-template-columns: repeat(5, minmax(0,1fr)); } }
 .gap-tight { gap: 14px; }
 .split { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); gap: clamp(32px,5vw,80px); align-items: center; }
 .split--top { align-items: start; }
