@@ -890,50 +890,50 @@
       "ctaSecondary": "Explore websites"
     },
     "products": {
-      "metaTitle": "8move — Driver Management Platform | Trident Software",
-      "metaDescription": "8move is a SaaS platform for last-mile delivery companies. Manage drivers, track deliveries, automate payroll. Built by Trident Software.",
+      "metaTitle": "8Move logistics platform, in production | Trident Software",
+      "metaDescription": "8Move is our own logistics platform: order intake, dispatch, driver apps, tracking and automated invoicing. In production in Switzerland and the EU.",
       "crumb": "Our Product",
       "label": "Our Product",
-      "heroTitle": "<blue>8move</blue> — Driver Management SaaS",
-      "heroLead": "A production SaaS platform built by Trident Software for last-mile delivery companies. Manage drivers, track deliveries, and automate payroll — all in one place.",
-      "visit": "Visit 8move.app",
+      "heroTitle": "<blue>8Move</blue>: our own logistics platform",
+      "heroLead": "Order intake, dispatch and planning, driver applications with photo proof and signature, live tracking, automated invoicing. Shipped as configurable industry editions, not one generic product.",
+      "visit": "Visit 8move.com",
       "readCase": "Read the case study",
       "chips": [
-        "Live since 2022",
-        "Active delivery companies",
-        "Switzerland · Ukraine"
+        "In production with paying customers",
+        "Operators in Switzerland and the EU",
+        "Three industry editions"
       ],
       "platformLabel": "Platform",
-      "platformTitle": "Everything for last-mile delivery",
-      "platformLead": "Built from real operational experience running delivery fleets.",
+      "platformTitle": "What 8Move does",
+      "platformLead": "Configurable industry editions rather than one generic product.",
       "features": {
+        "orderIntake": {
+          "title": "Order intake",
+          "desc": "Orders enter one system, from enquiry to execution to invoice."
+        },
+        "dispatch": {
+          "title": "Dispatch and planning",
+          "desc": "Assignment and planning of jobs across vehicles and drivers."
+        },
         "driverApp": {
           "title": "Driver app",
-          "desc": "iOS & Android app with route navigation, proof-of-delivery, and real-time status updates."
+          "desc": "Driver applications with photo proof and signature."
         },
-        "fleet": {
-          "title": "Fleet dashboard",
-          "desc": "Live map view of all drivers, delivery status, and exception alerts."
+        "tracking": {
+          "title": "Live tracking",
+          "desc": "Live tracking of every delivery."
         },
-        "payroll": {
-          "title": "Payroll automation",
-          "desc": "Automated wage calculation based on deliveries, bonuses, and deductions."
+        "invoicing": {
+          "title": "Automated invoicing",
+          "desc": "Invoices are issued automatically."
         },
-        "portal": {
-          "title": "Client portal",
-          "desc": "White-label portal for your clients to track their shipments."
-        },
-        "routes": {
-          "title": "Route optimization",
-          "desc": "AI-powered route sequencing reducing fuel costs by up to 23%."
-        },
-        "analytics": {
-          "title": "Analytics",
-          "desc": "Delivery performance, driver efficiency, and cost-per-delivery reporting."
+        "editions": {
+          "title": "Industry editions",
+          "desc": "Passenger transport, construction-material haulage and last-mile delivery."
         }
       },
       "ctaTitle": "Built by Trident Software",
-      "ctaLead": "8move is our own product — not a client project. We built, deployed, and operate it ourselves. This means we understand SaaS from the inside. If you need a similar platform built for your business, we know exactly what it takes.",
+      "ctaLead": "8Move is our own product, in production with paying customers. The same team builds it and does our client work. We build what we are willing to maintain for five years, because with 8Move we actually do.",
       "ctaPrimary": "Build your platform",
       "ctaSecondary": "Our services"
     },

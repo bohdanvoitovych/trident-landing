@@ -17,7 +17,7 @@ export async function generateMetadata() {
   })
 }
 
-const FEATURES = ['driverApp', 'fleet', 'payroll', 'portal', 'routes', 'analytics'] as const
+const FEATURES = ['orderIntake', 'dispatch', 'driverApp', 'tracking', 'invoicing', 'editions'] as const
 
 export default function ProductsPage() {
   const t = useTranslations('pages.products')
@@ -31,7 +31,7 @@ export default function ProductsPage() {
         actions={
           <div className="stack" style={{ gap: 20 }}>
             <div className="hero-ctas">
-              <ButtonLink href="https://8move.app" target="_blank" rel="noopener noreferrer" arrow>
+              <ButtonLink href="https://8move.com" target="_blank" rel="noopener noreferrer" arrow>
                 {t('visit')}
               </ButtonLink>
               <ButtonLink href="/cases/8move-driver" variant="outline" arrow>

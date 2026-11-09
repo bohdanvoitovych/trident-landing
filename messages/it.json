@@ -890,50 +890,50 @@
       "ctaSecondary": "Scopri i siti web"
     },
     "products": {
-      "metaTitle": "8move: piattaforma di gestione autisti | Trident Software",
-      "metaDescription": "8move è una piattaforma SaaS per aziende di consegna dell'ultimo miglio. Gestisci gli autisti, traccia le consegne, automatizza le paghe. Di Trident Software.",
+      "metaTitle": "8Move, piattaforma logistica in produzione | Trident Software",
+      "metaDescription": "8Move è la nostra piattaforma logistica: ordini, dispatching, app per autisti, tracking e fatturazione automatica. In produzione in Svizzera e nell'UE.",
       "crumb": "Il nostro prodotto",
       "label": "Il nostro prodotto",
-      "heroTitle": "<blue>8move</blue>: SaaS per la gestione degli autisti",
-      "heroLead": "Una piattaforma SaaS in produzione, sviluppata da Trident Software per le aziende di consegna dell'ultimo miglio. Gestisci gli autisti, traccia le consegne e automatizza le paghe, tutto in un unico posto.",
-      "visit": "Visita 8move.app",
+      "heroTitle": "<blue>8Move</blue>: la nostra piattaforma logistica",
+      "heroLead": "Acquisizione ordini, dispatching e pianificazione, app per autisti con prova fotografica e firma, tracking in tempo reale, fatturazione automatica. Distribuita in edizioni di settore configurabili, non come un prodotto generico.",
+      "visit": "Visita 8move.com",
       "readCase": "Leggi il caso studio",
       "chips": [
-        "Attivo dal 2022",
-        "Aziende di consegna attive",
-        "Svizzera · Ucraina"
+        "In produzione presso clienti paganti",
+        "Operatori in Svizzera e nell’UE",
+        "Tre edizioni di settore"
       ],
       "platformLabel": "Piattaforma",
-      "platformTitle": "Tutto per l'ultimo miglio",
-      "platformLead": "Nata dall'esperienza concreta nella gestione di flotte di consegna.",
+      "platformTitle": "Cosa fa 8Move",
+      "platformLead": "Edizioni di settore configurabili invece di un prodotto generico.",
       "features": {
+        "orderIntake": {
+          "title": "Acquisizione ordini",
+          "desc": "Gli ordini entrano in un unico sistema, dalla richiesta all’esecuzione fino alla fattura."
+        },
+        "dispatch": {
+          "title": "Dispatching e pianificazione",
+          "desc": "Assegnazione e pianificazione dei lavori tra veicoli e autisti."
+        },
         "driverApp": {
           "title": "App per autisti",
-          "desc": "App iOS e Android con navigazione, prova di consegna e aggiornamenti di stato in tempo reale."
+          "desc": "App per autisti con prova fotografica e firma."
         },
-        "fleet": {
-          "title": "Dashboard della flotta",
-          "desc": "Mappa in tempo reale di tutti gli autisti, stato delle consegne e avvisi sulle anomalie."
+        "tracking": {
+          "title": "Tracking in tempo reale",
+          "desc": "Ogni consegna è tracciata in tempo reale."
         },
-        "payroll": {
-          "title": "Paghe automatizzate",
-          "desc": "Calcolo automatico degli stipendi in base a consegne, bonus e trattenute."
+        "invoicing": {
+          "title": "Fatturazione automatica",
+          "desc": "Le fatture vengono emesse in automatico."
         },
-        "portal": {
-          "title": "Portale clienti",
-          "desc": "Portale white-label con cui i tuoi clienti seguono le loro spedizioni."
-        },
-        "routes": {
-          "title": "Ottimizzazione dei percorsi",
-          "desc": "Sequenza dei percorsi basata sull'IA che riduce i costi di carburante fino al 23%."
-        },
-        "analytics": {
-          "title": "Analisi",
-          "desc": "Report su performance delle consegne, efficienza degli autisti e costo per consegna."
+        "editions": {
+          "title": "Edizioni di settore",
+          "desc": "Trasporto passeggeri, trasporto di materiali edili e consegna dell’ultimo miglio."
         }
       },
       "ctaTitle": "Sviluppato da Trident Software",
-      "ctaLead": "8move è un nostro prodotto, non un progetto per un cliente. L'abbiamo sviluppato, messo online e lo gestiamo noi. Per questo conosciamo il SaaS dall'interno. Se ti serve una piattaforma simile per la tua azienda, sappiamo esattamente cosa richiede.",
+      "ctaLead": "8Move è un nostro prodotto, in produzione presso clienti paganti. Lo sviluppa lo stesso team che lavora ai progetti dei clienti. Costruiamo solo ciò che siamo disposti a mantenere per cinque anni, perché con 8Move lo facciamo davvero.",
       "ctaPrimary": "Crea la tua piattaforma",
       "ctaSecondary": "I nostri servizi"
     },

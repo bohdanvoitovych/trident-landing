@@ -890,50 +890,50 @@
       "ctaSecondary": "Découvrir les sites web"
     },
     "products": {
-      "metaTitle": "8move : plateforme de gestion des chauffeurs | Trident Software",
-      "metaDescription": "8move est une plateforme SaaS pour les entreprises de livraison du dernier kilomètre. Gérez vos chauffeurs, suivez les livraisons, automatisez la paie.",
+      "metaTitle": "8Move, plateforme logistique en production | Trident Software",
+      "metaDescription": "8Move est notre plateforme logistique : prise de commande, dispatch, apps chauffeurs, suivi et facturation automatique. En production en Suisse et dans l'UE.",
       "crumb": "Notre produit",
       "label": "Notre produit",
-      "heroTitle": "<blue>8move</blue> : le SaaS de gestion des chauffeurs",
-      "heroLead": "Une plateforme SaaS en production, développée par Trident Software pour les entreprises de livraison du dernier kilomètre. Gérez vos chauffeurs, suivez les livraisons et automatisez la paie, le tout au même endroit.",
-      "visit": "Visiter 8move.app",
+      "heroTitle": "<blue>8Move</blue> : notre propre plateforme logistique",
+      "heroLead": "Prise de commande, dispatch et planification, applications chauffeurs avec photo et signature, suivi en temps réel, facturation automatique. Livrée en éditions sectorielles configurables, pas comme un produit générique.",
+      "visit": "Visiter 8move.com",
       "readCase": "Lire l'étude de cas",
       "chips": [
-        "En ligne depuis 2022",
-        "Des entreprises de livraison actives",
-        "Suisse · Ukraine"
+        "En production chez des clients payants",
+        "Opérateurs en Suisse et dans l’UE",
+        "Trois éditions sectorielles"
       ],
       "platformLabel": "Plateforme",
-      "platformTitle": "Tout pour la livraison du dernier kilomètre",
-      "platformLead": "Conçue à partir d'une vraie expérience de l'exploitation de flottes de livraison.",
+      "platformTitle": "Ce que fait 8Move",
+      "platformLead": "Des éditions sectorielles configurables plutôt qu’un produit générique.",
       "features": {
+        "orderIntake": {
+          "title": "Prise de commande",
+          "desc": "Les commandes entrent dans un seul système, de la demande à l’exécution puis à la facture."
+        },
+        "dispatch": {
+          "title": "Dispatch et planification",
+          "desc": "Attribution et planification des missions entre véhicules et chauffeurs."
+        },
         "driverApp": {
           "title": "App chauffeur",
-          "desc": "App iOS et Android avec navigation, preuve de livraison et mises à jour du statut en temps réel."
+          "desc": "Applications chauffeurs avec preuve photo et signature."
         },
-        "fleet": {
-          "title": "Tableau de bord de flotte",
-          "desc": "Carte en direct de tous les chauffeurs, statut des livraisons et alertes en cas d'anomalie."
+        "tracking": {
+          "title": "Suivi en temps réel",
+          "desc": "Chaque livraison est suivie en temps réel."
         },
-        "payroll": {
-          "title": "Paie automatisée",
-          "desc": "Calcul automatique des salaires selon les livraisons, les primes et les déductions."
+        "invoicing": {
+          "title": "Facturation automatique",
+          "desc": "Les factures partent automatiquement."
         },
-        "portal": {
-          "title": "Portail clients",
-          "desc": "Portail en marque blanche pour que vos clients suivent leurs envois."
-        },
-        "routes": {
-          "title": "Optimisation des tournées",
-          "desc": "Un ordonnancement des tournées par IA qui réduit les coûts de carburant jusqu'à 23%."
-        },
-        "analytics": {
-          "title": "Analyses",
-          "desc": "Rapports sur la performance des livraisons, l'efficacité des chauffeurs et le coût par livraison."
+        "editions": {
+          "title": "Éditions sectorielles",
+          "desc": "Transport de personnes, transport de matériaux de construction et livraison du dernier kilomètre."
         }
       },
       "ctaTitle": "Développé par Trident Software",
-      "ctaLead": "8move est notre propre produit, pas un projet client. Nous l'avons développé, déployé et nous l'exploitons nous-mêmes. Nous connaissons donc le SaaS de l'intérieur. Si vous avez besoin d'une plateforme similaire pour votre entreprise, nous savons exactement ce que cela demande.",
+      "ctaLead": "8Move est notre propre produit, en production chez des clients payants. La même équipe le développe et réalise nos projets clients. Nous construisons ce que nous sommes prêts à maintenir pendant cinq ans, parce qu’avec 8Move, c’est exactement ce que nous faisons.",
       "ctaPrimary": "Créer votre plateforme",
       "ctaSecondary": "Nos services"
     },
