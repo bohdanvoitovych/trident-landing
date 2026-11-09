@@ -1,3 +1,4 @@
+import 'server-only'
 import { isTopicKey, type TopicKey } from '@/lib/topics'
 import en from '../../../../messages/en.json'
 import de from '../../../../messages/de.json'

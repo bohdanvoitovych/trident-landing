@@ -5,6 +5,7 @@ import { getLocale, getMessages, getTranslations } from 'next-intl/server'
 import { Navbar } from '@/components/organisms/Navbar'
 import { Footer } from '@/components/organisms/Footer'
 import { CookieBanner } from '@/components/molecules/CookieBanner'
+import AttributionTracker from '@/components/atoms/AttributionTracker'
 import { Reveal } from '@/components/molecules/Reveal'
 import './styles.css'
 import './trident.css'
@@ -63,6 +64,7 @@ export default async function FrontendLayout({ children }: { children: React.Rea
           <Footer />
           <CookieBanner />
           <Reveal />
+          <AttributionTracker />
         </NextIntlClientProvider>
       </body>
     </html>

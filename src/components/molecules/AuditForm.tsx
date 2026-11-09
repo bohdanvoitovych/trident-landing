@@ -2,11 +2,14 @@
 
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
+import { getAttribution } from '@/lib/attribution'
+import { trackUmami } from '@/lib/analytics/umami'
+import { TOPIC_KEYS } from '@/lib/topics'
 
 // Topic options carried over from the previous enquiry form.
-const TOPICS = ['aiAgents', 'logistics', 'iot', 'businessSystem', 'cto'] as const
+const TOPICS = TOPIC_KEYS.filter((k) => k !== 'other')
 
 type Values = {
   name: string
@@ -14,6 +17,7 @@ type Values = {
   email: string
   phone: string
   message: string
+  website: string
   consent: boolean
 }
 
@@ -24,12 +28,13 @@ type Props = {
 }
 
 /**
- * Free-audit enquiry. Posts to the existing /api/contact route, which stores
- * the lead in Payload (and notifies via Resend there). Topic chips are optional
+ * Free-audit enquiry. Posts to /api/contact, which forwards the lead to the shared admin
+ * and emails the team. Topic chips are optional
  * and always include "Other / not sure yet".
  */
 export function AuditForm({ tone = 'dark', submitLabel }: Props) {
   const t = useTranslations('ui.audit')
+  const locale = useLocale()
   const tf = useTranslations('molecules.auditForm')
   const [topic, setTopic] = useState<number | null>(null)
   const [state, setState] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
@@ -38,7 +43,7 @@ export function AuditForm({ tone = 'dark', submitLabel }: Props) {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm<Values>({ defaultValues: { consent: false } })
+  } = useForm<Values>({ defaultValues: { consent: false, website: '' } })
 
   const topics = [...TOPICS.map((k) => tf(`topics.${k}`)), t('other')]
 
@@ -53,11 +58,15 @@ export function AuditForm({ tone = 'dark', submitLabel }: Props) {
           email: v.email,
           company: v.company,
           phone: v.phone,
-          subject: topic === null ? 'general' : topics[topic],
+          subject: topic === null ? 'other' : (TOPIC_KEYS[topic] ?? 'other'),
           message: v.message,
+          website: v.website,
+          locale,
+          ...getAttribution(),
         }),
       })
       if (!res.ok) throw new Error(String(res.status))
+      trackUmami('contact_submit_success')
       setState('done')
       reset()
       setTopic(null)
@@ -112,7 +121,8 @@ export function AuditForm({ tone = 'dark', submitLabel }: Props) {
         </label>
         <label className="field">
           {t('phone')}
-          <input className="input" type="tel" autoComplete="tel" {...register('phone')} />
+          <input className="input" type="tel" autoComplete="tel" aria-invalid={!!errors.phone} aria-describedby={err('phone')} {...register('phone', { required: true })} />
+          {errors.phone && <span id="phone-err" className="field-error">{t('required')}</span>}
         </label>
       </div>
       <div className="field">
@@ -145,6 +155,14 @@ export function AuditForm({ tone = 'dark', submitLabel }: Props) {
         />
         {errors.message && <span id="message-err" className="field-error">{t('required')}</span>}
       </label>
+      <input
+        type="text"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }}
+        {...register('website')}
+      />
       <label className="consent">
         <input type="checkbox" aria-invalid={!!errors.consent} aria-describedby={err('consent')} {...register('consent', { required: true })} />
         <span>{tf('consent')}</span>
