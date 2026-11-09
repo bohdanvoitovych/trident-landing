@@ -28,7 +28,7 @@ const record: CaseRecord = {
           paragraphs: [
             'An Italian manufacturer of fluid-control components (solenoid valves, flow meters, pressure regulators and filters) supplied to OEMs that build professional coffee and espresso machines, and to adjacent appliance makers.',
             "The components are certified, tested and sold in volume to machine builders. They then disappear into a machine, which is sold to a café, a restaurant or an office, and installed on whatever water supply that building happens to have. The manufacturer's warranty obligation follows the component all the way down that chain, into buildings it has never seen and water it has never measured.",
-            'Warranty service cost 1.37% of company revenue.',
+            'Warranty service cost 1.37 % of company revenue.',
           ],
         },
         {
@@ -53,7 +53,7 @@ const record: CaseRecord = {
         {
           title: 'Service was scheduled by the calendar, not by the water',
           paragraphs: [
-            'Filter changes and maintenance visits were planned by elapsed time or by machine lifetime. A machine in a hard-water town pulling 300 liters a day and a machine on soft municipal supply pulling 40 got the same service interval. One was serviced far too late, the other too often, and neither schedule reflected what the water was doing.',
+            'Filter changes and maintenance visits were planned by elapsed time or by machine lifetime. A machine in a hard-water town pulling 300 litres a day and a machine on soft municipal supply pulling 40 got the same service interval. One was serviced far too late, the other too often, and neither schedule reflected what the water was doing.',
           ],
         },
         {
@@ -84,7 +84,7 @@ const record: CaseRecord = {
         {
           title: '3. The equipment portal for the manufacturer',
           paragraphs: [
-            'Every installed unit with its full operating history: water in and out, liters passed, temperature, filter status, alerts and interventions. When a claim arrives, the warranty department opens the record for that machine and reads what the water was doing in the weeks before the failure.',
+            'Every installed unit with its full operating history: water in and out, litres passed, temperature, filter status, alerts and interventions. When a claim arrives, the warranty department opens the record for that machine and reads what the water was doing in the weeks before the failure.',
           ],
         },
         {
@@ -96,7 +96,7 @@ const record: CaseRecord = {
         {
           title: '5. The predictive-maintenance model',
           paragraphs: [
-            'Service is scheduled by liters passed and measured water quality, not by lifetime. The model estimates when a filter will exhaust and when scale risk crosses a threshold for that specific installation, and raises the job before damage occurs rather than after.',
+            'Service is scheduled by litres passed and measured water quality, not by lifetime. The model estimates when a filter will exhaust and when scale risk crosses a threshold for that specific installation, and raises the job before damage occurs rather than after.',
           ],
         },
         {
