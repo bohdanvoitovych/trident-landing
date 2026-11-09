@@ -18,6 +18,12 @@ Research behind `src/data/semantic-seed-terms.ts`: the fixed term list the share
 - Coverage matching is a lower-case substring search. Terms are 1–4 word phrases that a page can contain literally. Terms avoid apostrophes (`d'`, `l'`), because pages mix `'` and `’`.
 - A term appears in only one cluster. The flat `SEMANTIC_SEED_TERMS` list must have the same length as the sum of the clusters; a test checks this.
 
+### Matching limits
+
+- Terms are in search-query form, as people type them ("softwareentwicklung zürich", "sviluppo software svizzera"). A coverage gap on such a term is a signal to add that exact phrase to a page.
+- The coverage check is a literal lower-case substring match. A `<service> <city>` term counts only when a page contains that exact sequence. Prepositional forms such as "Softwareentwicklung in Zürich" or "développement logiciel à Genève" do not match.
+- Umlaut and diacritic variants are not normalised: "zurich" does not match "zürich", and "geneve" does not match "genève".
+
 ## Clusters
 
 Totals: 9 topics × 4 languages = **36 clusters, 438 terms** (10–14 per cluster).
@@ -46,7 +52,7 @@ Sources: [drweb Webagenturen Schweiz](https://www.drweb.de/webagenturen-schweiz-
 
 ### Mobile Development
 
-Competitors in Zurich and Geneva lead with "iOS and Android", native vs cross-platform, and Flutter. DE uses "App-Entwicklung" and "App entwickeln lassen". "Aussendienst-App" / "application terrain" / "app per servizio esterno" match Trident's field-service use case.
+Competitors in Zurich and Geneva lead with "iOS and Android", native vs cross-platform, and Flutter. DE uses "App-Entwicklung" and "App entwickeln lassen". "Aussendienst-App" / "application de terrain" / "app per tecnici sul campo" match Trident's field-service use case.
 Sources: [Swisstomato](https://swisstomato.ch/en/app-development-geneva-zurich/), [Novu](https://novu.ch/en/offers/apps), [devedis](https://devedis.ch/en/services/mobile-apps), [Clutch CH app developers](https://clutch.co/ch/app-developers.md), [Mermio (Infomaniak)](https://www.infomaniak.com/fr/creer-un-site/professionnel/nos-agences-partenaires/1575192), [Edana Sion mobile](https://edana.ch/en/mobile-application-development-sion-ios-android/).
 
 ### Outsourcing / Dedicated Team
