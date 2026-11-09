@@ -10,7 +10,7 @@ const PRICES = [
 
 const WAYS = ['labour', 'revenue', 'errors'] as const
 
-/** Moved from the home page to /site-price. */
+/** Moved from the home page to /pricing. */
 export function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2' }) {
   const t = useTranslations('sections.pricing')
   return (
@@ -36,11 +36,14 @@ export function Pricing({ headingLevel = 'h2' }: { headingLevel?: 'h1' | 'h2' })
             </div>
           ))}
         </div>
-        <div style={{ marginTop: 'clamp(40px,5vw,64px)' }}>
-          <h3 className="label" style={{ margin: '0 0 20px' }}>
-            {t('waysTitle')}
-          </h3>
-          <ol className="grid-3" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+        <div className="stack" style={{ marginTop: 'clamp(40px,5vw,64px)' }}>
+          <h3 className="h3">{t('waysTitle')}</h3>
+          {(t.raw('waysLead') as string[]).map((p) => (
+            <p key={p} className="body" style={{ maxWidth: 760 }}>
+              {p}
+            </p>
+          ))}
+          <ol className="grid-3" style={{ listStyle: 'none', margin: '8px 0 0', padding: 0 }}>
             {WAYS.map((w) => (
               <li key={w} className="feature-card card card--flat">
                 <h4 className="h4">{t(`ways.${w}.title`)}</h4>

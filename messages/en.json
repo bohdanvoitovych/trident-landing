@@ -781,6 +781,56 @@
         "mostPopular": "Most Popular",
         "includes": "Includes",
         "getStarted": "Get started",
+        "addOnsLabel": "Add-ons",
+        "addOnsTitle": "Optional extras",
+        "addOnsLead": "Add only what you need. Every add-on is priced separately and can be turned on at any time.",
+        "addOns": {
+          "hosting": {
+            "name": "Hosting & domain",
+            "price": "CHF 50 / yr",
+            "desc": "Managed hosting, SSL, backups, domain renewal."
+          },
+          "language": {
+            "name": "Additional language",
+            "price": "CHF 250",
+            "desc": "Per locale: translation and localized SEO."
+          },
+          "content": {
+            "name": "Content creation",
+            "price": "CHF 150 / page",
+            "desc": "Copywriting tailored to your brand and audience."
+          },
+          "brandbook": {
+            "name": "Brandbook",
+            "price": "CHF 2,500",
+            "desc": "Logo, color palette, typography, UI tokens."
+          },
+          "seo": {
+            "name": "SEO support",
+            "price": "CHF 500 / yr",
+            "desc": "Monthly audits, keyword tracking, content recommendations."
+          },
+          "legal": {
+            "name": "Legal policies",
+            "price": "CHF 125",
+            "desc": "Privacy, Terms, Cookies: templates compliant with Swiss and EU law."
+          },
+          "media": {
+            "name": "Media content",
+            "price": "CHF 150 / page",
+            "desc": "Stock photos, illustrations, or AI imagery curated for your site."
+          },
+          "blog": {
+            "name": "Blog support",
+            "price": "CHF 150 / mo",
+            "desc": "Ongoing publishing, editorial QA, SEO formatting."
+          },
+          "design": {
+            "name": "Custom design",
+            "price": "CHF 500 / page",
+            "desc": "Bespoke layouts beyond the package templates."
+          }
+        },
         "whyLabel": "Why us",
         "whyTitle": "Built for Swiss SMEs",
         "whyLead": "Every website we deliver is mobile-first, multilingual-ready, and SEO-optimized — at a fixed price.",
@@ -820,74 +870,92 @@
       }
     },
     "pricing": {
-      "metaTitle": "Pricing | Trident Software",
-      "metaDescription": "Transparent, fixed-price packages for Swiss SMEs. Web brochure from CHF 599. SME website CHF 1,299. User portal CHF 2,499. Online store CHF 6,999.",
+      "metaTitle": "AI agent pricing from CHF 450 a month | Trident Software",
+      "metaDescription": "AI agent pricing in three lines: a one-off integration fee of CHF 6,000–25,000, a monthly run fee from CHF 450, and an optional 70/30 outcome share.",
       "crumb": "Pricing",
       "label": "Pricing",
-      "heroTitle": "Transparent, <blue>fixed-price</blue> packages",
-      "heroLead": "No hourly billing. No scope creep. Price agreed before work begins.",
-      "packagesLabel": "Website packages",
-      "packagesTitle": "Pick the package that fits",
-      "packagesLead": "From a simple brochure site to a full online store. Each package has a fixed price and a defined delivery date.",
-      "mostPopular": "Most Popular",
-      "deliveredIn": "Delivered in {timeline}",
-      "for": "For",
-      "includes": "Includes",
-      "getStarted": "Get started",
-      "addOnsLabel": "Add-ons",
-      "addOnsTitle": "Optional extras",
-      "addOnsLead": "Add only what you need. Every add-on is priced separately and can be turned on at any time.",
-      "addOns": {
-        "hosting": {
-          "name": "Hosting & domain",
-          "price": "CHF 50 / yr",
-          "desc": "Managed hosting, SSL, backups, domain renewal."
+      "heroTitle": "Three lines. Never one monthly figure.",
+      "heroLead": "The integration fee is never buried in a monthly figure. Connecting an existing ERP, accounting system or legacy database is where projects overrun, so we quote it as its own line.",
+      "linesLabel": "Behind each line",
+      "linesTitle": "What the three lines cover",
+      "lines": {
+        "integration": {
+          "k": "1 · Integration fee, one-off",
+          "amt": "CHF 6,000–25,000",
+          "text": "Discovery, knowledge base build, scenario design, channel and CRM connections, testing, staff training and two weeks of supervised live running. The range is driven by the number of systems, not the number of channels."
         },
-        "language": {
-          "name": "Additional language",
-          "price": "CHF 250",
-          "desc": "Per locale — translation + localized SEO."
+        "run": {
+          "k": "2 · Run, monthly",
+          "amt": "From CHF 450 · typical CHF 900 · full automation from CHF 1,800",
+          "text": "Platform, hosting, monitoring, support and monthly scenario tuning. Model usage is passed through at cost with the invoice attached. We take no margin on tokens."
         },
-        "content": {
-          "name": "Content creation",
-          "price": "CHF 150 / page",
-          "desc": "Copywriting tailored to your brand and audience."
-        },
-        "brandbook": {
-          "name": "Brandbook",
-          "price": "CHF 2,500",
-          "desc": "Logo, color palette, typography, UI tokens."
-        },
-        "seo": {
-          "name": "SEO support",
-          "price": "CHF 500 / yr",
-          "desc": "Monthly audits, keyword tracking, content recommendations."
-        },
-        "legal": {
-          "name": "Legal policies",
-          "price": "CHF 125",
-          "desc": "Privacy, Terms, Cookies — Swiss + EU compliant templates."
-        },
-        "media": {
-          "name": "Media content",
-          "price": "CHF 150 / page",
-          "desc": "Stock photos, illustrations, or AI imagery curated for your site."
-        },
-        "blog": {
-          "name": "Blog support",
-          "price": "CHF 150 / mo",
-          "desc": "Ongoing publishing, editorial QA, SEO formatting."
-        },
-        "design": {
-          "name": "Custom design",
-          "price": "CHF 500 / page",
-          "desc": "Bespoke layouts beyond the package templates."
+        "outcome": {
+          "k": "3 · Outcome share, optional",
+          "amt": "Our preference",
+          "text": "The 70/30 structure: 70 % of the value as a fixed fee, 30 % tied to a KPI agreed in writing before launch (qualified leads, bookings made, response time held under target). Where the effect is measurable and attribution is clean, we take 15–25 % of the verified annual saving instead of a flat fee, capped and reviewed quarterly. If your CRM cannot attribute a booking to a channel, a flat fee is the fair structure and we will say so."
         }
       },
-      "ctaTitle": "Start with a free consultation",
-      "ctaLead": "Tell us about your project. We'll recommend the right package and send a fixed quote within 24 hours.",
-      "ctaPrimary": "Book a consultation",
-      "ctaSecondary": "Explore websites"
+      "exampleLabel": "Worked example",
+      "exampleTitle": "Swiss trade SME",
+      "exampleLead": "Illustrative model, not a client result. The point is the shape of the calculation, not these particular figures.",
+      "inputsTitle": "Inputs",
+      "inputs": [
+        [
+          "Inside-sales staff",
+          "3"
+        ],
+        [
+          "Loaded cost per person",
+          "CHF 8,000 / month"
+        ],
+        [
+          "Enquiries per month",
+          "400"
+        ],
+        [
+          "Share arriving outside office hours",
+          "35 %"
+        ],
+        [
+          "Average deal value",
+          "CHF 1,400"
+        ],
+        [
+          "Current close rate",
+          "18 %"
+        ]
+      ],
+      "effectsTitle": "Effect per month",
+      "effects": [
+        [
+          "Routine volume absorbed: 0.8 FTE redeployed, not dismissed",
+          "CHF 6,400"
+        ],
+        [
+          "Out-of-hours enquiries now answered: 140 a month, at half the normal close rate",
+          "CHF 17,640 gross · CHF 5,292 margin"
+        ],
+        [
+          "Faster first response on in-hours enquiries: 2 pp close-rate lift",
+          "CHF 2,184 margin"
+        ],
+        [
+          "Total monthly benefit",
+          "≈ CHF 13,876"
+        ],
+        [
+          "Running cost of the agent",
+          "−CHF 900"
+        ],
+        [
+          "Net",
+          "≈ CHF 12,976"
+        ]
+      ],
+      "payback": "Against a one-off integration fee of CHF 12,000, payback lands in month two.",
+      "assumptions": "Read the assumptions before you read the total. Two of them do the heavy lifting: that out-of-hours enquiries convert at half the in-hours rate, and that redeployed capacity turns into revenue rather than slack. In the audit we replace both with your measured numbers, and we show you the version where they come out worse. A calculator tuned to produce a headline is a sales tool, not a business case.",
+      "referencesLabel": "On references",
+      "referencesText": "We do not publish other companies' results as our own, and we do not name clients without written permission. The figures on this page are labelled as models, because that is what they are. In the audit you get the same model filled with your data, and the file is yours to keep."
     },
     "products": {
       "metaTitle": "8Move logistics platform, in production | Trident Software",
@@ -1506,19 +1574,23 @@
           ]
         }
       },
-      "waysTitle": "We price from your number",
+      "waysTitle": "We price from your number, not from ours.",
+      "waysLead": [
+        "Most vendors quote a licence and leave the business case to you. We invert it: the first meeting produces your figure, and the price is a share of it.",
+        "Three ways to count what the routine actually costs today. We use all three, then take the most defensible."
+      ],
       "ways": {
         "labour": {
           "title": "1. Direct labour",
-          "text": "Hours on repetitive enquiries × loaded cost. One inside-sales FTE spends 4–6 hours a day on them."
+          "text": "Hours per week spent on repetitive enquiries × loaded hourly cost. A single inside-sales FTE at CHF 90,000–120,000 loaded spends 4–6 hours a day on conversations an agent handles in full."
         },
         "revenue": {
           "title": "2. Lost revenue",
-          "text": "After-hours enquiries × close rate × deal value. Usually the largest, and never measured."
+          "text": "Enquiries that arrive outside office hours × your close rate × average deal value. This is usually the larger of the three and the one companies have never measured, because unanswered enquiries leave no trace in the CRM."
         },
         "errors": {
           "title": "3. Cost of errors",
-          "text": "Wrong quotes, missed bookings, no-shows nobody confirmed, priced at lost margin."
+          "text": "Wrong quote, missed booking, forgotten follow-up, the no-show that no one confirmed. Priced at the gross margin lost, not the revenue."
         }
       }
     },

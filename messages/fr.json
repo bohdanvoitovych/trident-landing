@@ -781,6 +781,56 @@
         "mostPopular": "Le plus choisi",
         "includes": "Inclus",
         "getStarted": "Commencer",
+        "addOnsLabel": "Options",
+        "addOnsTitle": "Options à la carte",
+        "addOnsLead": "Ajoutez uniquement ce dont vous avez besoin. Chaque option a son propre prix et peut être activée à tout moment.",
+        "addOns": {
+          "hosting": {
+            "name": "Hébergement et domaine",
+            "price": "CHF 50 / an",
+            "desc": "Hébergement géré, SSL, sauvegardes, renouvellement du domaine."
+          },
+          "language": {
+            "name": "Langue supplémentaire",
+            "price": "CHF 250",
+            "desc": "Par langue : traduction et SEO localisé."
+          },
+          "content": {
+            "name": "Rédaction de contenu",
+            "price": "CHF 150 / page",
+            "desc": "Des textes adaptés à votre marque et à votre public."
+          },
+          "brandbook": {
+            "name": "Charte graphique",
+            "price": "CHF 2'500",
+            "desc": "Logo, palette de couleurs, typographie, tokens UI."
+          },
+          "seo": {
+            "name": "Suivi SEO",
+            "price": "CHF 500 / an",
+            "desc": "Audits mensuels, suivi des mots-clés, recommandations de contenu."
+          },
+          "legal": {
+            "name": "Textes juridiques",
+            "price": "CHF 125",
+            "desc": "Confidentialité, CG, cookies : modèles conformes au droit suisse et européen."
+          },
+          "media": {
+            "name": "Contenus visuels",
+            "price": "CHF 150 / page",
+            "desc": "Photos de banque d'images, illustrations ou visuels IA sélectionnés pour votre site."
+          },
+          "blog": {
+            "name": "Suivi du blog",
+            "price": "CHF 150 / mois",
+            "desc": "Publication régulière, relecture éditoriale, mise en forme SEO."
+          },
+          "design": {
+            "name": "Design sur mesure",
+            "price": "CHF 500 / page",
+            "desc": "Des mises en page uniques, au-delà des modèles du forfait."
+          }
+        },
         "whyLabel": "Pourquoi nous",
         "whyTitle": "Pensé pour les PME suisses",
         "whyLead": "Chaque site que nous livrons est mobile-first, prêt pour le multilingue et optimisé pour le SEO, à prix fixe.",
@@ -820,74 +870,92 @@
       }
     },
     "pricing": {
-      "metaTitle": "Tarifs : sites web à prix fixe | Trident Software",
-      "metaDescription": "Forfaits transparents à prix fixe pour PME suisses. Site vitrine dès CHF 599, site PME CHF 1,299, portail clients CHF 2,499, boutique en ligne CHF 6,999.",
+      "metaTitle": "Tarifs des agents IA dès CHF 450 par mois | Trident Software",
+      "metaDescription": "Tarifs des agents IA en trois lignes : intégration unique de CHF 6'000–25'000, exploitation dès CHF 450 par mois, part au résultat 70/30 en option.",
       "crumb": "Tarifs",
       "label": "Tarifs",
-      "heroTitle": "Des forfaits transparents à <blue>prix fixe</blue>",
-      "heroLead": "Pas de facturation à l'heure. Pas de dérive du périmètre. Le prix est fixé avant le début des travaux.",
-      "packagesLabel": "Forfaits site web",
-      "packagesTitle": "Choisissez le forfait qui vous convient",
-      "packagesLead": "Du simple site vitrine à la boutique en ligne complète. Chaque forfait a un prix fixe et une date de livraison définie.",
-      "mostPopular": "Le plus choisi",
-      "deliveredIn": "Livré en {timeline}",
-      "for": "Pour",
-      "includes": "Inclus",
-      "getStarted": "Commencer",
-      "addOnsLabel": "Options",
-      "addOnsTitle": "Options à la carte",
-      "addOnsLead": "Ajoutez uniquement ce dont vous avez besoin. Chaque option a son propre prix et peut être activée à tout moment.",
-      "addOns": {
-        "hosting": {
-          "name": "Hébergement et domaine",
-          "price": "CHF 50 / an",
-          "desc": "Hébergement géré, SSL, sauvegardes, renouvellement du domaine."
+      "heroTitle": "Trois lignes. Jamais un seul montant mensuel.",
+      "heroLead": "Les frais d'intégration ne sont jamais noyés dans un forfait mensuel. Connecter un ERP, une comptabilité ou une base de données existante, c'est là que les projets dérapent. Nous les chiffrons donc sur une ligne à part.",
+      "linesLabel": "Derrière chaque ligne",
+      "linesTitle": "Ce que couvrent les trois lignes",
+      "lines": {
+        "integration": {
+          "k": "1 · Frais d'intégration, uniques",
+          "amt": "CHF 6'000–25'000",
+          "text": "Analyse, construction de la base de connaissances, conception des scénarios, connexion des canaux et du CRM, tests, formation de l'équipe et deux semaines d'exploitation accompagnée. La fourchette dépend du nombre de systèmes, pas du nombre de canaux."
         },
-        "language": {
-          "name": "Langue supplémentaire",
-          "price": "CHF 250",
-          "desc": "Par langue : traduction et SEO localisé."
+        "run": {
+          "k": "2 · Exploitation, mensuelle",
+          "amt": "Dès CHF 450 · typique CHF 900 · automatisation complète dès CHF 1'800",
+          "text": "Plateforme, hébergement, monitoring, support et ajustement mensuel des scénarios. L'utilisation du modèle est refacturée à prix coûtant, facture jointe. Nous ne prenons aucune marge sur les tokens."
         },
-        "content": {
-          "name": "Rédaction de contenu",
-          "price": "CHF 150 / page",
-          "desc": "Des textes adaptés à votre marque et à votre public."
-        },
-        "brandbook": {
-          "name": "Charte graphique",
-          "price": "CHF 2,500",
-          "desc": "Logo, palette de couleurs, typographie, tokens UI."
-        },
-        "seo": {
-          "name": "Suivi SEO",
-          "price": "CHF 500 / an",
-          "desc": "Audits mensuels, suivi des mots-clés, recommandations de contenu."
-        },
-        "legal": {
-          "name": "Textes juridiques",
-          "price": "CHF 125",
-          "desc": "Confidentialité, CG, cookies : modèles conformes au droit suisse et européen."
-        },
-        "media": {
-          "name": "Contenus visuels",
-          "price": "CHF 150 / page",
-          "desc": "Photos de banque d'images, illustrations ou visuels IA sélectionnés pour votre site."
-        },
-        "blog": {
-          "name": "Suivi du blog",
-          "price": "CHF 150 / mois",
-          "desc": "Publication régulière, relecture éditoriale, mise en forme SEO."
-        },
-        "design": {
-          "name": "Design sur mesure",
-          "price": "CHF 500 / page",
-          "desc": "Des mises en page uniques, au-delà des modèles du forfait."
+        "outcome": {
+          "k": "3 · Part au résultat, en option",
+          "amt": "Notre préférence",
+          "text": "La structure 70/30 : 70 % de la valeur en forfait fixe, 30 % liés à un KPI convenu par écrit avant le lancement (leads qualifiés, rendez-vous pris, temps de réponse tenu sous l'objectif). Là où l'effet est mesurable et l'attribution nette, nous prenons 15–25 % de l'économie annuelle vérifiée au lieu d'un forfait, avec plafond et révision trimestrielle. Si votre CRM ne sait pas attribuer une réservation à un canal, le forfait est la structure équitable, et nous vous le dirons."
         }
       },
-      "ctaTitle": "Commencez par une consultation gratuite",
-      "ctaLead": "Parlez-nous de votre projet. Nous vous recommandons le bon forfait et vous envoyons un devis à prix fixe sous 24 heures.",
-      "ctaPrimary": "Réserver une consultation",
-      "ctaSecondary": "Découvrir les sites web"
+      "exampleLabel": "Exemple chiffré",
+      "exampleTitle": "PME suisse du négoce",
+      "exampleLead": "Modèle illustratif, pas un résultat client. Ce qui compte, c'est la forme du calcul, pas ces chiffres précis.",
+      "inputsTitle": "Hypothèses",
+      "inputs": [
+        [
+          "Collaborateurs à la vente interne",
+          "3"
+        ],
+        [
+          "Coût complet par personne",
+          "CHF 8'000 / mois"
+        ],
+        [
+          "Demandes par mois",
+          "400"
+        ],
+        [
+          "Part reçue hors horaires",
+          "35 %"
+        ],
+        [
+          "Valeur moyenne d'une affaire",
+          "CHF 1'400"
+        ],
+        [
+          "Taux de conclusion actuel",
+          "18 %"
+        ]
+      ],
+      "effectsTitle": "Effet par mois",
+      "effects": [
+        [
+          "Volume de routine absorbé : 0.8 ETP réaffecté, pas licencié",
+          "CHF 6'400"
+        ],
+        [
+          "Demandes hors horaires désormais traitées : 140 par mois, à la moitié du taux de conclusion habituel",
+          "CHF 17'640 brut · CHF 5'292 de marge"
+        ],
+        [
+          "Première réponse plus rapide pendant les horaires : taux de conclusion en hausse de 2 points",
+          "CHF 2'184 de marge"
+        ],
+        [
+          "Bénéfice mensuel total",
+          "≈ CHF 13'876"
+        ],
+        [
+          "Coût d'exploitation de l'agent",
+          "−CHF 900"
+        ],
+        [
+          "Net",
+          "≈ CHF 12'976"
+        ]
+      ],
+      "payback": "Avec des frais d'intégration uniques de CHF 12'000, l'investissement est amorti dès le deuxième mois.",
+      "assumptions": "Lisez les hypothèses avant le total. Deux d'entre elles portent le calcul : que les demandes hors horaires se concluent deux fois moins souvent que pendant les horaires, et que la capacité libérée devient du chiffre d'affaires plutôt que du temps mort. Lors de l'audit, nous remplaçons les deux par vos chiffres mesurés et nous vous montrons aussi la version où ils sont moins favorables. Un calculateur réglé pour produire un titre accrocheur est un outil de vente, pas un business case.",
+      "referencesLabel": "À propos des références",
+      "referencesText": "Nous ne publions pas les résultats d'autres entreprises comme les nôtres, et nous ne nommons aucun client sans autorisation écrite. Les chiffres de cette page sont présentés comme des modèles, parce que c'en sont. Lors de l'audit, vous recevez le même modèle rempli avec vos données, et le fichier vous appartient."
     },
     "products": {
       "metaTitle": "8Move, plateforme logistique en production | Trident Software",
@@ -1506,19 +1574,23 @@
           ]
         }
       },
-      "waysTitle": "Nous partons de vos chiffres",
+      "waysTitle": "Nous partons de votre chiffre, pas du nôtre.",
+      "waysLead": [
+        "La plupart des fournisseurs annoncent une licence et vous laissent le business case. Nous inversons la logique : le premier rendez-vous produit votre chiffre, et le prix en est une part.",
+        "Trois façons de chiffrer ce que coûte réellement la routine aujourd'hui. Nous utilisons les trois, puis retenons la plus solide."
+      ],
       "ways": {
         "labour": {
           "title": "1. Travail direct",
-          "text": "Heures passées sur des demandes répétitives × coût complet. Un ETP de vente interne y consacre 4 à 6 heures par jour."
+          "text": "Heures par semaine passées sur des demandes répétitives × coût horaire complet. Un seul ETP de vente interne à CHF 90'000–120'000 de coût complet passe 4–6 heures par jour sur des conversations qu'un agent gère entièrement."
         },
         "revenue": {
           "title": "2. Chiffre d'affaires perdu",
-          "text": "Demandes hors horaires × taux de conclusion × valeur moyenne. En général le poste le plus lourd, et jamais mesuré."
+          "text": "Demandes reçues hors horaires × votre taux de conclusion × valeur moyenne d'une affaire. C'est en général le plus gros des trois postes, et celui que les entreprises n'ont jamais mesuré, car les demandes sans réponse ne laissent aucune trace dans le CRM."
         },
         "errors": {
           "title": "3. Coût des erreurs",
-          "text": "Offres erronées, réservations manquées, rendez-vous non confirmés et non honorés, chiffrés en marge perdue."
+          "text": "Offre erronée, réservation manquée, relance oubliée, le rendez-vous que personne n'a confirmé et où personne n'est venu. Chiffré en marge brute perdue, pas en chiffre d'affaires."
         }
       }
     },

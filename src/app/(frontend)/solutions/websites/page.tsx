@@ -8,6 +8,8 @@ import { cn } from '@/lib/utils'
 import { getSolutionBySlug } from '@/data/solutions'
 import { buildMetadata } from '@/lib/metadata'
 
+const ADD_ONS = ['hosting', 'language', 'content', 'brandbook', 'seo', 'legal', 'media', 'blog', 'design'] as const
+
 export async function generateMetadata() {
   const locale = await getLocale()
   const solution = getSolutionBySlug('websites', locale)
@@ -42,7 +44,7 @@ export default function WebsitesSolutionPage() {
             <ButtonLink href="/contact" arrow>
               {t('heroPrimary')}
             </ButtonLink>
-            <ButtonLink href="/pricing" variant="outline">
+            <ButtonLink href="/solutions/websites#add-ons" variant="outline">
               {t('heroSecondary')}
             </ButtonLink>
           </>
@@ -84,8 +86,26 @@ export default function WebsitesSolutionPage() {
         </div>
       </section>
 
+      {/* Add-ons (moved here from the old /site-price page) */}
+      <section id="add-ons" className="section" aria-labelledby="addons-h">
+        <div className="container">
+          <SectionHeader id="addons-h" label={t('addOnsLabel')} title={t('addOnsTitle')} lead={t('addOnsLead')} />
+          <ul className="grid-3 stagger" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+            {ADD_ONS.map((key) => (
+              <li key={key} className="card card--flat feature-card">
+                <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+                  <h3>{t(`addOns.${key}.name`)}</h3>
+                  <span className="mono text-[13px] font-semibold whitespace-nowrap text-blue-d">{t(`addOns.${key}.price`)}</span>
+                </div>
+                <p>{t(`addOns.${key}.desc`)}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* Features */}
-      <section className="section" aria-labelledby="feat-h">
+      <section className="section section--line" aria-labelledby="feat-h">
         <div className="container">
           <SectionHeader
             id="feat-h"
@@ -139,7 +159,7 @@ export default function WebsitesSolutionPage() {
               <ButtonLink href="/contact" arrow>
                 {t('ctaPrimary')}
               </ButtonLink>
-              <ButtonLink href="/pricing" variant="outline">
+              <ButtonLink href="/solutions/websites#add-ons" variant="outline">
                 {t('ctaSecondary')}
               </ButtonLink>
             </div>

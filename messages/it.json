@@ -781,6 +781,56 @@
         "mostPopular": "Il più scelto",
         "includes": "Include",
         "getStarted": "Inizia",
+        "addOnsLabel": "Servizi aggiuntivi",
+        "addOnsTitle": "Extra opzionali",
+        "addOnsLead": "Aggiungi solo ciò che ti serve. Ogni servizio aggiuntivo ha un prezzo a parte e si può attivare in qualsiasi momento.",
+        "addOns": {
+          "hosting": {
+            "name": "Hosting e dominio",
+            "price": "CHF 50 / anno",
+            "desc": "Hosting gestito, SSL, backup, rinnovo del dominio."
+          },
+          "language": {
+            "name": "Lingua aggiuntiva",
+            "price": "CHF 250",
+            "desc": "Per lingua: traduzione e SEO localizzata."
+          },
+          "content": {
+            "name": "Creazione di contenuti",
+            "price": "CHF 150 / pagina",
+            "desc": "Testi scritti su misura per il tuo brand e il tuo pubblico."
+          },
+          "brandbook": {
+            "name": "Brandbook",
+            "price": "CHF 2'500",
+            "desc": "Logo, palette colori, tipografia, token UI."
+          },
+          "seo": {
+            "name": "Supporto SEO",
+            "price": "CHF 500 / anno",
+            "desc": "Audit mensili, monitoraggio delle parole chiave, consigli sui contenuti."
+          },
+          "legal": {
+            "name": "Testi legali",
+            "price": "CHF 125",
+            "desc": "Privacy, termini, cookie: modelli conformi al diritto svizzero e UE."
+          },
+          "media": {
+            "name": "Contenuti visivi",
+            "price": "CHF 150 / pagina",
+            "desc": "Foto stock, illustrazioni o immagini IA selezionate per il tuo sito."
+          },
+          "blog": {
+            "name": "Supporto blog",
+            "price": "CHF 150 / mese",
+            "desc": "Pubblicazione continua, revisione editoriale, formattazione SEO."
+          },
+          "design": {
+            "name": "Design personalizzato",
+            "price": "CHF 500 / pagina",
+            "desc": "Layout su misura, oltre i modelli inclusi nel pacchetto."
+          }
+        },
         "whyLabel": "Perché noi",
         "whyTitle": "Pensato per le PMI svizzere",
         "whyLead": "Ogni sito che consegniamo è mobile-first, pronto per il multilingue e ottimizzato SEO, a prezzo fisso.",
@@ -820,74 +870,92 @@
       }
     },
     "pricing": {
-      "metaTitle": "Prezzi: siti web a prezzo fisso | Trident Software",
-      "metaDescription": "Pacchetti trasparenti a prezzo fisso per PMI svizzere. Sito vetrina da CHF 599, sito PMI CHF 1,299, portale utenti CHF 2,499, negozio online CHF 6,999.",
+      "metaTitle": "Prezzi degli agenti AI da CHF 450 al mese | Trident Software",
+      "metaDescription": "Prezzi degli agenti AI in tre voci: integrazione una tantum da CHF 6'000–25'000, esercizio da CHF 450 al mese, quota sul risultato 70/30 opzionale.",
       "crumb": "Prezzi",
       "label": "Prezzi",
-      "heroTitle": "Pacchetti trasparenti a <blue>prezzo fisso</blue>",
-      "heroLead": "Niente fatturazione a ore. Niente progetti che si allargano senza fine. Il prezzo è concordato prima di iniziare.",
-      "packagesLabel": "Pacchetti per siti web",
-      "packagesTitle": "Scegli il pacchetto giusto per te",
-      "packagesLead": "Dal semplice sito vetrina al negozio online completo. Ogni pacchetto ha un prezzo fisso e una data di consegna definita.",
-      "mostPopular": "Il più scelto",
-      "deliveredIn": "Consegna in {timeline}",
-      "for": "Per",
-      "includes": "Include",
-      "getStarted": "Inizia",
-      "addOnsLabel": "Servizi aggiuntivi",
-      "addOnsTitle": "Extra opzionali",
-      "addOnsLead": "Aggiungi solo ciò che ti serve. Ogni servizio aggiuntivo ha un prezzo a parte e si può attivare in qualsiasi momento.",
-      "addOns": {
-        "hosting": {
-          "name": "Hosting e dominio",
-          "price": "CHF 50 / anno",
-          "desc": "Hosting gestito, SSL, backup, rinnovo del dominio."
+      "heroTitle": "Tre voci. Mai un unico importo mensile.",
+      "heroLead": "Il costo di integrazione non sparisce mai dentro un canone mensile. Collegare un ERP, una contabilità o un database esistente è il punto in cui i progetti sforano, quindi lo quotiamo come voce a parte.",
+      "linesLabel": "Dietro ogni voce",
+      "linesTitle": "Cosa coprono le tre voci",
+      "lines": {
+        "integration": {
+          "k": "1 · Costo di integrazione, una tantum",
+          "amt": "CHF 6'000–25'000",
+          "text": "Analisi, creazione della base di conoscenza, progettazione degli scenari, collegamento di canali e CRM, test, formazione del team e due settimane di esercizio supervisionato. La forbice dipende dal numero di sistemi, non dal numero di canali."
         },
-        "language": {
-          "name": "Lingua aggiuntiva",
-          "price": "CHF 250",
-          "desc": "Per lingua: traduzione e SEO localizzata."
+        "run": {
+          "k": "2 · Esercizio, mensile",
+          "amt": "Da CHF 450 · tipico CHF 900 · automazione completa da CHF 1'800",
+          "text": "Piattaforma, hosting, monitoraggio, supporto e messa a punto mensile degli scenari. L'uso del modello è fatturato a prezzo di costo, con la fattura allegata. Sui token non applichiamo margini."
         },
-        "content": {
-          "name": "Creazione di contenuti",
-          "price": "CHF 150 / pagina",
-          "desc": "Testi scritti su misura per il tuo brand e il tuo pubblico."
-        },
-        "brandbook": {
-          "name": "Brandbook",
-          "price": "CHF 2,500",
-          "desc": "Logo, palette colori, tipografia, token UI."
-        },
-        "seo": {
-          "name": "Supporto SEO",
-          "price": "CHF 500 / anno",
-          "desc": "Audit mensili, monitoraggio delle parole chiave, consigli sui contenuti."
-        },
-        "legal": {
-          "name": "Testi legali",
-          "price": "CHF 125",
-          "desc": "Privacy, termini, cookie: modelli conformi al diritto svizzero e UE."
-        },
-        "media": {
-          "name": "Contenuti visivi",
-          "price": "CHF 150 / pagina",
-          "desc": "Foto stock, illustrazioni o immagini IA selezionate per il tuo sito."
-        },
-        "blog": {
-          "name": "Supporto blog",
-          "price": "CHF 150 / mese",
-          "desc": "Pubblicazione continua, revisione editoriale, formattazione SEO."
-        },
-        "design": {
-          "name": "Design personalizzato",
-          "price": "CHF 500 / pagina",
-          "desc": "Layout su misura, oltre i modelli inclusi nel pacchetto."
+        "outcome": {
+          "k": "3 · Quota sul risultato, opzionale",
+          "amt": "La nostra preferenza",
+          "text": "La struttura 70/30: 70 % del valore come compenso fisso, 30 % legato a un KPI concordato per iscritto prima dell'avvio (lead qualificati, prenotazioni effettuate, tempo di risposta sotto l'obiettivo). Dove l'effetto è misurabile e l'attribuzione è pulita, prendiamo il 15–25 % del risparmio annuo verificato al posto di un compenso fisso, con un tetto e una revisione trimestrale. Se il tuo CRM non riesce ad attribuire una prenotazione a un canale, il compenso fisso è la struttura corretta, e te lo diciamo."
         }
       },
-      "ctaTitle": "Inizia con una consulenza gratuita",
-      "ctaLead": "Raccontaci il tuo progetto. Ti consigliamo il pacchetto giusto e ti inviamo un preventivo a prezzo fisso entro 24 ore.",
-      "ctaPrimary": "Prenota una consulenza",
-      "ctaSecondary": "Scopri i siti web"
+      "exampleLabel": "Esempio di calcolo",
+      "exampleTitle": "PMI svizzera del commercio",
+      "exampleLead": "Modello illustrativo, non il risultato di un cliente. Conta la struttura del calcolo, non questi numeri in particolare.",
+      "inputsTitle": "Ipotesi",
+      "inputs": [
+        [
+          "Addetti alla vendita interna",
+          "3"
+        ],
+        [
+          "Costo pieno per persona",
+          "CHF 8'000 / mese"
+        ],
+        [
+          "Richieste al mese",
+          "400"
+        ],
+        [
+          "Quota che arriva fuori orario",
+          "35 %"
+        ],
+        [
+          "Valore medio di un affare",
+          "CHF 1'400"
+        ],
+        [
+          "Tasso di chiusura attuale",
+          "18 %"
+        ]
+      ],
+      "effectsTitle": "Effetto al mese",
+      "effects": [
+        [
+          "Volume di routine assorbito: 0.8 FTE ricollocati, non licenziati",
+          "CHF 6'400"
+        ],
+        [
+          "Richieste fuori orario ora evase: 140 al mese, a metà del tasso di chiusura abituale",
+          "CHF 17'640 lordi · CHF 5'292 di margine"
+        ],
+        [
+          "Prima risposta più rapida in orario d'ufficio: tasso di chiusura più alto di 2 punti",
+          "CHF 2'184 di margine"
+        ],
+        [
+          "Beneficio mensile totale",
+          "≈ CHF 13'876"
+        ],
+        [
+          "Costo di esercizio dell'agente",
+          "−CHF 900"
+        ],
+        [
+          "Netto",
+          "≈ CHF 12'976"
+        ]
+      ],
+      "payback": "Con un costo di integrazione una tantum di CHF 12'000, l'investimento rientra nel secondo mese.",
+      "assumptions": "Leggi le ipotesi prima del totale. Due di esse reggono il calcolo: che le richieste fuori orario si chiudano alla metà del tasso in orario, e che la capacità liberata diventi fatturato invece di tempo morto. Nell'audit le sostituiamo entrambe con i tuoi numeri misurati e ti mostriamo anche la versione in cui risultano peggiori. Un calcolatore tarato per produrre un titolo a effetto è uno strumento di vendita, non un business case.",
+      "referencesLabel": "Sulle referenze",
+      "referencesText": "Non pubblichiamo i risultati di altre aziende come se fossero nostri e non citiamo clienti senza un permesso scritto. Le cifre di questa pagina sono indicate come modelli, perché è quello che sono. Nell'audit ricevi lo stesso modello compilato con i tuoi dati, e il file resta tuo."
     },
     "products": {
       "metaTitle": "8Move, piattaforma logistica in produzione | Trident Software",
@@ -1506,19 +1574,23 @@
           ]
         }
       },
-      "waysTitle": "Partiamo dai tuoi numeri",
+      "waysTitle": "Partiamo dal tuo numero, non dal nostro.",
+      "waysLead": [
+        "La maggior parte dei fornitori indica il prezzo di una licenza e lascia a te il business case. Noi facciamo il contrario: il primo incontro produce il tuo numero, e il prezzo ne è una quota.",
+        "Tre modi per calcolare quanto costa davvero la routine oggi. Li usiamo tutti e tre e prendiamo il più solido."
+      ],
       "ways": {
         "labour": {
           "title": "1. Lavoro diretto",
-          "text": "Ore spese su richieste ripetitive × costo pieno. Un FTE di vendita interna ci dedica 4–6 ore al giorno."
+          "text": "Ore a settimana spese su richieste ripetitive × costo orario pieno. Un solo FTE di vendita interna da CHF 90'000–120'000 di costo pieno dedica 4–6 ore al giorno a conversazioni che un agente gestisce per intero."
         },
         "revenue": {
           "title": "2. Ricavi persi",
-          "text": "Richieste fuori orario × tasso di chiusura × valore medio. Di solito la voce più grande, e mai misurata."
+          "text": "Richieste che arrivano fuori orario × il tuo tasso di chiusura × valore medio di un affare. Di solito è la voce più grande delle tre e quella che le aziende non hanno mai misurato, perché le richieste senza risposta non lasciano traccia nel CRM."
         },
         "errors": {
           "title": "3. Costo degli errori",
-          "text": "Offerte sbagliate, prenotazioni mancate, appuntamenti mai confermati e saltati, valutati al margine perso."
+          "text": "Offerta sbagliata, prenotazione mancata, follow-up dimenticato, l'appuntamento che nessuno ha confermato e a cui nessuno si è presentato. Valutato al margine lordo perso, non al fatturato."
         }
       }
     },

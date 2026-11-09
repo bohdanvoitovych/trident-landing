@@ -11,7 +11,7 @@ Maps old WordPress URLs to new Next.js routes.
 | /our-team/ | /team | 301 redirect |
 | /contacts/ | /contact | 301 redirect |
 | /blog/ | /blog | ✓ |
-| /site-price/ | /pricing | 301 redirect |
+| /site-price/ | /solutions/websites | 301 redirect |
 
 ## Services
 
@@ -67,7 +67,7 @@ Maps old WordPress URLs to new Next.js routes.
 | /cases/tdsbot-iot | New case |
 | /cases/aida-medicine | New case |
 | /cases/lapochette | New case |
-| /pricing | Pricing page |
+| /pricing | AI agent pricing (website packages: /solutions/websites) |
 | /team | Dedicated team page |
 | /products | 8move product page |
 

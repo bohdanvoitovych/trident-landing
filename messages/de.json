@@ -781,6 +781,56 @@
         "mostPopular": "Am beliebtesten",
         "includes": "Inbegriffen",
         "getStarted": "Jetzt starten",
+        "addOnsLabel": "Zusatzleistungen",
+        "addOnsTitle": "Optionale Extras",
+        "addOnsLead": "Buchen Sie nur, was Sie brauchen. Jede Zusatzleistung hat ihren eigenen Preis und lässt sich jederzeit dazunehmen.",
+        "addOns": {
+          "hosting": {
+            "name": "Hosting & Domain",
+            "price": "CHF 50 / Jahr",
+            "desc": "Verwaltetes Hosting, SSL, Backups, Domain-Verlängerung."
+          },
+          "language": {
+            "name": "Zusätzliche Sprache",
+            "price": "CHF 250",
+            "desc": "Pro Sprachversion: Übersetzung und lokalisiertes SEO."
+          },
+          "content": {
+            "name": "Texterstellung",
+            "price": "CHF 150 / Seite",
+            "desc": "Texte, abgestimmt auf Ihre Marke und Ihre Zielgruppe."
+          },
+          "brandbook": {
+            "name": "Brandbook",
+            "price": "CHF 2'500",
+            "desc": "Logo, Farbpalette, Typografie, UI-Tokens."
+          },
+          "seo": {
+            "name": "SEO-Betreuung",
+            "price": "CHF 500 / Jahr",
+            "desc": "Monatliche Audits, Keyword-Tracking, Empfehlungen für Inhalte."
+          },
+          "legal": {
+            "name": "Rechtstexte",
+            "price": "CHF 125",
+            "desc": "Datenschutz, AGB, Cookies: Vorlagen konform mit Schweizer und EU-Recht."
+          },
+          "media": {
+            "name": "Bildmaterial",
+            "price": "CHF 150 / Seite",
+            "desc": "Stockfotos, Illustrationen oder KI-Bilder, ausgewählt für Ihre Website."
+          },
+          "blog": {
+            "name": "Blog-Betreuung",
+            "price": "CHF 150 / Monat",
+            "desc": "Laufende Veröffentlichung, redaktionelle Prüfung, SEO-Formatierung."
+          },
+          "design": {
+            "name": "Individuelles Design",
+            "price": "CHF 500 / Seite",
+            "desc": "Massgeschneiderte Layouts über die Paketvorlagen hinaus."
+          }
+        },
         "whyLabel": "Warum wir",
         "whyTitle": "Gemacht für Schweizer KMU",
         "whyLead": "Jede Website, die wir liefern, ist mobile-first, mehrsprachig vorbereitet und SEO-optimiert, zum Festpreis.",
@@ -820,74 +870,92 @@
       }
     },
     "pricing": {
-      "metaTitle": "Preise: Website-Pakete zum Festpreis | Trident Software",
-      "metaDescription": "Transparente Festpreis-Pakete für Schweizer KMU. Visitenkarten-Website ab CHF 599, KMU-Website CHF 1,299, Kundenportal CHF 2,499, Onlineshop CHF 6,999.",
+      "metaTitle": "Preise für KI-Agenten ab CHF 450 im Monat | Trident Software",
+      "metaDescription": "Preise für KI-Agenten in drei Posten: einmalige Integration CHF 6'000–25'000, Betrieb ab CHF 450 im Monat, optional eine 70/30-Erfolgsbeteiligung.",
       "crumb": "Preise",
       "label": "Preise",
-      "heroTitle": "Transparente Pakete zum <blue>Festpreis</blue>",
-      "heroLead": "Keine Stundenabrechnung. Kein ausuferndes Projekt. Der Preis steht fest, bevor die Arbeit beginnt.",
-      "packagesLabel": "Website-Pakete",
-      "packagesTitle": "Wählen Sie das passende Paket",
-      "packagesLead": "Von der einfachen Visitenkarten-Website bis zum vollständigen Onlineshop. Jedes Paket hat einen festen Preis und einen festen Liefertermin.",
-      "mostPopular": "Am beliebtesten",
-      "deliveredIn": "Lieferung in {timeline}",
-      "for": "Für",
-      "includes": "Inbegriffen",
-      "getStarted": "Jetzt starten",
-      "addOnsLabel": "Zusatzleistungen",
-      "addOnsTitle": "Optionale Extras",
-      "addOnsLead": "Buchen Sie nur, was Sie brauchen. Jede Zusatzleistung hat ihren eigenen Preis und lässt sich jederzeit dazunehmen.",
-      "addOns": {
-        "hosting": {
-          "name": "Hosting & Domain",
-          "price": "CHF 50 / Jahr",
-          "desc": "Verwaltetes Hosting, SSL, Backups, Domain-Verlängerung."
+      "heroTitle": "Drei Posten. Nie eine einzige Monatszahl.",
+      "heroLead": "Die Integrationsgebühr verschwindet nie in einer Monatspauschale. An der Anbindung eines bestehenden ERP, einer Buchhaltung oder einer Altdatenbank laufen Projekte aus dem Ruder. Darum offerieren wir sie als eigenen Posten.",
+      "linesLabel": "Hinter jedem Posten",
+      "linesTitle": "Was die drei Posten abdecken",
+      "lines": {
+        "integration": {
+          "k": "1 · Integrationsgebühr, einmalig",
+          "amt": "CHF 6'000–25'000",
+          "text": "Analyse, Aufbau der Wissensbasis, Szenario-Design, Anbindung von Kanälen und CRM, Tests, Schulung des Teams und zwei Wochen begleiteter Live-Betrieb. Die Spanne hängt von der Zahl der Systeme ab, nicht von der Zahl der Kanäle."
         },
-        "language": {
-          "name": "Zusätzliche Sprache",
-          "price": "CHF 250",
-          "desc": "Pro Sprachversion: Übersetzung und lokalisiertes SEO."
+        "run": {
+          "k": "2 · Betrieb, monatlich",
+          "amt": "Ab CHF 450 · typisch CHF 900 · Vollautomatisierung ab CHF 1'800",
+          "text": "Plattform, Hosting, Monitoring, Support und monatliche Feinabstimmung der Szenarien. Die Modellnutzung verrechnen wir zum Selbstkostenpreis, die Rechnung liegt bei. Auf Tokens nehmen wir keine Marge."
         },
-        "content": {
-          "name": "Texterstellung",
-          "price": "CHF 150 / Seite",
-          "desc": "Texte, abgestimmt auf Ihre Marke und Ihre Zielgruppe."
-        },
-        "brandbook": {
-          "name": "Brandbook",
-          "price": "CHF 2,500",
-          "desc": "Logo, Farbpalette, Typografie, UI-Tokens."
-        },
-        "seo": {
-          "name": "SEO-Betreuung",
-          "price": "CHF 500 / Jahr",
-          "desc": "Monatliche Audits, Keyword-Tracking, Empfehlungen für Inhalte."
-        },
-        "legal": {
-          "name": "Rechtstexte",
-          "price": "CHF 125",
-          "desc": "Datenschutz, AGB, Cookies: Vorlagen konform mit Schweizer und EU-Recht."
-        },
-        "media": {
-          "name": "Bildmaterial",
-          "price": "CHF 150 / Seite",
-          "desc": "Stockfotos, Illustrationen oder KI-Bilder, ausgewählt für Ihre Website."
-        },
-        "blog": {
-          "name": "Blog-Betreuung",
-          "price": "CHF 150 / Monat",
-          "desc": "Laufende Veröffentlichung, redaktionelle Prüfung, SEO-Formatierung."
-        },
-        "design": {
-          "name": "Individuelles Design",
-          "price": "CHF 500 / Seite",
-          "desc": "Massgeschneiderte Layouts über die Paketvorlagen hinaus."
+        "outcome": {
+          "k": "3 · Erfolgsbeteiligung, optional",
+          "amt": "Unsere bevorzugte Variante",
+          "text": "Die 70/30-Struktur: 70 % des Werts als Fixpreis, 30 % gebunden an einen KPI, der vor dem Start schriftlich vereinbart wird (qualifizierte Leads, gebuchte Termine, Antwortzeit unter dem Zielwert). Wo sich der Effekt messen und sauber zuordnen lässt, nehmen wir statt eines Fixpreises 15–25 % der verifizierten jährlichen Einsparung, mit Obergrenze und vierteljährlicher Überprüfung. Kann Ihr CRM eine Buchung keinem Kanal zuordnen, ist ein Fixpreis die faire Lösung, und das sagen wir Ihnen auch."
         }
       },
-      "ctaTitle": "Starten Sie mit einer kostenlosen Beratung",
-      "ctaLead": "Erzählen Sie uns von Ihrem Projekt. Wir empfehlen das passende Paket und senden Ihnen innert 24 Stunden eine verbindliche Offerte.",
-      "ctaPrimary": "Beratung buchen",
-      "ctaSecondary": "Websites entdecken"
+      "exampleLabel": "Rechenbeispiel",
+      "exampleTitle": "Schweizer Handels-KMU",
+      "exampleLead": "Ein illustratives Modell, kein Kundenergebnis. Es geht um den Aufbau der Rechnung, nicht um diese konkreten Zahlen.",
+      "inputsTitle": "Annahmen",
+      "inputs": [
+        [
+          "Mitarbeitende im Innendienst",
+          "3"
+        ],
+        [
+          "Vollkosten pro Person",
+          "CHF 8'000 / Monat"
+        ],
+        [
+          "Anfragen pro Monat",
+          "400"
+        ],
+        [
+          "Anteil ausserhalb der Bürozeiten",
+          "35 %"
+        ],
+        [
+          "Durchschnittlicher Auftragswert",
+          "CHF 1'400"
+        ],
+        [
+          "Aktuelle Abschlussquote",
+          "18 %"
+        ]
+      ],
+      "effectsTitle": "Effekt pro Monat",
+      "effects": [
+        [
+          "Routinevolumen übernommen: 0.8 Vollzeitstellen umverteilt, nicht entlassen",
+          "CHF 6'400"
+        ],
+        [
+          "Anfragen ausserhalb der Bürozeiten jetzt beantwortet: 140 pro Monat, zur halben üblichen Abschlussquote",
+          "CHF 17'640 brutto · CHF 5'292 Marge"
+        ],
+        [
+          "Schnellere Erstantwort auf Anfragen während der Bürozeiten: Abschlussquote 2 Prozentpunkte höher",
+          "CHF 2'184 Marge"
+        ],
+        [
+          "Monatlicher Nutzen gesamt",
+          "≈ CHF 13'876"
+        ],
+        [
+          "Laufende Kosten des Agenten",
+          "−CHF 900"
+        ],
+        [
+          "Netto",
+          "≈ CHF 12'976"
+        ]
+      ],
+      "payback": "Bei einer einmaligen Integrationsgebühr von CHF 12'000 ist die Investition im zweiten Monat amortisiert.",
+      "assumptions": "Lesen Sie zuerst die Annahmen, dann das Total. Zwei davon tragen die Rechnung: dass Anfragen ausserhalb der Bürozeiten nur halb so oft zum Abschluss führen wie während der Bürozeiten, und dass frei gewordene Kapazität zu Umsatz wird statt zu Leerlauf. Im Audit ersetzen wir beide durch Ihre gemessenen Zahlen und zeigen Ihnen auch die Variante, in der sie schlechter ausfallen. Ein Rechner, der auf eine Schlagzeile getrimmt ist, ist ein Verkaufswerkzeug und kein Business Case.",
+      "referencesLabel": "Zu Referenzen",
+      "referencesText": "Wir veröffentlichen keine Ergebnisse anderer Firmen als unsere eigenen, und wir nennen Kunden nur mit schriftlicher Erlaubnis. Die Zahlen auf dieser Seite sind als Modelle gekennzeichnet, weil sie genau das sind. Im Audit erhalten Sie dasselbe Modell mit Ihren Daten, und die Datei gehört Ihnen."
     },
     "products": {
       "metaTitle": "8Move, Logistikplattform im Einsatz | Trident Software",
@@ -1506,19 +1574,23 @@
           ]
         }
       },
-      "waysTitle": "Wir rechnen mit Ihren Zahlen",
+      "waysTitle": "Wir rechnen mit Ihrer Zahl, nicht mit unserer.",
+      "waysLead": [
+        "Die meisten Anbieter nennen einen Lizenzpreis und überlassen Ihnen den Business Case. Wir drehen das um: Das erste Gespräch liefert Ihre Zahl, und der Preis ist ein Anteil davon.",
+        "Drei Wege, um zu beziffern, was die Routine heute wirklich kostet. Wir rechnen alle drei und nehmen den belastbarsten."
+      ],
       "ways": {
         "labour": {
           "title": "1. Direkter Aufwand",
-          "text": "Stunden für wiederkehrende Anfragen × Vollkosten. Eine Innendienst-Vollzeitstelle verbringt 4–6 Stunden pro Tag damit."
+          "text": "Wochenstunden für wiederkehrende Anfragen × Vollkosten pro Stunde. Eine Innendienst-Vollzeitstelle mit CHF 90'000–120'000 Vollkosten verbringt 4–6 Stunden pro Tag mit Gesprächen, die ein Agent vollständig übernimmt."
         },
         "revenue": {
           "title": "2. Entgangener Umsatz",
-          "text": "Anfragen ausserhalb der Bürozeiten × Abschlussquote × Auftragswert. Meist der grösste Posten, und nie gemessen."
+          "text": "Anfragen ausserhalb der Bürozeiten × Ihre Abschlussquote × durchschnittlicher Auftragswert. Meist der grösste der drei Posten und derjenige, den Firmen nie gemessen haben, weil unbeantwortete Anfragen im CRM keine Spur hinterlassen."
         },
         "errors": {
           "title": "3. Kosten von Fehlern",
-          "text": "Falsche Offerten, verpasste Buchungen, unbestätigte Termine ohne Erscheinen, bewertet zur verlorenen Marge."
+          "text": "Falsche Offerte, verpasste Buchung, vergessenes Nachfassen, der Termin, den niemand bestätigt hat und zu dem niemand erschien. Bewertet zur verlorenen Bruttomarge, nicht zum Umsatz."
         }
       }
     },

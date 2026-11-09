@@ -93,7 +93,7 @@ export default function SolutionsPage() {
               <ButtonLink href="/contact" arrow>
                 {t('ctaPrimary')}
               </ButtonLink>
-              <ButtonLink href="/pricing" variant="outline">
+              <ButtonLink href="/solutions/websites" variant="outline">
                 {t('ctaSecondary')}
               </ButtonLink>
             </div>

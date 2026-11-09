@@ -55,7 +55,7 @@ export default async function WebsitePackagePage({ params }: Props) {
             <ButtonLink href="/contact" arrow>
               {t('heroPrimary')}
             </ButtonLink>
-            <ButtonLink href="/pricing" variant="outline">
+            <ButtonLink href="/solutions/websites" variant="outline">
               {t('heroSecondary')}
             </ButtonLink>
           </>
