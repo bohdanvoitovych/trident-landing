@@ -233,7 +233,6 @@ describe('/pricing is AI pricing; website packages stay on /solutions/websites (
       .sort()
     expect(linking).toEqual([
       'src/app/(frontend)/pricing/page.tsx', // own crumb and canonical path
-      'src/components/organisms/Footer.tsx', // "Pricing" in the footer, as in Yevhen's version
       'src/components/templates/ServiceDetailPage.tsx', // "See the economics"
       'src/data/ai-services/de.ts', // delivery stage 1: "the economics"
       'src/data/ai-services/en.ts',

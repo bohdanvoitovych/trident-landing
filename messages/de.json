@@ -34,7 +34,7 @@
     "hero": {
       "badge": "Schweizer Qualitäts-Engineering",
       "title": "KI-natives Software-Engineering für echte Geschäftsprozesse",
-      "subtitle": "Wir entwickeln massgeschneiderte Plattformen, KI-Integrationen und eingebettete Systeme für KMU — mit Schweizer Compliance, Festpreisen und einem Team mit 27+ Projekten seit 2009.",
+      "subtitle": "Wir entwickeln massgeschneiderte Plattformen, KI-Integrationen und eingebettete Systeme für KMU — mit Schweizer Compliance, Festpreisen und einem Team mit 100+ Projekten seit 2009.",
       "cta": "30-min Gespräch buchen",
       "ctaSecondary": "Fallstudien ansehen"
     },
@@ -44,7 +44,7 @@
     },
     "cases": {
       "title": "Ausgewählte Projekte",
-      "subtitle": "27+ Projekte in Automotive, Healthcare, Fashion, Logistik und mehr."
+      "subtitle": "100+ Projekte in Automotive, Healthcare, Fashion, Logistik und mehr."
     },
     "stats": {
       "projects": "Abgeschlossene Projekte",
@@ -157,8 +157,7 @@
         "maker": "Komponentenhersteller · IT · gemessen",
         "agent": "Verkaufsagent",
         "residency": "Datenstandort"
-      },
-      "photoAlt": "Serverraum, in dem die Agenten laufen"
+      }
     },
     "problem": {
       "gap": "Genau da liegt die Lücke."
@@ -448,7 +447,7 @@
     },
     "cases": {
       "metaTitle": "Softwareprojekte & Fallstudien | Trident Software Schweiz",
-      "metaDescription": "Über 27 umgesetzte Softwareprojekte: B2B-Plattformen für die Autobranche, KI im Gesundheitswesen, E-Commerce, IoT, SaaS. Schweizer Engineering-Team seit 2009.",
+      "metaDescription": "Über 100 umgesetzte Softwareprojekte: B2B-Plattformen für die Autobranche, KI im Gesundheitswesen, E-Commerce, IoT, SaaS. Schweizer Engineering-Team seit 2009.",
       "label": "Portfolio",
       "title": "Geliefert, dann gezählt",
       "lead": "{total} Produkte und Plattformen für Kunden in der Schweiz und in Europa. {withCase} davon sind ausführlich dokumentiert, mit den Zahlen dahinter.",
@@ -472,7 +471,7 @@
           "label": "Abgedeckte Branchen"
         },
         "projects": {
-          "value": "27+",
+          "value": "100+",
           "label": "Umgesetzte Projekte"
         },
         "since": {
@@ -530,13 +529,13 @@
     },
     "team": {
       "metaTitle": "Unser Team | Trident Software",
-      "metaDescription": "26 Senior Engineers in der Schweiz, der Ukraine und Israel. Backend, Frontend, Mobile, QA und DevOps. Keine Juniors in Kundenprojekten.",
+      "metaDescription": "Über 10 Senior Engineers in der Schweiz und der Ukraine. Backend, Frontend, Mobile und Projektleitung. Keine Juniors in Kundenprojekten.",
       "crumb": "Unser Team",
-      "title": "26 <blue>Senior Engineers</blue> in 3 Ländern",
+      "title": "10+ <blue>Senior Engineers</blue> in der Schweiz und der Ukraine",
       "lead": "Keine Juniors in Kundenprojekten. Alle Engineers haben über 5 Jahre Produktionserfahrung. Vom Kickoff bis zur Übergabe arbeiten Sie mit denselben Leuten.",
       "chips": {
-        "engineers": "26 Engineers",
-        "countries": "CH · UA · IL",
+        "engineers": "10+ Engineers",
+        "countries": "CH · UA",
         "seniorOnly": "Nur Seniors"
       },
       "peopleLabel": "Menschen",
@@ -551,26 +550,6 @@
         "QA": "QA",
         "DevOps": "DevOps"
       },
-      "whereLabel": "Wo wir sind",
-      "whereTitle": "Drei Standorte, ein Team",
-      "whereLead": "Abdeckung in der MEZ, mehrsprachige Kommunikation und Senior Engineers an jedem Standort.",
-      "locations": {
-        "sion": {
-          "city": "Sitten, Wallis",
-          "country": "Schweiz",
-          "role": "Hauptsitz · Geschäftsentwicklung · Kundenbetreuung"
-        },
-        "kyiv": {
-          "city": "Kiew",
-          "country": "Ukraine",
-          "role": "Engineering · Entwicklung · QA"
-        },
-        "telAviv": {
-          "city": "Tel Aviv",
-          "country": "Israel",
-          "role": "KI-Forschung · Computer Vision · F&E"
-        }
-      },
       "ctaTitle": "Arbeiten Sie mit unserem Team",
       "ctaLead": "Erzählen Sie uns von Ihrem Projekt. Die Engineers, die Sie beim Kickoff kennenlernen, setzen es auch um.",
       "ctaButton": "Gespräch beginnen",
@@ -578,7 +557,7 @@
     },
     "services": {
       "metaTitle": "Softwareentwicklung Schweiz | KI-Agenten, Logistik, IoT | Trident Software",
-      "metaDescription": "KI-Agenten & LLM-Automatisierung, Logistik- & Betriebsplattformen, individuelle Geschäftssysteme, IoT und CTO as a Service. Festpreise, über 27 Projekte seit 2009.",
+      "metaDescription": "KI-Agenten & LLM-Automatisierung, Logistik- & Betriebsplattformen, individuelle Geschäftssysteme, IoT und CTO as a Service. Festpreise, über 100 Projekte seit 2009.",
       "crumb": "Dienstleistungen",
       "label": "Was wir bauen",
       "title": "Softwareentwicklung für Unternehmen in der Schweiz und Europa",
@@ -621,14 +600,14 @@
         },
         "experience": {
           "title": "Über 15 Jahre in Produktion",
-          "desc": "Gegründet 2009. Über 27 Kunden aus der Schweiz und Europa. Wir wissen, was in der Produktion kaputtgeht."
+          "desc": "Gegründet 2009. Über 100 Projekte für Kunden aus der Schweiz und Europa. Wir wissen, was in der Produktion kaputtgeht."
         },
         "noLockIn": {
           "title": "Kein Vendor Lock-in",
           "desc": "Code, Repository und Infrastruktur gehören Ihnen. Wir übergeben alles."
         },
         "talent": {
-          "title": "Talente aus CH, IL und UA",
+          "title": "Talente aus CH und UA",
           "desc": "Senior Engineers in MEZ-nahen Zeitzonen. Fast vollständige Überschneidung mit europäischen Teams."
         }
       },
@@ -1104,29 +1083,28 @@
     },
     "about": {
       "metaTitle": "Über uns | Trident Software",
-      "metaDescription": "Trident Software: Schweizer Softwareentwicklung mit KI im Kern. Gegründet 2009 in Sitten, Wallis. 26 Ingenieure, 27+ Projekte, 8 Länder.",
+      "metaDescription": "Trident Software: Schweizer Softwareentwicklung mit KI im Kern. Gegründet 2009 in Sitten, Wallis. 10+ Ingenieure, 100+ Projekte, 20+ Länder.",
       "label": "Über Trident",
       "heroTitle": "Schweizer Qualität. Engineering mit <blue>KI im Kern</blue>.",
       "heroLead": "Trident Software wurde 2009 in Sitten im Wallis gegründet und entwickelt individuelle Software, KI-Systeme und Embedded-Lösungen für europäische KMU. Nur erfahrene Ingenieure. Feste Budgets. Compliance inklusive.",
       "chips": [
         "Sitten, Wallis, Schweiz",
         "ISO 27000 · nDSG",
-        "26 Ingenieure · 3 Länder"
+        "10+ Ingenieure · 2 Länder"
       ],
       "storyLabel": "Unsere Geschichte",
       "storyTitle": "Von Ingenieuren, für Ingenieure",
       "storyIntro": "Trident entstand aus dem Frust über Agenturen, die viel versprechen und wenig liefern. Unser Ziel: ein Unternehmen, in dem erfahrene Ingenieure das Ergebnis von Anfang bis Ende verantworten.",
       "storyP1": "Wir haben 2009 in Sitten mit zwei Ingenieuren und einer Überzeugung begonnen: Gute Software braucht gute Ingenieure, die vom Kickoff bis zum Deployment am Projekt bleiben. Keine Übergaben, kein Austausch gegen Junioren, keine Feature-Fabrik.",
-      "storyP2": "In über 15 Jahren haben wir mehr als 27 Projekte in Automobil, Gesundheitswesen, Logistik, Mode und SaaS umgesetzt. KI bringen wir seit 2021 in produktive Systeme, lange vor der aktuellen Welle.",
-      "storyP3": "Heute arbeiten wir an drei Standorten, in der Schweiz, der Ukraine und Israel, mit 26 Ingenieuren, die dieselben Standards teilen: saubere Architektur, überwachbare Systeme und ehrliche Zeitpläne.",
+      "storyP2": "In über 15 Jahren haben wir mehr als 100 Projekte in Automobil, Gesundheitswesen, Logistik, Mode und SaaS umgesetzt. KI bringen wir seit 2021 in produktive Systeme, lange vor der aktuellen Welle.",
+      "storyP3": "Heute arbeiten wir in Sitten und Kyjiw, mit über 10 erfahrenen Ingenieuren, die dieselben Standards teilen: saubere Architektur, überwachbare Systeme und ehrliche Zeitpläne.",
       "timeline": {
         "y2009": "Gründung in Sitten, Wallis, Schweiz",
         "y2012": "Erstes Embedded-Projekt: industrielles IoT für die Fertigung",
         "y2015": "Eröffnung des Büros in der Ukraine für Engineering-Talente",
-        "y2018": "Aufbau des F&E-Standorts in Israel für KI und Computer Vision",
         "y2021": "Erste LLM-Integration im Produktivbetrieb, 18 Monate vor dem Start von ChatGPT",
         "y2023": "Start des Bereichs KI-Services; 12 KI-Projekte in 12 Monaten geliefert",
-        "y2024": "27. Projekt geliefert; das Team wächst auf 26 Ingenieure an 3 Standorten"
+        "y2024": "Über 100 Projekte geliefert; mehr als 10 Senior-Ingenieure in Sitten und Kyjiw"
       },
       "valuesLabel": "Unsere Werte",
       "valuesTitle": "So arbeiten wir",
@@ -1158,7 +1136,7 @@
         }
       },
       "whereLabel": "Wo wir sind",
-      "whereTitle": "Drei Standorte, ein Team",
+      "whereTitle": "Zwei Standorte, ein Team",
       "whereLead": "Abdeckung in der MEZ, mehrsprachige Kommunikation und erfahrene Ingenieure an jedem Standort.",
       "locations": {
         "sion": {
@@ -1170,15 +1148,10 @@
           "city": "Kyjiw",
           "country": "Ukraine",
           "role": "Engineering · Entwicklung · QA"
-        },
-        "telAviv": {
-          "city": "Tel Aviv",
-          "country": "Israel",
-          "role": "KI-Forschung · Computer Vision · F&E"
         }
       },
       "teamLabel": "Das Team",
-      "teamTitle": "26 erfahrene Ingenieure",
+      "teamTitle": "10+ erfahrene Ingenieure",
       "teamLead": "Keine Junioren in Kundenprojekten. Jeder Ingenieur hat mehr als 5 Jahre Erfahrung im Produktivbetrieb. Sie arbeiten vom Kickoff bis zur Übergabe mit denselben Leuten.",
       "composition": {
         "backend": "Backend-Ingenieure",
@@ -1217,7 +1190,16 @@
         "phone": "Telefon",
         "email": "E-Mail"
       },
-      "escalated": "eskal."
+      "escalated": "eskal.",
+      "flow": {
+        "caption": "KANÄLE → AGENT → SYSTEME",
+        "agent": "KI-Agent",
+        "stock": "Lager · ERP",
+        "bill": "QR-Rechnung",
+        "crm": "HubSpot CRM",
+        "dispatch": "Disposition",
+        "sales": "Verkauf"
+      }
     },
     "problem": {
       "label": "Das Problem",
@@ -1777,7 +1759,7 @@
   "chrome": {
     "meta": {
       "defaultTitle": "Trident Software — Softwareentwicklung in Schweizer Qualität",
-      "description": "Individuelle Softwareentwicklung, KI-Integration und Embedded-Systeme für KMU. Schweizer Compliance, feste Budgets, 27+ realisierte Projekte."
+      "description": "Individuelle Softwareentwicklung, KI-Integration und Embedded-Systeme für KMU. Schweizer Compliance, feste Budgets, 100+ realisierte Projekte."
     },
     "footer": {
       "auditTitle": "Bringen Sie Ihr Mengengerüst mit. Sie gehen mit <em>Ihren Zahlen.</em>",
@@ -1811,7 +1793,8 @@
         "imprint": "Impressum",
         "cookies": "Cookies"
       },
-      "bottomLine": "Software aus der Schweiz · © {year} Trident Software Sàrl · CHE-185.076.733"
+      "bottomLine": "Software aus der Schweiz · © {year} Trident Software Sàrl · CHE-185.076.733",
+      "newsTitle": "Neue Artikel per E-Mail"
     }
   },
   "molecules": {

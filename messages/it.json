@@ -34,7 +34,7 @@
     "hero": {
       "badge": "Ingegneria di qualità svizzera",
       "title": "Sviluppo software AI-native per le imprese reali",
-      "subtitle": "Sviluppiamo piattaforme personalizzate, integrazioni AI e sistemi embedded per le PMI — con conformità svizzera, budget fissi e un team con 27+ progetti dal 2009.",
+      "subtitle": "Sviluppiamo piattaforme personalizzate, integrazioni AI e sistemi embedded per le PMI — con conformità svizzera, budget fissi e un team con 100+ progetti dal 2009.",
       "cta": "Prenota una chiamata di 30 min",
       "ctaSecondary": "Esplora i casi di studio"
     },
@@ -44,7 +44,7 @@
     },
     "cases": {
       "title": "Lavori selezionati",
-      "subtitle": "27+ progetti consegnati in automotive, healthcare, moda, logistica e altro."
+      "subtitle": "100+ progetti consegnati in automotive, healthcare, moda, logistica e altro."
     },
     "stats": {
       "projects": "Progetti consegnati",
@@ -157,8 +157,7 @@
         "maker": "Produttore di componenti · IT · misurato",
         "agent": "Agente di vendita",
         "residency": "Residenza dei dati"
-      },
-      "photoAlt": "Sala server in cui girano gli agenti"
+      }
     },
     "problem": {
       "gap": "Ecco dov'è il divario."
@@ -448,7 +447,7 @@
     },
     "cases": {
       "metaTitle": "Progetti di sviluppo software e casi di studio | Trident Software Svizzera",
-      "metaDescription": "Oltre 27 progetti software consegnati: piattaforme B2B per l'automotive, IA in sanità, e-commerce, IoT, SaaS. Team di ingegneri svizzero dal 2009.",
+      "metaDescription": "Oltre 100 progetti software consegnati: piattaforme B2B per l'automotive, IA in sanità, e-commerce, IoT, SaaS. Team di ingegneri svizzero dal 2009.",
       "label": "Portfolio",
       "title": "Consegnati, poi contati",
       "lead": "{total} prodotti e piattaforme realizzati per clienti in Svizzera e in Europa. {withCase} sono descritti nel dettaglio, con i numeri che li sostengono.",
@@ -472,7 +471,7 @@
           "label": "Settori coperti"
         },
         "projects": {
-          "value": "27+",
+          "value": "100+",
           "label": "Progetti consegnati"
         },
         "since": {
@@ -530,13 +529,13 @@
     },
     "team": {
       "metaTitle": "Il nostro team | Trident Software",
-      "metaDescription": "26 ingegneri senior tra Svizzera, Ucraina e Israele. Backend, frontend, mobile, QA e DevOps. Nessun junior sui progetti dei clienti.",
+      "metaDescription": "Oltre 10 ingegneri senior tra Svizzera e Ucraina. Backend, frontend, mobile e project management. Nessun junior sui progetti dei clienti.",
       "crumb": "Il nostro team",
-      "title": "26 <blue>ingegneri senior</blue> in 3 paesi",
+      "title": "10+ <blue>ingegneri senior</blue> tra Svizzera e Ucraina",
       "lead": "Nessun junior sui progetti dei clienti. Ogni ingegnere ha più di 5 anni di esperienza in produzione. Lavori con le stesse persone dal kickoff alla consegna.",
       "chips": {
-        "engineers": "26 ingegneri",
-        "countries": "CH · UA · IL",
+        "engineers": "10+ ingegneri",
+        "countries": "CH · UA",
         "seniorOnly": "Solo senior"
       },
       "peopleLabel": "Persone",
@@ -551,26 +550,6 @@
         "QA": "QA",
         "DevOps": "DevOps"
       },
-      "whereLabel": "Dove siamo",
-      "whereTitle": "Tre sedi, un solo team",
-      "whereLead": "Copertura sul fuso CET, comunicazione multilingue e ingegneri senior in ogni sede.",
-      "locations": {
-        "sion": {
-          "city": "Sion, Vallese",
-          "country": "Svizzera",
-          "role": "Sede centrale · Sviluppo commerciale · Relazioni con i clienti"
-        },
-        "kyiv": {
-          "city": "Kiev",
-          "country": "Ucraina",
-          "role": "Ingegneria · Sviluppo · QA"
-        },
-        "telAviv": {
-          "city": "Tel Aviv",
-          "country": "Israele",
-          "role": "Ricerca IA · Computer Vision · R&S"
-        }
-      },
       "ctaTitle": "Lavora con il nostro team",
       "ctaLead": "Raccontaci il tuo progetto. Gli ingegneri che incontri al kickoff sono quelli che lo realizzeranno.",
       "ctaButton": "Inizia una conversazione",
@@ -578,7 +557,7 @@
     },
     "services": {
       "metaTitle": "Sviluppo software in Svizzera | Agenti AI, logistica, IoT | Trident Software",
-      "metaDescription": "Agenti AI & automazione LLM, piattaforme logistiche, sistemi gestionali su misura, IoT e CTO as a Service. Budget fissi, oltre 27 progetti dal 2009.",
+      "metaDescription": "Agenti AI & automazione LLM, piattaforme logistiche, sistemi gestionali su misura, IoT e CTO as a Service. Budget fissi, oltre 100 progetti dal 2009.",
       "crumb": "Servizi",
       "label": "Cosa sviluppiamo",
       "title": "Servizi di sviluppo software per aziende svizzere ed europee",
@@ -621,14 +600,14 @@
         },
         "experience": {
           "title": "Oltre 15 anni in produzione",
-          "desc": "Fondata nel 2009. Oltre 27 clienti svizzeri ed europei. Sappiamo cosa si rompe in produzione."
+          "desc": "Fondata nel 2009. Oltre 100 progetti per clienti svizzeri ed europei. Sappiamo cosa si rompe in produzione."
         },
         "noLockIn": {
           "title": "Nessun vendor lock-in",
           "desc": "Il codice, il repository e l'infrastruttura sono tuoi. Ti consegniamo tutto."
         },
         "talent": {
-          "title": "Talenti in CH, IL e UA",
+          "title": "Talenti in CH e UA",
           "desc": "Ingegneri senior su fusi orari vicini al CET. Sovrapposizione quasi totale con i team europei."
         }
       },
@@ -1104,29 +1083,28 @@
     },
     "about": {
       "metaTitle": "Chi siamo | Trident Software",
-      "metaDescription": "Trident Software: azienda svizzera di ingegneria del software nativa IA. Fondata nel 2009 a Sion, in Vallese. 26 ingegneri, 27+ progetti, 8 Paesi.",
+      "metaDescription": "Trident Software: azienda svizzera di ingegneria del software nativa IA. Fondata nel 2009 a Sion, in Vallese. 10+ ingegneri, 100+ progetti, 20+ Paesi.",
       "label": "Chi è Trident",
       "heroTitle": "Qualità svizzera. Ingegneria <blue>nativa IA</blue>.",
       "heroLead": "Fondata nel 2009 a Sion, in Vallese, Trident Software sviluppa software su misura, sistemi di IA e soluzioni embedded per le PMI europee. Solo ingegneri senior. Budget fissi. Conformità inclusa.",
       "chips": [
         "Sion, Vallese, Svizzera",
         "ISO 27000 · nLPD",
-        "26 ingegneri · 3 Paesi"
+        "10+ ingegneri · 2 Paesi"
       ],
       "storyLabel": "La nostra storia",
       "storyTitle": "Fatta da ingegneri, per ingegneri",
       "storyIntro": "Trident è nata dalla frustrazione verso le agenzie che promettono molto e consegnano poco. Volevamo un'azienda in cui ingegneri senior rispondono del risultato dall'inizio alla fine.",
       "storyP1": "Abbiamo iniziato a Sion nel 2009 con due ingegneri e una convinzione: un buon software richiede buoni ingegneri che restano sul progetto dal kickoff al deployment. Nessun passaggio di consegne, nessuna sostituzione con junior, nessuna fabbrica di funzionalità.",
-      "storyP2": "In oltre 15 anni abbiamo consegnato più di 27 progetti in automotive, sanità, logistica, moda e SaaS. Dal 2021 integriamo l'IA in sistemi in produzione, ben prima dell'ondata attuale.",
-      "storyP3": "Oggi lavoriamo su tre sedi, in Svizzera, Ucraina e Israele, con 26 ingegneri che condividono gli stessi standard: architettura pulita, sistemi osservabili e tempi onesti.",
+      "storyP2": "In oltre 15 anni abbiamo consegnato più di 100 progetti in automotive, sanità, logistica, moda e SaaS. Dal 2021 integriamo l'IA in sistemi in produzione, ben prima dell'ondata attuale.",
+      "storyP3": "Oggi lavoriamo da Sion e Kyiv, con oltre 10 ingegneri senior che condividono gli stessi standard: architettura pulita, sistemi osservabili e tempi onesti.",
       "timeline": {
         "y2009": "Fondazione a Sion, in Vallese (Svizzera)",
         "y2012": "Primo progetto di sistemi embedded: IoT industriale per la produzione",
         "y2015": "Apertura della sede in Ucraina per i talenti dell'ingegneria",
-        "y2018": "Nasce il polo di R&S in Israele: IA e visione artificiale",
         "y2021": "Prima integrazione di un LLM in produzione, 18 mesi prima del lancio di ChatGPT",
         "y2023": "Nasce la divisione Servizi IA; 12 progetti IA consegnati in 12 mesi",
-        "y2024": "27° progetto consegnato; il team cresce a 26 ingegneri su 3 sedi"
+        "y2024": "Oltre 100 progetti consegnati; più di 10 ingegneri senior a Sion e Kyiv"
       },
       "valuesLabel": "I nostri valori",
       "valuesTitle": "Come lavoriamo",
@@ -1158,7 +1136,7 @@
         }
       },
       "whereLabel": "Dove siamo",
-      "whereTitle": "Tre sedi, un solo team",
+      "whereTitle": "Due sedi, un solo team",
       "whereLead": "Copertura sul fuso CET, comunicazione multilingue e ingegneri senior in ogni sede.",
       "locations": {
         "sion": {
@@ -1170,15 +1148,10 @@
           "city": "Kyiv",
           "country": "Ucraina",
           "role": "Ingegneria · Sviluppo · QA"
-        },
-        "telAviv": {
-          "city": "Tel Aviv",
-          "country": "Israele",
-          "role": "Ricerca IA · Visione artificiale · R&S"
         }
       },
       "teamLabel": "Il team",
-      "teamTitle": "26 ingegneri senior",
+      "teamTitle": "10+ ingegneri senior",
       "teamLead": "Nessun junior sui progetti dei clienti. Ogni ingegnere ha più di 5 anni di esperienza in produzione. Lavori con le stesse persone dal kickoff alla consegna.",
       "composition": {
         "backend": "Ingegneri backend",
@@ -1217,7 +1190,16 @@
         "phone": "Telefono",
         "email": "E-mail"
       },
-      "escalated": "esc."
+      "escalated": "esc.",
+      "flow": {
+        "caption": "CANALI → AGENTE → SISTEMI",
+        "agent": "Agente IA",
+        "stock": "Magazzino · ERP",
+        "bill": "QR-fattura",
+        "crm": "HubSpot CRM",
+        "dispatch": "Logistica",
+        "sales": "Vendite"
+      }
     },
     "problem": {
       "label": "Il problema",
@@ -1777,7 +1759,7 @@
   "chrome": {
     "meta": {
       "defaultTitle": "Trident Software — Sviluppo software di qualità svizzera",
-      "description": "Sviluppo software su misura, integrazione AI e sistemi embedded per PMI. Conformità svizzera, budget fissi, 27+ progetti realizzati."
+      "description": "Sviluppo software su misura, integrazione AI e sistemi embedded per PMI. Conformità svizzera, budget fissi, 100+ progetti realizzati."
     },
     "footer": {
       "auditTitle": "Porta i tuoi volumi. Riparti con <em>i tuoi numeri.</em>",
@@ -1811,7 +1793,8 @@
         "imprint": "Note legali",
         "cookies": "Cookie"
       },
-      "bottomLine": "Software svizzero · © {year} Trident Software Sàrl · CHE-185.076.733"
+      "bottomLine": "Software svizzero · © {year} Trident Software Sàrl · CHE-185.076.733",
+      "newsTitle": "Nuovi articoli via e-mail"
     }
   },
   "molecules": {

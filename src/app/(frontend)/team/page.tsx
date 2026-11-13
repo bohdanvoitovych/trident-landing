@@ -24,7 +24,6 @@ export async function generateMetadata() {
 
 const departmentOrder = ['Leadership', 'Management', 'Frontend', 'Backend', 'Mobile', 'QA', 'DevOps'] as const
 
-const LOCATIONS = ['sion', 'kyiv', 'telAviv'] as const
 const CHIPS = ['engineers', 'countries', 'seniorOnly'] as const
 
 export default function TeamPage() {
@@ -72,26 +71,6 @@ export default function TeamPage() {
             lead={t('peopleLead')}
           />
           <TeamFilter members={team} departments={departmentOrder} />
-        </div>
-      </section>
-
-      <section className="section" aria-labelledby="where-h">
-        <div className="container">
-          <SectionHeader
-            id="where-h"
-            label={t('whereLabel')}
-            title={t('whereTitle')}
-            lead={t('whereLead')}
-          />
-          <ul className="grid-3 stagger" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-            {LOCATIONS.map((k) => (
-              <li key={k} className="card card--flat feature-card">
-                <h3>{t(`locations.${k}.city`)}</h3>
-                <span className="meta">{t(`locations.${k}.country`)}</span>
-                <p>{t(`locations.${k}.role`)}</p>
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 

@@ -24,9 +24,9 @@ export async function generateMetadata() {
 
 const VALUES = ['compliance', 'engineering', 'budgets', 'multilingual', 'partnership', 'aiNative'] as const
 
-const YEARS = ['2009', '2012', '2015', '2018', '2021', '2023', '2024'] as const
+const YEARS = ['2009', '2012', '2015', '2021', '2023', '2024'] as const
 
-const LOCATIONS = ['sion', 'kyiv', 'telAviv'] as const
+const LOCATIONS = ['sion', 'kyiv'] as const
 
 const composition = [
   { key: 'backend', value: 10 },

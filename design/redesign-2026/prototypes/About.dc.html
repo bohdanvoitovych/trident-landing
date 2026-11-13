@@ -152,6 +152,28 @@ html.js-rv .rv:not(.in) .hbar{width:0!important}
 .head .btn{flex:none}
 .h2{margin:0}
 section .head + *{margin-top:0}
+
+/* timeline */
+.tl{position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px}
+.tl::before{content:"";position:absolute;left:0;right:0;top:27px;height:2px;background:linear-gradient(90deg,var(--blue),var(--line2))}
+.tl-item{position:relative;background:#fff;border:1px solid var(--line);border-radius:3px;padding:44px 16px 18px;display:flex;flex-direction:column;gap:8px;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .3s}
+.tl-item:hover{transform:translateY(-4px);box-shadow:0 22px 44px -18px rgba(17,19,24,.18);border-color:var(--blue)}
+.tl-dot{position:absolute;left:16px;top:20px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--blue);box-sizing:border-box;transition:background .3s}
+.tl-item:hover .tl-dot{background:var(--blue)}
+.tl-y{font-size:20px;font-weight:600;color:var(--blue);letter-spacing:-.02em}
+.tl-t{font-size:14px;line-height:1.45;color:var(--ink2)}
+@media (max-width:1100px){.tl{grid-template-columns:repeat(4,minmax(0,1fr))}.tl::before{display:none}}
+@media (max-width:640px){.tl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* team card: LinkedIn on hover */
+.tm .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,18,22,0) 45%,rgba(15,18,22,.72));opacity:0;transition:opacity .4s var(--ease);pointer-events:none}
+.tm:hover .ph::after,.tm:focus-within .ph::after{opacity:1}
+.li-btn{position:absolute;left:12px;right:12px;bottom:12px;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;background:#fff;color:var(--ink);border-radius:2px;font:600 13px 'Instrument Sans',sans-serif;opacity:0;transform:translateY(10px);transition:opacity .35s var(--ease),transform .35s var(--ease),background .25s,color .25s}
+.tm:hover .li-btn,.tm:focus-within .li-btn{opacity:1;transform:none}
+.li-btn:hover{background:var(--blue);color:#fff}
+.li-ico{width:22px;height:22px;border-radius:2px;background:#0A66C2;color:#fff;display:inline-flex;align-items:center;justify-content:center;font:700 12px 'Instrument Sans',sans-serif;letter-spacing:-.02em}
+.li-btn:hover .li-ico{background:#fff;color:var(--blue)}
+@media (hover:none){.li-btn{opacity:1;transform:none;left:auto;right:10px;bottom:10px;padding:6px}.li-btn .li-txt{display:none}.tm .ph::after{opacity:0}}
 </style></helmet>
 
 <header style="position:sticky;top:0;z-index:40;background:rgba(255,255,255,.86);backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);border-bottom:1px solid var(--line)">
@@ -179,15 +201,10 @@ section .head + *{margin-top:0}
 </div>
 </section>
 
-<section class="dark" style="background:#111318;color:#fff;padding:clamp(72px,9vw,128px) 0">
-<div class="w" style="display:flex;flex-direction:column;gap:56px">
-<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap"><div style="display:flex;flex-direction:column;gap:14px"><span class="kick">Timeline</span><h2 class="h2">2009 → today</h2></div><span class="mono" style="font-size:12px;color:rgba(255,255,255,.62)">Select a year</span></div>
-<div style="position:relative">
-<div aria-hidden="true" style="position:absolute;left:0;right:0;top:9px;height:2px;background:rgba(255,255,255,.16)"></div>
-<div aria-hidden="true" style="position:absolute;left:0;top:9px;height:2px;width:{{ prog }}%;background:#2772E0;transition:width .5s cubic-bezier(.2,0,0,1)"></div>
-<div style="position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr))"><sc-for list="{{ years }}" as="y" hint-placeholder-count="7"><button type="button" class="yr" aria-pressed="{{ y.on }}" onClick="{{ y.pick }}" style="display:flex;flex-direction:column;gap:14px"><span class="dot" style="width:20px;height:20px;border-radius:50%;background:{{ y.dot }};box-shadow:0 0 0 4px #111318"></span><span style="font-size:28px;font-weight:600;letter-spacing:-.03em;color:{{ y.fg }}">{{ y.y }}</span></button></sc-for></div>
-</div>
-<div class="{{ anim }}" style="display:grid;grid-template-columns:160px minmax(0,1fr);gap:32px;align-items:baseline;border-top:1px solid rgba(255,255,255,.16);padding-top:32px"><span style="font-size:72px;font-weight:600;letter-spacing:-.05em;line-height:.9;color:#8FB6F4">{{ cur.y }}</span><span style="font-size:32px;line-height:1.2;letter-spacing:-.02em;font-weight:500">{{ cur.t }}</span></div>
+<section class="sec" style="background:var(--alt);border-top:1px solid var(--line)">
+<div class="w">
+<div class="head rv"><div><span class="lbl">Timeline</span><h2 class="h2">From two engineers in Sion to 26 across three countries</h2></div></div>
+<div class="tl rv stg"><sc-for list="{{ years }}" as="y" hint-placeholder-count="7"><div class="tl-item"><span class="tl-dot" aria-hidden="true"></span><span class="mono tl-y">{{ y.y }}</span><span class="tl-t">{{ y.t }}</span></div></sc-for></div>
 </div>
 </section>
 
@@ -201,7 +218,7 @@ section .head + *{margin-top:0}
 <section class="sec" style="padding-top:0">
 <div class="w">
 <div class="head rv"><div><span class="lbl">Who you work with</span><h2 class="h2">The same people from kickoff to handoff</h2></div><a class="btn btn-ink" href="Team.dc.html"><span>Meet the whole team<i class="arr">→</i></span></a></div>
-<div class="g4 keep2 stg rv" style="row-gap:36px"><sc-for list="{{ people }}" as="p" hint-placeholder-count="8"><div class="tm" style="display:flex;flex-direction:column;gap:14px"><div class="ph" style="aspect-ratio:4/5;border-radius:3px;background:linear-gradient(180deg,#EEF3FD,#E3E5E8)"><img src="{{ p.img }}" alt="{{ p.name }}" style="object-fit:cover;object-position:top center"></div><div style="display:flex;flex-direction:column;gap:4px;border-left:2px solid var(--blue);padding-left:12px"><span style="font-size:17px;font-weight:600;letter-spacing:-.01em">{{ p.name }}</span><span style="font-size:14px;color:var(--ink2)">{{ p.role }}</span></div></div></sc-for></div>
+<div class="g4 keep2 stg rv" style="row-gap:36px"><sc-for list="{{ people }}" as="p" hint-placeholder-count="8"><div class="tm" style="display:flex;flex-direction:column;gap:14px"><div class="ph" style="aspect-ratio:4/5;border-radius:3px;background:linear-gradient(180deg,#EEF3FD,#E3E5E8)"><img src="{{ p.img }}" alt="{{ p.name }}" style="object-fit:cover;object-position:top center"><sc-if value="{{ p.li }}" hint-placeholder-val="{{ false }}"><a class="li-btn" href="{{ p.li }}" target="_blank" rel="noopener noreferrer" aria-label="{{ p.liLabel }}"><span style="display:flex;align-items:center;gap:8px"><span class="li-ico" aria-hidden="true">in</span><span class="li-txt">LinkedIn</span></span><span class="li-txt" aria-hidden="true">↗</span></a></sc-if></div><div style="display:flex;flex-direction:column;gap:4px;border-left:2px solid var(--blue);padding-left:12px"><span style="font-size:17px;font-weight:600;letter-spacing:-.01em">{{ p.name }}</span><span style="font-size:14px;color:var(--ink2)">{{ p.role }}</span></div></div></sc-for></div>
 </div>
 </section>
 <section style="padding:clamp(72px,9vw,128px) 0;background:#F6F7F8;border-top:1px solid #E3E5E8">
@@ -255,6 +272,7 @@ const VALUES = [
   ['AI-Native Since 2021', 'We integrated AI before it became mainstream. LLMs, RAG, agents — production-deployed, not demos.']
 ];
 const LOCS = [['Sion, Valais', 'Switzerland', 'HQ · Business Development · Compliance'], ['Kyiv', 'Ukraine', 'Engineering · Development · QA'], ['Tel Aviv', 'Israel', 'AI Research · Computer Vision · R&D']];
+const LI = {"Maksym Shytov": "https://www.linkedin.com/in/maksym-shytov/", "Natalia Shytova": "https://www.linkedin.com/in/natalya-shytova/", "Dmitriy Shevelev": "https://www.linkedin.com/in/dmitriy-shevelev-ab3072151/", "Nina Alimova": "https://www.linkedin.com/in/%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B0%D0%BB%D0%B8%D0%BC%D0%BE%D0%B2%D0%B0", "Bohdan Voitovych": "https://www.linkedin.com/in/bohdan-voitovych/", "Marina Gordienko": "https://www.linkedin.com/in/marina-gordienko-6b387a204/", "Denys Shytov": "https://www.linkedin.com/in/shytov-denys-37965a194/", "Nikolai Kazmirchuk": "https://www.linkedin.com/in/nikolay-kazmirchuk-b50176185/", "Maksym Osadchyi": "https://www.linkedin.com/in/maxim-osadchiy-90a939198/", "Dmytro Panasiuk": "https://www.linkedin.com/in/dmytro-panasiuk-915762228/", "Kateryna Kochereshchenko": "https://www.linkedin.com/in/kateryna-kochereshchenko-89812b206/", "Anton Savchuk": "https://www.linkedin.com/in/anton-savchuk-883900267/"};
 const PEOPLE = [['Maksym Shytov', 'CTO', 'maksym-shytov'], ['Natalia Shytova', 'COO', 'natalia-shytova'], ['Dmitriy Shevelev', 'Team Lead', 'dmitriy-shevelev'], ['Nina Alimova', 'Project Manager', 'nina-alimova'], ['Bohdan Voitovych', 'Project Manager', 'bohdan-voitovych'], ['Marina Gordienko', 'Project Manager', 'maryna-gordienko'], ['Denys Shytov', 'Project Manager', 'denys-shytov'], ['Nikolai Kazmirchuk', 'Frontend Developer', 'nikolai-kazmirchuk']];
 const TEAM = [['Backend engineers', 10], ['Frontend engineers', 6], ['AI/ML specialists', 4], ['Embedded / IoT', 3], ['DevOps / SRE', 2], ['UI/UX designers', 1]];
 class Component extends DCLogic {
@@ -274,9 +292,9 @@ class Component extends DCLogic {
   renderVals() {
     const s = this.state;
     return {
-      langs: this.__langs(), people: PEOPLE.map(([name, role, f]) => ({ name, role, img: 'img/team/' + f + '.png' })),
+      langs: this.__langs(), people: PEOPLE.map(([name, role, f]) => ({ name, role, img: 'img/team/' + f + '.png', li: LI[name] || '', liLabel: name + ' on LinkedIn' })),
       stats: STATS.map(([v, l]) => ({ v, l })),
-      years: YEARS.map(([y, t], i) => ({ y, on: s.y === i, dot: i <= s.y ? '#2772E0' : '#4A4F57', fg: s.y === i ? '#fff' : 'rgba(255,255,255,.62)', pick: () => this.setState(st => ({ y: i, k: st.k + 1 })) })),
+      years: YEARS.map(([y, t]) => ({ y, t })),
       cur: { y: YEARS[s.y][0], t: YEARS[s.y][1] }, anim: s.k % 2 ? 'fade' : 'fade2',
       prog: (s.y / (YEARS.length - 1) * (100 - 100 / 7 * 0.9) + 1).toFixed(1),
       values: VALUES.map(([t, d], i) => ({ n: '0' + (i + 1), t, d })),

@@ -27,17 +27,9 @@ const CLIENTS = [
   'vbauto.png',
 ]
 
-// Sites the old homepage linked from its client quotes.
-const CLIENT_LINKS: Record<string, string> = {
-  'kleap.png': 'https://kleap.co/',
-  'daniparts.png': 'https://daniparts.com/',
-  'xelsat.png': 'http://xelsat.com/',
-}
-
 export const CLIENT_LOGOS: Logo[] = CLIENTS.map((f) => ({
   src: `/images/clients/${f}`,
   alt: name(f),
-  ...(CLIENT_LINKS[f] && { href: CLIENT_LINKS[f] }),
 }))
 
 export const PARTNER_LOGOS: Logo[] = [

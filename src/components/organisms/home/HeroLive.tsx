@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
 import { intlLocale } from '@/lib/utils'
 import { useActive } from '@/lib/motion'
+import { HeroFlow } from './HeroFlow'
 
 /* ── Tagline: a demo of the four languages, not a language switch ───────── */
 
@@ -130,6 +131,7 @@ export function HeroLog({ lines, title, note, chipLabel, chipNote }: LogProps) {
 
   return (
     <>
+      <HeroFlow step={n % CH.length} tick={n} />
       <div ref={ref} className="hero-log floaty" data-loop>
         <div className="hero-log-head">
           <span>

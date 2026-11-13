@@ -10,7 +10,7 @@ describe('team social links', () => {
     for (const m of team) for (const u of [m.linkedin, m.facebook].filter(Boolean) as string[]) expect(isHttps(u)).toBe(true)
   })
   it('matches the number of links Yevhen set', () => {
-    expect(team.filter((m) => m.linkedin).length).toBe(12)
+    expect(team.filter((m) => m.linkedin).length).toBe(8)
     expect(team.filter((m) => m.facebook).length).toBe(4)
   })
 })
@@ -21,9 +21,7 @@ describe('logo links', () => {
     expect(linked.map((l) => l.alt)).toEqual(['Microsoft Azure', 'Google Cloud', 'Hostpoint', 'Cimark', 'Holidu'])
     for (const l of linked) expect(isHttps(l.href!)).toBe(true)
   })
-  it('three clients link out (xelsat is http upstream)', () => {
-    const linked = CLIENT_LOGOS.filter((l) => l.href)
-    expect(linked.map((l) => l.alt)).toEqual(['Kleap', 'Xelsat', 'Daniparts'])
-    for (const l of linked) expect(() => new URL(l.href!)).not.toThrow()
+  it('client logos do not link out', () => {
+    expect(CLIENT_LOGOS.filter((l) => l.href)).toEqual([])
   })
 })

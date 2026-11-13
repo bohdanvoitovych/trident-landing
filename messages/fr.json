@@ -34,7 +34,7 @@
     "hero": {
       "badge": "Ingénierie de qualité suisse",
       "title": "Développement logiciel AI-native pour les vraies entreprises",
-      "subtitle": "Nous créons des plateformes sur mesure, des intégrations IA et des systèmes embarqués pour les PME — avec la conformité suisse, des budgets fixes et une équipe de 27+ projets depuis 2009.",
+      "subtitle": "Nous créons des plateformes sur mesure, des intégrations IA et des systèmes embarqués pour les PME — avec la conformité suisse, des budgets fixes et une équipe de 100+ projets depuis 2009.",
       "cta": "Réserver un appel de 30 min",
       "ctaSecondary": "Voir les études de cas"
     },
@@ -44,7 +44,7 @@
     },
     "cases": {
       "title": "Projets sélectionnés",
-      "subtitle": "27+ projets livrés dans l'automobile, la santé, la mode, la logistique et plus."
+      "subtitle": "100+ projets livrés dans l'automobile, la santé, la mode, la logistique et plus."
     },
     "stats": {
       "projects": "Projets livrés",
@@ -157,8 +157,7 @@
         "maker": "Fabricant de composants · IT · mesuré",
         "agent": "Agent commercial",
         "residency": "Hébergement des données"
-      },
-      "photoAlt": "Salle serveurs où tournent les agents"
+      }
     },
     "problem": {
       "gap": "C'est là que ça coince."
@@ -448,7 +447,7 @@
     },
     "cases": {
       "metaTitle": "Projets de développement et études de cas | Trident Software Suisse",
-      "metaDescription": "Plus de 27 projets logiciels livrés : plateformes B2B automobiles, IA pour la santé, e-commerce, IoT, SaaS. Équipe d'ingénieurs suisse depuis 2009.",
+      "metaDescription": "Plus de 100 projets logiciels livrés : plateformes B2B automobiles, IA pour la santé, e-commerce, IoT, SaaS. Équipe d'ingénieurs suisse depuis 2009.",
       "label": "Portfolio",
       "title": "Livré, puis mesuré",
       "lead": "{total} produits et plateformes conçus pour des clients en Suisse et en Europe. {withCase} d'entre eux sont documentés en détail, chiffres à l'appui.",
@@ -472,7 +471,7 @@
           "label": "Secteurs couverts"
         },
         "projects": {
-          "value": "27+",
+          "value": "100+",
           "label": "Projets livrés"
         },
         "since": {
@@ -530,13 +529,13 @@
     },
     "team": {
       "metaTitle": "Notre équipe | Trident Software",
-      "metaDescription": "26 ingénieurs seniors en Suisse, en Ukraine et en Israël. Backend, frontend, mobile, QA et DevOps. Aucun junior sur les projets clients.",
+      "metaDescription": "Plus de 10 ingénieurs seniors en Suisse et en Ukraine. Backend, frontend, mobile et gestion de projet. Aucun junior sur les projets clients.",
       "crumb": "Notre équipe",
-      "title": "26 <blue>ingénieurs seniors</blue> dans 3 pays",
+      "title": "10+ <blue>ingénieurs seniors</blue> en Suisse et en Ukraine",
       "lead": "Aucun junior sur les projets clients. Chaque ingénieur a plus de 5 ans d'expérience en production. Vous travaillez avec les mêmes personnes du lancement à la livraison.",
       "chips": {
-        "engineers": "26 ingénieurs",
-        "countries": "CH · UA · IL",
+        "engineers": "10+ ingénieurs",
+        "countries": "CH · UA",
         "seniorOnly": "Seniors uniquement"
       },
       "peopleLabel": "Les personnes",
@@ -551,26 +550,6 @@
         "QA": "QA",
         "DevOps": "DevOps"
       },
-      "whereLabel": "Où nous sommes",
-      "whereTitle": "Trois sites, une seule équipe",
-      "whereLead": "Couverture sur le fuseau CET, communication multilingue et ingénieurs seniors sur chaque site.",
-      "locations": {
-        "sion": {
-          "city": "Sion, Valais",
-          "country": "Suisse",
-          "role": "Siège · Développement commercial · Relation client"
-        },
-        "kyiv": {
-          "city": "Kiev",
-          "country": "Ukraine",
-          "role": "Ingénierie · Développement · QA"
-        },
-        "telAviv": {
-          "city": "Tel Aviv",
-          "country": "Israël",
-          "role": "Recherche en IA · Vision par ordinateur · R&D"
-        }
-      },
       "ctaTitle": "Travaillez avec notre équipe",
       "ctaLead": "Parlez-nous de votre projet. Les ingénieurs que vous rencontrez au lancement sont ceux qui le livreront.",
       "ctaButton": "Engager la conversation",
@@ -578,7 +557,7 @@
     },
     "services": {
       "metaTitle": "Développement logiciel en Suisse | Agents IA, logistique, IoT | Trident Software",
-      "metaDescription": "Agents IA & automatisation LLM, plateformes logistiques, systèmes de gestion sur mesure, IoT et CTO as a Service. Budgets fixes, plus de 27 projets depuis 2009.",
+      "metaDescription": "Agents IA & automatisation LLM, plateformes logistiques, systèmes de gestion sur mesure, IoT et CTO as a Service. Budgets fixes, plus de 100 projets depuis 2009.",
       "crumb": "Services",
       "label": "Ce que nous construisons",
       "title": "Services de développement logiciel pour les entreprises suisses et européennes",
@@ -621,14 +600,14 @@
         },
         "experience": {
           "title": "Plus de 15 ans en production",
-          "desc": "Fondée en 2009. Plus de 27 clients suisses et européens. Nous savons ce qui casse en production."
+          "desc": "Fondée en 2009. Plus de 100 projets pour des clients suisses et européens. Nous savons ce qui casse en production."
         },
         "noLockIn": {
           "title": "Aucune dépendance fournisseur",
           "desc": "Le code, le dépôt et l'infrastructure vous appartiennent. Nous vous remettons tout."
         },
         "talent": {
-          "title": "Talents en CH, IL et UA",
+          "title": "Talents en CH et UA",
           "desc": "Des ingénieurs seniors sur des fuseaux proches du CET. Un recouvrement presque total avec les équipes européennes."
         }
       },
@@ -1104,29 +1083,28 @@
     },
     "about": {
       "metaTitle": "À propos | Trident Software",
-      "metaDescription": "Trident Software : société suisse d'ingénierie logicielle native IA. Fondée en 2009 à Sion, en Valais. 26 ingénieurs, 27+ projets, 8 pays.",
+      "metaDescription": "Trident Software : société suisse d'ingénierie logicielle native IA. Fondée en 2009 à Sion, en Valais. 10+ ingénieurs, 100+ projets, 20+ pays.",
       "label": "À propos de Trident",
       "heroTitle": "La qualité suisse. Une ingénierie <blue>native IA</blue>.",
       "heroLead": "Fondée en 2009 à Sion, en Valais, Trident Software développe des logiciels sur mesure, des systèmes d'IA et des solutions embarquées pour les PME européennes. Uniquement des ingénieurs seniors. Des budgets fixes. La conformité incluse.",
       "chips": [
         "Sion, Valais, Suisse",
         "ISO 27000 · nLPD",
-        "26 ingénieurs · 3 pays"
+        "10+ ingénieurs · 2 pays"
       ],
       "storyLabel": "Notre histoire",
       "storyTitle": "Créée par des ingénieurs, pour des ingénieurs",
       "storyIntro": "Trident est née d'un ras-le-bol face aux agences qui promettent beaucoup et livrent peu. Nous voulions une entreprise où des ingénieurs seniors portent le résultat du début à la fin.",
       "storyP1": "Nous avons démarré à Sion en 2009 avec deux ingénieurs et une conviction : un bon logiciel exige de bons ingénieurs qui restent sur le projet du lancement jusqu'au déploiement. Pas de passation, pas de remplacement par des juniors, pas d'usine à fonctionnalités.",
-      "storyP2": "En plus de 15 ans, nous avons livré plus de 27 projets dans l'automobile, la santé, la logistique, la mode et le SaaS. Depuis 2021, nous intégrons l'IA dans des systèmes en production, bien avant la vague actuelle.",
-      "storyP3": "Aujourd'hui, nous travaillons sur trois sites, en Suisse, en Ukraine et en Israël, avec 26 ingénieurs qui partagent les mêmes exigences : une architecture propre, des systèmes observables et des délais honnêtes.",
+      "storyP2": "En plus de 15 ans, nous avons livré plus de 100 projets dans l'automobile, la santé, la logistique, la mode et le SaaS. Depuis 2021, nous intégrons l'IA dans des systèmes en production, bien avant la vague actuelle.",
+      "storyP3": "Aujourd'hui, nous travaillons depuis Sion et Kyiv, avec plus de 10 ingénieurs seniors qui partagent les mêmes exigences : une architecture propre, des systèmes observables et des délais honnêtes.",
       "timeline": {
         "y2009": "Création à Sion, en Valais (Suisse)",
         "y2012": "Premier projet de systèmes embarqués : IoT industriel pour la production",
         "y2015": "Ouverture d'un bureau en Ukraine pour les talents en ingénierie",
-        "y2018": "Création d'un pôle R&D en Israël : IA et vision par ordinateur",
         "y2021": "Première intégration d'un LLM en production, 18 mois avant le lancement de ChatGPT",
         "y2023": "Lancement de l'offre de services IA ; 12 projets IA livrés en 12 mois",
-        "y2024": "27e projet livré ; l'équipe passe à 26 ingénieurs sur 3 sites"
+        "y2024": "Plus de 100 projets livrés ; plus de 10 ingénieurs seniors à Sion et Kyiv"
       },
       "valuesLabel": "Nos valeurs",
       "valuesTitle": "Notre façon de travailler",
@@ -1158,7 +1136,7 @@
         }
       },
       "whereLabel": "Où nous trouver",
-      "whereTitle": "Trois sites, une seule équipe",
+      "whereTitle": "Deux sites, une seule équipe",
       "whereLead": "Couverture sur le fuseau CET, communication multilingue et ingénieurs seniors sur chaque site.",
       "locations": {
         "sion": {
@@ -1170,15 +1148,10 @@
           "city": "Kyiv",
           "country": "Ukraine",
           "role": "Ingénierie · Développement · QA"
-        },
-        "telAviv": {
-          "city": "Tel Aviv",
-          "country": "Israël",
-          "role": "Recherche en IA · Vision par ordinateur · R&D"
         }
       },
       "teamLabel": "L'équipe",
-      "teamTitle": "26 ingénieurs seniors",
+      "teamTitle": "10+ ingénieurs seniors",
       "teamLead": "Aucun junior sur les projets clients. Chaque ingénieur a plus de 5 ans d'expérience en production. Vous travaillez avec les mêmes personnes du lancement à la livraison.",
       "composition": {
         "backend": "Ingénieurs backend",
@@ -1217,7 +1190,16 @@
         "phone": "Téléphone",
         "email": "E-mail"
       },
-      "escalated": "esc."
+      "escalated": "esc.",
+      "flow": {
+        "caption": "CANAUX → AGENT → SYSTÈMES",
+        "agent": "Agent IA",
+        "stock": "Stock · ERP",
+        "bill": "QR-facture",
+        "crm": "HubSpot CRM",
+        "dispatch": "Logistique",
+        "sales": "Ventes"
+      }
     },
     "problem": {
       "label": "Le problème",
@@ -1777,7 +1759,7 @@
   "chrome": {
     "meta": {
       "defaultTitle": "Trident Software — Développement logiciel de qualité suisse",
-      "description": "Développement logiciel sur mesure, intégration de l'IA et systèmes embarqués pour PME. Conformité suisse, budgets fixes, 27+ projets livrés."
+      "description": "Développement logiciel sur mesure, intégration de l'IA et systèmes embarqués pour PME. Conformité suisse, budgets fixes, 100+ projets livrés."
     },
     "footer": {
       "auditTitle": "Venez avec vos volumes. Repartez avec <em>vos chiffres.</em>",
@@ -1811,7 +1793,8 @@
         "imprint": "Mentions légales",
         "cookies": "Cookies"
       },
-      "bottomLine": "Logiciel suisse · © {year} Trident Software Sàrl · CHE-185.076.733"
+      "bottomLine": "Logiciel suisse · © {year} Trident Software Sàrl · CHE-185.076.733",
+      "newsTitle": "Nouveaux articles par e-mail"
     }
   },
   "molecules": {

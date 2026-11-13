@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import { StatCard } from '@/components/molecules/StatCard'
@@ -69,16 +68,6 @@ export function Hero() {
         </div>
 
         <div className="hero-visual rise" style={{ animationDelay: '.4s' }}>
-          <div className="hero-photo media">
-            <Image
-              src="/images/stock/ai-agent.jpg"
-              alt={t('hero.photoAlt')}
-              fill
-              priority
-              fetchPriority="high"
-              sizes="(max-width: 640px) 92vw, (max-width: 1100px) 720px, 600px"
-            />
-          </div>
           <HeroLog
             lines={log}
             title={t('hero.logTitle')}

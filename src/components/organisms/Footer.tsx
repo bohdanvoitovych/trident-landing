@@ -40,9 +40,6 @@ const COLUMNS = [
       { href: '/industries', key: 'industries' },
       { href: '/solutions', key: 'solutions' },
       { href: '/products', key: 'products' },
-      { href: '/pricing', key: 'pricing' },
-      { href: '/technologies', key: 'technologies' },
-      { href: '/locations', key: 'locations' },
       { href: '/faq', key: 'faq' },
     ],
   },
@@ -93,9 +90,6 @@ export function Footer() {
               <span className="tag tag--dark">{tc('tagSwissLaw')}</span>
               <span className="tag tag--dark">{tc('tagGdpr')}</span>
             </span>
-            <div className="foot-news">
-              <NewsletterSignup />
-            </div>
             <div className="socials">
               {SOCIALS.map(({ href, label, Icon }) => (
                 <a key={href} href={href} aria-label={label ?? tc('mapsLabel')} target="_blank" rel="noopener noreferrer">
@@ -136,6 +130,13 @@ export function Footer() {
               1950 Sion, Valais
             </address>
           </div>
+        </div>
+
+        <div className="foot-news">
+          <h2 className="fh" id="f-news">
+            {tc('newsTitle')}
+          </h2>
+          <NewsletterSignup />
         </div>
 
         <div className="fbottom">

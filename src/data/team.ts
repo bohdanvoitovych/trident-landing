@@ -102,6 +102,33 @@ const records: TeamRecord[] = [
     },
   },
   {
+    slug: 'bohdan-voitovych',
+    name: 'Bohdan Voitovych',
+    department: 'Management',
+    expertise: ['Product Management', 'Frontend', 'AI Projects'],
+    image: '/images/team/bohdan-voitovych.png',
+    linkedin: 'https://www.linkedin.com/in/bohdan-voitovych/',
+    facebook: 'https://www.facebook.com/bohdan.voitovych',
+    content: {
+      en: {
+        role: 'Lead Project Manager',
+        location: 'Ukraine',
+      },
+      de: {
+        role: 'Leitender Projektmanager',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Chef de projet principal',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Lead Project Manager',
+        location: 'Ucraina',
+      },
+    },
+  },
+  {
     slug: 'nina-alimova',
     name: 'Nina Alimova',
     department: 'Management',
@@ -119,33 +146,6 @@ const records: TeamRecord[] = [
       },
       fr: {
         role: 'Cheffe de projet',
-        location: 'Ukraine',
-      },
-      it: {
-        role: 'Project Manager',
-        location: 'Ucraina',
-      },
-    },
-  },
-  {
-    slug: 'bohdan-voitovych',
-    name: 'Bohdan Voitovych',
-    department: 'Management',
-    expertise: ['Product Management', 'Frontend', 'AI Projects'],
-    image: '/images/team/bohdan-voitovych.png',
-    linkedin: 'https://www.linkedin.com/in/bohdan-voitovych/',
-    facebook: 'https://www.facebook.com/bohdan.voitovych',
-    content: {
-      en: {
-        role: 'Project Manager',
-        location: 'Ukraine',
-      },
-      de: {
-        role: 'Projektleiter',
-        location: 'Ukraine',
-      },
-      fr: {
-        role: 'Chef de projet',
         location: 'Ukraine',
       },
       it: {
@@ -207,32 +207,6 @@ const records: TeamRecord[] = [
     },
   },
   {
-    slug: 'nikolai-kazmirchuk',
-    name: 'Nikolai Kazmirchuk',
-    department: 'Frontend',
-    expertise: ['React', 'Next.js', 'TypeScript'],
-    image: '/images/team/nikolai-kazmirchuk.png',
-    linkedin: 'https://www.linkedin.com/in/nikolay-kazmirchuk-b50176185/',
-    content: {
-      en: {
-        role: 'Frontend Developer',
-        location: 'Ukraine',
-      },
-      de: {
-        role: 'Frontend-Entwickler',
-        location: 'Ukraine',
-      },
-      fr: {
-        role: 'Développeur frontend',
-        location: 'Ukraine',
-      },
-      it: {
-        role: 'Sviluppatore Frontend',
-        location: 'Ucraina',
-      },
-    },
-  },
-  {
     slug: 'maksym-osadchyi',
     name: 'Maksym Osadchyi',
     department: 'Frontend',
@@ -259,36 +233,11 @@ const records: TeamRecord[] = [
     },
   },
   {
-    slug: 'aleksandr-kunitsyn',
-    name: 'Aleksandr Kunitsyn',
+    slug: 'borys-gavrylenko',
+    name: 'Borys Gavrylenko',
     department: 'Frontend',
-    expertise: ['React Native', 'Flutter', 'Mobile UI'],
-    image: '/images/team/aleksandr-kunitsyn.png',
-    content: {
-      en: {
-        role: 'Frontend Developer',
-        location: 'Ukraine',
-      },
-      de: {
-        role: 'Frontend-Entwickler',
-        location: 'Ukraine',
-      },
-      fr: {
-        role: 'Développeur frontend',
-        location: 'Ukraine',
-      },
-      it: {
-        role: 'Sviluppatore Frontend',
-        location: 'Ucraina',
-      },
-    },
-  },
-  {
-    slug: 'oleg-bilyk',
-    name: 'Oleg Bilyk',
-    department: 'Frontend',
-    expertise: ['Angular', 'TypeScript', 'Enterprise UI'],
-    image: '/images/team/oleg-bilyk.png',
+    expertise: ['React', 'Next.js', 'TypeScript'],
+    image: '/images/team/borys-gavrylenko.png',
     content: {
       en: {
         role: 'Frontend Developer',
@@ -359,31 +308,6 @@ const records: TeamRecord[] = [
     },
   },
   {
-    slug: 'borys-gavrylenko',
-    name: 'Borys Gavrylenko',
-    department: 'Backend',
-    expertise: ['Python', 'AI/ML', 'Data Pipelines'],
-    image: '/images/team/borys-gavrylenko.png',
-    content: {
-      en: {
-        role: 'Backend Developer',
-        location: 'Ukraine',
-      },
-      de: {
-        role: 'Backend-Entwickler',
-        location: 'Ukraine',
-      },
-      fr: {
-        role: 'Développeur backend',
-        location: 'Ukraine',
-      },
-      it: {
-        role: 'Sviluppatore Backend',
-        location: 'Ucraina',
-      },
-    },
-  },
-  {
     slug: 'alena-odynets',
     name: 'Alena Odynets',
     department: 'Mobile',
@@ -408,84 +332,6 @@ const records: TeamRecord[] = [
       },
     },
   },
-  {
-    slug: 'dmytro-panasiuk',
-    name: 'Dmytro Panasiuk',
-    department: 'QA',
-    expertise: ['Test Automation', 'Selenium', 'Postman'],
-    image: '/images/team/dmytro-panasiuk.png',
-    linkedin: 'https://www.linkedin.com/in/dmytro-panasiuk-915762228/',
-    content: {
-      en: {
-        role: 'QA Engineer',
-        location: 'Ukraine',
-      },
-      de: {
-        role: 'QA Engineer',
-        location: 'Ukraine',
-      },
-      fr: {
-        role: 'Ingénieur QA',
-        location: 'Ukraine',
-      },
-      it: {
-        role: 'QA Engineer',
-        location: 'Ucraina',
-      },
-    },
-  },
-  {
-    slug: 'kateryna-kochereshchenko',
-    name: 'Kateryna Kochereshchenko',
-    department: 'QA',
-    expertise: ['Manual Testing', 'Test Cases', 'API Testing'],
-    image: '/images/team/kateryna-kochereshchenko.png',
-    linkedin: 'https://www.linkedin.com/in/kateryna-kochereshchenko-89812b206/',
-    content: {
-      en: {
-        role: 'QA Engineer',
-        location: 'Ukraine',
-      },
-      de: {
-        role: 'QA Engineer',
-        location: 'Ukraine',
-      },
-      fr: {
-        role: 'Ingénieure QA',
-        location: 'Ukraine',
-      },
-      it: {
-        role: 'QA Engineer',
-        location: 'Ucraina',
-      },
-    },
-  },
-  {
-    slug: 'anton-savchuk',
-    name: 'Anton Savchuk',
-    department: 'DevOps',
-    expertise: ['Docker', 'Kubernetes', 'CI/CD', 'AWS'],
-    image: '/images/team/anton-savchuk.png',
-    linkedin: 'https://www.linkedin.com/in/anton-savchuk-883900267/',
-    content: {
-      en: {
-        role: 'DevOps Engineer',
-        location: 'Ukraine',
-      },
-      de: {
-        role: 'DevOps Engineer',
-        location: 'Ukraine',
-      },
-      fr: {
-        role: 'Ingénieur DevOps',
-        location: 'Ukraine',
-      },
-      it: {
-        role: 'DevOps Engineer',
-        location: 'Ucraina',
-      },
-    },
-  },
 ]
 
 const localize = (r: TeamRecord, locale: string): TeamMember => {
@@ -500,7 +346,7 @@ export function getTeam(locale: string): TeamMember[] {
 const statsByLocale: Localized<{ value: string; label: string }[]> = {
   en: [
     {
-      value: '27+',
+      value: '100+',
       label: 'Projects delivered',
     },
     {
@@ -508,17 +354,17 @@ const statsByLocale: Localized<{ value: string; label: string }[]> = {
       label: 'Years since founding',
     },
     {
-      value: '26',
+      value: '10+',
       label: 'Senior engineers',
     },
     {
-      value: '8',
+      value: '20+',
       label: 'Client countries',
     },
   ],
   de: [
     {
-      value: '27+',
+      value: '100+',
       label: 'Abgeschlossene Projekte',
     },
     {
@@ -526,17 +372,17 @@ const statsByLocale: Localized<{ value: string; label: string }[]> = {
       label: 'Jahre seit der Gründung',
     },
     {
-      value: '26',
+      value: '10+',
       label: 'Senior-Entwickler',
     },
     {
-      value: '8',
+      value: '20+',
       label: 'Länder mit Kunden',
     },
   ],
   fr: [
     {
-      value: '27+',
+      value: '100+',
       label: 'Projets livrés',
     },
     {
@@ -544,17 +390,17 @@ const statsByLocale: Localized<{ value: string; label: string }[]> = {
       label: 'Années depuis la fondation',
     },
     {
-      value: '26',
+      value: '10+',
       label: 'Ingénieurs seniors',
     },
     {
-      value: '8',
+      value: '20+',
       label: 'Pays clients',
     },
   ],
   it: [
     {
-      value: '27+',
+      value: '100+',
       label: 'Progetti realizzati',
     },
     {
@@ -562,11 +408,11 @@ const statsByLocale: Localized<{ value: string; label: string }[]> = {
       label: 'Anni dalla fondazione',
     },
     {
-      value: '26',
+      value: '10+',
       label: 'Ingegneri senior',
     },
     {
-      value: '8',
+      value: '20+',
       label: 'Paesi dei clienti',
     },
   ],

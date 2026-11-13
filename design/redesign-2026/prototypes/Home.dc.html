@@ -131,6 +131,30 @@ html.js-rv .rv:not(.in) .hbar{width:0!important}
 .head .btn{flex:none}
 .h2{margin:0}
 section .head + *{margin-top:0}
+
+/* team card: LinkedIn on hover */
+.tm .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,18,22,0) 45%,rgba(15,18,22,.72));opacity:0;transition:opacity .4s var(--ease);pointer-events:none}
+.tm:hover .ph::after,.tm:focus-within .ph::after{opacity:1}
+.li-btn{position:absolute;left:12px;right:12px;bottom:12px;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;background:#fff;color:var(--ink);border-radius:2px;font:600 13px 'Instrument Sans',sans-serif;opacity:0;transform:translateY(10px);transition:opacity .35s var(--ease),transform .35s var(--ease),background .25s,color .25s}
+.tm:hover .li-btn,.tm:focus-within .li-btn{opacity:1;transform:none}
+.li-btn:hover{background:var(--blue);color:#fff}
+.li-ico{width:22px;height:22px;border-radius:2px;background:#0A66C2;color:#fff;display:inline-flex;align-items:center;justify-content:center;font:700 12px 'Instrument Sans',sans-serif;letter-spacing:-.02em}
+.li-btn:hover .li-ico{background:#fff;color:var(--blue)}
+@media (hover:none){.li-btn{opacity:1;transform:none;left:auto;right:10px;bottom:10px;padding:6px}.li-btn .li-txt{display:none}.tm .ph::after{opacity:0}}
+
+/* hero visual: product composition, no photo */
+.hero-vis{position:relative;min-height:clamp(440px,40vw,540px);border-radius:3px;background:radial-gradient(120% 90% at 85% 10%,#DCE8FB 0%,#EEF3FD 40%,#F6F7F8 100%);border:1px solid var(--line);overflow:hidden}
+.hv-mark{position:absolute;right:-60px;bottom:-30px;width:78%;pointer-events:none}
+.hv-log{position:absolute;left:7%;top:20%;width:min(440px,86%);background:var(--deep);color:#fff;border-radius:3px;box-shadow:0 30px 60px -22px rgba(17,19,24,.45);overflow:hidden}
+.hv-log-h{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.1);font-size:11.5px}
+.hv-log-f{display:flex;justify-content:space-between;gap:12px;padding:11px 16px;border-top:1px solid rgba(255,255,255,.1);font-size:11px;color:rgba(255,255,255,.75);white-space:nowrap}
+.hv-chat{position:absolute;right:5%;top:5%;width:min(250px,46%);background:#fff;border-radius:3px;box-shadow:0 18px 40px -16px rgba(17,19,24,.28);padding:12px;display:flex;flex-direction:column;gap:7px;z-index:2}
+.hv-b{font-size:12.5px;line-height:1.4;padding:8px 10px;border-radius:10px;max-width:92%}
+.hv-b.u{align-self:flex-end;background:var(--alt);border-bottom-right-radius:2px}
+.hv-b.a{align-self:flex-start;background:var(--blue);color:#fff;border-bottom-left-radius:2px}
+.hv-crm{position:absolute;right:6%;bottom:6%;background:#fff;border-radius:3px;box-shadow:0 18px 40px -16px rgba(17,19,24,.28);padding:12px 14px;display:flex;flex-direction:column;gap:4px;z-index:2}
+@media (max-width:1100px){.hero-vis{min-height:480px}.hv-log{left:5%;top:24%}}
+@media (max-width:640px){.hero-vis{min-height:430px}.hv-chat{display:none}.hv-log{left:4%;right:4%;width:auto;top:6%}.hv-crm{right:4%;bottom:4%}}
 </style></helmet>
 
 <header style="position:sticky;top:0;z-index:40;background:rgba(255,255,255,.86);backdrop-filter:saturate(1.5) blur(14px);-webkit-backdrop-filter:saturate(1.5) blur(14px);border-bottom:1px solid var(--line)">
@@ -153,13 +177,15 @@ section .head + *{margin-top:0}
 <p class="lead fadein" style="animation-delay:.85s;max-width:600px">We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers, qualifies and processes documents in four national languages.</p>
 <div class="fadein" style="animation-delay:1s;display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-blue" href="Contact.dc.html"><span>Book a free 45-min audit<i class="arr">→</i></span></a><a class="btn btn-line" href="#results"><span>See results<i class="arr">→</i></span></a></div>
 </div>
-<div class="fadein" style="animation-delay:.4s;position:relative;min-height:clamp(420px,42vw,560px)">
-<div class="ph" style="position:absolute;inset:0 0 40px 48px;border-radius:3px"><img src="img/stock/ai-agent.jpg" alt="Server room where the agents run"><div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(39,114,224,.28),rgba(15,18,22,.15) 55%,rgba(15,18,22,.45))"></div></div>
-<div class="float" style="position:absolute;left:0;bottom:0;width:min(400px,86%);background:var(--deep);color:#fff;border-radius:3px;box-shadow:0 30px 60px -20px rgba(17,19,24,.45)">
-<div class="mono" style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.1);font-size:11px"><span style="display:flex;align-items:center;gap:8px"><span class="pulse"></span>Agent · Valais Materials · live</span><span style="color:rgba(255,255,255,.6)">Sat evening · illustrative</span></div>
-<div style="height:216px;overflow:hidden"><sc-for list="{{ feed }}" as="r" hint-placeholder-count="5"><div class="{{ r.cls }}" style="display:grid;grid-template-columns:38px 70px minmax(0,1fr) 30px;gap:8px;align-items:center;padding:11px 16px;border-bottom:1px solid rgba(255,255,255,.06);font-size:12.5px;opacity:{{ r.op }}"><span class="mono" style="font-size:11px;color:rgba(255,255,255,.6)">{{ r.time }}</span><span class="mono" style="font-size:10.5px;border:1px solid rgba(255,255,255,.2);border-radius:2px;padding:2px 5px;text-align:center">{{ r.ch }} {{ r.lang }}</span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.ev }}</span><span class="mono" style="font-size:11px;text-align:right;color:var(--bluel)">{{ r.lat }}</span></div></sc-for></div>
+<div class="fadein hero-vis" style="animation-delay:.4s">
+<svg class="hv-mark" viewBox="0 0 765 342" aria-hidden="true"><path d="M304.004 137.841L290.39 118.427L127.268 341.24H0L222.853 37.6379C230.122 27.9423 239.305 19.2372 250.39 11.5445C261.475 3.85183 275.499 0 292.463 0C308.743 0 322.335 3.59865 333.249 10.7961C344.152 17.9825 353.414 26.9408 361.036 37.6379L369.193 49.0393L304.004 137.841Z" fill="#111318" fill-opacity=".05"/><path d="M360.854 341.24L425.781 254.926H513.061C523.451 254.926 534.274 254.926 545.53 254.926C556.786 254.926 566.561 255.256 574.878 255.927C570.025 249.907 564.397 242.292 557.994 233.091C551.591 223.891 545.439 215.285 539.549 207.251L477.208 118.427L314.098 341.24H186.83L409.683 37.6379C416.952 27.9423 426.134 19.2372 437.219 11.5445C448.293 3.85183 462.329 0 479.293 0C495.573 0 509.165 3.59865 520.067 10.7961C530.982 17.9825 540.244 26.9408 547.866 37.6379L765 341.24H360.854V341.24Z" fill="#2772E0" fill-opacity=".09"/></svg>
+<div class="hv-chat float d2" aria-hidden="true"><span class="mono" style="font-size:10.5px;color:var(--ink3)">WhatsApp · DE · 21:41</span><span class="hv-b u">Können Sie Montag 8 t Kies 0/16 nach Siders liefern?</span><span class="hv-b a">Ja, an Lager. Mo 07:30 oder 13:00?<span class="mono" style="display:block;font-size:10px;opacity:.8;margin-top:3px">Agent · 4 s</span></span></div>
+<div class="hv-log float">
+<div class="hv-log-h mono"><span style="display:flex;align-items:center;gap:8px;min-width:0"><span class="pulse"></span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Agent log · Valais Materials</span></span><span style="flex:none;color:rgba(255,255,255,.6)">live</span></div>
+<div style="height:216px;overflow:hidden"><sc-for list="{{ feed }}" as="r" hint-placeholder-count="5"><div class="{{ r.cls }}" style="display:grid;grid-template-columns:40px 92px minmax(0,1fr) 34px;gap:8px;align-items:center;padding:11px 16px;border-bottom:1px solid rgba(255,255,255,.06);font-size:12.5px;opacity:{{ r.op }}"><span class="mono" style="font-size:11px;color:rgba(255,255,255,.6)">{{ r.time }}</span><span class="mono" style="font-size:10.5px;border:1px solid rgba(255,255,255,.2);border-radius:2px;padding:2px 5px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.ch }} {{ r.lang }}</span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.ev }}</span><span class="mono" style="font-size:11px;text-align:right;color:var(--bluel)">{{ r.lat }}</span></div></sc-for></div>
+<div class="hv-log-f mono"><span>{{ handled }} conversations today</span><span style="color:#4ADE80">● 4 s median reply</span></div>
 </div>
-<div class="float d2" style="position:absolute;right:16px;top:20px;background:#fff;border-radius:3px;padding:14px 16px;box-shadow:0 18px 40px -14px rgba(17,19,24,.3);display:flex;flex-direction:column;gap:4px;min-width:170px"><span class="mono" style="font-size:11px;color:var(--ink3)">conversations today</span><span class="mono" style="font-size:26px;font-weight:600;letter-spacing:-.03em">{{ handled }}</span><span style="font-size:12px;color:#1F9D55;font-weight:600">● median first reply 4 s</span></div>
+<div class="hv-crm float" aria-hidden="true"><span class="mono" style="font-size:10.5px;color:var(--ink3)">→ CRM · HubSpot</span><span style="font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px"><span style="color:#1F9D55">✓</span>Deal + transcript saved</span><span class="mono" style="font-size:11px;color:var(--ink2)">0/16 gravel · 8 t · Mon 07:30</span></div>
 </div>
 </div>
 <div class="w" style="position:relative;padding-bottom:clamp(48px,5vw,80px)"><div class="g4 keep2 stg rv" style="gap:14px">
@@ -323,7 +349,7 @@ section .head + *{margin-top:0}
 <section class="sec">
 <div class="w">
 <div class="head rv"><div><span class="lbl">Who you work with</span><h2 class="h2">The same people from audit to handover</h2></div><a class="btn btn-ink" href="Team.dc.html"><span>Meet the team<i class="arr">→</i></span></a></div>
-<div class="g4 keep2 stg rv" style="row-gap:36px"><sc-for list="{{ team }}" as="p" hint-placeholder-count="8"><div class="tm" style="display:flex;flex-direction:column;gap:14px"><div class="ph" style="aspect-ratio:4/5;border-radius:3px;background:linear-gradient(180deg,#EEF3FD,#E3E5E8)"><img src="{{ p.img }}" alt="{{ p.name }}" style="object-fit:cover;object-position:top center"></div><div style="display:flex;flex-direction:column;gap:4px;border-left:2px solid var(--blue);padding-left:12px"><span style="font-size:17px;font-weight:600;letter-spacing:-.01em">{{ p.name }}</span><span style="font-size:14px;color:var(--ink2)">{{ p.role }}</span></div></div></sc-for></div>
+<div class="g4 keep2 stg rv" style="row-gap:36px"><sc-for list="{{ team }}" as="p" hint-placeholder-count="8"><div class="tm" style="display:flex;flex-direction:column;gap:14px"><div class="ph" style="aspect-ratio:4/5;border-radius:3px;background:linear-gradient(180deg,#EEF3FD,#E3E5E8)"><img src="{{ p.img }}" alt="{{ p.name }}" style="object-fit:cover;object-position:top center"><sc-if value="{{ p.li }}" hint-placeholder-val="{{ false }}"><a class="li-btn" href="{{ p.li }}" target="_blank" rel="noopener noreferrer" aria-label="{{ p.liLabel }}"><span style="display:flex;align-items:center;gap:8px"><span class="li-ico" aria-hidden="true">in</span><span class="li-txt">LinkedIn</span></span><span class="li-txt" aria-hidden="true">↗</span></a></sc-if></div><div style="display:flex;flex-direction:column;gap:4px;border-left:2px solid var(--blue);padding-left:12px"><span style="font-size:17px;font-weight:600;letter-spacing:-.01em">{{ p.name }}</span><span style="font-size:14px;color:var(--ink2)">{{ p.role }}</span></div></div></sc-for></div>
 </div>
 </section>
 
@@ -502,6 +528,7 @@ const SWISS = [
   { t: 'Model-independent', d: 'The underlying model can be swapped. No single-vendor risk.' },
   { t: 'Registered in Valais', d: 'Trident Software Sàrl · CHE-185.076.733 · HES-SO Valais-Wallis · Campus Biotech, Geneva' }
 ];
+const LI = {"Maksym Shytov": "https://www.linkedin.com/in/maksym-shytov/", "Natalia Shytova": "https://www.linkedin.com/in/natalya-shytova/", "Dmitriy Shevelev": "https://www.linkedin.com/in/dmitriy-shevelev-ab3072151/", "Nina Alimova": "https://www.linkedin.com/in/%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B0%D0%BB%D0%B8%D0%BC%D0%BE%D0%B2%D0%B0", "Bohdan Voitovych": "https://www.linkedin.com/in/bohdan-voitovych/", "Marina Gordienko": "https://www.linkedin.com/in/marina-gordienko-6b387a204/", "Denys Shytov": "https://www.linkedin.com/in/shytov-denys-37965a194/", "Nikolai Kazmirchuk": "https://www.linkedin.com/in/nikolay-kazmirchuk-b50176185/", "Maksym Osadchyi": "https://www.linkedin.com/in/maxim-osadchiy-90a939198/", "Dmytro Panasiuk": "https://www.linkedin.com/in/dmytro-panasiuk-915762228/", "Kateryna Kochereshchenko": "https://www.linkedin.com/in/kateryna-kochereshchenko-89812b206/", "Anton Savchuk": "https://www.linkedin.com/in/anton-savchuk-883900267/"};
 const TEAM = [['Maksym Shytov', 'CTO', 'Ukraine', 'maksym-shytov'], ['Natalia Shytova', 'COO', 'Switzerland', 'natalia-shytova'], ['Dmitriy Shevelev', 'Team Lead', 'Ukraine', 'dmitriy-shevelev'], ['Nina Alimova', 'Project Manager', 'Ukraine', 'nina-alimova'], ['Bohdan Voitovych', 'Project Manager', 'Ukraine', 'bohdan-voitovych'], ['Marina Gordienko', 'Project Manager', 'Ukraine', 'maryna-gordienko'], ['Denys Shytov', 'Project Manager', 'Ukraine', 'denys-shytov'], ['Nikolai Kazmirchuk', 'Frontend Developer', 'Ukraine', 'nikolai-kazmirchuk']];
 const QUOTES = [
   { q: 'Excellente compagnie. Nous sommes très satisfaits du site internet que cette société a créé.', n: 'Guillaume Moulin', c: 'Ardevaz SLS' },
@@ -608,7 +635,7 @@ class Component extends DCLogic {
       stages: PROCESS.map(p => { const fill = Math.max(0, Math.min(1, (s.day - p.a + 1) / (p.b - p.a))); const on = s.day >= p.a && s.day < p.b; return { ...p, col: p.a + ' / ' + p.b, fill: (fill * 100).toFixed(1), bg: on ? '#2772E0' : '#111318', tc: on ? '#1B57B8' : (fill > 0 ? '#111318' : '#4A4F57'), dc: on ? '#1B57B8' : '#4A4F57' }; }),
       enq: s.enq, mins: s.mins, hrs, fte: (hrs / 160).toFixed(1), verdictOk: s.enq >= 150, verdictNo: s.enq < 150,
       why: WHY.map(([i, t, d]) => ({ i, t, d })), swiss: SWISS,
-      team: TEAM.map(([name, role, loc, f]) => ({ name, role, loc, img: 'img/team/' + f + '.png' })),
+      team: TEAM.map(([name, role, loc, f]) => ({ name, role, loc, img: 'img/team/' + f + '.png', li: LI[name] || '', liLabel: name + ' on LinkedIn' })),
       quote: { ...qd, ini: qd.n.split(' ').map(x => x[0]).join('') }, qAnim: s.qk % 2 ? 'qfade' : 'qfade2',
       qPrev: () => this.goQ(s.q - 1), qNext: () => this.goQ(s.q + 1),
       qDots: QUOTES.map((_, i) => ({ on: s.q === i, lbl: 'Testimonial ' + (i + 1), bg: s.q === i ? '#2772E0' : 'rgba(255,255,255,.25)', w: s.q === i ? 44 : 28, pick: () => this.goQ(i) })),
