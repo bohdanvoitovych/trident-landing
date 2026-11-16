@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
-import { intlLocale } from '@/lib/utils'
 import { useActive } from '@/lib/motion'
 import { HeroFlow } from './HeroFlow'
 
@@ -91,11 +90,10 @@ const CH = [
 
 const pad2 = (n: number) => String(n).padStart(2, '0')
 
-type LogProps = { lines: string[]; title: string; note: string; chipLabel: string; chipNote: string }
+type LogProps = { lines: string[]; title: string; note: string }
 
-export function HeroLog({ lines, title, note, chipLabel, chipNote }: LogProps) {
+export function HeroLog({ lines, title, note }: LogProps) {
   const t = useTranslations('sections.heroLive')
-  const locale = useLocale()
   const ref = useRef<HTMLDivElement>(null)
   const active = useActive(ref)
   // Start with five rows so the card is full on first paint (server and client agree).
@@ -152,13 +150,6 @@ export function HeroLog({ lines, title, note, chipLabel, chipNote }: LogProps) {
             </li>
           ))}
         </ol>
-      </div>
-      <div className="hero-chip floaty floaty--d2" data-loop>
-        <span className="k">{chipLabel}</span>
-        <span className="v">{(1284 + n).toLocaleString(intlLocale(locale))}</span>
-        <span className="ok">
-          <i aria-hidden="true">●</i> {chipNote}
-        </span>
       </div>
     </>
   )

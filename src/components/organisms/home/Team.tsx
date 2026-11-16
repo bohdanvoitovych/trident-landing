@@ -12,7 +12,7 @@ const featured = (team: TeamMember[]) =>
       const bi = ORDER.indexOf(b.department)
       return (ai === -1 ? ORDER.length : ai) - (bi === -1 ? ORDER.length : bi)
     })
-    .slice(0, 8)
+    .slice(0, 4)
 
 export function Team() {
   const t = useTranslations('ui.actions')

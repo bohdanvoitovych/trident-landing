@@ -140,8 +140,6 @@
     "hero": {
       "logTitle": "Agent · Valais Materials · en direct",
       "logNote": "Samedi soir · exemple",
-      "conversationsToday": "conversations aujourd'hui",
-      "medianReply": "première réponse médiane 4 s",
       "log": {
         "1": "Demande : 8 t gravier 0/16 pour Sierre → répondu",
         "2": "Stock vérifié · créneaux lu 07:30 / 13:00 proposés",
@@ -153,10 +151,9 @@
         "8": "« Où est ma livraison ? » → suivi en direct envoyé"
       },
       "statSrc": {
-        "clinic": "Réseau de cliniques · CH",
+        "practice": "Cabinet pluridisciplinaire · CH · mesuré",
         "maker": "Fabricant de composants · IT · mesuré",
-        "agent": "Agent commercial",
-        "residency": "Hébergement des données"
+        "track": "Trident · depuis 2009"
       }
     },
     "problem": {
@@ -207,7 +204,7 @@
     "clients": {
       "label": "Clients",
       "title": "Des entreprises en Suisse et en Europe nous font confiance",
-      "namedReferences": "Références nominatives sur demande"
+      "namedReferences": "Des clients de référence que nous pouvons vous présenter"
     },
     "testimonials": {
       "prev": "Témoignage précédent",
@@ -1172,15 +1169,15 @@
       "title": "Logiciels métier et <b>agents IA,</b> conçus en Suisse",
       "lead": "Nous construisons les systèmes dont les entreprises se servent chaque jour : prise de commande, dispatch, apps terrain, facturation. Et la couche d'IA qui répond, qualifie et traite les documents dans les quatre langues nationales.",
       "ctaAudit": "Réserver un audit gratuit de 45 min",
+      "statsTitle": "Résultats de projets clients",
       "stats": {
-        "clinic": "Temps d'admission en clinique, objectif visé en exploitation",
-        "maker": "Coûts de garantie, fabricant de composants",
-        "agentValue": "2e mois",
-        "agent": "Retour sur investissement typique d'un agent commercial",
-        "residency": "Hébergement conforme à la nLPD et au RGPD",
-        "residencyTags": [
-          "nLPD",
-          "RGPD"
+        "practice": "Plus de consultations par médecin, même salaire",
+        "maker": "Coûts de garantie, de 1.37 % à 0.51 % du chiffre d'affaires",
+        "projects": "Projets livrés depuis 2009, pour des clients dans plus de 20 pays",
+        "projectsTags": [
+          "CH",
+          "EU",
+          "UK"
         ]
       }
     },
@@ -1206,17 +1203,7 @@
       "title": "Les PME suisses ne perdent pas des affaires à cause de mauvais produits. Elles les perdent faute de réponse.",
       "lead": "Les clients veulent une réponse tout de suite, sur leur canal, dans leur langue. La plupart des équipes n'ont pas le personnel pour ça.",
       "wantOnline": "des Suisses veulent trouver et réserver en ligne le service d'une PME",
-      "supportToday": "des PME le permettent pleinement aujourd'hui.",
-      "oddsDesc": "de chances en moins de qualifier un prospect après 30 minutes plutôt qu'après 5",
-      "oddsSource": "Étude américaine, 2007",
-      "channelsValue": "3 canaux",
-      "channelsDesc": "utilisés presque à parts égales. Impossible d'en couvrir un seul",
-      "channelEmail": "E-mail",
-      "channelChat": "Chat",
-      "channelPhone": "Téléphone",
-      "whatsappDesc": "de la population utilise WhatsApp. Le canal existe, le personnel pour y répondre non",
-      "whatsappSource": "Suisse",
-      "aiDesc": "commencent à chercher un service dans un assistant IA, pas dans un moteur de recherche"
+      "supportToday": "des PME le permettent pleinement aujourd'hui."
     },
     "services": {
       "label": "Ce que nous faisons",
@@ -1320,13 +1307,7 @@
     },
     "blog": {
       "label": "Blog & actualités",
-      "title": "Le mot de l'équipe",
-      "posts": {
-        "autoParts": "Un logiciel de pièces auto qui réunit e-commerce, entrepôt, livraison et IA",
-        "automechanika": "Automechanika Dubai 2025 : retrouvez-nous dans le hall 8, stand F18",
-        "practicalAi": "L'IA concrète pour les PME : là où elle fonctionne vraiment",
-        "invoiceScanner": "Un clic, un scan, c'est fait : comment un scanner de factures réduit les coûts"
-      }
+      "title": "Le mot de l'équipe"
     },
     "calculator": {
       "label": "Calculateur",

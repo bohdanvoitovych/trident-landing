@@ -140,8 +140,6 @@
     "hero": {
       "logTitle": "Agent · Valais Materials · live",
       "logNote": "Samstagabend · Beispiel",
-      "conversationsToday": "Gespräche heute",
-      "medianReply": "Median erste Antwort 4 s",
       "log": {
         "1": "Anfrage: 8 t Kies 0/16 nach Siders → beantwortet",
         "2": "Lager geprüft · Termine Mo 07:30 / 13:00 angeboten",
@@ -153,10 +151,9 @@
         "8": "« Où est ma livraison ? » → Live-Tracking gesendet"
       },
       "statSrc": {
-        "clinic": "Kliniknetz · CH",
+        "practice": "Interdisziplinäre Praxis · CH · gemessen",
         "maker": "Komponentenhersteller · IT · gemessen",
-        "agent": "Verkaufsagent",
-        "residency": "Datenstandort"
+        "track": "Trident · seit 2009"
       }
     },
     "problem": {
@@ -207,7 +204,7 @@
     "clients": {
       "label": "Kunden",
       "title": "Unternehmen in der Schweiz und in Europa vertrauen uns",
-      "namedReferences": "Namentliche Referenzen auf Anfrage"
+      "namedReferences": "Referenzkunden, mit denen wir Sie in Kontakt bringen"
     },
     "testimonials": {
       "prev": "Vorheriges Kundenzitat",
@@ -1172,15 +1169,15 @@
       "title": "Betriebssoftware und <b>KI-Agenten,</b> gebaut in der Schweiz",
       "lead": "Wir bauen die Systeme, mit denen Unternehmen jeden Tag arbeiten: Auftragserfassung, Disposition, Field-Apps, Fakturierung. Dazu die KI-Schicht, die Anfragen beantwortet, qualifiziert und Dokumente in vier Landessprachen verarbeitet.",
       "ctaAudit": "Kostenloses 45-Min-Audit buchen",
+      "statsTitle": "Ergebnisse aus Kundenprojekten",
       "stats": {
-        "clinic": "Aufnahmezeit in der Klinik, Zielwert im Betrieb",
-        "maker": "Garantiekosten, Komponentenhersteller",
-        "agentValue": "Monat 2",
-        "agent": "Typische Amortisation eines Verkaufsagenten",
-        "residency": "Hosting nach nDSG und DSGVO",
-        "residencyTags": [
-          "nDSG",
-          "DSGVO"
+        "practice": "Mehr Konsultationen pro Arzt, gleicher Lohn",
+        "maker": "Garantiekosten, von 1.37 % auf 0.51 % des Umsatzes",
+        "projects": "Projekte seit 2009, für Kunden in über 20 Ländern",
+        "projectsTags": [
+          "CH",
+          "EU",
+          "UK"
         ]
       }
     },
@@ -1206,17 +1203,7 @@
       "title": "Schweizer KMU verlieren Aufträge nicht wegen schlechter Produkte, sondern weil niemand antwortet.",
       "lead": "Kunden wollen sofort eine Antwort, auf ihrem Kanal, in ihrer Sprache. Die meisten Teams können das personell nicht leisten.",
       "wantOnline": "der Schweizerinnen und Schweizer möchten eine KMU-Dienstleistung online finden und buchen",
-      "supportToday": "der KMU bieten das heute vollständig an.",
-      "oddsDesc": "geringere Chance, einen Lead zu qualifizieren, wenn nach 30 statt nach 5 Minuten geantwortet wird",
-      "oddsSource": "US-Studie, 2007",
-      "channelsValue": "3 Kanäle",
-      "channelsDesc": "werden fast gleich oft genutzt. Es gibt nicht den einen Kanal, den man besetzen kann",
-      "channelEmail": "E-Mail",
-      "channelChat": "Chat",
-      "channelPhone": "Telefon",
-      "whatsappDesc": "der Bevölkerung nutzen WhatsApp. Der Kanal ist da, das Personal dafür nicht",
-      "whatsappSource": "Schweiz",
-      "aiDesc": "beginnen die Suche nach einer Dienstleistung in einem KI-Assistenten statt in einer Suchmaschine"
+      "supportToday": "der KMU bieten das heute vollständig an."
     },
     "services": {
       "label": "Was wir tun",
@@ -1320,13 +1307,7 @@
     },
     "blog": {
       "label": "Blog & News",
-      "title": "Aus dem Team",
-      "posts": {
-        "autoParts": "Software für Autoteile, die E-Commerce, Lager, Lieferung und KI vereint",
-        "automechanika": "Automechanika Dubai 2025: Besuchen Sie uns in Halle 8, Stand F18",
-        "practicalAi": "Praktische KI für KMU: wo sie wirklich funktioniert",
-        "invoiceScanner": "Klicken, scannen, fertig: Wie ein digitaler Rechnungsscanner Kosten senkt"
-      }
+      "title": "Aus dem Team"
     },
     "calculator": {
       "label": "Rechner",

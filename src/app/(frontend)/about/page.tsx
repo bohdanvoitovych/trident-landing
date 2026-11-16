@@ -7,6 +7,7 @@ import { getStats } from '@/data/team'
 import { buildMetadata } from '@/lib/metadata'
 import { pageName } from '@/lib/schema'
 import PageJsonLd from '@/components/seo/PageJsonLd'
+import { Partners } from '@/components/organisms/home/Partners'
 import { Timeline } from './Timeline'
 
 export const revalidate = 3600
@@ -180,6 +181,8 @@ export default async function AboutPage() {
           </div>
         </div>
       </section>
+
+      <Partners />
 
       <section className="section section--line" aria-labelledby="about-cta-h">
         <div className="container cta-band reveal">

@@ -140,8 +140,6 @@
     "hero": {
       "logTitle": "Agente · Valais Materials · live",
       "logNote": "Sabato sera · esempio",
-      "conversationsToday": "conversazioni oggi",
-      "medianReply": "prima risposta mediana 4 s",
       "log": {
         "1": "Richiesta: 8 t ghiaia 0/16 per Sierre → risposto",
         "2": "Magazzino verificato · fasce lun 07:30 / 13:00 proposte",
@@ -153,10 +151,9 @@
         "8": "« Où est ma livraison ? » → tracking live inviato"
       },
       "statSrc": {
-        "clinic": "Rete di cliniche · CH",
+        "practice": "Studio medico multidisciplinare · CH · misurato",
         "maker": "Produttore di componenti · IT · misurato",
-        "agent": "Agente di vendita",
-        "residency": "Residenza dei dati"
+        "track": "Trident · dal 2009"
       }
     },
     "problem": {
@@ -207,7 +204,7 @@
     "clients": {
       "label": "Clienti",
       "title": "Aziende in Svizzera e in Europa si affidano a noi",
-      "namedReferences": "Referenze nominative su richiesta"
+      "namedReferences": "Clienti di riferimento che possiamo presentarvi"
     },
     "testimonials": {
       "prev": "Testimonianza precedente",
@@ -1172,15 +1169,15 @@
       "title": "Software operativo e <b>agenti AI,</b> sviluppati in Svizzera",
       "lead": "Costruiamo i sistemi con cui le aziende lavorano ogni giorno: acquisizione ordini, dispatch, app sul campo, fatturazione. E lo strato di AI che risponde, qualifica ed elabora documenti nelle quattro lingue nazionali.",
       "ctaAudit": "Prenota un audit gratuito di 45 min",
+      "statsTitle": "Risultati da progetti per clienti",
       "stats": {
-        "clinic": "Tempo di ammissione in clinica, obiettivo operativo",
-        "maker": "Costi di garanzia, produttore di componenti",
-        "agentValue": "Mese 2",
-        "agent": "Rientro tipico dell'investimento in un agente di vendita",
-        "residency": "Hosting conforme a nLPD e GDPR",
-        "residencyTags": [
-          "nLPD",
-          "GDPR"
+        "practice": "Più visite per medico, stesso stipendio",
+        "maker": "Costi di garanzia, dall'1.37 % allo 0.51 % del fatturato",
+        "projects": "Progetti consegnati dal 2009, per clienti in oltre 20 paesi",
+        "projectsTags": [
+          "CH",
+          "EU",
+          "UK"
         ]
       }
     },
@@ -1206,17 +1203,7 @@
       "title": "Le PMI svizzere non perdono clienti per prodotti scadenti. Li perdono perché nessuno risponde.",
       "lead": "I clienti vogliono risposte subito, sul loro canale, nella loro lingua. La maggior parte dei team non ha il personale per farlo.",
       "wantOnline": "degli svizzeri vuole trovare e prenotare online il servizio di una PMI",
-      "supportToday": "delle PMI oggi lo consente davvero.",
-      "oddsDesc": "probabilità in meno di qualificare un contatto dopo 30 minuti invece che dopo 5",
-      "oddsSource": "Studio USA, 2007",
-      "channelsValue": "3 canali",
-      "channelsDesc": "usati quasi allo stesso modo. Non ce n'è uno solo da presidiare",
-      "channelEmail": "E-mail",
-      "channelChat": "Chat",
-      "channelPhone": "Telefono",
-      "whatsappDesc": "della popolazione usa WhatsApp. Il canale c'è, il personale per gestirlo no",
-      "whatsappSource": "Svizzera",
-      "aiDesc": "iniziano a cercare un servizio in un assistente AI, non in un motore di ricerca"
+      "supportToday": "delle PMI oggi lo consente davvero."
     },
     "services": {
       "label": "Cosa facciamo",
@@ -1320,13 +1307,7 @@
     },
     "blog": {
       "label": "Blog & notizie",
-      "title": "Dal nostro team",
-      "posts": {
-        "autoParts": "Un software per ricambi auto che unisce e-commerce, magazzino, consegne e AI",
-        "automechanika": "Automechanika Dubai 2025: ti aspettiamo nel padiglione 8, stand F18",
-        "practicalAi": "AI pratica per le PMI: dove funziona davvero",
-        "invoiceScanner": "Clic, scansione, fatto: come uno scanner digitale di fatture riduce i costi"
-      }
+      "title": "Dal nostro team"
     },
     "calculator": {
       "label": "Calcolatore",

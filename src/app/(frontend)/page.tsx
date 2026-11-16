@@ -7,18 +7,12 @@ import { Hero } from '@/components/organisms/home/Hero'
 import { Problem } from '@/components/organisms/home/Problem'
 import { Services } from '@/components/organisms/home/Services'
 import { Agent } from '@/components/organisms/home/Agent'
-import { Race } from '@/components/organisms/home/Race'
-import { UseCases } from '@/components/organisms/home/UseCases'
 import { Cases } from '@/components/organisms/home/Cases'
-import { Industries } from '@/components/organisms/home/Industries'
 import { Process } from '@/components/organisms/home/Process'
-import { Calculator } from '@/components/organisms/home/Calculator'
-import { WhyUs } from '@/components/organisms/home/WhyUs'
 import { Swiss } from '@/components/organisms/home/Swiss'
 import { Team } from '@/components/organisms/home/Team'
 import { Logos } from '@/components/organisms/home/Logos'
 import { Testimonials } from '@/components/organisms/home/Testimonials'
-import { Partners } from '@/components/organisms/home/Partners'
 import { Faq } from '@/components/organisms/home/Faq'
 import { Blog } from '@/components/organisms/home/Blog'
 
@@ -35,8 +29,9 @@ export async function generateMetadata() {
   })
 }
 
-// Section order follows design/redesign-2026/README.md (19 sections; the
-// footer with the free-audit block is #19, rendered by the layout).
+// Proof first: clients right under the hero, then the problem, the offer, results
+// and the people. Use cases, industries, the calculator and the partner block live
+// on their own pages. The footer with the free-audit block comes from the layout.
 export default async function HomePage() {
   const locale = await getLocale()
   const homeFaq = getHomeFaq(locale)
@@ -49,21 +44,15 @@ export default async function HomePage() {
     <>
       <JsonLd data={[...homePageSchemas(locale), ...(faqSchema ? [faqSchema] : [])]} />
       <Hero />
+      <Logos />
       <Problem />
       <Services />
       <Agent />
-      <Race />
-      <UseCases />
       <Cases />
-      <Industries />
+      <Testimonials />
       <Process />
-      <Calculator />
-      <WhyUs />
       <Swiss />
       <Team />
-      <Logos />
-      <Testimonials />
-      <Partners />
       <Faq />
       <Blog />
     </>

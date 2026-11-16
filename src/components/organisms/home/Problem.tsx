@@ -1,6 +1,5 @@
 import { useTranslations } from 'next-intl'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
-import { MiniVisual } from '@/components/molecules/StatCard'
 
 function Dots({ on, blue }: { on: number; blue?: boolean }) {
   return (
@@ -54,69 +53,6 @@ export function Problem() {
           localsearch × HSLU, KMU Digital Pulse 2025
         </p>
 
-        <div className="grid-4 stagger" style={{ marginTop: 40 }}>
-          <div className="card stat-card stat-card--lg">
-            <span className="stat-v stat-v--xl">
-              <span>
-                <span data-count="21">21</span>×
-              </span>
-            </span>
-            <span className="stat-d">{tp('oddsDesc')}</span>
-            <MiniVisual
-              visual={{
-                kind: 'rows',
-                rows: [
-                  { label: '5 min', value: 1 },
-                  { label: '30 min', value: 0.05, tone: 'ink' },
-                ],
-              }}
-            />
-            <span className="stat-src">{tp('oddsSource')}</span>
-          </div>
-          <div className="card stat-card stat-card--lg">
-            <span className="stat-v stat-v--xl">{tp('channelsValue')}</span>
-            <span className="stat-d">{tp('channelsDesc')}</span>
-            <MiniVisual
-              visual={{
-                kind: 'rows',
-                rows: [
-                  { label: tp('channelEmail'), value: 1, text: '16 %' },
-                  { label: tp('channelChat'), value: 1, text: '16 %' },
-                  { label: tp('channelPhone'), value: 0.875, text: '14 %' },
-                ],
-              }}
-            />
-            <span className="stat-src">ServiceNow, 2024</span>
-          </div>
-          <div className="card stat-card stat-card--lg">
-            <div className="ring-wrap">
-              <MiniVisual visual={{ kind: 'ring', percent: 85 }} />
-              <span className="stat-v stat-v--xl">
-                <span>
-                  <span data-count="85">85</span> %
-                </span>
-              </span>
-            </div>
-            <span className="stat-d">{tp('whatsappDesc')}</span>
-            <span className="stat-src" style={{ marginTop: 'auto' }}>
-              {tp('whatsappSource')}
-            </span>
-          </div>
-          <div className="card stat-card stat-card--lg">
-            <div className="ring-wrap">
-              <MiniVisual visual={{ kind: 'ring', percent: 13 }} />
-              <span className="stat-v stat-v--xl">
-                <span>
-                  <span data-count="13">13</span> %
-                </span>
-              </span>
-            </div>
-            <span className="stat-d">{tp('aiDesc')}</span>
-            <span className="stat-src" style={{ marginTop: 'auto' }}>
-              KMU Digital Pulse, 2025
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   )

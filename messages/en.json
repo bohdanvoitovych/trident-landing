@@ -140,10 +140,8 @@
     "hero": {
       "logTitle": "Agent · Valais Materials · live",
       "logNote": "Sat evening · illustrative",
-      "conversationsToday": "conversations today",
-      "medianReply": "median first reply 4 s",
       "log": {
-        "1": "Enquiry: 8 t Kies 0/16 nach Siders → answered",
+        "1": "Enquiry: 8 t gravel 0/16 to Sierre → answered",
         "2": "Stock checked · slots Mo 07:30 / 13:00 offered",
         "3": "Order confirmed → QR-bill sent",
         "4": "Contact, deal and transcript → HubSpot",
@@ -153,10 +151,9 @@
         "8": "« Où est ma livraison ? » → live tracking sent"
       },
       "statSrc": {
-        "clinic": "Clinic network · CH",
+        "practice": "Multi-disciplinary practice · CH · measured",
         "maker": "Component maker · IT · measured",
-        "agent": "Sales agent",
-        "residency": "Data residency"
+        "track": "Trident · since 2009"
       }
     },
     "problem": {
@@ -207,7 +204,7 @@
     "clients": {
       "label": "Clients",
       "title": "Trusted by companies in Switzerland and Europe",
-      "namedReferences": "Named references, available on request"
+      "namedReferences": "Reference clients we can put you in touch with"
     },
     "testimonials": {
       "prev": "Previous testimonial",
@@ -1172,15 +1169,15 @@
       "title": "Operational software and <b>AI agents,</b> built in Switzerland",
       "lead": "We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers, qualifies and processes documents in four national languages.",
       "ctaAudit": "Book a free 45-min audit",
+      "statsTitle": "Results from client projects",
       "stats": {
-        "clinic": "Clinic admission time, operating target",
-        "maker": "Warranty cost, component maker",
-        "agentValue": "Month 2",
-        "agent": "Typical payback on a sales agent",
-        "residency": "Hosting, under revFADP and GDPR",
-        "residencyTags": [
-          "revFADP",
-          "GDPR"
+        "practice": "More consultations per physician, same salary",
+        "maker": "Warranty cost, from 1.37 % to 0.51 % of revenue",
+        "projects": "Projects delivered since 2009, for clients in 20+ countries",
+        "projectsTags": [
+          "CH",
+          "EU",
+          "UK"
         ]
       }
     },
@@ -1206,17 +1203,7 @@
       "title": "Swiss SMEs don't lose deals to bad products. They lose them to silence.",
       "lead": "Buyers want answers now, on their channel, in their language. Most teams can't staff that.",
       "wantOnline": "of Swiss people want to find and book an SME service online",
-      "supportToday": "of SMEs fully support it today.",
-      "oddsDesc": "lower odds of qualifying a lead after 30 minutes vs 5 minutes",
-      "oddsSource": "US study, 2007",
-      "channelsValue": "3 channels",
-      "channelsDesc": "used almost equally. No single one to staff",
-      "channelEmail": "E-mail",
-      "channelChat": "Chat",
-      "channelPhone": "Phone",
-      "whatsappDesc": "of the population use WhatsApp. The channel exists; the staffing doesn't",
-      "whatsappSource": "Switzerland",
-      "aiDesc": "start looking for a service in an AI assistant, not a search engine"
+      "supportToday": "of SMEs fully support it today."
     },
     "services": {
       "label": "What we do",
@@ -1320,13 +1307,7 @@
     },
     "blog": {
       "label": "Blog & news",
-      "title": "From the team",
-      "posts": {
-        "autoParts": "Smart auto parts software that unifies e-commerce, warehouse, delivery and AI",
-        "automechanika": "Automechanika Dubai 2025: meet us in Hall 8, Booth F18",
-        "practicalAi": "Practical AI for SMEs: where it really works",
-        "invoiceScanner": "Click, scan, done: how a digital invoice scanner cuts costs"
-      }
+      "title": "From the team"
     },
     "calculator": {
       "label": "Calculator",
