@@ -522,10 +522,10 @@
       "ctaButton": "Inizia una conversazione"
     },
     "faq": {
-      "metaTitle": "Domande prima dell'audit | FAQ | Trident Software",
+      "metaTitle": "Domande frequenti | Trident Software",
       "metaDescription": "Risposte dirette, anche quelle che ci sono costate dei contratti. Se la tua domanda manca, chiedi pure: un ingegnere ti risponde entro 24 ore lavorative.",
       "label": "FAQ",
-      "title": "Domande prima dell'audit"
+      "title": "Domande frequenti"
     },
     "useCases": {
       "metaTitle": "Casi d'uso: {title} | Trident Software",
@@ -1304,8 +1304,8 @@
       "note": "L'agente gestisce il 70–80 % di conversazioni di routine. Le trattative complesse restano alle tue persone."
     },
     "blog": {
-      "label": "Blog & notizie",
-      "title": "Dal nostro team"
+      "label": "Blog",
+      "title": "Ultimi articoli"
     },
     "calculator": {
       "label": "Calcolatore",
@@ -1366,7 +1366,7 @@
     },
     "faq": {
       "label": "FAQ",
-      "title": "Le domande prima dell'audit"
+      "title": "Domande frequenti"
     },
     "industries": {
       "label": "Settori",
@@ -1633,7 +1633,7 @@
     },
     "swiss": {
       "label": "Svizzera per giurisdizione",
-      "title": "Contratti svizzeri, responsabilità svizzera, i tuoi dati restano tuoi",
+      "title": "Un contratto svizzero, e i vostri dati restano vostri",
       "lead": "Contratti e residenza dei dati sono in Svizzera. Lo sviluppo è distribuito: così le nostre tariffe restano sotto quelle delle agenzie svizzere senza rinunciare all'esperienza.",
       "facts": {
         "hosting": {
@@ -1663,8 +1663,8 @@
       }
     },
     "team": {
-      "label": "Con chi lavorerai",
-      "title": "Le stesse persone dall'audit alla consegna"
+      "label": "Team",
+      "title": "Le persone dietro il vostro progetto"
     },
     "testimonialsCarousel": {
       "label": "Clienti",
@@ -1741,8 +1741,8 @@
       "description": "Sviluppo software su misura, integrazione AI e sistemi embedded per PMI. Conformità svizzera, budget fissi, 100+ progetti realizzati."
     },
     "footer": {
-      "auditTitle": "Porta i tuoi volumi. Riparti con <em>i tuoi numeri.</em>",
-      "auditLead": "45 minuti e una risposta chiara, che si lavori insieme o no.",
+      "auditTitle": "Iniziate con una <em>chiamata gratuita di 45 minuti.</em>",
+      "auditLead": "Ricevete una risposta chiara, che lavoriamo insieme o no.",
       "tagSwissLaw": "nLPD",
       "tagGdpr": "GDPR",
       "mapsLabel": "Trovaci su Google Maps",

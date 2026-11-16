@@ -522,10 +522,10 @@
       "ctaButton": "Engager la conversation"
     },
     "faq": {
-      "metaTitle": "Questions avant l'audit | FAQ | Trident Software",
+      "metaTitle": "Questions fréquentes | Trident Software",
       "metaDescription": "Des réponses franches, y compris celles qui nous ont coûté des contrats. Votre question n'y est pas ? Posez-la : un ingénieur répond sous 24 heures ouvrées.",
       "label": "FAQ",
-      "title": "Questions avant l'audit"
+      "title": "Questions fréquentes"
     },
     "useCases": {
       "metaTitle": "Cas d'usage : {title} | Trident Software",
@@ -1304,8 +1304,8 @@
       "note": "L'agent prend en charge les 70–80 % de conversations courantes. Les affaires complexes restent chez vos collaborateurs."
     },
     "blog": {
-      "label": "Blog & actualités",
-      "title": "Le mot de l'équipe"
+      "label": "Blog",
+      "title": "Derniers articles"
     },
     "calculator": {
       "label": "Calculateur",
@@ -1366,7 +1366,7 @@
     },
     "faq": {
       "label": "FAQ",
-      "title": "Vos questions avant l'audit"
+      "title": "Questions fréquentes"
     },
     "industries": {
       "label": "Secteurs",
@@ -1633,7 +1633,7 @@
     },
     "swiss": {
       "label": "Suisse par juridiction",
-      "title": "Contrats suisses, responsabilité suisse, vos données restent les vôtres",
+      "title": "Un contrat suisse, et vos données restent les vôtres",
       "lead": "Les contrats et l'hébergement des données sont en Suisse. L'ingénierie est répartie, ce qui permet à nos tarifs de rester sous ceux des agences suisses sans sacrifier l'expérience.",
       "facts": {
         "hosting": {
@@ -1663,8 +1663,8 @@
       }
     },
     "team": {
-      "label": "Avec qui vous travaillez",
-      "title": "Les mêmes personnes de l'audit à la remise"
+      "label": "Équipe",
+      "title": "Les personnes derrière votre projet"
     },
     "testimonialsCarousel": {
       "label": "Clients",
@@ -1741,8 +1741,8 @@
       "description": "Développement logiciel sur mesure, intégration de l'IA et systèmes embarqués pour PME. Conformité suisse, budgets fixes, 100+ projets livrés."
     },
     "footer": {
-      "auditTitle": "Venez avec vos volumes. Repartez avec <em>vos chiffres.</em>",
-      "auditLead": "45 minutes et une réponse franche, que nous travaillions ensemble ou non.",
+      "auditTitle": "Commencez par un <em>appel gratuit de 45 minutes.</em>",
+      "auditLead": "Vous obtenez une réponse claire, que nous travaillions ensemble ou non.",
       "tagSwissLaw": "nLPD",
       "tagGdpr": "RGPD",
       "mapsLabel": "Nous trouver sur Google Maps",

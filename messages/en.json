@@ -522,10 +522,10 @@
       "ctaButton": "Start a conversation"
     },
     "faq": {
-      "metaTitle": "Questions before the audit | FAQ | Trident Software",
+      "metaTitle": "Frequently Asked Questions | Trident Software",
       "metaDescription": "Straight answers, including the ones that cost us deals. If yours isn't here, ask: a named engineer replies within 24 business hours.",
       "label": "FAQ",
-      "title": "Questions before the audit"
+      "title": "Frequently asked questions"
     },
     "useCases": {
       "metaTitle": "Use cases — {title} | Trident Software",
@@ -1304,8 +1304,8 @@
       "note": "The agent handles the routine 70–80 % of conversations. Complex deals stay with your people."
     },
     "blog": {
-      "label": "Blog & news",
-      "title": "From the team"
+      "label": "Blog",
+      "title": "Latest articles"
     },
     "calculator": {
       "label": "Calculator",
@@ -1366,7 +1366,7 @@
     },
     "faq": {
       "label": "FAQ",
-      "title": "Questions before the audit"
+      "title": "Frequently asked questions"
     },
     "industries": {
       "label": "Industries",
@@ -1633,7 +1633,7 @@
     },
     "swiss": {
       "label": "Swiss by jurisdiction",
-      "title": "Swiss contracts, Swiss accountability, your data stays yours",
+      "title": "A Swiss contract, and your data stays yours",
       "lead": "Contracts and data residency sit in Switzerland. Engineering is distributed, which is how our rates work against Swiss agency pricing without cutting seniority.",
       "facts": {
         "hosting": {
@@ -1663,8 +1663,8 @@
       }
     },
     "team": {
-      "label": "Who you work with",
-      "title": "The same people from audit to handover"
+      "label": "Team",
+      "title": "The people behind your project"
     },
     "testimonialsCarousel": {
       "label": "Clients",
@@ -1741,8 +1741,8 @@
       "description": "Custom software development, AI integration, and embedded systems for SMEs. Swiss compliance, fixed budgets, 100+ projects delivered."
     },
     "footer": {
-      "auditTitle": "Bring your volumes. Leave with <em>your numbers.</em>",
-      "auditLead": "45 minutes and a straight answer, whether or not we work together.",
+      "auditTitle": "Start with a <em>free 45-minute call.</em>",
+      "auditLead": "You get a straight answer, whether or not we work together.",
       "tagSwissLaw": "revFADP",
       "tagGdpr": "GDPR",
       "mapsLabel": "Find us on Google Maps",

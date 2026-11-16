@@ -522,10 +522,10 @@
       "ctaButton": "Gespräch beginnen"
     },
     "faq": {
-      "metaTitle": "Fragen vor dem Audit | FAQ | Trident Software",
+      "metaTitle": "Häufige Fragen | Trident Software",
       "metaDescription": "Klare Antworten, auch solche, die uns schon Aufträge gekostet haben. Fehlt Ihre Frage, fragen Sie uns: Ein Engineer antwortet innert 24 Geschäftsstunden.",
       "label": "FAQ",
-      "title": "Fragen vor dem Audit"
+      "title": "Häufige Fragen"
     },
     "useCases": {
       "metaTitle": "Anwendungsfälle: {title} | Trident Software",
@@ -1304,8 +1304,8 @@
       "note": "Der Agent übernimmt die routinemässigen 70–80 % der Gespräche. Komplexe Geschäfte bleiben bei Ihren Leuten."
     },
     "blog": {
-      "label": "Blog & News",
-      "title": "Aus dem Team"
+      "label": "Blog",
+      "title": "Neueste Artikel"
     },
     "calculator": {
       "label": "Rechner",
@@ -1366,7 +1366,7 @@
     },
     "faq": {
       "label": "FAQ",
-      "title": "Fragen vor dem Audit"
+      "title": "Häufige Fragen"
     },
     "industries": {
       "label": "Branchen",
@@ -1633,7 +1633,7 @@
     },
     "swiss": {
       "label": "Schweizer Recht",
-      "title": "Schweizer Verträge, Schweizer Verantwortung, Ihre Daten bleiben Ihre",
+      "title": "Ein Schweizer Vertrag, und Ihre Daten bleiben Ihre",
       "lead": "Verträge und Datenhaltung liegen in der Schweiz. Die Entwicklung ist verteilt. So bleiben unsere Tarife unter den Preisen Schweizer Agenturen, ohne bei der Erfahrung zu sparen.",
       "facts": {
         "hosting": {
@@ -1663,8 +1663,8 @@
       }
     },
     "team": {
-      "label": "Mit wem Sie arbeiten",
-      "title": "Dieselben Personen vom Audit bis zur Übergabe"
+      "label": "Team",
+      "title": "Die Menschen hinter Ihrem Projekt"
     },
     "testimonialsCarousel": {
       "label": "Kunden",
@@ -1741,8 +1741,8 @@
       "description": "Individuelle Softwareentwicklung, KI-Integration und Embedded-Systeme für KMU. Schweizer Compliance, feste Budgets, 100+ realisierte Projekte."
     },
     "footer": {
-      "auditTitle": "Bringen Sie Ihr Mengengerüst mit. Sie gehen mit <em>Ihren Zahlen.</em>",
-      "auditLead": "45 Minuten und eine klare Antwort, ob wir zusammenarbeiten oder nicht.",
+      "auditTitle": "Starten Sie mit einem <em>kostenlosen 45-Minuten-Gespräch.</em>",
+      "auditLead": "Sie erhalten eine klare Antwort, ob wir zusammenarbeiten oder nicht.",
       "tagSwissLaw": "nDSG",
       "tagGdpr": "DSGVO",
       "mapsLabel": "Finden Sie uns auf Google Maps",
