@@ -323,7 +323,8 @@
         "modelled": "Figures calculated from real volumes, not counted in production."
       },
       "allProjects": "All projects",
-      "industry": "Industry:"
+      "industry": "Industry:",
+      "contents": "On this page"
     },
     "industry": {
       "crumb": "Industries",

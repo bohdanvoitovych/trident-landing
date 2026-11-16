@@ -802,6 +802,29 @@ a.uc-card:hover::after, a.uc-card:focus-visible::after { transform: scaleX(1); }
 .case-industries a:hover, .case-industries a:focus-visible { border-color: var(--blue); color: var(--blue-d); }
 .case-switch { margin: 24px 0 0; }
 
+/* ---- Case study article: contents on the left, one reading column ------- */
+.case-article { display: grid; grid-template-columns: 220px minmax(0, 720px); gap: clamp(32px,6vw,96px); align-items: start; }
+.case-toc { position: sticky; top: 96px; }
+.case-toc ol { list-style: none; margin: 12px 0 0; padding: 0; border-left: 2px solid var(--line); }
+.case-toc a { display: block; margin-left: -2px; padding: 6px 0 6px 14px; border-left: 2px solid transparent; font-size: 14px; line-height: 1.4; color: var(--ink-2); text-decoration: none; }
+.case-toc a:hover, .case-toc a:focus-visible { color: var(--blue-d); border-left-color: var(--blue); }
+.case-body { display: flex; flex-direction: column; gap: 48px; min-width: 0; }
+.case-body > section { scroll-margin-top: 96px; }
+.case-h { margin: 0 0 14px; font-size: clamp(22px,2vw,28px); line-height: 1.25; letter-spacing: -.02em; font-weight: 600; }
+.case-body .prose p { margin: 0 0 14px; }
+.case-body .prose p:last-child { margin-bottom: 0; }
+.case-body .num-list { margin-top: 18px; }
+.case-note { margin: 0; padding: 14px 16px; border-left: 2px solid var(--blue); background: var(--wash); font-size: 14px; line-height: 1.55; color: var(--ink-2); }
+.case-steps { list-style: none; margin: -24px 0 0; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+.case-steps > li { display: grid; grid-template-columns: 36px minmax(0,1fr); gap: 16px; }
+.case-steps .n { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius); background: var(--blue); color: #fff; font: 600 14px var(--font-mono); }
+.case-steps h3 { margin: 6px 0 8px; font-size: 18px; line-height: 1.35; font-weight: 600; letter-spacing: -.01em; }
+.case-steps .prose { font-size: 16px; line-height: 1.65; }
+@media (max-width: 1100px) {
+  .case-article { grid-template-columns: minmax(0,1fr); }
+  .case-toc { display: none; }
+}
+
 /* ---- About timeline: one row, each year once ----------------------------- */
 .tl { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
 .tl li { position: relative; display: flex; flex-direction: column; gap: 12px; padding-top: 28px; border-top: 2px solid var(--on-dark-line); }

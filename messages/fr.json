@@ -323,7 +323,8 @@
         "modelled": "Chiffres calculés à partir de volumes réels, pas comptés en production."
       },
       "allProjects": "Tous les projets",
-      "industry": "Secteur :"
+      "industry": "Secteur :",
+      "contents": "Sur cette page"
     },
     "industry": {
       "crumb": "Secteurs",

@@ -323,7 +323,8 @@
         "modelled": "Zahlen aus echten Volumen berechnet, nicht im Betrieb gezählt."
       },
       "allProjects": "Alle Projekte",
-      "industry": "Branche:"
+      "industry": "Branche:",
+      "contents": "Auf dieser Seite"
     },
     "industry": {
       "crumb": "Branchen",
