@@ -1,5 +1,4 @@
 import type { CSSProperties, ReactNode } from 'react'
-import { Link } from '@/i18n/navigation'
 import { cn } from '@/lib/utils'
 
 type Visual =
@@ -19,8 +18,6 @@ type Props = {
   /** Source line placement: top (hero) or bottom (problem section). */
   sourceAt?: 'top' | 'bottom'
   className?: string
-  /** Makes the whole card a link, e.g. to the case the figure comes from. */
-  href?: string
 }
 
 const v = (n: number) => ({ '--v': n } as CSSProperties)
@@ -102,12 +99,11 @@ export function MiniVisual({ visual }: { visual: Visual }) {
 }
 
 /** Mono source line, big blue number, mini-visual, description. Never a plain black number. */
-export function StatCard({ source, value, description, visual, size = 'md', sourceAt = 'top', className, href }: Props) {
+export function StatCard({ source, value, description, visual, size = 'md', sourceAt = 'top', className }: Props) {
   const src = source ? <span className="stat-src">{source}</span> : null
   const ring = visual?.kind === 'ring'
-  const cls = cn('card stat-card', size === 'lg' && 'stat-card--lg', href && 'stat-card--link', className)
-  const body = (
-    <>
+  return (
+    <div className={cn('card stat-card', size === 'lg' && 'stat-card--lg', className)}>
       {sourceAt === 'top' && src}
       {ring ? (
         <div className="ring-wrap">
@@ -121,13 +117,6 @@ export function StatCard({ source, value, description, visual, size = 'md', sour
       {visual && !ring && <MiniVisual visual={visual} />}
       {size !== 'lg' && <span className="stat-d">{description}</span>}
       {sourceAt === 'bottom' && <span className="stat-src" style={{ marginTop: ring ? 'auto' : undefined }}>{source}</span>}
-    </>
-  )
-  return href ? (
-    <Link href={href} className={cls}>
-      {body}
-    </Link>
-  ) : (
-    <div className={cls}>{body}</div>
+    </div>
   )
 }

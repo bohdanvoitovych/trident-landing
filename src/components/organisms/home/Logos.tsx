@@ -19,7 +19,7 @@ export function Logos() {
   return (
     <section className="section section--line" aria-labelledby="clients-h">
       <div className="container">
-        <SectionHeader id="clients-h" label={t('label')} title={t('title')} />
+        <SectionHeader id="clients-h" label={t('label')} title={t('title')} lead={t('lead')} />
         <div className="refs reveal">
           <h3 className="refs-k" style={{ margin: 0 }}>
             {t('namedReferences')}

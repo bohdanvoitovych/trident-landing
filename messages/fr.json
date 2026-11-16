@@ -149,11 +149,6 @@
         "6": "Livraison à Zermatt ? → zone et supplément",
         "7": "Négociation de prix → transmise aux ventes, lu 08:00",
         "8": "« Où est ma livraison ? » → suivi en direct envoyé"
-      },
-      "statSrc": {
-        "practice": "Cabinet pluridisciplinaire · CH · mesuré",
-        "maker": "Fabricant de composants · IT · mesuré",
-        "track": "Trident · depuis 2009"
       }
     },
     "problem": {
@@ -204,6 +199,7 @@
     "clients": {
       "label": "Clients",
       "title": "Des entreprises en Suisse et en Europe nous font confiance",
+      "lead": "Plus de 100 projets depuis 2009, pour des clients dans plus de 20 pays.",
       "namedReferences": "Des clients de référence que nous pouvons vous présenter"
     },
     "testimonials": {
@@ -1168,18 +1164,7 @@
     "hero": {
       "title": "Logiciels métier et <b>agents IA,</b> conçus en Suisse",
       "lead": "Nous construisons les systèmes dont les entreprises se servent chaque jour : prise de commande, dispatch, apps terrain, facturation. Et la couche d'IA qui répond, qualifie et traite les documents dans les quatre langues nationales.",
-      "ctaAudit": "Réserver un audit gratuit de 45 min",
-      "statsTitle": "Résultats de projets clients",
-      "stats": {
-        "practice": "Plus de consultations par médecin, même salaire",
-        "maker": "Coûts de garantie, de 1.37 % à 0.51 % du chiffre d'affaires",
-        "projects": "Projets livrés depuis 2009, pour des clients dans plus de 20 pays",
-        "projectsTags": [
-          "CH",
-          "EU",
-          "UK"
-        ]
-      }
+      "ctaAudit": "Réserver un audit gratuit de 45 min"
     },
     "heroLive": {
       "channels": {

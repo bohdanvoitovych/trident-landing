@@ -149,11 +149,6 @@
         "6": "Consegna a Zermatt? → copertura e supplemento",
         "7": "Trattativa sul prezzo → passata alle vendite, lun 08:00",
         "8": "« Où est ma livraison ? » → tracking live inviato"
-      },
-      "statSrc": {
-        "practice": "Studio medico multidisciplinare · CH · misurato",
-        "maker": "Produttore di componenti · IT · misurato",
-        "track": "Trident · dal 2009"
       }
     },
     "problem": {
@@ -204,6 +199,7 @@
     "clients": {
       "label": "Clienti",
       "title": "Aziende in Svizzera e in Europa si affidano a noi",
+      "lead": "Oltre 100 progetti dal 2009, per clienti in oltre 20 paesi.",
       "namedReferences": "Clienti di riferimento che possiamo presentarvi"
     },
     "testimonials": {
@@ -1168,18 +1164,7 @@
     "hero": {
       "title": "Software operativo e <b>agenti AI,</b> sviluppati in Svizzera",
       "lead": "Costruiamo i sistemi con cui le aziende lavorano ogni giorno: acquisizione ordini, dispatch, app sul campo, fatturazione. E lo strato di AI che risponde, qualifica ed elabora documenti nelle quattro lingue nazionali.",
-      "ctaAudit": "Prenota un audit gratuito di 45 min",
-      "statsTitle": "Risultati da progetti per clienti",
-      "stats": {
-        "practice": "Più visite per medico, stesso stipendio",
-        "maker": "Costi di garanzia, dall'1.37 % allo 0.51 % del fatturato",
-        "projects": "Progetti consegnati dal 2009, per clienti in oltre 20 paesi",
-        "projectsTags": [
-          "CH",
-          "EU",
-          "UK"
-        ]
-      }
+      "ctaAudit": "Prenota un audit gratuito di 45 min"
     },
     "heroLive": {
       "channels": {

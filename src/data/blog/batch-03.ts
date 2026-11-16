@@ -50,7 +50,7 @@ Players can control lighting, AC, music, game video recording, live streaming, a
 
 Proven experience in IoT, end-to-end development, and scalable architecture made Trident Software the right choice for this project. The platform is built to grow from a pilot in one city to a regional sports infrastructure network.`,
     author: "Dmitriy Shevelev",
-    authorRole: "Team Lead, Trident Software",
+    authorRole: "Lead Developer, Trident Software",
     publishedAt: "2024-10-31",
     readingTime: 6,
     tags: [
@@ -111,7 +111,7 @@ Les joueurs commandent l'éclairage, la climatisation, la musique, l'enregistrem
 ## Pourquoi l'IoT dans le sport ?
 
 Une expérience éprouvée de l'IoT, un développement de bout en bout et une architecture évolutive ont fait de Trident Software le bon choix pour ce projet. La plateforme est conçue pour passer d'un pilote dans une seule ville à un réseau régional d'infrastructures sportives.`,
-        authorRole: "Chef d'équipe, Trident Software",
+        authorRole: "Développeur principal, Trident Software",
         meta: {
           title: "ArenaWave : Logiciel de gestion sportive IoT — Trident Software",
           description: "Comment ArenaWave transforme les terrains de sport en espaces intelligents avec IoT et gestion automatisée.",
@@ -163,7 +163,7 @@ Spieler steuern Beleuchtung, Klimaanlage, Musik, Videoaufzeichnung des Spiels, L
 ## Warum IoT im Sport?
 
 Nachgewiesene Erfahrung mit IoT, Entwicklung aus einer Hand und eine skalierbare Architektur haben Trident Software zur richtigen Wahl für dieses Projekt gemacht. Die Plattform ist darauf ausgelegt, von einem Pilotprojekt in einer Stadt zu einem regionalen Netz von Sportinfrastruktur zu wachsen.`,
-        authorRole: "Teamleiter, Trident Software",
+        authorRole: "Leitender Entwickler, Trident Software",
         meta: {
           title: "ArenaWave: Sportmanagement-Software — Trident Software",
           description: "Wie ArenaWave Sportanlagen mit IoT und automatisiertem Betrieb in digitale Spaces verwandelt.",
@@ -215,7 +215,7 @@ I giocatori gestiscono luci, aria condizionata, musica, registrazione video dell
 ## Perché l'IoT nello sport?
 
 Esperienza comprovata nell'IoT, sviluppo end-to-end e un'architettura scalabile hanno reso Trident Software la scelta giusta per questo progetto. La piattaforma è pensata per crescere da un progetto pilota in una sola città a una rete regionale di infrastrutture sportive.`,
-        authorRole: "Team Leader, Trident Software",
+        authorRole: "Sviluppatore principale, Trident Software",
         meta: {
           title: "ArenaWave: Software di Gestione Sportiva IoT — Trident Software",
           description: "Come ArenaWave trasforma i campi sportivi in spazi intelligenti con IoT e gestione automatizzata.",

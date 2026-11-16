@@ -149,11 +149,6 @@
         "6": "Delivery to Zermatt? → coverage and surcharge",
         "7": "Price negotiation → handed to sales, Mon 08:00",
         "8": "« Où est ma livraison ? » → live tracking sent"
-      },
-      "statSrc": {
-        "practice": "Multi-disciplinary practice · CH · measured",
-        "maker": "Component maker · IT · measured",
-        "track": "Trident · since 2009"
       }
     },
     "problem": {
@@ -204,6 +199,7 @@
     "clients": {
       "label": "Clients",
       "title": "Trusted by companies in Switzerland and Europe",
+      "lead": "100+ projects since 2009, for clients in 20+ countries.",
       "namedReferences": "Reference clients we can put you in touch with"
     },
     "testimonials": {
@@ -1168,18 +1164,7 @@
     "hero": {
       "title": "Operational software and <b>AI agents,</b> built in Switzerland",
       "lead": "We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers, qualifies and processes documents in four national languages.",
-      "ctaAudit": "Book a free 45-min audit",
-      "statsTitle": "Results from client projects",
-      "stats": {
-        "practice": "More consultations per physician, same salary",
-        "maker": "Warranty cost, from 1.37 % to 0.51 % of revenue",
-        "projects": "Projects delivered since 2009, for clients in 20+ countries",
-        "projectsTags": [
-          "CH",
-          "EU",
-          "UK"
-        ]
-      }
+      "ctaAudit": "Book a free 45-min audit"
     },
     "heroLive": {
       "channels": {

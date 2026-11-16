@@ -308,7 +308,7 @@ From basic access to full data visibility — tailored per company, dealer, or c
 
 This panel is available as a standalone product or as an integration layer for existing B2B platforms.`,
     author: "Dmitriy Shevelev",
-    authorRole: "Team Lead, Trident Software",
+    authorRole: "Lead Developer, Trident Software",
     publishedAt: "2024-05-13",
     readingTime: 5,
     tags: [
@@ -373,7 +373,7 @@ De l'accès de base à la visibilité complète des données, adaptés à chaque
 | Contrôle d'accès difficile | Droits granulaires selon le rôle et le niveau |
 
 Ce panneau est disponible comme produit autonome ou comme couche d'intégration pour des plateformes B2B existantes.`,
-        authorRole: "Chef d'équipe, Trident Software",
+        authorRole: "Développeur principal, Trident Software",
         meta: {
           title: "Nouveau panneau d'administration B2B — Trident Software",
           description: "Notre nouveau panneau B2B offre contrôle hiérarchique et surveillance en temps réel pour les réseaux de distribution.",
@@ -430,7 +430,7 @@ Vom Basiszugang bis zur vollen Datensicht, zugeschnitten auf jedes Firmen-, Hän
 | Schwierige Zugriffskontrolle | Fein abgestufte Berechtigungen nach Rolle und Stufe |
 
 Das Panel gibt es als eigenständiges Produkt oder als Integrationsschicht für bestehende B2B-Plattformen.`,
-        authorRole: "Teamleiter, Trident Software",
+        authorRole: "Leitender Entwickler, Trident Software",
         meta: {
           title: "Unser neues B2B-Admin-Panel — Trident Software",
           description: "Das neue B2B-Verwaltungspanel bietet hierarchische Kontrolle und Echtzeit-Überwachung für komplexe Kundennetzwerke.",
@@ -487,7 +487,7 @@ Dall'accesso base alla visibilità completa dei dati, su misura per ogni account
 | Controllo degli accessi difficile | Permessi granulari in base a ruolo e livello |
 
 Il pannello è disponibile come prodotto a sé stante o come livello di integrazione per piattaforme B2B esistenti.`,
-        authorRole: "Team Leader, Trident Software",
+        authorRole: "Sviluppatore principale, Trident Software",
         meta: {
           title: "Nuovo pannello di amministrazione B2B — Trident Software",
           description: "Il nostro nuovo pannello B2B offre controllo gerarchico e monitoraggio in tempo reale per reti di distribuzione complesse.",

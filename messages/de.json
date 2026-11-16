@@ -149,11 +149,6 @@
         "6": "Lieferung nach Zermatt? → Gebiet und Zuschlag",
         "7": "Preisverhandlung → an Verkauf übergeben, Mo 08:00",
         "8": "« Où est ma livraison ? » → Live-Tracking gesendet"
-      },
-      "statSrc": {
-        "practice": "Interdisziplinäre Praxis · CH · gemessen",
-        "maker": "Komponentenhersteller · IT · gemessen",
-        "track": "Trident · seit 2009"
       }
     },
     "problem": {
@@ -204,6 +199,7 @@
     "clients": {
       "label": "Kunden",
       "title": "Unternehmen in der Schweiz und in Europa vertrauen uns",
+      "lead": "Über 100 Projekte seit 2009, für Kunden in über 20 Ländern.",
       "namedReferences": "Referenzkunden, mit denen wir Sie in Kontakt bringen"
     },
     "testimonials": {
@@ -1168,18 +1164,7 @@
     "hero": {
       "title": "Betriebssoftware und <b>KI-Agenten,</b> gebaut in der Schweiz",
       "lead": "Wir bauen die Systeme, mit denen Unternehmen jeden Tag arbeiten: Auftragserfassung, Disposition, Field-Apps, Fakturierung. Dazu die KI-Schicht, die Anfragen beantwortet, qualifiziert und Dokumente in vier Landessprachen verarbeitet.",
-      "ctaAudit": "Kostenloses 45-Min-Audit buchen",
-      "statsTitle": "Ergebnisse aus Kundenprojekten",
-      "stats": {
-        "practice": "Mehr Konsultationen pro Arzt, gleicher Lohn",
-        "maker": "Garantiekosten, von 1.37 % auf 0.51 % des Umsatzes",
-        "projects": "Projekte seit 2009, für Kunden in über 20 Ländern",
-        "projectsTags": [
-          "CH",
-          "EU",
-          "UK"
-        ]
-      }
+      "ctaAudit": "Kostenloses 45-Min-Audit buchen"
     },
     "heroLive": {
       "channels": {

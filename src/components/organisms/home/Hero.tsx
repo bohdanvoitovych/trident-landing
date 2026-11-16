@@ -1,6 +1,5 @@
 import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
-import { StatCard } from '@/components/molecules/StatCard'
 import { HeroLog, HeroTagline } from './HeroLive'
 
 /** Words of the H1; the part inside <b>…</b> in the message is highlighted blue. */
@@ -75,32 +74,6 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="container hero-stats">
-        <h2 className="hero-stats-h">{th('statsTitle')}</h2>
-        <div className="grid-3 gap-tight stagger">
-          <StatCard
-            href="/cases/clinic-voice-documentation"
-            source={t('hero.statSrc.practice')}
-            value="+30.8 %"
-            description={th('stats.practice')}
-            visual={{ kind: 'bar', before: 0.76, after: 1 }}
-          />
-          <StatCard
-            href="/cases/warranty-control-component-maker"
-            source={t('hero.statSrc.maker')}
-            value="−63 %"
-            description={th('stats.maker')}
-            visual={{ kind: 'beforeAfter', after: 0.37 }}
-          />
-          <StatCard
-            href="/cases"
-            source={t('hero.statSrc.track')}
-            value="100+"
-            description={th('stats.projects')}
-            visual={{ kind: 'tags', tags: th.raw('stats.projectsTags') as string[] }}
-          />
-        </div>
-      </div>
     </section>
   )
 }

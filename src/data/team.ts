@@ -84,19 +84,19 @@ const records: TeamRecord[] = [
     facebook: 'https://www.facebook.com/profile.php?id=100017180442716',
     content: {
       en: {
-        role: 'Team Lead',
+        role: 'Lead Developer',
         location: 'Ukraine',
       },
       de: {
-        role: 'Teamleiter',
+        role: 'Leitender Entwickler',
         location: 'Ukraine',
       },
       fr: {
-        role: "Chef d'équipe",
+        role: 'Développeur principal',
         location: 'Ukraine',
       },
       it: {
-        role: 'Team Leader',
+        role: 'Sviluppatore principale',
         location: 'Ucraina',
       },
     },
