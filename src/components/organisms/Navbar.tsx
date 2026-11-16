@@ -10,7 +10,8 @@ import { LanguageSwitcher } from '@/components/molecules/LanguageSwitcher'
 const NAV = [
   { href: '/services', key: 'services' },
   { href: '/use-cases', key: 'useCases' },
-  { href: '/cases', key: 'projects' },
+  { href: '/cases', key: 'caseStudies' },
+  { href: '/projects', key: 'projects' },
   { href: '/about', key: 'about' },
   { href: '/blog', key: 'blog' },
   { href: '/contact', key: 'contact' },

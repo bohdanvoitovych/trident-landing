@@ -55,7 +55,7 @@ export default function IamTradePage() {
               <ButtonLink href="/contact" arrow>
                 {t('requestDemo')}
               </ButtonLink>
-              <ButtonLink href="/cases/iam-trade" variant="outline">
+              <ButtonLink href="/projects/iam-trade" variant="outline">
                 {t('seeCase')}
               </ButtonLink>
             </div>
@@ -169,7 +169,7 @@ export default function IamTradePage() {
             <ButtonLink href="/contact" arrow>
               {t('bookDemo')}
             </ButtonLink>
-            <ButtonLink href="/cases" variant="outline">
+            <ButtonLink href="/projects" variant="outline">
               {t('seeProjects')}
             </ButtonLink>
           </div>

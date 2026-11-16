@@ -73,3 +73,9 @@ export function getIndustryLocales(slug: string) {
   const r = records.find((x) => x.slug === slug)
   return r ? localesOf(r.content) : []
 }
+
+/** The industry page a case belongs to: the first industry that lists it. */
+export function getCaseIndustry(caseSlug: string, locale: string): { slug: string; title: string } | undefined {
+  const r = records.find((x) => x.relatedCases.includes(caseSlug))
+  return r && { slug: r.slug, title: pick(r.content, locale).title }
+}

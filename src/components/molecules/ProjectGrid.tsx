@@ -1,6 +1,7 @@
 'use client'
 
 import { useMemo, useState } from 'react'
+import { caseHref } from '@/data/cases'
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
@@ -70,7 +71,7 @@ export function ProjectGrid({ projects, sectors }: Props) {
       <div className="grid-4 stagger wipe">
         {filtered.map((p) =>
           p.caseSlug ? (
-            <Link key={p.slug} href={`/cases/${p.caseSlug}`} className="card svc-card">
+            <Link key={p.slug} href={caseHref(p.caseSlug)} className="card svc-card">
               <ProjectCardBody p={p} />
             </Link>
           ) : (

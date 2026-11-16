@@ -4,7 +4,8 @@ import { useTranslations, useLocale } from 'next-intl'
 import { ButtonLink, Tag } from '@/components/atoms/controls'
 import { CaseCard } from '@/components/molecules/CaseCard'
 import { PageHero } from '@/components/molecules/PageHero'
-import { caseImage, getRelatedCases } from '@/data/cases'
+import { caseHref, caseImage, getRelatedCases, isCaseStudy } from '@/data/cases'
+import { getCaseIndustry } from '@/data/industries'
 import { getServiceBySlug } from '@/data/services'
 import type { CaseData } from '@/data/cases'
 
@@ -18,6 +19,9 @@ export function CasePage({ caseStudy }: Props) {
   const tp = useTranslations('templates.case')
   const locale = useLocale()
   const related = getRelatedCases(caseStudy.relatedCases, locale)
+  const study = isCaseStudy(caseStudy.slug)
+  const listHref = study ? '/cases' : '/projects'
+  const industry = getCaseIndustry(caseStudy.slug, locale)
 
   const blocks = [
     { id: 'challenge', title: t('challenge'), text: caseStudy.challenge },
@@ -31,8 +35,8 @@ export function CasePage({ caseStudy }: Props) {
     <>
       <PageHero
         crumbs={[
-          { name: tu('nav.projects'), href: '/cases' },
-          { name: caseStudy.client, href: `/cases/${caseStudy.slug}` },
+          { name: study ? tu('nav.caseStudies') : tu('nav.projects'), href: listHref },
+          { name: caseStudy.client, href: caseHref(caseStudy.slug) },
         ]}
         label={caseStudy.industry}
         title={caseStudy.hero.title}
@@ -58,9 +62,17 @@ export function CasePage({ caseStudy }: Props) {
                 </Tag>
               ))}
             </div>
-            <Link href="/cases" className="text-link">
+            {industry && (
+              <p className="meta" style={{ margin: 0 }}>
+                {tp('industry')}{' '}
+                <Link href={`/industries/${industry.slug}`} className="text-link">
+                  {industry.title}
+                </Link>
+              </p>
+            )}
+            <Link href={listHref} className="text-link">
               <span aria-hidden="true">←</span>
-              {tp('allCases')}
+              {study ? tp('allCases') : tp('allProjects')}
             </Link>
           </div>
         }
@@ -266,7 +278,7 @@ export function CasePage({ caseStudy }: Props) {
                 return (
                   <CaseCard
                     key={c.slug}
-                    href={`/cases/${c.slug}`}
+                    href={caseHref(c.slug)}
                     image={caseImage(c)}
                     sector={c.industry}
                     title={c.hero.title}

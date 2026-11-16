@@ -49,7 +49,7 @@ export default function ServicesPage() {
             <ButtonLink href="/contact" arrow>
               {ta('freeQuote')}
             </ButtonLink>
-            <ButtonLink href="/cases" variant="outline">
+            <ButtonLink href="/projects" variant="outline">
               {ta('seeProjects')}
             </ButtonLink>
           </>

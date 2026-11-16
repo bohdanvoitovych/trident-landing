@@ -41,3 +41,26 @@ export function buildMergedCaseRedirects() {
     ]),
   )
 }
+
+// Project write-ups moved from /cases to /projects when case studies and projects were split.
+// Kept in sync with the non-PDF records in src/data/cases.ts (checked by a test).
+export const MOVED_TO_PROJECTS = [
+  'kleap-ai-builder',
+  'zenit-auto-b2b',
+  '8move-driver',
+  'tdsbot-iot',
+  'lapochette',
+  'iam-trade',
+  'arenawave',
+  'go-valais',
+]
+
+/** Permanent redirects for next.config.mjs: /cases/{slug} → /projects/{slug}, in the same locale. */
+export function buildMovedProjectRedirects() {
+  return MOVED_TO_PROJECTS.flatMap((slug) =>
+    LOCALE_PREFIXES.flatMap((prefix) => [
+      { source: `${prefix}/cases/${slug}`, destination: `${prefix}/projects/${slug}`, permanent: true },
+      { source: `${prefix}/cases/${slug}/`, destination: `${prefix}/projects/${slug}`, permanent: true },
+    ]),
+  )
+}

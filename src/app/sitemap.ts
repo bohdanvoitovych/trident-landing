@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { getPostLocales, getPostSlugs } from '@/data/blog'
-import { getCaseLocales, getCaseSlugs } from '@/data/cases'
+import { caseHref, getCaseLocales, getCaseSlugs } from '@/data/cases'
 import { getIndustryLocales, getIndustrySlugs } from '@/data/industries'
 import { getServiceLocales, getServiceSlugs } from '@/data/services'
 import { getLocationLocales, getLocationSlugs } from '@/data/locations'
@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/about`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/services`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE_URL}/cases`, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${BASE_URL}/projects`, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${BASE_URL}/industries`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/blog`, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE_URL}/contact`, changeFrequency: 'monthly', priority: 0.9 },
@@ -69,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   const caseRoutes: Route[] = caseSlugs.map((slug) => ({
-    url: `${BASE_URL}/cases/${slug}`,
+    url: `${BASE_URL}${caseHref(slug)}`,
     locales: getCaseLocales(slug),
     changeFrequency: 'monthly',
     priority: 0.7,

@@ -3,7 +3,7 @@ import { ButtonLink } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
 import { SectionHeader } from '@/components/molecules/SectionHeader'
 import { CaseCard } from '@/components/molecules/CaseCard'
-import { caseImage, getCases } from '@/data/cases'
+import { caseHref, caseImage, getCases } from '@/data/cases'
 import type { ServiceData } from '@/data/services'
 
 type Props = {
@@ -35,7 +35,7 @@ export function ServicePage({ service }: Props) {
             <ButtonLink href="/contact" arrow>
               {ta('freeQuote')}
             </ButtonLink>
-            <ButtonLink href="/cases" variant="outline">
+            <ButtonLink href="/projects" variant="outline">
               {ta('seeProjects')}
             </ButtonLink>
           </>
@@ -120,7 +120,7 @@ export function ServicePage({ service }: Props) {
               {relatedCases.map((c) => (
                 <CaseCard
                   key={c.slug}
-                  href={`/cases/${c.slug}`}
+                  href={caseHref(c.slug)}
                   image={caseImage(c)}
                   imageAlt={c.hero.title}
                   sector={c.industry}

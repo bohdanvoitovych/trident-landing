@@ -86,7 +86,7 @@ export default function TeamPage() {
             <ButtonLink href="/contact" arrow>
               {t('ctaButton')}
             </ButtonLink>
-            <ButtonLink href="/cases" variant="outline">
+            <ButtonLink href="/projects" variant="outline">
               {t('viewWork')}
             </ButtonLink>
           </div>

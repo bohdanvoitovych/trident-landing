@@ -115,6 +115,7 @@
     "nav": {
       "services": "Services",
       "useCases": "Use cases",
+      "caseStudies": "Case studies",
       "projects": "Projects",
       "about": "About",
       "blog": "Blog",
@@ -314,13 +315,15 @@
     },
     "case": {
       "client": "Client: <name>{client}</name>",
-      "allCases": "All cases",
+      "allCases": "All case studies",
       "ctaLead": "Let's discuss your project. We respond within 24 hours.",
       "ctaButton": "Get a Quote",
       "evidence": {
         "measured": "Figures counted in production.",
         "modelled": "Figures calculated from real volumes, not counted in production."
-      }
+      },
+      "allProjects": "All projects",
+      "industry": "Industry:"
     },
     "industry": {
       "crumb": "Industries",
@@ -433,11 +436,27 @@
       "label": "Insights"
     },
     "cases": {
-      "metaTitle": "Software Development Projects & Case Studies | Trident Software Switzerland",
-      "metaDescription": "100+ software development projects delivered — automotive B2B platforms, AI healthcare systems, e-commerce, IoT, SaaS. Engineering team since 2009.",
-      "label": "Portfolio",
+      "metaTitle": "Case Studies with Measured and Modelled Results | Trident Software",
+      "metaDescription": "Case studies from Swiss and European clients: clinics, a component maker, a fiduciary, building materials and lettings. Each figure is labelled measured or modelled.",
+      "label": "Case studies",
       "title": "Delivered, then counted",
-      "lead": "{total} products and platforms built for clients across Switzerland and Europe — {withCase} of them written up in full, with the numbers behind them.",
+      "lead": "Write-ups of what changed for the client after we shipped. Each one says whether its figures were counted in production or modelled from real volumes.",
+      "ctaLabel": "Start here",
+      "ctaTitle": "Tell us what you are trying to fix",
+      "ctaLead": "We read every enquiry ourselves and come back within 24 business hours with an honest read on scope.",
+      "ctaButton": "Book a free audit",
+      "projectsLink": "Looking for the products we built? See all projects",
+      "byIndustry": "Case studies by industry"
+    },
+    "projects": {
+      "metaTitle": "Software Projects: Platforms, Shops and Apps | Trident Software",
+      "metaDescription": "Platforms, online shops, mobile apps and IoT products Trident Software built and maintains for clients in Switzerland and Europe. Engineering team since 2009.",
+      "label": "Projects",
+      "title": "What we built and still maintain",
+      "lead": "{total} products and platforms for clients across Switzerland and Europe. {withStory} of them are written up in full.",
+      "storiesTitle": "Projects written up in full",
+      "allTitle": "All projects",
+      "casesLink": "Looking for business results? See case studies",
       "ctaLabel": "Start here",
       "ctaTitle": "Tell us what you are trying to fix",
       "ctaLead": "We read every enquiry ourselves and come back within 24 business hours with an honest read on scope.",
@@ -625,7 +644,7 @@
       "mobileApps": {
         "label": "Mobile Apps",
         "primary": "Discuss your app",
-        "secondary": "See case studies",
+        "secondary": "View projects",
         "featuresLead": "Full-cycle mobile development — from discovery and design to App Store delivery and ongoing maintenance.",
         "listLabel": "Platforms & frameworks",
         "listTitle": "One build, two stores",
@@ -642,7 +661,7 @@
         "ctaTitle": "Ready to build your mobile app?",
         "ctaText": "Tell us about your idea. We'll scope it, design it, and ship it to both stores.",
         "ctaPrimary": "Get a quote",
-        "ctaSecondary": "View case studies"
+        "ctaSecondary": "View projects"
       },
       "iot": {
         "label": "IoT & Embedded",
@@ -665,12 +684,12 @@
         "ctaTitle": "Connect your devices to the cloud",
         "ctaText": "From firmware to dashboards — we build the full stack so your IoT system works reliably in production.",
         "ctaPrimary": "Get a quote",
-        "ctaSecondary": "View case studies"
+        "ctaSecondary": "View projects"
       },
       "ecommerce": {
         "label": "E-commerce",
         "primary": "Discuss your platform",
-        "secondary": "See case study",
+        "secondary": "See the project",
         "featuresLead": "From MVP to platforms handling 1M+ products, custom pricing, and 200+ integrations.",
         "listLabel": "Industries",
         "listTitle": "Verticals we serve",
@@ -689,7 +708,7 @@
         "ctaTitle": "Build your e-commerce platform",
         "ctaText": "From custom B2B platforms to marketplaces — we scope, build, and maintain.",
         "ctaPrimary": "Start the conversation",
-        "ctaSecondary": "View case studies"
+        "ctaSecondary": "View projects"
       },
       "cloudServices": {
         "label": "Cloud Services",
@@ -711,12 +730,12 @@
         "ctaTitle": "Move to the cloud with confidence",
         "ctaText": "From strategy to 24/7 managed operations — we handle the infrastructure so you focus on your product.",
         "ctaPrimary": "Start the conversation",
-        "ctaSecondary": "View case studies"
+        "ctaSecondary": "View projects"
       },
       "socialNetworks": {
         "label": "Social Networks",
         "primary": "Discuss your platform",
-        "secondary": "See case studies",
+        "secondary": "View projects",
         "featuresLead": "Scalable, privacy-first social platforms — built for engagement, moderation, and long-term growth.",
         "listLabel": "Platform types",
         "listTitle": "Networks we build",
@@ -734,7 +753,7 @@
         "ctaTitle": "Build your community platform",
         "ctaText": "Tell us about your community vision — we'll architect and build a platform that grows with your users.",
         "ctaPrimary": "Start the conversation",
-        "ctaSecondary": "View case studies"
+        "ctaSecondary": "View projects"
       },
       "websites": {
         "label": "Websites",
@@ -1734,6 +1753,7 @@
         "cto": "CTO as a Service",
         "about": "About",
         "team": "Our team",
+        "caseStudies": "Case studies",
         "projects": "Projects",
         "blog": "Blog",
         "contact": "Contact",

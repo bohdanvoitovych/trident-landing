@@ -40,7 +40,7 @@ export default function IotSolutionPage() {
         title: t('ctaTitle'),
         text: t('ctaText'),
         primary: t('ctaPrimary'),
-        secondary: { href: '/cases', label: t('ctaSecondary') },
+        secondary: { href: '/projects', label: t('ctaSecondary') },
       }}
     />
   )

@@ -27,7 +27,7 @@ export default function MobileAppsSolutionPage() {
       solution={solution}
       label={t('label')}
       primary={t('primary')}
-      secondary={{ href: '/cases', label: t('secondary') }}
+      secondary={{ href: '/projects', label: t('secondary') }}
       features={{ lead: t('featuresLead') }}
       list={{
         label: t('listLabel'),
@@ -40,7 +40,7 @@ export default function MobileAppsSolutionPage() {
         title: t('ctaTitle'),
         text: t('ctaText'),
         primary: t('ctaPrimary'),
-        secondary: { href: '/cases', label: t('ctaSecondary') },
+        secondary: { href: '/projects', label: t('ctaSecondary') },
       }}
     />
   )

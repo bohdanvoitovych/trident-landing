@@ -1300,6 +1300,25 @@ export function caseImage(c: CaseData) {
   return c.hero.image ?? FALLBACK_IMAGE[c.slug]
 }
 
+const STUDY_SLUGS = new Set(PDF_CASES.map((c) => c.slug))
+
+/**
+ * Case studies (business results, measured or modelled) live under /cases.
+ * The other write-ups describe a built product and live under /projects.
+ */
+export const isCaseStudy = (slug: string) => STUDY_SLUGS.has(slug)
+
+/** The page of a write-up: /cases/{slug} for a case study, /projects/{slug} for a project. */
+export const caseHref = (slug: string) => `${isCaseStudy(slug) ? '/cases' : '/projects'}/${slug}`
+
+export function getCaseStudies(locale: string): CaseData[] {
+  return getCases(locale).filter((c) => isCaseStudy(c.slug))
+}
+
+export function getProjectStories(locale: string): CaseData[] {
+  return getCases(locale).filter((c) => !isCaseStudy(c.slug))
+}
+
 export function getCases(locale: string): CaseData[] {
   return records.map((r) => localize(r, locale))
 }

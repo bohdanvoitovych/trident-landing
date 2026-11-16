@@ -1,4 +1,5 @@
 import { localizedUrl } from './metadata'
+import { caseHref, isCaseStudy } from '@/data/cases'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://trident-software.ch'
 
@@ -15,10 +16,10 @@ function bcp47(locale: string): string {
 
 // Breadcrumb and place names in structured data, per locale.
 const LABELS = {
-  en: { home: 'Home', cases: 'Projects', services: 'Services', industries: 'Industries', locations: 'Locations', technologies: 'Technologies', switzerland: 'Switzerland', techService: (n: string) => `${n} Development Switzerland` },
-  de: { home: 'Startseite', cases: 'Projekte', services: 'Dienstleistungen', industries: 'Branchen', locations: 'Standorte', technologies: 'Technologien', switzerland: 'Schweiz', techService: (n: string) => `${n}-Entwicklung Schweiz` },
-  fr: { home: 'Accueil', cases: 'Projets', services: 'Services', industries: 'Secteurs', locations: 'Régions', technologies: 'Technologies', switzerland: 'Suisse', techService: (n: string) => `Développement ${n} en Suisse` },
-  it: { home: 'Home', cases: 'Progetti', services: 'Servizi', industries: 'Settori', locations: 'Località', technologies: 'Tecnologie', switzerland: 'Svizzera', techService: (n: string) => `Sviluppo ${n} in Svizzera` },
+  en: { home: 'Home', cases: 'Case studies', projects: 'Projects', services: 'Services', industries: 'Industries', locations: 'Locations', technologies: 'Technologies', switzerland: 'Switzerland', techService: (n: string) => `${n} Development Switzerland` },
+  de: { home: 'Startseite', cases: 'Fallstudien', projects: 'Projekte', services: 'Dienstleistungen', industries: 'Branchen', locations: 'Standorte', technologies: 'Technologien', switzerland: 'Schweiz', techService: (n: string) => `${n}-Entwicklung Schweiz` },
+  fr: { home: 'Accueil', cases: 'Études de cas', projects: 'Projets', services: 'Services', industries: 'Secteurs', locations: 'Régions', technologies: 'Technologies', switzerland: 'Suisse', techService: (n: string) => `Développement ${n} en Suisse` },
+  it: { home: 'Home', cases: 'Casi studio', projects: 'Progetti', services: 'Servizi', industries: 'Settori', locations: 'Località', technologies: 'Tecnologie', switzerland: 'Svizzera', techService: (n: string) => `Sviluppo ${n} in Svizzera` },
 }
 const labels = (locale: string) => LABELS[locale as keyof typeof LABELS] ?? LABELS.en
 
@@ -313,7 +314,8 @@ export function caseStudySchemas(
   c: { slug: string; title: string; description: string; image?: string; publishedAt?: string },
   locale: string,
 ): Record<string, unknown>[] {
-  const url = localizedUrl(`/cases/${c.slug}`, locale)
+  const url = localizedUrl(caseHref(c.slug), locale)
+  const list = isCaseStudy(c.slug) ? '/cases' : '/projects'
   return [
     {
       '@context': 'https://schema.org',
@@ -331,7 +333,7 @@ export function caseStudySchemas(
     },
     breadcrumbSchema([
       { name: labels(locale).home, url: localizedUrl('/', locale) },
-      { name: labels(locale).cases, url: localizedUrl('/cases', locale) },
+      { name: isCaseStudy(c.slug) ? labels(locale).cases : labels(locale).projects, url: localizedUrl(list, locale) },
       { name: c.title, url },
     ]),
   ]

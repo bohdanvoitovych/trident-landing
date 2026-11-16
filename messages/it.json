@@ -115,6 +115,7 @@
     "nav": {
       "services": "Servizi",
       "useCases": "Casi d'uso",
+      "caseStudies": "Casi studio",
       "projects": "Progetti",
       "about": "Chi siamo",
       "blog": "Blog",
@@ -314,13 +315,15 @@
     },
     "case": {
       "client": "Cliente: <name>{client}</name>",
-      "allCases": "Tutti i casi di studio",
+      "allCases": "Tutti i casi studio",
       "ctaLead": "Parliamo del tuo progetto. Ti rispondiamo entro 24 ore.",
       "ctaButton": "Richiedi un preventivo",
       "evidence": {
         "measured": "Cifre contate in produzione.",
         "modelled": "Cifre calcolate su volumi reali, non contate in produzione."
-      }
+      },
+      "allProjects": "Tutti i progetti",
+      "industry": "Settore:"
     },
     "industry": {
       "crumb": "Settori",
@@ -433,11 +436,27 @@
       "label": "Approfondimenti"
     },
     "cases": {
-      "metaTitle": "Progetti di sviluppo software e casi di studio | Trident Software Svizzera",
-      "metaDescription": "Oltre 100 progetti software consegnati: piattaforme B2B per l'automotive, IA in sanità, e-commerce, IoT, SaaS. Team di ingegneri dal 2009.",
-      "label": "Portfolio",
+      "metaTitle": "Casi studio con risultati misurati e modellati | Trident Software",
+      "metaDescription": "Casi studio di clienti in Svizzera e in Europa: cliniche, un produttore di componenti, una fiduciaria, materiali edili e affitti. Ogni cifra è indicata come misurata o modellata.",
+      "label": "Casi studio",
       "title": "Consegnati, poi contati",
-      "lead": "{total} prodotti e piattaforme realizzati per clienti in Svizzera e in Europa. {withCase} sono descritti nel dettaglio, con i numeri che li sostengono.",
+      "lead": "Cosa è cambiato per il cliente dopo la messa in produzione. Ogni caso indica se le cifre sono state misurate in produzione o modellate su volumi reali.",
+      "ctaLabel": "Parti da qui",
+      "ctaTitle": "Dicci cosa stai cercando di sistemare",
+      "ctaLead": "Leggiamo ogni richiesta di persona e ti rispondiamo entro 24 ore lavorative con una valutazione onesta dell'ambito.",
+      "ctaButton": "Prenota un audit gratuito",
+      "projectsLink": "Cercate i prodotti che abbiamo costruito? Vedi tutti i progetti",
+      "byIndustry": "Casi studio per settore"
+    },
+    "projects": {
+      "metaTitle": "Progetti software: piattaforme, shop e app | Trident Software",
+      "metaDescription": "Piattaforme, negozi online, app mobili e prodotti IoT che Trident Software ha costruito e mantiene per clienti in Svizzera e in Europa. Team di ingegneri dal 2009.",
+      "label": "Progetti",
+      "title": "Cosa abbiamo costruito e continuiamo a mantenere",
+      "lead": "{total} prodotti e piattaforme per clienti in Svizzera e in Europa. {withStory} sono descritti nel dettaglio.",
+      "storiesTitle": "Progetti descritti nel dettaglio",
+      "allTitle": "Tutti i progetti",
+      "casesLink": "Cercate risultati di business? Vedi i casi studio",
       "ctaLabel": "Parti da qui",
       "ctaTitle": "Dicci cosa stai cercando di sistemare",
       "ctaLead": "Leggiamo ogni richiesta di persona e ti rispondiamo entro 24 ore lavorative con una valutazione onesta dell'ambito.",
@@ -625,7 +644,7 @@
       "mobileApps": {
         "label": "App mobili",
         "primary": "Parliamo della tua app",
-        "secondary": "Vedi i casi studio",
+        "secondary": "Vedi i progetti",
         "featuresLead": "Sviluppo mobile a ciclo completo: dall'analisi iniziale e dal design fino alla pubblicazione sull'App Store e alla manutenzione continua.",
         "listLabel": "Piattaforme e framework",
         "listTitle": "Un solo sviluppo, due store",
@@ -642,7 +661,7 @@
         "ctaTitle": "Pronto a creare la tua app?",
         "ctaText": "Raccontaci la tua idea. Definiamo il perimetro, progettiamo l'app e la pubblichiamo su entrambi gli store.",
         "ctaPrimary": "Richiedi un preventivo",
-        "ctaSecondary": "Vedi i casi studio"
+        "ctaSecondary": "Vedi i progetti"
       },
       "iot": {
         "label": "IoT ed embedded",
@@ -665,12 +684,12 @@
         "ctaTitle": "Collega i tuoi dispositivi al cloud",
         "ctaText": "Dal firmware alle dashboard: costruiamo l'intero stack perché il tuo sistema IoT funzioni in modo affidabile in produzione.",
         "ctaPrimary": "Richiedi un preventivo",
-        "ctaSecondary": "Vedi i casi studio"
+        "ctaSecondary": "Vedi i progetti"
       },
       "ecommerce": {
         "label": "E-commerce",
         "primary": "Parliamo della tua piattaforma",
-        "secondary": "Vedi il caso studio",
+        "secondary": "Vedi il progetto",
         "featuresLead": "Dall'MVP a piattaforme con oltre 1 milione di prodotti, prezzi personalizzati e più di 200 integrazioni.",
         "listLabel": "Settori",
         "listTitle": "I mercati verticali che seguiamo",
@@ -689,7 +708,7 @@
         "ctaTitle": "Crea la tua piattaforma e-commerce",
         "ctaText": "Da piattaforme B2B su misura a marketplace: definiamo, sviluppiamo e manteniamo.",
         "ctaPrimary": "Inizia la conversazione",
-        "ctaSecondary": "Vedi i casi studio"
+        "ctaSecondary": "Vedi i progetti"
       },
       "cloudServices": {
         "label": "Servizi cloud",
@@ -711,12 +730,12 @@
         "ctaTitle": "Passa al cloud con fiducia",
         "ctaText": "Dalla strategia alla gestione operativa 24/7: ci occupiamo noi dell'infrastruttura, tu pensi al tuo prodotto.",
         "ctaPrimary": "Inizia la conversazione",
-        "ctaSecondary": "Vedi i casi studio"
+        "ctaSecondary": "Vedi i progetti"
       },
       "socialNetworks": {
         "label": "Social network",
         "primary": "Parliamo della tua piattaforma",
-        "secondary": "Vedi i casi studio",
+        "secondary": "Vedi i progetti",
         "featuresLead": "Piattaforme social scalabili, con la privacy al primo posto, pensate per coinvolgimento, moderazione e crescita nel lungo periodo.",
         "listLabel": "Tipi di piattaforma",
         "listTitle": "Le reti che costruiamo",
@@ -734,7 +753,7 @@
         "ctaTitle": "Crea la tua piattaforma per community",
         "ctaText": "Raccontaci la tua idea di community: progettiamo e sviluppiamo una piattaforma che cresce insieme ai tuoi utenti.",
         "ctaPrimary": "Inizia la conversazione",
-        "ctaSecondary": "Vedi i casi studio"
+        "ctaSecondary": "Vedi i progetti"
       },
       "websites": {
         "label": "Siti web",
@@ -1734,6 +1753,7 @@
         "cto": "CTO as a Service",
         "about": "Chi siamo",
         "team": "Il nostro team",
+        "caseStudies": "Casi studio",
         "projects": "Progetti",
         "blog": "Blog",
         "contact": "Contatti",

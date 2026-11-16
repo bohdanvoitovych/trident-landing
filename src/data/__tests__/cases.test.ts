@@ -3,7 +3,7 @@ import { readFileSync, readdirSync, statSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { routing } from '@/i18n/routing'
-import { getCaseBySlug, getCaseLocales, getCaseSlugs, getCases, type CaseData } from '@/data/cases'
+import { caseHref, getCaseBySlug, getCaseLocales, getCaseSlugs, getCases, isCaseStudy, type CaseData } from '@/data/cases'
 import { getIndustries } from '@/data/industries'
 import { getServices } from '@/data/services'
 import { getTechnologies } from '@/data/technologies'
@@ -11,7 +11,7 @@ import { getLocations } from '@/data/locations'
 import { getProjects } from '@/data/projects'
 import sitemap from '@/app/sitemap'
 import nextConfig from '../../../next.config.mjs'
-import { MERGED_CASES, buildMergedCaseRedirects } from '../redirects/removed-slugs.mjs'
+import { MERGED_CASES, MOVED_TO_PROJECTS, buildMergedCaseRedirects } from '../redirects/removed-slugs.mjs'
 import pdfNumbers from './fixtures/pdf-case-numbers.json'
 import oldHashes from './fixtures/old-case-hashes.json'
 
@@ -305,7 +305,7 @@ describe('sitemap', () => {
   it('lists every case in each of its locales, including the six PDF cases in all four', () => {
     for (const slug of getCaseSlugs())
       for (const locale of getCaseLocales(slug)) {
-        const p = locale === 'en' ? `/cases/${slug}` : `/${locale}/cases/${slug}`
+        const p = locale === 'en' ? caseHref(slug) : `/${locale}${caseHref(slug)}`
         expect(paths, p).toContain(p)
       }
     for (const slug of PDF_SLUGS) expect(paths.filter((p) => p.endsWith(`/cases/${slug}`)), slug).toHaveLength(4)
@@ -313,5 +313,17 @@ describe('sitemap', () => {
 
   it('does not list the merged Aida case', () => {
     expect(paths.filter((p) => p.includes('aida-medicine'))).toEqual([])
+  })
+})
+
+describe('case studies and projects split', () => {
+  it('only the PDF write-ups are case studies', () => {
+    expect(getCaseSlugs().filter(isCaseStudy).sort()).toEqual([...PDF_SLUGS].sort())
+  })
+
+  it('every other write-up is a project and has a /cases → /projects redirect', () => {
+    const projects = getCaseSlugs().filter((s) => !isCaseStudy(s))
+    expect([...MOVED_TO_PROJECTS].sort()).toEqual(projects.sort())
+    for (const s of projects) expect(caseHref(s)).toBe(`/projects/${s}`)
   })
 })

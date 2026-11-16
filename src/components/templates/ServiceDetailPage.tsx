@@ -9,7 +9,7 @@ import { AgentVsHire } from '@/components/organisms/home/AgentVsHire'
 import { Integrations } from '@/components/organisms/home/Integrations'
 import { WhereWeSayNo } from '@/components/organisms/home/WhereWeSayNo'
 import { Process } from '@/components/organisms/home/Process'
-import { caseImage, getCases } from '@/data/cases'
+import { caseHref, caseImage, getCases } from '@/data/cases'
 import type { ServiceData } from '@/data/services'
 import type { Point, ServiceDetail } from '@/data/ai-services'
 
@@ -240,7 +240,7 @@ export function ServiceDetailPage({ service }: Props) {
               {related.map((c) => (
                 <CaseCard
                   key={c.slug}
-                  href={`/cases/${c.slug}`}
+                  href={caseHref(c.slug)}
                   image={caseImage(c)}
                   imageAlt={c.hero.title}
                   sector={c.industry}

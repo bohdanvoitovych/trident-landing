@@ -183,7 +183,7 @@ export default async function AboutPage() {
             <ButtonLink href="/contact" arrow>
               {ta('ctaPrimary')}
             </ButtonLink>
-            <ButtonLink href="/cases" variant="outline">
+            <ButtonLink href="/projects" variant="outline">
               {ta('ctaSecondary')}
             </ButtonLink>
           </div>

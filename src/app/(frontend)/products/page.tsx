@@ -37,7 +37,7 @@ export default function ProductsPage() {
               <ButtonLink href="https://8move.com" target="_blank" rel="noopener noreferrer" arrow>
                 {t('visit')}
               </ButtonLink>
-              <ButtonLink href="/cases/8move-driver" variant="outline" arrow>
+              <ButtonLink href="/projects/8move-driver" variant="outline" arrow>
                 {t('readCase')}
               </ButtonLink>
             </div>

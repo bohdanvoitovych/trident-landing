@@ -772,6 +772,12 @@ a.uc-card:hover::after, a.uc-card:focus-visible::after { transform: scaleX(1); }
 .feature-card p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--ink-2); }
 .feature-ico { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-bottom: 4px; border-radius: var(--radius-card); background: var(--wash); color: var(--blue-d); }
 
+.case-industries { display: flex; align-items: center; gap: 12px 16px; flex-wrap: wrap; margin-top: 32px; }
+.case-industries ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.case-industries a { text-decoration: none; }
+.case-industries a:hover, .case-industries a:focus-visible { border-color: var(--blue); color: var(--blue-d); }
+.case-switch { margin: 24px 0 0; }
+
 /* ---- About timeline: one row, each year once ----------------------------- */
 .tl { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
 .tl li { position: relative; display: flex; flex-direction: column; gap: 12px; padding-top: 28px; border-top: 2px solid var(--on-dark-line); }

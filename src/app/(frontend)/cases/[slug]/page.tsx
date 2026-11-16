@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { getLocale } from 'next-intl/server'
 import { CasePage } from '@/components/templates/CasePage'
-import { caseImage, getCaseBySlug, getCaseLocales, getCaseSlugs } from '@/data/cases'
+import { caseImage, getCaseBySlug, getCaseLocales, getCaseSlugs, isCaseStudy } from '@/data/cases'
 import JsonLd from '@/components/seo/JsonLd'
 import { buildMetadata } from '@/lib/metadata'
 import { caseStudySchemas } from '@/lib/schema'
@@ -11,12 +11,14 @@ type Props = {
 }
 
 export async function generateStaticParams() {
-  return getCaseSlugs().map((slug) => ({ slug }))
+  return getCaseSlugs()
+    .filter(isCaseStudy)
+    .map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params
-  const caseStudy = getCaseBySlug(slug, await getLocale())
+  const caseStudy = isCaseStudy(slug) ? getCaseBySlug(slug, await getLocale()) : undefined
   if (!caseStudy) return {}
   const locale = await getLocale()
   return buildMetadata({
@@ -31,7 +33,8 @@ export async function generateMetadata({ params }: Props) {
 export default async function CaseSlugPage({ params }: Props) {
   const { slug } = await params
   const locale = await getLocale()
-  const caseStudy = getCaseBySlug(slug, locale)
+  // Project write-ups live under /projects; next.config redirects their old /cases URLs.
+  const caseStudy = isCaseStudy(slug) ? getCaseBySlug(slug, locale) : undefined
   if (!caseStudy) notFound()
 
   return (

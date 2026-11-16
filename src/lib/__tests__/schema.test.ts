@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { caseImage, getCaseBySlug, getCaseSlugs, getCases } from '@/data/cases'
+import { caseHref, caseImage, getCaseBySlug, getCaseSlugs, getCases } from '@/data/cases'
 import { getIndustries } from '@/data/industries'
 import { getLocations } from '@/data/locations'
 import { getServiceBySlug, getServiceSlugs } from '@/data/services'
@@ -110,7 +110,7 @@ describe('caseStudySchemas', () => {
         if (!c) continue
         const [a, b] = caseStudySchemas({ slug, title: c.hero.title, description: c.meta.description, image: caseImage(c), publishedAt: c.publishedAt }, locale) as Schema[]
         expect(a.headline, `${slug}/${locale}`).toBeTruthy()
-        expect(a.url).toContain(`${prefix(locale)}/cases/${slug}`)
+        expect(a.url).toContain(`${prefix(locale)}${caseHref(slug)}`)
         expect(b.itemListElement).toHaveLength(3)
       }
     }
