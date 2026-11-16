@@ -30,7 +30,7 @@ const records: TechnologyRecord[] = [
     iconSlug: 'nextdotjs',
     complementaryStack: ['TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Payload CMS', 'Docker', 'Vercel / Coolify'],
     relatedServices: ['software-engineering', 'cto-as-a-service'],
-    relatedCases: ['kleap-ai-builder', 'lapochette', 'iam-trade'],
+    relatedCases: [],
     content: {
       en: {
         category: 'Frontend & Full-Stack',
@@ -199,7 +199,7 @@ const records: TechnologyRecord[] = [
     iconSlug: 'flutter',
     complementaryStack: ['Dart', 'Riverpod / Bloc', 'Firebase', 'REST / GraphQL', 'SQLite (Drift)', 'Fastlane CI/CD'],
     relatedServices: ['software-engineering', 'embedded-and-iot', 'cto-as-a-service'],
-    relatedCases: ['8move-driver', 'tdsbot-iot'],
+    relatedCases: [],
     content: {
       en: {
         category: 'Mobile Development',
@@ -367,7 +367,7 @@ const records: TechnologyRecord[] = [
     iconSlug: 'typescript',
     complementaryStack: ['Node.js', 'Next.js', 'Zod', 'Prisma / Drizzle', 'ESLint + strict tsconfig', 'Vitest'],
     relatedServices: ['software-engineering', 'cto-as-a-service'],
-    relatedCases: ['kleap-ai-builder', 'iam-trade', 'lapochette'],
+    relatedCases: [],
     content: {
       en: {
         category: 'Language & Full-Stack',
@@ -537,7 +537,7 @@ const records: TechnologyRecord[] = [
     iconSlug: 'python',
     complementaryStack: ['FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'Celery', 'PyTorch / HuggingFace'],
     relatedServices: ['ai-services', 'software-engineering'],
-    relatedCases: ['kleap-ai-builder', 'post-acute-clinic-network', 'tdsbot-iot'],
+    relatedCases: ['post-acute-clinic-network'],
     content: {
       en: {
         category: 'AI, ML & Backend',
@@ -707,7 +707,7 @@ const records: TechnologyRecord[] = [
     iconSlug: 'react',
     complementaryStack: ['TypeScript', 'Tailwind CSS', 'Radix UI', 'React Query / SWR', 'Zustand / Jotai', 'Storybook'],
     relatedServices: ['software-engineering'],
-    relatedCases: ['kleap-ai-builder', 'lapochette', 'iam-trade'],
+    relatedCases: [],
     content: {
       en: {
         category: 'Frontend',
@@ -877,7 +877,7 @@ const records: TechnologyRecord[] = [
     iconSlug: 'nodedotjs',
     complementaryStack: ['TypeScript', 'Fastify / NestJS', 'PostgreSQL', 'Redis', 'BullMQ', 'Docker'],
     relatedServices: ['software-engineering'],
-    relatedCases: ['kleap-ai-builder', 'zenit-auto-b2b', '8move-driver'],
+    relatedCases: [],
     content: {
       en: {
         category: 'Backend & APIs',
@@ -1053,7 +1053,7 @@ const records: TechnologyRecord[] = [
       'Node.js / Python / Payload CMS',
     ],
     relatedServices: ['software-engineering'],
-    relatedCases: ['kleap-ai-builder', 'zenit-auto-b2b', 'iam-trade'],
+    relatedCases: [],
     content: {
       en: {
         category: 'Database',
@@ -1223,7 +1223,7 @@ const records: TechnologyRecord[] = [
     iconSlug: 'docker',
     complementaryStack: ['GitLab CI', 'Caddy reverse proxy', 'Traefik', 'Prometheus + Grafana', 'Portainer', 'Helm'],
     relatedServices: ['software-engineering'],
-    relatedCases: ['kleap-ai-builder', '8move-driver', 'zenit-auto-b2b'],
+    relatedCases: [],
     content: {
       en: {
         category: 'DevOps & Infrastructure',
@@ -1400,7 +1400,7 @@ const records: TechnologyRecord[] = [
       'Python',
     ],
     relatedServices: ['ai-services', 'software-engineering', 'cto-as-a-service'],
-    relatedCases: ['kleap-ai-builder', 'post-acute-clinic-network'],
+    relatedCases: ['post-acute-clinic-network'],
     content: {
       en: {
         category: 'Artificial Intelligence',

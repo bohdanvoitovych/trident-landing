@@ -1,4 +1,4 @@
-export const TOPIC_KEYS = ['aiAgents', 'logistics', 'iot', 'businessSystem', 'cto', 'other'] as const
+export const TOPIC_KEYS = ['aiAgents', 'softwareEngineering', 'iot', 'cto', 'other'] as const
 
 export type TopicKey = (typeof TOPIC_KEYS)[number]
 

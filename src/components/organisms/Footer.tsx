@@ -57,7 +57,7 @@ export function Footer() {
       <div className="container" style={{ paddingTop: 'clamp(72px,8vw,112px)' }}>
         <span className="label">{t('audit.label')}</span>
       </div>
-      <div className="container split split--stretch audit">
+      <div className="container split split--stretch split--form-end audit">
         <div className="audit-left reveal">
           <div className="stack" style={{ gap: 22 }}>
             <h2 className="audit-h">{tc.rich('auditTitle', { em: (c) => <em>{c}</em> })}</h2>

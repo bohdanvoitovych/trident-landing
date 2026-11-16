@@ -224,7 +224,7 @@ const records: ServiceRecord[] = [
     slug: 'logistics-and-operations-platforms',
     icon: 'truck',
     techStack: ['Python', 'Django', 'PostgreSQL', 'React', 'Flutter', 'AWS'],
-    relatedCases: ['building-materials-order-to-load', '8move-driver'],
+    relatedCases: ['building-materials-order-to-load'],
     content: {
       en: {
         title: 'Logistics & operations platforms',
@@ -332,7 +332,7 @@ const records: ServiceRecord[] = [
     slug: 'software-engineering',
     icon: 'code-2',
     techStack: ['TypeScript', 'React', 'Next.js', 'Node.js', 'Python', 'Flutter', 'PostgreSQL', 'Redis', 'Docker'],
-    relatedCases: ['zenit-auto-b2b'],
+    relatedCases: [],
     content: {
       en: {
         title: 'Custom business systems',
@@ -494,7 +494,7 @@ const records: ServiceRecord[] = [
     slug: 'embedded-and-iot',
     icon: 'cpu',
     techStack: ['C', 'C++', 'Python', 'STM32', 'ESP32', 'MQTT', 'InfluxDB', 'Grafana', 'AWS IoT'],
-    relatedCases: ['warranty-control-component-maker', 'tdsbot-iot'],
+    relatedCases: ['warranty-control-component-maker'],
     content: {
       en: {
         title: 'IoT & connected products',
@@ -661,7 +661,7 @@ const records: ServiceRecord[] = [
     slug: 'cto-as-a-service',
     icon: 'shield-check',
     techStack: ['Architecture Review', 'AWS / GCP / Azure', 'Security Auditing', 'Process Design', 'Team Leadership'],
-    relatedCases: ['kleap-ai-builder', 'go-valais'],
+    relatedCases: [],
     content: {
       en: {
         title: 'CTO as a Service',

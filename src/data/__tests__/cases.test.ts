@@ -3,7 +3,7 @@ import { readFileSync, readdirSync, statSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { routing } from '@/i18n/routing'
-import { caseHref, getCaseBySlug, getCaseLocales, getCaseSlugs, getCases, isCaseStudy, type CaseData } from '@/data/cases'
+import { caseHref, getCaseBySlug, getCaseLocales, getCaseSlugs, getCases, type CaseData } from '@/data/cases'
 import { getIndustries } from '@/data/industries'
 import { getServices } from '@/data/services'
 import { getTechnologies } from '@/data/technologies'
@@ -11,7 +11,7 @@ import { getLocations } from '@/data/locations'
 import { getProjects } from '@/data/projects'
 import sitemap from '@/app/sitemap'
 import nextConfig from '../../../next.config.mjs'
-import { MERGED_CASES, MOVED_TO_PROJECTS, buildMergedCaseRedirects } from '../redirects/removed-slugs.mjs'
+import { MERGED_CASES, REMOVED_PROJECT_WRITEUPS, buildMergedCaseRedirects } from '../redirects/removed-slugs.mjs'
 import pdfNumbers from './fixtures/pdf-case-numbers.json'
 import oldHashes from './fixtures/old-case-hashes.json'
 
@@ -185,33 +185,17 @@ describe('PDF case studies (P9)', () => {
   })
 })
 
-describe('existing case studies', () => {
-  it('are the nine originals minus the merged Aida case', () => {
-    expect(getCaseSlugs().slice(6)).toEqual(OLD_CASES)
+describe('removed project write-ups', () => {
+  it('none of the unsourced project write-ups is left', () => {
+    for (const slug of OLD_CASES) expect(getCaseSlugs()).not.toContain(slug)
   })
 
-  it('carry none of the long-form fields and keep challenge, approach and solution', () => {
-    for (const slug of OLD_CASES)
-      for (const locale of routing.locales) {
-        const c = getCaseBySlug(slug, locale)!
-        for (const k of LONG_FIELDS) expect(c[k], `${slug}/${locale} ${k}`).toBeUndefined()
-        expect(c.evidence, `${slug} evidence`).toBeUndefined()
-        filled(c.challenge, `${slug}/${locale} challenge`)
-        filled(c.approach, `${slug}/${locale} approach`)
-        filled(c.solution, `${slug}/${locale} solution`)
-        expect(c.techStack.length, `${slug} techStack`).toBeGreaterThan(0)
-      }
-  })
-
-  it('render from the same data as before the port (hash of everything except relatedCases)', () => {
-    const now: Record<string, string> = {}
-    for (const slug of OLD_CASES)
-      for (const locale of routing.locales) {
-        const c: Partial<CaseData> = { ...getCaseBySlug(slug, locale)! }
-        delete c.relatedCases
-        now[`${slug}/${locale}`] = createHash('sha256').update(stable(c)).digest('hex').slice(0, 16)
-      }
-    expect(now).toEqual(oldHashes)
+  it('their /cases and /projects URLs redirect to the projects list in every locale', async () => {
+    const all = (await nextConfig.redirects!()) as Array<{ source: string; destination: string }>
+    for (const slug of REMOVED_PROJECT_WRITEUPS)
+      for (const prefix of ['', '/de', '/fr', '/it'])
+        for (const kind of ['cases', 'projects'])
+          expect(all).toContainEqual({ source: `${prefix}/${kind}/${slug}`, destination: `${prefix}/projects`, permanent: true })
   })
 })
 
@@ -313,17 +297,5 @@ describe('sitemap', () => {
 
   it('does not list the merged Aida case', () => {
     expect(paths.filter((p) => p.includes('aida-medicine'))).toEqual([])
-  })
-})
-
-describe('case studies and projects split', () => {
-  it('only the PDF write-ups are case studies', () => {
-    expect(getCaseSlugs().filter(isCaseStudy).sort()).toEqual([...PDF_SLUGS].sort())
-  })
-
-  it('every other write-up is a project and has a /cases → /projects redirect', () => {
-    const projects = getCaseSlugs().filter((s) => !isCaseStudy(s))
-    expect([...MOVED_TO_PROJECTS].sort()).toEqual(projects.sort())
-    for (const s of projects) expect(caseHref(s)).toBe(`/projects/${s}`)
   })
 })

@@ -4,7 +4,7 @@ const record: IndustryRecord = {
   slug: 'retail-ecommerce',
   icon: 'shopping-bag',
   techStack: [],
-  relatedCases: ['lapochette'],
+  relatedCases: [],
   relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {

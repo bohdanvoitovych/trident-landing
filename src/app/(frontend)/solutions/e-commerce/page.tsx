@@ -27,7 +27,7 @@ export default function EcommerceSolutionPage() {
       solution={solution}
       label={t('label')}
       primary={t('primary')}
-      secondary={{ href: '/projects/iam-trade', label: t('secondary') }}
+      secondary={{ href: '/projects', label: t('secondary') }}
       features={{ lead: t('featuresLead') }}
       list={{
         label: t('listLabel'),

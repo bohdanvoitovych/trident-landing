@@ -55,7 +55,7 @@ export default function IamTradePage() {
               <ButtonLink href="/contact" arrow>
                 {t('requestDemo')}
               </ButtonLink>
-              <ButtonLink href="/projects/iam-trade" variant="outline">
+              <ButtonLink href="/projects" variant="outline">
                 {t('seeCase')}
               </ButtonLink>
             </div>

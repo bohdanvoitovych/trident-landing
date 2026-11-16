@@ -132,11 +132,12 @@ export function HeroLog({ lines, title, note }: LogProps) {
       <HeroFlow step={n % CH.length} tick={n} />
       <div ref={ref} className="hero-log floaty" data-loop>
         <div className="hero-log-head">
-          <span>
-            <span className="pulse" />
-            {title}
+          <span className="pulse" />
+          <span className="hl-text">
+            <b>{title}</b>
+            <span className="muted">{note}</span>
           </span>
-          <span className="muted">{note}</span>
+          <span className="hl-live">LIVE</span>
         </div>
         <ol className="hero-log-body" aria-label={title}>
           {rows.map((r) => (

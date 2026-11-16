@@ -139,7 +139,7 @@
       "seeProjects": "See our projects"
     },
     "hero": {
-      "logTitle": "Agent · Valais Materials · live",
+      "logTitle": "Agent · Valais Materials",
       "logNote": "Sat evening · illustrative",
       "log": {
         "1": "Enquiry: 8 t gravel 0/16 to Sierre → answered",
@@ -453,8 +453,7 @@
       "metaDescription": "Platforms, online shops, mobile apps and IoT products Trident Software built and maintains for clients in Switzerland and Europe. Engineering team since 2009.",
       "label": "Projects",
       "title": "What we built and still maintain",
-      "lead": "{total} products and platforms for clients across Switzerland and Europe. {withStory} of them are written up in full.",
-      "storiesTitle": "Projects written up in full",
+      "lead": "{total} products and platforms we built for clients across Switzerland and Europe. Open a project to see how it was built.",
       "allTitle": "All projects",
       "casesLink": "Looking for business results? See case studies",
       "ctaLabel": "Start here",
@@ -950,7 +949,7 @@
       "heroTitle": "<blue>8Move</blue>: our own logistics platform",
       "heroLead": "Order intake, dispatch and planning, driver applications with photo proof and signature, live tracking, automated invoicing. Shipped as configurable industry editions, not one generic product.",
       "visit": "Visit 8move.com",
-      "readCase": "Read the case study",
+      "readCase": "See our projects",
       "chips": [
         "In production with paying customers",
         "Operators in Switzerland and the EU",
@@ -997,7 +996,7 @@
       "heroLead": "A powerful Swiss e-commerce platform built for complex commerce. Handle B2B, B2C, and B2X transactions from a single system — with 200+ integrations and support for 1 million+ products.",
       "heroBody": "Built by Trident Software and already powering automotive parts distributors, watch accessory suppliers, and industrial equipment dealers across Switzerland and Europe.",
       "requestDemo": "Request a demo",
-      "seeCase": "See case study",
+      "seeCase": "See our projects",
       "stats": {
         "integrations": "Integrations",
         "products": "Products supported",
@@ -1781,9 +1780,8 @@
     "auditForm": {
       "topics": {
         "aiAgents": "AI agents & automation",
-        "logistics": "Logistics platform",
+        "softwareEngineering": "Software engineering",
         "iot": "IoT & connected products",
-        "businessSystem": "Custom business system",
         "cto": "CTO as a Service"
       },
       "consent": "I agree that Trident Software may process this enquiry under revFADP and GDPR.",
@@ -1827,7 +1825,9 @@
       "openInMaps": "Open in Google Maps"
     },
     "projectGrid": {
-      "readCase": "Read the case"
+      "readCase": "Read the case",
+      "more": "Read more",
+      "tags": "Tags"
     }
   },
   "legal": {

@@ -1,7 +1,6 @@
 'use client'
 
 import { useMemo, useState } from 'react'
-import { caseHref } from '@/data/cases'
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
@@ -28,20 +27,34 @@ function ProjectCardBody({ p }: { p: Project }) {
         <p className="small" style={{ fontSize: 14, lineHeight: 1.55 }}>
           {p.summary}
         </p>
-        {p.caseSlug && (
+        {p.caseSlug ? (
           <span className="card-more text-blue-d">
             {t('readCase')}
             <span className="go" aria-hidden="true">
               →
             </span>
           </span>
+        ) : (
+          <details className="proj-more">
+            <summary>{t('more')}</summary>
+            {p.details.map((d) => (
+              <p key={d}>{d}</p>
+            ))}
+            <ul className="chips" aria-label={t('tags')}>
+              {p.tags.map((x) => (
+                <li key={x} className="tag tag--line">
+                  {x}
+                </li>
+              ))}
+            </ul>
+          </details>
         )}
       </div>
     </>
   )
 }
 
-/** Everything delivered, filtered by sector. Entries with a full write-up link to it. */
+/** Everything delivered, filtered by sector. A card with a case study links to it; the rest expand in place. */
 export function ProjectGrid({ projects, sectors }: Props) {
   const t = useTranslations('ui')
   const [sector, setSector] = useState<string>(ALL)
@@ -71,7 +84,7 @@ export function ProjectGrid({ projects, sectors }: Props) {
       <div className="grid-4 stagger wipe">
         {filtered.map((p) =>
           p.caseSlug ? (
-            <Link key={p.slug} href={caseHref(p.caseSlug)} className="card svc-card">
+            <Link key={p.slug} href={`/cases/${p.caseSlug}`} className="card svc-card">
               <ProjectCardBody p={p} />
             </Link>
           ) : (

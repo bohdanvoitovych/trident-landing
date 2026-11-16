@@ -42,7 +42,7 @@ export default function ContactPage() {
       />
 
       <section className="section" aria-labelledby="contact-h" style={{ paddingTop: 0 }}>
-        <div className="container split split--top">
+        <div className="container split split--top split--form">
           <div className="reveal" style={{ minWidth: 0 }}>
             <AuditForm tone="light" />
           </div>

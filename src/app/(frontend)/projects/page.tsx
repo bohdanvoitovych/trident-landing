@@ -1,13 +1,10 @@
 import { getLocale, getTranslations } from 'next-intl/server'
 import { getProjects, getProjectSectors } from '@/data/projects'
-import { caseImage, getProjectStories } from '@/data/cases'
 import { buildMetadata } from '@/lib/metadata'
 import { pageName } from '@/lib/schema'
 import PageJsonLd from '@/components/seo/PageJsonLd'
 import { ProjectGrid } from '@/components/molecules/ProjectGrid'
 import { PageHero } from '@/components/molecules/PageHero'
-import { SectionHeader } from '@/components/molecules/SectionHeader'
-import { CaseCard } from '@/components/molecules/CaseCard'
 import { ButtonLink, Label } from '@/components/atoms/controls'
 import { Link } from '@/i18n/navigation'
 
@@ -28,7 +25,6 @@ export default async function ProjectsPage() {
   const locale = await getLocale()
   const projects = getProjects(locale)
   const sectors = getProjectSectors(locale)
-  const stories = getProjectStories(locale)
   const t = await getTranslations('ui')
   const tp = await getTranslations('pages.projects')
 
@@ -39,36 +35,15 @@ export default async function ProjectsPage() {
         crumbs={[{ name: t('nav.projects'), href: '/projects' }]}
         label={tp('label')}
         title={tp('title')}
-        lead={tp('lead', { total: projects.length, withStory: stories.length })}
+        lead={tp('lead', { total: projects.length })}
       />
 
-      <section className="section section--alt" aria-labelledby="stories-h">
+      {/* One list, filtered by sector. Entries with a write-up open it; the rest are cards. */}
+      <section className="section section--alt" aria-labelledby="projects-h">
         <div className="container">
-          <SectionHeader id="stories-h" label={tp('label')} title={tp('storiesTitle')} />
-          <div className="grid-3 stagger wipe">
-            {stories.map((c) => {
-              const [first, ...rest] = c.results
-              return (
-                <CaseCard
-                  key={c.slug}
-                  href={`/projects/${c.slug}`}
-                  image={caseImage(c)}
-                  sector={c.industry}
-                  title={c.hero.title}
-                  description={c.hero.tagline}
-                  metric={first ? { value: first.value, label: first.metric } : undefined}
-                  results={rest}
-                />
-              )
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Every project, filtered by sector. Entries with a full write-up link to it. */}
-      <section className="section" aria-labelledby="projects-h">
-        <div className="container">
-          <SectionHeader id="projects-h" label={tp('allTitle')} title={t('portfolio.projectsTitle')} />
+          <h2 id="projects-h" className="sr-only">
+            {tp('allTitle')}
+          </h2>
           <ProjectGrid projects={projects} sectors={sectors} />
           <p className="case-switch reveal">
             <Link href="/cases" className="text-link">
@@ -78,7 +53,7 @@ export default async function ProjectsPage() {
         </div>
       </section>
 
-      <section className="section section--alt" aria-labelledby="projects-cta-h">
+      <section className="section" aria-labelledby="projects-cta-h">
         <div className="container cta-band reveal">
           <div className="stack">
             <Label>{tp('ctaLabel')}</Label>

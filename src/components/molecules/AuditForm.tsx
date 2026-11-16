@@ -107,6 +107,8 @@ export function AuditForm({ tone = 'dark', submitLabel }: Props) {
           {t('company')}
           <input className="input" type="text" autoComplete="organization" {...register('company')} />
         </label>
+      </div>
+      <div className="grid-2 audit-pair audit-pair--contact">
         <label className="field">
           {t('email')}
           <input

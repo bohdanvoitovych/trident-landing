@@ -139,7 +139,7 @@
       "seeProjects": "Guarda i nostri progetti"
     },
     "hero": {
-      "logTitle": "Agente · Valais Materials · live",
+      "logTitle": "Agente · Valais Materials",
       "logNote": "Sabato sera · esempio",
       "log": {
         "1": "Richiesta: 8 t ghiaia 0/16 per Sierre → risposto",
@@ -453,8 +453,7 @@
       "metaDescription": "Piattaforme, negozi online, app mobili e prodotti IoT che Trident Software ha costruito e mantiene per clienti in Svizzera e in Europa. Team di ingegneri dal 2009.",
       "label": "Progetti",
       "title": "Cosa abbiamo costruito e continuiamo a mantenere",
-      "lead": "{total} prodotti e piattaforme per clienti in Svizzera e in Europa. {withStory} sono descritti nel dettaglio.",
-      "storiesTitle": "Progetti descritti nel dettaglio",
+      "lead": "{total} prodotti e piattaforme che abbiamo costruito per clienti in Svizzera e in Europa. Aprite un progetto per vedere come è stato realizzato.",
       "allTitle": "Tutti i progetti",
       "casesLink": "Cercate risultati di business? Vedi i casi studio",
       "ctaLabel": "Parti da qui",
@@ -950,7 +949,7 @@
       "heroTitle": "<blue>8Move</blue>: la nostra piattaforma logistica",
       "heroLead": "Acquisizione ordini, dispatching e pianificazione, app per autisti con prova fotografica e firma, tracking in tempo reale, fatturazione automatica. Distribuita in edizioni di settore configurabili, non come un prodotto generico.",
       "visit": "Visita 8move.com",
-      "readCase": "Leggi il caso studio",
+      "readCase": "Vedi i nostri progetti",
       "chips": [
         "In produzione presso clienti paganti",
         "Operatori in Svizzera e nell’UE",
@@ -997,7 +996,7 @@
       "heroLead": "Una potente piattaforma e-commerce svizzera pensata per il commercio complesso. Gestisci transazioni B2B, B2C e B2X da un unico sistema, con oltre 200 integrazioni e il supporto per più di 1 milione di prodotti.",
       "heroBody": "Sviluppata da Trident Software, è già in uso presso distributori di ricambi auto, fornitori di accessori per orologi e rivenditori di attrezzature industriali in Svizzera e in Europa.",
       "requestDemo": "Richiedi una demo",
-      "seeCase": "Vedi il caso studio",
+      "seeCase": "Vedi i nostri progetti",
       "stats": {
         "integrations": "Integrazioni",
         "products": "Prodotti supportati",
@@ -1781,9 +1780,8 @@
     "auditForm": {
       "topics": {
         "aiAgents": "Agenti AI e automazione",
-        "logistics": "Piattaforma logistica",
+        "softwareEngineering": "Ingegneria del software",
         "iot": "IoT e prodotti connessi",
-        "businessSystem": "Sistema gestionale su misura",
         "cto": "CTO as a Service"
       },
       "consent": "Accetto che Trident Software tratti questa richiesta secondo la nLPD e il GDPR.",
@@ -1827,7 +1825,9 @@
       "openInMaps": "Apri in Google Maps"
     },
     "projectGrid": {
-      "readCase": "Leggi il caso"
+      "readCase": "Leggi il caso",
+      "more": "Scopri di più",
+      "tags": "Tag"
     }
   },
   "legal": {

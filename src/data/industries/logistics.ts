@@ -4,7 +4,7 @@ const record: IndustryRecord = {
   slug: 'logistics',
   icon: 'truck',
   techStack: ['Python', 'Django', 'React Native', 'PostgreSQL', 'Redis', 'RabbitMQ', 'AWS'],
-  relatedCases: ['8move-driver'],
+  relatedCases: [],
   relatedServices: ['logistics-and-operations-platforms', 'software-engineering', 'ai-services'],
   content: {
     en: {

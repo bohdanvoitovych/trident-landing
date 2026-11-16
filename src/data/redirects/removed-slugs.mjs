@@ -42,9 +42,9 @@ export function buildMergedCaseRedirects() {
   )
 }
 
-// Project write-ups moved from /cases to /projects when case studies and projects were split.
-// Kept in sync with the non-PDF records in src/data/cases.ts (checked by a test).
-export const MOVED_TO_PROJECTS = [
+// Project write-ups removed for having no source (they lived at /cases/{slug}, then briefly /projects/{slug}).
+// Their URLs go to the projects list, where the old site's description of each project is shown.
+export const REMOVED_PROJECT_WRITEUPS = [
   'kleap-ai-builder',
   'zenit-auto-b2b',
   '8move-driver',
@@ -55,12 +55,14 @@ export const MOVED_TO_PROJECTS = [
   'go-valais',
 ]
 
-/** Permanent redirects for next.config.mjs: /cases/{slug} → /projects/{slug}, in the same locale. */
-export function buildMovedProjectRedirects() {
-  return MOVED_TO_PROJECTS.flatMap((slug) =>
-    LOCALE_PREFIXES.flatMap((prefix) => [
-      { source: `${prefix}/cases/${slug}`, destination: `${prefix}/projects/${slug}`, permanent: true },
-      { source: `${prefix}/cases/${slug}/`, destination: `${prefix}/projects/${slug}`, permanent: true },
-    ]),
+/** Permanent redirects for next.config.mjs: /cases/{slug} and /projects/{slug} → /projects, in the same locale. */
+export function buildRemovedProjectRedirects() {
+  return REMOVED_PROJECT_WRITEUPS.flatMap((slug) =>
+    LOCALE_PREFIXES.flatMap((prefix) =>
+      ['cases', 'projects'].flatMap((kind) => [
+        { source: `${prefix}/${kind}/${slug}`, destination: `${prefix}/projects`, permanent: true },
+        { source: `${prefix}/${kind}/${slug}/`, destination: `${prefix}/projects`, permanent: true },
+      ]),
+    ),
   )
 }

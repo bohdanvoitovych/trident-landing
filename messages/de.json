@@ -139,7 +139,7 @@
       "seeProjects": "Unsere Projekte ansehen"
     },
     "hero": {
-      "logTitle": "Agent · Valais Materials · live",
+      "logTitle": "Agent · Valais Materials",
       "logNote": "Samstagabend · Beispiel",
       "log": {
         "1": "Anfrage: 8 t Kies 0/16 nach Siders → beantwortet",
@@ -453,8 +453,7 @@
       "metaDescription": "Plattformen, Onlineshops, mobile Apps und IoT-Produkte, die Trident Software für Kunden in der Schweiz und Europa gebaut hat und betreut. Engineering-Team seit 2009.",
       "label": "Projekte",
       "title": "Was wir gebaut haben und weiter betreuen",
-      "lead": "{total} Produkte und Plattformen für Kunden in der Schweiz und in Europa. {withStory} davon sind ausführlich beschrieben.",
-      "storiesTitle": "Ausführlich beschriebene Projekte",
+      "lead": "{total} Produkte und Plattformen, die wir für Kunden in der Schweiz und in Europa gebaut haben. Öffnen Sie ein Projekt, um zu sehen, wie es entstand.",
       "allTitle": "Alle Projekte",
       "casesLink": "Sie suchen Geschäftsergebnisse? Zu den Fallstudien",
       "ctaLabel": "Hier beginnen",
@@ -950,7 +949,7 @@
       "heroTitle": "<blue>8Move</blue>: unsere eigene Logistikplattform",
       "heroLead": "Auftragserfassung, Disposition und Planung, Fahrer-Apps mit Fotonachweis und Unterschrift, Live-Tracking, automatische Rechnungsstellung. Ausgeliefert als konfigurierbare Branchenversionen statt als ein generisches Produkt.",
       "visit": "8move.com besuchen",
-      "readCase": "Fallstudie lesen",
+      "readCase": "Unsere Projekte ansehen",
       "chips": [
         "Produktiv bei zahlenden Kunden",
         "Betreiber in der Schweiz und der EU",
@@ -997,7 +996,7 @@
       "heroLead": "Eine leistungsstarke Schweizer E-Commerce-Plattform für anspruchsvollen Handel. Wickeln Sie B2B-, B2C- und B2X-Geschäfte in einem einzigen System ab, mit über 200 Integrationen und Platz für mehr als 1 Million Produkte.",
       "heroBody": "Entwickelt von Trident Software und bereits im Einsatz bei Autoteile-Grosshändlern, Lieferanten von Uhrenzubehör und Händlern für Industrieausrüstung in der Schweiz und in Europa.",
       "requestDemo": "Demo anfragen",
-      "seeCase": "Fallstudie ansehen",
+      "seeCase": "Unsere Projekte ansehen",
       "stats": {
         "integrations": "Integrationen",
         "products": "Unterstützte Produkte",
@@ -1781,9 +1780,8 @@
     "auditForm": {
       "topics": {
         "aiAgents": "KI-Agenten & Automatisierung",
-        "logistics": "Logistikplattform",
+        "softwareEngineering": "Softwareentwicklung",
         "iot": "IoT & vernetzte Produkte",
-        "businessSystem": "Individuelles Geschäftssystem",
         "cto": "CTO as a Service"
       },
       "consent": "Ich bin einverstanden, dass Trident Software diese Anfrage gemäss nDSG und DSGVO bearbeitet.",
@@ -1827,7 +1825,9 @@
       "openInMaps": "In Google Maps öffnen"
     },
     "projectGrid": {
-      "readCase": "Fallstudie lesen"
+      "readCase": "Fallstudie lesen",
+      "more": "Mehr lesen",
+      "tags": "Schlagwörter"
     }
   },
   "legal": {

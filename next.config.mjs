@@ -1,7 +1,7 @@
 import { buildCsp } from './src/lib/csp.mjs'
 import createNextIntlPlugin from 'next-intl/plugin'
 import { buildOldPostRedirects, TOPIC_REDIRECTS } from './src/data/redirects/old-post-slugs.mjs'
-import { buildMergedCaseRedirects, buildMovedProjectRedirects, buildRemovedSlugRedirects } from './src/data/redirects/removed-slugs.mjs'
+import { buildMergedCaseRedirects, buildRemovedProjectRedirects, buildRemovedSlugRedirects } from './src/data/redirects/removed-slugs.mjs'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
@@ -430,7 +430,7 @@ const nextConfig = {
 
       // ─── Case studies merged into another (Aida → post-acute clinic network) ───
       ...buildMergedCaseRedirects(),
-      ...buildMovedProjectRedirects(),
+      ...buildRemovedProjectRedirects(),
     ]
   },
 

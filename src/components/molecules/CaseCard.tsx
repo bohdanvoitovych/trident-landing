@@ -59,10 +59,8 @@ export function CaseCard({
       </div>
       <div className="card-body">
         <span className="meta">{sector}</span>
-        <H className="card-title card-title--sm" style={{ fontSize: 19 }}>
-          {title}
-        </H>
-        {description && <p className="small" style={{ fontSize: 14, lineHeight: 1.55 }}>{description}</p>}
+        <H className="card-title card-title--sm case-title">{title}</H>
+        {description && <p className="small case-desc">{description}</p>}
         {bars && bars.length > 0 && (
           <div className="case-bars">
             {bars.map((b) => (
@@ -88,11 +86,11 @@ export function CaseCard({
           </div>
         )}
         {!bars?.length && results && results.length > 0 && (
-          <dl className="case-bars" style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 20, margin: 0 }}>
+          <dl className="case-results">
             {results.slice(0, 2).map((r) => (
-              <div key={r.metric} style={{ display: 'flex', flexDirection: 'column-reverse', gap: 2 }}>
-                <dt style={{ fontSize: 12, color: 'var(--ink-2)' }}>{r.metric}</dt>
-                <dd style={{ margin: 0, fontSize: 22, fontWeight: 600, letterSpacing: '-.03em', color: 'var(--blue)' }}>{r.value}</dd>
+              <div key={r.metric}>
+                <dt>{r.metric}</dt>
+                <dd>{r.value}</dd>
               </div>
             ))}
           </dl>
