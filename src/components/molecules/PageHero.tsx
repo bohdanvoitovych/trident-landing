@@ -44,11 +44,10 @@ type Props = {
   aside?: ReactNode
   /** Buttons under the lead. */
   actions?: ReactNode
-  alt?: boolean
 }
 
 /** Inner-page hero: breadcrumbs, label, the page's only <h1>, lead, optional actions/aside. */
-export function PageHero({ label, title, lead, crumbs, aside, actions, alt }: Props) {
+export function PageHero({ label, title, lead, crumbs, aside, actions }: Props) {
   const copy = (
     <div className="stack" style={{ gap: 22 }}>
       {crumbs && <Breadcrumbs items={crumbs} />}
@@ -59,7 +58,7 @@ export function PageHero({ label, title, lead, crumbs, aside, actions, alt }: Pr
     </div>
   )
   return (
-    <section className={alt ? 'page-hero section--alt' : 'page-hero'}>
+    <section className="page-hero">
       <div className="container">
         {aside ? (
           <div className="split">

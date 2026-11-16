@@ -1,4 +1,5 @@
 import { useLocale, useTranslations } from 'next-intl'
+import { Clock, History, KeyRound, Receipt, ShieldCheck, Users } from 'lucide-react'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 import { getLocale, getTranslations } from 'next-intl/server'
@@ -28,7 +29,14 @@ export async function generateMetadata() {
 
 const STEPS = ['scope', 'build', 'maintain'] as const
 
-const TRUST_POINTS = ['fixedPrice', 'compliance', 'response', 'experience', 'noLockIn', 'talent'] as const
+const TRUST_POINTS = [
+  { key: 'fixedPrice', Icon: Receipt },
+  { key: 'compliance', Icon: ShieldCheck },
+  { key: 'response', Icon: Clock },
+  { key: 'experience', Icon: History },
+  { key: 'noLockIn', Icon: KeyRound },
+  { key: 'talent', Icon: Users },
+] as const
 
 export default function ServicesPage() {
   const locale = useLocale()
@@ -125,16 +133,17 @@ export default function ServicesPage() {
       {/* Why choose us */}
       <section className="section section--alt" aria-labelledby="why-h">
         <div className="container">
-          <div className="split split--top">
-            <SectionHeader id="why-h" label={t('whyLabel')} title={t('whyTitle')} className="!mb-0" />
-            <ul className="reveal border-t-2 border-ink" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-              {TRUST_POINTS.map((k) => (
-                <li key={k} className="flex flex-col gap-2 border-b border-line py-6">
-                  <h3 className="h4">{t(`trust.${k}.title`)}</h3>
-                  <p className="body">{t(`trust.${k}.desc`)}</p>
-                </li>
-              ))}
-            </ul>
+          <SectionHeader id="why-h" label={t('whyLabel')} title={t('whyTitle')} />
+          <div className="grid-3 stagger">
+            {TRUST_POINTS.map(({ key, Icon }) => (
+              <div key={key} className="card card--flat feature-card">
+                <span className="feature-ico" aria-hidden="true">
+                  <Icon size={20} strokeWidth={1.75} />
+                </span>
+                <h3>{t(`trust.${key}.title`)}</h3>
+                <p>{t(`trust.${key}.desc`)}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -28,9 +28,9 @@ export default function UseCasesPage() {
   return (
     <>
       <PageJsonLd type="CollectionPage" path="/use-cases" name={t('crumb')} description={t('lead')} />
-      <PageHero alt crumbs={[{ name: t('crumb'), href: '/use-cases' }]} label={t('crumb')} title={t('title')} lead={t('lead')} />
+      <PageHero crumbs={[{ name: t('crumb'), href: '/use-cases' }]} label={t('crumb')} title={t('title')} lead={t('lead')} />
 
-      <section className="section" aria-labelledby="uc-list-h">
+      <section className="section section--alt" aria-labelledby="uc-list-h">
         <div className="container">
           <h2 id="uc-list-h" className="sr-only">
             {t('crumb')}
