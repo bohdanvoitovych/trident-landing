@@ -257,8 +257,8 @@ html.is-scrolling .marquee, html.is-scrolling .hero-blob, html.is-hidden *, html
 .brand { display: inline-flex; align-items: center; min-height: 44px; flex: none; }
 .brand img { height: 20px; width: auto; }
 .nav-links { display: flex; gap: 28px; font-size: 14px; color: var(--ink-2); }
-.nav-links a { display: inline-flex; align-items: center; min-height: 44px; }
-.nav-links a > span { background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; padding-bottom: 3px; transition: background-size .3s var(--ease); }
+.nav-links a { display: inline-flex; align-items: center; min-height: 44px; white-space: nowrap; }
+.nav-links a > span { background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; padding: 3px 0; line-height: 1; transition: background-size .3s var(--ease); }
 .nav-links a:hover > span, .nav-links a:focus-visible > span { background-size: 100% 1px; }
 .nav-links a:hover { color: var(--ink); }
 .nav-links a[aria-current="page"] { color: var(--ink); font-weight: 600; }
@@ -861,10 +861,19 @@ a.uc-card:hover::after, a.uc-card:focus-visible::after { transform: scaleX(1); }
   .article-aside { position: static; }
   .ld-list { align-self: stretch; }
 }
-@media (max-width: 860px) {
+/* The menu folds into the burger as soon as its items no longer fit on one line.
+   German labels are the longest, so it folds earlier there. */
+@media (max-width: 1060px) {
   .nav-links, .nav-right .lang-switch { display: none; }
   .burger { display: inline-flex; }
   .nav-right { gap: 6px; }
+}
+@media (max-width: 1260px) {
+  html[lang="de"] .nav-links, html[lang="de"] .nav-right .lang-switch { display: none; }
+  html[lang="de"] .burger { display: inline-flex; }
+  html[lang="de"] .nav-right { gap: 6px; }
+}
+@media (max-width: 860px) {
   .grid-2, .looking ul, .checks { grid-template-columns: minmax(0,1fr); }
   .gap-panel { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
   .g-row { grid-template-columns: minmax(0,1fr); gap: 10px; }
