@@ -15,6 +15,13 @@ const h1Words = (src: string) =>
         .map((w) => ({ w, blue }))
     })
 
+// Measured figures only, each linked to the case it comes from.
+const RESULTS = [
+  { k: 'consultations', v: '+30.8 %', src: 'practice', slug: 'clinic-voice-documentation' },
+  { k: 'warranty', v: '−63 %', src: 'maker', slug: 'warranty-control-component-maker' },
+  { k: 'invoice', v: '−84 %', src: 'practice', slug: 'clinic-voice-documentation' },
+] as const
+
 export function Hero() {
   const t = useTranslations('ui')
   const th = useTranslations('sections.hero')
@@ -74,6 +81,22 @@ export function Hero() {
         </div>
       </div>
 
+      <div className="container">
+        <h2 className="hero-results-h">{th('resultsTitle')}</h2>
+        <ul className="hero-results stagger">
+          {RESULTS.map((r) => (
+            <li key={r.k}>
+              <Link href={`/cases/${r.slug}`}>
+                <span className="v">{r.v}</span>
+                <span className="d">{th(`results.${r.k}`)}</span>
+                <span className="s">
+                  {th(`results.${r.src}`)} <i aria-hidden="true">→</i>
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )
 }

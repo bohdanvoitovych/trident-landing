@@ -356,6 +356,24 @@ body.menu-open { overflow: hidden; }
 @keyframes logIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
 @keyframes logFlash { from { opacity: 1; } to { opacity: 0; } }
 
+/* ---- Hero results: measured case figures, text only -------------------- */
+.hero-results-h { margin: 0 0 16px; font: 500 var(--fs-label)/1.2 var(--font-mono); color: var(--ink-3); }
+.hero-results { list-style: none; margin: 0; padding: 0 0 clamp(48px,5vw,80px); display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 32px; }
+.hero-results a { display: flex; flex-direction: column; gap: 8px; height: 100%; padding-top: 20px; border-top: 2px solid var(--line); color: inherit; text-decoration: none; transition: border-color .3s var(--ease); }
+.hero-results a:hover, .hero-results a:focus-visible { border-top-color: var(--blue); }
+.hero-results .v { font-size: clamp(32px,3vw,44px); font-weight: 600; letter-spacing: -.04em; line-height: 1; color: var(--blue); }
+.hero-results .d { font-size: 15px; line-height: 1.45; color: var(--ink); }
+.hero-results .s { margin-top: auto; font: 400 12px/1.4 var(--font-mono); color: var(--ink-3); }
+.hero-results .s i { font-style: normal; color: var(--blue); display: inline-block; transition: transform .3s var(--ease); }
+.hero-results a:hover .s i { transform: translateX(4px); }
+@media (max-width: 640px) {
+  .hero-results { grid-template-columns: 1fr; gap: 20px; }
+  .hero-results a { display: grid; grid-template-columns: 112px minmax(0,1fr); grid-template-areas: "v d" "v s"; column-gap: 16px; row-gap: 4px; padding-top: 16px; }
+  .hero-results .v { grid-area: v; font-size: 30px; }
+  .hero-results .d { grid-area: d; font-size: 14px; }
+  .hero-results .s { grid-area: s; margin-top: 0; }
+}
+
 /* ---- Stat cards + mini visuals ------------------------------------------ */
 .stat-card { padding: 20px; display: flex; flex-direction: column; gap: 12px; background: rgba(255,255,255,.9); }
 .stat-card--lg { padding: 24px; gap: 14px; background: #fff; }
@@ -537,9 +555,6 @@ a.uc-card:hover::after, a.uc-card:focus-visible::after { transform: scaleX(1); }
 /* ---- Process gantt ------------------------------------------------------- */
 .panel { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-card); padding: clamp(20px,3vw,36px); }
 .gantt { display: flex; flex-direction: column; gap: 22px; }
-.gantt-ctl { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 20px; align-items: center; }
-.gantt-ctl .row { display: flex; justify-content: space-between; font-size: 14px; }
-.gantt-ctl .mono { font-weight: 600; color: var(--blue-d); }
 .gantt-rows { list-style: none; margin: 0; padding: 0; }
 .g-row { display: grid; grid-template-columns: minmax(200px,.9fr) minmax(0,1.6fr); gap: 24px; padding: 16px 0; border-top: 1px solid var(--line); align-items: center; }
 .g-row h3 { margin: 0; font-size: 17px; font-weight: 600; color: var(--ink-2); transition: color .25s; }
@@ -584,10 +599,14 @@ a.uc-card:hover::after, a.uc-card:focus-visible::after { transform: scaleX(1); }
 .team-meta { display: flex; flex-direction: column; gap: 4px; border-left: 2px solid var(--blue); padding-left: 12px; }
 .team-meta b { font-size: 17px; font-weight: 600; letter-spacing: -.01em; }
 .team-meta span { font-size: 14px; color: var(--ink-2); }
-.team-meta .team-links { display: flex; gap: 0; margin-top: 4px; }
-.team-links a { width: 44px; height: 44px; margin-left: -12px; display: flex; align-items: center; justify-content: center; color: var(--ink-2); }
-.team-links a + a { margin-left: 0; }
-.team-links a:hover { color: var(--blue); }
+.team-name { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 32px; }
+.team-links { display: flex; flex: none; gap: 2px; margin-right: -6px; transition: opacity .2s var(--ease); }
+.team-links a { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 4px; color: var(--ink-3); }
+.team-links a:hover, .team-links a:focus-visible { color: var(--blue); }
+@media (hover: hover) {
+  .team-links { opacity: 0; }
+  .team-card:hover .team-links, .team-links:focus-within { opacity: 1; }
+}
 
 /* ---- Clients ------------------------------------------------------------- */
 .refs { display: flex; flex-direction: column; gap: 12px; margin: -16px 0 28px; }
@@ -812,7 +831,6 @@ a.uc-card:hover::after, a.uc-card:focus-visible::after { transform: scaleX(1); }
   .uc-body { padding: 20px; }
   .uc-num b { font-size: 24px; }
   .g-row p { display: none; }
-  .gantt-ctl { grid-template-columns: minmax(0,1fr); }
   .calc-out { grid-template-columns: minmax(0,1fr); }
   .rank-card { min-height: 0; }
   .stack-band p { font-size: 17px; min-width: 0; }

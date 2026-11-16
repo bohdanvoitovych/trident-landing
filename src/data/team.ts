@@ -104,7 +104,7 @@ const records: TeamRecord[] = [
   {
     slug: 'bohdan-voitovych',
     name: 'Bohdan Voitovych',
-    department: 'Management',
+    department: 'Leadership',
     expertise: ['Product Management', 'Frontend', 'AI Projects'],
     image: '/images/team/bohdan-voitovych.png',
     linkedin: 'https://www.linkedin.com/in/bohdan-voitovych/',
@@ -258,6 +258,82 @@ const records: TeamRecord[] = [
     },
   },
   {
+    slug: 'nikolai-kazmirchuk',
+    name: 'Nikolai Kazmirchuk',
+    department: 'Frontend',
+    expertise: ['React', 'Next.js', 'TypeScript'],
+    image: '/images/team/nikolai-kazmirchuk.png',
+    linkedin: 'https://www.linkedin.com/in/nikolay-kazmirchuk-b50176185/',
+    content: {
+      en: {
+        role: 'Frontend Developer',
+        location: 'Ukraine',
+      },
+      de: {
+        role: 'Frontend-Entwickler',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Développeur frontend',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Sviluppatore Frontend',
+        location: 'Ucraina',
+      },
+    },
+  },
+  {
+    slug: 'aleksandr-kunitsyn',
+    name: 'Aleksandr Kunitsyn',
+    department: 'Frontend',
+    expertise: ['React Native', 'Flutter', 'Mobile UI'],
+    image: '/images/team/aleksandr-kunitsyn.png',
+    content: {
+      en: {
+        role: 'Frontend Developer',
+        location: 'Ukraine',
+      },
+      de: {
+        role: 'Frontend-Entwickler',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Développeur frontend',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Sviluppatore Frontend',
+        location: 'Ucraina',
+      },
+    },
+  },
+  {
+    slug: 'oleg-bilyk',
+    name: 'Oleg Bilyk',
+    department: 'Frontend',
+    expertise: ['Angular', 'TypeScript', 'Enterprise UI'],
+    image: '/images/team/oleg-bilyk.png',
+    content: {
+      en: {
+        role: 'Frontend Developer',
+        location: 'Ukraine',
+      },
+      de: {
+        role: 'Frontend-Entwickler',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Développeur frontend',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'Sviluppatore Frontend',
+        location: 'Ucraina',
+      },
+    },
+  },
+  {
     slug: 'dmitriy-koval',
     name: 'Dmitriy Koval',
     department: 'Backend',
@@ -328,6 +404,84 @@ const records: TeamRecord[] = [
       },
       it: {
         role: 'Sviluppatrice Mobile',
+        location: 'Ucraina',
+      },
+    },
+  },
+  {
+    slug: 'dmytro-panasiuk',
+    name: 'Dmytro Panasiuk',
+    department: 'QA',
+    expertise: ['Test Automation', 'Selenium', 'Postman'],
+    image: '/images/team/dmytro-panasiuk.png',
+    linkedin: 'https://www.linkedin.com/in/dmytro-panasiuk-915762228/',
+    content: {
+      en: {
+        role: 'QA Engineer',
+        location: 'Ukraine',
+      },
+      de: {
+        role: 'QA Engineer',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Ingénieur QA',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'QA Engineer',
+        location: 'Ucraina',
+      },
+    },
+  },
+  {
+    slug: 'kateryna-kochereshchenko',
+    name: 'Kateryna Kochereshchenko',
+    department: 'QA',
+    expertise: ['Manual Testing', 'Test Cases', 'API Testing'],
+    image: '/images/team/kateryna-kochereshchenko.png',
+    linkedin: 'https://www.linkedin.com/in/kateryna-kochereshchenko-89812b206/',
+    content: {
+      en: {
+        role: 'QA Engineer',
+        location: 'Ukraine',
+      },
+      de: {
+        role: 'QA Engineer',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Ingénieure QA',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'QA Engineer',
+        location: 'Ucraina',
+      },
+    },
+  },
+  {
+    slug: 'anton-savchuk',
+    name: 'Anton Savchuk',
+    department: 'DevOps',
+    expertise: ['Docker', 'Kubernetes', 'CI/CD', 'AWS'],
+    image: '/images/team/anton-savchuk.png',
+    linkedin: 'https://www.linkedin.com/in/anton-savchuk-883900267/',
+    content: {
+      en: {
+        role: 'DevOps Engineer',
+        location: 'Ukraine',
+      },
+      de: {
+        role: 'DevOps Engineer',
+        location: 'Ukraine',
+      },
+      fr: {
+        role: 'Ingénieur DevOps',
+        location: 'Ukraine',
+      },
+      it: {
+        role: 'DevOps Engineer',
         location: 'Ucraina',
       },
     },

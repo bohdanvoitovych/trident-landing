@@ -181,12 +181,6 @@
       "modelled": "MODÉLISÉ",
       "moreCases": "Autres cas"
     },
-    "process": {
-      "drag": "Faites glisser à travers le projet",
-      "day": "Jour {day}",
-      "play": "Lecture ▶",
-      "pause": "Pause ❙❙"
-    },
     "calc": {
       "minutes": "Minutes qu'une personne consacre à chaque demande",
       "minutesValue": "{n} min",
@@ -440,7 +434,7 @@
     },
     "cases": {
       "metaTitle": "Projets de développement et études de cas | Trident Software Suisse",
-      "metaDescription": "Plus de 100 projets logiciels livrés : plateformes B2B automobiles, IA pour la santé, e-commerce, IoT, SaaS. Équipe d'ingénieurs suisse depuis 2009.",
+      "metaDescription": "Plus de 100 projets logiciels livrés : plateformes B2B automobiles, IA pour la santé, e-commerce, IoT, SaaS. Équipe d'ingénieurs depuis 2009.",
       "label": "Portfolio",
       "title": "Livré, puis mesuré",
       "lead": "{total} produits et plateformes conçus pour des clients en Suisse et en Europe. {withCase} d'entre eux sont documentés en détail, chiffres à l'appui.",
@@ -451,7 +445,7 @@
     },
     "industries": {
       "metaTitle": "Développement logiciel par secteur | Santé, auto, fintech | Trident Software",
-      "metaDescription": "Développement logiciel sur mesure pour plus de 20 secteurs : santé, automobile, fintech, logistique, commerce, SaaS, industrie. Équipe suisse depuis 2009. Budgets fixes, conforme nLPD.",
+      "metaDescription": "Développement logiciel sur mesure pour plus de 20 secteurs : santé, automobile, fintech, logistique, commerce, SaaS, industrie. Équipe depuis 2009. Budgets fixes, conforme nLPD.",
       "crumb": "Secteurs",
       "label": "Expertise sectorielle",
       "title": "Développement logiciel sur mesure<br></br>pour plus de 20 secteurs",
@@ -524,7 +518,7 @@
       "metaTitle": "Notre équipe | Trident Software",
       "metaDescription": "Plus de 10 ingénieurs seniors en Suisse et en Ukraine. Backend, frontend, mobile et gestion de projet. Aucun junior sur les projets clients.",
       "crumb": "Notre équipe",
-      "title": "10+ <blue>ingénieurs seniors</blue> en Suisse et en Ukraine",
+      "title": "Les personnes qui <blue>conçoivent et exploitent</blue> votre logiciel",
       "lead": "Aucun junior sur les projets clients. Chaque ingénieur a plus de 5 ans d'expérience en production. Vous travaillez avec les mêmes personnes du lancement à la livraison.",
       "chips": {
         "engineers": "10+ ingénieurs",
@@ -1076,28 +1070,29 @@
     },
     "about": {
       "metaTitle": "À propos | Trident Software",
-      "metaDescription": "Trident Software : société suisse d'ingénierie logicielle native IA. Fondée en 2009 à Sion, en Valais. 10+ ingénieurs, 100+ projets, 20+ pays.",
+      "metaDescription": "Trident Software : ingénierie logicielle native IA. Fondée en 2009 à Kharkiv, en Ukraine ; société suisse à Sion, en Valais, depuis 2022. 10+ ingénieurs, 100+ projets, 20+ pays.",
       "label": "À propos de Trident",
       "heroTitle": "La qualité suisse. Une ingénierie <blue>native IA</blue>.",
-      "heroLead": "Fondée en 2009 à Sion, en Valais, Trident Software développe des logiciels sur mesure, des systèmes d'IA et des solutions embarquées pour les PME européennes. Uniquement des ingénieurs seniors. Des budgets fixes. La conformité incluse.",
+      "heroLead": "Fondée en 2009 à Kharkiv, en Ukraine, et immatriculée à Sion, en Valais, en 2022, Trident Software développe des logiciels sur mesure, des systèmes d'IA et des solutions embarquées pour les PME européennes. Uniquement des ingénieurs seniors. Des budgets fixes. La conformité incluse.",
       "chips": [
         "Sion, Valais, Suisse",
         "ISO 27000 · nLPD",
-        "10+ ingénieurs · 2 pays"
+        "Sion · Genève"
       ],
       "storyLabel": "Notre histoire",
       "storyTitle": "Créée par des ingénieurs, pour des ingénieurs",
       "storyIntro": "Trident est née d'un ras-le-bol face aux agences qui promettent beaucoup et livrent peu. Nous voulions une entreprise où des ingénieurs seniors portent le résultat du début à la fin.",
-      "storyP1": "Nous avons démarré à Sion en 2009 avec deux ingénieurs et une conviction : un bon logiciel exige de bons ingénieurs qui restent sur le projet du lancement jusqu'au déploiement. Pas de passation, pas de remplacement par des juniors, pas d'usine à fonctionnalités.",
+      "storyP1": "Nous avons démarré à Kharkiv, en Ukraine, en 2009 avec deux ingénieurs et une conviction : un bon logiciel exige de bons ingénieurs qui restent sur le projet du lancement jusqu'au déploiement. Pas de passation, pas de remplacement par des juniors, pas d'usine à fonctionnalités.",
       "storyP2": "En plus de 15 ans, nous avons livré plus de 100 projets dans l'automobile, la santé, la logistique, la mode et le SaaS. Depuis 2021, nous intégrons l'IA dans des systèmes en production, bien avant la vague actuelle.",
-      "storyP3": "Aujourd'hui, nous travaillons depuis Sion et Kyiv, avec plus de 10 ingénieurs seniors qui partagent les mêmes exigences : une architecture propre, des systèmes observables et des délais honnêtes.",
+      "storyP3": "Aujourd'hui, nous travaillons depuis Sion et Genève, avec des ingénieurs seniors qui partagent les mêmes exigences : une architecture propre, des systèmes observables et des délais honnêtes.",
       "timeline": {
-        "y2009": "Création à Sion, en Valais (Suisse)",
+        "y2009": "Création à Kharkiv, en Ukraine : logiciels sur mesure pour des entreprises d'Europe de l'Est et des États-Unis",
         "y2012": "Premier projet de systèmes embarqués : IoT industriel pour la production",
-        "y2015": "Ouverture d'un bureau en Ukraine pour les talents en ingénierie",
+        "y2015": "Lancement de 8Move : gestion des commandes, planification des tournées et livraison du dernier kilomètre",
         "y2021": "Première intégration d'un LLM en production, 18 mois avant le lancement de ChatGPT",
+        "y2022": "Immatriculation de Trident Software Sàrl à Sion, en Valais (Suisse)",
         "y2023": "Lancement de l'offre de services IA ; 12 projets IA livrés en 12 mois",
-        "y2024": "Plus de 100 projets livrés ; plus de 10 ingénieurs seniors à Sion et Kyiv"
+        "y2024": "Plus de 100 projets livrés"
       },
       "valuesLabel": "Nos valeurs",
       "valuesTitle": "Notre façon de travailler",
@@ -1129,22 +1124,22 @@
         }
       },
       "whereLabel": "Où nous trouver",
-      "whereTitle": "Deux sites, une seule équipe",
-      "whereLead": "Couverture sur le fuseau CET, communication multilingue et ingénieurs seniors sur chaque site.",
+      "whereTitle": "Sion et Genève",
+      "whereLead": "Siège en Valais et bureau au Campus Biotech à Genève. Le même fuseau horaire que vous, quatre langues.",
       "locations": {
         "sion": {
           "city": "Sion, Valais",
           "country": "Suisse",
-          "role": "Siège · Développement commercial · Conformité"
+          "role": "Siège · Rue de l'Industrie 23, 1950 Sion"
         },
-        "kyiv": {
-          "city": "Kyiv",
-          "country": "Ukraine",
-          "role": "Ingénierie · Développement · QA"
+        "geneva": {
+          "city": "Genève",
+          "country": "Suisse",
+          "role": "Bureau · Campus Biotech Innovation Park, Av. de Sécheron 15, 1202 Genève"
         }
       },
       "teamLabel": "L'équipe",
-      "teamTitle": "10+ ingénieurs seniors",
+      "teamTitle": "Des ingénieurs qui restent sur votre projet",
       "teamLead": "Aucun junior sur les projets clients. Chaque ingénieur a plus de 5 ans d'expérience en production. Vous travaillez avec les mêmes personnes du lancement à la livraison.",
       "composition": {
         "backend": "Ingénieurs backend",
@@ -1164,7 +1159,15 @@
     "hero": {
       "title": "Logiciels métier et <b>agents IA,</b> conçus en Suisse",
       "lead": "Nous construisons les systèmes dont les entreprises se servent chaque jour : prise de commande, dispatch, apps terrain, facturation. Et la couche d'IA qui répond, qualifie et traite les documents dans les quatre langues nationales.",
-      "ctaAudit": "Réserver un audit gratuit de 45 min"
+      "ctaAudit": "Réserver un audit gratuit de 45 min",
+      "resultsTitle": "Mesuré sur des projets clients",
+      "results": {
+        "consultations": "Plus de consultations par médecin, même salaire",
+        "warranty": "Coûts de garantie, de 1.37 % à 0.51 % du chiffre d'affaires",
+        "invoice": "Moins de temps par facture",
+        "practice": "Cabinet médical · CH",
+        "maker": "Fabricant de composants · IT"
+      }
     },
     "heroLive": {
       "channels": {

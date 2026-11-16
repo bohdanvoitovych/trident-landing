@@ -32,7 +32,7 @@
   },
   "home": {
     "hero": {
-      "badge": "Swiss Software Engineering Since 2009",
+      "badge": "Software Engineering Since 2009",
       "title": "AI-Native Software Development for Growing Businesses",
       "subtitle": "Custom platforms, AI integrations & embedded systems — built for Swiss and European SMEs. Fixed-price contracts, revFADP compliance, and 100+ projects delivered since 2009.",
       "cta": "Get a Free Consultation",
@@ -180,12 +180,6 @@
       "measured": "MEASURED",
       "modelled": "MODELLED",
       "moreCases": "More cases"
-    },
-    "process": {
-      "drag": "Drag through the project",
-      "day": "Day {day}",
-      "play": "Play ▶",
-      "pause": "Pause ❙❙"
     },
     "calc": {
       "minutes": "Minutes a person spends per enquiry",
@@ -440,7 +434,7 @@
     },
     "cases": {
       "metaTitle": "Software Development Projects & Case Studies | Trident Software Switzerland",
-      "metaDescription": "100+ software development projects delivered — automotive B2B platforms, AI healthcare systems, e-commerce, IoT, SaaS. Swiss engineering team since 2009.",
+      "metaDescription": "100+ software development projects delivered — automotive B2B platforms, AI healthcare systems, e-commerce, IoT, SaaS. Engineering team since 2009.",
       "label": "Portfolio",
       "title": "Delivered, then counted",
       "lead": "{total} products and platforms built for clients across Switzerland and Europe — {withCase} of them written up in full, with the numbers behind them.",
@@ -451,7 +445,7 @@
     },
     "industries": {
       "metaTitle": "Software Development by Industry | Healthcare, Automotive, Fintech & More | Trident Software",
-      "metaDescription": "Custom software development for 20+ industries: healthcare, automotive, fintech, logistics, retail, SaaS, manufacturing. Swiss engineering team since 2009. Fixed budgets, revFADP compliance.",
+      "metaDescription": "Custom software development for 20+ industries: healthcare, automotive, fintech, logistics, retail, SaaS, manufacturing. Engineering team since 2009. Fixed budgets, revFADP compliance.",
       "crumb": "Industries",
       "label": "Industry expertise",
       "title": "Custom Software Development<br></br>for 20+ Industries",
@@ -524,7 +518,7 @@
       "metaTitle": "Our Team | Trident Software",
       "metaDescription": "10+ senior engineers in Switzerland and Ukraine. Backend, frontend, mobile and project management — no juniors on client projects.",
       "crumb": "Our Team",
-      "title": "10+ <blue>senior engineers</blue> in Switzerland and Ukraine",
+      "title": "The people who <blue>build and run</blue> your software",
       "lead": "No juniors on client projects. Every engineer has 5+ years of production experience. You get the same people from kickoff to handoff.",
       "chips": {
         "engineers": "10+ engineers",
@@ -1076,28 +1070,29 @@
     },
     "about": {
       "metaTitle": "About | Trident Software",
-      "metaDescription": "Trident Software — Swiss AI-native software engineering company. Founded 2009 in Sion, Valais. 10+ engineers, 100+ projects, 20+ countries.",
+      "metaDescription": "Trident Software: AI-native software engineering. Founded in 2009 in Kharkiv, Ukraine; Swiss company in Sion, Valais, since 2022. 10+ engineers, 100+ projects, 20+ countries.",
       "label": "About Trident",
       "heroTitle": "Swiss quality. <blue>AI-native</blue> engineering.",
-      "heroLead": "Founded in 2009 in Sion, Valais, Trident Software builds custom software, AI systems, and embedded solutions for European SMEs. Senior engineers only. Fixed budgets. Compliance included.",
+      "heroLead": "Founded in 2009 in Kharkiv, Ukraine, and incorporated in Sion, Valais, in 2022, Trident Software builds custom software, AI systems, and embedded solutions for European SMEs. Senior engineers only. Fixed budgets. Compliance included.",
       "chips": [
         "Sion, Valais, Switzerland",
         "ISO 27000 · revFADP",
-        "10+ engineers · 2 countries"
+        "Sion · Geneva"
       ],
       "storyLabel": "Our Story",
       "storyTitle": "Built by engineers, for engineers",
       "storyIntro": "Trident was born from frustration with agencies that overpromise and underdeliver. We set out to build a company where senior engineers own the outcome end-to-end.",
-      "storyP1": "We started in Sion, Switzerland in 2009 with two engineers and a conviction: great software requires great engineers who stay on the project from kickoff to deployment. No handoffs, no junior substitutions, no feature factories.",
+      "storyP1": "We started in Kharkiv, Ukraine in 2009 with two engineers and a conviction: great software requires great engineers who stay on the project from kickoff to deployment. No handoffs, no junior substitutions, no feature factories.",
       "storyP2": "Over 15 years we've delivered 100+ projects across automotive, healthcare, logistics, fashion, and SaaS — and integrated AI into production systems since 2021, well before the current wave.",
-      "storyP3": "Today we work from Sion and Kyiv with 10+ senior engineers who share the same standards: clean architecture, observable systems, and honest timelines.",
+      "storyP3": "Today we work from Sion and Geneva, with senior engineers who share the same standards: clean architecture, observable systems, and honest timelines.",
       "timeline": {
-        "y2009": "Founded in Sion, Valais, Switzerland",
+        "y2009": "Founded in Kharkiv, Ukraine: custom software for businesses in Eastern Europe and the USA",
         "y2012": "First embedded systems project — industrial IoT for manufacturing",
-        "y2015": "Opened Ukraine office for engineering talent",
+        "y2015": "8Move launched: order management, route planning and last-mile delivery",
         "y2021": "First production LLM integration — 18 months before ChatGPT launch",
+        "y2022": "Trident Software Sàrl incorporated in Sion, Valais, Switzerland",
         "y2023": "AI Services practice launched; 12 AI projects delivered in 12 months",
-        "y2024": "100+ projects delivered; 10+ senior engineers in Sion and Kyiv"
+        "y2024": "100+ projects delivered"
       },
       "valuesLabel": "Our Values",
       "valuesTitle": "How we work",
@@ -1129,22 +1124,22 @@
         }
       },
       "whereLabel": "Where we are",
-      "whereTitle": "Two locations, one team",
-      "whereLead": "CET coverage, multilingual communication, and senior engineers at every location.",
+      "whereTitle": "Sion and Geneva",
+      "whereLead": "Head office in Valais and an office at Campus Biotech in Geneva. Same time zone as you, four languages.",
       "locations": {
         "sion": {
           "city": "Sion, Valais",
           "country": "Switzerland",
-          "role": "HQ · Business Development · Compliance"
+          "role": "Head office · Rue de l'Industrie 23, 1950 Sion"
         },
-        "kyiv": {
-          "city": "Kyiv",
-          "country": "Ukraine",
-          "role": "Engineering · Development · QA"
+        "geneva": {
+          "city": "Geneva",
+          "country": "Switzerland",
+          "role": "Office · Campus Biotech Innovation Park, Av. de Sécheron 15, 1202 Geneva"
         }
       },
       "teamLabel": "The Team",
-      "teamTitle": "10+ senior engineers",
+      "teamTitle": "Engineers who stay on your project",
       "teamLead": "No juniors on client projects. Every engineer has 5+ years of production experience. You get the same people from kickoff to handoff.",
       "composition": {
         "backend": "Backend engineers",
@@ -1164,7 +1159,15 @@
     "hero": {
       "title": "Operational software and <b>AI agents,</b> built in Switzerland",
       "lead": "We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers, qualifies and processes documents in four national languages.",
-      "ctaAudit": "Book a free 45-min audit"
+      "ctaAudit": "Book a free 45-min audit",
+      "resultsTitle": "Measured on client projects",
+      "results": {
+        "consultations": "More consultations per physician, same salary",
+        "warranty": "Warranty cost, from 1.37 % to 0.51 % of revenue",
+        "invoice": "Less time spent per invoice",
+        "practice": "Medical practice · CH",
+        "maker": "Component maker · IT"
+      }
     },
     "heroLive": {
       "channels": {

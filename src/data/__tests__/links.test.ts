@@ -10,7 +10,7 @@ describe('team social links', () => {
     for (const m of team) for (const u of [m.linkedin, m.facebook].filter(Boolean) as string[]) expect(isHttps(u)).toBe(true)
   })
   it('matches the number of links Yevhen set', () => {
-    expect(team.filter((m) => m.linkedin).length).toBe(8)
+    expect(team.filter((m) => m.linkedin).length).toBe(12)
     expect(team.filter((m) => m.facebook).length).toBe(4)
   })
 })

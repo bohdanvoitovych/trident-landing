@@ -181,12 +181,6 @@
       "modelled": "MODELLIERT",
       "moreCases": "Weitere Fälle"
     },
-    "process": {
-      "drag": "Durch das Projekt ziehen",
-      "day": "Tag {day}",
-      "play": "Abspielen ▶",
-      "pause": "Pause ❙❙"
-    },
     "calc": {
       "minutes": "Minuten, die eine Person pro Anfrage aufwendet",
       "minutesValue": "{n} Min.",
@@ -440,7 +434,7 @@
     },
     "cases": {
       "metaTitle": "Softwareprojekte & Fallstudien | Trident Software Schweiz",
-      "metaDescription": "Über 100 umgesetzte Softwareprojekte: B2B-Plattformen für die Autobranche, KI im Gesundheitswesen, E-Commerce, IoT, SaaS. Schweizer Engineering-Team seit 2009.",
+      "metaDescription": "Über 100 umgesetzte Softwareprojekte: B2B-Plattformen für die Autobranche, KI im Gesundheitswesen, E-Commerce, IoT, SaaS. Engineering-Team seit 2009.",
       "label": "Portfolio",
       "title": "Geliefert, dann gezählt",
       "lead": "{total} Produkte und Plattformen für Kunden in der Schweiz und in Europa. {withCase} davon sind ausführlich dokumentiert, mit den Zahlen dahinter.",
@@ -451,7 +445,7 @@
     },
     "industries": {
       "metaTitle": "Softwareentwicklung nach Branche | Gesundheit, Auto, Fintech | Trident Software",
-      "metaDescription": "Individuelle Softwareentwicklung für über 20 Branchen: Gesundheit, Automobil, Fintech, Logistik, Detailhandel, SaaS, Industrie. Schweizer Team seit 2009. Festpreise, nDSG-konform.",
+      "metaDescription": "Individuelle Softwareentwicklung für über 20 Branchen: Gesundheit, Automobil, Fintech, Logistik, Detailhandel, SaaS, Industrie. Team seit 2009. Festpreise, nDSG-konform.",
       "crumb": "Branchen",
       "label": "Branchen-Know-how",
       "title": "Individuelle Softwareentwicklung<br></br>für über 20 Branchen",
@@ -524,7 +518,7 @@
       "metaTitle": "Unser Team | Trident Software",
       "metaDescription": "Über 10 Senior Engineers in der Schweiz und der Ukraine. Backend, Frontend, Mobile und Projektleitung. Keine Juniors in Kundenprojekten.",
       "crumb": "Unser Team",
-      "title": "10+ <blue>Senior Engineers</blue> in der Schweiz und der Ukraine",
+      "title": "Die Menschen, die Ihre Software <blue>bauen und betreiben</blue>",
       "lead": "Keine Juniors in Kundenprojekten. Alle Engineers haben über 5 Jahre Produktionserfahrung. Vom Kickoff bis zur Übergabe arbeiten Sie mit denselben Leuten.",
       "chips": {
         "engineers": "10+ Engineers",
@@ -1076,28 +1070,29 @@
     },
     "about": {
       "metaTitle": "Über uns | Trident Software",
-      "metaDescription": "Trident Software: Schweizer Softwareentwicklung mit KI im Kern. Gegründet 2009 in Sitten, Wallis. 10+ Ingenieure, 100+ Projekte, 20+ Länder.",
+      "metaDescription": "Trident Software: Softwareentwicklung mit KI im Kern. Gegründet 2009 in Charkiw, Ukraine; Schweizer Firma in Sitten, Wallis, seit 2022. 10+ Ingenieure, 100+ Projekte, 20+ Länder.",
       "label": "Über Trident",
       "heroTitle": "Schweizer Qualität. Engineering mit <blue>KI im Kern</blue>.",
-      "heroLead": "Trident Software wurde 2009 in Sitten im Wallis gegründet und entwickelt individuelle Software, KI-Systeme und Embedded-Lösungen für europäische KMU. Nur erfahrene Ingenieure. Feste Budgets. Compliance inklusive.",
+      "heroLead": "Trident Software wurde 2009 in Charkiw in der Ukraine gegründet und ist seit 2022 als Schweizer Firma in Sitten im Wallis eingetragen. Wir entwickeln individuelle Software, KI-Systeme und Embedded-Lösungen für europäische KMU. Nur erfahrene Ingenieure. Feste Budgets. Compliance inklusive.",
       "chips": [
         "Sitten, Wallis, Schweiz",
         "ISO 27000 · nDSG",
-        "10+ Ingenieure · 2 Länder"
+        "Sitten · Genf"
       ],
       "storyLabel": "Unsere Geschichte",
       "storyTitle": "Von Ingenieuren, für Ingenieure",
       "storyIntro": "Trident entstand aus dem Frust über Agenturen, die viel versprechen und wenig liefern. Unser Ziel: ein Unternehmen, in dem erfahrene Ingenieure das Ergebnis von Anfang bis Ende verantworten.",
-      "storyP1": "Wir haben 2009 in Sitten mit zwei Ingenieuren und einer Überzeugung begonnen: Gute Software braucht gute Ingenieure, die vom Kickoff bis zum Deployment am Projekt bleiben. Keine Übergaben, kein Austausch gegen Junioren, keine Feature-Fabrik.",
+      "storyP1": "Wir haben 2009 in Charkiw mit zwei Ingenieuren und einer Überzeugung begonnen: Gute Software braucht gute Ingenieure, die vom Kickoff bis zum Deployment am Projekt bleiben. Keine Übergaben, kein Austausch gegen Junioren, keine Feature-Fabrik.",
       "storyP2": "In über 15 Jahren haben wir mehr als 100 Projekte in Automobil, Gesundheitswesen, Logistik, Mode und SaaS umgesetzt. KI bringen wir seit 2021 in produktive Systeme, lange vor der aktuellen Welle.",
-      "storyP3": "Heute arbeiten wir in Sitten und Kyjiw, mit über 10 erfahrenen Ingenieuren, die dieselben Standards teilen: saubere Architektur, überwachbare Systeme und ehrliche Zeitpläne.",
+      "storyP3": "Heute arbeiten wir in Sitten und Genf, mit erfahrenen Ingenieuren, die dieselben Standards teilen: saubere Architektur, überwachbare Systeme und ehrliche Zeitpläne.",
       "timeline": {
-        "y2009": "Gründung in Sitten, Wallis, Schweiz",
+        "y2009": "Gründung in Charkiw, Ukraine: individuelle Software für Firmen in Osteuropa und den USA",
         "y2012": "Erstes Embedded-Projekt: industrielles IoT für die Fertigung",
-        "y2015": "Eröffnung des Büros in der Ukraine für Engineering-Talente",
+        "y2015": "Start von 8Move: Auftragsverwaltung, Tourenplanung und Zustellung auf der letzten Meile",
         "y2021": "Erste LLM-Integration im Produktivbetrieb, 18 Monate vor dem Start von ChatGPT",
+        "y2022": "Eintragung der Trident Software Sàrl in Sitten, Wallis, Schweiz",
         "y2023": "Start des Bereichs KI-Services; 12 KI-Projekte in 12 Monaten geliefert",
-        "y2024": "Über 100 Projekte geliefert; mehr als 10 Senior-Ingenieure in Sitten und Kyjiw"
+        "y2024": "Über 100 Projekte geliefert"
       },
       "valuesLabel": "Unsere Werte",
       "valuesTitle": "So arbeiten wir",
@@ -1129,22 +1124,22 @@
         }
       },
       "whereLabel": "Wo wir sind",
-      "whereTitle": "Zwei Standorte, ein Team",
-      "whereLead": "Abdeckung in der MEZ, mehrsprachige Kommunikation und erfahrene Ingenieure an jedem Standort.",
+      "whereTitle": "Sitten und Genf",
+      "whereLead": "Hauptsitz im Wallis und ein Büro auf dem Campus Biotech in Genf. Gleiche Zeitzone wie Sie, vier Sprachen.",
       "locations": {
         "sion": {
           "city": "Sitten, Wallis",
           "country": "Schweiz",
-          "role": "Hauptsitz · Geschäftsentwicklung · Compliance"
+          "role": "Hauptsitz · Rue de l'Industrie 23, 1950 Sitten"
         },
-        "kyiv": {
-          "city": "Kyjiw",
-          "country": "Ukraine",
-          "role": "Engineering · Entwicklung · QA"
+        "geneva": {
+          "city": "Genf",
+          "country": "Schweiz",
+          "role": "Büro · Campus Biotech Innovation Park, Av. de Sécheron 15, 1202 Genf"
         }
       },
       "teamLabel": "Das Team",
-      "teamTitle": "10+ erfahrene Ingenieure",
+      "teamTitle": "Ingenieure, die bei Ihrem Projekt bleiben",
       "teamLead": "Keine Junioren in Kundenprojekten. Jeder Ingenieur hat mehr als 5 Jahre Erfahrung im Produktivbetrieb. Sie arbeiten vom Kickoff bis zur Übergabe mit denselben Leuten.",
       "composition": {
         "backend": "Backend-Ingenieure",
@@ -1164,7 +1159,15 @@
     "hero": {
       "title": "Betriebssoftware und <b>KI-Agenten,</b> gebaut in der Schweiz",
       "lead": "Wir bauen die Systeme, mit denen Unternehmen jeden Tag arbeiten: Auftragserfassung, Disposition, Field-Apps, Fakturierung. Dazu die KI-Schicht, die Anfragen beantwortet, qualifiziert und Dokumente in vier Landessprachen verarbeitet.",
-      "ctaAudit": "Kostenloses 45-Min-Audit buchen"
+      "ctaAudit": "Kostenloses 45-Min-Audit buchen",
+      "resultsTitle": "Gemessen in Kundenprojekten",
+      "results": {
+        "consultations": "Mehr Konsultationen pro Arzt, gleicher Lohn",
+        "warranty": "Garantiekosten, von 1.37 % auf 0.51 % des Umsatzes",
+        "invoice": "Weniger Zeit pro Rechnung",
+        "practice": "Arztpraxis · CH",
+        "maker": "Komponentenhersteller · IT"
+      }
     },
     "heroLive": {
       "channels": {

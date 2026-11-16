@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Linkedin, Facebook } from 'lucide-react'
 import type { TeamMember } from '@/data/team'
 
-/** 4:5 cut-out on a wash→line gradient, name and role under a blue rule. No country. */
+/** 4:5 cut-out on a wash→line gradient, name and role under a blue rule. Social links sit on the name row and show on hover. */
 export function TeamCard({ member, headingLevel = 3 }: { member: TeamMember; headingLevel?: 3 | 4 }) {
   const H = headingLevel === 3 ? 'h3' : 'h4'
   return (
@@ -18,24 +18,26 @@ export function TeamCard({ member, headingLevel = 3 }: { member: TeamMember; hea
         )}
       </div>
       <figcaption className="team-meta">
-        <H style={{ margin: 0, font: 'inherit' }}>
-          <b>{member.name}</b>
-        </H>
+        <div className="team-name">
+          <H style={{ margin: 0, font: 'inherit' }}>
+            <b>{member.name}</b>
+          </H>
+          {(member.linkedin || member.facebook) && (
+            <span className="team-links">
+              {member.linkedin && (
+                <a href={member.linkedin} aria-label={`${member.name} on LinkedIn`} target="_blank" rel="noopener noreferrer">
+                  <Linkedin size={16} aria-hidden="true" />
+                </a>
+              )}
+              {member.facebook && (
+                <a href={member.facebook} aria-label={`${member.name} on Facebook`} target="_blank" rel="noopener noreferrer">
+                  <Facebook size={16} aria-hidden="true" />
+                </a>
+              )}
+            </span>
+          )}
+        </div>
         <span>{member.role}</span>
-        {(member.linkedin || member.facebook) && (
-          <span className="team-links">
-            {member.linkedin && (
-              <a href={member.linkedin} aria-label={`${member.name} on LinkedIn`} target="_blank" rel="noopener noreferrer">
-                <Linkedin size={16} aria-hidden="true" />
-              </a>
-            )}
-            {member.facebook && (
-              <a href={member.facebook} aria-label={`${member.name} on Facebook`} target="_blank" rel="noopener noreferrer">
-                <Facebook size={16} aria-hidden="true" />
-              </a>
-            )}
-          </span>
-        )}
       </figcaption>
     </figure>
   )

@@ -181,12 +181,6 @@
       "modelled": "MODELLATO",
       "moreCases": "Altri casi"
     },
-    "process": {
-      "drag": "Scorri il progetto",
-      "day": "Giorno {day}",
-      "play": "Avvia ▶",
-      "pause": "Pausa ❙❙"
-    },
     "calc": {
       "minutes": "Minuti che una persona dedica a ogni richiesta",
       "minutesValue": "{n} min",
@@ -440,7 +434,7 @@
     },
     "cases": {
       "metaTitle": "Progetti di sviluppo software e casi di studio | Trident Software Svizzera",
-      "metaDescription": "Oltre 100 progetti software consegnati: piattaforme B2B per l'automotive, IA in sanità, e-commerce, IoT, SaaS. Team di ingegneri svizzero dal 2009.",
+      "metaDescription": "Oltre 100 progetti software consegnati: piattaforme B2B per l'automotive, IA in sanità, e-commerce, IoT, SaaS. Team di ingegneri dal 2009.",
       "label": "Portfolio",
       "title": "Consegnati, poi contati",
       "lead": "{total} prodotti e piattaforme realizzati per clienti in Svizzera e in Europa. {withCase} sono descritti nel dettaglio, con i numeri che li sostengono.",
@@ -451,7 +445,7 @@
     },
     "industries": {
       "metaTitle": "Sviluppo software per settore | Sanità, auto, fintech | Trident Software",
-      "metaDescription": "Sviluppo software su misura per oltre 20 settori: sanità, automotive, fintech, logistica, retail, SaaS, manifattura. Team svizzero dal 2009. Budget fissi, conforme alla nLPD.",
+      "metaDescription": "Sviluppo software su misura per oltre 20 settori: sanità, automotive, fintech, logistica, retail, SaaS, manifattura. Team dal 2009. Budget fissi, conforme alla nLPD.",
       "crumb": "Settori",
       "label": "Competenza di settore",
       "title": "Sviluppo software su misura<br></br>per oltre 20 settori",
@@ -524,7 +518,7 @@
       "metaTitle": "Il nostro team | Trident Software",
       "metaDescription": "Oltre 10 ingegneri senior tra Svizzera e Ucraina. Backend, frontend, mobile e project management. Nessun junior sui progetti dei clienti.",
       "crumb": "Il nostro team",
-      "title": "10+ <blue>ingegneri senior</blue> tra Svizzera e Ucraina",
+      "title": "Le persone che <blue>costruiscono e gestiscono</blue> il vostro software",
       "lead": "Nessun junior sui progetti dei clienti. Ogni ingegnere ha più di 5 anni di esperienza in produzione. Lavori con le stesse persone dal kickoff alla consegna.",
       "chips": {
         "engineers": "10+ ingegneri",
@@ -1076,28 +1070,29 @@
     },
     "about": {
       "metaTitle": "Chi siamo | Trident Software",
-      "metaDescription": "Trident Software: azienda svizzera di ingegneria del software nativa IA. Fondata nel 2009 a Sion, in Vallese. 10+ ingegneri, 100+ progetti, 20+ Paesi.",
+      "metaDescription": "Trident Software: ingegneria del software nativa IA. Fondata nel 2009 a Kharkiv, in Ucraina; società svizzera a Sion, in Vallese, dal 2022. 10+ ingegneri, 100+ progetti, 20+ Paesi.",
       "label": "Chi è Trident",
       "heroTitle": "Qualità svizzera. Ingegneria <blue>nativa IA</blue>.",
-      "heroLead": "Fondata nel 2009 a Sion, in Vallese, Trident Software sviluppa software su misura, sistemi di IA e soluzioni embedded per le PMI europee. Solo ingegneri senior. Budget fissi. Conformità inclusa.",
+      "heroLead": "Fondata nel 2009 a Kharkiv, in Ucraina, e registrata a Sion, in Vallese, nel 2022, Trident Software sviluppa software su misura, sistemi di IA e soluzioni embedded per le PMI europee. Solo ingegneri senior. Budget fissi. Conformità inclusa.",
       "chips": [
         "Sion, Vallese, Svizzera",
         "ISO 27000 · nLPD",
-        "10+ ingegneri · 2 Paesi"
+        "Sion · Ginevra"
       ],
       "storyLabel": "La nostra storia",
       "storyTitle": "Fatta da ingegneri, per ingegneri",
       "storyIntro": "Trident è nata dalla frustrazione verso le agenzie che promettono molto e consegnano poco. Volevamo un'azienda in cui ingegneri senior rispondono del risultato dall'inizio alla fine.",
-      "storyP1": "Abbiamo iniziato a Sion nel 2009 con due ingegneri e una convinzione: un buon software richiede buoni ingegneri che restano sul progetto dal kickoff al deployment. Nessun passaggio di consegne, nessuna sostituzione con junior, nessuna fabbrica di funzionalità.",
+      "storyP1": "Abbiamo iniziato a Kharkiv, in Ucraina, nel 2009 con due ingegneri e una convinzione: un buon software richiede buoni ingegneri che restano sul progetto dal kickoff al deployment. Nessun passaggio di consegne, nessuna sostituzione con junior, nessuna fabbrica di funzionalità.",
       "storyP2": "In oltre 15 anni abbiamo consegnato più di 100 progetti in automotive, sanità, logistica, moda e SaaS. Dal 2021 integriamo l'IA in sistemi in produzione, ben prima dell'ondata attuale.",
-      "storyP3": "Oggi lavoriamo da Sion e Kyiv, con oltre 10 ingegneri senior che condividono gli stessi standard: architettura pulita, sistemi osservabili e tempi onesti.",
+      "storyP3": "Oggi lavoriamo da Sion e Ginevra, con ingegneri senior che condividono gli stessi standard: architettura pulita, sistemi osservabili e tempi onesti.",
       "timeline": {
-        "y2009": "Fondazione a Sion, in Vallese (Svizzera)",
+        "y2009": "Fondazione a Kharkiv, in Ucraina: software su misura per aziende dell'Europa dell'Est e degli Stati Uniti",
         "y2012": "Primo progetto di sistemi embedded: IoT industriale per la produzione",
-        "y2015": "Apertura della sede in Ucraina per i talenti dell'ingegneria",
+        "y2015": "Nasce 8Move: gestione degli ordini, pianificazione dei giri e consegna dell'ultimo miglio",
         "y2021": "Prima integrazione di un LLM in produzione, 18 mesi prima del lancio di ChatGPT",
+        "y2022": "Registrazione di Trident Software Sàrl a Sion, in Vallese (Svizzera)",
         "y2023": "Nasce la divisione Servizi IA; 12 progetti IA consegnati in 12 mesi",
-        "y2024": "Oltre 100 progetti consegnati; più di 10 ingegneri senior a Sion e Kyiv"
+        "y2024": "Oltre 100 progetti consegnati"
       },
       "valuesLabel": "I nostri valori",
       "valuesTitle": "Come lavoriamo",
@@ -1129,22 +1124,22 @@
         }
       },
       "whereLabel": "Dove siamo",
-      "whereTitle": "Due sedi, un solo team",
-      "whereLead": "Copertura sul fuso CET, comunicazione multilingue e ingegneri senior in ogni sede.",
+      "whereTitle": "Sion e Ginevra",
+      "whereLead": "Sede centrale in Vallese e un ufficio al Campus Biotech di Ginevra. Lo stesso fuso orario, quattro lingue.",
       "locations": {
         "sion": {
           "city": "Sion, Vallese",
           "country": "Svizzera",
-          "role": "Sede centrale · Sviluppo commerciale · Conformità"
+          "role": "Sede centrale · Rue de l'Industrie 23, 1950 Sion"
         },
-        "kyiv": {
-          "city": "Kyiv",
-          "country": "Ucraina",
-          "role": "Ingegneria · Sviluppo · QA"
+        "geneva": {
+          "city": "Ginevra",
+          "country": "Svizzera",
+          "role": "Ufficio · Campus Biotech Innovation Park, Av. de Sécheron 15, 1202 Ginevra"
         }
       },
       "teamLabel": "Il team",
-      "teamTitle": "10+ ingegneri senior",
+      "teamTitle": "Ingegneri che restano sul vostro progetto",
       "teamLead": "Nessun junior sui progetti dei clienti. Ogni ingegnere ha più di 5 anni di esperienza in produzione. Lavori con le stesse persone dal kickoff alla consegna.",
       "composition": {
         "backend": "Ingegneri backend",
@@ -1164,7 +1159,15 @@
     "hero": {
       "title": "Software operativo e <b>agenti AI,</b> sviluppati in Svizzera",
       "lead": "Costruiamo i sistemi con cui le aziende lavorano ogni giorno: acquisizione ordini, dispatch, app sul campo, fatturazione. E lo strato di AI che risponde, qualifica ed elabora documenti nelle quattro lingue nazionali.",
-      "ctaAudit": "Prenota un audit gratuito di 45 min"
+      "ctaAudit": "Prenota un audit gratuito di 45 min",
+      "resultsTitle": "Misurato su progetti dei clienti",
+      "results": {
+        "consultations": "Più visite per medico, stesso stipendio",
+        "warranty": "Costi di garanzia, dall'1.37 % allo 0.51 % del fatturato",
+        "invoice": "Meno tempo per fattura",
+        "practice": "Studio medico · CH",
+        "maker": "Produttore di componenti · IT"
+      }
     },
     "heroLive": {
       "channels": {
