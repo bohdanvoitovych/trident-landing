@@ -1171,11 +1171,12 @@
       "ctaAudit": "Kostenloses 45-Min-Audit buchen",
       "resultsTitle": "Gemessen in Kundenprojekten",
       "results": {
-        "consultations": "Mehr Konsultationen pro Arzt, gleicher Lohn",
-        "warranty": "Garantiekosten, von 1.37 % auf 0.51 % des Umsatzes",
-        "invoice": "Weniger Zeit pro Rechnung",
+        "consultations": "mehr Konsultationen pro Arzt, bei gleichem Lohn",
+        "warranty": "tiefere Garantiekosten: von 1.37 % auf 0.51 % des Umsatzes",
+        "invoice": "weniger Zeit pro Rechnung",
         "practice": "Arztpraxis · CH",
-        "maker": "Komponentenhersteller · IT"
+        "maker": "Komponentenhersteller · IT",
+        "more": "Zur Fallstudie"
       }
     },
     "heroLive": {

@@ -359,19 +359,18 @@ body.menu-open { overflow: hidden; }
 /* ---- Hero results: measured case figures, text only -------------------- */
 .hero-results-h { margin: 0 0 16px; font: 500 var(--fs-label)/1.2 var(--font-mono); color: var(--ink-3); }
 .hero-results { list-style: none; margin: 0; padding: 0 0 clamp(48px,5vw,80px); display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 32px; }
-.hero-results a { display: flex; flex-direction: column; gap: 8px; height: 100%; padding-top: 20px; border-top: 2px solid var(--line); color: inherit; text-decoration: none; transition: border-color .3s var(--ease); }
+.hero-results a { display: flex; flex-direction: column; gap: 10px; height: 100%; padding-top: 18px; border-top: 2px solid var(--line); color: inherit; text-decoration: none; transition: border-color .3s var(--ease); }
 .hero-results a:hover, .hero-results a:focus-visible { border-top-color: var(--blue); }
-.hero-results .v { font-size: clamp(32px,3vw,44px); font-weight: 600; letter-spacing: -.04em; line-height: 1; color: var(--blue); }
-.hero-results .d { font-size: 15px; line-height: 1.45; color: var(--ink); }
-.hero-results .s { margin-top: auto; font: 400 12px/1.4 var(--font-mono); color: var(--ink-3); }
-.hero-results .s i { font-style: normal; color: var(--blue); display: inline-block; transition: transform .3s var(--ease); }
-.hero-results a:hover .s i { transform: translateX(4px); }
+.hero-results .s { font: 400 12px/1.4 var(--font-mono); color: var(--ink-3); }
+.hero-results .d { font-size: 17px; line-height: 1.4; color: var(--ink); }
+.hero-results .v { font-weight: 600; letter-spacing: -.02em; color: var(--blue); white-space: nowrap; }
+.hero-results .more { margin-top: auto; font-size: 13px; font-weight: 600; color: var(--blue-d); }
+.hero-results .more i { font-style: normal; display: inline-block; transition: transform .3s var(--ease); }
+.hero-results a:hover .more i { transform: translateX(4px); }
 @media (max-width: 640px) {
-  .hero-results { grid-template-columns: 1fr; gap: 20px; }
-  .hero-results a { display: grid; grid-template-columns: 112px minmax(0,1fr); grid-template-areas: "v d" "v s"; column-gap: 16px; row-gap: 4px; padding-top: 16px; }
-  .hero-results .v { grid-area: v; font-size: 30px; }
-  .hero-results .d { grid-area: d; font-size: 14px; }
-  .hero-results .s { grid-area: s; margin-top: 0; }
+  .hero-results { grid-template-columns: 1fr; gap: 16px; }
+  .hero-results a { gap: 6px; padding-top: 14px; }
+  .hero-results .d { font-size: 15px; }
 }
 
 /* ---- Stat cards + mini visuals ------------------------------------------ */
@@ -832,9 +831,10 @@ a.uc-card:hover::after, a.uc-card:focus-visible::after { transform: scaleX(1); }
   .logo-tile img { max-width: 112px; max-height: 34px; }
   .logo-tile--sm { width: auto; height: 68px; }
   .hero-blob { display: none; }
-  .hero-visual { min-height: 440px; }
-  .hero-photo { inset: 0 0 64px 20px; }
-  .hero-log { width: 100%; max-width: 400px; }
+  /* Phones: the log alone tells the story; the routing diagram would double the hero's height. */
+  .hero-visual { min-height: 0; }
+  .hero-photo { display: none; }
+  .hero-log { position: relative; width: 100%; max-width: none; }
   .log-row { grid-template-columns: 34px 76px minmax(0,1fr) 26px; gap: 6px; padding: 10px 12px; font-size: 12px; }
   .log-row .ch { font-size: 10px; padding: 2px 3px; }
   .gap-panel { grid-template-columns: minmax(0,1fr) 104px; gap: 16px; padding: 20px; }

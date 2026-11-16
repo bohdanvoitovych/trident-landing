@@ -1171,11 +1171,12 @@
       "ctaAudit": "Réserver un audit gratuit de 45 min",
       "resultsTitle": "Mesuré sur des projets clients",
       "results": {
-        "consultations": "Plus de consultations par médecin, même salaire",
-        "warranty": "Coûts de garantie, de 1.37 % à 0.51 % du chiffre d'affaires",
-        "invoice": "Moins de temps par facture",
+        "consultations": "de consultations en plus par médecin, à salaire égal",
+        "warranty": "de coûts de garantie : de 1.37 % à 0.51 % du chiffre d'affaires",
+        "invoice": "de temps passé par facture",
         "practice": "Cabinet médical · CH",
-        "maker": "Fabricant de composants · IT"
+        "maker": "Fabricant de composants · IT",
+        "more": "Lire l'étude de cas"
       }
     },
     "heroLive": {

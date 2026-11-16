@@ -1171,11 +1171,12 @@
       "ctaAudit": "Prenota un audit gratuito di 45 min",
       "resultsTitle": "Misurato su progetti dei clienti",
       "results": {
-        "consultations": "Più visite per medico, stesso stipendio",
-        "warranty": "Costi di garanzia, dall'1.37 % allo 0.51 % del fatturato",
-        "invoice": "Meno tempo per fattura",
+        "consultations": "di visite in più per medico, a parità di stipendio",
+        "warranty": "di costi di garanzia: dall'1.37 % allo 0.51 % del fatturato",
+        "invoice": "di tempo per fattura",
         "practice": "Studio medico · CH",
-        "maker": "Produttore di componenti · IT"
+        "maker": "Produttore di componenti · IT",
+        "more": "Leggi il caso"
       }
     },
     "heroLive": {

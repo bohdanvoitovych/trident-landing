@@ -87,10 +87,12 @@ export function Hero() {
           {RESULTS.map((r) => (
             <li key={r.k}>
               <Link href={`/cases/${r.slug}`}>
-                <span className="v">{r.v}</span>
-                <span className="d">{th(`results.${r.k}`)}</span>
-                <span className="s">
-                  {th(`results.${r.src}`)} <i aria-hidden="true">→</i>
+                <span className="s">{th(`results.${r.src}`)}</span>
+                <span className="d">
+                  <span className="v">{r.v}</span> {th(`results.${r.k}`)}
+                </span>
+                <span className="more">
+                  {th('results.more')} <i aria-hidden="true">→</i>
                 </span>
               </Link>
             </li>
