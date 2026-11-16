@@ -277,7 +277,7 @@
     },
     "about": {
       "timelineLabel": "Timeline",
-      "timelineTitle": "2009 → today"
+      "timelineTitle": "How we got here"
     }
   },
   "templates": {
@@ -1083,16 +1083,14 @@
       "storyTitle": "Built by engineers, for engineers",
       "storyIntro": "Trident was born from frustration with agencies that overpromise and underdeliver. We set out to build a company where senior engineers own the outcome end-to-end.",
       "storyP1": "We started in Kharkiv, Ukraine in 2009 with two engineers and a conviction: great software requires great engineers who stay on the project from kickoff to deployment. No handoffs, no junior substitutions, no feature factories.",
-      "storyP2": "Over 15 years we've delivered 100+ projects across automotive, healthcare, logistics, fashion, and SaaS — and integrated AI into production systems since 2021, well before the current wave.",
+      "storyP2": "Over 15 years we've delivered 100+ projects across automotive, healthcare, logistics, fashion, and SaaS, and today we build AI into the production systems our clients run on.",
       "storyP3": "Today we work from Sion and Geneva, with senior engineers who share the same standards: clean architecture, observable systems, and honest timelines.",
       "timeline": {
-        "y2009": "Founded in Kharkiv, Ukraine: custom software for businesses in Eastern Europe and the USA",
-        "y2012": "First embedded systems project — industrial IoT for manufacturing",
-        "y2015": "8Move launched: order management, route planning and last-mile delivery",
-        "y2021": "First production LLM integration — 18 months before ChatGPT launch",
-        "y2022": "Trident Software Sàrl incorporated in Sion, Valais, Switzerland",
-        "y2023": "AI Services practice launched; 12 AI projects delivered in 12 months",
-        "y2024": "100+ projects delivered"
+        "y2009": "The team comes together in Kharkiv, Ukraine, building ERP and accounting systems for businesses",
+        "y2019": "Trident Software: custom software, with industrial and scientific projects",
+        "y2022": "Trident Software Sàrl incorporated in Sion, Valais",
+        "today": "Head office in Sion, office at Campus Biotech in Geneva, 100+ projects delivered",
+        "todayLabel": "Today"
       },
       "valuesLabel": "Our Values",
       "valuesTitle": "How we work",
@@ -1119,7 +1117,7 @@
           "desc": "73% of revenue from repeat clients. We build relationships, not one-off engagements."
         },
         "aiNative": {
-          "title": "AI-Native Since 2021",
+          "title": "AI in production",
           "desc": "We integrated AI before it became mainstream. LLMs, RAG, agents — production-deployed, not demos."
         }
       },
@@ -1141,14 +1139,6 @@
       "teamLabel": "The Team",
       "teamTitle": "Engineers who stay on your project",
       "teamLead": "No juniors on client projects. Every engineer has 5+ years of production experience. You get the same people from kickoff to handoff.",
-      "composition": {
-        "backend": "Backend engineers",
-        "frontend": "Frontend engineers",
-        "ai": "AI/ML specialists",
-        "embedded": "Embedded / IoT",
-        "devops": "DevOps / SRE",
-        "design": "UI/UX designers"
-      },
       "ctaTitle": "Ready to work with us?",
       "ctaLead": "Tell us about your project. We respond within 24 hours.",
       "ctaPrimary": "Start a conversation",

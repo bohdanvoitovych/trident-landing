@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react'
+import { Code2, Handshake, Languages, Receipt, ShieldCheck, Sparkles } from 'lucide-react'
 import { getLocale, getTranslations } from 'next-intl/server'
 import { ButtonLink, Label, Tag } from '@/components/atoms/controls'
 import { PageHero } from '@/components/molecules/PageHero'
@@ -23,28 +23,25 @@ export async function generateMetadata() {
   })
 }
 
-const VALUES = ['compliance', 'engineering', 'budgets', 'multilingual', 'partnership', 'aiNative'] as const
+const VALUES = [
+  { key: 'compliance', Icon: ShieldCheck },
+  { key: 'engineering', Icon: Code2 },
+  { key: 'budgets', Icon: Receipt },
+  { key: 'multilingual', Icon: Languages },
+  { key: 'partnership', Icon: Handshake },
+  { key: 'aiNative', Icon: Sparkles },
+] as const
 
-const YEARS = ['2009', '2012', '2015', '2021', '2022', '2023', '2024'] as const
+const YEARS = ['2009', '2019', '2022', 'today'] as const
 
 const LOCATIONS = ['sion', 'geneva'] as const
-
-const composition = [
-  { key: 'backend', value: 10 },
-  { key: 'frontend', value: 6 },
-  { key: 'ai', value: 4 },
-  { key: 'embedded', value: 3 },
-  { key: 'devops', value: 2 },
-  { key: 'design', value: 1 },
-]
-const maxComp = Math.max(...composition.map((c) => c.value))
 
 export default async function AboutPage() {
   const locale = await getLocale()
   const stats = getStats(locale)
   const t = await getTranslations('ui')
   const ta = await getTranslations('pages.about')
-  const timeline = YEARS.map((year) => ({ year, event: ta(`timeline.y${year}`) }))
+  const timeline = YEARS.map((y) => ({ year: y === 'today' ? ta('timeline.todayLabel') : y, event: ta(`timeline.${y === 'today' ? 'today' : `y${y}`}`) }))
 
   return (
     <>
@@ -120,8 +117,11 @@ export default async function AboutPage() {
             lead={ta('valuesLead')}
           />
           <div className="grid-3 stagger">
-            {VALUES.map((key) => (
+            {VALUES.map(({ key, Icon }) => (
               <div key={key} className="card card--flat feature-card">
+                <span className="feature-ico" aria-hidden="true">
+                  <Icon size={20} strokeWidth={1.75} />
+                </span>
                 <h3>{ta(`values.${key}.title`)}</h3>
                 <p>{ta(`values.${key}.desc`)}</p>
               </div>
@@ -160,19 +160,6 @@ export default async function AboutPage() {
               </h2>
               <p className="lead">{ta('teamLead')}</p>
             </div>
-            <dl className="m-0 flex flex-col gap-3.5">
-              {composition.map((c) => (
-                <div key={c.key} className="grid items-center gap-3.5 text-[14px]" style={{ gridTemplateColumns: 'minmax(0,11rem) minmax(0,1fr) 28px' }}>
-                  <dt>{ta(`composition.${c.key}`)}</dt>
-                  <dd className="m-0 contents">
-                    <span className="track track--10" aria-hidden="true" style={{ background: 'var(--line)' }}>
-                      <span className="fill" style={{ '--v': c.value / maxComp } as CSSProperties} />
-                    </span>
-                    <span className="mono text-right font-semibold">{c.value}</span>
-                  </dd>
-                </div>
-              ))}
-            </dl>
             <div>
               <ButtonLink href="/team" variant="ink" arrow>
                 {t('actions.meetTeam')}

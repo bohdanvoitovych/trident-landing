@@ -770,6 +770,14 @@ a.uc-card:hover::after, a.uc-card:focus-visible::after { transform: scaleX(1); }
 .feature-card { padding: 24px; display: flex; flex-direction: column; gap: 10px; }
 .feature-card h3 { margin: 0; font-size: 19px; font-weight: 600; letter-spacing: -.015em; line-height: 1.25; }
 .feature-card p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--ink-2); }
+.feature-ico { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-bottom: 4px; border-radius: var(--radius-card); background: var(--wash); color: var(--blue-d); }
+
+/* ---- About timeline: one row, each year once ----------------------------- */
+.tl { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
+.tl li { position: relative; display: flex; flex-direction: column; gap: 12px; padding-top: 28px; border-top: 2px solid var(--on-dark-line); }
+.tl li::before { content: ""; position: absolute; top: -7px; left: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 0 4px var(--ink); }
+.tl-year { font-size: clamp(32px,3.2vw,44px); font-weight: 600; letter-spacing: -.04em; line-height: 1; color: var(--blue-l); }
+.tl p { margin: 0; font-size: 16px; line-height: 1.5; color: var(--on-dark-2); }
 .num-list { list-style: none; margin: 0; padding: 0; counter-reset: n; border-top: 1px solid var(--line); }
 .num-list > li { counter-increment: n; display: grid; grid-template-columns: 48px minmax(0,1fr); gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--line); }
 .num-list > li::before { content: counter(n, decimal-leading-zero); font: 600 13px var(--font-mono); color: var(--blue-d); padding-top: 3px; }

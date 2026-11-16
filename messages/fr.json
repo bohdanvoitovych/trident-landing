@@ -277,7 +277,7 @@
     },
     "about": {
       "timelineLabel": "Historique",
-      "timelineTitle": "2009 → aujourd'hui"
+      "timelineTitle": "Notre parcours"
     }
   },
   "templates": {
@@ -1083,16 +1083,14 @@
       "storyTitle": "Créée par des ingénieurs, pour des ingénieurs",
       "storyIntro": "Trident est née d'un ras-le-bol face aux agences qui promettent beaucoup et livrent peu. Nous voulions une entreprise où des ingénieurs seniors portent le résultat du début à la fin.",
       "storyP1": "Nous avons démarré à Kharkiv, en Ukraine, en 2009 avec deux ingénieurs et une conviction : un bon logiciel exige de bons ingénieurs qui restent sur le projet du lancement jusqu'au déploiement. Pas de passation, pas de remplacement par des juniors, pas d'usine à fonctionnalités.",
-      "storyP2": "En plus de 15 ans, nous avons livré plus de 100 projets dans l'automobile, la santé, la logistique, la mode et le SaaS. Depuis 2021, nous intégrons l'IA dans des systèmes en production, bien avant la vague actuelle.",
+      "storyP2": "En plus de 15 ans, nous avons livré plus de 100 projets dans l'automobile, la santé, la logistique, la mode et le SaaS. Aujourd'hui, nous intégrons l'IA dans les systèmes en production de nos clients.",
       "storyP3": "Aujourd'hui, nous travaillons depuis Sion et Genève, avec des ingénieurs seniors qui partagent les mêmes exigences : une architecture propre, des systèmes observables et des délais honnêtes.",
       "timeline": {
-        "y2009": "Création à Kharkiv, en Ukraine : logiciels sur mesure pour des entreprises d'Europe de l'Est et des États-Unis",
-        "y2012": "Premier projet de systèmes embarqués : IoT industriel pour la production",
-        "y2015": "Lancement de 8Move : gestion des commandes, planification des tournées et livraison du dernier kilomètre",
-        "y2021": "Première intégration d'un LLM en production, 18 mois avant le lancement de ChatGPT",
-        "y2022": "Immatriculation de Trident Software Sàrl à Sion, en Valais (Suisse)",
-        "y2023": "Lancement de l'offre de services IA ; 12 projets IA livrés en 12 mois",
-        "y2024": "Plus de 100 projets livrés"
+        "y2009": "L'équipe se forme à Kharkiv, en Ukraine, et développe des systèmes ERP et comptables pour les entreprises",
+        "y2019": "Trident Software : logiciels sur mesure, avec des projets industriels et scientifiques",
+        "y2022": "Immatriculation de Trident Software Sàrl à Sion, en Valais",
+        "today": "Siège à Sion, bureau au Campus Biotech à Genève, plus de 100 projets livrés",
+        "todayLabel": "Aujourd'hui"
       },
       "valuesLabel": "Nos valeurs",
       "valuesTitle": "Notre façon de travailler",
@@ -1119,7 +1117,7 @@
           "desc": "73% de notre chiffre d'affaires vient de clients fidèles. Nous construisons des relations, pas des missions ponctuelles."
         },
         "aiNative": {
-          "title": "Native IA depuis 2021",
+          "title": "L'IA en production",
           "desc": "Nous avons intégré l'IA avant qu'elle ne se généralise. LLM, RAG, agents : en production, pas en démo."
         }
       },
@@ -1141,14 +1139,6 @@
       "teamLabel": "L'équipe",
       "teamTitle": "Des ingénieurs qui restent sur votre projet",
       "teamLead": "Aucun junior sur les projets clients. Chaque ingénieur a plus de 5 ans d'expérience en production. Vous travaillez avec les mêmes personnes du lancement à la livraison.",
-      "composition": {
-        "backend": "Ingénieurs backend",
-        "frontend": "Ingénieurs frontend",
-        "ai": "Spécialistes IA/ML",
-        "embedded": "Embarqué / IoT",
-        "devops": "DevOps / SRE",
-        "design": "Designers UI/UX"
-      },
       "ctaTitle": "Envie de travailler avec nous ?",
       "ctaLead": "Parlez-nous de votre projet. Nous vous répondons sous 24 heures.",
       "ctaPrimary": "Entamer la discussion",

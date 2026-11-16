@@ -277,7 +277,7 @@
     },
     "about": {
       "timelineLabel": "Chronik",
-      "timelineTitle": "2009 → heute"
+      "timelineTitle": "Unser Weg"
     }
   },
   "templates": {
@@ -1083,16 +1083,14 @@
       "storyTitle": "Von Ingenieuren, für Ingenieure",
       "storyIntro": "Trident entstand aus dem Frust über Agenturen, die viel versprechen und wenig liefern. Unser Ziel: ein Unternehmen, in dem erfahrene Ingenieure das Ergebnis von Anfang bis Ende verantworten.",
       "storyP1": "Wir haben 2009 in Charkiw mit zwei Ingenieuren und einer Überzeugung begonnen: Gute Software braucht gute Ingenieure, die vom Kickoff bis zum Deployment am Projekt bleiben. Keine Übergaben, kein Austausch gegen Junioren, keine Feature-Fabrik.",
-      "storyP2": "In über 15 Jahren haben wir mehr als 100 Projekte in Automobil, Gesundheitswesen, Logistik, Mode und SaaS umgesetzt. KI bringen wir seit 2021 in produktive Systeme, lange vor der aktuellen Welle.",
+      "storyP2": "In über 15 Jahren haben wir mehr als 100 Projekte in Automobil, Gesundheitswesen, Logistik, Mode und SaaS umgesetzt. Heute bauen wir KI in die produktiven Systeme ein, mit denen unsere Kunden arbeiten.",
       "storyP3": "Heute arbeiten wir in Sitten und Genf, mit erfahrenen Ingenieuren, die dieselben Standards teilen: saubere Architektur, überwachbare Systeme und ehrliche Zeitpläne.",
       "timeline": {
-        "y2009": "Gründung in Charkiw, Ukraine: individuelle Software für Firmen in Osteuropa und den USA",
-        "y2012": "Erstes Embedded-Projekt: industrielles IoT für die Fertigung",
-        "y2015": "Start von 8Move: Auftragsverwaltung, Tourenplanung und Zustellung auf der letzten Meile",
-        "y2021": "Erste LLM-Integration im Produktivbetrieb, 18 Monate vor dem Start von ChatGPT",
-        "y2022": "Eintragung der Trident Software Sàrl in Sitten, Wallis, Schweiz",
-        "y2023": "Start des Bereichs KI-Services; 12 KI-Projekte in 12 Monaten geliefert",
-        "y2024": "Über 100 Projekte geliefert"
+        "y2009": "Das Team findet sich in Charkiw, Ukraine, und baut ERP- und Buchhaltungssysteme für Unternehmen",
+        "y2019": "Trident Software: individuelle Software, dazu Industrie- und Forschungsprojekte",
+        "y2022": "Eintragung der Trident Software Sàrl in Sitten, Wallis",
+        "today": "Hauptsitz in Sitten, Büro auf dem Campus Biotech in Genf, über 100 Projekte geliefert",
+        "todayLabel": "Heute"
       },
       "valuesLabel": "Unsere Werte",
       "valuesTitle": "So arbeiten wir",
@@ -1119,7 +1117,7 @@
           "desc": "73% unseres Umsatzes stammen von wiederkehrenden Kunden. Wir bauen Beziehungen auf, keine Einmalaufträge."
         },
         "aiNative": {
-          "title": "KI im Kern seit 2021",
+          "title": "KI im Produktivbetrieb",
           "desc": "Wir haben KI eingesetzt, bevor sie Mainstream war. LLMs, RAG, Agenten: produktiv im Einsatz, keine Demos."
         }
       },
@@ -1141,14 +1139,6 @@
       "teamLabel": "Das Team",
       "teamTitle": "Ingenieure, die bei Ihrem Projekt bleiben",
       "teamLead": "Keine Junioren in Kundenprojekten. Jeder Ingenieur hat mehr als 5 Jahre Erfahrung im Produktivbetrieb. Sie arbeiten vom Kickoff bis zur Übergabe mit denselben Leuten.",
-      "composition": {
-        "backend": "Backend-Ingenieure",
-        "frontend": "Frontend-Ingenieure",
-        "ai": "KI/ML-Spezialisten",
-        "embedded": "Embedded / IoT",
-        "devops": "DevOps / SRE",
-        "design": "UI/UX-Designer"
-      },
       "ctaTitle": "Bereit für die Zusammenarbeit?",
       "ctaLead": "Erzählen Sie uns von Ihrem Projekt. Wir antworten innert 24 Stunden.",
       "ctaPrimary": "Gespräch beginnen",

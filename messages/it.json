@@ -277,7 +277,7 @@
     },
     "about": {
       "timelineLabel": "Cronologia",
-      "timelineTitle": "2009 → oggi"
+      "timelineTitle": "Il nostro percorso"
     }
   },
   "templates": {
@@ -1083,16 +1083,14 @@
       "storyTitle": "Fatta da ingegneri, per ingegneri",
       "storyIntro": "Trident è nata dalla frustrazione verso le agenzie che promettono molto e consegnano poco. Volevamo un'azienda in cui ingegneri senior rispondono del risultato dall'inizio alla fine.",
       "storyP1": "Abbiamo iniziato a Kharkiv, in Ucraina, nel 2009 con due ingegneri e una convinzione: un buon software richiede buoni ingegneri che restano sul progetto dal kickoff al deployment. Nessun passaggio di consegne, nessuna sostituzione con junior, nessuna fabbrica di funzionalità.",
-      "storyP2": "In oltre 15 anni abbiamo consegnato più di 100 progetti in automotive, sanità, logistica, moda e SaaS. Dal 2021 integriamo l'IA in sistemi in produzione, ben prima dell'ondata attuale.",
+      "storyP2": "In oltre 15 anni abbiamo consegnato più di 100 progetti in automotive, sanità, logistica, moda e SaaS. Oggi integriamo l'IA nei sistemi in produzione dei nostri clienti.",
       "storyP3": "Oggi lavoriamo da Sion e Ginevra, con ingegneri senior che condividono gli stessi standard: architettura pulita, sistemi osservabili e tempi onesti.",
       "timeline": {
-        "y2009": "Fondazione a Kharkiv, in Ucraina: software su misura per aziende dell'Europa dell'Est e degli Stati Uniti",
-        "y2012": "Primo progetto di sistemi embedded: IoT industriale per la produzione",
-        "y2015": "Nasce 8Move: gestione degli ordini, pianificazione dei giri e consegna dell'ultimo miglio",
-        "y2021": "Prima integrazione di un LLM in produzione, 18 mesi prima del lancio di ChatGPT",
-        "y2022": "Registrazione di Trident Software Sàrl a Sion, in Vallese (Svizzera)",
-        "y2023": "Nasce la divisione Servizi IA; 12 progetti IA consegnati in 12 mesi",
-        "y2024": "Oltre 100 progetti consegnati"
+        "y2009": "Il team nasce a Kharkiv, in Ucraina, sviluppando sistemi ERP e contabili per le aziende",
+        "y2019": "Trident Software: software su misura, con progetti industriali e scientifici",
+        "y2022": "Registrazione di Trident Software Sàrl a Sion, in Vallese",
+        "today": "Sede a Sion, ufficio al Campus Biotech di Ginevra, oltre 100 progetti consegnati",
+        "todayLabel": "Oggi"
       },
       "valuesLabel": "I nostri valori",
       "valuesTitle": "Come lavoriamo",
@@ -1119,7 +1117,7 @@
           "desc": "Il 73% del fatturato arriva da clienti che tornano. Costruiamo relazioni, non incarichi isolati."
         },
         "aiNative": {
-          "title": "Nativi IA dal 2021",
+          "title": "IA in produzione",
           "desc": "Abbiamo integrato l'IA prima che diventasse mainstream. LLM, RAG, agenti: in produzione, non demo."
         }
       },
@@ -1141,14 +1139,6 @@
       "teamLabel": "Il team",
       "teamTitle": "Ingegneri che restano sul vostro progetto",
       "teamLead": "Nessun junior sui progetti dei clienti. Ogni ingegnere ha più di 5 anni di esperienza in produzione. Lavori con le stesse persone dal kickoff alla consegna.",
-      "composition": {
-        "backend": "Ingegneri backend",
-        "frontend": "Ingegneri frontend",
-        "ai": "Specialisti IA/ML",
-        "embedded": "Embedded / IoT",
-        "devops": "DevOps / SRE",
-        "design": "Designer UI/UX"
-      },
       "ctaTitle": "Pronto a lavorare con noi?",
       "ctaLead": "Raccontaci il tuo progetto. Rispondiamo entro 24 ore.",
       "ctaPrimary": "Inizia una conversazione",
