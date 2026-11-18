@@ -97,4 +97,12 @@ describe('next.config redirects()', () => {
     const all = (await nextConfig.redirects!()) as Redirect[]
     for (const r of mine) expect(all).toContainEqual(r)
   })
+
+  // Old WordPress URLs end in '/'. With Next's built-in slash redirect first, each took two hops.
+  it('strips the trailing slash only after every explicit redirect (one hop for old URLs)', async () => {
+    expect(nextConfig.skipTrailingSlashRedirect).toBe(true)
+    const all = (await nextConfig.redirects!()) as Redirect[]
+    expect(all.at(-1)).toEqual({ source: '/:path+/', destination: '/:path+', permanent: true })
+    expect(all.filter((r) => r.source === '/:path+/')).toHaveLength(1)
+  })
 })

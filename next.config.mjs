@@ -12,6 +12,10 @@ const nextConfig = {
   // Render <meta>/<title> in <head> for every client instead of streaming
   // them into <body> (Lighthouse and some crawlers only read <head>).
   htmlLimitedBots: /.*/,
+  // Next's own "strip the trailing slash" redirect runs before ours, so an old
+  // WordPress URL (always with a slash) took two hops. The same rule now runs
+  // last in redirects(), after the explicit `/old-url/` entries.
+  skipTrailingSlashRedirect: true,
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'trident-software.ch', pathname: '/wp-content/uploads/**' },
@@ -27,6 +31,8 @@ const nextConfig = {
       { source: '/our-team/', destination: '/team', permanent: true },
       { source: '/contacts', destination: '/contact', permanent: true },
       { source: '/contacts/', destination: '/contact', permanent: true },
+      { source: '/portfolio', destination: '/projects', permanent: true },
+      { source: '/portfolio/', destination: '/projects', permanent: true },
       { source: '/our-solutions', destination: '/solutions', permanent: true },
       { source: '/our-solutions/', destination: '/solutions', permanent: true },
       { source: '/our-solutions/websites', destination: '/solutions/websites', permanent: true },
@@ -510,6 +516,9 @@ const nextConfig = {
       // ─── Case studies merged into another (Aida → post-acute clinic network) ───
       ...buildMergedCaseRedirects(),
       ...buildRemovedProjectRedirects(),
+
+      // ─── Must stay last: any other URL loses its trailing slash (see skipTrailingSlashRedirect) ───
+      { source: '/:path+/', destination: '/:path+', permanent: true },
     ]
   },
 
