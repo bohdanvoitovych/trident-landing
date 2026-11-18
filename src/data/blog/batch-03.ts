@@ -113,7 +113,7 @@ Les joueurs commandent l'éclairage, la climatisation, la musique, l'enregistrem
 Une expérience éprouvée de l'IoT, un développement de bout en bout et une architecture évolutive ont fait de Trident Software le bon choix pour ce projet. La plateforme est conçue pour passer d'un pilote dans une seule ville à un réseau régional d'infrastructures sportives.`,
         authorRole: "Développeur principal, Trident Software",
         meta: {
-          title: "ArenaWave : Logiciel de gestion sportive IoT — Trident Software",
+          title: "ArenaWave : logiciel de gestion sportive IoT",
           description: "Comment ArenaWave transforme les terrains de sport en espaces intelligents avec IoT et gestion automatisée.",
         },
       },
@@ -217,7 +217,7 @@ I giocatori gestiscono luci, aria condizionata, musica, registrazione video dell
 Esperienza comprovata nell'IoT, sviluppo end-to-end e un'architettura scalabile hanno reso Trident Software la scelta giusta per questo progetto. La piattaforma è pensata per crescere da un progetto pilota in una sola città a una rete regionale di infrastrutture sportive.`,
         authorRole: "Sviluppatore principale, Trident Software",
         meta: {
-          title: "ArenaWave: Software di Gestione Sportiva IoT — Trident Software",
+          title: "ArenaWave: software di gestione sportiva IoT",
           description: "Come ArenaWave trasforma i campi sportivi in spazi intelligenti con IoT e gestione automatizzata.",
         },
       },
@@ -289,7 +289,7 @@ The right model depends on the industry and the value of the data being collecte
       "strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions",
     ],
     meta: {
-      title: "IoT & blockchain: can it truly deliver? | Trident Software Blog",
+      title: "IoT & blockchain: can it truly deliver? | Trident Software",
       description: "Practical analysis of IoT and blockchain integration. Where smart contracts and tamper-proof data add real value, and where the hype falls short.",
     },
     translations: {
@@ -436,7 +436,7 @@ Nella pratica funzionano tre modelli:
 Il modello giusto dipende dal settore e dal valore dei dati raccolti.`,
         authorRole: "CTO, Trident Software",
         meta: {
-          title: "IoT e blockchain: promesse mantenute? | Trident Software Blog",
+          title: "IoT e blockchain: promesse mantenute? | Trident Software",
           description: "Un'analisi pratica di IoT e blockchain: dove smart contract e dati a prova di manomissione portano valore reale e dove l'hype non regge.",
         },
       },
@@ -542,7 +542,7 @@ Das Rapid Ramp Credit Program (ARCC) von AWS schenkt KMU ein Guthaben von $300 f
 Kontaktieren Sie Trident Software für eine Analyse Ihrer Cloud-Sicherheit und einen Umsetzungsplan, der auf Ihre Infrastruktur zugeschnitten ist.`,
         authorRole: "DevOps Engineer, Trident Software",
         meta: {
-          title: "Cloud-Sicherheit für KMU mit kleinem Budget | Trident Software",
+          title: "Cloud-Sicherheit für KMU mit kleinem Budget",
           description: "Wie KMU mit AWS Lambda für wenige Cent pro Monat Cloud-Sicherheit auf Enterprise-Niveau umsetzen. Leitfaden mit AWS IAM, GuardDuty und Security Hub.",
         },
       },
@@ -740,7 +740,7 @@ La solution réunit trois composants :
 Résultat : une solution de scan pour l'entrepôt qui coûte moins cher, tombe moins souvent en panne et s'intègre mieux.`,
         authorRole: "Chef de projet, Trident Software",
         meta: {
-          title: "WMS Mobile App : De Traditionnel à Flexible — Trident Software",
+          title: "WMS mobile : du traditionnel au flexible | Trident Software",
           description: "Comment les solutions mobiles WMS modernes remplacent les terminaux obsolètes pour améliorer l'efficacité des entrepôts.",
         },
       },
@@ -788,7 +788,7 @@ Die Lösung besteht aus drei Komponenten:
 Das Ergebnis ist eine Scanner-Lösung fürs Lager, die weniger kostet, seltener ausfällt und sich besser integrieren lässt.`,
         authorRole: "Projektleiter, Trident Software",
         meta: {
-          title: "WMS Mobile App: Von traditionell zu flexibel — Trident Software",
+          title: "WMS-Mobile-App: von traditionell zu flexibel",
           description: "Wie moderne mobile WMS-Lösungen veraltete Lagerterminals ersetzen und Effizienz verbessern.",
         },
       },
@@ -836,13 +836,13 @@ La soluzione unisce tre componenti:
 Il risultato è una soluzione di scansione per il magazzino che costa meno, si guasta meno e si integra meglio.`,
         authorRole: "Project Manager, Trident Software",
         meta: {
-          title: "App Mobile WMS: Da Tradizionale a Flessibile — Trident Software",
+          title: "App mobile WMS: da tradizionale a flessibile",
           description: "Come le soluzioni WMS mobili moderne sostituiscono i terminali obsoleti migliorando efficienza e sicurezza.",
         },
       },
     },
     meta: {
-      title: "Flutter WMS mobile app for warehouse management | Trident Software Blog",
+      title: "Flutter WMS mobile app for warehouse management",
       description: "Replace expensive traditional warehouse scanners with a Flutter app on a smartphone plus a ring scanner. Lower cost, better integration, fewer breakdowns.",
     },
   },
@@ -900,7 +900,7 @@ QR code + NFC tag setup requires minimal investment (printed cards, NFC stickers
       "the-power-of-outsourcing-unlocking-efficiency-and-innovation-in-short-term-projects",
     ],
     meta: {
-      title: "Free restaurant advertising via customer reviews | Trident Software Blog",
+      title: "Free restaurant advertising via customer reviews",
       description: "Use QR codes and NFC tags to generate restaurant reviews at scale. Turn every customer into an advertiser with a simple scan-to-review flow.",
     },
     translations: {
@@ -984,7 +984,7 @@ Cette boucle de retour vous permet d'ajuster le service, la carte et votre organ
 Un dispositif QR code + tag NFC demande un investissement minime (cartes imprimées, autocollants NFC). Le formulaire web peut se résumer à un Google Form qui redirige vers votre fiche Google Business. Pour des besoins plus poussés, nous développons des systèmes de feedback sur mesure avec tableaux de bord analytiques.`,
         authorRole: "Chef de projet, Trident Software",
         meta: {
-          title: "Restaurants : de la pub gratuite via les avis | Trident Software",
+          title: "Restaurants : de la pub gratuite grâce aux avis clients",
           description: "Utilisez des QR codes et des tags NFC pour multiplier les avis sur votre restaurant. Un simple scan, et chaque client devient votre ambassadeur.",
         },
       },
@@ -1284,7 +1284,7 @@ All of these tactics work together. SEO brings discovery; UX converts; trust ret
       "free-advertising-for-restaurants-through-customer-feedback",
     ],
     meta: {
-      title: "eCommerce growth tactics that actually work | Trident Software Blog",
+      title: "eCommerce growth tactics that actually work",
       description: "Six tactics for ecommerce growth: SEO, UX, trust signals, Google Merchant, email and analytics, and how they work together.",
     },
     translations: {

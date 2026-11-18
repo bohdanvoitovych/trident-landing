@@ -1,7 +1,7 @@
 import { existsSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it, vi } from 'vitest'
-import { getPosts, getPostSlugs, getPostLocales, getPublishedPosts } from '.'
+import { getPostBySlug, getPosts, getPostSlugs, getPostLocales, getPublishedPosts } from '.'
 import { posts as batch08 } from './batch-08'
 import { posts as batch09All } from './batch-09'
 
@@ -34,6 +34,15 @@ describe('blog data', () => {
 
   it('every EN meta description is at most 160 characters', () => {
     for (const p of posts) expect(p.meta.description.length, p.slug).toBeLessThanOrEqual(160)
+  })
+
+  // Google cuts titles at about 60 characters; the tail usually carries the brand.
+  it('every published meta title is at most 60 characters', () => {
+    for (const slug of getPostSlugs())
+      for (const l of getPostLocales(slug)) {
+        const title = getPostBySlug(slug, l)!.meta.title
+        expect(title.length, `${slug}/${l}: ${title}`).toBeLessThanOrEqual(60)
+      }
   })
 
   it('relatedPosts point to posts that exist', () => {

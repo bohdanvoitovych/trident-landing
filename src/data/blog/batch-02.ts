@@ -148,7 +148,7 @@ The applications span industries. In healthcare, autonomous agents process medic
 
 Generic implementations rarely capture industry-specific requirements. Trident Software builds agents around how a specific operation works, because that is where the competitive advantage lies.`,
     meta: {
-      title: "Autonomous AI agents for business: from data to decisions | Trident Software",
+      title: "Autonomous AI agents for business: from data to decisions",
       description: "How autonomous AI agents, which combine LLMs, real-time tools and memory, are changing operations in healthcare, finance, supply chain and manufacturing.",
     },
     translations: {
@@ -333,7 +333,7 @@ La trasformazione di La Pochette mostra una situazione che vediamo spesso tra i 
       },
     },
     meta: {
-      title: "La Pochette online shop: WooCommerce redesign by Trident Software",
+      title: "La Pochette online shop: WooCommerce redesign",
       description: "How Trident Software launched a WooCommerce shop for La Pochette, replacing a limited site with a full online shop for restaurant supply.",
     },
   },
@@ -1047,7 +1047,7 @@ L'affichage clair indique la disponibilité de chaque article par date (aujourd'
 Zenit Auto est une plateforme B2B de pièces automobiles aboutie. Elle simplifie les achats en gros et s'appuie sur les standards modernes de données du secteur automobile.`,
         authorRole: "CTO, Trident Software",
         meta: {
-          title: "Zenit Auto : plateforme B2B de pièces auto | Trident Software",
+          title: "Zenit Auto : plateforme B2B de pièces auto",
           description: "Zenit Auto : plateforme B2B de vente en gros de pièces automobiles avec intégration TecDoc, recherche avancée et livraisons sur plusieurs paniers.",
         },
       },
@@ -1093,7 +1093,7 @@ La visualizzazione chiara mostra la disponibilità degli articoli per data (oggi
 Zenit Auto è una piattaforma B2B per ricambi auto completa e matura. Semplifica gli acquisti all'ingrosso e si integra con gli standard moderni dei dati del settore automobilistico.`,
         authorRole: "CTO, Trident Software",
         meta: {
-          title: "Zenit Auto: piattaforma B2B per ricambi auto | Trident Software",
+          title: "Zenit Auto: piattaforma B2B per ricambi auto",
           description: "Zenit Auto: piattaforma B2B per ricambi auto all'ingrosso con integrazione TecDoc, ricerca avanzata e gestione delle consegne su più carrelli.",
         },
       },

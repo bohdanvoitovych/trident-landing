@@ -35,7 +35,7 @@ Ordering, warehouse and delivery now run on one system. Distributors using 8Move
 
 If your team still runs auto parts distribution across disconnected tools, the integration gap probably costs more than you think. Ask Trident Software for a walkthrough of the platform based on your distribution setup.`,
     meta: {
-      title: "Smart auto parts software: unified eCommerce, warehouse & delivery | Trident Software",
+      title: "Smart auto parts software: eCommerce, warehouse, delivery",
       description: "How 8Move unifies eCommerce, warehouse management, delivery automation, and AI for auto parts distributors. 35% lower costs, 57% more automated orders.",
     },
     translations: {
@@ -145,7 +145,7 @@ We will also show our mobile warehouse app for inventory management with barcode
 
 If you're attending Automechanika Dubai 2025, find us at Hall 8, Booth F18. We look forward to hearing about the operational problems of your aftermarket business and showing how our software addresses them.`,
     meta: {
-      title: "Automechanika Dubai 2025: Trident Software at Hall 8, Booth F18",
+      title: "Automechanika Dubai 2025: Trident at Hall 8, Booth F18",
       description: "Meet Trident Software at Automechanika Dubai 2025. See our B2B spare parts portal, 8Move logistics app, and AI automation tools at Hall 8, Booth F18.",
     },
     translations: {
@@ -251,7 +251,7 @@ Beyond product development, the AI applications with most impact for SMEs tend t
 
 AI handles repetitive tasks well, but architectural decisions, system integrations, and business process analysis still require expert guidance. SMEs that pair AI tools with experienced partners get the best of both.`,
     meta: {
-      title: "Practical AI for SMEs: real use cases that deliver ROI | Trident Software",
+      title: "Practical AI for SMEs: real use cases that deliver ROI",
       description: "Where AI actually works for small and medium businesses: from compressing development timelines to automating invoices, emails, and client file management.",
     },
     translations: {
@@ -363,7 +363,7 @@ Invoice management software with mobile scanning automates the whole workflow. T
 
 The results were concrete: accounting costs dropped 81% from CHF 1,500 to CHF 150 per quarter, processing time fell tenfold, and cash flow improved 65% through automated payment reminders.`,
     meta: {
-      title: "Digital invoice scanner: 81% cost reduction for Swiss SMEs | Trident Software",
+      title: "Digital invoice scanner: 81% cost reduction for Swiss SMEs",
       description: "How a small Swiss business cut invoice processing costs by 81% using digital scanning with OCR and automated payment workflows.",
     },
     translations: {
@@ -475,7 +475,7 @@ Order processing time dropped from 30+ minutes to 5 minutes. Repeat orders incre
 
 The key decision was integrating with the existing 1C ERP rather than replacing it. This preserved institutional knowledge embedded in the system, reduced transition risk, and shortened the path to ROI.`,
     meta: {
-      title: "Custom auto parts B2B eCommerce: 39% more repeat orders | Trident Software",
+      title: "Custom auto parts B2B eCommerce: 39% more repeat orders",
       description: "How a custom B2B platform cut auto parts order processing from 30 minutes to 5, increased repeat orders 39%, and paid for itself in under 9 months.",
     },
     translations: {
@@ -587,7 +587,7 @@ Manual processes create compounding risks through errors, delays, and staffing d
 
 Automation is increasingly part of how organisations demonstrate reliability to partners, clients, investors, and employees. Trident Software helps organisations find the automation opportunities that make them more resilient.`,
     meta: {
-      title: "Automation and business resilience in an unstable world | Trident Software",
+      title: "Automation and business resilience in an unstable world",
       description: "How modular automation helps SMEs build operational resilience against geopolitical shifts, supply chain disruptions, and regulatory changes.",
     },
     translations: {
@@ -699,7 +699,7 @@ Rather than waiting passively at the booth, we visited other exhibitors and spok
 
 The event's main value was meeting people in person. Custom demos and proposals are already being prepared for companies we met during the exhibition.`,
     meta: {
-      title: "EPHJ 2025 recap: Trident Software at Geneva precision industry fair",
+      title: "EPHJ 2025 recap: Trident at Geneva's precision industry fair",
       description: "Our takeaways from EPHJ 2025: presenting 8Move and custom software services, and what precision industry companies really look for in digital partners.",
     },
     translations: {

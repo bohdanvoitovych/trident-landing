@@ -71,7 +71,7 @@ Contact us to discuss your project scope and get a fixed-price proposal.`,
       "introducing-our-new-b2b-client-management-panel",
     ],
     meta: {
-      title: "Outsourcing for short-term projects: cost-benefit analysis | Trident Software Blog",
+      title: "Outsourcing for short-term projects: cost-benefit analysis",
       description: "Outsourcing a 6-month development project saves $72,000 vs in-house execution. Detailed cost comparison and six strategic benefits of outsourcing.",
     },
     translations: {
@@ -495,7 +495,7 @@ Il pannello è disponibile come prodotto a sé stante o come livello di integraz
       },
     },
     meta: {
-      title: "B2B client management panel with 5-level access control | Trident Software Blog",
+      title: "B2B client management panel with 5-level access control",
       description: "New B2B management panel with hierarchical access control across distributors, dealers and customers. Real-time monitoring and custom subscriptions.",
     },
   },
@@ -1050,7 +1050,7 @@ The Venture Evolution IT Package took this idea from a conversation to enterpris
       "arenawave-digital-court-system",
     ],
     meta: {
-      title: "Venture Evolution IT Package for startups | Trident Software Blog",
+      title: "Venture Evolution IT Package for startups | Trident Software",
       description: "A 6-stage startup framework from promo website to scaled product. How WaterTDS went from idea to Google Campus with Trident's Venture Evolution IT Package.",
     },
     translations: {
@@ -1429,7 +1429,7 @@ Die Admin-Oberfläche von Payload ist der Grund, warum nicht-technische Mitarbei
 Für alles andere, also Firmenwebsites, Produkt-Marketingseiten, Blogs und Portfolios, amortisiert sich die Anfangsinvestition innert 6 Monaten durch tiefere Wartungskosten.`,
         authorRole: "Engineering-Blog",
         meta: {
-          title: "Next.js + Payload CMS für Schweizer KMU — Trident Software Blog",
+          title: "Next.js + Payload CMS für Schweizer KMU | Trident Software",
           description: "Eingebettete CMS-Architektur mit Next.js 15 und Payload CMS 3. Warum dieser Stack für Schweizer KMU-Websites die beste Wahl ist.",
         },
         faq: [
@@ -1518,7 +1518,7 @@ L'interface d'administration de Payload est la raison pour laquelle les utilisat
 Pour tout le reste, qu'il s'agisse de sites d'entreprise, de pages marketing produit, de blogs ou de portfolios, cette stack rentabilise l'investissement initial en 6 mois grâce aux économies de maintenance.`,
         authorRole: "Blog technique",
         meta: {
-          title: "Next.js + Payload CMS pour PME suisses — Trident Software Blog",
+          title: "Next.js + Payload CMS pour PME suisses | Trident Software",
           description: "Architecture CMS embarquée avec Next.js 15 et Payload CMS 3. Pourquoi cette stack est le meilleur choix pour les sites web des PME suisses.",
         },
         faq: [
@@ -1607,7 +1607,7 @@ L'interfaccia di amministrazione di Payload è il motivo per cui gli utenti non 
 Per tutto il resto, cioè siti aziendali, pagine di marketing di prodotto, blog e portfolio, questo stack ripaga l'investimento iniziale entro 6 mesi grazie ai risparmi sulla manutenzione.`,
         authorRole: "Blog tecnico",
         meta: {
-          title: "Next.js + Payload CMS per PMI svizzere — Trident Software Blog",
+          title: "Next.js + Payload CMS per PMI svizzere | Trident Software",
           description: "Architettura CMS incorporata con Next.js 15 e Payload CMS 3. Perché questo stack è la scelta migliore per i siti web delle PMI svizzere.",
         },
         faq: [
@@ -1631,7 +1631,7 @@ Per tutto il resto, cioè siti aziendali, pagine di marketing di prodotto, blog 
       },
     },
     meta: {
-      title: "Next.js + Payload CMS for Swiss SME websites | Trident Software",
+      title: "Next.js + Payload CMS for Swiss SME websites",
       description: "Why Next.js 15 and Payload CMS 3 is the right stack for Swiss SME websites. Embedded CMS, ISR caching, and editor UX that replaces WordPress without the pain.",
     },
   },
@@ -1802,7 +1802,7 @@ Industrielle Firmware braucht Hardware-in-the-Loop-Tests (HIL), nicht nur Unit-T
 Der EMV-Schritt deckt Probleme auf, die kein noch so umfangreicher Softwaretest findet.`,
         authorRole: "Engineering-Blog",
         meta: {
-          title: "Embedded Firmware für industrielles IoT — Trident Software Blog",
+          title: "Embedded Firmware für industrielles IoT | Trident Software",
           description: "Praktische Muster für industrielle IoT-Firmware: Sensorkalibrierung, OTA-Updates, Energiemanagement und HIL-Tests aus realen Projekten.",
         },
         faq: [
@@ -1890,7 +1890,7 @@ Un firmware industriel exige des tests hardware-in-the-loop (HIL), pas seulement
 L'étape CEM détecte des problèmes qu'aucun test logiciel, aussi poussé soit-il, ne trouve.`,
         authorRole: "Blog technique",
         meta: {
-          title: "Firmware embarqué pour IoT industriel — Trident Software Blog",
+          title: "Firmware embarqué pour IoT industriel | Trident Software",
           description: "Modèles pratiques pour le firmware IoT industriel : calibration des capteurs, mises à jour OTA, gestion de l'énergie et tests HIL.",
         },
         faq: [
@@ -1978,7 +1978,7 @@ Il firmware industriale richiede test hardware-in-the-loop (HIL), non solo unit 
 Il passaggio EMC individua problemi che nessun test software, per quanto esteso, riesce a trovare.`,
         authorRole: "Blog tecnico",
         meta: {
-          title: "Firmware embedded per IoT industriale — Trident Software Blog",
+          title: "Firmware embedded per IoT industriale | Trident Software",
           description: "Schemi pratici per firmware IoT industriale: calibrazione sensori, aggiornamenti OTA, gestione energetica e test HIL.",
         },
         faq: [

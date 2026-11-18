@@ -168,7 +168,7 @@ The prod override removes volume mounts, sets NODE_ENV=production, and uses envi
       },
     ],
     meta: {
-      title: "Docker Compose for local dev environments | Trident Software Blog",
+      title: "Docker Compose for local dev environments | Trident Software",
       description: "Docker Compose setup for full-stack JavaScript projects: PostgreSQL, Redis, mail server, hot reload, one-command onboarding, and common pitfalls.",
     },
     translations: {
@@ -304,7 +304,7 @@ Der Produktions-Override entfernt die Volume-Mounts, setzt NODE_ENV=production u
 **Image-Versionen nicht festlegen:** \`postgres:latest\` aktualisiert sich still und legt Ihr Setup lahm. Legen Sie die Version immer fest: \`postgres:16.3-alpine\`.`,
         authorRole: "Engineering-Blog",
         meta: {
-          title: "Docker Compose für lokale Entwicklung — Trident Software Blog",
+          title: "Docker Compose für lokale Entwicklung | Trident Software",
           description: "Docker Compose für Full-Stack-JavaScript: komplettes Setup mit PostgreSQL, Redis, Mailserver und Hot Reload, Onboarding mit einem Befehl, typische Fehler.",
         },
         faq: [
@@ -612,7 +612,7 @@ L'override di produzione elimina i mount dei volumi, imposta NODE_ENV=production
 **Non fissare la versione delle immagini:** \`postgres:latest\` si aggiorna senza avvisare e manda in tilt il tuo setup. Fissa sempre la versione: \`postgres:16.3-alpine\`.`,
         authorRole: "Blog tecnico",
         meta: {
-          title: "Docker Compose per lo sviluppo locale — Trident Software Blog",
+          title: "Docker Compose per lo sviluppo locale | Trident Software",
           description: "Docker Compose per progetti JavaScript full-stack: PostgreSQL, Redis, server di posta, hot reload, onboarding con un comando ed errori comuni.",
         },
         faq: [
@@ -1163,7 +1163,7 @@ Per un primo audit di accessibilità di un'applicazione web di media complessit�
       },
     },
     meta: {
-      title: "WCAG 2.1 accessibility for Swiss public sector apps | Trident Software Blog",
+      title: "WCAG 2.1 accessibility for Swiss public sector apps",
       description: "Swiss BehiG/BehiV accessibility guide: most commonly failed WCAG 2.1 AA criteria, practical code fixes, automated testing with axe, and screen reader testing.",
     },
   },
@@ -1294,7 +1294,7 @@ Start with Claude 3.5 Haiku for most SME workloads: balanced quality, 200K conte
       },
     ],
     meta: {
-      title: "OpenAI vs Anthropic API cost comparison for SMEs | Trident Software Blog",
+      title: "OpenAI vs Anthropic API cost comparison for SMEs",
       description: "Realistic API cost comparison for SME workloads: document processing, chatbots, code generation, prompt caching impact, and a model-selection framework.",
     },
     translations: {
@@ -1390,7 +1390,7 @@ Das Prompt-Caching von Anthropic gewährt 90% Rabatt auf wiederholte Prompt-Inha
 Starten Sie für die meisten KMU-Workloads mit Claude 3.5 Haiku: ausgewogene Qualität, 200K Kontext und verfügbares Caching. Testen Sie für Ihre konkrete Aufgabe GPT-4o mini als Vergleich. Der Qualitätsunterschied von 5–10% zwischen den Stufen rechtfertigt bei Routineaufgaben selten die 5- bis 8-fachen Kosten.`,
         authorRole: "Projektleiter, Trident Software",
         meta: {
-          title: "API-Kosten OpenAI vs. Anthropic für KMU — Trident Software Blog",
+          title: "API-Kosten OpenAI vs. Anthropic für KMU | Trident Software",
           description: "Realistischer API-Kostenvergleich für KMU: Dokumentenverarbeitung, Chatbots, Code-Generierung. Mit Effekt des Prompt-Cachings und Entscheidungsraster.",
         },
         faq: [
@@ -1504,7 +1504,7 @@ Le prompt caching d'Anthropic accorde 90% de réduction sur le contenu de prompt
 Pour la plupart des charges de travail de PME, commencez avec Claude 3.5 Haiku : qualité équilibrée, contexte de 200K et cache disponible. Comparez-le à GPT-4o mini sur votre tâche précise. Pour des tâches de routine, l'écart de qualité de 5–10% entre les niveaux justifie rarement un coût 5 à 8 fois plus élevé.`,
         authorRole: "Chef de projet, Trident Software",
         meta: {
-          title: "Coûts API OpenAI vs Anthropic pour PME — Trident Software Blog",
+          title: "Coûts API OpenAI vs Anthropic pour PME | Trident Software",
           description: "Comparatif réaliste des coûts d'API pour PME : traitement de documents, chatbots, génération de code. Effet du prompt caching et grille de décision.",
         },
         faq: [
@@ -1618,7 +1618,7 @@ Il prompt caching di Anthropic dà uno sconto del 90% sul contenuto ripetuto del
 Per la maggior parte dei carichi di lavoro di una PMI, parti con Claude 3.5 Haiku: qualità equilibrata, contesto da 200K e caching disponibile. Confrontalo con GPT-4o mini sul tuo compito specifico. Per le attività di routine, la differenza di qualità del 5–10% tra i livelli giustifica di rado un costo da 5 a 8 volte superiore.`,
         authorRole: "Project Manager, Trident Software",
         meta: {
-          title: "Costi API OpenAI vs Anthropic per PMI — Trident Software Blog",
+          title: "Costi API OpenAI vs Anthropic per PMI | Trident Software",
           description: "Confronto realistico dei costi API per PMI: elaborazione documenti, chatbot, generazione di codice. Effetto del prompt caching e schema decisionale.",
         },
         faq: [
@@ -2095,7 +2095,7 @@ jobs:
 Objectif : durée totale des tests en CI sous 8 minutes. Au-delà, les développeurs sautent les tests en local et le pipeline perd sa crédibilité.`,
         authorRole: "Blog technique",
         meta: {
-          title: "Pyramide de tests pour petites équipes — Trident Software Blog",
+          title: "Pyramide de tests pour petites équipes | Trident Software",
           description: "Pyramide de tests automatisés pour équipes de 2–8 développeurs : tests unitaires pour logique métier, intégration à ROI élevé, 5–10 flows E2E et CI rapide.",
         },
         faq: [
@@ -2273,7 +2273,7 @@ Obiettivo: tempo totale dei test in CI sotto gli 8 minuti. Oltre questa soglia g
       },
     },
     meta: {
-      title: "Automated testing pyramid for small teams | Trident Software Blog",
+      title: "Automated testing pyramid for small teams | Trident Software",
       description: "Pragmatic testing strategy for 2–8 engineer teams: what to unit test (business logic only), high-ROI integration tests, 5–10 E2E flows, and CI under 8 minutes.",
     },
   },

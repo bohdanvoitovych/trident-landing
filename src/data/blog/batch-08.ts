@@ -2273,7 +2273,7 @@ Customers expect more while costs and staff shortages grow. Each of these tools 
 
 [Reach out for a free consultation](/contact) to find out which of them fits your operations.`,
     meta: {
-      title: "HoReCa solutions to tackle industry challenges | Trident Software",
+      title: "HoReCa solutions to tackle industry challenges",
       description: "AI inventory, IoT sensors, QR code ordering, TMS and AI agents: five IT solutions that cut costs and improve the customer experience in HoReCa.",
     },
     translations: {
@@ -2665,7 +2665,7 @@ For companies, start-ups and urban planners, the practical step is to **invest i
 
 [Get in touch with us](/contact) to discuss how your device data could become a revenue stream.`,
     meta: {
-      title: "Data monetization in the programmable economy | Trident Software",
+      title: "Data monetization in the programmable economy",
       description: "How IoT data becomes revenue in the programmable economy: Data-as-a-Service, dynamic pricing, smart cities and our Tpoint sports court project.",
     },
     translations: {
@@ -3093,7 +3093,7 @@ As an [AWS Certified Partner](/blog/partnership-with-amazon-web-services), Tride
 
 [Contact us](/contact) **for a free consultation** on applying FinOps practices to your AWS bill.`,
     meta: {
-      title: "AWS cost optimization: one client cut costs 65% | Trident Software",
+      title: "AWS cost optimization: one client cut costs 65%",
       description: "FinOps tips for AWS cost optimization: cost visibility, commitments, rightsizing and Well-Architected reviews. One client cut cloud costs by 65%.",
     },
     translations: {
@@ -3495,7 +3495,7 @@ They also sound natural, which makes interactions feel more personal.
 
 [Reach out](/contact) to discuss which customer conversations you could automate.`,
     meta: {
-      title: "Conversational AI agents in business contexts | Trident Software",
+      title: "Conversational AI agents in business contexts",
       description: "How conversational AI agents differ from rule-based chatbots, and where they already work in banking, insurance and real estate.",
     },
     translations: {
@@ -3803,7 +3803,7 @@ AI is moving from generating text and images to taking real action. Agents in ar
 
 [Contact us](/contact) to talk about how AI agents can fit your business.`,
     meta: {
-      title: "Task-oriented agents in artificial intelligence | Trident Software",
+      title: "Task-oriented agents in artificial intelligence",
       description: "What task-oriented AI agents are, how they solve multi-step problems, and where they work in hospitality, healthcare, logistics and hiring.",
     },
     translations: {
@@ -5023,7 +5023,7 @@ For e-commerce businesses, a strong delivery system shapes the customer experien
 
 If late or untracked deliveries are costing you orders, [contact us](/contact) to discuss your delivery set-up.`,
     meta: {
-      title: "Delivery tracking systems boost online sales | Trident Software",
+      title: "Delivery tracking systems boost online sales",
       description: "How delivery tracking raises customer satisfaction and sales: real-time tracking, courier partnerships and internal route planning with 8Move.",
     },
     translations: {
@@ -5254,7 +5254,7 @@ Used together, they save staff time, give customers value and support steady, pr
 
 Putting them in place takes system integration, market knowledge and a clear view of how your customers buy.`,
     meta: {
-      title: "Price optimization models to boost your sales | Trident Software",
+      title: "Price optimization models to boost your sales",
       description: "Price optimization models and sales features for e-commerce: dynamic pricing, discounts, bundles and personalized recommendations.",
     },
     translations: {

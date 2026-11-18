@@ -396,7 +396,7 @@ Vale la massima dell'ingegneria svizzera: non pagare per una complessità infras
       },
     },
     meta: {
-      title: "Microservices vs monolith for startup MVPs | Trident Software Blog",
+      title: "Microservices vs monolith for startup MVPs",
       description: "Why microservices are wrong for most MVPs, what problems they actually solve, the modular monolith middle path, and when services are truly justified.",
     },
   },
@@ -627,7 +627,7 @@ Bewährt hat sich: Stories automatisch aus den CVA-Variantendefinitionen generie
 Teams, die dieses Muster konsequent anwenden, berichten von 40% schnellerer Komponentenentwicklung nach der Einrichtung, nahezu keinen UI-Inkonsistenzen in der QA und Junior-Entwicklern, die pixelgenaue Komponenten liefern, ohne dass bei jedem PR ein Senior drüberschauen muss.`,
         authorRole: "Engineering-Blog",
         meta: {
-          title: "Tailwind CSS Design-System für Produkte — Trident Software Blog",
+          title: "Tailwind CSS Design-System für Produkte | Trident Software",
           description: "Schritt-für-Schritt-Anleitung zum Aufbau eines Tailwind CSS Design-Systems: Tokens, CVA-Varianten, Storybook-Dokumentation und Komponenten-Audit.",
         },
         faq: [
@@ -887,7 +887,7 @@ I team che seguono questo pattern con costanza riportano uno sviluppo dei compon
       },
     },
     meta: {
-      title: "Tailwind CSS design systems for product companies | Trident Software Blog",
+      title: "Tailwind CSS design systems for product companies",
       description: "How to build a real design system on Tailwind CSS: design tokens, CVA component variants, Storybook documentation, and component audit workflow.",
     },
   },
@@ -1358,7 +1358,7 @@ Usa un logging strutturato con uno schema coerente fin dal primo giorno. Aggiung
       },
     },
     meta: {
-      title: "API gateway patterns for B2B integrations | Trident Software Blog",
+      title: "API gateway patterns for B2B integrations | Trident Software",
       description: "Standardise B2B integrations with the right API gateway pattern: auth layers by partner type, rate limiting, schema normalisation, and observability.",
     },
   },
@@ -1482,7 +1482,7 @@ If your system fails these under test, you have weeks to fix it before the actua
       },
     ],
     meta: {
-      title: "Load testing with k6 for Swiss e-commerce | Trident Software Blog",
+      title: "Load testing with k6 for Swiss e-commerce | Trident Software",
       description: "How Swiss e-commerce teams use k6 for load testing: checkout-flow scenarios, common bottlenecks, hosting considerations, and pass/fail thresholds.",
     },
     translations: {
@@ -1571,7 +1571,7 @@ Legen Sie die Grenzwerte vor dem Test fest, nicht danach:
 Wenn Ihr System diese Werte im Test verfehlt, bleiben Ihnen noch Wochen, um es vor dem eigentlichen Ereignis zu beheben.`,
         authorRole: "Engineering-Blog",
         meta: {
-          title: "k6-Lasttests für Schweizer E-Commerce — Trident Software Blog",
+          title: "k6-Lasttests für Schweizer E-Commerce | Trident Software",
           description: "Lasttests mit k6 für Schweizer Onlineshops: Szenarien für den Checkout, typische Performance-Engpässe, Hosting in der Schweiz und klare Grenzwerte.",
         },
         faq: [
@@ -2048,7 +2048,7 @@ Für eine JavaScript-Codebasis mit 50'000 Zeilen und einem Team von 2 Entwickler
 Erfolgreiche Teams behandeln die Migration als laufende Pflege, nicht als Projekt mit Deadline.`,
         authorRole: "Projektleiter, Trident Software",
         meta: {
-          title: "TypeScript-Migration Legacy-Codebasis — Trident Software Blog",
+          title: "TypeScript-Migration für Legacy-Code | Trident Software",
           description: "Inkrementelle TypeScript-Migrationsstrategie: permissive Konfiguration, Datei-Priorisierung, any-Budget und schrittweise Strict-Mode-Aktivierung.",
         },
         faq: [
@@ -2320,7 +2320,7 @@ I team che ci riescono trattano la migrazione come igiene continua, non come un 
       },
     },
     meta: {
-      title: "TypeScript migration for legacy codebases | Trident Software Blog",
+      title: "TypeScript migration for legacy codebases | Trident Software",
       description: "Incremental TypeScript migration strategy: permissive Phase 1 setup, file prioritisation by value, any-budget tracking, and staged strict mode activation.",
     },
   },
@@ -2499,7 +2499,7 @@ Ein typisches B2B-SaaS-MVP mit unserem empfohlenen Stack kostet CHF 3'000–8'00
 Starten Sie klein. Bauen Sie Kapazität aus, wenn Ihre Traffic-Daten zeigen, dass Sie sie brauchen.`,
         authorRole: "Projektleiter, Trident Software",
         meta: {
-          title: "Tech-Stack für Schweizer Startups 2026 — Trident Software Blog",
+          title: "Tech-Stack für Schweizer Startups 2026 | Trident Software",
           description: "Tech-Stack-Empfehlungen für Schweizer Startups 2026: Next.js, Drizzle, PostgreSQL, Tailwind, Auth.js — und warum wir bestimmte Alternativen vermeiden.",
         },
         faq: [
@@ -2591,7 +2591,7 @@ Un MVP SaaS B2B typique avec la stack recommandée coûte CHF 3'000–8'000 par 
 Commencez petit. Ajoutez de la capacité quand vos données de trafic prouvent que vous en avez besoin.`,
         authorRole: "Chef de projet, Trident Software",
         meta: {
-          title: "Stack technique startups suisses 2026 — Trident Software Blog",
+          title: "Stack technique startups suisses 2026 | Trident Software",
           description: "Recommandations stack tech pour startups suisses 2026 : Next.js, Drizzle, PostgreSQL, Tailwind, Auth.js — et pourquoi éviter certaines alternatives.",
         },
         faq: [
@@ -2707,7 +2707,7 @@ Parti in piccolo. Aggiungi capacità quando i dati di traffico dimostrano che ti
       },
     },
     meta: {
-      title: "Swiss startup tech stack recommendations 2026 | Trident Software Blog",
+      title: "Swiss startup tech stack recommendations 2026",
       description: "Tech stack recommendations for Swiss startups in 2026: frontend, backend, database, auth, infrastructure, AI integration, and what we've stopped recommending.",
     },
   },
@@ -3302,7 +3302,7 @@ Per aggiornamenti in una sola direzione, i Server-Sent Events (SSE) sono spesso 
       },
     },
     meta: {
-      title: "WebSocket real-time features in Next.js | Trident Software Blog",
+      title: "WebSocket real-time features in Next.js | Trident Software",
       description: "How to implement WebSocket real-time features alongside Next.js: standalone server, Redis pub/sub event bus, React hooks, and when to use SSE instead.",
     },
   },

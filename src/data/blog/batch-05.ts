@@ -307,7 +307,7 @@ Il modello che oggi preferiamo: **prezzo fisso per fase, non per progetto**. Ogn
       },
     },
     meta: {
-      title: "Fixed-price software contracts: pros, cons & when to use them",
+      title: "Fixed-price software contracts: pros, cons, when to use them",
       description: "Decision framework for fixed-price vs T&M contracts: what terms protect both sides, when fixed-price fails, and the hybrid phase-based model that works.",
     },
   },
@@ -723,7 +723,7 @@ Per ognuno serve un accordo sul trattamento dei dati (DPA). La maggior parte dei
       },
     },
     meta: {
-      title: "FADP / revFADP SaaS compliance checklist for developers | Trident",
+      title: "FADP / revFADP SaaS compliance checklist for developers",
       description: "Engineering checklist for Swiss revFADP compliance: data minimisation, consent management, right to erasure, processing records, and sub-processor DPAs.",
     },
   },
@@ -1202,7 +1202,7 @@ L'overhead delle connessioni PostgreSQL non è trascurabile. Usa **PgBouncer** i
       },
     },
     meta: {
-      title: "PostgreSQL performance tuning for mid-size apps | Trident Software",
+      title: "PostgreSQL performance tuning for mid-size apps",
       description: "Practical PostgreSQL optimisation guide: finding slow queries with pg_stat_statements, index audit, memory configuration, autovacuum tuning, and PgBouncer.",
     },
   },
@@ -1549,7 +1549,7 @@ Il supporto RTL (arabo) è migliore nel sistema di layout di Flutter che in Reac
       },
     },
     meta: {
-      title: "React Native vs Flutter for Swiss mobile projects 2026 | Trident",
+      title: "React Native vs Flutter for Swiss mobile projects 2026",
       description: "Decision guide for React Native vs Flutter in Swiss mobile projects: team skills, performance, UI customisation, multilingual support, and hiring pool.",
     },
   },
@@ -2108,7 +2108,7 @@ Ruota i segreti ogni trimestre. Verifica quali pipeline hanno accesso alle varia
       },
     },
     meta: {
-      title: "GitLab CI/CD for small engineering teams | Trident Software Blog",
+      title: "GitLab CI/CD for small engineering teams | Trident Software",
       description: "Practical GitLab CI/CD setup for 2–8 person teams. Pipeline structure, Node.js caching, Docker builds, environment deployments, and secrets management.",
     },
   },
@@ -2267,7 +2267,7 @@ So bleibt die Stabilität bewährter ERP-Software für Finanzdaten erhalten, und
 Frage 4 überspringen die meisten Kunden. Individuelle Software braucht laufende Entwicklungsarbeit. Verschwindet Ihr Anbieter, lässt sich das System nicht mehr warten. Stellen Sie sicher, dass Ihnen der Quellcode gehört und Sie andere mit der Wartung beauftragen können.`,
         authorRole: "Projektleiter, Trident Software",
         meta: {
-          title: "Custom ERP vs Standardsoftware Schweiz — Trident Software Blog",
+          title: "Individuelles ERP vs. Standardsoftware in der Schweiz",
           description: "Entscheidungsrahmen für Custom ERP vs. Standardsoftware: Wann Bexio, Abacus und SAP reichen und wann individuelle Entwicklung sinnvoll ist.",
         },
         faq: [
@@ -2455,7 +2455,7 @@ La domanda 4 è quella che la maggior parte dei clienti salta. Il software su mi
       },
     },
     meta: {
-      title: "Custom ERP vs off-the-shelf for Swiss companies | Trident Software",
+      title: "Custom ERP vs off-the-shelf for Swiss companies",
       description: "Decision framework for Swiss companies choosing between custom ERP and platforms like SAP, Abacus or Odoo: cost comparison and when custom wins.",
     },
   },
@@ -2801,7 +2801,7 @@ Pour les documents propres à la Suisse (TVA, IBAN, CHF, textes en DE/FR/IT) :
 Comparaison des coûts pour 1,000 factures par mois : Claude API ~CHF 40, GPT-4V ~CHF 55, Textract ~CHF 15 (mais avec davantage de post-traitement).`,
         authorRole: "Blog technique",
         meta: {
-          title: "Traitement IA de factures et contrats — Trident Software Blog",
+          title: "Traitement IA de factures et contrats | Trident Software",
           description: "Architecture pour le traitement de documents par IA : OCR, extraction LLM, validation et comparaison de modèles pour documents suisses.",
         },
         faq: [
@@ -2918,7 +2918,7 @@ Per documenti specifici della Svizzera (IVA, IBAN, CHF, testi in DE/FR/IT):
 Confronto dei costi per 1,000 fatture al mese: Claude API ~CHF 40, GPT-4V ~CHF 55, Textract ~CHF 15 (ma richiede più post-elaborazione).`,
         authorRole: "Blog tecnico",
         meta: {
-          title: "Elaborazione AI di fatture e contratti — Trident Software Blog",
+          title: "Elaborazione AI di fatture e contratti | Trident Software",
           description: "Architettura per l'elaborazione AI di documenti: OCR, estrazione LLM, validazione e confronto modelli per documenti svizzeri.",
         },
         faq: [
@@ -2942,7 +2942,7 @@ Confronto dei costi per 1,000 fatture al mese: Claude API ~CHF 40, GPT-4V ~CHF 5
       },
     },
     meta: {
-      title: "AI document processing for invoices and contracts | Trident Software",
+      title: "AI document processing for invoices and contracts",
       description: "Architecture for AI invoice and contract processing: document classification, OCR pipeline, LLM extraction, validation layer, and model cost comparison.",
     },
   },

@@ -62,7 +62,7 @@ We built MASTERTOOL Slovakia to meet the client’s needs and those of its custo
 
 We wish the client success with the store.`,
     meta: {
-      title: "Mastertool: online tools store built for Slovakia | Trident Software",
+      title: "Mastertool: online tools store built for Slovakia",
       description: "We built the MASTERTOOL online tools store for Slovakia: project background, the client's needs and the main website features.",
     },
     translations: {
@@ -162,7 +162,7 @@ Nous espérons que MASTERTOOL Slovaquie répondra aux besoins du client et aux e
 Nous souhaitons au client beaucoup de succès dans son activité.`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "Mastertool : boutique en ligne d'outils réalisée pour la Slovaquie",
+          title: "Mastertool : boutique d'outils en ligne pour la Slovaquie",
           description: "Nous avons réalisé la boutique d'outils MASTERTOOL pour la Slovaquie : contexte, besoins du client et principales fonctionnalités du site.",
         },
       },
@@ -212,7 +212,7 @@ Speriamo che MASTERTOOL Slovacchia soddisfi le esigenze del cliente e le richies
 Auguriamo al cliente molto successo nella sua attività.`,
         authorRole: "Ingegnera QA, Trident Software",
         meta: {
-          title: "Mastertool: negozio online di utensili realizzato per la Slovacchia",
+          title: "Mastertool: negozio online di utensili per la Slovacchia",
           description: "Abbiamo realizzato il negozio di utensili MASTERTOOL per la Slovacchia: contesto, esigenze del cliente e funzionalità principali del sito.",
         },
       },
@@ -305,7 +305,7 @@ Flashub sells a carefully selected range of bags and accessories to shoppers wor
 
 If you plan to launch a bag and accessory online store, [Trident Software](/) can build it with you.`,
     meta: {
-      title: "Flashub: online store for watches and bags | Trident Software",
+      title: "Flashub: online store for watches, bags and accessories",
       description: "Flashub is an online store for watches, bags and accessories: client challenges, search, product cards, SEO, localization, AI and marketplace integrations.",
     },
     translations: {
@@ -381,7 +381,7 @@ Flashub ist eine Anlaufstelle für den E-Commerce mit Taschen und Accessoires, m
 Wenn Sie einen Online-Shop für Taschen und Accessoires starten möchten, denken Sie an [Trident Software](/) als Partner, der neue Ideen in Ihr Geschäft bringt und Ihre Präsenz im Online-Handel ausbaut.`,
         authorRole: "QA-Ingenieurin, Trident Software",
         meta: {
-          title: "Flashub: Online-Shop für Uhren, Taschen und Accessoires umgesetzt",
+          title: "Flashub: Online-Shop für Uhren, Taschen und Accessoires",
           description: "Flashub ist ein Online-Shop für Uhren, Taschen und Accessoires: Herausforderungen, Suche, Produktkarten, SEO, Lokalisierung, KI und Integrationen.",
         },
       },
@@ -457,7 +457,7 @@ Flashub est une adresse pour le e-commerce de sacs et d'accessoires, avec une ga
 Si vous prévoyez de lancer une boutique en ligne de sacs et d'accessoires, pensez à [Trident Software](/) comme partenaire pour apporter de nouvelles idées à votre activité et élargir votre présence dans le commerce en ligne.`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "Flashub : boutique en ligne de montres, sacs et accessoires réalisée",
+          title: "Flashub : boutique en ligne de montres, sacs et accessoires",
           description: "Flashub est une boutique en ligne de montres, sacs et accessoires : défis, recherche, fiches produits, SEO, localisation, IA et intégrations.",
         },
       },
@@ -533,7 +533,7 @@ Flashub è un punto di riferimento per l'e-commerce di borse e accessori, con un
 Se intendi lanciare un negozio online di borse e accessori, considera [Trident Software](/) come partner per portare nuove idee nella tua attività e ampliare la tua presenza nel commercio online.`,
         authorRole: "Ingegnera QA, Trident Software",
         meta: {
-          title: "Flashub: negozio online di orologi, borse e accessori realizzato",
+          title: "Flashub: negozio online di orologi, borse e accessori",
           description: "Flashub è un negozio online di orologi, borse e accessori: sfide, ricerca, schede prodotto, SEO, localizzazione, IA e integrazioni.",
         },
       },
@@ -602,7 +602,7 @@ Our e-commerce platform, [iAM-Trade](https://iam-trade.ch/), gives site owners t
 
 Site owners use them to build buyer trust and a stronger online presence.`,
     meta: {
-      title: "How to sell used tires online and build buyer trust | Trident Software",
+      title: "How to sell used tires online and build buyer trust",
       description: "How to sell used tires online and build trust with buyers: accurate descriptions, images, pricing, warranty, reviews, inspections and marketing.",
     },
     translations: {
@@ -657,7 +657,7 @@ Unsere E-Commerce-Plattform [iAM-Trade](https://iam-trade.ch/) bietet Shop-Betre
 Mit diesen Werkzeugen bauen Shop-Betreiber Vertrauen bei Kunden auf, stärken ihre Online-Präsenz und behaupten sich in dieser umkämpften Branche.`,
         authorRole: "QA-Ingenieurin, Trident Software",
         meta: {
-          title: "Gebrauchte Reifen online verkaufen: so schaffen Sie Käufervertrauen",
+          title: "Gebrauchte Reifen online verkaufen und Vertrauen aufbauen",
           description: "So verkaufen Sie gebrauchte Reifen online und schaffen Vertrauen: genaue Beschreibungen, Bilder, Preise, Garantie, Bewertungen und Prüfungen.",
         },
       },
@@ -838,7 +838,7 @@ Our product [iAM-Trade](https://iam-trade.ch/) automates the listing of your pro
 
 Keep your listings current and review them as your buyers’ needs change.`,
     meta: {
-      title: "Selling on Google Merchant: setup to Google Ads | Trident Software",
+      title: "Selling on Google Merchant: setup to Google Ads",
       description: "A guide to selling on Google Merchant: account setup, product feed, Google Ads campaigns, monitoring and compliance.",
     },
     translations: {
@@ -892,7 +892,7 @@ Unser Produkt [iAM-Trade](https://iam-trade.ch/) automatisiert die Einstellung I
 Halten Sie Ihre Angebote aktuell, bleiben Sie informiert und stellen Sie die Bedürfnisse Ihrer Zielgruppe immer an die erste Stelle.`,
         authorRole: "QA-Ingenieurin, Trident Software",
         meta: {
-          title: "Verkaufen über Google Merchant: Konto, Produktfeed und Google Ads",
+          title: "Verkaufen über Google Merchant: Konto, Feed und Google Ads",
           description: "Anleitung zum Verkauf über Google Merchant: Kontoeinrichtung, Produktfeed, Google-Ads-Kampagnen, Überwachung und Richtlinien.",
         },
       },
@@ -946,7 +946,7 @@ Notre produit [iAM-Trade](https://iam-trade.ch/) automatise la publication de vo
 Gardez vos fiches à jour, restez informé et placez toujours les besoins de votre audience cible en premier.`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "Vendre sur Google Merchant : compte, flux produits et Google Ads",
+          title: "Vendre sur Google Merchant : compte, flux et Google Ads",
           description: "Guide pour vendre sur Google Merchant : création du compte, flux de produits, campagnes Google Ads, suivi et conformité.",
         },
       },
@@ -1000,7 +1000,7 @@ Il nostro prodotto [iAM-Trade](https://iam-trade.ch/) automatizza la pubblicazio
 Tieni aggiornate le schede, resta informato e metti sempre al primo posto le esigenze del tuo pubblico di destinazione.`,
         authorRole: "Ingegnera QA, Trident Software",
         meta: {
-          title: "Vendere su Google Merchant: account, feed prodotti e Google Ads",
+          title: "Vendere su Google Merchant: account, feed e Google Ads",
           description: "Guida per vendere su Google Merchant: creazione dell'account, feed di prodotti, campagne Google Ads, monitoraggio e conformità.",
         },
       },
@@ -1189,7 +1189,7 @@ Vous pouvez voir comment nous avons appliqué ces stratégies sur la page produi
 Avec ces conseils, vous créez des pages produits qui attirent plus de clients, déclenchent des achats et fidélisent. Une page produit bien optimisée donne à votre boutique de pneus en ligne une bonne position sur le marché concurrentiel du e-commerce.`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "Pages produits d'une boutique de pneus : conseils pour vendre",
+          title: "Pages produits d'une boutique de pneus : conseils de vente",
           description: "Conseils pour des pages produits de pneus qui vendent : noms, images, descriptions, données techniques, prix, avis, livraison et SEO.",
         },
       },
@@ -1247,7 +1247,7 @@ Puoi vedere come abbiamo applicato queste strategie nella pagina prodotto di un 
 Con questi consigli puoi creare pagine prodotto che attirano più clienti, generano conversioni e fidelizzano. Una pagina prodotto ben ottimizzata dà al tuo negozio online di pneumatici una buona posizione nel mercato competitivo dell'e-commerce.`,
         authorRole: "Ingegnera QA, Trident Software",
         meta: {
-          title: "Pagine prodotto per negozi online di pneumatici: consigli per vendere",
+          title: "Pagine prodotto per pneumatici online: consigli per vendere",
           description: "Consigli per pagine prodotto di pneumatici che vendono: nomi, immagini, descrizioni, dati tecnici, prezzi, recensioni, consegna e SEO.",
         },
       },
@@ -1315,7 +1315,7 @@ For example, conversational IVR can be used for:
 
 To hear the bot handle a call, [schedule a demo](https://outlook.office365.com/book/AIVoicebotdemo@trident.software/).`,
     meta: {
-      title: "AI voice bots: 24/7 customer service for SMEs | Trident Software",
+      title: "AI voice bots: 24/7 customer service for SMEs",
       description: "How conversational IVR voice bots handle customer calls with 24/7 multilingual support, and why they suit Swiss SMEs.",
     },
     translations: {
@@ -1368,7 +1368,7 @@ Conversational IVR eignet sich zum Beispiel für:
 Möchten Sie sehen, wie es funktioniert? Probieren Sie es aus: [Demo vereinbaren](https://outlook.office365.com/book/AIVoicebotdemo@trident.software/).`,
         authorRole: "QA-Ingenieurin, Trident Software",
         meta: {
-          title: "KI-Sprachbots: mehrsprachiger Kundenservice rund um die Uhr für KMU",
+          title: "KI-Sprachbots: mehrsprachiger Kundenservice rund um die Uhr",
           description: "Wie Sprachbots mit Dialog-IVR Kundenanrufe mit mehrsprachigem 24/7-Support bearbeiten und warum sie zu Schweizer KMU passen.",
         },
       },
@@ -1421,7 +1421,7 @@ L'IVR conversationnel peut servir par exemple à :
 Envie de voir comment cela fonctionne ? Essayez-le : [planifiez une démo](https://outlook.office365.com/book/AIVoicebotdemo@trident.software/).`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "Bots vocaux IA : relation client multilingue 24 h/24 pour les PME",
+          title: "Bots vocaux IA pour PME : relation client 24 h/24",
           description: "Comment les bots vocaux à IVR conversationnel traitent les appels clients avec une assistance multilingue 24 h/24, et pourquoi ils conviennent aux PME.",
         },
       },
@@ -1474,7 +1474,7 @@ L'IVR conversazionale può servire, per esempio, a:
 Vuoi vedere come funziona? Provalo: [prenota una demo](https://outlook.office365.com/book/AIVoicebotdemo@trident.software/).`,
         authorRole: "Ingegnera QA, Trident Software",
         meta: {
-          title: "Bot vocali con IA: assistenza clienti multilingue 24 ore su 24 per PMI",
+          title: "Bot vocali IA per PMI: assistenza clienti multilingue 24/7",
           description: "Come i bot vocali con IVR conversazionale gestiscono le chiamate dei clienti con assistenza multilingue 24 ore su 24, adatti alle PMI svizzere.",
         },
       },
@@ -1541,7 +1541,7 @@ Auch die Passwortverwaltung lässt sich automatisieren. Eine Lambda-Funktion kan
 Lambda-basierte Lösungen bieten Unternehmen zwei Vorteile. Erstens setzen sie das Prinzip der minimalen Rechte durch, sodass Benutzer nur die Berechtigungen haben, die sie brauchen und nutzen. Zweitens automatisieren sie einen grossen Teil der Benutzerverwaltung und schaffen Kapazität für andere wichtige Aufgaben im Cloud-Management. Für Unternehmen, die mit der Komplexität von AWS arbeiten, sind diese Lambda-Funktionen ein praktischer Weg zu einer sicheren, effizienten und regelkonformen Cloud-Umgebung.`,
         authorRole: "QA-Ingenieurin, Trident Software",
         meta: {
-          title: "AWS-Benutzerrechte: Zugriffsprüfung mit Lambda automatisieren",
+          title: "AWS-Rechte: Zugriffsprüfung mit Lambda automatisieren",
           description: "Wie Lambda-Funktionen und AWS Access Advisor Berechtigungsprüfungen und Passwortwechsel für wachsende AWS-Umgebungen automatisieren.",
         },
       },
@@ -1567,7 +1567,7 @@ La gestion des mots de passe peut aussi être automatisée. Une fonction Lambda 
 Les solutions basées sur Lambda offrent deux avantages aux entreprises. D'une part, elles appliquent le principe du moindre privilège : les utilisateurs n'ont que les droits dont ils ont besoin et qu'ils utilisent. D'autre part, elles automatisent une grande partie de la gestion des utilisateurs, ce qui libère des ressources pour les autres aspects importants de la gestion du cloud. Pour les entreprises confrontées à la complexité d'AWS, ces fonctions Lambda sont un moyen concret de garder un environnement cloud sûr, efficace et conforme.`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "Droits utilisateurs AWS : automatiser les contrôles d'accès avec Lambda",
+          title: "Droits AWS : automatiser les contrôles d'accès avec Lambda",
           description: "Comment les fonctions Lambda et AWS Access Advisor automatisent le contrôle des droits et le renouvellement des mots de passe sur AWS.",
         },
       },
@@ -1821,7 +1821,7 @@ Utilisez notre plateforme e-commerce [iAM-Trade](https://iam-trade.ch/) pour éc
 Des descriptions détaillées aident les clients à trouver vos montres et votre boutique à apparaître en ligne.`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "Bracelets de montre : 43 % des clients disent qu'ils comptent",
+          title: "Bracelets de montre : ils comptent pour 43 % des clients",
           description: "Pourquoi des descriptions détaillées de bracelets aident à vendre des montres : types, matières et conseils pour la boutique en ligne.",
         },
       },
@@ -1892,7 +1892,7 @@ Usa la nostra piattaforma e-commerce [iAM-Trade](https://iam-trade.ch/) per scri
 Descrizioni dettagliate aiutano i clienti a trovare i tuoi orologi e il tuo negozio a farsi vedere online.`,
         authorRole: "Ingegnera QA, Trident Software",
         meta: {
-          title: "Cinturini: il 43 % dei clienti dice che influenzano la scelta",
+          title: "Cinturini: influenzano la scelta del 43 % dei clienti",
           description: "Perché descrizioni dettagliate dei cinturini aiutano a vendere orologi: tipi, materiali e consigli per il negozio online.",
         },
       },
@@ -2002,7 +2002,7 @@ Utiliser des fonctions AWS Lambda pour la surveillance des performances est gagn
 Cette stratégie améliore l'efficacité opérationnelle et réduit les dépenses cloud, ce qui en fait une pratique utile pour les entreprises qui veulent tirer davantage de leur investissement AWS. Nos prochains articles montreront comment mettre en place ces solutions Lambda pour gérer vos ressources AWS et réduire vos coûts.`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "AWS Lambda repère les serveurs inactifs et réduit les coûts cloud",
+          title: "AWS Lambda repère les serveurs inactifs et réduit les coûts",
           description: "Comment les fonctions AWS Lambda surveillent la charge des serveurs et bases de données, alertent les équipes DevOps et réduisent les coûts cloud.",
         },
       },
@@ -2092,7 +2092,7 @@ iAM-Trade is an e-commerce platform for online tire retailers. It handles the te
 
 With iAM-Trade, online tire retailers can bring their full range, including specialised automotive equipment, into one online store. It is a fast, low-cost and simple way to start selling online.`,
     meta: {
-      title: "iAM-Trade: e-commerce platform for tire retailers | Trident Software",
+      title: "iAM-Trade: e-commerce platform for tire retailers",
       description: "iAM-Trade is an e-commerce platform for online tire retailers: the challenges of launching an online shop and how the platform addresses them.",
     },
     translations: {
@@ -2135,7 +2135,7 @@ iAM-Trade ist eine E-Commerce-Plattform für Online-Reifenhändler. Sie macht de
 Mit iAM-Trade können Online-Reifenhändler ihr Geschäft mit wenig Aufwand ausbauen und ihr vielfältiges Sortiment, einschliesslich spezieller Fahrzeugausrüstung, in einem Online-Shop bündeln. Starten Sie mit iAM-Trade und verbessern Sie noch heute Ihre Strategie für den Online-Reifenverkauf. Online gehen: schnell, günstig und einfach mit iAM-Trade!`,
         authorRole: "QA-Ingenieurin, Trident Software",
         meta: {
-          title: "iAM-Trade: E-Commerce-Plattform für Online-Reifenhändler im Überblick",
+          title: "iAM-Trade: E-Commerce-Plattform für Online-Reifenhändler",
           description: "iAM-Trade ist eine E-Commerce-Plattform für Online-Reifenhändler: Herausforderungen beim Start eines Online-Shops und wie die Plattform sie löst.",
         },
       },
@@ -2178,7 +2178,7 @@ iAM-Trade est une plateforme e-commerce conçue pour les marchands de pneus en l
 Avec iAM-Trade, les marchands de pneus en ligne peuvent développer leur activité sans effort et réunir leur gamme variée de produits, y compris des équipements automobiles spécialisés, dans une seule boutique en ligne. Lancez-vous avec iAM-Trade et améliorez dès aujourd'hui votre stratégie de vente de pneus en ligne. Passez en ligne vite, à moindre coût et simplement avec iAM-Trade !`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "iAM-Trade : plateforme e-commerce pour marchands de pneus en ligne",
+          title: "iAM-Trade : plateforme e-commerce pour marchands de pneus",
           description: "iAM-Trade est une plateforme e-commerce pour marchands de pneus en ligne : les défis du lancement d'une boutique et les réponses de la plateforme.",
         },
       },
@@ -2221,7 +2221,7 @@ iAM-Trade è una piattaforma e-commerce pensata per i rivenditori di pneumatici 
 Con iAM-Trade i rivenditori di pneumatici online possono far crescere la loro attività con poca fatica e riunire la loro gamma varia di prodotti, comprese le attrezzature auto specializzate, in un unico negozio online. Parti con iAM-Trade e migliora oggi la tua strategia di vendita online di pneumatici. Vai online in modo veloce, economico e semplice con iAM-Trade!`,
         authorRole: "Ingegnera QA, Trident Software",
         meta: {
-          title: "iAM-Trade: piattaforma e-commerce per rivenditori di pneumatici online",
+          title: "iAM-Trade: e-commerce per rivenditori di pneumatici online",
           description: "iAM-Trade è una piattaforma e-commerce per rivenditori di pneumatici online: le sfide del lancio di un negozio e come la piattaforma le affronta.",
         },
       },
@@ -2378,7 +2378,7 @@ Il contributo di AWS riguarda diverse aree chiave:
 L'evento «Join the Cloud» si è svolto nonostante le difficoltà legate al meteo ed è stato un buon esempio del nostro impegno per l'innovazione e l'apprendimento. Ringraziamo di cuore tutti i partecipanti, in particolare i relatori, che ci hanno aiutato a capire meglio i servizi cloud di AWS. Attendiamo con interesse i prossimi eventi e continueremo a seguire l'evoluzione delle tecnologie cloud. Seguiranno altre novità e approfondimenti.`,
         authorRole: "Project Manager, Trident Software",
         meta: {
-          title: "Join the Cloud: il resoconto del nostro evento AWS in Vallese",
+          title: "Join the Cloud: resoconto del nostro evento AWS in Vallese",
           description: "Il resoconto del nostro evento Join the Cloud dedicato ad AWS: ringraziamenti a partner e relatori e vantaggi della tecnologia cloud AWS.",
         },
       },
@@ -2459,7 +2459,7 @@ The Trident Software Convertor Video tool lets you set video SEO attributes, and
 
 Good product video takes care at every stage, from knowing your audience to production and SEO. A video shows the product and also tells your brand’s story. Follow these recommendations and your videos will help you sell more.`,
     meta: {
-      title: "Product videos for online stores: production, publishing and video SEO",
+      title: "Product videos for online stores: production and video SEO",
       description: "How to plan and publish product videos for an online store: principles, guidelines by industry, publishing steps and video SEO.",
     },
     translations: {
@@ -2660,7 +2660,7 @@ Lo strumento Convertor Video di Trident Software ti permette di controllare gli 
 Creare video convincenti per il tuo negozio online richiede attenzione ai dettagli, dalla comprensione del pubblico di destinazione all'implementazione tecnica e alla SEO. I video mostrano i tuoi prodotti, raccontano la storia del tuo marchio e creano un legame emotivo con i potenziali clienti. Con queste raccomandazioni puoi realizzare contenuti video efficaci e memorabili che migliorano l'interazione con i clienti e aumentano le vendite.`,
         authorRole: "Project Manager, Trident Software",
         meta: {
-          title: "Video di prodotto per negozi online: produzione, pubblicazione e SEO",
+          title: "Video di prodotto per negozi online: produzione e SEO",
           description: "Come pianificare e pubblicare video di prodotto per un negozio online: principi, indicazioni per settore, pubblicazione e SEO dei video.",
         },
       },
@@ -3014,7 +3014,7 @@ La feuille de route de développement du système comprend ces étapes :
 L'association de la reconnaissance d'objets, des drones et de la gestion des stocks est un progrès notable pour l'entreposage. Le système simplifie le processus d'inventaire et prépare le terrain pour une automatisation et une précision qui vont de pair.`,
         authorRole: "Chef de projet, Trident Software",
         meta: {
-          title: "Inventaire d'entrepôt par reconnaissance d'objets et drones autonomes",
+          title: "Inventaire d'entrepôt par reconnaissance d'objets et drones",
           description: "Un système de reconnaissance d'objets et de drones autonomes pour l'inventaire d'entrepôt et le contrôle des stocks : modules, flux et projets.",
         },
       },
@@ -3065,7 +3065,7 @@ La roadmap di sviluppo del sistema comprende questi passi:
 La combinazione di riconoscimento di oggetti, droni e gestione dell'inventario è un passo avanti significativo per lo stoccaggio. Il sistema semplifica il processo di inventario e prepara il terreno a un'automazione e a una precisione che vanno di pari passo.`,
         authorRole: "Project Manager, Trident Software",
         meta: {
-          title: "Inventario di magazzino con riconoscimento di oggetti e droni autonomi",
+          title: "Inventario di magazzino con riconoscimento oggetti e droni",
           description: "Un sistema di riconoscimento di oggetti e droni autonomi per l'inventario di magazzino e il controllo delle scorte: moduli, flusso e piani.",
         },
       },
@@ -3144,7 +3144,7 @@ Die neue Website sieht gut aus und greift auch das überarbeitete Logo und Ersch
 Die Website hat auch einen Blog-Bereich. Mit Sprachwissen, Tipps und kulturellen Neuigkeiten baut die Schule eine lebendige Lerngemeinschaft auf.`,
         authorRole: "QA-Ingenieurin, Trident Software",
         meta: {
-          title: "Sprachschule Ardevaz: neue Website mit CMS, sechs Sprachen und Test",
+          title: "Sprachschule Ardevaz: neue Website mit CMS in sechs Sprachen",
           description: "Wir haben die neue Website der Sprachschule Ardevaz mit CMS, Lokalisierung in sechs Sprachen und Französisch-Einstufungstest gestartet.",
         },
       },
@@ -3208,7 +3208,7 @@ Il nuovo sito è piacevole alla vista e riprende anche il logo e il marchio rinn
 Il sito ha anche una sezione blog. Condividendo spunti linguistici, consigli e novità culturali, la scuola costruisce una comunità di apprendimento vivace.`,
         authorRole: "Ingegnera QA, Trident Software",
         meta: {
-          title: "Sito della scuola di lingue Ardevaz: CMS, sei lingue e test di francese",
+          title: "Scuola di lingue Ardevaz: nuovo sito con CMS in sei lingue",
           description: "Abbiamo lanciato il nuovo sito della scuola di lingue Ardevaz con CMS, localizzazione in sei lingue e test di livello di francese.",
         },
       },
@@ -3260,7 +3260,7 @@ With Flutter we can adapt the app to each client’s requirements and workflows.
 
 Watch the video to see the app in action. We will share more updates on our B2B e-commerce platform [iAM-Trade](https://iam-trade.ch/).`,
     meta: {
-      title: "Flutter storekeeper app: 20% more tasks completed in warehouse work",
+      title: "Flutter storekeeper app: 20% more warehouse tasks completed",
       description: "A Flutter app interface for warehouse staff that replaces handheld terminals with smartphones and ring scanners, with 20% higher task completion.",
     },
     translations: {
@@ -3298,7 +3298,7 @@ Flutter macht die App für individuelle Kundenanforderungen gut anpassbar. Jeder
 Im beigefügten Video sehen Sie die App im Einsatz. Weitere Neuigkeiten zu unserer B2B-E-Commerce-Lösung [iAM-Trade](https://iam-trade.ch/) folgen.`,
         authorRole: "QA-Ingenieurin, Trident Software",
         meta: {
-          title: "Flutter-Lager-App: 20 % mehr erledigte Aufgaben im Lagerbetrieb",
+          title: "Flutter-Lager-App: 20 % mehr erledigte Aufgaben im Lager",
           description: "Eine Flutter-App-Oberfläche für Lagerpersonal, die Handterminals durch Smartphones und Ringscanner ersetzt, mit 20 % höherer Aufgabenerledigung.",
         },
       },
@@ -3336,7 +3336,7 @@ Flutter rend l'application très personnalisable selon les besoins de chaque cli
 Regardez la vidéo jointe pour voir l'application en action. Nous publierons d'autres nouvelles sur notre solution e-commerce B2B [iAM-Trade](https://iam-trade.ch/).`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "Application magasinier Flutter : 20 % de tâches en plus dans l'entrepôt",
+          title: "Application magasinier Flutter : 20 % de tâches en plus",
           description: "Une interface Flutter pour le personnel d'entrepôt qui remplace les terminaux portables par des smartphones, avec 20 % de tâches terminées en plus.",
         },
       },
@@ -3374,7 +3374,7 @@ Flutter rende l'app molto personalizzabile in base alle richieste dei singoli cl
 Guarda il video allegato per vedere l'app in azione. Pubblicheremo altri aggiornamenti sulla nostra soluzione e-commerce B2B [iAM-Trade](https://iam-trade.ch/).`,
         authorRole: "Ingegnera QA, Trident Software",
         meta: {
-          title: "App per magazzinieri con Flutter: 20 % di compiti completati in più",
+          title: "App Flutter per magazzinieri: 20 % di compiti in più",
           description: "Un'interfaccia Flutter per il personale di magazzino che sostituisce i terminali portatili con smartphone, con il 20 % di compiti completati in più.",
         },
       },
@@ -3416,7 +3416,7 @@ The Valais Chamber of Commerce and Industry is a regional business organization 
 
 We expect the membership to bring new contacts and projects. We continue to provide software and web development services to clients in Valais and beyond.`,
     meta: {
-      title: "Trident Software joins the Valais Chamber of Commerce and Industry",
+      title: "Trident Software joins the Valais Chamber of Commerce",
       description: "Trident Software has joined the Valais Chamber of Commerce and Industry: what membership brings in local insights, collaboration and resources.",
     },
     translations: {
@@ -3506,7 +3506,7 @@ La Camera di commercio e dell'industria del Vallese è un'organizzazione economi
 Attendiamo con interesse le opportunità, le conoscenze e le collaborazioni che questa adesione porterà. Continuiamo a offrire servizi di sviluppo software e web ai nostri clienti nel Vallese e oltre.`,
         authorRole: "Project Manager, Trident Software",
         meta: {
-          title: "Trident Software aderisce alla Camera di commercio del Vallese",
+          title: "Trident Software nella Camera di commercio del Vallese",
           description: "Trident Software ha aderito alla Camera di commercio e dell'industria del Vallese: cosa porta l'adesione in conoscenze locali e collaborazioni.",
         },
       },
@@ -3553,7 +3553,7 @@ The website also has a section with tips and resources for expats. It covers hea
 
 The project combined [User Portal](/solutions/websites) design, event management, a photo gallery and practical information. We are glad the website helps bring expatriates in Valais closer together.`,
     meta: {
-      title: "GO-Valais Expat Club: expat portal with events, gallery and resources",
+      title: "GO-Valais Expat Club: expat portal with events and resources",
       description: "We launched the GO-Valais Expat Club website for expatriates in Valais, with an event management system, a photo gallery and a resource section.",
     },
     translations: {
@@ -3583,7 +3583,7 @@ Unser nutzerzentriertes Design umfasst auch nützliche Ressourcen. Die Website h
 Dieses Projekt zeigt unsere Erfahrung im Design hochwertiger [Benutzerportale](/solutions/websites), in der Veranstaltungsverwaltung, im visuellen Erzählen und in der Informationsvermittlung. Wir sind stolz, mit dieser Website dazu beigetragen zu haben, Expatriates im Wallis näher zusammenzubringen. Der Start des Expat-Portals zeigt, wie Webdesign eine Vision Wirklichkeit werden lässt.`,
         authorRole: "QA-Ingenieurin, Trident Software",
         meta: {
-          title: "GO-Valais Expat Club: Expat-Portal mit Events, Galerie und Ratgebern",
+          title: "GO-Valais Expat Club: Expat-Portal mit Events und Ratgebern",
           description: "Wir haben die Website des GO-Valais Expat Club für Expats im Wallis gestartet: Veranstaltungsverwaltung, Fotogalerie und Bereich für Ressourcen.",
         },
       },
@@ -3613,7 +3613,7 @@ Notre conception centrée sur l'utilisateur couvre aussi des ressources utiles. 
 Ce projet montre notre expertise dans la conception de [portails utilisateurs](/solutions/websites) de qualité, la gestion d'événements, la narration visuelle et le partage d'informations. Nous sommes fiers d'avoir contribué à rapprocher les expatriés du Valais grâce à ce site. Le lancement de ce portail expat montre comment le web design peut transformer une vision en réalité.`,
         authorRole: "Ingénieure QA, Trident Software",
         meta: {
-          title: "GO-Valais Expat Club : portail expat, événements et ressources",
+          title: "GO-Valais Expat Club : portail expat, événements, ressources",
           description: "Nous avons lancé le site du GO-Valais Expat Club pour les expatriés en Valais : gestion d'événements, galerie photo et section de ressources.",
         },
       },
@@ -3643,7 +3643,7 @@ Il nostro design centrato sull'utente comprende anche risorse utili. Il sito ha 
 Questo progetto mostra la nostra competenza nel design di [portali utente](/solutions/websites) di qualità, nella gestione degli eventi, nello storytelling visivo e nella condivisione di informazioni. Siamo orgogliosi di aver contribuito ad avvicinare gli espatriati del Vallese con questo sito. Il lancio del portale expat mostra come il web design possa trasformare una visione in realtà.`,
         authorRole: "Ingegnera QA, Trident Software",
         meta: {
-          title: "GO-Valais Expat Club: portale expat con eventi, galleria e risorse",
+          title: "GO-Valais Expat Club: portale expat con eventi e risorse",
           description: "Abbiamo lanciato il sito del GO-Valais Expat Club per gli espatriati in Vallese: gestione degli eventi, galleria fotografica e sezione di risorse.",
         },
       },
