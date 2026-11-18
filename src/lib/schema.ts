@@ -1,7 +1,5 @@
-import { localizedUrl } from './metadata'
+import { SITE_URL, localizedUrl } from './metadata'
 import { caseHref, isCaseStudy } from '@/data/cases'
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://trident-software.ch'
 
 const LOCALE_TO_BCP47: Record<string, string> = {
   en: 'en',
@@ -26,11 +24,18 @@ const labels = (locale: string) => LABELS[locale as keyof typeof LABELS] ?? LABE
 export function organizationSchema(locale: string): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    // ProfessionalService is a LocalBusiness: the one real office, in Sion. The logo must read on white.
+    '@type': ['Organization', 'ProfessionalService'],
     '@id': `${SITE_URL}/#organization`,
     name: 'Trident Software Sàrl',
     url: SITE_URL,
-    logo: `${SITE_URL}/images/trident-icon-white.svg`,
+    logo: `${SITE_URL}/images/trident-logo-black.png`,
+    image: `${SITE_URL}/og-default.png`,
+    sameAs: [
+      'https://www.linkedin.com/company/tridentsoftware/',
+      'https://www.facebook.com/profile.php?id=100092674509471',
+      'https://www.instagram.com/trident_software_official/',
+    ],
     contactPoint: {
       '@type': 'ContactPoint',
       email: 'info@trident-software.ch',
@@ -133,7 +138,7 @@ export function blogPostSchema(
         url: SITE_URL,
         logo: {
           '@type': 'ImageObject',
-          url: `${SITE_URL}/images/trident-icon-white.svg`,
+          url: `${SITE_URL}/images/trident-logo-black.png`,
         },
       },
       inLanguage: bcp47(locale),
@@ -207,31 +212,21 @@ export function industryPageSchemas(
 }
 
 export function locationPageSchemas(
-  location: { slug: string; name: string; tagline: string; description: string },
+  location: { slug: string; name: string; tagline: string; description: string; meta?: { title: string } },
   locale: string,
 ): Record<string, unknown>[] {
   const url = localizedUrl(`/locations/${location.slug}`, locale)
   return [
+    // A Service for the city, provided from Sion. Not a LocalBusiness: there is no office there.
     {
       '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
+      '@type': 'Service',
       '@id': `${SITE_URL}/#location-${location.slug}`,
-      name: `Trident Software — ${location.name}`,
+      name: location.meta ? pageName(location.meta.title) : location.name,
       description: location.description,
       url,
-      areaServed: {
-        '@type': 'City',
-        name: location.name,
-        addressCountry: 'CH',
-      },
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: "Rue de l'Industrie 23",
-        addressLocality: 'Sion',
-        addressRegion: 'Valais',
-        postalCode: '1950',
-        addressCountry: 'CH',
-      },
+      provider: ORG_REF,
+      areaServed: { '@type': 'City', name: location.name, address: { '@type': 'PostalAddress', addressCountry: 'CH' } },
       inLanguage: bcp47(locale),
     },
     breadcrumbSchema([

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://trident-software.ch'
+// The env value may end in '/' (it does on staging); joined paths would then start with '//'.
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://trident-software.ch').replace(/\/+$/, '')
 const SITE_NAME = 'Trident Software'
 const FALLBACK_OG_IMAGE = `${SITE_URL}/og-default.png`
 

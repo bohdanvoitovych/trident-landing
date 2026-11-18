@@ -1,3 +1,5 @@
+import { readdirSync } from 'node:fs'
+import path from 'node:path'
 import { describe, expect, it, vi } from 'vitest'
 import { getPostLocales, getPostSlugs } from '@/data/blog'
 import sitemap from './sitemap'
@@ -32,5 +34,18 @@ describe('sitemap locales', () => {
 
   it('static pages keep all 4 locales', () => {
     expect(entries.filter((e) => /\/about$/.test(e.url))).toHaveLength(4)
+  })
+})
+
+describe('sitemap coverage', () => {
+  // Every page without a dynamic segment must be listed; dynamic ones come from their data getters.
+  const root = path.resolve(__dirname, '(frontend)')
+  const staticPages = (readdirSync(root, { recursive: true }) as string[])
+    .filter((f) => path.basename(f) === 'page.tsx' && !f.includes('['))
+    .map((f) => '/' + path.dirname(f).split(path.sep).filter((s) => s !== '.').join('/'))
+    .map((p) => (p === '/' ? '' : p))
+
+  it.each(staticPages)('lists the static page "%s"', (route) => {
+    expect(entries.some((e) => e.url === `https://trident-software.ch${route}`)).toBe(true)
   })
 })

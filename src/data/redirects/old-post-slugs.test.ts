@@ -6,7 +6,7 @@ import { describe, expect, it } from 'vitest'
 import { routing } from '@/i18n/routing'
 import nextConfig from '../../../next.config.mjs'
 import { OLD_POST_SLUGS, RENAMED_POST_SLUGS, TOPIC_REDIRECTS, buildOldPostRedirects } from './old-post-slugs.mjs'
-import { getPostSlugs } from '@/data/blog'
+import { getPostLocales, getPostSlugs } from '@/data/blog'
 
 type Redirect = { source: string; destination: string; permanent: boolean }
 
@@ -60,9 +60,13 @@ describe('old post redirects', () => {
     for (const [from, to] of Object.entries(RENAMED_POST_SLUGS)) expect(from).not.toBe(to)
   })
 
-  it('maps /topics/:tag and its trailing-slash form to /blog', () => {
-    expect(TOPIC_REDIRECTS.map((r: Redirect) => r.source)).toEqual(['/topics/:tag', '/topics/:tag/'])
-    for (const r of TOPIC_REDIRECTS as Redirect[]) expect(r.destination).toBe('/blog')
+  it('maps /topics/:tag to /blog and the localized tag archives to the blog in their locale', () => {
+    expect(TOPIC_REDIRECTS.map((r: Redirect) => [r.source, r.destination])).toEqual([
+      ['/topics/:tag', '/blog'],
+      ['/topics/:tag/', '/blog'],
+      ['/:locale(de|fr|it)/topics/:tag', '/:locale/blog'],
+      ['/:locale(de|fr|it)/topics/:tag/', '/:locale/blog'],
+    ])
   })
 })
 
@@ -75,6 +79,17 @@ describe('next.config redirects()', () => {
     for (const r of all) {
       expect(r.destination, r.source).not.toBe(r.source)
       expect(set.has(r.destination), `${r.source} -> ${r.destination}`).toBe(false)
+    }
+  })
+
+  // Old translated posts go to the same post in their locale, not to the blog index (a soft 404 for Google).
+  it('every localized post redirect targets a post translated into that locale', async () => {
+    const all = (await nextConfig.redirects!()) as Redirect[]
+    const localized = all.filter((r) => /^\/(de|fr|it)\/blog\/[^/]+$/.test(r.destination))
+    expect(localized.length).toBeGreaterThan(100)
+    for (const r of localized) {
+      const [, locale, , slug] = r.destination.split('/')
+      expect(getPostLocales(slug) as string[], `${r.source} -> ${r.destination}`).toContain(locale)
     }
   })
 

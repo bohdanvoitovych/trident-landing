@@ -324,14 +324,14 @@
   "pages": {
     "home": {
       "metaTitle": "Trident Software: software gestionale e agenti AI, Svizzera",
-      "metaDescription": "Costruiamo i sistemi con cui le aziende lavorano ogni giorno (ordini, dispatch, app sul campo, fatturazione) e un'AI che risponde in quattro lingue nazionali. Sion, Vallese."
+      "metaDescription": "Costruiamo i sistemi del lavoro quotidiano (ordini, dispatch, app sul campo, fatturazione) e un'AI che risponde in quattro lingue nazionali. Sion, Vallese."
     },
     "notFound": {
       "label": "Errore 404"
     },
     "contact": {
       "meta": {
-        "title": "Contatti | Trident Software",
+        "title": "Contatti a Sion, Vallese | Trident Software",
         "description": "Parla con Trident Software a Sion, in Vallese. Prenota un audit gratuito di 45 minuti sui tuoi processi e sui sistemi che li gestiscono."
       },
       "heroLabel": "Contatti",
@@ -360,8 +360,8 @@
       "whereText": "Rue de l'Industrie 23, 1950 Sion, a dieci minuti dalla stazione, nel quartiere della HES-SO Valais-Wallis."
     },
     "blog": {
-      "metaTitle": "Blog sullo sviluppo software | IA, cloud e tech svizzera | Trident Software",
-      "metaDescription": "Articoli su integrazione dell'IA, architettura software, cloud e DevOps, sistemi embedded e mercato tech svizzero. Scritti dal team di ingegneri di Trident Software.",
+      "metaTitle": "Blog sviluppo software: IA e cloud | Trident Software",
+      "metaDescription": "Articoli su integrazione dell'IA, architettura software, cloud e DevOps, sistemi embedded e mercato tech svizzero, scritti dal team di ingegneri di Trident.",
       "label": "Approfondimenti"
     },
     "cases": {
@@ -391,8 +391,8 @@
       "ctaButton": "Prenota un audit gratuito"
     },
     "industries": {
-      "metaTitle": "Sviluppo software per settore | Sanità, auto, fintech | Trident Software",
-      "metaDescription": "Sviluppo software su misura per oltre 20 settori: sanità, automotive, fintech, logistica, retail, SaaS, manifattura. Team dal 2009. Budget fissi, conforme alla nLPD.",
+      "metaTitle": "Sviluppo software per settore | Trident Software",
+      "metaDescription": "Software su misura per oltre 20 settori: sanità, automotive, fintech, logistica, retail, SaaS, manifattura. Team dal 2009. Budget fissi, conforme alla nLPD.",
       "crumb": "Settori",
       "label": "Competenza di settore",
       "title": "I settori per cui sviluppiamo software",
@@ -456,13 +456,13 @@
       "title": "Domande frequenti"
     },
     "useCases": {
-      "metaTitle": "Casi d'uso: {title} | Trident Software",
+      "metaTitle": "Casi d'uso degli agenti AI | Trident Software",
       "crumb": "Casi d'uso",
       "title": "Otto schemi in cui un agente si ripaga da solo",
       "lead": "Ognuno ha una condizione preliminare. La maggior parte dei progetti di IA falliti si arena lì, non nel modello."
     },
     "team": {
-      "metaTitle": "Il nostro team | Trident Software",
+      "metaTitle": "Team: sviluppatori software senior | Trident Software",
       "metaDescription": "Oltre 10 ingegneri senior tra Svizzera e Ucraina. Backend, frontend, mobile e project management. Nessun junior sui progetti dei clienti.",
       "crumb": "Il nostro team",
       "title": "Le persone che <blue>costruiscono e gestiscono</blue> il vostro software",
@@ -490,7 +490,7 @@
       "viewWork": "Guarda i nostri lavori"
     },
     "services": {
-      "metaTitle": "Sviluppo software in Svizzera | Agenti AI, logistica, IoT | Trident Software",
+      "metaTitle": "Sviluppo software su misura in Svizzera | Trident Software",
       "metaDescription": "Agenti AI & automazione LLM, piattaforme logistiche, sistemi gestionali su misura, IoT e CTO as a Service. Budget fissi, oltre 100 progetti dal 2009.",
       "crumb": "Servizi",
       "label": "Cosa sviluppiamo",
@@ -1016,8 +1016,8 @@
       "seeProjects": "Vedi i nostri progetti"
     },
     "about": {
-      "metaTitle": "Chi siamo | Trident Software",
-      "metaDescription": "Trident Software: ingegneria del software nativa IA. Fondata nel 2009 a Kharkiv, in Ucraina; società svizzera a Sion, in Vallese, dal 2022. 10+ ingegneri, 100+ progetti, 20+ Paesi.",
+      "metaTitle": "Chi siamo: sviluppo software a Sion | Trident Software",
+      "metaDescription": "Ingegneria software nativa IA. Fondata nel 2009 a Kharkiv, in Ucraina; società svizzera a Sion, in Vallese, dal 2022. 10+ ingegneri, 100+ progetti, 20+ Paesi.",
       "label": "Chi è Trident",
       "heroTitle": "Qualità svizzera. Ingegneria <blue>nativa IA</blue>.",
       "heroLead": "Fondata nel 2009 a Kharkiv, in Ucraina, e registrata a Sion, in Vallese, nel 2022, Trident Software sviluppa software su misura, sistemi di IA e soluzioni embedded per le PMI europee. Solo ingegneri senior. Budget fissi. Conformità inclusa.",

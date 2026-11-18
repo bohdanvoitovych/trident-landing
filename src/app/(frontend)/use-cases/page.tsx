@@ -11,11 +11,10 @@ export const revalidate = 3600
 
 export async function generateMetadata() {
   const locale = await getLocale()
-  const useCases = getUseCases(locale)
   const t = await getTranslations({ locale, namespace: 'pages.useCases' })
   return buildMetadata({
-    title: t('metaTitle', { title: t('title') }),
-    description: `${useCases.map((u) => u.title).join(', ')}. ${t('lead')}`,
+    title: t('metaTitle'),
+    description: `${t('title')}. ${t('lead')}`,
     path: '/use-cases',
     locale,
   })

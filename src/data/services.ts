@@ -366,9 +366,9 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Custom business systems | Trident Software',
+          title: 'Custom business software, ERP integration | Trident Software',
           description:
-            'B2B portals, integrations with ERP and accounting, migrations off legacy stacks.',
+            'B2B portals, ERP and accounting integrations, migrations off legacy stacks. We design, build and maintain custom business software for Swiss SMEs.',
         },
       },
       de: {
@@ -404,9 +404,9 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Individuelle Geschäftssysteme | Trident Software',
+          title: 'Individualsoftware und ERP-Integration | Trident Software',
           description:
-            'B2B-Portale, ERP- und Buchhaltungsintegrationen, Ablösung von Altsystemen.',
+            'B2B-Portale, ERP- und Buchhaltungsintegrationen, Ablösung von Altsystemen. Wir entwickeln und warten Individualsoftware für Schweizer KMU.',
         },
       },
       fr: {
@@ -444,9 +444,9 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Systèmes de gestion sur mesure | Trident Software',
+          title: 'Logiciel métier sur mesure et ERP | Trident Software',
           description:
-            'Portails B2B, intégrations ERP et comptables, migration de systèmes existants.',
+            'Portails B2B, intégrations ERP et comptables, migration de systèmes existants. Nous développons et maintenons des logiciels métier pour PME suisses.',
         },
       },
       it: {
@@ -483,9 +483,9 @@ const records: ServiceRecord[] = [
           },
         ],
         meta: {
-          title: 'Sistemi gestionali su misura | Trident Software',
+          title: 'Gestionale su misura e integrazione ERP | Trident Software',
           description:
-            'Portali B2B, integrazioni ERP e contabili, migrazione di sistemi esistenti.',
+            'Portali B2B, integrazioni ERP e contabili, migrazione di sistemi esistenti. Sviluppiamo e manteniamo software su misura per PMI svizzere.',
         },
       },
     },

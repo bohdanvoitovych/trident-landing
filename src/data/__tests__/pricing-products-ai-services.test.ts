@@ -254,7 +254,7 @@ describe('other services are unchanged', () => {
   // sha256 of every locale of each record without relatedCases (case links change as cases come and go).
   const BEFORE: Record<string, string> = {
     'logistics-and-operations-platforms': '781aed2febe724d25f6b9ce1b1d25a2272fabb6da177c453b67d6f955126cabc',
-    'software-engineering': '89e96d0da9a349abe04cd418ddb95a5e9dfc36226c22cb434f5cb6090860d216',
+    'software-engineering': '999305657bde3bad50547a1e7c715de6f4bcfe5756082747fb9eb0b5ee702abb',
     'embedded-and-iot': '3143ed96ae9c6a98eafc454e0972a779c9aa318d15ae99d980c6a0e77d7136ac',
     'cto-as-a-service': 'c5bc879412840e6c2d664173e6395fce020f198b4de9f9a8cd1469dbb972e0b9',
   }

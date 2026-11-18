@@ -70,4 +70,6 @@ export function buildOldPostRedirects() {
 export const TOPIC_REDIRECTS = [
   { source: '/topics/:tag', destination: '/blog', permanent: true },
   { source: '/topics/:tag/', destination: '/blog', permanent: true },
+  { source: '/:locale(de|fr|it)/topics/:tag', destination: '/:locale/blog', permanent: true },
+  { source: '/:locale(de|fr|it)/topics/:tag/', destination: '/:locale/blog', permanent: true },
 ]

@@ -324,14 +324,14 @@
   "pages": {
     "home": {
       "metaTitle": "Trident Software: Betriebssoftware und KI-Agenten, Schweiz",
-      "metaDescription": "Wir bauen die Systeme, mit denen Firmen täglich arbeiten: Auftragserfassung, Disposition, Field-Apps, Fakturierung. Dazu KI, die in vier Landessprachen antwortet. Sion, Wallis."
+      "metaDescription": "Wir bauen die Systeme für den Arbeitsalltag: Auftragserfassung, Disposition, Field-Apps, Fakturierung. Dazu KI, die in vier Sprachen antwortet. Sion, Wallis."
     },
     "notFound": {
       "label": "Fehler 404"
     },
     "contact": {
       "meta": {
-        "title": "Kontakt | Trident Software",
+        "title": "Kontakt in Sitten, Wallis | Trident Software",
         "description": "Sprechen Sie mit Trident Software in Sion, Wallis. Buchen Sie ein kostenloses 45-Minuten-Audit Ihrer Abläufe und der Systeme dahinter."
       },
       "heroLabel": "Kontakt",
@@ -360,8 +360,8 @@
       "whereText": "Rue de l'Industrie 23, 1950 Sion. Zehn Minuten vom Bahnhof, im Quartier der HES-SO Valais-Wallis."
     },
     "blog": {
-      "metaTitle": "Blog Softwareentwicklung | KI, Cloud & Schweizer Tech | Trident Software",
-      "metaDescription": "Fachartikel zu KI-Integration, Softwarearchitektur, Cloud und DevOps, Embedded-Systemen und dem Schweizer Tech-Markt. Geschrieben vom Engineering-Team von Trident Software.",
+      "metaTitle": "Blog Softwareentwicklung: KI und Cloud | Trident Software",
+      "metaDescription": "Fachartikel zu KI-Integration, Softwarearchitektur, Cloud und DevOps, Embedded-Systemen und dem Schweizer Tech-Markt, vom Engineering-Team von Trident Software.",
       "label": "Einblicke"
     },
     "cases": {
@@ -391,8 +391,8 @@
       "ctaButton": "Kostenloses Audit buchen"
     },
     "industries": {
-      "metaTitle": "Softwareentwicklung nach Branche | Gesundheit, Auto, Fintech | Trident Software",
-      "metaDescription": "Individuelle Softwareentwicklung für über 20 Branchen: Gesundheit, Automobil, Fintech, Logistik, Detailhandel, SaaS, Industrie. Team seit 2009. Festpreise, nDSG-konform.",
+      "metaTitle": "Softwareentwicklung nach Branche | Trident Software",
+      "metaDescription": "Individualsoftware für über 20 Branchen: Gesundheit, Automobil, Fintech, Logistik, Detailhandel, SaaS, Industrie. Team seit 2009. Festpreise, nDSG-konform.",
       "crumb": "Branchen",
       "label": "Branchen-Know-how",
       "title": "Branchen, für die wir Software bauen",
@@ -456,13 +456,13 @@
       "title": "Häufige Fragen"
     },
     "useCases": {
-      "metaTitle": "Anwendungsfälle: {title} | Trident Software",
+      "metaTitle": "Anwendungsfälle für KI-Agenten | Trident Software",
       "crumb": "Anwendungsfälle",
       "title": "Acht Muster, bei denen sich ein Agent bezahlt macht",
       "lead": "Jedes hat eine Voraussetzung. Die meisten gescheiterten KI-Projekte scheitern genau dort, nicht am Modell."
     },
     "team": {
-      "metaTitle": "Unser Team | Trident Software",
+      "metaTitle": "Team: erfahrene Softwareentwickler | Trident Software",
       "metaDescription": "Über 10 Senior Engineers in der Schweiz und der Ukraine. Backend, Frontend, Mobile und Projektleitung. Keine Juniors in Kundenprojekten.",
       "crumb": "Unser Team",
       "title": "Die Menschen, die Ihre Software <blue>bauen und betreiben</blue>",
@@ -490,7 +490,7 @@
       "viewWork": "Unsere Arbeiten ansehen"
     },
     "services": {
-      "metaTitle": "Softwareentwicklung Schweiz | KI-Agenten, Logistik, IoT | Trident Software",
+      "metaTitle": "Individualsoftware Schweiz: KI, Logistik | Trident Software",
       "metaDescription": "KI-Agenten & LLM-Automatisierung, Logistik- & Betriebsplattformen, individuelle Geschäftssysteme, IoT und CTO as a Service. Festpreise, über 100 Projekte seit 2009.",
       "crumb": "Dienstleistungen",
       "label": "Was wir bauen",
@@ -920,7 +920,7 @@
     },
     "iamTrade": {
       "metaTitle": "iAM-Trade: E-Commerce-Plattform B2B/B2C/B2X | Trident Software",
-      "metaDescription": "iAM-Trade ist eine leistungsstarke Schweizer E-Commerce-Plattform für B2B, B2C und B2X. 200+ Integrationen, 1 Mio.+ Produkte, dynamische Preise, Multi-Entity-Konten.",
+      "metaDescription": "iAM-Trade ist eine Schweizer E-Commerce-Plattform für B2B, B2C und B2X. 200+ Integrationen, 1 Mio.+ Produkte, dynamische Preise, Multi-Entity-Konten.",
       "heroTitle": "<blue>iAM-Trade</blue>: E-Commerce-Plattform für B2B/B2C/B2X",
       "heroLead": "Eine leistungsstarke Schweizer E-Commerce-Plattform für anspruchsvollen Handel. Wickeln Sie B2B-, B2C- und B2X-Geschäfte in einem einzigen System ab, mit über 200 Integrationen und Platz für mehr als 1 Million Produkte.",
       "heroBody": "Entwickelt von Trident Software und bereits im Einsatz bei Autoteile-Grosshändlern, Lieferanten von Uhrenzubehör und Händlern für Industrieausrüstung in der Schweiz und in Europa.",
@@ -1016,8 +1016,8 @@
       "seeProjects": "Unsere Projekte ansehen"
     },
     "about": {
-      "metaTitle": "Über uns | Trident Software",
-      "metaDescription": "Trident Software: Softwareentwicklung mit KI im Kern. Gegründet 2009 in Charkiw, Ukraine; Schweizer Firma in Sitten, Wallis, seit 2022. 10+ Ingenieure, 100+ Projekte, 20+ Länder.",
+      "metaTitle": "Über uns: Softwarefirma in Sitten, Wallis | Trident Software",
+      "metaDescription": "Softwareentwicklung mit KI im Kern. Gegründet 2009 in Charkiw, Ukraine; Schweizer Firma in Sitten, Wallis, seit 2022. 10+ Ingenieure, 100+ Projekte, 20+ Länder.",
       "label": "Über Trident",
       "heroTitle": "Schweizer Qualität. Engineering mit <blue>KI im Kern</blue>.",
       "heroLead": "Trident Software wurde 2009 in Charkiw in der Ukraine gegründet und ist seit 2022 als Schweizer Firma in Sitten im Wallis eingetragen. Wir entwickeln individuelle Software, KI-Systeme und Embedded-Lösungen für europäische KMU. Nur erfahrene Ingenieure. Feste Budgets. Compliance inklusive.",

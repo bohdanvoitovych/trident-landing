@@ -324,14 +324,14 @@
   "pages": {
     "home": {
       "metaTitle": "Trident Software — Operational software and AI agents, Switzerland",
-      "metaDescription": "We build the systems a company runs on every day: order intake, dispatch, field apps, billing. Our AI agents answer enquiries and process documents in four national languages. Sion, Valais."
+      "metaDescription": "We build the systems a company runs on every day: order intake, dispatch, field apps, billing, plus AI agents that answer in four languages. Sion, Valais."
     },
     "notFound": {
       "label": "Error 404"
     },
     "contact": {
       "meta": {
-        "title": "Contact | Trident Software",
+        "title": "Contact us in Sion, Valais | Trident Software",
         "description": "Talk to Trident Software in Sion, Valais. Book a free 45-minute audit of your operations and the systems behind them."
       },
       "heroLabel": "Contact",
@@ -360,7 +360,7 @@
       "whereText": "Rue de l'Industrie 23, 1950 Sion, ten minutes from the station in the HES-SO Valais-Wallis district."
     },
     "blog": {
-      "metaTitle": "Software Engineering Blog | AI, Cloud & Swiss Tech Insights | Trident Software",
+      "metaTitle": "Software engineering blog: AI and cloud | Trident Software",
       "metaDescription": "Articles on AI integration, software architecture, cloud DevOps, embedded systems and the Swiss tech market, written by the Trident Software engineering team.",
       "label": "Insights"
     },
@@ -391,8 +391,8 @@
       "ctaButton": "Book a free audit"
     },
     "industries": {
-      "metaTitle": "Software Development by Industry | Healthcare, Automotive, Fintech & More | Trident Software",
-      "metaDescription": "Custom software development for 20+ industries: healthcare, automotive, fintech, logistics, retail, SaaS, manufacturing. Engineering team since 2009. Fixed budgets, revFADP compliance.",
+      "metaTitle": "Software development by industry | Trident Software",
+      "metaDescription": "Custom software for 20+ industries: healthcare, automotive, fintech, logistics, retail, SaaS, manufacturing. Team since 2009, fixed budgets, revFADP-compliant.",
       "crumb": "Industries",
       "label": "Industry expertise",
       "title": "Industries we build software for",
@@ -456,13 +456,13 @@
       "title": "Frequently asked questions"
     },
     "useCases": {
-      "metaTitle": "Use cases — {title} | Trident Software",
+      "metaTitle": "AI agent use cases | Trident Software",
       "crumb": "Use cases",
       "title": "Eight patterns where an agent pays for itself",
       "lead": "Each comes with a precondition. Most failed AI projects fail there, not in the model."
     },
     "team": {
-      "metaTitle": "Our Team | Trident Software",
+      "metaTitle": "Team: senior software engineers | Trident Software",
       "metaDescription": "10+ senior engineers in Switzerland and Ukraine. Backend, frontend, mobile and project management. No juniors on client projects.",
       "crumb": "Our Team",
       "title": "The people who <blue>build and run</blue> your software",
@@ -490,7 +490,7 @@
       "viewWork": "View our work"
     },
     "services": {
-      "metaTitle": "Software Services Switzerland | AI Agents, Logistics, IoT | Trident Software",
+      "metaTitle": "Custom software development, Switzerland | Trident Software",
       "metaDescription": "AI agents & LLM automation, logistics & operations platforms, custom business systems, IoT and CTO as a Service. Fixed budgets, 100+ projects since 2009.",
       "crumb": "Services",
       "label": "What we build",
@@ -552,7 +552,7 @@
       "viewCases": "View case studies"
     },
     "solutions": {
-      "metaTitle": "Solutions | Trident Software",
+      "metaTitle": "Solutions for Swiss SMEs | Trident Software",
       "metaDescription": "Software solutions for Swiss SMEs: websites, e-commerce platforms and custom B2B systems, with fixed budgets and Swiss compliance.",
       "crumb": "Solutions",
       "label": "Solutions",
@@ -920,7 +920,7 @@
     },
     "iamTrade": {
       "metaTitle": "iAM-Trade — B2B/B2C/B2X E-commerce Platform | Trident Software",
-      "metaDescription": "iAM-Trade is a Swiss e-commerce platform for B2B, B2C and B2X commerce: 200+ integrations, support for 1M+ products, dynamic pricing and multi-entity account management.",
+      "metaDescription": "iAM-Trade is a Swiss e-commerce platform for B2B, B2C and B2X: 200+ integrations, 1M+ products, dynamic pricing and multi-entity account management.",
       "heroTitle": "<blue>iAM-Trade</blue>: B2B/B2C/B2X e-commerce platform",
       "heroLead": "A Swiss e-commerce platform for complex commerce. It runs B2B, B2C and B2X sales from one system, with 200+ integrations and support for 1 million+ products.",
       "heroBody": "Built by Trident Software and used by automotive parts distributors, watch accessory suppliers and industrial equipment dealers in Switzerland and Europe.",
@@ -1016,8 +1016,8 @@
       "seeProjects": "See our projects"
     },
     "about": {
-      "metaTitle": "About | Trident Software",
-      "metaDescription": "Trident Software: AI-native software engineering. Founded in 2009 in Kharkiv, Ukraine; Swiss company in Sion, Valais, since 2022. 10+ engineers, 100+ projects, 20+ countries.",
+      "metaTitle": "About us: software company in Sion | Trident Software",
+      "metaDescription": "AI-native software engineering. Founded in 2009 in Kharkiv, Ukraine; a Swiss company in Sion, Valais, since 2022. 10+ engineers, 100+ projects, 20+ countries.",
       "label": "About Trident",
       "heroTitle": "Swiss quality. <blue>AI-native</blue> engineering.",
       "heroLead": "Founded in 2009 in Kharkiv, Ukraine, and incorporated in Sion, Valais, in 2022, Trident Software builds custom software, AI systems and embedded systems for European SMEs. Senior engineers only. Fixed budgets. Compliance included.",

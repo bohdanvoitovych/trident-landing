@@ -1,7 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { isNoIndexSite } from '@/lib/metadata'
-
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://trident-software.ch'
+import { SITE_URL, isNoIndexSite } from '@/lib/metadata'
 
 export default function robots(): MetadataRoute.Robots {
   if (isNoIndexSite()) {
