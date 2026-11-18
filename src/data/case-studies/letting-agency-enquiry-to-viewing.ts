@@ -28,15 +28,15 @@ const record: CaseRecord = {
           paragraphs: [
             'An agency that does one thing: it lets apartments on behalf of owners, across two municipalities in Swiss Romandie. A few hundred units on its books, a listing pipeline that never empties, and a team small enough that everyone does three jobs.',
             "It does not sell property and it does not run the buildings. Its mandate begins when a flat is given notice and ends when a new tenancy is signed, so the whole business is compressed into the weeks between those two dates, and its revenue is the letting fee the owner pays per signed tenancy. Every day a flat stands empty is the owner's loss and the agency's argument at the next mandate renewal.",
-            'Listings go to the portals that matter here: Homegate and ImmoScout24, which between them carry most of the inquiry volume and both belong to Swiss Marketplace Group, plus Flatfox with its own messenger and Newhome, the alternative backed by the cantonal banks.',
+            'Listings go to the portals that matter here: Homegate and ImmoScout24, which between them carry most of the enquiry volume and both belong to Swiss Marketplace Group, plus Flatfox with its own messenger and Newhome, the alternative backed by the cantonal banks.',
             "The object and the tenancy live in one of the Swiss standards (Rimo R5 or ImmoTop2 from W&W Immo Informatik, GARAIO REM, or AbaImmo), sometimes the agency's own installation, sometimes the owner's, which the agency is given access to. Either way those systems hold the record and the accounting. None of them was built to be a letting desk, and none of them answers a portal message on a Sunday.",
           ],
         },
         {
-          title: 'Before the change: the inquiries arrive as a burst, and mostly ask the same six things',
+          title: 'Before the change: the enquiries arrive as a burst, and mostly ask the same six things',
           paragraphs: [
             'A listing goes up and the responses land in the first forty-eight hours: is it still available, when can I see it, are the charges included, are pets allowed, which floor, is there parking. An agent handling a dozen listings answers those questions several hundred times a month, and none of that answering needs an agent.',
-            'An inquiry that arrives on Saturday evening waits until Monday morning; by then the serious candidate has booked two viewings elsewhere, and one of them will do.',
+            'An enquiry that arrives on Saturday evening waits until Monday morning; by then the serious candidate has booked two viewings elsewhere, and one of them will do.',
           ],
         },
         {
@@ -55,11 +55,11 @@ const record: CaseRecord = {
         {
           title: 'What we built',
           paragraphs: [
-            'An agent that sits in front of the system of record rather than inside it, because Rimo R5, ImmoTop2, GARAIO REM and AbaImmo hold tenancies, and an inquiry is not a tenancy yet. It is a candidate, and candidates are handled where they arrive: on the portal, in the messenger, at nine in the evening.',
+            'An agent that sits in front of the system of record rather than inside it, because Rimo R5, ImmoTop2, GARAIO REM and AbaImmo hold tenancies, and an enquiry is not a tenancy yet. It is a candidate, and candidates are handled where they arrive: on the portal, in the messenger, at nine in the evening.',
           ],
         },
         {
-          title: '1. It answers within a minute, in the language of the inquiry',
+          title: '1. It answers within a minute, in the language of the enquiry',
           paragraphs: [
             "Every channel the listing produces (portal message, Flatfox messenger, the agency's own form, e-mail, WhatsApp) is answered within a minute of arrival, in any of the seven languages: French, German, Italian, English, Spanish, Portuguese and Arabic.",
           ],
@@ -91,7 +91,7 @@ const record: CaseRecord = {
             'the candidate, who receives a calendar invitation rather than a line of text, so the viewing lands in the diary they actually look at.',
           ],
           closing: [
-            'A slot is only offered when every calendar it depends on is free. That is the difference between booking and double-booking: conflicts are resolved before the candidate sees the option, not apologized for afterward.',
+            'A slot is only offered when every calendar it depends on is free. That is the difference between booking and double-booking: conflicts are resolved before the candidate sees the option, not apologised for later.',
             'Group viewings fill and close automatically when full. Confirmations carry the address and entry instructions, a reminder goes out the day before, and every message carries a one-tap rebooking link, because a candidate who moves their slot is worth more than one who quietly does not turn up.',
           ],
         },

@@ -11,7 +11,7 @@ const record: IndustryRecord = {
       title: 'SaaS & Software Products',
       tagline: 'From MVP to scalable multi-tenant platform',
       description:
-        'We build SaaS products from the ground up — multi-tenant architecture, subscription billing, usage analytics, and white-label capabilities for software companies and startups.',
+        'We build SaaS products from the ground up: multi-tenant architecture, subscription billing, usage analytics and white-label capabilities for software companies and startups.',
       challenges: [
         {
           title: 'Multi-tenancy',
@@ -41,13 +41,13 @@ const record: IndustryRecord = {
         },
         {
           title: 'AI feature integration',
-          description: 'LLM-powered features: copilots, search, content generation.',
+          description: 'LLM features: copilots, search, content generation.',
         },
       ],
       meta: {
-        title: 'SaaS Development Services | Trident Software',
+        title: 'SaaS development services | Trident Software',
         description:
-          'SaaS product development — multi-tenant architecture, subscription billing, AI features. From MVP to scale. Swiss engineering.',
+          'SaaS product development: multi-tenant architecture, subscription billing, AI features. From MVP to scale. Swiss engineering.',
       },
     },
     de: {

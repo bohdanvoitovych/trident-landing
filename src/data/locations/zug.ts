@@ -10,8 +10,8 @@ const record: LocationRecord = {
       region: 'Canton of Zug',
       tagline: 'Blockchain, Web3, and enterprise software for Crypto Valley',
       description:
-        "Zug's Crypto Valley hosts over 1,000 blockchain companies — Ethereum Foundation, Cardano, Polkadot, and hundreds of DeFi projects. We build Web3 infrastructure, token-gated platforms, smart contract integrations, and enterprise-grade crypto tools for Zug's digital asset ecosystem.",
-      keyIndustries: ['Blockchain & Web3', 'DeFi & Crypto', 'International HQs', 'Asset Management', 'RegTech'],
+        "Zug's Crypto Valley hosts over 1,000 blockchain companies: Ethereum Foundation, Cardano, Polkadot and hundreds of DeFi projects. We build Web3 infrastructure, token-gated platforms, smart contract integrations and enterprise crypto tools for Zug's digital asset sector.",
+      keyIndustries: ['Blockchain & Web3', 'DeFi & crypto', 'International HQs', 'Asset management', 'RegTech'],
       highlights: [
         {
           title: 'Web3 & blockchain integration',
@@ -21,7 +21,7 @@ const record: LocationRecord = {
         {
           title: 'Token & DAO tooling',
           description:
-            'Governance portals, treasury management systems, and member dashboards for DAOs and token-based organizations in Crypto Valley.',
+            'Governance portals, treasury management systems and member dashboards for DAOs and token-based organisations in Crypto Valley.',
         },
         {
           title: 'FINMA-aware architecture',
@@ -30,9 +30,9 @@ const record: LocationRecord = {
         },
       ],
       meta: {
-        title: 'Software Development Zug | Crypto Valley Engineering | Trident Software',
+        title: 'Software development Zug | Crypto Valley engineering | Trident Software',
         description:
-          "Web3 platforms, blockchain integrations, and enterprise software for Zug's Crypto Valley. FINMA-compliant architecture. Swiss development team.",
+          "Web3 platforms, blockchain integrations, and enterprise software for Zug's Crypto Valley. Architecture built for FINMA requirements. Swiss development team.",
       },
     },
     de: {
@@ -68,7 +68,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Softwareentwicklung Zug | Crypto Valley | Trident Software',
         description:
-          'Web3-Plattformen, Blockchain-Integrationen und Unternehmenssoftware für das Crypto Valley in Zug. FINMA-konforme Architektur. Schweizer Entwicklungsteam.',
+          'Web3-Plattformen, Blockchain-Integrationen und Unternehmenssoftware für das Crypto Valley in Zug. Architektur für FINMA-Anforderungen. Schweizer Entwicklungsteam.',
       },
     },
     fr: {
@@ -98,7 +98,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Développement logiciel Zoug | Crypto Valley | Trident Software',
         description:
-          "Plateformes Web3, intégrations blockchain et logiciels d'entreprise pour la Crypto Valley de Zoug. Architecture conforme FINMA. Équipe suisse.",
+          "Plateformes Web3, intégrations blockchain et logiciels d'entreprise pour la Crypto Valley de Zoug. Architecture conçue pour les exigences FINMA. Équipe suisse.",
       },
     },
     it: {
@@ -128,7 +128,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Sviluppo software Zugo | Crypto Valley | Trident Software',
         description:
-          'Piattaforme Web3, integrazioni blockchain e software aziendale per la Crypto Valley di Zugo. Architettura conforme FINMA. Team di sviluppo svizzero.',
+          'Piattaforme Web3, integrazioni blockchain e software aziendale per la Crypto Valley di Zugo. Architettura progettata per i requisiti FINMA. Team di sviluppo svizzero.',
       },
     },
   },

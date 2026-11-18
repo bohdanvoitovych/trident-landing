@@ -8,15 +8,15 @@ const record: LocationRecord = {
     en: {
       name: 'Lugano',
       region: 'Canton of Ticino',
-      tagline: "Italian Switzerland's gateway to digital innovation",
+      tagline: "Software for Ticino and the Italian market",
       description:
-        "Lugano bridges Switzerland and Italy — private banking, luxury goods, gaming, and a growing startup scene fed by USI and SUPSI. We build Italian-facing platforms, cross-border commerce solutions, and private wealth management tools for Ticino's companies.",
+        "Lugano connects Switzerland and Italy: private banking, luxury goods, gaming and a growing startup scene fed by USI and SUPSI. We build Italian-facing platforms, cross-border commerce software and private wealth management tools for Ticino's companies.",
       keyIndustries: [
-        'Private Banking & Wealth',
-        'Cross-border Commerce',
-        'Gaming & Entertainment',
-        'Real Estate',
-        'Fashion & Luxury',
+        'Private banking & wealth',
+        'Cross-border commerce',
+        'Gaming & entertainment',
+        'Real estate',
+        'Fashion & luxury',
       ],
       highlights: [
         {
@@ -36,9 +36,9 @@ const record: LocationRecord = {
         },
       ],
       meta: {
-        title: 'Software Development Lugano Ticino | Trident Software Switzerland',
+        title: 'Software development Lugano Ticino | Trident Software Switzerland',
         description:
-          "Software development for Lugano's private banks, cross-border businesses, and startups. Italian-market ready, Swiss quality. Your Ticino tech partner.",
+          "Software development for Lugano's private banks, cross-border businesses and startups, ready for the Italian market.",
       },
     },
     de: {

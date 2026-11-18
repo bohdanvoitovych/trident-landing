@@ -19,7 +19,7 @@ const records: TestimonialRecord[] = [
     company: 'Ardevaz SLS',
     content: {
       en: {
-        quote: 'Excellente compagnie. Nous sommes très satisfaits du site internet que cette société a créé.',
+        quote: 'An excellent company. We are very satisfied with the website they built for us.',
       },
       de: {
         quote: 'Ausgezeichnete Firma. Wir sind mit der Website, die sie für uns erstellt hat, sehr zufrieden.',
@@ -60,7 +60,7 @@ const records: TestimonialRecord[] = [
     company: 'Kleap.co',
     content: {
       en: {
-        quote: "Ce qui aurait pu être un obstacle majeur s'est transformé en un minuscule inconvénient.",
+        quote: 'What could have been a major obstacle turned into a minor inconvenience.',
       },
       de: {
         quote: 'Was ein grosses Hindernis hätte werden können, wurde zu einer kleinen Unannehmlichkeit.',

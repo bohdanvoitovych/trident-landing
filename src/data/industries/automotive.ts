@@ -11,7 +11,7 @@ const record: IndustryRecord = {
       title: 'Automotive',
       tagline: 'Software for connected and electric vehicles',
       description:
-        'From B2B dealer platforms to EV fleet management and in-vehicle software, we deliver automotive solutions that meet the precision and reliability standards of the industry.',
+        'We build dealer platforms, EV fleet management and in-vehicle software to the precision and reliability standards the automotive industry expects.',
       challenges: [
         {
           title: 'Complex B2B workflows',
@@ -19,7 +19,7 @@ const record: IndustryRecord = {
         },
         {
           title: 'Real-time telemetry',
-          description: 'Vehicle data ingestion and processing at scale for EV and fleet applications.',
+          description: 'Collecting and processing large volumes of vehicle data from EVs and fleets.',
         },
         {
           title: 'Regulatory compliance',
@@ -33,21 +33,21 @@ const record: IndustryRecord = {
         },
         {
           title: 'EV fleet management',
-          description: 'Charging optimization, range prediction, and fleet analytics.',
+          description: 'Charging optimisation, range prediction and fleet analytics.',
         },
         {
           title: 'Telematics platforms',
-          description: 'Real-time vehicle data processing and driver behavior analytics.',
+          description: 'Real-time vehicle data and driver behaviour analytics.',
         },
         {
           title: 'Document automation',
-          description: 'AI-powered vehicle documentation and compliance workflows.',
+          description: 'AI-assisted vehicle documents and compliance workflows.',
         },
       ],
       meta: {
-        title: 'Automotive Software Development | Trident Software',
+        title: 'Automotive software development | Trident Software',
         description:
-          'Automotive software — dealer platforms, EV fleet management, telematics, and vehicle documentation automation. Swiss engineering.',
+          'Automotive software: dealer platforms, EV fleet management, telematics and automated vehicle documentation. Swiss engineering.',
       },
     },
     de: {

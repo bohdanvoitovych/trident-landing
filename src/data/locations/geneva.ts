@@ -8,36 +8,36 @@ const record: LocationRecord = {
     en: {
       name: 'Geneva',
       region: 'Canton of Geneva',
-      tagline: "Technology solutions for Geneva's international ecosystem",
+      tagline: "Software for Geneva's international community",
       description:
-        "Geneva is home to the UN, WHO, WTO, CERN, and a thriving luxury and private banking sector. We build multilingual enterprise platforms, compliance systems, and data management tools for Geneva's international organizations and financial institutions.",
+        "Geneva is home to the UN, WHO, WTO, CERN and a large luxury and private banking sector. We build multilingual enterprise platforms, compliance systems and data management tools for Geneva's international organisations and financial institutions.",
       keyIndustries: [
-        'International Organizations',
-        'Private Banking',
-        'Luxury Goods',
-        'Life Sciences',
+        'International organisations',
+        'Private banking',
+        'Luxury goods',
+        'Life sciences',
         'Diplomacy & NGOs',
       ],
       highlights: [
         {
           title: 'Multilingual from day one',
           description:
-            "EN/FR/DE/IT interfaces built with proper i18n — not an afterthought. Essential for Geneva's international clientele.",
+            "EN/FR/DE/IT interfaces with i18n designed in from the start, as Geneva's international clientele expects.",
         },
         {
           title: 'Compliance-first development',
-          description: 'GDPR, revFADP, and financial compliance baked into architecture, not bolted on later.',
+          description: 'GDPR, revFADP and financial compliance built into the architecture, not added later.',
         },
         {
-          title: 'International org expertise',
+          title: 'International organisations',
           description:
             'Document management, reporting dashboards, and workflow automation for NGOs and international institutions.',
         },
       ],
       meta: {
-        title: 'Software Development Geneva | Trident Software Switzerland',
+        title: 'Software development Geneva | Trident Software Switzerland',
         description:
-          "Custom software for Geneva's international organizations, banks, and luxury brands. Multilingual platforms, compliance-first architecture. Swiss-based team.",
+          "Custom software for Geneva's international organisations, banks and luxury brands. Multilingual platforms, compliance-first architecture. Swiss-based team.",
       },
     },
     de: {

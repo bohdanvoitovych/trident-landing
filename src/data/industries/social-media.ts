@@ -19,7 +19,7 @@ const record: IndustryRecord = {
         },
         {
           title: 'Content moderation',
-          description: 'Automated and human-in-the-loop moderation at scale without false positives.',
+          description: 'Automated and human review at scale while keeping false positives low.',
         },
         {
           title: 'Real-time interactions',
@@ -46,9 +46,9 @@ const record: IndustryRecord = {
         },
       ],
       meta: {
-        title: 'Social Media & Community Platform Development | Trident Software',
+        title: 'Social media & community platform development | Trident Software',
         description:
-          'Social platform development — community apps, creator tools, moderation systems, social analytics. Swiss engineering.',
+          'Social platform development: community apps, creator tools, moderation systems, social analytics. Swiss engineering.',
       },
     },
     de: {

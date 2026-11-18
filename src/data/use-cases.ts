@@ -89,7 +89,7 @@ const records: UseCaseRecord[] = [
       en: {
         title: 'Dispatcher assistant',
         text: 'Proposes assignment and sequence, explains why, recalculates on change. The dispatcher decides.',
-        needs: 'Built as advice, never silent overrule.',
+        needs: 'Advice only, never a silent override.',
       },
       de: {
         title: 'Assistent für die Disposition',

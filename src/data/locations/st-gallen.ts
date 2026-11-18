@@ -10,11 +10,11 @@ const record: LocationRecord = {
       region: 'Canton of St. Gallen',
       tagline: 'Logistics and supply chain software for Eastern Switzerland',
       description:
-        "St. Gallen is Eastern Switzerland's economic engine — textiles, logistics (Swiss Post, UPS, DHL have major operations), the renowned HSG university, and a strong industrial base. We build supply chain visibility platforms, warehouse management systems, and logistics automation tools for St. Gallen's distribution-heavy economy.",
+        "St. Gallen is the economic centre of Eastern Switzerland, with textiles, logistics (Swiss Post, UPS and DHL have major operations), HSG university and a strong industrial base. We build supply chain visibility platforms, warehouse management systems and logistics automation tools for St. Gallen's distribution-heavy economy.",
       keyIndustries: [
-        'Logistics & Supply Chain',
-        'Textiles & Fashion',
-        'Education & Research',
+        'Logistics & supply chain',
+        'Textiles & fashion',
+        'Education & research',
         'Manufacturing',
         'Retail',
       ],
@@ -27,7 +27,7 @@ const record: LocationRecord = {
         {
           title: 'Warehouse & inventory systems',
           description:
-            'WMS integrations, barcode/RFID scanning workflows, and replenishment automation for distribution centers.',
+            'WMS integrations, barcode/RFID scanning workflows and replenishment automation for distribution centres.',
         },
         {
           title: 'B2B commerce platforms',
@@ -36,7 +36,7 @@ const record: LocationRecord = {
         },
       ],
       meta: {
-        title: 'Software Development St. Gallen | Logistics & Supply Chain Tech | Trident Software',
+        title: 'Software development St. Gallen | Logistics & supply chain tech | Trident Software',
         description:
           'Logistics software, WMS, and supply chain platforms for St. Gallen companies. EDI integration, carrier APIs, warehouse automation. Swiss dev team.',
       },

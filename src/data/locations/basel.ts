@@ -11,7 +11,7 @@ const record: LocationRecord = {
       tagline: "Enterprise software for Basel's pharma and life sciences leaders",
       description:
         "Basel is home to Roche, Novartis, Lonza, and hundreds of medtech and chemical companies. We build IEC 62304-compliant medical device software, laboratory automation tools, and regulatory submission platforms for Basel's life sciences industry.",
-      keyIndustries: ['Pharma', 'Medtech', 'Chemical Industry', 'Biotech', 'Financial Services'],
+      keyIndustries: ['Pharma', 'Medtech', 'Chemical industry', 'Biotech', 'Financial services'],
       highlights: [
         {
           title: 'Medical device software',
@@ -30,7 +30,7 @@ const record: LocationRecord = {
         },
       ],
       meta: {
-        title: 'Software Development Basel | Pharma & Life Sciences IT | Trident Software',
+        title: 'Software development Basel | Pharma & life sciences IT | Trident Software',
         description:
           "Medical device software, lab automation, and regulatory platforms for Basel's pharma and medtech sector. IEC 62304, GMP-compliant development. Swiss team.",
       },

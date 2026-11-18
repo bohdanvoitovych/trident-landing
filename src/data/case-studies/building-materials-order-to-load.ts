@@ -27,12 +27,12 @@ const record: CaseRecord = {
           title: 'The business',
           paragraphs: ['A construction-materials logistics business with three revenue lines that share one fleet and one order desk:'],
           items: [
-            'Material delivery. Aggregates (sand, gravel, crushed stone) and cement, bought at quarries and delivered to contractors and building sites. Bulk goods sold by weight, not a catalog of packaged articles.',
-            'Soil and construction-waste removal. A business in its own right rather than a return leg: separate runs from site to disposal facility, much of it won through tenders. Pairing a removal with a delivery in one round trip is an optimization on top, not the operating model.',
+            'Material delivery. Aggregates (sand, gravel, crushed stone) and cement, bought at quarries and delivered to contractors and building sites. Bulk goods sold by weight, not a catalogue of packaged items.',
+            'Soil and construction-waste removal. A business in its own right rather than a return leg: separate runs from site to disposal facility, much of it won through tenders. Pairing a removal with a delivery in one round trip is an optimisation on top, not the operating model.',
             'Skip hire. Containers dropped at small sites, left for the duration of the work, then collected or swapped: an asset-rental cycle rather than a delivery.',
           ],
           closing: [
-            'Transport runs on contracted haulers, own trucks, or both. Where the flow crosses a border (materials coming in, excavated soil going out), customs and waste-shipment paperwork must be in place before the truck moves. Revenue is contract-driven and sharply seasonal.',
+            'Transport runs on contracted hauliers, own trucks or both. Where the flow crosses a border (materials coming in, excavated soil going out), customs and waste-shipment paperwork must be in place before the truck moves. Revenue is contract-driven and sharply seasonal.',
           ],
         },
         {
@@ -81,7 +81,7 @@ const record: CaseRecord = {
           title: '2. Automatic dispatch with an AI planning model',
           items: [
             "Transport is assigned automatically across own fleet and contracted hauliers, against vehicle type, site access, plant slots, driving times and the customer's window. Carriers and drivers are notified without a phone call.",
-            'Deliveries, removals and skip movements are planned in one pass over one fleet, instead of three people planning the same trucks. Where a delivery and a removal fit the same round trip, the model proposes the pairing as an optimization it finds, not as an assumption the business is built on.',
+            'Deliveries, removals and skip movements are planned in one pass over one fleet, instead of three people planning the same trucks. Where a delivery and a removal fit the same round trip, the model proposes the pairing as an optimisation it finds, not as an assumption the business is built on.',
             'Skips are tracked as assets, not as jobs: where every container is, how long it has stood there, and which ones are due for collection or swap. Idle containers on finished sites are what quietly caps a skip fleet.',
             'ETAs are calculated and pushed to the customer, and recalculated when reality moves, which it does daily.',
             'The planner stops producing the plan and starts approving it, which is the part a human is actually better at.',

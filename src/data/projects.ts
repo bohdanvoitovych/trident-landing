@@ -38,7 +38,7 @@ const records: ProjectRecord[] = [
         sector: 'Automotive',
         details: [
           'B2B ecommerce platform for automotive parts and related products, built to support business customers, bulk ordering, and complex pricing rules.',
-          'The platform integrates products, stocks and clients management, orders processing and delivery.',
+          'The platform covers product, stock and client management, order processing and delivery.',
         ],
         tags: ['Automotive', 'B2B', 'Ecommerce', 'Web'],
       },
@@ -85,7 +85,7 @@ const records: ProjectRecord[] = [
         sector: 'Healthcare',
         details: [
           'Medical management platform built for clinics and healthcare providers.',
-          'System centralizes patient records, medical documentation, staff management, and consultation workflows in one secure environment.',
+          'It centralises patient records, medical documentation, staff management and consultation workflows in one secure environment.',
         ],
         tags: ['Healthcare', 'Admin panel', 'Mobile Apps'],
       },
@@ -131,7 +131,7 @@ const records: ProjectRecord[] = [
         sector: 'E-commerce',
         details: [
           'Ecommerce platform for selling tires and rims in Canada.',
-          'The solution supports product catalog management, search and filtering by vehicle specifications and models and a streamlined checkout and delivery process.',
+          'The platform supports product catalogue management, search and filtering by vehicle specifications and models, and a simple checkout and delivery process.',
         ],
         tags: ['Automotive', 'B2C', 'Ecommerce', 'Web'],
       },
@@ -176,7 +176,7 @@ const records: ProjectRecord[] = [
         summary: 'Web and mobile system for managing affiliation programmes.',
         sector: 'MarTech',
         details: [
-          'Web/mobile platform for management affiliation programs end-to-end.',
+          'Web and mobile platform to run affiliation programmes end to end.',
           'The system provides a centralized admin panel for controlling partners, tracking performance, managing budgets, and generating detailed reports in real time.',
         ],
         tags: ['Marketing', 'Admin Panel', 'Mobile Apps'],
@@ -223,7 +223,7 @@ const records: ProjectRecord[] = [
         sector: 'Automotive',
         details: [
           'Scalable B2B ecommerce portal for wholesale automotive part sales.',
-          'Solution improves customer experience through advanced search, catalog sorting, order and delivery flows, and integrated pricing logic based on client tiers.',
+          'The portal improves the customer experience with advanced search, catalogue sorting, order and delivery flows, and pricing based on client tiers.',
         ],
         tags: ['Automotive', 'B2B', 'Ecommerce', 'Web'],
       },
@@ -268,8 +268,8 @@ const records: ProjectRecord[] = [
         summary: 'Mobile warehouse management app with scanner integration.',
         sector: 'Logistics',
         details: [
-          'Mobile app designed to work with a scanner attached to a finger, serving as a cost-effective alternative to traditional industrial data collection terminals.',
-          'App supports real-time warehouse operations, inventory and order processing.',
+          'Mobile app that works with a finger-mounted scanner, a cheaper alternative to traditional industrial data collection terminals.',
+          'The app runs real-time warehouse operations, inventory and order processing.',
         ],
         tags: ['Automotive', 'WMS', 'Mobile Apps'],
       },
@@ -315,7 +315,7 @@ const records: ProjectRecord[] = [
         sector: 'Logistics',
         details: [
           'Application for drivers to support delivery operations. The app provides route information, task management, and real-time updates during delivery processes.',
-          'Designed for reliability and ease of use, app supports drivers in daily operations while helping ensure faster, more accurate deliveries and higher customer satisfaction.',
+          'Built to be reliable and easy to use, the app supports drivers in daily work and helps make deliveries faster and more accurate, so customers are happier.',
         ],
         tags: ['Logistics', 'B2B', 'Ecommerce', 'Mobile Apps'],
       },
@@ -360,8 +360,8 @@ const records: ProjectRecord[] = [
         summary: 'Centralised control for products, orders and fleet operations.',
         sector: 'Logistics',
         details: [
-          'Centralized platform for managing products, customers, orders, and fleet operations. System provides full visibility of operational workflows and supports decision-making through structured data and reporting.',
-          'The platform acts as the core control center for the entire ecosystem.',
+          'Central platform for managing products, customers, orders and fleet operations. It shows every operational workflow and supports decisions with structured data and reports.',
+          'The platform is the control centre for the whole system.',
         ],
         tags: ['Wholesales', 'B2B', 'B2C', 'Ecommerce', 'Admin Panel', 'Web'],
       },
@@ -407,7 +407,7 @@ const records: ProjectRecord[] = [
         sector: 'Logistics',
         details: [
           'Mobile application for B2B/B2C clients to place orders, manage deliveries, and complete online payments.',
-          'App offers a simplified ordering experience while integrating with admin and logistics systems, ensuring transparent order tracking, reliable delivery, and a smooth customer experience.',
+          'The app makes ordering simple and connects to the admin and logistics systems, so clients can track every order and rely on delivery.',
         ],
         tags: ['Wholesales', 'B2B', 'B2C', 'Ecommerce', 'Mobile Apps'],
       },
@@ -453,7 +453,7 @@ const records: ProjectRecord[] = [
         sector: 'Retail',
         details: [
           'B2B and B2C online fashion store created for boutique-level apparel and accessories.',
-          'Website combines visual storytelling with clean navigation and promotional spotlights. The platform supports multi-currency pricing, size/variant selection, wishlist functionality, and social integration for sharing looks.',
+          'The website combines visual storytelling with clean navigation and promotional spotlights. The platform supports multi-currency pricing, size/variant selection, wishlists and social sharing of looks.',
         ],
         tags: ['Fashion & Luxury', 'B2B', 'B2C', 'Ecommerce', 'Web'],
       },
@@ -499,7 +499,7 @@ const records: ProjectRecord[] = [
         sector: 'Healthcare',
         details: [
           'Web questionnaire for dental business evaluation based on special algorithms.',
-          'Platform provides complete control over the questionnaire logic, answer sets, and results dashboard, enabling real-time management of respondents and evaluation data.',
+          'The platform gives full control over the questionnaire logic, answer sets and results dashboard, so respondents and evaluation data can be managed in real time.',
         ],
         tags: ['Healthcare', 'Admin panel', 'Web'],
       },
@@ -545,7 +545,7 @@ const records: ProjectRecord[] = [
         sector: 'HoReCa',
         details: [
           'Online store of accessories for hotels and restaurants in Switzerland.',
-          'Website showcases categories and products with the ability to order ready-made accessories, request a price and order design and production of new samples. The platform supports simplified ordering, work with guests and registered users.',
+          'The website presents categories and products. Customers can order ready-made accessories, request a price, or order the design and production of new samples. Guests and registered users can both order.',
         ],
         tags: ['Accessories', 'B2B', 'B2C', 'Ecommerce', 'Web'],
       },
@@ -591,7 +591,7 @@ const records: ProjectRecord[] = [
         sector: 'SaaS',
         details: [
           'AI-enhanced website creation and management tool designed for users who want simplicity without sacrificing power.',
-          'Solution leverages generative content models and pre-built components to help users build landing pages, service sites, and small business portals in minutes.',
+          'It uses generative content models and pre-built components to help users build landing pages, service sites, and small business portals in minutes.',
         ],
         tags: ['AI', 'SaaS', 'Web'],
       },
@@ -637,7 +637,7 @@ const records: ProjectRecord[] = [
         sector: 'Retail',
         details: [
           'B2B and B2C ecommerce platform designed for luxury watches, jewellery, and gift products.',
-          'Project combines elegant design with robust catalog management and intuitive navigation, enabling customers to browse and purchase high-value items with confidence.',
+          'The project combines elegant design with solid catalogue management and clear navigation, so customers can browse and buy high-value items with confidence.',
         ],
         tags: ['Fashion & Luxury', 'B2B', 'B2C', 'Ecommerce', 'Web'],
       },
@@ -682,7 +682,7 @@ const records: ProjectRecord[] = [
         summary: 'Promotional site for a construction company specialising in decks.',
         sector: 'Construction',
         details: [
-          'Promo website of construction company specializing in decks and outdoor structures in USA.',
+          'Promo website for a US construction firm specialising in decks and outdoor structures.',
           'The site focuses on clear presentation of services, completed projects, and trust-building elements for local customers.',
         ],
         tags: ['Construction', 'Websites'],
@@ -729,7 +729,7 @@ const records: ProjectRecord[] = [
         sector: 'E-commerce',
         details: [
           'Professional online store for tools and equipment, tailored to both retail and trade customers.',
-          'Website provides detailed product specifications, compatibility filters, secure checkout, and warranty information modules. Built for robustness and scalability, it serves as a reliable digital showroom for tool suppliers.',
+          'The website offers detailed product specifications, compatibility filters, secure checkout and warranty information. Built to be reliable and to scale, it is a digital showroom for tool suppliers.',
         ],
         tags: ['DIY & Tools', 'B2B', 'B2C', 'Ecommerce', 'Web'],
       },
@@ -774,7 +774,7 @@ const records: ProjectRecord[] = [
         summary: 'Online presence for a language school, with courses and enrolment.',
         sector: 'Education',
         details: [
-          'Comprehensive online presence for a language school in Switzerland that includes course catalogs, enrollment forms, schedules, and faculty profiles.',
+          'Complete online presence for a language school in Switzerland that includes course catalogues, enrolment forms, schedules, and faculty profiles.',
           'The site improves user engagement with clear calls to action, interactive elements, and easy access to learning resources.',
         ],
         tags: ['Education', 'Websites'],
@@ -820,8 +820,8 @@ const records: ProjectRecord[] = [
         summary: 'Interactive quiz and game mobile application.',
         sector: 'Consumer',
         details: [
-          'Interactive quiz and game mobile application developed to engage users with real-time questions, scoring, and user progression mechanics .',
-          'App enables players to challenge friends, track achievements, and compete in themed rounds.',
+          'Interactive quiz and game mobile application developed to engage users with real-time questions, scoring, and user progression mechanics.',
+          'The app lets players challenge friends, track achievements and compete in themed rounds.',
         ],
         tags: ['Travelling', 'Games', 'Mobile Apps'],
       },
@@ -867,7 +867,7 @@ const records: ProjectRecord[] = [
         sector: 'Community',
         details: [
           'Digital community hub for expats and local professionals located in Valais.',
-          'Website offers information about events, membership options, cultural highlights, and relocation resources.  Project focuses on building community engagement through event calendars, newsletter integration, and user-friendly contact modules.',
+          'The website offers information about events, membership options, cultural highlights and relocation resources. The project builds community engagement through event calendars, newsletter integration and simple contact modules.',
         ],
         tags: ['Social', 'Websites'],
       },
@@ -913,7 +913,7 @@ const records: ProjectRecord[] = [
         sector: 'Travel',
         details: [
           'A premium travel services portal designed for curated trip experiences and executive travel planning.',
-          'Featuring destination showcases, package options, and inquiry forms, this site emphasizes visual storytelling to inspire exploration.',
+          'With destination pages, package options and enquiry forms, the site relies on visual storytelling to inspire travel.',
         ],
         tags: ['Tourism', 'Admin panel', 'Websites'],
       },
@@ -958,8 +958,8 @@ const records: ProjectRecord[] = [
         summary: 'Web platform for dental business investment management.',
         sector: 'Healthcare',
         details: [
-          'Web platform built for dental business investors in USA.',
-          'System empowers the client to independently manage the entire investment opportunity lifecycle — from publishing and updating detailed offers to processing investor applications and managing tiered user access to exclusive information.',
+          'Web platform for dental business investors in the USA.',
+          'The system lets the client manage the whole investment opportunity lifecycle alone, from publishing and updating detailed offers to processing investor applications and managing tiered access to exclusive information.',
         ],
         tags: ['Investment', 'Healthcare', 'Admin panel', 'User Portal'],
       },
@@ -1004,8 +1004,8 @@ const records: ProjectRecord[] = [
         summary: 'B2B and B2C portal for water purification device monitoring.',
         sector: 'IoT',
         details: [
-          'B2B/B2C unified portal and mobile app built for a special measurment device installed on water purification systems.',
-          'System includes ecommerce, customer and users management, device monitoring dashboards, service scheduling, and installation flow. Apps interfaces sync data in real time, allowing users to track system performance and maintenance alerts.',
+          'B2B/B2C unified portal and mobile app for a special measurement device installed on water purification systems.',
+          'The system includes e-commerce, customer and user management, device monitoring dashboards, service scheduling and an installation flow. The apps sync data in real time, so users can track system performance and maintenance alerts.',
         ],
         tags: ['IoT', 'Ecology', 'B2B', 'B2C', 'Ecommerce', 'Websites', 'Admin panel', 'Mobile Apps'],
       },
@@ -1051,7 +1051,7 @@ const records: ProjectRecord[] = [
         sector: 'Sports',
         details: [
           'Management solution for sports and fitness facilities, particularly squash and badminton courts.',
-          'Platform includes booking calendars, user accounts, payment integrations, analytics dashboards, and push notifications for reservations. The cross-platform design ensures seamless experiences for both facility managers and players. Real-time availability and automated reminders help reduce no-shows and optimize court utilization.',
+          'The platform includes booking calendars, user accounts, payment integrations, analytics dashboards and push notifications for reservations. It works across platforms for both facility managers and players. Real-time availability and automated reminders help reduce no-shows and improve court utilisation.',
         ],
         tags: ['Sport', 'Websites', 'Admin panel', 'Mobile Apps'],
       },
@@ -1097,7 +1097,7 @@ const records: ProjectRecord[] = [
         sector: 'Consumer',
         details: [
           'Content-centric web platform blending astrology insights with personalized psychological content.',
-          'Project engages users through dynamic profiles, daily readings, and tailored recommendations. The site integrates social sharing, newsletter segmentation, and comment modules to increase retention and community participation. The project demonstrates a mix of editorial design and user personalization logic.',
+          'The project engages users through dynamic profiles, daily readings and tailored recommendations. The site includes social sharing, newsletter segmentation and comments to increase retention and community participation. It mixes editorial design with personalisation logic.',
         ],
         tags: ['Social', 'Websites', 'User Portal'],
       },
@@ -1143,7 +1143,7 @@ const records: ProjectRecord[] = [
         sector: 'Retail',
         details: [
           'B2C marketplace offering lifestyle accessories across tech, fashion, and everyday essentials.',
-          'Website focuses on streamlined browsing, easy search filters, products options presentation and simple order process.',
+          'The website focuses on easy browsing, simple search filters, clear product options and a short order process.',
         ],
         tags: ['Accessories', 'Ecommerce', 'Websites'],
       },
@@ -1189,7 +1189,7 @@ const records: ProjectRecord[] = [
         sector: 'Retail',
         details: [
           'Online marketplace for fishing gear and outdoor equipment that combines category highlights with educational content and product guides.',
-          'Shop supports wishlist features, product bundles, and seasonal promotions to increase engagement. Admin panel empowers administrators with campaign scheduling and stock alerts, making it easier to manage peak seasons.',
+          'The shop supports wishlists, product bundles and seasonal promotions to increase engagement. In the admin panel, staff schedule campaigns and get stock alerts, which makes peak seasons easier to manage.',
         ],
         tags: ['Sport', 'B2B', 'B2C', 'Ecommerce', 'Web'],
       },
@@ -1235,7 +1235,7 @@ const records: ProjectRecord[] = [
         sector: 'Automotive',
         details: [
           'Versatile automotive parts marketplace serving both B2B and B2C customer segments.',
-          'With adaptive pricing, buyer tiers, and volume discount logic, it streamlines sales across industries. Advanced search, brand filters, and compatibility checks enhance product discovery.',
+          'Adaptive pricing, buyer tiers and volume discounts simplify sales across industries. Advanced search, brand filters and compatibility checks help buyers find the right part.',
         ],
         tags: ['Automotive', 'Ecommerce', 'Web'],
       },

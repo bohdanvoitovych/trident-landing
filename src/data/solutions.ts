@@ -37,10 +37,10 @@ const records: SolutionRecord[] = [
     techStack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Payload CMS', 'PostgreSQL', 'Vercel', 'Caddy'],
     content: {
       en: {
-        title: 'Website Development',
-        tagline: 'From brochure sites to user portals — built for Swiss SMEs',
+        title: 'Website development',
+        tagline: 'From brochure sites to user portals, built for Swiss SMEs',
         description:
-          'We build websites that combine clean aesthetics with solid engineering. From a simple web brochure to a full user portal with authentication, we deliver fixed-price packages with predictable timelines.',
+          'We build clean, well-engineered websites. From a simple web brochure to a full user portal with logins, each package has a fixed price and a fixed timeline.',
         packages: [
           {
             slug: 'web-brochure',
@@ -48,7 +48,7 @@ const records: SolutionRecord[] = [
             price: 'CHF 599',
             timeline: '2 weeks',
             description:
-              'Your virtual business card — a concise, professional online presence that tells clients who you are and how to reach you.',
+              'Your business card online: a short, professional site that tells clients who you are and how to reach you.',
             target: ['Small businesses', 'Startups', 'Consultants', 'Non-profits'],
             features: [
               'Company info & contacts',
@@ -64,7 +64,7 @@ const records: SolutionRecord[] = [
             timeline: '1 month',
             highlighted: true,
             description:
-              'A full-featured website that showcases your business, generates leads, and converts visitors — built for Swiss SMEs.',
+              'A complete website that presents your business and turns visitors into enquiries. Built for Swiss SMEs.',
             target: ['SMEs', 'Service companies', 'Contractors'],
             features: [
               'Company overview + contacts',
@@ -80,12 +80,12 @@ const records: SolutionRecord[] = [
             price: 'CHF 2,499',
             timeline: '1.5 months',
             description:
-              'An interactive platform with authentication and personal accounts — for businesses serving registered clients, members, or partners.',
+              'A site with logins and personal accounts, for businesses that serve registered clients, members or partners.',
             target: ['B2G/B2E companies', 'Educational institutions', 'Partner portals'],
             features: [
               'Everything in SME Website',
               'Sign-up / sign-in / password reset',
-              'Personal cabinet',
+              'Personal account',
               'User management',
             ],
           },
@@ -95,11 +95,11 @@ const records: SolutionRecord[] = [
             price: 'CHF 6,999',
             timeline: '2 months',
             description:
-              'A complete e-commerce solution for selling products online — catalog, checkout, order management, and inventory built in.',
+              'A complete online shop with catalogue, checkout, order management and inventory built in.',
             target: ['B2C / B2B sellers', 'Manufacturers', 'Distributors'],
             features: [
               'Everything in User Portal',
-              'Product catalog + wishlist + cart',
+              'Catalogue + wishlist + cart',
               'Checkout + orders',
               'Products & order management',
             ],
@@ -436,41 +436,41 @@ const records: SolutionRecord[] = [
     ],
     content: {
       en: {
-        title: 'E-commerce Solutions',
-        tagline: 'Custom B2B, B2C, and B2X platforms — from MVP to 1M+ products',
+        title: 'E-commerce solutions',
+        tagline: 'Custom B2B, B2C and B2X platforms, from MVP to 1M+ products',
         description:
-          'We build custom e-commerce platforms for Swiss and European businesses. From WooCommerce customization to fully bespoke B2B platforms with complex pricing, ERP integration, and 200+ connectors.',
+          'We build e-commerce platforms for Swiss and European businesses, from customised WooCommerce shops to bespoke B2B platforms with complex pricing, ERP integration and 200+ connectors.',
         features: [
           {
-            title: 'B2B & B2C Support',
+            title: 'B2B & B2C support',
             description:
-              'Omnichannel strategy, custom CRM/ERP integration, scalable order management for both business and consumer markets.',
+              'Omnichannel strategy, custom CRM/ERP integration and scalable order management for business and consumer markets.',
           },
           {
-            title: 'Custom Platform Development',
-            description: 'Backend development, payment gateway integration, analytics dashboards — no SaaS lock-in.',
+            title: 'Custom platform development',
+            description: 'Backend development, payment gateway integration, analytics dashboards. No SaaS lock-in.',
           },
           {
             title: 'AI-powered features',
             description: 'Product recommendations, predictive analytics, chatbots and virtual assistants built in.',
           },
           {
-            title: 'Marketplace Development',
-            description: 'Multi-vendor marketplaces with logistics, fulfillment, and customer loyalty programs.',
+            title: 'Marketplace development',
+            description: 'Multi-vendor marketplaces with logistics, fulfilment and customer loyalty programmes.',
           },
           {
-            title: 'ERP / CRM Integration',
+            title: 'ERP / CRM integration',
             description: 'Connect to SAP, Odoo, Salesforce, and 200+ other systems via our integration layer.',
           },
           {
             title: 'Cloud-native architecture',
-            description: 'AWS, GCP, or Azure — infrastructure that scales with your catalog and traffic.',
+            description: 'AWS, GCP or Azure infrastructure that scales with your catalogue and traffic.',
           },
         ],
         meta: {
           title: 'Custom E-commerce Development Switzerland — Trident Software',
           description:
-            'Custom B2B/B2C/B2X e-commerce platforms built for Swiss companies. From WooCommerce to fully bespoke solutions with ERP integration.',
+            'Custom B2B/B2C/B2X e-commerce platforms built for Swiss companies. From WooCommerce to fully bespoke platforms with ERP integration.',
         },
       },
       de: {
@@ -605,25 +605,25 @@ const records: SolutionRecord[] = [
     techStack: ['React Native', 'Flutter', 'TypeScript', 'Expo', 'Node.js', 'PostgreSQL', 'Firebase', 'AWS', 'Docker'],
     content: {
       en: {
-        title: 'Mobile App Development',
+        title: 'Mobile app development',
         tagline: 'Native and cross-platform apps for iOS and Android',
         description:
-          'We design and build mobile applications that are fast, intuitive, and built to scale. From consumer apps to enterprise mobile platforms — React Native or Flutter, delivered with the same Swiss quality standards as our web products.',
+          'We design and build fast, easy-to-use mobile apps that scale, from consumer apps to enterprise platforms. We use React Native or Flutter and apply the same Swiss quality standards as on our web products.',
         features: [
           {
             title: 'Cross-platform (iOS + Android)',
             description:
-              'One codebase, two stores. React Native and Flutter let us ship to iOS and Android simultaneously without sacrificing performance or native feel.',
+              'One codebase, two stores. React Native and Flutter let us ship to iOS and Android at the same time without losing performance or native feel.',
           },
           {
             title: 'Offline-first architecture',
             description:
-              'Apps that work without a connection — local data sync, queue-based operations, and seamless reconnect when network is restored.',
+              'Apps that keep working offline: data is stored locally, actions are queued, and everything syncs when the connection returns.',
           },
           {
             title: 'Push notifications & analytics',
             description:
-              'Engagement tools built in from day one — push campaigns, in-app events, crash reporting, and user retention analytics.',
+              'Engagement tools built in from day one: push campaigns, in-app events, crash reporting and user retention analytics.',
           },
           {
             title: 'Secure authentication',
@@ -633,12 +633,12 @@ const records: SolutionRecord[] = [
           {
             title: 'API & backend integration',
             description:
-              'Seamless connection to your existing systems — REST, GraphQL, WebSockets, or third-party services via our integration layer.',
+              'Connection to your existing systems over REST, GraphQL or WebSockets, or to third-party services via our integration layer.',
           },
           {
             title: 'App Store & Play Store delivery',
             description:
-              'Full-cycle delivery including store submissions, review process support, versioning, and CI/CD for over-the-air updates.',
+              'We handle store submissions, the review process, versioning and CI/CD for over-the-air updates.',
           },
         ],
         meta: {
@@ -795,40 +795,40 @@ const records: SolutionRecord[] = [
     ],
     content: {
       en: {
-        title: 'Cloud Services',
-        tagline: 'Migration, architecture, and managed infrastructure — AWS, Azure, GCP',
+        title: 'Cloud services',
+        tagline: 'Migration, architecture and managed infrastructure on AWS, Azure, GCP',
         description:
-          'From cloud migration strategy to 24/7 managed infrastructure — we design, deploy, and operate cloud environments built for reliability, security, and cost efficiency. Swiss data residency available.',
+          'We design, deploy and run cloud environments, from migration strategy to 24/7 managed infrastructure, with reliability, security and cost efficiency in mind. Swiss data residency available.',
         features: [
           {
             title: 'Cloud migration',
             description:
-              'Lift-and-shift or full modernisation — we assess your workloads, plan the migration, and execute with minimal downtime.',
+              'Lift-and-shift or full modernisation. We assess your workloads, plan the migration and run it with minimal downtime.',
           },
           {
             title: 'DevOps & CI/CD pipelines',
             description:
-              'Automated build, test, and deploy workflows. GitHub Actions, GitLab CI, Jenkins — fully integrated with your development process.',
+              'Automated build, test and deploy workflows in GitHub Actions, GitLab CI or Jenkins, wired into your development process.',
           },
           {
             title: 'Infrastructure as Code',
             description:
-              'All infrastructure defined in Terraform or Pulumi — versioned, reviewable, reproducible. No snowflake servers.',
+              'All infrastructure lives in Terraform or Pulumi: versioned, reviewable, reproducible. No snowflake servers.',
           },
           {
             title: 'Multi-cloud & hybrid cloud',
             description:
-              'AWS, Azure, and GCP — or a hybrid setup connecting on-premise systems to public cloud. We architect for your constraints.',
+              'AWS, Azure and GCP, or a hybrid setup linking on-premise systems to public cloud. We design around your constraints.',
           },
           {
             title: 'Monitoring & observability',
             description:
-              'Grafana dashboards, Prometheus metrics, Datadog APM — full visibility into performance, errors, and infrastructure cost.',
+              'Grafana dashboards, Prometheus metrics and Datadog APM show performance, errors and infrastructure cost.',
           },
           {
             title: 'Security & compliance',
             description:
-              'ISO 27000-27001 compatible security practices. Vulnerability scanning, secrets management, network isolation, and audit logging.',
+              'ISO 27001-compatible security practices. Vulnerability scanning, secrets management, network isolation, and audit logging.',
           },
         ],
         meta: {
@@ -871,7 +871,7 @@ const records: SolutionRecord[] = [
           {
             title: 'Sicherheit & Compliance',
             description:
-              'Sicherheitspraktiken kompatibel mit ISO 27000-27001. Schwachstellen-Scans, Verwaltung von Secrets, Netzwerkisolation und Audit-Logging.',
+              'Sicherheitspraktiken kompatibel mit ISO 27001. Schwachstellen-Scans, Verwaltung von Secrets, Netzwerkisolation und Audit-Logging.',
           },
         ],
         meta: {
@@ -914,7 +914,7 @@ const records: SolutionRecord[] = [
           {
             title: 'Sécurité et conformité',
             description:
-              "Pratiques de sécurité compatibles ISO 27000-27001. Analyse des vulnérabilités, gestion des secrets, isolation réseau et journalisation d'audit.",
+              "Pratiques de sécurité compatibles ISO 27001. Analyse des vulnérabilités, gestion des secrets, isolation réseau et journalisation d'audit.",
           },
         ],
         meta: {
@@ -957,7 +957,7 @@ const records: SolutionRecord[] = [
           {
             title: 'Sicurezza e conformità',
             description:
-              'Pratiche di sicurezza compatibili con ISO 27000-27001. Scansione delle vulnerabilità, gestione dei secret, isolamento di rete e log di audit.',
+              'Pratiche di sicurezza compatibili con ISO 27001. Scansione delle vulnerabilità, gestione dei secret, isolamento di rete e log di audit.',
           },
         ],
         meta: {
@@ -984,10 +984,10 @@ const records: SolutionRecord[] = [
     ],
     content: {
       en: {
-        title: 'Social Networks & Community Platforms',
+        title: 'Social networks & community platforms',
         tagline: 'Scalable platforms for communities, marketplaces, and social experiences',
         description:
-          'We build custom social platforms — from professional communities and B2B networks to consumer apps with user-generated content. Real-time messaging, content moderation, and privacy-first architecture from the ground up.',
+          'We build custom social platforms, from professional communities and B2B networks to consumer apps with user-generated content. Real-time messaging, content moderation and privacy are designed in from the start.',
         features: [
           {
             title: 'Real-time feeds & messaging',
@@ -997,7 +997,7 @@ const records: SolutionRecord[] = [
           {
             title: 'User profiles & social graph',
             description:
-              'Follow, connect, and recommend — graph-based relationships with flexible permission models for public and private networks.',
+              'Follow, connect and recommend: graph-based relationships with flexible permissions for public and private networks.',
           },
           {
             title: 'Content moderation',
@@ -1017,7 +1017,7 @@ const records: SolutionRecord[] = [
           {
             title: 'Analytics & growth tooling',
             description:
-              'Retention metrics, cohort analysis, funnel tracking — built into the platform so your growth team has the data they need.',
+              'Retention metrics, cohort analysis and funnel tracking, built in so your growth team has the data it needs.',
           },
         ],
         meta: {
@@ -1173,15 +1173,15 @@ const records: SolutionRecord[] = [
     ],
     content: {
       en: {
-        title: 'IoT & Embedded Systems',
+        title: 'IoT & embedded systems',
         tagline: 'Connected devices, firmware, and real-time data pipelines',
         description:
-          'From device firmware to cloud integration — we build IoT solutions for automotive, healthcare, water management, and industrial automation. ISO 21434 automotive compliance and medical-grade software validation available.',
+          'We build IoT systems for automotive, healthcare, water management and industrial automation, from device firmware to cloud integration. ISO 21434 automotive compliance and medical-grade software validation available.',
         features: [
           {
             title: 'Firmware & embedded software',
             description:
-              'Full-cycle embedded development — requirements, architecture, implementation, testing, and deployment. C, C++, and RTOS expertise.',
+              'Embedded development from requirements and architecture to implementation, testing and deployment, in C, C++ and RTOS.',
           },
           {
             title: 'IoT device integration',

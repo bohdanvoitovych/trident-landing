@@ -2,8 +2,8 @@ import type { ServiceDetail } from './types'
 
 export const en: ServiceDetail = {
   kicker: 'AI agents, assistants and chatbots for business',
-  title: 'Sales on Autopilot with AI',
-  lede: 'AI agents, AI assistants and chatbots that automate enquiry handling, advise your customers and close deals 24/7. Faster, more accurate and cheaper than a human rep.',
+  title: 'Sales on autopilot with AI',
+  lede: 'AI agents, AI assistants and chatbots that automate enquiry handling, advise your customers and close routine deals 24/7, for less than the cost of another hire.',
   intro: "What the agent is, which enquiries it takes over, and where it plugs into a Swiss company's existing stack.",
   gap: {
     title: 'The gap we close',
@@ -40,7 +40,7 @@ export const en: ServiceDetail = {
   does: {
     title: 'What the agent does',
     items: [
-      { lead: 'Answers in seconds', text: 'Every channel, every hour, including weekends and public holidays, cantonal ones included.' },
+      { lead: 'Answers in seconds', text: 'Every channel, every hour, weekends and public holidays included, cantonal ones too.' },
       {
         lead: 'Qualifies',
         text: "Asks the qualifying questions your best rep asks, in the buyer's own language, and records the answers as structured fields.",
@@ -249,7 +249,7 @@ export const en: ServiceDetail = {
           'Yes, disclosed up front. Concealment reads as dishonest and, for consumer-facing businesses in the EU, it is heading towards being unlawful under the AI Act. Disclosed agents that answer well outperform hidden ones that answer badly.',
       },
       {
-        question: 'We already have a chatbot and it was a disaster.',
+        question: 'We already had a chatbot and it was a disaster.',
         answer:
           'Usually that is a decision-tree bot with no access to live data, no escalation, and no owner after go-live. Bring the transcripts to the audit. They are the fastest way to show what changes.',
       },

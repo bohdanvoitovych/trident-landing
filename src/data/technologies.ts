@@ -33,10 +33,10 @@ const records: TechnologyRecord[] = [
     relatedCases: [],
     content: {
       en: {
-        category: 'Frontend & Full-Stack',
+        category: 'Frontend & full-stack',
         tagline: 'Production-grade web applications with Next.js for Swiss companies',
         description:
-          'Next.js is our primary framework for building fast, SEO-optimised, and scalable web applications. We use Next.js App Router with TypeScript for everything from corporate websites to complex B2B portals and SaaS platforms. Swiss companies benefit from our deep experience across hundreds of Next.js deployments.',
+          'Next.js is our main framework for fast, SEO-optimised web applications that scale. We use the App Router with TypeScript for everything from corporate websites to complex B2B portals and SaaS platforms, and we have run hundreds of Next.js deployments.',
         useCases: [
           {
             title: 'B2B SaaS platforms',
@@ -46,16 +46,16 @@ const records: TechnologyRecord[] = [
           {
             title: 'Marketing & landing pages',
             description:
-              'Blazing-fast landing pages with 100 Lighthouse scores, ISR, and CMS integration via Payload or Sanity.',
+              'Landing pages that score 100 in Lighthouse, with ISR and CMS integration via Payload or Sanity.',
           },
           {
             title: 'E-commerce storefronts',
-            description: 'Headless commerce frontends connecting to Shopify, WooCommerce, or custom product catalogs.',
+            description: 'Headless commerce frontends connected to Shopify, WooCommerce or custom product catalogues.',
           },
           {
             title: 'Customer portals',
             description:
-              'Authenticated dashboards for end-customers: order tracking, document management, account self-service.',
+              'Logged-in dashboards for your customers: order tracking, document management, account self-service.',
           },
         ],
         benefits: [
@@ -68,7 +68,7 @@ const records: TechnologyRecord[] = [
         meta: {
           title: 'Next.js Development Switzerland | Trident Software',
           description:
-            'Expert Next.js development for Swiss companies. App Router, TypeScript, Payload CMS, Docker. From marketing sites to complex B2B platforms. Valais-based team.',
+            'Next.js development for Swiss companies. App Router, TypeScript, Payload CMS, Docker. From marketing sites to complex B2B platforms. Valais-based team.',
         },
       },
       de: {
@@ -202,10 +202,10 @@ const records: TechnologyRecord[] = [
     relatedCases: [],
     content: {
       en: {
-        category: 'Mobile Development',
+        category: 'Mobile development',
         tagline: 'One codebase. iOS and Android. Built in Switzerland.',
         description:
-          "Flutter lets us ship production-quality iOS and Android apps from a single Dart codebase — cutting development time and maintenance cost in half. We've used Flutter for logistics driver apps, medical patient portals, and B2B field service applications across Switzerland and Europe.",
+          "Flutter lets us ship production-quality iOS and Android apps from a single Dart codebase, which halves development time and maintenance cost. We have used it for logistics driver apps, medical patient portals and B2B field service apps across Switzerland and Europe.",
         useCases: [
           {
             title: 'Field service & logistics apps',
@@ -228,10 +228,10 @@ const records: TechnologyRecord[] = [
           },
         ],
         benefits: [
-          'Single codebase = half the maintenance cost',
+          'One codebase, half the maintenance cost',
           'Near-native performance via Skia/Impeller rendering',
-          'Strong typing via Dart — fewer runtime crashes',
-          'Hot reload accelerates iteration speed 3x',
+          'Dart strong typing: fewer runtime crashes',
+          'Hot reload makes iteration 3x faster',
           'Works offline with local SQLite + sync on reconnect',
         ],
         meta: {
@@ -370,15 +370,15 @@ const records: TechnologyRecord[] = [
     relatedCases: [],
     content: {
       en: {
-        category: 'Language & Full-Stack',
+        category: 'Language & full-stack',
         tagline: 'Type-safe full-stack JavaScript for reliable Swiss software',
         description:
-          'TypeScript is our default language across the entire stack — Node.js APIs, Next.js frontends, React components, and Payload CMS configuration. Type safety eliminates entire categories of runtime errors, reduces debugging time, and makes our code self-documenting. Every Trident project ships with strict TypeScript and zero any.',
+          'TypeScript is our default language across the stack: Node.js APIs, Next.js frontends, React components and Payload CMS configuration. Type checks remove whole classes of runtime errors, cut debugging time and make the code easier to read. Every Trident project ships with strict TypeScript and no "any" types.',
         useCases: [
           {
             title: 'Full-stack type sharing',
             description:
-              'Shared types between frontend and backend eliminate API contract drift — the #1 source of frontend bugs in distributed teams.',
+              'Shared types between frontend and backend stop API contract drift, the #1 source of frontend bugs in distributed teams.',
           },
           {
             title: 'Complex domain modelling',
@@ -393,7 +393,7 @@ const records: TechnologyRecord[] = [
           {
             title: 'Refactoring at scale',
             description:
-              "TypeScript's LSP makes large codebase refactors safe — rename a type and fix all 200 usages in seconds, not days.",
+              "TypeScript's LSP makes large refactors safe: rename a type and update all 200 usages in seconds, not days.",
           },
         ],
         benefits: [
@@ -401,7 +401,7 @@ const records: TechnologyRecord[] = [
           'IDE autocomplete reduces lookup time',
           'Self-documenting code reduces onboarding time',
           'Strict null checks eliminate null-pointer exceptions',
-          'Zero runtime overhead — compiles to plain JS',
+          'Zero runtime overhead: compiles to plain JS',
         ],
         meta: {
           title: 'TypeScript Development Switzerland | Trident Software',
@@ -543,7 +543,7 @@ const records: TechnologyRecord[] = [
         category: 'AI, ML & Backend',
         tagline: 'AI pipelines, data engineering, and automation built in Python',
         description:
-          'Python is our language of choice for AI/ML workloads, data pipelines, and automation scripts. From LLM-powered document processing and computer vision models to ETL pipelines and predictive analytics — we build Python backends that scale from prototype to production without rewriting.',
+          'Python is our language of choice for AI/ML workloads, data pipelines and automation scripts. From LLM document processing and computer vision models to ETL pipelines and predictive analytics, we build Python backends that go from prototype to production without a rewrite.',
         useCases: [
           {
             title: 'LLM integration & RAG',
@@ -563,15 +563,15 @@ const records: TechnologyRecord[] = [
           {
             title: 'Process automation',
             description:
-              'Web scraping, document generation, email automation, and API orchestration scripts replacing manual back-office work.',
+              'Scripts for web scraping, document generation, email and API orchestration that replace manual back-office work.',
           },
         ],
         benefits: [
           'Fastest prototyping speed of any language',
           'Richest ML/AI ecosystem (PyTorch, transformers, scikit-learn)',
           'FastAPI gives Go-like performance for Python APIs',
-          'Notebooks for client-facing model transparency',
-          'Huge talent pool — easy to hand off to internal team',
+          'Notebooks show clients how the model works',
+          'Large talent pool, easy to hand off to your team',
         ],
         meta: {
           title: 'Python Development Switzerland | AI & ML Engineering | Trident Software',
@@ -713,7 +713,7 @@ const records: TechnologyRecord[] = [
         category: 'Frontend',
         tagline: 'Component-based UIs that users actually enjoy',
         description:
-          'React is the foundation of our frontend stack — whether inside Next.js, as a standalone SPA, or embedded in a legacy application. We build component libraries, design systems, and high-performance UIs for Swiss companies that need interfaces their customers return to.',
+          'React is the base of our frontend stack, inside Next.js, as a standalone SPA or embedded in a legacy application. We build component libraries, design systems and fast UIs for Swiss companies that need interfaces their customers come back to.',
         useCases: [
           {
             title: 'Complex dashboards',
@@ -733,15 +733,15 @@ const records: TechnologyRecord[] = [
           {
             title: 'Progressive enhancement',
             description:
-              'React components embedded in existing server-rendered apps — modernise without a full rewrite.',
+              'React components inside existing server-rendered apps: modernise without a full rewrite.',
           },
         ],
         benefits: [
           'Component reuse reduces UI dev time by 40%+',
           'React DevTools make debugging visual',
           'Server Components eliminate unnecessary client JS',
-          'Ecosystem depth: 2M+ packages, every use case covered',
-          'Stable API — no framework churn risk',
+          '2M+ packages cover almost any use case',
+          'Stable API, little framework churn',
         ],
         meta: {
           title: 'React Development Switzerland | UI Engineering | Trident Software',
@@ -883,7 +883,7 @@ const records: TechnologyRecord[] = [
         category: 'Backend & APIs',
         tagline: 'Event-driven APIs and microservices with Node.js',
         description:
-          'Node.js powers our REST and GraphQL APIs, real-time WebSocket backends, and microservice architectures. Its non-blocking I/O model makes it ideal for high-concurrency Swiss applications — booking systems, notification hubs, and data aggregation services that need to handle thousands of simultaneous connections.',
+          'We use Node.js for REST and GraphQL APIs, real-time WebSocket backends and microservices. Its non-blocking I/O suits high-concurrency Swiss applications: booking systems, notification hubs and data aggregation services that handle thousands of simultaneous connections.',
         useCases: [
           {
             title: 'REST & GraphQL APIs',
@@ -898,18 +898,18 @@ const records: TechnologyRecord[] = [
           {
             title: 'BFF (Backend for Frontend)',
             description:
-              'Thin orchestration layer aggregating multiple microservices into a single frontend-optimised API surface.',
+              'A thin layer that combines several microservices into one API shaped for the frontend.',
           },
           {
             title: 'Webhook & integration hubs',
             description:
-              'Event processing pipelines receiving webhooks from Stripe, GitHub, HubSpot, and other SaaS tools.',
+              'Pipelines that receive and process webhooks from Stripe, GitHub, HubSpot and other SaaS tools.',
           },
         ],
         benefits: [
-          'Same language as frontend — smaller team surface',
+          'One language for frontend and backend',
           'Non-blocking I/O handles 10k+ concurrent connections',
-          'npm ecosystem — fastest integration time for third-party APIs',
+          'npm packages speed up third-party API integration',
           'First-class TypeScript with ts-node / tsx',
           'Low memory footprint vs. JVM alternatives',
         ],
@@ -1057,14 +1057,14 @@ const records: TechnologyRecord[] = [
     content: {
       en: {
         category: 'Database',
-        tagline: 'Battle-tested relational data for Swiss applications',
+        tagline: 'A proven relational database for Swiss applications',
         description:
-          "PostgreSQL is our default database for every project requiring structured data. Its JSONB support, full-text search, PostGIS spatial extension, and row-level security make it suitable for everything from simple CMS databases to complex multi-tenant SaaS architectures. We've been running Postgres in Swiss production since 2018.",
+          "PostgreSQL is our default database for every project with structured data. JSONB, full-text search, the PostGIS spatial extension and row-level security make it fit everything from simple CMS databases to complex multi-tenant SaaS. We have run Postgres in production in Switzerland since 2018.",
         useCases: [
           {
             title: 'Multi-tenant SaaS databases',
             description:
-              'Row-level security policies enforce tenant isolation at the database layer — not the application layer.',
+              'Row-level security policies enforce tenant isolation in the database, not in application code.',
           },
           {
             title: 'Geospatial data (PostGIS)',
@@ -1074,7 +1074,7 @@ const records: TechnologyRecord[] = [
           {
             title: 'Full-text search',
             description:
-              'Swiss German, French, and Italian text search with tsvector and GIN indexes — no Elasticsearch needed for most use cases.',
+              'Search in Swiss German, French and Italian with tsvector and GIN indexes. Most projects need no Elasticsearch.',
           },
           {
             title: 'Financial data integrity',
@@ -1087,7 +1087,7 @@ const records: TechnologyRecord[] = [
           'JSONB stores semi-structured data without a second database',
           'Logical replication for zero-downtime migrations',
           'pg_cron for scheduled database jobs',
-          'Mature Swiss hosting options (Infomaniak, exoscale, Hetzner)',
+          'Mature Swiss hosting options (Infomaniak, exoscale)',
         ],
         meta: {
           title: 'PostgreSQL Development Switzerland | Database Engineering | Trident Software',
@@ -1127,7 +1127,7 @@ const records: TechnologyRecord[] = [
           'JSONB speichert halbstrukturierte Daten ohne zweite Datenbank',
           'Logische Replikation für Migrationen ohne Ausfallzeit',
           'pg_cron für geplante Datenbank-Jobs',
-          'Bewährte Hosting-Optionen in der Schweiz (Infomaniak, exoscale, Hetzner)',
+          'Bewährte Hosting-Optionen in der Schweiz (Infomaniak, exoscale)',
         ],
         meta: {
           title: 'PostgreSQL Entwicklung Schweiz | Datenbanken | Trident Software',
@@ -1167,7 +1167,7 @@ const records: TechnologyRecord[] = [
           'JSONB stocke les données semi-structurées sans seconde base',
           'Réplication logique pour des migrations sans interruption',
           'pg_cron pour les tâches planifiées en base',
-          'Hébergement suisse éprouvé (Infomaniak, exoscale, Hetzner)',
+          'Hébergement suisse éprouvé (Infomaniak, exoscale)',
         ],
         meta: {
           title: 'Développement PostgreSQL en Suisse | Bases de données | Trident Software',
@@ -1207,7 +1207,7 @@ const records: TechnologyRecord[] = [
           'JSONB memorizza dati semi-strutturati senza un secondo database',
           'Replica logica per migrazioni senza interruzioni',
           'pg_cron per i job pianificati nel database',
-          'Opzioni di hosting svizzere collaudate (Infomaniak, exoscale, Hetzner)',
+          'Opzioni di hosting svizzere collaudate (Infomaniak, exoscale)',
         ],
         meta: {
           title: 'Sviluppo PostgreSQL in Svizzera | Database | Trident Software',
@@ -1229,17 +1229,17 @@ const records: TechnologyRecord[] = [
         category: 'DevOps & Infrastructure',
         tagline: 'Containerised deployments that stay up',
         description:
-          'We containerise every application we build — Docker for packaging, Docker Compose for development parity, and Kubernetes for orchestrated production workloads. Swiss data residency is ensured by deploying on Swiss-region infrastructure: Infomaniak Cloud, exoscale, or Hetzner Falkenstein.',
+          'We containerise every application we build: Docker for packaging, Docker Compose to match development to production, and Kubernetes for production workloads. We keep data in Switzerland by deploying on Swiss-region infrastructure: Infomaniak Cloud or exoscale.',
         useCases: [
           {
             title: 'Reproducible environments',
             description:
-              'Docker Compose ensures dev, staging, and production run identical software — no more "works on my machine" incidents.',
+              'Docker Compose runs identical software in dev, staging and production, so "works on my machine" incidents stop.',
           },
           {
             title: 'GitLab CI/CD pipelines',
             description:
-              'Kaniko-based image builds, automatic deployments, and rollback capabilities triggered on every git push to main.',
+              'Kaniko image builds, automatic deployments and rollbacks, triggered by every git push to main.',
           },
           {
             title: 'Kubernetes workloads',
@@ -1249,12 +1249,12 @@ const records: TechnologyRecord[] = [
           {
             title: 'Swiss data residency',
             description:
-              'Deployment configurations targeting CH-region datacenters — Infomaniak Geneva, exoscale CH-GVA, Hetzner Falkenstein.',
+              'Deployments to CH-region data centres: Infomaniak Geneva, exoscale CH-GVA.',
           },
         ],
         benefits: [
           'Identical environments eliminate environment-specific bugs',
-          'Container restart policy = automatic recovery from crashes',
+          'Restart policies bring crashed containers back',
           'Resource limits prevent noisy-neighbour incidents',
           'GitOps workflow — infrastructure as code',
           'revFADP compliance via Swiss-region deployment',
@@ -1269,7 +1269,7 @@ const records: TechnologyRecord[] = [
         category: 'DevOps & Infrastruktur',
         tagline: 'Container-Deployments, die einfach laufen',
         description:
-          'Wir containerisieren jede Anwendung, die wir bauen: Docker für die Pakete, Docker Compose für identische Entwicklungsumgebungen und Kubernetes für orchestrierte Produktivsysteme. Die Datenhaltung in der Schweiz sichern wir durch Infrastruktur in Schweizer Regionen: Infomaniak Cloud, exoscale oder Hetzner Falkenstein.',
+          'Wir containerisieren jede Anwendung, die wir bauen: Docker für die Pakete, Docker Compose für identische Entwicklungsumgebungen und Kubernetes für orchestrierte Produktivsysteme. Die Datenhaltung in der Schweiz sichern wir durch Infrastruktur in Schweizer Regionen: Infomaniak Cloud oder exoscale.',
         useCases: [
           {
             title: 'Reproduzierbare Umgebungen',
@@ -1289,7 +1289,7 @@ const records: TechnologyRecord[] = [
           {
             title: 'Datenhaltung in der Schweiz',
             description:
-              'Deployment-Konfigurationen für Rechenzentren in der Region CH: Infomaniak Genf, exoscale CH-GVA, Hetzner Falkenstein.',
+              'Deployment-Konfigurationen für Rechenzentren in der Region CH: Infomaniak Genf, exoscale CH-GVA.',
           },
         ],
         benefits: [
@@ -1309,7 +1309,7 @@ const records: TechnologyRecord[] = [
         category: 'DevOps & Infrastructure',
         tagline: 'Des déploiements conteneurisés qui tiennent la route',
         description:
-          "Nous conteneurisons chaque application que nous développons : Docker pour l'empaquetage, Docker Compose pour des environnements de développement identiques et Kubernetes pour l'orchestration en production. Les données restent en Suisse grâce à une infrastructure hébergée dans des régions suisses : Infomaniak Cloud, exoscale ou Hetzner Falkenstein.",
+          "Nous conteneurisons chaque application que nous développons : Docker pour l'empaquetage, Docker Compose pour des environnements de développement identiques et Kubernetes pour l'orchestration en production. Les données restent en Suisse grâce à une infrastructure hébergée dans des régions suisses : Infomaniak Cloud ou exoscale.",
         useCases: [
           {
             title: 'Environnements reproductibles',
@@ -1329,7 +1329,7 @@ const records: TechnologyRecord[] = [
           {
             title: 'Données hébergées en Suisse',
             description:
-              'Configurations de déploiement ciblant des datacenters en région CH : Infomaniak Genève, exoscale CH-GVA, Hetzner Falkenstein.',
+              'Configurations de déploiement ciblant des datacenters en région CH : Infomaniak Genève, exoscale CH-GVA.',
           },
         ],
         benefits: [
@@ -1349,7 +1349,7 @@ const records: TechnologyRecord[] = [
         category: 'DevOps & Infrastruttura',
         tagline: 'Deployment containerizzati che restano in piedi',
         description:
-          "Containerizziamo ogni applicazione che sviluppiamo: Docker per il packaging, Docker Compose per ambienti di sviluppo identici e Kubernetes per l'orchestrazione in produzione. La residenza dei dati in Svizzera è garantita da infrastrutture in regioni svizzere: Infomaniak Cloud, exoscale o Hetzner Falkenstein.",
+          "Containerizziamo ogni applicazione che sviluppiamo: Docker per il packaging, Docker Compose per ambienti di sviluppo identici e Kubernetes per l'orchestrazione in produzione. La residenza dei dati in Svizzera è garantita da infrastrutture in regioni svizzere: Infomaniak Cloud o exoscale.",
         useCases: [
           {
             title: 'Ambienti riproducibili',
@@ -1369,7 +1369,7 @@ const records: TechnologyRecord[] = [
           {
             title: 'Dati residenti in Svizzera',
             description:
-              'Configurazioni di deployment per data center nella regione CH: Infomaniak Ginevra, exoscale CH-GVA, Hetzner Falkenstein.',
+              'Configurazioni di deployment per data center nella regione CH: Infomaniak Ginevra, exoscale CH-GVA.',
           },
         ],
         benefits: [
@@ -1403,36 +1403,36 @@ const records: TechnologyRecord[] = [
     relatedCases: ['post-acute-clinic-network'],
     content: {
       en: {
-        category: 'Artificial Intelligence',
-        tagline: 'Embed AI capabilities into your existing business software',
+        category: 'Artificial intelligence',
+        tagline: 'Add AI to the business software you already use',
         description:
-          'We integrate large language models, computer vision, and machine learning into existing business applications — not as a demo, but as production-ready features. Whether you need an AI document assistant, an automated classification pipeline, or a conversational customer interface, we build it to the standard your Swiss business demands.',
+          'We build large language models, computer vision and machine learning into existing business applications as production features, not demos. Typical requests are an AI document assistant, an automated classification pipeline or a conversational interface for customers.',
         useCases: [
           {
             title: 'Document intelligence',
             description:
-              'OCR + LLM pipelines that extract structured data from invoices, contracts, and forms — 95%+ accuracy on Swiss German documents.',
+              'OCR + LLM pipelines extract structured data from invoices, contracts and forms, with 95%+ accuracy on Swiss German documents.',
           },
           {
             title: 'RAG-based assistants',
             description:
-              'Internal knowledge bases powered by Retrieval-Augmented Generation — your staff asks questions, the AI answers from your documents.',
+              'Internal knowledge bases built on retrieval-augmented generation: your staff ask questions, the AI answers from your documents.',
           },
           {
             title: 'AI-assisted CRM',
             description:
-              'Lead scoring, email drafting, and meeting summary generation integrated directly into your CRM or ERP workflow.',
+              'Lead scoring, email drafts and meeting summaries inside your CRM or ERP workflow.',
           },
           {
             title: 'On-premise LLM deployment',
             description:
-              'Llama 3, Mistral, or Qwen2 running on your own GPU server — no data leaves Switzerland, full revFADP compliance.',
+              'Llama 3, Mistral or Qwen2 on your own GPU server. No data leaves Switzerland, and you stay revFADP-compliant.',
           },
         ],
         benefits: [
           'On-premise options keep data in Switzerland',
           'LangChain + pgvector for production-ready RAG',
-          'Model agnostic — OpenAI today, local LLM tomorrow',
+          'Model-agnostic: OpenAI today, local LLM tomorrow',
           'Structured output (JSON mode) for reliable pipelines',
           'Evaluation harnesses prevent silent accuracy regression',
         ],

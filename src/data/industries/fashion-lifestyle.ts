@@ -19,7 +19,7 @@ const record: IndustryRecord = {
         },
         {
           title: 'Seasonal demand',
-          description: 'Spike traffic during launches and sales without over-provisioning year-round.',
+          description: 'Traffic spikes at launches and sales, without over-provisioning year-round.',
         },
         {
           title: 'Global sizing',
@@ -33,11 +33,11 @@ const record: IndustryRecord = {
         },
         {
           title: 'Product configurators',
-          description: 'Custom jewelry, apparel, and accessory configuration tools.',
+          description: 'Custom jewellery, apparel and accessory configurators.',
         },
         {
           title: 'AI creative tools',
-          description: 'LLM-powered product descriptions, lookbook generation, and copy.',
+          description: 'Product descriptions, lookbooks and copy drafted with LLMs.',
         },
         {
           title: 'Influencer platforms',
@@ -45,9 +45,9 @@ const record: IndustryRecord = {
         },
       ],
       meta: {
-        title: 'Fashion & Lifestyle Software | Trident Software',
+        title: 'Fashion & lifestyle software | Trident Software',
         description:
-          'Fashion tech software — headless storefronts, product configurators, AI creative tools, influencer platforms. Swiss engineering.',
+          'Fashion tech software: headless storefronts, product configurators, AI creative tools, influencer platforms. Swiss engineering.',
       },
     },
     de: {

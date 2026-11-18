@@ -4,19 +4,19 @@ export const posts: BlogPostRecord[] = [
   {
     slug: "fixed-price-software-contracts-pros-cons",
     image: "/images/stock/dispatch.jpg",
-    title: "Fixed-Price Software Contracts: When They Work and When They Blow Up",
-    excerpt: "Fixed-price contracts promise predictability but can destroy projects when scoped wrong. Here's the decision framework we use to decide when to offer fixed-price, and what contract terms protect both sides.",
-    content: `## The Client's Perspective Is Valid
+    title: "Fixed-price software contracts: when they work and when they blow up",
+    excerpt: "Fixed-price contracts promise predictability but can sink a project when the scope is wrong. This is how we decide when to offer fixed-price, and which contract terms protect both sides.",
+    content: `## The client's perspective is valid
 
-Clients want fixed-price contracts for rational reasons. Budget approval processes require known costs. Financial planning requires certainty. "We'll bill you for whatever it takes" is not fundable in most organizations.
+Clients want fixed-price contracts for rational reasons. Budget approval processes require known costs. Financial planning requires certainty. "We'll bill you for whatever it takes" is not fundable in most organisations.
 
-We offer fixed-price contracts. We also know exactly when they fail — and we've learned to say no to fixed-price engagements that are structurally doomed.
+We offer fixed-price contracts. We also know exactly when they fail, and we have learned to refuse fixed-price engagements that are structurally doomed.
 
-## When Fixed-Price Works
+## When fixed-price works
 
 Fixed-price is appropriate when the scope is genuinely knowable in advance:
 
-| Condition | Fixed-Price Safe? |
+| Condition | Safe for fixed-price? |
 |---|---|
 | Well-defined output (specific screens, specific integrations) | Yes |
 | Similar project done before by the vendor | Yes |
@@ -26,30 +26,30 @@ Fixed-price is appropriate when the scope is genuinely knowable in advance:
 
 The last row is the killer. Requirements changing mid-project under a fixed-price contract creates a conflict of interest: every change request is a renegotiation.
 
-## When Fixed-Price Fails
+## When fixed-price fails
 
-- **Discovery phase skipped** — jumping to fixed-price before understanding the problem domain
-- **Integration with unknown systems** — "connect to our ERP" when nobody has seen the ERP's API
-- **Novel technical problems** — if nobody knows the answer, nobody knows the cost
-- **Stakeholder disagreement** — clients who haven't internally aligned will change scope repeatedly
+- The discovery phase is skipped, so the price is set before anyone understands the problem
+- The project integrates with unknown systems: "connect to our ERP" when nobody has seen the ERP's API
+- The technical problem is new: if nobody knows the answer, nobody knows the cost
+- The client's managers disagree, and a client that has not aligned internally changes scope again and again
 
-## What Our Fixed-Price Contracts Include
+## What our fixed-price contracts include
 
 When we do offer fixed-price, the contract specifies:
 
-1. **Scope document signed by client** — every screen, every integration, every edge case documented
-2. **Change request procedure** — new requests go through written CR process, priced separately
-3. **Milestone-based payment** — 30% upfront, 30% at mid-project delivery, 40% at acceptance
-4. **Definition of done** — explicit acceptance criteria per deliverable
-5. **Exclusions list** — what is explicitly NOT included
+1. A scope document signed by the client, covering every screen, integration and edge case
+2. A change request procedure: new requests go through a written CR process and are priced separately
+3. Milestone payments: 30% upfront, 30% at mid-project delivery, 40% at acceptance
+4. A definition of done, with explicit acceptance criteria per deliverable
+5. An exclusions list: what is explicitly NOT included
 
-## Time-and-Materials as an Alternative
+## Time-and-materials as an alternative
 
 For exploratory work, we recommend T&M with a weekly cap and a mandatory scope review at week 4. This gives clients budget predictability while preserving the flexibility that complex projects require.
 
 The right framing: fixed-price for execution, T&M for discovery. Run a 2–4 week discovery sprint on T&M, then write the fixed-price contract based on what you actually found.
 
-## The Hybrid Approach
+## The hybrid approach
 
 Our current preferred model: **fixed-price per phase, not per project**. Each phase is scoped, priced, and delivered independently. The client has cost certainty for each phase. We have scope certainty for each phase. Neither side is locked into a multi-month contract based on assumptions made in week one.`,
     author: "Bohdan Voitovych",
@@ -307,28 +307,28 @@ Il modello che oggi preferiamo: **prezzo fisso per fase, non per progetto**. Ogn
       },
     },
     meta: {
-      title: "Fixed-Price Software Contracts: Pros, Cons & When to Use Them",
+      title: "Fixed-price software contracts: pros, cons & when to use them",
       description: "Decision framework for fixed-price vs T&M contracts: what terms protect both sides, when fixed-price fails, and the hybrid phase-based model that works.",
     },
   },
   {
     slug: "fadp-nfadp-saas-compliance-switzerland",
     image: "/images/stock/warehouse-2.jpg",
-    title: "FADP / revFADP Compliance for SaaS Products: A Developer's Checklist",
-    excerpt: "Switzerland's revised Federal Act on Data Protection came into force in September 2023. If you're building or operating a SaaS product for Swiss customers, here's what your engineering team must implement.",
-    content: `## What Changed with revFADP
+    title: "FADP / revFADP compliance for SaaS products: a developer's checklist",
+    excerpt: "Switzerland's revised Federal Act on Data Protection came into force in September 2023. If you build or run a SaaS product for Swiss customers, this is what your engineering team must implement.",
+    content: `## What changed with revFADP
 
 The revised Federal Act on Data Protection (revFADP, in force since September 2023) brought Swiss data protection law closer to GDPR while keeping Swiss-specific characteristics. For SaaS products with Swiss customers, the key engineering implications are:
 
-- **Privacy by design and by default** is now a legal requirement, not a recommendation
-- **Data breach notification** to the FDPIC within 72 hours for high-risk breaches
-- **Data processing records** required for organizations with 250+ employees (recommended for all)
-- **Profiling with high risk** requires explicit consent
-- **International data transfers** require adequacy decisions or appropriate safeguards
+- Privacy by design and by default is now a legal requirement, not a recommendation
+- Data breach notification to the FDPIC as soon as possible for high-risk breaches (no fixed hour limit)
+- Data processing records required for organisations with 250+ employees (recommended for all)
+- High-risk profiling requires explicit consent
+- International data transfers require adequacy decisions or appropriate safeguards
 
-## The Engineering Checklist
+## The engineering checklist
 
-### Data Minimization
+### Data minimisation
 
 | Area | Requirement | Implementation |
 |---|---|---|
@@ -337,7 +337,7 @@ The revised Federal Act on Data Protection (revFADP, in force since September 20
 | Logs | No personal data in application logs | Scrub email, IP, names from log output |
 | Backups | Deletion propagates to backups | Implement soft-delete with backup purge schedule |
 
-### Consent Management
+### Consent management
 
 Consent must be:
 - Freely given (no bundled consents)
@@ -348,7 +348,7 @@ Consent must be:
 
 Store consent records: who consented, to what, when, via what mechanism, and the consent text version shown.
 
-### Right to Access and Erasure
+### Right to access and erasure
 
 Every SaaS product must implement:
 
@@ -361,18 +361,18 @@ GET  /api/user/consent-history // All consent records for the user
 
 Erasure must cascade: primary DB, analytics, email lists, support tickets, backups on next purge cycle.
 
-### Data Processing Records (Verzeichnis der Bearbeitungstätigkeiten)
+### Data processing records (Verzeichnis der Bearbeitungstätigkeiten)
 
 Maintain a register documenting:
 - Purpose of each data processing activity
 - Categories of data subjects
 - Recipients (including sub-processors)
 - Retention periods
-- Technical and organizational security measures
+- Technical and organisational security measures
 
 This is a living document, not a one-time exercise. Update it when you add new third-party services.
 
-### Sub-processor Management
+### Sub-processor management
 
 Every third-party service you use that processes personal data is a sub-processor. Document them all:
 
@@ -380,9 +380,9 @@ Common sub-processors to review: Stripe, Intercom, HubSpot, Sentry, Datadog, AWS
 
 Each requires a Data Processing Agreement (DPA). Most major providers offer these automatically; smaller vendors require manual DPA execution.
 
-## Practical Priority Order
+## Practical priority order
 
-1. Audit current data collection — stop collecting what you don't need
+1. Audit current data collection and stop collecting what you don't need
 2. Implement consent management for marketing data
 3. Build data export and deletion endpoints
 4. Write your processing register
@@ -408,19 +408,19 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
     faq: [
       {
         question: "Does revFADP apply to foreign SaaS companies with Swiss customers?",
-        answer: "Yes. revFADP applies when processing personal data of persons in Switzerland, regardless of where the processor is located — similar to GDPR's extraterritorial scope.",
+        answer: "Yes. revFADP applies when processing personal data of persons in Switzerland, regardless of where the processor is located, similar to GDPR's extraterritorial scope.",
       },
       {
         question: "Is revFADP compliance the same as GDPR compliance?",
-        answer: "Largely aligned but not identical. Key differences: revFADP's breach notification window is 72 hours (same as GDPR), but the definition of \"high risk\" and profiling rules differ. GDPR compliance provides a strong foundation but requires Swiss-specific gaps to be filled.",
+        answer: "Largely aligned but not identical. Key differences: GDPR sets a 72-hour breach notification deadline, while revFADP requires notification \"as soon as possible\". Also, the definition of \"high risk\" and profiling rules differ. GDPR compliance provides a strong foundation but requires Swiss-specific gaps to be filled.",
       },
       {
         question: "What is the penalty for revFADP violations?",
-        answer: "Fines up to CHF 250,000 for individuals (not companies — this is a Swiss peculiarity). Criminal sanctions target responsible persons within the organization, not the legal entity.",
+        answer: "Fines up to CHF 250,000 for individuals (not companies; this is a Swiss peculiarity). Criminal sanctions target responsible persons within the organisation, not the legal entity.",
       },
       {
         question: "Do startups with fewer than 250 employees need a processing register?",
-        answer: "The 250-employee threshold applies to mandatory processing records under revFADP, but the FDPIC recommends all organizations maintain them. More importantly, if you process sensitive data or carry out high-risk processing, the register is required regardless of size.",
+        answer: "The 250-employee threshold applies to mandatory processing records under revFADP, but the FDPIC recommends all organisations maintain them. More importantly, if you process sensitive data or carry out high-risk processing, the register is required regardless of size.",
       },
     ],
     translations: {
@@ -432,7 +432,7 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
 Das revidierte Datenschutzgesetz (nDSG, in Kraft seit September 2023) hat das Schweizer Datenschutzrecht näher an die DSGVO gebracht, behält aber Schweizer Eigenheiten bei. Für SaaS-Produkte mit Schweizer Kunden hat das vor allem diese technischen Folgen:
 
 - **Privacy by Design und by Default** ist jetzt gesetzliche Pflicht und keine Empfehlung mehr
-- **Meldung von Datenschutzverletzungen** an den EDÖB innert 72 Stunden bei hohem Risiko
+- **Meldung von Datenschutzverletzungen** an den EDÖB so rasch als möglich bei hohem Risiko (ohne feste Stundenfrist)
 - **Verzeichnis der Bearbeitungstätigkeiten** Pflicht für Organisationen ab 250 Mitarbeitenden (für alle empfohlen)
 - **Profiling mit hohem Risiko** erfordert eine ausdrückliche Einwilligung
 - **Datenübermittlung ins Ausland** setzt einen Angemessenheitsbeschluss oder geeignete Garantien voraus
@@ -511,7 +511,7 @@ Für jeden braucht es einen Auftragsbearbeitungsvertrag (AVV). Die meisten gross
           },
           {
             question: "Ist nDSG-Compliance dasselbe wie DSGVO-Compliance?",
-            answer: "Weitgehend deckungsgleich, aber nicht identisch. Die wichtigsten Unterschiede: Die Meldefrist bei Datenschutzverletzungen beträgt im nDSG 72 Stunden (wie in der DSGVO), aber die Definition von «hohem Risiko» und die Regeln zum Profiling weichen ab. DSGVO-Compliance ist eine solide Grundlage, die Schweizer Lücken müssen Sie aber gezielt schliessen.",
+            answer: "Weitgehend deckungsgleich, aber nicht identisch. Die wichtigsten Unterschiede: Die DSGVO setzt für Datenschutzverletzungen eine Meldefrist von 72 Stunden, das nDSG verlangt eine Meldung «so rasch als möglich». Zudem weichen die Definition von «hohem Risiko» und die Regeln zum Profiling weichen ab. DSGVO-Compliance ist eine solide Grundlage, die Schweizer Lücken müssen Sie aber gezielt schliessen.",
           },
           {
             question: "Welche Strafen drohen bei Verstössen gegen das nDSG?",
@@ -531,7 +531,7 @@ Für jeden braucht es einen Auftragsbearbeitungsvertrag (AVV). Die meisten gross
 La loi fédérale révisée sur la protection des données (nLPD, en vigueur depuis septembre 2023) rapproche le droit suisse du RGPD tout en conservant des spécificités suisses. Pour les produits SaaS qui ont des clients en Suisse, voici les principales conséquences techniques :
 
 - **La protection des données dès la conception et par défaut** est désormais une obligation légale, plus une simple recommandation
-- **Les violations de la sécurité des données** doivent être annoncées au PFPDT dans les 72 heures en cas de risque élevé
+- **Les violations de la sécurité des données** doivent être annoncées au PFPDT dans les meilleurs délais en cas de risque élevé (sans délai fixe en heures)
 - **Un registre des activités de traitement** est obligatoire dès 250 collaborateurs (et recommandé pour tous)
 - **Le profilage à risque élevé** exige un consentement explicite
 - **Les transferts de données à l'étranger** exigent une décision d'adéquation ou des garanties appropriées
@@ -610,7 +610,7 @@ Chacun nécessite un contrat de sous-traitance (DPA). La plupart des grands four
           },
           {
             question: "Être conforme à la nLPD, est-ce la même chose qu'être conforme au RGPD ?",
-            answer: "Les deux sont largement alignés, mais pas identiques. Principales différences : le délai d'annonce des violations est de 72 heures dans la nLPD (comme dans le RGPD), mais la définition du « risque élevé » et les règles sur le profilage diffèrent. La conformité RGPD est une base solide, mais il faut combler les écarts propres au droit suisse.",
+            answer: "Les deux sont largement alignés, mais pas identiques. Principales différences : le RGPD impose d'annoncer une violation dans les 72 heures, la nLPD « dans les meilleurs délais ». De plus, la définition du « risque élevé » et les règles sur le profilage diffèrent. La conformité RGPD est une base solide, mais il faut combler les écarts propres au droit suisse.",
           },
           {
             question: "Quelles sont les sanctions en cas de violation de la nLPD ?",
@@ -630,7 +630,7 @@ Chacun nécessite un contrat de sous-traitance (DPA). La plupart des grands four
 La legge federale sulla protezione dei dati rivista (nLPD, in vigore da settembre 2023) ha avvicinato il diritto svizzero al GDPR, mantenendo però alcune specificità svizzere. Per i prodotti SaaS con clienti in Svizzera, le conseguenze tecniche principali sono:
 
 - **Protezione dei dati fin dalla progettazione e per impostazione predefinita**: ora è un obbligo di legge, non più una raccomandazione
-- **Notifica delle violazioni della sicurezza dei dati** all'IFPDT entro 72 ore in caso di rischio elevato
+- **Notifica delle violazioni della sicurezza dei dati** all'IFPDT il prima possibile in caso di rischio elevato (senza un termine fisso in ore)
 - **Registro delle attività di trattamento** obbligatorio per le organizzazioni con 250 o più dipendenti (consigliato per tutte)
 - **Profilazione a rischio elevato**: richiede un consenso esplicito
 - **Trasferimenti di dati all'estero**: richiedono una decisione di adeguatezza o garanzie appropriate
@@ -709,7 +709,7 @@ Per ognuno serve un accordo sul trattamento dei dati (DPA). La maggior parte dei
           },
           {
             question: "Essere conformi alla nLPD equivale a essere conformi al GDPR?",
-            answer: "In gran parte sì, ma non del tutto. Le differenze principali: il termine per notificare una violazione nella nLPD è di 72 ore (come nel GDPR), ma la definizione di «rischio elevato» e le regole sulla profilazione sono diverse. La conformità al GDPR è una base solida, ma devi colmare le lacune specifiche del diritto svizzero.",
+            answer: "In gran parte sì, ma non del tutto. Le differenze principali: il GDPR impone di notificare una violazione entro 72 ore, la nLPD «il prima possibile». Inoltre la definizione di «rischio elevato» e le regole sulla profilazione sono diverse. La conformità al GDPR è una base solida, ma devi colmare le lacune specifiche del diritto svizzero.",
           },
           {
             question: "Quali sono le sanzioni per le violazioni della nLPD?",
@@ -723,29 +723,29 @@ Per ognuno serve un accordo sul trattamento dei dati (DPA). La maggior parte dei
       },
     },
     meta: {
-      title: "FADP / revFADP SaaS Compliance Checklist for Developers — Trident",
-      description: "Engineering checklist for Swiss revFADP compliance: data minimization, consent management, right to erasure, processing records, and sub-processor DPAs.",
+      title: "FADP / revFADP SaaS compliance checklist for developers | Trident",
+      description: "Engineering checklist for Swiss revFADP compliance: data minimisation, consent management, right to erasure, processing records, and sub-processor DPAs.",
     },
   },
   {
     slug: "postgresql-performance-tuning-mid-size-apps",
     image: "/images/stock/office-2.jpg",
-    title: "PostgreSQL Performance Tuning for Mid-Size Applications",
-    excerpt: "Before you shard or migrate to a distributed database, there's significant performance headroom in a single well-tuned PostgreSQL instance. Here's where to look first.",
-    content: `## Most PostgreSQL Performance Problems Have Simple Causes
+    title: "PostgreSQL performance tuning for mid-size applications",
+    excerpt: "Before you shard or migrate to a distributed database, tune the single PostgreSQL instance you have. It usually has headroom left. Start here.",
+    content: `## Most PostgreSQL performance problems have simple causes
 
-After diagnosing slow queries across dozens of mid-size applications, the distribution of root causes is remarkably consistent:
+We have diagnosed slow queries in dozens of mid-size applications. The root causes are remarkably consistent:
 
-- **~60%** — missing indexes (the obvious ones and the composite ones)
-- **~20%** — N+1 query patterns from ORMs
-- **~10%** — misconfigured PostgreSQL memory settings
-- **~10%** — inefficient query structure (full table scans where none needed)
+- ~60%: missing indexes (the obvious ones and the composite ones)
+- ~20%: N+1 query patterns from ORMs
+- ~10%: misconfigured PostgreSQL memory settings
+- ~10%: inefficient query structure (full table scans where none needed)
 
 Fix these before considering anything architectural.
 
 ## Step 1: Enable pg_stat_statements
 
-You cannot optimize what you cannot measure. Enable the query statistics extension:
+You cannot optimise what you cannot measure. Enable the query statistics extension:
 
 \`\`\`sql
 -- postgresql.conf
@@ -764,13 +764,13 @@ LIMIT 20;
 
 Run this weekly. The results are almost always surprising.
 
-## Step 2: Index Audit
+## Step 2: Index audit
 
-| Index Type | When to Use |
+| Index type | When to use |
 |---|---|
 | B-tree (default) | Equality and range queries on most column types |
 | Partial index | Queries that always filter on a condition (e.g., \`WHERE deleted_at IS NULL\`) |
-| Composite index | Queries filtering on multiple columns — order matters |
+| Composite index | Queries filtering on multiple columns (order matters) |
 | GIN index | JSONB columns, full-text search, array containment |
 | Covering index | Include extra columns to avoid table heap access |
 
@@ -789,7 +789,7 @@ WHERE tc.constraint_type = 'FOREIGN KEY'
   AND idx.indexname IS NULL;
 \`\`\`
 
-## Step 3: Memory Configuration
+## Step 3: Memory configuration
 
 Default PostgreSQL settings assume a shared server with minimal RAM. For a dedicated app server with 16GB RAM:
 
@@ -802,7 +802,7 @@ maintenance_work_mem = 1GB    # For VACUUM, index builds
 
 Increasing \`work_mem\` has the highest single-setting impact on complex queries. But remember: each parallel operation can use this much. 64MB × 100 connections × 4 operations = 25GB if you're not careful.
 
-## Step 4: VACUUM and Autovacuum
+## Step 4: VACUUM and autovacuum
 
 Table bloat from dead tuples degrades performance silently. Check it:
 
@@ -817,7 +817,7 @@ ORDER BY dead_pct DESC;
 
 Tables with >20% dead tuples need manual \`VACUUM ANALYZE\` and autovacuum tuning.
 
-## Step 5: Connection Pooling
+## Step 5: Connection pooling
 
 PostgreSQL connection overhead is non-trivial. Use **PgBouncer** in transaction pooling mode for any application with more than 20 concurrent database connections. This alone can increase throughput by 3–5× for connection-heavy workloads.`,
     author: "Trident Software Team",
@@ -843,11 +843,11 @@ PostgreSQL connection overhead is non-trivial. Use **PgBouncer** in transaction 
       },
       {
         question: "How much does adding the right indexes typically improve query performance?",
-        answer: "For a query doing a sequential scan on a large table, adding the right index can reduce query time from seconds to milliseconds — a 100–10,000× improvement. It's the highest-ROI optimization available.",
+        answer: "For a query doing a sequential scan on a large table, adding the right index can reduce query time from seconds to milliseconds, a 100–10,000× improvement. It is the highest-ROI optimisation available.",
       },
       {
         question: "Should I use EXPLAIN or EXPLAIN ANALYZE to diagnose slow queries?",
-        answer: "EXPLAIN ANALYZE — it runs the actual query and shows real timing. EXPLAIN only shows the planner's estimate. The difference matters when estimates are off (which causes the performance problem in the first place).",
+        answer: "EXPLAIN ANALYZE. It runs the actual query and shows real timing. EXPLAIN only shows the planner's estimate. The difference matters when estimates are off (which causes the performance problem in the first place).",
       },
       {
         question: "What is the safest way to add an index on a large production table?",
@@ -1202,66 +1202,66 @@ L'overhead delle connessioni PostgreSQL non è trascurabile. Usa **PgBouncer** i
       },
     },
     meta: {
-      title: "PostgreSQL Performance Tuning for Mid-Size Apps — Trident Software",
-      description: "Practical PostgreSQL optimization guide: finding slow queries with pg_stat_statements, index audit, memory configuration, autovacuum tuning, and PgBouncer.",
+      title: "PostgreSQL performance tuning for mid-size apps | Trident Software",
+      description: "Practical PostgreSQL optimisation guide: finding slow queries with pg_stat_statements, index audit, memory configuration, autovacuum tuning, and PgBouncer.",
     },
   },
   {
     slug: "react-native-vs-flutter-swiss-mobile",
     image: "/images/stock/workspace.jpg",
-    title: "React Native vs Flutter for Swiss Mobile Projects: A 2026 Decision Guide",
-    excerpt: "Both frameworks are mature. The choice depends on your team, timeline, and integration requirements — not benchmarks. Here's how we decide which to recommend for Swiss clients.",
-    content: `## The Framework War Is Over — Both Won
+    title: "React Native vs Flutter for Swiss mobile projects: a 2026 decision guide",
+    excerpt: "Both frameworks are mature. The choice depends on your team, timeline and integration requirements, not on benchmarks. This is how we choose one for our Swiss clients.",
+    content: `## Both frameworks are ready for production
 
-React Native and Flutter are both production-proven in 2026. The decision is no longer "which is more mature" — it's "which fits our specific situation."
+React Native and Flutter are both production-proven in 2026. The question is no longer "which is more mature" but "which fits our situation."
 
-After shipping 9 mobile apps on both frameworks for Swiss clients, here's the honest comparison.
+We have shipped 9 mobile apps on both frameworks for Swiss clients. This is our comparison.
 
-## When We Recommend React Native
+## When we recommend React Native
 
 React Native makes sense when:
 
-- **Your team already knows JavaScript/TypeScript** — the learning curve disappears
-- **You're integrating with a Next.js or Node.js backend** — shared types, shared validation logic, shared team
-- **You need maximum native module access** — RN's bridge to native code is battle-tested
-- **The app is content-heavy** — React paradigms (components, hooks, state) map well
+- Your team already knows JavaScript/TypeScript, so there is no learning curve
+- You integrate with a Next.js or Node.js backend: shared types, shared validation logic, shared team
+- You need wide access to native modules; RN's bridge to native code is proven
+- The app is content-heavy, where React patterns (components, hooks, state) map well
 
 React Native rough edges in 2026: the New Architecture (JSI/Fabric) is stable but some popular libraries haven't migrated yet. Budget extra time for library vetting.
 
-## When We Recommend Flutter
+## When we recommend Flutter
 
 Flutter makes sense when:
 
-- **Custom UI is the product** — Flutter's pixel-perfect rendering across platforms is unmatched
-- **Performance is paramount** — no JS bridge, compiled to native ARM, smooth 120fps animations
-- **Team is willing to learn Dart** — the language is approachable and the tooling is excellent
-- **You need web + mobile from one codebase** — Flutter Web has matured significantly
+- Custom UI is the product: Flutter renders pixel-identical screens on every platform
+- Performance comes first: no JS bridge, compiled to native ARM, smooth 120fps animations
+- The team will learn Dart; the language is approachable and the tooling is excellent
+- You need web and mobile from one codebase; Flutter Web has matured a lot
 
 Flutter rough edges: native integrations sometimes require writing platform channels, and the Dart ecosystem is smaller than npm.
 
-## Side-by-Side Comparison
+## Side-by-side comparison
 
 | Factor | React Native | Flutter |
 |---|---|---|
 | Language | TypeScript / JavaScript | Dart |
 | Rendering | Native components | Custom Skia renderer |
 | Performance | Good (excellent with New Architecture) | Excellent |
-| UI customization | Native feel, harder to customize | Total control |
+| UI customisation | Native feel, harder to customise | Total control |
 | Community packages | Very large (npm) | Growing but smaller |
 | Web support | Limited (react-native-web) | Production-ready |
 | Swiss team findability | High (JS devs everywhere) | Medium |
 | CI/CD setup complexity | Medium | Medium |
 
-## The Multilingual Question (DE/FR/IT/EN)
+## The multilingual question (DE/FR/IT/EN)
 
-Swiss apps frequently need 4+ languages. Both frameworks handle this well:
+Swiss apps often need 4+ languages. Both frameworks handle this well:
 
-- **React Native**: i18n-js or react-i18next (same libraries as web)
-- **Flutter**: flutter_localizations + intl package (more boilerplate but solid)
+- React Native: i18n-js or react-i18next (same libraries as web)
+- Flutter: flutter_localizations + intl package (more boilerplate but solid)
 
 RTL (Arabic) support is better in Flutter's layout system than in React Native, which matters if your app needs Arabic.
 
-## Our Recommendation for Most Swiss SME Projects
+## Our recommendation for most Swiss SME projects
 
 **Default to React Native** if your team has web development background. The hiring pool is larger, the learning curve is lower, and the ecosystem overlap with your web stack reduces overall complexity.
 
@@ -1285,7 +1285,7 @@ RTL (Arabic) support is better in Flutter's layout system than in React Native, 
     faq: [
       {
         question: "Can we share code between a Next.js web app and a React Native app?",
-        answer: "Business logic, API clients, TypeScript types, and validation schemas can be shared via a monorepo. UI components cannot be shared — React Native uses different primitives than the DOM.",
+        answer: "Business logic, API clients, TypeScript types, and validation schemas can be shared via a monorepo. UI components cannot be shared: React Native uses different primitives than the DOM.",
       },
       {
         question: "Is Flutter suitable for enterprise mobile apps?",
@@ -1549,22 +1549,22 @@ Il supporto RTL (arabo) è migliore nel sistema di layout di Flutter che in Reac
       },
     },
     meta: {
-      title: "React Native vs Flutter for Swiss Mobile Projects 2026 — Trident",
-      description: "Decision guide for React Native vs Flutter in Swiss mobile projects: team skills, performance, UI customization, multilingual support, and hiring pool.",
+      title: "React Native vs Flutter for Swiss mobile projects 2026 | Trident",
+      description: "Decision guide for React Native vs Flutter in Swiss mobile projects: team skills, performance, UI customisation, multilingual support, and hiring pool.",
     },
   },
   {
     slug: "gitlab-cicd-small-engineering-teams",
     image: "/images/stock/workspace-2.jpg",
-    title: "GitLab CI/CD for Small Engineering Teams: A Practical Setup",
-    excerpt: "You don't need a DevOps team to run good CI/CD. Here's the GitLab pipeline configuration we use for 2–8 person teams — covering testing, building, and deployment with minimal maintenance overhead.",
-    content: `## The Goal: CI/CD That Doesn't Require a Dedicated DevOps Engineer
+    title: "GitLab CI/CD for small engineering teams: a practical setup",
+    excerpt: "You don't need a DevOps team to run good CI/CD. This is the GitLab pipeline we use for teams of 2–8 people. It covers testing, building and deployment, with little upkeep.",
+    content: `## The goal: CI/CD without a dedicated DevOps engineer
 
 Large teams can afford pipeline specialists. Small teams need pipelines that mostly run themselves, are easy to debug when they fail, and don't require tribal knowledge to extend.
 
-This is the configuration we've standardized on after running GitLab CI for 15+ projects.
+We have run GitLab CI on 15+ projects, and this is the configuration we standardised on.
 
-## Pipeline Structure
+## Pipeline structure
 
 A good small-team pipeline has four stages:
 
@@ -1576,9 +1576,9 @@ stages:
   - deploy      # push to staging or production
 \`\`\`
 
-The critical rule: **validate before test, test before build**. Don't spend 5 minutes building an image for code that fails a 30-second type check.
+The main rule: **validate before test, test before build**. Don't spend 5 minutes building an image for code that fails a 30-second type check.
 
-## A Real .gitlab-ci.yml for a Node.js App
+## A real .gitlab-ci.yml for a Node.js app
 
 \`\`\`yaml
 image: node:20-alpine
@@ -1636,7 +1636,7 @@ deploy_staging:
   when: on_success
 \`\`\`
 
-## Caching: The Single Biggest Speed Improvement
+## Caching: the biggest speed gain
 
 For Node.js pipelines, \`node_modules\` caching is the difference between 3-minute and 8-minute pipelines. Key rules:
 
@@ -1646,7 +1646,7 @@ For Node.js pipelines, \`node_modules\` caching is the difference between 3-minu
 | Lockfile hash | Share cache between branches with identical deps |
 | Global | Monorepos where all packages share dependencies |
 
-## Merge Request Pipelines vs Branch Pipelines
+## Merge request pipelines vs branch pipelines
 
 Use \`rules\` (not \`only/except\`) for modern GitLab CI. The pattern that works:
 
@@ -1658,14 +1658,14 @@ rules:
 
 This avoids duplicate pipelines (a common small-team frustration) while ensuring both MRs and main branch are covered.
 
-## Environment Variables and Secrets
+## Environment variables and secrets
 
 Never commit secrets. Use:
-- **GitLab CI/CD Variables** (Settings → CI/CD → Variables) for production secrets
-- **\`.env.example\`** in the repo documenting required variables without values
-- **Masked variables** in GitLab to prevent accidental log exposure
+- GitLab CI/CD Variables (Settings → CI/CD → Variables) for production secrets
+- \`.env.example\` in the repo, listing required variables without values
+- Masked variables in GitLab, so secrets do not leak into logs
 
-Rotate secrets quarterly. Audit which pipelines have access to production variables — not all jobs should.`,
+Rotate secrets quarterly. Audit which pipelines can read production variables. Not all jobs should.`,
     author: "Trident Software Team",
     authorRole: "Engineering Blog",
     publishedAt: "2026-01-08",
@@ -1689,11 +1689,11 @@ Rotate secrets quarterly. Audit which pipelines have access to production variab
       },
       {
         question: "Should we use GitLab-hosted runners or self-hosted?",
-        answer: "GitLab-hosted runners (SaaS) for most small teams — zero maintenance, predictable costs. Self-host only if you need custom hardware (GPU builds, specific OS), very high usage volumes, or strict data residency requirements.",
+        answer: "GitLab-hosted runners (SaaS) suit most small teams: zero maintenance, predictable costs. Self-host only if you need custom hardware (GPU builds, specific OS), very high usage volumes, or strict data residency requirements.",
       },
       {
         question: "How do we handle database migrations in CI/CD?",
-        answer: "Run migrations as a separate job before deploy, with a rollback script ready. Never run migrations and deploy simultaneously — if the deploy fails, you can't easily undo migrations that already ran.",
+        answer: "Run migrations as a separate job before deploy, with a rollback script ready. Never run migrations and deploy together. If the deploy fails, you can't easily undo migrations that already ran.",
       },
       {
         question: "What's the right way to handle staging vs production deployments?",
@@ -2108,34 +2108,34 @@ Ruota i segreti ogni trimestre. Verifica quali pipeline hanno accesso alle varia
       },
     },
     meta: {
-      title: "GitLab CI/CD for Small Engineering Teams — Trident Software Blog",
+      title: "GitLab CI/CD for small engineering teams | Trident Software Blog",
       description: "Practical GitLab CI/CD setup for 2–8 person teams. Pipeline structure, Node.js caching, Docker builds, environment deployments, and secrets management.",
     },
   },
   {
     slug: "custom-erp-vs-off-the-shelf",
     image: "/images/stock/clinic-2.jpg",
-    title: "Custom ERP vs Off-the-Shelf: A Decision Framework for Swiss Companies",
-    excerpt: "SAP, Abacus, and Bexio handle 80% of Swiss SME needs. The remaining 20% is where custom development earns its price. Here's how to identify which category your business is in.",
-    content: `## The Default Answer Is Off-the-Shelf
+    title: "Custom ERP vs off-the-shelf: a decision framework for Swiss companies",
+    excerpt: "SAP, Abacus, and Bexio handle 80% of Swiss SME needs. The remaining 20% is where custom development earns its price. This is how to tell which group your business is in.",
+    content: `## The default answer is off-the-shelf
 
 Custom ERP development is expensive, time-consuming, and requires ongoing engineering investment. Before evaluating custom software, every Swiss company should honestly assess the major off-the-shelf options.
 
-| Platform | Best For | Annual Cost Range |
+| Platform | Best for | Annual cost range |
 |---|---|---|
 | Bexio | Swiss SMEs <50 employees, simple ops | CHF 1,200–6,000 |
 | Abacus | Swiss mid-market, accounting-heavy | CHF 8,000–50,000 |
 | SAP Business One | 20–250 employee companies, complex ops | CHF 30,000–200,000 |
 | Odoo | Growing companies needing modules | CHF 5,000–40,000 |
 
-If your needs fit within one of these platforms, use it. The maintenance cost of off-the-shelf software is a fraction of custom software — and the feature set improves annually without your investment.
+If your needs fit within one of these platforms, use it. Off-the-shelf software costs a fraction of custom software to maintain, and its features improve every year at no cost to you.
 
-## The 20% Where Custom Development Wins
+## The 20% where custom development wins
 
 Custom ERP components make sense when:
 
 **1. Your process is genuinely unique**
-Not "we do things slightly differently" unique, but "no standard software models this" unique. Examples: multi-currency commodity trading with custom settlement logic, specialized Swiss regulatory reporting, industry-specific certification workflows.
+Not "we do things slightly differently" unique, but "no standard software models this" unique. Examples: multi-currency commodity trading with custom settlement logic, specialised Swiss regulatory reporting, industry-specific certification workflows.
 
 **2. Integration with proprietary systems**
 When your ERP needs to deeply integrate with hardware, legacy systems, or industry-specific platforms that off-the-shelf vendors don't support, custom middleware or modules become necessary.
@@ -2146,7 +2146,7 @@ At scale, per-seat SaaS pricing becomes significant. A 500-person company paying
 **4. Competitive differentiation**
 If the operational software IS the competitive advantage (proprietary pricing logic, unique customer experience, algorithmic dispatch), it must be custom.
 
-## The Hybrid Approach (Most Common Recommendation)
+## The hybrid approach (most common recommendation)
 
 The most pragmatic answer for most Swiss companies: **off-the-shelf core + custom periphery**.
 
@@ -2161,13 +2161,13 @@ The most pragmatic answer for most Swiss companies: **off-the-shelf core + custo
 [Industry-Specific Reporting]
 \`\`\`
 
-This approach preserves the stability of proven ERP software for financial data while allowing custom development exactly where it creates value.
+Financial data stays in proven ERP software, and custom development goes only where it creates value.
 
-## Questions to Answer Before Deciding
+## Questions to answer before deciding
 
-1. Can we configure (not customize) an off-the-shelf platform to handle this?
+1. Can we configure (not customise) an off-the-shelf platform to handle this?
 2. What is the 5-year total cost of ownership for each option?
-3. What happens when our team grows from 50 to 200 people — does the system scale?
+3. What happens when our team grows from 50 to 200 people? Does the system scale?
 4. Who maintains this software when the original developers are unavailable?
 5. If we build custom, what is the data export strategy if we switch later?
 
@@ -2455,26 +2455,26 @@ La domanda 4 è quella che la maggior parte dei clienti salta. Il software su mi
       },
     },
     meta: {
-      title: "Custom ERP vs Off-the-Shelf for Swiss Companies — Trident Software",
-      description: "Decision framework for Swiss companies choosing between custom ERP and platforms like SAP, Abacus, or Odoo — cost comparison and when custom wins.",
+      title: "Custom ERP vs off-the-shelf for Swiss companies | Trident Software",
+      description: "Decision framework for Swiss companies choosing between custom ERP and platforms like SAP, Abacus or Odoo: cost comparison and when custom wins.",
     },
   },
   {
     slug: "ai-document-processing-invoices-contracts",
     image: "/images/stock/dispatch-2.jpg",
-    title: "AI-Powered Document Processing for Invoices and Contracts",
-    excerpt: "Extracting structured data from PDFs sounds simple until you face scanned faxes, multi-page contracts with tables, and invoices from 40 different suppliers with different formats. Here's what actually works.",
-    content: `## The Document Processing Problem Is Harder Than It Looks
+    title: "AI-powered document processing for invoices and contracts",
+    excerpt: "Extracting structured data from PDFs sounds simple until you face scanned faxes, multi-page contracts with tables, and invoices from 40 different suppliers with different formats. This is what works.",
+    content: `## The document processing problem is harder than it looks
 
-Ask any accountant how much time they spend on invoice data entry and the answer is "too much." The promise of AI document processing is automating this. The reality requires more engineering than a single API call.
+Ask any accountant how much time they spend on invoice data entry and the answer is "too much." AI document processing promises to automate it. In practice it takes more engineering than a single API call.
 
-After building document processing pipelines for 6 clients across finance, logistics, and legal, here's the honest architecture.
+We have built document processing pipelines for 6 clients in finance, logistics and legal. This is the architecture we use.
 
-## Input Classification First
+## Classify the input first
 
 Not all documents are equal. Before extraction, classify:
 
-| Document Type | Recommended Approach |
+| Document type | Recommended approach |
 |---|---|
 | Machine-generated PDF | pdfplumber / pypdf for direct text extraction (no AI needed) |
 | Scanned PDF (good quality) | OCR (Tesseract or AWS Textract) → LLM extraction |
@@ -2482,9 +2482,9 @@ Not all documents are equal. Before extraction, classify:
 | Multi-page with tables | AWS Textract or Azure Document Intelligence |
 | Handwritten | GPT-4V or Claude 3.5 Sonnet vision directly |
 
-The biggest optimization: use AI only where needed. Machine-generated PDFs with selectable text don't need vision models.
+The biggest optimisation: use AI only where needed. Machine-generated PDFs with selectable text don't need vision models.
 
-## The Extraction Architecture
+## The extraction architecture
 
 \`\`\`
 PDF Input
@@ -2508,7 +2508,7 @@ PDF Input
                               └── Invalid → Human review queue
 \`\`\`
 
-## The Extraction Prompt That Works
+## An extraction prompt that works
 
 Generic "extract data from this invoice" prompts produce inconsistent JSON. Use a typed schema prompt:
 
@@ -2534,24 +2534,24 @@ If a field is not found, use null. Do not invent values.
 Invoice text: \${documentText}\`
 \`\`\`
 
-## Validation Layer (Critical)
+## Validation layer (critical)
 
 Never trust LLM output directly. Validate:
 
-- **Math check**: sum(line_items.total) ≈ subtotal (within 0.01 rounding)
-- **Date sanity**: invoice_date < due_date, both within ±5 years of today
-- **IBAN format**: validate checksum algorithmically
-- **Currency consistency**: all amounts in stated currency
+- Maths: sum(line_items.total) ≈ subtotal (within 0.01 rounding)
+- Dates: invoice_date < due_date, both within ±5 years of today
+- IBAN format: validate the checksum algorithmically
+- Currency: all amounts in the stated currency
 
 Failed validation → human review queue, not silent failure.
 
-## Model Selection for Swiss Documents
+## Model selection for Swiss documents
 
 For Swiss-specific documents (VAT, IBAN, CHF, DE/FR/IT text):
 
-- **Claude 3.5 Sonnet**: Best for complex contracts with mixed languages
-- **GPT-4V**: Comparable for invoices, slightly better table extraction
-- **AWS Textract**: Best for high-volume standardized forms (same supplier repeatedly)
+- Claude 3.5 Sonnet: best for complex contracts with mixed languages
+- GPT-4V: comparable for invoices, slightly better table extraction
+- AWS Textract: best for high-volume standardised forms (same supplier repeatedly)
 
 Cost comparison for 1,000 invoices/month: Claude API ~CHF 40, GPT-4V ~CHF 55, Textract ~CHF 15 (but requires more post-processing).`,
     author: "Trident Software Team",
@@ -2577,7 +2577,7 @@ Cost comparison for 1,000 invoices/month: Claude API ~CHF 40, GPT-4V ~CHF 55, Te
       },
       {
         question: "Can this handle invoices in German, French, and Italian?",
-        answer: "Yes. Claude 3.5 Sonnet and GPT-4V handle all Swiss national languages well. The extraction schema works regardless of invoice language — the model translates implicitly.",
+        answer: "Yes. Claude 3.5 Sonnet and GPT-4V handle all Swiss national languages well. The extraction schema works regardless of invoice language; the model translates implicitly.",
       },
       {
         question: "How do we handle supplier-specific invoice formats that recur frequently?",
@@ -2942,7 +2942,7 @@ Confronto dei costi per 1,000 fatture al mese: Claude API ~CHF 40, GPT-4V ~CHF 5
       },
     },
     meta: {
-      title: "AI Document Processing for Invoices and Contracts — Trident Software",
+      title: "AI document processing for invoices and contracts | Trident Software",
       description: "Architecture for AI invoice and contract processing: document classification, OCR pipeline, LLM extraction, validation layer, and model cost comparison.",
     },
   },

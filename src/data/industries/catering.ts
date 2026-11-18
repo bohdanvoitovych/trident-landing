@@ -45,9 +45,9 @@ const record: IndustryRecord = {
         },
       ],
       meta: {
-        title: 'Catering & Food Service Software | Trident Software',
+        title: 'Catering & food service software | Trident Software',
         description:
-          'Catering software — event management, recipe costing, client ordering portals, staff scheduling. Swiss engineering.',
+          'Catering software: event management, recipe costing, client ordering portals, staff scheduling. Swiss engineering.',
       },
     },
     de: {

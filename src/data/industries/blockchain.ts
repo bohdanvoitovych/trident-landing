@@ -23,7 +23,7 @@ const record: IndustryRecord = {
         },
         {
           title: 'Regulatory compliance',
-          description: 'Navigating Swiss FINMA guidance and MiCA for tokenised assets and DeFi protocols.',
+          description: 'Meeting Swiss FINMA guidance and MiCA for tokenised assets and DeFi protocols.',
         },
       ],
       solutions: [
@@ -45,9 +45,9 @@ const record: IndustryRecord = {
         },
       ],
       meta: {
-        title: 'Blockchain & Web3 Development | Trident Software',
+        title: 'Blockchain & Web3 development | Trident Software',
         description:
-          'Blockchain development — smart contracts, NFT platforms, tokenisation, DeFi integrations. Swiss engineering team.',
+          'Blockchain development: smart contracts, NFT platforms, tokenisation, DeFi integrations. Swiss engineering team.',
       },
     },
     de: {

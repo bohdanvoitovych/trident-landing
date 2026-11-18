@@ -4,10 +4,10 @@ export const posts: BlogPostRecord[] = [
   {
     slug: "palexpo-geneva-2025-visit-trident-software-at-booth-k127",
     image: "/images/blog/palexpo-geneva-2025-visit-trident-software-at-booth-k127.jpg",
-    title: "Palexpo Geneva 2025: Visit Trident Software at Booth K127",
+    title: "Palexpo Geneva 2025: visit Trident Software at Booth K127",
     publishedAt: "2025-05-26",
     readingTime: 4,
-    excerpt: "Trident Software will exhibit at Palexpo Geneva from June 3–6, demonstrating how businesses can cut operational costs, automate key processes, and optimize logistics. Come see iAM-Trade, 8Move delivery automation, and our custom AI integration services at Booth K127.",
+    excerpt: "Trident Software will exhibit at Palexpo Geneva from June 3–6, showing how businesses can cut operating costs, automate key processes and optimise logistics. See iAM-Trade, 8Move delivery automation and our custom AI integration services at Booth K127.",
     tags: [
       "Events",
       "Palexpo",
@@ -21,21 +21,21 @@ export const posts: BlogPostRecord[] = [
     relatedPosts: [],
     content: `## Palexpo Geneva 2025
 
-Triident Software will be at Palexpo Geneva from June 3–6, targeting businesses looking to reduce costs, automate operations, and improve logistics. Find us at Booth K127 for live demonstrations of the tools we build and support.
+Trident Software will be at Palexpo Geneva from June 3–6 for businesses that want to reduce costs, automate operations and improve logistics. Find us at Booth K127 for live demonstrations of the tools we build and support.
 
-## iAM-Trade: B2B Commerce Automation
+## iAM-Trade: B2B commerce automation
 
-The iAM-Trade platform streamlines B2B commerce by automating ordering, returns, and invoicing. It integrates with major systems including SAP, Bexio, and Odoo, and leverages AI for dynamic pricing and product optimization.
+The iAM-Trade platform automates B2B ordering, returns and invoicing. It integrates with major systems including SAP, Bexio and Odoo, and uses AI for dynamic pricing and product optimisation.
 
-## 8Move: Delivery Optimization
+## 8Move: delivery optimisation
 
-Our 8Move delivery solution addresses logistics inefficiencies through route optimization and real-time tracking. With QR and NFC technology built in, the system can reduce delivery costs significantly — adopters have reported savings of up to 27%.
+8Move cuts logistics waste through route optimisation and real-time tracking. With QR and NFC technology built in, it can reduce delivery costs: adopters have reported savings of up to 27%.
 
-## Custom AI and Integration Services
+## Custom AI and integration services
 
-Beyond our platforms, Trident develops custom web and mobile applications that connect with existing ERP and CRM systems — tailored to how each business actually operates, not how a generic system assumes it does.`,
+Beyond our platforms, Trident builds custom web and mobile applications that connect to existing ERP and CRM systems. They follow how each business actually operates, not how a generic system assumes it does.`,
     meta: {
-      title: "Palexpo Geneva 2025 — Trident Software at Booth K127",
+      title: "Palexpo Geneva 2025: Trident Software at Booth K127",
       description: "Visit Trident Software at Palexpo Geneva 2025, June 3–6. See iAM-Trade, 8Move logistics, and custom AI integrations demonstrated live at Booth K127.",
     },
     translations: {
@@ -116,10 +116,10 @@ Oltre alle nostre piattaforme, Trident sviluppa app web e mobile su misura che s
   {
     slug: "from-data-to-decisions-how-autonomous-ai-agents-drive-business-smarts",
     image: "/images/blog/from-data-to-decisions-how-autonomous-ai-agents-drive-busine.jpg",
-    title: "From Data to Decisions: How Autonomous AI Agents Drive Business Smarts",
+    title: "From data to decisions: how autonomous AI agents drive business smarts",
     publishedAt: "2025-04-18",
     readingTime: 6,
-    excerpt: "Autonomous AI agents don't just suggest actions — they analyze data, make decisions, and execute independently. Combining large language models, real-time information tools, and persistent memory, these systems are already operating in healthcare diagnostics, algorithmic trading, supply chain optimization, and predictive maintenance.",
+    excerpt: "Autonomous AI agents analyse data, make decisions and act on them without waiting for a prompt. They combine large language models, real-time information tools and persistent memory, and already run in healthcare diagnostics, algorithmic trading, supply chain optimisation and predictive maintenance.",
     tags: [
       "AI",
       "AI Agents",
@@ -132,24 +132,24 @@ Oltre alle nostre piattaforme, Trident sviluppa app web e mobile su misura che s
     author: "Bohdan Voitovych",
     authorRole: "Project Manager, Trident Software",
     relatedPosts: [],
-    content: `## Beyond Chatbots: Agents That Act
+    content: `## Beyond chatbots: agents that act
 
-Most businesses have encountered AI as a tool that responds to prompts — a sophisticated autocomplete. Autonomous AI agents are categorically different. They analyze data, make decisions based on that analysis, and take actions without requiring constant human direction.
+Most businesses know AI as a tool that answers prompts, a sophisticated autocomplete. Autonomous AI agents work differently. They analyse data, make decisions based on that analysis and act without constant human direction.
 
-## The Three-Part Architecture
+## The three-part architecture
 
-Autonomous agents combine three components. Large language models provide the cognitive layer — pattern recognition, reasoning, and language understanding. Tools enable real-time information gathering from external systems, APIs, and data sources. Memory systems allow agents to learn from past actions, recognizing patterns and avoiding repeated mistakes.
+Autonomous agents combine three components. Large language models provide the reasoning layer: pattern recognition, reasoning and language understanding. Tools gather real-time information from external systems, APIs and data sources. Memory lets agents learn from past actions, so they recognise patterns and avoid repeating mistakes.
 
-## Where Agents Are Already Working
+## Where agents are already working
 
-The applications span industries. In healthcare, autonomous agents process medical data to detect early-stage conditions and support treatment decisions. Financial institutions use them for algorithmic trading. Supply chain companies optimize routes and forecast demand autonomously. Manufacturers implement predictive maintenance systems that detect potential equipment failures before breakdowns occur.
+The applications span industries. In healthcare, autonomous agents process medical data to detect early-stage conditions and support treatment decisions. Financial institutions use them for algorithmic trading. Supply chain companies optimise routes and forecast demand autonomously. Manufacturers use predictive maintenance systems to detect equipment failures before breakdowns occur.
 
-## Implementation That Fits Your Business
+## Implementation that fits your business
 
-Generic implementations rarely capture industry-specific requirements. Trident Software focuses on customized agent solutions tailored to specific operational contexts — where the real competitive advantage lies.`,
+Generic implementations rarely capture industry-specific requirements. Trident Software builds agents around how a specific operation works, because that is where the competitive advantage lies.`,
     meta: {
-      title: "Autonomous AI Agents for Business: From Data to Decisions — Trident Software",
-      description: "How autonomous AI agents — combining LLMs, real-time tools, and memory — are transforming healthcare, finance, supply chain, and manufacturing operations.",
+      title: "Autonomous AI agents for business: from data to decisions | Trident Software",
+      description: "How autonomous AI agents, which combine LLMs, real-time tools and memory, are changing operations in healthcare, finance, supply chain and manufacturing.",
     },
     translations: {
       de: {
@@ -228,10 +228,10 @@ Le soluzioni generiche raramente colgono le esigenze specifiche di un settore. T
   },
   {
     slug: "la-pochette-online-shop-discover-stylish-accessories",
-    title: "La Pochette Online Shop: Discover Stylish Accessories",
+    title: "La Pochette online shop: discover stylish accessories",
     publishedAt: "2024-01-04",
     readingTime: 4,
-    excerpt: "Trident Software launched a redesigned WooCommerce-powered online shop for La Pochette — a Swiss supplier of custom cutlery pouches and promotional items for restaurants and catering businesses. The new platform replaced a limited, insecure site with detailed product pages and an intuitive ordering system.",
+    excerpt: "Trident Software launched a redesigned WooCommerce online shop for La Pochette, a Swiss supplier of custom cutlery pouches and promotional items for restaurants and catering businesses. The new shop replaced a limited, insecure site with detailed product pages and a simple ordering process.",
     tags: [
       "E-commerce",
       "WooCommerce",
@@ -243,21 +243,21 @@ Le soluzioni generiche raramente colgono le esigenze specifiche di un settore. T
     author: "Bohdan Voitovych",
     authorRole: "Project Manager, Trident Software",
     relatedPosts: [],
-    content: `## The Challenge: Limited Reach, Cumbersome Process
+    content: `## The challenge: limited reach, cumbersome process
 
-[La Pochette](https://lapochette.ch/) offers custom-made products — cutlery pouches, promotional items — for small businesses, restaurateurs, and catering services. Their previous website created friction at every stage: limited audience reach, sparse product information, an expensive dependency on traditional marketing channels, and a cumbersome ordering process.
+[La Pochette](https://lapochette.ch/) offers custom-made products, such as cutlery pouches and promotional items, for small businesses, restaurateurs and catering services. Their previous website created friction at every stage: limited audience reach, sparse product information, an expensive dependency on traditional marketing channels, and a cumbersome ordering process.
 
-## What the Redesign Delivered
+## What the redesign delivered
 
-Triident Software's redesign brought La Pochette's product range directly to their target customers. The new site features detailed product information that empowers customers to make informed choices, and an intuitive ordering system that removes complexity from the purchase process. High-quality imagery, customer reviews, and social media integration complete the customer-facing experience.
+Trident Software's redesign brought La Pochette's product range directly to its target customers. The new site gives customers detailed product information so they can choose with confidence, and a simple ordering process. High-quality imagery, customer reviews, and social media integration complete the customer-facing experience.
 
-## Technology Foundation
+## Technology foundation
 
-The platform is built on WooCommerce, providing La Pochette with efficient sales management, secure payment processing, customer behavior analytics, and SEO optimization. Responsive design ensures accessibility across devices.
+The platform is built on WooCommerce, providing La Pochette with efficient sales management, secure payment processing, customer behaviour analytics and SEO. Responsive design makes the shop work on every device.
 
-## The Wider Pattern
+## The wider pattern
 
-La Pochette's transformation illustrates a pattern we see consistently in the restaurant supply sector: businesses with strong offline relationships and quality products that are held back by digital infrastructure that hasn't kept pace.`,
+La Pochette's case shows a pattern we see often in the restaurant supply sector: businesses with strong offline relationships and quality products that are held back by digital infrastructure that hasn't kept pace.`,
     translations: {
       fr: {
         title: "Boutique en ligne de La Pochette : Découvrez des accessoires raffinés",
@@ -333,17 +333,17 @@ La trasformazione di La Pochette mostra una situazione che vediamo spesso tra i 
       },
     },
     meta: {
-      title: "La Pochette Online Shop — WooCommerce Redesign by Trident Software",
-      description: "How Trident Software launched a WooCommerce shop for La Pochette, replacing a limited site with a full eCommerce experience for restaurant supply.",
+      title: "La Pochette online shop: WooCommerce redesign by Trident Software",
+      description: "How Trident Software launched a WooCommerce shop for La Pochette, replacing a limited site with a full online shop for restaurant supply.",
     },
   },
   {
     slug: "from-order-to-delivery-optimizing-horeca-distribution-with-tms",
     image: "/images/blog/from-order-to-delivery-optimizing-horeca-distribution-with-t.jpg",
-    title: "From Order to Delivery: Optimizing HoReCa Distribution with TMS",
+    title: "From order to delivery: optimising HoReCa distribution with TMS",
     publishedAt: "2025-03-19",
     readingTime: 6,
-    excerpt: "In the HoReCa sector, a late delivery or stock shortage doesn't just inconvenience customers — it disrupts operations and damages relationships built on reliability. Transportation Management Systems address this by optimizing routes, providing real-time tracking, and automating order dispatch.",
+    excerpt: "In the HoReCa sector, a late delivery or stock shortage does more than inconvenience customers. It disrupts operations and damages relationships built on reliability. Transportation management systems fix this by optimising routes, providing real-time tracking, and automating order dispatch.",
     tags: [
       "HoReCa",
       "TMS",
@@ -355,24 +355,24 @@ La trasformazione di La Pochette mostra una situazione che vediamo spesso tra i 
     author: "Bohdan Voitovych",
     authorRole: "Project Manager, Trident Software",
     relatedPosts: [],
-    content: `## The Stakes in HoReCa Distribution
+    content: `## The stakes in HoReCa distribution
 
-Hotels, restaurants, and catering operations run on tight timelines with zero tolerance for distribution failures. A late delivery, a misrouted shipment, or a stock shortage doesn't just inconvenience — it disrupts kitchen operations, leads to menu changes, and damages the trust that repeat business depends on.
+Hotels, restaurants, and catering operations run on tight timelines with zero tolerance for distribution failures. A late delivery, a misrouted shipment, or a stock shortage does more than inconvenience. It disrupts kitchen operations, leads to menu changes, and damages the trust that repeat business depends on.
 
-## What a TMS Actually Does
+## What a TMS actually does
 
-A Transportation Management System addresses these challenges systematically. Advanced algorithms plan the shortest, most efficient delivery routes, reducing fuel consumption and labor costs simultaneously. Real-time tracking gives distributors accurate ETAs to share with clients. And automation digitally matches orders with available vehicles and assigns routes based on priority and location.
+A transportation management system (TMS) addresses these problems directly. Routing algorithms plan the shortest delivery routes, which cuts fuel consumption and labour costs together. Real-time tracking gives distributors accurate ETAs to share with clients. Automation matches orders with available vehicles and assigns routes based on priority and location.
 
-## TMS as an Analytics Engine
+## TMS as an analytics engine
 
-Beyond logistics execution, a TMS is a data platform. It tracks on-time delivery rates, cost-per-route metrics, driver performance, and fuel efficiency trends over time — surfacing opportunities to optimize further.
+Beyond logistics execution, a TMS is a data platform. It tracks on-time delivery rates, cost-per-route metrics, driver performance, and fuel efficiency trends over time, which shows where to improve next.
 
-## 8Move for HoReCa Distribution
+## 8Move for HoReCa distribution
 
-8Move, Trident Software's TMS solution, includes delivery management automation, mobile driver interfaces with geolocation tracking and electronic signatures, and simplified payment processing. The platform extends beyond fleet management to cover B2B eCommerce, CRM functionality, and omnichannel payments.`,
+8Move, Trident Software's TMS, includes delivery management automation, mobile driver interfaces with geolocation tracking and electronic signatures, and simplified payment processing. The platform extends beyond fleet management to cover B2B eCommerce, CRM functionality, and omnichannel payments.`,
     meta: {
-      title: "HoReCa Distribution Optimization with TMS — Trident Software",
-      description: "How Transportation Management Systems optimize route planning, real-time tracking, and order automation for hotels, restaurants, and catering distributors.",
+      title: "HoReCa distribution optimisation with TMS | Trident Software",
+      description: "How transportation management systems optimise route planning, real-time tracking, and order automation for hotels, restaurants, and catering distributors.",
     },
     translations: {
       de: {
@@ -452,32 +452,32 @@ Oltre alla logistica, un TMS è una piattaforma di dati. Monitora nel tempo il t
   {
     slug: "on-premise-llm-swiss-companies",
     image: "/images/stock/logistics.jpg",
-    title: "On-Premise LLMs for Swiss Companies: A Practical Guide",
-    excerpt: "Why Swiss SMEs are choosing self-hosted language models over cloud APIs — and how to deploy Llama 3 or Mistral on your own infrastructure while meeting revFADP requirements.",
-    content: `## Why On-Premise LLMs Make Sense for Swiss Businesses
+    title: "On-premise LLMs for Swiss companies: a practical guide",
+    excerpt: "Why Swiss SMEs are choosing self-hosted language models over cloud APIs, and how to deploy Llama 3 or Mistral on your own infrastructure while meeting revFADP requirements.",
+    content: `## Why on-premise LLMs make sense for Swiss businesses
 
-Switzerland's Federal Act on Data Protection (revFADP) places strict requirements on how businesses handle personal data. When you send queries to OpenAI, Anthropic, or Google, that data leaves Swiss soil — which creates compliance complexity for healthcare, finance, and legal firms.
+Switzerland's Federal Act on Data Protection (revFADP) places strict requirements on how businesses handle personal data. When you send queries to OpenAI, Anthropic, or Google, that data leaves Switzerland. For healthcare, finance and legal firms, that complicates compliance.
 
 On-premise LLMs solve this by keeping every token on infrastructure you control.
 
-## The Right Models to Self-Host in 2026
+## The right models to self-host in 2026
 
 For most Swiss SMEs, three models stand out:
 
-- **Llama 3.3 70B** — Best general-purpose. Comparable to GPT-4-turbo on most tasks. Requires 40GB+ VRAM.
-- **Mistral 7B / Mixtral 8x7B** — Excellent for cost-constrained deployments. Runs on consumer-grade GPUs.
-- **Qwen2.5 32B** — Strong multilingual support including German, French, and Italian. Relevant for Swiss market.
+- **Llama 3.3 70B**: best general-purpose model. Comparable to GPT-4-turbo on most tasks. Needs 40GB+ VRAM.
+- **Mistral 7B / Mixtral 8x7B**: good for deployments on a tight budget. Runs on consumer-grade GPUs.
+- **Qwen2.5 32B**: strong multilingual support, including German, French and Italian, for the Swiss market.
 
-## Hardware Requirements
+## Hardware requirements
 
-| Model | VRAM Needed | Recommended Hardware |
+| Model | VRAM needed | Recommended hardware |
 |---|---|---|
 | Mistral 7B (Q4) | 6 GB | RTX 3060 or better |
 | Llama 3.1 8B | 8 GB | RTX 3070 or better |
 | Llama 3.3 70B (Q4) | 40 GB | 2× RTX 4090 or A100 |
 | Mixtral 8x7B | 24 GB | RTX 3090 or A6000 |
 
-## Deployment Stack
+## Deployment stack
 
 We recommend **Ollama** for model serving combined with **Open WebUI** for the interface. For production API access, add a LangChain or LlamaIndex wrapper.
 
@@ -492,13 +492,13 @@ ollama pull llama3.3:70b
 ollama serve
 \`\`\`
 
-## Cost Comparison
+## Cost comparison
 
 For a team of 50 making 500 API calls/day, the math changes significantly at scale. On-premise hardware pays for itself in 8–14 months versus cloud API costs.
 
-## Getting Started
+## Where to start
 
-Contact us for a free infrastructure assessment. We'll evaluate your workload, recommend the right model and hardware, and handle the deployment — including revFADP compliance documentation.`,
+Contact us for a free infrastructure assessment. We will evaluate your workload, recommend the model and hardware, and handle the deployment, including revFADP compliance documentation.`,
     author: "Bohdan Voitovych",
     authorRole: "Project Manager, Trident Software",
     publishedAt: "2026-04-15",
@@ -515,7 +515,7 @@ Contact us for a free infrastructure assessment. We'll evaluate your workload, r
       "strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions",
     ],
     meta: {
-      title: "On-Premise LLMs for Swiss Companies — Trident Software Blog",
+      title: "On-premise LLMs for Swiss companies | Trident Software Blog",
       description: "Deploy Llama 3 or Mistral on your own infrastructure. Practical guide for Swiss businesses on self-hosted LLMs and revFADP compliance.",
     },
     translations: {
@@ -686,15 +686,15 @@ Contattaci per una valutazione gratuita della tua infrastruttura. Analizziamo il
   {
     slug: "ai-agent-b2b-automation",
     image: "/images/stock/iot-device.jpg",
-    title: "AI Agents for B2B Process Automation: What Actually Works in 2026",
-    excerpt: "Beyond the hype — a practical breakdown of where AI agents deliver ROI in B2B contexts, and where they still struggle. Based on our implementations across 8 Swiss and EU companies.",
-    content: `## The Reality of AI Agents in Production
+    title: "AI agents for B2B process automation: what actually works in 2026",
+    excerpt: "Where AI agents deliver ROI in B2B work, and where they still struggle. Based on our implementations at 8 Swiss and EU companies.",
+    content: `## AI agents in production: the reality
 
 After deploying AI agents across 8 different B2B companies in the past 18 months, the picture is clearer than the marketing suggests.
 
 **Where agents work well:**
 - Document processing and data extraction (invoices, contracts, forms)
-- Cross-system data synchronization and enrichment
+- Cross-system data synchronisation and enrichment
 - First-line customer support routing and FAQ handling
 - Code review and test generation for engineering teams
 
@@ -703,7 +703,7 @@ After deploying AI agents across 8 different B2B companies in the past 18 months
 - Real-time decision systems where latency matters
 - Tasks requiring institutional knowledge not in any document
 
-## The Architecture That Works
+## The architecture that works
 
 The most reliable pattern we've found is **human-in-the-loop** for high-stakes decisions combined with **full automation** for routine tasks.
 
@@ -714,7 +714,7 @@ Trigger → Agent processes → Confidence check:
   - Low confidence (<0.7) → Escalate + log for retraining
 \`\`\`
 
-## A Real Example: Invoice Processing
+## A real example: invoice processing
 
 For an automotive parts distributor, we deployed an agent that:
 1. Receives PDF invoices via email
@@ -725,7 +725,7 @@ For an automotive parts distributor, we deployed an agent that:
 
 Result: 73% of invoices now process without human touch. Processing time dropped from 4 days to 4 hours.
 
-## Key Takeaways
+## Key takeaways
 
 Start narrow. A well-tuned agent for one specific workflow delivers more value than a broad agent that handles everything poorly. Measure confidence, log everything, and build a feedback loop from the start.`,
     author: "Bohdan Voitovych",
@@ -744,8 +744,8 @@ Start narrow. A well-tuned agent for one specific workflow delivers more value t
       "presenting-zenit-auto-our-new-b2b-auto-parts-platform",
     ],
     meta: {
-      title: "AI Agents for B2B Automation — Trident Software Blog",
-      description: "Practical breakdown of where AI agents deliver ROI in B2B contexts. Based on 8 real implementations in Swiss and EU companies.",
+      title: "AI agents for B2B automation | Trident Software Blog",
+      description: "Where AI agents deliver ROI in B2B work and where they fall short. Based on 8 real implementations in Swiss and EU companies.",
     },
     translations: {
       de: {
@@ -900,25 +900,25 @@ Parti in piccolo. Un agente ben calibrato per un processo specifico rende più d
   {
     slug: "presenting-zenit-auto-our-new-b2b-auto-parts-platform",
     image: "/images/blog/presenting-zenit-auto-our-new-b2b-auto-parts-platform.jpg",
-    title: "Presenting Zenit Auto: Our New B2B Auto Parts Platform",
-    excerpt: "Zenit Auto is our innovative B2B platform for wholesale auto parts, featuring advanced search, TecDoc integration, discount microservices, and multi-cart delivery management.",
-    content: `## Wholesale Auto Parts Made Easy
+    title: "Presenting Zenit Auto: our new B2B auto parts platform",
+    excerpt: "Zenit Auto is our B2B platform for wholesale auto parts, with advanced search, TecDoc integration, discount microservices, and multi-cart delivery management.",
+    content: `## Wholesale auto parts made easy
 
-Trident Software introduces [Zenit Auto](https://www.zenit-auto.com/) — an innovative B2B website for auto parts sales designed for wholesale buyers and partners, offering convenient and efficient online ordering capabilities.
+Trident Software introduces [Zenit Auto](https://www.zenit-auto.com/), a B2B website where wholesale buyers and partners order auto parts online.
 
-## Advanced Search System
+## Advanced search system
 
 Finding the right part is the core challenge in auto parts e-commerce. Zenit Auto solves this with a multi-method search engine:
 
-- **Search by Name** with morphology support — handles typos and variations
-- **Search by Article number** for precise location
-- **Search by Article and Brand** combination
+- **Search by name** with morphology support, which handles typos and variations
+- **Search by article number** for an exact match
+- **Search by article and brand** combined
 - **Cross-reference search** for finding replacement parts
-- **Cross-reference and Brand** combination searching
+- **Cross-reference and brand** search combined
 - **Autocomplete** for articles, cross-references, and names
 - **Vehicle-based search** via TecDoc catalogue integration
 
-## Discount Microservice
+## Discount microservice
 
 Complex pricing rules are handled by a dedicated discount microservice:
 
@@ -926,19 +926,19 @@ Complex pricing rules are handled by a dedicated discount microservice:
 - Bonus generation based on order criteria
 - Multi-condition discount triggers with complex rules
 
-## Cart and Delivery Features
+## Cart and delivery features
 
-- Delivery date visualization within the order interface
-- Multiple cart creation — place items for different delivery dates
+- Delivery date visualisation within the order interface
+- Multiple carts, so items can go on different delivery dates
 - Adjustable quantities with change notification system (alerts when stock, quantity, or price changes)
 - Multiple delivery addresses per counterparty with configurable warehouse locations and reception times
 - Advanced order status tracking for both overall orders and individual items
 
-## Product Listing
+## Product listing
 
-User-friendly display showing item availability by date (today, tomorrow, future) — buyers see exactly when each item will be available before committing to an order.
+The listing shows item availability by date (today, tomorrow, future), so buyers see when each item will be available before they order.
 
-Zenit Auto is a sophisticated B2B auto parts platform that streamlines the wholesale purchasing process while integrating with modern automotive data standards.`,
+Zenit Auto simplifies wholesale auto parts purchasing and works with automotive data standards such as TecDoc.`,
     author: "Maksym Shytov",
     authorRole: "CTO, Trident Software",
     publishedAt: "2024-05-31",
@@ -955,7 +955,7 @@ Zenit Auto is a sophisticated B2B auto parts platform that streamlines the whole
       "introducing-our-new-b2b-client-management-panel",
     ],
     meta: {
-      title: "Zenit Auto B2B Auto Parts Platform — Trident Software Blog",
+      title: "Zenit Auto B2B auto parts platform | Trident Software Blog",
       description: "Introducing Zenit Auto: B2B platform for wholesale auto parts with TecDoc integration, advanced search, and multi-cart delivery management.",
     },
     translations: {

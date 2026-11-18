@@ -31,7 +31,7 @@ const record: IndustryRecord = {
       solutions: [
         {
           title: 'Event registration platform',
-          description: 'Race and event signup with wave assignment, payment, and BIB management.',
+          description: 'Race and event signup with wave assignment, payment and bib management.',
         },
         {
           title: 'Club management system',
@@ -47,9 +47,9 @@ const record: IndustryRecord = {
         },
       ],
       meta: {
-        title: 'Sport & Fitness Software Development | Trident Software',
+        title: 'Sport & fitness software development | Trident Software',
         description:
-          'Sports tech software — event registration, club management, activity tracking, performance analytics. Swiss engineering.',
+          'Sports tech software: event registration, club management, activity tracking, performance analytics. Swiss engineering.',
       },
     },
     de: {

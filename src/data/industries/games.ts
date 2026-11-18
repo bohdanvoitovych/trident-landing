@@ -45,9 +45,9 @@ const record: IndustryRecord = {
         },
       ],
       meta: {
-        title: 'Game Development Backend & Infrastructure | Trident Software',
+        title: 'Game development backend & infrastructure | Trident Software',
         description:
-          'Game backend services — matchmaking, live ops, virtual economies, player data. Swiss engineering for game studios.',
+          'Game backend services: matchmaking, live ops, virtual economies, player data. Swiss engineering for game studios.',
       },
     },
     de: {

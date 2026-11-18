@@ -9,13 +9,13 @@ const record: IndustryRecord = {
   content: {
     en: {
       title: 'Tourism & Travel',
-      tagline: 'Digital experiences for modern travellers',
+      tagline: 'Software for tour operators and hotels',
       description:
         'Booking platforms, itinerary management, concierge apps, and travel intelligence systems for tour operators, hotels, and travel agencies across Switzerland and Europe.',
       challenges: [
         {
           title: 'Real-time availability',
-          description: 'Synchronising inventory across channels — OTAs, direct booking, GDS — without overbooking.',
+          description: 'Synchronising inventory across OTAs, direct booking and GDS without overbooking.',
         },
         {
           title: 'Seasonal demand spikes',
@@ -45,9 +45,9 @@ const record: IndustryRecord = {
         },
       ],
       meta: {
-        title: 'Tourism & Travel Software Development | Trident Software',
+        title: 'Tourism & travel software development | Trident Software',
         description:
-          'Travel tech software — booking platforms, tour management, concierge apps, travel analytics. Swiss engineering.',
+          'Travel tech software: booking platforms, tour management, concierge apps, travel analytics. Swiss engineering.',
       },
     },
     de: {

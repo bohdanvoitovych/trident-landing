@@ -10,24 +10,24 @@ const record: LocationRecord = {
       region: 'Canton of Valais',
       tagline: 'Our home. Software built in and for Valais.',
       description:
-        "Sion is where Trident Software was founded. We know Valais intimately — its AgriTech needs, energy sector, tourism industry, and the ambition of its entrepreneurs. We're your local partner, walking distance from your office, building software that fits your industry and canton.",
+        "Sion is where Trident Software was founded. We know Valais well: its AgriTech needs, energy sector, tourism industry and the ambition of its entrepreneurs. We are a local partner, building software that fits your industry and canton.",
       keyIndustries: [
-        'AgriTech & Viticulture',
-        'Energy & Renewables',
-        'Tourism & Alpine Sports',
-        'Public Administration',
-        'Construction & Real Estate',
+        'AgriTech & viticulture',
+        'Energy & renewables',
+        'Tourism & alpine sports',
+        'Public administration',
+        'Construction & real estate',
       ],
       highlights: [
         {
-          title: 'Swiss accountability, based in Sion.',
+          title: 'Swiss accountability, based in Sion',
           description:
             "We're in Sion, hosted at the HES-SO Valais-Wallis School of Engineering. Contracts, data residency and accountability sit in Switzerland. Engineering capacity is distributed.",
         },
         {
           title: 'Valais industry expertise',
           description:
-            "Wine production tracking, smart vineyard IoT, alpine tourism booking, and cantonal public sector software — we've built it.",
+            "We have built wine production tracking, smart vineyard IoT, alpine tourism booking and cantonal public sector software.",
         },
         {
           title: 'Energy & renewables software',
@@ -36,9 +36,9 @@ const record: LocationRecord = {
         },
       ],
       meta: {
-        title: 'Software Agency Sion Valais | Trident Software — Local Partner',
+        title: 'Software agency Sion Valais | Local partner | Trident Software',
         description:
-          'Trident Software is based in Sion, Valais. Local software development for AgriTech, energy, tourism, and public sector. Your Swiss software partner, right here.',
+          'Trident Software is based in Sion, Valais. Local software development for AgriTech, energy, tourism and the public sector.',
       },
     },
     de: {

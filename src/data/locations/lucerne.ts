@@ -8,10 +8,10 @@ const record: LocationRecord = {
     en: {
       name: 'Lucerne',
       region: 'Canton of Lucerne',
-      tagline: 'Hospitality tech and digital transformation for Central Switzerland',
+      tagline: 'Hospitality tech and SME software for Central Switzerland',
       description:
-        "Lucerne's tourism, hospitality, and financial services sector generates significant demand for custom digital tools. We build hotel management systems, booking engines, event platforms, and SME business software for Lucerne's companies — practical solutions that pay for themselves within the first season.",
-      keyIndustries: ['Hospitality & Tourism', 'Financial Services', 'Events & Culture', 'Trade & SME', 'Healthcare'],
+        "Tourism, hospitality and financial services drive much of Lucerne's demand for custom software. We build hotel management systems, booking engines, event platforms and SME business software for Lucerne companies, built to pay for themselves within the first season.",
+      keyIndustries: ['Hospitality & tourism', 'Financial services', 'Events & culture', 'Trade & SME', 'Healthcare'],
       highlights: [
         {
           title: 'Hospitality technology',
@@ -24,13 +24,13 @@ const record: LocationRecord = {
             "Registration, scheduling, and audience engagement tools for Lucerne's festivals, conferences, and cultural institutions.",
         },
         {
-          title: 'SME digitalization',
+          title: 'SME digitalisation',
           description:
-            "Practical ERP-lite systems, CRM integrations, and workflow automation for Central Switzerland's Mittelstand companies.",
+            "Lightweight ERP systems, CRM integrations and workflow automation for Central Switzerland's mid-sized companies.",
         },
       ],
       meta: {
-        title: 'Software Development Lucerne | Hospitality & SME Tech | Trident Software',
+        title: 'Software development Lucerne | Hospitality & SME tech | Trident Software',
         description:
           'Hospitality technology, event platforms, and SME software for Lucerne. Booking engines, channel managers, CRM. Swiss development with Valais cost efficiency.',
       },

@@ -8,13 +8,13 @@ const record: LocationRecord = {
     en: {
       name: 'Fribourg',
       region: 'Canton of Fribourg',
-      tagline: "Bilingual software solutions for Switzerland's crossroads",
+      tagline: "Bilingual software for Switzerland's language border",
       description:
-        'Fribourg sits at the French-German language border, making it uniquely suited for bilingual digital products. With Nestlé nearby in Vevey, a strong food industry, and the University of Fribourg, we build multilingual enterprise systems, food traceability platforms, and educational software for this distinctive canton.',
+        'Fribourg sits on the French-German language border, so its products often have to work in both languages. With Nestlé nearby in Vevey, a strong food industry and the University of Fribourg, we build multilingual enterprise systems, food traceability platforms and educational software for the canton.',
       keyIndustries: [
-        'Food & Agri Industry',
-        'Education & Research',
-        'Bilingual Services',
+        'Food & agri industry',
+        'Education & research',
+        'Bilingual services',
         'Healthcare',
         'Construction',
       ],
@@ -22,21 +22,21 @@ const record: LocationRecord = {
         {
           title: 'True bilingualism',
           description:
-            'German-French bilingual products where both languages are treated as first-class citizens — proper locale switching, RTL-safe layouts, and native translations.',
+            'German-French products in which both languages are equal: proper locale switching, layouts that fit both languages and native translations.',
         },
         {
           title: 'Food industry traceability',
           description:
-            'Farm-to-fork tracking, quality control systems, and EU food labeling compliance platforms for the Fribourg-Vevey food corridor.',
+            'Farm-to-fork tracking, quality control systems and EU food labelling compliance platforms for regional food producers.',
         },
         {
-          title: 'University & EdTech solutions',
+          title: 'University & EdTech software',
           description:
             "Learning management systems, research data platforms, and student portals for Fribourg's academic institutions.",
         },
       ],
       meta: {
-        title: 'Software Development Fribourg | Bilingual Swiss Software | Trident Software',
+        title: 'Software development Fribourg | Bilingual Swiss software | Trident Software',
         description:
           'Bilingual German-French software development in Fribourg. Food traceability, EdTech, and enterprise platforms. University of Fribourg ecosystem partner.',
       },
@@ -58,12 +58,12 @@ const record: LocationRecord = {
         {
           title: 'Echte Zweisprachigkeit',
           description:
-            'Deutsch-französische Produkte, in denen beide Sprachen gleichwertig behandelt werden: sauberer Sprachwechsel, RTL-sichere Layouts und Übersetzungen von Muttersprachlern.',
+            'Deutsch-französische Produkte, in denen beide Sprachen gleichwertig behandelt werden: sauberer Sprachwechsel, Layouts für beide Sprachen und Übersetzungen von Muttersprachlern.',
         },
         {
           title: 'Rückverfolgbarkeit in der Lebensmittelindustrie',
           description:
-            'Rückverfolgung vom Feld bis auf den Teller, Qualitätskontrollsysteme und Plattformen für die EU-konforme Lebensmittelkennzeichnung im Lebensmittelkorridor Freiburg–Vevey.',
+            'Rückverfolgung vom Feld bis auf den Teller, Qualitätskontrollsysteme und Plattformen für die EU-konforme Lebensmittelkennzeichnung für die Lebensmittelhersteller der Region.',
         },
         {
           title: 'Lösungen für Hochschulen und EdTech',
@@ -88,12 +88,12 @@ const record: LocationRecord = {
         {
           title: 'Un vrai bilinguisme',
           description:
-            "Des produits bilingues allemand-français où les deux langues sont traitées sur un pied d'égalité : changement de langue soigné, mises en page compatibles RTL et traductions natives.",
+            "Des produits bilingues allemand-français où les deux langues sont traitées sur un pied d'égalité : changement de langue soigné, mises en page adaptées aux deux langues et traductions natives.",
         },
         {
           title: "Traçabilité dans l'industrie alimentaire",
           description:
-            "Suivi de la fourche à la fourchette, systèmes de contrôle qualité et plateformes de conformité à l'étiquetage alimentaire UE pour le corridor agroalimentaire Fribourg-Vevey.",
+            "Suivi de la fourche à la fourchette, systèmes de contrôle qualité et plateformes de conformité à l'étiquetage alimentaire UE pour les producteurs alimentaires de la région.",
         },
         {
           title: "Solutions pour l'université et l'EdTech",
@@ -118,12 +118,12 @@ const record: LocationRecord = {
         {
           title: 'Bilinguismo autentico',
           description:
-            'Prodotti bilingui tedesco-francese in cui entrambe le lingue hanno pari dignità: cambio lingua fatto bene, layout compatibili con RTL e traduzioni madrelingua.',
+            'Prodotti bilingui tedesco-francese in cui entrambe le lingue hanno pari dignità: cambio lingua fatto bene, layout adatti a entrambe le lingue e traduzioni madrelingua.',
         },
         {
           title: "Tracciabilità nell'industria alimentare",
           description:
-            "Tracciamento dal campo alla tavola, sistemi di controllo qualità e piattaforme per la conformità all'etichettatura alimentare UE nel corridoio agroalimentare Friburgo-Vevey.",
+            "Tracciamento dal campo alla tavola, sistemi di controllo qualità e piattaforme per la conformità all'etichettatura alimentare UE per i produttori alimentari della regione.",
         },
         {
           title: 'Soluzioni per università ed EdTech',

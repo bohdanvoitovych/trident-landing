@@ -12,10 +12,10 @@ const record: LocationRecord = {
       description:
         "Winterthur hosts Sulzer, Rieter, ZHAW, and one of Switzerland's strongest engineering and manufacturing clusters. We build industrial IoT monitoring systems, predictive maintenance platforms, and production floor software for Winterthur's machinery and manufacturing companies.",
       keyIndustries: [
-        'Manufacturing & Engineering',
-        'Insurance & Finance',
+        'Manufacturing & engineering',
+        'Insurance & finance',
         'Education (ZHAW)',
-        'Energy & Utilities',
+        'Energy & utilities',
         'Healthcare',
       ],
       highlights: [
@@ -36,7 +36,7 @@ const record: LocationRecord = {
         },
       ],
       meta: {
-        title: 'Industrial Software Winterthur | IoT & Manufacturing Tech | Trident Software',
+        title: 'Industrial software Winterthur | IoT & manufacturing tech | Trident Software',
         description:
           'Industrial IoT, predictive maintenance, and manufacturing software for Winterthur. Sensor integration, ML-based anomaly detection. Swiss engineering team.',
       },

@@ -41,7 +41,7 @@ const record: CaseRecord = {
         {
           title: 'The expense receipts',
           paragraphs: [
-            'Clients sent their till receipts as phone photos or physically by post. An operator digitized each one, then identified the merchant, the amount and the VAT, assigned the accounting category, noted how it was paid (cash, company card, personal card) and keyed all of it into the system.',
+            'Clients sent their till receipts as phone photos or physically by post. An operator digitised each one, then identified the merchant, the amount and the VAT, assigned the accounting category, noted how it was paid (cash, company card, personal card) and keyed all of it into the system.',
             'Entirely manual, and error-prone in a specific way that is easy to underestimate: a meaningful share of receipts arrived in foreign languages and non-Latin scripts such as Cyrillic, Chinese and Arabic. An operator who cannot read the script cannot verify what they are typing, and the transcription error rate rises exactly where the audit trail matters.',
           ],
         },

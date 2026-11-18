@@ -4,51 +4,51 @@ export const posts: BlogPostRecord[] = [
   {
     slug: "arenawave-digital-court-system",
     image: "/images/blog/arenawave-digital-court-system.jpg",
-    title: "ArenaWave: Digital Court System",
-    excerpt: "ArenaWave transforms traditional sports courts into IoT-enabled digital spaces — with real-time facility control, online booking, access management, and a management dashboard for court operators.",
-    content: `## Revolutionizing Sports: IoT-Enabled Digital Court System
+    title: "ArenaWave: digital court system",
+    excerpt: "ArenaWave turns traditional sports courts into IoT-enabled digital spaces, with real-time facility control, online booking, access management and a management dashboard for court operators.",
+    content: `## An IoT-enabled digital court system
 
-ArenaWave transforms traditional sports courts into digitally controlled, IoT-enabled spaces. The system supports squash, tennis, padel, badminton, mini-football, basketball, mini-golf, and climbing walls. It includes a mobile app, management panel, and on-site IoT devices. The initial pilot launched for tennis and squash courts.
+ArenaWave turns traditional sports courts into digitally controlled, IoT-enabled spaces. The system supports squash, tennis, padel, badminton, mini-football, basketball, mini-golf, and climbing walls. It includes a mobile app, management panel, and on-site IoT devices. The initial pilot launched for tennis and squash courts.
 
-## Player App Features
+## Player app features
 
-**Registration and Booking**
-- Easy registration for Clubs, Teams, and Players
+**Registration and booking**
+- Simple registration for clubs, teams and players
 - Time slot availability display and reservations
 - Subscription management and member invitations
 
-**Real-Time Facility Control**
+**Real-time facility control**
 Players can control lighting, AC, music, game video recording, live streaming, and score-tracking directly from the app.
 
-**Community Features**
+**Community features**
 - Push notifications for reminders and updates
 - In-app issue reporting (faulty equipment, facility cleanliness)
-- Referral program for Coaches and Clubs — earn commission per referral
+- Referral programme for coaches and clubs, with commission per referral
 
-## Management Panel (SFM)
+## Management panel (SFM)
 
 - Player management and revenue insights
-- Subscription and loyalty program integration
+- Subscription and loyalty programme integration
 - Equipment tracking, inventory management, and maintenance scheduling
 - Court and player data analytics
 
-## Project Benefits
+## Project benefits
 
-**For Court Operators:**
-- Increased revenue via streamlined bookings, payments, and referral program
-- Cost efficiency — proactive alerts prevent costly repairs and downtime
+**For court operators:**
+- Higher revenue from simpler bookings, payments and referral programme
+- Lower costs: early alerts prevent costly repairs and downtime
 - Reduced personnel dependency through automation
 - Scalability for rapid regional expansion across multiple sports
 
-**For Players:**
-- Streamlined bookings with in-app payments
-- Customizable sports experience (lighting, AC, music, streaming)
-- Better social interaction — invite friends, expand via referral
+**For players:**
+- Quick bookings with in-app payments
+- Customisable sports experience (lighting, AC, music, streaming)
+- Better social interaction: invite friends, grow via referrals
 - Transparent communication via real-time notifications
 
-## Why IoT in Sports?
+## Why IoT in sports?
 
-Proven experience in IoT, end-to-end development, and scalable architecture made Trident Software the right choice for this project. The platform is built to grow from a pilot in one city to a regional sports infrastructure network.`,
+Trident Software was chosen for its experience in IoT, full-cycle development and scalable architecture. The platform is built to grow from a pilot in one city to a regional sports infrastructure network.`,
     author: "Dmitriy Shevelev",
     authorRole: "Lead Developer, Trident Software",
     publishedAt: "2024-10-31",
@@ -223,48 +223,48 @@ Esperienza comprovata nell'IoT, sviluppo end-to-end e un'architettura scalabile 
       },
     },
     meta: {
-      title: "ArenaWave Digital Court System — Trident Software Blog",
-      description: "How ArenaWave uses IoT to transform sports courts with real-time facility control, online booking, and a full management panel for court operators.",
+      title: "ArenaWave digital court system | Trident Software Blog",
+      description: "How ArenaWave uses IoT to run sports courts with real-time facility control, online booking and a full management panel for court operators.",
     },
   },
   {
     slug: "iot-blockchain-can-it-truly-deliver",
     image: "/images/blog/iot-blockchain-can-it-truly-deliver.jpg",
-    title: "IoT & Blockchain: Can It Truly Deliver?",
-    excerpt: "The combination of IoT and blockchain promises transparency, security, and tamper-proof data. Here's where it actually makes sense — and where the hype outpaces reality.",
-    content: `## The Next Step in IoT Evolution
+    title: "IoT & blockchain: can it truly deliver?",
+    excerpt: "The combination of IoT and blockchain promises transparency, security, and tamper-proof data. This is where it makes sense, and where the hype outpaces reality.",
+    content: `## The next step for IoT
 
-The Internet of Things transforms industries by generating data that drives decisions and ensures service quality. But IoT adoption faces three persistent challenges: high costs, data integrity concerns, and privacy questions about who owns the data.
+The Internet of Things changes industries by generating data that drives decisions and protects service quality. But IoT adoption faces three persistent challenges: high costs, data integrity concerns, and privacy questions about who owns the data.
 
-Integrating IoT with Blockchain addresses all three — adding transparency, security, and trust to IoT deployments.
+Integrating IoT with blockchain addresses all three by adding transparency, security and trust to IoT deployments.
 
-## IoT Business Cases That Work Today
+## IoT business cases that work today
 
-**Waste Management** — Businesses charge clients dynamically based on sensor data to prevent garbage overflow.
+**Waste management.** Businesses charge clients dynamically based on sensor data to prevent garbage overflow.
 
-**Property Maintenance** — Contractors ensure safe properties with IoT-verified, high-quality maintenance records.
+**Property maintenance.** Contractors prove safe, high-quality maintenance with IoT-verified records.
 
-**Water Quality Assurance** — Water suppliers charge for volume and quality backed by real sensor data.
+**Water quality assurance.** Water suppliers charge for volume and quality backed by real sensor data.
 
-**Hospitality** — Hotels use IoT to control noise, temperature, and air quality; monitor pool cleanliness in real time.
+**Hospitality.** Hotels use IoT to control noise, temperature, and air quality; monitor pool cleanliness in real time.
 
-**Bank Vaults** — IoT-enabled safe deposit boxes maintain temperature/humidity and detect unauthorized vibrations.
+**Bank vaults.** IoT-enabled safe deposit boxes maintain temperature/humidity and detect unauthorised vibrations.
 
-**Environmental Monitoring** — Regulatory bodies use IoT to prevent air pollution and issue automated alerts.
+**Environmental monitoring.** Regulatory bodies use IoT to prevent air pollution and issue automated alerts.
 
-## Where Blockchain Adds Value
+## Where blockchain adds value
 
-| Challenge | Blockchain Solution |
+| Challenge | Blockchain solution |
 |---|---|
 | SLA enforcement | Smart contracts define and enforce terms automatically |
-| Data integrity | Tamper-proof records — no one can alter historical sensor data |
+| Data integrity | Tamper-proof records: no one can alter historical sensor data |
 | Privacy and ownership | Clear on-chain provenance of who collected what data |
 
-## The Rise of Data-to-Earn Models
+## The rise of data-to-earn models
 
-IoT device owners can now generate income from the data they produce — air quality metrics, water analysis, device usage patterns. Blockchain enables micropayments for data contributions without requiring trust between parties.
+IoT device owners can now earn income from the data they produce: air quality metrics, water analysis, device usage patterns. Blockchain enables micropayments for data contributions without requiring trust between parties.
 
-## Who Pays for IoT?
+## Who pays for IoT?
 
 Three models work in practice:
 1. **Service provider** embeds IoT costs in operational expenses
@@ -289,8 +289,8 @@ The right model depends on the industry and the value of the data being collecte
       "strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions",
     ],
     meta: {
-      title: "IoT & Blockchain: Can It Truly Deliver? — Trident Software Blog",
-      description: "Practical analysis of IoT and blockchain integration. Where smart contracts and tamper-proof data add real value — and where the hype falls short.",
+      title: "IoT & blockchain: can it truly deliver? | Trident Software Blog",
+      description: "Practical analysis of IoT and blockchain integration. Where smart contracts and tamper-proof data add real value, and where the hype falls short.",
     },
     translations: {
       de: {
@@ -445,43 +445,43 @@ Il modello giusto dipende dal settore e dal valore dei dati raccolti.`,
   {
     slug: "secure-your-cloud-on-a-budget-a-guide-for-smbs",
     image: "/images/blog/secure-your-cloud-on-a-budget-a-guide-for-smbs.jpg",
-    title: "Secure Your Cloud on a Budget: A Guide for SMBs",
-    excerpt: "Small businesses face the same cloud threats as enterprises but with a fraction of the security budget. Here's how to use AWS Lambda for continuous security monitoring for just cents per month.",
-    content: `## Understanding the Challenge: Security for SMBs in the Cloud
+    title: "Secure your cloud on a budget: a guide for SMBs",
+    excerpt: "Small businesses face the same cloud threats as enterprises but with a fraction of the security budget. AWS Lambda can run continuous security monitoring for cents per month.",
+    content: `## The challenge: security for SMBs in the cloud
 
-Small and mid-sized businesses venturing into the cloud face a unique challenge: balancing robust security with cost constraints. Key pain points include risk of unauthorized access, unsecured firewall configurations, and the complexity of managing cloud security without a dedicated team.
+Small and mid-sized businesses moving to the cloud have to balance strong security against tight budgets. The main risks are unauthorised access, unsecured firewall configurations, and the complexity of managing cloud security without a dedicated team.
 
-SMBs typically lack the resources available to larger enterprises, making them more vulnerable — yet they're increasingly targeted. Over 60% of cyberattacks target small businesses.
+SMBs typically lack the resources available to larger enterprises, which makes them more vulnerable, and they are increasingly targeted. Over 60% of cyberattacks target small businesses.
 
-## The Solution: Custom Lambda Functions for Enhanced Security
+## The solution: custom Lambda functions for security
 
 AWS Lambda functions can be programmed to:
-- Identify unauthorized access attempts in real time
+- Identify unauthorised access attempts in real time
 - Monitor for open-to-world firewall configurations
 - Detect unusual resource deployments
 - Alert on anomalous access patterns
 
 This creates automated, continuous, real-time monitoring at near-zero cost.
 
-## Practical AWS Security Stack for SMBs
+## A practical AWS security stack for SMBs
 
-**AWS IAM** — Securely manage access to resources with fine-grained permissions.
+**AWS IAM.** Manage access to resources securely with fine-grained permissions.
 
-**AWS KMS (Key Management Service)** — Create and control encryption keys for data at rest and in transit.
+**AWS KMS (Key Management Service).** Create and control encryption keys for data at rest and in transit.
 
-**Amazon GuardDuty** — ML-based intelligent threat detection with real-time alerts and anomaly detection.
+**Amazon GuardDuty.** ML-based threat detection with real-time alerts and anomaly detection.
 
-**AWS Security Hub** — Aggregates and prioritizes security alerts across your entire AWS environment.
+**AWS Security Hub.** Collects and prioritises security alerts across your entire AWS environment.
 
-## Cost Reality
+## What it costs
 
-With AWS Lambda, you pay only for what you use. For typical SMB security monitoring workloads, costs amount to **a few cents per month** — not thousands on dedicated security appliances.
+With AWS Lambda, you pay only for what you use. For typical SMB security monitoring workloads, costs come to **a few cents per month**, not thousands on dedicated security appliances.
 
-## Getting Started: AWS ARRC
+## A low-cost start: AWS ARRC
 
-AWS's Rapid Ramp Credit Program (ARCC) provides SMBs with a complimentary $300 credit to start using AWS cloud services — a risk-free way to implement security monitoring before committing budget.
+AWS's Rapid Ramp Credit Program (ARCC) gives SMBs a free $300 credit for AWS cloud services. You can set up security monitoring with it before committing budget.
 
-Contact Trident Software for a cloud security assessment and implementation plan tailored to your infrastructure.`,
+Contact Trident Software for a cloud security assessment and an implementation plan for your infrastructure.`,
     author: "Anton Savchuk",
     authorRole: "DevOps Engineer, Trident Software",
     publishedAt: "2024-03-08",
@@ -498,7 +498,7 @@ Contact Trident Software for a cloud security assessment and implementation plan
       "iot-blockchain-can-it-truly-deliver",
     ],
     meta: {
-      title: "Cloud Security on a Budget for SMBs — Trident Software Blog",
+      title: "Cloud security on a budget for SMBs | Trident Software Blog",
       description: "How small businesses can implement enterprise-grade cloud security using AWS Lambda for cents per month. Guide covers AWS IAM, GuardDuty, and Security Hub.",
     },
     translations: {
@@ -639,47 +639,47 @@ Contatta Trident Software per una valutazione della sicurezza del tuo cloud e un
   {
     slug: "from-traditional-to-flexible-wms-mobile-app",
     image: "/images/blog/from-traditional-to-flexible-wms-mobile-app.jpg",
-    title: "From Traditional to Flexible: WMS Mobile App",
+    title: "From traditional to flexible: WMS mobile app",
     excerpt: "Traditional warehouse scanners are expensive, fragile, and hard to maintain. A Flutter-powered WMS mobile app running on a smartphone with a ring scanner changes the economics entirely.",
-    content: `## Modernizing Warehouse Management
+    content: `## Modernising warehouse management
 
-In fast-paced inventory management, traditional methods are being outpaced by advanced solutions. We built a software-hardware solution to transform warehouse management using a Flutter-powered WMS Mobile Application.
+Traditional warehouse scanning no longer keeps pace with inventory work. We built a combined software and hardware system around a Flutter WMS mobile app.
 
-## Limitations of Traditional Methods
+## Limits of traditional methods
 
 Traditional warehouse scanning systems suffer from predictable problems:
 
-- **Tedious Manual Processes** — manual data entry and inventory tracking is time-consuming and error-prone
-- **Limited Mobility** — workers managing tasks with only one hand available
-- **Bulky and Fragile Equipment** — heavy hardware prone to frequent breakdowns
-- **High Maintenance Costs** — specific charging stations, frequent battery changes, costly repairs
-- **Poor Integration** — disjointed workflows and inefficiencies between systems
-- **Strict Connectivity Demands** — reliable Wi-Fi is expensive to maintain throughout a warehouse
-- **Complex Setup and Maintenance** — continuous upkeep drains time and resources
+- **Tedious manual work:** manual data entry and inventory tracking take time and cause errors
+- **Limited mobility:** workers handle tasks with only one hand free
+- **Bulky, fragile equipment:** heavy hardware that often breaks down
+- **High maintenance costs:** special charging stations, frequent battery changes, costly repairs
+- **Poor integration:** disjointed workflows and waste between systems
+- **Strict connectivity demands:** reliable Wi-Fi is expensive to maintain across a warehouse
+- **Complex setup and maintenance:** constant upkeep takes time and money
 
-## Our Modern Approach
+## Our approach
 
-The solution combines three components:
+The system combines three components:
 
-1. **Physical Equipment** — Scanner ring + smartphone + forearm-mounted holder
-2. **Software Application** — Intuitive Flutter mobile app for efficient task execution
-3. **Algorithmic Optimization** — Suite of warehouse algorithms integrated into the system
+1. **Physical equipment:** scanner ring, smartphone and forearm-mounted holder
+2. **Software application:** a simple Flutter mobile app for warehouse tasks
+3. **Algorithmic optimisation:** a set of warehouse algorithms built into the system
 
-## 11 Benefits of the WMS Mobile App
+## 11 benefits of the WMS mobile app
 
-1. **Affordable Equipment** — smartphone and ring scanner cost significantly less than traditional TSD devices
-2. **Quick Repairs** — standard smartphone repairs are fast and inexpensive
-3. **Wide Accessory Availability** — charging devices and batteries are universally available
-4. **Minimal Wi-Fi Dependency** — works with minimal coverage or 3G/4G
-5. **Stable Software** — Flutter ensures consistent performance with minimal disruptions
-6. **Forearm Mounting** — eliminates the risk of dropping equipment during picking
-7. **Robust Algorithms** — consistent performance in unstable Wi-Fi environments
-8. **Ease of Use** — familiar Android OS and intuitive interface
-9. **Advanced Ring Scanners** — reads unclear or defective barcodes
-10. **Hands-Free Operation** — lightweight compact design for safety and efficiency
-11. **Modern Architecture** — seamless integration with existing WMS and automation platforms
+1. **Affordable equipment:** a smartphone and ring scanner cost much less than traditional TSD devices
+2. **Quick repairs:** standard smartphone repairs are fast and inexpensive
+3. **Easy-to-find accessories:** chargers and batteries are sold everywhere
+4. **Little Wi-Fi dependency:** works with minimal coverage or 3G/4G
+5. **Stable software:** Flutter keeps performance consistent with few disruptions
+6. **Forearm mounting:** removes the risk of dropping equipment during picking
+7. **Resilient algorithms:** consistent performance on unstable Wi-Fi
+8. **Ease of use:** familiar Android OS and a simple interface
+9. **Capable ring scanners:** read unclear or damaged barcodes
+10. **Hands-free operation:** a light, compact design that is safer and faster
+11. **Modern architecture:** integrates with existing WMS and automation platforms
 
-The result is a warehouse scanning solution that costs less, breaks less, and integrates better.`,
+The result is warehouse scanning that costs less, breaks less and integrates better.`,
     author: "Bohdan Voitovych",
     authorRole: "Project Manager, Trident Software",
     publishedAt: "2024-02-19",
@@ -842,37 +842,37 @@ Il risultato è una soluzione di scansione per il magazzino che costa meno, si g
       },
     },
     meta: {
-      title: "Flutter WMS Mobile App for Warehouse Management — Trident Software Blog",
-      description: "Replace expensive traditional warehouse scanners with a Flutter-powered smartphone + ring scanner solution. Lower cost, better integration, fewer breakdowns.",
+      title: "Flutter WMS mobile app for warehouse management | Trident Software Blog",
+      description: "Replace expensive traditional warehouse scanners with a Flutter app on a smartphone plus a ring scanner. Lower cost, better integration, fewer breakdowns.",
     },
   },
   {
     slug: "free-advertising-for-restaurants-through-customer-feedback",
     image: "/images/blog/free-advertising-for-restaurants-through-customer-feedback.jpg",
-    title: "Free Advertising for Restaurants through Customer Feedback",
-    excerpt: "QR codes and NFC tags placed at restaurant tables can turn every customer into a reviewer — and every review into free advertising. Here's how to implement it simply and effectively.",
-    content: `## Maximizing Restaurant Success Through Reviews
+    title: "Free advertising for restaurants through customer feedback",
+    excerpt: "QR codes and NFC tags placed at restaurant tables can turn every customer into a reviewer, and every review into free advertising. The setup is simple.",
+    content: `## How reviews help restaurants grow
 
-Offering delicious food and great service is just the beginning. In today's market, engaging with customers on social media and Google is equally important. An often-overlooked strategy: harnessing customer feedback to generate free advertising.
+Good food and good service are only the start. Restaurants also need to engage guests on social media and Google. One often-overlooked tactic is to use customer feedback as free advertising.
 
-## Simplifying the Feedback Process
+## Making feedback easy
 
-The friction in leaving a review is the main barrier. Most customers are willing to leave feedback — they just don't want to search for the review platform.
+The friction in leaving a review is the main barrier. Most customers are willing to leave feedback. They just don't want to search for the review platform.
 
 Solution: place QR codes and NFC tags at tables with the message: *"Your opinion is very important to us. Please leave us a review."*
 
-A quick scan or tap directs patrons to a user-friendly web form for real-time feedback. No app download, no account required.
+A quick scan or tap takes guests to a simple web form for real-time feedback. No app download, no account required.
 
-## Turning Feedback into Free Advertising
+## Turning feedback into free advertising
 
-Every review serves as a powerful advertisement:
+Every review is an advertisement:
 
-- **Positive reviews** showcase your strengths and build social proof
+- **Positive reviews** show your strengths and build social proof
 - **Constructive criticism** provides insights for improvement before they become public complaints
 - **Review volume** signals popularity and builds credibility on Google Maps and TripAdvisor
-- **Response to reviews** demonstrates attentiveness, attracting new customers
+- **Replies to reviews** show attentiveness and attract new customers
 
-## Insights for Continuous Improvement
+## Insights for continuous improvement
 
 Analysing trends across your reviews reveals:
 - Peak satisfaction patterns (which dishes, which times)
@@ -900,7 +900,7 @@ QR code + NFC tag setup requires minimal investment (printed cards, NFC stickers
       "the-power-of-outsourcing-unlocking-efficiency-and-innovation-in-short-term-projects",
     ],
     meta: {
-      title: "Free Restaurant Advertising via Customer Reviews — Trident Software Blog",
+      title: "Free restaurant advertising via customer reviews | Trident Software Blog",
       description: "Use QR codes and NFC tags to generate restaurant reviews at scale. Turn every customer into an advertiser with a simple scan-to-review flow.",
     },
     translations: {
@@ -1035,43 +1035,43 @@ Un sistema con QR code e tag NFC richiede un investimento minimo (cartoncini sta
   {
     slug: "simplifying-your-search-how-iam-trade-makes-finding-products-easy",
     image: "/images/blog/simplifying-your-search-how-iam-trade-makes-finding-products.jpg",
-    title: "Simplifying Your Search: How iAM-Trade Makes Finding Products Easy",
-    excerpt: "Error-tolerant search, TecDoc vehicle lookup, cross-brand part matching — how the iAM-Trade platform solves the core challenge of B2B product discovery at scale.",
-    content: `## Finding What You Need Made Easy
+    title: "Simplifying your search: how iAM-Trade makes finding products easy",
+    excerpt: "Error-tolerant search, TecDoc vehicle lookup, cross-brand part matching: how the iAM-Trade platform helps B2B buyers find products in large catalogues.",
+    content: `## Finding what you need
 
-Navigating a large B2B product catalog can be frustrating. iAM-Trade's sophisticated search system eliminates common frustrations across sectors: auto parts, fashion apparel, timepieces, and industrial goods.
+Navigating a large B2B product catalogue can be frustrating. iAM-Trade's search removes the common frustrations across sectors: auto parts, fashion apparel, timepieces, and industrial goods.
 
-## Universal Pain Points — Solved
+## Common pain points, solved
 
-**Error Forgiveness** — The system understands intent even with misspellings. Type "waches" and it shows watches. Morphology support handles plural forms, abbreviations, and common variants.
+**Error tolerance.** The system understands intent even with misspellings. Type "waches" and it shows watches. Morphology support handles plural forms, abbreviations, and common variants.
 
-**Autocomplete Suggestions** — Real-time suggestions appear as you type, guiding buyers to the right product before they finish entering a query.
+**Autocomplete suggestions.** Real-time suggestions appear as you type, guiding buyers to the right product before they finish entering a query.
 
-**Diverse Search Methods** — Multiple entry points depending on what the buyer knows.
+**Several search methods.** Different entry points, depending on what the buyer knows.
 
-## Search Functionality Options
+## Search options
 
-**Search by Article** — Pinpoint products with exact article numbers for precise catalog matching.
+**Search by article.** Find products by their exact article number.
 
-**Search by Brand** — Combine article numbers and brands for refined results when multiple suppliers carry the same part.
+**Search by brand.** Combine article numbers and brands to narrow results when several suppliers carry the same part.
 
-**Cross-Brand Search** — Find equivalent products or the same item across different brands — essential for B2B buyers who need alternatives when a specific part is out of stock.
+**Cross-brand search.** Find equivalent products, or the same item from other brands. B2B buyers need this when a specific part is out of stock.
 
-## Sector-Specific Innovations
+## Sector-specific features
 
-**Auto Parts — Search by Vehicle:**
-TecDoc-style vehicle compatibility search. Buyers select make, model, and year — the catalog returns only compatible parts. This eliminates wrong-fitment orders.
+**Auto parts, search by vehicle:**
+TecDoc-style vehicle compatibility search. Buyers select make, model and year, and the catalogue returns only compatible parts. This prevents wrong-fitment orders.
 
-**Fashion and Accessories:**
-Size, color, style, and brand filters combined with synonym handling (sneakers / trainers / running shoes all return the same results).
+**Fashion and accessories:**
+Size, colour, style and brand filters combined with synonym handling (sneakers / trainers / running shoes all return the same results).
 
-## Intelligent Data Processing
+## Data processing
 
-**Optimized Product Names** — Standardized naming includes synonyms. "5w-40" and "5w40" both work. Product managers don't need to anticipate every possible search variant.
+**Optimised product names.** Standardised naming includes synonyms. "5w-40" and "5w40" both work. Product managers don't need to anticipate every possible search variant.
 
-**Sophisticated Sorting** — Results sort by relevance, availability, and active promotions — tailored per sector and buyer account.
+**Sorting.** Results sort by relevance, availability and active promotions, set per sector and buyer account.
 
-The result is a search experience that reduces abandoned searches, decreases support tickets about "can't find product X," and increases order conversion.`,
+The result: fewer abandoned searches, fewer support tickets about "can't find product X," and higher order conversion.`,
     author: "Dmitriy Koval",
     authorRole: "Backend Developer, Trident Software",
     publishedAt: "2024-04-03",
@@ -1087,8 +1087,8 @@ The result is a search experience that reduces abandoned searches, decreases sup
       "driving-growth-essential-tactics-for-your-ecommerce-business",
     ],
     meta: {
-      title: "iAM-Trade B2B Product Search System — Trident Software Blog",
-      description: "How iAM-Trade's search engine handles error tolerance, TecDoc vehicle lookup, and cross-brand matching for large B2B product catalogs.",
+      title: "iAM-Trade B2B product search system | Trident Software Blog",
+      description: "How iAM-Trade's search engine handles error tolerance, TecDoc vehicle lookup, and cross-brand matching for large B2B catalogues.",
     },
     translations: {
       de: {
@@ -1228,45 +1228,45 @@ Il risultato è una ricerca con meno ricerche abbandonate, meno ticket di suppor
   {
     slug: "driving-growth-essential-tactics-for-your-ecommerce-business",
     image: "/images/blog/driving-growth-essential-tactics-for-your-ecommerce-business.jpg",
-    title: "Driving Growth: Essential Tactics for Your eCommerce Business",
-    excerpt: "You built the store. Now where are the sales? Six proven tactics for ecommerce growth — from SEO and UX to Google Merchant and data-driven decisions.",
-    content: `## Maximizing eCommerce Business Success
+    title: "Driving growth: essential tactics for your eCommerce business",
+    excerpt: "You built the store. Now where are the sales? Six tactics for ecommerce growth, from SEO and UX to Google Merchant and data-driven decisions.",
+    content: `## From launch to steady sales
 
-Launching an ecommerce business is exciting but the path from launch to consistent sales is harder than expected. The common scenario: you invested time and resources into a great store — but sales are stagnant.
+Launching an ecommerce business is exciting, but the path from launch to consistent sales is harder than expected. A common case: you put time and money into a good store, but sales are flat.
 
-Here are six tactics that actually move the needle.
+Six tactics make the difference.
 
-## 1. SEO Mastery for Enhanced Visibility
+## 1. SEO for visibility
 
-- **Keyword Optimization** — embed relevant keywords throughout product pages, category pages, and metadata
-- **Content Creation** — publish valuable content around your products and industry (buyers research before they buy)
-- **Backlink Building** — secure backlinks from reputable industry sites and directories
+- **Keyword optimisation:** use relevant keywords throughout product pages, category pages, and metadata
+- **Content creation:** publish valuable content around your products and industry (buyers research before they buy)
+- **Backlink building:** earn backlinks from reputable industry sites and directories
 
-## 2. Exceptional User Experience
+## 2. A better user experience
 
-- **Simplified Navigation** — clear, intuitive layout reduces bounce and increases pages-per-session
-- **Mobile Optimization** — over 60% of ecommerce traffic is mobile; performance on mobile matters
-- **Speed Optimization** — every second of loading time costs conversion rate points
+- **Simple navigation:** a clear layout reduces bounce and increases pages per session
+- **Mobile optimisation:** over 60% of ecommerce traffic is mobile; performance on mobile matters
+- **Speed optimisation:** every second of loading time costs conversion rate points
 
-## 3. Trust and Credibility
+## 3. Trust and credibility
 
-- **Showcasing Reviews** — customer testimonials, ratings, and UGC build social proof
-- **Securing Transactions** — visible security badges, clear shipping policies, and straightforward returns reduce checkout abandonment
+- **Visible reviews:** customer testimonials, ratings, and UGC build social proof
+- **Secure transactions:** visible security badges, clear shipping policies, and straightforward returns reduce checkout abandonment
 
-## 4. Drive Targeted Traffic
+## 4. Targeted traffic
 
-- **Social Media Presence** — Instagram and Facebook remain the highest-ROI organic channels for B2C
-- **Email Campaigns** — regular newsletters with personalized offers outperform nearly every paid channel in lifetime value
+- **Social media:** Instagram and Facebook remain the highest-ROI organic channels for B2C
+- **Email campaigns:** regular newsletters with personalised offers outperform nearly every paid channel in lifetime value
 
 ## 5. Google Merchant and Facebook Catalog
 
-- **Google Merchant Center** — integrate your product feed for Google Shopping visibility. Buyers with purchase intent see your products directly in search results.
-- **Facebook Catalog** — sync your catalog for targeted ads and shoppable posts in feeds and stories
+- **Google Merchant Center:** integrate your product feed for Google Shopping visibility. Buyers with purchase intent see your products directly in search results.
+- **Facebook Catalog:** sync your catalog for targeted ads and shoppable posts in feeds and stories
 
-## 6. Data-Driven Decisions
+## 6. Data-driven decisions
 
-- **Analytics** — Google Analytics 4 and platform-native analytics reveal where buyers drop off and what drives conversion
-- **Customer Feedback** — systematically collect and act on feedback; it's the cheapest source of product and UX improvements
+- **Analytics:** Google Analytics 4 and platform-native analytics reveal where buyers drop off and what drives conversion
+- **Customer feedback:** systematically collect and act on feedback; it's the cheapest source of product and UX improvements
 
 All of these tactics work together. SEO brings discovery; UX converts; trust retains; email reactivates. Build the flywheel, not individual tactics in isolation.`,
     author: "Bohdan Voitovych",
@@ -1284,8 +1284,8 @@ All of these tactics work together. SEO brings discovery; UX converts; trust ret
       "free-advertising-for-restaurants-through-customer-feedback",
     ],
     meta: {
-      title: "eCommerce Growth Tactics That Actually Work — Trident Software Blog",
-      description: "Six proven tactics for ecommerce growth: SEO, UX, trust signals, Google Merchant, email, and analytics. No fluff — just what moves the needle.",
+      title: "eCommerce growth tactics that actually work | Trident Software Blog",
+      description: "Six tactics for ecommerce growth: SEO, UX, trust signals, Google Merchant, email and analytics, and how they work together.",
     },
     translations: {
       de: {

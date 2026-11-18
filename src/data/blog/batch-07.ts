@@ -4,15 +4,15 @@ export const posts: BlogPostRecord[] = [
   {
     slug: "docker-compose-local-dev",
     image: "/images/stock/dispatch.jpg",
-    title: "Docker Compose for Local Development Environments: The Setup That Eliminates \"Works on My Machine\"",
-    excerpt: "A well-configured Docker Compose setup makes onboarding a new developer a 10-minute process and eliminates environment-related bugs entirely. Here's the configuration patterns that work for full-stack JavaScript projects.",
-    content: `## The Problem Docker Compose Solves for Dev Teams
+    title: "Docker Compose for local development environments: the setup that eliminates \"works on my machine\"",
+    excerpt: "A well-configured Docker Compose setup makes onboarding a new developer a 10-minute process and eliminates environment-related bugs entirely. These are the patterns that work for full-stack JavaScript projects.",
+    content: `## The problem Docker Compose solves for dev teams
 
 Every team that has relied on "install Node, install PostgreSQL, set environment variables" for onboarding knows the pain: 20% of developers have something wrong with their local setup at any given time. Database versions differ. Environment variables get mis-set. Ports conflict.
 
-Docker Compose makes the local environment a first-class artifact, versioned alongside the code.
+Docker Compose makes the local environment a first-class artefact, versioned alongside the code.
 
-## A Complete docker-compose.yml for a Next.js + PostgreSQL Project
+## A complete docker-compose.yml for a Next.js + PostgreSQL project
 
 \`\`\`yaml
 # docker-compose.yml
@@ -69,7 +69,7 @@ volumes:
   postgres_data:
 \`\`\`
 
-## The Dockerfile.dev That Enables Hot Reload
+## The Dockerfile.dev that enables hot reload
 
 \`\`\`dockerfile
 # Dockerfile.dev
@@ -90,7 +90,7 @@ CMD ["pnpm", "dev"]
 
 The key: mount your source code as a volume so changes in the host immediately reflect inside the container without rebuilding.
 
-## Key Patterns for Developer Experience
+## Key patterns for developer experience
 
 | Pattern | Config | Benefit |
 |---|---|---|
@@ -100,7 +100,7 @@ The key: mount your source code as a volume so changes in the host immediately r
 | Local mail server | maildev/maildev | Test emails without real SMTP |
 | .env.example | Documented in repo | Developers know what to set |
 
-## One-Command Onboarding
+## One-command onboarding
 
 With this setup, onboarding becomes:
 \`\`\`bash
@@ -112,7 +112,7 @@ docker compose up
 
 That's the target. No "install Homebrew, then install nvm, then install Node, then..."
 
-## Production vs Development Compose Files
+## Production vs development compose files
 
 Use override files for production differences:
 
@@ -126,7 +126,7 @@ docker compose -f docker-compose.yml -f docker-compose.prod.yml up
 
 The prod override removes volume mounts, sets NODE_ENV=production, and uses environment variables from secrets management rather than an .env file.
 
-## Common Mistakes
+## Common mistakes
 
 **Port conflicts:** Always expose on host ports above 5000. PostgreSQL on 5432 conflicts with local installs. Solution: map to 15432 on the host.
 
@@ -152,7 +152,7 @@ The prod override removes volume mounts, sets NODE_ENV=production, and uses envi
     faq: [
       {
         question: "Should the development Docker setup match production exactly?",
-        answer: "Match the service versions (same PostgreSQL major version, same Redis version) but not the configuration. Dev uses simpler auth, local volumes, and exposed ports. Production uses secrets management, persistent storage solutions, and internal networking. The goal is consistent behavior, not identical configuration.",
+        answer: "Match the service versions (same PostgreSQL major version, same Redis version) but not the configuration. Dev uses simpler auth, local volumes, and exposed ports. Production uses secrets management, persistent storage solutions, and internal networking. The goal is consistent behaviour, not identical configuration.",
       },
       {
         question: "Does Docker Compose slow down development compared to running services natively?",
@@ -160,15 +160,15 @@ The prod override removes volume mounts, sets NODE_ENV=production, and uses envi
       },
       {
         question: "How do we handle database migrations in Docker Compose?",
-        answer: "Add a migration step to your startup sequence. Either run migrations as part of the app startup (safe with idempotent migrations), or add a separate migrate service that runs and exits. Use Drizzle Kit or Prisma Migrate for schema management — both work well in containerised environments.",
+        answer: "Add a migration step to your startup sequence. Either run migrations as part of the app startup (safe with idempotent migrations), or add a separate migrate service that runs and exits. Use Drizzle Kit or Prisma Migrate for schema management; both work well in containerised environments.",
       },
       {
         question: "Can we use Docker Compose for a team that uses both Mac and Linux?",
-        answer: "Yes, with minor adjustments. The main difference: line endings (use .gitattributes to normalize), UID/GID (Linux users need user: \"${UID}:${GID}\" in compose, Mac users don't), and file performance (macOS needs VirtioFS enabled). Document these in your CONTRIBUTING.md.",
+        answer: "Yes, with minor adjustments. The main difference: line endings (use .gitattributes to normalise), UID/GID (Linux users need user: \"${UID}:${GID}\" in compose, Mac users don't), and file performance (macOS needs VirtioFS enabled). Document these in your CONTRIBUTING.md.",
       },
     ],
     meta: {
-      title: "Docker Compose for Local Dev Environments — Trident Software Blog",
+      title: "Docker Compose for local dev environments | Trident Software Blog",
       description: "Docker Compose setup for full-stack JavaScript projects: PostgreSQL, Redis, mail server, hot reload, one-command onboarding, and common pitfalls.",
     },
     translations: {
@@ -639,32 +639,32 @@ L'override di produzione elimina i mount dei volumi, imposta NODE_ENV=production
   {
     slug: "wcag-accessibility-swiss-public-sector",
     image: "/images/stock/warehouse-2.jpg",
-    title: "WCAG 2.1 Accessibility for Swiss Public Sector Apps: Compliance and Practical Implementation",
-    excerpt: "Swiss federal and cantonal law requires digital accessibility for public sector applications. Here's what compliance actually means, which WCAG 2.1 criteria are most commonly failed, and how to audit and fix them efficiently.",
-    content: `## The Legal Requirement in Switzerland
+    title: "WCAG 2.1 accessibility for Swiss public sector apps: compliance and practical implementation",
+    excerpt: "Swiss federal and cantonal law requires digital accessibility for public sector applications. This post explains what compliance means, which WCAG 2.1 criteria fail most often, and how to audit and fix them efficiently.",
+    content: `## The legal requirement in Switzerland
 
 Switzerland's Federal Act on the Elimination of Inequalities for People with Disabilities (BehiG) and the corresponding ordinance (BehiV) require federal, cantonal, and communal authorities to make digital services accessible. The technical standard referenced is WCAG 2.1 at level AA.
 
 For private companies serving the public sector or receiving public funding, accessibility is increasingly a procurement requirement, not just best practice.
 
-## WCAG 2.1 AA: The 13 Most Commonly Failed Criteria
+## WCAG 2.1 AA: the 8 most commonly failed criteria
 
-Based on accessibility audits across Swiss public sector websites, these criteria fail most often:
+In accessibility audits of Swiss public sector websites, these criteria fail most often:
 
-| Criterion | Issue | WCAG Number |
+| Criterion | Issue | WCAG number |
 |---|---|---|
-| Non-text contrast | Icon buttons without accessible labels | 1.1.1 |
-| Color contrast | Text below 4.5:1 ratio against background | 1.4.3 |
+| Non-text content | Icon buttons without accessible labels | 1.1.1 |
+| Colour contrast | Text below 4.5:1 ratio against background | 1.4.3 |
 | Keyboard navigation | Focus not visible, focus traps in modals | 2.4.7, 2.1.2 |
 | Form labels | Inputs missing associated \`<label>\` | 1.3.1 |
-| Error identification | Errors shown only by color | 1.4.1, 3.3.1 |
+| Error identification | Errors shown only by colour | 1.4.1, 3.3.1 |
 | Language declaration | Missing \`lang\` attribute on \`<html>\` | 3.1.1 |
 | Skip navigation | No skip-to-content link | 2.4.1 |
 | ARIA misuse | role/aria-* applied incorrectly | 4.1.2 |
 
-## Practical Fixes for Each Category
+## Practical fixes for each category
 
-**Color Contrast**
+**Colour contrast**
 Use a systematic approach: audit with axe DevTools browser extension, then fix at the design token level:
 \`\`\`css
 /* Before: fails 4.5:1 on white */
@@ -674,7 +674,7 @@ Use a systematic approach: audit with axe DevTools browser extension, then fix a
 --color-secondary-text: #6B7280;
 \`\`\`
 
-**Keyboard Focus**
+**Keyboard focus**
 Every interactive element needs a visible focus indicator. The minimum:
 \`\`\`css
 :focus-visible {
@@ -685,7 +685,7 @@ Every interactive element needs a visible focus indicator. The minimum:
 \`\`\`
 Never use \`outline: none\` without providing an alternative.
 
-**Form Labels**
+**Form labels**
 \`\`\`html
 <!-- Wrong: placeholder is not a label -->
 <input type="email" placeholder="E-Mail-Adresse">
@@ -695,7 +695,7 @@ Never use \`outline: none\` without providing an alternative.
 <input type="email" id="email" name="email">
 \`\`\`
 
-**Skip Navigation**
+**Skip navigation**
 \`\`\`html
 <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4">
   Zum Hauptinhalt springen
@@ -703,7 +703,7 @@ Never use \`outline: none\` without providing an alternative.
 <main id="main-content">...</main>
 \`\`\`
 
-## Automated Testing Integration
+## Automated testing integration
 
 Automated tools catch approximately 30–40% of WCAG violations. Add to CI:
 
@@ -720,7 +720,7 @@ await checkA11y(page, undefined, {
 
 The remaining 60–70% requires manual testing, including keyboard navigation testing and screen reader testing with NVDA (Windows) or VoiceOver (macOS/iOS).
 
-## Swiss Language Considerations
+## Swiss language considerations
 
 Public sector apps serve users in DE, FR, IT, and RM. WCAG 3.1.2 requires marking language changes inline:
 
@@ -734,12 +734,12 @@ Public sector apps serve users in DE, FR, IT, and RM. WCAG 3.1.2 requires markin
 
 Screen readers use the \`lang\` attribute to select the correct pronunciation engine.
 
-## Audit Toolset for Swiss Teams
+## Audit toolset for Swiss teams
 
-- **axe DevTools** (browser extension): free, catches most automated violations
-- **WAVE**: visual overlay showing accessibility errors
-- **Lighthouse accessibility score**: built into Chrome DevTools
-- **Manual screen reader**: VoiceOver (Mac/iOS, free), NVDA (Windows, free)
+- axe DevTools (browser extension): free, catches most automated violations
+- WAVE: visual overlay showing accessibility errors
+- Lighthouse accessibility score: built into Chrome DevTools
+- Manual screen reader: VoiceOver (Mac/iOS, free), NVDA (Windows, free)
 
 Budget 2–3 days for an initial accessibility audit of a medium-complexity web application. Budget one sprint to remediate findings on a codebase with no existing accessibility work.`,
     author: "Bohdan Voitovych",
@@ -765,7 +765,7 @@ Budget 2–3 days for an initial accessibility audit of a medium-complexity web 
       },
       {
         question: "What is the difference between WCAG 2.1 and WCAG 2.2?",
-        answer: "WCAG 2.2 (published 2023) adds 9 new success criteria, primarily focused on mobile accessibility and cognitive disabilities. Swiss law currently references 2.1 AA, but 2.2 is backward compatible — meeting 2.2 AA satisfies all 2.1 AA requirements. Building to 2.2 from the start is the pragmatic choice for new projects.",
+        answer: "WCAG 2.2 (published 2023) adds 9 new success criteria, primarily focused on mobile accessibility and cognitive disabilities. Swiss law currently references 2.1 AA, but 2.2 is backward compatible: meeting 2.2 AA satisfies all 2.1 AA requirements. Building to 2.2 from the start is the pragmatic choice for new projects.",
       },
       {
         question: "How long does a full accessibility audit take?",
@@ -773,7 +773,7 @@ Budget 2–3 days for an initial accessibility audit of a medium-complexity web 
       },
       {
         question: "Which screen reader should we test with for Swiss German-language apps?",
-        answer: "NVDA on Windows (free) for broad coverage — most assistive technology users on Windows. VoiceOver on macOS/iOS for Apple ecosystem coverage. Both support German. Test with German system language set to ensure the screen reader uses German pronunciation rules for DE content.",
+        answer: "NVDA on Windows (free) for broad coverage: most screen reader users are on Windows. VoiceOver on macOS/iOS for Apple ecosystem coverage. Both support German. Test with German system language set to ensure the screen reader uses German pronunciation rules for DE content.",
       },
     ],
     translations: {
@@ -786,13 +786,13 @@ Das Behindertengleichstellungsgesetz (BehiG) und die zugehörige Verordnung (Beh
 
 Für private Unternehmen, die für die öffentliche Hand arbeiten oder öffentliche Gelder erhalten, wird Barrierefreiheit zunehmend zur Bedingung in Ausschreibungen und ist nicht mehr nur Best Practice.
 
-## WCAG 2.1 AA: Die 13 am häufigsten verfehlten Kriterien
+## WCAG 2.1 AA: Die 8 am häufigsten verfehlten Kriterien
 
 Audits von Schweizer Behördenwebsites zeigen, dass diese Kriterien am häufigsten nicht erfüllt werden:
 
 | Kriterium | Problem | WCAG-Nummer |
 |---|---|---|
-| Nicht-Text-Kontrast | Icon-Buttons ohne zugängliche Beschriftung | 1.1.1 |
+| Nicht-Text-Inhalte | Icon-Buttons ohne zugängliche Beschriftung | 1.1.1 |
 | Farbkontrast | Text unter dem Verhältnis 4.5:1 zum Hintergrund | 1.4.3 |
 | Tastaturbedienung | Fokus nicht sichtbar, Fokusfallen in Modals | 2.4.7, 2.1.2 |
 | Formularbeschriftungen | Eingabefelder ohne zugeordnetes \`<label>\` | 1.3.1 |
@@ -914,13 +914,13 @@ La loi fédérale sur l'élimination des inégalités frappant les personnes han
 
 Pour les entreprises privées qui travaillent pour le secteur public ou reçoivent des fonds publics, l'accessibilité devient de plus en plus une exigence des appels d'offres, et plus seulement une bonne pratique.
 
-## WCAG 2.1 AA : les 13 critères le plus souvent non respectés
+## WCAG 2.1 AA : les 8 critères le plus souvent non respectés
 
 D'après des audits d'accessibilité menés sur des sites publics suisses, ces critères échouent le plus souvent :
 
 | Critère | Problème | Numéro WCAG |
 |---|---|---|
-| Contraste non textuel | Boutons à icône sans libellé accessible | 1.1.1 |
+| Contenu non textuel | Boutons à icône sans libellé accessible | 1.1.1 |
 | Contraste des couleurs | Texte sous le ratio de 4.5:1 par rapport au fond | 1.4.3 |
 | Navigation au clavier | Focus invisible, pièges à focus dans les modales | 2.4.7, 2.1.2 |
 | Étiquettes de formulaire | Champs sans \`<label>\` associé | 1.3.1 |
@@ -1042,13 +1042,13 @@ La legge federale sull'eliminazione di svantaggi nei confronti dei disabili (LDi
 
 Per le aziende private che lavorano per il settore pubblico o ricevono fondi pubblici, l'accessibilità è sempre più spesso un requisito nei bandi di gara, non solo una buona pratica.
 
-## WCAG 2.1 AA: i 13 criteri non rispettati più spesso
+## WCAG 2.1 AA: gli 8 criteri non rispettati più spesso
 
 Dagli audit di accessibilità sui siti pubblici svizzeri emerge che questi criteri sono quelli disattesi più spesso:
 
 | Criterio | Problema | Numero WCAG |
 |---|---|---|
-| Contrasto non testuale | Pulsanti con icona senza etichetta accessibile | 1.1.1 |
+| Contenuto non testuale | Pulsanti con icona senza etichetta accessibile | 1.1.1 |
 | Contrasto del colore | Testo sotto il rapporto 4.5:1 rispetto allo sfondo | 1.4.3 |
 | Navigazione da tastiera | Focus non visibile, trappole del focus nelle finestre modali | 2.4.7, 2.1.2 |
 | Etichette dei moduli | Campi senza \`<label>\` associata | 1.3.1 |
@@ -1163,24 +1163,24 @@ Per un primo audit di accessibilità di un'applicazione web di media complessit�
       },
     },
     meta: {
-      title: "WCAG 2.1 Accessibility for Swiss Public Sector Apps — Trident Software Blog",
+      title: "WCAG 2.1 accessibility for Swiss public sector apps | Trident Software Blog",
       description: "Swiss BehiG/BehiV accessibility guide: most commonly failed WCAG 2.1 AA criteria, practical code fixes, automated testing with axe, and screen reader testing.",
     },
   },
   {
     slug: "openai-vs-anthropic-api-cost-sme",
     image: "/images/stock/office-2.jpg",
-    title: "OpenAI vs Anthropic API Cost Comparison for SMEs: What the Pricing Pages Don't Tell You",
-    excerpt: "API pricing tables look simple until you factor in context window usage, caching, and your actual workload. Here's a realistic cost comparison for the most common SME use cases in 2026.",
-    content: `## Why Simple Price Comparisons Mislead
+    title: "OpenAI vs Anthropic API cost comparison for SMEs: what the pricing pages don't tell you",
+    excerpt: "API pricing tables look simple until you factor in context window usage, caching and your actual workload. This is a realistic cost comparison for the most common SME use cases in 2026.",
+    content: `## Why simple price comparisons mislead
 
-The OpenAI vs Anthropic pricing page comparison shows cost per million tokens. Real workloads don't look like "1M input tokens, 1M output tokens." The actual cost depends on your context window usage, cache hit rate, output-to-input ratio, and which model tier you actually need.
+The OpenAI vs Anthropic pricing page comparison shows cost per million tokens. Real workloads don't look like "1M input tokens, 1M output tokens." The real cost depends on your context window usage, cache hit rate, output-to-input ratio, and which model tier you need.
 
 This comparison models realistic SME workloads rather than benchmark comparisons.
 
-## Current Pricing (May 2026)
+## Pricing used in this comparison
 
-| Model | Input (per 1M) | Output (per 1M) | Context | Best For |
+| Model | Input (per 1M) | Output (per 1M) | Context | Best for |
 |---|---|---|---|---|
 | GPT-4o | $2.50 | $10.00 | 128K | General-purpose, vision |
 | GPT-4o mini | $0.15 | $0.60 | 128K | High-volume simple tasks |
@@ -1189,11 +1189,11 @@ This comparison models realistic SME workloads rather than benchmark comparisons
 | Claude 3.5 Haiku | $0.80 | $4.00 | 200K | Balanced cost/quality |
 | Claude 3 Haiku | $0.25 | $1.25 | 200K | High-volume simple tasks |
 
-*Prices approximate — check current provider pages before budgeting*
+*Prices are approximate. Check current provider pages before budgeting.*
 
-## Realistic Workload Models
+## Realistic workload models
 
-**Document Analysis (Invoice/Contract Processing)**
+**Document analysis (invoice/contract processing)**
 Assumptions: 200 documents/day, avg 2,000 tokens each, 200 token output
 
 \`\`\`
@@ -1208,7 +1208,7 @@ Claude 3 Haiku: $3.00 input + $1.50 output = $4.50/month
 Winner: GPT-4o mini by 2×
 \`\`\`
 
-**Customer Support Chatbot**
+**Customer support chatbot**
 Assumptions: 500 conversations/day, 10 turns each, system prompt 1,500 tokens
 
 Without caching:
@@ -1227,7 +1227,7 @@ Claude 3.5 Haiku (with caching): ~$9.80/day
 
 For workloads with large repeated system prompts, Claude's prompt caching changes the economics significantly.
 
-**Code Review / Generation**
+**Code review / generation**
 Assumptions: 50 engineers, 20 AI-assisted completions/day, 500 input + 300 output tokens avg
 
 \`\`\`
@@ -1241,7 +1241,7 @@ GPT-4o mini: $0.23 + $0.54 = $0.77/month
 
 For code generation, GPT-4o mini delivers surprisingly strong results relative to cost.
 
-## The Caching Factor
+## The caching factor
 
 Anthropic's prompt caching gives 90% discount on repeated prompt content (minimum 1,024 tokens). For any workload where you send the same system prompt or context repeatedly, this changes the comparison:
 
@@ -1249,16 +1249,16 @@ Anthropic's prompt caching gives 90% discount on repeated prompt content (minimu
 - Document processing with short prompts: OpenAI mini models win
 - Long-context document analysis (50K+ token docs): Claude's 200K context avoids chunking overhead
 
-## Quality vs Cost Decision Framework
+## Quality vs cost decision framework
 
 1. **Is quality the primary constraint?** Use Claude 3.5 Sonnet or GPT-4o. Test both; pick the one with better task-specific output.
 2. **Is cost the primary constraint?** Use GPT-4o mini or Claude 3 Haiku. Both handle simple tasks well.
 3. **Do you have large repeated contexts?** Claude with prompt caching often wins.
 4. **Do you need Swiss data residency?** Neither provider has Swiss-resident processing. Consider on-premise LLMs.
 
-## Our Recommendation
+## Our recommendation
 
-Start with Claude 3.5 Haiku for most SME workloads — balanced quality, 200K context, and caching available. Test against GPT-4o mini for your specific task. The 5–10% quality difference between tiers rarely justifies 5–8× the cost for routine tasks.`,
+Start with Claude 3.5 Haiku for most SME workloads: balanced quality, 200K context, and caching. Test against GPT-4o mini for your specific task. The 5–10% quality difference between tiers rarely justifies 5–8× the cost for routine tasks.`,
     author: "Bohdan Voitovych",
     authorRole: "Project Manager, Trident Software",
     publishedAt: "2026-02-26",
@@ -1278,11 +1278,11 @@ Start with Claude 3.5 Haiku for most SME workloads — balanced quality, 200K co
     faq: [
       {
         question: "Which model is better for Swiss multilingual content (DE/FR/IT)?",
-        answer: "Both GPT-4o and Claude 3.5 Sonnet handle Swiss national languages very well. Claude has a slight edge on Italian, GPT-4o on German — the differences are marginal for most use cases. Test with a sample of your actual input language distribution.",
+        answer: "Both GPT-4o and Claude 3.5 Sonnet handle Swiss national languages very well. Claude has a slight edge on Italian, GPT-4o on German. Differences are marginal for most use cases. Test with a sample of your actual input language distribution.",
       },
       {
         question: "Does Anthropic or OpenAI offer volume discounts for SMEs?",
-        answer: "Both offer committed-use discounts for high-volume enterprise customers (typically $10K+/month spend). For SMEs under that threshold, the price difference is what's on the pricing page. Neither offers SME-specific pricing programs as of mid-2026.",
+        answer: "Both offer committed-use discounts for high-volume enterprise customers (typically $10K+/month spend). For SMEs under that threshold, the price difference is what's on the pricing page. Neither offers SME-specific pricing programmes as of mid-2026.",
       },
       {
         question: "What is prompt caching and how do we enable it?",
@@ -1294,7 +1294,7 @@ Start with Claude 3.5 Haiku for most SME workloads — balanced quality, 200K co
       },
     ],
     meta: {
-      title: "OpenAI vs Anthropic API Cost Comparison for SMEs — Trident Software Blog",
+      title: "OpenAI vs Anthropic API cost comparison for SMEs | Trident Software Blog",
       description: "Realistic API cost comparison for SME workloads: document processing, chatbots, code generation, prompt caching impact, and a model-selection framework.",
     },
     translations: {
@@ -1307,7 +1307,7 @@ Wer die Preisseiten von OpenAI und Anthropic vergleicht, sieht Kosten pro Millio
 
 Dieser Vergleich rechnet mit realistischen KMU-Workloads statt mit Benchmarks.
 
-## Aktuelle Preise (Mai 2026)
+## Preise in diesem Vergleich
 
 | Modell | Input (pro 1M) | Output (pro 1M) | Kontext | Geeignet für |
 |---|---|---|---|---|
@@ -1421,7 +1421,7 @@ En comparant les pages tarifaires d'OpenAI et d'Anthropic, on voit un coût par 
 
 Cette comparaison s'appuie sur des charges de travail réalistes de PME plutôt que sur des benchmarks.
 
-## Tarifs actuels (mai 2026)
+## Tarifs utilisés dans cette comparaison
 
 | Modèle | Entrée (par 1M) | Sortie (par 1M) | Contexte | Idéal pour |
 |---|---|---|---|---|
@@ -1535,7 +1535,7 @@ Confrontando le pagine dei prezzi di OpenAI e Anthropic vedi un costo per milion
 
 Questo confronto si basa su carichi di lavoro realistici di una PMI, non su benchmark.
 
-## Prezzi attuali (maggio 2026)
+## Prezzi usati in questo confronto
 
 | Modello | Input (per 1M) | Output (per 1M) | Contesto | Ideale per |
 |---|---|---|---|---|
@@ -1645,15 +1645,15 @@ Per la maggior parte dei carichi di lavoro di una PMI, parti con Claude 3.5 Haik
   {
     slug: "automated-testing-pyramid-small-teams",
     image: "/images/stock/workspace.jpg",
-    title: "The Automated Testing Pyramid for Small Teams: What to Test and What to Skip",
-    excerpt: "Small engineering teams cannot afford comprehensive test coverage everywhere. Here's how to apply the testing pyramid pragmatically — maximum bug detection with minimum maintenance overhead.",
-    content: `## Why Most Testing Advice Doesn't Apply to Small Teams
+    title: "The automated testing pyramid for small teams: what to test and what to skip",
+    excerpt: "Small engineering teams cannot afford full test coverage everywhere. This is how to apply the testing pyramid pragmatically: catch the most bugs for the least maintenance.",
+    content: `## Why most testing advice doesn't apply to small teams
 
 The standard testing pyramid assumes you have dedicated QA engineers and the time to maintain a large test suite. A 3-person team shipping features weekly operates under different constraints: tests must catch real bugs, run fast, and not break on every refactor.
 
-This guide is for teams of 2–8 engineers who want tests that actually help rather than slow them down.
+This guide is for teams of 2–8 engineers who want tests that help rather than slow them down.
 
-## The Practical Testing Pyramid for Small Teams
+## The practical testing pyramid for small teams
 
 \`\`\`
          /\\
@@ -1668,19 +1668,19 @@ This guide is for teams of 2–8 engineers who want tests that actually help rat
 /____________________\\
 \`\`\`
 
-The ratios: approximately 60% unit, 30% integration, 10% E2E. For small teams, the absolute numbers matter more than ratios — 50 unit tests, 20 integration tests, 5 E2E flows is a realistic and maintainable target.
+The ratios: approximately 60% unit, 30% integration, 10% E2E. For small teams, the absolute numbers matter more than ratios: 50 unit tests, 20 integration tests, 5 E2E flows is a realistic and maintainable target.
 
-## Unit Tests: What Deserves Coverage
+## Unit tests: what deserves coverage
 
 Test pure functions and business logic. Skip everything that just calls a framework API:
 
-**High value — test these:**
+**High value, test these:**
 - Price calculation with discounts, taxes, rounding
 - Permission checking logic
 - Data validation and transformation
 - Date arithmetic, especially timezone edge cases
 
-**Low value — skip these:**
+**Low value, skip these:**
 - React components that just render data (visual testing or E2E instead)
 - Database model definitions
 - Configuration files
@@ -1704,7 +1704,7 @@ it('renders a button', () => {
 })
 \`\`\`
 
-## Integration Tests: The Highest ROI Layer
+## Integration tests: the highest-ROI layer
 
 Integration tests catch the bugs that unit tests miss: wrong SQL, missing JOIN, incorrect auth middleware order. For a Next.js/PostgreSQL stack:
 
@@ -1731,7 +1731,7 @@ it('creates order and reduces inventory atomically', async () => {
 })
 \`\`\`
 
-## E2E Tests: 5–10 Critical Flows, Nothing More
+## E2E tests: 5–10 critical flows, nothing more
 
 With Playwright, cover only the flows that, if broken, would block revenue:
 
@@ -1755,7 +1755,7 @@ test('complete checkout flow', async ({ page }) => {
 })
 \`\`\`
 
-## CI Configuration That Doesn't Slow Down Shipping
+## CI configuration that doesn't slow down shipping
 
 \`\`\`yaml
 # .github/workflows/test.yml
@@ -1793,19 +1793,19 @@ Target: total CI test time under 8 minutes. Beyond that, developers start skippi
     faq: [
       {
         question: "Should we use Jest or Vitest for unit testing in 2026?",
-        answer: "Vitest for any project using Vite, Next.js, or modern ESM. It's 3–10× faster than Jest for typical test suites and has identical API. Jest remains valid for projects already using it — migration ROI is usually low unless test suite is very slow.",
+        answer: "Vitest for any project using Vite, Next.js, or modern ESM. It's 3–10× faster than Jest for typical test suites and has the same API. Jest remains valid for projects already using it; migration ROI is usually low unless the suite is very slow.",
       },
       {
         question: "How do we test Next.js server actions and API routes?",
-        answer: "For API routes, use supertest or a thin test client that calls the route handler directly (no network). For server actions, test the underlying function with mocked dependencies rather than invoking the server action wrapper — it's faster and less fragile.",
+        answer: "For API routes, use supertest or a thin test client that calls the route handler directly (no network). For server actions, test the underlying function with mocked dependencies rather than invoking the server action wrapper. It is faster and less fragile.",
       },
       {
         question: "What code coverage target should small teams aim for?",
-        answer: "70–80% on business logic modules; 0% on configuration, migrations, and generated code. A blanket coverage target incentivizes writing tests for easy-to-cover trivial code instead of hard-to-cover important logic. Target coverage by module type, not codebase-wide.",
+        answer: "70–80% on business logic modules; 0% on configuration, migrations, and generated code. A blanket coverage target incentivises writing tests for easy-to-cover trivial code instead of hard-to-cover important logic. Target coverage by module type, not codebase-wide.",
       },
       {
         question: "How do we prevent E2E tests from becoming flaky?",
-        answer: "Three rules: (1) Never use sleep() — use Playwright's waitForSelector or expect().toBeVisible(). (2) Use data-testid attributes, not CSS classes — CSS refactors should not break tests. (3) Seed test data deterministically before each test, never depend on leftover state.",
+        answer: "Three rules: (1) Never use sleep(); use Playwright's waitForSelector or expect().toBeVisible(). (2) Use data-testid attributes, not CSS classes; CSS refactors should not break tests. (3) Seed test data deterministically before each test, never depend on leftover state.",
       },
     ],
     translations: {
@@ -2273,7 +2273,7 @@ Obiettivo: tempo totale dei test in CI sotto gli 8 minuti. Oltre questa soglia g
       },
     },
     meta: {
-      title: "Automated Testing Pyramid for Small Teams — Trident Software Blog",
+      title: "Automated testing pyramid for small teams | Trident Software Blog",
       description: "Pragmatic testing strategy for 2–8 engineer teams: what to unit test (business logic only), high-ROI integration tests, 5–10 E2E flows, and CI under 8 minutes.",
     },
   },

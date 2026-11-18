@@ -31,7 +31,7 @@ const record: IndustryRecord = {
       solutions: [
         {
           title: 'Product catalogue & PIM',
-          description: 'Rich product data management with specs, compatibility tables, and media.',
+          description: 'Product data management with specs, compatibility tables and media.',
         },
         {
           title: 'B2B dealer portal',
@@ -47,9 +47,9 @@ const record: IndustryRecord = {
         },
       ],
       meta: {
-        title: 'DIY & Tools Software Development | Trident Software',
+        title: 'DIY & tools software development | Trident Software',
         description:
-          'DIY and tools software — product catalogues, B2B dealer portals, compatibility finders, inventory systems. Swiss engineering.',
+          'DIY and tools software: product catalogues, B2B dealer portals, compatibility finders, inventory systems. Swiss engineering.',
       },
     },
     de: {

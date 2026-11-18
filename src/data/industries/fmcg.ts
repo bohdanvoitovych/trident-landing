@@ -42,13 +42,13 @@ const record: IndustryRecord = {
         },
         {
           title: 'Demand forecasting',
-          description: 'AI-powered stock level predictions to reduce waste and out-of-stock events.',
+          description: 'AI forecasts of stock levels to reduce waste and stock-outs.',
         },
       ],
       meta: {
-        title: 'FMCG & Consumer Goods Software | Trident Software',
+        title: 'FMCG & consumer goods software | Trident Software',
         description:
-          'FMCG software — distribution management, HoReCa platforms, retail execution, demand forecasting. Swiss engineering.',
+          'FMCG software: distribution management, HoReCa platforms, retail execution, demand forecasting. Swiss engineering.',
       },
     },
     de: {

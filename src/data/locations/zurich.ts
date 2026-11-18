@@ -10,8 +10,8 @@ const record: LocationRecord = {
       region: 'Canton of Zurich',
       tagline: "Custom software for Switzerland's technology capital",
       description:
-        'Zurich hosts Google, Meta, Apple, UBS, Credit Suisse, and hundreds of fintech startups. We build custom web platforms, AI-powered tools, and enterprise integrations for Zurich-based companies — delivering Swiss quality with Valais efficiency.',
-      keyIndustries: ['Fintech', 'Banking', 'Crypto', 'Enterprise SaaS', 'Deep Tech'],
+        'Zurich hosts Google, Meta, Apple, UBS and hundreds of fintech startups. We build custom web platforms, AI tools and enterprise integrations for Zurich companies, with Swiss quality at Valais cost.',
+      keyIndustries: ['Fintech', 'Banking', 'Crypto', 'Enterprise SaaS', 'Deep tech'],
       highlights: [
         {
           title: 'Fintech expertise',
@@ -19,9 +19,9 @@ const record: LocationRecord = {
             'Banking APIs, payment processing, KYC automation, and regulatory reporting for Swiss financial institutions.',
         },
         {
-          title: 'Google-grade engineering',
+          title: 'Large-scale engineering',
           description:
-            "Scalable architectures used by Zurich's tech giants — microservices, event-driven backends, observability stacks.",
+            "The architectures Zurich's tech giants run on: microservices, event-driven backends, observability stacks.",
         },
         {
           title: 'Crypto Valley ready',
@@ -30,9 +30,9 @@ const record: LocationRecord = {
         },
       ],
       meta: {
-        title: 'Software Development Zurich | Trident Software Switzerland',
+        title: 'Software development Zurich | Trident Software Switzerland',
         description:
-          'Custom software development in Zurich. We build AI-powered tools, fintech platforms, and enterprise web apps for Zurich firms. Swiss quality, Valais pricing.',
+          'Custom software development in Zurich. We build AI tools, fintech platforms and enterprise web apps for Zurich firms. Swiss quality, Valais pricing.',
       },
     },
     de: {
@@ -40,7 +40,7 @@ const record: LocationRecord = {
       region: 'Kanton Zürich',
       tagline: 'Individuelle Software für den Technologiestandort Nummer eins der Schweiz',
       description:
-        'In Zürich sitzen Google, Meta, Apple, UBS, Credit Suisse und Hunderte Fintech-Startups. Wir entwickeln individuelle Webplattformen, KI-gestützte Tools und Unternehmensintegrationen für Firmen aus Zürich. Schweizer Qualität, mit der Effizienz aus dem Wallis.',
+        'In Zürich sitzen Google, Meta, Apple, UBS und Hunderte Fintech-Startups. Wir entwickeln individuelle Webplattformen, KI-gestützte Tools und Unternehmensintegrationen für Firmen aus Zürich. Schweizer Qualität, mit der Effizienz aus dem Wallis.',
       keyIndustries: ['Fintech', 'Banken', 'Krypto', 'Enterprise SaaS', 'Deep Tech'],
       highlights: [
         {
@@ -70,7 +70,7 @@ const record: LocationRecord = {
       region: 'Canton de Zurich',
       tagline: 'Des logiciels sur mesure pour la capitale suisse de la technologie',
       description:
-        "Zurich accueille Google, Meta, Apple, UBS, Credit Suisse et des centaines de startups fintech. Nous développons des plateformes web sur mesure, des outils basés sur l'IA et des intégrations d'entreprise pour les sociétés zurichoises, avec la qualité suisse et l'efficacité valaisanne.",
+        "Zurich accueille Google, Meta, Apple, UBS et des centaines de startups fintech. Nous développons des plateformes web sur mesure, des outils basés sur l'IA et des intégrations d'entreprise pour les sociétés zurichoises, avec la qualité suisse et l'efficacité valaisanne.",
       keyIndustries: ['Fintech', 'Banque', 'Crypto', "SaaS d'entreprise", 'Deep Tech'],
       highlights: [
         {
@@ -100,7 +100,7 @@ const record: LocationRecord = {
       region: 'Cantone di Zurigo',
       tagline: 'Software su misura per la capitale tecnologica della Svizzera',
       description:
-        "A Zurigo hanno sede Google, Meta, Apple, UBS, Credit Suisse e centinaia di startup fintech. Sviluppiamo piattaforme web su misura, strumenti basati sull'IA e integrazioni aziendali per le imprese zurighesi, con qualità svizzera ed efficienza vallesana.",
+        "A Zurigo hanno sede Google, Meta, Apple, UBS e centinaia di startup fintech. Sviluppiamo piattaforme web su misura, strumenti basati sull'IA e integrazioni aziendali per le imprese zurighesi, con qualità svizzera ed efficienza vallesana.",
       keyIndustries: ['Fintech', 'Banche', 'Cripto', 'SaaS aziendale', 'Deep Tech'],
       highlights: [
         {

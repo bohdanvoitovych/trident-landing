@@ -4,17 +4,17 @@ export const posts: BlogPostRecord[] = [
   {
     slug: "microservices-vs-monolith-startup-mvp",
     image: "/images/stock/water-telemetry.jpg",
-    title: "Microservices vs Monolith for Startup MVPs: Stop Defaulting to the Wrong One",
-    excerpt: "Microservices are overengineered for most MVPs. But \"just build a monolith\" also fails teams that can't refactor later. Here's how to choose the right architecture for where you actually are.",
-    content: `## The Microservices Mistake
+    title: "Microservices vs monolith for startup MVPs: stop defaulting to the wrong one",
+    excerpt: "Microservices are overengineered for most MVPs. But \"just build a monolith\" also fails teams that can't refactor later. This is how to choose an architecture for the stage you are at.",
+    content: `## The microservices mistake
 
 Startups read about Netflix and Uber, attend talks about distributed systems, and build their MVP as 12 services communicating over Kafka. Six months later, they're debugging distributed transactions and can't ship features.
 
-The pattern repeats because microservices solve real problems — just not the problems a 3-person team building an MVP actually has.
+The pattern repeats because microservices solve real problems, just not the ones a 3-person team building an MVP has.
 
-## What Problems Each Architecture Solves
+## What problems each architecture solves
 
-| Problem | Monolith Solves It | Microservices Solves It |
+| Problem | Monolith solves it | Microservices solve it |
 |---|---|---|
 | Fast feature iteration | Yes | No (deployment overhead) |
 | Team autonomy at scale (10+ teams) | No | Yes |
@@ -22,11 +22,11 @@ The pattern repeats because microservices solve real problems — just not the p
 | Simple debugging and tracing | Yes | No |
 | Technology diversity | No | Yes |
 | Deployment simplicity | Yes | No |
-| Organizational complexity | No | Yes (Conway's Law) |
+| Organisational complexity | No | Yes (Conway's Law) |
 
-The decisive observation: **the problems microservices solve are organizational, not technical**. They matter when you have enough teams that coordination becomes the bottleneck.
+The key point: **the problems microservices solve are organisational, not technical**. They matter when you have enough teams that coordination becomes the bottleneck.
 
-## The Modular Monolith: The Middle Path
+## The modular monolith: the middle path
 
 The architecture we recommend for most Swiss startup MVPs is the **modular monolith**:
 
@@ -47,17 +47,17 @@ The rules:
 - No cross-module direct DB queries (only public APIs)
 - Each module owns its database tables
 
-This gives you monolith deployment simplicity today and a clear extraction path to services later — if you ever actually need it.
+This gives you monolith deployment simplicity today and a clear extraction path to services later, if you ever need it.
 
-## When Microservices Are Justified from Day One
+## When microservices are justified from day one
 
-Genuinely justified for MVPs:
-- **Separate security domains** — payment processing that must be isolated for PCI-DSS
-- **Truly different scaling requirements** — video processing that needs GPU clusters separate from web API
-- **Regulatory isolation** — FADP-sensitive data that must not touch the main application
-- **Multiple client teams** — different companies building on your platform from day one
+Justified for MVPs only in these cases:
+- Separate security domains: payment processing that must be isolated for PCI-DSS
+- Different scaling needs: video processing that needs GPU clusters separate from the web API
+- Regulatory isolation: FADP-sensitive data that must not touch the main application
+- Multiple client teams: different companies building on your platform from day one
 
-## The Extraction Path
+## The extraction path
 
 If you build a modular monolith correctly, extracting a service later is a 2-week project, not a 6-month rewrite:
 
@@ -67,13 +67,13 @@ If you build a modular monolith correctly, extracting a service later is a 2-wee
 4. Route traffic to the service
 5. Remove the module from the monolith
 
-This only works if you maintained the module boundaries throughout development. Skip that discipline and you've built a distributed monolith — the worst of both worlds.
+This only works if you maintained the module boundaries throughout development. Skip that discipline and you have built a distributed monolith, with the costs of both.
 
-## Practical Recommendation
+## Practical recommendation
 
 Build a modular monolith. Enforce module boundaries in code review from day one. Plan your service extraction points but don't extract until you have load data proving you need it.
 
-The Swiss engineering maxim applies: don't pay for infrastructure complexity you don't yet need.`,
+The rule: don't pay for infrastructure complexity you don't yet need.`,
     author: "Trident Software Team",
     authorRole: "Engineering Blog",
     publishedAt: "2026-02-19",
@@ -105,7 +105,7 @@ The Swiss engineering maxim applies: don't pay for infrastructure complexity you
       },
       {
         question: "What about GraphQL federation for microservices?",
-        answer: "GraphQL federation is the API gateway pattern for microservices at scale. It's powerful and also complex. Don't introduce it until you have the service complexity that justifies it — typically 5+ services with overlapping data models.",
+        answer: "GraphQL federation is the API gateway pattern for microservices at scale. It's powerful and also complex. Don't introduce it until you have the service complexity that justifies it, typically 5+ services with overlapping data models.",
       },
     ],
     translations: {
@@ -396,22 +396,22 @@ Vale la massima dell'ingegneria svizzera: non pagare per una complessità infras
       },
     },
     meta: {
-      title: "Microservices vs Monolith for Startup MVPs — Trident Software Blog",
+      title: "Microservices vs monolith for startup MVPs | Trident Software Blog",
       description: "Why microservices are wrong for most MVPs, what problems they actually solve, the modular monolith middle path, and when services are truly justified.",
     },
   },
   {
     slug: "tailwind-css-design-systems-product-companies",
     image: "/images/stock/water-device.jpg",
-    title: "Tailwind CSS Design Systems for Product Companies: Beyond Utility Classes",
-    excerpt: "Utility-first CSS scales surprisingly well when you build a proper design system on top of it. Here's how product teams use Tailwind tokens, component libraries, and constraints to ship consistent UI fast.",
-    content: `## Why Tailwind Alone Is Not a Design System
+    title: "Tailwind CSS design systems for product companies: beyond utility classes",
+    excerpt: "Utility-first CSS scales surprisingly well when you build a proper design system on top of it. This is how product teams use Tailwind tokens, component libraries and constraints to ship consistent UI fast.",
+    content: `## Why Tailwind alone is not a design system
 
-Tailwind CSS gives you a constraint-based toolkit — spacing scale, color palette, typography — but a bag of utility classes is not a design system. Without structure, teams accumulate one-off colors, inconsistent spacing combinations, and components that diverge between engineers.
+Tailwind CSS gives you a constraint-based toolkit (spacing scale, colour palette, typography), but a bag of utility classes is not a design system. Without structure, teams accumulate one-off colours, inconsistent spacing combinations, and components that diverge between engineers.
 
-The good news: Tailwind's configuration model is exactly the right foundation for a proper design system. The work is in the layer above the utilities.
+The good news: Tailwind's configuration model is the right foundation for a proper design system. The work is in the layer above the utilities.
 
-## Step 1: Lock Your Design Tokens in tailwind.config
+## Step 1: Lock your design tokens in tailwind.config
 
 Every design decision that should be consistent across the product becomes a named token:
 
@@ -447,7 +447,7 @@ export default {
 
 The rule: **never use raw hex values in components**. Use only token names. This makes global updates a one-line config change.
 
-## Step 2: Semantic Component Variants
+## Step 2: Semantic component variants
 
 Avoid condition-heavy inline classes. Define a small set of variants per component using \`cva\` (class-variance-authority):
 
@@ -476,24 +476,24 @@ export const buttonVariants = cva(
 
 This pattern keeps component APIs clean, eliminates ternary chains in JSX, and makes variants discoverable via TypeScript autocomplete.
 
-## Step 3: The Component Audit Workflow
+## Step 3: The component audit workflow
 
 For existing codebases with Tailwind sprawl, run a component audit:
 
 | Issue | Detection | Fix |
 |---|---|---|
-| Hardcoded hex colors | grep -r '#[0-9A-Fa-f]{6}' | Replace with token |
+| Hardcoded hex colours | grep -r '#[0-9A-Fa-f]{6}' | Replace with token |
 | Duplicate spacing combos | Audit with Tailwind Radar | Extract to component |
-| Inconsistent border-radius | List all rounded-* usages | Standardize to 2-3 values |
+| Inconsistent border-radius | List all rounded-* usages | Standardise to 2-3 values |
 | One-off font sizes | List all text-* overrides | Remove or add to config |
 
-## Storybook as Living Documentation
+## Storybook as living documentation
 
-Every component variant should have a Storybook story. For product companies, this is not optional — it's the contract between design and engineering. When a designer asks "does we have a secondary button with icon?", the Storybook answer is authoritative.
+Every component variant should have a Storybook story. For product companies, this is not optional. It is the contract between design and engineering. When a designer asks "do we have a secondary button with icon?", the Storybook answer is authoritative.
 
 The pattern that works: generate stories automatically from your CVA variant definitions. One config object → one story per variant combination.
 
-## Practical Results
+## Practical results
 
 Teams that follow this pattern consistently report: 40% faster component development after setup, near-zero UI inconsistencies in QA, and junior engineers shipping pixel-perfect components without senior review on every PR.`,
     author: "Trident Software Team",
@@ -519,7 +519,7 @@ Teams that follow this pattern consistently report: 40% faster component develop
       },
       {
         question: "What is the best Tailwind component library to build on top of?",
-        answer: "shadcn/ui has become the de facto standard for 2025–2026 React product development. It gives you unstyled primitives you own and can extend — unlike Chakra or MUI which fight you when you diverge from their defaults. Pair it with Radix UI primitives for accessibility.",
+        answer: "shadcn/ui has become the de facto standard for 2025–2026 React product development. It gives you unstyled primitives you own and can extend, unlike Chakra or MUI, which fight you when you diverge from their defaults. Pair it with Radix UI primitives for accessibility.",
       },
       {
         question: "How do we enforce design tokens across a large team?",
@@ -527,7 +527,7 @@ Teams that follow this pattern consistently report: 40% faster component develop
       },
       {
         question: "Can Tailwind handle dark mode properly?",
-        answer: "Yes. Use the `dark:` variant systematically. The key is mapping your semantic tokens to light/dark values in your CSS variables and referencing those variables in tailwind.config — never hardcode two separate color sets in components.",
+        answer: "Yes. Use the `dark:` variant systematically. The key is mapping your semantic tokens to light/dark values in your CSS variables and referencing those variables in tailwind.config. Never hardcode two separate colour sets in components.",
       },
     ],
     translations: {
@@ -887,22 +887,22 @@ I team che seguono questo pattern con costanza riportano uno sviluppo dei compon
       },
     },
     meta: {
-      title: "Tailwind CSS Design Systems for Product Companies — Trident Software Blog",
+      title: "Tailwind CSS design systems for product companies | Trident Software Blog",
       description: "How to build a real design system on Tailwind CSS: design tokens, CVA component variants, Storybook documentation, and component audit workflow.",
     },
   },
   {
     slug: "api-gateway-patterns-b2b-integrations",
     image: "/images/stock/ai-agent.jpg",
-    title: "API Gateway Patterns for B2B Integrations: What to Standardize and What to Leave Alone",
+    title: "API gateway patterns for B2B integrations: what to standardise and what to leave alone",
     excerpt: "B2B integrations fail when teams treat every partner as a custom project. The right API gateway pattern gives you standard auth, rate limiting, and observability while staying flexible for partner-specific schemas.",
-    content: `## Why B2B Integrations Break at Scale
+    content: `## Why B2B integrations break at scale
 
 A single partner integration is straightforward. Ten partners is a maintenance nightmare. The failure pattern is consistent: each integration gets built by whoever was available, with whatever auth method the partner needed, with bespoke error handling that only the original developer understands.
 
-An API gateway layer solves this by defining what must be standardized and explicitly allowing variation where it's necessary.
+An API gateway layer solves this. It defines what must be standardised and allows variation only where it is necessary.
 
-## The Four Layers of a B2B Gateway
+## The four layers of a B2B gateway
 
 \`\`\`
 Partner System
@@ -920,11 +920,11 @@ Partner System
 [4. Core Business Logic]     ← Your domain, clean of partner concerns
 \`\`\`
 
-Layers 1 and 2 must be identical for every partner. Layers 3 is where partner-specific adapters live. Layer 4 never sees partner-specific code.
+Layers 1 and 2 must be identical for every partner. Layer 3 is where partner-specific adapters live. Layer 4 never sees partner-specific code.
 
-## Authentication Patterns by Partner Type
+## Authentication patterns by partner type
 
-| Partner Type | Recommended Auth | Notes |
+| Partner type | Recommended auth | Notes |
 |---|---|---|
 | Large enterprise (SAP, Oracle users) | OAuth 2.0 Client Credentials | Standard, well-supported |
 | Mid-market SaaS | API key + HMAC signature | Simple, auditable |
@@ -932,7 +932,7 @@ Layers 1 and 2 must be identical for every partner. Layers 3 is where partner-sp
 | Webhooks inbound | Shared secret + timestamp validation | Prevent replay attacks |
 | Real-time bidirectional | WebSocket + JWT | For sub-100ms requirements |
 
-## Rate Limiting That Partners Respect
+## Rate limiting that partners respect
 
 Soft limits with clear feedback work better than hard blocks that cause partner support tickets:
 
@@ -954,7 +954,7 @@ X-RateLimit-Window: 3600
 
 Partners who receive clear rate limit headers build backoff logic themselves. Partners who receive opaque 429 errors open support tickets.
 
-## The Adapter Pattern for Schema Normalization
+## The adapter pattern for schema normalisation
 
 Each partner gets an adapter that maps their schema to your canonical model:
 
@@ -981,7 +981,7 @@ class SAPOrderAdapter implements OrderAdapter {
 
 This pattern keeps your business logic clean and makes adding a new partner a matter of writing one adapter, not modifying core code.
 
-## Observability Non-Negotiables
+## Observability non-negotiables
 
 Every B2B API call must log: partner ID, endpoint, request latency, response status, payload size (not contents), and correlation ID. When a partner reports "your API returned an error Tuesday at 14:32," you need to find that log in 30 seconds.
 
@@ -1005,11 +1005,11 @@ Use structured logging with a consistent schema from day one. Retrofitting obser
     faq: [
       {
         question: "Should we use a managed API gateway like Kong or AWS API Gateway?",
-        answer: "For 5+ partners with serious traffic, yes — the operational overhead of building rate limiting, auth, and observability yourself outweighs licensing costs. Kong (self-hosted) or AWS API Gateway are both solid choices. For 1–4 partners, a thin middleware layer in your application is usually sufficient.",
+        answer: "For 5+ partners with serious traffic, yes. The operational overhead of building rate limiting, auth, and observability yourself outweighs licensing costs. Kong (self-hosted) or AWS API Gateway are both solid choices. For 1–4 partners, a thin middleware layer in your application is usually sufficient.",
       },
       {
         question: "How do we handle partner schema changes without breaking our system?",
-        answer: "The adapter pattern is exactly for this. When a partner changes their schema, only their adapter changes — not your core business logic. Add schema versioning to the adapter: PartnerAdapterV1, PartnerAdapterV2. Maintain both until migration is complete.",
+        answer: "The adapter pattern is exactly for this. When a partner changes their schema, only their adapter changes, not your core business logic. Add schema versioning to the adapter: PartnerAdapterV1, PartnerAdapterV2. Maintain both until migration is complete.",
       },
       {
         question: "What is the right SLA to offer B2B partners for API availability?",
@@ -1358,22 +1358,22 @@ Usa un logging strutturato con uno schema coerente fin dal primo giorno. Aggiung
       },
     },
     meta: {
-      title: "API Gateway Patterns for B2B Integrations — Trident Software Blog",
-      description: "Standardize B2B integrations with the right API gateway pattern: auth layers by partner type, rate limiting, schema normalization, and observability.",
+      title: "API gateway patterns for B2B integrations | Trident Software Blog",
+      description: "Standardise B2B integrations with the right API gateway pattern: auth layers by partner type, rate limiting, schema normalisation, and observability.",
     },
   },
   {
     slug: "load-testing-k6-swiss-ecommerce",
     image: "/images/stock/logistics.jpg",
-    title: "Load Testing with k6 for Swiss E-Commerce: Preparing for Black Friday Traffic",
-    excerpt: "k6 is the most developer-friendly load testing tool available in 2026. Here's how Swiss e-commerce teams use it to find capacity limits before peak sales events — and what fixes actually help.",
-    content: `## Why Load Testing Gets Skipped
+    title: "Load testing with k6 for Swiss e-commerce: preparing for Black Friday traffic",
+    excerpt: "k6 is the most developer-friendly load testing tool available in 2026. This is how Swiss e-commerce teams use it to find capacity limits before peak sales events, and which fixes help.",
+    content: `## Why load testing gets skipped
 
 The most common answer when I ask e-commerce teams about load testing: "We planned to but never got around to it." The second most common: "We did a test once, it passed, and we moved on."
 
-Neither approach prepares you for the spike when a newsletter goes out to 80,000 subscribers or a product goes viral on social media. Black Friday traffic for Swiss e-commerce typically peaks at 8–15× baseline — a number that surprises teams who haven't tested it.
+Neither approach prepares you for the spike when a newsletter goes out to 80,000 subscribers or a product goes viral on social media. Black Friday traffic for Swiss e-commerce typically peaks at 8–15× baseline. That number surprises teams who haven't tested for it.
 
-## k6 Basics: Your First Load Test in 10 Minutes
+## k6 basics: your first load test in 10 minutes
 
 Install and run:
 
@@ -1412,9 +1412,9 @@ export default function () {
 }
 \`\`\`
 
-## Critical Scenarios to Test for E-Commerce
+## Critical scenarios to test for e-commerce
 
-| Scenario | Target Users | What to Watch |
+| Scenario | Target users | What to watch |
 |---|---|---|
 | Product listing browse | 500 concurrent | CDN hit rate, DB query count |
 | Product detail page | 300 concurrent | Image serving, related products query |
@@ -1424,21 +1424,21 @@ export default function () {
 
 Run these separately first, then combine them in a realistic mixed-traffic scenario (70% browse, 20% product detail, 7% cart, 3% checkout).
 
-## What Actually Fixes Performance Under Load
+## What fixes performance under load
 
-After load testing 12 Swiss e-commerce platforms, the bottlenecks are predictable:
+We have load tested 12 Swiss e-commerce platforms. The bottlenecks are predictable:
 
-1. **N+1 queries** — Product listings that hit the DB once per product. Fix: eager load with joins.
-2. **Session store saturation** — Redis connections exhausted at 200+ concurrent users. Fix: connection pooling.
-3. **Synchronous image processing** — Resizing on upload, not ahead of time. Fix: pre-generate all sizes.
-4. **No CDN for static assets** — Every JS/CSS/image served from the app server. Fix: Cloudflare or Fastly.
-5. **Missing database indexes** — Category + price + availability filter queries doing full table scans. Fix: composite indexes.
+1. N+1 queries: product listings hit the DB once per product. Fix: eager load with joins.
+2. Session store saturation: Redis connections run out at 200+ concurrent users. Fix: connection pooling.
+3. Synchronous image processing: resizing on upload, not ahead of time. Fix: pre-generate all sizes.
+4. No CDN for static assets: every JS/CSS/image is served from the app server. Fix: Cloudflare or Fastly.
+5. Missing database indexes: category + price + availability filters do full table scans. Fix: composite indexes.
 
-## Swiss Hosting Considerations
+## Swiss hosting considerations
 
-Swiss data residency requirements affect architecture choices. Cloudflare has a Swiss data localization option. AWS Zurich (eu-central-2) and Exoscale (Lausanne/Geneva) are the primary Swiss cloud options. Load test against production or a staging environment in the same region — latency from Zurich to Frankfurt is real and will affect your numbers.
+Swiss data residency requirements affect architecture choices. Cloudflare has a Swiss data localisation option. AWS Zurich (eu-central-2) and Exoscale (Lausanne/Geneva) are the primary Swiss cloud options. Load test against production or a staging environment in the same region. Latency from Zurich to Frankfurt is real and will affect your numbers.
 
-## Setting Pass/Fail Criteria
+## Setting pass/fail criteria
 
 Define thresholds before the test, not after:
 - p(95) response time < 500ms for product pages
@@ -1466,11 +1466,11 @@ If your system fails these under test, you have weeks to fix it before the actua
     faq: [
       {
         question: "How is k6 different from JMeter or Locust?",
-        answer: "k6 uses JavaScript for test scripts (familiar to most web developers), has excellent CLI output, and integrates natively with Grafana for visualization. JMeter has more plugins but an outdated XML-based config. Locust uses Python and is fine for Python teams. For JavaScript/TypeScript shops, k6 is the fastest to adopt.",
+        answer: "k6 uses JavaScript for test scripts (familiar to most web developers), has excellent CLI output, and integrates natively with Grafana for visualisation. JMeter has more plugins but an outdated XML-based config. Locust uses Python and is fine for Python teams. For JavaScript/TypeScript shops, k6 is the fastest to adopt.",
       },
       {
         question: "Should we load test against production or staging?",
-        answer: "Staging if it matches production infrastructure. The most common mistake is load testing a staging environment with 1/4 the RAM and a shared database — the results are meaningless. Either match your staging infrastructure or test against production with a feature flag limiting the test traffic.",
+        answer: "Staging if it matches production infrastructure. The most common mistake is load testing a staging environment with 1/4 the RAM and a shared database; the results are meaningless. Either match your staging infrastructure or test against production with a feature flag limiting the test traffic.",
       },
       {
         question: "What is a realistic baseline for a Swiss e-commerce site?",
@@ -1478,11 +1478,11 @@ If your system fails these under test, you have weeks to fix it before the actua
       },
       {
         question: "How do we test without affecting real users or orders?",
-        answer: "Use a dedicated test account with test products at CHF 0.01 price and a sandbox payment gateway. Tag all test sessions with a header and filter them from analytics. Run tests between 02:00–05:00 CET to minimize real user impact.",
+        answer: "Use a dedicated test account with test products at CHF 0.01 price and a sandbox payment gateway. Tag all test sessions with a header and filter them from analytics. Run tests between 02:00–05:00 CET to minimise real user impact.",
       },
     ],
     meta: {
-      title: "Load Testing with k6 for Swiss E-Commerce — Trident Software Blog",
+      title: "Load testing with k6 for Swiss e-commerce | Trident Software Blog",
       description: "How Swiss e-commerce teams use k6 for load testing: checkout-flow scenarios, common bottlenecks, hosting considerations, and pass/fail thresholds.",
     },
     translations: {
@@ -1812,15 +1812,15 @@ Se il tuo sistema non rispetta queste soglie nel test, hai ancora settimane per 
   {
     slug: "typescript-migration-legacy-codebases",
     image: "/images/stock/iot-device.jpg",
-    title: "TypeScript Migration Strategies for Legacy Codebases: The Incremental Path That Works",
-    excerpt: "Rewriting everything at once fails. The incremental TypeScript migration — strict mode boundary by boundary — is how real teams ship the migration without stopping feature development.",
-    content: `## Why Big-Bang TypeScript Migrations Fail
+    title: "TypeScript migration strategies for legacy codebases: the incremental path that works",
+    excerpt: "Rewriting everything at once fails. An incremental TypeScript migration, tightening strict mode one boundary at a time, lets teams finish without stopping feature development.",
+    content: `## Why big-bang TypeScript migrations fail
 
 The appeal of a dedicated "TypeScript sprint" is real: two weeks, convert everything, done. In practice, a 50K-line JavaScript codebase takes 3–6 months of dedicated effort to migrate properly. During that time, features pile up in a branch that diverges from main, merge conflicts multiply, and the team loses momentum.
 
 The incremental approach is harder to plan but consistently more successful.
 
-## Phase 1: Setup Without Breaking Anything
+## Phase 1: Set up without breaking anything
 
 Start with the most permissive configuration possible:
 
@@ -1843,7 +1843,7 @@ Start with the most permissive configuration possible:
 
 With \`allowJs: true\` and \`checkJs: false\`, TypeScript compiles your JS files without complaining. You can now migrate file by file, renaming \`.js\` to \`.ts\` and adding types as you go.
 
-## Phase 2: Prioritize High-Value Files First
+## Phase 2: Prioritise high-value files first
 
 Not all files benefit equally from types. Migrate in this order:
 
@@ -1853,11 +1853,11 @@ Not all files benefit equally from types. Migrate in this order:
 | 2 | Data models, domain types | Shared types propagate benefits across codebase |
 | 3 | Utility functions | High reuse → types help many callers |
 | 4 | React components (props) | PropTypes replacement, better DX |
-| 5 (lowest) | Config files, scripts | Low leverage, migrate last |
+| 5 (lowest) | Config files, scripts | Low payoff, migrate last |
 
-## The \`any\` Budget
+## The \`any\` budget
 
-Allow yourself a controlled use of \`any\` during migration — but track it:
+Allow yourself a controlled use of \`any\` during migration, but track it:
 
 \`\`\`bash
 # Count any usages — set a budget and reduce it each sprint
@@ -1866,7 +1866,7 @@ grep -r ': any' src --include="*.ts" --include="*.tsx" | wc -l
 
 Start with however many you have, and require that each PR either reduces the count or holds it flat. Never allow PRs that increase it.
 
-## Phase 3: Tighten Strictness Boundary by Boundary
+## Phase 3: Tighten strictness boundary by boundary
 
 Once 80% of files are TypeScript, enable strict options incrementally:
 
@@ -1882,9 +1882,9 @@ Once 80% of files are TypeScript, enable strict options incrementally:
 }
 \`\`\`
 
-Enable one option, fix all errors it reveals, commit, repeat. Don't enable two options simultaneously — the error count explodes and the team loses confidence.
+Enable one option, fix all errors it reveals, commit, repeat. Don't enable two options at once. The error count explodes and the team loses confidence.
 
-## Common Patterns for Hard-to-Type Code
+## Common patterns for hard-to-type code
 
 **Third-party libraries without types:**
 \`\`\`bash
@@ -1902,7 +1902,7 @@ function isUserObject(val: unknown): val is { id: string; email: string } {
 }
 \`\`\`
 
-## Realistic Timeline
+## Realistic timeline
 
 For a 50K-line JavaScript codebase with a 2-developer team:
 - Phase 1 setup: 1 day
@@ -1930,15 +1930,15 @@ The teams that succeed treat it as ongoing hygiene, not a project with a deadlin
     faq: [
       {
         question: "Should we use strict: true from the start?",
-        answer: "For a greenfield project, yes — start strict and never relax it. For a migration, no — start permissive and tighten incrementally. Enabling strict: true on a 50K-line JavaScript codebase will produce thousands of errors and kill momentum.",
+        answer: "For a greenfield project, yes: start strict and never relax it. For a migration, no: start permissive and tighten incrementally. Enabling strict: true on a 50K-line JavaScript codebase will produce thousands of errors and kill momentum.",
       },
       {
         question: "How do we handle third-party libraries that don't have TypeScript types?",
-        answer: "Check DefinitelyTyped first (npm install @types/package-name). If no community types exist, write a minimal declaration file (declare module \"package-name\") that types only the functions you actually use. Do not use @ts-ignore — it hides future breakage.",
+        answer: "Check DefinitelyTyped first (npm install @types/package-name). If no community types exist, write a minimal declaration file (declare module \"package-name\") that types only the functions you actually use. Do not use @ts-ignore; it hides future breakage.",
       },
       {
         question: "What TypeScript version should we target in 2026?",
-        answer: "TypeScript 5.x — specifically 5.5 or later for the improved type narrowing and decorator support. Avoid pinning to a minor version; TypeScript patch releases are safe to update continuously.",
+        answer: "TypeScript 5.x, specifically 5.5 or later for the improved type narrowing and decorator support. Avoid pinning to a minor version; TypeScript patch releases are safe to update continuously.",
       },
       {
         question: "Is a TypeScript migration worth the investment for a stable legacy app?",
@@ -2320,22 +2320,22 @@ I team che ci riescono trattano la migrazione come igiene continua, non come un 
       },
     },
     meta: {
-      title: "TypeScript Migration for Legacy Codebases — Trident Software Blog",
-      description: "Incremental TypeScript migration strategy: permissive Phase 1 setup, file prioritization by value, any-budget tracking, and staged strict mode activation.",
+      title: "TypeScript migration for legacy codebases | Trident Software Blog",
+      description: "Incremental TypeScript migration strategy: permissive Phase 1 setup, file prioritisation by value, any-budget tracking, and staged strict mode activation.",
     },
   },
   {
     slug: "swiss-startup-tech-stack-2026",
     image: "/images/stock/b2b-portal.jpg",
-    title: "Swiss Startup Tech Stack Recommendations 2026: What We'd Choose Today",
-    excerpt: "After delivering 30+ projects for Swiss startups and SMEs, here's the technology stack we recommend for new projects in 2026 — and the reasoning behind each choice.",
-    content: `## Why Stack Choices Matter More for Small Teams
+    title: "Swiss startup tech stack recommendations 2026: what we'd choose today",
+    excerpt: "We have delivered 30+ projects for Swiss startups and SMEs. This is the stack we recommend for new projects in 2026, and the reasoning behind each choice.",
+    content: `## Why stack choices matter more for small teams
 
 A large company can afford to carry a framework that has been superseded. A 5-person startup cannot. Tech debt in the wrong stack compounds: hiring gets harder, security patches get skipped, and integrations with modern tools become painful.
 
 These recommendations are for Swiss startups and SMEs building in 2026, with teams of 2–15 engineers.
 
-## The Core Stack We Recommend
+## The core stack we recommend
 
 | Layer | Recommendation | Alternatives | Avoid |
 |---|---|---|---|
@@ -2353,21 +2353,21 @@ These recommendations are for Swiss startups and SMEs building in 2026, with tea
 ## Mobile: React Native or Flutter?
 
 For Swiss apps requiring both iOS and Android:
-- **React Native (Expo)** — for web teams extending to mobile. Code sharing with Next.js front-end.
-- **Flutter** — for mobile-first products requiring pixel-perfect custom UI.
+- React Native (Expo): for web teams extending to mobile. Code sharing with the Next.js front-end.
+- Flutter: for mobile-first products that need pixel-perfect custom UI.
 
-We lean React Native for 70% of projects — the web team can contribute, and Expo's managed workflow has removed most pain points.
+We choose React Native for 70% of projects. The web team can contribute, and Expo's managed workflow has removed most pain points.
 
-## Infrastructure for Swiss Compliance
+## Infrastructure for Swiss compliance
 
 Swiss data residency is a real requirement for healthcare, finance, and public sector work:
 
-- **Cloud:** AWS eu-central-2 (Zurich) or Exoscale (Swiss-owned)
-- **CDN:** Cloudflare with Swiss data localization, or Fastly
-- **Deployment:** Docker Compose + Kamal for small teams, ECS or Kubernetes for larger
-- **CI/CD:** GitHub Actions or GitLab CI — both are fine
+- Cloud: AWS eu-central-2 (Zurich) or Exoscale (Swiss-owned)
+- CDN: Cloudflare with Swiss data localisation, or Fastly
+- Deployment: Docker Compose + Kamal for small teams, ECS or Kubernetes for larger ones
+- CI/CD: GitHub Actions or GitLab CI; both are fine
 
-## AI Integration in 2026
+## AI integration in 2026
 
 Every new product should have an AI integration plan. Our default recommendation:
 
@@ -2378,14 +2378,14 @@ Vector DB → pgvector (in existing PostgreSQL) or Qdrant
 On-premise → Ollama + Llama 3.3 for revFADP-sensitive data
 \`\`\`
 
-## What We've Stopped Recommending
+## What we've stopped recommending
 
-- **GraphQL for new projects** — REST + tRPC covers 95% of use cases with less complexity
-- **Kubernetes for teams under 10** — operational overhead is not worth it
-- **Supabase as primary database** — vendor lock-in risk for core data
-- **Vercel for Swiss compliance projects** — data residency guarantees are limited
+- GraphQL for new projects: REST + tRPC covers 95% of use cases with less complexity
+- Kubernetes for teams under 10: the operational overhead is not worth it
+- Supabase as the primary database: vendor lock-in risk for core data
+- Vercel for Swiss compliance projects: data residency guarantees are limited
 
-## Budget Estimates for a Swiss MVP
+## Budget estimates for a Swiss MVP
 
 A typical B2B SaaS MVP with our recommended stack costs CHF 3,000–8,000/year in infrastructure:
 - Hetzner or AWS (smallest production setup): CHF 80–200/month
@@ -2425,7 +2425,7 @@ Start small. Add capacity when you have traffic data proving you need it.`,
       },
       {
         question: "How do we handle Swiss German, French, and Italian localisation from day one?",
-        answer: "Use next-intl for Next.js projects — it handles App Router well, supports RTL if needed, and has good TypeScript integration. Structure your message keys by feature domain, not by page — it scales better as the app grows.",
+        answer: "Use next-intl for Next.js projects. It handles App Router well, supports RTL if needed, and has good TypeScript integration. Structure your message keys by feature domain, not by page; it scales better as the app grows.",
       },
     ],
     translations: {
@@ -2707,22 +2707,22 @@ Parti in piccolo. Aggiungi capacità quando i dati di traffico dimostrano che ti
       },
     },
     meta: {
-      title: "Swiss Startup Tech Stack Recommendations 2026 — Trident Software Blog",
+      title: "Swiss startup tech stack recommendations 2026 | Trident Software Blog",
       description: "Tech stack recommendations for Swiss startups in 2026: frontend, backend, database, auth, infrastructure, AI integration, and what we've stopped recommending.",
     },
   },
   {
     slug: "websocket-realtime-nextjs",
     image: "/images/stock/clinic.jpg",
-    title: "WebSocket Real-Time Features in Next.js: A Practical Implementation Guide",
-    excerpt: "Next.js API routes are stateless — they're the wrong abstraction for WebSockets. Here's the architecture that actually works: a standalone WebSocket server alongside your Next.js app, connected through a clean event bus.",
-    content: `## The Next.js WebSocket Misconception
+    title: "WebSocket real-time features in Next.js: a practical implementation guide",
+    excerpt: "Next.js API routes are stateless, so they are the wrong abstraction for WebSockets. The architecture that works is a standalone WebSocket server next to your Next.js app, connected through an event bus.",
+    content: `## The Next.js WebSocket misconception
 
-The first thing developers try: WebSockets in Next.js API routes. This fails because API routes are serverless functions — they spin up, handle a request, and terminate. A persistent WebSocket connection needs a persistent process.
+The first thing developers try: WebSockets in Next.js API routes. This fails because API routes are serverless functions: they spin up, handle a request, and terminate. A persistent WebSocket connection needs a persistent process.
 
-The correct architecture separates concerns cleanly.
+The correct architecture keeps these concerns apart.
 
-## Architecture Overview
+## Architecture overview
 
 \`\`\`
 Browser
@@ -2739,7 +2739,7 @@ Browser
 
 The Next.js app handles all business logic, auth, and data. The WebSocket server handles connection management and message routing. They communicate through Redis pub/sub (for multi-instance deployments) or in-memory EventEmitter (for single-instance).
 
-## Setting Up the WebSocket Server
+## Setting up the WebSocket server
 
 \`\`\`typescript
 // server/websocket.ts
@@ -2780,7 +2780,7 @@ function broadcastToRoom(roomId: string, data: unknown) {
 }
 \`\`\`
 
-## Publishing Events from Next.js
+## Publishing events from Next.js
 
 From any Next.js API route or server action:
 
@@ -2806,7 +2806,7 @@ export async function POST(req: Request) {
 }
 \`\`\`
 
-## React Hook for WebSocket Connection
+## React hook for WebSocket connection
 
 \`\`\`typescript
 // hooks/useWebSocket.ts
@@ -2826,9 +2826,9 @@ export function useWebSocket(roomId: string) {
 }
 \`\`\`
 
-## Use Cases and Complexity Tradeoff
+## Use cases and complexity trade-off
 
-| Feature | WebSocket Needed? | Alternative |
+| Feature | WebSocket needed? | Alternative |
 |---|---|---|
 | Live order status | Yes | Server-Sent Events (simpler) |
 | Collaborative editing | Yes, bidirectional | — |
@@ -2856,11 +2856,11 @@ Server-Sent Events (SSE) are often the better choice for one-directional updates
     faq: [
       {
         question: "Can I use Socket.io instead of the raw ws library?",
-        answer: "Yes. Socket.io adds automatic reconnection, room management, and fallback to long-polling — which simplifies the server code. The tradeoff is a heavier client bundle and a custom protocol that requires the Socket.io client library. For internal apps, Socket.io is fine. For public APIs where third parties might connect, prefer raw WebSockets.",
+        answer: "Yes. Socket.io adds automatic reconnection, room management, and fallback to long-polling, which simplifies the server code. The trade-off is a heavier client bundle and a custom protocol that requires the Socket.io client library. For internal apps, Socket.io is fine. For public APIs where third parties might connect, prefer raw WebSockets.",
       },
       {
         question: "How do WebSockets work with Next.js deployed on Vercel?",
-        answer: "They don't — Vercel's serverless infrastructure doesn't support persistent connections. You need a separate WebSocket server hosted on a traditional compute instance (EC2, Hetzner, Fly.io). This is a genuine reason to self-host Next.js if real-time features are core to your product.",
+        answer: "They don't. Vercel's serverless infrastructure doesn't support persistent connections. You need a separate WebSocket server hosted on a traditional compute instance (EC2, Hetzner, Fly.io). This is a genuine reason to self-host Next.js if real-time features are core to your product.",
       },
       {
         question: "What is the difference between WebSockets and Server-Sent Events?",
@@ -3302,7 +3302,7 @@ Per aggiornamenti in una sola direzione, i Server-Sent Events (SSE) sono spesso 
       },
     },
     meta: {
-      title: "WebSocket Real-Time Features in Next.js — Trident Software Blog",
+      title: "WebSocket real-time features in Next.js | Trident Software Blog",
       description: "How to implement WebSocket real-time features alongside Next.js: standalone server, Redis pub/sub event bus, React hooks, and when to use SSE instead.",
     },
   },

@@ -4,52 +4,52 @@ export const posts: BlogPostRecord[] = [
   {
     slug: "the-power-of-outsourcing-unlocking-efficiency-and-innovation-in-short-term-projects",
     image: "/images/blog/the-power-of-outsourcing-unlocking-efficiency-and-innovation.jpg",
-    title: "The Power of Outsourcing: Unlocking Efficiency in Short-Term Projects",
-    excerpt: "For projects under two years, outsourcing typically saves 30–40% over in-house execution. Here's the cost-benefit analysis — with a real example showing $72,000 in savings.",
-    content: `## Strategic Outsourcing for Short-Term Projects
+    title: "The power of outsourcing: efficiency in short-term projects",
+    excerpt: "For projects under two years, outsourcing typically saves 30–40% over in-house execution. The cost-benefit analysis below includes a real example that saved $72,000.",
+    content: `## Outsourcing short-term projects
 
-Short-term projects — those not exceeding two years — demand agility, precision, and careful resource management. For most companies, outsourcing is the strategic advantage that makes the difference between on-time delivery and overrun.
+Short-term projects, those of two years or less, need speed, precision and careful resource management. For most companies, outsourcing is what separates on-time delivery from overrun.
 
-## Six Benefits of Outsourcing
+## Six benefits of outsourcing
 
-**1. Enhanced Cost-Effectiveness**
-Outsourcing transcends the hidden costs of recruitment, onboarding, training, hardware, and ongoing employment overhead. You pay for output, not for people.
+**1. Lower cost**
+Outsourcing avoids the hidden costs of recruitment, onboarding, training, hardware and ongoing employment overhead. You pay for output, not for people.
 
-**2. Faster Market Entry**
+**2. Faster market entry**
 External teams with proven experience in your domain compress timelines. No ramp-up, no knowledge gaps to fill.
 
-**3. Specialized Skill Access**
-Gain access to specialists — AI engineers, embedded systems developers, DevOps architects — without building those competencies in-house.
+**3. Access to specialist skills**
+Work with specialists, such as AI engineers, embedded systems developers and DevOps architects, without building those skills in-house.
 
-**4. Adaptive Capacity**
+**4. Flexible capacity**
 Scale the team up or down as project phases change. No hiring freezes, no difficult conversations about headcount.
 
-**5. Concentration on Core Activities**
+**5. Focus on core activities**
 Your internal team focuses on what they do best while the outsourced team handles the technical execution.
 
-**6. Enhanced Risk Management**
-Shared responsibilities dilute project risk. A reputable outsourcing partner has done this kind of project before.
+**6. Better risk management**
+Shared responsibility spreads project risk. A reputable outsourcing partner has done this kind of project before.
 
-## Real-World Cost Comparison
+## A real cost comparison
 
 **Project:** Website + ERP integration, 4 developers + 1 designer + 1 PM, 6 months
 
-**In-House Execution:**
-| Role | Monthly Cost |
+**In-house execution:**
+| Role | Monthly cost |
 |---|---|
 | 4 developers (at $7,000 each) | $28,000 |
 | Designer | $5,000 |
-| Project Manager | $4,000 |
-| **Total Monthly** | **$37,000** |
-| **Total 6 Months** | **$222,000** |
+| Project manager | $4,000 |
+| **Total monthly** | **$37,000** |
+| **Total 6 months** | **$222,000** |
 
-**Outsourcing Cost:** $150,000 comprehensive project fee
+**Outsourcing cost:** $150,000 all-in project fee
 
-**Savings: $72,000** — and that's before accounting for recruitment time, equipment, and benefits.
+**Savings: $72,000**, before recruitment time, equipment and benefits are counted.
 
-## When Outsourcing Makes Sense
+## When outsourcing makes sense
 
-Outsourcing delivers the most value when:
+Outsourcing delivers most value when:
 - The project has a defined scope with a clear end date
 - The technology stack requires specialists not available internally
 - Speed-to-market is more important than building long-term internal capability
@@ -71,7 +71,7 @@ Contact us to discuss your project scope and get a fixed-price proposal.`,
       "introducing-our-new-b2b-client-management-panel",
     ],
     meta: {
-      title: "Outsourcing for Short-Term Projects: Cost-Benefit Analysis — Trident Software Blog",
+      title: "Outsourcing for short-term projects: cost-benefit analysis | Trident Software Blog",
       description: "Outsourcing a 6-month development project saves $72,000 vs in-house execution. Detailed cost comparison and six strategic benefits of outsourcing.",
     },
     translations: {
@@ -257,9 +257,9 @@ Contattaci per parlare del tuo progetto e ricevere un'offerta a prezzo fisso.`,
   {
     slug: "introducing-our-new-b2b-client-management-panel",
     image: "/images/blog/introducing-our-new-b2b-client-management-panel.jpg",
-    title: "Introducing Our New B2B Client Management Panel",
+    title: "Introducing our new B2B client management panel",
     excerpt: "Managing B2B clients across distributors, dealers, and end-users is complex. Our new hierarchical management panel introduces 5-level access control and real-time monitoring for B2B networks.",
-    content: `## Are These Your Challenges?
+    content: `## Do these problems sound familiar?
 
 Managing B2B clients is complex and time-consuming. Common pain points:
 - Inconsistent onboarding processes for new partners
@@ -267,43 +267,43 @@ Managing B2B clients is complex and time-consuming. Common pain points:
 - Tracking rapidly changing roles and permissions
 - Sending timely notifications to the right parties
 - Understanding client activity across your network
-- Maintaining secure, organized data across distributors and dealers
+- Maintaining secure, organised data across distributors and dealers
 
-## 5-Level Hierarchical Access Control
+## 5-level hierarchical access control
 
-The core innovation is a five-level hierarchy that mirrors how B2B networks actually work:
+At its core is a five-level hierarchy that mirrors how B2B networks actually work:
 
-**Level 1 — Product Owner:** Top-level authority, supervises the entire system (distributors, dealers, customers, end-users), implements global changes.
+**Level 1, product owner:** Top-level authority, supervises the entire system (distributors, dealers, customers, end-users), implements global changes.
 
-**Level 2 — Distributor:** Oversees partners, maintains direct oversight over dealers and customers within their territory.
+**Level 2, distributor:** Oversees partners, maintains direct oversight over dealers and customers within their territory.
 
-**Level 3 — Dealer:** Intermediary between distributors and end-users, provides localized sales support.
+**Level 3, dealer:** Intermediary between distributors and end-users, provides localised sales support.
 
-**Level 4 — Customer:** Purchases products and equipment, views purchased products and related details.
+**Level 4, customer:** Purchases products and equipment, views purchased products and related details.
 
-**Level 5 — Consumer:** Restricted permissions, views product-specific details only.
+**Level 5, consumer:** Restricted permissions, views product-specific details only.
 
-## Key Features
+## Key features
 
-**Efficient Company Management**
-Create companies at any level and authorize lower-level entities to build their own networks. New partners onboard quickly with a standardized framework.
+**Company management**
+Create companies at any level and authorise lower-level entities to build their own networks. New partners onboard quickly with a standardised framework.
 
-**Dashboard and Monitoring**
+**Dashboard and monitoring**
 - Sort products and equipment by type, location, and status
 - Monitor contacts, partners, and products in real time
 - Filter by region, distributor, dealer, or equipment type
 
-**Customizable Subscriptions**
-From basic access to full data visibility — tailored per company, dealer, or customer account. No one-size-fits-all permissions.
+**Customisable subscriptions**
+From basic access to full data visibility, set per company, dealer or customer account. No one-size-fits-all permissions.
 
-## Problems Addressed
+## Problems addressed
 
 | Problem | Solution |
 |---|---|
 | Inefficient company management | Hierarchical control with bulk deactivation |
-| Complex monitoring | Intuitive dashboards with advanced filtering |
+| Complex monitoring | Clear dashboards with detailed filtering |
 | Limited visibility | Real-time data for proactive relationship management |
-| Inconsistent onboarding | Standardized framework for all new entities |
+| Inconsistent onboarding | Standardised framework for all new entities |
 | Access control challenges | Granular permissions based on role and level |
 
 This panel is available as a standalone product or as an integration layer for existing B2B platforms.`,
@@ -495,61 +495,61 @@ Il pannello è disponibile come prodotto a sé stante o come livello di integraz
       },
     },
     meta: {
-      title: "B2B Client Management Panel with 5-Level Access Control — Trident Software Blog",
-      description: "New B2B management panel with hierarchical access control across distributors, dealers, and customers. Real-time monitoring and custom subscriptions.",
+      title: "B2B client management panel with 5-level access control | Trident Software Blog",
+      description: "New B2B management panel with hierarchical access control across distributors, dealers and customers. Real-time monitoring and custom subscriptions.",
     },
   },
   {
     slug: "nft-in-game-trading-platforms",
     image: "/images/blog/nft-in-game-trading-platforms.jpg",
-    title: "NFT: In-Game Trading Platforms",
-    excerpt: "We expanded a gaming marketplace to support NFT investors (flippers) and players earning from their in-game skills — secured by smart contracts on Ethereum, Polygon, Solana, and BSC.",
-    content: `## Enhancing NFT Trading for Gaming Marketplaces
+    title: "NFT: in-game trading platforms",
+    excerpt: "We expanded a gaming marketplace to support NFT investors (flippers) and players earning from their in-game skills, secured by smart contracts on Ethereum, Polygon, Solana, and BSC.",
+    content: `## Extending NFT trading for gaming marketplaces
 
-This project expanded an existing marketplace for digital gaming assets to attract NFT investors and provide additional revenue opportunities for skilled gamers. The system supports NFT flippers — users investing in in-game assets for resale — with all transactions secured by smart contracts.
+This project expanded an existing marketplace for digital gaming assets to attract NFT investors and provide additional revenue opportunities for skilled gamers. The system supports NFT flippers, users who invest in in-game assets for resale, and secures every transaction with smart contracts.
 
-## How It Works
+## How it works
 
-**For NFT Investors (Flippers):**
+**For NFT investors (flippers):**
 - Create lots specifying games, required asset attributes, and payment terms
 - Retain and resell valuable assets after creation or enhancement
 - Smart contracts handle payment, rights transfer, and quality assurance automatically
 
-**For Players:**
+**For players:**
 - Earn income by fulfilling NFT lots using in-game expertise
 - Submit proposals; flippers review and select the best offer
-- Payment is guaranteed by smart contract — no trust required between parties
+- A smart contract guarantees payment, so no trust is needed between parties
 
-## The Smart Contract Flow
+## The smart contract flow
 
 1. Flipper creates a lot with defined terms (payment, quality requirements, rights transfer)
 2. Players submit proposals
-3. Flipper selects a proposal — smart contract locks payment
-4. Player fulfills the order in-game
+3. Flipper selects a proposal and the smart contract locks payment
+4. Player fulfils the order in-game
 5. Smart contract automatically transfers NFT ownership back to flipper upon completion
 6. Enhanced assets gain rarity and market value
 
-## Technology Stack
+## Technology stack
 
 **Blockchain:** Ethereum, Polygon, Solana, Binance Smart Chain
-**Cross-Chain:** Allbridge for multi-network compatibility
+**Cross-chain:** Allbridge for multi-network compatibility
 **Wallets:** MetaMask, Phantom, Trust Wallet via WalletConnect
 **Backend:** Python (FastAPI, Django), TypeScript/Node.js
 **Database:** PostgreSQL/MongoDB
 **Frontend:** React, Ethers.js, Web3.js, Flutter for mobile
 **Geolocation:** MaxMind for location-based access control
 
-## Smart Contract Deployment
+## Smart contract deployment
 
-Contracts developed and tested for 12 games. Tested on Rinkeby and Solana Devnet, deployed on Ethereum mainnet, Polygon, Solana, and BSC.
+We developed and tested contracts for 12 games. Tested on Rinkeby and Solana Devnet, deployed on Ethereum mainnet, Polygon, Solana, and BSC.
 
-## Project Benefits
+## Project benefits
 
-**Platform Owners:** Increased revenue, liquidity, and transaction volume. New monetization via fees on trades, rentals, and upgrades.
+**Platform owners:** Increased revenue, liquidity and transaction volume. New monetisation via fees on trades, rentals, and upgrades.
 
-**Investors (Flippers):** Commission NFTs with specific attributes, control via smart contracts, profitable resale opportunity.
+**Investors (flippers):** Commission NFTs with specific attributes, control via smart contracts, profitable resale opportunity.
 
-**Gamers:** Additional earnings from high-level gaming skills, incentivized to monetize expertise they already have.`,
+**Gamers:** Additional earnings from high-level gaming skills they already have.`,
     author: "Borys Gavrylenko",
     authorRole: "Backend Developer, Trident Software",
     publishedAt: "2024-11-08",
@@ -566,7 +566,7 @@ Contracts developed and tested for 12 games. Tested on Rinkeby and Solana Devnet
       "introducing-our-new-b2b-client-management-panel",
     ],
     meta: {
-      title: "NFT In-Game Trading Platform — Trident Software Blog",
+      title: "NFT in-game trading platform | Trident Software Blog",
       description: "Building an NFT marketplace for in-game assets with smart contracts on Ethereum, Polygon, Solana, and BSC. How flippers and players both earn.",
     },
     translations: {
@@ -740,51 +740,51 @@ I contratti sono stati sviluppati e testati per 12 giochi. I test si sono svolti
   {
     slug: "strengthening-small-and-medium-sized-businesses-through-advanced-security-solutions",
     image: "/images/blog/strengthening-small-and-medium-sized-businesses-through-adva.jpg",
-    title: "Strengthening SMBs through Advanced Security Solutions",
-    excerpt: "Over 60% of cyberattacks target small businesses. Here's how to implement enterprise-grade AWS security — IAM, KMS, GuardDuty, and Security Hub — at an SMB budget.",
-    content: `## The Growing Need for Tailored Security for SMBs
+    title: "Strengthening SMBs through advanced security solutions",
+    excerpt: "Over 60% of cyberattacks target small businesses. How to run enterprise-grade AWS security (IAM, KMS, GuardDuty and Security Hub) on an SMB budget.",
+    content: `## Why SMBs need security that fits them
 
-Cybersecurity is no longer an enterprise-only concern. SMBs face the same threats with a fraction of the resources. **Over 60% of cyberattacks target small businesses** — and many never recover.
+Cybersecurity is no longer an enterprise-only concern. SMBs face the same threats with a fraction of the resources. **Over 60% of cyberattacks target small businesses**, and many never recover.
 
-## Why SMBs Are Vulnerable
+## Why SMBs are vulnerable
 
-SMBs often believe they're not worth targeting. This is wrong. Limited cybersecurity budgets, fewer IT personnel, and lack of specialized security measures make them attractive targets for automated attacks.
+SMBs often believe they're not worth targeting. This is wrong. Limited cybersecurity budgets, fewer IT personnel, and lack of specialised security measures make them attractive targets for automated attacks.
 
-**Common Threats:**
-- **Data Breaches** — unauthorized access and theft of sensitive information (customer data, financial records)
-- **Ransomware Attacks** — malicious software encrypts data; attackers demand payment for the key
-- **Phishing Schemes** — deceptive emails trick employees into revealing credentials or transferring funds
+**Common threats:**
+- **Data breaches:** unauthorised access and theft of sensitive information (customer data, financial records)
+- **Ransomware:** malicious software encrypts data and attackers demand payment for the key
+- **Phishing:** deceptive emails trick employees into revealing credentials or transferring funds
 
-## AWS as the SMB Security Platform
+## AWS as the SMB security platform
 
-Amazon Web Services provides comprehensive cloud security accessible on a pay-as-you-go model — no large upfront investment, no dedicated security hardware.
+Amazon Web Services offers full cloud security on a pay-as-you-go model, with no large upfront investment and no dedicated security hardware.
 
-### AWS Security Toolkit for SMBs
+### AWS security toolkit for SMBs
 
 **AWS IAM (Identity and Access Management)**
-Fine-grained control over who can access which resources. Enforce least-privilege access — nobody has more permissions than they need.
+Fine-grained control over who can access which resources. Enforce least-privilege access: nobody has more permissions than they need.
 
 **AWS KMS (Key Management Service)**
 Create and control encryption keys for data at rest and in transit. Meet GDPR and revFADP requirements for data encryption.
 
 **Amazon GuardDuty**
-ML-based intelligent threat detection with real-time alerts. Detects anomalous activity patterns that rule-based systems miss.
+ML-based threat detection with real-time alerts. Detects anomalous activity patterns that rule-based systems miss.
 
 **AWS Security Hub**
-Central dashboard aggregating and prioritizing security alerts across your entire AWS environment. One place to see your security posture.
+A central dashboard that collects and prioritises security alerts across your entire AWS environment. One place to see your security posture.
 
-## The Importance of Tailored Solutions
+## Why security must fit the business
 
 Generic security tools fail SMBs because:
 - They're designed for enterprise compliance requirements
 - Configuration requires security expertise most SMBs don't have
 - Alert fatigue from misconfigured tools creates more risk, not less
 
-Tailored solutions include customized risk assessments and targeted implementations specific to your industry and data types.
+A fitted approach starts with a risk assessment and an implementation specific to your industry and data types.
 
-## Getting Started
+## Where to start
 
-The AWS Rapid Ramp Credit Program (ARCC) provides SMBs with a complimentary **$300 credit** to start implementing cloud security — risk-free.
+The AWS Rapid Ramp Credit Program (ARCC) gives SMBs a free **$300 credit** to start implementing cloud security.
 
 Contact Trident Software for a cloud security assessment. We'll map your current exposure and implement a monitoring stack within your budget.`,
     author: "Anton Savchuk",
@@ -803,8 +803,8 @@ Contact Trident Software for a cloud security assessment. We'll map your current
       "iot-blockchain-can-it-truly-deliver",
     ],
     meta: {
-      title: "AWS Cloud Security for SMBs — Trident Software Blog",
-      description: "How to implement enterprise-grade security (AWS IAM, GuardDuty, KMS, Security Hub) at SMB budget — and why 60% of cyberattacks target small businesses.",
+      title: "AWS cloud security for SMBs | Trident Software Blog",
+      description: "How to implement enterprise-grade security (AWS IAM, GuardDuty, KMS, Security Hub) at SMB budget, and why 60% of cyberattacks target small businesses.",
     },
     translations: {
       de: {
@@ -974,54 +974,54 @@ Contatta Trident Software per una valutazione della sicurezza cloud. Mappiamo la
   {
     slug: "trident-softwares-venture-evolution-it-package-empowers-startups-insights-from-foire-du-valais-2024",
     image: "/images/blog/trident-softwares-venture-evolution-it-package-empowers-star.jpg",
-    title: "Venture Evolution IT Package Empowers Startups: Insights from Foire du Valais 2024",
-    excerpt: "CTO Maksym Shytov presented the Venture Evolution IT Package at Foire du Valais 2024 — a 6-stage roadmap from promo website to scaled product. Here's the framework and the WaterTDS case study.",
-    content: `## Venture Evolution Drives Startup Success
+    title: "Venture Evolution IT Package helps startups: insights from Foire du Valais 2024",
+    excerpt: "CTO Maksym Shytov presented the Venture Evolution IT Package at Foire du Valais 2024: a 6-stage roadmap from promo website to scaled product. Below: the framework and the WaterTDS case study.",
+    content: `## Venture Evolution at Foire du Valais
 
-At the Foire du Valais 2024 conference in Sion, Trident Software CTO Maksym Shytov presented on technology's role in solving real-world problems. The showcase project: WaterTDS — a smart water management solution built using our Venture Evolution IT Package.
+At the Foire du Valais 2024 conference in Sion, Trident Software CTO Maksym Shytov presented on technology's role in solving real-world problems. The example project was WaterTDS, a smart water management system built with our Venture Evolution IT Package.
 
-## What Makes the Venture Evolution IT Package Different?
+## What makes the Venture Evolution IT Package different?
 
-Most startup frameworks focus on methodology. Ours focuses on execution. The Venture Evolution IT Package is a comprehensive, step-by-step framework for startups from concept to fully scalable product — with a fixed price at each stage.
+Most startup frameworks focus on methodology. Ours focuses on execution. The Venture Evolution IT Package takes a startup step by step from concept to scalable product, with a fixed price at each stage.
 
 As Maksym put it: *"Building a startup is like riding a rollercoaster. The Venture Evolution Package gives you the safety harness."*
 
-## Why We Understand Startups
+## Why we understand startups
 
 We've seen the same pain points across dozens of early-stage companies:
 
-- **Frequent Changes in Requirements** — priorities shift constantly; the framework stays flexible
-- **Limited Budgets** — high-quality results without the enterprise price tag
-- **Tight Deadlines** — aggressive timelines without sacrificing quality
-- **Uncertainty and Lack of Experience** — we serve as advisor, not just executor
-- **Lack of Clear Specifications** — we guide through frequent revisions and trial-and-error
-- **Corporate Expectations on Startup Budgets** — we've learned to balance what's expected with what's possible
+- **Frequent changes in requirements:** priorities shift often, so the framework stays flexible
+- **Limited budgets:** high-quality results without the enterprise price tag
+- **Tight deadlines:** short timelines without cutting quality
+- **Uncertainty and lack of experience:** we advise as well as build
+- **No clear specifications:** we guide you through revisions and trial and error
+- **Corporate expectations on startup budgets:** we've learned to balance what's expected with what's possible
 
-## The 6-Stage Roadmap
+## The 6-stage roadmap
 
-**Stage 1: Promo Website**
-A sleek, simple site to attract early users or investors. Validates the market before significant engineering investment.
+**Stage 1: promo website**
+A simple site to attract early users or investors. Validates the market before significant engineering investment.
 
-**Stage 2: Proof of Concept (PoC)**
+**Stage 2: proof of concept (PoC)**
 Develop a small version to test real-world viability. Answers: does this technically work?
 
-**Stage 3: Minimum Viable Product (MVP)**
+**Stage 3: minimum viable product (MVP)**
 Strip to the essence, get to market, collect real feedback. Answers: do people want this?
 
-**Stage 4: Pilot or Prototype**
+**Stage 4: pilot or prototype**
 Test in real-world conditions. Refine based on user feedback from actual usage.
 
-**Stage 5: Full-Scale Product**
-Feature-rich, stable version ready for market impact and growth.
+**Stage 5: full-scale product**
+A complete, stable version ready for the market and for growth.
 
-**Stage 6: Scaling Up**
-Infrastructure grows with the product — supports increased users and performance demands without rewrites.
+**Stage 6: scaling up**
+Infrastructure grows with the product and supports more users and performance demands without rewrites.
 
-## WaterTDS: A Real Success Story
+## WaterTDS: a real case
 
-**The Idea:** Naren, a serial entrepreneur and long-time Trident partner, wanted to optimize water quality monitoring and filter replacements with real-time sensor data.
+**The idea:** Naren, a serial entrepreneur and long-time Trident partner, wanted to optimise water quality monitoring and filter replacements with real-time sensor data.
 
-**The Journey:**
+**The journey:**
 1. Started with a promo website + feedback form
 2. Target audience defined: households using filtration systems in USA, India, and Ukraine
 3. Low-budget marketing via Google Ads and social media to validate demand
@@ -1030,11 +1030,11 @@ Infrastructure grows with the product — supports increased users and performan
 6. Feature additions based on user feedback: leak detection, water usage monitoring
 7. B2B scaling: modules for service request management and fleet device monitoring
 
-**The Results:**
+**The results:**
 - WaterTDS installed at the **Google Campus in São Paulo**
 - Partnerships established with **Liquos, Starbucks, and McDonald's**
 
-The Venture Evolution IT Package takes a startup idea from a conversation to enterprise partnerships — with predictable costs at every stage.`,
+The Venture Evolution IT Package took this idea from a conversation to enterprise partnerships, with predictable costs at every stage.`,
     author: "Maksym Shytov",
     authorRole: "CTO, Trident Software",
     publishedAt: "2024-10-04",
@@ -1050,7 +1050,7 @@ The Venture Evolution IT Package takes a startup idea from a conversation to ent
       "arenawave-digital-court-system",
     ],
     meta: {
-      title: "Venture Evolution IT Package for Startups — Trident Software Blog",
+      title: "Venture Evolution IT Package for startups | Trident Software Blog",
       description: "A 6-stage startup framework from promo website to scaled product. How WaterTDS went from idea to Google Campus with Trident's Venture Evolution IT Package.",
     },
     translations: {
@@ -1263,39 +1263,39 @@ Il Venture Evolution IT Package porta un'idea di startup dalla prima conversazio
   {
     slug: "nextjs-payload-cms-swiss-sme-websites",
     image: "/images/stock/b2b-portal.jpg",
-    title: "Next.js + Payload CMS: The Swiss SME Website Stack That Actually Works",
-    excerpt: "Why we standardized on Next.js 15 and Payload CMS 3 for Swiss SME projects — covering embedded CMS architecture, ISR caching, and editor experience that non-technical staff can use without training.",
-    content: `## The Problem with Generic CMS Choices
+    title: "Next.js + Payload CMS: the Swiss SME website stack that actually works",
+    excerpt: "Why we standardised on Next.js 15 and Payload CMS 3 for Swiss SME projects: embedded CMS architecture, ISR caching, and an editor that non-technical staff use without training.",
+    content: `## The problem with generic CMS choices
 
 Swiss SMEs have historically defaulted to WordPress or Squarespace. Both create the same downstream problems: plugin conflicts, security patching overhead, and a frontend that fights the design rather than enabling it.
 
-After building 20+ websites for Swiss companies, we standardized on **Next.js 15 + Payload CMS 3** as our default stack. Here's why — and where it makes sense.
+After building 20+ websites for Swiss companies, we standardised on **Next.js 15 + Payload CMS 3** as our default stack. Below is why, and where it makes sense.
 
-## Why Payload CMS Over Headless Alternatives
+## Why Payload CMS over headless alternatives
 
-The critical insight: Payload is **embedded**, not headless. It runs inside the same Next.js process, which means:
+The key point: Payload is **embedded**, not headless. It runs inside the same Next.js process, which means:
 
 - No extra hosting bill for a CMS server
 - Type-safe collection schemas shared between frontend and backend
-- Content API and frontend deploy together — zero sync issues
+- Content API and frontend deploy together, so nothing falls out of sync
 
 Compare that to Contentful or Strapi, where you manage two deployed services, two sets of environment variables, and two failure modes.
 
-## Content Modeling for Swiss Business Contexts
+## Content modelling for Swiss businesses
 
 A typical Swiss SME site needs:
 
-| Collection | Purpose | Key Fields |
+| Collection | Purpose | Key fields |
 |---|---|---|
 | Pages | Marketing landing pages | blocks (rich layout), SEO meta |
 | Posts | Blog / news | content, author, publishedAt, tags |
-| Products | Service/product catalog | features, pricing, CTA |
+| Products | Service/product catalogue | features, pricing, CTA |
 | Team | Staff directory | photo, role, bio |
 | Testimonials | Social proof | quote, company, logo |
 
 All of these are configured as typed Payload collections with full TypeScript inference on the frontend. No more \`any\` types when querying CMS data.
 
-## ISR for Performance Without Complexity
+## ISR for performance without complexity
 
 Next.js Incremental Static Regeneration lets you generate pages at build time and revalidate them in the background when content changes. For a typical SME site:
 
@@ -1311,22 +1311,22 @@ export async function generateStaticParams() {
 
 This gives you static performance with CMS flexibility. No CDN invalidation pipelines needed.
 
-## Editor Experience
+## Editor experience
 
 The Payload admin UI is the reason non-technical users accept this stack. Features that matter:
 
-- **Rich text with blocks** — editors compose pages from layout blocks, not raw HTML
-- **Image optimization built in** — upload once, serve at any size
-- **Draft mode** — review before publishing, no staging server needed
-- **Role-based access** — marketing edits blog, developers control schema
+- **Rich text with blocks:** editors compose pages from layout blocks, not raw HTML
+- **Image optimisation built in:** upload once, serve at any size
+- **Draft mode:** review before publishing, no staging server needed
+- **Role-based access:** marketing edits blog, developers control schema
 
-## When This Stack Is the Wrong Choice
+## When this stack is the wrong choice
 
 - Very high-traffic e-commerce (use Shopify or a purpose-built platform)
 - Projects where the client insists on WordPress (political, not technical)
 - Sub-CHF 5,000 budgets (setup overhead doesn't justify the cost)
 
-For everything else — company sites, product marketing pages, blogs, portfolios — this stack pays back the initial investment within 6 months of maintenance savings.`,
+For everything else (company sites, product marketing pages, blogs, portfolios), maintenance savings pay back the initial investment within 6 months.`,
     author: "Trident Software Team",
     authorRole: "Engineering Blog",
     publishedAt: "2025-10-08",
@@ -1346,7 +1346,7 @@ For everything else — company sites, product marketing pages, blogs, portfolio
     faq: [
       {
         question: "Can non-technical staff manage content in Payload CMS?",
-        answer: "Yes. The Payload admin UI is designed for editors. Block-based page building, draft previews, and role-based permissions make it accessible without developer involvement for day-to-day content changes.",
+        answer: "Yes. The Payload admin UI is designed for editors. Block-based page building, draft previews, and role-based permissions let editors handle day-to-day content changes without a developer.",
       },
       {
         question: "How does ISR work with Payload CMS content updates?",
@@ -1354,7 +1354,7 @@ For everything else — company sites, product marketing pages, blogs, portfolio
       },
       {
         question: "Does this stack support multilingual Swiss websites (DE/FR/IT)?",
-        answer: "Yes. Payload has built-in localization support. Combined with next-intl for routing, you can serve DE, FR, IT, and EN from one codebase with per-locale content in the CMS.",
+        answer: "Yes. Payload has built-in localisation support. Combined with next-intl for routing, you can serve DE, FR, IT, and EN from one codebase with per-locale content in the CMS.",
       },
       {
         question: "What is the typical setup cost vs WordPress?",
@@ -1631,22 +1631,22 @@ Per tutto il resto, cioè siti aziendali, pagine di marketing di prodotto, blog 
       },
     },
     meta: {
-      title: "Next.js + Payload CMS for Swiss SME Websites — Trident Software",
+      title: "Next.js + Payload CMS for Swiss SME websites | Trident Software",
       description: "Why Next.js 15 and Payload CMS 3 is the right stack for Swiss SME websites. Embedded CMS, ISR caching, and editor UX that replaces WordPress without the pain.",
     },
   },
   {
     slug: "embedded-firmware-industrial-iot",
     image: "/images/stock/clinic.jpg",
-    title: "Embedded Firmware Development for Industrial IoT: Lessons from the Field",
-    excerpt: "From sensor calibration to OTA update pipelines — practical patterns for industrial IoT firmware that runs reliably in harsh environments, based on projects across manufacturing and logistics.",
-    content: `## Industrial IoT Is Not Consumer IoT
+    title: "Embedded firmware development for industrial IoT: lessons from the field",
+    excerpt: "From sensor calibration to OTA update pipelines: practical patterns for industrial IoT firmware that runs reliably in harsh environments, based on projects across manufacturing and logistics.",
+    content: `## Industrial IoT is not consumer IoT
 
 Consumer IoT products tolerate occasional failures. Industrial IoT does not. A temperature sensor in a food storage facility that misreports by 2°C for 30 minutes has regulatory consequences. A fleet tracker that loses connectivity mid-route creates operational chaos.
 
-After building firmware for 12 industrial devices in the past three years, the engineering requirements are different enough to warrant a separate approach.
+We have built firmware for 12 industrial devices in the past three years. The engineering requirements differ enough to need a separate approach.
 
-## The Firmware Stack We Reach For
+## The firmware stack we use
 
 Our default stack for new industrial IoT projects:
 
@@ -1656,15 +1656,15 @@ Our default stack for new industrial IoT projects:
 | Connectivity | ESP32 (WiFi/BLE) or Nordic nRF9160 (LTE-M/NB-IoT) | Battle-tested, strong ecosystem |
 | Protocol | MQTT over TLS | Lightweight, QoS levels, broker flexibility |
 | OTA | AWS IoT Jobs or custom HTTP server | Rollback support, delta updates |
-| Storage | LittleFS on flash | Power-loss safe, wear leveling |
+| Storage | LittleFS on flash | Power-loss safe, wear levelling |
 
-## Sensor Calibration: The Part Nobody Writes About
+## Sensor calibration: the part nobody writes about
 
 Raw sensor readings are almost always wrong. Every production sensor must go through:
 
-1. **Factory calibration** — measure against a known reference, store offset and gain coefficients in flash
-2. **Temperature compensation** — sensor characteristics drift with temperature; compensation curves matter
-3. **Runtime drift detection** — compare redundant sensors; alert when they diverge beyond threshold
+1. **Factory calibration:** measure against a known reference, store offset and gain coefficients in flash
+2. **Temperature compensation:** sensor characteristics drift with temperature, so compensation curves matter
+3. **Runtime drift detection:** compare redundant sensors; alert when they diverge beyond threshold
 
 \`\`\`c
 float apply_calibration(float raw, CalibrationData *cal) {
@@ -1674,16 +1674,16 @@ float apply_calibration(float raw, CalibrationData *cal) {
 }
 \`\`\`
 
-## OTA Updates in Industrial Environments
+## OTA updates in industrial environments
 
 Never ship firmware you cannot update remotely. The update pipeline must handle:
 
-- **Connectivity loss mid-update** — resume from last confirmed block, never brick
-- **Rollback on boot failure** — dual-partition scheme with bootloader health check
-- **Staged rollout** — update 5% of fleet first, monitor error rate, then full rollout
-- **Signed images** — verify cryptographic signature before flashing
+- **Connectivity loss mid-update:** resume from last confirmed block, never brick
+- **Rollback on boot failure:** dual-partition scheme with bootloader health check
+- **Staged rollout:** update 5% of fleet first, monitor error rate, then full rollout
+- **Signed images:** verify cryptographic signature before flashing
 
-## Power Management for Battery-Operated Devices
+## Power management for battery-operated devices
 
 For devices on battery, every microamp matters:
 
@@ -1691,14 +1691,14 @@ For devices on battery, every microamp matters:
 - Choose sensors with shutdown modes (active draw vs sleep draw differ by 100×)
 - Log power budget in µAh/day; measure actual vs predicted monthly
 
-## Testing Approach
+## Testing approach
 
 Industrial firmware needs hardware-in-the-loop (HIL) testing, not just unit tests. Our CI pipeline runs:
 
 1. **Unit tests** on host (native GCC build, no hardware needed)
 2. **Integration tests** on target hardware in CI rack
-3. **Soak tests** — 72-hour continuous runs before release
-4. **EMC pre-compliance** — conducted emissions check before formal certification
+3. **Soak tests:** 72-hour continuous runs before release
+4. **EMC pre-compliance:** conducted emissions check before formal certification
 
 The EMC step catches problems that no amount of software testing finds.`,
     author: "Trident Software Team",
@@ -2002,7 +2002,7 @@ Il passaggio EMC individua problemi che nessun test software, per quanto esteso,
       },
     },
     meta: {
-      title: "Embedded Firmware for Industrial IoT — Trident Software Blog",
+      title: "Embedded firmware for industrial IoT | Trident Software Blog",
       description: "Practical patterns for industrial IoT firmware development: sensor calibration, OTA updates, power management, and HIL testing from 12 real-world projects.",
     },
   },

@@ -1,107 +1,35 @@
 {
-  "nav": {
-    "services": "Services",
-    "industries": "Industries",
-    "cases": "Cases",
-    "about": "About",
-    "team": "Team",
-    "blog": "Blog",
-    "contact": "Contact",
-    "getQuote": "Get a Quote"
-  },
-  "footer": {
-    "tagline": "Swiss quality software engineering for SMEs and startups.",
-    "company": "Company",
-    "services": "Services",
-    "resources": "Resources",
-    "legal": "Legal",
-    "about": "About Us",
-    "team": "Our Team",
-    "careers": "Careers",
-    "contact": "Contact",
-    "blog": "Blog",
-    "cases": "Case Studies",
-    "privacyPolicy": "Privacy Policy",
-    "terms": "Terms & Conditions",
-    "cookiePolicy": "Cookie Policy",
-    "imprint": "Imprint",
-    "copyright": "© {year} Trident Software Sàrl. All rights reserved.",
-    "industries": "Industries",
-    "products": "Our Products",
-    "newsletterTagline": "Insights on software, AI, and Swiss tech."
-  },
-  "home": {
-    "hero": {
-      "badge": "Software Engineering Since 2009",
-      "title": "AI-Native Software Development for Growing Businesses",
-      "subtitle": "Custom platforms, AI integrations & embedded systems — built for Swiss and European SMEs. Fixed-price contracts, revFADP compliance, and 100+ projects delivered since 2009.",
-      "cta": "Get a Free Consultation",
-      "ctaSecondary": "View Case Studies"
-    },
-    "services": {
-      "title": "What We Build",
-      "subtitle": "From AI agents to embedded firmware — we cover the full engineering stack."
-    },
-    "cases": {
-      "title": "Selected Work",
-      "subtitle": "100+ projects delivered across automotive, healthcare, fashion, logistics, and more."
-    },
-    "stats": {
-      "projects": "Projects delivered",
-      "years": "Years of experience",
-      "team": "Engineers",
-      "countries": "Client countries"
-    },
-    "cta": {
-      "title": "Ready to start your project?",
-      "subtitle": "Tell us about your challenge. We respond within 24 hours.",
-      "button": "Get a Free Consultation"
-    }
-  },
   "services": {
-    "title": "Our Services",
-    "subtitle": "End-to-end engineering services across AI, software, embedded systems, and cloud.",
-    "relatedCases": "Related Cases",
-    "techStack": "Tech Stack",
-    "features": "What's Included"
+    "title": "Our services",
+    "subtitle": "Engineering services in AI, software, embedded systems and cloud.",
+    "relatedCases": "Related cases",
+    "techStack": "Tech stack",
+    "features": "What's included"
   },
   "cases": {
-    "title": "Case Studies",
-    "subtitle": "Real projects, real results. From concept to production.",
-    "challenge": "The Challenge",
-    "approach": "Our Approach",
-    "solution": "The Solution",
+    "title": "Case studies",
+    "subtitle": "Projects we shipped, and what changed for the client.",
+    "challenge": "The challenge",
+    "approach": "Our approach",
+    "solution": "The solution",
     "results": "Results",
-    "techStack": "Tech Stack",
-    "relatedCases": "Related Cases",
-    "startSimilar": "Start a Similar Project",
+    "techStack": "Tech stack",
+    "relatedCases": "Related cases",
+    "startSimilar": "Start a similar project",
     "next": "What happens next",
     "elsewhere": "Where else this applies"
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Engineering insights, AI trends, and Swiss tech market perspectives.",
+    "subtitle": "Notes on engineering, AI and the Swiss software market.",
     "readMore": "Read more",
-    "relatedPosts": "Related Posts"
-  },
-  "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Have a project in mind? Let's talk. We respond within 24 hours.",
-    "name": "Your Name",
-    "email": "Email Address",
-    "company": "Company",
-    "phone": "Phone (optional)",
-    "subject": "Subject",
-    "message": "Tell us about your project",
-    "submit": "Send Message",
-    "success": "Message sent! We'll get back to you soon.",
-    "error": "Something went wrong. Please try again."
+    "relatedPosts": "Related posts"
   },
   "notFound": {
-    "title": "Page Not Found",
+    "title": "Page not found",
     "description": "The page you're looking for doesn't exist.",
-    "goHome": "Go to Homepage",
-    "viewServices": "Our Services"
+    "goHome": "Go to homepage",
+    "viewServices": "Our services"
   },
   "ui": {
     "skip": "Skip to main content",
@@ -286,16 +214,16 @@
       "crumb": "Services",
       "label": "Service",
       "scopeLabel": "Scope of work",
-      "scopeLead": "Everything included in our {service} engagements — no hidden extras.",
+      "scopeLead": "Everything our {service} engagements include. No hidden extras.",
       "whyTitle": "Why us",
       "why": {
         "fixedPrice": {
           "title": "Fixed-price engagements",
-          "desc": "Statement of Work before we start. No scope creep surprises. You know the cost upfront."
+          "desc": "We sign a Statement of Work before we start. You know the cost upfront."
         },
         "compliance": {
           "title": "Swiss data compliance",
-          "desc": "revFADP and GDPR-ready by default. Data residency in Switzerland available for all projects."
+          "desc": "revFADP and GDPR-ready by default. Swiss data residency is available on every project."
         },
         "response": {
           "title": "24h response guaranteed",
@@ -304,20 +232,20 @@
       },
       "stackTitle": "Technologies we use",
       "portfolioLabel": "Portfolio",
-      "portfolioLead": "Real projects we delivered using {service}.",
-      "ctaTitle": "Ready to get started with {service}?",
-      "ctaLead": "Describe your project in 2 sentences. We send back a concrete proposal within 24 hours — scope, timeline, and fixed price.",
-      "ctaButton": "Request a Proposal"
+      "portfolioLead": "Projects we delivered with {service}.",
+      "ctaTitle": "Tell us about your {service} project",
+      "ctaLead": "Describe your project in 2 sentences. Within 24 hours we send a proposal with scope, timeline and fixed price.",
+      "ctaButton": "Request a proposal"
     },
     "blogPost": {
       "allPosts": "All posts",
-      "faqTitle": "Frequently Asked Questions"
+      "faqTitle": "Frequently asked questions"
     },
     "case": {
       "client": "Client: <name>{client}</name>",
       "allCases": "All case studies",
-      "ctaLead": "Let's discuss your project. We respond within 24 hours.",
-      "ctaButton": "Get a Quote",
+      "ctaLead": "Tell us about your project. We reply within 24 hours.",
+      "ctaButton": "Get a quote",
       "evidence": {
         "measured": "Figures counted in production.",
         "modelled": "Figures calculated from real volumes, not counted in production."
@@ -330,19 +258,19 @@
       "crumb": "Industries",
       "startProject": "Start a project",
       "viewCases": "View case studies",
-      "challengesLabel": "Industry Challenges",
+      "challengesLabel": "Industry challenges",
       "challengesTitle": "What we solve",
-      "challengesLead": "Common technical and regulatory hurdles in {industry} that we help clients overcome.",
+      "challengesLead": "Technical and regulatory problems we solve for {industry} clients.",
       "solutionsLabel": "What we build",
       "solutionsTitle": "Solutions we deliver",
-      "solutionsLead": "Production-ready software systems for {industry} companies.",
+      "solutionsLead": "Software systems we build for {industry} companies.",
       "stackTitle": "Technology stack",
       "servicesLabel": "Services",
       "servicesTitle": "Relevant capabilities",
-      "servicesLead": "Our service practices that typically apply to this industry.",
+      "servicesLead": "The services this industry usually needs from us.",
       "portfolioLabel": "Portfolio",
       "portfolioTitle": "{industry} projects",
-      "portfolioLead": "Real projects we delivered in this industry.",
+      "portfolioLead": "Projects we delivered in this industry.",
       "ctaTitle": "Building something in {industry}?",
       "ctaText": "Tell us about your project. We respond within 24 hours.",
       "ctaButton": "Start a conversation"
@@ -353,7 +281,7 @@
       "startProject": "Start a project",
       "ourServices": "Our services",
       "highlightsLabel": "{city} expertise",
-      "highlightsTitle": "What we bring to the table",
+      "highlightsTitle": "Where we can help you",
       "highlightsLead": "Specific capabilities we've developed for {city}'s market.",
       "servicesLabel": "Services",
       "servicesTitle": "What we build for {city} companies",
@@ -361,7 +289,7 @@
       "portfolioLabel": "Portfolio",
       "portfolioTitle": "Projects we've delivered",
       "portfolioLead": "A selection of our work relevant to {city}'s industries.",
-      "ctaTitle": "Based in {city}? Let's build something.",
+      "ctaTitle": "Based in {city}? Tell us what you need.",
       "ctaText": "Remote-friendly, Swiss-based. We work with {city} companies regularly.",
       "ctaButton": "Start a conversation"
     },
@@ -381,7 +309,7 @@
       "servicesLead": "Our service packages that include this technology.",
       "portfolioLabel": "Portfolio",
       "portfolioTitle": "{tech} in production",
-      "portfolioLead": "Real projects we shipped using this technology.",
+      "portfolioLead": "Projects we shipped with this technology.",
       "ctaTitle": "Need {tech} expertise?",
       "ctaText": "Tell us what you're building. We respond within 24 hours.",
       "ctaButton": "Start a conversation"
@@ -396,7 +324,7 @@
   "pages": {
     "home": {
       "metaTitle": "Trident Software — Operational software and AI agents, Switzerland",
-      "metaDescription": "We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers and processes documents in four national languages. Sion, Valais."
+      "metaDescription": "We build the systems a company runs on every day: order intake, dispatch, field apps, billing. Our AI agents answer enquiries and process documents in four national languages. Sion, Valais."
     },
     "notFound": {
       "label": "Error 404"
@@ -412,7 +340,7 @@
       "heroLead": "Tell us what you're building. We'll respond within 24 hours with honest feedback and a rough scope estimate.",
       "touchLabel": "Get in touch",
       "touchTitle": "We respond fast",
-      "touchLead": "Senior engineers read every inquiry. No sales scripts, no account managers in between.",
+      "touchLead": "Senior engineers read every enquiry. No sales scripts, no account managers in between.",
       "info": {
         "office": "Office",
         "email": "Email",
@@ -422,18 +350,18 @@
       "responseTimeValue": "Within 24 business hours",
       "stepsTitle": "Typical next steps",
       "steps": {
-        "review": "We review your inquiry",
+        "review": "We review your enquiry",
         "discovery": "Discovery call (30 min)",
         "scope": "Scope + SOW in 3–5 days",
         "kickoff": "Kickoff"
       },
       "whereLabel": "Where we are",
       "whereTitle": "Sion, Valais",
-      "whereText": "Rue de l'Industrie 23, 1950 Sion — ten minutes from the station, in the HES-SO Valais-Wallis district."
+      "whereText": "Rue de l'Industrie 23, 1950 Sion, ten minutes from the station in the HES-SO Valais-Wallis district."
     },
     "blog": {
       "metaTitle": "Software Engineering Blog | AI, Cloud & Swiss Tech Insights | Trident Software",
-      "metaDescription": "Expert articles on AI integration, software architecture, cloud DevOps, embedded systems, and Swiss tech market trends. Written by the Trident Software engineering team.",
+      "metaDescription": "Articles on AI integration, software architecture, cloud DevOps, embedded systems and the Swiss tech market, written by the Trident Software engineering team.",
       "label": "Insights"
     },
     "cases": {
@@ -468,8 +396,8 @@
       "crumb": "Industries",
       "label": "Industry expertise",
       "title": "Industries we build software for",
-      "lead": "From MedTech startups to automotive distributors and retail chains — our Swiss engineering team delivers domain-specific software that fits your industry regulations, workflows, and growth targets.",
-      "leadNote": "Every project starts with your industry-specific constraints: regulatory requirements (revFADP, GDPR, MDR), operational complexity, and competitive landscape. No generic solutions.",
+      "lead": "From MedTech startups to automotive distributors and retail chains, our Swiss engineering team builds software that fits your industry's regulations, workflows and growth targets.",
+      "leadNote": "Every project starts with the constraints of your industry: regulation (revFADP, GDPR, MDR), operational complexity and competition. No generic solutions.",
       "discuss": "Discuss your project",
       "facts": {
         "industries": {
@@ -490,7 +418,7 @@
         }
       },
       "ctaTitle": "Need a software partner who knows your industry?",
-      "ctaText": "Tell us about your challenge. We respond within 24 hours with a concrete proposal.",
+      "ctaText": "Tell us what you need to fix. We respond within 24 hours with a concrete proposal.",
       "ctaButton": "Get a free consultation"
     },
     "locations": {
@@ -512,13 +440,13 @@
       "crumb": "Technologies",
       "label": "Our stack",
       "title": "Technologies we build with",
-      "lead": "Battle-tested tools. Modern stack. Production-grade defaults across every project.",
+      "lead": "Proven tools with production-grade defaults on every project.",
       "listLabel": "Stack",
       "listTitle": "What we use, and why",
       "listLead": "Each technology earns its place by shipping reliably in production.",
       "logoAlt": "{tech} logo",
       "ctaTitle": "Building with a different stack?",
-      "ctaText": "We adapt to your existing codebase. Talk to us about your project.",
+      "ctaText": "We work in your existing codebase. Tell us about your project.",
       "ctaButton": "Start a conversation"
     },
     "faq": {
@@ -535,7 +463,7 @@
     },
     "team": {
       "metaTitle": "Our Team | Trident Software",
-      "metaDescription": "10+ senior engineers in Switzerland and Ukraine. Backend, frontend, mobile and project management — no juniors on client projects.",
+      "metaDescription": "10+ senior engineers in Switzerland and Ukraine. Backend, frontend, mobile and project management. No juniors on client projects.",
       "crumb": "Our Team",
       "title": "The people who <blue>build and run</blue> your software",
       "lead": "No juniors on client projects. Every engineer has 5+ years of production experience. You get the same people from kickoff to handoff.",
@@ -546,7 +474,7 @@
       },
       "peopleLabel": "People",
       "peopleTitle": "Meet the team",
-      "peopleLead": "Organized by discipline. Each engineer has 5+ years of commercial experience and stays on the project from kickoff to delivery.",
+      "peopleLead": "Organised by discipline. Each engineer has 5+ years of commercial experience and stays on the project from kickoff to delivery.",
       "departments": {
         "Leadership": "Leadership",
         "Management": "Management",
@@ -567,7 +495,7 @@
       "crumb": "Services",
       "label": "What we build",
       "title": "Software we build for Swiss SMEs",
-      "lead": "From AI agents and logistics platforms to custom business systems and connected devices: end-to-end engineering with fixed budgets and Swiss compliance built in.",
+      "lead": "AI agents, logistics platforms, custom business systems and connected devices, built on fixed budgets with Swiss compliance included.",
       "servicesTitle": "What we deliver",
       "processLabel": "Process",
       "processTitle": "How we engage",
@@ -575,11 +503,11 @@
       "steps": {
         "scope": {
           "title": "Scope & quote",
-          "desc": "Send us a brief. We reply within 24 hours with a concrete proposal — scope, timeline, and fixed price. No surprises."
+          "desc": "Send us a brief. Within 24 hours we reply with a proposal: scope, timeline and fixed price."
         },
         "build": {
           "title": "Build & ship",
-          "desc": "Our senior engineers start within 1–2 weeks. Weekly demos, async updates, and staging environment from day one."
+          "desc": "Senior engineers start within 1–2 weeks. Weekly demos, async updates and a staging environment from day one."
         },
         "maintain": {
           "title": "Maintain & grow",
@@ -598,7 +526,7 @@
         },
         "compliance": {
           "title": "Swiss data compliance",
-          "desc": "revFADP and GDPR-ready by default. Data residency in Switzerland available for all projects."
+          "desc": "revFADP and GDPR-ready by default. Swiss data residency is available on every project."
         },
         "response": {
           "title": "24h response guaranteed",
@@ -614,41 +542,41 @@
         },
         "talent": {
           "title": "CH + UA talent pool",
-          "desc": "Senior engineers across CET timezones. Near-seamless overlap with European teams."
+          "desc": "Senior engineers in time zones close to CET. Hours overlap closely with European teams."
         }
       },
       "ctaLabel": "Ready to start?",
       "ctaTitle": "Describe your project in 2 sentences",
-      "ctaLead": "We send back a concrete proposal within 24 hours — scope, timeline, and fixed price.",
-      "ctaButton": "Request a Proposal",
+      "ctaLead": "Within 24 hours we send a proposal with scope, timeline and fixed price.",
+      "ctaButton": "Request a proposal",
       "viewCases": "View case studies"
     },
     "solutions": {
       "metaTitle": "Solutions | Trident Software",
-      "metaDescription": "Software solutions built for Swiss SMEs — websites, e-commerce platforms, and custom B2B systems with fixed budgets and Swiss compliance.",
+      "metaDescription": "Software solutions for Swiss SMEs: websites, e-commerce platforms and custom B2B systems, with fixed budgets and Swiss compliance.",
       "crumb": "Solutions",
       "label": "Solutions",
       "heroTitle": "Software solutions built for Swiss SMEs",
       "heroLead": "Packaged offerings with predictable timelines and fixed prices. From a simple brochure site to a custom B2B e-commerce platform handling 1M+ products.",
       "packagedLabel": "Packaged solutions",
       "packagedTitle": "Two ways to start",
-      "packagedLead": "Choose between fixed-price website packages or a custom e-commerce build tailored to your business.",
+      "packagedLead": "Choose a fixed-price website package or a custom e-commerce build.",
       "explore": "Explore",
       "servicesLabel": "Engineering services",
       "servicesTitle": "Full-stack engineering capabilities",
-      "servicesLead": "Beyond packaged solutions, our team delivers end-to-end engineering services across AI, software, embedded, and cloud.",
+      "servicesLead": "Beyond the packages, we take on engineering work in AI, software, embedded systems and cloud.",
       "ctaTitle": "Not sure which fits?",
       "ctaLead": "Tell us about your project. We'll recommend the right solution and a fixed price within 24 hours.",
       "ctaPrimary": "Get a recommendation",
       "ctaSecondary": "See website packages",
       "mobileApps": {
-        "label": "Mobile Apps",
+        "label": "Mobile apps",
         "primary": "Discuss your app",
         "secondary": "View projects",
-        "featuresLead": "Full-cycle mobile development — from discovery and design to App Store delivery and ongoing maintenance.",
+        "featuresLead": "Mobile development from discovery and design to App Store release and ongoing maintenance.",
         "listLabel": "Platforms & frameworks",
         "listTitle": "One build, two stores",
-        "listLead": "We use React Native and Flutter to ship to iOS and Android from a single codebase — with native-grade performance.",
+        "listLead": "We use React Native and Flutter to ship to iOS and Android from one codebase, with native-grade performance.",
         "listItems": [
           "iOS",
           "Android",
@@ -657,20 +585,20 @@
           "Expo"
         ],
         "stackTitle": "Production-grade tooling",
-        "stackLead": "The same stack we use for our own products — battle-tested and maintainable.",
-        "ctaTitle": "Ready to build your mobile app?",
+        "stackLead": "The stack we use for our own products, proven in production.",
+        "ctaTitle": "Thinking about a mobile app?",
         "ctaText": "Tell us about your idea. We'll scope it, design it, and ship it to both stores.",
         "ctaPrimary": "Get a quote",
         "ctaSecondary": "View projects"
       },
       "iot": {
-        "label": "IoT & Embedded",
+        "label": "IoT & embedded",
         "primary": "Discuss your project",
         "secondary": "IoT & connected products",
-        "featuresLead": "End-to-end IoT and embedded solutions — from firmware to cloud dashboards, with compliance where it matters.",
+        "featuresLead": "IoT and embedded systems from firmware to cloud dashboards, with compliance where it matters.",
         "listLabel": "Industries",
         "listTitle": "Sectors we serve",
-        "listLead": "We have delivered embedded and IoT solutions across regulated and safety-critical industries.",
+        "listLead": "We have delivered embedded and IoT systems in regulated and safety-critical industries.",
         "listItems": [
           "Automotive",
           "Healthcare",
@@ -680,9 +608,9 @@
           "Agriculture"
         ],
         "stackTitle": "From silicon to cloud",
-        "stackLead": "Hardware-adjacent tooling combined with modern cloud infrastructure for end-to-end IoT systems.",
+        "stackLead": "Tools that work close to the hardware, plus cloud infrastructure, for complete IoT systems.",
         "ctaTitle": "Connect your devices to the cloud",
-        "ctaText": "From firmware to dashboards — we build the full stack so your IoT system works reliably in production.",
+        "ctaText": "We build the full stack, from firmware to dashboards, so your IoT system works reliably in production.",
         "ctaPrimary": "Get a quote",
         "ctaSecondary": "View projects"
       },
@@ -693,7 +621,7 @@
         "featuresLead": "From MVP to platforms handling 1M+ products, custom pricing, and 200+ integrations.",
         "listLabel": "Industries",
         "listTitle": "Verticals we serve",
-        "listLead": "We've built e-commerce platforms across automotive, fashion, luxury, and more — each with industry-specific requirements.",
+        "listLead": "We've built e-commerce platforms for automotive, fashion, luxury and other sectors, each with its own requirements.",
         "listItems": [
           "Automotive",
           "Fashion",
@@ -706,15 +634,15 @@
         "stackTitle": "Production-grade tooling",
         "stackLead": "The stack we use to deliver scalable, maintainable platforms.",
         "ctaTitle": "Build your e-commerce platform",
-        "ctaText": "From custom B2B platforms to marketplaces — we scope, build, and maintain.",
+        "ctaText": "Custom B2B platforms and marketplaces: we scope, build and maintain them.",
         "ctaPrimary": "Start the conversation",
         "ctaSecondary": "View projects"
       },
       "cloudServices": {
-        "label": "Cloud Services",
+        "label": "Cloud services",
         "primary": "Discuss your infrastructure",
         "secondary": "Our services",
-        "featuresLead": "End-to-end cloud services — from initial assessment and migration to ongoing managed operations.",
+        "featuresLead": "Cloud services from initial assessment and migration to ongoing managed operations.",
         "listLabel": "Standards & platforms",
         "listTitle": "Multi-cloud, compliance-ready",
         "listLead": "We work across all major cloud providers and design for Swiss data residency requirements where needed.",
@@ -728,18 +656,18 @@
         "stackTitle": "Infrastructure tooling",
         "stackLead": "Industry-standard tools for automated, observable, and secure cloud operations.",
         "ctaTitle": "Move to the cloud with confidence",
-        "ctaText": "From strategy to 24/7 managed operations — we handle the infrastructure so you focus on your product.",
+        "ctaText": "From strategy to 24/7 managed operations, we run the infrastructure so you can focus on your product.",
         "ctaPrimary": "Start the conversation",
         "ctaSecondary": "View projects"
       },
       "socialNetworks": {
-        "label": "Social Networks",
+        "label": "Social networks",
         "primary": "Discuss your platform",
         "secondary": "View projects",
-        "featuresLead": "Scalable, privacy-first social platforms — built for engagement, moderation, and long-term growth.",
+        "featuresLead": "Privacy-first social platforms that scale, built for engagement, moderation and long-term growth.",
         "listLabel": "Platform types",
         "listTitle": "Networks we build",
-        "listLead": "From B2B professional communities to consumer social apps — we have the architecture and experience.",
+        "listLead": "From B2B professional communities to consumer social apps, we have the architecture and experience.",
         "listItems": [
           "Professional networks",
           "B2B communities",
@@ -749,9 +677,9 @@
           "Internal corporate networks"
         ],
         "stackTitle": "Built for scale and real-time",
-        "stackLead": "The stack we use to deliver performant, real-time community platforms.",
+        "stackLead": "The stack we use for fast, real-time community platforms.",
         "ctaTitle": "Build your community platform",
-        "ctaText": "Tell us about your community vision — we'll architect and build a platform that grows with your users.",
+        "ctaText": "Tell us about your community. We'll design and build a platform that grows with your users.",
         "ctaPrimary": "Start the conversation",
         "ctaSecondary": "View projects"
       },
@@ -763,7 +691,7 @@
         "packagesTitle": "Four website packages",
         "packagesLead": "Fixed price, fixed timeline. Each package can be combined with optional add-ons.",
         "deliveredIn": "Delivered in {timeline}",
-        "mostPopular": "Most Popular",
+        "mostPopular": "Most popular",
         "includes": "Includes",
         "getStarted": "Get started",
         "addOnsLabel": "Add-ons",
@@ -778,7 +706,7 @@
           "language": {
             "name": "Additional language",
             "price": "CHF 250",
-            "desc": "Per locale: translation and localized SEO."
+            "desc": "Per locale: translation and localised SEO."
           },
           "content": {
             "name": "Content creation",
@@ -788,7 +716,7 @@
           "brandbook": {
             "name": "Brandbook",
             "price": "CHF 2,500",
-            "desc": "Logo, color palette, typography, UI tokens."
+            "desc": "Logo, colours, typography, UI tokens."
           },
           "seo": {
             "name": "SEO support",
@@ -818,21 +746,21 @@
         },
         "whyLabel": "Why us",
         "whyTitle": "Built for Swiss SMEs",
-        "whyLead": "Every website we deliver is mobile-first, multilingual-ready, and SEO-optimized — at a fixed price.",
+        "whyLead": "Every website we deliver is mobile-first, multilingual-ready and SEO-optimised, at a fixed price.",
         "stackLabel": "Tech stack",
         "stackTitle": "Modern, maintainable tooling",
-        "stackLead": "We build on the same stack we use for our own products — battle-tested in production.",
-        "ctaTitle": "Ready to launch your website?",
+        "stackLead": "We build on the stack we use for our own products, proven in production.",
+        "ctaTitle": "Thinking about a new website?",
         "ctaLead": "Pick a package or tell us about your project. We'll send a fixed quote within 24 hours.",
         "ctaPrimary": "Get a quote",
         "ctaSecondary": "See add-ons"
       },
       "websitePackage": {
         "metaTitle": "{name} — Website Package | Trident Software",
-        "label": "Website Package",
+        "label": "Website package",
         "heroPrimary": "Get a quote",
         "heroSecondary": "See all website packages",
-        "mostPopular": "Most Popular",
+        "mostPopular": "Most popular",
         "fixedPrice": "Fixed price",
         "deliveredIn": "Delivered in {timeline}",
         "includesLabel": "Includes",
@@ -848,7 +776,7 @@
         "otherTitle": "Compare packages",
         "otherLead": "Not sure this is the right fit? See what else we offer.",
         "viewPackage": "View package",
-        "ctaTitle": "Ready to get started with {name}?",
+        "ctaTitle": "Start with the {name} package",
         "ctaLead": "Fixed price, fixed timeline. We'll send a quote within 24 hours.",
         "ctaPrimary": "Request a quote",
         "ctaSecondary": "All packages"
@@ -945,8 +873,8 @@
     "products": {
       "metaTitle": "8Move logistics platform, in production | Trident Software",
       "metaDescription": "8Move is our own logistics platform: order intake, dispatch, driver apps, tracking and automated invoicing. In production in Switzerland and the EU.",
-      "crumb": "Our Product",
-      "label": "Our Product",
+      "crumb": "Our product",
+      "label": "Our product",
       "heroTitle": "<blue>8Move</blue>: our own logistics platform",
       "heroLead": "Order intake, dispatch and planning, driver applications with photo proof and signature, live tracking, automated invoicing. Shipped as configurable industry editions, not one generic product.",
       "visit": "Visit 8move.com",
@@ -966,7 +894,7 @@
         },
         "dispatch": {
           "title": "Dispatch and planning",
-          "desc": "Assignment and planning of jobs across vehicles and drivers."
+          "desc": "Assigns and plans jobs across vehicles and drivers."
         },
         "driverApp": {
           "title": "Driver app",
@@ -992,10 +920,10 @@
     },
     "iamTrade": {
       "metaTitle": "iAM-Trade — B2B/B2C/B2X E-commerce Platform | Trident Software",
-      "metaDescription": "iAM-Trade is a powerful Swiss e-commerce platform for B2B, B2C, and B2X commerce. 200+ integrations, 1M+ product support, dynamic pricing, and multi-entity account management.",
-      "heroTitle": "<blue>iAM-Trade</blue> — B2B/B2C/B2X E-commerce Platform",
-      "heroLead": "A powerful Swiss e-commerce platform built for complex commerce. Handle B2B, B2C, and B2X transactions from a single system — with 200+ integrations and support for 1 million+ products.",
-      "heroBody": "Built by Trident Software and already powering automotive parts distributors, watch accessory suppliers, and industrial equipment dealers across Switzerland and Europe.",
+      "metaDescription": "iAM-Trade is a Swiss e-commerce platform for B2B, B2C and B2X commerce: 200+ integrations, support for 1M+ products, dynamic pricing and multi-entity account management.",
+      "heroTitle": "<blue>iAM-Trade</blue>: B2B/B2C/B2X e-commerce platform",
+      "heroLead": "A Swiss e-commerce platform for complex commerce. It runs B2B, B2C and B2X sales from one system, with 200+ integrations and support for 1 million+ products.",
+      "heroBody": "Built by Trident Software and used by automotive parts distributors, watch accessory suppliers and industrial equipment dealers in Switzerland and Europe.",
       "requestDemo": "Request a demo",
       "seeCase": "See our projects",
       "stats": {
@@ -1006,36 +934,36 @@
       },
       "platformLabel": "Platform",
       "platformTitle": "Everything your commerce operation needs",
-      "platformLead": "iAM-Trade covers the full e-commerce lifecycle — from catalog management to order fulfillment and analytics.",
+      "platformLead": "iAM-Trade covers the whole e-commerce cycle, from catalogue management to order fulfilment and analytics.",
       "features": {
         "accounts": {
-          "title": "Account Management",
-          "desc": "Personalized user accounts with support for multiple business entities and contracts per user. B2B buyer hierarchies, role-based access control, and shared account management."
+          "title": "Account management",
+          "desc": "Personalised user accounts with support for multiple business entities and contracts per user. B2B buyer hierarchies, role-based access control and shared account management."
         },
         "products": {
-          "title": "Product Management",
-          "desc": "Product catalogs with 3D model support, multilingual descriptions, and automated product information exchange. Scale to 1 million+ SKUs with intelligent search and filtering."
+          "title": "Product management",
+          "desc": "Product catalogues with 3D model support, multilingual descriptions and automated product data exchange. Scales to 1 million+ SKUs with search and filtering."
         },
         "pricing": {
-          "title": "Dynamic Pricing",
-          "desc": "Flexible pricing engine with customizable discounts, cashbacks, and promotional campaigns. Contract-specific pricing for B2B clients with automated price list management."
+          "title": "Dynamic pricing",
+          "desc": "Pricing engine with configurable discounts, cashbacks and promotional campaigns. Contract-specific prices for B2B clients, with automated price list management."
         },
         "orders": {
-          "title": "Order Processing",
-          "desc": "Full lifecycle management including reservations, invoicing, complaints, and returns. Automated workflows reduce manual intervention across the entire order flow."
+          "title": "Order processing",
+          "desc": "Handles reservations, invoicing, complaints and returns. Automated workflows cut manual work across the order flow."
         },
         "delivery": {
-          "title": "Delivery Coordination",
-          "desc": "Integration with logistics partners and real-time tracking capabilities. Route optimization, proof of delivery, and customer notification across all channels."
+          "title": "Delivery coordination",
+          "desc": "Connects to logistics partners with real-time tracking. Route optimisation, proof of delivery and customer notifications on every channel."
         },
         "integrations": {
-          "title": "200+ System Integrations",
+          "title": "200+ system integrations",
           "desc": "Connect to SAP, Odoo, Salesforce, Bexio, and 200+ ERP, CRM, WMS, and payment systems via our integration layer. Open API for custom connectors."
         }
       },
       "capabilitiesLabel": "Capabilities",
       "capabilitiesTitle": "Built for scale and complexity",
-      "capabilitiesLead": "iAM-Trade is designed from the ground up for businesses with complex commerce requirements — multiple buyer types, large catalogs, and sophisticated pricing rules that off-the-shelf platforms can't handle.",
+      "capabilitiesLead": "iAM-Trade is built for businesses with complex commerce: several buyer types, large catalogues and pricing rules that off-the-shelf platforms can't handle.",
       "bookDemo": "Book a demo",
       "capabilities": [
         "B2B, B2C, and B2X commerce from a single platform",
@@ -1044,9 +972,9 @@
         "Dynamic pricing with discount rules and cashbacks",
         "Multi-currency and multi-warehouse support",
         "Full ERP / CRM / WMS integration layer",
-        "3D product visualization support",
+        "3D product visualisation support",
         "Automated invoicing and returns management",
-        "Real-time inventory synchronization",
+        "Real-time inventory synchronisation",
         "Customer loyalty programs and campaigns",
         "Advanced analytics and reporting dashboard",
         "Swiss data residency option"
@@ -1056,34 +984,34 @@
       "useCasesLead": "Built for businesses where standard Shopify or WooCommerce setups hit their limits.",
       "useCases": {
         "autoParts": {
-          "title": "Auto Parts Distributors",
+          "title": "Auto parts distributors",
           "desc": "Large catalogs with VIN lookup, vehicle compatibility filtering, multi-warehouse inventory, and dynamic pricing for dealer tiers."
         },
         "industrial": {
-          "title": "Industrial Equipment",
+          "title": "Industrial equipment",
           "desc": "Complex product configurations, custom quotes, long-tail catalogs with detailed technical specifications and 3D models."
         },
         "luxury": {
-          "title": "Watch & Luxury Goods",
-          "desc": "Curated product experiences, limited editions management, multi-currency support, and VIP buyer segmentation."
+          "title": "Watch & luxury goods",
+          "desc": "Curated product presentation, limited-edition management, multi-currency support and VIP buyer segmentation."
         },
         "food": {
           "title": "Food & FMCG",
           "desc": "Regular delivery scheduling, subscription orders, expiry date tracking, and HoReCa-specific pricing structures."
         },
         "wholesale": {
-          "title": "B2B Wholesalers",
+          "title": "B2B wholesalers",
           "desc": "Buyer hierarchies, multi-entity accounts, contract-specific pricing, and purchase approval workflows."
         },
         "multiBrand": {
-          "title": "Multi-brand Manufacturers",
+          "title": "Multi-brand manufacturers",
           "desc": "Separate branded storefronts from one backend, channel-specific pricing, and partner portal management."
         }
       },
       "techLabel": "Technology",
       "techTitle": "Built on proven technology",
       "techLead": "Cloud-native architecture that scales from startup to enterprise without re-platforming.",
-      "ctaTitle": "Ready to see iAM-Trade in action?",
+      "ctaTitle": "Want to see iAM-Trade working?",
       "ctaLead": "Schedule a live demo with our team. We'll show you exactly how iAM-Trade fits your commerce workflow.",
       "seeProjects": "See our projects"
     },
@@ -1092,17 +1020,17 @@
       "metaDescription": "Trident Software: AI-native software engineering. Founded in 2009 in Kharkiv, Ukraine; Swiss company in Sion, Valais, since 2022. 10+ engineers, 100+ projects, 20+ countries.",
       "label": "About Trident",
       "heroTitle": "Swiss quality. <blue>AI-native</blue> engineering.",
-      "heroLead": "Founded in 2009 in Kharkiv, Ukraine, and incorporated in Sion, Valais, in 2022, Trident Software builds custom software, AI systems, and embedded solutions for European SMEs. Senior engineers only. Fixed budgets. Compliance included.",
+      "heroLead": "Founded in 2009 in Kharkiv, Ukraine, and incorporated in Sion, Valais, in 2022, Trident Software builds custom software, AI systems and embedded systems for European SMEs. Senior engineers only. Fixed budgets. Compliance included.",
       "chips": [
         "Sion, Valais, Switzerland",
         "ISO 27000 · revFADP",
         "Sion · Geneva"
       ],
-      "storyLabel": "Our Story",
+      "storyLabel": "Our story",
       "storyTitle": "Built by engineers, for engineers",
-      "storyIntro": "Trident was born from frustration with agencies that overpromise and underdeliver. We set out to build a company where senior engineers own the outcome end-to-end.",
-      "storyP1": "We started in Kharkiv, Ukraine in 2009 with two engineers and a conviction: great software requires great engineers who stay on the project from kickoff to deployment. No handoffs, no junior substitutions, no feature factories.",
-      "storyP2": "Over 15 years we've delivered 100+ projects across automotive, healthcare, logistics, fashion, and SaaS, and today we build AI into the production systems our clients run on.",
+      "storyIntro": "Trident started out of frustration with agencies that overpromise and underdeliver. We wanted a company where senior engineers own the whole outcome.",
+      "storyP1": "We started in Kharkiv, Ukraine, in 2009 with two engineers and one conviction: good software needs senior engineers who stay on the project from kickoff to deployment. No handoffs, no junior substitutions, no feature factories.",
+      "storyP2": "Over 15 years we've delivered 100+ projects across automotive, healthcare, logistics, fashion and SaaS, and we now build AI into the production systems our clients run on.",
       "storyP3": "Today we work from Sion and Geneva, with senior engineers who share the same standards: clean architecture, observable systems, and honest timelines.",
       "timeline": {
         "y2009": "The team comes together in Kharkiv, Ukraine, building ERP and accounting systems for businesses",
@@ -1111,33 +1039,33 @@
         "today": "Head office in Sion, office at Campus Biotech in Geneva",
         "todayLabel": "Today"
       },
-      "valuesLabel": "Our Values",
+      "valuesLabel": "Our values",
       "valuesTitle": "How we work",
       "valuesLead": "The principles that guide every project we take on.",
       "values": {
         "compliance": {
-          "title": "Swiss Compliance First",
+          "title": "Swiss compliance first",
           "desc": "ISO 27000, revFADP, and data residency in Switzerland. We make compliance a deliverable, not an afterthought."
         },
         "engineering": {
-          "title": "Engineering Excellence",
+          "title": "Engineering excellence",
           "desc": "Senior-only teams. No juniors on client projects. Code quality and architecture matter as much as delivery speed."
         },
         "budgets": {
-          "title": "Fixed Budgets",
-          "desc": "Statement of Work before work begins. No surprises, no hourly billing debates. Predictable delivery."
+          "title": "Fixed budgets",
+          "desc": "We sign a Statement of Work before we start. No surprises, no debates over hourly billing."
         },
         "multilingual": {
           "title": "Multilingual",
-          "desc": "English, German, French, Italian. We communicate in your language — as required in Switzerland."
+          "desc": "English, German, French, Italian. We work in your language, as Swiss clients expect."
         },
         "partnership": {
-          "title": "Long-Term Partnership",
+          "title": "Long-term partnership",
           "desc": "73% of revenue from repeat clients. We build relationships, not one-off engagements."
         },
         "aiNative": {
           "title": "AI in production",
-          "desc": "We integrated AI before it became mainstream. LLMs, RAG, agents — production-deployed, not demos."
+          "desc": "We integrated AI before it became mainstream. LLMs, RAG and agents in production, not demos."
         }
       },
       "whereLabel": "Where we are",
@@ -1155,10 +1083,10 @@
           "role": "Office · Campus Biotech Innovation Park, Av. de Sécheron 15, 1202 Geneva"
         }
       },
-      "teamLabel": "The Team",
+      "teamLabel": "The team",
       "teamTitle": "Engineers who stay on your project",
       "teamLead": "No juniors on client projects. Every engineer has 5+ years of production experience. You get the same people from kickoff to handoff.",
-      "ctaTitle": "Ready to work with us?",
+      "ctaTitle": "Want to work with us?",
       "ctaLead": "Tell us about your project. We respond within 24 hours.",
       "ctaPrimary": "Start a conversation",
       "ctaSecondary": "View our work"
@@ -1167,7 +1095,7 @@
   "sections": {
     "hero": {
       "title": "Operational software and <b>AI agents,</b> built in Switzerland",
-      "lead": "We build the systems companies run on every day — order intake, dispatch, field apps, billing — and the AI layer that answers, qualifies and processes documents in four national languages.",
+      "lead": "We build the systems a company runs on every day: order intake, dispatch, field apps, billing. Our AI agents answer and qualify enquiries and process documents in four national languages.",
       "ctaAudit": "Book a free 45-min audit",
       "resultsTitle": "Measured on client projects",
       "results": {
@@ -1402,7 +1330,7 @@
           "text": "Course enquiries and enrolment peaks without temporary staff."
         },
         "startups": {
-          "title": "Startups — CTO as a Service",
+          "title": "Startups: CTO as a Service",
           "text": "Days per month instead of a hire: build vs buy, architecture, data, first hires. Also due diligence before an investment."
         }
       }
@@ -1479,7 +1407,7 @@
     },
     "logos": {
       "refs": {
-        "interhome": "vacation rental",
+        "interhome": "holiday rental",
         "ruralidays": "travel platform, incl. Holidu integration",
         "glacon": "ice production & nationwide distribution",
         "aida": "digital health (our CTO is co-founder)",
@@ -1797,7 +1725,7 @@
     },
     "cookieBanner": {
       "text": "We use essential cookies to run this site, and analytics cookies to see which pages are read.",
-      "policy": "Cookie Policy",
+      "policy": "Cookie policy",
       "decline": "Decline",
       "accept": "Accept"
     },
@@ -1819,7 +1747,7 @@
       "error": "Something went wrong. Try again.",
       "duplicate": "Already subscribed.",
       "rateLimit": "Too many requests. Try later.",
-      "demo": "Demo site — the form is switched off."
+      "demo": "Demo site: the form is switched off."
     },
     "officeMap": {
       "iframeTitle": "Trident Software office in Sion",

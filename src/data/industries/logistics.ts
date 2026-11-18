@@ -11,14 +11,14 @@ const record: IndustryRecord = {
       title: 'Logistics & Supply Chain',
       tagline: 'Visibility and automation for complex supply chains',
       description:
-        'We build warehouse management systems, last-mile delivery platforms, route optimization tools, and supply chain visibility dashboards for logistics companies across Europe.',
+        'We build warehouse management systems, last-mile delivery platforms, route optimisation tools and supply chain visibility dashboards for logistics companies across Europe.',
       challenges: [
         {
           title: 'Real-time tracking',
           description: 'GPS and IoT sensor integration for shipment and asset tracking at scale.',
         },
         {
-          title: 'Route optimization',
+          title: 'Route optimisation',
           description: 'Dynamic routing with traffic, capacity, and time-window constraints.',
         },
         {
@@ -29,7 +29,7 @@ const record: IndustryRecord = {
       solutions: [
         {
           title: 'Warehouse management',
-          description: 'Barcode/RFID-based WMS with picking optimization and cycle counting.',
+          description: 'Barcode/RFID-based WMS with picking optimisation and cycle counting.',
         },
         {
           title: 'Last-mile delivery',
@@ -40,14 +40,14 @@ const record: IndustryRecord = {
           description: 'Multi-carrier tracking and exception management dashboards.',
         },
         {
-          title: 'Route optimization',
-          description: 'AI-based route planning reducing fuel costs and delivery windows.',
+          title: 'Route optimisation',
+          description: 'AI route planning to cut fuel costs and tighten delivery windows.',
         },
       ],
       meta: {
-        title: 'Logistics & Supply Chain Software | Trident Software',
+        title: 'Logistics & supply chain software | Trident Software',
         description:
-          'Logistics software development — WMS, last-mile delivery, route optimization, supply chain visibility. Swiss engineering team.',
+          'Logistics software development: WMS, last-mile delivery, route optimisation, supply chain visibility. Swiss engineering team.',
       },
     },
     de: {

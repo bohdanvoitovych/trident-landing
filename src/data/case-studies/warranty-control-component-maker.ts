@@ -34,7 +34,7 @@ const record: CaseRecord = {
         {
           title: 'Before the change: up to 85 % of the damage happened outside the factory',
           paragraphs: [
-            'Field analysis attributed up to 85% of component failures to water, not to manufacturing defects. Water outside specification, filters left past their capacity, purifiers and filtration stations never serviced.',
+            'Field analysis attributed up to 85 % of component failures to water, not manufacturing defects. Water outside specification, filters left past their capacity, purifiers and filtration stations never serviced.',
             'The physics is well documented. The specialty coffee standard puts total dissolved solids in a working range of roughly 75–250 ppm with a target near 150, calcium hardness at 50–175 ppm, alkalinity at 40–75 ppm. Above that, scale forms fast: it restricts flow, coats heating elements, and attacks exactly the parts this company makes, namely pumps, valves and flow meters. Below it, water turns aggressive in a different way. Either end of the range ends as a warranty claim against the component.',
           ],
         },

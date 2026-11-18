@@ -32,7 +32,7 @@ const record: CaseRecord = {
         {
           title: 'Before the change: documentation eats a third of clinical time',
           paragraphs: [
-            '35% of physician working time goes into documenting consultations. That is time spent writing about having treated patients, not treating them. Notes are typed between appointments, finished in the evening, and increasingly written from memory hours after the fact.',
+            '35 % of physician working time goes on documenting consultations. That is time spent writing about having treated patients, not treating them. Notes are typed between appointments, finished in the evening, and increasingly written from memory hours after the fact.',
           ],
         },
         {
@@ -67,7 +67,7 @@ const record: CaseRecord = {
         {
           title: '2. The assistant transcribes',
           paragraphs: [
-            'Speech-to-text across the languages of the practice, with medical vocabulary, drug names, and anatomical terms recognized rather than approximated.',
+            'Speech-to-text across the languages of the practice, with medical vocabulary, drug names, and anatomical terms recognised rather than approximated.',
           ],
         },
         {

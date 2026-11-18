@@ -8,20 +8,20 @@ const record: LocationRecord = {
     en: {
       name: 'Bern',
       region: 'Canton of Bern',
-      tagline: "Digital solutions for Switzerland's federal capital",
+      tagline: "Software for Switzerland's federal capital",
       description:
-        "Bern is Switzerland's administrative heart — federal ministries, cantonal governments, universities, and healthcare institutions. We specialize in public sector digitalization, secure data platforms, and citizen-facing portals built to Swiss government standards.",
-      keyIndustries: ['Public Sector', 'Healthcare', 'Education', 'Insurance', 'Defense & Security'],
+        "Bern is Switzerland's administrative centre, with federal ministries, cantonal governments, universities and healthcare institutions. We specialise in public sector digitalisation, secure data platforms and citizen portals built to Swiss government standards.",
+      keyIndustries: ['Public sector', 'Healthcare', 'Education', 'Insurance', 'Defence & security'],
       highlights: [
         {
-          title: 'Public sector digitalization',
+          title: 'Public sector digitalisation',
           description:
             'Citizen portals, permit management, and government workflow systems compliant with eCH standards and Swiss data residency requirements.',
         },
         {
           title: 'University & research software',
           description:
-            "Research data platforms, lab management systems, and academic collaboration tools for Bern's universities and ETH affiliates.",
+            "Research data platforms, lab management systems, and academic collaboration tools for Bern's universities and research institutes.",
         },
         {
           title: 'Healthcare IT integration',
@@ -30,9 +30,9 @@ const record: LocationRecord = {
         },
       ],
       meta: {
-        title: 'Software Development Bern | Trident Software Switzerland',
+        title: 'Software development Bern | Trident Software Switzerland',
         description:
-          'Public sector digitalization, healthcare IT, and government software for Bern. Swiss data residency, eCH standards compliance. Development team based in Valais.',
+          'Public sector digitalisation, healthcare IT and government software for Bern. Swiss data residency, eCH standards compliance. Development team based in Valais.',
       },
     },
     de: {
@@ -51,7 +51,7 @@ const record: LocationRecord = {
         {
           title: 'Software für Hochschulen und Forschung',
           description:
-            'Forschungsdatenplattformen, Labormanagement-Systeme und Tools für die akademische Zusammenarbeit für die Berner Hochschulen und ETH-nahe Institutionen.',
+            'Forschungsdatenplattformen, Labormanagement-Systeme und Tools für die akademische Zusammenarbeit für die Berner Hochschulen und Forschungsinstitute.',
         },
         {
           title: 'IT-Integration im Gesundheitswesen',
@@ -81,7 +81,7 @@ const record: LocationRecord = {
         {
           title: 'Logiciels pour les hautes écoles et la recherche',
           description:
-            "Plateformes de données de recherche, systèmes de gestion de laboratoire et outils de collaboration académique pour les hautes écoles bernoises et les institutions liées à l'EPF.",
+            "Plateformes de données de recherche, systèmes de gestion de laboratoire et outils de collaboration académique pour les hautes écoles et instituts de recherche bernois.",
         },
         {
           title: 'Intégration informatique dans la santé',
@@ -111,7 +111,7 @@ const record: LocationRecord = {
         {
           title: 'Software per università e ricerca',
           description:
-            'Piattaforme per i dati di ricerca, sistemi di gestione dei laboratori e strumenti di collaborazione accademica per le università bernesi e gli istituti legati al Politecnico federale.',
+            'Piattaforme per i dati di ricerca, sistemi di gestione dei laboratori e strumenti di collaborazione accademica per le università e gli istituti di ricerca bernesi.',
         },
         {
           title: 'Integrazione IT in ambito sanitario',
