@@ -1,0 +1,438 @@
+{
+  "data:src/data/ai-services/en.ts": {
+    "hash": "9c31655f73015f38",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/blog-meta.ts": {
+    "hash": "180cc026dd8aca0d",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/blog/batch-01.ts": {
+    "hash": "a162ec51631e140e",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/blog/batch-02.ts": {
+    "hash": "22b5938cde86972c",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/blog/batch-03.ts": {
+    "hash": "dc193b6ef099eb20",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/blog/batch-04.ts": {
+    "hash": "c161fe5acda1a616",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/blog/batch-05.ts": {
+    "hash": "be31477e2e5275fa",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/blog/batch-06.ts": {
+    "hash": "8392b6a394eed32a",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/blog/batch-07.ts": {
+    "hash": "271b3386f8ba546f",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/blog/batch-08.ts": {
+    "hash": "92af6c4ae3e65260",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/blog/batch-09.ts": {
+    "hash": "48a0b02f98e764be",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/case-studies/building-materials-order-to-load.ts": {
+    "hash": "9503d14e31df637f",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/case-studies/clinic-voice-documentation.ts": {
+    "hash": "230ec9f4644fcf7e",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/case-studies/fiduciary-mail-and-receipts.ts": {
+    "hash": "b630d7e63dad317e",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/case-studies/letting-agency-enquiry-to-viewing.ts": {
+    "hash": "a5f4e03afc7dfc5b",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/case-studies/post-acute-clinic-network.ts": {
+    "hash": "997424dfe48a55af",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/case-studies/warranty-control-component-maker.ts": {
+    "hash": "8aab74f9c0b86a85",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/cases.ts": {
+    "hash": "4fcb9a2384c653aa",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/faq.ts": {
+    "hash": "a2f6d5dae60b0763",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/automotive.ts": {
+    "hash": "9ce32c2043d92e2d",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/blockchain.ts": {
+    "hash": "c79cc2c85c793d39",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/catering.ts": {
+    "hash": "9061ac410be09310",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/diy-tools.ts": {
+    "hash": "d7c27c52be683166",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/education.ts": {
+    "hash": "f072be0cbcde22da",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/fashion-lifestyle.ts": {
+    "hash": "1312f8c0346fdcdb",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/fintech.ts": {
+    "hash": "c1a70314f9e6bab1",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/fmcg.ts": {
+    "hash": "12c15724b96ce05e",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/games.ts": {
+    "hash": "394d5d38fbcb2dba",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/healthcare.ts": {
+    "hash": "e46b377e7a2e3fb7",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/hospitality.ts": {
+    "hash": "d03799f899671963",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/logistics.ts": {
+    "hash": "571bd483dacdb1c1",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/manufacturing.ts": {
+    "hash": "3a08213d9b42ef5a",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/professional-services.ts": {
+    "hash": "20953464fe3a2645",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/proptech.ts": {
+    "hash": "0d6418e37cdfc946",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/retail-ecommerce.ts": {
+    "hash": "41b6fa49055ce75b",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/saas.ts": {
+    "hash": "7cbfc9cc53e9042f",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/social-media.ts": {
+    "hash": "a7f10362f1e68551",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/sport-activities.ts": {
+    "hash": "f2991e2baf3974e5",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/startups-cto.ts": {
+    "hash": "c5f860bc3413a3ed",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/tourism.ts": {
+    "hash": "de516bea3a1cc0b1",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/industries/trade-and-building-materials.ts": {
+    "hash": "800ea6916280511f",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/basel.ts": {
+    "hash": "5e6bf4cc5976d813",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/bern.ts": {
+    "hash": "13651465846205c7",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/fribourg.ts": {
+    "hash": "fce44f5ebd53052e",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/geneva.ts": {
+    "hash": "cf413d794b5c501f",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/lausanne.ts": {
+    "hash": "441cd729d0b19c56",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/lucerne.ts": {
+    "hash": "67537928c38b76c2",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/lugano.ts": {
+    "hash": "81e4613ed49e17a6",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/sion.ts": {
+    "hash": "a41b3cc48324a3c1",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/st-gallen.ts": {
+    "hash": "5e00b520ce5ec894",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/winterthur.ts": {
+    "hash": "58b252d3d5459ae5",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/zug.ts": {
+    "hash": "09edf17120f184d5",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/locations/zurich.ts": {
+    "hash": "51005d733b14ac3c",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/projects.ts": {
+    "hash": "3d19012b7003ec6a",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/solutions.ts": {
+    "hash": "1c9e82d4cca01eda",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/team.ts": {
+    "hash": "e92a2f38ae3a56ed",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/technologies.ts": {
+    "hash": "f722d94c2d7fdb28",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/testimonials.ts": {
+    "hash": "30d2c1946bb54ecb",
+    "editedAt": "2026-11-18"
+  },
+  "data:src/data/use-cases.ts": {
+    "hash": "564a63c504759984",
+    "editedAt": "2026-11-18"
+  },
+  "messages:blog": {
+    "hash": "5ac30e1c2f451e53",
+    "editedAt": "2026-11-18"
+  },
+  "messages:cases": {
+    "hash": "7da6aaf04fa62e4b",
+    "editedAt": "2026-11-18"
+  },
+  "messages:chrome": {
+    "hash": "7f0cf026b9f79e66",
+    "editedAt": "2026-11-18"
+  },
+  "messages:molecules": {
+    "hash": "ed7ccb9d637f1be1",
+    "editedAt": "2026-11-18"
+  },
+  "messages:notFound": {
+    "hash": "6a96c760c3428d1f",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.about": {
+    "hash": "ff657b9c0b93997c",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.blog": {
+    "hash": "63fbcf6f9c2791f1",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.cases": {
+    "hash": "e3bfc3d774aea5cc",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.contact": {
+    "hash": "92a9db1798eb790c",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.faq": {
+    "hash": "af6e71a39969ff7b",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.home": {
+    "hash": "8bc3ffdeefb04c55",
+    "editedAt": "2026-11-17"
+  },
+  "messages:pages.iamTrade": {
+    "hash": "4e748ca7606588c3",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.industries": {
+    "hash": "3eaeb1d97516e7f6",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.locations": {
+    "hash": "f77e086ace9096c3",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.notFound": {
+    "hash": "7e616355557ec54c",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.pricing": {
+    "hash": "f555f68871477990",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.products": {
+    "hash": "01b625abfe3f5e83",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.projects": {
+    "hash": "79d79e991cb1edb0",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.services": {
+    "hash": "3718e3c4e50428ca",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.solutions": {
+    "hash": "1ab4e9266fcc8684",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.team": {
+    "hash": "88f3d57063e1a885",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.technologies": {
+    "hash": "c6274c23016f8b2e",
+    "editedAt": "2026-11-18"
+  },
+  "messages:pages.useCases": {
+    "hash": "dd966bd038df592b",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.agent": {
+    "hash": "83dab51178f8175a",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.agentChat": {
+    "hash": "6ccd80d1fc2d2cc5",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.agentVsHire": {
+    "hash": "297d60485dcc70de",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.blog": {
+    "hash": "282b75b5019ef6e4",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.calculator": {
+    "hash": "a469e25cbc200ea6",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.cases": {
+    "hash": "e85da712cc717d28",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.faq": {
+    "hash": "9a95e8709ba222c7",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.hero": {
+    "hash": "4c18cc3b837c14ea",
+    "editedAt": "2026-11-17"
+  },
+  "messages:sections.heroLive": {
+    "hash": "75a1f8b4a7e5c312",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.industries": {
+    "hash": "be6dc46469213ee1",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.integrations": {
+    "hash": "08c93b01904e4454",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.logos": {
+    "hash": "fa16040fc53d6443",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.partners": {
+    "hash": "5628375afa8496b2",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.pricing": {
+    "hash": "40e3a427b0749aca",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.problem": {
+    "hash": "311bf6f17ed2c18f",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.process": {
+    "hash": "24cac798369b99b6",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.products": {
+    "hash": "45506b9390deadd8",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.services": {
+    "hash": "1646190705c04ab4",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.swiss": {
+    "hash": "abc3794fb13f9d72",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.team": {
+    "hash": "3de578ebe16a1665",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.testimonialsCarousel": {
+    "hash": "04885fe6d484a2ab",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.useCases": {
+    "hash": "8b328ea46c7de4cd",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.whereWeSayNo": {
+    "hash": "ef3f7c0ebbb301a2",
+    "editedAt": "2026-11-18"
+  },
+  "messages:sections.whyUs": {
+    "hash": "eb63d2f814d4dc6a",
+    "editedAt": "2026-11-18"
+  },
+  "messages:services": {
+    "hash": "974b89c89856f3c2",
+    "editedAt": "2026-11-18"
+  },
+  "messages:templates": {
+    "hash": "44c9fede8b093151",
+    "editedAt": "2026-11-18"
+  },
+  "messages:ui": {
+    "hash": "0b783d1419f190a7",
+    "editedAt": "2026-11-18"
+  }
+}
