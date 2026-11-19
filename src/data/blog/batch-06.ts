@@ -908,13 +908,13 @@ An API gateway layer solves this. It defines what must be standardised and allow
 Partner System
       │
       ▼
-[1. Auth & Identity Layer]   ← OAuth2, API keys, mTLS — standardized
+[1. Auth & Identity Layer]   ← OAuth2, API keys, mTLS — standardised
       │
       ▼
 [2. Rate Limiting & Quotas]  ← Per-partner limits, burst handling
       │
       ▼
-[3. Transform & Route Layer] ← Schema normalization, partner-specific adapters
+[3. Transform & Route Layer] ← Schema normalisation, partner-specific adapters
       │
       ▼
 [4. Core Business Logic]     ← Your domain, clean of partner concerns
@@ -1912,7 +1912,7 @@ For a 50K-line JavaScript codebase with a 2-developer team:
 
 The teams that succeed treat it as ongoing hygiene, not a project with a deadline.`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2025-11-19",
     readingTime: 9,
     tags: [
@@ -2046,7 +2046,7 @@ Für eine JavaScript-Codebasis mit 50'000 Zeilen und einem Team von 2 Entwickler
 - Total: 10 bis 16 Wochen, ohne die Feature-Entwicklung zu stoppen
 
 Erfolgreiche Teams behandeln die Migration als laufende Pflege, nicht als Projekt mit Deadline.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "TypeScript-Migration für Legacy-Code | Trident Software",
           description: "Inkrementelle TypeScript-Migrationsstrategie: permissive Konfiguration, Datei-Priorisierung, any-Budget und schrittweise Strict-Mode-Aktivierung.",
@@ -2170,7 +2170,7 @@ Pour une base de code JavaScript de 50'000 lignes et une équipe de 2 développe
 - Total : 10 à 16 semaines, sans arrêter le développement de fonctionnalités
 
 Les équipes qui réussissent traitent la migration comme une hygiène continue, pas comme un projet avec une échéance.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Migration TypeScript legacy — Trident Software Blog",
           description: "Stratégie de migration TypeScript incrémentale : configuration permissive, priorisation des fichiers, budget any et activation progressive du mode strict.",
@@ -2294,7 +2294,7 @@ Per una codebase JavaScript da 50'000 righe e un team di 2 sviluppatori:
 - Totale: 10–16 settimane senza fermare lo sviluppo delle feature
 
 I team che ci riescono trattano la migrazione come igiene continua, non come un progetto con una scadenza.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Migrazione TypeScript legacy — Trident Software Blog",
           description: "Strategia di migrazione TypeScript incrementale: configurazione permissiva, priorità dei file, budget any e attivazione progressiva dello strict mode.",
@@ -2395,7 +2395,7 @@ A typical B2B SaaS MVP with our recommended stack costs CHF 3,000–8,000/year i
 
 Start small. Add capacity when you have traffic data proving you need it.`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2025-12-03",
     readingTime: 10,
     tags: [
@@ -2497,7 +2497,7 @@ Ein typisches B2B-SaaS-MVP mit unserem empfohlenen Stack kostet CHF 3'000–8'00
 - PostgreSQL (managed): CHF 20–80/Monat
 
 Starten Sie klein. Bauen Sie Kapazität aus, wenn Ihre Traffic-Daten zeigen, dass Sie sie brauchen.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Tech-Stack für Schweizer Startups 2026 | Trident Software",
           description: "Tech-Stack-Empfehlungen für Schweizer Startups 2026: Next.js, Drizzle, PostgreSQL, Tailwind, Auth.js — und warum wir bestimmte Alternativen vermeiden.",
@@ -2589,7 +2589,7 @@ Un MVP SaaS B2B typique avec la stack recommandée coûte CHF 3'000–8'000 par 
 - PostgreSQL (managé) : CHF 20–80/mois
 
 Commencez petit. Ajoutez de la capacité quand vos données de trafic prouvent que vous en avez besoin.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Stack technique startups suisses 2026 | Trident Software",
           description: "Recommandations stack tech pour startups suisses 2026 : Next.js, Drizzle, PostgreSQL, Tailwind, Auth.js — et pourquoi éviter certaines alternatives.",
@@ -2681,7 +2681,7 @@ Un tipico MVP SaaS B2B con lo stack che consigliamo costa CHF 3'000–8'000 all'
 - PostgreSQL (gestito): CHF 20–80/mese
 
 Parti in piccolo. Aggiungi capacità quando i dati di traffico dimostrano che ti serve.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Tech stack startup svizzere 2026 — Trident Software Blog",
           description: "Raccomandazioni tech stack per startup svizzere 2026: Next.js, Drizzle, PostgreSQL, Tailwind, Auth.js — e perché evitare certe alternative.",

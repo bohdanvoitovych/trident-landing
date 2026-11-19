@@ -569,7 +569,7 @@ A [conversational AI](/blog/talk-to-me-ai-conversational-ai-agents-for-business)
 
 - **Start simple:** You don’t need to reinvent your tech stack. Amazon Personalize offers a fast, low-risk entry point.
 - **Let the data guide you:** Once you see results, scale with custom AI and LLM features.
-- Personalization works when each user sees offers that match their own context.
+- Personalisation works when each user sees offers that match their own context.
 
 A simple AI recommender system gave users personalised, real-time suggestions that led them to the right experiences.
 
@@ -580,7 +580,7 @@ The system can grow further through deeper personalisation and more advanced AI 
 If your visitors browse and leave without booking, we can build an AI recommender system for your platform. [Reach out to us](/contact) to discuss your data.`,
     meta: {
       title: "AI recommender system for travel | Trident Software",
-      description: "How a travel platform added Amazon Personalize in three weeks, then custom AI models and an LLM assistant to personalize offers.",
+      description: "How a travel platform added Amazon Personalize in three weeks, then custom AI models and an LLM assistant to personalise offers.",
     },
     translations: {
       de: {
@@ -2558,12 +2558,12 @@ I clienti si aspettano sempre di più, mentre costi e carenza di personale cresc
   {
     slug: "iot-data-monetization-in-programmable-economy",
     image: "/images/blog/iot-data-monetization-in-programmable-economy.jpg",
-    title: "IoT data monetization in programmable economy",
+    title: "IoT data monetisation in programmable economy",
     publishedAt: "2025-03-05",
     readingTime: 5,
     excerpt: "How IoT data becomes revenue in the programmable economy: Data-as-a-Service, dynamic pricing and smart city models, plus our Tpoint sports court project.",
     tags: [
-      "Data monetization",
+      "Data monetisation",
       "IoT",
       "Smart city",
     ],
@@ -2615,7 +2615,7 @@ Cities around the world increasingly use IoT devices to **monitor and manage eve
 
 ### Data-as-a-Service
 
-Cities can **aggregate and anonymize data** collected from smart traffic sensors, air quality monitors, and energy grids. This data can then be **offered as a service to businesses**, researchers, and developers.
+Cities can **aggregate and anonymise data** collected from smart traffic sensors, air quality monitors, and energy grids. This data can then be **offered as a service to businesses**, researchers, and developers.
 
 For example, **traffic data** can be sold to urban planning firms or ride-sharing companies to optimise route planning.
 
@@ -2657,7 +2657,7 @@ Clients can configure lighting, AC, music, score-tracking, game video recording 
 
 - **Pay-per-use and dynamic pricing:** Court owners can ***monetise idle time*** by dynamically adjusting pricing based on demand. Real-time IoT data on court usage, peak hours, and cancellations lets owners price flexibly to raise occupancy and revenue.
 - **Subscriptions and memberships:** Players can purchase club memberships, game passes, or premium services (e.g., video recordings, live streaming, and score-tracking). This turns a one-time payment model into a recurring revenue stream.
-- **Data-as-a-Service (DaaS):** By aggregating player behaviour, peak usage times, and facility conditions, clubs can ***sell anonymized insights*** to sports brands, advertisers, and event organisers for targeted promotions and sponsorships.
+- **Data-as-a-Service (DaaS):** By aggregating player behaviour, peak usage times, and facility conditions, clubs can ***sell anonymised insights*** to sports brands, advertisers, and event organisers for targeted promotions and sponsorships.
 - **Automated energy management:** Smart lighting, AC, and music systems adjust to real-time occupancy, which cuts energy costs and protects margins.
 - **In-app marketplace and sponsorships:** The app can ***integrate partnered brands***, offering players sports gear, nutrition products, and coaching services directly through the platform. Brands can pay for targeted advertising based on usage patterns.
 
@@ -2665,7 +2665,7 @@ For companies, start-ups and urban planners, the practical step is to **invest i
 
 [Get in touch with us](/contact) to discuss how your device data could become a revenue stream.`,
     meta: {
-      title: "Data monetization in the programmable economy",
+      title: "Data monetisation in the programmable economy",
       description: "How IoT data becomes revenue in the programmable economy: Data-as-a-Service, dynamic pricing, smart cities and our Tpoint sports court project.",
     },
     translations: {
@@ -2980,7 +2980,7 @@ Per aziende, start-up e urbanisti il messaggio è chiaro: chi **investe oggi in 
   {
     slug: "practical-finops-tips-for-aws-cost-optimization",
     image: "/images/blog/practical-finops-tips-for-aws-cost-optimization.jpg",
-    title: "Practical FinOps tips for AWS cost optimization",
+    title: "Practical FinOps tips for AWS cost optimisation",
     publishedAt: "2025-02-26",
     readingTime: 5,
     excerpt: "FinOps tips for AWS cost optimisation: cost visibility, commitment options, rightsizing, non-production schedules and Well-Architected reviews, with a 65% saving.",
@@ -3085,7 +3085,7 @@ The review shows where to improve performance, security and cost efficiency acro
 2. **Security:** Protecting cloud systems and keeping your data confidential.
 3. **Reliability:** Minimising disruptions to your services and making them resilient.
 4. **Performance Efficiency:** Using computing resources efficiently to meet demand.
-5. **Cost Optimization:** Meeting your IT needs without unnecessary spending.
+5. **Cost Optimisation:** Meeting your IT needs without unnecessary spending.
 
 These AWS cost optimisation strategies help companies keep up with [tech trends](/blog/tech-shaping-2025-business-needs-and-our-plans) and take control of their cloud expenses, **so they scale efficiently without overspending**.
 
@@ -3093,8 +3093,8 @@ As an [AWS Certified Partner](/blog/partnership-with-amazon-web-services), Tride
 
 [Contact us](/contact) **for a free consultation** on applying FinOps practices to your AWS bill.`,
     meta: {
-      title: "AWS cost optimization: one client cut costs 65%",
-      description: "FinOps tips for AWS cost optimization: cost visibility, commitments, rightsizing and Well-Architected reviews. One client cut cloud costs by 65%.",
+      title: "AWS cost optimisation: one client cut costs 65%",
+      description: "FinOps tips for AWS cost optimisation: cost visibility, commitments, rightsizing and Well-Architected reviews. One client cut cloud costs by 65%.",
     },
     translations: {
       de: {
@@ -5179,7 +5179,7 @@ Se hai domande o ti serve aiuto per affinare le strategie di consegna, [contatta
   {
     slug: "boosting-sales-features-and-price-optimization-models",
     image: "/images/blog/boosting-sales-features-and-price-optimization-models.png",
-    title: "Boosting sales: features and price optimization models",
+    title: "Boosting sales: features and price optimisation models",
     publishedAt: "2024-08-09",
     readingTime: 3,
     excerpt: "Price optimisation models and sales features for e-commerce: dynamic pricing, pricing categories, discounts, bundles and personalised recommendations.",
@@ -5254,8 +5254,8 @@ Used together, they save staff time, give customers value and support steady, pr
 
 Putting them in place takes system integration, market knowledge and a clear view of how your customers buy.`,
     meta: {
-      title: "Price optimization models to boost your sales",
-      description: "Price optimization models and sales features for e-commerce: dynamic pricing, discounts, bundles and personalized recommendations.",
+      title: "Price optimisation models to boost your sales",
+      description: "Price optimisation models and sales features for e-commerce: dynamic pricing, discounts, bundles and personalised recommendations.",
     },
     translations: {
       de: {

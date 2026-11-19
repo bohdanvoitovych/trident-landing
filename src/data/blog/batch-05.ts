@@ -53,7 +53,7 @@ The right framing: fixed-price for execution, T&M for discovery. Run a 2–4 wee
 
 Our current preferred model: **fixed-price per phase, not per project**. Each phase is scoped, priced, and delivered independently. The client has cost certainty for each phase. We have scope certainty for each phase. Neither side is locked into a multi-month contract based on assumptions made in week one.`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2025-11-05",
     readingTime: 6,
     tags: [
@@ -135,7 +135,7 @@ Die richtige Einordnung: Festpreis für die Umsetzung, T&M für die Discovery. F
 ## Der hybride Ansatz
 
 Unser aktuell bevorzugtes Modell: **Festpreis pro Phase, nicht pro Projekt**. Jede Phase wird einzeln definiert, offeriert und geliefert. Der Kunde hat Kostensicherheit für jede Phase. Wir haben Klarheit über den Umfang jeder Phase. Keine Seite ist an einen mehrmonatigen Vertrag gebunden, der auf Annahmen aus der ersten Woche beruht.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Festpreisverträge für Software — Trident Software Blog",
           description: "Wann Festpreisverträge funktionieren und wann sie scheitern. Entscheidungsrahmen und Vertragsklauseln, die beide Seiten schützen.",
@@ -208,7 +208,7 @@ La bonne grille de lecture : prix fixe pour l'exécution, régie pour la discove
 ## L'approche hybride
 
 Notre modèle préféré aujourd'hui : **un prix fixe par phase, pas par projet**. Chaque phase est cadrée, chiffrée et livrée séparément. Le client a une certitude sur les coûts de chaque phase. Nous avons une certitude sur le périmètre de chaque phase. Aucune des deux parties n'est enfermée dans un contrat de plusieurs mois fondé sur des hypothèses posées la première semaine.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Contrats logiciels à prix fixe — Trident Software Blog",
           description: "Quand les contrats à prix fixe fonctionnent et quand ils échouent. Cadre décisionnel et clauses contractuelles qui protègent les deux parties.",
@@ -281,7 +281,7 @@ La chiave di lettura giusta: prezzo fisso per l'esecuzione, T&M per la discovery
 ## L'approccio ibrido
 
 Il modello che oggi preferiamo: **prezzo fisso per fase, non per progetto**. Ogni fase viene definita, quotata e consegnata in modo indipendente. Il cliente ha certezza dei costi per ogni fase. Noi abbiamo certezza del perimetro per ogni fase. Nessuna delle due parti resta vincolata a un contratto di diversi mesi basato su ipotesi fatte nella prima settimana.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Contratti software a prezzo fisso — Trident Software Blog",
           description: "Quando i contratti a prezzo fisso funzionano e quando falliscono. Framework decisionale e clausole contrattuali che proteggono entrambe le parti.",
@@ -389,7 +389,7 @@ Each requires a Data Processing Agreement (DPA). Most major providers offer thes
 5. Execute DPAs with all sub-processors
 6. Set up breach detection and notification workflow`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2025-11-19",
     readingTime: 9,
     tags: [
@@ -499,7 +499,7 @@ Für jeden braucht es einen Auftragsbearbeitungsvertrag (AVV). Die meisten gross
 4. Verzeichnis der Bearbeitungstätigkeiten erstellen
 5. AVV mit allen Auftragsbearbeitern abschliessen
 6. Erkennung von Datenschutzverletzungen und Meldeprozess aufsetzen`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "nDSG Compliance für SaaS-Produkte — Trident Software Blog",
           description: "Entwickler-Checkliste für nDSG: Datensparsamkeit, Einwilligung, Auskunftsrecht, Löschpflichten und Bearbeitungsverzeichnis für Schweizer SaaS-Produkte.",
@@ -598,7 +598,7 @@ Chacun nécessite un contrat de sous-traitance (DPA). La plupart des grands four
 4. Rédiger votre registre des traitements
 5. Conclure des DPA avec tous les sous-traitants
 6. Mettre en place la détection des violations et le processus d'annonce`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Conformité nLPD pour SaaS — Trident Software Blog",
           description: "Checklist développeur pour la conformité nLPD : minimisation des données, consentement, droit d'accès, effacement et registre des traitements.",
@@ -697,7 +697,7 @@ Per ognuno serve un accordo sul trattamento dei dati (DPA). La maggior parte dei
 4. Redigi il registro dei trattamenti
 5. Stipula i DPA con tutti i subincaricati
 6. Configura il rilevamento delle violazioni e il processo di notifica`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Conformità nLPD per SaaS — Trident Software Blog",
           description: "Checklist per sviluppatori sulla conformità nLPD: minimizzazione dei dati, consenso, diritto di accesso, cancellazione e registro dei trattamenti.",
@@ -2173,7 +2173,7 @@ Financial data stays in proven ERP software, and custom development goes only wh
 
 Question 4 is the one most clients skip. Custom software requires ongoing engineering. If your vendor disappears, the system becomes unmaintainable. Ensure you own the source code and can hire others to maintain it.`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2026-01-22",
     readingTime: 7,
     tags: [
@@ -2265,7 +2265,7 @@ So bleibt die Stabilität bewährter ERP-Software für Finanzdaten erhalten, und
 5. Wenn wir individuell entwickeln: Wie exportieren wir die Daten, falls wir später wechseln?
 
 Frage 4 überspringen die meisten Kunden. Individuelle Software braucht laufende Entwicklungsarbeit. Verschwindet Ihr Anbieter, lässt sich das System nicht mehr warten. Stellen Sie sicher, dass Ihnen der Quellcode gehört und Sie andere mit der Wartung beauftragen können.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Individuelles ERP vs. Standardsoftware in der Schweiz",
           description: "Entscheidungsrahmen für Custom ERP vs. Standardsoftware: Wann Bexio, Abacus und SAP reichen und wann individuelle Entwicklung sinnvoll ist.",
@@ -2347,7 +2347,7 @@ Cette approche conserve la stabilité d'un ERP éprouvé pour les données finan
 5. Si nous développons sur mesure, comment exporterons-nous nos données si nous changeons de solution plus tard ?
 
 La question 4 est celle que la plupart des clients sautent. Un logiciel sur mesure exige un travail de développement continu. Si votre prestataire disparaît, le système devient impossible à maintenir. Assurez-vous d'être propriétaire du code source et de pouvoir confier la maintenance à d'autres.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "ERP sur mesure vs standard en Suisse — Trident Software Blog",
           description: "Cadre décisionnel ERP sur mesure vs logiciel standard : quand Bexio, Abacus et SAP suffisent et quand le développement personnalisé est justifié.",
@@ -2429,7 +2429,7 @@ Questo approccio mantiene la stabilità di un ERP collaudato per i dati finanzia
 5. Se sviluppiamo su misura, come esporteremo i dati se in futuro cambiamo sistema?
 
 La domanda 4 è quella che la maggior parte dei clienti salta. Il software su misura richiede un lavoro di sviluppo continuo. Se il tuo fornitore scompare, il sistema diventa impossibile da mantenere. Assicurati di essere proprietario del codice sorgente e di poter affidare la manutenzione ad altri.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "ERP su misura vs standard in Svizzera — Trident Software",
           description: "Framework decisionale ERP personalizzato vs software standard: quando Bexio, Abacus e SAP bastano e quando lo sviluppo su misura è giustificato.",
@@ -2577,7 +2577,7 @@ Cost comparison for 1,000 invoices/month: Claude API ~CHF 40, GPT-4V ~CHF 55, Te
       },
       {
         question: "Can this handle invoices in German, French, and Italian?",
-        answer: "Yes. Claude 3.5 Sonnet and GPT-4V handle all Swiss national languages well. The extraction schema works regardless of invoice language; the model translates implicitly.",
+        answer: "Yes. Claude 3.5 Sonnet and GPT-4V handle German, French and Italian well. The extraction schema works regardless of invoice language; the model translates implicitly.",
       },
       {
         question: "How do we handle supplier-specific invoice formats that recur frequently?",
@@ -2694,7 +2694,7 @@ Kostenvergleich für 1,000 Rechnungen pro Monat: Claude API ~CHF 40, GPT-4V ~CHF
           },
           {
             question: "Funktioniert das mit Rechnungen auf Deutsch, Französisch und Italienisch?",
-            answer: "Ja. Claude 3.5 Sonnet und GPT-4V beherrschen alle Schweizer Landessprachen gut. Das Extraktionsschema funktioniert unabhängig von der Sprache der Rechnung, denn das Modell übersetzt implizit.",
+            answer: "Ja. Claude 3.5 Sonnet und GPT-4V beherrschen Deutsch, Französisch und Italienisch gut. Das Extraktionsschema funktioniert unabhängig von der Sprache der Rechnung, denn das Modell übersetzt implizit.",
           },
           {
             question: "Wie gehen wir mit lieferantenspezifischen Rechnungsformaten um, die häufig wiederkehren?",
@@ -2811,7 +2811,7 @@ Comparaison des coûts pour 1,000 factures par mois : Claude API ~CHF 40, GPT-4V
           },
           {
             question: "Cela fonctionne-t-il avec des factures en allemand, en français et en italien ?",
-            answer: "Oui. Claude 3.5 Sonnet et GPT-4V maîtrisent bien toutes les langues nationales suisses. Le schéma d'extraction fonctionne quelle que soit la langue de la facture, car le modèle traduit implicitement.",
+            answer: "Oui. Claude 3.5 Sonnet et GPT-4V maîtrisent bien l'allemand, le français et l'italien. Le schéma d'extraction fonctionne quelle que soit la langue de la facture, car le modèle traduit implicitement.",
           },
           {
             question: "Comment gérer les formats de facture propres à un fournisseur qui reviennent souvent ?",
@@ -2928,7 +2928,7 @@ Confronto dei costi per 1,000 fatture al mese: Claude API ~CHF 40, GPT-4V ~CHF 5
           },
           {
             question: "Funziona con fatture in tedesco, francese e italiano?",
-            answer: "Sì. Claude 3.5 Sonnet e GPT-4V gestiscono bene tutte le lingue nazionali svizzere. Lo schema di estrazione funziona indipendentemente dalla lingua della fattura, perché il modello traduce implicitamente.",
+            answer: "Sì. Claude 3.5 Sonnet e GPT-4V gestiscono bene tedesco, francese e italiano. Lo schema di estrazione funziona indipendentemente dalla lingua della fattura, perché il modello traduce implicitamente.",
           },
           {
             question: "Come si gestiscono i formati di fattura specifici dei fornitori che ricorrono spesso?",

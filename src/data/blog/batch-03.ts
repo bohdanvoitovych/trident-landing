@@ -681,7 +681,7 @@ The system combines three components:
 
 The result is warehouse scanning that costs less, breaks less and integrates better.`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2024-02-19",
     readingTime: 5,
     tags: [
@@ -738,7 +738,7 @@ La solution réunit trois composants :
 11. **Une architecture moderne** : s'intègre sans difficulté aux WMS et aux plateformes d'automatisation existants
 
 Résultat : une solution de scan pour l'entrepôt qui coûte moins cher, tombe moins souvent en panne et s'intègre mieux.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "WMS mobile : du traditionnel au flexible | Trident Software",
           description: "Comment les solutions mobiles WMS modernes remplacent les terminaux obsolètes pour améliorer l'efficacité des entrepôts.",
@@ -786,7 +786,7 @@ Die Lösung besteht aus drei Komponenten:
 11. **Moderne Architektur**: lässt sich problemlos in bestehende WMS- und Automatisierungsplattformen integrieren
 
 Das Ergebnis ist eine Scanner-Lösung fürs Lager, die weniger kostet, seltener ausfällt und sich besser integrieren lässt.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "WMS-Mobile-App: von traditionell zu flexibel",
           description: "Wie moderne mobile WMS-Lösungen veraltete Lagerterminals ersetzen und Effizienz verbessern.",
@@ -834,7 +834,7 @@ La soluzione unisce tre componenti:
 11. **Architettura moderna**: si integra senza difficoltà con i WMS e le piattaforme di automazione esistenti
 
 Il risultato è una soluzione di scansione per il magazzino che costa meno, si guasta meno e si integra meglio.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "App mobile WMS: da tradizionale a flessibile",
           description: "Come le soluzioni WMS mobili moderne sostituiscono i terminali obsoleti migliorando efficienza e sicurezza.",
@@ -885,7 +885,7 @@ This feedback loop allows you to refine service, menu offerings, and business pr
 
 QR code + NFC tag setup requires minimal investment (printed cards, NFC stickers). The web form can be as simple as a Google Form redirecting to your Google Business profile. For more advanced implementations, we build custom feedback systems with analytics dashboards.`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2024-03-01",
     readingTime: 4,
     tags: [
@@ -940,7 +940,7 @@ Mit diesem Feedback-Kreislauf verbessern Sie Service, Speisekarte und Abläufe a
 ## Umsetzung
 
 QR-Codes und NFC-Tags kosten wenig (gedruckte Karten, NFC-Sticker). Das Webformular kann so einfach sein wie ein Google-Formular, das auf Ihr Google-Unternehmensprofil weiterleitet. Für anspruchsvollere Lösungen entwickeln wir eigene Feedback-Systeme mit Analyse-Dashboards.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Restaurantwerbung dank Kundenbewertungen | Trident Software",
           description: "Mit QR-Codes und NFC-Tags mehr Restaurantbewertungen sammeln. Scannen, bewerten, fertig: So wird jeder Gast zum Werbeträger für Ihr Restaurant.",
@@ -982,7 +982,7 @@ Cette boucle de retour vous permet d'ajuster le service, la carte et votre organ
 ## Mise en place
 
 Un dispositif QR code + tag NFC demande un investissement minime (cartes imprimées, autocollants NFC). Le formulaire web peut se résumer à un Google Form qui redirige vers votre fiche Google Business. Pour des besoins plus poussés, nous développons des systèmes de feedback sur mesure avec tableaux de bord analytiques.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Restaurants : de la pub gratuite grâce aux avis clients",
           description: "Utilisez des QR codes et des tags NFC pour multiplier les avis sur votre restaurant. Un simple scan, et chaque client devient votre ambassadeur.",
@@ -1024,7 +1024,7 @@ Questo ciclo di feedback ti permette di affinare servizio, menu e processi sulla
 ## Come realizzarlo
 
 Un sistema con QR code e tag NFC richiede un investimento minimo (cartoncini stampati, adesivi NFC). Il modulo web può essere semplice come un Google Form che rimanda al tuo profilo Google Business. Per soluzioni più evolute sviluppiamo sistemi di feedback su misura con dashboard di analisi.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Pubblicità gratuita per ristoranti | Trident Software",
           description: "Usa QR code e tag NFC per raccogliere recensioni del ristorante su larga scala. Basta una scansione e ogni cliente diventa il tuo testimonial.",
@@ -1270,7 +1270,7 @@ Six tactics make the difference.
 
 All of these tactics work together. SEO brings discovery; UX converts; trust retains; email reactivates. Build the flywheel, not individual tactics in isolation.`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2024-04-09",
     readingTime: 6,
     tags: [
@@ -1284,7 +1284,7 @@ All of these tactics work together. SEO brings discovery; UX converts; trust ret
       "free-advertising-for-restaurants-through-customer-feedback",
     ],
     meta: {
-      title: "eCommerce growth tactics that actually work",
+      title: "eCommerce growth tactics that work",
       description: "Six tactics for ecommerce growth: SEO, UX, trust signals, Google Merchant, email and analytics, and how they work together.",
     },
     translations: {
@@ -1330,7 +1330,7 @@ Hier sind sechs Hebel, die tatsächlich etwas bewirken.
 - **Kundenfeedback** — Rückmeldungen systematisch sammeln und umsetzen; das ist die günstigste Quelle für Verbesserungen an Produkt und UX
 
 Alle diese Hebel greifen ineinander. SEO sorgt dafür, dass man Sie findet; UX macht aus Besuchern Käufer; Vertrauen hält sie; E-Mails holen sie zurück. Bauen Sie ein Schwungrad auf, statt einzelne Massnahmen isoliert umzusetzen.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "E-Commerce-Wachstum: 6 Hebel, die wirken | Trident Software",
           description: "Sechs bewährte Hebel für mehr Umsatz im Onlineshop: SEO, UX, Vertrauen, Google Merchant, E-Mail und Analytics. Ohne Floskeln, nur was wirkt.",
@@ -1378,7 +1378,7 @@ Voici six leviers qui font vraiment la différence.
 - **Retours clients** — collectez les avis de façon systématique et agissez en conséquence ; c'est la source d'amélioration produit et UX la moins chère
 
 Tous ces leviers fonctionnent ensemble. Le SEO vous fait découvrir, l'UX convertit, la confiance fidélise, l'e-mail réactive. Construisez un cercle vertueux plutôt que d'empiler des actions isolées.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Croissance e-commerce : 6 leviers efficaces | Trident",
           description: "Six leviers éprouvés pour vendre plus en ligne : SEO, UX, confiance, Google Merchant, e-mail et analytics. Sans blabla, seulement ce qui fonctionne.",
@@ -1426,7 +1426,7 @@ Ecco sei strategie che fanno davvero la differenza.
 - **Feedback dei clienti** — raccogli i riscontri in modo sistematico e agisci di conseguenza; è la fonte più economica di miglioramenti per prodotto e UX
 
 Tutte queste strategie lavorano insieme. La SEO ti fa scoprire, la UX converte, la fiducia fidelizza, l'e-mail riattiva. Costruisci un volano, non singole azioni isolate.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Crescita e-commerce: 6 strategie che funzionano | Trident",
           description: "Sei strategie collaudate per vendere di più online: SEO, UX, fiducia, Google Merchant, e-mail e analytics. Niente fronzoli, solo ciò che funziona.",

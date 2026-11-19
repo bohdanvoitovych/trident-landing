@@ -1263,7 +1263,7 @@ Il Venture Evolution IT Package porta un'idea di startup dalla prima conversazio
   {
     slug: "nextjs-payload-cms-swiss-sme-websites",
     image: "/images/stock/b2b-portal.jpg",
-    title: "Next.js + Payload CMS: the Swiss SME website stack that actually works",
+    title: "Next.js + Payload CMS: a Swiss SME website stack that works",
     excerpt: "Why we standardised on Next.js 15 and Payload CMS 3 for Swiss SME projects: embedded CMS architecture, ISR caching, and an editor that non-technical staff use without training.",
     content: `## The problem with generic CMS choices
 

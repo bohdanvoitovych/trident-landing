@@ -17,7 +17,7 @@ export const posts: BlogPostRecord[] = [
     ],
     category: "News",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## Palexpo Geneva 2025
 
@@ -57,7 +57,7 @@ Unsere Lieferlösung 8Move beseitigt Ineffizienzen in der Logistik mit Routenopt
 ## KI und Integrationen nach Mass
 
 Neben unseren Plattformen entwickelt Trident Web- und Mobile-Apps nach Mass, die an bestehende ERP- und CRM-Systeme angebunden werden. Sie richten sich danach, wie ein Unternehmen tatsächlich arbeitet, nicht danach, wie ein Standardsystem es sich vorstellt.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Palexpo Genf 2025: Trident Software am Stand K127",
           description: "Besuchen Sie Trident Software im Palexpo Genf 2025, 3.–6. Juni. Live am Stand K127: iAM-Trade, 8Move-Logistik und KI-Integrationen nach Mass.",
@@ -81,7 +81,7 @@ Notre solution de livraison 8Move corrige les inefficacités logistiques grâce 
 ## IA et intégrations sur mesure
 
 En plus de nos plateformes, Trident développe des applications web et mobiles sur mesure, connectées aux systèmes ERP et CRM existants. Elles suivent la façon dont chaque entreprise travaille réellement, et non celle qu'un système standard lui suppose.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Palexpo Genève 2025 : Trident Software au stand K127",
           description: "Rendez-vous à Palexpo Genève 2025, du 3 au 6 juin : iAM-Trade, logistique 8Move et intégrations IA sur mesure en démonstration au stand K127.",
@@ -105,7 +105,7 @@ La nostra soluzione di consegna 8Move elimina le inefficienze logistiche con l'o
 ## IA e integrazioni su misura
 
 Oltre alle nostre piattaforme, Trident sviluppa app web e mobile su misura che si collegano ai sistemi ERP e CRM esistenti. Sono pensate per come ogni azienda lavora davvero, non per come un sistema generico immagina che lavori.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Palexpo Ginevra 2025: Trident Software allo stand K127",
           description: "Vieni a trovare Trident Software al Palexpo Ginevra 2025, 3–6 giugno: iAM-Trade, logistica 8Move e integrazioni IA su misura dal vivo allo stand K127.",
@@ -130,7 +130,7 @@ Oltre alle nostre piattaforme, Trident sviluppa app web e mobile su misura che s
     ],
     category: "Insights",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## Beyond chatbots: agents that act
 
@@ -170,7 +170,7 @@ Die Anwendungen ziehen sich durch viele Branchen. Im Gesundheitswesen verarbeite
 ## Eine Umsetzung, die zu Ihrem Unternehmen passt
 
 Standardlösungen bilden branchenspezifische Anforderungen selten ab. Trident Software setzt auf Agentenlösungen nach Mass, zugeschnitten auf den konkreten Betrieb. Genau dort liegt der echte Wettbewerbsvorteil.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Autonome KI-Agenten: Von Daten zu Entscheidungen",
           description: "Wie autonome KI-Agenten mit LLM, Echtzeit-Tools und Gedächtnis Abläufe in Gesundheitswesen, Finanzen, Logistik und Industrie verändern.",
@@ -194,7 +194,7 @@ Les applications touchent de nombreux secteurs. Dans la santé, des agents auton
 ## Une mise en œuvre adaptée à votre entreprise
 
 Les solutions génériques couvrent rarement les besoins propres à un secteur. Trident Software mise sur des agents sur mesure, adaptés au contexte opérationnel de chaque client. C'est là que se trouve le véritable avantage concurrentiel.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Agents IA autonomes : des données aux décisions",
           description: "Comment les agents IA autonomes, avec LLM, outils en temps réel et mémoire, transforment la santé, la finance, la logistique et l'industrie.",
@@ -218,7 +218,7 @@ Le applicazioni attraversano molti settori. In ambito sanitario, gli agenti auto
 ## Un'implementazione adatta alla tua azienda
 
 Le soluzioni generiche raramente colgono le esigenze specifiche di un settore. Trident Software punta su agenti su misura, adattati al contesto operativo di ogni cliente. È lì che si trova il vero vantaggio competitivo.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Agenti IA autonomi per le aziende: dai dati alle decisioni",
           description: "Come gli agenti IA autonomi, con LLM, strumenti in tempo reale e memoria, stanno trasformando sanità, finanza, logistica e industria.",
@@ -241,7 +241,7 @@ Le soluzioni generiche raramente colgono le esigenze specifiche di un settore. T
     ],
     category: "Case Study",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## The challenge: limited reach, cumbersome process
 
@@ -277,7 +277,7 @@ La plateforme repose sur WooCommerce et offre à La Pochette une gestion efficac
 ## Un schéma plus large
 
 La transformation de La Pochette illustre un schéma que nous observons régulièrement dans la fourniture pour la restauration : des entreprises avec de solides relations clients et des produits de qualité, mais freinées par une infrastructure numérique qui n'a pas suivi.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Boutique en ligne La Pochette — Trident Software",
           description: "Découvrez comment Trident Software a lancé la boutique en ligne de La Pochette avec WooCommerce pour les restaurateurs et traiteurs suisses.",
@@ -301,7 +301,7 @@ Die Plattform basiert auf WooCommerce und gibt La Pochette eine effiziente Verka
 ## Ein Muster, das wir oft sehen
 
 Der Wandel von La Pochette zeigt ein Muster, das wir im Bereich Gastronomiebedarf immer wieder beobachten: Unternehmen mit starken Kundenbeziehungen und guten Produkten werden von einer digitalen Infrastruktur gebremst, die nicht Schritt gehalten hat.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Onlineshop La Pochette: WooCommerce-Redesign",
           description: "Wie Trident Software für La Pochette einen WooCommerce-Onlineshop lancierte und die alte Website durch vollwertigen E-Commerce für Gastrobedarf ersetzte.",
@@ -325,7 +325,7 @@ La piattaforma è costruita su WooCommerce e offre a La Pochette una gestione ef
 ## Una tendenza più ampia
 
 La trasformazione di La Pochette mostra una situazione che vediamo spesso tra i fornitori per la ristorazione: aziende con relazioni solide e prodotti di qualità, frenate da un'infrastruttura digitale rimasta indietro.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Negozio online La Pochette: restyling WooCommerce",
           description: "Come Trident Software ha lanciato per La Pochette un negozio online WooCommerce, sostituendo un sito limitato con un vero e-commerce per la ristorazione.",
@@ -353,7 +353,7 @@ La trasformazione di La Pochette mostra una situazione che vediamo spesso tra i 
     ],
     category: "Insights",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## The stakes in HoReCa distribution
 
@@ -393,7 +393,7 @@ Ein Transportmanagementsystem geht diese Probleme systematisch an. Algorithmen p
 ## 8Move für die HoReCa-Distribution
 
 8Move, das TMS von Trident Software, umfasst automatisiertes Liefermanagement, mobile Fahrer-Apps mit Standortverfolgung und elektronischer Unterschrift sowie eine einfache Zahlungsabwicklung. Die Plattform geht über das Flottenmanagement hinaus und deckt auch B2B-E-Commerce, CRM-Funktionen und Omnichannel-Zahlungen ab.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "HoReCa-Distribution mit TMS optimieren",
           description: "Wie Transportmanagementsysteme Routenplanung, Echtzeit-Tracking und Auftragsautomatisierung für Lieferanten von Hotels und Restaurants optimieren.",
@@ -417,7 +417,7 @@ Au-delà de la logistique, un TMS est une plateforme de données. Il suit dans l
 ## 8Move pour la distribution CHR
 
 8Move, le TMS de Trident Software, comprend l'automatisation de la gestion des livraisons, des interfaces mobiles pour les chauffeurs avec géolocalisation et signature électronique, ainsi qu'un traitement simplifié des paiements. La plateforme va au-delà de la gestion de flotte et couvre aussi l'e-commerce B2B, des fonctions CRM et les paiements omnicanaux.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Optimiser la distribution CHR avec un TMS",
           description: "Comment un TMS optimise la planification des tournées, le suivi en temps réel et l'automatisation des commandes pour les fournisseurs d'hôtels et restaurants.",
@@ -441,7 +441,7 @@ Oltre alla logistica, un TMS è una piattaforma di dati. Monitora nel tempo il t
 ## 8Move per la distribuzione HoReCa
 
 8Move, il TMS di Trident Software, comprende la gestione automatizzata delle consegne, app mobili per gli autisti con geolocalizzazione e firma elettronica e un'elaborazione dei pagamenti semplificata. La piattaforma va oltre la gestione della flotta e copre anche e-commerce B2B, funzioni CRM e pagamenti omnicanale.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Ottimizzare la distribuzione HoReCa con un TMS",
           description: "Come i sistemi di gestione dei trasporti ottimizzano percorsi, tracciamento in tempo reale e automazione degli ordini per i fornitori HoReCa.",
@@ -462,10 +462,10 @@ On-premise LLMs solve this by keeping every token on infrastructure you control.
 
 ## The right models to self-host in 2026
 
-For most Swiss SMEs, three models stand out:
+For most Swiss SMEs, these models stand out:
 
 - **Llama 3.3 70B**: best general-purpose model. Comparable to GPT-4-turbo on most tasks. Needs 40GB+ VRAM.
-- **Mistral 7B / Mixtral 8x7B**: good for deployments on a tight budget. Runs on consumer-grade GPUs.
+- **Mistral 7B, Llama 3.1 8B and Mixtral 8x7B**: good for deployments on a tight budget. They run on consumer-grade GPUs.
 - **Qwen2.5 32B**: strong multilingual support, including German, French and Italian, for the Swiss market.
 
 ## Hardware requirements
@@ -476,6 +476,7 @@ For most Swiss SMEs, three models stand out:
 | Llama 3.1 8B | 8 GB | RTX 3070 or better |
 | Llama 3.3 70B (Q4) | 40 GB | 2× RTX 4090 or A100 |
 | Mixtral 8x7B | 24 GB | RTX 3090 or A6000 |
+| Qwen2.5 32B (Q4) | 20 GB | RTX 3090 / 4090 or A6000 |
 
 ## Deployment stack
 
@@ -494,13 +495,13 @@ ollama serve
 
 ## Cost comparison
 
-For a team of 50 making 500 API calls/day, the math changes significantly at scale. On-premise hardware pays for itself in 8–14 months versus cloud API costs.
+At 500 API calls a day, cloud API costs are low. Assume 2,000 input and 200 output tokens per call and the list prices from our [OpenAI vs Anthropic cost comparison](/blog/openai-vs-anthropic-api-cost-sme): 15,000 calls a month (500 × 30) come to 30M input and 3M output tokens. That is about $105 a month with GPT-4o ($75 + $30) and about $6 with GPT-4o mini ($4.50 + $1.80). Hardware does not pay for itself at that volume. At this scale the reason to self-host is control over the data, not cost.
 
 ## Where to start
 
 Contact us for a free infrastructure assessment. We will evaluate your workload, recommend the model and hardware, and handle the deployment, including revFADP compliance documentation.`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2026-04-15",
     readingTime: 7,
     tags: [
@@ -530,10 +531,10 @@ On-Premise-LLMs lösen dieses Problem: Jedes Token bleibt auf einer Infrastruktu
 
 ## Diese Modelle eignen sich 2026 für den Eigenbetrieb
 
-Für die meisten Schweizer KMU kommen drei Modelle in Frage:
+Für die meisten Schweizer KMU kommen diese Modelle in Frage:
 
 - **Llama 3.3 70B**: das beste Allzweckmodell. Bei den meisten Aufgaben mit GPT-4-turbo vergleichbar. Benötigt mindestens 40 GB VRAM.
-- **Mistral 7B / Mixtral 8x7B**: sehr gut für Installationen mit knappem Budget. Läuft auf handelsüblichen Consumer-GPUs.
+- **Mistral 7B, Llama 3.1 8B und Mixtral 8x7B**: sehr gut für Installationen mit knappem Budget. Sie laufen auf handelsüblichen Consumer-GPUs.
 - **Qwen2.5 32B**: stark in mehreren Sprachen, auch in Deutsch, Französisch und Italienisch. Relevant für den Schweizer Markt.
 
 ## Hardware-Anforderungen
@@ -544,6 +545,7 @@ Für die meisten Schweizer KMU kommen drei Modelle in Frage:
 | Llama 3.1 8B | 8 GB | RTX 3070 oder besser |
 | Llama 3.3 70B (Q4) | 40 GB | 2× RTX 4090 oder A100 |
 | Mixtral 8x7B | 24 GB | RTX 3090 oder A6000 |
+| Qwen2.5 32B (Q4) | 20 GB | RTX 3090 / 4090 oder A6000 |
 
 ## Der Deployment-Stack
 
@@ -562,12 +564,12 @@ ollama serve
 
 ## Kostenvergleich
 
-Bei einem Team von 50 Personen mit 500 API-Aufrufen pro Tag verschiebt sich die Rechnung mit wachsendem Volumen deutlich. Gegenüber den Kosten für Cloud-APIs amortisiert sich eigene Hardware innert 8–14 Monaten.
+Bei 500 API-Aufrufen pro Tag sind die Kosten für Cloud-APIs gering. Rechnen Sie mit 2'000 Input- und 200 Output-Tokens pro Aufruf und den Listenpreisen aus unserem [Kostenvergleich OpenAI vs. Anthropic](/blog/openai-vs-anthropic-api-cost-sme): 15'000 Aufrufe pro Monat (500 × 30) ergeben 30M Input- und 3M Output-Tokens. Das sind rund $105 pro Monat mit GPT-4o ($75 + $30) und rund $6 mit GPT-4o mini ($4.50 + $1.80). Bei diesem Volumen amortisiert sich eigene Hardware nicht. Der Grund für den Eigenbetrieb ist hier die Kontrolle über die Daten, nicht die Kosten.
 
 ## So starten Sie
 
 Kontaktieren Sie uns für eine kostenlose Analyse Ihrer Infrastruktur. Wir prüfen Ihre Workloads, empfehlen das passende Modell und die richtige Hardware und übernehmen das Deployment, inklusive der Dokumentation zur nDSG-Konformität.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "On-Premise-LLMs für Schweizer Unternehmen | Trident Software",
           description: "Llama 3 oder Mistral auf eigener Infrastruktur betreiben: Praxisleitfaden für Schweizer Unternehmen zu selbst gehosteten LLMs und nDSG-Konformität.",
@@ -584,10 +586,10 @@ Les LLM on-premise règlent la question : chaque token reste sur une infrastruct
 
 ## Les modèles à héberger soi-même en 2026
 
-Pour la plupart des PME suisses, trois modèles se distinguent :
+Pour la plupart des PME suisses, ces modèles se distinguent :
 
 - **Llama 3.3 70B** : le meilleur modèle polyvalent. Comparable à GPT-4-turbo sur la plupart des tâches. Nécessite au moins 40 Go de VRAM.
-- **Mistral 7B / Mixtral 8x7B** : excellent pour les déploiements à budget serré. Tourne sur des GPU grand public.
+- **Mistral 7B, Llama 3.1 8B et Mixtral 8x7B** : excellents pour les déploiements à budget serré. Ils tournent sur des GPU grand public.
 - **Qwen2.5 32B** : solide en multilingue, y compris en allemand, en français et en italien. Pertinent pour le marché suisse.
 
 ## Configuration matérielle requise
@@ -598,6 +600,7 @@ Pour la plupart des PME suisses, trois modèles se distinguent :
 | Llama 3.1 8B | 8 GB | RTX 3070 ou supérieur |
 | Llama 3.3 70B (Q4) | 40 GB | 2× RTX 4090 ou A100 |
 | Mixtral 8x7B | 24 GB | RTX 3090 ou A6000 |
+| Qwen2.5 32B (Q4) | 20 GB | RTX 3090 / 4090 ou A6000 |
 
 ## La stack de déploiement
 
@@ -616,12 +619,12 @@ ollama serve
 
 ## Comparaison des coûts
 
-Pour une équipe de 50 personnes qui effectue 500 appels API par jour, le calcul change nettement à mesure que le volume augmente. Le matériel on-premise est amorti en 8 à 14 mois par rapport au coût des API cloud.
+À 500 appels API par jour, le coût des API cloud reste faible. Avec 2 000 tokens en entrée et 200 en sortie par appel, aux prix catalogue de notre [comparatif des coûts OpenAI vs Anthropic](/blog/openai-vs-anthropic-api-cost-sme), 15 000 appels par mois (500 × 30) représentent 30M de tokens en entrée et 3M en sortie. Cela fait environ $105 par mois avec GPT-4o ($75 + $30) et environ $6 avec GPT-4o mini ($4.50 + $1.80). À ce volume, le matériel ne s'amortit pas. La raison d'héberger soi-même le modèle est ici le contrôle des données, pas le coût.
 
 ## Par où commencer
 
 Contactez-nous pour une évaluation gratuite de votre infrastructure. Nous analysons votre charge de travail, recommandons le modèle et le matériel adaptés et prenons en charge le déploiement, y compris la documentation de conformité à la nLPD.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "LLM on-premise pour entreprises suisses | Trident Software",
           description: "Déployez Llama 3 ou Mistral sur votre propre infrastructure. Guide pratique pour les entreprises suisses : LLM auto-hébergés et conformité nLPD.",
@@ -638,10 +641,10 @@ Gli LLM on-premise risolvono il problema: ogni token resta su un'infrastruttura 
 
 ## I modelli giusti da ospitare in proprio nel 2026
 
-Per la maggior parte delle PMI svizzere spiccano tre modelli:
+Per la maggior parte delle PMI svizzere spiccano questi modelli:
 
 - **Llama 3.3 70B**: il migliore per uso generale. Paragonabile a GPT-4-turbo nella maggior parte dei compiti. Richiede almeno 40 GB di VRAM.
-- **Mistral 7B / Mixtral 8x7B**: ottimo quando il budget è limitato. Gira su GPU consumer.
+- **Mistral 7B, Llama 3.1 8B e Mixtral 8x7B**: ottimi quando il budget è limitato. Girano su GPU consumer.
 - **Qwen2.5 32B**: forte supporto multilingue, anche per tedesco, francese e italiano. Rilevante per il mercato svizzero.
 
 ## Requisiti hardware
@@ -652,6 +655,7 @@ Per la maggior parte delle PMI svizzere spiccano tre modelli:
 | Llama 3.1 8B | 8 GB | RTX 3070 o superiore |
 | Llama 3.3 70B (Q4) | 40 GB | 2× RTX 4090 o A100 |
 | Mixtral 8x7B | 24 GB | RTX 3090 o A6000 |
+| Qwen2.5 32B (Q4) | 20 GB | RTX 3090 / 4090 o A6000 |
 
 ## Lo stack di deployment
 
@@ -670,12 +674,12 @@ ollama serve
 
 ## Confronto dei costi
 
-Per un team di 50 persone che effettua 500 chiamate API al giorno, il conto cambia parecchio al crescere dei volumi. Rispetto ai costi delle API cloud, l'hardware on-premise si ripaga in 8–14 mesi.
+Con 500 chiamate API al giorno, i costi delle API cloud sono bassi. Con 2'000 token di input e 200 di output per chiamata e i prezzi di listino del nostro [confronto dei costi OpenAI vs Anthropic](/blog/openai-vs-anthropic-api-cost-sme), 15'000 chiamate al mese (500 × 30) fanno 30M di token in input e 3M in output. Sono circa $105 al mese con GPT-4o ($75 + $30) e circa $6 con GPT-4o mini ($4.50 + $1.80). A questo volume l'hardware non si ripaga. Qui il motivo per ospitare il modello in proprio è il controllo dei dati, non il costo.
 
 ## Come iniziare
 
 Contattaci per una valutazione gratuita della tua infrastruttura. Analizziamo il tuo carico di lavoro, ti consigliamo il modello e l'hardware adatti e ci occupiamo del deployment, compresa la documentazione di conformità alla nLPD.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "LLM on-premise per aziende svizzere | Trident Software",
           description: "Installa Llama 3 o Mistral sulla tua infrastruttura. Guida pratica per le aziende svizzere su LLM self-hosted e conformità alla nLPD.",
@@ -686,7 +690,7 @@ Contattaci per una valutazione gratuita della tua infrastruttura. Analizziamo il
   {
     slug: "ai-agent-b2b-automation",
     image: "/images/stock/iot-device.jpg",
-    title: "AI agents for B2B process automation: what actually works in 2026",
+    title: "AI agents for B2B process automation: what works in 2026",
     excerpt: "Where AI agents deliver ROI in B2B work, and where they still struggle. Based on our implementations at 8 Swiss and EU companies.",
     content: `## AI agents in production: the reality
 
@@ -709,8 +713,8 @@ The most reliable pattern we've found is **human-in-the-loop** for high-stakes d
 
 \`\`\`
 Trigger → Agent processes → Confidence check:
-  - High confidence (>0.92) → Auto-execute
-  - Medium confidence (0.7–0.92) → Queue for human review
+  - High confidence (>0.95) → Auto-execute
+  - Medium confidence (0.7–0.95) → Queue for human review
   - Low confidence (<0.7) → Escalate + log for retraining
 \`\`\`
 
@@ -723,13 +727,13 @@ For an automotive parts distributor, we deployed an agent that:
 4. Auto-approves matches above 0.95 confidence
 5. Flags discrepancies for accountant review
 
-Result: 73% of invoices now process without human touch. Processing time dropped from 4 days to 4 hours.
+Result: 73 % of invoices are now processed without human intervention. Processing time dropped from 4 days to 4 hours.
 
 ## Key takeaways
 
 Start narrow. A well-tuned agent for one specific workflow delivers more value than a broad agent that handles everything poorly. Measure confidence, log everything, and build a feedback loop from the start.`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2026-03-22",
     readingTime: 8,
     tags: [
@@ -772,8 +776,8 @@ Am zuverlässigsten ist nach unserer Erfahrung eine Kombination: **Human-in-the-
 
 \`\`\`
 Trigger → Agent processes → Confidence check:
-  - High confidence (>0.92) → Auto-execute
-  - Medium confidence (0.7–0.92) → Queue for human review
+  - High confidence (>0.95) → Auto-execute
+  - Medium confidence (0.7–0.95) → Queue for human review
   - Low confidence (<0.7) → Escalate + log for retraining
 \`\`\`
 
@@ -791,7 +795,7 @@ Ergebnis: 73 % der Rechnungen laufen heute ohne manuellen Eingriff durch. Die Be
 ## Das Wichtigste in Kürze
 
 Fangen Sie klein an. Ein gut abgestimmter Agent für einen klar umrissenen Ablauf bringt mehr als ein breiter Agent, der alles nur schlecht erledigt. Messen Sie die Konfidenz, protokollieren Sie alles und bauen Sie von Anfang an eine Feedbackschleife auf.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "KI-Agenten für die B2B-Automatisierung | Trident Software",
           description: "Wo KI-Agenten im B2B-Umfeld einen ROI bringen: eine praxisnahe Übersicht, basierend auf 8 Projekten in Unternehmen aus der Schweiz und der EU.",
@@ -821,8 +825,8 @@ Le schéma le plus fiable que nous ayons trouvé combine un **humain dans la bou
 
 \`\`\`
 Trigger → Agent processes → Confidence check:
-  - High confidence (>0.92) → Auto-execute
-  - Medium confidence (0.7–0.92) → Queue for human review
+  - High confidence (>0.95) → Auto-execute
+  - Medium confidence (0.7–0.95) → Queue for human review
   - Low confidence (<0.7) → Escalate + log for retraining
 \`\`\`
 
@@ -840,7 +844,7 @@ Résultat : 73 % des factures sont désormais traitées sans intervention humain
 ## À retenir
 
 Commencez petit. Un agent bien réglé pour un processus précis apporte plus de valeur qu'un agent généraliste qui fait tout mal. Mesurez la confiance, journalisez tout et mettez en place une boucle de retour dès le départ.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Agents IA pour l'automatisation B2B | Trident Software",
           description: "Où les agents IA apportent un vrai retour sur investissement en B2B : analyse pratique tirée de 8 projets dans des entreprises suisses et européennes.",
@@ -870,8 +874,8 @@ Lo schema più affidabile che abbiamo trovato combina lo **human-in-the-loop** p
 
 \`\`\`
 Trigger → Agent processes → Confidence check:
-  - High confidence (>0.92) → Auto-execute
-  - Medium confidence (0.7–0.92) → Queue for human review
+  - High confidence (>0.95) → Auto-execute
+  - Medium confidence (0.7–0.95) → Queue for human review
   - Low confidence (<0.7) → Escalate + log for retraining
 \`\`\`
 
@@ -889,7 +893,7 @@ Risultato: il 73% delle fatture viene ora elaborato senza intervento umano. I te
 ## Cosa portarsi a casa
 
 Parti in piccolo. Un agente ben calibrato per un processo specifico rende più di un agente generico che fa tutto male. Misura la confidenza, registra tutto e crea un ciclo di feedback fin dall'inizio.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Agenti IA per l'automazione B2B | Trident Software",
           description: "Dove gli agenti IA generano ROI in ambito B2B: un'analisi pratica basata su 8 progetti reali in aziende svizzere ed europee.",

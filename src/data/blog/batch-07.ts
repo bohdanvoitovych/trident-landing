@@ -743,7 +743,7 @@ Screen readers use the \`lang\` attribute to select the correct pronunciation en
 
 Budget 2–3 days for an initial accessibility audit of a medium-complexity web application. Budget one sprint to remediate findings on a codebase with no existing accessibility work.`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2026-01-29",
     readingTime: 10,
     tags: [
@@ -881,7 +881,7 @@ Screenreader wählen anhand des \`lang\`-Attributs die richtige Aussprache.
 - **Manueller Screenreader-Test**: VoiceOver (Mac/iOS, kostenlos), NVDA (Windows, kostenlos)
 
 Rechnen Sie für ein erstes Barrierefreiheits-Audit einer mittelkomplexen Webanwendung mit 2–3 Tagen. Für die Behebung der Befunde in einer Codebasis ohne bisherige Arbeit an der Barrierefreiheit planen Sie einen Sprint ein.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "WCAG 2.1 für Schweizer Behörden — Trident Software Blog",
           description: "WCAG 2.1 AA für Schweizer Behördenanwendungen: rechtliche Grundlagen, häufige Fehler, praktische Korrekturen und automatisierte Testintegration.",
@@ -1009,7 +1009,7 @@ Les lecteurs d'écran s'appuient sur l'attribut \`lang\` pour choisir la bonne p
 - **Test manuel au lecteur d'écran** : VoiceOver (Mac/iOS, gratuit), NVDA (Windows, gratuit)
 
 Prévoyez 2–3 jours pour un premier audit d'accessibilité d'une application web de complexité moyenne. Comptez un sprint pour corriger les problèmes relevés dans un code qui n'a jamais été travaillé sous l'angle de l'accessibilité.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "WCAG 2.1 secteur public suisse — Trident Software Blog",
           description: "WCAG 2.1 AA pour les applications publiques suisses : bases légales, erreurs fréquentes, correctifs pratiques et tests automatisés.",
@@ -1137,7 +1137,7 @@ Gli screen reader usano l'attributo \`lang\` per scegliere la pronuncia corretta
 - **Test manuale con screen reader**: VoiceOver (Mac/iOS, gratuito), NVDA (Windows, gratuito)
 
 Per un primo audit di accessibilità di un'applicazione web di media complessità calcola 2–3 giorni. Per correggere i problemi emersi in un codice su cui non si è mai lavorato in ottica di accessibilità, prevedi uno sprint.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "WCAG 2.1 settore pubblico svizzero — Trident Software Blog",
           description: "WCAG 2.1 AA per applicazioni pubbliche svizzere: basi legali, errori frequenti, correzioni pratiche e testing automatizzato.",
@@ -1170,15 +1170,15 @@ Per un primo audit di accessibilità di un'applicazione web di media complessit�
   {
     slug: "openai-vs-anthropic-api-cost-sme",
     image: "/images/stock/office-2.jpg",
-    title: "OpenAI vs Anthropic API cost comparison for SMEs: what the pricing pages don't tell you",
+    title: "OpenAI vs Anthropic API cost comparison for SMEs: three typical workloads",
     excerpt: "API pricing tables look simple until you factor in context window usage, caching and your actual workload. This is a realistic cost comparison for the most common SME use cases in 2026.",
     content: `## Why simple price comparisons mislead
 
-The OpenAI vs Anthropic pricing page comparison shows cost per million tokens. Real workloads don't look like "1M input tokens, 1M output tokens." The real cost depends on your context window usage, cache hit rate, output-to-input ratio, and which model tier you need.
+Comparing the two pricing pages shows only the cost per million tokens. Real workloads don't look like "1M input tokens, 1M output tokens." The real cost depends on your context window usage, cache hit rate, output-to-input ratio, and which model tier you need.
 
 This comparison models realistic SME workloads rather than benchmark comparisons.
 
-## Pricing used in this comparison
+## Pricing as of February 2026
 
 | Model | Input (per 1M) | Output (per 1M) | Context | Best for |
 |---|---|---|---|---|
@@ -1189,7 +1189,7 @@ This comparison models realistic SME workloads rather than benchmark comparisons
 | Claude 3.5 Haiku | $0.80 | $4.00 | 200K | Balanced cost/quality |
 | Claude 3 Haiku | $0.25 | $1.25 | 200K | High-volume simple tasks |
 
-*Prices are approximate. Check current provider pages before budgeting.*
+*List prices as of February 2026, when this article was published. Providers change prices and models often, so check the current pricing pages before budgeting.*
 
 ## Realistic workload models
 
@@ -1197,15 +1197,15 @@ This comparison models realistic SME workloads rather than benchmark comparisons
 Assumptions: 200 documents/day, avg 2,000 tokens each, 200 token output
 
 \`\`\`
-Monthly volume: 6,000 documents
-Input tokens: 12M (200 chars × 6K docs × ~4 chars/token = estimate)
-Output tokens: 1.2M
+Monthly volume: 6,000 documents (200/day × 30 days)
+Input tokens: 12M (2,000 tokens × 6,000 documents)
+Output tokens: 1.2M (200 tokens × 6,000 documents)
 
 GPT-4o mini: $1.80 input + $0.72 output = $2.52/month
 Claude 3.5 Haiku: $9.60 input + $4.80 output = $14.40/month
 Claude 3 Haiku: $3.00 input + $1.50 output = $4.50/month
 
-Winner: GPT-4o mini by 2×
+Winner: GPT-4o mini, about 1.8× cheaper than Claude 3 Haiku ($4.50 ÷ $2.52)
 \`\`\`
 
 **Customer support chatbot**
@@ -1213,17 +1213,22 @@ Assumptions: 500 conversations/day, 10 turns each, system prompt 1,500 tokens
 
 Without caching:
 \`\`\`
+Calls: 500 conversations × 10 turns = 5,000 calls/day
 System prompt repeated per call: 1,500 × 5,000 calls/day = 7.5M tokens/day
+Per month (30 days): 225M tokens
 \`\`\`
 
 With Claude prompt caching (system prompt cached):
 \`\`\`
-Cached input: $0.30/1M (90% discount)
-Effective cost reduction: 60–70% on system prompt portion
+Claude 3.5 Haiku cached input: $0.08/1M (90% off the $0.80 list price)
 
-GPT-4o mini (no caching): $33.75/day
-Claude 3.5 Haiku (with caching): ~$9.80/day
+System prompt portion, 225M tokens/month:
+GPT-4o mini (no caching): $0.15 × 225 = $33.75/month ($1.13/day)
+Claude 3.5 Haiku (no caching): $0.80 × 225 = $180.00/month ($6.00/day)
+Claude 3.5 Haiku (cached): $0.08 × 225 = $18.00/month ($0.60/day)
 \`\`\`
+
+These figures cover the system prompt only; conversation history and replies come on top. Claude 3.5 Haiku caches only prompt prefixes of at least 2,048 tokens, so a 1,500-token system prompt is cached only once it is combined with other fixed context, such as a product list or FAQ.
 
 For workloads with large repeated system prompts, Claude's prompt caching changes the economics significantly.
 
@@ -1231,19 +1236,20 @@ For workloads with large repeated system prompts, Claude's prompt caching change
 Assumptions: 50 engineers, 20 AI-assisted completions/day, 500 input + 300 output tokens avg
 
 \`\`\`
-Daily: 50,000 input tokens, 30,000 output tokens
-Monthly: 1.5M input, 900K output
+Daily: 50 engineers × 20 completions = 1,000 completions
+Daily tokens: 500,000 input, 300,000 output
+Monthly (30 days): 15M input, 9M output
 
-GPT-4o: $3.75 + $9.00 = $12.75/month
-Claude 3.5 Sonnet: $4.50 + $13.50 = $18.00/month
-GPT-4o mini: $0.23 + $0.54 = $0.77/month
+GPT-4o: $37.50 + $90.00 = $127.50/month
+Claude 3.5 Sonnet: $45.00 + $135.00 = $180.00/month
+GPT-4o mini: $2.25 + $5.40 = $7.65/month
 \`\`\`
 
 For code generation, GPT-4o mini delivers surprisingly strong results relative to cost.
 
 ## The caching factor
 
-Anthropic's prompt caching gives 90% discount on repeated prompt content (minimum 1,024 tokens). For any workload where you send the same system prompt or context repeatedly, this changes the comparison:
+Anthropic's prompt caching gives a 90 % discount on repeated prompt content (minimum 1,024 tokens for Sonnet and 2,048 for Haiku). For any workload where you send the same system prompt or context repeatedly, this changes the comparison:
 
 - Customer support bots with large knowledge bases: Claude wins on cost
 - Document processing with short prompts: OpenAI mini models win
@@ -1254,13 +1260,13 @@ Anthropic's prompt caching gives 90% discount on repeated prompt content (minimu
 1. **Is quality the primary constraint?** Use Claude 3.5 Sonnet or GPT-4o. Test both; pick the one with better task-specific output.
 2. **Is cost the primary constraint?** Use GPT-4o mini or Claude 3 Haiku. Both handle simple tasks well.
 3. **Do you have large repeated contexts?** Claude with prompt caching often wins.
-4. **Do you need Swiss data residency?** Neither provider has Swiss-resident processing. Consider on-premise LLMs.
+4. **Do you need Swiss data residency?** Where your data is processed depends on how you access the model (directly from the provider or through a cloud platform) and on the region you choose. Check this in the contract before you send personal data. If data must stay on your own infrastructure, consider on-premise LLMs.
 
 ## Our recommendation
 
-Start with Claude 3.5 Haiku for most SME workloads: balanced quality, 200K context, and caching. Test against GPT-4o mini for your specific task. The 5–10% quality difference between tiers rarely justifies 5–8× the cost for routine tasks.`,
+Start with Claude 3.5 Haiku for most SME workloads: balanced quality, 200K context, and caching. Test against GPT-4o mini for your specific task. The 5–10 % quality difference between tiers rarely justifies 5–8× the cost for routine tasks.`,
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     publishedAt: "2026-02-26",
     readingTime: 9,
     tags: [
@@ -1278,15 +1284,15 @@ Start with Claude 3.5 Haiku for most SME workloads: balanced quality, 200K conte
     faq: [
       {
         question: "Which model is better for Swiss multilingual content (DE/FR/IT)?",
-        answer: "Both GPT-4o and Claude 3.5 Sonnet handle Swiss national languages very well. Claude has a slight edge on Italian, GPT-4o on German. Differences are marginal for most use cases. Test with a sample of your actual input language distribution.",
+        answer: "Both GPT-4o and Claude 3.5 Sonnet handle German, French and Italian very well. Claude has a slight edge on Italian, GPT-4o on German. Differences are marginal for most use cases. Test with a sample of your actual input language distribution.",
       },
       {
         question: "Does Anthropic or OpenAI offer volume discounts for SMEs?",
-        answer: "Both offer committed-use discounts for high-volume enterprise customers (typically $10K+/month spend). For SMEs under that threshold, the price difference is what's on the pricing page. Neither offers SME-specific pricing programmes as of mid-2026.",
+        answer: "Both offer committed-use discounts for high-volume enterprise customers (typically $10K+/month spend). For SMEs under that threshold, the price difference is what's on the pricing page. Neither offered SME-specific pricing programmes as of February 2026.",
       },
       {
         question: "What is prompt caching and how do we enable it?",
-        answer: "Prompt caching lets you mark portions of your prompt (system prompt, large context documents) to be cached server-side. Subsequent requests that use the identical cached prefix pay 90% less for those tokens. Enable it with cache_control: {type: \"ephemeral\"} on the relevant content blocks in the Anthropic API.",
+        answer: "Prompt caching lets you mark portions of your prompt (system prompt, large context documents) to be cached server-side. Subsequent requests that use the identical cached prefix pay 90 % less for those tokens. Enable it with cache_control: {type: \"ephemeral\"} on the relevant content blocks in the Anthropic API.",
       },
       {
         question: "Should we build on one provider or both?",
@@ -1307,7 +1313,7 @@ Wer die Preisseiten von OpenAI und Anthropic vergleicht, sieht Kosten pro Millio
 
 Dieser Vergleich rechnet mit realistischen KMU-Workloads statt mit Benchmarks.
 
-## Preise in diesem Vergleich
+## Preise, Stand Februar 2026
 
 | Modell | Input (pro 1M) | Output (pro 1M) | Kontext | Geeignet für |
 |---|---|---|---|---|
@@ -1318,7 +1324,7 @@ Dieser Vergleich rechnet mit realistischen KMU-Workloads statt mit Benchmarks.
 | Claude 3.5 Haiku | $0.80 | $4.00 | 200K | Ausgewogenes Verhältnis Kosten/Qualität |
 | Claude 3 Haiku | $0.25 | $1.25 | 200K | Einfache Aufgaben in grossen Mengen |
 
-*Preise sind Richtwerte. Prüfen Sie vor der Budgetplanung die aktuellen Seiten der Anbieter.*
+*Listenpreise, Stand Februar 2026 (Erscheinungsdatum dieses Artikels). Die Anbieter ändern Preise und Modelle häufig. Prüfen Sie vor der Budgetplanung die aktuellen Preisseiten.*
 
 ## Realistische Workload-Modelle
 
@@ -1326,15 +1332,15 @@ Dieser Vergleich rechnet mit realistischen KMU-Workloads statt mit Benchmarks.
 Annahmen: 200 Dokumente pro Tag, im Schnitt 2'000 Tokens pro Dokument, 200 Tokens Output
 
 \`\`\`
-Monthly volume: 6,000 documents
-Input tokens: 12M (200 chars × 6K docs × ~4 chars/token = estimate)
-Output tokens: 1.2M
+Monthly volume: 6,000 documents (200/day × 30 days)
+Input tokens: 12M (2,000 tokens × 6,000 documents)
+Output tokens: 1.2M (200 tokens × 6,000 documents)
 
 GPT-4o mini: $1.80 input + $0.72 output = $2.52/month
 Claude 3.5 Haiku: $9.60 input + $4.80 output = $14.40/month
 Claude 3 Haiku: $3.00 input + $1.50 output = $4.50/month
 
-Winner: GPT-4o mini by 2×
+Winner: GPT-4o mini, about 1.8× cheaper than Claude 3 Haiku ($4.50 ÷ $2.52)
 \`\`\`
 
 **Chatbot für den Kundensupport**
@@ -1342,17 +1348,22 @@ Annahmen: 500 Gespräche pro Tag, je 10 Wechsel, System-Prompt mit 1'500 Tokens
 
 Ohne Caching:
 \`\`\`
+Calls: 500 conversations × 10 turns = 5,000 calls/day
 System prompt repeated per call: 1,500 × 5,000 calls/day = 7.5M tokens/day
+Per month (30 days): 225M tokens
 \`\`\`
 
 Mit Prompt-Caching von Claude (System-Prompt im Cache):
 \`\`\`
-Cached input: $0.30/1M (90% discount)
-Effective cost reduction: 60–70% on system prompt portion
+Claude 3.5 Haiku cached input: $0.08/1M (90% off the $0.80 list price)
 
-GPT-4o mini (no caching): $33.75/day
-Claude 3.5 Haiku (with caching): ~$9.80/day
+System prompt portion, 225M tokens/month:
+GPT-4o mini (no caching): $0.15 × 225 = $33.75/month ($1.13/day)
+Claude 3.5 Haiku (no caching): $0.80 × 225 = $180.00/month ($6.00/day)
+Claude 3.5 Haiku (cached): $0.08 × 225 = $18.00/month ($0.60/day)
 \`\`\`
+
+Diese Zahlen betreffen nur den System-Prompt; Gesprächsverlauf und Antworten kommen hinzu. Claude 3.5 Haiku speichert nur Prompt-Präfixe ab 2'048 Tokens im Cache. Ein System-Prompt mit 1'500 Tokens wird deshalb erst gecacht, wenn er mit weiterem festem Kontext kombiniert wird, etwa einer Produktliste oder einem FAQ.
 
 Bei Workloads mit langen, wiederkehrenden System-Prompts verschiebt das Prompt-Caching von Claude die Rechnung deutlich.
 
@@ -1360,19 +1371,20 @@ Bei Workloads mit langen, wiederkehrenden System-Prompts verschiebt das Prompt-C
 Annahmen: 50 Entwickler, 20 KI-gestützte Vervollständigungen pro Tag, im Schnitt 500 Input- und 300 Output-Tokens
 
 \`\`\`
-Daily: 50,000 input tokens, 30,000 output tokens
-Monthly: 1.5M input, 900K output
+Daily: 50 engineers × 20 completions = 1,000 completions
+Daily tokens: 500,000 input, 300,000 output
+Monthly (30 days): 15M input, 9M output
 
-GPT-4o: $3.75 + $9.00 = $12.75/month
-Claude 3.5 Sonnet: $4.50 + $13.50 = $18.00/month
-GPT-4o mini: $0.23 + $0.54 = $0.77/month
+GPT-4o: $37.50 + $90.00 = $127.50/month
+Claude 3.5 Sonnet: $45.00 + $135.00 = $180.00/month
+GPT-4o mini: $2.25 + $5.40 = $7.65/month
 \`\`\`
 
 Bei der Code-Generierung liefert GPT-4o mini im Verhältnis zu den Kosten erstaunlich gute Ergebnisse.
 
 ## Der Faktor Caching
 
-Das Prompt-Caching von Anthropic gewährt 90% Rabatt auf wiederholte Prompt-Inhalte (mindestens 1'024 Tokens). Sobald Sie denselben System-Prompt oder Kontext immer wieder senden, sieht der Vergleich anders aus:
+Das Prompt-Caching von Anthropic gewährt 90% Rabatt auf wiederholte Prompt-Inhalte (mindestens 1'024 Tokens bei Sonnet und 2'048 bei Haiku). Sobald Sie denselben System-Prompt oder Kontext immer wieder senden, sieht der Vergleich anders aus:
 
 - Support-Bots mit grossen Wissensdatenbanken: Claude ist günstiger
 - Dokumentenverarbeitung mit kurzen Prompts: Die mini-Modelle von OpenAI sind günstiger
@@ -1383,12 +1395,12 @@ Das Prompt-Caching von Anthropic gewährt 90% Rabatt auf wiederholte Prompt-Inha
 1. **Ist Qualität die wichtigste Vorgabe?** Nehmen Sie Claude 3.5 Sonnet oder GPT-4o. Testen Sie beide und wählen Sie das Modell, das für Ihre Aufgabe die besseren Resultate liefert.
 2. **Sind die Kosten die wichtigste Vorgabe?** Nehmen Sie GPT-4o mini oder Claude 3 Haiku. Beide erledigen einfache Aufgaben zuverlässig.
 3. **Senden Sie grosse, wiederkehrende Kontexte?** Dann liegt Claude mit Prompt-Caching oft vorne.
-4. **Müssen die Daten in der Schweiz bleiben?** Keiner der beiden Anbieter verarbeitet Daten in der Schweiz. Prüfen Sie On-Premise-LLMs.
+4. **Müssen die Daten in der Schweiz bleiben?** Wo die Daten verarbeitet werden, hängt davon ab, wie Sie das Modell nutzen (direkt beim Anbieter oder über eine Cloud-Plattform) und welche Region Sie wählen. Klären Sie das im Vertrag, bevor Sie Personendaten senden. Wenn die Daten Ihre eigene Infrastruktur nicht verlassen dürfen, prüfen Sie On-Premise-LLMs.
 
 ## Unsere Empfehlung
 
 Starten Sie für die meisten KMU-Workloads mit Claude 3.5 Haiku: ausgewogene Qualität, 200K Kontext und verfügbares Caching. Testen Sie für Ihre konkrete Aufgabe GPT-4o mini als Vergleich. Der Qualitätsunterschied von 5–10% zwischen den Stufen rechtfertigt bei Routineaufgaben selten die 5- bis 8-fachen Kosten.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "API-Kosten OpenAI vs. Anthropic für KMU | Trident Software",
           description: "Realistischer API-Kostenvergleich für KMU: Dokumentenverarbeitung, Chatbots, Code-Generierung. Mit Effekt des Prompt-Cachings und Entscheidungsraster.",
@@ -1396,11 +1408,11 @@ Starten Sie für die meisten KMU-Workloads mit Claude 3.5 Haiku: ausgewogene Qua
         faq: [
           {
             question: "Welches Modell eignet sich besser für mehrsprachige Inhalte in der Schweiz (DE/FR/IT)?",
-            answer: "GPT-4o und Claude 3.5 Sonnet beherrschen die Schweizer Landessprachen beide sehr gut. Claude ist auf Italienisch leicht im Vorteil, GPT-4o auf Deutsch. Für die meisten Anwendungsfälle sind die Unterschiede gering. Testen Sie mit einer Stichprobe, die der tatsächlichen Sprachverteilung Ihrer Eingaben entspricht.",
+            answer: "GPT-4o und Claude 3.5 Sonnet beherrschen Deutsch, Französisch und Italienisch beide sehr gut. Claude ist auf Italienisch leicht im Vorteil, GPT-4o auf Deutsch. Für die meisten Anwendungsfälle sind die Unterschiede gering. Testen Sie mit einer Stichprobe, die der tatsächlichen Sprachverteilung Ihrer Eingaben entspricht.",
           },
           {
             question: "Bieten Anthropic oder OpenAI Mengenrabatte für KMU?",
-            answer: "Beide gewähren Rabatte gegen feste Abnahmemengen für Enterprise-Kunden mit hohem Volumen (typischerweise ab $10K Ausgaben pro Monat). Für KMU unter dieser Schwelle gilt der Preis auf der Preisseite. Stand Mitte 2026 bietet keiner der beiden ein eigenes Preisprogramm für KMU an.",
+            answer: "Beide gewähren Rabatte gegen feste Abnahmemengen für Enterprise-Kunden mit hohem Volumen (typischerweise ab $10K Ausgaben pro Monat). Für KMU unter dieser Schwelle gilt der Preis auf der Preisseite. Stand Februar 2026 bot keiner der beiden ein eigenes Preisprogramm für KMU an.",
           },
           {
             question: "Was ist Prompt-Caching und wie aktivieren wir es?",
@@ -1421,7 +1433,7 @@ En comparant les pages tarifaires d'OpenAI et d'Anthropic, on voit un coût par 
 
 Cette comparaison s'appuie sur des charges de travail réalistes de PME plutôt que sur des benchmarks.
 
-## Tarifs utilisés dans cette comparaison
+## Tarifs en février 2026
 
 | Modèle | Entrée (par 1M) | Sortie (par 1M) | Contexte | Idéal pour |
 |---|---|---|---|---|
@@ -1432,7 +1444,7 @@ Cette comparaison s'appuie sur des charges de travail réalistes de PME plutôt 
 | Claude 3.5 Haiku | $0.80 | $4.00 | 200K | Bon équilibre coût/qualité |
 | Claude 3 Haiku | $0.25 | $1.25 | 200K | Tâches simples à grand volume |
 
-*Prix indicatifs : vérifiez les pages actuelles des fournisseurs avant d'établir un budget*
+*Prix catalogue en février 2026, date de publication de cet article. Les fournisseurs modifient souvent leurs prix et leurs modèles : vérifiez les pages tarifaires actuelles avant d'établir un budget.*
 
 ## Modèles de charge de travail réalistes
 
@@ -1440,15 +1452,15 @@ Cette comparaison s'appuie sur des charges de travail réalistes de PME plutôt 
 Hypothèses : 200 documents par jour, 2 000 tokens en moyenne par document, 200 tokens en sortie
 
 \`\`\`
-Monthly volume: 6,000 documents
-Input tokens: 12M (200 chars × 6K docs × ~4 chars/token = estimate)
-Output tokens: 1.2M
+Monthly volume: 6,000 documents (200/day × 30 days)
+Input tokens: 12M (2,000 tokens × 6,000 documents)
+Output tokens: 1.2M (200 tokens × 6,000 documents)
 
 GPT-4o mini: $1.80 input + $0.72 output = $2.52/month
 Claude 3.5 Haiku: $9.60 input + $4.80 output = $14.40/month
 Claude 3 Haiku: $3.00 input + $1.50 output = $4.50/month
 
-Winner: GPT-4o mini by 2×
+Winner: GPT-4o mini, about 1.8× cheaper than Claude 3 Haiku ($4.50 ÷ $2.52)
 \`\`\`
 
 **Chatbot de support client**
@@ -1456,17 +1468,22 @@ Hypothèses : 500 conversations par jour, 10 échanges chacune, prompt système 
 
 Sans cache :
 \`\`\`
+Calls: 500 conversations × 10 turns = 5,000 calls/day
 System prompt repeated per call: 1,500 × 5,000 calls/day = 7.5M tokens/day
+Per month (30 days): 225M tokens
 \`\`\`
 
 Avec le prompt caching de Claude (prompt système en cache) :
 \`\`\`
-Cached input: $0.30/1M (90% discount)
-Effective cost reduction: 60–70% on system prompt portion
+Claude 3.5 Haiku cached input: $0.08/1M (90% off the $0.80 list price)
 
-GPT-4o mini (no caching): $33.75/day
-Claude 3.5 Haiku (with caching): ~$9.80/day
+System prompt portion, 225M tokens/month:
+GPT-4o mini (no caching): $0.15 × 225 = $33.75/month ($1.13/day)
+Claude 3.5 Haiku (no caching): $0.80 × 225 = $180.00/month ($6.00/day)
+Claude 3.5 Haiku (cached): $0.08 × 225 = $18.00/month ($0.60/day)
 \`\`\`
+
+Ces chiffres ne couvrent que le prompt système ; l'historique de conversation et les réponses s'y ajoutent. Claude 3.5 Haiku ne met en cache que les préfixes d'au moins 2 048 tokens : un prompt système de 1 500 tokens n'est donc mis en cache qu'une fois combiné à d'autres éléments de contexte fixes, comme une liste de produits ou une FAQ.
 
 Pour les charges de travail avec de longs prompts système répétés, le prompt caching de Claude change nettement l'équation économique.
 
@@ -1474,19 +1491,20 @@ Pour les charges de travail avec de longs prompts système répétés, le prompt
 Hypothèses : 50 développeurs, 20 complétions assistées par IA par jour, en moyenne 500 tokens en entrée et 300 en sortie
 
 \`\`\`
-Daily: 50,000 input tokens, 30,000 output tokens
-Monthly: 1.5M input, 900K output
+Daily: 50 engineers × 20 completions = 1,000 completions
+Daily tokens: 500,000 input, 300,000 output
+Monthly (30 days): 15M input, 9M output
 
-GPT-4o: $3.75 + $9.00 = $12.75/month
-Claude 3.5 Sonnet: $4.50 + $13.50 = $18.00/month
-GPT-4o mini: $0.23 + $0.54 = $0.77/month
+GPT-4o: $37.50 + $90.00 = $127.50/month
+Claude 3.5 Sonnet: $45.00 + $135.00 = $180.00/month
+GPT-4o mini: $2.25 + $5.40 = $7.65/month
 \`\`\`
 
 Pour la génération de code, GPT-4o mini donne des résultats étonnamment bons au regard de son coût.
 
 ## Le facteur cache
 
-Le prompt caching d'Anthropic accorde 90% de réduction sur le contenu de prompt répété (1 024 tokens au minimum). Dès que vous envoyez plusieurs fois le même prompt système ou le même contexte, la comparaison change :
+Le prompt caching d'Anthropic accorde 90% de réduction sur le contenu de prompt répété (au minimum 1 024 tokens pour Sonnet et 2 048 pour Haiku). Dès que vous envoyez plusieurs fois le même prompt système ou le même contexte, la comparaison change :
 
 - Bots de support avec de grandes bases de connaissances : Claude coûte moins cher
 - Traitement de documents avec des prompts courts : les modèles mini d'OpenAI coûtent moins cher
@@ -1497,12 +1515,12 @@ Le prompt caching d'Anthropic accorde 90% de réduction sur le contenu de prompt
 1. **La qualité est-elle la contrainte principale ?** Prenez Claude 3.5 Sonnet ou GPT-4o. Testez les deux et retenez celui qui donne les meilleurs résultats pour votre tâche.
 2. **Le coût est-il la contrainte principale ?** Prenez GPT-4o mini ou Claude 3 Haiku. Les deux gèrent bien les tâches simples.
 3. **Envoyez-vous de grands contextes répétés ?** Claude avec prompt caching l'emporte souvent.
-4. **Vos données doivent-elles rester en Suisse ?** Aucun des deux fournisseurs ne traite les données en Suisse. Envisagez des LLM on-premise.
+4. **Vos données doivent-elles rester en Suisse ?** Le lieu de traitement dépend de la façon dont vous accédez au modèle (directement chez le fournisseur ou via une plateforme cloud) et de la région choisie. Vérifiez-le dans le contrat avant d'envoyer des données personnelles. Si les données ne doivent pas quitter votre propre infrastructure, envisagez des LLM on-premise.
 
 ## Notre recommandation
 
 Pour la plupart des charges de travail de PME, commencez avec Claude 3.5 Haiku : qualité équilibrée, contexte de 200K et cache disponible. Comparez-le à GPT-4o mini sur votre tâche précise. Pour des tâches de routine, l'écart de qualité de 5–10% entre les niveaux justifie rarement un coût 5 à 8 fois plus élevé.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Coûts API OpenAI vs Anthropic pour PME | Trident Software",
           description: "Comparatif réaliste des coûts d'API pour PME : traitement de documents, chatbots, génération de code. Effet du prompt caching et grille de décision.",
@@ -1510,11 +1528,11 @@ Pour la plupart des charges de travail de PME, commencez avec Claude 3.5 Haiku :
         faq: [
           {
             question: "Quel modèle convient le mieux aux contenus multilingues suisses (DE/FR/IT) ?",
-            answer: "GPT-4o et Claude 3.5 Sonnet maîtrisent tous deux très bien les langues nationales suisses. Claude a un léger avantage en italien, GPT-4o en allemand. Pour la plupart des cas d'usage, les écarts sont minimes. Testez avec un échantillon qui reflète la répartition réelle des langues de vos données.",
+            answer: "GPT-4o et Claude 3.5 Sonnet maîtrisent tous deux très bien l'allemand, le français et l'italien. Claude a un léger avantage en italien, GPT-4o en allemand. Pour la plupart des cas d'usage, les écarts sont minimes. Testez avec un échantillon qui reflète la répartition réelle des langues de vos données.",
           },
           {
             question: "Anthropic ou OpenAI proposent-ils des remises sur volume pour les PME ?",
-            answer: "Les deux accordent des remises contre engagement de volume aux grands comptes (en général à partir de $10K de dépenses par mois). Pour les PME en dessous de ce seuil, le prix est celui de la page tarifaire. À la mi-2026, aucun des deux n'offre de programme tarifaire propre aux PME.",
+            answer: "Les deux accordent des remises contre engagement de volume aux grands comptes (en général à partir de $10K de dépenses par mois). Pour les PME en dessous de ce seuil, le prix est celui de la page tarifaire. En février 2026, aucun des deux n'offrait de programme tarifaire propre aux PME.",
           },
           {
             question: "Qu'est-ce que le prompt caching et comment l'activer ?",
@@ -1535,7 +1553,7 @@ Confrontando le pagine dei prezzi di OpenAI e Anthropic vedi un costo per milion
 
 Questo confronto si basa su carichi di lavoro realistici di una PMI, non su benchmark.
 
-## Prezzi usati in questo confronto
+## Prezzi a febbraio 2026
 
 | Modello | Input (per 1M) | Output (per 1M) | Contesto | Ideale per |
 |---|---|---|---|---|
@@ -1546,7 +1564,7 @@ Questo confronto si basa su carichi di lavoro realistici di una PMI, non su benc
 | Claude 3.5 Haiku | $0.80 | $4.00 | 200K | Equilibrio tra costo e qualità |
 | Claude 3 Haiku | $0.25 | $1.25 | 200K | Compiti semplici ad alto volume |
 
-*Prezzi indicativi: controlla le pagine aggiornate dei fornitori prima di fare il budget*
+*Prezzi di listino a febbraio 2026, data di pubblicazione di questo articolo. I fornitori cambiano spesso prezzi e modelli: controlla le pagine dei prezzi aggiornate prima di fare il budget.*
 
 ## Modelli realistici di carico di lavoro
 
@@ -1554,15 +1572,15 @@ Questo confronto si basa su carichi di lavoro realistici di una PMI, non su benc
 Ipotesi: 200 documenti al giorno, in media 2'000 token ciascuno, 200 token di output
 
 \`\`\`
-Monthly volume: 6,000 documents
-Input tokens: 12M (200 chars × 6K docs × ~4 chars/token = estimate)
-Output tokens: 1.2M
+Monthly volume: 6,000 documents (200/day × 30 days)
+Input tokens: 12M (2,000 tokens × 6,000 documents)
+Output tokens: 1.2M (200 tokens × 6,000 documents)
 
 GPT-4o mini: $1.80 input + $0.72 output = $2.52/month
 Claude 3.5 Haiku: $9.60 input + $4.80 output = $14.40/month
 Claude 3 Haiku: $3.00 input + $1.50 output = $4.50/month
 
-Winner: GPT-4o mini by 2×
+Winner: GPT-4o mini, about 1.8× cheaper than Claude 3 Haiku ($4.50 ÷ $2.52)
 \`\`\`
 
 **Chatbot per l'assistenza clienti**
@@ -1570,17 +1588,22 @@ Ipotesi: 500 conversazioni al giorno, 10 scambi ciascuna, prompt di sistema da 1
 
 Senza caching:
 \`\`\`
+Calls: 500 conversations × 10 turns = 5,000 calls/day
 System prompt repeated per call: 1,500 × 5,000 calls/day = 7.5M tokens/day
+Per month (30 days): 225M tokens
 \`\`\`
 
 Con il prompt caching di Claude (prompt di sistema in cache):
 \`\`\`
-Cached input: $0.30/1M (90% discount)
-Effective cost reduction: 60–70% on system prompt portion
+Claude 3.5 Haiku cached input: $0.08/1M (90% off the $0.80 list price)
 
-GPT-4o mini (no caching): $33.75/day
-Claude 3.5 Haiku (with caching): ~$9.80/day
+System prompt portion, 225M tokens/month:
+GPT-4o mini (no caching): $0.15 × 225 = $33.75/month ($1.13/day)
+Claude 3.5 Haiku (no caching): $0.80 × 225 = $180.00/month ($6.00/day)
+Claude 3.5 Haiku (cached): $0.08 × 225 = $18.00/month ($0.60/day)
 \`\`\`
+
+Queste cifre riguardano solo il prompt di sistema; la cronologia della conversazione e le risposte si aggiungono. Claude 3.5 Haiku mette in cache solo prefissi di almeno 2'048 token: un prompt di sistema da 1'500 token entra in cache solo se combinato con altro contesto fisso, per esempio un elenco di prodotti o una FAQ.
 
 Per i carichi di lavoro con lunghi prompt di sistema ripetuti, il prompt caching di Claude cambia in modo netto i conti.
 
@@ -1588,19 +1611,20 @@ Per i carichi di lavoro con lunghi prompt di sistema ripetuti, il prompt caching
 Ipotesi: 50 sviluppatori, 20 completamenti assistiti dall'IA al giorno, in media 500 token di input e 300 di output
 
 \`\`\`
-Daily: 50,000 input tokens, 30,000 output tokens
-Monthly: 1.5M input, 900K output
+Daily: 50 engineers × 20 completions = 1,000 completions
+Daily tokens: 500,000 input, 300,000 output
+Monthly (30 days): 15M input, 9M output
 
-GPT-4o: $3.75 + $9.00 = $12.75/month
-Claude 3.5 Sonnet: $4.50 + $13.50 = $18.00/month
-GPT-4o mini: $0.23 + $0.54 = $0.77/month
+GPT-4o: $37.50 + $90.00 = $127.50/month
+Claude 3.5 Sonnet: $45.00 + $135.00 = $180.00/month
+GPT-4o mini: $2.25 + $5.40 = $7.65/month
 \`\`\`
 
 Per la generazione di codice, GPT-4o mini offre risultati sorprendentemente buoni rispetto al costo.
 
 ## Il fattore caching
 
-Il prompt caching di Anthropic dà uno sconto del 90% sul contenuto ripetuto del prompt (minimo 1'024 token). Ogni volta che invii più volte lo stesso prompt di sistema o lo stesso contesto, il confronto cambia:
+Il prompt caching di Anthropic dà uno sconto del 90% sul contenuto ripetuto del prompt (minimo 1'024 token per Sonnet e 2'048 per Haiku). Ogni volta che invii più volte lo stesso prompt di sistema o lo stesso contesto, il confronto cambia:
 
 - Bot di assistenza con grandi basi di conoscenza: Claude costa meno
 - Elaborazione di documenti con prompt brevi: i modelli mini di OpenAI costano meno
@@ -1611,12 +1635,12 @@ Il prompt caching di Anthropic dà uno sconto del 90% sul contenuto ripetuto del
 1. **La qualità è il vincolo principale?** Usa Claude 3.5 Sonnet o GPT-4o. Provali entrambi e scegli quello che dà risultati migliori sul tuo compito.
 2. **Il costo è il vincolo principale?** Usa GPT-4o mini o Claude 3 Haiku. Entrambi gestiscono bene i compiti semplici.
 3. **Invii grandi contesti ripetuti?** Claude con prompt caching spesso vince.
-4. **I dati devono restare in Svizzera?** Nessuno dei due fornitori elabora i dati in Svizzera. Valuta LLM on-premise.
+4. **I dati devono restare in Svizzera?** Il luogo di elaborazione dipende da come accedi al modello (direttamente dal fornitore o tramite una piattaforma cloud) e dalla regione scelta. Verificalo nel contratto prima di inviare dati personali. Se i dati non devono lasciare la tua infrastruttura, valuta LLM on-premise.
 
 ## La nostra raccomandazione
 
 Per la maggior parte dei carichi di lavoro di una PMI, parti con Claude 3.5 Haiku: qualità equilibrata, contesto da 200K e caching disponibile. Confrontalo con GPT-4o mini sul tuo compito specifico. Per le attività di routine, la differenza di qualità del 5–10% tra i livelli giustifica di rado un costo da 5 a 8 volte superiore.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Costi API OpenAI vs Anthropic per PMI | Trident Software",
           description: "Confronto realistico dei costi API per PMI: elaborazione documenti, chatbot, generazione di codice. Effetto del prompt caching e schema decisionale.",
@@ -1624,11 +1648,11 @@ Per la maggior parte dei carichi di lavoro di una PMI, parti con Claude 3.5 Haik
         faq: [
           {
             question: "Quale modello è migliore per contenuti multilingue svizzeri (DE/FR/IT)?",
-            answer: "GPT-4o e Claude 3.5 Sonnet gestiscono entrambi molto bene le lingue nazionali svizzere. Claude ha un leggero vantaggio in italiano, GPT-4o in tedesco. Per la maggior parte dei casi d'uso le differenze sono minime. Fai un test con un campione che rispecchi la reale distribuzione delle lingue nei tuoi input.",
+            answer: "GPT-4o e Claude 3.5 Sonnet gestiscono entrambi molto bene tedesco, francese e italiano. Claude ha un leggero vantaggio in italiano, GPT-4o in tedesco. Per la maggior parte dei casi d'uso le differenze sono minime. Fai un test con un campione che rispecchi la reale distribuzione delle lingue nei tuoi input.",
           },
           {
             question: "Anthropic o OpenAI offrono sconti sui volumi per le PMI?",
-            answer: "Entrambi offrono sconti a fronte di un impegno di spesa ai grandi clienti enterprise (di solito da $10K al mese in su). Per le PMI sotto questa soglia vale il prezzo indicato nella pagina dei prezzi. A metà 2026 nessuno dei due ha programmi di prezzo dedicati alle PMI.",
+            answer: "Entrambi offrono sconti a fronte di un impegno di spesa ai grandi clienti enterprise (di solito da $10K al mese in su). Per le PMI sotto questa soglia vale il prezzo indicato nella pagina dei prezzi. A febbraio 2026 nessuno dei due aveva programmi di prezzo dedicati alle PMI.",
           },
           {
             question: "Che cos'è il prompt caching e come lo attiviamo?",

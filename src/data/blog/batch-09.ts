@@ -32,7 +32,7 @@ Shoppers get a wide range of quality products and can quickly find the right too
 
 We stay in regular contact with our clients, providing them with timely updates on news, pricing, special offers, and benefits.
 
-Our team of trained experts is ready to provide customized solutions that meet the highest customer demands. We aim to meet our customers’ needs by offering comprehensive information and high-quality services.”
+Our team of trained experts is ready to provide customised solutions that meet the highest customer demands. We aim to meet our customers’ needs by offering comprehensive information and high-quality services.”
 
 ## History
 
@@ -224,7 +224,7 @@ Auguriamo al cliente molto successo nella sua attività.`,
     title: "Introducing our project: online shop for watches, bags and accessories",
     publishedAt: "2024-04-19",
     readingTime: 3,
-    excerpt: "We built Flashub, an online store for watches, bags and accessories: the client's challenges, search, product cards, SEO, localization, AI and marketplace integrations.",
+    excerpt: "We built Flashub, an online store for watches, bags and accessories: the client's challenges, search, product cards, SEO, localisation, AI and marketplace integrations.",
     tags: [
       "AI",
       "B2B",
@@ -251,7 +251,7 @@ In the first consultation, the client named the main problem: sales had to grow 
 
 The client had valuable market insights and supplier connections but lacked programming skills and website development expertise. This gap kept them from using their market knowledge and sales experience to the full.
 
-With 16 years of experience building online stores, we told the client we could deliver quickly and to a high standard.
+We have built online stores since 2009, so we told the client we could deliver quickly and to a high standard.
 
 We have delivered custom e-commerce platforms in a matter of days before, so we took on the project.
 
@@ -271,7 +271,7 @@ The checkout is simple, which helps turn visitors into buyers.
 
 Flashub focuses on making products visible online.
 
-The watch e-commerce platform uses fully optimized SEO elements, such as product titles, descriptions, and meta tags, along with clear URLs and structured data in JSON-LD format. Search engines understand the shop better and show it more often.
+The watch e-commerce platform uses fully optimised SEO elements, such as product titles, descriptions, and meta tags, along with clear URLs and structured data in JSON-LD format. Search engines understand the shop better and show it more often.
 
 Social media integration brings more traffic to the store.
 
@@ -279,7 +279,7 @@ Social media integration brings more traffic to the store.
 
 Flashub serves customers in several languages.
 
-It is available in English and localized in French, German, and Italian, so language is no barrier to buying. This matters for customers in Switzerland and for buyers abroad.
+It is available in English and localised in French, German, and Italian, so language is no barrier to buying. This matters for customers in Switzerland and for buyers abroad.
 
 ### Integrated artificial intelligence (AI)
 
@@ -306,7 +306,7 @@ Flashub sells a carefully selected range of bags and accessories to shoppers wor
 If you plan to launch a bag and accessory online store, [Trident Software](/) can build it with you.`,
     meta: {
       title: "Flashub: online store for watches, bags and accessories",
-      description: "Flashub is an online store for watches, bags and accessories: client challenges, search, product cards, SEO, localization, AI and marketplace integrations.",
+      description: "Flashub is an online store for watches, bags and accessories: client challenges, search, product cards, SEO, localisation, AI and marketplace integrations.",
     },
     translations: {
       de: {
@@ -326,7 +326,7 @@ Im Beratungsgespräch nannte der Kunde mehrere kritische Punkte. An erster Stell
 
 Der Kunde verfügte über wertvolle Marktkenntnisse und Lieferantenkontakte, hatte aber keine Programmierkenntnisse und keine Erfahrung in der Website-Entwicklung. Diese Lücke hinderte ihn daran, sein Marktwissen und seine Vertriebserfahrung voll zu nutzen.
 
-Trident Software bot eine massgeschneiderte Lösung an. Mit 16 Jahren Erfahrung in der schnellen Entwicklung hochwertiger Online-Shops konnten wir dem Kunden zusichern, seine Anforderungen rasch und wirksam zu erfüllen.
+Trident Software bot eine massgeschneiderte Lösung an. Da wir seit 2009 hochwertige Online-Shops schnell entwickeln, konnten wir dem Kunden zusichern, seine Anforderungen rasch und wirksam zu erfüllen.
 
 Wir haben bereits mehrfach individuelle E-Commerce-Plattformen innerhalb weniger Tage geliefert und waren deshalb bereit, die Aufgabe anzunehmen.
 
@@ -402,7 +402,7 @@ Lors de la consultation, le client a cité plusieurs points critiques. Le premie
 
 Le client disposait d'une bonne connaissance du marché et de contacts fournisseurs, mais n'avait ni compétences en programmation ni expérience du développement web. Cette lacune l'empêchait de tirer pleinement parti de sa connaissance du marché et de son expérience de la vente.
 
-Trident Software a proposé une solution sur mesure. Forts de 16 ans d'expérience dans le développement rapide de boutiques en ligne de qualité, nous avons assuré au client que nous répondrions vite et efficacement à ses besoins.
+Trident Software a proposé une solution sur mesure. Comme nous développons rapidement des boutiques en ligne de qualité depuis 2009, nous avons assuré au client que nous répondrions vite et efficacement à ses besoins.
 
 Nous avons déjà livré des plateformes e-commerce sur mesure en quelques jours seulement, nous étions donc prêts à relever le défi.
 
@@ -478,7 +478,7 @@ Durante la consulenza il cliente ha indicato diversi punti critici. Il primo era
 
 Il cliente aveva una buona conoscenza del mercato e contatti con i fornitori, ma non competenze di programmazione né esperienza nello sviluppo web. Questa lacuna gli impediva di sfruttare appieno la sua conoscenza del mercato e la sua esperienza di vendita.
 
-Trident Software è intervenuta con una soluzione su misura. Con 16 anni di esperienza nello sviluppo rapido di negozi online di qualità, abbiamo assicurato al cliente di poter rispondere alle sue esigenze in modo rapido ed efficace.
+Trident Software è intervenuta con una soluzione su misura. Poiché sviluppiamo rapidamente negozi online di qualità dal 2009, abbiamo assicurato al cliente di poter rispondere alle sue esigenze in modo rapido ed efficace.
 
 Abbiamo già consegnato piattaforme e-commerce personalizzate in pochi giorni, quindi eravamo pronti ad affrontare la sfida.
 
@@ -1009,7 +1009,7 @@ Tieni aggiornate le schede, resta informato e metti sempre al primo posto le esi
   {
     slug: "maximizing-sales-tips-for-creating-compelling-product-pages-for-your-online-tire-shop",
     image: "/images/blog/maximizing-sales-tips-for-creating-compelling-product-pages-.png",
-    title: "Maximizing sales: tips for creating compelling product pages for your online tire shop",
+    title: "Maximising sales: tips for creating compelling product pages for your online tire shop",
     publishedAt: "2024-03-20",
     readingTime: 2,
     excerpt: "Tips for tire product pages that sell: product names, images, descriptions, technical data, pricing, reviews, delivery, related products and SEO.",
@@ -1298,7 +1298,7 @@ For example, conversational IVR can be used for:
 
 - answering customer inquiries promptly and accurately
 - providing updates on order statuses, products and services
-- helping customers choose products and services, with personalized recommendations
+- helping customers choose products and services, with personalised recommendations
 - informing customers about ongoing promotions and discounts
 - making outbound cold calls
 - supporting other functions as required
@@ -1930,7 +1930,7 @@ These functions can run on a schedule and assess the usage of each resource. The
 
 Once an idle or underused resource is found, the Lambda function sends an alert to the DevOps team. The alert contains detailed information about the resource, including its current load and suggested actions.
 
-With this data, DevOps engineers can make informed decisions, such as downsizing the server or optimizing database usage, to match current needs. Resources are used well, and costs go down.
+With this data, DevOps engineers can make informed decisions, such as downsizing the server or optimising database usage, to match current needs. Resources are used well, and costs go down.
 
 ## Long-term savings
 
@@ -2240,7 +2240,7 @@ Con iAM-Trade i rivenditori di pneumatici online possono far crescere la loro at
     ],
     category: "News",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## Thanks to our partners
 
@@ -2304,7 +2304,7 @@ Der Beitrag von AWS umfasst mehrere zentrale Bereiche:
 - **Sicherheit:** Die Sicherheit der Cloud-Umgebung hat Priorität.
 
 Der Event „Join the Cloud“ fand trotz Wetterproblemen statt und war ein gutes Beispiel für unser Engagement für Innovation und Lernen. Wir danken allen Beteiligten herzlich, besonders den Referenten, dass sie uns geholfen haben, die AWS-Cloud-Dienste besser zu verstehen. Wir freuen uns auf künftige Events und verfolgen die Entwicklung der Cloud-Technologie weiter. Weitere Neuigkeiten und Einblicke folgen.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Join the Cloud: Rückblick auf unseren AWS-Event im Wallis",
           description: "Rückblick auf unseren Event Join the Cloud zu AWS: Dank an Partner und Referenten und die wichtigsten Vorteile der AWS-Cloud-Technologie.",
@@ -2340,7 +2340,7 @@ La contribution d'AWS couvre plusieurs domaines clés :
 - **Sécurité :** la sécurité de l'environnement cloud est une priorité.
 
 L'événement « Join the Cloud » s'est tenu malgré les difficultés liées à la météo et illustre bien notre engagement pour l'innovation et l'apprentissage. Nous remercions sincèrement toutes les personnes impliquées, en particulier les intervenants, qui nous ont aidés à mieux comprendre les services cloud d'AWS. Nous attendons avec intérêt les prochains événements et continuerons de suivre l'évolution des technologies cloud. D'autres nouvelles et analyses suivront.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Join the Cloud : retour sur notre événement AWS en Valais",
           description: "Retour sur notre événement Join the Cloud consacré à AWS : remerciements aux partenaires et intervenants, et avantages de la technologie cloud AWS.",
@@ -2376,7 +2376,7 @@ Il contributo di AWS riguarda diverse aree chiave:
 - **Sicurezza:** la sicurezza dell'ambiente cloud è una priorità.
 
 L'evento «Join the Cloud» si è svolto nonostante le difficoltà legate al meteo ed è stato un buon esempio del nostro impegno per l'innovazione e l'apprendimento. Ringraziamo di cuore tutti i partecipanti, in particolare i relatori, che ci hanno aiutato a capire meglio i servizi cloud di AWS. Attendiamo con interesse i prossimi eventi e continueremo a seguire l'evoluzione delle tecnologie cloud. Seguiranno altre novità e approfondimenti.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Join the Cloud: resoconto del nostro evento AWS in Vallese",
           description: "Il resoconto del nostro evento Join the Cloud dedicato ad AWS: ringraziamenti a partner e relatori e vantaggi della tecnologia cloud AWS.",
@@ -2398,7 +2398,7 @@ L'evento «Join the Cloud» si è svolto nonostante le difficoltà legate al met
     ],
     category: "Case Study",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## Video content
 
@@ -2524,7 +2524,7 @@ Um ein möglichst grosses Publikum zu erreichen, beachten Sie diese SEO-Empfehlu
 Mit dem Tool Convertor Video von Trident Software steuern Sie die SEO-Attribute Ihrer Videos, und unsere KI hilft, die Informationen zu optimieren.
 
 Überzeugende Videos für Ihren Online-Shop erfordern Liebe zum Detail, vom Verständnis der Zielgruppe bis zu technischer Umsetzung und SEO. Videos zeigen Ihre Produkte, erzählen die Geschichte Ihrer Marke und schaffen eine emotionale Bindung zu potenziellen Kunden. Mit diesen Empfehlungen erstellen Sie wirksame, einprägsame Videoinhalte, die die Interaktion mit Ihren Kunden verbessern und den Umsatz steigern.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Produktvideos für Online-Shops: Produktion und Video-SEO",
           description: "So planen und veröffentlichen Sie Produktvideos für einen Online-Shop: Grundsätze, Hinweise nach Branche, Veröffentlichung und Video-SEO.",
@@ -2591,7 +2591,7 @@ Pour toucher le public le plus large, suivez ces recommandations SEO :
 L'outil Convertor Video de Trident Software vous permet de contrôler les attributs SEO de la vidéo, et notre IA aide à optimiser les informations.
 
 Créer des vidéos convaincantes pour votre boutique en ligne demande de l'attention aux détails, de la compréhension du public cible à la mise en œuvre technique et au SEO. Les vidéos montrent vos produits, racontent l'histoire de votre marque et créent un lien émotionnel avec les clients potentiels. Avec ces recommandations, vous réalisez des contenus vidéo efficaces et mémorables qui améliorent l'interaction avec vos clients et augmentent les ventes.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Vidéos produits pour boutiques en ligne : production et SEO",
           description: "Comment concevoir et publier des vidéos produits pour une boutique en ligne : principes, conseils par secteur, publication et SEO vidéo.",
@@ -2658,7 +2658,7 @@ Per raggiungere il pubblico più ampio, segui queste raccomandazioni SEO:
 Lo strumento Convertor Video di Trident Software ti permette di controllare gli attributi SEO del video, e la nostra IA aiuta a ottimizzare le informazioni.
 
 Creare video convincenti per il tuo negozio online richiede attenzione ai dettagli, dalla comprensione del pubblico di destinazione all'implementazione tecnica e alla SEO. I video mostrano i tuoi prodotti, raccontano la storia del tuo marchio e creano un legame emotivo con i potenziali clienti. Con queste raccomandazioni puoi realizzare contenuti video efficaci e memorabili che migliorano l'interazione con i clienti e aumentano le vendite.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Video di prodotto per negozi online: produzione e SEO",
           description: "Come pianificare e pubblicare video di prodotto per un negozio online: principi, indicazioni per settore, pubblicazione e SEO dei video.",
@@ -2679,7 +2679,7 @@ Creare video convincenti per il tuo negozio online richiede attenzione ai dettag
     ],
     category: "News",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## Cloud technologies
 
@@ -2759,7 +2759,7 @@ Unsere Partnerschaft mit AWS zeigt unser Engagement, unseren Kunden ein starkes 
 Wir freuen uns über diesen Meilenstein und danken Ihnen, unseren geschätzten Kunden, herzlich für Ihre beständige Unterstützung.
 
 Danke, dass Sie uns als vertrauenswürdigen Partner gewählt haben. Wir berichten über die Möglichkeiten und Neuerungen, die diese Partnerschaft bringt.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Trident Software ist jetzt Partner von Amazon Web Services",
           description: "Trident Software ist jetzt AWS-Partner: was die Partnerschaft für Kunden bedeutet, von AWS-Programmen über technischen Support bis zur Sicherheit.",
@@ -2803,7 +2803,7 @@ Notre partenariat avec AWS montre notre engagement à offrir une expérience sol
 Nous nous réjouissons de cette étape et vous remercions sincèrement, chers clients, de votre soutien constant.
 
 Merci de nous avoir choisis comme partenaire de confiance. Nous vous informerons des opportunités et des innovations que ce partenariat apportera.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Trident Software devient partenaire d'Amazon Web Services",
           description: "Trident Software est partenaire d'Amazon Web Services : ce que cela change pour les clients, des programmes AWS à l'assistance et à la sécurité.",
@@ -2847,7 +2847,7 @@ La nostra partnership con AWS mostra il nostro impegno a offrire ai clienti un'e
 Siamo lieti di questo traguardo e ringraziamo sinceramente voi, nostri clienti, per il costante sostegno.
 
 Grazie per averci scelto come partner di fiducia. Vi informeremo sulle opportunità e sulle innovazioni che questa partnership porterà.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Trident Software diventa partner di Amazon Web Services",
           description: "Trident Software è partner di Amazon Web Services: cosa cambia per i clienti, dai programmi AWS all'assistenza tecnica e alla sicurezza.",
@@ -2867,7 +2867,7 @@ Grazie per averci scelto come partner di fiducia. Vi informeremo sulle opportuni
     ],
     category: "News",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## Inventory management
 
@@ -2961,7 +2961,7 @@ Die Entwicklungs-Roadmap des Systems umfasst diese Schritte:
 - **Optimierte Positionierung:** Die heutige Positionierung mit QR-Markern wird durch ein optisches Erkennungssystem ersetzt, das Objekterkennung für präzisere Positionierung nutzt.
 
 Die Kombination aus Objekterkennung, Drohnen und Bestandsverwaltung ist ein bedeutender Schritt nach vorn für die Lagerbranche. Das System vereinfacht den Inventurprozess und bereitet den Boden dafür, dass Automatisierung und Genauigkeit zusammenwirken.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Lagerinventur mit Objekterkennung und autonomen Drohnen",
           description: "Ein System mit Objekterkennung und autonomen Drohnen für Lagerinventur und Bestandskontrolle in Verkaufshallen: Module, Ablauf und Pläne.",
@@ -3012,7 +3012,7 @@ La feuille de route de développement du système comprend ces étapes :
 - **Positionnement optimisé :** le positionnement actuel par marqueurs QR sera remplacé par un système de reconnaissance optique qui utilise la reconnaissance d'objets pour un positionnement plus précis.
 
 L'association de la reconnaissance d'objets, des drones et de la gestion des stocks est un progrès notable pour l'entreposage. Le système simplifie le processus d'inventaire et prépare le terrain pour une automatisation et une précision qui vont de pair.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Inventaire d'entrepôt par reconnaissance d'objets et drones",
           description: "Un système de reconnaissance d'objets et de drones autonomes pour l'inventaire d'entrepôt et le contrôle des stocks : modules, flux et projets.",
@@ -3063,7 +3063,7 @@ La roadmap di sviluppo del sistema comprende questi passi:
 - **Posizionamento ottimizzato:** l'attuale posizionamento con marcatori QR sarà sostituito da un sistema di riconoscimento ottico che usa il riconoscimento di oggetti per un posizionamento più preciso.
 
 La combinazione di riconoscimento di oggetti, droni e gestione dell'inventario è un passo avanti significativo per lo stoccaggio. Il sistema semplifica il processo di inventario e prepara il terreno a un'automazione e a una precisione che vanno di pari passo.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Inventario di magazzino con riconoscimento oggetti e droni",
           description: "Un sistema di riconoscimento di oggetti e droni autonomi per l'inventario di magazzino e il controllo delle scorte: moduli, flusso e piani.",
@@ -3074,13 +3074,13 @@ La combinazione di riconoscimento di oggetti, droni e gestione dell'inventario �
   {
     slug: "ardevaz-language-school-website-launch",
     image: "/images/blog/ardevaz-language-school-website-launch.png",
-    title: "Ardevaz Language School Website Launch",
+    title: "Ardevaz Language School website launch",
     publishedAt: "2023-08-16",
     readingTime: 1,
-    excerpt: "We launched the new Ardevaz Language School website with a content management system, localization in six languages and a French proficiency test.",
+    excerpt: "We launched the new Ardevaz Language School website with a content management system, localisation in six languages and a French proficiency test.",
     tags: [
       "CMS",
-      "Localization",
+      "Localisation",
       "SEO",
       "SME Website",
     ],
@@ -3113,7 +3113,7 @@ The new website reflects the school’s updated logo and branding. We applied cu
 The website also has a blog, where the school shares language tips and cultural news with its students.`,
     meta: {
       title: "Ardevaz Language School website: CMS and six languages",
-      description: "We launched the new Ardevaz Language School website with a CMS, localization in six languages and a French proficiency test.",
+      description: "We launched the new Ardevaz Language School website with a CMS, localisation in six languages and a French proficiency test.",
     },
     translations: {
       de: {
@@ -3392,13 +3392,13 @@ Guarda il video allegato per vedere l'app in azione. Pubblicheremo altri aggiorn
     ],
     category: "News",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## Valais Chamber of Commerce
 
 Trident Software has joined the [Valais Chamber of Commerce and Industry](https://www.cci-valais.ch/) in Switzerland. The membership ties us more closely to our clients and the local community.
 
-The Valais Chamber of Commerce and Industry is a regional business organization in the canton of Valais, Switzerland. It promotes economic development, speaks for local businesses and brings them together.
+The Valais Chamber of Commerce and Industry is a regional business organisation in the canton of Valais, Switzerland. It promotes economic development, speaks for local businesses and brings them together.
 
 ## What membership brings
 
@@ -3444,7 +3444,7 @@ Die Walliser Industrie- und Handelskammer ist eine regionale Wirtschaftsorganisa
 ## Unser gemeinsames Ziel: Ihr Erfolg
 
 Wir freuen uns auf die Möglichkeiten, Einblicke und Kooperationen, die diese Mitgliedschaft bringen wird. Wir bieten unseren Kunden im Wallis und darüber hinaus weiterhin Software- und Webentwicklung an.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Trident Software ist Mitglied der Walliser Handelskammer",
           description: "Trident Software ist der Walliser Industrie- und Handelskammer beigetreten: Vorteile der Mitgliedschaft bei lokalen Einblicken, Zusammenarbeit und Ressourcen.",
@@ -3474,7 +3474,7 @@ La Chambre de commerce et d'industrie du Valais est une organisation économique
 ## Notre objectif commun : votre réussite
 
 Nous attendons avec intérêt les opportunités, les connaissances et les collaborations que cette adhésion apportera. Nous continuons à offrir des services de développement logiciel et web à nos clients en Valais et au-delà.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Trident Software rejoint la CCI du Valais",
           description: "Trident Software a rejoint la Chambre de commerce et d'industrie du Valais : ce que l'adhésion apporte en connaissances locales et collaborations.",
@@ -3504,7 +3504,7 @@ La Camera di commercio e dell'industria del Vallese è un'organizzazione economi
 ## Il nostro obiettivo comune: il vostro successo
 
 Attendiamo con interesse le opportunità, le conoscenze e le collaborazioni che questa adesione porterà. Continuiamo a offrire servizi di sviluppo software e web ai nostri clienti nel Vallese e oltre.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Trident Software nella Camera di commercio del Vallese",
           description: "Trident Software ha aderito alla Camera di commercio e dell'industria del Vallese: cosa porta l'adesione in conoscenze locali e collaborazioni.",

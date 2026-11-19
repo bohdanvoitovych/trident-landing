@@ -17,7 +17,7 @@ export const posts: BlogPostRecord[] = [
     ],
     category: "Case Study",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## The fragmentation problem in auto parts distribution
 
@@ -57,7 +57,7 @@ Aus losen Einzelabläufen wird eine zentrale Steuerung. Händler, die 8Move eins
 ## Der erste Schritt
 
 Arbeitet Ihr Team im Autoteilevertrieb noch mit getrennten Tools, kosten Sie diese Lücken wahrscheinlich mehr, als Sie denken. Kontaktieren Sie Trident Software für eine Vorführung der Plattform, abgestimmt auf Ihre Vertriebsstruktur.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Autoteile-Software: E-Commerce, Lager & Lieferung vereint",
           description: "Wie 8Move E-Commerce, Lagerverwaltung, Lieferautomatisierung und KI für Autoteilehändler vereint: 35 % tiefere Kosten, 57 % mehr automatisierte Bestellungen.",
@@ -81,7 +81,7 @@ La plateforme transforme des opérations dispersées en un véritable poste de p
 ## Par où commencer
 
 Si votre équipe gère encore la distribution de pièces auto avec des outils qui ne communiquent pas entre eux, ces lacunes vous coûtent sans doute plus que vous ne le pensez. Contactez Trident Software pour une démonstration de la plateforme adaptée à votre organisation de distribution.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Logiciel pièces auto : e-commerce, entrepôt et livraison",
           description: "Comment 8Move réunit e-commerce, entrepôt, livraisons et IA pour les distributeurs de pièces auto : -35 % de coûts, +57 % de commandes automatisées.",
@@ -105,7 +105,7 @@ La piattaforma trasforma attività scollegate in un'unica cabina di regia. I dis
 ## Come iniziare
 
 Se il tuo team gestisce ancora la distribuzione di ricambi auto con strumenti che non comunicano tra loro, questi vuoti ti costano probabilmente più di quanto pensi. Contatta Trident Software per una presentazione della piattaforma su misura per la tua struttura di distribuzione.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Software ricambi auto: e-commerce, magazzino e consegne",
           description: "Come 8Move unisce e-commerce, magazzino, consegne automatizzate e IA per i distributori di ricambi auto: -35% di costi, +57% di ordini automatizzati.",
@@ -129,7 +129,7 @@ Se il tuo team gestisce ancora la distribuzione di ricambi auto con strumenti ch
     ],
     category: "News",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## Automechanika Dubai 2025
 
@@ -165,7 +165,7 @@ Ausserdem zeigen wir unsere mobile Lager-App für die Bestandsverwaltung mit Bar
 ## Treffen wir uns
 
 Sind Sie an der Automechanika Dubai 2025? Sie finden uns in Halle 8, Stand F18. Wir freuen uns auf das Gespräch darüber, wie unser digitales Ökosystem die konkreten Herausforderungen Ihres Aftermarket-Geschäfts lösen kann.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Automechanika Dubai 2025: Trident Software, Halle 8, F18",
           description: "Trident Software an der Automechanika Dubai 2025, 9.–11. Dezember: B2B-Ersatzteilportal, 8Move-Logistik-App und KI-Automatisierung in Halle 8, Stand F18.",
@@ -187,7 +187,7 @@ Nous présenterons aussi notre application mobile d'entrepôt pour la gestion de
 ## Venez nous rencontrer
 
 Vous serez à Automechanika Dubai 2025 ? Retrouvez-nous dans le hall 8, stand F18. Nous serons ravis d'échanger avec vous sur la manière dont notre écosystème numérique peut répondre aux défis concrets de votre activité d'après-vente automobile.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Automechanika Dubai 2025 : Trident Software, hall 8, F18",
           description: "Rencontrez Trident Software à Automechanika Dubai 2025, du 9 au 11 décembre : portail B2B de pièces, app 8Move et automatisation IA, hall 8, stand F18.",
@@ -209,7 +209,7 @@ Presenteremo anche la nostra app mobile di magazzino per la gestione delle scort
 ## Vieni a trovarci
 
 Sarai ad Automechanika Dubai 2025? Ci trovi nel padiglione 8, stand F18. Saremo felici di parlare con te di come il nostro ecosistema digitale può risolvere le sfide concrete della tua attività nell'aftermarket.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Automechanika Dubai 2025: Trident Software, pad. 8, F18",
           description: "Incontra Trident Software ad Automechanika Dubai 2025, 9–11 dicembre: portale B2B per ricambi, app 8Move e automazione IA nel padiglione 8, stand F18.",
@@ -233,7 +233,7 @@ Sarai ad Automechanika Dubai 2025? Ci trovi nel padiglione 8, stand F18. Saremo 
     ],
     category: "Insights",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## AI is not just for big companies
 
@@ -273,7 +273,7 @@ Neben der Produktentwicklung bringt KI den KMU meist im Backoffice am meisten. D
 ## Wo es weiterhin Fachwissen braucht
 
 KI erledigt repetitive Aufgaben gut. Architekturentscheide, Systemintegrationen und die Analyse von Geschäftsprozessen brauchen aber nach wie vor erfahrene Fachleute. KMU, die KI-Tools mit einem erfahrenen Partner kombinieren, holen das Beste aus beidem heraus.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "KI für KMU: Praxisbeispiele mit echtem ROI",
           description: "Wo KI für KMU wirklich funktioniert: von kürzerer Entwicklungszeit bis zur Automatisierung von Rechnungen, E-Mails und Kundendossiers.",
@@ -297,7 +297,7 @@ Au-delà du développement produit, c'est souvent dans le back-office que l'IA r
 ## Là où l'expertise humaine reste indispensable
 
 L'IA gère bien les tâches répétitives. Mais les choix d'architecture, l'intégration des systèmes et l'analyse des processus métier demandent toujours l'accompagnement d'experts. Les PME qui associent les outils d'IA à un partenaire expérimenté tirent le meilleur des deux.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "IA pour les PME : des cas concrets avec un vrai ROI",
           description: "Là où l'IA fonctionne vraiment pour les PME : des délais de développement raccourcis à l'automatisation des factures, des e-mails et des dossiers clients.",
@@ -321,7 +321,7 @@ Oltre allo sviluppo prodotto, per le PMI l'IA rende di più nel back office. L'e
 ## Dove serve ancora l'esperienza umana
 
 L'IA gestisce bene le attività ripetitive. Le scelte di architettura, l'integrazione dei sistemi e l'analisi dei processi aziendali richiedono però ancora il supporto di esperti. Le PMI che affiancano agli strumenti di IA un partner esperto ottengono il meglio da entrambi.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "IA per le PMI: casi d'uso concreti con un vero ROI",
           description: "Dove l'IA funziona davvero per le piccole e medie imprese: dai tempi di sviluppo ridotti all'automazione di fatture, e-mail e pratiche dei clienti.",
@@ -335,7 +335,7 @@ L'IA gestisce bene le attività ripetitive. Le scelte di architettura, l'integra
     title: "Click, scan, done: how a digital invoice scanner cuts costs",
     publishedAt: "2025-08-28",
     readingTime: 5,
-    excerpt: "A small Swiss business was spending CHF 1,500 per quarter (16 accountant hours) just on manual invoice processing. After it introduced digital invoice scanning with OCR and automated workflows, that cost dropped 81% to CHF 150. Processing time fell tenfold, and cash flow improved 65%.",
+    excerpt: "A small Swiss business was spending CHF 1,500 per quarter (16 accountant hours) just on manual invoice processing. After it introduced digital invoice scanning with OCR and automated workflows, that cost dropped 81% to CHF 150. Processing time fell tenfold, and automated payment reminders improved cash flow.",
     tags: [
       "Automation",
       "Accounting",
@@ -345,7 +345,7 @@ L'IA gestisce bene le attività ripetitive. Le scelte di architettura, l'integra
     ],
     category: "Insights",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## The hidden cost of manual invoice processing
 
@@ -361,7 +361,7 @@ Invoice management software with mobile scanning automates the whole workflow. T
 
 ## The numbers
 
-The results were concrete: accounting costs dropped 81% from CHF 1,500 to CHF 150 per quarter, processing time fell tenfold, and cash flow improved 65% through automated payment reminders.`,
+The results were concrete: accounting costs dropped 81% from CHF 1,500 to CHF 150 per quarter, processing time fell tenfold, and automated payment reminders improved cash flow.`,
     meta: {
       title: "Digital invoice scanner: 81% cost reduction for Swiss SMEs",
       description: "How a small Swiss business cut invoice processing costs by 81% using digital scanning with OCR and automated payment workflows.",
@@ -369,7 +369,7 @@ The results were concrete: accounting costs dropped 81% from CHF 1,500 to CHF 15
     translations: {
       de: {
         title: "Klicken, scannen, fertig: Wie ein digitaler Rechnungsscanner Kosten senkt",
-        excerpt: "Ein kleines Schweizer Unternehmen gab pro Quartal CHF 1'500 aus, also 16 Stunden Treuhandarbeit, nur für die manuelle Rechnungsverarbeitung. Mit digitalem Rechnungsscan per OCR und automatisierten Abläufen sanken diese Kosten um 81 % auf CHF 150. Die Bearbeitungszeit fiel auf ein Zehntel, der Cashflow verbesserte sich um 65 %.",
+        excerpt: "Ein kleines Schweizer Unternehmen gab pro Quartal CHF 1'500 aus, also 16 Stunden Treuhandarbeit, nur für die manuelle Rechnungsverarbeitung. Mit digitalem Rechnungsscan per OCR und automatisierten Abläufen sanken diese Kosten um 81 % auf CHF 150. Die Bearbeitungszeit fiel auf ein Zehntel, und automatische Zahlungserinnerungen verbesserten den Cashflow.",
         content: `## Die versteckten Kosten der manuellen Rechnungsverarbeitung
 
 Ein kleines Schweizer Unternehmen mit rund 50 Rechnungen pro Monat kommt pro Quartal auf etwa 150 Belege. Bei einem Treuhänder mit einem Stundensatz von CHF 150 und rund 16 Stunden pro Quartal für Scannen, Erfassen, Ablegen und Zahlungsüberwachung kostete allein die laufende Buchhaltung CHF 1'500 pro Quartal.
@@ -384,8 +384,8 @@ Eine moderne Software für das Rechnungsmanagement mit mobilem Scan automatisier
 
 ## Die Zahlen
 
-Die Ergebnisse waren konkret: Die Buchhaltungskosten sanken um 81 % von CHF 1'500 auf CHF 150 pro Quartal, die Bearbeitungszeit fiel auf ein Zehntel, und dank automatischer Zahlungserinnerungen verbesserte sich der Cashflow um 65 %.`,
-        authorRole: "Projektleiter, Trident Software",
+Die Ergebnisse waren konkret: Die Buchhaltungskosten sanken um 81 % von CHF 1'500 auf CHF 150 pro Quartal, die Bearbeitungszeit fiel auf ein Zehntel, und dank automatischer Zahlungserinnerungen verbesserte sich der Cashflow.`,
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Digitaler Rechnungsscanner: 81 % tiefere Kosten für KMU",
           description: "Wie ein kleines Schweizer Unternehmen die Kosten der Rechnungsverarbeitung mit digitalem Scan per OCR und automatisierten Zahlungsabläufen um 81 % senkte.",
@@ -393,7 +393,7 @@ Die Ergebnisse waren konkret: Die Buchhaltungskosten sanken um 81 % von CHF 1'50
       },
       fr: {
         title: "Un clic, un scan, c'est fait : comment un scanner de factures réduit les coûts",
-        excerpt: "Une petite entreprise suisse dépensait CHF 1'500 par trimestre, soit 16 heures de fiduciaire, rien que pour traiter ses factures à la main. Avec la numérisation des factures par OCR et des workflows automatisés, ce coût a baissé de 81 % pour passer à CHF 150. Le temps de traitement a été divisé par dix et la trésorerie s'est améliorée de 65 %.",
+        excerpt: "Une petite entreprise suisse dépensait CHF 1'500 par trimestre, soit 16 heures de fiduciaire, rien que pour traiter ses factures à la main. Avec la numérisation des factures par OCR et des workflows automatisés, ce coût a baissé de 81 % pour passer à CHF 150. Le temps de traitement a été divisé par dix et les rappels de paiement automatiques ont amélioré la trésorerie.",
         content: `## Le coût caché du traitement manuel des factures
 
 Une petite entreprise suisse qui reçoit environ 50 factures par mois accumule près de 150 documents par trimestre. Avec une fiduciaire facturant CHF 150 de l'heure et environ 16 heures par trimestre consacrées à scanner, saisir, classer et suivre les paiements, la seule comptabilité courante coûtait CHF 1'500 par trimestre.
@@ -408,8 +408,8 @@ Un logiciel de gestion des factures avec scan mobile automatise tout le processu
 
 ## Les chiffres
 
-Les résultats sont concrets : les coûts comptables ont baissé de 81 %, de CHF 1'500 à CHF 150 par trimestre, le temps de traitement a été divisé par dix et la trésorerie s'est améliorée de 65 % grâce aux rappels de paiement automatiques.`,
-        authorRole: "Chef de projet, Trident Software",
+Les résultats sont concrets : les coûts comptables ont baissé de 81 %, de CHF 1'500 à CHF 150 par trimestre, le temps de traitement a été divisé par dix et la trésorerie s'est améliorée grâce aux rappels de paiement automatiques.`,
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Scanner de factures : -81 % de coûts pour les PME suisses",
           description: "Comment une petite entreprise suisse a réduit de 81 % le coût du traitement de ses factures grâce au scan par OCR et à des paiements automatisés.",
@@ -417,7 +417,7 @@ Les résultats sont concrets : les coûts comptables ont baissé de 81 %, de CHF
       },
       it: {
         title: "Clic, scansione, fatto: come uno scanner digitale per fatture riduce i costi",
-        excerpt: "Una piccola azienda svizzera spendeva CHF 1'500 a trimestre, pari a 16 ore del fiduciario, solo per elaborare le fatture a mano. Con la scansione digitale delle fatture tramite OCR e flussi automatizzati, il costo è sceso dell'81%, a CHF 150. I tempi di elaborazione si sono ridotti di dieci volte e la liquidità è migliorata del 65%.",
+        excerpt: "Una piccola azienda svizzera spendeva CHF 1'500 a trimestre, pari a 16 ore del fiduciario, solo per elaborare le fatture a mano. Con la scansione digitale delle fatture tramite OCR e flussi automatizzati, il costo è sceso dell'81%, a CHF 150. I tempi di elaborazione si sono ridotti di dieci volte e i promemoria di pagamento automatici hanno migliorato la liquidità.",
         content: `## Il costo nascosto della gestione manuale delle fatture
 
 Una piccola azienda svizzera che riceve circa 50 fatture al mese arriva a circa 150 documenti a trimestre. Con un fiduciario che fattura CHF 150 l'ora e circa 16 ore a trimestre dedicate a scansionare, registrare, archiviare e seguire i pagamenti, la sola contabilità ordinaria costava CHF 1'500 a trimestre.
@@ -432,8 +432,8 @@ Un software avanzato di gestione delle fatture con scansione mobile automatizza 
 
 ## I numeri
 
-I risultati sono concreti: i costi contabili sono scesi dell'81%, da CHF 1'500 a CHF 150 a trimestre, i tempi di elaborazione si sono ridotti di dieci volte e la liquidità è migliorata del 65% grazie ai promemoria di pagamento automatici.`,
-        authorRole: "Project Manager, Trident Software",
+I risultati sono concreti: i costi contabili sono scesi dell'81%, da CHF 1'500 a CHF 150 a trimestre, i tempi di elaborazione si sono ridotti di dieci volte e la liquidità è migliorata grazie ai promemoria di pagamento automatici.`,
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Scanner digitale per fatture: -81% di costi per le PMI",
           description: "Come una piccola azienda svizzera ha ridotto dell'81% i costi di gestione delle fatture con la scansione OCR e flussi di pagamento automatizzati.",
@@ -447,7 +447,7 @@ I risultati sono concreti: i costi contabili sono scesi dell'81%, da CHF 1'500 a
     title: "Digital done right: custom auto parts eCommerce",
     publishedAt: "2025-08-08",
     readingTime: 5,
-    excerpt: "A leading B2B auto parts supplier was drowning in phone orders, manual entry and inventory tracking failures. A custom B2B platform integrated with their existing 1C ERP reduced order processing time from 30+ minutes to 5 minutes, increased repeat orders by 39%, and paid for itself in under nine months.",
+    excerpt: "A leading B2B auto parts supplier was overloaded with phone orders, manual entry and inventory tracking failures. A custom B2B platform integrated with their existing 1C ERP reduced order processing time from 30+ minutes to 5 minutes, increased repeat orders by 39%, and paid for itself in under nine months.",
     tags: [
       "Auto Parts",
       "B2B",
@@ -457,7 +457,7 @@ I risultati sono concreti: i costi contabili sono scesi dell'81%, da CHF 1'500 a
     ],
     category: "Case Study",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## Growth without a platform is a breaking point
 
@@ -497,7 +497,7 @@ Die Bearbeitungszeit pro Bestellung sank von über 30 auf 5 Minuten. Die Folgebe
 ## Die richtige Integrationsstrategie
 
 Der entscheidende Schritt war, das bestehende 1C-ERP anzubinden statt es zu ersetzen. So blieb das im System gespeicherte Wissen des Unternehmens erhalten, das Risiko des Umstiegs sank, und der ROI wurde schneller erreicht.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "B2B-E-Commerce für Autoteile: 39 % mehr Folgebestellungen",
           description: "Wie eine massgeschneiderte B2B-Plattform die Bearbeitung von Autoteile-Bestellungen von 30 auf 5 Minuten senkte und sich in unter 9 Monaten amortisierte.",
@@ -521,7 +521,7 @@ Le traitement d'une commande est passé de plus de 30 minutes à 5 minutes. Les 
 ## La bonne stratégie d'intégration
 
 La décision clé a été de connecter l'ERP 1C existant plutôt que de le remplacer. Ce choix a préservé le savoir de l'entreprise contenu dans le système, réduit les risques de la transition et raccourci le chemin vers le retour sur investissement.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "E-commerce B2B pièces auto : +39 % de commandes récurrentes",
           description: "Comment une plateforme B2B sur mesure a réduit le traitement des commandes de pièces auto de 30 à 5 minutes et s'est rentabilisée en moins de 9 mois.",
@@ -545,7 +545,7 @@ I tempi di elaborazione di un ordine sono scesi da oltre 30 minuti a 5. Gli ordi
 ## La giusta strategia di integrazione
 
 La scelta decisiva è stata integrare l'ERP 1C esistente invece di sostituirlo. Così è stato preservato il know-how aziendale contenuto nel sistema, si è ridotto il rischio della transizione e si è accorciata la strada verso il ROI.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "E-commerce B2B ricambi auto: +39% di ordini ripetuti",
           description: "Come una piattaforma B2B su misura ha ridotto l'elaborazione degli ordini di ricambi auto da 30 a 5 minuti e si è ripagata in meno di 9 mesi.",
@@ -569,7 +569,7 @@ La scelta decisiva è stata integrare l'ERP 1C esistente invece di sostituirlo. 
     ],
     category: "Insights",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## Instability is the new normal
 
@@ -609,7 +609,7 @@ Manuelle Abläufe erzeugen Risiken, die sich gegenseitig verstärken: Fehler, Ve
 ## Verlässlichkeit gegenüber Partnern zeigen
 
 Automatisierung wird immer mehr zum Weg, mit dem Unternehmen Partnern, Kunden, Investoren und Mitarbeitenden ihre Verlässlichkeit zeigen. Trident Software hilft Unternehmen, genau die Automatisierungspotenziale zu finden, die echte Widerstandskraft im Wettbewerb schaffen.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "Automatisierung und Resilienz in unsicheren Zeiten",
           description: "Wie modulare Automatisierung KMU widerstandsfähig macht gegen geopolitische Verschiebungen, gestörte Lieferketten und neue Vorschriften.",
@@ -633,7 +633,7 @@ Les processus manuels cumulent les risques : erreurs, retards et dépendance à 
 ## Prouver sa fiabilité à ses partenaires
 
 L'automatisation devient de plus en plus un moyen de prouver sa fiabilité aux partenaires, clients, investisseurs et collaborateurs. Trident Software aide les entreprises à repérer les possibilités d'automatisation qui construisent une vraie résilience face à la concurrence.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "Automatisation et résilience dans un monde instable",
           description: "Comment l'automatisation modulaire rend les PME plus résilientes face aux tensions géopolitiques, aux ruptures d'approvisionnement et aux nouvelles lois.",
@@ -657,7 +657,7 @@ I processi manuali accumulano rischi: errori, ritardi e dipendenza da singole pe
 ## Dimostrare affidabilità a chi ti circonda
 
 L'automazione è sempre più il modo in cui le aziende dimostrano la propria affidabilità a partner, clienti, investitori e collaboratori. Trident Software aiuta le organizzazioni a individuare le opportunità di automazione che creano una vera resilienza competitiva.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "Automazione e resilienza aziendale in un mondo instabile",
           description: "Come l'automazione modulare aiuta le PMI a diventare resilienti di fronte a cambiamenti geopolitici, interruzioni delle forniture e nuove normative.",
@@ -681,7 +681,7 @@ L'automazione è sempre più il modo in cui le aziende dimostrano la propria aff
     ],
     category: "News",
     author: "Bohdan Voitovych",
-    authorRole: "Project Manager, Trident Software",
+    authorRole: "Lead Project Manager, Trident Software",
     relatedPosts: [],
     content: `## EPHJ 2025 in Geneva
 
@@ -721,7 +721,7 @@ Statt am Stand zu warten, haben wir andere Aussteller besucht und direkt mit Ges
 ## Wie es weitergeht
 
 Der grösste Wert der Messe waren die persönlichen Begegnungen. Für Unternehmen, die wir dort kennengelernt haben, bereiten wir bereits individuelle Demos und Offerten vor.`,
-        authorRole: "Projektleiter, Trident Software",
+        authorRole: "Leitender Projektmanager, Trident Software",
         meta: {
           title: "EPHJ 2025: Trident Software an der Genfer Präzisionsmesse",
           description: "Unsere Erkenntnisse von der EPHJ 2025: 8Move, Software nach Mass und was Unternehmen der Präzisionsbranche von digitalen Partnern wirklich erwarten.",
@@ -745,7 +745,7 @@ Plutôt que d'attendre sur notre stand, nous sommes allés à la rencontre des a
 ## Prochaines étapes
 
 La plus grande valeur du salon, ce sont les rencontres. Nous préparons déjà des démonstrations et des offres personnalisées pour les entreprises rencontrées pendant l'exposition.`,
-        authorRole: "Chef de projet, Trident Software",
+        authorRole: "Chef de projet principal, Trident Software",
         meta: {
           title: "EPHJ 2025 : Trident Software au salon de la précision",
           description: "Nos enseignements de l'EPHJ 2025 à Genève : 8Move, logiciel sur mesure et ce que les entreprises de précision attendent d'un partenaire numérique.",
@@ -769,7 +769,7 @@ Invece di aspettare allo stand, abbiamo visitato altri espositori e parlato dire
 ## I prossimi passi
 
 Il valore più grande della fiera sono stati gli incontri di persona. Stiamo già preparando demo e offerte personalizzate per le aziende conosciute durante l'esposizione.`,
-        authorRole: "Project Manager, Trident Software",
+        authorRole: "Lead Project Manager, Trident Software",
         meta: {
           title: "EPHJ 2025: Trident Software alla fiera della precisione",
           description: "Cosa abbiamo imparato a EPHJ 2025 a Ginevra: 8Move, software su misura e cosa cercano davvero le aziende della precisione in un partner digitale.",
