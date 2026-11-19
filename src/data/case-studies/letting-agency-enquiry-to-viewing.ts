@@ -6,7 +6,7 @@ const record: CaseRecord = {
   client: 'Residential letting agency, Romandie, Switzerland',
   services: ['ai-services', 'software-engineering'],
   techStack: [],
-  evidence: 'modelled',
+  evidence: 'scenario',
   relatedCases: [],
   content: {
     en: {
@@ -14,11 +14,11 @@ const record: CaseRecord = {
       industry: 'Residential letting agency · Switzerland',
       hero: {
         title: 'Real estate: from portal enquiry to booked viewing',
-        tagline: 'A reply within minutes, in the language the enquiry was written in, turned into a qualified viewing slot.',
+        tagline: 'A reply in under 15 seconds, in the language the enquiry was written in, turned into a qualified viewing slot.',
       },
       note: 'Industry scenario. Built on published Swiss market data and on our own project work, not on a single named client. The figures in Results are the effect the design is engineered to produce; each one names the mechanism behind it.',
       results: [
-        { metric: 'First response to a portal enquiry', value: 'hours → under 15 sec' },
+        { metric: 'First response to a portal enquiry', value: 'hours → under 15 s' },
         { metric: 'Enquiries answered outside office hours', value: 'none → all of them' },
         { metric: 'Enquiry → booked viewing', value: 'in the same conversation' },
       ],
@@ -27,55 +27,55 @@ const record: CaseRecord = {
           title: 'The business',
           paragraphs: [
             'An agency that does one thing: it lets apartments on behalf of owners, across two municipalities in Swiss Romandie. A few hundred units on its books, a listing pipeline that never empties, and a team small enough that everyone does three jobs.',
-            "It does not sell property and it does not run the buildings. Its mandate begins when a flat is given notice and ends when a new tenancy is signed, so the whole business is compressed into the weeks between those two dates, and its revenue is the letting fee the owner pays per signed tenancy. Every day a flat stands empty is the owner's loss and the agency's argument at the next mandate renewal.",
+            "It does not sell property and it does not run the buildings. Its mandate begins when notice is given on a flat and ends when a new tenancy is signed, so the whole business is compressed into the weeks between those two dates, and its revenue is the letting fee the owner pays per signed tenancy. Every day a flat stands empty is the owner's loss and the agency's argument at the next mandate renewal.",
             'Listings go to the portals that matter here: Homegate and ImmoScout24, which between them carry most of the enquiry volume and both belong to Swiss Marketplace Group, plus Flatfox with its own messenger and Newhome, the alternative backed by the cantonal banks.',
-            "The object and the tenancy live in one of the Swiss standards (Rimo R5 or ImmoTop2 from W&W Immo Informatik, GARAIO REM, or AbaImmo), sometimes the agency's own installation, sometimes the owner's, which the agency is given access to. Either way those systems hold the record and the accounting. None of them was built to be a letting desk, and none of them answers a portal message on a Sunday.",
+            "The property and the tenancy live in one of the Swiss standards (Rimo R5 or ImmoTop2 from W&W Immo Informatik, GARAIO REM, or AbaImmo), sometimes the agency's own installation, sometimes the owner's, which the agency is given access to. Either way those systems hold the record and the accounting. None of them was built to be a letting desk, and none of them answers a portal message on a Sunday.",
           ],
         },
         {
-          title: 'Before the change: the enquiries arrive as a burst, and mostly ask the same six things',
+          title: 'Before the change: enquiries arrive in a burst, and mostly ask the same six things',
           paragraphs: [
             'A listing goes up and the responses land in the first forty-eight hours: is it still available, when can I see it, are the charges included, are pets allowed, which floor, is there parking. An agent handling a dozen listings answers those questions several hundred times a month, and none of that answering needs an agent.',
-            'An enquiry that arrives on Saturday evening waits until Monday morning; by then the serious candidate has booked two viewings elsewhere, and one of them will do.',
+            'An enquiry that arrives on Saturday evening waits until Monday morning; by then the serious applicant has booked two viewings elsewhere, and one of them will do.',
           ],
         },
         {
           title: 'One listing, more languages than the office speaks',
           paragraphs: [
             'In Romandie the first language is French, but the same apartment draws enquiries in German, Italian and English: a family relocating from Zurich, a company placing an employee, an international arrival who has not learned French yet. The answer has to come in the language it was asked in, and in practice it waits for whoever in the office writes that language.',
-            'Below the four national and business languages sits the part agencies rarely staff for at all. A large share of tenants in this market are Portuguese- and Spanish-speaking, and a growing share Arabic-speaking. The agent therefore runs the same seven languages the 8Move platform standardises on: EN, FR, DE, IT, ES, PT and AR, the last with right-to-left layout. That list follows the actual demographics of who rings the doorbell. A candidate who can ask their questions in Portuguese and get a straight answer applies; one who cannot does not.',
+            'Beyond French, German, Italian and English sits the part agencies rarely staff for at all. A large share of tenants in this market are Portuguese- and Spanish-speaking, and a growing share Arabic-speaking. The agent therefore runs the same seven languages the 8Move platform standardises on: EN, FR, DE, IT, ES, PT and AR, the last with right-to-left layout. That list follows the actual demographics of who rings the doorbell. An applicant who can ask their questions in Portuguese and get a straight answer applies; one who cannot does not.',
           ],
         },
         {
           title: 'No-shows',
           paragraphs: [
-            "A viewing booked eleven days out with no reminder in between is a viewing that a third of the time does not happen. Group slots half fill; individual slots burn an agent's afternoon.",
+            "One in three viewings booked eleven days ahead without a reminder does not take place. Group slots are half empty; individual slots waste an agent's afternoon.",
           ],
         },
         {
           title: 'What we built',
           paragraphs: [
-            'An agent that sits in front of the system of record rather than inside it, because Rimo R5, ImmoTop2, GARAIO REM and AbaImmo hold tenancies, and an enquiry is not a tenancy yet. It is a candidate, and candidates are handled where they arrive: on the portal, in the messenger, at nine in the evening.',
+            'An agent that sits in front of the system of record rather than inside it, because Rimo R5, ImmoTop2, GARAIO REM and AbaImmo hold tenancies, and an enquiry is not a tenancy yet. It is an applicant, and applicants are handled where they arrive: on the portal, in the messenger, at nine in the evening.',
           ],
         },
         {
-          title: '1. It answers within a minute, in the language of the enquiry',
+          title: '1. It answers in under 15 seconds, in the language of the enquiry',
           paragraphs: [
-            "Every channel the listing produces (portal message, Flatfox messenger, the agency's own form, e-mail, WhatsApp) is answered within a minute of arrival, in any of the seven languages: French, German, Italian, English, Spanish, Portuguese and Arabic.",
+            "Every channel the listing produces (portal message, Flatfox messenger, the agency's own form, e-mail, WhatsApp) is answered in under 15 seconds, in any of the seven languages: French, German, Italian, English, Spanish, Portuguese and Arabic.",
           ],
         },
         {
           title: '2. It answers from the listing, not from a script',
           paragraphs: [
-            'Availability, floor, charges included or not, pets, parking, the earliest move-in date, notice period, the deposit. Read from the live listing and the object record, so the answer is right even when the flat was let last week, which is the case where a scripted bot does real damage.',
+            'Availability, floor, charges included or not, pets, parking, the earliest move-in date, notice period, the deposit. Read from the live listing and the property record, so the answer is right even when the flat was let last week, which is the case where a scripted bot does real damage.',
           ],
         },
         {
           title: '3. It qualifies into fields, not into free text',
           paragraphs: [
-            'The questions a good letting agent asks: move-in date and notice period at the current address, household size, employment and income situation as the candidate states it, pets, parking need.',
-            "And the one that decides more applications than any other in this market: the deposit. Residential deposits are capped at three months' rent and go into a blocked account in the tenant's name, which for a family moving flats means two deposits tied up at once. So the agent asks how the deposit will be provided: cash into the blocked account, or a deposit-guarantee product instead. A candidate who has not thought about it is not disqualified. They are told the amount early, while there is still time to arrange it, instead of discovering it at signature.",
-            'All of it is recorded as structured fields against the object, so the shortlist can be sorted rather than read.',
+            'The questions a good letting agent asks: move-in date and notice period at the current address, household size, employment and income situation as the applicant states it, pets, parking need.',
+            "And the one that decides more applications than any other in this market: the deposit. Residential deposits are capped at three months' rent and go into a blocked account in the tenant's name, which for a family moving flats means two deposits tied up at once. So the agent asks how the deposit will be provided: cash into the blocked account, or a deposit-guarantee product instead. An applicant who has not thought about it is not disqualified. They are told the amount early, while there is still time to arrange it, instead of discovering it at signature.",
+            'All of it is recorded as structured fields against the property, so the shortlist can be sorted rather than read.',
             'And it asks only what it may. No payslips, no debt-collection extract, no marital or health questions in the first contact. Those belong to the stage where the applicant is seriously considered, and the agent is built to ask them only then.',
           ],
         },
@@ -88,17 +88,17 @@ const record: CaseRecord = {
           items: [
             'the owner, where the owner attends or has to release the keys;',
             'the sitting tenant, which in this market is the common case rather than the exception: most flats are viewed while still occupied, and the appointment has to fit their availability with proper notice;',
-            'the candidate, who receives a calendar invitation rather than a line of text, so the viewing lands in the diary they actually look at.',
+            'the applicant, who receives a calendar invitation rather than a line of text, so the viewing lands in the diary they actually look at.',
           ],
           closing: [
-            'A slot is only offered when every calendar it depends on is free. That is the difference between booking and double-booking: conflicts are resolved before the candidate sees the option, not apologised for later.',
-            'Group viewings fill and close automatically when full. Confirmations carry the address and entry instructions, a reminder goes out the day before, and every message carries a one-tap rebooking link, because a candidate who moves their slot is worth more than one who quietly does not turn up.',
+            'A slot is only offered when every calendar it depends on is free. That is the difference between booking and double-booking: conflicts are resolved before the applicant sees the option, not apologised for later.',
+            'Group viewings fill and close automatically when full. Confirmations carry the address and entry instructions, a reminder goes out the day before, and every message carries a one-tap rescheduling link, because an applicant who moves their slot is worth more than one who quietly does not turn up.',
           ],
         },
         {
-          title: '5. It closes the loop honestly',
+          title: '5. It closes the loop',
           paragraphs: [
-            'Candidates who fail the hard criteria are told so immediately and politely. They prefer that to silence, and it removes them from the viewing list before they occupy a slot. Everyone else reaches the agency with a filled-in profile and a booked appointment.',
+            'Applicants who fail the hard criteria are told so immediately and politely. They prefer that to silence, and it removes them from the viewing list before they occupy a slot. Everyone else reaches the agency with a filled-in profile and a booked appointment.',
           ],
         },
         {
@@ -113,11 +113,11 @@ const record: CaseRecord = {
         beforeLabel: 'Before',
         afterLabel: 'After',
         rows: [
-          { label: 'First response to a portal enquiry', before: 'hours, and overnight for anything after 18:00', after: 'under 15 sec, every hour of the week' },
+          { label: 'First response to a portal enquiry', before: 'hours, and overnight for anything after 18:00', after: 'under 15 s, every hour of the week' },
           { label: 'Enquiries answered outside office hours', before: 'none until the next working day', after: 'all of them' },
           { label: 'Languages served on one listing', before: 'whoever is in the office', after: 'FR, DE, IT, EN plus ES, PT and AR from the first reply' },
           { label: 'Enquiry → booked viewing', before: 'agent triage, then a scheduling exchange', after: 'booked in the same conversation' },
-          { label: 'Viewing no-shows', before: 'no reminder between booking and viewing', after: 'confirmation, day-before reminder, one-tap rebooking' },
+          { label: 'Viewing no-shows', before: 'no reminder between booking and viewing', after: 'confirmation, day-before reminder, one-tap rescheduling' },
           { label: 'Applicant data collected at first contact', before: 'whatever the form asked everyone', after: 'the minimum permissible, with documents requested only at shortlist stage' },
           { label: "Unsuccessful applicants' files", before: 'in a mailbox, indefinitely', after: 'deleted on a logged schedule after signature' },
           { label: 'Agent time on first-line enquiry handling', before: 'the larger part of the day', after: 'exceptions, negotiation and viewings' },
@@ -125,10 +125,10 @@ const record: CaseRecord = {
         ],
       },
       next: [
-        'Write-back into the system of record: the selected candidate and the signed tenancy created in Rimo R5, ImmoTop2, GARAIO REM or AbaImmo without retyping, through whichever interface that installation exposes.',
+        'Write-back into the system of record: the selected applicant and the signed tenancy created in Rimo R5, ImmoTop2, GARAIO REM or AbaImmo without retyping, through whichever interface that installation exposes.',
         'Tenant-side self-service after signature: key handover, defect reporting, the questions that fill the office phone in the first month of a tenancy.',
         "Viewing logistics at portfolio scale: grouping viewings by building and by agent's route, a planning problem the agency currently solves by hand.",
-        'Owner reporting: what the listing produced, how fast, and where candidates dropped out, as a monthly report rather than a request.',
+        'Owner reporting: what the listing produced, how fast, and where applicants dropped out, as a monthly report rather than a request.',
       ],
       elsewhereIntro: 'Wherever a scarce, viewable asset draws a burst of enquiries and the winner is whoever answers first:',
       elsewhere: [
@@ -140,7 +140,7 @@ const record: CaseRecord = {
       meta: {
         title: 'Real estate: enquiry to booked viewing | Trident Software',
         description:
-          'Modelled scenario for a Romandie letting agency: portal enquiries answered in under 15 seconds, in seven languages, viewing booked in the same chat.',
+          'Industry scenario for a Romandie letting agency: portal enquiries answered in under 15 seconds, in seven languages, viewing booked in the same chat.',
       },
     },
     de: {
@@ -148,7 +148,7 @@ const record: CaseRecord = {
       industry: 'Vermietung von Wohnungen · Schweiz',
       hero: {
         title: 'Immobilien: von der Portalanfrage zum gebuchten Besichtigungstermin',
-        tagline: 'Eine Antwort innert Minuten, in der Sprache der Anfrage, und daraus ein qualifizierter Besichtigungstermin.',
+        tagline: 'Eine Antwort in unter 15 Sekunden, in der Sprache der Anfrage, und daraus ein qualifizierter Besichtigungstermin.',
       },
       note: 'Branchenszenario. Es beruht auf veröffentlichten Daten zum Schweizer Markt und auf unserer eigenen Projektarbeit, nicht auf einem einzelnen namentlichen Kunden. Die Zahlen unter Ergebnisse beschreiben die Wirkung, für die das System ausgelegt ist; jede nennt den Mechanismus dahinter.',
       results: [
@@ -177,7 +177,7 @@ const record: CaseRecord = {
           title: 'Ein Inserat, mehr Sprachen, als im Büro gesprochen werden',
           paragraphs: [
             'In der Romandie ist Französisch die erste Sprache, aber dieselbe Wohnung zieht Anfragen auf Deutsch, Italienisch und Englisch an: eine Familie, die aus Zürich umzieht, eine Firma, die einen Mitarbeiter unterbringt, jemand aus dem Ausland, der noch kein Französisch spricht. Die Antwort muss in der Sprache der Frage kommen, und in der Praxis wartet sie, bis jemand im Büro diese Sprache schreibt.',
-            'Unter den vier Landes- und Geschäftssprachen liegt der Teil, für den Agenturen kaum je Personal haben. Ein grosser Teil der Mieterschaft in diesem Markt spricht Portugiesisch oder Spanisch, ein wachsender Teil Arabisch. Der Agent arbeitet deshalb mit denselben sieben Sprachen, die die 8Move-Plattform als Standard nutzt: EN, FR, DE, IT, ES, PT und AR, Letzteres mit Layout von rechts nach links. Diese Liste folgt der tatsächlichen Bevölkerung, die an der Tür klingelt. Wer seine Fragen auf Portugiesisch stellen kann und eine klare Antwort bekommt, bewirbt sich; wer das nicht kann, tut es nicht.',
+            'Jenseits von Französisch, Deutsch, Italienisch und Englisch liegt der Teil, für den Agenturen kaum je Personal haben. Ein grosser Teil der Mieterschaft in diesem Markt spricht Portugiesisch oder Spanisch, ein wachsender Teil Arabisch. Der Agent arbeitet deshalb mit denselben sieben Sprachen, die die 8Move-Plattform als Standard nutzt: EN, FR, DE, IT, ES, PT und AR, Letzteres mit Layout von rechts nach links. Diese Liste folgt der tatsächlichen Bevölkerung, die an der Tür klingelt. Wer seine Fragen auf Portugiesisch stellen kann und eine klare Antwort bekommt, bewirbt sich; wer das nicht kann, tut es nicht.',
           ],
         },
         {
@@ -193,9 +193,9 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: '1. Er antwortet innert einer Minute, in der Sprache der Anfrage',
+          title: '1. Er antwortet in unter 15 Sekunden, in der Sprache der Anfrage',
           paragraphs: [
-            'Jeder Kanal, den das Inserat erzeugt (Portalnachricht, Flatfox-Messenger, das eigene Formular der Agentur, E-Mail, WhatsApp), wird innert einer Minute nach Eingang beantwortet, in jeder der sieben Sprachen: Französisch, Deutsch, Italienisch, Englisch, Spanisch, Portugiesisch und Arabisch.',
+            'Jeder Kanal, den das Inserat erzeugt (Portalnachricht, Flatfox-Messenger, das eigene Formular der Agentur, E-Mail, WhatsApp), wird in unter 15 Sekunden beantwortet, in jeder der sieben Sprachen: Französisch, Deutsch, Italienisch, Englisch, Spanisch, Portugiesisch und Arabisch.',
           ],
         },
         {
@@ -274,7 +274,7 @@ const record: CaseRecord = {
       meta: {
         title: 'Vermietungs-Szenario: erste Antwort unter 15 Sekunden | Trident Software',
         description:
-          'Modelliertes Szenario für eine Vermietungsagentur in der Romandie: Antwort in unter 15 Sekunden, in sieben Sprachen, Besichtigung gleich gebucht.',
+          'Branchenszenario für eine Vermietungsagentur in der Romandie: Antwort in unter 15 Sekunden, in sieben Sprachen, Besichtigung gleich gebucht.',
       },
     },
     fr: {
@@ -282,7 +282,7 @@ const record: CaseRecord = {
       industry: 'Location résidentielle · Suisse',
       hero: {
         title: 'Immobilier : de la demande sur portail à la visite réservée',
-        tagline: "Une réponse en quelques minutes, dans la langue de la demande, transformée en créneau de visite qualifié.",
+        tagline: "Une réponse en moins de 15 secondes, dans la langue de la demande, transformée en créneau de visite qualifié.",
       },
       note: "Scénario sectoriel. Il s'appuie sur des données publiées du marché suisse et sur nos propres projets, pas sur un client nommé. Les chiffres des résultats décrivent l'effet pour lequel le système est conçu ; chacun indique le mécanisme qui le produit.",
       results: [
@@ -311,7 +311,7 @@ const record: CaseRecord = {
           title: "Une annonce, plus de langues que n'en parle le bureau",
           paragraphs: [
             "En Romandie, la première langue est le français, mais le même appartement attire des demandes en allemand, en italien et en anglais : une famille qui déménage de Zurich, une entreprise qui loge un collaborateur, une personne arrivée de l'étranger qui ne parle pas encore français. La réponse doit venir dans la langue de la question, et en pratique elle attend que quelqu'un au bureau écrive cette langue.",
-            "Sous les quatre langues nationales et d'affaires se trouve la part pour laquelle les agences n'ont presque jamais de personnel. Une grande partie des locataires de ce marché parlent portugais ou espagnol, et une part croissante arabe. L'agent fonctionne donc dans les mêmes sept langues que la plateforme 8Move utilise en standard : EN, FR, DE, IT, ES, PT et AR, cette dernière avec une mise en page de droite à gauche. Cette liste suit la population réelle qui sonne à la porte. Un candidat qui peut poser ses questions en portugais et obtenir une réponse claire postule ; celui qui ne le peut pas ne postule pas.",
+            "Au-delà du français, de l'allemand, de l'italien et de l'anglais se trouve la part pour laquelle les agences n'ont presque jamais de personnel. Une grande partie des locataires de ce marché parlent portugais ou espagnol, et une part croissante arabe. L'agent fonctionne donc dans les mêmes sept langues que la plateforme 8Move utilise en standard : EN, FR, DE, IT, ES, PT et AR, cette dernière avec une mise en page de droite à gauche. Cette liste suit la population réelle qui sonne à la porte. Un candidat qui peut poser ses questions en portugais et obtenir une réponse claire postule ; celui qui ne le peut pas ne postule pas.",
           ],
         },
         {
@@ -327,9 +327,9 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: "1. Il répond en moins d'une minute, dans la langue de la demande",
+          title: '1. Il répond en moins de 15 secondes, dans la langue de la demande',
           paragraphs: [
-            "Chaque canal que l'annonce génère (message sur portail, messagerie Flatfox, formulaire de l'agence, e-mail, WhatsApp) reçoit une réponse dans la minute qui suit, dans l'une des sept langues : français, allemand, italien, anglais, espagnol, portugais et arabe.",
+            "Chaque canal que l'annonce génère (message sur portail, messagerie Flatfox, formulaire de l'agence, e-mail, WhatsApp) reçoit une réponse en moins de 15 secondes, dans l'une des sept langues : français, allemand, italien, anglais, espagnol, portugais et arabe.",
           ],
         },
         {
@@ -408,7 +408,7 @@ const record: CaseRecord = {
       meta: {
         title: 'Scénario location : première réponse en moins de 15 s | Trident Software',
         description:
-          "Scénario modélisé pour une agence de location romande : réponse en moins de 15 secondes, en sept langues, visite réservée dans le même échange.",
+          "Scénario sectoriel pour une agence de location romande : réponse en moins de 15 secondes, en sept langues, visite réservée dans le même échange.",
       },
     },
     it: {
@@ -416,7 +416,7 @@ const record: CaseRecord = {
       industry: 'Locazione residenziale · Svizzera',
       hero: {
         title: 'Immobiliare: dalla richiesta sul portale alla visita prenotata',
-        tagline: 'Una risposta in pochi minuti, nella lingua della richiesta, trasformata in una fascia di visita qualificata.',
+        tagline: 'Una risposta in meno di 15 secondi, nella lingua della richiesta, trasformata in una fascia di visita qualificata.',
       },
       note: "Scenario di settore. Si basa su dati pubblicati del mercato svizzero e sui nostri progetti, non su un singolo cliente con nome. Le cifre dei risultati descrivono l'effetto per cui il sistema è progettato; ognuna indica il meccanismo che la produce.",
       results: [
@@ -445,7 +445,7 @@ const record: CaseRecord = {
           title: "Un annuncio, più lingue di quelle parlate in ufficio",
           paragraphs: [
             "In Romandia la prima lingua è il francese, ma lo stesso appartamento attira richieste in tedesco, italiano e inglese: una famiglia che si trasferisce da Zurigo, un'azienda che sistema un dipendente, una persona arrivata dall'estero che non parla ancora francese. La risposta deve arrivare nella lingua della domanda, e in pratica aspetta che qualcuno in ufficio scriva quella lingua.",
-            "Sotto le quattro lingue nazionali e d'affari c'è la parte per cui le agenzie quasi non hanno personale. Una quota importante degli inquilini di questo mercato parla portoghese o spagnolo, e una quota crescente arabo. L'agente lavora quindi nelle stesse sette lingue che la piattaforma 8Move usa come standard: EN, FR, DE, IT, ES, PT e AR, quest'ultima con impaginazione da destra a sinistra. Questo elenco segue la popolazione reale che suona al campanello. Un candidato che può fare le sue domande in portoghese e ricevere una risposta chiara si candida; uno che non può, no.",
+            "Oltre a francese, tedesco, italiano e inglese c'è la parte per cui le agenzie quasi non hanno personale. Una quota importante degli inquilini di questo mercato parla portoghese o spagnolo, e una quota crescente arabo. L'agente lavora quindi nelle stesse sette lingue che la piattaforma 8Move usa come standard: EN, FR, DE, IT, ES, PT e AR, quest'ultima con impaginazione da destra a sinistra. Questo elenco segue la popolazione reale che suona al campanello. Un candidato che può fare le sue domande in portoghese e ricevere una risposta chiara si candida; uno che non può, no.",
           ],
         },
         {
@@ -461,9 +461,9 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: '1. Risponde entro un minuto, nella lingua della richiesta',
+          title: '1. Risponde in meno di 15 secondi, nella lingua della richiesta',
           paragraphs: [
-            "Ogni canale generato dall'annuncio (messaggio dal portale, messaggistica Flatfox, modulo dell'agenzia, e-mail, WhatsApp) riceve risposta entro un minuto dall'arrivo, in una qualsiasi delle sette lingue: francese, tedesco, italiano, inglese, spagnolo, portoghese e arabo.",
+            "Ogni canale generato dall'annuncio (messaggio dal portale, messaggistica Flatfox, modulo dell'agenzia, e-mail, WhatsApp) riceve risposta in meno di 15 secondi, in una qualsiasi delle sette lingue: francese, tedesco, italiano, inglese, spagnolo, portoghese e arabo.",
           ],
         },
         {
@@ -542,7 +542,7 @@ const record: CaseRecord = {
       meta: {
         title: 'Scenario locazioni: prima risposta in meno di 15 s | Trident Software',
         description:
-          "Scenario modellato per un'agenzia di locazione in Romandia: ogni richiesta dal portale evasa in meno di 15 secondi, in sette lingue, visita prenotata in chat.",
+          "Scenario di settore per un'agenzia di locazione in Romandia: ogni richiesta dal portale evasa in meno di 15 secondi, in sette lingue, visita prenotata in chat.",
       },
     },
   },

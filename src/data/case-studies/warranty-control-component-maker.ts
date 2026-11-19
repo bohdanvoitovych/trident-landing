@@ -28,14 +28,14 @@ const record: CaseRecord = {
           paragraphs: [
             'An Italian manufacturer of fluid-control components (solenoid valves, flow meters, pressure regulators and filters) supplied to OEMs that build professional coffee and espresso machines, and to adjacent appliance makers.',
             "The components are certified, tested and sold in volume to machine builders. They then disappear into a machine, which is sold to a café, a restaurant or an office, and installed on whatever water supply that building happens to have. The manufacturer's warranty obligation follows the component all the way down that chain, into buildings it has never seen and water it has never measured.",
-            'Warranty service cost 1.37 % of company revenue.',
+            'Warranty service was costing 1.37 % of revenue.',
           ],
         },
         {
           title: 'Before the change: up to 85 % of the damage happened outside the factory',
           paragraphs: [
             'Field analysis attributed up to 85 % of component failures to water, not manufacturing defects. Water outside specification, filters left past their capacity, purifiers and filtration stations never serviced.',
-            'The physics is well documented. The specialty coffee standard puts total dissolved solids in a working range of roughly 75–250 ppm with a target near 150, calcium hardness at 50–175 ppm, alkalinity at 40–75 ppm. Above that, scale forms fast: it restricts flow, coats heating elements, and attacks exactly the parts this company makes, namely pumps, valves and flow meters. Below it, water turns aggressive in a different way. Either end of the range ends as a warranty claim against the component.',
+            'The physics is well documented. The specialty coffee standard puts total dissolved solids in a working range of roughly 75–250 ppm with a target near 150, calcium hardness at 50–175 ppm, alkalinity at 40–75 ppm. Above that, scale forms fast: it restricts flow, coats heating elements, and attacks exactly the parts this company makes, namely pumps, valves and flow meters. Below it, water turns aggressive in a different way. Either extreme ends in a warranty claim against the component.',
           ],
         },
         {
@@ -53,13 +53,13 @@ const record: CaseRecord = {
         {
           title: 'Service was scheduled by the calendar, not by the water',
           paragraphs: [
-            'Filter changes and maintenance visits were planned by elapsed time or by machine lifetime. A machine in a hard-water town pulling 300 litres a day and a machine on soft municipal supply pulling 40 got the same service interval. One was serviced far too late, the other too often, and neither schedule reflected what the water was doing.',
+            'Filter changes and maintenance visits were planned by elapsed time or by machine lifetime. A machine in a hard-water town drawing 300 litres a day and a machine on soft municipal supply drawing 40 got the same service interval. One was serviced far too late, the other too often, and neither schedule reflected what the water was doing.',
           ],
         },
         {
           title: 'R&D was working from returns and anecdote',
           paragraphs: [
-            'The only field signal reaching engineering was the broken part in a box, plus whatever the service technician chose to write on the form. No operating history, no water history, no duty cycle. Design decisions about materials and tolerances were being taken on the least informative data the company could have had.',
+            'The only field signal reaching engineering was the broken part in a box, plus whatever the service technician chose to write on the form. No operating history, no water history, no duty cycle. Design decisions about materials and tolerances were based on the least informative data available.',
           ],
         },
         {
@@ -96,7 +96,7 @@ const record: CaseRecord = {
         {
           title: '5. The predictive-maintenance model',
           paragraphs: [
-            'Service is scheduled by litres passed and measured water quality, not by lifetime. The model estimates when a filter will exhaust and when scale risk crosses a threshold for that specific installation, and raises the job before damage occurs rather than after.',
+            'Service is scheduled by litres passed and measured water quality, not by lifetime. The model estimates when a filter will be exhausted and when scale risk crosses a threshold for that specific installation, and raises the job before damage occurs rather than after.',
           ],
         },
         {

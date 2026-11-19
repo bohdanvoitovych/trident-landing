@@ -1,7 +1,7 @@
 import { pick, type Localized } from '@/lib/localized'
 
 /**
- * Questions before the audit. Shared by the home FAQ (the six marked `home`)
+ * Questions before the workshop. Shared by the home FAQ (the six marked `home`)
  * and the full /faq page.
  */
 type FaqGroup = 'audit' | 'agent' | 'data'
@@ -18,24 +18,24 @@ const records: FaqRecord[] = [
     home: true,
     content: {
       en: {
-        question: 'What happens in the 45-minute audit?',
+        question: 'What happens in the 45-minute workshop?',
         answer:
-          'We go through your enquiry volumes, response times, channels, languages and systems. You leave with your own numbers and a straight answer on whether automation pays back. Free, no obligation.',
+          'We go through your enquiry volumes, response times, channels, languages and systems. You leave with your own ROI model and a clear answer on whether automation pays for itself. If the numbers hold, we build a working prototype on your own data within 10 working days. Free, no obligation.',
       },
       de: {
-        question: 'Was passiert im 45-minütigen Audit?',
+        question: 'Was passiert im 45-minütigen Workshop?',
         answer:
-          'Wir gehen Ihre Anfragevolumen, Antwortzeiten, Kanäle, Sprachen und Systeme durch. Sie gehen mit Ihren eigenen Zahlen und einer klaren Antwort, ob sich Automatisierung lohnt. Kostenlos und unverbindlich.',
+          'Wir gehen Ihre Anfragevolumen, Antwortzeiten, Kanäle, Sprachen und Systeme durch. Sie gehen mit Ihrem eigenen ROI-Modell und einer klaren Antwort, ob sich Automatisierung lohnt. Wenn die Zahlen aufgehen, bauen wir innerhalb von 10 Arbeitstagen einen funktionierenden Prototyp mit Ihren eigenen Daten. Kostenlos und unverbindlich.',
       },
       fr: {
-        question: "Que se passe-t-il pendant l'audit de 45 minutes ?",
+        question: 'Que se passe-t-il pendant le workshop de 45 minutes ?',
         answer:
-          "Nous passons en revue vos volumes de demandes, vos délais de réponse, vos canaux, vos langues et vos systèmes. Vous repartez avec vos propres chiffres et une réponse claire : l'automatisation est-elle rentable pour vous ? Gratuit et sans engagement.",
+          "Nous passons en revue vos volumes de demandes, vos délais de réponse, vos canaux, vos langues et vos systèmes. Vous repartez avec votre propre modèle de ROI et une réponse claire : l'automatisation est-elle rentable pour vous ? Si les chiffres tiennent, nous construisons un prototype fonctionnel sur vos propres données en 10 jours ouvrables. Gratuit et sans engagement.",
       },
       it: {
-        question: "Cosa succede nell'audit di 45 minuti?",
+        question: 'Cosa succede nel workshop di 45 minuti?',
         answer:
-          "Analizziamo insieme volumi di richieste, tempi di risposta, canali, lingue e sistemi. Esci con i tuoi numeri e una risposta chiara: l'automazione si ripaga o no? Gratuito e senza impegno.",
+          "Analizziamo insieme volumi di richieste, tempi di risposta, canali, lingue e sistemi. Esci con il tuo modello di ROI e una risposta chiara: l'automazione si ripaga o no? Se i numeri reggono, realizziamo un prototipo funzionante sui tuoi dati entro 10 giorni lavorativi. Gratuito e senza impegno.",
       },
     },
   },
@@ -46,7 +46,7 @@ const records: FaqRecord[] = [
       en: {
         question: 'When is the answer "not yet"?',
         answer:
-          "Under roughly 150 enquiries a month, the numbers don't clear the build cost. Without a documented knowledge base, there's nothing for the agent to answer from. That's a content project first.",
+          "Under roughly 150 enquiries a month, the savings don't cover the build cost. Without a documented knowledge base, there's nothing for the agent to answer from. That calls for a content project first.",
       },
       de: {
         question: 'Wann lautet die Antwort «noch nicht»?',
@@ -72,7 +72,7 @@ const records: FaqRecord[] = [
       en: {
         question: 'How is this different from a chatbot?',
         answer:
-          'A chatbot answers. An agent reads your live catalogue, books against a real calendar, issues a QR-bill, writes into your CRM, and hands over to a person on defined conditions.',
+          'A chatbot answers. An agent reads your live catalogue, books against a real calendar, issues a QR-bill, writes into your CRM, and hands over to a person under defined conditions.',
       },
       de: {
         question: 'Was unterscheidet das von einem Chatbot?',
@@ -124,7 +124,7 @@ const records: FaqRecord[] = [
       en: {
         question: 'Will it replace our sales team?',
         answer:
-          'No. It handles the routine 70–80 % of conversations. Complex deals stay with your people, and the handover point is designed in.',
+          'No. It handles the routine 70–80 % of conversations. Complex deals stay with your people, and the handover point is defined in advance.',
       },
       de: {
         question: 'Ersetzt das unser Verkaufsteam?',
@@ -149,7 +149,7 @@ const records: FaqRecord[] = [
       en: {
         question: 'What if the agent gets something wrong?',
         answer:
-          'It escalates on low confidence rather than improvising. The threshold is a setting, and we start it conservative. Prices, stock and availability are read live, never quoted from memory.',
+          'It escalates on low confidence rather than improvising. The threshold is a setting, and we set it conservatively at first. Prices, stock and availability are read live, never quoted from memory.',
       },
       de: {
         question: 'Was, wenn der Agent etwas falsch macht?',
@@ -174,22 +174,22 @@ const records: FaqRecord[] = [
       en: {
         question: "Will customers know they're talking to a machine?",
         answer:
-          'Yes, disclosed up front. Concealment reads as dishonest and, under the EU AI Act, is heading towards unlawful. Disclosed agents that answer well outperform hidden ones.',
+          'Yes, disclosed up front. Concealing it looks dishonest, and the transparency duties of the EU AI Act, in force since 2 August 2026, require disclosure. Disclosed agents that answer well outperform hidden ones.',
       },
       de: {
         question: 'Merken Kunden, dass sie mit einer Maschine sprechen?',
         answer:
-          'Ja, das wird von Anfang an offengelegt. Verschleierung wirkt unehrlich und wird mit dem EU AI Act zunehmend unzulässig. Offen deklarierte Agenten, die gut antworten, schneiden besser ab als versteckte.',
+          'Ja, das wird von Anfang an offengelegt. Verschleierung wirkt unehrlich, und die Transparenzpflichten des EU AI Act, die seit dem 2. August 2026 gelten, verlangen die Offenlegung. Offen deklarierte Agenten, die gut antworten, schneiden besser ab als versteckte.',
       },
       fr: {
         question: "Les clients sauront-ils qu'ils parlent à une machine ?",
         answer:
-          "Oui, c'est annoncé d'emblée. Le cacher paraît malhonnête et, avec l'AI Act européen, tend à devenir illégal. Les agents annoncés qui répondent bien obtiennent de meilleurs résultats que les agents cachés.",
+          "Oui, c'est annoncé d'emblée. Le cacher paraît malhonnête, et les obligations de transparence de l'AI Act européen, en vigueur depuis le 2 août 2026, imposent de l'annoncer. Les agents annoncés qui répondent bien obtiennent de meilleurs résultats que les agents cachés.",
       },
       it: {
         question: 'I clienti sapranno di parlare con una macchina?',
         answer:
-          "Sì, lo dichiariamo fin dall'inizio. Nasconderlo sembra disonesto e, con l'AI Act dell'UE, si avvia a diventare illecito. Gli agenti dichiarati che rispondono bene funzionano meglio di quelli nascosti.",
+          "Sì, lo dichiariamo fin dall'inizio. Nasconderlo sembra disonesto, e gli obblighi di trasparenza dell'AI Act dell'UE, in vigore dal 2 agosto 2026, impongono di dichiararlo. Gli agenti dichiarati che rispondono bene funzionano meglio di quelli nascosti.",
       },
     },
   },
@@ -199,22 +199,22 @@ const records: FaqRecord[] = [
       en: {
         question: 'We already had a chatbot and it was a disaster.',
         answer:
-          'Usually a decision-tree bot with no live data, no escalation and no owner after launch. Bring the transcripts to the audit; they show fastest what changes.',
+          'Usually a decision-tree bot with no live data, no escalation and no owner after launch. Bring the transcripts to the workshop; they are the quickest way to see what would change.',
       },
       de: {
         question: 'Wir hatten schon einen Chatbot, und das war ein Desaster.',
         answer:
-          'Meist war das ein Entscheidungsbaum-Bot ohne Live-Daten, ohne Eskalation und ohne Verantwortlichen nach dem Start. Bringen Sie die Gesprächsprotokolle ins Audit mit. Daran sieht man am schnellsten, was sich ändert.',
+          'Meist war das ein Entscheidungsbaum-Bot ohne Live-Daten, ohne Eskalation und ohne Verantwortlichen nach dem Start. Bringen Sie die Gesprächsprotokolle in den Workshop mit. Daran sieht man am schnellsten, was sich ändern würde.',
       },
       fr: {
         question: 'Nous avons déjà eu un chatbot, et ce fut un désastre.',
         answer:
-          "C'était en général un bot à arbre de décision, sans données en direct, sans escalade et sans responsable après le lancement. Apportez les transcriptions à l'audit : c'est là qu'on voit le plus vite ce qui change.",
+          "C'était en général un bot à arbre de décision, sans données en direct, sans escalade et sans responsable après le lancement. Apportez les transcriptions au workshop : c'est là qu'on voit le plus vite ce qui changerait.",
       },
       it: {
         question: 'Abbiamo già avuto un chatbot ed è stato un disastro.',
         answer:
-          "Di solito era un bot ad albero decisionale, senza dati in tempo reale, senza escalation e senza un responsabile dopo il lancio. Porta le trascrizioni all'audit: mostrano più in fretta cosa cambia.",
+          "Di solito era un bot ad albero decisionale, senza dati in tempo reale, senza escalation e senza un responsabile dopo il lancio. Porta le trascrizioni al workshop: mostrano più in fretta cosa cambierebbe.",
       },
     },
   },
@@ -224,7 +224,7 @@ const records: FaqRecord[] = [
     content: {
       en: {
         question: "How long until it's live?",
-        answer: 'Three to five weeks from signature. First measurable effects after two to four weeks of live running.',
+        answer: 'Three to five weeks from signature. First measurable results after two to four weeks of live operation.',
       },
       de: {
         question: 'Wie lange dauert es bis zum Start?',
@@ -277,22 +277,22 @@ const localize = (r: FaqRecord, locale: string): FaqItem => {
 
 const groups: Localized<Record<FaqGroup, string>> = {
   en: {
-    audit: 'The audit and the numbers',
+    audit: 'The workshop and the numbers',
     agent: 'How the agent behaves',
     data: 'Data, contracts and timing',
   },
   de: {
-    audit: 'Das Audit und die Zahlen',
+    audit: 'Der Workshop und die Zahlen',
     agent: 'Wie sich der Agent verhält',
     data: 'Daten, Verträge und Zeitplan',
   },
   fr: {
-    audit: "L'audit et les chiffres",
+    audit: 'Le workshop et les chiffres',
     agent: "Le comportement de l'agent",
     data: 'Données, contrats et délais',
   },
   it: {
-    audit: "L'audit e i numeri",
+    audit: 'Il workshop e i numeri',
     agent: "Come si comporta l'agente",
     data: 'Dati, contratti e tempi',
   },

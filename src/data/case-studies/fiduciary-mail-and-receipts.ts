@@ -18,7 +18,7 @@ const record: CaseRecord = {
       },
       note: "Two delivered workstreams for a Swiss fiduciary, written up without the client's name. Both are in production. The process changes are what was delivered; the figures in Results are modelled from the firm's volumes and marked as such, pending the client's own measurement.",
       results: [
-        { metric: 'Operator time on the post, per day', value: '~2 h 30 → ~40 min' },
+        { metric: 'Operator time on mail, per day', value: '~2 h 30 → ~40 min' },
         { metric: 'Operator time on receipts, per month', value: '~105 h → ~12 h' },
         { metric: 'Operator hours returned, per month', value: '~135 h ≈ 0.8 FTE' },
       ],
@@ -26,22 +26,22 @@ const record: CaseRecord = {
         {
           title: 'The business',
           paragraphs: [
-            'A Swiss fiduciary: accounting, payroll and tax for a book of SME clients, run in French with clients writing in several languages.',
-            "Two things about that business model matter here. First, the firm keeps its clients' books, so the raw material is other people's paper: supplier invoices, till receipts, official letters. Second, many client companies use the firm's address as their official correspondence address, so the post that arrives each morning is not the fiduciary's own mail. It is the mail of dozens of separate legal entities, mixed in one pile.",
+            'A Swiss fiduciary (accounting and trust) firm: accounting, payroll and tax for a book of SME clients, run in French with clients writing in several languages.',
+            "Two things about that business model matter here. First, the firm keeps its clients' books, so the raw material is other people's paper: supplier invoices, till receipts, official letters. Second, many client companies use the firm's address as their official correspondence address, so the mail that arrives each morning is not the firm's own. It is the mail of dozens of separate legal entities, mixed in one pile.",
             'Both facts lead to the same bottleneck: someone has to read every document before anything can happen.',
           ],
         },
         {
-          title: 'Before the change: the morning post',
+          title: 'Before the change: the morning mail',
           paragraphs: [
             'Every day an operator opened the incoming mail, scanned it by hand, and then read each document to work out two things: which client it belonged to, and which manager inside the firm was responsible for that client. Then they judged its urgency and routed it: notify the manager, or forward the document to the end client.',
-            'Slow, and worse, forgettable. A letter that needed an answer within days could sit in the wrong pile, and nothing in the process would notice. Deadlines in this profession are statutory, and the failure mode is liability, not embarrassment.',
+            'The process was slow and, worse, easy to get wrong unnoticed. A letter that needed an answer within days could sit in the wrong pile, and nothing in the process would notice. Deadlines in this profession are statutory, and the failure mode is liability, not embarrassment.',
           ],
         },
         {
           title: 'The expense receipts',
           paragraphs: [
-            'Clients sent their till receipts as phone photos or physically by post. An operator digitised each one, then identified the merchant, the amount and the VAT, assigned the accounting category, noted how it was paid (cash, company card, personal card) and keyed all of it into the system.',
+            'Clients sent their till receipts as phone photos or on paper by mail. An operator digitised each one, then identified the merchant, the amount and the VAT, assigned the accounting category, noted how it was paid (cash, company card, personal card) and keyed all of it into the system.',
             'Entirely manual, and error-prone in a specific way that is easy to underestimate: a meaningful share of receipts arrived in foreign languages and non-Latin scripts such as Cyrillic, Chinese and Arabic. An operator who cannot read the script cannot verify what they are typing, and the transcription error rate rises exactly where the audit trail matters.',
           ],
         },
@@ -68,9 +68,9 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: '3. A summary and a priority instead of a scanned blob',
+          title: '3. A summary and a priority instead of a raw scan',
           paragraphs: [
-            'An AI reads the letter and produces a short, clear summary of what it says, plus a priority estimate: normal, high, urgent. The manager reads that summary first, and it makes a pile of scans triageable at a glance.',
+            'A language model reads the letter and produces a short, clear summary of what it says, plus a priority estimate: normal, high, urgent. The manager reads that summary first, which lets them triage a pile of scans at a glance.',
           ],
         },
         {
@@ -89,7 +89,7 @@ const record: CaseRecord = {
         {
           title: '6. OCR plus a domain model does the accounting reading',
           paragraphs: [
-            'Integrated OCR extracts the merchant, the date, the total and the VAT. A business-domain AI then proposes the accounting category (meals, transport and the rest) along with the other parameters the posting needs, including how it was paid.',
+            'Integrated OCR extracts the merchant, the date, the total and the VAT. A model trained on accounting categories then proposes the accounting category (meals, transport and the rest) along with the other parameters the posting needs, including how it was paid.',
             'Multi-language OCR removes the problem of non-Latin receipts: the script stops being a barrier to accurate capture, and with it goes the class of transcription errors nobody downstream could catch.',
           ],
         },
@@ -97,13 +97,13 @@ const record: CaseRecord = {
           title: '7. Straight into the accounting system',
           paragraphs: [
             "The digitised receipt and the recognised data go into the firm's accounting system without manual re-entry. Expense data is available in the accounts in real time rather than at month end, which changes what the fiduciary can tell a client and when.",
-            'One constraint shaped the design. Swiss rules allow most operational documents (supplier invoices, till receipts, bank statements) to be destroyed after scanning, but only where the scanning procedure is documented and internally controlled, and archiving satisfies GeBüV: unalterable, available and systematically filed for the ten-year retention period. The tax authority can still ask for an original in a VAT audit, and instruments with pledging character (contracts, securities, notarial deeds) are excluded from replacement scanning entirely. So the system was built to produce an archive that survives an audit, not merely a searchable folder.',
+            'One constraint shaped the design. Swiss rules allow most operational documents (supplier invoices, till receipts, bank statements) to be destroyed after scanning, but only where the scanning procedure is documented and internally controlled, and archiving satisfies GeBüV: unalterable, available and systematically filed for the ten-year retention period. The tax authority can still ask for an original in a VAT audit, and documents of title and similar instruments (contracts, securities, notarial deeds) are excluded from replacement scanning entirely. So the system was built to produce an archive that survives an audit, not merely a searchable folder.',
           ],
         },
         {
           title: 'The volumes the results are calculated on',
           paragraphs: [
-            "A book of roughly 120 SME clients, of which some 40 use the firm's address as their correspondence address. That produces about 50 letters a working day, and about 2 500 expense receipts a month across the book. An operator's loaded cost is taken at CHF 55 an hour.",
+            "A book of roughly 120 SME clients, of which some 40 use the firm's address as their correspondence address. That produces about 50 letters a working day, and about 2'500 expense receipts a month across the book. An operator's loaded cost is taken at CHF 55 an hour.",
           ],
         },
       ],
@@ -113,7 +113,7 @@ const record: CaseRecord = {
         afterLabel: 'After',
         rows: [
           { label: 'Handling one incoming letter', before: '~3 min: open, scan, read to find the client, look up the manager, judge urgency, route', after: '~30 s of scanning; everything after it is automatic' },
-          { label: 'Operator time on the post, per day', before: '~2 h 30', after: '~40 min, exceptions included' },
+          { label: 'Operator time on mail, per day', before: '~2 h 30', after: '~40 min, exceptions included' },
           { label: 'Letters that reach a manager at all', before: '100 %', after: '~65 %; the rest are client-action letters routed straight to the client' },
           { label: 'Time from a letter arriving to the right person knowing about it', before: 'same day if the pile was worked through, next day if not', after: 'minutes, and urgent items are flagged first' },
           { label: 'Documents lost or misrouted', before: '1–2 a month, found late', after: 'none: every letter scanned, summarised, archived, traceable' },
@@ -122,7 +122,7 @@ const record: CaseRecord = {
           { label: 'Field-level errors on foreign-script receipts', before: '~3–4 % of captured fields', after: 'under 1 %' },
           { label: 'Expense data available in the accounts', before: '3–4 weeks, whenever the batch was worked through', after: 'same day' },
           { label: 'Client effort per month on receipts', before: '30–45 min collecting, photographing and sending', after: '~10 s per receipt, at the till' },
-          { label: 'Operator hours returned, per month', before: 'n/a', after: '~135 h ≈ CHF 7 400 ≈ 0.8 FTE' },
+          { label: 'Operator hours returned, per month', before: 'n/a', after: "~135 h ≈ CHF 7'400 ≈ 0.8 FTE" },
         ],
       },
       next: [

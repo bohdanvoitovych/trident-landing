@@ -6,7 +6,7 @@ const record: CaseRecord = {
   client: 'Construction-materials logistics · Switzerland, cross-border with France',
   services: ['ai-services', 'software-engineering'],
   techStack: [],
-  evidence: 'modelled',
+  evidence: 'scenario',
   relatedCases: [],
   content: {
     en: {
@@ -36,16 +36,16 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: 'Before the change: 1. Growth is capped by how many people can answer the phone',
+          title: 'Before the change: growth is capped by how many people can answer the phone',
           paragraphs: [
             "Orders arrive by telephone and messenger. Each one takes a person several minutes: identify the customer, check the price list and the customer's agreed terms, check availability, confirm a delivery window, and enter it into the system. Volume therefore scales with headcount, and headcount is the one thing this business cannot scale.",
-            "The reason is structural, not managerial. Demand follows the building season and the contract pipeline: when the frost lifts and three contracts run in parallel, the order desk needs twice the people it needs in February. Hiring for the peak means carrying, and then dismissing, those people three or four months later, with notice periods, recruitment cost, and three months of training paid twice a year. Temporary staff cost more per hour and know neither the product range nor the customers' agreed terms.",
+            "The reason is structural, not managerial. Demand follows the building season and the contract pipeline: when the frost lifts and three contracts run in parallel, the order desk needs twice the people it needs in February. Hiring for the peak means carrying those people and then letting them go three or four months later, with notice periods, recruitment cost, and three months of training paid twice a year. Temporary staff cost more per hour and know neither the product range nor the customers' agreed terms.",
             'So the problem is a capacity ceiling on revenue, and customer service is only where it shows.',
           ],
         },
         {
-          title: '2. Every order has to be agreed with three or four parties at once',
-          paragraphs: ['A delivery is only confirmable when four calendars agree:'],
+          title: 'Every order has to be agreed with up to five parties at once',
+          paragraphs: ['A delivery is only confirmable when all five line up:'],
           items: [
             'Customer: expects a time window, or a standing rule ("every Tuesday before 07:00", "call one hour ahead", "crane available only 13:00–16:00")',
             'Producer or plant: own opening hours, loading slots, queue at the weighbridge, batch schedules',
@@ -54,11 +54,11 @@ const record: CaseRecord = {
             'Customs and waste paperwork: for cross-border loads, the customs declaration and preference documents and, for waste leaving the country, the consignment note and any notification consent',
           ],
           closing: [
-            'Coordinating those four by telephone is what the order desk actually spends its day on. Every change (a plant running late, a site not ready, a truck breaking down) restarts the chain of calls. The plan for tomorrow is built by hand today, by one dispatcher, and it is obsolete by 09:00.',
+            'Coordinating those five by telephone is what the order desk actually spends its day on. Every change (a plant running late, a site not ready, a truck breaking down) restarts the chain of calls. The plan for tomorrow is built by hand today, by one dispatcher, and it is obsolete by 09:00.',
           ],
         },
         {
-          title: '3. What the day actually looked like',
+          title: 'What the day actually looked like',
           items: [
             "Dispatch was one person, allocating tomorrow's transport today, from a whiteboard and their own memory of which driver handles which site. Deliveries, removals and skip movements were planned separately, with no shared view of the fleet.",
             'Skips lived on a spreadsheet: which container is where, since when, and whether anybody had asked for it back.',
@@ -69,7 +69,11 @@ const record: CaseRecord = {
           closing: ['Everything worked. Nothing scaled.'],
         },
         {
-          title: 'What we built: 1. Digitalised commercial core',
+          title: 'What we built',
+          paragraphs: ['Four parts, built on one order record shared by the order desk, dispatch and finance.'],
+        },
+        {
+          title: '1. Digital commercial core',
           items: [
             'Pricing: customer-specific price lists, contract prices, volume scales and surcharges (fuel, distance, small quantity) applied automatically instead of being remembered.',
             'Order management: one order object from enquiry to execution to invoice, in three types that share a fleet: delivery, removal (site to disposal facility, standalone), and skip (drop, dwell, collect or swap). The agreed rule is attached to the customer, not to the person who took the call.',
@@ -82,7 +86,7 @@ const record: CaseRecord = {
           items: [
             "Transport is assigned automatically across own fleet and contracted hauliers, against vehicle type, site access, plant slots, driving times and the customer's window. Carriers and drivers are notified without a phone call.",
             'Deliveries, removals and skip movements are planned in one pass over one fleet, instead of three people planning the same trucks. Where a delivery and a removal fit the same round trip, the model proposes the pairing as an optimisation it finds, not as an assumption the business is built on.',
-            'Skips are tracked as assets, not as jobs: where every container is, how long it has stood there, and which ones are due for collection or swap. Idle containers on finished sites are what quietly caps a skip fleet.',
+            "Skips are tracked as assets, not as jobs: where every container is, how long it has stood there, and which ones are due for collection or swap. Idle containers on finished sites quietly cap a skip fleet's capacity.",
             'ETAs are calculated and pushed to the customer, and recalculated when reality moves, which it does daily.',
             'The planner stops producing the plan and starts approving it, which is the part a human is actually better at.',
           ],
@@ -113,17 +117,17 @@ const record: CaseRecord = {
         afterLabel: 'Where it comes from',
         rows: [
           { label: 'Repeat orders taken without a person', before: '65 % of reorder volume', after: 'Reorders are the most rule-bound transaction in the business: known customer, known product, known terms. This is the single largest effect' },
-          { label: 'Peak season absorbed without seasonal hiring', before: 'Order desk flat while peak volume grows 55 %', after: 'Capacity ceiling removed at the point where it binds. The saving is the seasonal hire that no longer happens, plus its recruitment and training cost' },
+          { label: 'Peak season absorbed without seasonal hiring', before: 'Order-desk headcount unchanged while peak volume grows 55 %', after: 'Capacity ceiling removed at the point where it binds. The saving is the seasonal hire that no longer happens, plus its recruitment and training cost' },
           { label: 'Dispatch planning time', before: 'From ~4–6 hours a day to 30 minutes of approval', after: "Planning becomes generation plus review. The dispatcher's day moves to exceptions and carrier relationships" },
           { label: 'Transport cost', before: '−6 %', after: 'The published range for mid-market shippers moving to optimised planning. Comes from fewer empty runs, better load consolidation and fewer trucks doing the same work' },
-          { label: 'Cost per invoice', before: 'From roughly CHF 30–54 to CHF 2–3', after: 'Industry benchmark for manual versus automated invoice processing. On 200 invoices a month that is CHF 2,000–2,800 of clerical work, of which some CHF 1,400–2,400 disappears' },
-          { label: 'DSO', before: '−25 %, commonly 5–8 days', after: 'Invoices leave the same day as the delivery instead of days later, and arrive complete with delivery note, weighbridge ticket and proof of delivery attached, which is what disputes are made of' },
+          { label: 'Cost per invoice', before: 'From roughly CHF 30–54 to CHF 2–3', after: "Industry benchmark for manual versus automated invoice processing. On 200 invoices a month that is CHF 2'000–2'800 of clerical work, of which some CHF 1'400–2'400 disappears" },
+          { label: 'DSO', before: '−25 %, commonly 5–8 days', after: 'Invoices leave the same day as the delivery instead of days later, and arrive complete with delivery note, weighbridge ticket and proof of delivery attached: the documents most disputes turn on' },
           { label: '"Where is my truck?" calls', before: '−70 %', after: 'Proactive ETA notification removes the reason for the call. This is the effect customers notice first' },
           { label: 'Customs handling per export load', before: 'Hours to minutes of human attention', after: 'The declaration is pre-filled from the order and linked to the transport declaration in Passar, the Swiss customs system that replaced e-dec, so the truck is released at the border without a counter visit' },
           { label: 'Delivery/removal pairing found automatically', before: '15–32 % of removal runs paired', after: 'Planning all three order types over one fleet in one pass surfaces pairings a human planner has no time to look for. Upside only: the removal business does not depend on it' },
           { label: 'Skip fleet utilisation', before: 'Idle dwell down, more jobs per container', after: 'Containers standing on finished sites are invisible on a spreadsheet and obvious on a tracked asset. Fill-level sensing, where fitted, cuts a further 15–20 % of stops by skipping containers that are not ready' },
           { label: 'Attach rate on relevant offers', before: 'New revenue line, low single-digit % of order value', after: 'Nobody had time to make these offers before. The agent makes them on every order, only where they fit' },
-          { label: 'Margin visibility per delivery', before: 'New capability, not a saving', after: 'Once every order, route and invoice is structured data, true margin per customer, per product and per route becomes measurable. Several clients discover here that a large customer is unprofitable' },
+          { label: 'Margin visibility per delivery', before: 'New capability, not a saving', after: 'Once every order, route and invoice is structured data, true margin per customer, per product and per route becomes measurable. Operators often discover here that a large customer is unprofitable' },
         ],
       },
       afterTable: [
@@ -132,7 +136,7 @@ const record: CaseRecord = {
       nextIntro:
         'With intake, dispatch and invoicing working on the contract business, the next moves are at the two ends the current setup still leaves manual:',
       next: [
-        'Small quantities and self-service skip hire: the segment the contract desk has never had time to serve. Small sites order one container or half a load, which is all margin and all administration. An agent that quotes, books and invoices it without a person is what makes the segment worth having.',
+        'Small quantities and self-service skip hire: the segment the contract desk has never had time to serve. Small sites order one container or half a load, which is high-margin but heavy on administration. An agent that quotes, books and invoices it without a person is what makes the segment worth having.',
         'Tender response for removal contracts: much of the removal business is won on tender, and tender preparation is still hand-assembled. Pre-filling the volume, disposal and pricing sections from the operational data is the obvious next automation.',
         'Fill-level and container sensing, where the economics justify fitting it, so collections are planned against what a container actually holds rather than against a date.',
       ],
@@ -149,7 +153,7 @@ const record: CaseRecord = {
       meta: {
         title: 'Building materials: desk to delivery | Trident Software',
         description:
-          'Modelled scenario: order desk, dispatch, invoicing and customs for a building-materials hauler. 65 % of reorders taken without a person, transport cost −6 %.',
+          'Industry scenario: order desk, dispatch, invoicing and customs for a building-materials haulier. 65 % of reorders taken without a person, transport cost −6 %.',
       },
     },
     de: {
@@ -179,7 +183,7 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: 'Vorher: 1. Das Wachstum hängt daran, wie viele Leute ans Telefon gehen',
+          title: 'Vorher: Das Wachstum hängt daran, wie viele Leute ans Telefon gehen',
           paragraphs: [
             'Bestellungen kommen per Telefon und Messenger. Jede kostet jemanden mehrere Minuten: Kunden identifizieren, Preisliste und vereinbarte Konditionen prüfen, Verfügbarkeit prüfen, ein Lieferfenster bestätigen und alles ins System eingeben. Das Volumen wächst also nur mit dem Personal, und das Personal ist genau das, was dieser Betrieb nicht skalieren kann.',
             'Der Grund liegt in der Struktur, nicht in der Führung. Die Nachfrage folgt der Bausaison und der Auftragslage: Wenn der Frost weicht und drei Aufträge parallel laufen, braucht die Bestellannahme doppelt so viele Leute wie im Februar. Wer für die Spitze einstellt, muss diese Leute tragen und drei oder vier Monate später wieder entlassen, mit Kündigungsfristen, Rekrutierungskosten und drei Monaten Einarbeitung, zweimal im Jahr bezahlt. Temporäre Kräfte kosten pro Stunde mehr und kennen weder das Sortiment noch die vereinbarten Konditionen der Kunden.',
@@ -187,8 +191,8 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: '2. Jede Bestellung muss mit drei oder vier Parteien gleichzeitig abgestimmt werden',
-          paragraphs: ['Eine Lieferung lässt sich erst bestätigen, wenn vier Kalender zusammenpassen:'],
+          title: 'Jede Bestellung muss mit bis zu fünf Beteiligten gleichzeitig abgestimmt werden',
+          paragraphs: ['Eine Lieferung lässt sich erst bestätigen, wenn alle fünf zusammenpassen:'],
           items: [
             'Kunde: erwartet ein Zeitfenster oder eine feste Regel («jeden Dienstag vor 07:00», «eine Stunde vorher anrufen», «Kran nur 13:00–16:00 verfügbar»)',
             'Werk oder Lieferant: eigene Öffnungszeiten, Ladefenster, Warteschlange an der Brückenwaage, Produktionspläne',
@@ -197,11 +201,11 @@ const record: CaseRecord = {
             'Zoll- und Abfallpapiere: bei grenzüberschreitenden Fahrten die Zollanmeldung und die Ursprungsnachweise sowie, bei Abfall, der das Land verlässt, der Begleitschein und eine allfällige Notifizierungszustimmung',
           ],
           closing: [
-            'Diese vier per Telefon zu koordinieren, ist das, womit die Bestellannahme tatsächlich ihren Tag verbringt. Jede Änderung (ein Werk im Verzug, eine Baustelle nicht bereit, ein Lastwagen mit Panne) startet die Anrufkette neu. Der Plan für morgen entsteht heute von Hand, bei einer einzigen Person in der Disposition, und um 09:00 ist er veraltet.',
+            'Diese fünf per Telefon zu koordinieren, ist das, womit die Bestellannahme tatsächlich ihren Tag verbringt. Jede Änderung (ein Werk im Verzug, eine Baustelle nicht bereit, ein Lastwagen mit Panne) startet die Anrufkette neu. Der Plan für morgen entsteht heute von Hand, bei einer einzigen Person in der Disposition, und um 09:00 ist er veraltet.',
           ],
         },
         {
-          title: '3. Wie der Tag tatsächlich aussah',
+          title: 'Wie der Tag tatsächlich aussah',
           items: [
             'Die Disposition war eine Person, die heute die Transporte für morgen verteilte, mit einem Whiteboard und dem eigenen Gedächtnis dafür, welcher Fahrer welche Baustelle kennt. Lieferungen, Abtransporte und Muldenbewegungen wurden getrennt geplant, ohne gemeinsame Sicht auf die Flotte.',
             'Die Mulden standen in einer Tabelle: welcher Container wo steht, seit wann und ob jemand die Abholung verlangt hat.',
@@ -212,7 +216,11 @@ const record: CaseRecord = {
           closing: ['Alles funktionierte. Nichts liess sich skalieren.'],
         },
         {
-          title: 'Was wir gebaut haben: 1. Digitalisierter kaufmännischer Kern',
+          title: 'Was wir gebaut haben',
+          paragraphs: ['Vier Teile auf einem gemeinsamen Auftragsdatensatz für Bestellannahme, Disposition und Buchhaltung.'],
+        },
+        {
+          title: '1. Digitaler kaufmännischer Kern',
           items: [
             'Preise: kundenspezifische Preislisten, Vertragspreise, Mengenstaffeln und Zuschläge (Treibstoff, Distanz, Kleinmenge) werden automatisch angewendet, statt im Kopf behalten zu werden.',
             'Auftragsverwaltung: ein Auftragsobjekt von der Anfrage über die Ausführung bis zur Rechnung, in drei Typen, die sich eine Flotte teilen: Lieferung, Abtransport (Baustelle zur Deponie, eigenständig) und Mulde (Abstellen, Standzeit, Abholen oder Tauschen). Die vereinbarte Regel hängt am Kunden, nicht an der Person, die den Anruf entgegengenommen hat.',
@@ -266,7 +274,7 @@ const record: CaseRecord = {
           { label: 'Automatisch gefundene Kombination Lieferung/Abtransport', before: '15–32 % der Abtransporte kombiniert', after: 'Wer alle drei Auftragstypen in einem Durchgang über eine Flotte plant, findet Kombinationen, für deren Suche einer Person die Zeit fehlt. Reiner Zusatznutzen: Das Abtransportgeschäft hängt nicht davon ab' },
           { label: 'Auslastung der Muldenflotte', before: 'Weniger Leerstandzeit, mehr Aufträge pro Container', after: 'Container auf abgeschlossenen Baustellen sind in einer Tabelle unsichtbar und bei einer verfolgten Anlage offensichtlich. Füllstandssensoren sparen, wo eingebaut, weitere 15–20 % der Anfahrten, weil nicht volle Container ausgelassen werden' },
           { label: 'Abschlussquote bei passenden Angeboten', before: 'Neue Umsatzlinie, tiefer einstelliger %-Anteil am Auftragswert', after: 'Für diese Angebote hatte vorher niemand Zeit. Der Agent macht sie bei jedem Auftrag, nur wo sie passen' },
-          { label: 'Sicht auf die Marge pro Lieferung', before: 'Neue Fähigkeit, keine Einsparung', after: 'Sobald jeder Auftrag, jede Route und jede Rechnung strukturierte Daten sind, wird die echte Marge pro Kunde, Produkt und Route messbar. Mehrere Kunden stellen dabei fest, dass ein grosser Kunde unrentabel ist' },
+          { label: 'Sicht auf die Marge pro Lieferung', before: 'Neue Fähigkeit, keine Einsparung', after: 'Sobald jeder Auftrag, jede Route und jede Rechnung strukturierte Daten sind, wird die echte Marge pro Kunde, Produkt und Route messbar. Betriebe stellen dabei oft fest, dass ein grosser Kunde unrentabel ist' },
         ],
       },
       afterTable: [
@@ -292,7 +300,7 @@ const record: CaseRecord = {
       meta: {
         title: 'Baustoff-Szenario: 65 % der Nachbestellungen automatisch | Trident Software',
         description:
-          'Modelliertes Szenario: Bestellannahme, Disposition, Abrechnung und Zoll für einen Baustofftransporteur. 65 % der Nachbestellungen ohne Personal, Transport −6 %.',
+          'Branchenszenario: Bestellannahme, Disposition, Abrechnung und Zoll für einen Baustofftransporteur. 65 % der Nachbestellungen ohne Personal, Transport −6 %.',
       },
     },
     fr: {
@@ -322,7 +330,7 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: 'Avant : 1. La croissance est limitée par le nombre de personnes qui peuvent décrocher',
+          title: 'Avant : la croissance est limitée par le nombre de personnes qui peuvent décrocher',
           paragraphs: [
             "Les commandes arrivent par téléphone et par messagerie. Chacune prend plusieurs minutes à quelqu'un : identifier le client, vérifier la liste de prix et les conditions convenues, vérifier la disponibilité, confirmer une fenêtre de livraison et tout saisir. Le volume grandit donc avec l'effectif, et l'effectif est justement ce que cette entreprise ne peut pas faire grandir.",
             "La raison est structurelle, pas managériale. La demande suit la saison du bâtiment et les contrats : quand le gel se lève et que trois chantiers tournent en parallèle, le service commandes a besoin de deux fois plus de monde qu'en février. Recruter pour le pic, c'est porter ces personnes puis s'en séparer trois ou quatre mois plus tard, avec préavis, frais de recrutement et trois mois de formation payés deux fois par an. Les intérimaires coûtent plus cher à l'heure et ne connaissent ni la gamme ni les conditions convenues avec les clients.",
@@ -330,8 +338,8 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: '2. Chaque commande doit être calée avec trois ou quatre parties à la fois',
-          paragraphs: ['Une livraison ne peut être confirmée que lorsque quatre agendas concordent :'],
+          title: "Chaque commande doit être calée avec jusqu'à cinq parties à la fois",
+          paragraphs: ['Une livraison ne peut être confirmée que lorsque les cinq concordent :'],
           items: [
             "Client : attend une fenêtre horaire ou une règle fixe (« chaque mardi avant 07:00 », « appeler une heure avant », « grue disponible seulement 13:00–16:00 »)",
             "Producteur ou centrale : ses horaires, ses créneaux de chargement, la file au pont-bascule, ses plannings de production",
@@ -340,11 +348,11 @@ const record: CaseRecord = {
             "Documents douaniers et déchets : pour les chargements transfrontaliers, la déclaration en douane et les preuves d'origine et, pour les déchets qui quittent le pays, le document de mouvement et l'éventuel consentement de notification",
           ],
           closing: [
-            "Coordonner ces quatre par téléphone, c'est à cela que le service commandes passe réellement sa journée. Chaque changement (une centrale en retard, un chantier pas prêt, un camion en panne) relance la chaîne d'appels. Le plan du lendemain est construit à la main le jour même par un seul dispatcheur, et il est dépassé à 09:00.",
+            "Coordonner ces cinq par téléphone, c'est à cela que le service commandes passe réellement sa journée. Chaque changement (une centrale en retard, un chantier pas prêt, un camion en panne) relance la chaîne d'appels. Le plan du lendemain est construit à la main le jour même par un seul dispatcheur, et il est dépassé à 09:00.",
           ],
         },
         {
-          title: '3. À quoi ressemblait vraiment la journée',
+          title: 'À quoi ressemblait vraiment la journée',
           items: [
             "Le dispatch, c'était une personne qui répartissait aujourd'hui les transports de demain, avec un tableau blanc et sa propre mémoire de quel chauffeur connaît quel chantier. Livraisons, évacuations et mouvements de bennes étaient planifiés séparément, sans vue commune sur la flotte.",
             "Les bennes vivaient dans un tableur : quel conteneur est où, depuis quand, et si quelqu'un avait demandé à ce qu'on le reprenne.",
@@ -355,7 +363,11 @@ const record: CaseRecord = {
           closing: ['Tout fonctionnait. Rien ne passait à l’échelle.'],
         },
         {
-          title: 'Ce que nous avons construit : 1. Un cœur commercial numérisé',
+          title: 'Ce que nous avons construit',
+          paragraphs: ['Quatre volets, bâtis sur une seule fiche de commande partagée par le service commandes, le dispatch et la comptabilité.'],
+        },
+        {
+          title: '1. Un cœur commercial numérique',
           items: [
             "Tarification : listes de prix par client, prix contractuels, barèmes de volume et suppléments (carburant, distance, petite quantité) appliqués automatiquement au lieu d'être retenus de tête.",
             "Gestion des commandes : un seul objet commande de la demande à l'exécution puis à la facture, en trois types qui partagent une flotte : livraison, évacuation (du chantier à la décharge, autonome) et benne (dépôt, stationnement, reprise ou échange). La règle convenue est attachée au client, pas à la personne qui a pris l'appel.",
@@ -409,7 +421,7 @@ const record: CaseRecord = {
           { label: 'Combinaison livraison/évacuation trouvée automatiquement', before: '15–32 % des évacuations combinées', after: "Planifier les trois types de commande en une passe sur une seule flotte fait apparaître des combinaisons qu'un planificateur n'a pas le temps de chercher. Un gain en plus : l'activité d'évacuation n'en dépend pas" },
           { label: 'Utilisation du parc de bennes', before: "Moins d'immobilisation, plus de missions par conteneur", after: "Les conteneurs sur des chantiers terminés sont invisibles dans un tableur et évidents sur un actif suivi. Les capteurs de remplissage, là où ils sont installés, suppriment encore 15–20 % des passages en sautant les conteneurs pas prêts" },
           { label: 'Taux de vente additionnelle sur offres pertinentes', before: 'Nouvelle source de revenus, quelques % de la valeur de commande', after: "Personne n'avait le temps de faire ces offres avant. L'agent les fait à chaque commande, uniquement quand elles sont pertinentes" },
-          { label: 'Visibilité de la marge par livraison', before: 'Nouvelle capacité, pas une économie', after: "Dès que chaque commande, chaque trajet et chaque facture sont des données structurées, la vraie marge par client, par produit et par trajet devient mesurable. Plusieurs clients découvrent alors qu'un gros client n'est pas rentable" },
+          { label: 'Visibilité de la marge par livraison', before: 'Nouvelle capacité, pas une économie', after: "Dès que chaque commande, chaque trajet et chaque facture sont des données structurées, la vraie marge par client, par produit et par trajet devient mesurable. Les entreprises découvrent souvent alors qu'un gros client n'est pas rentable" },
         ],
       },
       afterTable: [
@@ -435,7 +447,7 @@ const record: CaseRecord = {
       meta: {
         title: 'Scénario matériaux : 65 % du réassort sans intervention | Trident Software',
         description:
-          "Scénario modélisé : commandes, dispatch, facturation et douane pour un transporteur de matériaux. 65 % du réassort sans intervention humaine, transport −6 %.",
+          "Scénario sectoriel : commandes, dispatch, facturation et douane pour un transporteur de matériaux. 65 % du réassort sans intervention humaine, transport −6 %.",
       },
     },
     it: {
@@ -465,7 +477,7 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: 'Prima: 1. La crescita è limitata da quante persone possono rispondere al telefono',
+          title: 'Prima: la crescita è limitata da quante persone possono rispondere al telefono',
           paragraphs: [
             "Gli ordini arrivano per telefono e via messaggi. Ognuno costa a qualcuno diversi minuti: identificare il cliente, controllare il listino e le condizioni concordate, verificare la disponibilità, confermare una finestra di consegna e inserire tutto nel sistema. Il volume cresce quindi solo con il personale, e il personale è proprio ciò che questa azienda non può far crescere.",
             "La ragione è strutturale, non gestionale. La domanda segue la stagione edile e i contratti: quando il gelo finisce e tre cantieri corrono in parallelo, l'ufficio ordini ha bisogno del doppio delle persone di febbraio. Assumere per il picco significa mantenere queste persone e poi lasciarle andare tre o quattro mesi dopo, con preavvisi, costi di selezione e tre mesi di formazione pagati due volte l'anno. I lavoratori temporanei costano di più all'ora e non conoscono né la gamma né le condizioni concordate con i clienti.",
@@ -473,8 +485,8 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: '2. Ogni ordine va concordato con tre o quattro parti alla volta',
-          paragraphs: ['Una consegna si può confermare solo quando quattro calendari coincidono:'],
+          title: 'Ogni ordine va concordato con fino a cinque parti alla volta',
+          paragraphs: ['Una consegna si può confermare solo quando tutte e cinque coincidono:'],
           items: [
             "Cliente: si aspetta una finestra oraria o una regola fissa («ogni martedì prima delle 07:00», «chiamare un'ora prima», «gru disponibile solo 13:00–16:00»)",
             "Produttore o impianto: propri orari, finestre di carico, coda alla pesa, piani di produzione",
@@ -483,11 +495,11 @@ const record: CaseRecord = {
             "Documenti doganali e rifiuti: per i carichi transfrontalieri, la dichiarazione doganale e le prove d'origine e, per i rifiuti che lasciano il Paese, il documento di movimento e l'eventuale consenso alla notifica",
           ],
           closing: [
-            "Coordinare questi quattro al telefono è ciò a cui l'ufficio ordini dedica davvero la giornata. Ogni cambiamento (un impianto in ritardo, un cantiere non pronto, un camion in panne) fa ripartire la catena di telefonate. Il piano di domani viene costruito a mano oggi, da un solo addetto ai trasporti, e alle 09:00 è già superato.",
+            "Coordinare queste cinque al telefono è ciò a cui l'ufficio ordini dedica davvero la giornata. Ogni cambiamento (un impianto in ritardo, un cantiere non pronto, un camion in panne) fa ripartire la catena di telefonate. Il piano di domani viene costruito a mano oggi, da un solo addetto ai trasporti, e alle 09:00 è già superato.",
           ],
         },
         {
-          title: '3. Com’era davvero la giornata',
+          title: 'Com’era davvero la giornata',
           items: [
             "La pianificazione dei trasporti era una persona che oggi distribuiva i trasporti di domani, con una lavagna e la propria memoria di quale autista conosce quale cantiere. Consegne, smaltimenti e movimenti dei cassoni erano pianificati separatamente, senza una visione comune della flotta.",
             "I cassoni stavano in un foglio di calcolo: quale container è dove, da quando, e se qualcuno ne aveva chiesto il ritiro.",
@@ -498,7 +510,11 @@ const record: CaseRecord = {
           closing: ['Tutto funzionava. Niente cresceva con il volume.'],
         },
         {
-          title: 'Che cosa abbiamo realizzato: 1. Un nucleo commerciale digitalizzato',
+          title: 'Che cosa abbiamo realizzato',
+          paragraphs: ['Quattro parti, costruite su un unico record d’ordine condiviso da ufficio ordini, pianificazione e contabilità.'],
+        },
+        {
+          title: '1. Un nucleo commerciale digitale',
           items: [
             "Prezzi: listini per cliente, prezzi contrattuali, scaglioni di volume e supplementi (carburante, distanza, piccole quantità) applicati automaticamente invece di essere ricordati a memoria.",
             "Gestione ordini: un unico oggetto ordine dalla richiesta all'esecuzione fino alla fattura, in tre tipi che condividono una flotta: consegna, smaltimento (dal cantiere alla discarica, a sé stante) e cassone (posa, sosta, ritiro o sostituzione). La regola concordata è legata al cliente, non alla persona che ha preso la telefonata.",
@@ -552,7 +568,7 @@ const record: CaseRecord = {
           { label: 'Abbinamento consegna/smaltimento trovato automaticamente', before: '15–32 % degli smaltimenti abbinati', after: "Pianificare i tre tipi di ordine in un solo passaggio su un'unica flotta fa emergere abbinamenti che una persona non ha il tempo di cercare. Solo un vantaggio in più: lo smaltimento non ne dipende" },
           { label: 'Utilizzo della flotta di cassoni', before: 'Meno soste inutili, più incarichi per container', after: "I container fermi su cantieri finiti sono invisibili in un foglio di calcolo ed evidenti su un bene tracciato. I sensori di riempimento, dove installati, tagliano un ulteriore 15–20 % delle fermate saltando i container non pronti" },
           { label: 'Tasso di adesione alle offerte pertinenti', before: "Nuova linea di ricavo, pochi % del valore dell'ordine", after: "Prima nessuno aveva il tempo di fare queste offerte. L'agente le fa a ogni ordine, solo dove sono pertinenti" },
-          { label: 'Visibilità del margine per consegna', before: 'Nuova capacità, non un risparmio', after: "Quando ogni ordine, percorso e fattura diventa un dato strutturato, il margine reale per cliente, prodotto e percorso diventa misurabile. Diversi clienti scoprono qui che un grande cliente non è redditizio" },
+          { label: 'Visibilità del margine per consegna', before: 'Nuova capacità, non un risparmio', after: "Quando ogni ordine, percorso e fattura diventa un dato strutturato, il margine reale per cliente, prodotto e percorso diventa misurabile. Le aziende scoprono spesso qui che un grande cliente non è redditizio" },
         ],
       },
       afterTable: [
@@ -578,7 +594,7 @@ const record: CaseRecord = {
       meta: {
         title: 'Scenario materiali edili: 65 % dei riordini automatici | Trident Software',
         description:
-          "Scenario modellato: ordini, trasporti, fatturazione e dogana per un trasportatore di materiali edili. 65 % dei riordini senza una persona, trasporti −6 %.",
+          "Scenario di settore: ordini, trasporti, fatturazione e dogana per un trasportatore di materiali edili. 65 % dei riordini senza una persona, trasporti −6 %.",
       },
     },
   },

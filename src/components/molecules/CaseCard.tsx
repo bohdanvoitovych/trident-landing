@@ -15,8 +15,8 @@ type Props = {
   description?: ReactNode
   /** Big number in the white plate over the photo. */
   metric?: { value: string; label: string }
-  /** MEASURED / MODELLED, exactly as the source states it. */
-  label?: 'measured' | 'modelled'
+  /** MEASURED / MODELLED / SCENARIO, exactly as the source states it. */
+  label?: 'measured' | 'modelled' | 'scenario'
   bars?: BeforeAfter[]
   /** Fallback when there are no bars: simple result figures. */
   results?: { value: string; metric: string }[]

@@ -89,7 +89,7 @@ const records: UseCaseRecord[] = [
       en: {
         title: 'Dispatcher assistant',
         text: 'Proposes assignment and sequence, explains why, recalculates on change. The dispatcher decides.',
-        needs: 'Advice only, never a silent override.',
+        needs: 'Built to advise; it never overrides silently.',
       },
       de: {
         title: 'Assistent für die Disposition',
@@ -114,7 +114,7 @@ const records: UseCaseRecord[] = [
       en: {
         title: 'Search over company knowledge',
         text: 'Answers from contracts, manuals and policies with citations. Says "not found" instead of inventing.',
-        needs: 'Document hygiene: no three contradictory versions.',
+        needs: 'Document hygiene: one current version of each document.',
       },
       de: {
         title: 'Suche im Firmenwissen',
@@ -164,7 +164,7 @@ const records: UseCaseRecord[] = [
       en: {
         title: 'Status and self-service',
         text: '"Where is my delivery?" answered from live data. Resends invoices, reschedules.',
-        needs: 'Operational system with readable status.',
+        needs: 'An operational system that exposes order status.',
       },
       de: {
         title: 'Status und Self-Service',

@@ -78,7 +78,7 @@ const records: TestimonialRecord[] = [
     company: 'DaniParts',
     content: {
       en: {
-        quote: 'Flexibility and readiness to cooperate are about them.',
+        quote: 'They are flexible and easy to work with.',
       },
       de: {
         quote: 'Flexibilität und Bereitschaft zur Zusammenarbeit zeichnen sie aus.',
@@ -96,7 +96,7 @@ const records: TestimonialRecord[] = [
     company: 'Xelsat',
     content: {
       en: {
-        quote: 'They are well versed in latest Agile tools to keep track of deadlines.',
+        quote: 'They are well versed in the latest Agile tools to keep track of deadlines.',
       },
       de: {
         quote: 'Sie kennen sich mit aktuellen agilen Tools bestens aus und behalten die Termine im Griff.',

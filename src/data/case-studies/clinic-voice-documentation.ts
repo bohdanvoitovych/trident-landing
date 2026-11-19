@@ -6,6 +6,7 @@ const record: CaseRecord = {
   client: 'Multi-disciplinary practice, Switzerland',
   services: ['ai-services', 'software-engineering'],
   techStack: [],
+  evidence: 'measured',
   relatedCases: ['post-acute-clinic-network'],
   content: {
     en: {
@@ -26,29 +27,29 @@ const record: CaseRecord = {
           title: 'The business',
           paragraphs: [
             'A private multi-disciplinary practice in Switzerland. Several physicians across different specialties work under one roof, alongside non-medical services: physiotherapy, nutrition, aesthetics, and wellness offerings that sit outside basic health insurance.',
-            'That mix makes administration hard. A single patient can generate services billed three different ways in the same visit: reimbursed under LAMal, covered by supplementary insurance, or paid privately.',
+            'That mix makes administration hard. A single patient can generate services billed three different ways in the same visit: reimbursed under compulsory health insurance (LAMal/KVG), covered by supplementary insurance, or paid privately.',
           ],
         },
         {
-          title: 'Before the change: documentation eats a third of clinical time',
+          title: 'Before the change: documentation ate a third of clinical time',
           paragraphs: [
-            '35 % of physician working time goes on documenting consultations. That is time spent writing about having treated patients, not treating them. Notes are typed between appointments, finished in the evening, and increasingly written from memory hours after the fact.',
+            '35 % of physician working time went on documenting consultations. That was time spent writing about having treated patients, not treating them. Notes were typed between appointments, finished in the evening, and increasingly written from memory hours after the fact.',
           ],
         },
         {
-          title: 'The billing desk works as a translation layer',
+          title: 'The billing desk worked as a translation layer',
           paragraphs: [
-            'The person responsible for invoicing could not bill from the notes as written. Diagnoses stated in shorthand, procedures implied rather than recorded, missing detail that determines which tariff position applies.',
-            "So every ambiguous consultation became a conversation: catch the doctor between patients, ask what exactly was done, ask which diagnosis was retained, reconstruct the visit from two people's memory.",
+            'The person responsible for invoicing could not bill from the notes as written. Diagnoses were stated in shorthand, procedures were implied rather than recorded, and the detail that determines which tariff position applies was missing.',
+            "So every ambiguous consultation became a conversation: catch the doctor between patients, ask what exactly was done, ask which diagnosis was recorded, reconstruct the visit from two people's memory.",
             'Average handling time per invoice: 75 minutes, counting the chasing, the clarification and the correction.',
           ],
         },
         {
-          title: 'Payers push back, and payment waits',
+          title: 'Payers pushed back, and payment waited',
           paragraphs: [
-            'Roughly one invoice in eight came back: queried, corrected, resubmitted. Each return restarts the cycle and pushes payment further out.',
-            'The clinic bills a mix of payers, each with its own rules on what is admissible and how it must be coded: basic and supplementary health insurers, accident insurance including SUVA, disability and military insurance, cantonal social services, and patients paying directly for deductibles and for the non-medical services.',
-            'That mix is why a note that merely reads well is not enough. It has to be codable. Average time from consultation to money received: around 60 days.',
+            'Roughly one invoice in eight came back: queried, corrected, resubmitted. Each return restarted the cycle and pushed payment further out.',
+            'The clinic billed a mix of payers, each with its own rules on what is reimbursable and how it must be coded: basic and supplementary health insurers, accident insurance including SUVA, disability and military insurance, cantonal social services, and patients paying directly for deductibles and for the non-medical services.',
+            'That mix is why a note that merely reads well is not enough. It has to be codable. Average time from consultation to money received was around 60 days.',
           ],
         },
         {
@@ -61,7 +62,7 @@ const record: CaseRecord = {
         {
           title: '1. The doctor records',
           paragraphs: [
-            'The consultation is recorded: the exchange with the patient, and the exchanges with staff around the case. No template to fill, no dictation format to learn. The doctor works the way they already work.',
+            'The consultation is recorded: the exchange with the patient, and the exchanges with staff around the case. No template to fill in, no dictation format to learn. The doctor works the way they already work.',
           ],
         },
         {
@@ -78,9 +79,9 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: '4. It delivers into the medical information system',
+          title: '4. It delivers into the practice management system',
           paragraphs: [
-            "Reported and coded services arrive in the clinic's MIS as structured records. The assistant holds its own data and pushes the finished result across: no retyping, no copy-paste between two screens, and no dependency on the MIS vendor's roadmap.",
+            "Reported and coded services arrive in the clinic's practice management system as structured records. The assistant holds its own data and pushes the finished result across: no retyping, no copy-paste between two screens, and no dependency on the vendor's roadmap.",
           ],
         },
         {
@@ -103,19 +104,19 @@ const record: CaseRecord = {
         ],
       },
       afterTable: [
-        'The middle row is the one the clinic felt first: the billing desk went from reconstructing consultations to checking them.',
-        'The third row compounds. An invoice that is correct on first submission is not rejected, not corrected, not resubmitted, and the 3.5× improvement comes mostly from removing that loop rather than from making any single step faster.',
-        'Why the first row is a cost figure and not a comfort figure: documentation is paid physician time. Moving it from 35 % to 15 % of the working year does not make the doctor cheaper; it changes what share of that salary produces consultations. Clinical time goes from 65 % to 85 % of paid hours, so the same cost now covers 30.8 % more consultations, and the physician cost carried by each one falls by 23.5 %.',
-        'In francs, for one physician: a loaded cost of CHF 220 000 a year (an employed specialist in a Geneva practice, salary around CHF 185 000 plus social charges), 42 hours a week over 46 weeks, and a 20-minute consultation. That is 3 767 consultations a year before and 4 927 after, so physician cost per consultation drops from CHF 58.4 to CHF 44.7, a saving of CHF 13.70 each. Where the appointment book cannot absorb the extra capacity, the same twenty points show up as 386 physician hours a year handed back, roughly CHF 44 000 per doctor, a fifth of an FTE.',
-        'Salary basis: employed Swiss specialists sit at a median of CHF 140 000–172 000 and physicians in their own practice average around CHF 320 000; CHF 220 000 loaded is the middle of that range for a private multi-disciplinary practice. Substitute your own figure: the 23.5 % holds whatever the salary is, because it comes from the ratio of clinical time, not from its price.',
-        'The first row is why the physicians agreed to it. Twenty points of working time returned to clinical work: for a practice of several doctors, that is capacity that would otherwise have to be hired.',
+        'Invoice handling time is what the clinic felt first: the billing desk went from reconstructing consultations to checking them.',
+        'Time to payment compounds. An invoice that is correct on first submission is not rejected, not corrected, not resubmitted, and the 3.5× improvement comes mostly from removing that loop rather than from making any single step faster.',
+        'Why documentation time is a cost figure and not a comfort figure: documentation is paid physician time. Moving it from 35 % to 15 % of the working year does not make the doctor cheaper; it changes what share of that salary produces consultations. Clinical time goes from 65 % to 85 % of paid hours, so the same cost now covers 30.8 % more consultations, and the physician cost carried by each one falls by 23.5 %.',
+        "In francs, for one physician: a loaded cost of CHF 220'000 a year (an employed specialist in a Geneva practice, salary around CHF 185'000 plus social charges), 42 hours a week over 46 weeks, and a 20-minute consultation. That is 3'767 consultations a year before and 4'927 after, so physician cost per consultation drops from CHF 58.4 to CHF 44.7, a saving of CHF 13.70 each. Where the appointment book cannot absorb the extra capacity, the same twenty points show up as 386 physician hours a year handed back, roughly CHF 44'000 per doctor, a fifth of an FTE.",
+        "Salary basis: employed Swiss specialists sit at a median of CHF 140'000–172'000 and physicians in their own practice average around CHF 320'000; CHF 220'000 loaded is the middle of that range for a private multi-disciplinary practice. Substitute your own figure: the 23.5 % holds whatever the salary is, because it comes from the ratio of clinical time, not from its price.",
+        'Documentation time is why the physicians agreed to it. Twenty points of working time returned to clinical work: for a practice of several doctors, that is capacity that would otherwise have to be hired.',
       ],
       nextIntro:
-        'With documentation working, the clinic moved to the other end of the patient journey: getting the appointment booked at all. An enquiry arriving by phone at 19:00, or by message on a Sunday, waits until the reception desk opens. The patient does not wait; they call the next practice. The clinic is now automating appointment intake with a chatbot and an AI voice assistant. Three stated objectives:',
+        'With documentation working, the clinic moved to the other end of the patient journey: getting the appointment booked at all. An enquiry arriving by phone at 19:00, or by message on a Sunday, waits until the reception desk opens. The patient does not wait; they call the next practice. The clinic is now automating appointment intake with a chat agent and a voice agent. Three stated objectives:',
       next: [
         'Response time under 10 seconds, on every channel',
         'Bookings accepted outside working hours: evenings, weekends, holidays',
-        'Reception costs reduced by removing the call volume that consists of "do you have anything Thursday afternoon", while the desk itself stays',
+        'Lower reception costs: routine availability calls are handled automatically, and the desk stays',
       ],
       elsewhereIntro:
         'The same machinery applies wherever a spoken professional interaction has to become a coded, billable, auditable record:',

@@ -6,6 +6,7 @@ const record: CaseRecord = {
   client: 'Post-acute clinic network, Switzerland',
   services: ['ai-services', 'software-engineering'],
   techStack: [],
+  evidence: 'modelled',
   relatedCases: ['clinic-voice-documentation'],
   content: {
     en: {
@@ -14,9 +15,9 @@ const record: CaseRecord = {
       hero: {
         title: 'Patient admission, documentation and billing for a post-acute clinic network',
         tagline:
-          'From however the patient arrives to a signed discharge letter and a coded invoice, without anyone retyping a document',
+          'From any admission route to a signed discharge letter and a coded invoice, with no retyping',
       },
-      note: "A delivered project for a Swiss post-acute clinic network, written up without the client's name. Quality was measured end to end on real material: 8 reference letters and 5 nursing charts. The time figures are the operating targets the system is run against while the manual baseline is formally timed on site.",
+      note: "A delivered project for a Swiss post-acute clinic network, written up without the client's name. Quality was measured end to end on real material: 8 reference letters and 5 nursing charts. The time figures are the operating targets the system is run against while the manual baseline is formally timed on site. Disclosure: our CTO is a co-founder of Aida Medical, the company behind Aida.",
       results: [
         { metric: 'Admission: bundle → patient record', value: 'over 1 h → ~5 min' },
         { metric: 'Patient identified from the bundle', value: '8 of 8 (was 5 of 8)' },
@@ -26,9 +27,9 @@ const record: CaseRecord = {
         {
           title: 'The business',
           paragraphs: [
-            'A network of post-acute and rehabilitation clinics in Switzerland, operating medicalised temporary-care units across several sites.',
+            'A network of post-acute and rehabilitation clinics in Switzerland, operating medically supervised short-stay units across several sites.',
             'Each unit admits patients of retirement age for 24 hours to 15 days: people who need medical and nursing supervision, but not an acute bed. The unit exists to keep those patients out of an acute hospital, and to give the ones leaving an acute hospital somewhere to land.',
-            'Clinically, most stays are the second half of an episode that started somewhere else. Administratively they are a separate billing episode: the referring institution bills its own days, the clinic bills its own, under SwissDRG (ICD-10-GM diagnoses, CHOP procedures, forfait par cas driven by length of stay, plus separately billable drugs and procedures).',
+            'Clinically, most stays are the second half of an episode that started somewhere else. Administratively they are a separate billing episode: the referring institution bills its own days, the clinic bills its own. Billing runs under SwissDRG: ICD-10-GM diagnoses, CHOP procedures, a case-based flat rate (forfait par cas) driven by length of stay, plus separately billable drugs and procedures.',
             'Each site runs its own electronic patient record and its own discharge-letter form, and the finance side runs on a separate ERP. Neither exposes an API to a third party.',
           ],
         },
@@ -41,9 +42,9 @@ const record: CaseRecord = {
             'Direct referral by a treating physician: a referral note or prescription, sometimes a single page, sometimes a fax',
             'From a home-care organisation: health booklet, care plan, social context',
             'From a nursing home: resident record extract, standing medication',
-            "From the on-site emergency permanence: the permanence's own consultation record",
+            "From the on-site walk-in clinic (permanence): the walk-in clinic's own consultation record",
             "Re-admission of a known patient: the clinic's own records from the previous stay",
-            'Family or the patient themself: whatever paper they happen to be holding',
+            'Family or the patient themselves: whatever paper they happen to be holding',
           ],
           closing: [
             'None of it arrives as data. There is no HL7 or FHIR link with any referring institution; the handover is document-oriented, by e-mail or on paper.',
@@ -53,19 +54,19 @@ const record: CaseRecord = {
         {
           title: 'So intake is a person reading a pile and retyping it',
           paragraphs: [
-            'The coordinating nurse reads the bundle, decides in their head which document is current, splits it into parts and pastes them into the patient record section by section: anamnesis here, discharge medication there, antecedents somewhere else.',
-            "That takes over an hour per admission, cannot be repeated the same way twice, and depends on which coordinator is on duty. On a run of eight real files, three could not even establish the patient's identity from the bundle, because the identifying document was not among the ones uploaded, or because OCR had corrupted the name.",
+            'The coordinating nurse reads the bundle, judges which document is current, splits it into parts and pastes them into the patient record section by section: history here, discharge medication there, past medical history somewhere else.',
+            'That takes over an hour per admission, is not reproducible, and depends on which coordinator is on duty. On a run of eight real files, in three the patient could not be identified from the bundle, because the identifying document was not among the ones uploaded, or because OCR had corrupted the name.',
           ],
         },
         {
           title: 'The discharge letter is assembled by hand from two halves',
           paragraphs: [
-            "At discharge the coordinator writes the letter by combining the incoming documents with everything the team recorded during the stay: daily notes, nursing notes, medication starts and stops, physiotherapy assessments, the autonomy grid. A two-week stay's nursing chart runs to ~22 000 characters of prose. What reaches the letter is what somebody had time to find in it.",
+            "At discharge the coordinator writes the letter by combining the incoming documents with everything the team recorded during the stay: daily notes, nursing notes, medication starts and stops, physiotherapy assessments, the autonomy grid. A two-week stay's nursing chart runs to ~22'000 characters of prose. What reaches the letter is what somebody had time to find in it.",
             "Reading one real stay's chart against its own letter, we counted 11 hygiene and daily-living entries describing a trajectory (help with the toilet and dressing in week one, showering unaided by day 16) and both physiotherapy assessments (TUG 45 s → 15 s, SPPB 6/12, Tinetti). A hand-written letter prints one or two of those. The fall-risk trajectory stays in the chart and never reaches whoever receives the patient next.",
           ],
         },
         {
-          title: 'The invoice leaves the building',
+          title: 'Billing is outsourced',
           paragraphs: [
             'When the letter is ready it is sent to an external billing team, which codes it under SwissDRG and sends an invoice back; someone then uploads that invoice into the finance system by hand. The billers never see the treatment context, the round trip costs days, and nothing links the invoice back to the stay that produced it.',
           ],
@@ -78,21 +79,21 @@ const record: CaseRecord = {
           ],
         },
         {
-          title: '1. Admission, whatever door the patient came through',
+          title: '1. Admission, whatever route the patient came by',
           paragraphs: [
             'The coordinator uploads everything that arrived with the patient, in whatever shape it arrived: a transfer letter and its annexes, a one-page referral from a treating physician, a home-care booklet, a scanned admin sheet, a prescription with a QR code, prior records of a returning patient.',
             'Aida then does the reading:',
           ],
           items: [
-            'parses the whole bundle: anamnesis, diagnoses, medication schedule, labs, procedures, and the administrative identifiers billing needs;',
+            'parses the whole bundle: history, diagnoses, medication schedule, labs, procedures, and the administrative identifiers billing needs;',
             'deduplicates overlapping documents, merging restatements of the same diagnoses and drugs instead of stacking them;',
             'classifies each document by type, and identifies the admission route (transfer or direct referral), because that decides which document is the primary source;',
-            "resolves which episode is current, from destination and stay dates, so an earlier stay that ended at home is filed as an antecedent rather than mixed into today's admission;",
+            "resolves which episode is current, from destination and stay dates, so an earlier stay that ended at home is filed as past history rather than mixed into today's admission;",
             'matches the patient, and where the match is uncertain, asks a human instead of guessing. When the alternative is attaching a document to the wrong record, that is the only acceptable behaviour.',
           ],
           closing: [
-            "The result is a structured clinical record, FHIR-shaped (the stay as an Encounter, medications as MedicationStatement, reports as DiagnosticReport), and the same content written into the clinic's patient record. No splitting by hand, no Ctrl+V.",
-            "The coordinator's role moves from data entry to checking a parse.",
+            "The result is a clinical record structured to FHIR (the stay as an Encounter, medications as MedicationStatement, reports as DiagnosticReport), and the same content written into the clinic's patient record. No manual splitting, no copy and paste.",
+            "The coordinator's role moves from data entry to reviewing the extracted record.",
           ],
         },
         {
@@ -105,29 +106,29 @@ const record: CaseRecord = {
         {
           title: "3. The discharge letter is drafted on the site's own form",
           paragraphs: [
-            "Not a generic summary. Each site's real template: the structured eight-section form used at one site (motif and diagnoses, synthesis of the stay, other care, discharge medication with drugs introduced and stopped, care network, autonomy, annexes, administrative details) with the patient identity in the header and footer of every page, two signatories and the legal notice; the classic letter form used at another. A third site is added by changing a setting, not by shipping code.",
+            "Not a generic summary. Each site's real template: the structured eight-section form used at one site (reason for admission and diagnoses, summary of the stay, other care, discharge medication with drugs introduced and stopped, care network, autonomy, annexes, administrative details) with the patient identity in the header and footer of every page, two signatories and the legal notice; the classic letter form used at another. A third site is added by changing a setting, not by shipping code.",
             'Output is an editable document, on purpose: the physician revises before signing, and a locked PDF would break that.',
           ],
         },
         {
           title: '4. The physician edits and signs in Aida',
           paragraphs: [
-            "The reference letters contain things no source document holds: why a statin was switched mid-stay, which medication is EN RÉSERVE, the synthesis of the problem list. That is the physician's knowledge. Aida produces the draft, with source-to-section traceability, and the physician completes and confirms it. Only then is it written into the clinic's record.",
+            "The reference letters contain things no source document holds: why a statin was switched mid-stay, which medication is EN RÉSERVE (as needed), the summary of the problem list. That is the physician's knowledge. Aida produces the draft, with source-to-section traceability, and the physician completes and confirms it. Only then is it written into the clinic's record.",
           ],
         },
         {
           title: '5. The invoice comes from the same record',
           paragraphs: [
-            'ICD-10-GM and CHOP coding, DRG grouping, forfait par cas from the admission and discharge dates, separately billable drugs and procedures, billing identifiers taken from the administrative documents captured at intake. All of it is validated against the Swiss electronic-billing validators (Sumex1 drgValidator) before a human ever sees it. Finance reviews coding and amounts in Aida and confirms; delivery into the ERP follows. The external billing hop disappears.',
+            'ICD-10-GM and CHOP coding, DRG grouping, the case-based flat rate from the admission and discharge dates, separately billable drugs and procedures, billing identifiers taken from the administrative documents captured at intake. All of it is validated against the Swiss electronic-billing validators (Sumex1 drgValidator) before a human ever sees it. Finance reviews coding and amounts in Aida and confirms; delivery into the ERP follows. The external billing hop disappears.',
           ],
         },
       ],
       table: {
         title: 'Results',
         beforeLabel: 'Before',
-        afterLabel: 'After',
+        afterLabel: 'Target',
         rows: [
-          { label: 'Admission: bundle → patient record', before: 'over 1 h of reading, splitting and retyping', after: '~5 min of reviewing a parse' },
+          { label: 'Admission: bundle → patient record', before: 'over 1 h of reading, splitting and retyping', after: '~5 min of reviewing the extracted record' },
           { label: 'Patient identified from the bundle', before: '5 of 8 files on a real run', after: '8 of 8: identity taken from all documents, uncertain matches escalated' },
           { label: 'Assembling the discharge letter', before: '~90 min per stay', after: '~20 min of editing and signing' },
           { label: 'Letter available to the next care provider', before: '3–5 days after discharge', after: 'same day' },
@@ -144,7 +145,7 @@ const record: CaseRecord = {
         'Direct delivery of the validated invoice into the ERP, without the manual upload.',
       ],
       elsewhereIntro:
-        'Wherever a stay, not a single consultation, has to become a coded, signed, auditable record, and the patients arrive through several uncontrolled doors:',
+        'Wherever a stay, not a single consultation, has to become a coded, signed, auditable record, and patients arrive by several routes the clinic does not control:',
       elsewhere: [
         'post-acute, rehabilitation and transitional-care units',
         'nursing homes, where the resident record is the heaviest administrative item',
@@ -165,7 +166,7 @@ const record: CaseRecord = {
         tagline:
           'Vom Eintritt, wie auch immer er erfolgt, bis zum unterschriebenen Austrittsbericht und zur codierten Rechnung, ohne dass jemand ein Dokument abtippt',
       },
-      note: 'Ein umgesetztes Projekt für eine Schweizer Klinikgruppe in der Nachsorge, beschrieben ohne den Namen des Kunden. Die Qualität wurde durchgängig an echtem Material gemessen: 8 Referenzberichte und 5 Pflegedokumentationen. Die Zeitangaben sind die Betriebsziele, an denen das System gemessen wird, während die manuelle Ausgangslage vor Ort formell gestoppt wird.',
+      note: 'Ein umgesetztes Projekt für eine Schweizer Klinikgruppe in der Nachsorge, beschrieben ohne den Namen des Kunden. Die Qualität wurde durchgängig an echtem Material gemessen: 8 Referenzberichte und 5 Pflegedokumentationen. Die Zeitangaben sind die Betriebsziele, an denen das System gemessen wird, während die manuelle Ausgangslage vor Ort formell gestoppt wird. Offenlegung: Unser CTO ist Mitgründer von Aida Medical, dem Unternehmen hinter Aida.',
       results: [
         { metric: 'Aufnahme: Dossier → Patientenakte', value: 'über 1 h → ~5 min' },
         { metric: 'Patient aus dem Dossier identifiziert', value: '8 von 8 (vorher 5 von 8)' },
@@ -274,7 +275,7 @@ const record: CaseRecord = {
       table: {
         title: 'Ergebnisse',
         beforeLabel: 'Vorher',
-        afterLabel: 'Nachher',
+        afterLabel: 'Ziel',
         rows: [
           { label: 'Aufnahme: Dossier → Patientenakte', before: 'über 1 h Lesen, Zerlegen und Abtippen', after: '~5 min Prüfen einer Auswertung' },
           { label: 'Patient aus dem Dossier identifiziert', before: '5 von 8 Dossiers in einem echten Durchgang', after: '8 von 8: Identität aus allen Dokumenten, unsichere Zuordnungen gehen an einen Menschen' },
@@ -314,7 +315,7 @@ const record: CaseRecord = {
         tagline:
           "Quelle que soit l'arrivée du patient, jusqu'à la lettre de sortie signée et la facture codée, sans que personne ne ressaisisse un document",
       },
-      note: "Un projet livré pour un réseau suisse de cliniques de soins de suite, décrit sans le nom du client. La qualité a été mesurée de bout en bout sur du matériel réel : 8 lettres de référence et 5 dossiers de soins. Les durées sont les objectifs d'exploitation du système, pendant que la situation manuelle de départ est chronométrée formellement sur place.",
+      note: "Un projet livré pour un réseau suisse de cliniques de soins de suite, décrit sans le nom du client. La qualité a été mesurée de bout en bout sur du matériel réel : 8 lettres de référence et 5 dossiers de soins. Les durées sont les objectifs d'exploitation du système, pendant que la situation manuelle de départ est chronométrée formellement sur place. Transparence : notre CTO est cofondateur d'Aida Medical, la société derrière Aida.",
       results: [
         { metric: 'Admission : dossier → dossier patient', value: "plus d'1 h → ~5 min" },
         { metric: 'Patient identifié à partir du dossier', value: '8 sur 8 (avant 5 sur 8)' },
@@ -423,7 +424,7 @@ const record: CaseRecord = {
       table: {
         title: 'Résultats',
         beforeLabel: 'Avant',
-        afterLabel: 'Après',
+        afterLabel: 'Objectif',
         rows: [
           { label: 'Admission : dossier → dossier patient', before: "plus d'1 h de lecture, découpage et ressaisie", after: "~5 min pour vérifier une analyse" },
           { label: 'Patient identifié à partir du dossier', before: "5 dossiers sur 8 lors d'une série réelle", after: "8 sur 8 : identité tirée de tous les documents, cas incertains transmis à un humain" },
@@ -463,7 +464,7 @@ const record: CaseRecord = {
         tagline:
           'Comunque arrivi il paziente, fino alla lettera di dimissione firmata e alla fattura codificata, senza che nessuno ridigiti un documento',
       },
-      note: "Un progetto realizzato per una rete svizzera di cliniche post-acute, descritto senza il nome del cliente. La qualità è stata misurata da capo a fondo su materiale reale: 8 lettere di riferimento e 5 cartelle infermieristiche. I tempi sono gli obiettivi operativi su cui il sistema viene gestito, mentre la situazione manuale di partenza viene cronometrata formalmente in sede.",
+      note: "Un progetto realizzato per una rete svizzera di cliniche post-acute, descritto senza il nome del cliente. La qualità è stata misurata da capo a fondo su materiale reale: 8 lettere di riferimento e 5 cartelle infermieristiche. I tempi sono gli obiettivi operativi su cui il sistema viene gestito, mentre la situazione manuale di partenza viene cronometrata formalmente in sede. Trasparenza: il nostro CTO è cofondatore di Aida Medical, la società che sviluppa Aida.",
       results: [
         { metric: 'Ammissione: fascicolo → cartella paziente', value: 'oltre 1 h → ~5 min' },
         { metric: 'Paziente identificato dal fascicolo', value: '8 su 8 (prima 5 su 8)' },
@@ -572,7 +573,7 @@ const record: CaseRecord = {
       table: {
         title: 'Risultati',
         beforeLabel: 'Prima',
-        afterLabel: 'Dopo',
+        afterLabel: 'Obiettivo',
         rows: [
           { label: 'Ammissione: fascicolo → cartella paziente', before: 'oltre 1 h di lettura, suddivisione e ridigitazione', after: "~5 min per controllare un'analisi" },
           { label: 'Paziente identificato dal fascicolo', before: '5 fascicoli su 8 in una serie reale', after: '8 su 8: identità ricavata da tutti i documenti, abbinamenti incerti passati a una persona' },

@@ -1,9 +1,9 @@
 import type { ServiceDetail } from './types'
 
 export const fr: ServiceDetail = {
-  kicker: 'Agents IA, assistants et chatbots pour les entreprises',
-  title: 'La vente en pilote automatique avec l’IA',
-  lede: 'Des agents IA, des assistants IA et des chatbots qui traitent les demandes, conseillent vos clients et concluent des ventes 24/7. Plus rapides, plus précis et moins chers qu’un commercial.',
+  kicker: 'Agents IA et assistants pour les entreprises',
+  title: 'Des agents IA qui répondent, qualifient et concluent les ventes courantes',
+  lede: 'Des agents qui répondent aux demandes en quelques secondes, en allemand, en français, en italien et en anglais, et inscrivent le résultat dans vos systèmes. Ils prennent la routine ; vos équipes gardent les affaires complexes.',
   intro: 'Ce qu’est l’agent, quelles demandes il prend en charge et comment il se branche sur les systèmes existants d’une entreprise suisse.',
   gap: {
     title: 'Le manque que nous comblons',
@@ -20,7 +20,7 @@ export const fr: ServiceDetail = {
       },
       {
         lead: 'La vitesse fait la différence.',
-        text: 'Dans l’étude de référence sur les leads web, les chances de qualifier un lead baissent d’environ 21× entre une réponse en 5 minutes et une réponse en 30 minutes. Ce sont des données américaines de 2007, pas suisses, mais la tendance ne fait pas débat. Ce qui est suisse : 84 % jugent important un support rapide et en temps réel, et 64 % préfèrent le libre-service à l’attente d’un interlocuteur.',
+        text: 'Dans la Lead Response Management Study, les chances de qualifier un lead baissent d’environ 21× entre une réponse en 5 minutes et une réponse en 30 minutes. Ce sont des données américaines de 2007, pas suisses, mais la tendance ne fait pas débat. Ce qui est suisse : 84 % jugent important un support rapide et en temps réel, et 64 % préfèrent le libre-service à l’attente d’un interlocuteur.',
       },
       {
         lead: 'Pour une partie du marché, la recherche commence désormais dans un assistant IA.',
@@ -31,11 +31,11 @@ export const fr: ServiceDetail = {
         text: 'Horaires d’ouverture, délai de livraison, fourchette de prix, disponibilité, « intervenez-vous aussi dans le canton de Vaud ? ».',
       },
       {
-        lead: 'Quatre régions linguistiques.',
+        lead: 'Vos clients écrivent en allemand, en français, en italien et en anglais.',
         text: 'Une demande en italien à 21:00 attend en général que quelqu’un au bureau lise l’italien. WhatsApp touche environ 85 % de la population suisse : le canal existe, le personnel pour le tenir, en général, non.',
       },
     ],
-    close: 'Un agent de vente est un processus qui tourne, avec un modèle de langage à l’intérieur. Ce n’est ni un widget de chat ni une licence de modèle.',
+    close: 'Un agent de vente est un processus métier doté d’un modèle de langage intégré. Ce n’est ni un widget de chat ni une licence de modèle.',
   },
   does: {
     title: 'Ce que fait l’agent',
@@ -221,7 +221,7 @@ export const fr: ServiceDetail = {
     items: [
       {
         lead: 'Des frais d’intégration fixes',
-        text: 'Chiffrés après l’audit, sur la base d’un périmètre écrit. Les changements de périmètre sont chiffrés à part, jamais absorbés en silence dans la ligne mensuelle.',
+        text: 'Chiffrés après le workshop, sur la base d’un périmètre écrit. Les changements de périmètre sont chiffrés à part, jamais absorbés en silence dans la ligne mensuelle.',
       },
       {
         lead: 'Vos systèmes restent les vôtres',
@@ -231,10 +231,10 @@ export const fr: ServiceDetail = {
         lead: 'Indépendant du modèle',
         text: 'L’agent est conçu pour que le modèle sous-jacent puisse être remplacé. Cela vous protège de la politique tarifaire d’un seul fournisseur et de sa panne.',
       },
-      { lead: 'Un ingénieur attitré, pas une file de tickets', text: 'La même personne de l’audit à l’exploitation.' },
+      { lead: 'Un ingénieur attitré, pas une file de tickets', text: 'La même personne du workshop à l’exploitation.' },
       {
         lead: 'Nous vous disons quand ne pas acheter',
-        text: 'Les critères d’exclusion de [Là où nous disons non](#limits) sont appliqués lors de l’audit, avant toute signature.',
+        text: 'Les critères d’exclusion de [Là où nous disons non](#limits) sont appliqués lors du workshop, avant toute signature.',
       },
     ],
   },
@@ -249,12 +249,12 @@ export const fr: ServiceDetail = {
       {
         question: 'Les clients sauront-ils qu’ils parlent à une machine ?',
         answer:
-          'Oui, c’est annoncé d’emblée. La dissimulation paraît malhonnête et, pour les entreprises qui s’adressent aux consommateurs dans l’UE, elle est en passe de devenir illégale avec l’AI Act. Un agent déclaré qui répond bien fait mieux qu’un agent caché qui répond mal.',
+          'Oui, c’est annoncé d’emblée. La dissimulation paraît malhonnête et, pour les entreprises qui s’adressent aux consommateurs dans l’UE, les obligations de transparence de l’AI Act imposent désormais de l’annoncer. Un agent déclaré qui répond bien fait mieux qu’un agent caché qui répond mal.',
       },
       {
         question: 'Nous avons déjà eu un chatbot, et ce fut un désastre.',
         answer:
-          'C’était en général un bot à arbre de décision, sans accès aux données en direct, sans escalade et sans responsable après la mise en ligne. Apportez les transcriptions à l’audit. C’est le moyen le plus rapide de montrer ce qui change.',
+          'C’était en général un bot à arbre de décision, sans accès aux données en direct, sans escalade et sans responsable après la mise en ligne. Apportez les transcriptions au workshop. C’est le moyen le plus rapide de voir ce qui changerait.',
       },
       {
         question: 'Pouvons-nous commencer petit ?',
@@ -269,7 +269,7 @@ export const fr: ServiceDetail = {
   },
   next: {
     title: 'Prochaine étape',
-    text: 'Audit gratuit de votre tunnel de vente, 45 minutes. Apportez votre volume de demandes, vos temps de réponse et votre mix de canaux. Vous repartez avec un chiffre, que nous travaillions ensemble ou non.',
+    text: 'Workshop gratuit de 45 minutes. Apportez votre volume de demandes, vos temps de réponse et votre mix de canaux. Vous repartez avec votre propre modèle de ROI, que nous travaillions ensemble ou non. Si les chiffres tiennent, nous construisons un prototype fonctionnel sur vos propres données en 10 jours ouvrables.',
     economics: 'Voir l’économie du projet',
   },
 }

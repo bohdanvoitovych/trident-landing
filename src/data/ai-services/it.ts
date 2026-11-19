@@ -1,9 +1,9 @@
 import type { ServiceDetail } from './types'
 
 export const it: ServiceDetail = {
-  kicker: 'Agenti AI, assistenti e chatbot per le aziende',
-  title: 'Vendite con il pilota automatico grazie all’AI',
-  lede: 'Agenti AI, assistenti AI e chatbot che gestiscono le richieste, consigliano i tuoi clienti e chiudono vendite 24/7. Più veloci, più precisi e più economici di un venditore.',
+  kicker: 'Agenti AI e assistenti per le aziende',
+  title: 'Agenti AI che rispondono, qualificano e chiudono le vendite di routine',
+  lede: 'Agenti che rispondono alle richieste in pochi secondi, in tedesco, francese, italiano e inglese, e scrivono il risultato nei tuoi sistemi. Si occupano della routine; le trattative complesse restano alle tue persone.',
   intro: 'Che cos’è l’agente, quali richieste prende in carico e dove si collega ai sistemi che un’azienda svizzera usa già.',
   gap: {
     title: 'Il divario che colmiamo',
@@ -20,7 +20,7 @@ export const it: ServiceDetail = {
       },
       {
         lead: 'È la velocità a decidere.',
-        text: 'Nello studio di riferimento sui lead web, la probabilità di qualificare un lead cala di circa 21× tra una risposta in 5 minuti e una in 30 minuti. Sono dati statunitensi del 2007, non svizzeri, ma la direzione non è in discussione. Il dato svizzero è questo: l’84 % ritiene importante un supporto rapido e in tempo reale, e il 64 % preferisce il self-service all’attesa di una persona.',
+        text: 'Nella Lead Response Management Study, la probabilità di qualificare un lead cala di circa 21× tra una risposta in 5 minuti e una in 30 minuti. Sono dati statunitensi del 2007, non svizzeri, ma la direzione non è in discussione. Il dato svizzero è questo: l’84 % ritiene importante un supporto rapido e in tempo reale, e il 64 % preferisce il self-service all’attesa di una persona.',
       },
       {
         lead: 'Per una parte del mercato la ricerca ora parte da un assistente AI.',
@@ -31,11 +31,11 @@ export const it: ServiceDetail = {
         text: 'Orari di apertura, tempi di consegna, fascia di prezzo, disponibilità, «servite anche il Canton Vaud?».',
       },
       {
-        lead: 'Quattro regioni linguistiche.',
+        lead: 'I clienti scrivono in tedesco, francese, italiano e inglese.',
         text: 'Una richiesta in italiano alle 21:00 di solito aspetta che in ufficio qualcuno legga l’italiano. WhatsApp raggiunge circa l’85 % della popolazione svizzera: il canale c’è, il personale per seguirlo di solito no.',
       },
     ],
-    close: 'Un agente di vendita è un processo operativo con un modello linguistico al suo interno. Non è un widget di chat e non è una licenza di modello.',
+    close: 'Un agente di vendita è un processo aziendale con un modello linguistico integrato. Non è un widget di chat e non è una licenza di modello.',
   },
   does: {
     title: 'Cosa fa l’agente',
@@ -221,7 +221,7 @@ export const it: ServiceDetail = {
     items: [
       {
         lead: 'Costo di integrazione fisso',
-        text: 'Quotato dopo l’audit, su un perimetro scritto. Le modifiche al perimetro si quotano a parte e non finiscono mai in silenzio nella voce mensile.',
+        text: 'Quotato dopo il workshop, su un perimetro scritto. Le modifiche al perimetro si quotano a parte e non finiscono mai in silenzio nella voce mensile.',
       },
       {
         lead: 'I tuoi sistemi restano tuoi',
@@ -231,10 +231,10 @@ export const it: ServiceDetail = {
         lead: 'Indipendente dal modello',
         text: 'L’agente è costruito in modo che il modello sottostante si possa sostituire. Questo ti protegge dai prezzi e dai guasti di un singolo fornitore.',
       },
-      { lead: 'Un ingegnere con un nome, non una coda di ticket', text: 'La stessa persona dall’audit all’esercizio.' },
+      { lead: 'Un ingegnere con un nome, non una coda di ticket', text: 'La stessa persona dal workshop all’esercizio.' },
       {
         lead: 'Ti diciamo quando non comprare',
-        text: 'I criteri di esclusione di [Dove diciamo di no](#limits) li applichiamo all’audit, prima che qualcuno firmi qualcosa.',
+        text: 'I criteri di esclusione di [Dove diciamo di no](#limits) li applichiamo durante il workshop, prima che qualcuno firmi qualcosa.',
       },
     ],
   },
@@ -249,12 +249,12 @@ export const it: ServiceDetail = {
       {
         question: 'I clienti sapranno di parlare con una macchina?',
         answer:
-          'Sì, lo dichiariamo fin dall’inizio. Nasconderlo sembra disonesto e, per le aziende che si rivolgono ai consumatori nell’UE, con l’AI Act sta diventando illecito. Un agente dichiarato che risponde bene funziona meglio di uno nascosto che risponde male.',
+          'Sì, lo dichiariamo fin dall’inizio. Nasconderlo sembra disonesto e, per le aziende che si rivolgono ai consumatori nell’UE, gli obblighi di trasparenza dell’AI Act ora impongono di dichiararlo. Un agente dichiarato che risponde bene funziona meglio di uno nascosto che risponde male.',
       },
       {
         question: 'Abbiamo già avuto un chatbot ed è stato un disastro.',
         answer:
-          'Di solito era un bot ad albero decisionale, senza accesso ai dati in tempo reale, senza escalation e senza un responsabile dopo l’avvio. Porta le trascrizioni all’audit. Sono il modo più rapido per mostrare cosa cambia.',
+          'Di solito era un bot ad albero decisionale, senza accesso ai dati in tempo reale, senza escalation e senza un responsabile dopo l’avvio. Porta le trascrizioni al workshop. Sono il modo più rapido per vedere cosa cambierebbe.',
       },
       {
         question: 'Possiamo iniziare in piccolo?',
@@ -269,7 +269,7 @@ export const it: ServiceDetail = {
   },
   next: {
     title: 'Il prossimo passo',
-    text: 'Audit gratuito del funnel, 45 minuti. Porta il volume delle richieste, i tempi di risposta e il mix di canali. Esci con un numero, che lavoriamo insieme o no.',
+    text: 'Workshop gratuito di 45 minuti. Porta il volume delle richieste, i tempi di risposta e il mix di canali. Esci con il tuo modello di ROI, che lavoriamo insieme o no. Se i numeri reggono, realizziamo un prototipo funzionante sui tuoi dati entro 10 giorni lavorativi.',
     economics: 'Vedi i conti economici',
   },
 }

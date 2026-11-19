@@ -17,14 +17,16 @@ import oldHashes from './fixtures/old-case-hashes.json'
 
 const ROOT = path.resolve(__dirname, '../../..')
 
-// The six PDF case studies (P9), in homepage order, and how Yevhen labelled their figures.
+// The six PDF case studies (P9), in homepage order, and how their figures are labelled.
+// The clinic cases carry the same label as their homepage cards; the two industry scenarios
+// have no client behind them, so they are 'scenario', not 'modelled' (editorial review, Nov 2026).
 const PDF_CASES: Record<string, CaseData['evidence']> = {
-  'post-acute-clinic-network': undefined,
-  'clinic-voice-documentation': undefined,
+  'post-acute-clinic-network': 'modelled',
+  'clinic-voice-documentation': 'measured',
   'warranty-control-component-maker': 'measured',
   'fiduciary-mail-and-receipts': 'modelled',
-  'building-materials-order-to-load': 'modelled',
-  'letting-agency-enquiry-to-viewing': 'modelled',
+  'building-materials-order-to-load': 'scenario',
+  'letting-agency-enquiry-to-viewing': 'scenario',
 }
 const PDF_SLUGS = Object.keys(PDF_CASES)
 

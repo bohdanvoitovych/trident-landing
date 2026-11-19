@@ -86,12 +86,14 @@ export function CasePage({ caseStudy }: Props) {
         lead={caseStudy.hero.tagline}
         actions={
           <div className="stack" style={{ gap: 14 }}>
-            <p className="meta" style={{ margin: 0 }}>
-              {tp.rich('client', {
-                client: caseStudy.client,
-                name: (c) => <span className="text-ink">{c}</span>,
-              })}
-            </p>
+            {evidence !== 'scenario' && (
+              <p className="meta" style={{ margin: 0 }}>
+                {tp.rich('client', {
+                  client: caseStudy.client,
+                  name: (c) => <span className="text-ink">{c}</span>,
+                })}
+              </p>
+            )}
             {evidence && (
               <p className="small" style={{ margin: 0, display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
                 <Tag tone={evidence === 'measured' ? 'blue' : 'wash'}>{tu(`cases.${evidence}`)}</Tag>

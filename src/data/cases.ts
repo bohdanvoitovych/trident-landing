@@ -75,8 +75,11 @@ export type CaseRecord = {
   client: string
   services: string[]
   techStack: string[]
-  /** Whether the figures were counted in production or calculated from real volumes. */
-  evidence?: 'measured' | 'modelled'
+  /**
+   * Where the figures come from: counted in production, calculated from a client's real volumes,
+   * or an industry scenario with no single client behind it.
+   */
+  evidence?: 'measured' | 'modelled' | 'scenario'
   relatedCases: string[]
   content: Localized<CaseText>
 }

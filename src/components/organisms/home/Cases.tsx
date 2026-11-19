@@ -10,9 +10,9 @@ const FEATURED = {
 } as const
 
 const MORE = [
-  { k: 'fiduciary', v: '−89 %', slug: 'fiduciary-mail-and-receipts' },
-  { k: 'materials', v: '65 %', slug: 'building-materials-order-to-load' },
-  { k: 'letting', v: '<15 s', slug: 'letting-agency-enquiry-to-viewing' },
+  { k: 'fiduciary', v: '−89 %', slug: 'fiduciary-mail-and-receipts', label: 'modelled' },
+  { k: 'materials', v: '65 %', slug: 'building-materials-order-to-load', label: 'scenario' },
+  { k: 'letting', v: '<15 s', slug: 'letting-agency-enquiry-to-viewing', label: 'scenario' },
 ] as const
 
 export function Cases() {
@@ -50,7 +50,7 @@ export function Cases() {
             sector={tc('practice.sector')}
             title={tc('practice.title')}
             description={tc('practice.description')}
-            metric={{ value: '+30.8 %', label: tc('practice.metric') }}
+            metric={{ value: '30.8 %', label: tc('practice.metric') }}
             label="measured"
             bars={[
               { label: tc('practice.bar1'), value: '−84 %', before: 100, after: 16 },
@@ -74,11 +74,11 @@ export function Cases() {
         </div>
         <h3 className="sr-only">{t('cases.moreCases')}</h3>
         <div className="grid-3 stagger" style={{ marginTop: 20 }}>
-          {MORE.map(({ k, v, slug }) => (
+          {MORE.map(({ k, v, slug, label }) => (
             <Link key={k} href={`/cases/${slug}`} className="card more-card">
               <span className="top">
                 <span>{tc(`more.${k}.sector`)}</span>
-                <span className="tag tag--wash">{t('cases.modelled')}</span>
+                <span className="tag tag--wash">{t(`cases.${label}`)}</span>
               </span>
               <span className="t">{tc(`more.${k}.title`)}</span>
               <span className="bottom">
