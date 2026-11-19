@@ -21,10 +21,10 @@ beforeEach(() => {
 describe('renderDemoConfirmation', () => {
   it('is localized with en fallback', () => {
     expect(renderDemoConfirmation({ ...mockContact, locale: 'en' }).subject).toBe(
-      'We received your audit request - Trident Software',
+      'We received your workshop request - Trident Software',
     )
     expect(renderDemoConfirmation({ ...mockContact, locale: 'de' }).html).toContain('lang="de"')
-    expect(renderDemoConfirmation({ ...mockContact, locale: 'it' }).text).toContain('2 giorni lavorativi')
+    expect(renderDemoConfirmation({ ...mockContact, locale: 'it' }).text).toContain('un giorno lavorativo')
     expect(renderDemoConfirmation({ ...mockContact, locale: 'xx' }).subject).toContain('We received')
     expect(renderDemoConfirmation({ ...mockContact, locale: undefined }).subject).toContain('We received')
   })
@@ -56,12 +56,12 @@ describe('renderDemoConfirmation', () => {
 
 describe('renderDemoNotification', () => {
   it('subject has name and company', () => {
-    expect(renderDemoNotification(mockContact).subject).toBe('New audit request from Jean Dupont - HealthCorp SA')
+    expect(renderDemoNotification(mockContact).subject).toBe('New workshop request from Jean Dupont - HealthCorp SA')
   })
 
   it('subject without company', () => {
     expect(renderDemoNotification({ ...mockContact, company: undefined }).subject).toBe(
-      'New audit request from Jean Dupont',
+      'New workshop request from Jean Dupont',
     )
   })
 

@@ -17,9 +17,9 @@ const h1Words = (src: string) =>
 
 // Measured figures only, each linked to the case it comes from.
 const RESULTS = [
-  { k: 'consultations', v: '+30.8 %', src: 'practice', slug: 'clinic-voice-documentation' },
-  { k: 'warranty', v: '−63 %', src: 'maker', slug: 'warranty-control-component-maker' },
-  { k: 'invoice', v: '−84 %', src: 'practice', slug: 'clinic-voice-documentation' },
+  { k: 'consultations', v: '30.8 %', src: 'practice', slug: 'clinic-voice-documentation' },
+  { k: 'warranty', v: '63 %', src: 'maker', slug: 'warranty-control-component-maker' },
+  { k: 'invoice', v: '84 %', src: 'practice', slug: 'clinic-voice-documentation' },
 ] as const
 
 export function Hero() {

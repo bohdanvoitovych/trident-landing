@@ -1,5 +1,5 @@
 /**
- * Internal email to the Trident team when a new audit request arrives.
+ * Internal email to the Trident team when a new workshop request arrives.
  */
 
 import { emailLayout, escapeHtml } from './layout'
@@ -16,7 +16,7 @@ export function renderDemoNotification(
   const WARNING = '⚠ Not saved to admin — add this lead manually.'
 
   // Name and company, not our own name: this lands in the Trident inbox.
-  const base = `New audit request from ${data.name}${data.company ? ` - ${data.company}` : ''}`
+  const base = `New workshop request from ${data.name}${data.company ? ` - ${data.company}` : ''}`
   const subject = failed ? `⚠ ${base}` : base
 
   const timestamp = new Date().toLocaleString('en-GB', {
@@ -90,7 +90,7 @@ export function renderDemoNotification(
 
   const bodyHtml = `
     ${warningHtml}
-    <h1 style="margin: 0 0 4px; font-size: 22px; font-weight: 700; color: #0D1117;">New Audit Request</h1>
+    <h1 style="margin: 0 0 4px; font-size: 22px; font-weight: 700; color: #0D1117;">New workshop request</h1>
     <p style="margin: 0 0 20px; font-size: 14px; color: #6B7280;">A new request was sent through the website form.</p>
 
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border: 1px solid #E5E7EB; border-radius: 8px; overflow: hidden; margin-bottom: 24px;">
@@ -104,7 +104,7 @@ export function renderDemoNotification(
 
   const text = [
     ...(failed ? [WARNING, ''] : []),
-    `New audit request from ${data.name}${data.company ? ` (${data.company})` : ''}`,
+    `New workshop request from ${data.name}${data.company ? ` (${data.company})` : ''}`,
     '',
     ...fields.map(([label, value]) => `${label}: ${value}`),
     ...(sourceFields.length

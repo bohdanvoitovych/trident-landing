@@ -1,5 +1,5 @@
 /**
- * Confirmation email to the person who sent the audit request form.
+ * Confirmation email to the person who sent the workshop request form.
  * Localized for en/de/fr/it. Any other locale gets English.
  */
 
@@ -21,57 +21,57 @@ type Copy = {
 
 const COPY: Record<string, Copy> = {
   en: {
-    subject: 'We received your audit request - Trident Software',
+    subject: 'We received your workshop request - Trident Software',
     hello: (n) => `Thank you, ${n}.`,
     intro: 'Your request is with our team. This is what you sent us:',
     labels: { name: 'Name', email: 'Email', company: 'Company', phone: 'Phone', topic: 'Topic', message: 'Message' },
     nextTitle: 'What happens next',
-    nextBody: 'An engineer will reply within <strong>2 business days</strong> to agree a time for the free audit call.',
-    nextBodyPlain: 'An engineer will reply within 2 business days to agree a time for the free audit call.',
+    nextBody: 'An engineer will reply within <strong>one business day</strong> to agree a time for the free 45-minute workshop.',
+    nextBodyPlain: 'An engineer will reply within one business day to agree a time for the free 45-minute workshop.',
     cta: 'Visit Trident Software',
     footerNote:
-      "You are getting this email because someone sent an audit request with this address on trident-software.ch. If that was not you, ignore this message.",
+      "You are getting this email because someone sent a workshop request with this address on trident-software.ch. If that was not you, ignore this message.",
   },
   de: {
-    subject: 'Ihre Audit-Anfrage ist eingegangen - Trident Software',
+    subject: 'Ihre Workshop-Anfrage ist eingegangen - Trident Software',
     hello: (n) => `Vielen Dank, ${n}.`,
     intro: 'Ihre Anfrage liegt bei unserem Team. Das haben Sie uns geschickt:',
     labels: { name: 'Name', email: 'E-Mail', company: 'Unternehmen', phone: 'Telefon', topic: 'Thema', message: 'Nachricht' },
     nextTitle: 'Wie es weitergeht',
     nextBody:
-      'Ein Ingenieur meldet sich innerhalb von <strong>2 Werktagen</strong> bei Ihnen, um einen Termin für das kostenlose Audit-Gespräch zu vereinbaren.',
+      'Ein Ingenieur meldet sich innert <strong>eines Arbeitstags</strong> bei Ihnen, um einen Termin für den kostenlosen 45-minütigen Workshop zu vereinbaren.',
     nextBodyPlain:
-      'Ein Ingenieur meldet sich innerhalb von 2 Werktagen bei Ihnen, um einen Termin für das kostenlose Audit-Gespräch zu vereinbaren.',
+      'Ein Ingenieur meldet sich innert eines Arbeitstags bei Ihnen, um einen Termin für den kostenlosen 45-minütigen Workshop zu vereinbaren.',
     cta: 'Trident Software besuchen',
     footerNote:
-      'Sie erhalten diese E-Mail, weil jemand auf trident-software.ch eine Audit-Anfrage mit dieser Adresse gesendet hat. Waren Sie das nicht, können Sie die Nachricht ignorieren.',
+      'Sie erhalten diese E-Mail, weil jemand auf trident-software.ch eine Workshop-Anfrage mit dieser Adresse gesendet hat. Waren Sie das nicht, können Sie die Nachricht ignorieren.',
   },
   fr: {
-    subject: "Nous avons bien reçu votre demande d'audit - Trident Software",
+    subject: 'Nous avons bien reçu votre demande de workshop - Trident Software',
     hello: (n) => `Merci, ${n}.`,
     intro: 'Votre demande est entre les mains de notre équipe. Voici ce que vous nous avez envoyé :',
     labels: { name: 'Nom', email: 'E-mail', company: 'Société', phone: 'Téléphone', topic: 'Sujet', message: 'Message' },
     nextTitle: 'La suite',
     nextBody:
-      'Un ingénieur vous répondra sous <strong>2 jours ouvrés</strong> pour fixer un créneau pour l\'appel d\'audit gratuit.',
-    nextBodyPlain: "Un ingénieur vous répondra sous 2 jours ouvrés pour fixer un créneau pour l'appel d'audit gratuit.",
+      'Un ingénieur vous répondra sous <strong>un jour ouvré</strong> pour fixer un créneau pour le workshop gratuit de 45 minutes.',
+    nextBodyPlain: 'Un ingénieur vous répondra sous un jour ouvré pour fixer un créneau pour le workshop gratuit de 45 minutes.',
     cta: 'Découvrir Trident Software',
     footerNote:
-      "Vous recevez cet e-mail car une demande d'audit a été envoyée avec cette adresse sur trident-software.ch. Si ce n'était pas vous, ignorez ce message.",
+      "Vous recevez cet e-mail car une demande de workshop a été envoyée avec cette adresse sur trident-software.ch. Si ce n'était pas vous, ignorez ce message.",
   },
   it: {
-    subject: 'Abbiamo ricevuto la tua richiesta di audit - Trident Software',
+    subject: 'Abbiamo ricevuto la tua richiesta di workshop - Trident Software',
     hello: (n) => `Grazie, ${n}.`,
     intro: 'La tua richiesta è arrivata al nostro team. Ecco cosa ci hai inviato:',
     labels: { name: 'Nome', email: 'Email', company: 'Azienda', phone: 'Telefono', topic: 'Argomento', message: 'Messaggio' },
     nextTitle: 'Cosa succede ora',
     nextBody:
-      'Un ingegnere ti risponderà entro <strong>2 giorni lavorativi</strong> per fissare un orario per la chiamata di audit gratuita.',
+      'Un ingegnere ti risponderà entro <strong>un giorno lavorativo</strong> per fissare un orario per il workshop gratuito di 45 minuti.',
     nextBodyPlain:
-      'Un ingegnere ti risponderà entro 2 giorni lavorativi per fissare un orario per la chiamata di audit gratuita.',
+      'Un ingegnere ti risponderà entro un giorno lavorativo per fissare un orario per il workshop gratuito di 45 minuti.',
     cta: 'Visita Trident Software',
     footerNote:
-      "Ricevi questa email perché qualcuno ha inviato una richiesta di audit con questo indirizzo su trident-software.ch. Se non sei stato tu, ignora questo messaggio.",
+      "Ricevi questa email perché qualcuno ha inviato una richiesta di workshop con questo indirizzo su trident-software.ch. Se non sei stato tu, ignora questo messaggio.",
   },
 }
 

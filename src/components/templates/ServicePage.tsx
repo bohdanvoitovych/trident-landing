@@ -95,7 +95,12 @@ export function ServicePage({ service }: Props) {
       {/* Tech stack */}
       <section className="section section--alt" aria-labelledby="stack-h">
         <div className="container">
-          <SectionHeader id="stack-h" label={t('techStack')} title={tp('stackTitle')} />
+          {/* The CTO service lists areas of work, not technologies. */}
+          {service.slug === 'cto-as-a-service' ? (
+            <SectionHeader id="stack-h" label={tp('scopeLabel')} title={tp('stackTitleCto')} />
+          ) : (
+            <SectionHeader id="stack-h" label={t('techStack')} title={tp('stackTitle')} />
+          )}
           <ul className="reveal flex flex-wrap gap-2" style={{ listStyle: 'none', margin: 0, padding: 0 }}>
             {service.techStack.map((tech) => (
               <li key={tech} className="rounded-sm border border-line bg-white px-3 py-1.5 text-[14px] font-medium text-ink">

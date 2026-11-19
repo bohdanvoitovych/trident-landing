@@ -33,11 +33,11 @@ export default function RootNotFound() {
           <div className="nf-in">
             <span className="nf-label">Error 404</span>
             <span className="nf-num" aria-hidden="true">404</span>
-            <h1>Page Not Found</h1>
+            <h1>Page not found</h1>
             <p>The page you&apos;re looking for doesn&apos;t exist.</p>
             <div className="nf-actions">
-              <Link href="/" className="nf-btn nf-primary">Go to Homepage →</Link>
-              <Link href="/services" className="nf-btn nf-outline">Our Services</Link>
+              <Link href="/" className="nf-btn nf-primary">Go to homepage →</Link>
+              <Link href="/services" className="nf-btn nf-outline">Our services</Link>
             </div>
           </div>
         </main>

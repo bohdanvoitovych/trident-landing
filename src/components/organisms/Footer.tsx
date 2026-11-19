@@ -50,7 +50,7 @@ export function Footer() {
   const t = useTranslations('ui')
   const tc = useTranslations('chrome.footer')
   const year = new Date().getFullYear()
-  const steps = ['1', '2', '3', '4'] as const
+  const steps = ['1', '2', '3', '4', '5'] as const
 
   return (
     <footer className="site-footer section--dark" id="contact">

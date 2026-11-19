@@ -27,7 +27,7 @@ const contactInfo = [
   },
 ] as const
 
-const STEPS = ['review', 'discovery', 'scope', 'kickoff'] as const
+const STEPS = ['review', 'discovery', 'prototype', 'scope', 'kickoff'] as const
 
 export default function ContactPage() {
   const t = useTranslations('pages.contact')

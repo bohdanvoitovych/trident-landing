@@ -14,7 +14,7 @@ export async function generateMetadata() {
   const t = await getTranslations({ locale, namespace: 'pages.useCases' })
   return buildMetadata({
     title: t('metaTitle'),
-    description: `${t('title')}. ${t('lead')}`,
+    description: t('metaDescription'),
     path: '/use-cases',
     locale,
   })

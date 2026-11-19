@@ -19,10 +19,10 @@ const SCRIPTS: Record<string, Script> = {
     status: 'Online · Sat 21:47',
     lines: [
       { kind: 'in', text: 'Evening — can you deliver 0/16 gravel to Sierre on Monday? 8 tonnes.', meta: 'EN · 21:47' },
-      { kind: 'out', text: 'Evening! Yes, 8 t of 0/16 gravel is in stock. Monday I can offer 07:30 or 13:00 in Sierre.', meta: 'Agent · 4 s' },
+      { kind: 'out', text: 'Evening! Yes, 8 t of 0/16 gravel is in stock. On Monday I can offer 07:30 or 13:00 in Sierre.', meta: 'Agent · 4 s' },
       { kind: 'in', text: '07:30 works.', meta: 'EN · 21:48' },
       { kind: 'card', title: 'Delivery confirmed', badge: 'QR-bill sent', detail: 'Mon 07:30 · Sierre · 8 t' },
-      { kind: 'out', text: "That's booked. The QR invoice and truck tracking are on their way by e-mail.", meta: 'Agent · 3 s · CRM updated' },
+      { kind: 'out', text: "That's booked. The QR-bill and tracking link are on their way by e-mail.", meta: 'Agent · 3 s · CRM updated' },
     ],
   },
   de: {
