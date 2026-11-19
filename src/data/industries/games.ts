@@ -8,10 +8,10 @@ const record: IndustryRecord = {
   relatedServices: ['software-engineering'],
   content: {
     en: {
-      title: 'Gaming & Interactive',
+      title: 'Gaming & interactive',
       tagline: 'Backend and tooling for game studios',
       description:
-        'Game backend services, matchmaking systems, in-game economy platforms, and live ops tooling for mobile game studios, indie developers, and serious game companies.',
+        'Game backend services, matchmaking systems, in-game economy platforms, and live ops tooling for mobile game studios, indie developers, and serious-games companies.',
       challenges: [
         {
           title: 'Latency and scalability',
@@ -47,7 +47,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Game development backend & infrastructure | Trident Software',
         description:
-          'Game backend services: matchmaking, live ops, virtual economies, player data. Swiss engineering for game studios.',
+          'Game backend services: matchmaking, live ops, virtual economies, player data. For game studios. Swiss company, engineering team since 2009.',
       },
     },
     de: {
@@ -92,7 +92,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Game-Backend & Infrastruktur entwickeln | Trident Software',
         description:
-          'Game-Backend-Services: Matchmaking, Live Ops, virtuelle Ökonomien, Spielerdaten. Schweizer Entwicklung für Game-Studios.',
+          'Game-Backend-Services: Matchmaking, Live Ops, virtuelle Ökonomien, Spielerdaten. Für Game-Studios. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -139,7 +139,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Backend et infrastructure de jeux vidéo | Trident Software',
         description:
-          'Services backend de jeu : matchmaking, live ops, économies virtuelles, données joueurs. Ingénierie suisse pour studios de jeux.',
+          "Services backend de jeu : matchmaking, live ops, économies virtuelles, données joueurs. Pour les studios de jeux. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -184,7 +184,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Backend e infrastruttura per videogiochi | Trident Software',
         description:
-          'Servizi backend per giochi: matchmaking, live ops, economie virtuali, dati dei giocatori. Ingegneria svizzera per studi di videogiochi.',
+          'Servizi backend per giochi: matchmaking, live ops, economie virtuali, dati dei giocatori. Per studi di videogiochi. Azienda svizzera, team di ingegneria dal 2009.',
       },
     },
   },

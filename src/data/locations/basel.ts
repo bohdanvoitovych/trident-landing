@@ -32,7 +32,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Software development Basel | Pharma & life sciences IT | Trident Software',
         description:
-          "Medical device software, lab automation, and regulatory platforms for Basel's pharma and medtech sector. IEC 62304, GMP-compliant development. Swiss team.",
+          "Medical device software, lab automation, and regulatory platforms for Basel's pharma and medtech sector. IEC 62304, GMP-compliant development.",
       },
     },
     de: {
@@ -62,7 +62,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Softwareentwicklung Basel | Pharma & Life Sciences | Trident',
         description:
-          'Medizinprodukte-Software, Laborautomation und Zulassungsplattformen für Pharma und Medtech in Basel. Entwicklung nach IEC 62304 und GMP. Schweizer Team.',
+          'Medizinprodukte-Software, Laborautomation und Zulassungsplattformen für Pharma und Medtech in Basel. Entwicklung nach IEC 62304 und GMP.',
       },
     },
     fr: {
@@ -122,7 +122,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Sviluppo software Basilea | Farma & life sciences | Trident',
         description:
-          'Software per dispositivi medici, automazione di laboratorio e piattaforme regolatorie per farma e medtech a Basilea. IEC 62304, conformità GMP. Team svizzero.',
+          'Software per dispositivi medici, automazione di laboratorio e piattaforme regolatorie per farma e medtech a Basilea. IEC 62304, conformità GMP.',
       },
     },
   },

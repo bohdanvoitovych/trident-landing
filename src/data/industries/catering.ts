@@ -8,7 +8,7 @@ const record: IndustryRecord = {
   relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
-      title: 'Catering & Food Service',
+      title: 'Catering & food service',
       tagline: 'Operations software for professional kitchens and caterers',
       description:
         'Event catering management, recipe costing, staff scheduling, and client ordering platforms for catering companies, contract food service operators, and cloud kitchens.',
@@ -47,7 +47,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Catering & food service software | Trident Software',
         description:
-          'Catering software: event management, recipe costing, client ordering portals, staff scheduling. Swiss engineering.',
+          'Catering software: event management, recipe costing, client ordering portals, staff scheduling. Swiss company, engineering team since 2009.',
       },
     },
     de: {
@@ -91,7 +91,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Software für Catering & Gastronomie | Trident Software',
         description:
-          'Catering-Software: Eventverwaltung, Rezeptkalkulation, Bestellportale für Firmenkunden, Personalplanung. Entwickelt in der Schweiz.',
+          'Catering-Software: Eventverwaltung, Rezeptkalkulation, Bestellportale für Firmenkunden, Personalplanung. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -137,7 +137,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Logiciel traiteur & restauration | Trident Software',
         description:
-          "Logiciels pour traiteurs : gestion d'événements, coût des recettes, portails de commande, plannings du personnel. Ingénierie suisse.",
+          "Logiciels pour traiteurs : gestion d'événements, coût des recettes, portails de commande, plannings du personnel. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -184,7 +184,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Software per catering & ristorazione | Trident Software',
         description:
-          'Software per il catering: gestione eventi, calcolo del costo ricette, portali ordini per aziende, turni del personale. Ingegneria svizzera.',
+          'Software per il catering: gestione eventi, calcolo del costo ricette, portali ordini per aziende, turni del personale. Azienda svizzera, team di ingegneria dal 2009.',
       },
     },
   },

@@ -9,9 +9,9 @@ const record: IndustryRecord = {
   content: {
     en: {
       title: 'Startups and scale-ups: CTO as a Service',
-      tagline: 'The one entry in our industry list that is not an agent.',
+      tagline: 'The one entry on this list that is not about agents.',
       description:
-        'A founding team with no technical leader, or one that has outgrown its first developers, buys days per month of ours instead of a hire.',
+        'A founding team with no technical leader, or one that has outgrown its first developers, buys a set number of our days each month instead of hiring.',
       challenges: [
         {
           title: 'What a technical co-founder would normally decide',
@@ -23,7 +23,7 @@ const record: IndustryRecord = {
         {
           title: 'Bought in days, not headcount',
           description:
-            'Days per month of ours instead of a hire, and the deliverable is a decision you can defend to a board.',
+            'A set number of our days each month instead of a hire. The deliverable is a decision you can defend to a board.',
         },
         {
           title: 'Works the other way round too',

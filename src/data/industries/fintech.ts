@@ -8,10 +8,10 @@ const record: IndustryRecord = {
   relatedServices: ['software-engineering'],
   content: {
     en: {
-      title: 'Fintech & Finance',
-      tagline: 'Secure financial software under Swiss banking standards',
+      title: 'Fintech and finance',
+      tagline: 'Secure software for banking, payments and portfolio management',
       description:
-        'Banking integrations, payment processing, portfolio management tools and regulatory reporting systems built to Swiss financial sector standards.',
+        'We build banking integrations, payment processing, portfolio management tools and regulatory reporting systems.',
       challenges: [
         {
           title: 'Banking regulations',
@@ -47,14 +47,14 @@ const record: IndustryRecord = {
       meta: {
         title: 'Fintech & financial software development | Trident Software',
         description:
-          'Fintech software development: banking integrations, payment processing, portfolio management. Built for FINMA requirements. Swiss engineering.',
+          'Fintech software development: banking integrations, payment processing, portfolio management. Built for FINMA requirements. Engineering team since 2009.',
       },
     },
     de: {
       title: 'Fintech & Finanzwesen',
-      tagline: 'Sichere Finanzsoftware nach Schweizer Bankenstandards',
+      tagline: 'Sichere Software für Banking, Zahlungsverkehr und Portfoliomanagement',
       description:
-        'Bankanbindungen, Zahlungsverarbeitung, Tools für das Portfoliomanagement und Systeme für das regulatorische Reporting, gebaut nach den höchsten Standards des Schweizer Finanzsektors.',
+        'Wir entwickeln Bankanbindungen, Zahlungsverarbeitung, Tools für das Portfoliomanagement und Systeme für das regulatorische Reporting.',
       challenges: [
         {
           title: 'Bankenregulierung',
@@ -91,14 +91,14 @@ const record: IndustryRecord = {
       meta: {
         title: 'Fintech- & Finanzsoftware-Entwicklung | Trident Software',
         description:
-          'Fintech-Softwareentwicklung: Bankanbindungen, Zahlungsverarbeitung, Portfoliomanagement. Auf FINMA-Anforderungen ausgelegt. Engineering aus der Schweiz.',
+          'Fintech-Softwareentwicklung: Bankanbindungen, Zahlungsverarbeitung, Portfoliomanagement. Auf FINMA-Anforderungen ausgelegt. Engineering-Team seit 2009.',
       },
     },
     fr: {
       title: 'Fintech & Finance',
-      tagline: 'Des logiciels financiers sécurisés aux standards bancaires suisses',
+      tagline: 'Des logiciels sécurisés pour la banque, les paiements et la gestion de portefeuille',
       description:
-        'Intégrations bancaires, traitement des paiements, outils de gestion de portefeuille et systèmes de reporting réglementaire, conçus selon les standards les plus élevés de la place financière suisse.',
+        'Nous développons des intégrations bancaires, le traitement des paiements, des outils de gestion de portefeuille et des systèmes de reporting réglementaire.',
       challenges: [
         {
           title: 'Réglementation bancaire',
@@ -135,14 +135,14 @@ const record: IndustryRecord = {
       meta: {
         title: 'Développement logiciel fintech & finance | Trident Software',
         description:
-          'Développement fintech : intégrations bancaires, traitement des paiements, gestion de portefeuille. Conçu pour les exigences FINMA. Ingénierie suisse.',
+          "Développement fintech : intégrations bancaires, traitement des paiements, gestion de portefeuille. Conçu pour les exigences FINMA. Équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
       title: 'Fintech & Finanza',
-      tagline: 'Software finanziario sicuro secondo gli standard bancari svizzeri',
+      tagline: 'Software sicuro per banking, pagamenti e gestione del portafoglio',
       description:
-        'Integrazioni bancarie, elaborazione dei pagamenti, strumenti di gestione del portafoglio e sistemi di reporting normativo, costruiti secondo gli standard più alti della piazza finanziaria svizzera.',
+        'Sviluppiamo integrazioni bancarie, elaborazione dei pagamenti, strumenti di gestione del portafoglio e sistemi di reporting normativo.',
       challenges: [
         {
           title: 'Regolamentazione bancaria',
@@ -179,7 +179,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Sviluppo software fintech & finanza | Trident Software',
         description:
-          'Sviluppo fintech: integrazioni bancarie, elaborazione dei pagamenti, gestione del portafoglio. Progettato per i requisiti FINMA. Ingegneria svizzera.',
+          'Sviluppo fintech: integrazioni bancarie, elaborazione dei pagamenti, gestione del portafoglio. Progettato per i requisiti FINMA. Team di ingegneria dal 2009.',
       },
     },
   },

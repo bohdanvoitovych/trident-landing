@@ -8,7 +8,7 @@ const record: IndustryRecord = {
   relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
-      title: 'SaaS & Software Products',
+      title: 'SaaS & software products',
       tagline: 'From MVP to scalable multi-tenant platform',
       description:
         'We build SaaS products from the ground up: multi-tenant architecture, subscription billing, usage analytics and white-label capabilities for software companies and startups.',
@@ -23,7 +23,7 @@ const record: IndustryRecord = {
         },
         {
           title: 'Scaling architecture',
-          description: 'Moving from MVP architecture to systems that handle 100x growth.',
+          description: 'Moving from MVP architecture to systems that handle a hundredfold increase in load.',
         },
       ],
       solutions: [
@@ -47,7 +47,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'SaaS development services | Trident Software',
         description:
-          'SaaS product development: multi-tenant architecture, subscription billing, AI features. From MVP to scale. Swiss engineering.',
+          'SaaS product development: multi-tenant architecture, subscription billing, AI features. From MVP to scale. Swiss company, engineering team since 2009.',
       },
     },
     de: {
@@ -91,7 +91,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'SaaS-Entwicklung | Trident Software',
         description:
-          'SaaS-Produktentwicklung: mandantenfähige Architektur, Abo-Abrechnung, KI-Funktionen. Vom MVP bis zur Skalierung. Engineering aus der Schweiz.',
+          'SaaS-Produktentwicklung: mandantenfähige Architektur, Abo-Abrechnung, KI-Funktionen. Vom MVP bis zur Skalierung. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -135,7 +135,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Développement SaaS | Trident Software',
         description:
-          "Développement de produits SaaS : architecture multi-tenant, facturation par abonnement, fonctions IA. Du MVP à l'échelle. Ingénierie suisse.",
+          "Développement de produits SaaS : architecture multi-tenant, facturation par abonnement, fonctions IA. Du MVP à l'échelle. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -179,7 +179,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Sviluppo SaaS | Trident Software',
         description:
-          "Sviluppo di prodotti SaaS: architettura multi-tenant, fatturazione in abbonamento, funzioni IA. Dall'MVP alla scala. Ingegneria svizzera.",
+          "Sviluppo di prodotti SaaS: architettura multi-tenant, fatturazione in abbonamento, funzioni IA. Dall'MVP alla scala. Azienda svizzera, team di ingegneria dal 2009.",
       },
     },
   },

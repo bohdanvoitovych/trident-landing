@@ -60,7 +60,7 @@ const records: SolutionRecord[] = [
           {
             slug: 'sme-website',
             name: 'SME Website',
-            price: 'CHF 1,299',
+            price: "CHF 1'299",
             timeline: '1 month',
             highlighted: true,
             description:
@@ -77,22 +77,22 @@ const records: SolutionRecord[] = [
           {
             slug: 'user-portal',
             name: 'User Portal',
-            price: 'CHF 2,499',
-            timeline: '1.5 months',
+            price: "CHF 2'499",
+            timeline: '6 weeks',
             description:
               'A site with logins and personal accounts, for businesses that serve registered clients, members or partners.',
             target: ['B2G/B2E companies', 'Educational institutions', 'Partner portals'],
             features: [
               'Everything in SME Website',
               'Sign-up / sign-in / password reset',
-              'Personal account',
+              'User account area',
               'User management',
             ],
           },
           {
             slug: 'online-boutique',
             name: 'Online Store',
-            price: 'CHF 6,999',
+            price: "CHF 6'999",
             timeline: '2 months',
             description:
               'A complete online shop with catalogue, checkout, order management and inventory built in.',
@@ -101,7 +101,7 @@ const records: SolutionRecord[] = [
               'Everything in User Portal',
               'Catalogue + wishlist + cart',
               'Checkout + orders',
-              'Products & order management',
+              'Product and order management',
             ],
           },
         ],
@@ -109,7 +109,7 @@ const records: SolutionRecord[] = [
           {
             title: 'Fixed price, fixed timeline',
             description:
-              'Every package has a defined scope and delivery date. No hourly billing, no scope creep surprises.',
+              'Every package has a defined scope, a delivery date and a fixed price. You know the cost before we start.',
           },
           {
             title: 'Swiss SEO included',
@@ -120,12 +120,12 @@ const records: SolutionRecord[] = [
             description: 'All designs are mobile-first and tested across devices before delivery.',
           },
           {
-            title: 'Money-back guarantee',
-            description: 'If we miss the agreed timeline without good reason, you get a partial refund.',
+            title: 'Late-delivery refund',
+            description: 'If we miss the agreed timeline without good reason, we refund part of the price.',
           },
         ],
         meta: {
-          title: 'Website Development Switzerland — Trident Software',
+          title: 'Website development Switzerland | Trident Software',
           description:
             'Fixed-price website packages for Swiss SMEs. Web brochure from CHF 599. SME website, user portals, online stores. Delivered in 2 weeks to 2 months.',
         },
@@ -154,7 +154,7 @@ const records: SolutionRecord[] = [
           {
             slug: 'sme-website',
             name: 'KMU-Website',
-            price: 'CHF 1,299',
+            price: "CHF 1'299",
             timeline: '1 Monat',
             highlighted: true,
             description:
@@ -171,8 +171,8 @@ const records: SolutionRecord[] = [
           {
             slug: 'user-portal',
             name: 'Kundenportal',
-            price: 'CHF 2,499',
-            timeline: '1,5 Monate',
+            price: "CHF 2'499",
+            timeline: '6 Wochen',
             description:
               'Eine interaktive Plattform mit Login und persönlichen Konten, für Unternehmen mit registrierten Kunden, Mitgliedern oder Partnern.',
             target: ['B2G-/B2E-Unternehmen', 'Bildungseinrichtungen', 'Partnerportale'],
@@ -186,7 +186,7 @@ const records: SolutionRecord[] = [
           {
             slug: 'online-boutique',
             name: 'Onlineshop',
-            price: 'CHF 6,999',
+            price: "CHF 6'999",
             timeline: '2 Monate',
             description:
               'Eine komplette E-Commerce-Lösung für den Onlineverkauf, mit Katalog, Checkout, Bestellverwaltung und Lagerverwaltung.',
@@ -216,7 +216,7 @@ const records: SolutionRecord[] = [
               'Alle Designs entstehen zuerst für Mobilgeräte und werden vor der Übergabe auf verschiedenen Geräten getestet.',
           },
           {
-            title: 'Geld-zurück-Garantie',
+            title: 'Rückerstattung bei Verspätung',
             description:
               'Verpassen wir den vereinbarten Termin ohne triftigen Grund, erhalten Sie einen Teil des Preises zurück.',
           },
@@ -251,7 +251,7 @@ const records: SolutionRecord[] = [
           {
             slug: 'sme-website',
             name: 'Site PME',
-            price: 'CHF 1,299',
+            price: "CHF 1'299",
             timeline: '1 mois',
             highlighted: true,
             description:
@@ -268,8 +268,8 @@ const records: SolutionRecord[] = [
           {
             slug: 'user-portal',
             name: 'Portail utilisateur',
-            price: 'CHF 2,499',
-            timeline: '1,5 mois',
+            price: "CHF 2'499",
+            timeline: '6 semaines',
             description:
               'Une plateforme interactive avec authentification et comptes personnels, pour les entreprises qui servent des clients, membres ou partenaires inscrits.',
             target: ['Entreprises B2G/B2E', 'Établissements de formation', 'Portails partenaires'],
@@ -283,7 +283,7 @@ const records: SolutionRecord[] = [
           {
             slug: 'online-boutique',
             name: 'Boutique en ligne',
-            price: 'CHF 6,999',
+            price: "CHF 6'999",
             timeline: '2 mois',
             description:
               'Une solution e-commerce complète pour vendre en ligne : catalogue, paiement, gestion des commandes et des stocks inclus.',
@@ -313,7 +313,7 @@ const records: SolutionRecord[] = [
               "Tous les designs sont pensés d'abord pour le mobile et testés sur différents appareils avant la livraison.",
           },
           {
-            title: 'Garantie de remboursement',
+            title: 'Remboursement en cas de retard',
             description: 'Si nous dépassons le délai convenu sans raison valable, vous êtes remboursé en partie.',
           },
         ],
@@ -347,7 +347,7 @@ const records: SolutionRecord[] = [
           {
             slug: 'sme-website',
             name: 'Sito PMI',
-            price: 'CHF 1,299',
+            price: "CHF 1'299",
             timeline: '1 mese',
             highlighted: true,
             description:
@@ -364,8 +364,8 @@ const records: SolutionRecord[] = [
           {
             slug: 'user-portal',
             name: 'Portale utenti',
-            price: 'CHF 2,499',
-            timeline: '1,5 mesi',
+            price: "CHF 2'499",
+            timeline: '6 settimane',
             description:
               'Una piattaforma interattiva con autenticazione e account personali, per aziende che servono clienti, soci o partner registrati.',
             target: ['Aziende B2G/B2E', 'Istituti di formazione', 'Portali per partner'],
@@ -379,7 +379,7 @@ const records: SolutionRecord[] = [
           {
             slug: 'online-boutique',
             name: 'Negozio online',
-            price: 'CHF 6,999',
+            price: "CHF 6'999",
             timeline: '2 mesi',
             description:
               'Una soluzione e-commerce completa per vendere online, con catalogo, checkout, gestione ordini e magazzino già inclusi.',
@@ -408,7 +408,7 @@ const records: SolutionRecord[] = [
               'Tutti i design nascono per il mobile e vengono testati su diversi dispositivi prima della consegna.',
           },
           {
-            title: 'Garanzia soddisfatti o rimborsati',
+            title: 'Rimborso in caso di ritardo',
             description: 'Se manchiamo la scadenza concordata senza un valido motivo, ricevi un rimborso parziale.',
           },
         ],
@@ -437,7 +437,7 @@ const records: SolutionRecord[] = [
     content: {
       en: {
         title: 'E-commerce solutions',
-        tagline: 'Custom B2B, B2C and B2X platforms, from MVP to 1M+ products',
+        tagline: 'Custom B2B and B2C platforms, from MVP to 1M+ products',
         description:
           'We build e-commerce platforms for Swiss and European businesses, from customised WooCommerce shops to bespoke B2B platforms with complex pricing, ERP integration and 200+ connectors.',
         features: [
@@ -452,7 +452,7 @@ const records: SolutionRecord[] = [
           },
           {
             title: 'AI-powered features',
-            description: 'Product recommendations, predictive analytics, chatbots and virtual assistants built in.',
+            description: 'Product recommendations, predictive analytics and AI assistants built in.',
           },
           {
             title: 'Marketplace development',
@@ -468,14 +468,14 @@ const records: SolutionRecord[] = [
           },
         ],
         meta: {
-          title: 'Custom E-commerce Development Switzerland — Trident Software',
+          title: 'Custom e-commerce development Switzerland | Trident Software',
           description:
-            'Custom B2B/B2C/B2X e-commerce platforms built for Swiss companies. From WooCommerce to fully bespoke platforms with ERP integration.',
+            'Custom B2B and B2C e-commerce platforms built for Swiss companies. From WooCommerce to fully bespoke platforms with ERP integration.',
         },
       },
       de: {
         title: 'E-Commerce-Lösungen',
-        tagline: 'Individuelle B2B-, B2C- und B2X-Plattformen, vom MVP bis zu über 1 Mio. Produkten',
+        tagline: 'Individuelle B2B- und B2C-Plattformen, vom MVP bis zu über 1 Mio. Produkten',
         description:
           'Wir entwickeln individuelle E-Commerce-Plattformen für Unternehmen in der Schweiz und Europa. Von angepassten WooCommerce-Shops bis zu vollständig massgeschneiderten B2B-Plattformen mit komplexer Preislogik, ERP-Anbindung und über 200 Konnektoren.',
         features: [
@@ -512,12 +512,12 @@ const records: SolutionRecord[] = [
         meta: {
           title: 'E-Commerce-Entwicklung Schweiz | Trident Software',
           description:
-            'Individuelle B2B-, B2C- und B2X-Shops für Schweizer Unternehmen. Von WooCommerce bis zur massgeschneiderten Lösung mit ERP-Anbindung.',
+            'Individuelle B2B- und B2C-Shops für Schweizer Unternehmen. Von WooCommerce bis zur massgeschneiderten Lösung mit ERP-Anbindung.',
         },
       },
       fr: {
         title: 'Solutions e-commerce',
-        tagline: "Plateformes B2B, B2C et B2X sur mesure, du MVP à plus d'un million de produits",
+        tagline: "Plateformes B2B et B2C sur mesure, du MVP à plus d'un million de produits",
         description:
           'Nous développons des plateformes e-commerce sur mesure pour les entreprises suisses et européennes. De la personnalisation de WooCommerce aux plateformes B2B entièrement sur mesure, avec tarification complexe, intégration ERP et plus de 200 connecteurs.',
         features: [
@@ -554,12 +554,12 @@ const records: SolutionRecord[] = [
         meta: {
           title: 'E-commerce sur mesure en Suisse | Trident Software',
           description:
-            'Plateformes e-commerce B2B/B2C/B2X sur mesure pour entreprises suisses. De WooCommerce aux solutions entièrement sur mesure avec intégration ERP.',
+            'Plateformes e-commerce B2B et B2C sur mesure pour entreprises suisses. De WooCommerce aux solutions entièrement sur mesure avec intégration ERP.',
         },
       },
       it: {
         title: 'Soluzioni e-commerce',
-        tagline: 'Piattaforme B2B, B2C e B2X su misura, dal MVP a oltre 1 milione di prodotti',
+        tagline: 'Piattaforme B2B e B2C su misura, dal MVP a oltre 1 milione di prodotti',
         description:
           'Sviluppiamo piattaforme e-commerce su misura per aziende svizzere ed europee. Dalla personalizzazione di WooCommerce a piattaforme B2B completamente su misura, con prezzi complessi, integrazione ERP e oltre 200 connettori.',
         features: [
@@ -595,7 +595,7 @@ const records: SolutionRecord[] = [
         meta: {
           title: 'Sviluppo e-commerce su misura Svizzera | Trident Software',
           description:
-            'Piattaforme e-commerce B2B/B2C/B2X su misura per aziende svizzere. Da WooCommerce a soluzioni completamente personalizzate con integrazione ERP.',
+            'Piattaforme e-commerce B2B e B2C su misura per aziende svizzere. Da WooCommerce a soluzioni completamente personalizzate con integrazione ERP.',
         },
       },
     },
@@ -608,7 +608,7 @@ const records: SolutionRecord[] = [
         title: 'Mobile app development',
         tagline: 'Native and cross-platform apps for iOS and Android',
         description:
-          'We design and build fast, easy-to-use mobile apps that scale, from consumer apps to enterprise platforms. We use React Native or Flutter and apply the same Swiss quality standards as on our web products.',
+          'We design and build fast, easy-to-use mobile apps that scale, from consumer apps to enterprise platforms. We use React Native or Flutter and apply the same engineering standards as on our web products.',
         features: [
           {
             title: 'Cross-platform (iOS + Android)',
@@ -642,7 +642,7 @@ const records: SolutionRecord[] = [
           },
         ],
         meta: {
-          title: 'Mobile App Development Switzerland — Trident Software',
+          title: 'Mobile app development Switzerland | Trident Software',
           description:
             'Custom iOS and Android apps for Swiss SMEs and enterprises. React Native, Flutter, fixed timelines. From MVP to production-ready mobile platforms.',
         },
@@ -651,7 +651,7 @@ const records: SolutionRecord[] = [
         title: 'App-Entwicklung',
         tagline: 'Native und plattformübergreifende Apps für iOS und Android',
         description:
-          'Wir konzipieren und entwickeln mobile Apps, die schnell, intuitiv und skalierbar sind. Von Apps für Endkunden bis zu mobilen Unternehmensplattformen: mit React Native oder Flutter und mit derselben Schweizer Qualität wie unsere Webprodukte.',
+          'Wir konzipieren und entwickeln mobile Apps, die schnell, intuitiv und skalierbar sind. Von Apps für Endkunden bis zu mobilen Unternehmensplattformen: mit React Native oder Flutter und mit denselben technischen Standards wie bei unseren Webprodukten.',
         features: [
           {
             title: 'Plattformübergreifend (iOS + Android)',
@@ -694,7 +694,7 @@ const records: SolutionRecord[] = [
         title: "Développement d'applications mobiles",
         tagline: 'Applications natives et multiplateformes pour iOS et Android',
         description:
-          "Nous concevons et développons des applications mobiles rapides, intuitives et prêtes à grandir. Des applications grand public aux plateformes mobiles d'entreprise, avec React Native ou Flutter et la même exigence de qualité suisse que nos produits web.",
+          "Nous concevons et développons des applications mobiles rapides, intuitives et prêtes à grandir. Des applications grand public aux plateformes mobiles d'entreprise, avec React Native ou Flutter et les mêmes exigences techniques que pour nos produits web.",
         features: [
           {
             title: 'Multiplateforme (iOS + Android)',
@@ -737,7 +737,7 @@ const records: SolutionRecord[] = [
         title: 'Sviluppo di app mobili',
         tagline: 'App native e multipiattaforma per iOS e Android',
         description:
-          'Progettiamo e sviluppiamo app mobili veloci, intuitive e pronte a crescere. Dalle app per il grande pubblico alle piattaforme mobili aziendali, con React Native o Flutter e gli stessi standard di qualità svizzera dei nostri prodotti web.',
+          'Progettiamo e sviluppiamo app mobili veloci, intuitive e pronte a crescere. Dalle app per il grande pubblico alle piattaforme mobili aziendali, con React Native o Flutter e gli stessi standard tecnici dei nostri prodotti web.',
         features: [
           {
             title: 'Multipiattaforma (iOS + Android)',
@@ -813,7 +813,7 @@ const records: SolutionRecord[] = [
           {
             title: 'Infrastructure as Code',
             description:
-              'All infrastructure lives in Terraform or Pulumi: versioned, reviewable, reproducible. No snowflake servers.',
+              'All infrastructure lives in Terraform or Pulumi: versioned, reviewable, reproducible. No hand-configured servers.',
           },
           {
             title: 'Multi-cloud & hybrid cloud',
@@ -828,13 +828,13 @@ const records: SolutionRecord[] = [
           {
             title: 'Security & compliance',
             description:
-              'ISO 27001-compatible security practices. Vulnerability scanning, secrets management, network isolation, and audit logging.',
+              'Security practices aligned with ISO/IEC 27001. Vulnerability scanning, secrets management, network isolation, and audit logging.',
           },
         ],
         meta: {
-          title: 'Cloud Consulting Switzerland — Trident Software',
+          title: 'Cloud consulting Switzerland | Trident Software',
           description:
-            'Cloud migration, DevOps, and managed infrastructure for Swiss businesses. AWS, Azure, GCP. ISO 27001-compatible. Swiss data residency available.',
+            'Cloud migration, DevOps, and managed infrastructure for Swiss businesses. AWS, Azure, GCP. Aligned with ISO/IEC 27001. Swiss data residency available.',
         },
       },
       de: {
@@ -871,13 +871,13 @@ const records: SolutionRecord[] = [
           {
             title: 'Sicherheit & Compliance',
             description:
-              'Sicherheitspraktiken kompatibel mit ISO 27001. Schwachstellen-Scans, Verwaltung von Secrets, Netzwerkisolation und Audit-Logging.',
+              'Sicherheitspraktiken nach ISO/IEC 27001 ausgerichtet. Schwachstellen-Scans, Verwaltung von Secrets, Netzwerkisolation und Audit-Logging.',
           },
         ],
         meta: {
           title: 'Cloud-Services & Cloud-Beratung Schweiz | Trident Software',
           description:
-            'Cloud-Migration, DevOps und Managed Infrastructure für Schweizer Unternehmen. AWS, Azure, GCP. ISO 27001-kompatibel. Datenhaltung in der Schweiz möglich.',
+            'Cloud-Migration, DevOps und Managed Infrastructure für Schweizer Unternehmen. AWS, Azure, GCP. An ISO/IEC 27001 ausgerichtet. Datenhaltung in der Schweiz möglich.',
         },
       },
       fr: {
@@ -914,13 +914,13 @@ const records: SolutionRecord[] = [
           {
             title: 'Sécurité et conformité',
             description:
-              "Pratiques de sécurité compatibles ISO 27001. Analyse des vulnérabilités, gestion des secrets, isolation réseau et journalisation d'audit.",
+              "Pratiques de sécurité alignées sur l'ISO/IEC 27001. Analyse des vulnérabilités, gestion des secrets, isolation réseau et journalisation d'audit.",
           },
         ],
         meta: {
           title: 'Services et conseil cloud en Suisse | Trident Software',
           description:
-            'Migration cloud, DevOps et infrastructure gérée pour entreprises suisses. AWS, Azure, GCP. Compatible ISO 27001. Données hébergées en Suisse possible.',
+            "Migration cloud, DevOps et infrastructure gérée pour entreprises suisses. AWS, Azure, GCP. Aligné sur l'ISO/IEC 27001. Données hébergées en Suisse possible.",
         },
       },
       it: {
@@ -957,13 +957,13 @@ const records: SolutionRecord[] = [
           {
             title: 'Sicurezza e conformità',
             description:
-              'Pratiche di sicurezza compatibili con ISO 27001. Scansione delle vulnerabilità, gestione dei secret, isolamento di rete e log di audit.',
+              'Pratiche di sicurezza allineate alla ISO/IEC 27001. Scansione delle vulnerabilità, gestione dei secret, isolamento di rete e log di audit.',
           },
         ],
         meta: {
           title: 'Servizi e consulenza cloud in Svizzera | Trident Software',
           description:
-            'Migrazione cloud, DevOps e infrastruttura gestita per aziende svizzere. AWS, Azure, GCP. Compatibile ISO 27001. Dati in Svizzera su richiesta.',
+            'Migrazione cloud, DevOps e infrastruttura gestita per aziende svizzere. AWS, Azure, GCP. Allineato alla ISO/IEC 27001. Dati in Svizzera su richiesta.',
         },
       },
     },
@@ -1021,7 +1021,7 @@ const records: SolutionRecord[] = [
           },
         ],
         meta: {
-          title: 'Social Network & Community Platform Development — Trident Software',
+          title: 'Social network & community platform development | Trident Software',
           description:
             'Custom social platforms and community networks for Swiss businesses. Real-time, GDPR-compliant, scalable. From MVP to production.',
         },
@@ -1176,7 +1176,7 @@ const records: SolutionRecord[] = [
         title: 'IoT & embedded systems',
         tagline: 'Connected devices, firmware, and real-time data pipelines',
         description:
-          'We build IoT systems for automotive, healthcare, water management and industrial automation, from device firmware to cloud integration. ISO 21434 automotive compliance and medical-grade software validation available.',
+          'We build IoT systems for automotive, healthcare, water management and industrial automation, from device firmware to cloud integration.',
         features: [
           {
             title: 'Firmware & embedded software',
@@ -1201,7 +1201,7 @@ const records: SolutionRecord[] = [
           {
             title: 'Regulatory compliance',
             description:
-              'ISO 21434 for automotive cybersecurity, IEC 62443 for industrial, and medical device software validation (IEC 62304) where needed.',
+              'IEC 62443 for industrial systems and IEC 62304 for medical device software, where the project requires it.',
           },
           {
             title: 'Reliability testing',
@@ -1210,16 +1210,16 @@ const records: SolutionRecord[] = [
           },
         ],
         meta: {
-          title: 'IoT & Embedded Systems Development Switzerland — Trident Software',
+          title: 'IoT & embedded systems development Switzerland | Trident Software',
           description:
-            'IoT solutions and firmware development for automotive, healthcare, and industrial sectors. ISO 21434, medical-grade compliance. Based in Sion, Switzerland.',
+            'IoT solutions and firmware development for automotive, healthcare, and industrial sectors. Based in Sion, Switzerland.',
         },
       },
       de: {
         title: 'IoT & Embedded Systems',
         tagline: 'Vernetzte Geräte, Firmware und Datenpipelines in Echtzeit',
         description:
-          'Von der Geräte-Firmware bis zur Cloud-Anbindung: Wir entwickeln IoT-Lösungen für Automobilbranche, Gesundheitswesen, Wasserwirtschaft und Industrieautomation. Konformität mit ISO 21434 für die Automobilbranche und Validierung von Software nach Medizinstandard möglich.',
+          'Von der Geräte-Firmware bis zur Cloud-Anbindung: Wir entwickeln IoT-Lösungen für Automobilbranche, Gesundheitswesen, Wasserwirtschaft und Industrieautomation.',
         features: [
           {
             title: 'Firmware & Embedded-Software',
@@ -1244,7 +1244,7 @@ const records: SolutionRecord[] = [
           {
             title: 'Regulatorische Konformität',
             description:
-              'ISO 21434 für Cybersecurity im Fahrzeug, IEC 62443 für die Industrie und Validierung von Medizinprodukte-Software (IEC 62304), wo erforderlich.',
+              'IEC 62443 für Industriesysteme und IEC 62304 für Medizinprodukte-Software, wenn das Projekt es erfordert.',
           },
           {
             title: 'Zuverlässigkeitstests',
@@ -1255,14 +1255,14 @@ const records: SolutionRecord[] = [
         meta: {
           title: 'IoT- & Embedded-Entwicklung Schweiz | Trident Software',
           description:
-            'IoT-Lösungen und Firmware für Automobilbranche, Gesundheitswesen und Industrie. ISO 21434, Konformität nach Medizinstandard. Mit Sitz in Sion.',
+            'IoT-Lösungen und Firmware für Automobilbranche, Gesundheitswesen und Industrie. Mit Sitz in Sion.',
         },
       },
       fr: {
         title: 'IoT et systèmes embarqués',
         tagline: 'Objets connectés, firmware et flux de données en temps réel',
         description:
-          "Du firmware des appareils à l'intégration cloud, nous développons des solutions IoT pour l'automobile, la santé, la gestion de l'eau et l'automatisation industrielle. Conformité ISO 21434 pour l'automobile et validation logicielle de niveau médical disponibles.",
+          "Du firmware des appareils à l'intégration cloud, nous développons des solutions IoT pour l'automobile, la santé, la gestion de l'eau et l'automatisation industrielle.",
         features: [
           {
             title: 'Firmware et logiciel embarqué',
@@ -1287,7 +1287,7 @@ const records: SolutionRecord[] = [
           {
             title: 'Conformité réglementaire',
             description:
-              "ISO 21434 pour la cybersécurité automobile, IEC 62443 pour l'industrie et validation de logiciels de dispositifs médicaux (IEC 62304) si nécessaire.",
+              "IEC 62443 pour les systèmes industriels et IEC 62304 pour les logiciels de dispositifs médicaux, lorsque le projet l'exige.",
           },
           {
             title: 'Tests de fiabilité',
@@ -1298,14 +1298,14 @@ const records: SolutionRecord[] = [
         meta: {
           title: 'IoT et systèmes embarqués en Suisse | Trident Software',
           description:
-            "Solutions IoT et firmware pour l'automobile, la santé et l'industrie. ISO 21434, conformité de niveau médical. Basés à Sion, en Suisse.",
+            "Solutions IoT et firmware pour l'automobile, la santé et l'industrie. Basés à Sion, en Suisse.",
         },
       },
       it: {
         title: 'IoT e sistemi embedded',
         tagline: 'Dispositivi connessi, firmware e flussi di dati in tempo reale',
         description:
-          "Dal firmware dei dispositivi all'integrazione cloud: realizziamo soluzioni IoT per automotive, sanità, gestione delle acque e automazione industriale. Disponibili conformità ISO 21434 per l'automotive e validazione del software di livello medicale.",
+          "Dal firmware dei dispositivi all'integrazione cloud: realizziamo soluzioni IoT per automotive, sanità, gestione delle acque e automazione industriale.",
         features: [
           {
             title: 'Firmware e software embedded',
@@ -1330,7 +1330,7 @@ const records: SolutionRecord[] = [
           {
             title: 'Conformità normativa',
             description:
-              "ISO 21434 per la cybersecurity automotive, IEC 62443 per l'industria e validazione del software per dispositivi medici (IEC 62304) dove necessario.",
+              "IEC 62443 per i sistemi industriali e IEC 62304 per il software dei dispositivi medici, quando il progetto lo richiede.",
           },
           {
             title: 'Test di affidabilità',
@@ -1341,7 +1341,7 @@ const records: SolutionRecord[] = [
         meta: {
           title: 'Sviluppo IoT e sistemi embedded Svizzera | Trident Software',
           description:
-            'Soluzioni IoT e sviluppo firmware per automotive, sanità e industria. ISO 21434, conformità di livello medicale. Con sede a Sion, Svizzera.',
+            'Soluzioni IoT e sviluppo firmware per automotive, sanità e industria. Con sede a Sion, Svizzera.',
         },
       },
     },

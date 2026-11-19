@@ -8,7 +8,7 @@ const record: IndustryRecord = {
   relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
-      title: 'Tourism & Travel',
+      title: 'Tourism & travel',
       tagline: 'Software for tour operators and hotels',
       description:
         'Booking platforms, itinerary management, concierge apps, and travel intelligence systems for tour operators, hotels, and travel agencies across Switzerland and Europe.',
@@ -19,7 +19,7 @@ const record: IndustryRecord = {
         },
         {
           title: 'Seasonal demand spikes',
-          description: 'Infrastructure that scales for peak season without overprovisioning year-round.',
+          description: 'Infrastructure that scales for peak season without over-provisioning all year.',
         },
         {
           title: 'Multi-currency & multi-language',
@@ -47,7 +47,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Tourism & travel software development | Trident Software',
         description:
-          'Travel tech software: booking platforms, tour management, concierge apps, travel analytics. Swiss engineering.',
+          'Travel tech software: booking platforms, tour management, concierge apps, travel analytics. Swiss company, engineering team since 2009.',
       },
     },
     de: {
@@ -92,7 +92,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Software für Tourismus & Reisen | Trident Software',
         description:
-          'Software für die Reisebranche: Buchungsplattformen, Reiseveranstalter-Tools, Concierge-Apps, Reiseanalysen. Entwickelt in der Schweiz.',
+          'Software für die Reisebranche: Buchungsplattformen, Reiseveranstalter-Tools, Concierge-Apps, Reiseanalysen. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -140,7 +140,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Développement logiciel tourisme & voyages | Trident Software',
         description:
-          'Logiciels pour le tourisme : plateformes de réservation, gestion de circuits, applications de conciergerie, analyse touristique. Ingénierie suisse.',
+          "Logiciels pour le tourisme : plateformes de réservation, gestion de circuits, applications de conciergerie, analyse touristique. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -185,7 +185,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Sviluppo software per turismo & viaggi | Trident Software',
         description:
-          'Software per il turismo: piattaforme di prenotazione, gestione tour, app di concierge, analisi dei viaggi. Ingegneria svizzera.',
+          'Software per il turismo: piattaforme di prenotazione, gestione tour, app di concierge, analisi dei viaggi. Azienda svizzera, team di ingegneria dal 2009.',
       },
     },
   },

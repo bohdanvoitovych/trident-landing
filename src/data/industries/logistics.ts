@@ -8,7 +8,7 @@ const record: IndustryRecord = {
   relatedServices: ['logistics-and-operations-platforms', 'software-engineering', 'ai-services'],
   content: {
     en: {
-      title: 'Logistics & Supply Chain',
+      title: 'Logistics & supply chain',
       tagline: 'Visibility and automation for complex supply chains',
       description:
         'We build warehouse management systems, last-mile delivery platforms, route optimisation tools and supply chain visibility dashboards for logistics companies across Europe.',
@@ -47,7 +47,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Logistics & supply chain software | Trident Software',
         description:
-          'Logistics software development: WMS, last-mile delivery, route optimisation, supply chain visibility. Swiss engineering team.',
+          'Logistics software development: WMS, last-mile delivery, route optimisation, supply chain visibility. Swiss company, engineering team since 2009.',
       },
     },
     de: {
@@ -90,7 +90,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Software für Logistik & Supply Chain | Trident Software',
         description:
-          'Logistiksoftware-Entwicklung: WMS, Zustellung auf der letzten Meile, Routenoptimierung, transparente Lieferketten. Engineering-Team in der Schweiz.',
+          'Logistiksoftware-Entwicklung: WMS, Zustellung auf der letzten Meile, Routenoptimierung, transparente Lieferketten. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -135,7 +135,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Logiciels logistique & supply chain | Trident Software',
         description:
-          "Développement logiciel logistique : WMS, dernier kilomètre, optimisation des tournées, visibilité supply chain. Équipe d'ingénieurs en Suisse.",
+          "Développement logiciel logistique : WMS, dernier kilomètre, optimisation des tournées, visibilité supply chain. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -179,7 +179,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Software per logistica & supply chain | Trident Software',
         description:
-          'Sviluppo software per la logistica: WMS, ultimo miglio, ottimizzazione dei percorsi, visibilità sulla supply chain. Team di ingegneri in Svizzera.',
+          'Sviluppo software per la logistica: WMS, ultimo miglio, ottimizzazione dei percorsi, visibilità sulla supply chain. Azienda svizzera, team di ingegneria dal 2009.',
       },
     },
   },

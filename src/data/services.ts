@@ -48,36 +48,36 @@ const records: ServiceRecord[] = [
     relatedCases: ['post-acute-clinic-network', 'clinic-voice-documentation', 'fiduciary-mail-and-receipts'],
     content: {
       en: {
-        title: 'AI agents & LLM automation',
-        tagline: 'Enquiry handling, document processing, recommendation, retrieval over corporate knowledge.',
+        title: 'AI agents & process automation',
+        tagline: 'Enquiry handling, document processing, recommendation, search over company knowledge.',
         description:
           'Agents wired into your real systems, not chat widgets. We connect LLMs, RAG, OCR and speech-to-text to the processes you already run, with on-premise options for Swiss data residency.',
         features: [
           {
-            title: 'LLM Integration & RAG',
+            title: 'LLM integration & RAG',
             description:
               'Connect your documents and data to language models. On-premise options available for Swiss data residency.',
           },
           {
-            title: 'OCR & Document Processing',
+            title: 'OCR & document processing',
             description: 'Automate invoice, contract, and form processing with AI-powered extraction pipelines.',
           },
           {
-            title: 'AI Agents & Automation',
+            title: 'AI agents & automation',
             description:
               'Custom AI agents that handle repetitive workflows, data enrichment, and cross-system orchestration.',
           },
           {
-            title: 'Speech-to-Text (STT)',
+            title: 'Speech-to-text (STT)',
             description:
               'Multilingual transcription and voice command systems for industrial and healthcare applications.',
           },
           {
-            title: 'AI Model Fine-tuning',
+            title: 'AI model fine-tuning',
             description: 'Domain-specific model training on your proprietary data for better accuracy and compliance.',
           },
           {
-            title: 'On-premise LLM Deployment',
+            title: 'On-premise LLM deployment',
             description:
               'Deploy open-source models (Llama, Mistral) on your infrastructure. Data never leaves your servers.',
           },
@@ -85,12 +85,12 @@ const records: ServiceRecord[] = [
         meta: {
           title: 'AI agents & LLM automation | Trident Software',
           description:
-            'Enquiry handling, document processing, recommendation, retrieval over corporate knowledge. Agents wired into real systems, not chat widgets.',
+            'Enquiry handling, document processing, recommendation, search over company knowledge. Agents wired into real systems, not chat widgets.',
         },
         detail: AI_SERVICES_DETAIL.en,
       },
       de: {
-        title: 'KI-Agenten & LLM-Automatisierung',
+        title: 'KI-Agenten & Prozessautomatisierung',
         tagline: 'Anfragenbearbeitung, Dokumentenverarbeitung, Empfehlungen, Suche im Firmenwissen.',
         description:
           'Agenten, die an Ihre echten Systeme angebunden sind, keine Chat-Widgets. Wir verbinden LLMs, RAG, OCR und Spracherkennung mit den Abläufen, die Sie heute schon haben, auf Wunsch on-premise, damit Ihre Daten in der Schweiz bleiben.',
@@ -133,7 +133,7 @@ const records: ServiceRecord[] = [
         detail: AI_SERVICES_DETAIL.de,
       },
       fr: {
-        title: 'Agents IA & automatisation LLM',
+        title: 'Agents IA & automatisation des processus',
         tagline: "Traitement des demandes et des documents, recommandations, recherche dans le savoir de l'entreprise.",
         description:
           'Des agents branchés sur vos vrais systèmes, pas des widgets de chat. Nous relions LLM, RAG, OCR et reconnaissance vocale aux processus que vous utilisez déjà, avec des options on-premise pour garder vos données en Suisse.',
@@ -176,7 +176,7 @@ const records: ServiceRecord[] = [
         detail: AI_SERVICES_DETAIL.fr,
       },
       it: {
-        title: 'Agenti AI & automazione LLM',
+        title: 'Agenti AI & automazione dei processi',
         tagline: 'Gestione delle richieste, elaborazione documenti, raccomandazioni, ricerca nel sapere aziendale.',
         description:
           'Agenti collegati ai tuoi sistemi reali, non widget di chat. Colleghiamo LLM, RAG, OCR e riconoscimento vocale ai processi che usi già, con opzioni on-premise per tenere i dati in Svizzera.',
@@ -338,30 +338,30 @@ const records: ServiceRecord[] = [
         title: 'Custom business systems',
         tagline: 'B2B portals, integrations with ERP and accounting, migrations off legacy stacks.',
         description:
-          'From B2B e-commerce platforms to enterprise internal tools — we design, build, and maintain custom software with a focus on reliability and scalability.',
+          'From B2B e-commerce platforms to internal tools, we design, build and maintain custom software.',
         features: [
           {
-            title: 'Custom Web Applications',
+            title: 'Custom web applications',
             description: 'React, Next.js, and Node.js applications built for performance and maintainability.',
           },
           {
-            title: 'B2B Platform Development',
+            title: 'B2B platform development',
             description: 'Complex business logic, tiered pricing, multi-role access, and third-party integrations.',
           },
           {
-            title: 'API Design & Integration',
+            title: 'API design & integration',
             description: 'RESTful and GraphQL APIs, webhook systems, and third-party service integrations.',
           },
           {
-            title: 'Legacy System Migration',
-            description: 'Modernize outdated systems with minimal disruption to ongoing operations.',
+            title: 'Legacy system migration',
+            description: 'Modernise legacy systems with minimal disruption.',
           },
           {
-            title: 'Mobile Applications',
+            title: 'Mobile applications',
             description: 'Cross-platform apps with Flutter for driver, client, and admin workflows.',
           },
           {
-            title: 'QA & Testing',
+            title: 'QA & testing',
             description: 'Automated testing pipelines, load testing, and continuous quality assurance.',
           },
         ],
@@ -500,31 +500,31 @@ const records: ServiceRecord[] = [
         title: 'IoT & connected products',
         tagline: 'Firmware, cloud platform, rules engines, dealer and consumer applications for physical devices.',
         description:
-          'Firmware development, IoT sensor integration, and industrial monitoring systems. We work with automotive, medical, and industrial clients on mission-critical embedded software.',
+          'Firmware development, IoT sensor integration, and industrial monitoring systems. We build embedded software for automotive, medical and industrial clients.',
         features: [
           {
-            title: 'Firmware Development',
+            title: 'Firmware development',
             description: 'Bare-metal and RTOS-based firmware for STM32, ESP32, Raspberry Pi, and custom hardware.',
           },
           {
-            title: 'IoT Sensor Integration',
+            title: 'IoT sensor integration',
             description: 'End-to-end IoT pipelines: sensor → gateway → cloud → dashboard, with alerting and analytics.',
           },
           {
-            title: 'Industrial Monitoring',
+            title: 'Industrial monitoring',
             description: 'Real-time monitoring systems for water treatment, manufacturing, and environmental control.',
           },
           {
-            title: 'CAN Bus & Automotive Protocols',
+            title: 'CAN bus & automotive protocols',
             description: 'Vehicle diagnostics, OBD integration, and automotive communication protocols.',
           },
           {
-            title: 'Medical Device Software',
-            description: 'Software for medical devices with compliance considerations for regulated environments.',
+            title: 'Medical device software',
+            description: 'Software for medical devices, developed to IEC 62304 where required.',
           },
           {
-            title: 'Hardware-Software Integration',
-            description: 'Bridging custom hardware designs with robust software stacks and cloud connectivity.',
+            title: 'Hardware-software integration',
+            description: 'Connecting custom hardware to reliable software and the cloud.',
           },
         ],
         meta: {
@@ -537,7 +537,7 @@ const records: ServiceRecord[] = [
         title: 'IoT & vernetzte Produkte',
         tagline: 'Firmware, Cloud-Plattform, Regel-Engines, Apps für Händler und Endkunden rund um physische Geräte.',
         description:
-          'Firmware-Entwicklung, Anbindung von IoT-Sensoren und industrielle Überwachungssysteme. Für Kunden aus Automobilbranche, Medizintechnik und Industrie entwickeln wir Embedded-Software, bei der Ausfälle keine Option sind.',
+          'Firmware-Entwicklung, Anbindung von IoT-Sensoren und industrielle Überwachungssysteme. Für Kunden aus Automobilbranche, Medizintechnik und Industrie entwickeln wir Embedded-Software.',
         features: [
           {
             title: 'Firmware-Entwicklung',
@@ -559,7 +559,7 @@ const records: ServiceRecord[] = [
           },
           {
             title: 'Software für Medizinprodukte',
-            description: 'Software für Medizinprodukte, die die Anforderungen regulierter Umgebungen berücksichtigt.',
+            description: 'Software für Medizinprodukte, wo erforderlich nach IEC 62304 entwickelt.',
           },
           {
             title: 'Hardware-Software-Integration',
@@ -576,7 +576,7 @@ const records: ServiceRecord[] = [
         title: 'IoT & produits connectés',
         tagline: 'Firmware, plateforme cloud, moteurs de règles, applications pour revendeurs et clients finaux autour de vos appareils.',
         description:
-          "Développement de firmware, intégration de capteurs IoT et systèmes de surveillance industrielle. Nous travaillons avec des clients de l'automobile, du médical et de l'industrie sur des logiciels embarqués critiques.",
+          "Développement de firmware, intégration de capteurs IoT et systèmes de surveillance industrielle. Nous développons des logiciels embarqués pour des clients de l'automobile, du médical et de l'industrie.",
         features: [
           {
             title: 'Développement de firmware',
@@ -600,7 +600,7 @@ const records: ServiceRecord[] = [
           {
             title: 'Logiciels pour dispositifs médicaux',
             description:
-              'Logiciels pour dispositifs médicaux, conçus en tenant compte des exigences des environnements réglementés.',
+              'Logiciels pour dispositifs médicaux, développés selon la norme IEC 62304 lorsque cela est requis.',
           },
           {
             title: 'Intégration matériel-logiciel',
@@ -618,7 +618,7 @@ const records: ServiceRecord[] = [
         title: 'IoT & prodotti connessi',
         tagline: 'Firmware, piattaforma cloud, motori di regole, app per rivenditori e consumatori attorno ai dispositivi fisici.',
         description:
-          'Sviluppo firmware, integrazione di sensori IoT e sistemi di monitoraggio industriale. Lavoriamo con clienti del settore automobilistico, medicale e industriale su software embedded critico.',
+          'Sviluppo firmware, integrazione di sensori IoT e sistemi di monitoraggio industriale. Sviluppiamo software embedded per clienti del settore automobilistico, medicale e industriale.',
         features: [
           {
             title: 'Sviluppo firmware',
@@ -641,7 +641,7 @@ const records: ServiceRecord[] = [
           {
             title: 'Software per dispositivi medici',
             description:
-              'Software per dispositivi medici sviluppato tenendo conto dei requisiti degli ambienti regolamentati.',
+              'Software per dispositivi medici, sviluppato secondo la norma IEC 62304 quando richiesto.',
           },
           {
             title: 'Integrazione hardware-software',
@@ -670,28 +670,28 @@ const records: ServiceRecord[] = [
           'For startups and scale-ups that need senior technical leadership: architecture decisions, team building, technology strategy, and hands-on delivery oversight.',
         features: [
           {
-            title: 'Architecture & Tech Strategy',
+            title: 'Architecture & tech strategy',
             description:
               'Define the right technology stack, cloud strategy, and scalability plan for your growth stage.',
           },
           {
-            title: 'Team Building & Hiring',
+            title: 'Team building & hiring',
             description: 'Technical interviews, team structure, onboarding processes, and engineering culture.',
           },
           {
-            title: 'MVP to Product',
-            description: 'Guide your product from prototype to production-ready, avoiding common scaling pitfalls.',
+            title: 'MVP to product',
+            description: 'Take your product from prototype to production.',
           },
           {
-            title: 'Vendor & Agency Management',
+            title: 'Vendor & agency management',
             description: 'Evaluate and manage outsourced teams, agencies, and technology vendors.',
           },
           {
-            title: 'Security & Compliance Review',
-            description: 'Technical security audits, GDPR/revFADP compliance, and ISO 27001 readiness assessment.',
+            title: 'Security & compliance review',
+            description: 'Technical security audits, GDPR/revFADP compliance, and ISO/IEC 27001 readiness assessment.',
           },
           {
-            title: 'Investor & Board Reporting',
+            title: 'Investor & board reporting',
             description: 'Technical due diligence preparation and engineering KPI reporting for investors.',
           },
         ],
@@ -729,7 +729,7 @@ const records: ServiceRecord[] = [
           {
             title: 'Prüfung von Sicherheit & Compliance',
             description:
-              'Technische Sicherheitsaudits, Konformität mit DSGVO und nDSG sowie Einschätzung der Bereitschaft für ISO 27001.',
+              'Technische Sicherheitsaudits, Konformität mit DSGVO und nDSG sowie Einschätzung der Bereitschaft für ISO/IEC 27001.',
           },
           {
             title: 'Reporting für Investoren & Verwaltungsrat',
@@ -771,7 +771,7 @@ const records: ServiceRecord[] = [
           {
             title: 'Revue sécurité et conformité',
             description:
-              "Audits de sécurité techniques, conformité RGPD et nLPD, évaluation de la préparation à l'ISO 27001.",
+              "Audits de sécurité techniques, conformité RGPD et nLPD, évaluation de la préparation à l'ISO/IEC 27001.",
           },
           {
             title: "Reporting pour investisseurs et conseil d'administration",
@@ -812,7 +812,7 @@ const records: ServiceRecord[] = [
           {
             title: 'Verifica di sicurezza e conformità',
             description:
-              'Audit tecnici di sicurezza, conformità GDPR e nLPD e valutazione della preparazione alla ISO 27001.',
+              'Audit tecnici di sicurezza, conformità GDPR e nLPD e valutazione della preparazione alla ISO/IEC 27001.',
           },
           {
             title: 'Reporting per investitori e CdA',

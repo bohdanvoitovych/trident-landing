@@ -32,7 +32,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Software development Zug | Crypto Valley engineering | Trident Software',
         description:
-          "Web3 platforms, blockchain integrations, and enterprise software for Zug's Crypto Valley. Architecture built for FINMA requirements. Swiss development team.",
+          "Web3 platforms, blockchain integrations, and enterprise software for Zug's Crypto Valley. Architecture built for FINMA requirements.",
       },
     },
     de: {
@@ -68,7 +68,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Softwareentwicklung Zug | Crypto Valley | Trident Software',
         description:
-          'Web3-Plattformen, Blockchain-Integrationen und Unternehmenssoftware für das Crypto Valley in Zug. Architektur für FINMA-Anforderungen. Schweizer Entwicklungsteam.',
+          'Web3-Plattformen, Blockchain-Integrationen und Unternehmenssoftware für das Crypto Valley in Zug. Architektur für FINMA-Anforderungen.',
       },
     },
     fr: {
@@ -98,7 +98,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Développement logiciel Zoug | Crypto Valley | Trident Software',
         description:
-          "Plateformes Web3, intégrations blockchain et logiciels d'entreprise pour la Crypto Valley de Zoug. Architecture conçue pour les exigences FINMA. Équipe suisse.",
+          "Plateformes Web3, intégrations blockchain et logiciels d'entreprise pour la Crypto Valley de Zoug. Architecture conçue pour les exigences FINMA.",
       },
     },
     it: {
@@ -128,7 +128,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Sviluppo software Zugo | Crypto Valley | Trident Software',
         description:
-          'Piattaforme Web3, integrazioni blockchain e software aziendale per la Crypto Valley di Zugo. Architettura progettata per i requisiti FINMA. Team di sviluppo svizzero.',
+          'Piattaforme Web3, integrazioni blockchain e software aziendale per la Crypto Valley di Zugo. Architettura progettata per i requisiti FINMA.',
       },
     },
   },

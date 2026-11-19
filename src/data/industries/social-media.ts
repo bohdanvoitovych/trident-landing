@@ -8,7 +8,7 @@ const record: IndustryRecord = {
   relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
-      title: 'Social Media & Community',
+      title: 'Social media & community',
       tagline: 'Platforms that connect people at scale',
       description:
         'Social networking platforms, community management tools, creator economy infrastructure, and moderation systems for social apps, professional networks, and niche communities.',
@@ -48,7 +48,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Social media & community platform development | Trident Software',
         description:
-          'Social platform development: community apps, creator tools, moderation systems, social analytics. Swiss engineering.',
+          'Social platform development: community apps, creator tools, moderation systems, social analytics. Swiss company, engineering team since 2009.',
       },
     },
     de: {
@@ -93,7 +93,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Social- & Community-Plattformen | Trident Software',
         description:
-          'Entwicklung sozialer Plattformen: Community-Apps, Creator-Tools, Moderationssysteme, Social Analytics. Entwickelt in der Schweiz.',
+          'Entwicklung sozialer Plattformen: Community-Apps, Creator-Tools, Moderationssysteme, Social Analytics. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -138,7 +138,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Développement de plateformes sociales | Trident Software',
         description:
-          'Développement de plateformes sociales : applications communautaires, outils créateurs, modération, analyse sociale. Ingénierie suisse.',
+          "Développement de plateformes sociales : applications communautaires, outils créateurs, modération, analyse sociale. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -183,7 +183,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Sviluppo piattaforme social e community | Trident Software',
         description:
-          'Sviluppo di piattaforme social: app per community, strumenti per creator, moderazione, analisi social. Ingegneria svizzera.',
+          'Sviluppo di piattaforme social: app per community, strumenti per creator, moderazione, analisi social. Azienda svizzera, team di ingegneria dal 2009.',
       },
     },
   },

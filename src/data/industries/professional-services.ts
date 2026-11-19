@@ -10,18 +10,18 @@ const record: IndustryRecord = {
     en: {
       title: 'Professional services and trades',
       tagline:
-        'Craftsmen, installers, consultancies: small teams, no reception, and every missed call is a lost mandate.',
+        'Tradespeople, installers, consultancies: small teams, no reception, and every missed call is a lost job.',
       description: 'Lowest volume, but the highest value per conversation saved.',
       challenges: [
         {
           title: 'The bottleneck is reading the mail',
           description:
-            "A Swiss fiduciary keeps its clients' books, so its raw material is other people's paper. Many client companies use the firm's address as their official correspondence address, so the morning post is the mail of dozens of separate legal entities in one pile. An operator opened every letter, scanned it, read it to work out which client it belonged to and which manager was responsible, judged urgency and routed it. That was slow, and easy to forget in a profession where deadlines are statutory.",
+            "A Swiss fiduciary (accounting and trust) firm keeps its clients' books, so its raw material is other people's paper. Many client companies use the firm's address as their official correspondence address, so the morning mail holds letters for dozens of separate legal entities in one pile. An operator opened every letter, scanned it, read it to work out which client it belonged to and which manager was responsible, judged urgency and routed it. That was slow, and easy to forget in a profession where deadlines are statutory.",
         },
         {
           title: 'Foreign-script receipts are a verification risk',
           description:
-            'Clients send till receipts as phone photos or by post. A meaningful share arrive in Cyrillic, Chinese or Arabic, where an operator who cannot read the script cannot verify what they are keying.',
+            'Clients send till receipts as phone photos or by mail. A meaningful share arrive in Cyrillic, Chinese or Arabic, where an operator who cannot read the script cannot verify what they are keying.',
         },
         {
           title: 'Precondition',
@@ -33,7 +33,7 @@ const record: IndustryRecord = {
         {
           title: 'Scan-and-route for incoming mail',
           description:
-            'OCR reads the scan, the system identifies the client from the content and looks up the assigned manager, and an AI produces a short summary and priority. The system then creates a task and notifies the manager immediately or, where the letter needs the client to act, e-mails the client directly with the scan and the instruction.',
+            'OCR reads the scan, the system identifies the client from the content and looks up the assigned manager, and a language model produces a short summary and priority. The system then creates a task and notifies the manager immediately or, where the letter needs the client to act, e-mails the client directly with the scan and the instruction.',
         },
         {
           title: 'Photo-and-post for expense receipts',
@@ -44,7 +44,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Professional services and trades | Trident Software',
         description:
-          'Craftsmen, installers, consultancies: small teams, no reception, every missed call is a lost mandate. Low volume, high value per conversation.',
+          'Tradespeople, installers, consultancies: small teams, no reception, every missed call is a lost job. Low volume, high value per conversation.',
       },
     },
     de: {

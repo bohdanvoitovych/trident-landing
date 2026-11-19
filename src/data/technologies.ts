@@ -66,7 +66,7 @@ const records: TechnologyRecord[] = [
           'Standalone Docker output for VPS and Kubernetes',
         ],
         meta: {
-          title: 'Next.js Development Switzerland | Trident Software',
+          title: 'Next.js development Switzerland | Trident Software',
           description:
             'Next.js development for Swiss companies. App Router, TypeScript, Payload CMS, Docker. From marketing sites to complex B2B platforms. Valais-based team.',
         },
@@ -203,7 +203,7 @@ const records: TechnologyRecord[] = [
     content: {
       en: {
         category: 'Mobile development',
-        tagline: 'One codebase. iOS and Android. Built in Switzerland.',
+        tagline: 'One codebase. iOS and Android. Swiss contract.',
         description:
           "Flutter lets us ship production-quality iOS and Android apps from a single Dart codebase, which halves development time and maintenance cost. We have used it for logistics driver apps, medical patient portals and B2B field service apps across Switzerland and Europe.",
         useCases: [
@@ -235,14 +235,14 @@ const records: TechnologyRecord[] = [
           'Works offline with local SQLite + sync on reconnect',
         ],
         meta: {
-          title: 'Flutter App Development Switzerland | iOS & Android | Trident Software',
+          title: 'Flutter app development Switzerland | iOS & Android | Trident Software',
           description:
-            'Flutter mobile app development for Swiss companies. Single codebase, iOS + Android, offline-capable. Logistics, medical, B2B apps. Swiss development team.',
+            'Flutter mobile app development for Swiss companies. Single codebase, iOS + Android, offline-capable. Logistics, medical, B2B apps. Engineering team since 2009.',
         },
       },
       de: {
         category: 'Mobile-Entwicklung',
-        tagline: 'Eine Codebasis. iOS und Android. Entwickelt in der Schweiz.',
+        tagline: 'Eine Codebasis. iOS und Android. Schweizer Vertrag.',
         description:
           'Mit Flutter liefern wir iOS- und Android-Apps in Produktionsqualität aus einer einzigen Dart-Codebasis. Das halbiert Entwicklungszeit und Wartungskosten. Wir haben Flutter für Fahrer-Apps in der Logistik, medizinische Patientenportale und B2B-Aussendienst-Apps in der Schweiz und in Europa eingesetzt.',
         useCases: [
@@ -276,12 +276,12 @@ const records: TechnologyRecord[] = [
         meta: {
           title: 'Flutter App-Entwicklung Schweiz | iOS & Android | Trident Software',
           description:
-            'Flutter-App-Entwicklung für Schweizer Unternehmen. Eine Codebasis für iOS und Android, offlinefähig. Apps für Logistik, Medizin und B2B. Team in der Schweiz.',
+            'Flutter-App-Entwicklung für Schweizer Unternehmen. Eine Codebasis für iOS und Android, offlinefähig. Apps für Logistik, Medizin und B2B. Engineering-Team seit 2009.',
         },
       },
       fr: {
         category: 'Développement mobile',
-        tagline: 'Un seul code. iOS et Android. Conçu en Suisse.',
+        tagline: 'Un seul code. iOS et Android. Contrat suisse.',
         description:
           "Flutter nous permet de livrer des applications iOS et Android de qualité production à partir d'un seul code Dart. Le temps de développement et les coûts de maintenance sont divisés par deux. Nous avons utilisé Flutter pour des applications de chauffeurs en logistique, des portails patients et des applications B2B d'intervention terrain en Suisse et en Europe.",
         useCases: [
@@ -321,7 +321,7 @@ const records: TechnologyRecord[] = [
       },
       it: {
         category: 'Sviluppo mobile',
-        tagline: 'Un solo codice. iOS e Android. Sviluppato in Svizzera.',
+        tagline: 'Un solo codice. iOS e Android. Contratto svizzero.',
         description:
           'Con Flutter rilasciamo app iOS e Android di qualità produttiva da un unico codice Dart, dimezzando tempi di sviluppo e costi di manutenzione. Abbiamo usato Flutter per app per autisti nella logistica, portali medici per pazienti e app B2B per il servizio esterno in Svizzera e in Europa.',
         useCases: [
@@ -356,7 +356,7 @@ const records: TechnologyRecord[] = [
         meta: {
           title: 'Sviluppo app Flutter in Svizzera | iOS & Android | Trident Software',
           description:
-            'Sviluppo di app mobili Flutter per aziende svizzere. Un solo codice per iOS e Android, funziona offline. App per logistica, sanità e B2B. Team svizzero.',
+            'Sviluppo di app mobili Flutter per aziende svizzere. Un solo codice per iOS e Android, funziona offline. App per logistica, sanità e B2B. Team di ingegneria dal 2009.',
         },
       },
     },
@@ -371,7 +371,7 @@ const records: TechnologyRecord[] = [
     content: {
       en: {
         category: 'Language & full-stack',
-        tagline: 'Type-safe full-stack JavaScript for reliable Swiss software',
+        tagline: 'Type-safe full-stack JavaScript for reliable business software',
         description:
           'TypeScript is our default language across the stack: Node.js APIs, Next.js frontends, React components and Payload CMS configuration. Type checks remove whole classes of runtime errors, cut debugging time and make the code easier to read. Every Trident project ships with strict TypeScript and no "any" types.',
         useCases: [
@@ -404,14 +404,14 @@ const records: TechnologyRecord[] = [
           'Zero runtime overhead: compiles to plain JS',
         ],
         meta: {
-          title: 'TypeScript Development Switzerland | Trident Software',
+          title: 'TypeScript development Switzerland | Trident Software',
           description:
             'Full-stack TypeScript development for Swiss companies. Strict typing, shared types, Zod validation. Node.js, Next.js, Payload. Zero any policy.',
         },
       },
       de: {
         category: 'Sprache & Full-Stack',
-        tagline: 'Typsicheres Full-Stack-JavaScript für zuverlässige Software aus der Schweiz',
+        tagline: 'Typsicheres Full-Stack-JavaScript für zuverlässige Unternehmenssoftware',
         description:
           'TypeScript ist unsere Standardsprache im gesamten Stack: Node.js-APIs, Next.js-Frontends, React-Komponenten und Payload-CMS-Konfiguration. Typsicherheit beseitigt ganze Kategorien von Laufzeitfehlern, verkürzt die Fehlersuche und macht den Code selbsterklärend. Jedes Trident-Projekt läuft mit strengem TypeScript und ohne ein einziges any.',
         useCases: [
@@ -451,7 +451,7 @@ const records: TechnologyRecord[] = [
       },
       fr: {
         category: 'Langage & Full-Stack',
-        tagline: 'Du JavaScript full-stack typé pour des logiciels suisses fiables',
+        tagline: "Du JavaScript full-stack typé pour des logiciels d'entreprise fiables",
         description:
           "TypeScript est notre langage par défaut sur toute la stack : API Node.js, frontends Next.js, composants React et configuration de Payload CMS. Le typage élimine des catégories entières d'erreurs à l'exécution, réduit le temps de débogage et rend le code auto-documenté. Chaque projet Trident est livré en TypeScript strict, sans aucun any.",
         useCases: [
@@ -491,7 +491,7 @@ const records: TechnologyRecord[] = [
       },
       it: {
         category: 'Linguaggio & Full-Stack',
-        tagline: 'JavaScript full-stack tipizzato per software svizzero affidabile',
+        tagline: 'JavaScript full-stack tipizzato per software aziendale affidabile',
         description:
           'TypeScript è il nostro linguaggio predefinito su tutto lo stack: API Node.js, frontend Next.js, componenti React e configurazione di Payload CMS. La tipizzazione elimina intere categorie di errori in esecuzione, riduce il tempo di debug e rende il codice autoesplicativo. Ogni progetto Trident usa TypeScript in modalità strict, senza un solo any.',
         useCases: [
@@ -540,7 +540,7 @@ const records: TechnologyRecord[] = [
     relatedCases: ['post-acute-clinic-network'],
     content: {
       en: {
-        category: 'AI, ML & Backend',
+        category: 'AI, ML & backend',
         tagline: 'AI pipelines, data engineering, and automation built in Python',
         description:
           'Python is our language of choice for AI/ML workloads, data pipelines and automation scripts. From LLM document processing and computer vision models to ETL pipelines and predictive analytics, we build Python backends that go from prototype to production without a rewrite.',
@@ -574,7 +574,7 @@ const records: TechnologyRecord[] = [
           'Large talent pool, easy to hand off to your team',
         ],
         meta: {
-          title: 'Python Development Switzerland | AI & ML Engineering | Trident Software',
+          title: 'Python development Switzerland | AI & ML engineering | Trident Software',
           description:
             'Python development for AI, ML, and data engineering in Switzerland. LLM integration, computer vision, FastAPI backends. On-premise and cloud deployment.',
         },
@@ -711,7 +711,7 @@ const records: TechnologyRecord[] = [
     content: {
       en: {
         category: 'Frontend',
-        tagline: 'Component-based UIs that users actually enjoy',
+        tagline: 'Component-based UIs that are easy to use',
         description:
           'React is the base of our frontend stack, inside Next.js, as a standalone SPA or embedded in a legacy application. We build component libraries, design systems and fast UIs for Swiss companies that need interfaces their customers come back to.',
         useCases: [
@@ -744,9 +744,9 @@ const records: TechnologyRecord[] = [
           'Stable API, little framework churn',
         ],
         meta: {
-          title: 'React Development Switzerland | UI Engineering | Trident Software',
+          title: 'React development Switzerland | UI engineering | Trident Software',
           description:
-            'React UI development for Swiss companies. Dashboards, design systems, SPAs, and component libraries. TypeScript, Radix UI, Tailwind. Swiss dev team.',
+            'React UI development for Swiss companies. Dashboards, design systems, SPAs, and component libraries. TypeScript, Radix UI, Tailwind.',
         },
       },
       de: {
@@ -786,7 +786,7 @@ const records: TechnologyRecord[] = [
         meta: {
           title: 'React Entwicklung Schweiz | UI-Engineering | Trident Software',
           description:
-            'React-Entwicklung für Schweizer Unternehmen. Dashboards, Design-Systeme, SPAs und Komponentenbibliotheken. TypeScript, Radix UI, Tailwind. Team in der Schweiz.',
+            'React-Entwicklung für Schweizer Unternehmen. Dashboards, Design-Systeme, SPAs und Komponentenbibliotheken. TypeScript, Radix UI, Tailwind.',
         },
       },
       fr: {
@@ -866,7 +866,7 @@ const records: TechnologyRecord[] = [
         meta: {
           title: 'Sviluppo React in Svizzera | Interfacce UI | Trident Software',
           description:
-            'Sviluppo di interfacce React per aziende svizzere. Dashboard, design system, SPA e librerie di componenti. TypeScript, Radix UI, Tailwind. Team svizzero.',
+            'Sviluppo di interfacce React per aziende svizzere. Dashboard, design system, SPA e librerie di componenti. TypeScript, Radix UI, Tailwind.',
         },
       },
     },
@@ -914,9 +914,9 @@ const records: TechnologyRecord[] = [
           'Low memory footprint vs. JVM alternatives',
         ],
         meta: {
-          title: 'Node.js Development Switzerland | API & Backend Engineering | Trident Software',
+          title: 'Node.js development Switzerland | API & backend engineering | Trident Software',
           description:
-            'Node.js API and backend development for Swiss companies. REST, GraphQL, real-time WebSocket. TypeScript, Fastify, PostgreSQL. Swiss dev team.',
+            'Node.js API and backend development for Swiss companies. REST, GraphQL, real-time WebSocket. TypeScript, Fastify, PostgreSQL. Engineering team since 2009.',
         },
       },
       de: {
@@ -956,7 +956,7 @@ const records: TechnologyRecord[] = [
         meta: {
           title: 'Node.js Entwicklung Schweiz | API & Backend | Trident Software',
           description:
-            'Node.js-Entwicklung von APIs und Backends für Schweizer Unternehmen. REST, GraphQL, WebSocket in Echtzeit. TypeScript, Fastify, PostgreSQL. Team in der Schweiz.',
+            'Node.js-Entwicklung von APIs und Backends für Schweizer Unternehmen. REST, GraphQL, WebSocket in Echtzeit. TypeScript, Fastify, PostgreSQL. Engineering-Team seit 2009.',
         },
       },
       fr: {
@@ -1036,7 +1036,7 @@ const records: TechnologyRecord[] = [
         meta: {
           title: 'Sviluppo Node.js in Svizzera | API & Backend | Trident Software',
           description:
-            'Sviluppo di API e backend Node.js per aziende svizzere. REST, GraphQL, WebSocket in tempo reale. TypeScript, Fastify, PostgreSQL. Team svizzero.',
+            'Sviluppo di API e backend Node.js per aziende svizzere. REST, GraphQL, WebSocket in tempo reale. TypeScript, Fastify, PostgreSQL. Team di ingegneria dal 2009.',
         },
       },
     },
@@ -1083,14 +1083,14 @@ const records: TechnologyRecord[] = [
           },
         ],
         benefits: [
-          'ACID compliance — no silent data corruption',
+          'ACID compliance: no silent data corruption',
           'JSONB stores semi-structured data without a second database',
           'Logical replication for zero-downtime migrations',
           'pg_cron for scheduled database jobs',
           'Mature Swiss hosting options (Infomaniak, exoscale)',
         ],
         meta: {
-          title: 'PostgreSQL Development Switzerland | Database Engineering | Trident Software',
+          title: 'PostgreSQL development Switzerland | Database engineering | Trident Software',
           description:
             'PostgreSQL database architecture for Swiss applications. Multi-tenant, PostGIS, full-text search. Swiss data residency. Production since 2018.',
         },
@@ -1226,7 +1226,7 @@ const records: TechnologyRecord[] = [
     relatedCases: [],
     content: {
       en: {
-        category: 'DevOps & Infrastructure',
+        category: 'DevOps & infrastructure',
         tagline: 'Containerised deployments that stay up',
         description:
           'We containerise every application we build: Docker for packaging, Docker Compose to match development to production, and Kubernetes for production workloads. We keep data in Switzerland by deploying on Swiss-region infrastructure: Infomaniak Cloud or exoscale.',
@@ -1256,11 +1256,11 @@ const records: TechnologyRecord[] = [
           'Identical environments eliminate environment-specific bugs',
           'Restart policies bring crashed containers back',
           'Resource limits prevent noisy-neighbour incidents',
-          'GitOps workflow — infrastructure as code',
+          'GitOps workflow: infrastructure as code',
           'revFADP compliance via Swiss-region deployment',
         ],
         meta: {
-          title: 'Docker & Kubernetes Switzerland | DevOps Engineering | Trident Software',
+          title: 'Docker & Kubernetes Switzerland | DevOps engineering | Trident Software',
           description:
             'Docker and Kubernetes deployments for Swiss companies. GitLab CI/CD, Swiss data residency (Infomaniak, exoscale). Container-first engineering.',
         },
@@ -1437,7 +1437,7 @@ const records: TechnologyRecord[] = [
           'Evaluation harnesses prevent silent accuracy regression',
         ],
         meta: {
-          title: 'AI & LLM Integration Switzerland | Trident Software',
+          title: 'AI & LLM integration Switzerland | Trident Software',
           description:
             'Production AI integration for Swiss businesses. Document intelligence, RAG assistants, on-premise LLMs (revFADP compliant). We build AI that works.',
         },

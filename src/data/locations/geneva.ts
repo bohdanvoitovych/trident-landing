@@ -37,7 +37,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Software development Geneva | Trident Software Switzerland',
         description:
-          "Custom software for Geneva's international organisations, banks and luxury brands. Multilingual platforms, compliance-first architecture. Swiss-based team.",
+          "Custom software for Geneva's international organisations, banks and luxury brands. Multilingual platforms, compliance-first architecture.",
       },
     },
     de: {
@@ -73,7 +73,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Softwareentwicklung Genf | Trident Software Schweiz',
         description:
-          'Individuelle Software für internationale Organisationen, Banken und Luxusmarken in Genf. Mehrsprachige Plattformen, Compliance by Design. Team in der Schweiz.',
+          'Individuelle Software für internationale Organisationen, Banken und Luxusmarken in Genf. Mehrsprachige Plattformen, Compliance by Design.',
       },
     },
     fr: {
@@ -108,7 +108,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Développement logiciel Genève | Trident Software Suisse',
         description:
-          'Logiciels sur mesure pour les organisations internationales, banques et marques de luxe à Genève. Plateformes multilingues, conformité intégrée. Équipe suisse.',
+          'Logiciels sur mesure pour les organisations internationales, banques et marques de luxe à Genève. Plateformes multilingues, conformité intégrée.',
       },
     },
     it: {
@@ -143,7 +143,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Sviluppo software Ginevra | Trident Software Svizzera',
         description:
-          'Software su misura per organizzazioni internazionali, banche e marchi del lusso a Ginevra. Piattaforme multilingue, compliance integrata. Team svizzero.',
+          'Software su misura per organizzazioni internazionali, banche e marchi del lusso a Ginevra. Piattaforme multilingue, compliance integrata.',
       },
     },
   },

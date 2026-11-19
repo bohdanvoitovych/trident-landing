@@ -47,7 +47,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Blockchain & Web3 development | Trident Software',
         description:
-          'Blockchain development: smart contracts, NFT platforms, tokenisation, DeFi integrations. Swiss engineering team.',
+          'Blockchain development: smart contracts, NFT platforms, tokenisation, DeFi integrations. Swiss company, engineering team since 2009.',
       },
     },
     de: {
@@ -91,7 +91,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Blockchain- & Web3-Entwicklung | Trident Software',
         description:
-          'Blockchain-Entwicklung: Smart Contracts, NFT-Plattformen, Tokenisierung, DeFi-Anbindungen. Entwicklerteam aus der Schweiz.',
+          'Blockchain-Entwicklung: Smart Contracts, NFT-Plattformen, Tokenisierung, DeFi-Anbindungen. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -137,7 +137,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Développement blockchain & Web3 | Trident Software',
         description:
-          "Développement blockchain : smart contracts, plateformes NFT, tokenisation, intégrations DeFi. Équipe d'ingénieurs suisse.",
+          "Développement blockchain : smart contracts, plateformes NFT, tokenisation, intégrations DeFi. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -182,7 +182,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Sviluppo blockchain & Web3 | Trident Software',
         description:
-          'Sviluppo blockchain: smart contract, piattaforme NFT, tokenizzazione, integrazioni DeFi. Team di ingegneri svizzero.',
+          'Sviluppo blockchain: smart contract, piattaforme NFT, tokenizzazione, integrazioni DeFi. Azienda svizzera, team di ingegneria dal 2009.',
       },
     },
   },

@@ -11,7 +11,7 @@ const record: IndustryRecord = {
       title: 'Automotive',
       tagline: 'Software for connected and electric vehicles',
       description:
-        'We build dealer platforms, EV fleet management and in-vehicle software to the precision and reliability standards the automotive industry expects.',
+        'We build dealer platforms, EV fleet management and in-vehicle software.',
       challenges: [
         {
           title: 'Complex B2B workflows',
@@ -47,14 +47,14 @@ const record: IndustryRecord = {
       meta: {
         title: 'Automotive software development | Trident Software',
         description:
-          'Automotive software: dealer platforms, EV fleet management, telematics and automated vehicle documentation. Swiss engineering.',
+          'Automotive software: dealer platforms, EV fleet management, telematics and automated vehicle documentation. Swiss company, engineering team since 2009.',
       },
     },
     de: {
       title: 'Automobilbranche',
       tagline: 'Software für vernetzte und elektrische Fahrzeuge',
       description:
-        'Von B2B-Händlerplattformen über E-Flottenmanagement bis zur Software im Fahrzeug: Wir liefern Automotive-Lösungen, die den Ansprüchen der Branche an Präzision und Zuverlässigkeit genügen.',
+        'Von B2B-Händlerplattformen über E-Flottenmanagement bis zur Software im Fahrzeug: Wir entwickeln Software für die Automobilbranche.',
       challenges: [
         {
           title: 'Verschachtelte B2B-Prozesse',
@@ -90,14 +90,14 @@ const record: IndustryRecord = {
       meta: {
         title: 'Automotive-Softwareentwicklung | Trident Software',
         description:
-          'Automotive-Software: Händlerplattformen, E-Flottenmanagement, Telematik und automatisierte Fahrzeugdokumentation. Engineering aus der Schweiz.',
+          'Automotive-Software: Händlerplattformen, E-Flottenmanagement, Telematik und automatisierte Fahrzeugdokumentation. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
       title: 'Automobile',
       tagline: 'Des logiciels pour véhicules connectés et électriques',
       description:
-        'Des plateformes B2B pour concessionnaires à la gestion de flottes électriques en passant par le logiciel embarqué, nous livrons des solutions automobiles à la hauteur des exigences de précision et de fiabilité du secteur.',
+        'Des plateformes B2B pour concessionnaires à la gestion de flottes électriques en passant par le logiciel embarqué, nous développons des logiciels pour le secteur automobile.',
       challenges: [
         {
           title: 'Processus B2B imbriqués',
@@ -135,14 +135,14 @@ const record: IndustryRecord = {
       meta: {
         title: 'Développement logiciel automobile | Trident Software',
         description:
-          'Logiciels automobiles : plateformes concessionnaires, flottes électriques, télématique et documentation véhicule automatisée. Ingénierie suisse.',
+          "Logiciels automobiles : plateformes concessionnaires, flottes électriques, télématique et documentation véhicule automatisée. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
       title: 'Automotive',
       tagline: 'Software per veicoli connessi ed elettrici',
       description:
-        "Dalle piattaforme B2B per concessionari alla gestione di flotte elettriche fino al software di bordo, realizziamo soluzioni automotive all'altezza degli standard di precisione e affidabilità del settore.",
+        "Dalle piattaforme B2B per concessionari alla gestione di flotte elettriche fino al software di bordo, sviluppiamo software per il settore automotive.",
       challenges: [
         {
           title: 'Processi B2B articolati',
@@ -178,7 +178,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Sviluppo software automotive | Trident Software',
         description:
-          'Software automotive: piattaforme per concessionari, flotte elettriche, telematica e documentazione dei veicoli automatizzata. Ingegneria svizzera.',
+          'Software automotive: piattaforme per concessionari, flotte elettriche, telematica e documentazione dei veicoli automatizzata. Azienda svizzera, team di ingegneria dal 2009.',
       },
     },
   },

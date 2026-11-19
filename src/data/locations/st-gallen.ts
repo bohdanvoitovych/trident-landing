@@ -38,7 +38,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Software development St. Gallen | Logistics & supply chain tech | Trident Software',
         description:
-          'Logistics software, WMS, and supply chain platforms for St. Gallen companies. EDI integration, carrier APIs, warehouse automation. Swiss dev team.',
+          'Logistics software, WMS, and supply chain platforms for St. Gallen companies. EDI integration, carrier APIs, warehouse automation. Engineering team since 2009.',
       },
     },
     de: {
@@ -74,7 +74,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Softwareentwicklung St. Gallen | Logistik-Software | Trident',
         description:
-          'Logistiksoftware, WMS und Supply-Chain-Plattformen für Unternehmen in St. Gallen. EDI-Integration, Carrier-APIs, Lagerautomation. Schweizer Entwicklungsteam.',
+          'Logistiksoftware, WMS und Supply-Chain-Plattformen für Unternehmen in St. Gallen. EDI-Integration, Carrier-APIs, Lagerautomation. Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -146,7 +146,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Sviluppo software San Gallo | Logistica | Trident Software',
         description:
-          'Software logistico, WMS e piattaforme supply chain per le aziende di San Gallo. Integrazione EDI, API dei vettori, automazione del magazzino. Team svizzero.',
+          'Software logistico, WMS e piattaforme supply chain per le aziende di San Gallo. Integrazione EDI, API dei vettori, automazione del magazzino. Team di ingegneria dal 2009.',
       },
     },
   },

@@ -8,7 +8,7 @@ const record: IndustryRecord = {
   relatedServices: ['software-engineering', 'embedded-and-iot'],
   content: {
     en: {
-      title: 'Sport & Fitness',
+      title: 'Sport & fitness',
       tagline: 'Technology for active lifestyles and sports organisations',
       description:
         'Sports club management, event registration platforms, activity tracking apps, and athlete performance analytics for federations, fitness brands, and sports tech startups.',
@@ -49,7 +49,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Sport & fitness software development | Trident Software',
         description:
-          'Sports tech software: event registration, club management, activity tracking, performance analytics. Swiss engineering.',
+          'Sports tech software: event registration, club management, activity tracking, performance analytics. Swiss company, engineering team since 2009.',
       },
     },
     de: {
@@ -95,7 +95,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Softwareentwicklung für Sport & Fitness | Trident Software',
         description:
-          'Sporttech-Software: Eventanmeldung, Vereinsverwaltung, Aktivitäts-Apps, Leistungsanalyse. Entwickelt in der Schweiz.',
+          'Sporttech-Software: Eventanmeldung, Vereinsverwaltung, Aktivitäts-Apps, Leistungsanalyse. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -142,7 +142,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Développement logiciel sport & fitness | Trident Software',
         description:
-          "Logiciels sport tech : inscriptions aux événements, gestion de club, suivi d'activité, analyse de la performance. Ingénierie suisse.",
+          "Logiciels sport tech : inscriptions aux événements, gestion de club, suivi d'activité, analyse de la performance. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -189,7 +189,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Sviluppo software per sport & fitness | Trident Software',
         description:
-          'Software sport tech: iscrizioni agli eventi, gestione delle società, tracciamento attività, analisi delle prestazioni. Ingegneria svizzera.',
+          'Software sport tech: iscrizioni agli eventi, gestione delle società, tracciamento attività, analisi delle prestazioni. Azienda svizzera, team di ingegneria dal 2009.',
       },
     },
   },

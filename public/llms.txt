@@ -8,22 +8,22 @@ Trident Software Sàrl is a Swiss company in Sion, Valais (CHE-185.076.733), hos
 
 ## Services
 
-- AI agents & LLM automation — AI sales agents, assistants and document processing
-- Logistics & operations platforms — order intake, dispatch, field apps, billing
-- IoT & connected products — firmware, devices and the software around them
-- Custom business systems — web and mobile software built around the client's process
-- CTO as a Service — technical leadership for startups and scale-ups
+- AI agents & process automation: AI sales agents, assistants and document processing
+- Logistics & operations platforms: order intake, dispatch, field apps, billing
+- IoT & connected products: firmware, devices and the software around them
+- Custom business systems: web and mobile software built around the client's process
+- CTO as a Service: technical leadership for startups and scale-ups
 
 ## Industries
 
-Trade, wholesale and building materials; Real estate and property management; Clinics, dental and veterinary practices; E-commerce and D2C; Hospitality and restaurants; Professional services and trades; Education and training providers; Startups and scale-ups: CTO as a Service; Automotive; Logistics & Supply Chain; Fintech & Finance; SaaS & Software Products; Manufacturing; Fashion & Lifestyle; Tourism & Travel; FMCG & Consumer Goods; DIY & Tools; Catering & Food Service; Blockchain & Web3; Social Media & Community; Gaming & Interactive; Sport & Fitness.
+Trade, wholesale and building materials; Real estate and property management; Clinics, dental and veterinary practices; E-commerce and D2C; Hospitality and restaurants; Professional services and trades; Education and training providers; Startups and scale-ups: CTO as a Service; Automotive; Logistics & supply chain; Fintech and finance; SaaS & software products; Manufacturing; Fashion & lifestyle; Tourism & travel; FMCG & consumer goods; DIY & tools; Catering & food service; Blockchain & Web3; Social media & community; Gaming & interactive; Sport & fitness.
 
-## Key Facts
+## Key facts
 
 - Headquarters: Rue de l'Industrie 23, 1950 Sion, Switzerland
 - Languages: English, German, French, Italian
 - Data handling: hosting in Switzerland or the EU, processing under revFADP and GDPR
-- First step: a free 45-minute audit
+- First step: a free 45-minute workshop
 
 ## Contact
 

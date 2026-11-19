@@ -20,7 +20,7 @@ const record: IndustryRecord = {
             'Published survey data puts the median agent response to a new web enquiry at over 900 minutes, more than fifteen hours, while 78 % of buyers end up working with the first agent who responds. In this market, a reply within a minute changes your place in the queue.',
         },
         {
-          title: 'It also collects less data',
+          title: 'It also collects less personal data',
           description:
             "Swiss rules on tenant application forms allow only data with a direct connection to the tenancy, permit payslips and a debt-collection extract only once an applicant is seriously considered, and require the unsuccessful applicants' files to be destroyed after signature. An agent built to those rules asks for the minimum at first contact and requests documents only at shortlist stage. A shared inbox cannot do that reliably.",
         },

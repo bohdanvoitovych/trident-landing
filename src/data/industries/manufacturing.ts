@@ -11,7 +11,7 @@ const record: IndustryRecord = {
       title: 'Manufacturing',
       tagline: 'From paying for every claim to measuring the cause, and selling the measurement.',
       description:
-        'Wherever a manufacturer carries a warranty obligation for a product that fails because of how it is used, in conditions the manufacturer cannot see. The first step is a free 45-minute audit.',
+        'Wherever a manufacturer carries a warranty obligation for a product that fails because of how it is used, in conditions the manufacturer cannot see. The first step is a free 45-minute workshop.',
       challenges: [
         {
           title: 'Warranty cost was structural, not accidental',
@@ -39,14 +39,14 @@ const record: IndustryRecord = {
       meta: {
         title: 'Manufacturing | Trident Software',
         description:
-          "Wherever a manufacturer carries a warranty obligation for misuse in conditions they can't see. Starts with a free 45-minute audit.",
+          "Wherever a manufacturer carries a warranty obligation for misuse in conditions they can't see. Starts with a free 45-minute workshop.",
       },
     },
     de: {
       title: 'Fertigung',
       tagline: 'Statt jeden Garantiefall zu bezahlen, die Ursache messen und die Messung verkaufen.',
       description:
-        'Überall dort, wo ein Hersteller eine Garantiepflicht für ein Produkt trägt, das wegen seiner Nutzung ausfällt, unter Bedingungen, die er nicht sieht. Der erste Schritt ist ein kostenloses Audit von 45 Minuten.',
+        'Überall dort, wo ein Hersteller eine Garantiepflicht für ein Produkt trägt, das wegen seiner Nutzung ausfällt, unter Bedingungen, die er nicht sieht. Der erste Schritt ist ein kostenloser 45-minütiger Workshop.',
       challenges: [
         {
           title: 'Die Garantiekosten waren strukturell, nicht zufällig',
@@ -74,14 +74,14 @@ const record: IndustryRecord = {
       meta: {
         title: 'Fertigung | Trident Software',
         description:
-          'Für Hersteller mit Garantiepflicht für Produkte, die unter unsichtbaren Bedingungen falsch genutzt werden. Start mit einem kostenlosen Audit von 45 Minuten.',
+          'Für Hersteller mit Garantiepflicht für Produkte, die unter unsichtbaren Bedingungen falsch genutzt werden. Start mit einem kostenlosen 45-minütigen Workshop.',
       },
     },
     fr: {
       title: 'Industrie',
       tagline: 'Ne plus payer chaque réclamation, mesurer la cause et vendre la mesure.',
       description:
-        "Partout où un fabricant porte une obligation de garantie pour un produit qui tombe en panne à cause de son usage, dans des conditions qu'il ne voit pas. La première étape est un audit gratuit de 45 minutes.",
+        "Partout où un fabricant porte une obligation de garantie pour un produit qui tombe en panne à cause de son usage, dans des conditions qu'il ne voit pas. La première étape est un workshop gratuit de 45 minutes.",
       challenges: [
         {
           title: 'Le coût de garantie était structurel, pas accidentel',
@@ -109,14 +109,14 @@ const record: IndustryRecord = {
       meta: {
         title: 'Industrie | Trident Software',
         description:
-          "Pour les fabricants qui garantissent des produits mal utilisés dans des conditions qu'ils ne voient pas. On commence par un audit gratuit de 45 minutes.",
+          "Pour les fabricants qui garantissent des produits mal utilisés dans des conditions qu'ils ne voient pas. On commence par un workshop gratuit de 45 minutes.",
       },
     },
     it: {
       title: 'Manifattura',
       tagline: 'Da pagare ogni richiesta di garanzia a misurarne la causa, e a vendere la misura.',
       description:
-        "Ovunque un produttore abbia un obbligo di garanzia per un prodotto che si guasta per come viene usato, in condizioni che non vede. Il primo passo è un audit gratuito di 45 minuti.",
+        "Ovunque un produttore abbia un obbligo di garanzia per un prodotto che si guasta per come viene usato, in condizioni che non vede. Il primo passo è un workshop gratuito di 45 minuti.",
       challenges: [
         {
           title: 'Il costo della garanzia era strutturale, non casuale',
@@ -144,7 +144,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Manifattura | Trident Software',
         description:
-          "Per i produttori che garantiscono prodotti usati male in condizioni che non vedono. Si parte da un audit gratuito di 45 minuti.",
+          "Per i produttori che garantiscono prodotti usati male in condizioni che non vedono. Si parte da un workshop gratuito di 45 minuti.",
       },
     },
   },

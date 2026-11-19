@@ -8,7 +8,7 @@ const record: IndustryRecord = {
   relatedServices: ['software-engineering'],
   content: {
     en: {
-      title: 'DIY & Tools',
+      title: 'DIY & tools',
       tagline: 'E-commerce and product intelligence for tool retailers',
       description:
         'Product catalogue management, compatibility finders, B2B dealer portals, and inventory systems for power tool brands, hardware retailers, and professional tool distributors.',
@@ -49,7 +49,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'DIY & tools software development | Trident Software',
         description:
-          'DIY and tools software: product catalogues, B2B dealer portals, compatibility finders, inventory systems. Swiss engineering.',
+          'DIY and tools software: product catalogues, B2B dealer portals, compatibility finders, inventory systems. Swiss company, engineering team since 2009.',
       },
     },
     de: {
@@ -95,7 +95,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Software für Heimwerk- & Werkzeughandel | Trident Software',
         description:
-          'Software für den Werkzeughandel: Produktkataloge, B2B-Händlerportale, Kompatibilitätsfinder, Lagersysteme. Entwickelt in der Schweiz.',
+          'Software für den Werkzeughandel: Produktkataloge, B2B-Händlerportale, Kompatibilitätsfinder, Lagersysteme. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -141,7 +141,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Logiciel bricolage & outillage | Trident Software',
         description:
-          "Logiciels pour l'outillage : catalogues produits, portails revendeurs B2B, moteurs de compatibilité, gestion des stocks. Ingénierie suisse.",
+          "Logiciels pour l'outillage : catalogues produits, portails revendeurs B2B, moteurs de compatibilité, gestion des stocks. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -187,7 +187,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Software per fai da te & utensili | Trident Software',
         description:
-          'Software per il settore utensili: cataloghi prodotto, portali B2B per rivenditori, ricerca compatibilità, magazzino. Ingegneria svizzera.',
+          'Software per il settore utensili: cataloghi prodotto, portali B2B per rivenditori, ricerca compatibilità, magazzino. Azienda svizzera, team di ingegneria dal 2009.',
       },
     },
   },

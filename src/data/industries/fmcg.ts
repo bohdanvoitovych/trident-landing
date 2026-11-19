@@ -8,7 +8,7 @@ const record: IndustryRecord = {
   relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
-      title: 'FMCG & Consumer Goods',
+      title: 'FMCG & consumer goods',
       tagline: 'Supply chain and distribution tech for fast-moving goods',
       description:
         'Order management, route planning, HoReCa distribution platforms, and retail execution tools for food and beverage companies, FMCG distributors, and consumer goods brands.',
@@ -48,7 +48,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'FMCG & consumer goods software | Trident Software',
         description:
-          'FMCG software: distribution management, HoReCa platforms, retail execution, demand forecasting. Swiss engineering.',
+          'FMCG software: distribution management, HoReCa platforms, retail execution, demand forecasting. Swiss company, engineering team since 2009.',
       },
     },
     de: {
@@ -91,7 +91,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Software für FMCG & Konsumgüter | Trident Software',
         description:
-          'FMCG-Software: Vertriebsmanagement, Bestellplattformen für die Gastronomie, Aussendienst-Apps, Bedarfsprognose. Entwickelt in der Schweiz.',
+          'FMCG-Software: Vertriebsmanagement, Bestellplattformen für die Gastronomie, Aussendienst-Apps, Bedarfsprognose. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -138,7 +138,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Logiciel biens de grande consommation | Trident Software',
         description:
-          'Logiciels FMCG : gestion de la distribution, plateformes CHR, exécution en magasin, prévision de la demande. Ingénierie suisse.',
+          "Logiciels FMCG : gestion de la distribution, plateformes CHR, exécution en magasin, prévision de la demande. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -183,7 +183,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Software per FMCG & beni di consumo | Trident Software',
         description:
-          'Software FMCG: gestione della distribuzione, piattaforme Ho.Re.Ca., app per la forza vendita, previsione della domanda. Ingegneria svizzera.',
+          'Software FMCG: gestione della distribuzione, piattaforme Ho.Re.Ca., app per la forza vendita, previsione della domanda. Azienda svizzera, team di ingegneria dal 2009.',
       },
     },
   },

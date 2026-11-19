@@ -10,7 +10,7 @@ const record: IndustryRecord = {
     en: {
       title: 'E-commerce and D2C',
       tagline: 'Order status, sizing, returns, cross-sell at the moment of intent.',
-      description: 'Highest message volume, lowest value per message: automation economics at their cleanest.',
+      description: 'Highest message volume, lowest value per message: the clearest economics for automation.',
       challengesLead: '',
       challenges: [
         {
@@ -26,7 +26,7 @@ const record: IndustryRecord = {
         {
           title: 'Precondition',
           description:
-            'Product data that supports a decision: compatibility rules, dimensions, real variants, live stock. A catalogue where half the articles have a name and a price and nothing else cannot be reasoned over. The agent will recommend confidently and wrongly, and returns will go up rather than down. This case is worth doing only where someone has already done the boring work on the product data, or is willing to do it as part of the project.',
+            'Product data that supports a decision: compatibility rules, dimensions, real variants, live stock. A catalogue where half the articles have a name and a price and nothing else gives the agent nothing to reason with. The agent will recommend confidently and wrongly, and returns will go up rather than down. This case is worth doing only where someone has already done the boring work on the product data, or is willing to do it as part of the project.',
         },
       ],
       solutionsLead: '',
@@ -34,7 +34,7 @@ const record: IndustryRecord = {
         {
           title: 'What the agent does',
           description:
-            "Reads the question, works out what the customer actually has (the machine, the vehicle, the installation) and narrows the catalogue to what fits. Explains the difference between two candidates in the customer's terms rather than reciting spec sheets. Checks live stock and gives a real delivery date, including the honest one: this is not in stock, it lands in eleven days, here is what is available now instead. Applies the customer's own pricing if they are a B2B account with agreed terms. Assembles the basket, takes the order, issues the QR-bill or payment link, and confirms. After the sale it stays useful: order status, invoice copies, and the start of a return, which for a shop is the difference between a complaint and a transaction.",
+            "Reads the question, works out what the customer actually has (the machine, the vehicle, the installation) and narrows the catalogue to what fits. Explains the difference between two candidates in the customer's terms rather than reciting spec sheets. Checks live stock and gives a real delivery date, even when the answer is unwelcome: this is not in stock, it lands in eleven days, here is what is available now instead. Applies the customer's own pricing if they are a B2B account with agreed terms. Assembles the basket, takes the order, issues the QR-bill or payment link, and confirms. After the sale it stays useful: order status, invoice copies, and the start of a return, which for a shop is the difference between a complaint and a transaction.",
         },
       ],
       meta: {

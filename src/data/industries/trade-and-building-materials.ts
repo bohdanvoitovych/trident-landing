@@ -12,12 +12,12 @@ const record: IndustryRecord = {
       tagline:
         'High enquiry volume, repetitive product and availability questions, orders that must become deliveries.',
       description:
-        'It sits first on our list because orders hand off directly into Fleet Planner and Driver Pro, the planning and driver tools of 8Move.',
+        'It is first on our list because orders pass directly into Fleet Planner and Driver Pro, the planning and driver tools of 8Move.',
       challenges: [
         {
           title: 'Growth capped by how many people can answer the phone',
           description:
-            'Orders arrive by telephone and messenger, and each one occupies a person for several minutes. Demand follows the building season, so the desk that needs six people in May needs three in February. Hiring for the peak means dismissing four months later, with notice periods and training paid twice a year.',
+            'Orders arrive by telephone and messenger, and each one occupies a person for several minutes. Demand follows the building season, so the desk that needs six people in May needs three in February. Hiring for the peak means letting people go four months later, with notice periods and training paid twice a year.',
         },
         {
           title: 'Confirming a load means four calendars agreeing',
@@ -32,9 +32,9 @@ const record: IndustryRecord = {
             'Takes reorders from known customers end to end: recognises the account, prices on their agreed terms, checks stock, and books a slot the dispatch model has confirmed is deliverable. Pushes ETAs before the site asks for them and recalculates when reality moves.',
         },
         {
-          title: 'Result',
+          title: 'Modelled result',
           description:
-            'Sixty-five per cent of reorder volume taken without a person. Dispatch planning fell from four to six hours a day to thirty minutes of approval, and transport cost is down six per cent.',
+            '65 % of reorder volume taken without a person. Dispatch planning down from four to six hours a day to 30 minutes of approval, and transport cost down 6 %.',
         },
       ],
       meta: {
@@ -68,9 +68,9 @@ const record: IndustryRecord = {
             'Er wickelt Nachbestellungen bekannter Kunden vollständig ab: Er erkennt das Kundenkonto, rechnet zu den vereinbarten Konditionen, prüft den Bestand und bucht einen Slot, den das Dispositionsmodell als lieferbar bestätigt hat. Er meldet die Ankunftszeit, bevor die Baustelle nachfragt, und rechnet neu, sobald sich die Lage ändert.',
         },
         {
-          title: 'Ergebnis',
+          title: 'Modelliertes Ergebnis',
           description:
-            'Fünfundsechzig Prozent der Nachbestellungen laufen ohne Mitarbeitende. Die Disposition sank von vier bis sechs Stunden pro Tag auf dreissig Minuten Freigabe, und die Transportkosten liegen sechs Prozent tiefer.',
+            '65 % der Nachbestellungen laufen ohne Mitarbeitende. Die Disposition sinkt von vier bis sechs Stunden pro Tag auf 30 Minuten Freigabe, die Transportkosten liegen 6 % tiefer.',
         },
       ],
       meta: {
@@ -104,9 +104,9 @@ const record: IndustryRecord = {
             "Il prend en charge de bout en bout les commandes répétées des clients connus : il reconnaît le compte, applique les conditions convenues, vérifie le stock et réserve un créneau que le modèle de dispatch a confirmé comme livrable. Il annonce l'heure d'arrivée avant que le chantier la demande et recalcule dès que la situation change.",
         },
         {
-          title: 'Résultat',
+          title: 'Résultat modélisé',
           description:
-            'Soixante-cinq pour cent des commandes répétées sont traitées sans intervention humaine. La planification du dispatch est passée de quatre à six heures par jour à trente minutes de validation, et les coûts de transport ont baissé de six pour cent.',
+            '65 % des commandes répétées sont traitées sans intervention humaine. La planification du dispatch passe de quatre à six heures par jour à 30 minutes de validation, et les coûts de transport baissent de 6 %.',
         },
       ],
       meta: {
@@ -140,9 +140,9 @@ const record: IndustryRecord = {
             "Gestisce dall'inizio alla fine i riordini dei clienti noti: riconosce il conto, applica le condizioni concordate, verifica le scorte e prenota uno slot che il modello di dispatch ha confermato come consegnabile. Comunica l'orario di arrivo prima che il cantiere lo chieda e lo ricalcola quando la situazione cambia.",
         },
         {
-          title: 'Risultato',
+          title: 'Risultato modellato',
           description:
-            'Il sessantacinque per cento dei riordini viene gestito senza intervento umano. La pianificazione del dispatch è scesa da quattro-sei ore al giorno a trenta minuti di approvazione, e i costi di trasporto sono calati del sei per cento.',
+            'Il 65 % dei riordini viene gestito senza intervento umano. La pianificazione del dispatch scende da quattro-sei ore al giorno a 30 minuti di approvazione, e i costi di trasporto calano del 6 %.',
         },
       ],
       meta: {

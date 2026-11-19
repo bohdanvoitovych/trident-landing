@@ -254,11 +254,11 @@ describe('other services are unchanged', () => {
   // sha256 of every locale of each record without relatedCases (case links change as cases come and go).
   const BEFORE: Record<string, string> = {
     'logistics-and-operations-platforms': '781aed2febe724d25f6b9ce1b1d25a2272fabb6da177c453b67d6f955126cabc',
-    'software-engineering': '999305657bde3bad50547a1e7c715de6f4bcfe5756082747fb9eb0b5ee702abb',
-    'embedded-and-iot': '3143ed96ae9c6a98eafc454e0972a779c9aa318d15ae99d980c6a0e77d7136ac',
-    'cto-as-a-service': 'c5bc879412840e6c2d664173e6395fce020f198b4de9f9a8cd1469dbb972e0b9',
+    'software-engineering': 'd6b45e1cc1c63bdbe0d0d11c9c59ddc70ade809e274bd51a02ae3404a877e85a',
+    'embedded-and-iot': 'bccb93f8a03e37b4559cf3db6f0286a42eb24e173f8527a1f6a4caa0f9ae1ec8',
+    'cto-as-a-service': '5285a953ef52381cffbdddf57614c5319b6a907d9eedf416550d8220c6001524',
   }
-  const AI_SERVICES_LISTING_BEFORE = 'b8a7657c061b43326b02fb72debb30bfbd34e93108559f49d3cd218554b83d5c'
+  const AI_SERVICES_LISTING_BEFORE = '1d6ce6f1b20ee61b23067d8255348d804bda23432d62df654502a8d6d921936f'
   const hash = (v: unknown) => createHash('sha256').update(stable(v)).digest('hex')
 
   it('only ai-services has a long-form page; the other records hash as before', () => {

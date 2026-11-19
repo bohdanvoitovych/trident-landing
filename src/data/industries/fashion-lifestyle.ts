@@ -8,8 +8,8 @@ const record: IndustryRecord = {
   relatedServices: ['software-engineering', 'ai-services'],
   content: {
     en: {
-      title: 'Fashion & Lifestyle',
-      tagline: 'Technology for brands with taste',
+      title: 'Fashion & lifestyle',
+      tagline: 'E-commerce for fashion and lifestyle brands',
       description:
         'E-commerce platforms, product configurators, influencer management tools, and AI-powered creative assistants for fashion brands and lifestyle companies.',
       challenges: [
@@ -19,7 +19,7 @@ const record: IndustryRecord = {
         },
         {
           title: 'Seasonal demand',
-          description: 'Traffic spikes at launches and sales, without over-provisioning year-round.',
+          description: 'Traffic spikes at launches and sales, without over-provisioning all year.',
         },
         {
           title: 'Global sizing',
@@ -47,7 +47,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Fashion & lifestyle software | Trident Software',
         description:
-          'Fashion tech software: headless storefronts, product configurators, AI creative tools, influencer platforms. Swiss engineering.',
+          'Fashion tech software: headless storefronts, product configurators, AI creative tools, influencer platforms. Swiss company, engineering team since 2009.',
       },
     },
     de: {
@@ -90,7 +90,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Software für Mode & Lifestyle | Trident Software',
         description:
-          'Fashion-Tech-Software: Headless-Shops, Produktkonfiguratoren, KI-Kreativtools, Influencer-Plattformen. Engineering aus der Schweiz.',
+          'Fashion-Tech-Software: Headless-Shops, Produktkonfiguratoren, KI-Kreativtools, Influencer-Plattformen. Schweizer Unternehmen, Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -134,7 +134,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Logiciels mode & lifestyle | Trident Software',
         description:
-          "Logiciels fashion tech : boutiques headless, configurateurs de produits, outils créatifs IA, plateformes d'influence. Ingénierie suisse.",
+          "Logiciels fashion tech : boutiques headless, configurateurs de produits, outils créatifs IA, plateformes d'influence. Entreprise suisse, équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -177,7 +177,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Software per moda & lifestyle | Trident Software',
         description:
-          'Software fashion tech: shop headless, configuratori di prodotto, strumenti creativi con IA, piattaforme per influencer. Ingegneria svizzera.',
+          'Software fashion tech: shop headless, configuratori di prodotto, strumenti creativi con IA, piattaforme per influencer. Azienda svizzera, team di ingegneria dal 2009.',
       },
     },
   },

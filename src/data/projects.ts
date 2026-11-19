@@ -37,10 +37,10 @@ const records: ProjectRecord[] = [
         summary: 'B2B e-commerce for automotive parts with bulk ordering.',
         sector: 'Automotive',
         details: [
-          'B2B ecommerce platform for automotive parts and related products, built to support business customers, bulk ordering, and complex pricing rules.',
+          'A B2B e-commerce platform for automotive parts and related products, built for business customers, bulk ordering and complex pricing rules.',
           'The platform covers product, stock and client management, order processing and delivery.',
         ],
-        tags: ['Automotive', 'B2B', 'Ecommerce', 'Web'],
+        tags: ['Automotive', 'B2B', 'E-commerce', 'Web'],
       },
       de: {
         title: 'Zenit Auto B2B-Plattform',
@@ -50,7 +50,7 @@ const records: ProjectRecord[] = [
           'B2B-E-Commerce-Plattform für Autoteile und verwandte Produkte, die für Geschäftskunden, Großbestellungen und komplexe Preisregeln entwickelt wurde.',
           'Die Plattform integriert die Verwaltung von Produkten, Beständen und Kunden, die Bearbeitung von Bestellungen und die Lieferung.',
         ],
-        tags: ['Automobil', 'B2B', 'Ecommerce', 'Web'],
+        tags: ['Automobil', 'B2B', 'E-Commerce', 'Web'],
       },
       fr: {
         title: 'Plateforme B2B Zenit Auto',
@@ -60,17 +60,17 @@ const records: ProjectRecord[] = [
           'Plate-forme de commerce électronique B2B pour les pièces détachées automobiles et les produits connexes, conçue pour prendre en charge les clients professionnels, les commandes groupées et les règles de tarification complexes.',
           'La plateforme intègre la gestion des produits, des stocks et des clients, le traitement des commandes et la livraison.',
         ],
-        tags: ['Automobile', 'B2B', 'Ecommerce', 'Web'],
+        tags: ['Automobile', 'B2B', 'E-commerce', 'Web'],
       },
       it: {
         title: 'Piattaforma B2B Zenit Auto',
         summary: "E-commerce B2B di ricambi auto con ordini all'ingrosso.",
         sector: 'Automotive',
         details: [
-          'B2B ecommerce platform for automotive parts and related products, built to support business customers, bulk ordering, and complex pricing rules.',
+          "Piattaforma e-commerce B2B per ricambi auto e prodotti correlati, pensata per clienti business, ordini all'ingrosso e regole di prezzo complesse.",
           'La piattaforma integra la gestione dei prodotti, delle scorte e dei clienti, l’elaborazione degli ordini e la consegna.',
         ],
-        tags: ['Automobilistico', 'B2B', 'Ecommerce', 'Web'],
+        tags: ['Automobilistico', 'B2B', 'E-commerce', 'Web'],
       },
     },
   },
@@ -84,10 +84,10 @@ const records: ProjectRecord[] = [
         summary: 'Medical platform for clinics: patient records, documentation and consultations in one place.',
         sector: 'Healthcare',
         details: [
-          'Medical management platform built for clinics and healthcare providers.',
+          'A medical management platform built for clinics and healthcare providers.',
           'It centralises patient records, medical documentation, staff management and consultation workflows in one secure environment.',
         ],
-        tags: ['Healthcare', 'Admin panel', 'Mobile Apps'],
+        tags: ['Healthcare', 'Admin panel', 'Mobile apps'],
       },
       de: {
         title: 'Aida Medizin-Plattform',
@@ -130,10 +130,10 @@ const records: ProjectRecord[] = [
         summary: 'E-commerce platform for tire and rim sales in Canada.',
         sector: 'E-commerce',
         details: [
-          'Ecommerce platform for selling tires and rims in Canada.',
+          'An e-commerce platform for selling tires and rims in Canada.',
           'The platform supports product catalogue management, search and filtering by vehicle specifications and models, and a simple checkout and delivery process.',
         ],
-        tags: ['Automotive', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Automotive', 'B2C', 'E-commerce', 'Web'],
       },
       de: {
         title: 'Online-Shop für Reifen',
@@ -143,7 +143,7 @@ const records: ProjectRecord[] = [
           'E-Commerce-Plattform für den Verkauf von Reifen und Felgen in Kanada.',
           'Die Lösung unterstützt die Verwaltung des Produktkatalogs, die Suche und Filterung nach Fahrzeugspezifikationen und -modellen sowie einen optimierten Kauf- und Lieferprozess.',
         ],
-        tags: ['Automobil', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Automobil', 'B2C', 'E-Commerce', 'Web'],
       },
       fr: {
         title: 'Boutique en ligne de pneus',
@@ -153,7 +153,7 @@ const records: ProjectRecord[] = [
           'Plate-forme de commerce électronique pour la vente de pneus et de jantes au Canada.',
           'La solution prend en charge la gestion du catalogue de produits, la recherche et le filtrage par spécifications et modèles de véhicules, ainsi qu’un processus simplifié de paiement et de livraison.',
         ],
-        tags: ['Automobile', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Automobile', 'B2C', 'E-commerce', 'Web'],
       },
       it: {
         title: 'Negozio online di pneumatici',
@@ -163,7 +163,7 @@ const records: ProjectRecord[] = [
           'Piattaforma e-commerce per la vendita di pneumatici e cerchi in Canada.',
           'La soluzione supporta la gestione del catalogo prodotti, la ricerca e il filtraggio per specifiche e modelli di veicoli e un processo di acquisto e consegna semplificato.',
         ],
-        tags: ['Automobilistico', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Automobilistico', 'B2C', 'E-commerce', 'Web'],
       },
     },
   },
@@ -173,13 +173,13 @@ const records: ProjectRecord[] = [
     content: {
       en: {
         title: 'Affiliation Platform',
-        summary: 'Web and mobile system for managing affiliation programmes.',
+        summary: 'Web and mobile system for managing affiliate programmes.',
         sector: 'MarTech',
         details: [
-          'Web and mobile platform to run affiliation programmes end to end.',
-          'The system provides a centralized admin panel for controlling partners, tracking performance, managing budgets, and generating detailed reports in real time.',
+          'A web and mobile platform for managing affiliate programmes end to end.',
+          'The system provides a centralised admin panel for controlling partners, tracking performance, managing budgets, and generating detailed reports in real time.',
         ],
-        tags: ['Marketing', 'Admin Panel', 'Mobile Apps'],
+        tags: ['Marketing', 'Admin panel', 'Mobile apps'],
       },
       de: {
         title: 'Affiliate-Plattform',
@@ -222,10 +222,10 @@ const records: ProjectRecord[] = [
         summary: 'Scalable B2B portal for wholesale automotive parts.',
         sector: 'Automotive',
         details: [
-          'Scalable B2B ecommerce portal for wholesale automotive part sales.',
+          'A scalable B2B e-commerce portal for wholesale automotive parts.',
           'The portal improves the customer experience with advanced search, catalogue sorting, order and delivery flows, and pricing based on client tiers.',
         ],
-        tags: ['Automotive', 'B2B', 'Ecommerce', 'Web'],
+        tags: ['Automotive', 'B2B', 'E-commerce', 'Web'],
       },
       de: {
         title: 'Vesna Auto B2B-Shop',
@@ -235,7 +235,7 @@ const records: ProjectRecord[] = [
           'Skalierbares B2B-E-Commerce-Portal für den Großhandel mit Autoteilen.',
           'Die Lösung verbessert das Kundenerlebnis durch eine erweiterte Suche, Katalogsortierung, Bestell- und Lieferabläufe und eine integrierte Preislogik, die auf Kundenebenen basiert.',
         ],
-        tags: ['Automobil', 'B2B', 'Ecommerce', 'Web'],
+        tags: ['Automobil', 'B2B', 'E-Commerce', 'Web'],
       },
       fr: {
         title: 'Boutique B2B Vesna Auto',
@@ -245,17 +245,17 @@ const records: ProjectRecord[] = [
           'Portail de commerce électronique B2B évolutif pour la vente en gros de pièces automobiles.',
           'La solution améliore l’expérience du client grâce à la recherche avancée, au tri du catalogue, aux flux de commande et de livraison, et à la logique de tarification intégrée basée sur les catégories de clients.',
         ],
-        tags: ['Automobile', 'B2B', 'Ecommerce', 'Web'],
+        tags: ['Automobile', 'B2B', 'E-commerce', 'Web'],
       },
       it: {
         title: 'Shop B2B Vesna Auto',
         summary: "Portale B2B scalabile per la vendita all'ingrosso di ricambi auto.",
         sector: 'Automotive',
         details: [
-          'Portale ecommerce B2B scalabile per la vendita all’ingrosso di ricambi per auto.',
+          'Portale e-commerce B2B scalabile per la vendita all’ingrosso di ricambi per auto.',
           'La soluzione migliora l’esperienza del cliente grazie alla ricerca avanzata, all’ordinamento del catalogo, ai flussi d’ordine e di consegna e alla logica di prezzo integrata basata sui livelli dei clienti.',
         ],
-        tags: ['Automobilistico', 'B2B', 'Ecommerce', 'Web'],
+        tags: ['Automobilistico', 'B2B', 'E-commerce', 'Web'],
       },
     },
   },
@@ -268,10 +268,10 @@ const records: ProjectRecord[] = [
         summary: 'Mobile warehouse management app with scanner integration.',
         sector: 'Logistics',
         details: [
-          'Mobile app that works with a finger-mounted scanner, a cheaper alternative to traditional industrial data collection terminals.',
+          'A mobile app designed for a finger-worn scanner, a cheaper alternative to traditional industrial data collection terminals.',
           'The app runs real-time warehouse operations, inventory and order processing.',
         ],
-        tags: ['Automotive', 'WMS', 'Mobile Apps'],
+        tags: ['Automotive', 'WMS', 'Mobile apps'],
       },
       de: {
         title: 'Status-M WMS-App',
@@ -311,13 +311,13 @@ const records: ProjectRecord[] = [
     content: {
       en: {
         title: '8Move Driver App',
-        summary: 'Application supporting delivery operations and route management.',
+        summary: 'Driver app for delivery operations and route management.',
         sector: 'Logistics',
         details: [
-          'Application for drivers to support delivery operations. The app provides route information, task management, and real-time updates during delivery processes.',
+          'The app helps drivers with delivery operations. It provides route information, task management, and real-time updates during delivery processes.',
           'Built to be reliable and easy to use, the app supports drivers in daily work and helps make deliveries faster and more accurate, so customers are happier.',
         ],
-        tags: ['Logistics', 'B2B', 'Ecommerce', 'Mobile Apps'],
+        tags: ['Logistics', 'B2B', 'E-commerce', 'Mobile apps'],
       },
       de: {
         title: '8Move Driver App',
@@ -327,7 +327,7 @@ const records: ProjectRecord[] = [
           'Anwendung für Fahrer zur Unterstützung von Liefervorgängen. Die App bietet Routeninformationen, Aufgabenverwaltung und Echtzeit-Updates während des Liefervorgangs.',
           'Die auf Zuverlässigkeit und Benutzerfreundlichkeit ausgelegte App unterstützt die Fahrer bei ihren täglichen Aufgaben und sorgt gleichzeitig für schnellere und präzisere Lieferungen und höhere Kundenzufriedenheit.',
         ],
-        tags: ['Logistik', 'B2B', 'Ecommerce', 'Mobile Apps'],
+        tags: ['Logistik', 'B2B', 'E-Commerce', 'Mobile Apps'],
       },
       fr: {
         title: '8Move Driver App',
@@ -337,7 +337,7 @@ const records: ProjectRecord[] = [
           'Application destinée aux chauffeurs pour soutenir les opérations de livraison. L’application fournit des informations sur les itinéraires, la gestion des tâches et des mises à jour en temps réel pendant les processus de livraison.',
           'Conçue pour être fiable et facile à utiliser, l’application aide les conducteurs dans leurs opérations quotidiennes tout en contribuant à assurer des livraisons plus rapides et plus précises ainsi qu’une plus grande satisfaction des clients.',
         ],
-        tags: ['Logistique', 'B2B', 'Ecommerce', 'Applications mobiles'],
+        tags: ['Logistique', 'B2B', 'E-commerce', 'Applications mobiles'],
       },
       it: {
         title: '8Move Driver App',
@@ -347,7 +347,7 @@ const records: ProjectRecord[] = [
           'Applicazione per autisti a supporto delle operazioni di consegna. L’applicazione fornisce informazioni sul percorso, gestione delle attività e aggiornamenti in tempo reale durante i processi di consegna.',
           'Progettata per garantire affidabilità e facilità d’uso, l’app supporta gli autisti nelle operazioni quotidiane e contribuisce a garantire consegne più rapide e accurate e una maggiore soddisfazione dei clienti.',
         ],
-        tags: ['Logistica', 'B2B', 'Ecommerce', 'Applicazioni mobili'],
+        tags: ['Logistica', 'B2B', 'E-commerce', 'Applicazioni mobili'],
       },
     },
   },
@@ -360,10 +360,10 @@ const records: ProjectRecord[] = [
         summary: 'Centralised control for products, orders and fleet operations.',
         sector: 'Logistics',
         details: [
-          'Central platform for managing products, customers, orders and fleet operations. It shows every operational workflow and supports decisions with structured data and reports.',
+          'A central platform for managing products, customers, orders and fleet operations. It shows every operational workflow and supports decisions with structured data and reports.',
           'The platform is the control centre for the whole system.',
         ],
-        tags: ['Wholesales', 'B2B', 'B2C', 'Ecommerce', 'Admin Panel', 'Web'],
+        tags: ['Wholesale', 'B2B', 'B2C', 'E-commerce', 'Admin panel', 'Web'],
       },
       de: {
         title: '8Move Admin-Plattform',
@@ -373,7 +373,7 @@ const records: ProjectRecord[] = [
           'Zentralisierte Plattform für die Verwaltung von Produkten, Kunden, Aufträgen und Flottenoperationen. Das System bietet vollständige Transparenz der betrieblichen Abläufe und unterstützt die Entscheidungsfindung durch strukturierte Daten und Berichte.',
           'Die Plattform fungiert als zentrales Kontrollzentrum für das gesamte Ökosystem.',
         ],
-        tags: ['Großhandel', 'B2B', 'B2C', 'Ecommerce', 'Verwaltungsbereich', 'Web'],
+        tags: ['Großhandel', 'B2B', 'B2C', 'E-Commerce', 'Verwaltungsbereich', 'Web'],
       },
       fr: {
         title: "Plateforme d'administration 8Move",
@@ -383,7 +383,7 @@ const records: ProjectRecord[] = [
           'Plate-forme centralisée pour la gestion des produits, des clients, des commandes et des opérations de la flotte. Le système offre une visibilité totale des flux de travail opérationnels et facilite la prise de décision grâce à des données et des rapports structurés.',
           'La plateforme joue le rôle de centre de contrôle pour l’ensemble de l’écosystème.',
         ],
-        tags: ['Vente en gros', 'B2B', 'B2C', 'Ecommerce', 'Panneau d\'administration', 'Web'],
+        tags: ['Vente en gros', 'B2B', 'B2C', 'E-commerce', 'Panneau d\'administration', 'Web'],
       },
       it: {
         title: 'Piattaforma di amministrazione 8Move',
@@ -393,7 +393,7 @@ const records: ProjectRecord[] = [
           'Piattaforma centralizzata per la gestione di prodotti, clienti, ordini e operazioni della flotta. Il sistema offre una visibilità completa dei flussi di lavoro operativi e supporta il processo decisionale grazie a dati e report strutturati.',
           'La piattaforma funge da centro di controllo per l’intero ecosistema.',
         ],
-        tags: ['Vendite all\'ingrosso', 'B2B', 'B2C', 'Ecommerce', 'Pannello di amministrazione', 'Web'],
+        tags: ['Vendite all\'ingrosso', 'B2B', 'B2C', 'E-commerce', 'Pannello di amministrazione', 'Web'],
       },
     },
   },
@@ -406,10 +406,10 @@ const records: ProjectRecord[] = [
         summary: 'Mobile app for B2B and B2C ordering and delivery management.',
         sector: 'Logistics',
         details: [
-          'Mobile application for B2B/B2C clients to place orders, manage deliveries, and complete online payments.',
+          'A mobile app for B2B and B2C clients to place orders, manage deliveries, and complete online payments.',
           'The app makes ordering simple and connects to the admin and logistics systems, so clients can track every order and rely on delivery.',
         ],
-        tags: ['Wholesales', 'B2B', 'B2C', 'Ecommerce', 'Mobile Apps'],
+        tags: ['Wholesale', 'B2B', 'B2C', 'E-commerce', 'Mobile apps'],
       },
       de: {
         title: '8Move Client App',
@@ -419,7 +419,7 @@ const records: ProjectRecord[] = [
           'Mobile Anwendung für B2B/B2C-Kunden, um Bestellungen aufzugeben, Lieferungen zu verwalten und Online-Zahlungen durchzuführen.',
           'Die App bietet ein vereinfachtes Bestellverfahren und ist gleichzeitig mit Verwaltungs- und Logistiksystemen integriert, um eine transparente Auftragsverfolgung, eine zuverlässige Lieferung und ein reibungsloses Kundenerlebnis zu gewährleisten.',
         ],
-        tags: ['Großhandel', 'B2B', 'B2C', 'Ecommerce', 'Mobile Apps'],
+        tags: ['Großhandel', 'B2B', 'B2C', 'E-Commerce', 'Mobile Apps'],
       },
       fr: {
         title: '8Move Client App',
@@ -429,7 +429,7 @@ const records: ProjectRecord[] = [
           'Application mobile permettant aux clients B2B/B2C de passer des commandes, de gérer les livraisons et d’effectuer des paiements en ligne.',
           'L’application offre une expérience de commande simplifiée tout en s’intégrant aux systèmes administratifs et logistiques, garantissant un suivi transparent des commandes, une livraison fiable et une expérience client harmonieuse.',
         ],
-        tags: ['Vente en gros', 'B2B', 'B2C', 'Ecommerce', 'Applications mobiles'],
+        tags: ['Vente en gros', 'B2B', 'B2C', 'E-commerce', 'Applications mobiles'],
       },
       it: {
         title: '8Move Client App',
@@ -439,7 +439,7 @@ const records: ProjectRecord[] = [
           'Applicazione mobile per clienti B2B/B2C per effettuare ordini, gestire le consegne e completare i pagamenti online.',
           'L’app offre un’esperienza d’ordine semplificata e si integra con i sistemi amministrativi e logistici, garantendo una tracciabilità trasparente dell’ordine, una consegna affidabile e un’esperienza cliente senza problemi.',
         ],
-        tags: ['Vendite all\'ingrosso', 'B2B', 'B2C', 'Ecommerce', 'Applicazioni mobili'],
+        tags: ['Vendite all\'ingrosso', 'B2B', 'B2C', 'E-commerce', 'Applicazioni mobili'],
       },
     },
   },
@@ -452,10 +452,10 @@ const records: ProjectRecord[] = [
         summary: 'B2B and B2C fashion store for boutique apparel and accessories.',
         sector: 'Retail',
         details: [
-          'B2B and B2C online fashion store created for boutique-level apparel and accessories.',
+          'A B2B and B2C online fashion store for boutique apparel and accessories.',
           'The website combines visual storytelling with clean navigation and promotional spotlights. The platform supports multi-currency pricing, size/variant selection, wishlists and social sharing of looks.',
         ],
-        tags: ['Fashion & Luxury', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Fashion & luxury', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
       de: {
         title: 'Samange E-Commerce',
@@ -465,7 +465,7 @@ const records: ProjectRecord[] = [
           'B2B- und B2C-Online-Modegeschäft für Boutique-Kleidung und Accessoires.',
           'Die Website kombiniert visuelles Storytelling mit einer klaren Navigation und Werbespots. Die Plattform unterstützt die Preisgestaltung in mehreren Währungen, die Auswahl von Größen/Varianten, die Funktion der Wunschliste und die Integration sozialer Netzwerke zum Teilen von Looks.',
         ],
-        tags: ['Mode und Luxus', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Mode und Luxus', 'B2B', 'B2C', 'E-Commerce', 'Web'],
       },
       fr: {
         title: 'E-commerce Samange',
@@ -475,7 +475,7 @@ const records: ProjectRecord[] = [
           'Boutique de mode en ligne B2B et B2C créée pour les vêtements et accessoires de niveau boutique.',
           'Le site web combine une narration visuelle avec une navigation claire et des spots promotionnels. La plateforme prend en charge la tarification multidevises, la sélection des tailles/variantes, la fonctionnalité de liste de souhaits et l’intégration sociale pour le partage des looks.',
         ],
-        tags: ['Mode et Luxe', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Mode et Luxe', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
       it: {
         title: 'E-commerce Samange',
@@ -485,7 +485,7 @@ const records: ProjectRecord[] = [
           'Negozio di moda online B2B e B2C creato per abbigliamento e accessori di livello boutique.',
           'Il sito web combina una narrazione visiva con una navigazione pulita e spot promozionali. La piattaforma supporta prezzi multivaluta, selezione di taglie/varianti, funzionalità wishlist e integrazione social per la condivisione dei look.',
         ],
-        tags: ['Moda e Lusso', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Moda e Lusso', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
     },
   },
@@ -495,10 +495,10 @@ const records: ProjectRecord[] = [
     content: {
       en: {
         title: 'Dentyval Web App',
-        summary: 'Web questionnaire for dental business evaluation.',
+        summary: 'Web questionnaire for valuing dental practices.',
         sector: 'Healthcare',
         details: [
-          'Web questionnaire for dental business evaluation based on special algorithms.',
+          'A web questionnaire for valuing dental practices, based on proprietary algorithms.',
           'The platform gives full control over the questionnaire logic, answer sets and results dashboard, so respondents and evaluation data can be managed in real time.',
         ],
         tags: ['Healthcare', 'Admin panel', 'Web'],
@@ -542,12 +542,12 @@ const records: ProjectRecord[] = [
       en: {
         title: 'Lapochette Online Shop',
         summary: 'Online store for hotel and restaurant accessories in Switzerland.',
-        sector: 'HoReCa',
+        sector: 'Hospitality',
         details: [
-          'Online store of accessories for hotels and restaurants in Switzerland.',
-          'The website presents categories and products. Customers can order ready-made accessories, request a price, or order the design and production of new samples. Guests and registered users can both order.',
+          'An online store for hotel and restaurant accessories in Switzerland.',
+          'The website presents categories and products. Customers can order ready-made accessories, request a quote, or commission the design and production of new samples. Guests and registered users can both order.',
         ],
-        tags: ['Accessories', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Accessories', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
       de: {
         title: 'Lapochette Online-Shop',
@@ -557,7 +557,7 @@ const records: ProjectRecord[] = [
           'Online Shop für Zubehör für Hotels und Restaurants in der Schweiz.',
           'Die Website präsentiert Kategorien und Produkte mit der Möglichkeit, fertige Accessoires zu bestellen, einen Preis anzufordern und das Design und die Produktion neuer Muster in Auftrag zu geben. Die Plattform unterstützt eine vereinfachte Bestellung, die Arbeit mit Gästen und registrierten Benutzern.',
         ],
-        tags: ['Accessoires', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Accessoires', 'B2B', 'B2C', 'E-Commerce', 'Web'],
       },
       fr: {
         title: 'Boutique en ligne Lapochette',
@@ -567,7 +567,7 @@ const records: ProjectRecord[] = [
           'Boutique en ligne d’accessoires pour hôtels et restaurants en Suisse.',
           'Le site web présente les catégories et les produits, avec la possibilité de commander des accessoires prêts à l’emploi, de demander un prix et de commander la conception et la production de nouveaux échantillons. La plateforme permet de simplifier les commandes, de travailler avec des invités et des utilisateurs enregistrés.',
         ],
-        tags: ['Accessoires', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Accessoires', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
       it: {
         title: 'Negozio online Lapochette',
@@ -577,7 +577,7 @@ const records: ProjectRecord[] = [
           'Negozio online di accessori per hotel e ristoranti in Svizzera.',
           'Il sito web presenta categorie e prodotti con la possibilità di ordinare accessori già pronti, richiedere un prezzo e ordinare la progettazione e la produzione di nuovi campioni. La piattaforma supporta la semplificazione degli ordini, il lavoro con gli ospiti e gli utenti registrati.',
         ],
-        tags: ['Accessori', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Accessori', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
     },
   },
@@ -590,7 +590,7 @@ const records: ProjectRecord[] = [
         summary: 'AI-enhanced tool for creating websites and landing pages.',
         sector: 'SaaS',
         details: [
-          'AI-enhanced website creation and management tool designed for users who want simplicity without sacrificing power.',
+          'An AI-enhanced website creation and management tool for users who want simplicity without sacrificing power.',
           'It uses generative content models and pre-built components to help users build landing pages, service sites, and small business portals in minutes.',
         ],
         tags: ['AI', 'SaaS', 'Web'],
@@ -636,10 +636,10 @@ const records: ProjectRecord[] = [
         summary: 'B2B and B2C platform for luxury watches and jewellery.',
         sector: 'Retail',
         details: [
-          'B2B and B2C ecommerce platform designed for luxury watches, jewellery, and gift products.',
+          'A B2B and B2C e-commerce platform for luxury watches, jewellery and gift products.',
           'The project combines elegant design with solid catalogue management and clear navigation, so customers can browse and buy high-value items with confidence.',
         ],
-        tags: ['Fashion & Luxury', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Fashion & luxury', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
       de: {
         title: 'Flashhub Online-Shop',
@@ -649,7 +649,7 @@ const records: ProjectRecord[] = [
           'B2B- und B2C-E-Commerce-Plattform für Luxusuhren, Schmuck und Geschenkartikel.',
           'Project kombiniert ein elegantes Design mit einer robusten Katalogverwaltung und einer intuitiven Navigation, so dass die Kunden vertrauensvoll hochwertige Artikel durchsuchen und kaufen können.',
         ],
-        tags: ['Mode und Luxus', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Mode und Luxus', 'B2B', 'B2C', 'E-Commerce', 'Web'],
       },
       fr: {
         title: 'Boutique en ligne Flashhub',
@@ -659,17 +659,17 @@ const records: ProjectRecord[] = [
           'Plate-forme de commerce électronique B2B et B2C conçue pour les montres de luxe, les bijoux et les cadeaux.',
           'Le projet associe un design élégant à une gestion de catalogue robuste et à une navigation intuitive, permettant aux clients de parcourir et d’acheter des articles de grande valeur en toute confiance.',
         ],
-        tags: ['Mode et Luxe', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Mode et Luxe', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
       it: {
         title: 'Negozio online Flashhub',
         summary: 'Piattaforma B2B e B2C per orologi di lusso e gioielli.',
         sector: 'Retail',
         details: [
-          'Piattaforma di ecommerce B2B e B2C progettata per orologi di lusso, gioielli e prodotti da regalo.',
+          'Piattaforma di e-commerce B2B e B2C progettata per orologi di lusso, gioielli e prodotti da regalo.',
           'Il progetto combina un design elegante con una solida gestione del catalogo e una navigazione intuitiva, consentendo ai clienti di sfogliare e acquistare articoli di alto valore in tutta tranquillità.',
         ],
-        tags: ['Moda e Lusso', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Moda e Lusso', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
     },
   },
@@ -678,17 +678,17 @@ const records: ProjectRecord[] = [
     image: '/images/cases/loundoun-decks.jpg',
     content: {
       en: {
-        title: 'Loundoun Decks Website',
+        title: 'Loudoun Decks Website',
         summary: 'Promotional site for a construction company specialising in decks.',
         sector: 'Construction',
         details: [
-          'Promo website for a US construction firm specialising in decks and outdoor structures.',
+          'A promotional website for a US construction company specialising in decks and outdoor structures.',
           'The site focuses on clear presentation of services, completed projects, and trust-building elements for local customers.',
         ],
         tags: ['Construction', 'Websites'],
       },
       de: {
-        title: 'Loundoun Decks Website',
+        title: 'Loudoun Decks Website',
         summary: 'Werbewebsite für ein Bauunternehmen, das auf Terrassen spezialisiert ist.',
         sector: 'Bau',
         details: [
@@ -698,7 +698,7 @@ const records: ProjectRecord[] = [
         tags: ['Bauwesen', 'Webseiten'],
       },
       fr: {
-        title: 'Site web Loundoun Decks',
+        title: 'Site web Loudoun Decks',
         summary: "Site vitrine d'une entreprise de construction spécialisée dans les terrasses.",
         sector: 'Construction',
         details: [
@@ -708,7 +708,7 @@ const records: ProjectRecord[] = [
         tags: ['La construction', 'Sites web'],
       },
       it: {
-        title: 'Sito web Loundoun Decks',
+        title: 'Sito web Loudoun Decks',
         summary: "Sito promozionale per un'impresa edile specializzata in terrazze in legno.",
         sector: 'Edilizia',
         details: [
@@ -728,10 +728,10 @@ const records: ProjectRecord[] = [
         summary: 'Professional online store for tools and equipment.',
         sector: 'E-commerce',
         details: [
-          'Professional online store for tools and equipment, tailored to both retail and trade customers.',
+          'A professional online store for tools and equipment, built for both retail and trade customers.',
           'The website offers detailed product specifications, compatibility filters, secure checkout and warranty information. Built to be reliable and to scale, it is a digital showroom for tool suppliers.',
         ],
-        tags: ['DIY & Tools', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['DIY & tools', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
       de: {
         title: 'Mastertool E-Commerce',
@@ -741,7 +741,7 @@ const records: ProjectRecord[] = [
           'Professioneller Online-Shop für Werkzeuge und Ausrüstung, der sich sowohl an Einzelhändler als auch an gewerbliche Kunden richtet.',
           'Die Website bietet detaillierte Produktspezifikationen, Kompatibilitätsfilter, eine sichere Kaufabwicklung und Informationsmodule zur Garantie. Sie wurde für Robustheit und Skalierbarkeit entwickelt und dient als zuverlässiger digitaler Showroom für Werkzeuglieferanten.',
         ],
-        tags: ['Heimwerken und Werkzeuge', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Heimwerken und Werkzeuge', 'B2B', 'B2C', 'E-Commerce', 'Web'],
       },
       fr: {
         title: 'E-commerce Mastertool',
@@ -751,7 +751,7 @@ const records: ProjectRecord[] = [
           'Magasin professionnel en ligne d’outils et d’équipements, conçu pour les particuliers et les professionnels.',
           'Le site web fournit des spécifications détaillées sur les produits, des filtres de compatibilité, un système de paiement sécurisé et des modules d’information sur la garantie. Conçu pour être robuste et évolutif, il sert de salle d’exposition numérique fiable pour les fournisseurs d’outils.',
         ],
-        tags: ['Bricolage et Outils', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Bricolage et Outils', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
       it: {
         title: 'E-commerce Mastertool',
@@ -761,7 +761,7 @@ const records: ProjectRecord[] = [
           'Negozio online professionale di utensili e attrezzature, dedicato sia ai clienti al dettaglio che a quelli commerciali.',
           'Il sito web fornisce specifiche dettagliate dei prodotti, filtri di compatibilità, moduli di acquisto sicuri e informazioni sulla garanzia. Costruito per essere robusto e scalabile, funge da affidabile showroom digitale per i fornitori di utensili.',
         ],
-        tags: ['Fai da te e Attrezzi', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Fai da te e Attrezzi', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
     },
   },
@@ -774,7 +774,7 @@ const records: ProjectRecord[] = [
         summary: 'Online presence for a language school, with courses and enrolment.',
         sector: 'Education',
         details: [
-          'Complete online presence for a language school in Switzerland that includes course catalogues, enrolment forms, schedules, and faculty profiles.',
+          'A complete online presence for a language school in Switzerland, with course catalogues, enrolment forms, schedules, and faculty profiles.',
           'The site improves user engagement with clear calls to action, interactive elements, and easy access to learning resources.',
         ],
         tags: ['Education', 'Websites'],
@@ -820,10 +820,10 @@ const records: ProjectRecord[] = [
         summary: 'Interactive quiz and game mobile application.',
         sector: 'Consumer',
         details: [
-          'Interactive quiz and game mobile application developed to engage users with real-time questions, scoring, and user progression mechanics.',
+          'An interactive quiz and game app that engages users with real-time questions, scoring and progression mechanics.',
           'The app lets players challenge friends, track achievements and compete in themed rounds.',
         ],
-        tags: ['Travelling', 'Games', 'Mobile Apps'],
+        tags: ['Travel', 'Games', 'Mobile apps'],
       },
       de: {
         title: 'Didi Mobile App',
@@ -866,7 +866,7 @@ const records: ProjectRecord[] = [
         summary: 'Digital community hub for expats and professionals in Valais.',
         sector: 'Community',
         details: [
-          'Digital community hub for expats and local professionals located in Valais.',
+          'A digital community hub for expats and local professionals in Valais.',
           'The website offers information about events, membership options, cultural highlights and relocation resources. The project builds community engagement through event calendars, newsletter integration and simple contact modules.',
         ],
         tags: ['Social', 'Websites'],
@@ -955,13 +955,13 @@ const records: ProjectRecord[] = [
     content: {
       en: {
         title: 'Catapult Crown Portal',
-        summary: 'Web platform for dental business investment management.',
+        summary: 'Investment management platform for US dental practices.',
         sector: 'Healthcare',
         details: [
-          'Web platform for dental business investors in the USA.',
-          'The system lets the client manage the whole investment opportunity lifecycle alone, from publishing and updating detailed offers to processing investor applications and managing tiered access to exclusive information.',
+          'A web platform for investors in US dental practices.',
+          'The system lets the client manage the whole investment lifecycle on its own, from publishing and updating detailed offers to processing investor applications and managing tiered access to exclusive information.',
         ],
-        tags: ['Investment', 'Healthcare', 'Admin panel', 'User Portal'],
+        tags: ['Investment', 'Healthcare', 'Admin panel', 'User portal'],
       },
       de: {
         title: 'Catapult Crown Portal',
@@ -1004,10 +1004,10 @@ const records: ProjectRecord[] = [
         summary: 'B2B and B2C portal for water purification device monitoring.',
         sector: 'IoT',
         details: [
-          'B2B/B2C unified portal and mobile app for a special measurement device installed on water purification systems.',
+          'A unified B2B and B2C portal and mobile app for a dedicated measurement device installed on water purification systems.',
           'The system includes e-commerce, customer and user management, device monitoring dashboards, service scheduling and an installation flow. The apps sync data in real time, so users can track system performance and maintenance alerts.',
         ],
-        tags: ['IoT', 'Ecology', 'B2B', 'B2C', 'Ecommerce', 'Websites', 'Admin panel', 'Mobile Apps'],
+        tags: ['IoT', 'Environment', 'B2B', 'B2C', 'E-commerce', 'Websites', 'Admin panel', 'Mobile apps'],
       },
       de: {
         title: 'TDSbot Web- und Mobile-App',
@@ -1017,7 +1017,7 @@ const records: ProjectRecord[] = [
           'B2B/B2C einheitliches Portal und mobile App für ein spezielles Messgerät, das in Wasseraufbereitungsanlagen installiert wird.',
           'Das System umfasst E-Commerce, Kunden- und Benutzerverwaltung, Dashboards zur Geräteüberwachung, Serviceplanung und Installationsablauf. App-Schnittstellen synchronisieren Daten in Echtzeit, so dass Benutzer die Systemleistung und Wartungswarnungen verfolgen können.',
         ],
-        tags: ['IoT', 'Ökologie', 'B2B', 'B2C', 'Ecommerce', 'Webseiten', 'Admin-Panel', 'Mobile Apps'],
+        tags: ['IoT', 'Ökologie', 'B2B', 'B2C', 'E-Commerce', 'Webseiten', 'Admin-Panel', 'Mobile Apps'],
       },
       fr: {
         title: 'Application web et mobile TDSbot',
@@ -1027,7 +1027,7 @@ const records: ProjectRecord[] = [
           'Portail unifié B2B/B2C et application mobile pour un appareil de mesure spécial installé sur les systèmes de purification de l’eau.',
           'Le système comprend le commerce électronique, la gestion des clients et des utilisateurs, les tableaux de bord de surveillance des appareils, la programmation des services et le flux d’installation. Les interfaces applicatives synchronisent les données en temps réel, ce qui permet aux utilisateurs de suivre les performances du système et les alertes de maintenance.',
         ],
-        tags: ['IoT', 'Écologie', 'B2B', 'B2C', 'Ecommerce', 'Sites web', 'Panneau d\'administration', 'Applications mobiles'],
+        tags: ['IoT', 'Écologie', 'B2B', 'B2C', 'E-commerce', 'Sites web', 'Panneau d\'administration', 'Applications mobiles'],
       },
       it: {
         title: 'App web e mobile TDSbot',
@@ -1037,7 +1037,7 @@ const records: ProjectRecord[] = [
           'Portale unificato B2B/B2C e applicazione mobile realizzati per uno speciale dispositivo di misurazione installato sui sistemi di depurazione dell’acqua.',
           'Il sistema include l’e-commerce, la gestione dei clienti e degli utenti, i cruscotti di monitoraggio dei dispositivi, la programmazione dei servizi e il flusso di installazione. Le interfacce delle app sincronizzano i dati in tempo reale, consentendo agli utenti di monitorare le prestazioni del sistema e gli avvisi di manutenzione.',
         ],
-        tags: ['IoT', 'Ecologia', 'B2B', 'B2C', 'Ecommerce', 'Siti web', 'Pannello di amministrazione', 'Applicazioni mobili'],
+        tags: ['IoT', 'Ecologia', 'B2B', 'B2C', 'E-commerce', 'Siti web', 'Pannello di amministrazione', 'Applicazioni mobili'],
       },
     },
   },
@@ -1050,10 +1050,10 @@ const records: ProjectRecord[] = [
         summary: 'Management solution for sports and fitness facilities.',
         sector: 'Sports',
         details: [
-          'Management solution for sports and fitness facilities, particularly squash and badminton courts.',
+          'A management system for sports and fitness facilities, particularly squash and badminton courts.',
           'The platform includes booking calendars, user accounts, payment integrations, analytics dashboards and push notifications for reservations. It works across platforms for both facility managers and players. Real-time availability and automated reminders help reduce no-shows and improve court utilisation.',
         ],
-        tags: ['Sport', 'Websites', 'Admin panel', 'Mobile Apps'],
+        tags: ['Sport', 'Websites', 'Admin panel', 'Mobile apps'],
       },
       de: {
         title: 'Tpoint Web- und Mobile-App',
@@ -1096,10 +1096,10 @@ const records: ProjectRecord[] = [
         summary: 'Content platform blending astrology with personalised insights.',
         sector: 'Consumer',
         details: [
-          'Content-centric web platform blending astrology insights with personalized psychological content.',
+          'A content platform that combines astrology with personalised psychological content.',
           'The project engages users through dynamic profiles, daily readings and tailored recommendations. The site includes social sharing, newsletter segmentation and comments to increase retention and community participation. It mixes editorial design with personalisation logic.',
         ],
-        tags: ['Social', 'Websites', 'User Portal'],
+        tags: ['Social', 'Websites', 'User portal'],
       },
       de: {
         title: 'MyAstro Webportal',
@@ -1142,10 +1142,10 @@ const records: ProjectRecord[] = [
         summary: 'B2C marketplace for lifestyle accessories.',
         sector: 'Retail',
         details: [
-          'B2C marketplace offering lifestyle accessories across tech, fashion, and everyday essentials.',
+          'A B2C marketplace for lifestyle accessories across tech, fashion and everyday essentials.',
           'The website focuses on easy browsing, simple search filters, clear product options and a short order process.',
         ],
-        tags: ['Accessories', 'Ecommerce', 'Websites'],
+        tags: ['Accessories', 'E-commerce', 'Websites'],
       },
       de: {
         title: 'Alio Online-Shop',
@@ -1155,7 +1155,7 @@ const records: ProjectRecord[] = [
           'B2C-Marktplatz für Lifestyle-Accessoires aus den Bereichen Technik, Mode und Alltagsgegenstände.',
           'Die Website konzentriert sich auf eine übersichtliche Navigation, einfache Suchfilter, die Präsentation von Produktoptionen und einen einfachen Bestellvorgang.',
         ],
-        tags: ['Accessoires', 'Ecommerce', 'Webseiten'],
+        tags: ['Accessoires', 'E-Commerce', 'Webseiten'],
       },
       fr: {
         title: 'Boutique en ligne Alio',
@@ -1165,7 +1165,7 @@ const records: ProjectRecord[] = [
           'Place de marché B2C proposant des accessoires de style de vie dans les domaines de la technologie, de la mode et des produits de première nécessité.',
           'Le site web met l’accent sur une navigation rationalisée, des filtres de recherche faciles, une présentation des options des produits et un processus de commande simple.',
         ],
-        tags: ['Accessoires', 'Ecommerce', 'Sites web'],
+        tags: ['Accessoires', 'E-commerce', 'Sites web'],
       },
       it: {
         title: 'Negozio online Alio',
@@ -1175,7 +1175,7 @@ const records: ProjectRecord[] = [
           'Mercato B2C che offre accessori per lo stile di vita che spaziano dalla tecnologia alla moda e agli oggetti di uso quotidiano.',
           'Il sito web si concentra su una navigazione snella, filtri di ricerca facili, presentazione delle opzioni dei prodotti e un processo d’ordine semplice.',
         ],
-        tags: ['Accessori', 'Ecommerce', 'Siti web'],
+        tags: ['Accessori', 'E-commerce', 'Siti web'],
       },
     },
   },
@@ -1188,10 +1188,10 @@ const records: ProjectRecord[] = [
         summary: 'Marketplace for fishing gear with educational content.',
         sector: 'Retail',
         details: [
-          'Online marketplace for fishing gear and outdoor equipment that combines category highlights with educational content and product guides.',
+          'An online marketplace for fishing gear and outdoor equipment that combines category highlights with educational content and product guides.',
           'The shop supports wishlists, product bundles and seasonal promotions to increase engagement. In the admin panel, staff schedule campaigns and get stock alerts, which makes peak seasons easier to manage.',
         ],
-        tags: ['Sport', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Sport', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
       de: {
         title: 'Fishing Roi Online-Shop',
@@ -1201,7 +1201,7 @@ const records: ProjectRecord[] = [
           'Online-Marktplatz für Angel- und Outdoor-Ausrüstung, der Kategorie-Highlights mit Bildungsinhalten und Produktführern kombiniert.',
           'Der Shop unterstützt Wunschzettel-Funktionen, Produktbündel und saisonale Werbeaktionen, um das Engagement zu erhöhen. Das Admin-Panel bietet Administratoren die Möglichkeit, Kampagnen zu planen und Lagerbestände zu melden, was die Verwaltung von Saisonspitzen erleichtert.',
         ],
-        tags: ['Sport', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Sport', 'B2B', 'B2C', 'E-Commerce', 'Web'],
       },
       fr: {
         title: 'Boutique en ligne Fishing Roi',
@@ -1211,7 +1211,7 @@ const records: ProjectRecord[] = [
           'Place de marché en ligne pour le matériel de pêche et les équipements de plein air, qui associe des catégories à un contenu éducatif et à des guides de produits.',
           'La boutique prend en charge les fonctions de liste de souhaits, les offres groupées de produits et les promotions saisonnières afin d’accroître l’engagement. Le panneau d’administration permet aux administrateurs de programmer des campagnes et d’émettre des alertes sur les stocks, ce qui facilite la gestion des périodes de pointe.',
         ],
-        tags: ['Sport', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Sport', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
       it: {
         title: 'Negozio online Fishing Roi',
@@ -1221,7 +1221,7 @@ const records: ProjectRecord[] = [
           'Mercato online di articoli per la pesca e attrezzature per l’outdoor che combina le caratteristiche delle categorie con contenuti educativi e guide ai prodotti.',
           'Il negozio supporta le funzioni di wishlist, i bundle di prodotti e le promozioni stagionali per aumentare il coinvolgimento. Il pannello di amministrazione consente agli amministratori di programmare le campagne e di ricevere avvisi sulle scorte, rendendo più facile la gestione dei periodi di punta.',
         ],
-        tags: ['Sport', 'B2B', 'B2C', 'Ecommerce', 'Web'],
+        tags: ['Sport', 'B2B', 'B2C', 'E-commerce', 'Web'],
       },
     },
   },
@@ -1234,10 +1234,10 @@ const records: ProjectRecord[] = [
         summary: 'Automotive parts marketplace serving B2B and B2C segments.',
         sector: 'Automotive',
         details: [
-          'Versatile automotive parts marketplace serving both B2B and B2C customer segments.',
+          'An automotive parts marketplace serving both B2B and B2C customers.',
           'Adaptive pricing, buyer tiers and volume discounts simplify sales across industries. Advanced search, brand filters and compatibility checks help buyers find the right part.',
         ],
-        tags: ['Automotive', 'Ecommerce', 'Web'],
+        tags: ['Automotive', 'E-commerce', 'Web'],
       },
       de: {
         title: 'Vbavto E-Commerce',
@@ -1247,7 +1247,7 @@ const records: ProjectRecord[] = [
           'Vielseitiger Marktplatz für Autoteile, der sowohl B2B- als auch B2C-Kundensegmente bedient.',
           'Mit adaptiver Preisgestaltung, Käuferstufen und Mengenrabattlogik rationalisiert es den Verkauf in verschiedenen Branchen. Erweiterte Suche, Markenfilter und Kompatibilitätsprüfungen verbessern die Produktfindung.',
         ],
-        tags: ['Automobil', 'Ecommerce', 'Web'],
+        tags: ['Automobil', 'E-Commerce', 'Web'],
       },
       fr: {
         title: 'E-commerce Vbavto',
@@ -1257,7 +1257,7 @@ const records: ProjectRecord[] = [
           'Place de marché polyvalente pour les pièces détachées automobiles desservant à la fois les segments de clientèle B2B et B2C.',
           'Grâce à la tarification adaptative, aux paliers d’acheteurs et à la logique des remises en fonction du volume, il rationalise les ventes dans tous les secteurs d’activité. La recherche avancée, les filtres de marque et les contrôles de compatibilité améliorent la découverte des produits.',
         ],
-        tags: ['Automobile', 'Ecommerce', 'Web'],
+        tags: ['Automobile', 'E-commerce', 'Web'],
       },
       it: {
         title: 'E-commerce Vbavto',
@@ -1267,7 +1267,7 @@ const records: ProjectRecord[] = [
           'Un mercato versatile di ricambi per auto che serve sia i segmenti B2B che B2C.',
           'Grazie ai prezzi adattivi, ai livelli di acquisto e alla logica degli sconti per volume, ottimizza le vendite in tutti i settori. La ricerca avanzata, i filtri per i marchi e i controlli di compatibilità migliorano la scoperta dei prodotti.',
         ],
-        tags: ['Automobilistico', 'Ecommerce', 'Web'],
+        tags: ['Automobilistico', 'E-commerce', 'Web'],
       },
     },
   },

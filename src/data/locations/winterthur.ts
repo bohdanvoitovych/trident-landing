@@ -38,7 +38,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Industrial software Winterthur | IoT & manufacturing tech | Trident Software',
         description:
-          'Industrial IoT, predictive maintenance, and manufacturing software for Winterthur. Sensor integration, ML-based anomaly detection. Swiss engineering team.',
+          'Industrial IoT, predictive maintenance, and manufacturing software for Winterthur. Sensor integration, ML-based anomaly detection. Engineering team since 2009.',
       },
     },
     de: {
@@ -74,7 +74,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Industriesoftware Winterthur | IoT & Fertigung | Trident',
         description:
-          'Industrial IoT, vorausschauende Wartung und Fertigungssoftware für Winterthur. Sensorintegration, Anomalieerkennung mit ML. Schweizer Engineering-Team.',
+          'Industrial IoT, vorausschauende Wartung und Fertigungssoftware für Winterthur. Sensorintegration, Anomalieerkennung mit ML. Engineering-Team seit 2009.',
       },
     },
     fr: {
@@ -110,7 +110,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Logiciels industriels Winterthour | IoT | Trident Software',
         description:
-          "IoT industriel, maintenance prédictive et logiciels de production à Winterthour. Intégration de capteurs, détection d'anomalies par ML. Ingénieurs suisses.",
+          "IoT industriel, maintenance prédictive et logiciels de production à Winterthour. Intégration de capteurs, détection d'anomalies par ML. Équipe d'ingénierie depuis 2009.",
       },
     },
     it: {
@@ -146,7 +146,7 @@ const record: LocationRecord = {
       meta: {
         title: 'Software industriale Winterthur | IoT & produzione | Trident',
         description:
-          'IoT industriale, manutenzione predittiva e software per la produzione a Winterthur. Integrazione di sensori, rilevamento anomalie con ML. Team svizzero.',
+          'IoT industriale, manutenzione predittiva e software per la produzione a Winterthur. Integrazione di sensori, rilevamento anomalie con ML. Team di ingegneria dal 2009.',
       },
     },
   },

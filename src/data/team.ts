@@ -504,8 +504,8 @@ const statsByLocale: Localized<{ value: string; label: string }[]> = {
       label: 'Projects delivered',
     },
     {
-      value: '15',
-      label: 'Years since founding',
+      value: 'Since 2009',
+      label: 'Engineering team · Swiss company since 2022',
     },
     {
       value: '10+',
@@ -522,8 +522,8 @@ const statsByLocale: Localized<{ value: string; label: string }[]> = {
       label: 'Abgeschlossene Projekte',
     },
     {
-      value: '15',
-      label: 'Jahre seit der Gründung',
+      value: 'Seit 2009',
+      label: 'Engineering-Team · Schweizer Unternehmen seit 2022',
     },
     {
       value: '10+',
@@ -540,8 +540,8 @@ const statsByLocale: Localized<{ value: string; label: string }[]> = {
       label: 'Projets livrés',
     },
     {
-      value: '15',
-      label: 'Années depuis la fondation',
+      value: 'Depuis 2009',
+      label: "Équipe d'ingénierie · entreprise suisse depuis 2022",
     },
     {
       value: '10+',
@@ -558,8 +558,8 @@ const statsByLocale: Localized<{ value: string; label: string }[]> = {
       label: 'Progetti realizzati',
     },
     {
-      value: '15',
-      label: 'Anni dalla fondazione',
+      value: 'Dal 2009',
+      label: 'Team di ingegneria · azienda svizzera dal 2022',
     },
     {
       value: '10+',

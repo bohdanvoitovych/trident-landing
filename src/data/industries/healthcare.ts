@@ -10,7 +10,7 @@ const record: IndustryRecord = {
     en: {
       title: 'Clinics, dental and veterinary practices',
       tagline:
-        'Two different places to automate, the front desk and documentation, and the money is in the second one.',
+        'Two areas to automate: the front desk and documentation. The savings are in the second.',
       description: 'The expensive minutes in a Swiss practice go into documentation, not into the phone.',
       challengesLead: '',
       challenges: [
@@ -27,7 +27,7 @@ const record: IndustryRecord = {
         {
           title: 'The limits, stated before the demo',
           description:
-            'Patient data is sensitive personal data under the revFADP and is covered by professional secrecy under Art. 321 of the Criminal Code. Deployments run on Swiss-hosted infrastructure over HIN-secured channels, with no training on your data and a documented processing agreement. Spoken Swiss German dialect remains the weakest link in every speech stack on the market: standard German, French, Italian and English dictation is production-grade today, dialect is not, and we scope around that rather than promise through it. Every clinical output is a draft for a clinician to correct and sign. The assistant writes, the professional decides.',
+            'Patient data is sensitive personal data under the revFADP and is covered by professional secrecy under Art. 321 of the Criminal Code. Deployments run on Swiss-hosted infrastructure over HIN-secured channels, with no training on your data and a documented processing agreement. Spoken Swiss German dialect remains the weakest link in every speech stack on the market: standard German, French, Italian and English dictation is production-grade today, dialect is not, and we plan around that limit rather than promise to overcome it. Every clinical output is a draft for a clinician to correct and sign. The assistant writes, the professional decides.',
         },
       ],
       solutionsLead: '',
@@ -40,7 +40,7 @@ const record: IndustryRecord = {
         {
           title: 'Ward rounds and Spitex home visits, hands-free',
           description:
-            'Vitals, wound status and medication changes captured while gloved, then filed to the right patient.',
+            'Vitals, wound status and medication changes captured while wearing gloves, then filed to the right patient.',
         },
         {
           title: 'Report and referral drafting',
@@ -55,10 +55,10 @@ const record: IndustryRecord = {
         {
           title: 'Coding support for invoicing',
           description:
-            'Proposes tariff positions from what was documented and flags the gaps a rejected invoice would come back on.',
+            'Proposes tariff positions from what was documented and flags the gaps that would cause an invoice to be rejected.',
         },
         {
-          title: 'Practice management (ambulatory)',
+          title: 'Practice management (outpatient)',
           description: 'vitomed (Vitodata), amétiq siMed, AESKULAP, WinMed, Axenita, Curamed, Tomedo, E-PAT',
         },
         {
@@ -72,7 +72,7 @@ const record: IndustryRecord = {
         },
         {
           title: 'Secure communication',
-          description: 'HIN identity and encrypted mail, the channel Swiss healthcare actually runs on',
+          description: 'HIN identity and encrypted mail, the channel Swiss healthcare runs on',
         },
         {
           title: 'Scheduling and reminders',
@@ -82,7 +82,7 @@ const record: IndustryRecord = {
       meta: {
         title: 'Clinics, dental and veterinary practices | Trident Software',
         description:
-          'Two places to automate in a practice, the front desk and documentation, and the money is in the second one. Swiss hosting, HIN, revFADP.',
+          'Two areas to automate in a practice: the front desk and documentation. The savings are in the second. Swiss hosting, HIN, revFADP.',
       },
     },
     de: {
